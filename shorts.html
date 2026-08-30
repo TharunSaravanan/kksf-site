@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shorts — Kural Koodal Semmozhi Foundation</title>
+  <meta name="description" content="Watch YouTube Shorts from the Kural Koodal Semmozhi Foundation.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="site-logo">
+      <img src="images/logo.jpg" alt="KKSF Logo">
+      <h1><a href="/">Kural Koodal Semmozhi Foundation</a></h1>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <nav class="main-nav">
+      <a href="/">Home</a>
+      <a href="thirukkural.html">Thirukkural</a>
+      <a href="about.html">About Us</a>
+      <a href="news.html">News &amp; Media</a>
+      <a href="board.html">Meet the Board</a>
+      <a href="shorts.html" class="active">Shorts</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+
+  <h2 class="section-title">Shorts</h2>
+  <p style="text-align:center; color: var(--text-light); margin-top:-1rem; margin-bottom:2rem;">
+    Tap a video to play. See more on our
+    <a href="https://www.youtube.com/channel/UCWfMT0Qf-DKIyZm4vcUdBdg/shorts" target="_blank" rel="noopener">YouTube channel</a>.
+  </p>
+
+  <div class="shorts-grid" id="shorts-grid"></div>
+
+</div>
+
+<footer class="site-footer">
+  <p>Kural Koodal Semmozhi Foundation &copy; 2026. All Rights Reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  var SHORT_IDS = [
+    "6ZQ3tOU8ReQ", "1Pmj1ivPkgc", "oJDvw6SCQ38", "umZ9dMVW-yE", "m8VgjyVFM-o",
+    "VCDrl1pD74Y", "fOkBxij44ZM", "26CNBsTtGKE", "ERZPBYs8x6k", "Fr_MEh0CnPo",
+    "LKjojtnMVr0", "vexLeqs2BT8", "pANTB8CzU1I", "sDiSKqFjA6A", "TrzoFLs4S68",
+    "7Leh9aHSxqc", "zYrPKZAxP9M", "Bfbt9cWxqC0", "r0vm6iDjLb0", "cDU1hv5pdqU",
+    "8YfkW9B_ZHA", "e8TwBREaX3U", "3dU2Z1tVHvA", "KwluagbLg4s", "oIRXrttwGbw",
+    "MMCDTrG3Mts", "kfk3f-w4s1s", "5XIuXTwWcWw", "ojhftchxNGk", "a1B4tIQd4uw",
+    "im7_8AIYVoQ", "Dkgfvos2SP4", "xUlnZFW6bTw"
+  ];
+
+  var grid = document.getElementById('shorts-grid');
+
+  SHORT_IDS.forEach(function(id) {
+    var card = document.createElement('div');
+    card.className = 'short-card';
+    card.innerHTML =
+      '<img src="https://i.ytimg.com/vi/' + id + '/hqdefault.jpg" alt="YouTube Short" loading="lazy">' +
+      '<button class="short-play" aria-label="Play video">' +
+        '<svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5v14l11-7z" fill="#212121"/></svg>' +
+      '</button>';
+    card.addEventListener('click', function() {
+      card.innerHTML =
+        '<iframe src="https://www.youtube.com/embed/' + id + '?autoplay=1" title="YouTube Short" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>';
+    }, { once: true });
+    grid.appendChild(card);
+  });
+</script>
+</body>
+</html>
