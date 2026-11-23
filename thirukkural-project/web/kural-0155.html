@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 155 — The Possession of Patience | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 155</h1>
+<p class="adhikaram"><a href="adhikaram-016.html">The Possession of Patience</a> &middot; Poraiyudaimai &middot; <span class="tamil">பொறையுடைமை</span></p>
+
+<div class="tamil-text">ஒறுத்தாரை ஒன்றாக வையாரே வைப்பர்
+பொறுத்தாரைப் பொன்போற் பொதிந்து.</div>
+<div class="translit">Oruththaarai ondraaga vaiyaare vaippar,
+Poruththaaraip ponpor podhindhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People think nothing of those who pay back every wrong. But they treasure those who stay patient, like gold kept safe and wrapped up.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Two kids get pushed in the lunch line. One shoves back hard, and the other says, &#x27;It&#x27;s okay.&#x27; Later, which one do people trust and want as a friend? This kural says people treasure the patient one like a piece of gold kept safe in a box, while the one who always hits back isn&#x27;t valued at all.</p>
+
+<h2 class="section">University</h2>
+<p>ஒறுத்தார் (&#x27;those who punished&#x27; the offender) and பொறுத்தார் (&#x27;those who bore it&#x27;) differ by a single initial consonant, and Valluvar uses the near-rhyme to make the moral contrast audible. ஒன்றாக வையார் means such people are not counted as anything at all, while பொன்போற் பொதிந்து வைப்பர் (&#x27;they wrap and keep like gold&#x27;) suggests a treasure bundled up and stored with care. The judgement is a social one: honor goes not to the person who wins the exchange of blows but to the one who refuses it. That reverses a warrior-culture instinct that leaving a slight unavenged is shameful. Aristotle is a useful contrast: he praises the good-tempered man who &#x27;tends to make allowances,&#x27; but warns that putting up with every insult can look &#x27;slavish.&#x27; Valluvar settles that tension firmly on the side of forbearance.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Forgiveness is a virtue of the weak, and an ornament of the strong.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m05/m05033.htm" target="_blank" rel="noopener">Mahabharata, Udyoga Parva, Section XXXIII, Vidura&#x27;s counsel (trans. K. M. Ganguli)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Vidura admits that people sometimes mistake the forgiving for weak, but insists that forgiveness is great power, a jewel worn by the strong.</div>
+  <div class="tieback">&#x27;Ornament&#x27; matches the kural&#x27;s gold. The forbearing person is prized and adorned, not despised.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For what glory is it, if, when ye be buffeted for your faults, ye shall take it patiently? but if, when ye do well, and suffer for it, ye take it patiently, this is acceptable with God.&rdquo;</div>
+  <div class="cite">&mdash; 1 Peter 2:20 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Peter tells believers that the real glory is patiently enduring mistreatment you didn&#x27;t deserve.</div>
+  <div class="tieback">Both texts say where true honor lies: with the one who bears wrong patiently, not the one who hits back.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And whoever is patient and forgives - indeed, that is of the matters [worthy] of resolve.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 42:43 (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Right after allowing proportionate retaliation, the Qur&#x27;an praises patience and forgiveness as a higher, more resolute path.</div>
+  <div class="tieback">Both texts rank the one who forbears above the one who retaliates.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;It is the discretion of a man to be slow to anger, And it is his glory to pass over a transgression.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Proverbs 19:11 (JPS 1917)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Proverbs calls overlooking an offence a person&#x27;s glory, that is, their honor and splendor.</div>
+  <div class="tieback">&#x27;His glory&#x27; corresponds to the kural&#x27;s &#x27;treasured like gold&#x27;: forbearance is what earns honor.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Who can blame such a one, as worthy as a coin of refined gold? Even the gods praise him; by Brahma, too, is he praised.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada, verse 230 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In the Dhammapada&#x27;s chapter on anger, the self-controlled person of flawless character is called as precious as refined gold and praised even by the gods.</div>
+  <div class="tieback">It uses the same gold image as the kural for the person who has mastered anger.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The young man&#x27;s self-restraint is self-restraint. The gift of him who owns no stores of wealth is gift indeed. When man has means and might to punish every fault, if he forbear, call him the patient man.&rdquo;</div>
+  <div class="cite">&mdash; Nālaṭiyār 65 (ch. 7, &#x27;The Absence of Anger: Meekness&#x27;), tr. G. U. Pope (1893); e-text at Project Madurai <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In its chapter on meekness, the Jain-authored Nālaṭiyār says that real forbearance belongs to the man who has the power to punish and holds back.</div>
+  <div class="tieback">Valluvar contrasts those who punish (ஒறுத்தார்), whom the world counts as nothing, with those who forbear (பொறுத்தார்), whom it treasures like gold, and the Nālaṭiyār uses the same pair of verbs (ஒறுக்கும் … பொறுக்கும்) to praise the man who could punish but forbears.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;When something is placed on the balancing scale and weighed, the side which descends is heavier.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 470, Raag Asa, Asa di Vaar, Salok Mahala 1, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Guru Nanak uses the scale to show that the one who bows low is found to weigh more.</div>
+  <div class="tieback">The Kural says people count the punisher as nothing and treasure the forbearing like wrapped gold; Guru Nanak likewise says the one who yields proves the more valuable when weighed.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Achilles, insulted when Agamemnon takes his prize Briseis, withdraws from the war in rage. His unappeased anger brings countless deaths on the Greeks.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, Iliad, Book I (trans. Samuel Butler)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The Iliad opens by naming Achilles&#x27; wrath as its subject, and it shows that refusing to let an insult pass wins the hero no lasting honor, only grief for his friends and for himself.</div>
+  <div class="tieback">A counter-example: the person who must avenge every slight ends up diminished, not treasured.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;For the good-tempered man is not revengeful, but rather tends to make allowances.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics IV.5 (trans. W. D. Ross)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Aristotle says good temper is praised, and that the good-tempered man is not vengeful but makes allowances. He also warns that tolerating every insult can look &#x27;slavish.&#x27;</div>
+  <div class="tieback">Aristotle praises the forbearing over the revengeful, as the kural does, though with more reservations.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Emperor Taizong of Tang makes his rival&#x27;s adviser Wei Zheng his trusted critic</div>
+  <div class="rle-meta">626-643 &middot; Chang&#x27;an (now Xi&#x27;an), China</div>
+  <div class="quote is-paraphrase">Wei Zheng had served as an adviser to Crown Prince Li Jiancheng and had urged him to strike first against his younger brother Li Shimin. After Li Shimin killed his brothers in 626 and became Emperor Taizong, Wei Zheng was not punished but entered the new emperor&#x27;s close circle as a counsellor. For years he criticised the emperor frankly, at one point pointing out more than 200 of his mistakes, which Taizong accepted and corrected; after Wei Zheng&#x27;s death Taizong wrote that, in losing him, he had lost a mirror in which to see his own failings.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Taizong&#x27;s tolerance of a former enemy turned blunt critic is one reason he is remembered as one of the greatest emperors in Chinese history, and Wei Zheng became the model of the honest minister.</div>
+  <div class="tieback">The kural says people count the punisher as nothing but treasure the forbearing like gold; Taizong&#x27;s forbearance won him an adviser he valued as a precious mirror and a lasting reputation as a model ruler.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-16/" target="_blank" rel="noopener">பொறையுடைமை / The Possession of Patience, Forbearance — Thirukural Chapter 16 (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries; G. U. Pope couplets)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-016.html" target="_blank" rel="noopener">பொறையுடைமை - அதிகாரம் 16 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html" target="_blank" rel="noopener">திருவள்ளுவர் அருளிய திருக்குறள் (Tirukkural, Unicode e-text)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-4"><a href="https://www.sacred-texts.com/hin/m05/m05033.htm" target="_blank" rel="noopener">The Mahabharata, Book 5: Udyoga Parva, Section XXXIII (Vidura Niti; trans. Kisari Mohan Ganguli)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-9">The Nāladiyār, or Four Hundred Quatrains in Tamil <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, The Iliad, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, tr. W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.chinafile.com/reporting-opinion/features/thousand-yes-men-cannot-equal-one-honest-advisor" target="_blank" rel="noopener">A Thousand Yes-Men Cannot Equal One Honest Advisor (Lei Si, translated by Eleanor Goodman)</a> <span class="tier">[web source]</span></li>
+<li id="cite-14"><a href="https://www.worldhistory.org/Emperor_Taizong_of_Tang/" target="_blank" rel="noopener">Emperor Taizong of Tang (Emily Mark)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0154.html">&larr; Kural 154</a>
+  <a href="kural-0156.html">Kural 156 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-016.html">The Possession of Patience</a>
+  <a class="skip-btn" href="kural-0161.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

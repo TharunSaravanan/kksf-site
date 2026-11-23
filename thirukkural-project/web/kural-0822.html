@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 822 — Unreal Friendship | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 822</h1>
+<p class="adhikaram"><a href="adhikaram-083.html">Unreal Friendship</a> &middot; Koodaa Natpu &middot; <span class="tamil">கூடா நட்பு</span></p>
+
+<div class="tamil-text">இனம்போன்று இனமல்லார் கேண்மை மகளிர்
+மனம்போல வேறு படும்.</div>
+<div class="translit">Inampondru inamallaar kenmai magalir
+manampola veru padum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The friendship of people who act like your own family but are not will keep changing, like the heart of someone whose love depends on being paid.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Some kids are your friend only when you have the best snack at lunch. The day you have nothing to share, they sit somewhere else. Their friendship changes shape depending on what they can get.</p>
+
+<h2 class="section">University</h2>
+<p>Inam (இனம்) means one’s own circle or kin; inam-pondru inam-allaar are those who resemble kin but are not. Kenmai (கேண்மை) is intimacy or friendship. The comparison with magalir manam (மகளிர் மனம்) is read by Parimelazhagar and the modern commentators (Varadarasanar, Pappaiah, Kalaignar, Puliyur Kesigan) specifically as the mind of courtesans (பொதுமகளிர் / விலைமகளிர்), whose affection follows payment, not as a judgment on women in general; Puliyur Kesigan glosses the point as changing ‘according to the gain received’. The comparison reflects the social assumptions of its age, but its logical point is clear: an attachment driven by gain changes when the gain changes. The text is identical in ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Hitopadesha’s first book, a jackal makes friends with a deer by flattering it, while really hoping to feed on it; the deer ignores the warnings of its old friend the crow until it is caught in a snare, and the jackal waits for it to die.</div>
+  <div class="cite">&mdash; <a href="https://en.wikipedia.org/wiki/Hitopadesha" target="_blank" rel="noopener">Hitopadesha, Book I (Mitralabha), the deer, the crow and the jackal</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The fable shows a newcomer who copies the language of friendship but is moved only by what he can gain.</div>
+  <div class="tieback">The jackal is ‘like kin but not kin’, and his friendship turns as soon as profit points elsewhere.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;A double minded man is unstable in all his ways.&rdquo;</div>
+  <div class="cite">&mdash; James 1:8 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">James warns that a divided heart produces a life with no fixed direction.</div>
+  <div class="tieback">The Kural’s false friend is ‘double-minded’ in just this sense, so his friendship keeps shifting.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And when they meet those who believe, they say, &quot;We believe&quot;; but when they are alone with their evil ones, they say, &quot;Indeed, we are with you; we were only mockers.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 2:14 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The hypocrites present themselves as one with the believers but change their words as soon as the company changes.</div>
+  <div class="tieback">They ‘seem like our own people but are not’, and their loyalty shifts with the room, as the Kural says.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Each of you, beware of your friend! / Trust not even your kinsfolk! / For every sibling takes advantage, / Every friend deals basely.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Jeremiah 9:3 (Revised JPS 2023, via Sefaria; KJV 9:4)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Jeremiah laments a time when even those who look like family and friends seek their own advantage.</div>
+  <div class="tieback">Both texts warn that the look of kinship guarantees nothing when advantage rules the heart.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;One is a bottle friend; one says, &#x27;friend, friend&#x27; only to one&#x27;s face; one is a friend and an associate only when it is advantageous.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta, DN 31 (trans. Narada Thera)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha lists kinds of companions whose friendship lasts only as long as it is convenient or profitable.</div>
+  <div class="tieback">A friend ‘only when it is advantageous’ is the Kural’s gain-driven friendship that changes form.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Men will remain until they have done their work in an old house the thatch of which is untied, keeping out the water by a dam, and being drenched with the rain falling down upon them. Thus will friends remain with one until their business is finished.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">Nālaṭiyār, ch. 24 (&#x27;Improper Friendship&#x27;), st. 1 (English translation in The Indian Antiquary, via wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The chapter on improper friendship in the Nālaṭiyār describes friends who stay only as long as they have something to gain, like workmen who put up with a leaking house until their job is done.</div>
+  <div class="tieback">Valluvar says friendship with those who only seem to be one&#x27;s own shifts with what they can get; the Nālaṭiyār&#x27;s friends who stay only &#x27;until their business is finished&#x27; are the same gain-driven bond.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;I thought that he was a great swan, so I associated with him. If I had known that he was only a wretched heron from birth, I would not have touched him.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 585, Raag Vadahans, Vadahans Ki Vaar (salok 2 before pauri 1), Guru Amar Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Amar Das uses the swan and heron (a bird that only looks like a swan) to describe one who passes for a true companion but is of another nature altogether.</div>
+  <div class="tieback">The Kural speaks of people who seem like one&#x27;s own kind but are not; Guru Amar Das&#x27;s heron that looked like a swan is the same kind of false likeness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Aesop’s fable of the bat and the weasels, a bat caught by one weasel claims to be a mouse, and caught by another that hates mice claims to be a bird, changing what it is to suit whoever holds it.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/21" target="_blank" rel="noopener">Aesop’s Fables, ‘The Bat and the Weasels’ (Townsend translation)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The bat survives by switching sides, belonging fully to no one.</div>
+  <div class="tieback">The Kural’s false kin likewise change their colours according to what each moment offers.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;For the essence of friendship being that two minds become as one, how can that ever take place if the mind of each of the separate parties to it is not single and uniform, but variable, changeable, and complex?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/2808" target="_blank" rel="noopener">Cicero, De Amicitia 25 (trans. E. S. Shuckburgh)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Cicero argues that friendship requires a steady, single-minded character, and that a changeable mind makes it impossible.</div>
+  <div class="tieback">Valluvar’s point is the same: a heart that ‘changes’ cannot hold a real friendship.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Warwick the Kingmaker turns against Edward IV</div>
+  <div class="rle-meta">1469-1471 &middot; England</div>
+  <div class="quote is-paraphrase">Richard Neville, Earl of Warwick, Edward IV&#x27;s cousin, had been the chief supporter who helped make him king in 1461. After quarrels over Edward&#x27;s marriage to Elizabeth Woodville and his growing independence, Warwick rebelled, fled to France in 1470, and was reconciled there with his former enemy Margaret of Anjou, wife of the Lancastrian king Henry VI. Returning to England in September 1470, he drove Edward into exile and put Henry VI back on the throne, but Edward returned and Warwick was killed at the Battle of Barnet in April 1471.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Warwick moved from kinsman and kingmaker to enemy as his own influence rose and fell, showing how little a kin-like bond meant when interests changed.</div>
+  <div class="tieback">The kural says the friendship of those who seem like your own people but are not will shift with what they can gain, and Warwick, Edward&#x27;s own cousin and chief ally, changed sides when his standing at court declined.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-83/" target="_blank" rel="noopener">Thirukkural Chapter 83: கூடாநட்பு / Unreal Friendship (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://thirukkural.net/ta/kural/adhigaram-083.html" target="_blank" rel="noopener">கூடா நட்பு - அதிகாரம் 83 - திருக்குறள் (with Puliyur Kesigan, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://en.wikipedia.org/wiki/Hitopadesha" target="_blank" rel="noopener">Hitopadesha, Book I: Mitralabha (The Winning of Friends) — the deer, the crow and the jackal</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The JPS Tanakh: Gender-Sensitive Edition (Revised JPS, 2023)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta: The Discourse to Sigala (Digha Nikaya 31), tr. Narada Thera</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">The Nāladiyār (English translation serialised in The Indian Antiquary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.gutenberg.org/ebooks/21" target="_blank" rel="noopener">Aesop&#x27;s Fables (George Fyler Townsend trans.)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/2808" target="_blank" rel="noopener">Laelius de Amicitia (On Friendship), in Treatises on Friendship and Old Age (Marcus Tullius Cicero)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Richard-Neville-16th-earl-of-Warwick" target="_blank" rel="noopener">Richard Neville, 16th earl of Warwick</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.royal.uk/edward-iv" target="_blank" rel="noopener">Edward IV (r. 1461-1470 and 1471-1483)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.britannica.com/event/Battle-of-Barnet" target="_blank" rel="noopener">Battle of Barnet</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0821.html">&larr; Kural 821</a>
+  <a href="kural-0823.html">Kural 823 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-083.html">Unreal Friendship</a>
+  <a class="skip-btn" href="kural-0831.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

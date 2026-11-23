@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1054 — Mendicancy | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1054</h1>
+<p class="adhikaram"><a href="adhikaram-106.html">Mendicancy</a> &middot; Iravu &middot; <span class="tamil">இரவு</span></p>
+
+<div class="tamil-text">இரத்தலும் ஈதலே போலும் கரத்தல்
+கனவிலும் தேற்றாதார் மாட்டு.</div>
+<div class="translit">Iraththalum eedhale polum karaththal
+kanavilum thetraadhaar maattu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Asking people who would never hold back, not even in a dream, is as worthy of respect as giving.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Some people love sharing so much that when you ask them, it&#x27;s like you&#x27;re doing them a favour. With friends like that, asking feels almost as good as giving.</p>
+
+<h2 class="section">University</h2>
+<p>The line iraththalum eedhale polum (இரத்தலும் ஈதலே போலும், &#x27;begging too is just like giving&#x27;) is one of the boldest claims in the Kural, and the emphatic ē in eedhale strengthens the equation. Its condition is that the giver karaththal kanavilum thetraadhaar (கரத்தல் கனவிலும் தேற்றாதார், &#x27;does not know concealment even in a dream&#x27;). Mu. Varadarasanar, Solomon Pappaiah and Kalaignar all read it as conferring the same dignity (சிறப்பு, பெருமை) on such asking as on giving. The commentarial tradition following Parimelazhagar explains the equation by the giver&#x27;s joy: asking such a person gives him the chance to give. Pope: &#x27;To beg of such ... is in fact the same as giving.&#x27; The texts on ytamizh.com and thirukkural.net agree.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Vamana episode, Vishnu takes the form of a dwarf brahmin and asks King Bali for three paces of land. Bali gives without holding back, even after his preceptor warns him, and his giving earns him lasting glory and divine favour.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/8/20/" target="_blank" rel="noopener">Bhagavata Purana 8.18-22 (Vamana and Bali) (paraphrase)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">When God himself becomes the asker, the request turns into an honour and a blessing for the one who gives.</div>
+  <div class="tieback">The story makes the Kural&#x27;s paradox literal: asking a giver who never withholds is a gift to that giver.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">The prophet Elijah asks a starving widow of Zarephath for water and a little bread, made from her last flour and oil. She gives, and her barrel of meal and cruse of oil do not run out for the rest of the famine.</div>
+  <div class="cite">&mdash; 1 Kings 17:10-16 (KJV) (paraphrase) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The prophet&#x27;s request, which looked like a burden on the widow, turned out to be a blessing for her.</div>
+  <div class="tieback">Asking a giver who does not hold back becomes, as the Kural says, like giving.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;[Saying], &quot;We feed you only for the face [i.e., approval] of Allāh. We wish not from you reward or gratitude.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 76:9 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The righteous feed the needy, the orphan and the captive, and tell them that they want no reward or even thanks.</div>
+  <div class="tieback">When a giver wants nothing back, the receiver owes nothing and is not lowered, so asking such a person costs no honour.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;More than what the homeowner does for the poor person, the poor person does for the homeowner&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Vayikra_Rabbah.34.8" target="_blank" rel="noopener">Vayikra Rabbah 34:8 (The Sefaria Midrash Rabbah, 2022, tr. Joshua Schreier)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbi Yehoshua reads Ruth&#x27;s words about Boaz, &#x27;for whom I acted today&#x27;, as showing that by accepting his bread she did him a greater favour, giving him the merit of charity.</div>
+  <div class="tieback">The midrash says almost exactly what the Kural says: the one who receives also gives.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Monks, brahmans &amp; householders are very helpful to you, as they provide you with the requisites of robes, alms food, lodgings, &amp; medical requisites for the sick. And you, monks, are very helpful to brahmans &amp; householders, as you teach them the Dhamma&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/kn/iti/iti.4.100-112.than.html" target="_blank" rel="noopener">Itivuttaka 107 (tr. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha describes a two-way exchange: lay people give material support, and the monks who receive it give the Dhamma in return.</div>
+  <div class="tieback">The almsman who asks is also a giver, which is the Kural&#x27;s equation of asking with giving.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">The Tattvartha Sutra defines dana (giving) as parting with one&#x27;s own things for anugraha, the benefit of both oneself and the other, and teaches that its fruit depends on the manner, the thing given, the giver and the recipient.</div>
+  <div class="cite">&mdash; Tattvartha Sutra 7.38-39 (Svetambara numbering; paraphrase) <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In Jain doctrine a gift benefits the giver as much as the receiver, through the merit and the loosening of attachment it brings.</div>
+  <div class="tieback">If giving benefits both sides equally, then asking and giving share in the same good, which is the Kural&#x27;s claim.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The Great Giver does not hold back anything.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 5, Japji Sahib (Pauri 25), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Japji Sahib, Guru Nanak says God&#x27;s gifts are beyond reckoning and the Giver keeps back not even a sesame seed&#x27;s worth.</div>
+  <div class="tieback">The Kural says asking is as honourable as giving when the giver would never think of withholding, even in a dream; Guru Nanak describes the Great Giver as exactly such a one, who holds nothing back.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;I too was a rich man once, and had a fine house of my own; in those days I gave to many a tramp such as I now am, no matter who he might be nor what he wanted.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, Odyssey 17 (tr. Samuel Butler)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The disguised Odysseus tells Antinous that he was once a rich giver to every tramp, and now stands asking himself.</div>
+  <div class="tieback">Asker and giver are the same man at different times, which hints at the Kural&#x27;s equation of the two.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Being asked why people give to beggars but not to philosophers, he said, ‘Because they think they may one day be lame or blind, but never expect that they will turn to philosophy.’&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Lives_of_the_Eminent_Philosophers/Book_VI" target="_blank" rel="noopener">Diogenes Laertius, Lives of the Eminent Philosophers 6.56 (tr. R. D. Hicks)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Diogenes says that people give to beggars because they can picture themselves in the beggar&#x27;s place.</div>
+  <div class="tieback">His answer touches the Kural&#x27;s insight that giver and asker are not so far apart.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Abbe Pierre&#x27;s winter appeal sets off an uprising of kindness</div>
+  <div class="rle-meta">1 February 1954 &middot; Paris, France</div>
+  <div class="quote is-paraphrase">During an exceptionally harsh winter, after learning that a woman evicted from her home had died of cold in a Paris street, the priest Abbe Pierre wrote an appeal for the homeless that was broadcast on Paris-Inter and Radio Luxembourg on 1 February 1954, asking for blankets, tents and stoves. The public response was so great that the press called it an uprising of kindness; within days the government released funds for emergency housing, and the appeal led to the rapid growth of the Emmaus movement.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A single request on behalf of the destitute was answered so generously that the act of asking became the occasion for an entire nation&#x27;s giving.</div>
+  <div class="tieback">The kural says that asking of those who would never withhold, even in a dream, is as honourable as giving, and Abbe Pierre&#x27;s appeal to a generous public was itself remembered as an act of great charity.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-106/" target="_blank" rel="noopener">Thirukkural Chapter 106: இரவு / Mendicancy (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-106.html" target="_blank" rel="noopener">இரவு - அதிகாரம் 106 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/sb/8/20/" target="_blank" rel="noopener">Śrīmad Bhāgavatam 8.20: Bali Mahārāja Surrenders the Universe (Vāmana becomes Trivikrama)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Vayikra_Rabbah.34.8" target="_blank" rel="noopener">Vayikra Rabbah 34:8 (The Sefaria Midrash Rabbah, 2022, tr. Joshua Schreier)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/kn/iti/iti.4.100-112.than.html" target="_blank" rel="noopener">Itivuttaka 107 (Iti 4.8) — householders and the homeless in mutual dependence, trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">Tattvārtha Sūtra of Umāsvāti (That Which Is) <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, The Odyssey, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://en.wikisource.org/wiki/Lives_of_the_Eminent_Philosophers/Book_VI" target="_blank" rel="noopener">Diogenes Laertius, Lives of the Eminent Philosophers, Book VI (tr. R. D. Hicks, 1925)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.emmaus-international.org/en/our-history/history-of-the-movement/" target="_blank" rel="noopener">History of the movement</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.ina.fr/ina-eclaire-actu/video/i19064043/hiver-1954-l-appel-de-l-abbe-pierre" target="_blank" rel="noopener">Hiver 1954 : l&#x27;appel de l&#x27;Abbe Pierre</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1053.html">&larr; Kural 1053</a>
+  <a href="kural-1055.html">Kural 1055 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-106.html">Mendicancy</a>
+  <a class="skip-btn" href="kural-1061.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 977 — Greatness | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 977</h1>
+<p class="adhikaram"><a href="adhikaram-098.html">Greatness</a> &middot; Perumai &middot; <span class="tamil">பெருமை</span></p>
+
+<div class="tamil-text">இறப்பே புரிந்த தொழிற்றாம் சிறப்புந்தான்
+சீரல் லவர்கண் படின்.</div>
+<div class="translit">Irappe purindha thozhitraam sirappundhaan
+seeral lavarkan padin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>When honor and high position come to people of poor character, it only makes them act in ways that go beyond all limits.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Give a bossy child the job of class leader and he might start ordering everyone around and showing off. The badge was meant for helping, but in the wrong hands it turns into bullying.</p>
+
+<h2 class="section">University</h2>
+<p>Sirappu (சிறப்பு, &#x27;eminence, distinction&#x27;) here covers whatever raises a person; Solomon Pappaiah lists money, learning and office, and Pope&#x27;s explanation &#x27;nobility of birth, wealth and learning&#x27; reflects the traditional commentarial list. When it reaches seeral lavar (சீரல்லவர், &#x27;those without worth&#x27;), it becomes irappe purindha thozhitru (இறப்பே புரிந்த தொழிற்று), &#x27;of the nature of acting only in excess&#x27;: irappu (இறப்பு) is taken by Mu. Varadarasanar and Kalaignar as &#x27;overstepping the bounds&#x27; (வரம்பு மீறிய செயல்) and by Kesikan as being driven into arrogance. Sivayogi Sivakumar reads irappu as &#x27;destruction&#x27;, a minority gloss. The couplet is the negative counterpart to Kural 975: the same eminence that lets the great do rare deeds makes the small insolent. The text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Self-complacent and always impudent, deluded by wealth and false prestige, they sometimes proudly perform sacrifices in name only, without following any rules or regulations.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 16.17 (Bhagavad-gītā As It Is, A.C. Bhaktivedanta Swami Prabhupāda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna describes the demoniac as people whom wealth and prestige make impudent and lawless.</div>
+  <div class="tieback">Like the Kural, it shows advantages turning into insolence and disregard of every limit in unworthy hands.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For three things the earth is disquieted, and for four which it cannot bear: For a servant when he reigneth; and a fool when he is filled with meat;&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 30:21-22 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Proverbs names the unfit person suddenly raised to power as something the world cannot bear.</div>
+  <div class="tieback">This is the Kural&#x27;s distinction falling to the unworthy and turning into excess.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;No! [But] indeed, man transgresses Because he sees himself self-sufficient.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 96:6-7 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an says a person oversteps bounds once he feels he needs no one.</div>
+  <div class="tieback">The Kural&#x27;s &#x27;deeds that overstep the limit&#x27; arise in the same way when the unworthy gain distinction.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;When you have eaten your fill, and have built fine houses to live in, and your herds and flocks have multiplied, and your silver and gold have increased, and everything you own has prospered, beware lest your heart grow haughty and you forget the Eternal your God…&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Proverbs.24.30-34" target="_blank" rel="noopener">Deuteronomy 8:12-14 (The JPS Tanakh: Gender-Sensitive Edition, 2023, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Moses warns Israel that prosperity can make the heart haughty.</div>
+  <div class="tieback">Like the Kural, it warns that advantages can turn into arrogance.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;To his own ruin the fool gains knowledge, for it cleaves his head and destroys his innate goodness.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 72 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada says that in a fool even knowledge becomes destructive.</div>
+  <div class="tieback">This is the Kural&#x27;s point: a distinction such as learning, held by the unworthy, turns to harm.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">Samantabhadra&#x27;s householder manual lists eight kinds of pride (mada) to be given up: pride in knowledge, honour, family, caste, power, attainments, austerity and bodily beauty, warning that one who looks down on others through such pride offends against the faith itself.</div>
+  <div class="cite">&mdash; <a href="https://archive.org/details/TheRatnaKarandaSravakachara" target="_blank" rel="noopener">Ratnakaranda Shravakachara of Samantabhadra, vv. 25-26 (tr. Champat Rai Jain)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jain ethics treats every advantage of birth, learning, power or beauty as a possible source of corrupting pride.</div>
+  <div class="tieback">The eight madas are exactly the Kural&#x27;s distinctions that, in the unworthy, breed overbearing conduct.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Royal power, wealth, beauty, social status and youth are the five thieves. These thieves have plundered the world; no one’s honor has been spared.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1288, Raag Malaar, Vaar Malaar, Salok Mahala 1, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak lists the very things that raise a person in the world (power, wealth, beauty, status, youth) and calls them thieves. Unless a person is anchored in the Guru, they lead to ruin, and the next line says only those who fall at the Guru&#x27;s feet rob these robbers.</div>
+  <div class="tieback">The Kural warns that distinction falling to the unworthy turns into excess, and Guru Nanak names the same gifts of eminence as forces that plunder anyone who is not inwardly fit to hold them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Ixion, after being purified by Zeus and honoured with a place among the gods on Olympus, repaid the favour by trying to seduce Hera, and was bound for ever to a fiery wheel.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0162:book=P.:poem=2" target="_blank" rel="noopener">Pindar, Pythian Ode 2 (Ixion myth)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Pindar tells the story as a warning about a man who could not bear his good fortune.</div>
+  <div class="tieback">Ixion is the Kural&#x27;s unworthy man whose distinction turns at once into outrageous excess.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In the Rhetoric Aristotle sketches the characters that wealth and power produce, observing that the newly rich in particular become insolent and arrogant, behaving as though they possessed every good.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/rhetoric.html" target="_blank" rel="noopener">Aristotle, Rhetoric II.16 (trans. W. Rhys Roberts)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle analyses how fortune tends to warp the character of those who receive it.</div>
+  <div class="tieback">Like the Kural, he notes that distinction in unfit hands turns into insolence.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Mobutu Sese Seko builds his palace city at Gbadolite</div>
+  <div class="rle-meta">During Mobutu&#x27;s rule, 1965-1997 &middot; Gbadolite, Zaire (now Democratic Republic of the Congo)</div>
+  <div class="quote is-paraphrase">Mobutu Sese Seko seized power in Zaire in 1965 and, while corruption and mismanagement led the country into decline, amassed one of the largest personal fortunes in the world. In his home region of Gbadolite he built three palaces lined with Italian marble, guest houses for the world&#x27;s rich and famous, Chinese pagodas, a private hydroelectric plant and an airstrip for the Concorde airliner he frequently used, a complex nicknamed the Versailles of the Jungle. After he was overthrown in 1997 the palaces were looted and now stand in ruins in one of the poorest countries on earth.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The highest office in a vast nation became, in Mobutu&#x27;s hands, a means to lavish excess while its people grew poorer.</div>
+  <div class="tieback">The kural says that distinction falling to the unworthy turns into deeds that overstep every limit, and supreme office in Mobutu&#x27;s hands produced the boundless extravagance of Gbadolite.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-98/" target="_blank" rel="noopener">Thirukkural Chapter 98: பெருமை / Greatness (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-098.html" target="_blank" rel="noopener">பெருமை - அதிகாரம் 98 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Proverbs.24.30-34" target="_blank" rel="noopener">The JPS Tanakh: Gender-Sensitive Edition (Revised JPS, 2023) — Ecclesiastes 10:18; Proverbs 24:30-34</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://archive.org/details/TheRatnaKarandaSravakachara" target="_blank" rel="noopener">Ratnakaraṇḍa Śrāvakācāra of Samantabhadra (The Householder&#x27;s Dharma)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0162:book=P.:poem=2" target="_blank" rel="noopener">Pindar, Pythian Ode 2 (Diane Svarlien trans., 1990)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/rhetoric.html" target="_blank" rel="noopener">Aristotle, Rhetoric</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/summary/Mobutu-Sese-Seko" target="_blank" rel="noopener">Mobutu Sese Seko summary</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.monitor.co.ug/uganda/news/love-among-the-ruins-for-mobutu-25-years-after-his-ouster-3813988" target="_blank" rel="noopener">Love among the ruins for Mobutu 25 years after his ouster (AFP)</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0976.html">&larr; Kural 976</a>
+  <a href="kural-0978.html">Kural 978 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-098.html">Greatness</a>
+  <a class="skip-btn" href="kural-0981.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

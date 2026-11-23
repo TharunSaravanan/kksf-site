@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 638 — Ministry of State | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 638</h1>
+<p class="adhikaram"><a href="adhikaram-064.html">Ministry of State</a> &middot; Amaichu &middot; <span class="tamil">அமைச்சு</span></p>
+
+<div class="tamil-text">அறிகொன்று அறியான் எனினும் உறுதி
+உழையிருந்தான் கூறல் கடன்.</div>
+<div class="translit">Arikondru ariyaan eninum urudhi
+Uzhaiyirundhaan kooral kadan.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Even if the king ignores good advice and does not know better himself, the adviser by his side still has the duty to tell him what is truly good.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine your friend is about to do something unsafe and will not listen. A true friend still tells them the truth, even if they get grumpy. This kural says a leader’s adviser must always tell the leader what is good, even when the leader does not want to hear it.</p>
+
+<h2 class="section">University</h2>
+<p>Arikondru (‘having killed knowledge’) is usually taken to mean that the king destroys or ignores the counsel of those who know. Ariyaan eninum (‘even if he himself does not know’) adds that he also lacks knowledge of his own. Even then urudhi (what is truly and lastingly beneficial) must be told (kooral kadan, ‘speaking is a duty’) by the uzhaiyirundhaan, ‘the one who is at his side’, meaning the minister. Solomon Pappaiah stresses that the minister must speak without anger and without fear. Kalaignar applies the verse to those near any ruler. The couplet is the moral centre of the chapter: the minister’s duty to give frank counsel does not depend on whether it will be welcomed. The thirukkural-thamizh.org edition prints ‘arikon rariyaa neninu murudhi / yuzhaiyirundhaan’, a difference of word division only.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;They are abundant, O king, that can always speak agreeable words. The speaker, however, is rare, as also the hearer, of words that are disagreeable but medicinal.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/m05/m05037.htm" target="_blank" rel="noopener">Mahabharata, Udyoga Parva 37 (Vidura Niti), trans. K. M. Ganguli</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Vidura tells the blind king Dhritarashtra, whose sons are heading for ruin, that honest but unwelcome advice is rare.</div>
+  <div class="tieback">Vidura is doing what the Kural requires: telling a king who will not listen what is good for him.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For John had said unto Herod, It is not lawful for thee to have thy brother’s wife.&rdquo;</div>
+  <div class="cite">&mdash; Mark 6:18 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">John the Baptist confronts King Herod about his unlawful marriage, and it later costs him his life.</div>
+  <div class="tieback">He shows the Kural’s duty to tell a ruler the truth whatever the cost.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;The Religion is sincerity.” We said, “To whom?” He said “To Allah, to His Book, To His Messenger, and to the leaders of the Muslims and their masses.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/muslim:55a" target="_blank" rel="noopener">Sahih Muslim 55a</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Prophet defines religion as nasiha, sincere good counsel, owed even to those in authority.</div>
+  <div class="tieback">This makes the Kural’s duty to give leaders sincere advice part of faith itself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;And Nathan said to David: ‘Thou art the man.’&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">II Samuel 12:7 (JPS 1917)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">After telling David a parable about a rich man who stole a poor man’s lamb, the prophet Nathan confronts the king directly over his sin with Bathsheba and Uriah.</div>
+  <div class="tieback">Nathan, a member of David’s court, tells his king the unwelcome truth, as the Kural requires of the one at the ruler’s side.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;In the case of words that the Tathagata knows to be factual, true, beneficial, but unendearing &amp; disagreeable to others, he has a sense of the proper time for saying them.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/mn/mn.058.than.html" target="_blank" rel="noopener">Abhaya Sutta, Majjhima Nikaya 58 (trans. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha tells Prince Abhaya that he will speak true and beneficial words even when they are unwelcome, choosing the right moment.</div>
+  <div class="tieback">This matches the Kural’s urudhi, beneficial counsel given even when it will be disliked.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;If you have no intention of abandoning pleasure, and still long for undertakings and property, my long talk has been to no purpose. I go, king, farewell.” And Brahmadatta, king of the Pañkâlas, did not act on the counsel of the saint …&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 13.33-34 (cf. 13.15) (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The monk Citta, out of old friendship and concern for the king&#x27;s welfare, gives the emperor Brahmadatta honest advice again and again; the king admits he knows the Law but will not follow it, and comes to ruin.</div>
+  <div class="tieback">The Kural says that even when the king rejects good counsel and is ignorant himself, the one beside him must still tell him what is truly good; Citta does this to the end, though the king will not listen.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Nanak speaks the Word of Truth; he proclaims the Truth at this, the right time.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 723, Raag Tilang, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">This line closes a hymn of Raag Tilang that belongs to Guru Nanak&#x27;s Babarvani, his hymns about Babur&#x27;s invasion, in which he speaks plainly of the cruelty of the powerful.</div>
+  <div class="tieback">The Kural says the one who stands beside the king must still tell him what is truly good, even if the king rejects advice; Guru Nanak insists on proclaiming the truth to the powerful at the very moment it is needed.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Before the fighting at the Greek ships, the Trojan counsellor Polydamas urges Hector to withdraw the army inside the city walls now that Achilles has returned. Hector angrily rejects the advice, and the Trojans suffer heavy losses. Hector later admits that he should have listened.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, Iliad 18 and 22 (trans. Samuel Butler)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Polydamas gives honest counsel to a leader who will not listen.</div>
+  <div class="tieback">This is the Kural’s situation: a counsellor at the leader’s side whose sound advice is spurned.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Plutarch argues that the true friend is known by his frank speech (parrhesia). He is willing to point out a man’s faults for his good, while the flatterer only says what pleases. Plutarch adds that this frankness should be used with tact and at the right moment.</div>
+  <div class="cite">&mdash; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Moralia/How_to_tell_a_flatterer*.html" target="_blank" rel="noopener">Plutarch, How to Tell a Flatterer from a Friend (Moralia)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">For Plutarch, honest criticism given for the other person’s benefit is the sign of real loyalty.</div>
+  <div class="tieback">This is the minister’s duty in the Kural to speak urudhi, what is truly beneficial.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Hai Rui&#x27;s memorial rebukes the Jiajing Emperor</div>
+  <div class="rle-meta">1566 &middot; Beijing, China</div>
+  <div class="quote is-paraphrase">The Ming Jiajing Emperor had for more than twenty years largely stopped holding court audiences and spent heavily on Daoist rituals and the search for longevity. In 1566 Hai Rui, a secretary in the Ministry of Revenue, submitted a memorial criticising the emperor for this neglect of government, and the emperor had him thrown into prison. Early in 1567, a few days after the emperor&#x27;s death, Hai Rui was released and restored to his rank, and he was later honoured with the posthumous name Loyal and Incorruptible.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Hai Rui spoke plainly to a ruler who was known to punish critics, and his courage made him a lasting model of the honest official in China.</div>
+  <div class="tieback">The kural says that even when the ruler rejects wise advice and is ignorant himself, the one at his side must still tell him what is truly good, and Hai Rui did so at the cost of his freedom.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-64/" target="_blank" rel="noopener">Thirukkural Chapter 64: அமைச்சு / The Office of Minister of State (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A064.html" target="_blank" rel="noopener">64. அமைச்சு (Thirukkural, older-orthography text)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.thirukkural.net/ta/kural/adhigaram-064.html" target="_blank" rel="noopener">அமைச்சு - அதிகாரம் 64 (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah and Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://sacred-texts.com/hin/m05/m05037.htm" target="_blank" rel="noopener">The Mahabharata, Book 5: Udyoga Parva, Section XXXVII (tr. K. M. Ganguli)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/muslim:55a" target="_blank" rel="noopener">Sahih Muslim 55 (Book of Faith: The religion is sincere advice)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">Hebrew-English Bible (JPS 1917 translation): Proverbs, II Samuel, Psalms, Daniel</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.accesstoinsight.org/tipitaka/mn/mn.058.than.html" target="_blank" rel="noopener">Abhaya Sutta: To Prince Abhaya (MN 58), tr. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, The Iliad, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Moralia/How_to_tell_a_flatterer*.html" target="_blank" rel="noopener">Plutarch, Moralia: How to Tell a Flatterer from a Friend</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="http://www.chinaknowledge.de/History/Ming/personsmingshizong.html" target="_blank" rel="noopener">Ming Shizong, the Jiajing Emperor (Ulrich Theobald)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.encyclopedia.com/history/news-wires-white-papers-and-books/hai-rui" target="_blank" rel="noopener">Hai Rui (World Eras)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0637.html">&larr; Kural 637</a>
+  <a href="kural-0639.html">Kural 639 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-064.html">Ministry of State</a>
+  <a class="skip-btn" href="kural-0641.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

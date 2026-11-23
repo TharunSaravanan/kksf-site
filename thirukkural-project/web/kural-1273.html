@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1273 — The Reading of the Signs | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1273</h1>
+<p class="adhikaram"><a href="adhikaram-128.html">The Reading of the Signs</a> &middot; Kuripparivuruthal &middot; <span class="tamil">குறிப்பறிவுறுத்தல்</span></p>
+
+<div class="tamil-text">மணியில் திகழ்தரு நூல்போல் மடந்தை
+அணியில் திகழ்வதொன்று உண்டு.</div>
+<div class="translit">Maniyil thikazhdharu noolpol madandhai
+aniyil thikazhvadhondru undu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Just as the thread shows through the clear beads strung on it, something shines through this young woman&#x27;s beauty.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you thread clear glass beads on a string, you can see the string running through them. The poet says his beloved’s beauty is like those beads: you can see a hidden feeling running through it, if you look closely.</p>
+
+<h2 class="section">University</h2>
+<p>The image is of a string of maṇi (gems or crystal beads) through which the nūl (thread) can be seen; the maṭantai (young woman) has something that likewise tikaḻvatu, shines through her aṇi (beauty or adornment). Varadarasanar and Kesikan gloss that ‘something’ as a kuṟippu, a hidden intent visible within her beauty; Solomon Pappaiah takes the gems as clear crystal (paḷiṅku) through which the thread is seen, and Kalaignar as a sign that enchants the speaker. In the traditional arrangement the husband speaks to the confidante, saying the wife’s hidden feeling is legible through her looks. The couplet is identical on ytamizh.com and thirukkural.net; the thread-and-gem simile is also famous from Bhagavad Gita 7.7, though there it describes the divine as the string on which the world is threaded.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;O conqueror of wealth, there is no truth superior to Me. Everything rests upon Me, as pearls are strung on a thread.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 7.7 (tr. A.C. Bhaktivedanta Swami Prabhupada, Bhagavad-gita As It Is)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna says he is the hidden thread holding all things together, as a string holds a necklace of pearls.</div>
+  <div class="tieback">The Kural uses the same thread-through-gems image for a hidden meaning running through visible beauty.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;A good man out of the good treasure of his heart bringeth forth that which is good; and an evil man out of the evil treasure of his heart bringeth forth that which is evil: for of the abundance of the heart his mouth speaketh.&rdquo;</div>
+  <div class="cite">&mdash; Luke 6:45 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus teaches that what is inside a person shows itself on the outside.</div>
+  <div class="tieback">The Kural sees the same movement from inside to outside, an inner feeling showing through her beauty.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Their mark is on their faces from the trace of prostration.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 48:29 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an says the inner devotion of the faithful leaves a visible sign on their faces.</div>
+  <div class="tieback">As the thread shows through the beads, an inner state shows through the face in both texts.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;A man’s wisdom maketh his face to shine, and the boldness of his face is changed.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">Ecclesiastes 8:1 (JPS 1917, via Mechon-Mamre)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Ecclesiastes says inner wisdom becomes visible as a light in the face.</div>
+  <div class="tieback">The Kural also sees something inward shining through outward beauty.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Buddha compares the meditator’s insight to a man of good eyesight holding a clear, well-polished beryl gem through which a coloured thread runs, and seeing both the gem and the thread inside it.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/dn/dn.02.0.than.html" target="_blank" rel="noopener">Digha Nikaya 2, Samaññaphala Sutta (paraphrase; cf. tr. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The simile describes seeing clearly how consciousness is bound up with the body, as a thread is seen through a gem.</div>
+  <div class="tieback">The Kural uses the identical picture of a thread visible within a gem, but for a feeling seen within beauty.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;A young woman, putting on fine ornaments and clothes, will say to a Sramana: ‘I shall give up (my former way of life) and practise the rough (viz. control). Reverend sir, teach me the Law!’&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sutrakritanga 1.4.1.25 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Sutrakritanga warns monks that a woman’s ornaments and pious words may carry a hidden intention.</div>
+  <div class="tieback">The Kural also sees an intention running beneath a woman’s adornment, but reads it tenderly where the Jain text reads it with suspicion.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The universe is strung on His Thread.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1150, Raag Bhairao, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Arjan says that all creation is held together by the Lord, like beads on a string that is hidden but runs through them all.</div>
+  <div class="tieback">The Kural sees the thread showing through crystal beads as a picture of the hidden feeling shining through the young woman&#x27;s beauty; Guru Arjan uses the same thread-and-beads image for the hidden Lord running through all things.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Hesiod tells how the gods adorned Pandora with a golden band, garlands and every grace, while Hermes placed within her a hidden nature of his own devising.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 60-82 (paraphrase; cf. tr. H.G. Evelyn-White)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Hesiod the first woman’s adornment conceals something set inside her.</div>
+  <div class="tieback">The Kural also sees something within a woman’s beauty, though for Valluvar it is a tender feeling, while for Hesiod it is guile.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Alcibiades compares Socrates to the statues of Silenus sold in workshops, which open up to reveal images of the gods inside.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Plato/symposium.html" target="_blank" rel="noopener">Plato, Symposium 215a-b (paraphrase; cf. tr. Benjamin Jowett)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Plato uses the image to say that something precious lies inside an outward form and can be seen by those who look within.</div>
+  <div class="tieback">The Kural also speaks of something within a visible form that shines out to the attentive eye.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Dorothy Hodgkin reveals the structures hidden inside crystals</div>
+  <div class="rle-meta">1940s-1964 &middot; England</div>
+  <div class="quote is-paraphrase">Dorothy Crowfoot Hodgkin became a leading practitioner of X-ray crystallography, which uses the way X-rays pass through a crystal to work out the arrangement of the atoms within it. Using this method she determined the structures of penicillin in the 1940s, vitamin B12 in 1956, and later insulin. She received the Nobel Prize in Chemistry in 1964.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Her work showed that the inner pattern of a substance can be read by looking through the crystal that contains it.</div>
+  <div class="tieback">The kural compares a hidden feeling showing through a woman&#x27;s beauty to the thread visible through crystal beads; Hodgkin&#x27;s science literally read the hidden structure through the crystal.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-128/" target="_blank" rel="noopener">Thirukkural Chapter 128: குறிப்பறிவுறுத்தல் / The Reading of the Signs (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-128.html" target="_blank" rel="noopener">குறிப்பறிவுறுத்தல் - அதிகாரம் 128 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917), Hebrew-English Bible</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/dn/dn.02.0.than.html" target="_blank" rel="noopener">Digha Nikaya 2, Samaññaphala Sutta: The Fruits of the Contemplative Life</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga (Sutrakritanga)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Plato/symposium.html" target="_blank" rel="noopener">Plato, Symposium, tr. Benjamin Jowett</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.nobelprize.org/prizes/chemistry/1964/hodgkin/facts/" target="_blank" rel="noopener">Dorothy Crowfoot Hodgkin - Facts</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.sciencehistory.org/education/scientific-biographies/dorothy-crowfoot-hodgkin/" target="_blank" rel="noopener">Dorothy Crowfoot Hodgkin</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1272.html">&larr; Kural 1272</a>
+  <a href="kural-1274.html">Kural 1274 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-128.html">The Reading of the Signs</a>
+  <a class="skip-btn" href="kural-1281.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

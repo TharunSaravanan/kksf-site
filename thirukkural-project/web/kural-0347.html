@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 347 — Renunciation | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 347</h1>
+<p class="adhikaram"><a href="adhikaram-035.html">Renunciation</a> &middot; Thuravu &middot; <span class="tamil">துறவு</span></p>
+
+<div class="tamil-text">பற்றி விடாஅ இடும்பைகள் பற்றினைப்
+பற்றி விடாஅ தவர்க்கு.</div>
+<div class="translit">Patri vidaaa idumbaigal patrinaip
+Patri vidaaa thavarkku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Sorrows grab hold and never let go of people who hold tightly to the things they are attached to and will not let them go.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you grab a cactus and refuse to let go, it keeps hurting you. This kural says when you hang on tightly to things, troubles hang on tightly to you.</p>
+
+<h2 class="section">University</h2>
+<p>One of the Kural&#x27;s most celebrated pieces of wordplay: the phrase patri vidaaa (“seizing, not releasing”) appears twice, first describing sorrows (idumbaigal) and then describing people who hold on to patru (attachment). The mirror structure enacts the moral — the grip we exert is the grip exerted upon us. Mu. Varadarasan specifies the attachments as the twofold &#x27;I&#x27; and &#x27;mine&#x27; of the previous couplet, making this verse the causal explanation of Kural 346. The same self-reinforcing loop is analysed in Buddhist accounts of craving, in the Gita&#x27;s chain from dwelling on objects to attachment to desire, and in Spinoza&#x27;s description of human bondage to the passions.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;While contemplating the objects of the senses, a person develops attachment for them, and from such attachment lust develops, and from lust anger arises.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 2.62 (Prabhupada, As It Is)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna traces a chain reaction: dwelling on objects breeds attachment, attachment breeds desire, and desire breeds anger (and, in the next verse, ruin).</div>
+  <div class="tieback">Both show attachment generating its own suffering in a chain that tightens around the one who clings.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But they that will be rich fall into temptation and a snare, and into many foolish and hurtful lusts, which drown men in destruction and perdition. For the love of money is the root of all evil: which while some coveted after, they have erred from the faith, and pierced themselves through with many sorrows.&rdquo;</div>
+  <div class="cite">&mdash; 1 Timothy 6:9-10 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul warns that clinging to wealth traps people in a snare and ends with them piercing themselves with many sorrows.</div>
+  <div class="tieback">&#x27;Pierced themselves through with many sorrows&#x27; is the Kural&#x27;s image exactly: the one who clings is held fast by grief of his own making.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Competition in [worldly] increase diverts you Until you visit the graveyards.&rdquo;</div>
+  <div class="cite">&mdash; Quran 102:1-2 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Quran describes people so gripped by the race for more that it holds them until death.</div>
+  <div class="tieback">The grip of acquisitiveness never lets go until the grave — the Kural&#x27;s picture of attachment holding its holder fast.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;He that loveth silver shall not be satisfied with silver; nor he that loveth abundance with increase: this is also vanity.&rdquo;</div>
+  <div class="cite">&mdash; Ecclesiastes 5:10 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Qoheleth observes that loving wealth produces endless dissatisfaction rather than contentment.</div>
+  <div class="tieback">Clinging to wealth produces a restless dissatisfaction that never releases its grip.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Whoever is overcome by this wretched and sticky craving, his sorrows grow like grass after the rains.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 335 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha calls craving &#x27;sticky&#x27; and says the sorrows of one it overcomes multiply like grass after rain.</div>
+  <div class="tieback">&#x27;Sticky&#x27; craving and multiplying sorrows mirror the Kural&#x27;s image of attachment and grief each refusing to let go.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As the crane is produced from an egg, and the egg is produced from a crane, so they call desire the origin of delusion, and delusion the origin of desire.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 32.6 (tr. Hermann Jacobi, SBE 45, 1895, p. 185)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Mahāvīra describes a closed loop: desire produces delusion, and delusion produces desire again, like crane and egg. Elsewhere in the same lecture this cycle is shown to generate karma and misery.</div>
+  <div class="tieback">Valluvar&#x27;s mirrored phrase, sorrows that seize and never let go of those who seize and never let go, enacts the same self-feeding cycle that the crane-and-egg image describes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;In that pool, people have made their homes, but the water there is as hot as fire! In the swamp of emotional attachment, their feet cannot move. I have seen them drowning there.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 12, Raag Aasaa (in the So Purakh section of Rehras), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Guru Nanak pictures the world as a burning pool and emotional attachment (moh) as a swamp that holds the feet fast until people drown.</div>
+  <div class="tieback">The Kural says sorrows grip and never release those who grip their attachments; Guru Nanak shows the same grip from the other side, a swamp of attachment that will not let the feet go.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Granted his wish that everything he touched should turn to gold, King Midas finds that his food, drink and everything he holds turns to metal, and he begs to be freed from the gift he craved.</div>
+  <div class="cite">&mdash; <a href="https://ovid.lib.virginia.edu/trans/Ovhome.htm" target="_blank" rel="noopener">Ovid, Metamorphoses 11.85-145</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Ovid&#x27;s telling, Midas&#x27;s greed becomes a curse that clings to his very hands until the god releases him.</div>
+  <div class="tieback">Midas grasps at gold, and the thing he grasps grasps back — the Kural&#x27;s &#x27;clinging clings to you&#x27; in mythic form.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Spinoza names human weakness in moderating and restraining the emotions &#x27;bondage&#x27;, explaining that a person ruled by passions is not his own master but is subject to fortune.</div>
+  <div class="cite">&mdash; Spinoza, Ethics, Part IV, Preface (tr. R. H. M. Elwes) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Part IV of the Ethics, Spinoza analyses how passive affects — attachments to external things — hold people captive.</div>
+  <div class="tieback">Like the Kural, Spinoza sees our attachments as the very chains by which we are held.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Qin Shi Huang&#x27;s search for an elixir of immortality</div>
+  <div class="rle-meta">219-210 BCE &middot; Qin China</div>
+  <div class="quote is-paraphrase">Qin Shi Huang, who unified China in 221 BCE and became its first emperor, became preoccupied with escaping death. In 219 BCE he sent an expedition to the islands of the Eastern Sea to find an elixir of immortality, and when it failed he repeatedly summoned magicians to his court. He died in 210 BCE while on an inspection tour, and his dynasty collapsed within a few years.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">The most powerful man in China could not loosen his grip on life and power, and his fear of losing them drove years of anxious and fruitless searching.</div>
+  <div class="tieback">Valluvar warns that sorrows cling to those who cling to their attachments, and the First Emperor&#x27;s grasping after endless life brought him restless anxiety rather than peace.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-35/" target="_blank" rel="noopener">Thirukkural Chapter 35: துறவு / Renunciation (with Mu. Varadarasan, Solomon Pappaiah, Karunanidhi, Sivayogi Sivakumar commentaries and G. U. Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-035.html" target="_blank" rel="noopener">துறவு - அதிகாரம் 35 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah, Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://ovid.lib.virginia.edu/trans/Ovhome.htm" target="_blank" rel="noopener">Ovid, Metamorphoses 11 (Midas)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Ethics, Part IV-V (Baruch Spinoza) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/biography/Qin-Shi-Huang" target="_blank" rel="noopener">Qin Shi Huang (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.smithsonianmag.com/smart-news/2000-year-old-texts-reveal-first-emperor-chinas-quest-eternal-life-180967671/" target="_blank" rel="noopener">2,000-Year-Old Texts Reveal the First Emperor of China&#x27;s Quest for Eternal Life</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0346.html">&larr; Kural 346</a>
+  <a href="kural-0348.html">Kural 348 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-035.html">Renunciation</a>
+  <a class="skip-btn" href="kural-0351.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

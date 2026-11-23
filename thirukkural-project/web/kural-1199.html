@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1199 — The Solitary Anguish | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1199</h1>
+<p class="adhikaram"><a href="adhikaram-120.html">The Solitary Anguish</a> &middot; Thanippadar Mikudhi &middot; <span class="tamil">தனிப்படர் மிகுதி</span></p>
+
+<div class="tamil-text">நசைஇயார் நல்கார் எனினும் அவர்மாட்டு
+இசையும் இனிய செவிக்கு.</div>
+<div class="translit">Nasai-iyaar nalkaar eninum avarmaattu
+isaiyum iniya sevikku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Even if the one I long for shows me no kindness, anything I hear about him is still sweet to my ears.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Sometimes when you miss someone, just hearing their name makes you smile, even if they haven’t called you. The girl in this couplet feels that way: anything about him sounds like music.</p>
+
+<h2 class="section">University</h2>
+<p>Nacaiiyār (with alapeṭai) is ‘the one longed for’; nalkār eṉiṉum, ‘even though he grants no grace’; avar māṭṭu icaiyum, ‘even what is heard of / from him’, is iṉiya cevikku, ‘sweet to the ear.’ The word icai is read two ways: as ‘fame, praise’ (Parimelazhagar’s line, followed by Varadarasanar, Puliyur Kesikan and Kalaignar: hearing others praise him is honey to her), or as ‘word, sound’ (Pappaiah: any word from him is sweet). Pope follows the second: ‘Though he my heart desires no grace accords to me, / Yet every accent of his voice is melody.’ Text identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Venu Gita, the gopis, apart from Krishna as he grazes the cattle in the forest, describe to one another how the sound of his flute enchants them, the deer, the cows and even the rivers.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Bhagavata Purana 10.21, Venu Gita (paraphrase)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The gopis find even the distant sound of Krishna’s flute overwhelmingly sweet while they cannot be with him.</div>
+  <div class="tieback">As the heroine finds any word of her beloved sweet, the gopis delight in the far-off music that tells them of Krishna.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;let me see thy countenance, let me hear thy voice; for sweet is thy voice, and thy countenance is comely.&rdquo;</div>
+  <div class="cite">&mdash; Song of Solomon 2:14 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In the Song of Solomon the lover asks only to hear the beloved’s voice, because it is sweet.</div>
+  <div class="tieback">This is the Kural’s claim that the beloved’s voice and words are sweet to the ear whatever else he gives.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">A verse attributed to Majnun says that he passes by the walls of Layla’s dwelling and kisses this wall and that, not for love of the houses, but for love of the one who lives within them.</div>
+  <div class="cite">&mdash; <a href="https://en.wikipedia.org/wiki/Layla_and_Majnun" target="_blank" rel="noopener">Attributed to Qays ibn al-Mulawwah (Majnun Layla), Diwan (paraphrase)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Majnun, kept from Layla, finds sweetness in anything connected with her.</div>
+  <div class="tieback">Majnun’s love for her very walls matches the heroine’s delight in anything heard of her beloved, though he gives her nothing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Hark! my beloved! behold, he cometh, leaping upon the mountains, skipping upon the hills.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">Song of Songs 2:8 (JPS 1917, via Mechon-Mamre)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The maiden’s heart leaps at the mere sound of her beloved before she even sees him.</div>
+  <div class="tieback">The sound of the beloved delights her just as, in the Kural, every word of him is sweet to the heroine’s ears.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">Nanda, the Buddha’s half-brother, is led into the order on his wedding day, but he cannot stop thinking of his bride, the Beauty of the Land, who called after him to come back soon; he tells the monks he is discontent because her parting words stay with him.</div>
+  <div class="cite">&mdash; Udana 3.2, Nanda Sutta (paraphrase) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Udana tells how a single remembered word from the beloved kept Nanda’s heart bound to her.</div>
+  <div class="tieback">Nanda’s memory of his bride’s words mirrors the heroine’s sense that every word of her beloved is sweet, though the Buddha leads Nanda beyond it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">Jain tradition holds that when a Tirthankara preaches in the samavasarana, his divine sound (divya-dhvani) is understood by every listener in its own language and delights gods, humans and even animals.</div>
+  <div class="cite">&mdash; Jain doctrine of the samavasarana and divya-dhvani (paraphrase; cf. Tattvartha tradition and the Kalpa Sutra’s account of Mahavira’s preaching) <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">For Jains the voice of the Jina is the sweetest of all sounds, attracting every being.</div>
+  <div class="tieback">The heroine finds her beloved’s words sweet even without his grace; Jainism directs that delight in a voice toward the Jina instead.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Continually listening to Your Glory, I live.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 388, Raag Aasaa, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Arjan says that hearing about the Lord&#x27;s glory is what keeps him alive.</div>
+  <div class="tieback">The Kural&#x27;s wife says that even if her beloved shows her no kindness, every word about him is sweet to her ears; Guru Arjan likewise lives on simply hearing the Beloved&#x27;s praise.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">The nymph Echo, able only to repeat the last words she hears, falls in love with Narcissus, who rejects her; she follows him, cherishing and repeating his words, and wastes away until only her voice remains.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses 3.356-401 (paraphrase)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Ovid’s Echo lives on the words of a beloved who gives her no love in return.</div>
+  <div class="tieback">Echo is the Kural’s heroine taken to its extreme: his words are all she has, and they are still sweet to her.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Pascal writes that the heart has its reasons which reason does not know.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/18269" target="_blank" rel="noopener">Blaise Pascal, Pensées (Brunschvicg no. 277) (paraphrase)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Pascal recognises that love follows its own logic, which argument cannot overturn.</div>
+  <div class="tieback">The heroine’s delight in the words of one who shows her no kindness is just such a reason of the heart.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Dante writes La Vita Nuova in praise of Beatrice</div>
+  <div class="rle-meta">c. 1274–1293 &middot; Florence, Italy</div>
+  <div class="quote is-paraphrase">Dante first saw Beatrice, usually identified as Beatrice Portinari, when he was nine, and he saw her only rarely after that. She married Simone de&#x27; Bardi and died in 1290 at about twenty-four. Around 1293 Dante wrote La Vita Nuova, prose and poems tracing his devotion to her, and ended it with a vow to write of her as no woman had been written of before, a vow he fulfilled in the Divine Comedy.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Dante received almost nothing from Beatrice in life, yet speaking and writing of her became the centre of his poetry.</div>
+  <div class="tieback">The kural says that even if the beloved shows no kindness, every word about them is sweet to hear, and Dante filled whole books with words about a woman who gave him little more than a few meetings.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-120/" target="_blank" rel="noopener">Thirukkural Chapter 120: தனிப்படர்மிகுதி / The Solitary Anguish (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-120.html" target="_blank" rel="noopener">தனிப்படர் மிகுதி - அதிகாரம் 120 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Srimad Bhagavatam (Bhagavata Purana), Canto 8, chapters 5-8: the curse of Durvasa and the churning of the ocean of milk</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://en.wikipedia.org/wiki/Layla_and_Majnun" target="_blank" rel="noopener">Diwan attributed to Qays ibn al-Mulawwah (Majnun Layla), classical Arabic love poetry</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-6"><a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917), Hebrew-English Bible</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">Nanda Sutta (Udana 3.2) and the Dhammapada commentary story of Nanda <span class="tier">[primary source]</span></li>
+<li id="cite-8">Tattvārtha Sūtra of Umāsvāti (That Which Is) <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses, Book 1 (the flood of Deucalion and Pyrrha, 1.253–415)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/18269" target="_blank" rel="noopener">Blaise Pascal, Pensées</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/print/article/57538" target="_blank" rel="noopener">Beatrice (Dante&#x27;s Beatrice)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.encyclopedia.com/women/dictionaries-thesauruses-pictures-and-press-releases/beatrice-portinari-c-1265-1290" target="_blank" rel="noopener">Beatrice Portinari (c. 1265–1290)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1198.html">&larr; Kural 1198</a>
+  <a href="kural-1200.html">Kural 1200 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-120.html">The Solitary Anguish</a>
+  <a class="skip-btn" href="kural-1201.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

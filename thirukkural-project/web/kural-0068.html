@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 68 — The Wealth of Children | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 68</h1>
+<p class="adhikaram"><a href="adhikaram-007.html">The Wealth of Children</a> &middot; Pudhalvaraip Perudhal &middot; <span class="tamil">புதல்வரைப் பெறுதல்</span></p>
+
+<div class="tamil-text">தம்மின்தம் மக்கள் அறிவுடைமை மாநிலத்து
+மன்னுயிர்க் கெல்லாம் இனிது.</div>
+<div class="translit">Thammindham Makkal Arivudaimai Maanilaththu,
+Mannuyirk Kellaam Inidhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>When children become wiser than their parents, it brings joy not only to the parents but to everyone on this great earth.</p>
+
+<h2 class="section">Elementary</h2>
+<p>When you get better at something than your teacher or your parents, nobody minds — everyone is delighted. This kural says that is one of the few kinds of being-beaten that makes the whole world happy.</p>
+
+<h2 class="section">University</h2>
+<p>The compressed opening தம்மின்தம் மக்கள் அறிவுடைமை carries an ambiguity the commentators split over. Parimēlaḻakar reads தம்மின் as &quot;more than to themselves&quot; — the children&#x27;s wisdom is sweeter to all the world&#x27;s beings than it is even to the parents — and takes மன்னுயிர் (&quot;enduring lives&quot;) to stand specifically for the discerning, since only they can appreciate learning. Most moderns, including M. Varadarajan and Karunanidhi, read தம்மின் comparatively of the children instead: that the children surpass the parents in wisdom. Either way, the verse performs a striking widening of scope. Having spent four couplets on the private senses — taste, touch, hearing — Valluvar suddenly extends the circle to மாநிலத்து மன்னுயிர்க்கெல்லாம், every living thing on the great earth. The claim is that a child&#x27;s intelligence is a non-rival public good: unlike wealth or rank, one family&#x27;s gain in wisdom costs no one anything and delights everyone. That move, from the household to the biosphere in a single line, is characteristic of the Kural&#x27;s method throughout the household chapters.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The boy Naciketas, sent in anger to Death by his father Vājaśravasa after questioning the worthlessness of the cows his father was giving away, refuses Yama&#x27;s offers of wealth, long life and pleasure, and holds out for the knowledge of what lies beyond death — obtaining a teaching that surpasses anything his father possessed.</div>
+  <div class="cite">&mdash; Kaṭha Upaniṣad 1.1 (the story of Naciketas) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Upaniṣad&#x27;s entire teaching is delivered to a child precisely because the child&#x27;s discernment outstrips the adult world around him.</div>
+  <div class="tieback">Like the Kural, the text takes evident pleasure in a son whose wisdom exceeds his father&#x27;s.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And it came to pass, that after three days they found him in the temple, sitting in the midst of the doctors, both hearing them, and asking them questions. And all that heard him were astonished at his understanding and answers.&rdquo;</div>
+  <div class="cite">&mdash; Luke 2:46–47 (King James Version) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The only episode the Gospels record from Jesus&#x27; childhood is this one: a twelve-year-old sitting among the teachers in the temple, and the reaction is astonishment from everyone present, not just his parents.</div>
+  <div class="tieback">This is the Kural&#x27;s scenario almost exactly — a child&#x27;s understanding delighting an entire assembly beyond the family.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;[Allah] said, &#x27;O John, take the Scripture with determination.&#x27; And We gave him judgement [while yet] a boy.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 19:12, Sūrat Maryam (Sahih International) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Qur&#x27;an presents Yaḥyā (John) as receiving ḥukm — sound judgement and discernment — while still a child, an explicit divine endorsement of precocious wisdom.</div>
+  <div class="tieback">Both texts treat a child&#x27;s wisdom outrunning ordinary adult expectation as something good, given, and worth announcing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;And the child Samuel grew on, and was in favour both with the LORD, and also with men.&rdquo;</div>
+  <div class="cite">&mdash; 1 Samuel 2:26 (King James Version) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Samuel, given over to the sanctuary as a small child, grows into the prophetic authority that his elders — including the priest Eli and Eli&#x27;s own sons — conspicuously lack.</div>
+  <div class="tieback">As in the Kural, a child&#x27;s growing discernment is recorded as a good that reaches beyond his family to everyone around him.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;The Wise desire a child that is / Superior or just the same, / But not for one inferior, / Who will break up the family&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://ancient-buddhist-texts.net/English-Texts/Buddhist-Wisdom-Verses/26-Children.htm" target="_blank" rel="noopener">Itivuttaka 74, Puttasutta, vv. 504–505 (trans. Ānandajoti Bhikkhu, Buddhist Wisdom Verses)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha classifies children into three kinds — atijāta (born beyond, surpassing the parents), anujāta (born after, equal to them), and avajāta (born below) — and says the wise hope for the first.</div>
+  <div class="tieback">This is the Kural&#x27;s exact thesis, in a canonical taxonomy: the child who exceeds the parent is the one to be wished for.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;In this way all (these) professors of the Law gradually obtained enlightenment … The king and the queen, the Brahmanical Purôhita, his wife, and his sons, they all reached perfection.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 14.6–7 and 14.51–53 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Bhrigu&#x27;s two sons, wiser than their Vedic father, first convert him and their mother, and through that example the king and queen of Ishukâra are converted too, so all six reach liberation.</div>
+  <div class="tieback">Valluvar says children wiser than their parents delight the whole world. In this Jain story the sons&#x27; greater wisdom spreads beyond the family to the king and queen and frees them all.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Contemplate and reflect upon knowledge, and you will become a benefactor to others.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 356, Raag Asa, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Guru Nanak teaches that knowledge truly reflected upon does not stay private; it turns its owner into someone who does good for others.</div>
+  <div class="tieback">Like Valluvar&#x27;s claim that a child&#x27;s wisdom delights every living being on earth, the Guru treats knowledge as a good that spreads outward to benefit others.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">On the day he is born, the infant Hermes climbs out of his cradle, invents the lyre from a tortoise shell, steals Apollo&#x27;s cattle and covers his tracks by making them walk backwards, then argues his own case before Zeus so cleverly that Zeus laughs aloud with delight and the gods settle the quarrel in friendship.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HomericHymns2.html" target="_blank" rel="noopener">Homeric Hymn 4 (To Hermes)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The Homeric Hymn is essentially a comedy about a newborn whose intelligence outmatches an established Olympian&#x27;s, and whose father&#x27;s reaction is open delight.</div>
+  <div class="tieback">As in the Kural, the child&#x27;s surpassing wit is pleasing to everyone who witnesses it, not only to the parent.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Socrates takes an untaught slave boy from Meno&#x27;s household, asks him a series of questions about doubling the area of a square, and draws a correct geometrical demonstration out of him — to the visible astonishment of Meno, who had assumed the boy knew nothing.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0178%3Atext%3DMeno" target="_blank" rel="noopener">Plato, Meno 82b–85b</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Plato uses the scene to argue that understanding is latent in every person, so that a child of no standing can be shown to possess what the educated master does not expect.</div>
+  <div class="tieback">Both texts stage the pleasure and surprise of finding wisdom in someone from whom no one expected it.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Leopold Mozart sets aside his own career to train Wolfgang</div>
+  <div class="rle-meta">1760s &middot; Salzburg, Austria, and courts across Europe</div>
+  <div class="quote is-paraphrase">Leopold Mozart was a court musician in Salzburg and the author of a 1756 violin method that became a standard text and was widely translated. In the years after his son Wolfgang was born in 1756, he largely, though not entirely, gave up composing in order to teach his two gifted children, Nannerl and Wolfgang, and took them on long concert tours across Europe. Wolfgang went on to surpass his father completely as a composer.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">A respected musician deliberately made room for a child whose gifts exceeded his own, and the son&#x27;s music became a lasting pleasure for listeners all over the world.</div>
+  <div class="tieback">The kural says that a child wiser than the parent delights not only the parents but every living being on earth, and Wolfgang&#x27;s surpassing of Leopold produced music the whole world still enjoys.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.tamillexicon.com/thirukkural/araththuppaal/illaraviyal/pudhalvaraip-perudhal" target="_blank" rel="noopener">மக்கட்பேறு / The Wealth of Children / Pudhalvaraip Perudhal — Thirukkural Chapter 7, with Tamil paraphrase, Pope couplet, explanation and transliteration</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-007.html" target="_blank" rel="noopener">The Wealth of Children — Adhigaram 7, Thirukkural (Tamil text, transliteration, Brahmi script and multilingual translations)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.thirukkural.com/2009/01/blog-post_14.html" target="_blank" rel="noopener">மக்கட்பேறு — Thirukkural Chapter 7 with the classical commentaries of Parimelalagar, Manakkudavar, Mu. Varadarajan, Salamon Pappaiah and Kalaignar</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.ytamizh.com/thirukural/chapter-7/" target="_blank" rel="noopener">மக்கட்பேறு / புதல்வரைப் பெறுதல் — Thirukkural Chapter 7, Kurals 61–70 with Tamil commentaries and English translation</a> <span class="tier">[web source]</span></li>
+<li id="cite-5">Katha Upanishad 1.3.3 (the chariot allegory) <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://ancient-buddhist-texts.net/English-Texts/Buddhist-Wisdom-Verses/26-Children.htm" target="_blank" rel="noopener">Itivuttaka 74, Puttasutta — the three types of children: atijāta, anujāta, avajāta (trans. Ānandajoti Bhikkhu, Buddhist Wisdom Verses, ch. 26)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.theoi.com/Text/HomericHymns2.html" target="_blank" rel="noopener">Homeric Hymn 4, To Hermes (trans. Hugh G. Evelyn-White, Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0178%3Atext%3DMeno" target="_blank" rel="noopener">Plato, Meno 82b–85b (the demonstration with the slave boy)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/biography/Leopold-Mozart" target="_blank" rel="noopener">Leopold Mozart (Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://mmc.kdl.kcl.ac.uk/entities/person/mozart-leopold/" target="_blank" rel="noopener">Mozart, Leopold (1719-1787) (Mozart and Material Culture project)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0067.html">&larr; Kural 67</a>
+  <a href="kural-0069.html">Kural 69 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-007.html">The Wealth of Children</a>
+  <a class="skip-btn" href="kural-0071.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1027 — Family Maintenance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1027</h1>
+<p class="adhikaram"><a href="adhikaram-103.html">Family Maintenance</a> &middot; Kudiseyalvakai &middot; <span class="tamil">குடிசெயல்வகை</span></p>
+
+<div class="tamil-text">அமரகத்து வன்கண்ணர் போலத் தமரகத்தும்
+ஆற்றுவார் மேற்றே பொறை.</div>
+<div class="translit">Amaragaththu vankannar polath thamaragaththum
+aatruvaar metre porai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>In battle, the heavy load falls on the brave. In the same way, in a family, the load falls on those who are able to carry it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>In a soccer game, the toughest players stand in front when the other team attacks. Valluvar says families are the same: when trouble comes, the strongest, most capable person has to step forward and carry the load.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet balances amaragaththu (அமரகத்து, ‘in the battlefield’) against thamaragaththum (தமரகத்தும், ‘among one&#x27;s own people too’); the vankannar (வன்கண்ணர், ‘the hard-eyed, the fearless’) of war correspond to the aatruvaar (ஆற்றுவார், ‘those who are able’) in the family, and on them falls porai (பொறை, ‘burden, load’). Varadarasanar stresses that though many are born into a family, the burden lies on the capable. Text note: ytamizh.com reads தமரகத்தும் (with the inclusive -um) while thirukkural.net prints தமரகத்து ஆற்றுவார்; the meaning is the same and this edition follows the -um reading, which Pope&#x27;s ‘Amid his kindred so’ also reflects.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Considering your specific duty as a kṣatriya, you should know that there is no better engagement for you than fighting on religious principles; and so there is no need for hesitation.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 2.31 (Bhagavad-gītā As It Is, A.C. Bhaktivedanta Swami Prabhupāda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna tells Arjuna that the warrior&#x27;s duty is to stand and fight, not to shrink back.</div>
+  <div class="tieback">The Kural uses exactly this warrior who does not shrink as its model for the family member who carries the load.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;We then that are strong ought to bear the infirmities of the weak, and not to please ourselves.&rdquo;</div>
+  <div class="cite">&mdash; Romans 15:1 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul says those with strength must carry the burdens of the weaker members of the community.</div>
+  <div class="tieback">It is almost the Kural&#x27;s rule: the burden belongs to those able to bear it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;A strong believer is better and is more lovable to Allah than a weak believer, and there is good in everyone, (but) cherish that which gives you benefit (in the Hereafter) and seek help from Allah and do not lose heart&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/muslim:2664" target="_blank" rel="noopener">Sahih Muslim 2664 (sunnah.com)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet prizes strength in the believer and tells him not to lose heart.</div>
+  <div class="tieback">Like the Kural, it honours the strong who stand firm, though it does not speak of carrying the family.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;In a place where there are no men, strive to be a man.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Mishnah, Pirkei Avot 2:5 (tr. Joshua Kulp, Mishnah Yomit, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Hillel teaches that when no one else steps up, you must be the one who takes responsibility.</div>
+  <div class="tieback">The Kural likewise says the load falls on whoever has the strength to take it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;As an elephant in the battlefield withstands arrows shot from bows all around, even so shall I endure abuse.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 320 (tr. Acharya Buddharakkhita, Access to Insight) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha compares his patient endurance to a war elephant that stands firm under a hail of arrows.</div>
+  <div class="tieback">Its battlefield image of steady endurance matches the Kural&#x27;s fearless warrior who bears the brunt.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Do not get into an uneven road like a weak burden-bearer; for you will repent of it afterwards; Gautama, &amp;c.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 10.33 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Mahavira warns his disciple not to stumble like a weak porter who leaves the smooth road under his load.</div>
+  <div class="tieback">The image of the strong and weak burden-bearer echoes the Kural&#x27;s point that the load needs someone able to carry it, though the Jain load is the monastic path.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;He alone is known as a spiritual hero, who fights in defense of religion. He may be cut apart, piece by piece, but he never leaves the field of battle.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1105, Raag Maru, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Bhagat Kabir describes the true soorma (hero) who stands his ground for the right even if cut to pieces. The verse is central to the Sikh ideal of the saint-soldier.</div>
+  <div class="tieback">The Kural says that as the burden of battle falls on the fearless, so the burden of a family falls on those able to bear it; Kabir&#x27;s hero is the one who carries that burden and never leaves the field.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When the Trojans break through to the Greek ships, Ajax son of Telamon stands almost alone on the decks, fending off fire and spears to protect the whole army.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad, Book 15</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">With the other leaders wounded, the burden of defence falls on the one hero strong enough to bear it.</div>
+  <div class="tieback">It is the Kural&#x27;s battlefield image in action: the load rests on the one who can carry it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Because in the army the most hazardous services are assigned to the bravest soldiers: a general sends his choicest troops to attack the enemy in a midnight ambuscade, to reconnoitre his line of march, or to drive the hostile garrisons from their strong places.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Of_Providence" target="_blank" rel="noopener">Seneca, Of Providence (De Providentia) 4.8 (tr. Aubrey Stewart)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Seneca explains why God sends hardship to the best of men: as a general gives the hardest tasks to his finest troops, they say not &#x27;he has dealt hardly with me&#x27; but &#x27;he has judged well of me&#x27;.</div>
+  <div class="tieback">Seneca uses the Kural&#x27;s own battlefield image: the heaviest load falls on those strong enough to bear it.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Widow Clicquot takes over her husband&#x27;s wine firm</div>
+  <div class="rle-meta">1805 &middot; Reims, France</div>
+  <div class="quote is-paraphrase">When Francois Clicquot died in 1805, his 27-year-old widow Barbe-Nicole Clicquot Ponsardin persuaded her father-in-law to back her and took control of the family&#x27;s wine business. She ran it through difficult wartime years, and the house dates her invention of the riddling table, a method of clearing sediment from champagne still in use, to 1816.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A young widow with no business training carried the family firm and became one of the founders of the modern champagne industry.</div>
+  <div class="tieback">The kural says that, as on the battlefield the load falls on the fearless, in a family it falls on those able to bear it, and the burden of the Clicquot house fell to Barbe-Nicole.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-103/" target="_blank" rel="noopener">Thirukkural Chapter 103: குடிசெயல்வகை / The Way of Maintaining the Family (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-103.html" target="_blank" rel="noopener">குடிசெயல்வகை - அதிகாரம் 103 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/muslim:2664" target="_blank" rel="noopener">Sahih Muslim 2664 (Book of Destiny, ‘A strong believer is better...’)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad, Book 21, translated by A. T. Murray (Loeb Classical Library, 1924)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://en.wikisource.org/wiki/Of_Providence" target="_blank" rel="noopener">Of Providence (De Providentia) (Lucius Annaeus Seneca)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.smithsonianmag.com/arts-culture/the-widow-who-created-the-champagne-industry-180947570/" target="_blank" rel="noopener">The Widow Who Created the Champagne Industry</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.veuveclicquot.com/en-us/madameclicquot.html" target="_blank" rel="noopener">Madame Clicquot: The Grande Dame of Champagne</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1026.html">&larr; Kural 1026</a>
+  <a href="kural-1028.html">Kural 1028 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-103.html">Family Maintenance</a>
+  <a class="skip-btn" href="kural-1031.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

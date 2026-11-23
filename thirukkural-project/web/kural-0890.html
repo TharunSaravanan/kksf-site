@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 890 — Internal Enmity | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 890</h1>
+<p class="adhikaram"><a href="adhikaram-089.html">Internal Enmity</a> &middot; Utpakai &middot; <span class="tamil">உட்பகை</span></p>
+
+<div class="tamil-text">உடம்பாடு இலாதவர் வாழ்க்கை குடங்கருள்
+பாம்போடு உடனுறைந் தற்று.</div>
+<div class="translit">Utampaatu ilaadhavar vaazhkkai kutangarul
+paampotu utanurain thatru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Living with people who do not truly agree with you is like sharing a small hut with a snake.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine sleeping in a tiny tent with a snake curled up in the corner. You could never relax, because you would always be wondering when it might bite. Living with someone who secretly dislikes you feels the same way.</p>
+
+<h2 class="section">University</h2>
+<p>The closing couplet gives the chapter its most vivid image. Utampaatu ilaadhavar (உடம்பாடு இலாதவர்) are &#x27;those without inner agreement&#x27;, people who share one&#x27;s life without sharing one&#x27;s mind. To live with them is kutangarul paampotu utanurainthatru (குடங்கருள் பாம்போடு உடனுறைந்தற்று), &#x27;like dwelling together with a snake inside a kutangar&#x27;. Mu. Varadarasanar and Solomon Pappaiah gloss kutangar as a small hut (குடிசை), and Kalaignar stresses the moment-by-moment fear of such a life. Sivayogi Sivakumar reads it as a dark cave, an interpretive variant. Pope&#x27;s &#x27;dwelling in a shed with snake for company&#x27; and thirukkural.net&#x27;s &#x27;share a hut with a cobra&#x27; agree on the hut reading. The text is identical in both sources.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;internal troubles like the fear from a lurking snake are more serious than external troubles.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://franpritchett.com/00litlinks/kautilya/book09.htm" target="_blank" rel="noopener">Kautilya, Arthashastra, Book IX (trans. R. Shamasastry)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Kautilya advises a king to deal with internal danger first, comparing it to a snake hidden close by.</div>
+  <div class="tieback">The Arthashastra and the Kural use the same image: an internal enemy is a snake inside one&#x27;s own dwelling.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Can two walk together, except they be agreed?&rdquo;</div>
+  <div class="cite">&mdash; Amos 3:3 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The prophet Amos asks a rhetorical question: true companionship requires real agreement.</div>
+  <div class="tieback">Both texts hold that a shared life without inner accord cannot be safe or real.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">The Prophet said that a believer is not stung twice from the same hole.</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6133" target="_blank" rel="noopener">Sahih al-Bukhari 6133</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The hadith uses the image of a snake or scorpion hole to teach vigilance against a known source of harm.</div>
+  <div class="tieback">It shares the Kural&#x27;s snake imagery and its counsel to stay alert to danger close at hand.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Better is a dry morsel, and quietness therewith, than an house full of sacrifices with strife.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 17:1 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Proverbs values a peaceful home with little over a rich home full of conflict.</div>
+  <div class="tieback">Both texts hold that sharing a home without harmony makes life unbearable.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Should a seeker not find a companion who is better or equal, let him resolutely pursue a solitary course; there is no fellowship with the fool.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 61 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Dhammapada advises going alone rather than living with an unsuitable companion.</div>
+  <div class="tieback">Like the Kural, it treats companionship without real accord as worse than solitude.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;For those who are wise, to become companions of the wicked is like the nâgâ playing with the female cobra.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">Nāladiyār 24.10 (English translation serialised in The Indian Antiquary; wisdomlib.org)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The closing quatrain of the Nāladiyār&#x27;s chapter on improper friendship says that for a wise person, keeping close company with the wicked is as dangerous as sporting with a cobra.</div>
+  <div class="tieback">The Kural likens living with those who do not share one&#x27;s mind to sharing a small hut with a snake, and the Jain Tamil quatrain uses the same serpent image for intimacy with the ill-disposed.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Kabeer, do not associate with the faithless cynics; run far away from them.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1371, Salok Kabeer, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Bhagat Kabir, whose verses are included in the Guru Granth Sahib, warns against close company with those cut off from God, whose influence is harmful.</div>
+  <div class="tieback">The Kural compares living with people who do not truly agree with you to sharing a hut with a snake, and Kabir&#x27;s counsel is to keep away from such company.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Aesop&#x27;s fable, a farmer finds a snake frozen with cold, warms it in his bosom, and is bitten to death once it revives.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/files/11339/11339-h/11339-h.htm" target="_blank" rel="noopener">Aesop&#x27;s Fables, The Farmer and the Snake (Perry 176)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The fable warns that taking a hostile nature into one&#x27;s closest space invites a deadly bite.</div>
+  <div class="tieback">It is the Kural&#x27;s snake in the hut: closeness with a hostile companion is mortal danger.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Seneca advises Lucilius to avoid crowds and keep company with those who will make him better, because close association with others&#x27; vices does harm.</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_7" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius, Letter 7</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The Stoic letter treats one&#x27;s companions as a decisive influence on peace of mind and character.</div>
+  <div class="tieback">Like the Kural, it warns that sharing life with the wrong people costs one&#x27;s safety and peace.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The First Triumvirate of Caesar, Pompey and Crassus</div>
+  <div class="rle-meta">60-49 BCE &middot; Rome, Roman Republic</div>
+  <div class="quote is-paraphrase">Around 60 BCE Julius Caesar, Pompey and Crassus formed an unofficial and at first secret political alliance, now called the First Triumvirate, each seeking his own ends. The partnership was renewed at Luca in 56 BCE, but the death of Julia, Caesar&#x27;s daughter and Pompey&#x27;s wife, in 54 BCE and of Crassus in 53 BCE removed its bonds, and Pompey drew closer to Caesar&#x27;s opponents in the Senate. In January 49 BCE the Senate decreed a state of emergency against Caesar, and he crossed the Rubicon, beginning a civil war in which Pompey was defeated and killed.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">The three men shared power without sharing purpose, and their uneasy partnership ended in war between two of them.</div>
+  <div class="tieback">The kural likens living with those who lack inner agreement to sharing a hut with a snake, which describes the alliance that ended with Caesar and Pompey at war.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-89/" target="_blank" rel="noopener">Thirukkural Chapter 89: உட்பகை / Enmity within (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-089.html" target="_blank" rel="noopener">உட்பகை - அதிகாரம் 89 - திருக்குறள் (Enmity within)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://franpritchett.com/00litlinks/kautilya/book09.htm" target="_blank" rel="noopener">Kautilya, Arthashastra, Book IX: The Work of an Invader, trans. R. Shamasastry</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:6133" target="_blank" rel="noopener">Sahih al-Bukhari 6133, Book of Good Manners (Al-Adab)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">The Nāladiyār (English translation serialised in The Indian Antiquary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.gutenberg.org/files/11339/11339-h/11339-h.htm" target="_blank" rel="noopener">Aesop&#x27;s Fables, The Farmer and the Snake (Perry 176)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_7" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius, Letter 7 (On Crowds), trans. R. M. Gummere</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/biography/Pompey-the-Great/The-First-Triumvirate" target="_blank" rel="noopener">Pompey the Great - The First Triumvirate</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.worldhistory.org/timeline/First_Triumvirate/" target="_blank" rel="noopener">Timeline: First Triumvirate</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0889.html">&larr; Kural 889</a>
+  <a href="kural-0891.html">Kural 891 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-089.html">Internal Enmity</a>
+  <a class="skip-btn" href="kural-0891.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

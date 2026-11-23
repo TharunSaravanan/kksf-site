@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 327 — Not Killing | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 327</h1>
+<p class="adhikaram"><a href="adhikaram-033.html">Not Killing</a> &middot; Kollaamai &middot; <span class="tamil">கொல்லாமை</span></p>
+
+<div class="tamil-text">தன்னுயிர் நீப்பினும் செய்யற்க தான்பிறிது
+இன்னுயிர் நீக்கும் வினை.</div>
+<div class="translit">Thannuyir neeppinum seyyarka thaanpiridhu
+Innuyir neekkum vinai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Even if it costs you your own life, do not do anything that takes away the precious life of another being.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Suppose a bully says, “Hurt that puppy or I’ll hurt you.” Valluvar says: don’t hurt the puppy, even if you get hurt yourself. The puppy’s life is just as sweet to it as yours is to you.</p>
+
+<h2 class="section">University</h2>
+<p>This is one of the most uncompromising couplets in the Kural: one must not perform “the act that removes another’s sweet life” (piṟitu iṉṉuyir nīkkum viṉai) even if it means losing one’s own. The adjective iṉ (sweet) applied to the other’s life insists on its equal preciousness. Varadarasan explicitly reads it as forbidding killing even to save oneself — a stance close to Jain absolutism and more radical than most legal traditions, which permit self-defence. The Talmud reaches a similar conclusion for the case of being forced to kill an innocent person under threat, reasoning that one cannot know one’s own blood is “redder” than another’s.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">King Shibi, asked by a hawk to surrender a dove that had taken refuge with him, offered his own flesh — finally his whole body — rather than let the dove be killed.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Vana Parva (story of Shibi, the hawk and the dove)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In the Mahabharata’s tale, the gods Indra and Agni test Shibi, who chooses self-sacrifice over allowing a life to be taken.</div>
+  <div class="tieback">Enacts the Kural precisely: give up your own life rather than cause another being’s death.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But I say unto you, That ye resist not evil: but whosoever shall smite thee on thy right cheek, turn to him the other also.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 5:39 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">In the Sermon on the Mount Jesus teaches non-retaliation, accepting harm rather than inflicting it.</div>
+  <div class="tieback">Like the Kural, it asks one to bear harm to oneself rather than harm another.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;If you should raise your hand toward me to kill me - I shall not raise my hand toward you to kill you. Indeed, I fear Allāh, Lord of the worlds.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 5:28 (Saheeh International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Abel (Habil), threatened with murder by his brother, refuses to kill even to defend himself.</div>
+  <div class="tieback">Nearly the Kural in narrative form: better to be killed than to kill.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;It is preferable that he should kill you and you should not kill. What did you think, that your blood is redder and more precious than his? Perhaps that man’s blood is redder.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pesachim.25b.4" target="_blank" rel="noopener">Babylonian Talmud, Pesachim 25b (William Davidson ed., Sefaria)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Rava rules that a man ordered to kill another on pain of death must let himself be killed rather than murder.</div>
+  <div class="tieback">Exactly the Kural’s teaching: even to save your own life, do not take another’s.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Buddha says that even if bandits were to saw a monk limb from limb with a two-handled saw, one who let his mind turn to hatred would not be following his teaching.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/mn/mn.021x.than.html" target="_blank" rel="noopener">Majjhima Nikaya 21, Kakacupama Sutta</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In the Simile of the Saw the Buddha demands non-hatred and non-retaliation even under mortal attack.</div>
+  <div class="tieback">Like the Kural, it forbids answering even a threat to one’s own life with harm to another.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">The monk Dharmaruci was given a bitter, poisonous gourd dish as alms by the Brahmin woman Nāgaśrī. Told by his teacher to discard it, he saw ants die after tasting a single drop, and rather than let more creatures perish he ate the whole dish himself and died.</div>
+  <div class="cite">&mdash; <a href="https://jainworld.com/education/jain-education-material/jain-stories/more-stories/dharmaruchi-muni/" target="_blank" rel="noopener">Jñātādharmakathāṅga, ch. 16 (Draupadī&#x27;s former birth as Nāgaśrī); retold in &#x27;Dharmaruchi Muni&#x27;, Jain stories, jainworld.com</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">This celebrated canonical story presents a monk who gave up his own life rather than cause the death of even tiny creatures.</div>
+  <div class="tieback">Valluvar says one must not take another&#x27;s precious life even at the cost of one&#x27;s own; Dharmaruci literally chose his own death over killing ants.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;One who does not frighten anyone, and who is not afraid of anyone else&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1427, Salok Mahala 9, Guru Tegh Bahadur (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In his saloks Guru Tegh Bahadur describes the spiritually wise person as one who neither threatens others nor is cowed by threats. He himself chose execution in 1675 rather than yield, accepting death rather than inflicting it.</div>
+  <div class="tieback">The Kural forbids taking another&#x27;s life even at the cost of one&#x27;s own; Guru Tegh Bahadur&#x27;s ideal of never terrorising others, and his own martyrdom, come close to that self-sacrificing non-violence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Oedipus kills Laius at a crossroads after being struck by him on the road, yet this killing — done in what he saw as self-defence — brings pollution and plague on Thebes and ruin on himself.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0191" target="_blank" rel="noopener">Sophocles, Oedipus Tyrannus 800–813</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">In Sophocles, a killing provoked by a threat to oneself still carries full bloodguilt.</div>
+  <div class="tieback">Supports the Kural’s point that saving or defending oneself does not make killing innocent.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Asked by Polus whether he would rather suffer injustice or do it, Socrates answers that he would want neither, but if forced to choose he would rather suffer it than do it.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Plato/gorgias.html" target="_blank" rel="noopener">Plato, Gorgias 469b–c</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">The exchange arises in a discussion of tyrants who kill whom they please; Socrates holds that doing wrong harms the soul more than suffering it.</div>
+  <div class="tieback">Like the Kural, it prefers suffering harm — even death — to inflicting it.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Franz Jagerstatter refuses to fight and is executed</div>
+  <div class="rle-meta">9 August 1943 &middot; Austria and Germany</div>
+  <div class="quote is-paraphrase">Franz Jagerstatter, an Austrian Catholic farmer who was married with three children, refused to serve as a soldier in Hitler&#x27;s army because he believed the war was unjust and incompatible with his faith. He offered to serve as a medic instead, but this was refused. He was convicted of undermining military morale and executed on 9 August 1943, and the Catholic Church beatified him as a martyr in 2007.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Jagerstatter chose to die rather than take part in killing he believed was wrong.</div>
+  <div class="tieback">The kural says do not take another&#x27;s precious life even if it costs your own, and Jagerstatter gave his life rather than fight in an unjust war.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-33/" target="_blank" rel="noopener">கொல்லாமை / Not killing, Chapter 33 — Thirukural (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukural.ai/paal/aram/adhigaram-33" target="_blank" rel="noopener">திருக்குறள் - அறத்துப்பால் அதிகாரம் 33 | கொல்லாமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.gunathamizh.com/2020/09/33.html" target="_blank" rel="noopener">திருக்குறள் - அதிகாரம் - 33. கொல்லாமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Pesachim.25b.4" target="_blank" rel="noopener">Babylonian Talmud, Pesachim 25b (William Davidson Edition)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.accesstoinsight.org/tipitaka/mn/mn.021x.than.html" target="_blank" rel="noopener">Kakacupama Sutta: The Simile of the Saw (MN 21, excerpt; trans. Thanissaro Bhikkhu)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://jainworld.com/education/jain-education-material/jain-stories/more-stories/dharmaruchi-muni/" target="_blank" rel="noopener">Dharmaruchi Muni (Jain stories)</a> <span class="tier">[web source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0191" target="_blank" rel="noopener">Sophocles, Oedipus Tyrannus (the Tiresias scene, lines 300-462)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://classics.mit.edu/Plato/gorgias.html" target="_blank" rel="noopener">Plato, Gorgias, trans. Benjamin Jowett</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.dioezese-linz.at/site/jaegerstaetter/english/index5.html" target="_blank" rel="noopener">Franz und Franziska Jagerstatter (English)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.ncronline.org/opinion/ncr-today/franz-j-gerst-tter-conscientious-objector-martyred-75-years-ago-today" target="_blank" rel="noopener">Franz Jagerstatter, conscientious objector, martyred 75 years ago today</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0326.html">&larr; Kural 326</a>
+  <a href="kural-0328.html">Kural 328 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-033.html">Not Killing</a>
+  <a class="skip-btn" href="kural-0331.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 801 — Familiarity | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 801</h1>
+<p class="adhikaram"><a href="adhikaram-081.html">Familiarity</a> &middot; Pazhaimai &middot; <span class="tamil">பழைமை</span></p>
+
+<div class="tamil-text">பழைமை எனப்படுவது யாதெனின் யாதும்
+கிழமையைக் கீழ்ந்திடா நட்பு.</div>
+<div class="translit">Pazhaimai enappaduvadhu yaadhenin yaadhum
+kizhamaiyaik keezhndhidaa natpu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>What is an old friendship? It is one where you never get upset, in any way, when an old friend acts freely with you because you are close.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A brand-new classmate has to knock before borrowing your pencil. Your oldest friend just picks it up, and you don’t mind at all. That not-minding is what a really old friendship looks like.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter opens with a definition. Pazhaimai (பழைமை, ‘oldness’) is the friendship that has grown old, and kizhamai (கிழமை) is the ‘right’ or ‘claim’ (urimai, உரிமை) that such long intimacy creates; keezhndhidaa (கீழ்ந்திடா) means ‘does not cut down, belittle or set aside’. Read with yaadhum (‘in anything at all’), the couplet says that true old friendship never treats the friend’s presumptions as offences. Parimelazhagar places the chapter directly after Natpaaraaydhal (testing a friend before befriending) and the commentarial tradition reads it as the next stage: once a friend has been tested and kept, the bond should bear the freedoms that time brings. Mu. Varadarasanar and Solomon Pappaiah both gloss the couplet as accepting what the old friend does by right of intimacy, while Puliyur Kesigan reads it more broadly as a friendship that lets nothing damage the established bond. The text is identical in ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;As a father tolerates his son, a friend forgives his friend, and a lover pardons the beloved, please forgive me for my offences.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita 11.44 (trans. Swami Mukundananda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">After seeing Krishna’s cosmic form, Arjuna asks to be forgiven for years of easy familiarity, appealing to the forbearance a friend naturally shows a friend.</div>
+  <div class="tieback">The Gita takes for granted exactly what the Kural defines: a true friend does not hold the liberties of intimacy against the other.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">Ben Sira advises his student not to forsake an old friend, because a new friend cannot compare with him: a new friend is like new wine, which is enjoyed best once it has aged.</div>
+  <div class="cite">&mdash; <a href="https://www.drbo.org/chapter/26006.htm" target="_blank" rel="noopener">Ecclesiasticus (Sirach) 9:10</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Sirach ranks the long-tested friend above any newcomer and compares maturing friendship to wine that improves with age. Sirach is deuterocanonical, part of Catholic and Orthodox Scripture but not the Protestant canon.</div>
+  <div class="tieback">Like Valluvar, Ben Sira gives the old friend a standing that a new acquaintance cannot claim.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;the Prophet (ﷺ) used to mention her very often, and when ever he slaughtered a sheep, he would cut its parts and send them to the women friends of Khadija.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:3818" target="_blank" rel="noopener">Sahih al-Bukhari 3818 (Sunnah.com English)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Aisha recalls that, years after Khadija died, the Prophet kept honouring the friends of his first wife.</div>
+  <div class="tieback">This shows the faithfulness to old ties that the Kural calls pazhaimai, kept up long after the relationship began.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;All love that depends on a something, [when the] thing ceases, [the] love ceases; and [all love] that does not depend on anything, will never cease. … And what is an example of love that did not depend on anything? Such was the love of David and Jonathan.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 5:16 (Mishnah Yomit, trans. Joshua Kulp, Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Mishnah says that love which depends on some benefit ends when the benefit ends, but love that depends on nothing lasts forever, as David and Jonathan’s did.</div>
+  <div class="tieback">Love that ‘depends on nothing’ does not keep accounts of slights, so it fits Valluvar’s definition of a friendship that nothing diminishes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;He gives what is hard to give. He does what is hard to do. He endures what is hard to endure.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an07/an07.035.than.html" target="_blank" rel="noopener">Anguttara Nikaya 7.35, Mitta Sutta (trans. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha lists qualities that make a friend worth keeping, starting with generosity, effort and endurance on the friend’s behalf.</div>
+  <div class="tieback">Enduring what is hard to endure includes putting up with what an intimate friend does, which is the forbearance the Kural describes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;If after contracting a firm friendship with any one, I set myself to note his good and bad qualities, may I be cast into the hell where the traitor who discovers the secrets of his friend is punished, and may I be scoffed at by the whole world!&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">Naladiyar, ch. 23 &#x27;The bearing with the faults of others&#x27;, stanza 10 (English tr. in The Indian Antiquary; wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Jain didactic poet binds himself by an oath never to sit in judgement on a friend once the friendship is firmly made.</div>
+  <div class="tieback">The Kural defines old friendship as the bond that never belittles the freedoms an intimate friend takes, and the Naladiyar treats auditing a settled friend&#x27;s conduct as a kind of treachery.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">Bhai Mardana, a Muslim minstrel of Guru Nanak&#x27;s own village and ten years older than him, went to Sultanpur and, in the words of the Encyclopaedia of Sikhism, never parted company with Guru Nanak again; he played the rabab as the Guru sang through all his long journeys until his death at Kartarpur in 1534.</div>
+  <div class="cite">&mdash; <a href="https://eos.learnpunjabi.org/MARDANA%20BHAI%20(1459-1534).html" target="_blank" rel="noopener">The Encyclopaedia of Sikhism, ed. Harbans Singh (Punjabi University, Patiala), entry &#x27;Mardana, Bhai (1459-1534)&#x27; by Satbir Singh (paraphrase)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Mardana is the classic Sikh example of a lifelong companion: a friend from childhood who stayed with Guru Nanak across decades of travel and hardship.</div>
+  <div class="tieback">The Kural defines old friendship as a bond that has grown through long closeness and bears the freedoms that time brings; the decades-long companionship of Guru Nanak and Mardana is the Sikh tradition&#x27;s picture of such a friendship.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When Odysseus comes home in disguise after twenty years, his old hound Argos, neglected and lying on a dung heap, recognizes him at once, wags his tail and drops his ears, and then dies.</div>
+  <div class="cite">&mdash; Homer, Odyssey 17 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Homer gives the first recognition of the returning hero to an old companion whose attachment twenty years of absence had not worn away.</div>
+  <div class="tieback">Argos is a picture of the bond the Kural praises, one that time and changed circumstances do not reduce.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;The older the sweeter, as in wines that keep well. And the proverb is a true one, &quot;You must eat many a peck of salt with a man to be thorough friends with him.&rdquo;</div>
+  <div class="cite">&mdash; Cicero, De Amicitia 19 (§67), trans. E. S. Shuckburgh <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Laelius argues that, other things being equal, old friendships should be preferred to new ones, since friendship grows richer with age.</div>
+  <div class="tieback">Cicero and Valluvar agree that time is what gives friendship its value and its rights.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Theo van Gogh refuses to treat his brother&#x27;s requests as a debt</div>
+  <div class="rle-meta">1880-1890 &middot; Paris and Arles, France</div>
+  <div class="quote is-paraphrase">From about 1880 until 1890, Theo van Gogh, an art dealer in Paris, sent his brother Vincent regular remittances, estimated at around 17,500 francs in total, that made Vincent&#x27;s career as a painter possible. Vincent often asked for more and wrote of the money as something he owed. In letters of 1888 and 1889 Theo replied that he knew nothing of any debt and that Vincent had repaid him several times over through his work and his brotherly affection.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Theo&#x27;s support was one of the main reasons Vincent could keep painting through ten years with almost no sales, and Theo consistently treated Vincent&#x27;s constant claims on him as a natural part of their bond rather than as impositions.</div>
+  <div class="tieback">The kural defines long-standing closeness as the bond that never belittles the claims an intimate makes on it, and Theo answered Vincent&#x27;s repeated requests by denying there was any debt at all.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-81/" target="_blank" rel="noopener">Thirukkural Chapter 81: பழைமை / Familiarity (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-081.html" target="_blank" rel="noopener">பழைமை - அதிகாரம் 81 - திருக்குறள் (with Puliyur Kesigan, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita, The Song of God (Swami Mukundananda)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4"><a href="https://www.drbo.org/chapter/26006.htm" target="_blank" rel="noopener">Ecclesiasticus (Sirach), Chapter 6, Douay-Rheims Bible</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:3818" target="_blank" rel="noopener">Sahih al-Bukhari 3818 (Merits of the Ansar, Chapter: The marriage of the Prophet with Khadija and her superiority)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/an/an07/an07.035.than.html" target="_blank" rel="noopener">Mitta Sutta: A Friend (Anguttara Nikaya 7.35), trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">The Nāladiyār (English translation serialised in The Indian Antiquary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://eos.learnpunjabi.org/MARDANA%20BHAI%20(1459-1534).html" target="_blank" rel="noopener">Mardana, Bhai (1459-1534) (entry in The Encyclopaedia of Sikhism) (Satbir Singh, in The Encyclopaedia of Sikhism, ed. Harbans Singh)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11">Cicero, Laelius de Amicitia (On Friendship) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://vangoghletters.org/vg/context_3.html" target="_blank" rel="noopener">Biographical &amp; historical context: The financial backgrounds (Van Gogh Museum and Huygens ING)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/biography/Vincent-van-Gogh" target="_blank" rel="noopener">Vincent van Gogh (Britannica Editors)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0800.html">&larr; Kural 800</a>
+  <a href="kural-0802.html">Kural 802 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-081.html">Familiarity</a>
+  <a class="skip-btn" href="kural-0811.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

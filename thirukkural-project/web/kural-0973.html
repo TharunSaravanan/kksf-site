@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 973 — Greatness | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 973</h1>
+<p class="adhikaram"><a href="adhikaram-098.html">Greatness</a> &middot; Perumai &middot; <span class="tamil">பெருமை</span></p>
+
+<div class="tamil-text">மேலிருந்தும் மேலல்லார் மேலல்லர் கீழிருந்தும்
+கீழல்லார் கீழல் லவர்.</div>
+<div class="translit">Melirundhum melallaar melallar keezhirundhum
+keezhallaar keezhal lavar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Low people are not great even when they sit in high places. Good people are not low even when they are in low places.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a bully sitting on the tallest chair in class, and a kind child sitting on the floor. The tall chair does not make the bully great, and the floor does not make the kind child small. Who you are matters more than where you sit.</p>
+
+<h2 class="section">University</h2>
+<p>The verse is a chiasmus built on mel (மேல், &#x27;above, superior&#x27;) and keezh (கீழ், &#x27;below, base&#x27;), each used both for physical or social position and for moral quality: melirundhum melallaar melallar, &#x27;though they be above, those not superior are not superior&#x27;. Puliyur Kesikan makes the image literal, &#x27;though they sit on high seats&#x27; (உயர்ந்த ஆசனங்களிலே), and ties superiority to having done &#x27;deeds hard to do&#x27;, linking back to Kural 971; Solomon Pappaiah and Kalaignar render mel as high office or position. Pope&#x27;s &#x27;men of lofty line&#x27; reads it as birth, which carries the theme on from Kural 972. The repeated negatives (அல்லார், அல்லர், அல்லவர்) give the couplet its characteristic Valluvan density. The text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Yaksha&#x27;s questioning of Yudhishthira, the Yaksha asks what makes a Brahmana, and Yudhishthira answers that it is neither birth nor study nor learning but conduct alone, which must always be guarded.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m03/index.htm" target="_blank" rel="noopener">Mahabharata, Vana (Aranyaka) Parva, Yaksha Prashna episode (trans. K. M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Yudhishthira insists that rank is earned by behaviour, not inherited by birth or bought by learning.</div>
+  <div class="tieback">Like the Kural, it denies that a high station makes one high without the matching character.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;He hath put down the mighty from their seats, and exalted them of low degree.&rdquo;</div>
+  <div class="cite">&mdash; Luke 1:52 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Mary&#x27;s song proclaims that God overturns the order of high and low.</div>
+  <div class="tieback">Like the Kural, it says that sitting in a high seat does not secure true height.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Verily Allah does not look to your faces and your wealth but He looks to your heart and to your deeds.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/muslim:2564c" target="_blank" rel="noopener">Sahih Muslim 2564c (sunnah.com)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet teaches that God&#x27;s measure of a person ignores appearance and riches and looks to heart and action.</div>
+  <div class="tieback">The Kural&#x27;s true height and lowness are measured the same way, by inner quality rather than outward place.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;I saw an inverted world. Those above, i.e., those who are considered important in this world, were below, insignificant, while those below, i.e., those who are insignificant in this world, were above. He said to him: My son, you have seen a clear world.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pesachim.50a" target="_blank" rel="noopener">Babylonian Talmud, Pesachim 50a (William Davidson Edition, Koren-Steinsaltz English, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rav Yosef, returning from near death, reports that the true world reverses this world&#x27;s rankings, and his father calls that the clear view.</div>
+  <div class="tieback">It dramatises the Kural&#x27;s claim that worldly position and true standing do not match.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;A monk is not an elder because his head is gray. He is but ripe in age, and he is called one grown old in vain.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 260 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada says the title of elder means nothing without the virtues that should go with it.</div>
+  <div class="tieback">Like the Kural, it denies that outward rank alone makes one truly senior.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The value of penance has become visible, birth appears of no value! Look at the holy Harikêsa, the son of a Svapâka, whose power is so great.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 12.37 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Priests who mocked the low-born monk Harikesa are humbled, and the onlookers proclaim that his austerities, not his birth, decide his worth.</div>
+  <div class="tieback">Harikesa is the Kural&#x27;s person placed low by birth who is in no way low.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Nanak seeks the company of the lowest of the low class, the very lowest of the low. ... In that place where the lowly are cared for-there, the Blessings of Your Glance of Grace rain down.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 15, Sri Raag, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak deliberately takes his place among those society ranks lowest and says God&#x27;s grace falls where the lowly are cared for. The verse overturns the idea that social position measures a person&#x27;s worth.</div>
+  <div class="tieback">The Kural says the base are not high even on a high seat and the noble are not low even when placed low, and Guru Nanak gives the same reversal, siding with the people the world calls low.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In the Odyssey, Odysseus returns home disguised as a ragged beggar and is mocked in his own hall by the suitors, who occupy the seats of honour while behaving shamefully, until he reveals himself as the true king.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, Odyssey 17-22 (trans. Samuel Butler)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The epic contrasts the low appearance of a noble man with the lofty places held by base men.</div>
+  <div class="tieback">The suitors are high without being high, and the beggar-king is low without being low.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;These reasonings are unconnected: ‘I am richer than you, therefore I am better’; ‘I am more eloquent than you, therefore I am better.’ … But you, after all, are neither property nor style.&rdquo;</div>
+  <div class="cite">&mdash; Epictetus, Enchiridion 44 (trans. Elizabeth Carter) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Epictetus says that having more of something outward never makes a person better.</div>
+  <div class="tieback">Like the Kural, it refuses to let external standing define who is truly superior.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The former slave Epictetus becomes the most admired Stoic teacher of his age</div>
+  <div class="rle-meta">c. 55 to c. 135 CE (school at Nicopolis from about 90 CE) &middot; Rome, Italy, and Nicopolis, Epirus, Greece</div>
+  <div class="quote is-paraphrase">Epictetus was born around 55 CE in Hierapolis in Phrygia and as a boy was brought to Rome as a slave of Epaphroditus, a rich freedman who had served the emperor Nero; while still enslaved he attended the lectures of the Stoic Musonius Rufus. After he was freed, he was expelled from Rome around 89-90 CE when the emperor Domitian banished the philosophers, and he opened a school at Nicopolis in Greece that attracted upper-class Roman students, including Arrian, who wrote down his teachings as the Discourses and the Handbook. Later writers report that he was more popular in his own day than Plato. The tutor of the future emperor Marcus Aurelius, Herodes Atticus, is reported to have called him the greatest of the Stoics.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Born into the lowest rank of Roman society and lame for much of his life, Epictetus became one of the most influential moral teachers of the ancient world, while the emperor who banished him is remembered as a tyrant.</div>
+  <div class="tieback">The kural says that those who are not base are not low even when placed low, and Epictetus, a slave by station, stood morally far above many who sat on high seats.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-98/" target="_blank" rel="noopener">Thirukkural Chapter 98: பெருமை / Greatness (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-098.html" target="_blank" rel="noopener">பெருமை - அதிகாரம் 98 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m03/index.htm" target="_blank" rel="noopener">The Mahabharata, Vana Parva — the Vyadha Gita (Kaushika and Dharmavyadha), as recounted in the Kisari Mohan Ganguli translation and standard retellings</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/muslim:2564c" target="_blank" rel="noopener">Ṣaḥīḥ Muslim 2564c — Book of Virtue (&#x27;Allah does not look to your bodies nor to your faces but He looks to your hearts&#x27;), narrated by Abū Hurayra</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pesachim.50a" target="_blank" rel="noopener">Babylonian Talmud, Pesachim 50a (William Davidson Edition, Koren-Steinsaltz English)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, The Odyssey, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Enchiridion, Chapter 5 (Epictetus) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Epictetus-Greek-philosopher" target="_blank" rel="noopener">Epictetus</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://iep.utm.edu/epictetu/" target="_blank" rel="noopener">Epictetus</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0972.html">&larr; Kural 972</a>
+  <a href="kural-0974.html">Kural 974 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-098.html">Greatness</a>
+  <a class="skip-btn" href="kural-0981.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

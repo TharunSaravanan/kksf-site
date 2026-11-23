@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 270 — Penance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 270</h1>
+<p class="adhikaram"><a href="adhikaram-027.html">Penance</a> &middot; Thavam &middot; <span class="tamil">தவம்</span></p>
+
+<div class="tamil-text">இலர்பல ராகிய காரணம் நோற்பார்
+சிலர்பலர் நோலா தவர்.</div>
+<div class="translit">Ilar palar aagiya kaaranam norpaar
+Silar palar nolaadhavar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Many people in the world have nothing because only a few practice strict self-control, while most do not.</p>
+
+<h2 class="section">Elementary</h2>
+<p>In a class, only a few kids practise every day, and most don’t. That is why only a few become really good. Valluvar says the same about the whole world: most people are ‘poor’ inside because only a few do the hard work of tapas.</p>
+
+<h2 class="section">University</h2>
+<p>The closing couplet uses a neat chiastic arithmetic — இலர் பலர் (the have-nots are many) because நோற்பார் சிலர், பலர் நோலாதவர் (the practisers are few, the non-practisers many). இலர் is ambiguous: Solomon Pappaiah reads material poverty, Varadarasan and Kalaignar read lack of strength, and Puliyur Kesikan reads lack of true knowledge. The choice matters: a literal economic reading makes tapas a cause of prosperity, while the spiritual reading makes it the cause of inner wealth. Either way the verse ends the chapter with a sober sociology of virtue — excellence is rare because discipline is rare — and turns the whole chapter into an exhortation to join the few.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Out of many thousands among men, one may endeavor for perfection, and of those who have achieved perfection, hardly one knows Me in truth.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 7.3</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna observes how rare the serious spiritual aspirant is.</div>
+  <div class="tieback">The same ‘few strive, many don’t’ observation that grounds the Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Enter ye in at the strait gate: for wide is the gate, and broad is the way, that leadeth to destruction, and many there be which go in thereat: Because strait is the gate, and narrow is the way, which leadeth unto life, and few there be that find it.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 7:13-14 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus contrasts the many on the easy road with the few on the hard road to life.</div>
+  <div class="tieback">Same arithmetic of many and few, with the hard path as the source of true wealth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And the forerunners, the forerunners - … A [large] company of the former peoples And a few of the later peoples.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 56:10, 13-14 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The foremost in devotion, brought nearest to God, are few among later generations.</div>
+  <div class="tieback">The spiritually foremost are few, as the Kural’s practisers are few.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Rabbi Shimon bar Yochai remarks that he has seen the ‘people of ascent’ — those of the highest spiritual rank — and they are few.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Sukkah.45b" target="_blank" rel="noopener">Babylonian Talmud, Sukkah 45b</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Talmud acknowledges that those who reach the highest spiritual level are a small minority.</div>
+  <div class="tieback">Echoes the Kural’s ‘the practisers are few’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Few among men are those who cross to the farther shore. The rest, the bulk of men, only run up and down the hither bank.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 85 <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Only a few achieve liberation; the majority stay in the round of existence.</div>
+  <div class="tieback">Near-identical picture of the few who strive and the many who do not.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;And though they have heard the Law and believe in it, it is difficult for them to fulfill it strenuously; many who approve of the religion, do not adopt it.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 3.10 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The &#x27;four requisites&#x27; lecture says that human birth, hearing the Law, faith and strenuous practice are each rare, so very few actually carry the discipline through.</div>
+  <div class="tieback">Valluvar says the many are destitute because those who practise penance are few; the Jain text likewise laments that many approve the path but few take it up.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Out of millions, hardly anyone is a servant of the Lord. All the others are mere traders.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 495, Raag Gujri, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Raag Gujri Guru Arjan observes that among millions there is scarcely one true devotee, while the rest practise religion as a bargain for their own gain.</div>
+  <div class="tieback">Valluvar explains the world&#x27;s want by noting that those who practise are few and those who do not are many; Guru Arjan makes the same observation about true devotees and the many who only trade.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Sparta’s agoge subjected boys to hunger, cold, one cloak a year and harsh discipline; the few full citizens so trained dominated a far larger population of helots.</div>
+  <div class="cite">&mdash; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Lycurgus*.html" target="_blank" rel="noopener">Plutarch, Life of Lycurgus 16-18</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Rigorous austerity produced a small elite of exceptional capability.</div>
+  <div class="tieback">Illustrates the Kural’s claim that the disciplined few hold what the undisciplined many lack; but the Spartan aim was military, not spiritual.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;For as they say in the mysteries, ‘the thyrsus-bearers are many, but the mystics few’; and these mystics are, I believe, those who have been true philosophers.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://chs.harvard.edu/primary-source/plato-phaedo-sb/" target="_blank" rel="noopener">Plato, Phaedo 69c-d (trans. H. N. Fowler)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Socrates distinguishes the many who carry the outward emblems from the few who are genuinely initiated through philosophical purification.</div>
+  <div class="tieback">The many/few contrast between those who merely participate and those who truly undergo the discipline.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Ninomiya Sontoku revives impoverished villages through diligence and thrift</div>
+  <div class="rle-meta">early to mid-19th century (Sontoku lived 1787-1856) &middot; Japan</div>
+  <div class="quote is-paraphrase">Ninomiya Sontoku, a farmer who had rebuilt his own family&#x27;s ruined farm, was engaged to restore struggling villages and estates. He taught sincerity, diligence, living within one&#x27;s means and giving back, and he preferred loans repaid from the villagers&#x27; own harvests to outright grants. The districts he developed suffered very little in the great famine of 1836, and his teachings grew into the Hotoku movement.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Sontoku showed that the poverty of many villages could be reversed when people adopted steady self-discipline, and he became a national model of diligence.</div>
+  <div class="tieback">The kural says so many are destitute because few practise disciplined effort, and Sontoku&#x27;s work turned poor villages around by teaching exactly that discipline.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-27/" target="_blank" rel="noopener">Thirukkural Chapter 27: தவம் / Penance (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-027.html" target="_blank" rel="noopener">தவம் - அதிகாரம் 27 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Sukkah.45b" target="_blank" rel="noopener">Babylonian Talmud, Tractate Sukkah 45b (William Davidson / Koren–Steinsaltz English)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Lycurgus*.html" target="_blank" rel="noopener">Plutarch, Life of Lycurgus (trans. Bernadotte Perrin, Loeb)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://chs.harvard.edu/primary-source/plato-phaedo-sb/" target="_blank" rel="noopener">Plato, Phaedo 64a (trans. Benjamin Jowett)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Ninomiya-Sontoku" target="_blank" rel="noopener">Ninomiya Sontoku (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.nippon.com/en/japan-topics/b07209/ninomiya-sontoku-symbol-of-self-education-makes-a-comeback.html" target="_blank" rel="noopener">Ninomiya Sontoku: Symbol of Self-Education Makes a Comeback</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0269.html">&larr; Kural 269</a>
+  <a href="kural-0271.html">Kural 271 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-027.html">Penance</a>
+  <a class="skip-btn" href="kural-0271.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

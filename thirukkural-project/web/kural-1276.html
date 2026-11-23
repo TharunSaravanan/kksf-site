@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1276 — The Reading of the Signs | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1276</h1>
+<p class="adhikaram"><a href="adhikaram-128.html">The Reading of the Signs</a> &middot; Kuripparivuruthal &middot; <span class="tamil">குறிப்பறிவுறுத்தல்</span></p>
+
+<div class="tamil-text">பெரிதாற்றிப் பெட்பக் கலத்தல் அரிதாற்றி
+அன்பின்மை சூழ்வ துடைத்து.</div>
+<div class="translit">Peridhaatrip petpak kalaththal aridhaatri
+anpinmai soozhva thudaiththu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>He hugs me with great love and joy. But this hints that he is about to do the hard thing again and leave me, without caring how I feel.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a parent who gives you an extra-long hug at the door, and you suddenly realise they are about to go on a trip. The heroine notices her husband’s extra-loving embrace and guesses that he is getting ready to leave her again.</p>
+
+<h2 class="section">University</h2>
+<p>The wife, speaking to her confidante, reads her husband’s unusually tender union (peritu āṟṟi, ‘showing great love’; peṭpak kalattal, ‘uniting so as to delight’) as a kuṟippu of something else: aritu āṟṟi, doing the hard thing, separation, and anpiṉmai cūḻvatu, contemplating lovelessness. Varadarasanar and Kesikan take it this way, as does Kalaignar, who says the embrace seems to signal another parting. Solomon Pappaiah reads the first half differently, as her having endured the past separation, so that his present embrace makes her think of his lack of love. Pope’s couplet on ytamizh (‘While lovingly embracing me, his heart is only grieved’) follows the separation reading. The text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Rasa dance, when the gopis grow proud of Krishna’s attention after he has delighted them, he suddenly vanishes from among them, leaving them searching the forest for him.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/10/" target="_blank" rel="noopener">Bhagavata Purana 10.29-30 (paraphrase; cf. tr. A.C. Bhaktivedanta Swami Prabhupada)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Bhagavata shows an intense union with the beloved followed at once by his disappearance.</div>
+  <div class="tieback">The Kural’s wife fears exactly this pattern: closeness that signals an imminent departure.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;A time to cast away stones, and a time to gather stones together; a time to embrace, and a time to refrain from embracing;&rdquo;</div>
+  <div class="cite">&mdash; Ecclesiastes 3:5 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Ecclesiastes says that embracing and parting each have their season.</div>
+  <div class="tieback">The wife in the Kural senses that a time of embracing is about to give way to a time apart.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And if a woman fears from her husband contempt or evasion, there is no sin upon them if they make terms of settlement between them - and settlement is best.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 4:128 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an addresses a wife who senses her husband drawing away and urges reconciliation.</div>
+  <div class="tieback">The Kural’s wife likewise detects signs of his withdrawal, though in her case through his very tenderness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;How canst thou say: I love thee, when thy heart is not with me?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">Judges 16:15 (JPS 1917, via Mechon-Mamre)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Delilah confronts Samson because his words of love do not match what she senses in his heart.</div>
+  <div class="tieback">The Kural’s wife also senses a gap between loving gestures and an intention to leave.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;From endearment springs grief, from endearment springs fear. For one who is wholly free from endearment there is no grief, whence then fear?&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 212 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada teaches that attachment to the dear brings with it the fear of losing them.</div>
+  <div class="tieback">The wife’s fear in the Kural, that even his embrace foretells parting, is the fear the Dhammapada says endearment produces.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">On his wedding procession Arishtanemi turns back, renounces the world and leaves his bride Rajimati, who exclaims: ‘Shame upon my life, that I have been forsaken by him!’</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 22.14-29 (tr. Hermann Jacobi, SBE 45; Rajimati’s words at 22.29)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Jain story centres on a bridegroom who leaves his bride at the very moment of union.</div>
+  <div class="tieback">Rajimati suffers the departure that the Kural’s wife fears behind her husband’s embrace, though Arishtanemi leaves for renunciation, not for another journey.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Beholding His wondrous beauty, the milk-maid was entranced, and said, &quot;Please don&#x27;t leave me; please don&#x27;t come and go!&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 338, Raag Gauree, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Kabir pictures a milk-maid so captivated by the Lord&#x27;s beauty that, even while with Him, she begs Him not to leave.</div>
+  <div class="tieback">In the Kural the wife reads her husband&#x27;s unusually loving embrace as a hint that he means to leave again; Kabir&#x27;s milk-maid, too, feels the fear of parting in the very moment of closeness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">After Ariadne helps Theseus escape the Labyrinth and sails with him, he abandons her asleep on the island of Naxos.</div>
+  <div class="cite">&mdash; Ariadne on Naxos, as told in Ovid, Heroides 10 and Catullus 64 (paraphrase) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The myth tells of a lover who leaves just after a time of closeness.</div>
+  <div class="tieback">The Kural’s wife fears that her husband’s tender embrace is a prelude to such a leaving.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Pausanias says the common lover, who loves the body rather than the soul, is not constant, and when the bloom fades he takes wing and flies away.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Plato/symposium.html" target="_blank" rel="noopener">Plato, Symposium 183e (paraphrase; cf. tr. Benjamin Jowett)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Plato contrasts unstable love, which ends in departure, with lasting love of character.</div>
+  <div class="tieback">The wife in the Kural fears that intensity of embrace may signal a love that is about to fly away.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Lincoln&#x27;s Farewell Address at Springfield</div>
+  <div class="rle-meta">11 February 1861 &middot; Springfield, Illinois, United States</div>
+  <div class="quote is-paraphrase">On 11 February 1861, the day before his 52nd birthday, President-elect Abraham Lincoln spoke to friends and neighbours gathered at the Great Western Railroad depot in Springfield before boarding a train for Washington. He spoke of his sadness at leaving the town where he had lived for 25 years, said he did not know when or whether he would return, and compared the task ahead to the one George Washington had faced. He asked the crowd to pray for him.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The unusual tenderness of Lincoln&#x27;s brief speech reflected the long and uncertain separation that lay ahead.</div>
+  <div class="tieback">The kural&#x27;s wife reads her husband&#x27;s unusually tender embrace as a sign that a hard parting is coming; the warmth of Lincoln&#x27;s farewell carried the same sign of a long separation.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-128/" target="_blank" rel="noopener">Thirukkural Chapter 128: குறிப்பறிவுறுத்தல் / The Reading of the Signs (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-128.html" target="_blank" rel="noopener">குறிப்பறிவுறுத்தல் - அதிகாரம் 128 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/sb/10/" target="_blank" rel="noopener">Srimad Bhagavatam, Canto 10, tr. A.C. Bhaktivedanta Swami Prabhupada and disciples</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917), Hebrew-English Bible</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Ovid, Heroides <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Plato/symposium.html" target="_blank" rel="noopener">Plato, Symposium, tr. Benjamin Jowett</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.nps.gov/liho/learn/historyculture/farewell.htm" target="_blank" rel="noopener">Lincoln&#x27;s Farewell Address</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.abrahamlincolnonline.org/lincoln/speeches/farewell.htm" target="_blank" rel="noopener">Farewell Address, Springfield, Illinois, February 11, 1861</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1275.html">&larr; Kural 1275</a>
+  <a href="kural-1277.html">Kural 1277 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-128.html">The Reading of the Signs</a>
+  <a class="skip-btn" href="kural-1281.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

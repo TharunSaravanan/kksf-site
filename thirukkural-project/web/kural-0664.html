@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 664 — Power in Execution | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 664</h1>
+<p class="adhikaram"><a href="adhikaram-067.html">Power in Execution</a> &middot; Vinaithitpam &middot; <span class="tamil">வினைத்திட்பம்</span></p>
+
+<div class="tamil-text">சொல்லுதல் யார்க்கும் எளிய அரியவாம்
+சொல்லிய வண்ணம் செயல்.</div>
+<div class="translit">Solludhal yaarkkum eLiya ariyavaam
+Solliya vaNNam seyal.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Anyone can talk about how to do something. The hard part is doing it exactly the way it was said.</p>
+
+<h2 class="section">Elementary</h2>
+<p>It is easy to say, “I will clean my whole room today!” It is much harder to actually pick up every sock and toy. Anyone can make a promise; the strong person is the one who does what they said.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet balances eḷiya (easy) against ariya (hard, rare), and solludal (saying) against solliya vaṇṇam seyal (acting in the manner that was said). Parimelazhagar takes solludal as stating how a task ought to be carried out, the counsel a minister gives, so the couplet sets planning and advice against execution; Mu. Varadarasanar and Puliyur Kesikan follow him, while Solomon Pappaiah and Kalaignar widen it to any promise or declaration. The plural eḷiya / ariya (literally ‘easy things’, ‘hard things’) is idiomatic and is normally rendered in the singular. In the chapter’s argument the couplet explains why firmness of mind is needed at all: plans are cheap, and only a firm mind turns word into deed. All three sources agree on the text.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;The mind is restless, turbulent, obstinate and very strong, O Kṛṣṇa, and to subdue it, I think, is more difficult than controlling the wind.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 6.34 (Prabhupada, Bhagavad-gita As It Is)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">After hearing Krishna’s teaching on meditation, Arjuna objects that it is easily described but extremely hard to put into practice.</div>
+  <div class="tieback">Arjuna voices the Kural’s point: stating the method is easy, carrying it out is hard.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;All therefore whatsoever they bid you observe, that observe and do; but do not ye after their works: for they say, and do not.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 23:3 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Jesus criticises teachers whose instructions are sound but who do not practise them themselves.</div>
+  <div class="tieback">‘They say, and do not’ is the failing the Kural has in view.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O you who have believed, why do you say what you do not do? Great is hatred in the sight of Allah that you say what you do not do.&rdquo;</div>
+  <div class="cite">&mdash; Quran 61:2-3 (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Quran rebukes believers who announce intentions or commitments and then fail to act on them.</div>
+  <div class="tieback">It condemns the very gap between saying and doing that the Kural calls the hard part.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Shammai used to say: make your [study of the] Torah a fixed practice; speak little, but do much...&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 1:15 (trans. Joshua Kulp, via Sefaria)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Shammai tells students to promise little and accomplish much, putting deeds ahead of words.</div>
+  <div class="tieback">A practical answer to the Kural’s observation that talk is easy and deeds are hard.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Like a beautiful flower full of color but without fragrance, even so, fruitless are the fair words of one who does not practice them.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 51 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Fine words not put into practice are compared to a flower that looks lovely but has no scent.</div>
+  <div class="tieback">Both texts value the doing over the saying.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Acknowledging the truth about bondage and liberation, but talking only, not acting (in accordance with these tenets), they seek comfort for themselves in mighty words. Clever talking will not work salvation&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 6.9-10 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Mahavira criticises those who can expound the doctrine of bondage and liberation but do not live by it, trusting in words instead of deeds.</div>
+  <div class="tieback">The kural&#x27;s point that saying how a thing should be done is easy while doing it as said is hard is exactly the gap this verse condemns.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;We are good at talking, but our actions are bad.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 85, Siree Raag (Siree Raag ki Vaar, salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Guru Nanak admits the gap between fine words and actual conduct as a common human failing.</div>
+  <div class="tieback">The Kural says anyone can say how a thing should be done, but doing it as said is hard; Guru Nanak names exactly that gap between speaking well and acting well.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Aesop’s fable of the Boasting Traveler, a man brags of a giant leap he made at Rhodes and offers witnesses; a bystander tells him to suppose this is Rhodes and leap for them.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/21" target="_blank" rel="noopener">Aesop’s Fables, The Boasting Traveler (trans. G. F. Townsend)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The fable punctures boasting by demanding the deed itself, here and now.</div>
+  <div class="tieback">The bystander’s challenge makes the Kural’s point: claiming is easy, doing is the test.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Never call yourself a philosopher, nor talk a great deal among the unlearned about theorems, but act conformably to them.&rdquo;</div>
+  <div class="cite">&mdash; Epictetus, Enchiridion 46 (trans. Elizabeth Carter) <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Epictetus tells his students to show their philosophy by how they live, not by talking about it.</div>
+  <div class="tieback">Like the Kural, he treats acting in line with one’s words as the real, and harder, achievement.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Kennedy&#x27;s Moon goal is carried out as stated</div>
+  <div class="rle-meta">25 May 1961 - 20 July 1969 &middot; Washington, D.C., and the Moon</div>
+  <div class="quote is-paraphrase">On 25 May 1961 President John F. Kennedy asked a joint session of Congress to commit the United States to landing a man on the Moon and returning him safely to Earth before the end of the decade. The goal required a huge national effort in funding, engineering and testing through the Mercury, Gemini and Apollo programmes. On 20 July 1969 Apollo 11 landed on the Moon, and its crew returned safely to Earth, within the deadline Kennedy had set.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Announcing the goal took one speech; meeting it exactly as stated took eight years of sustained work by hundreds of thousands of people.</div>
+  <div class="tieback">The kural says anyone can say how a thing should be done but doing it exactly as it was said is hard, and the Moon landing is a rare case of a public declaration fulfilled to the letter.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-67/" target="_blank" rel="noopener">Thirukkural Chapter 67: வினைத்திட்பம் / Power in Action (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-067.html" target="_blank" rel="noopener">வினைத்திட்பம் - அதிகாரம் 67 (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah and Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="http://thirukkural-thamizh.org/html/A067.html" target="_blank" rel="noopener">67. வினைத்திட்பம் (Thirukkural, sandhi-joined text)</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/21" target="_blank" rel="noopener">Aesop&#x27;s Fables (George Fyler Townsend trans.)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12">Enchiridion, Chapter 5 (Epictetus) <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.jfklibrary.org/learn/about-jfk/historic-speeches/address-to-joint-session-of-congress-may-25-1961" target="_blank" rel="noopener">Address to Joint Session of Congress May 25, 1961 (John F. Kennedy)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-14"><a href="https://www.nasa.gov/history/the-decision-to-go-to-the-moon/" target="_blank" rel="noopener">The Decision to Go to the Moon: President John F. Kennedy&#x27;s May 25, 1961 Speech before a Joint Session of Congress</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0663.html">&larr; Kural 663</a>
+  <a href="kural-0665.html">Kural 665 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-067.html">Power in Execution</a>
+  <a class="skip-btn" href="kural-0671.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

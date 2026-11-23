@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 275 — Inconsistent Conduct | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 275</h1>
+<p class="adhikaram"><a href="adhikaram-028.html">Inconsistent Conduct</a> &middot; Koodaavozhukkam &middot; <span class="tamil">கூடாவொழுக்கம்</span></p>
+
+<div class="tamil-text">பற்றற்றேம் என்பார் படிற்றொழுக்கம் எற்றெற்றென்று
+ஏதம் பலவுந் தரும்.</div>
+<div class="translit">Patratrem enbaar padittrozhukkam etretrendru
+Edham palavum tharum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who say, “We have given up all wanting,” but live falsely will face many troubles that make them cry, “What have we done! What have we done!”</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you tell everyone you gave up sweets, but secretly eat them all, one day you’ll be caught — and you’ll feel terrible and say, “Why did I do that?” Pretending costs more in the end than being honest.</p>
+
+<h2 class="section">University</h2>
+<p>The kural records the hypocrite’s own claim — பற்றற்றேம் (“we are free of attachment”) — and sets against it his eventual cry, எற்று எற்று (“what [have we done], what!”), an onomatopoeic doubled lament unusual in the Kural. Valluvar’s focus is on consequences: படிற்றொழுக்கம் (disguised conduct) produces ஏதம் பலவும், “many evils,” culminating in bitter self-reproach. The phrase may refer both to worldly ruin when the imposture is exposed and to karmic suffering afterwards. The pattern — pretended renunciation leading to anguished regret — is echoed in Manu’s consignment of ‘cat’ and ‘heron’ ascetics to hell and in Jesus’ ‘weeping and gnashing of teeth’ for hypocrites.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Those Brahmanas who act like herons, and those who display the characteristics of cats, fall in consequence of that wicked mode of acting into (the hell called) Andhatamisra.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">Manusmriti 4.197 (Bühler translation)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Manu says religious pretenders who behave like the ‘cat’ or the ‘heron’ (feigning piety to catch prey) fall into a dark hell.</div>
+  <div class="tieback">Same moral arithmetic as the Kural: sham renunciation leads to great suffering for the pretender.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;…and appoint him his portion with the hypocrites: there shall be weeping and gnashing of teeth.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 24:51 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In Jesus’ parable, the unfaithful servant is sent to share the fate of hypocrites, a place of weeping and grinding teeth.</div>
+  <div class="tieback">The hypocrite’s end is anguished lament — the Kural’s cry of ‘What have we done!’</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;The hypocrites will call to the believers, ‘Were we not with you?’ They will say, ‘Yes, but you afflicted yourselves and awaited [misfortune for us] and doubted, and wishful thinking deluded you…’&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 57:14 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">On the Day of Judgement the hypocrites plead that they were outwardly with the believers, and are told that their self-deception ruined them.</div>
+  <div class="tieback">Captures the Kural’s scene of the pretender’s too-late realisation that his false show has destroyed him.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;The sinners in Zion are afraid; fearfulness hath surprised the hypocrites. Who among us shall dwell with the devouring fire?&rdquo;</div>
+  <div class="cite">&mdash; Isaiah 33:14 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Isaiah describes hypocrites suddenly seized with terror when judgement arrives.</div>
+  <div class="tieback">Mirrors the Kural’s picture of the pretender overtaken by distress and crying out in dismay.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Just as kusa grass wrongly handled cuts the hand, even so, a recluse’s life wrongly lived drags one to states of woe.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 311 (tr. Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha says a monk’s life lived falsely injures the one who lives it, like grass grabbed the wrong way slicing the hand.</div>
+  <div class="tieback">Exactly the Kural’s warning: the renunciant’s life, when faked, turns against the faker and brings him grief.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Thus the self-willed sinner who leaves the road of the highest Ginas, who with the appetite of an osprey is desirous of pleasure, will grieve in useless sorrow.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 20.50 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The lecture&#x27;s verdict on the false monk is that his hidden craving for pleasure ends in bitter and fruitless grief.</div>
+  <div class="tieback">Valluvar says those who falsely claim to be free of attachment will end crying &#x27;What have we done!&#x27;; the Jain text likewise foresees useless sorrow for the monk who hides his appetites.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;He dyes his robes with saffron dye, and wearing these robes, he goes out begging. … From house to house he goes begging, and tries to teach the world; but his mind is blind, and so he loses his honor.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1012, Raag Maaroo, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In Raag Maaroo Guru Nanak describes a man who puts on the saffron robe of renunciation and begs from door to door, preaching to others while his own mind stays blind, until he loses his honour.</div>
+  <div class="tieback">The Kural warns that those who falsely claim to have given up all attachment will end up crying &#x27;what have we done!&#x27;; Guru Nanak likewise shows the false renunciant ending in disgrace.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;A Wolf resolved to disguise himself in order that he might prey upon a flock of sheep without fear of detection. So he clothed himself in a sheepskin… But that very night… the shepherd… laid hands on the Wolf in mistake for a Sheep, and killed him with his knife on the spot.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/files/11339/11339-h/11339-h.htm" target="_blank" rel="noopener">Aesop, “The Wolf in Sheep’s Clothing” (tr. V. S. Vernon Jones)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The wolf’s disguise works — so well that it gets him slaughtered as a sheep.</div>
+  <div class="tieback">The disguise itself becomes the source of the deceiver’s ruin, as the Kural predicts of false renunciation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;A good conscience welcomes the crowd, but a bad conscience, even in solitude, is disturbed and troubled.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius 43.5 (tr. Gummere)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Seneca says a person living falsely is haunted and uneasy even when alone.</div>
+  <div class="tieback">Describes the inner torment that the Kural’s ‘What have we done!’ expresses.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The fall of Cardinal Wolsey</div>
+  <div class="rle-meta">1529-1530 &middot; Hampton Court, London and Leicester, England</div>
+  <div class="quote is-paraphrase">Thomas Wolsey, a cardinal of the Church and Henry VIII&#x27;s Lord Chancellor, accumulated enormous wealth, with an income at its peak estimated at many times that of the richest nobleman, and built Hampton Court Palace. When he failed to obtain the pope&#x27;s annulment of Henry&#x27;s marriage to Catherine of Aragon, he fell from favour in 1529 and was stripped of his offices except the archbishopric of York. In November 1530 he was arrested on a charge of treason and died at Leicester Abbey on his way south to face it.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">A churchman vowed to spiritual service who had amassed worldly power and riches lost all of it within a single year.</div>
+  <div class="tieback">The kural warns that those who claim to have renounced attachment while clinging to the world will meet many sorrows, and Wolsey&#x27;s sudden ruin fits that warning.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-28/" target="_blank" rel="noopener">Thirukkural Chapter 28: கூடாவொழுக்கம் (Imposture) — text, commentaries and translation</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-028.html" target="_blank" rel="noopener">கூடாவொழுக்கம் — அதிகாரம் 28 — திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">The Laws of Manu (Manusmṛti), translated by Georg Bühler, Sacred Books of the East vol. 25 (Oxford, 1886)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.gutenberg.org/files/11339/11339-h/11339-h.htm" target="_blank" rel="noopener">Aesop&#x27;s Fables, trans. V. S. Vernon Jones (1912)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius (tr. Richard Mott Gummere, Loeb, 1917–1925)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.hrp.org.uk/hampton-court-palace/history-and-stories/thomas-wolsey/" target="_blank" rel="noopener">Thomas Wolsey: &#x27;The Other King&#x27;</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.worldhistory.org/Thomas_Wolsey/" target="_blank" rel="noopener">Thomas Wolsey</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0274.html">&larr; Kural 274</a>
+  <a href="kural-0276.html">Kural 276 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-028.html">Inconsistent Conduct</a>
+  <a class="skip-btn" href="kural-0281.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

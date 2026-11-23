@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1023 — Family Maintenance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1023</h1>
+<p class="adhikaram"><a href="adhikaram-103.html">Family Maintenance</a> &middot; Kudiseyalvakai &middot; <span class="tamil">குடிசெயல்வகை</span></p>
+
+<div class="tamil-text">குடிசெய்வல் என்னும் ஒருவற்குத் தெய்வம்
+மடிதற்றுத் தான்முந் துறும்.</div>
+<div class="translit">Kudiseyval ennum oruvarkuth theyvam
+madidhatruth thaanmun thurum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>When a person decides, &#x27;I will lift up my family,&#x27; even the gods tuck in their clothes, ready for work, and hurry ahead to help.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Have you noticed that when you really decide to clean your room, things suddenly seem to fall into place? Valluvar says that when someone truly decides to lift up their family, it is as if heaven rolls up its sleeves and runs ahead to help.</p>
+
+<h2 class="section">University</h2>
+<p>The striking image is madi tharru (மடிதற்று, ‘having tucked up the fold of its garment’), the gesture of someone girding up to work or run, so that theyvam (தெய்வம்) mun urum (முந்துறும், ‘comes forward first’). Mu. Varadarasanar glosses theyvam as oozh (ஊழ், ‘destiny, fate’), keeping with the Kural&#x27;s chapter 38; Solomon Pappaiah reads it as a deity tightening its garment; Karunanidhi, rationalising, calls it the force of nature known as divine action. Pope gives ‘With vest succinct the goddess leads the way.’ The verb kudiseyval (‘I will make my family’) is a first-person vow, continuing 1021. The text is identical on both sources.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;The demigods, being pleased by sacrifices, will also please you, and thus, by cooperation between men and demigods, prosperity will reign for all.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 3.11 (Bhagavad-gītā As It Is, A.C. Bhaktivedanta Swami Prabhupāda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna describes a partnership in which human effort offered rightly draws divine help, and prosperity follows.</div>
+  <div class="tieback">As in the Kural, the divine meets the person who first commits to the work.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">The Psalmist says that unless the LORD builds the house, those who build it labour in vain.</div>
+  <div class="cite">&mdash; Psalm 127:1 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The psalm teaches that human building succeeds only when God takes part in it.</div>
+  <div class="tieback">It shares the Kural&#x27;s sense that unseen help joins the family-builder, but it puts God first where the Kural puts the human vow first.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Indeed, Allah will not change the condition of a people until they change what is in themselves.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 13:11 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an ties God&#x27;s change of a people&#x27;s condition to the change they first make in themselves.</div>
+  <div class="tieback">As in the Kural, divine help follows a human resolve.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;do His will as though it were your will, so that He will do your will as though it were His.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Mishnah, Pirkei Avot 2:4 (tr. Joshua Kulp, Mishnah Yomit, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabban Gamaliel teaches that a person who makes God&#x27;s purposes his own will find God taking up his purposes in turn.</div>
+  <div class="tieback">The Kural similarly promises that heaven runs ahead to help the one who commits to a worthy task.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;You yourselves must strive; the Buddhas only point the way.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 276 (tr. Acharya Buddharakkhita, Access to Insight) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha says no outside power does the work for you; teachers only show the road.</div>
+  <div class="tieback">Buddhism agrees that everything starts with personal resolve, but unlike the Kural it promises no deity running ahead to help.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;My own Self is the doer and undoer of misery and happiness; my own Self, friend and foe, according as I act well or badly.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 20.37 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The monk Anathi tells King Srenika that a person&#x27;s own conduct, not any outside protector, makes happiness or misery.</div>
+  <div class="tieback">Jainism, which has no creator God, reads the Kural&#x27;s ‘theyvam’ as the fruit of one&#x27;s own action, much as Varadarasanar glosses it as destiny.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;A disciple who walks one step towards Guru to take his refuge and goes to him with devotion and humility, Guru advances to receive him (devotee) by taking million steps.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sikhitothemax.org/shabad?id=41140" target="_blank" rel="noopener">Bhai Gurdas, Kabitt Savaiye (the kabitt beginning ‘Charan saran gur ek painda jai chal’), English translation as given in the BaniDB database on SikhiToTheMax</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Bhai Gurdas, the early Sikh scholar and scribe of the Adi Granth, says that the Guru comes a million steps forward to meet anyone who takes a single step toward him. His Kabitt Savaiye are early exegesis, not scripture.</div>
+  <div class="tieback">The Kural says that when a person resolves to raise his family, fortune tucks up its garment and runs ahead to help; Bhai Gurdas says the Guru runs far ahead to meet the one who sets out.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Aesop&#x27;s fable of Hercules and the Waggoner, a carter whose wagon is stuck prays to Hercules without lifting a finger; the god tells him to put his shoulder to the wheel and whip his horses, and only then to call on him.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/21" target="_blank" rel="noopener">Aesop&#x27;s Fables, ‘Hercules and the Waggoner’</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The god helps the one who is already working, not the one who waits.</div>
+  <div class="tieback">It matches the Kural exactly: divine help comes running to the person who has started the work.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Terence&#x27;s proverb that fortune helps the brave (fortes fortuna adiuvat), later repeated by Cicero and Seneca, holds that luck favours those who act boldly.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0116" target="_blank" rel="noopener">Terence, Phormio 203</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Roman moralists turned the line into a maxim that bold, committed action draws good fortune to it.</div>
+  <div class="tieback">The Kural&#x27;s fortune that hurries ahead of the committed family-builder is the same idea.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Mary Anning&#x27;s family finds the first complete ichthyosaur</div>
+  <div class="rle-meta">1811-1812 &middot; Lyme Regis, Dorset, England</div>
+  <div class="quote is-paraphrase">After cabinetmaker Richard Anning died in 1810 leaving his family poor and in debt, his children Mary and Joseph kept collecting and selling fossils from the cliffs to support the household. In 1811 Joseph found a large fossil skull, and Mary later uncovered the rest of the skeleton; the specimen, recognised as an ichthyosaur, sold for 23 pounds and helped the family out of debt.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The find launched Mary Anning&#x27;s career as one of the most important fossil collectors in the history of palaeontology.</div>
+  <div class="tieback">The kural promises that when someone resolves to raise the family, fortune itself girds up and runs ahead to help, and the Annings&#x27; striking find came while they were working to keep their family afloat.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-103/" target="_blank" rel="noopener">Thirukkural Chapter 103: குடிசெயல்வகை / The Way of Maintaining the Family (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-103.html" target="_blank" rel="noopener">குடிசெயல்வகை - அதிகாரம் 103 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.sikhitothemax.org/shabad?id=41140" target="_blank" rel="noopener">Kabitt Savaiye</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.gutenberg.org/ebooks/21" target="_blank" rel="noopener">Aesop&#x27;s Fables, &#x27;The Miser and His Gold&#x27;</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0116" target="_blank" rel="noopener">Terence, Phormio (line 203: fortes fortuna adiuvat)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.nhm.ac.uk/discover/mary-anning-unsung-hero.html" target="_blank" rel="noopener">Mary Anning: the unsung hero of fossil discovery</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.lymeregismuseum.co.uk/collection/mary-anning/" target="_blank" rel="noopener">Mary Anning</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1022.html">&larr; Kural 1022</a>
+  <a href="kural-1024.html">Kural 1024 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-103.html">Family Maintenance</a>
+  <a class="skip-btn" href="kural-1031.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

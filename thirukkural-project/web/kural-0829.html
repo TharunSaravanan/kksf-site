@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 829 — Unreal Friendship | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 829</h1>
+<p class="adhikaram"><a href="adhikaram-083.html">Unreal Friendship</a> &middot; Koodaa Natpu &middot; <span class="tamil">கூடா நட்பு</span></p>
+
+<div class="tamil-text">மிகச்செய்து தம்மெள்ளு வாரை நகச்செய்து
+நட்பினுள் சாப்புல்லற் பாற்று.</div>
+<div class="translit">Migachcheythu thammellu vaarai nagachcheythu
+natpinul saappullar̲ paat̲ru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>When people make a big show of friendship but secretly look down on you, smile back at them on the outside, but let that friendship die inside you.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If a classmate is super-friendly to your face but laughs at you behind your back, you don’t have to start a fight. You can stay polite and friendly when you meet, but quietly stop trusting them and stop sharing your secrets.</p>
+
+<h2 class="section">University</h2>
+<p>Migachcheythu (மிகச்செய்து) is ‘making much of (friendship)’, and thammeḷḷuvaar (தம் எள்ளுவார்) are ‘those who scorn us’ within. The difficult phrase saappullaṟpaaṯru (சாப்புல்லற்பாற்று) is read by the commentators as ‘one should embrace (pullal) in such a way that it dies (saa)’: Varadarasanar says one should make them laugh in that friendship while acting so that the bond dies, and Pappaiah and Kalaignar read it as answering pretence with pretence. Pope’s explanation, in the tradition of Parimelazhagar’s royal-political reading, presents this as the duty of kings toward such foes. Whether read as defensive policy or as cynicism, the couplet assumes a political setting where open rupture is costly; ytamizh.com and thirukkural.net give identical text.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;If thou art angry, show thyself as if thou art not so, speaking even then with a smile on thy lips.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Adi Parva, Section 142, Kanika’s counsel (Ganguli translation)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Kanika counsels Dhritarashtra to hide hostility behind a smiling manner in dealing with rivals.</div>
+  <div class="tieback">This is the Kural’s strategy of keeping the false friend smiling while one’s own inner friendship has ended.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Behold, I send you forth as sheep in the midst of wolves: be ye therefore wise as serpents, and harmless as doves.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 10:16 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus tells his disciples to combine shrewdness about hostile people with innocence of conduct.</div>
+  <div class="tieback">Both counsel staying outwardly peaceable while inwardly alert to those who mean harm.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Let not believers take disbelievers as allies rather than believers. And whoever [of you] does that has nothing with Allah, except when taking precaution against them in prudence.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 3:28 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The verse forbids real alliance with hostile parties, while permitting outward caution in prudence.</div>
+  <div class="tieback">The Kural similarly permits outward civility toward the scornful while withholding real friendship.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">When Absalom rebels against David, David’s loyal friend Hushai goes to Absalom, greets him warmly and appears to join him, but inwardly remains David’s man and defeats the dangerous advice of Ahithophel.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">2 Samuel 15:32-37; 16:15-19; 17:5-14</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Outward friendship is offered to a hostile party while inner loyalty lies elsewhere.</div>
+  <div class="tieback">Hushai keeps Absalom pleased on the surface while the ‘friendship’ is dead within, as the Kural advises.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Hatred is never appeased by hatred in this world. By non-hatred alone is hatred appeased. This is a law eternal.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 5 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha teaches that hostility is ended only by non-hostility.</div>
+  <div class="tieback">A contrast: the Kural answers pretence with pretence, while the Dhammapada asks one to drop hostility altogether.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;It is better to be without the love of those who are without sincerity. Death is preferable to an incurable disease. To kill him at once is more desirable than to vex a man so that he becomes sore at heart, and to abuse is better than to praise one for that which we do not possess.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">Nālaṭiyār, ch. 22 (&#x27;The choice of friends&#x27;), st. 9 (English translation in The Indian Antiquary, via wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Nālaṭiyār says that affection from insincere people is worth less than having no affection at all, and that false praise is worse than open abuse.</div>
+  <div class="tieback">Valluvar advises letting a pretender&#x27;s friendship die inwardly while keeping him smiling; the Nālaṭiyār agrees that insincere love is better done without, though it does not recommend answering pretence with pretence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;One who offers both respectful greetings and rude refusal to his master, has gone wrong from the very beginning. O Nanak! Both of his actions are false; he obtains no place in the Court of the Lord.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 474, Raag Aasaa, Asa Ki Vaar (salok 2 before pauri 21), Guru Angad (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Asa Ki Vaar Guru Angad condemns double conduct, outward respect together with inner refusal, as false from the start.</div>
+  <div class="tieback">The Kural advises answering a scornful false friend with an outward smile while letting the friendship die inside; Guru Angad treats any such split between outward show and inner stance as falsehood.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Back in Ithaca disguised as a beggar, Odysseus endures the suitors’ mockery in his own house, keeping a calm face and even smiling grimly to himself, while he quietly prepares their destruction.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, Odyssey, Books 17-20</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Odysseus answers scorn with outward composure while his inward attitude toward the suitors is settled.</div>
+  <div class="tieback">Outward ease toward those who scorn you, inner withdrawal: the Kural’s strategy in epic form.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;The best composition and temperature, is to have openness in fame and opinion; secrecy in habit; dissimulation in seasonable use; and a power to feign, if there be no remedy.&rdquo;</div>
+  <div class="cite">&mdash; Francis Bacon, Essays, ‘Of Simulation and Dissimulation’ <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Bacon allows dissimulation and even feigning as a last resort, used only in season.</div>
+  <div class="tieback">Like the Kural, Bacon treats measured counter-pretence as legitimate prudence against those who deceive.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Cesare Borgia&#x27;s reconciliation with his captains at Senigallia</div>
+  <div class="rle-meta">October - 31 December 1502 &middot; Senigallia, Marche, Italy</div>
+  <div class="quote is-paraphrase">In October 1502 several of Cesare Borgia&#x27;s own condottieri met at Magione and conspired against him, and over the following weeks they negotiated a reconciliation and returned to his service. At the end of December, Vitellozzo Vitelli, Oliverotto da Fermo and two members of the Orsini family met Borgia at Senigallia, which they had just taken in his name. Borgia separated them from their troops, arrested them, and had them put to death, an episode described by Machiavelli, who was then an envoy at Borgia&#x27;s side.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Both sides made a show of renewed friendship while neither trusted the other, and the reconciliation ended in Borgia&#x27;s sudden blow.</div>
+  <div class="tieback">The kural describes those who make a great show of friendship while secretly despising you, and advises answering with outward cordiality while letting the bond die within, which is how Borgia treated the captains who had plotted against him.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-83/" target="_blank" rel="noopener">Thirukkural Chapter 83: கூடாநட்பு / Unreal Friendship (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://thirukkural.net/ta/kural/adhigaram-083.html" target="_blank" rel="noopener">கூடா நட்பு - அதிகாரம் 83 - திருக்குறள் (with Puliyur Kesigan, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The JPS Tanakh: Gender-Sensitive Edition (Revised JPS, 2023)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">The Nāladiyār (English translation serialised in The Indian Antiquary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, The Odyssey, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Francis Bacon, Essays (‘Of Fame’, fragment) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Cesare-Borgia" target="_blank" rel="noopener">Cesare Borgia</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.treccani.it/enciclopedia/magione_(Enciclopedia-Italiana)/" target="_blank" rel="noopener">Magione (Enciclopedia Italiana)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.treccani.it/enciclopedia/vitelli_(Enciclopedia-Italiana)/" target="_blank" rel="noopener">Vitelli (Enciclopedia Italiana)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0828.html">&larr; Kural 828</a>
+  <a href="kural-0830.html">Kural 830 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-083.html">Unreal Friendship</a>
+  <a class="skip-btn" href="kural-0831.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

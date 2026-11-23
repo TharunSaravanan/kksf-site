@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1154 — Unendurable Separation | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1154</h1>
+<p class="adhikaram"><a href="adhikaram-116.html">Unendurable Separation</a> &middot; Pirivaatraamai &middot; <span class="tamil">பிரிவாற்றாமை</span></p>
+
+<div class="tamil-text">அளித்தஞ்சல் என்றவர் நீப்பின் தெளித்தசொல்
+தேறியார்க்கு உண்டோ தவறு.</div>
+<div class="translit">Aliththanjal endravar neeppin theliththasol
+thaeriyaarkku undo thavaru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If the one who lovingly said &#x27;Do not be afraid&#x27; goes away, is it the fault of the one who believed his comforting words?</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a parent says, ‘Don’t worry, I’ll be right here,’ and then leaves the room. Would it be your fault for believing them? Of course not. The wife in this couplet asks the same question: her husband promised she need not fear, so how can she be blamed for trusting him?</p>
+
+<h2 class="section">University</h2>
+<p>Aḷittu (அளித்து) is ‘having shown grace, having loved’ and añcal (அஞ்சல்) is the prohibitive ‘do not fear’; together they recall the husband’s reassurance at the start of their life together, which Solomon Pappaiah places at the time of marriage. Nīppiṉ (நீப்பின்) is ‘if he leaves’, and teḷitta col tēṟiyārkku (தெளித்த சொல் தேறியார்க்கு) ‘to those who trusted the words that made them clear (free of doubt)’. The question uṇṭō tavaṟu (உண்டோ தவறு, ‘is there any fault?’) is rhetorical: the fault lies with the one who promised. Commentators agree on this reading; Pope: ‘If he depart, who fondly said, “Fear not,” what blame’s incurred / By those who trusted to his reassuring word?’</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">King Dushyanta marries Shakuntala in the hermitage, gives her his signet ring and promises to send for her, but when she later comes to his court he does not recognise her and rejects her.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/" target="_blank" rel="noopener">Kalidasa, Abhijnanashakuntalam, Act 5 (paraphrase)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">In Kalidasa’s play, Shakuntala is publicly shamed for having trusted the king’s word, though the fault lies with his forgetting (caused by a curse).</div>
+  <div class="tieback">Shakuntala’s position is the Kural’s question acted out: is the one who trusted a lover’s promise to blame when he fails her?</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Peace I leave with you, my peace I give unto you: not as the world giveth, give I unto you. Let not your heart be troubled, neither let it be afraid.&rdquo;</div>
+  <div class="cite">&mdash; John 14:27 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">On the night before he leaves them, Jesus tells his disciples not to be afraid, and he promises to come again to them.</div>
+  <div class="tieback">Jesus’ ‘neither let it be afraid’ answers to the Kural’s añcal (‘fear not’); where the Kural fears a reassurance broken, the Gospel presents one meant to be kept.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;So We restored him to his mother that she might be content and not grieve and that she would know that the promise of Allah is true.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 28:13 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Moses’ mother sets her baby adrift on God’s assurance that he will be returned to her, and the Qur’an stresses that the promise was kept.</div>
+  <div class="tieback">The verse contrasts with the Kural: God’s ‘do not fear’ proves true, while the human lover’s reassurance is what the heroine fears will be broken.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">In Hosea, God promises to betroth Israel to Himself forever, in righteousness, justice, lovingkindness, compassion and faithfulness, so that the bride may trust that this time she will not be abandoned.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/" target="_blank" rel="noopener">Hosea 2:21-22 (Hebrew numbering; 2:19-20 in English Bibles) (paraphrase)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The prophet uses the language of marriage to describe a faithfulness that does not break its word.</div>
+  <div class="tieback">Hosea offers the kind of promise the Kural’s heroine longs to trust, and shows by contrast how much hurt a broken ‘fear not’ can do.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In Ashvaghosha’s life of the Buddha, Yashodhara, waking to find that Siddhartha has left the palace in the night, laments that he abandoned her while she slept and did not take her with him as ancient kings took their wives into the forest.</div>
+  <div class="cite">&mdash; Ashvaghosha, Buddhacarita, canto 8 (paraphrase) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Yashodhara’s grief is sharpened by the sense that she trusted a husband who then left without warning.</div>
+  <div class="tieback">She asks, in effect, the Kural’s question: what fault was it of mine, who trusted him, that he should go?</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">Princess Rajimati is promised in marriage to Arishtanemi, but on the wedding day, seeing animals penned for the feast, he gives away his ornaments and leaves to become a monk; she is left overwhelmed with grief.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 22.6-28 (tr. Hermann Jacobi, SBE 45) (paraphrase)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Uttaradhyayana tells how a betrothal everyone trusted ended on the wedding day itself.</div>
+  <div class="tieback">Rajimati, who trusted the match, is left in the Kural’s position, though the Jain text treats the groom’s departure as an act of compassion rather than a broken promise.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;In separation, He is not separated from us; He is pervading and permeating amongst all.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 46, Sri Raag, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Arjan teaches that the divine Beloved never truly leaves, because He pervades everything, even when the soul feels parted from Him.</div>
+  <div class="tieback">The Kural&#x27;s heroine asks whether she is at fault for trusting the one who said &#x27;Do not fear&#x27; and then left; Gurbani answers that the divine Beloved who reassures the soul never actually departs, so trust in Him is never misplaced.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When Dido learns that Aeneas is secretly preparing his fleet to leave Carthage, she confronts him, reproaching him for hoping to slip away in silence and appealing to the pledges and union they had shared.</div>
+  <div class="cite">&mdash; Virgil, Aeneid 4 (paraphrase) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Virgil, Dido treats Aeneas’s departure as a betrayal of everything she had believed from him.</div>
+  <div class="tieback">Dido’s anguish asks the Kural’s question: is the one who trusted to blame when the lover leaves?</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Kant argues that making a promise one does not intend to keep cannot be made a universal law, because if everyone did it, no one would believe a promise at all.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/5682" target="_blank" rel="noopener">Immanuel Kant, Groundwork of the Metaphysics of Morals, section II (paraphrase)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Kant, promising depends on trust, and breaking one’s word harms the very practice of promising.</div>
+  <div class="tieback">The Kural’s heroine shows the cost on a small scale: a broken ‘fear not’ damages her ability to trust any promise.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">John Donne writes A Valediction: Forbidding Mourning</div>
+  <div class="rle-meta">1611 or 1612 (published 1633) &middot; London, England</div>
+  <div class="quote is-paraphrase">John Donne&#x27;s poem A Valediction: Forbidding Mourning, first published in 1633, is a farewell in which the speaker tells his beloved not to grieve at their parting because their love cannot be divided by distance. According to Donne&#x27;s early biographer Izaak Walton, Donne gave the poem to his wife shortly before setting out on a journey to France in 1611 or 1612.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The poem is one of the most famous reassurances ever written by a departing lover, telling the one left behind that there is no cause for fear or tears.</div>
+  <div class="tieback">The kural asks whether any blame falls on the one who trusted the lover who said do not be afraid and then went away, and Donne&#x27;s poem is that very do-not-fear spoken on the eve of a departure.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-116/" target="_blank" rel="noopener">Thirukkural Chapter 116: பிரிவாற்றாமை / Separation unendurable (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-116.html" target="_blank" rel="noopener">பிரிவாற்றாமை - அதிகாரம் 116 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.gutenberg.org/" target="_blank" rel="noopener">Kalidasa, Abhijnanashakuntalam (Shakuntala)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">Ashvaghosha, Buddhacarita (Acts of the Buddha) <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Virgil, Aeneid, Book 4 <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/5682" target="_blank" rel="noopener">Immanuel Kant, Groundwork of the Metaphysic of Morals (Fundamental Principles of the Metaphysic of Morals), Section I, trans. Thomas Kingsmill Abbott</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://rpo.library.utoronto.ca/poems/valediction-forbidding-mourning" target="_blank" rel="noopener">A Valediction: Forbidding Mourning</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.ebsco.com/research-starters/history/valediction-forbidding-mourning-john-donne" target="_blank" rel="noopener">A Valediction: Forbidding Mourning by John Donne (Joseph Rosenblum)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1153.html">&larr; Kural 1153</a>
+  <a href="kural-1155.html">Kural 1155 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-116.html">Unendurable Separation</a>
+  <a class="skip-btn" href="kural-1161.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

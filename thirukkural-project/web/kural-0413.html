@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 413 — Hearing | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 413</h1>
+<p class="adhikaram"><a href="adhikaram-042.html">Hearing</a> &middot; Kelvi &middot; <span class="tamil">கேள்வி</span></p>
+
+<div class="tamil-text">செவியுணவின் கேள்வி உடையார் அவியுணவின்
+ஆன்றாரோடு ஒப்பர் நிலத்து.</div>
+<div class="translit">Seviyunavin kelvi udaiyaar aviyunavin
+Aandraarodu oppar nilaththu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who have gained knowledge by listening, which is food for the ears, are equal on earth to the gods, who are fed by offerings in sacred fires.</p>
+
+<h2 class="section">Elementary</h2>
+<p>In old times people offered food to the gods through a sacred fire. Valluvar says people who ‘eat’ wise words through their ears are like gods living on earth.</p>
+
+<h2 class="section">University</h2>
+<p>A carefully balanced pair of compounds: செவியுணவு (ear-food) is set against அவியுணவு (oblation-food, havis), so that ‘those who have hearing’ are matched with ‘the exalted ones who eat oblations’ — the devas. Parimelazhagar glosses ஆன்றார் as the celestials; நிலத்து (‘on earth’) marks the hearers as terrestrial counterparts of the gods. The logic continues the food metaphor of 412: just as the gods are sustained by subtle offerings rather than gross food, the learned are sustained by subtle instruction. The kural thus elevates the listener’s status, not merely the value of what is heard.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Krishna says that even one who merely listens to this teaching with faith and without envy is freed from sin and attains the auspicious worlds of the righteous.</div>
+  <div class="cite">&mdash; <a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita 18.71</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Gita closes by promising elevated status — the heavenly realms of the virtuous — not only to the one who studies but to the one who simply hears it faithfully.</div>
+  <div class="tieback">Both texts raise the attentive hearer to a quasi-divine rank.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But blessed are your eyes, for they see: and your ears, for they hear. For verily I say unto you, That many prophets and righteous men have desired to see those things which ye see, and to hear those things which ye hear…&rdquo;</div>
+  <div class="cite">&mdash; Matthew 13:16–17 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Jesus tells his disciples that their hearing places them in a privileged position beyond that of prophets and the righteous of old.</div>
+  <div class="tieback">Hearing confers exalted status — the Kural likens it to divinity, Jesus to a blessedness surpassing prophets.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">The Prophet said that no people gather in a house of God reciting and studying the Book among themselves but that tranquillity descends on them, mercy covers them, the angels surround them, and God mentions them among those who are with Him.</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/muslim:2699a" target="_blank" rel="noopener">Sahih Muslim 2699</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Those who gather to hear and study revelation are placed in the company of angels and in God’s own presence.</div>
+  <div class="tieback">Like the Kural’s hearers ‘equal to the gods’, these listeners are drawn into the celestial company while still on earth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">When Israel at Sinai said “we will do and we will hear” (naʿaseh ve-nishma), the Talmud relates that a heavenly voice asked, “Who revealed to My children this secret that the ministering angels use?” — and angels crowned each Israelite.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Shabbat.88a" target="_blank" rel="noopener">Exodus 24:7; Babylonian Talmud, Shabbat 88a</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">By committing themselves to hearing, the people adopted the manner of angels and were honoured as such.</div>
+  <div class="tieback">An almost exact parallel: devoted hearers are made equal to celestial beings on earth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Mangala Sutta lists among the ‘highest blessings’ much learning (bahusacca — literally ‘much hearing’) and hearing the Dhamma at the proper time (kālena dhammassavanaṃ); the discourse is spoken in reply to a deva, and its close says those who fulfil these blessings are everywhere victorious and go everywhere in safety.</div>
+  <div class="cite">&mdash; <a href="https://en.wikipedia.org/wiki/Ma%E1%B9%85gala_Sutta" target="_blank" rel="noopener">Sutta Nipāta 2.4 (Mangala Sutta)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Hearing is counted among the supreme blessings discussed between the Buddha and the gods.</div>
+  <div class="tieback">The Kural exalts the hearer to divine rank; the Mangala Sutta, addressed to gods, counts hearing among the highest blessings.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As Sakra the thousand-eyed, the wielder of the thunderbolt, the fortress-destroyer, the king of gods, (has no equal), neither has a very learned monk.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 11.23 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The Uttaradhyayana&#x27;s lecture on the very learned (bahussuya, literally &#x27;one who has heard much&#x27;) ranks such a monk as without equal, like Indra among the gods.</div>
+  <div class="tieback">Valluvar says those rich in learning gained by hearing are equal on earth to the gods. The Jain text matches the &#x27;much-heard&#x27; monk with the king of the gods.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Listening-Shiva, Brahma and Indra.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 2, Japji Sahib (pauri 9), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In the ninth pauri of Japji Sahib Guru Nanak says that by listening, ordinary people rise to the standing of the highest beings, here named as Shiva, Brahma and Indra.</div>
+  <div class="tieback">The Kural says those rich in hearing equal the gods on earth; Japji likewise says listening raises a person to the rank of the gods.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Hesiod describes the Muses singing on Olympus and delighting the great mind of Zeus with their song — the gods, who feast on nectar and ambrosia, also feast on what they hear.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Hesiod, Theogony 36–52</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">In Greek myth, listening to song is itself one of the divine pleasures on Olympus.</div>
+  <div class="tieback">Both imagine the gods as consumers of a subtle ‘food’; the Kural makes human listeners share that divine diet.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Pythagoras’ school admitted novices as akousmatikoi, ‘listeners’, who spent years in silence hearing the master’s sayings; the tradition held Pythagoras himself to be a divine or semi-divine figure whose hearers participated in his wisdom.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/cla/iamb/index.htm" target="_blank" rel="noopener">Iamblichus, On the Pythagorean Life 72, 81–82</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Listening was the defining activity of the first rank of Pythagorean disciples, and the community treated the teaching as quasi-divine.</div>
+  <div class="tieback">The Pythagorean ‘hearers’ are an institutional version of the Kural’s honoured listeners, drawing near to the divine through the ear.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">UNESCO recognises the oral tradition of Vedic chanting</div>
+  <div class="rle-meta">2008 &middot; India</div>
+  <div class="quote is-paraphrase">The Vedas, the oldest sacred texts of Hinduism, are classed as shruti, a Sanskrit word meaning what is heard, and were preserved for many centuries through memorisation and recitation before being written down. Their hymns and formulae were chanted at sacred rituals, including sacrifices, and reciters are trained from childhood in exact techniques of pitch accent, pronunciation and word combination so that the sound of every word stays unaltered. In 2008 UNESCO inscribed the Tradition of Vedic Chanting on its Representative List of the Intangible Cultural Heritage of Humanity.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">The recognition honours one of the world&#x27;s oldest bodies of knowledge, handed down for thousands of years almost entirely by ear and regarded by its tradition as sacred.</div>
+  <div class="tieback">The kural matches those who feed on the food of the ear with the gods who receive sacrificial oblations, and the Vedic tradition, learned by hearing and chanted at those very sacrifices, treats what is received through the ear as holy.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-42/" target="_blank" rel="noopener">Thirukkural Chapter 42 — Hearing (கேள்வி)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/kural-0411.html" target="_blank" rel="noopener">Thirukkural 411–420 — Listening (per-kural pages, e.g. kural-0411, kural-0420)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://ta.wikisource.org/wiki/திருக்குறள்,_மூலம்/கேள்வி" target="_blank" rel="noopener">திருக்குறள், மூலம்/கேள்வி</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita, The Song of God (Swami Mukundananda)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/muslim:2699a" target="_blank" rel="noopener">Sahih Muslim 2699</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Shabbat.88a" target="_blank" rel="noopener">Babylonian Talmud, Shabbat 88a</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://en.wikipedia.org/wiki/Ma%E1%B9%85gala_Sutta" target="_blank" rel="noopener">Maṅgala Sutta: The Discourse on Blessings (Sutta Nipāta 2.4 / Khuddakapāṭha 5)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Theogony (Hesiod)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://sacred-texts.com/cla/iamb/index.htm" target="_blank" rel="noopener">Iamblichus, On the Pythagorean Life (tr. Thomas Taylor)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://ich.unesco.org/en/RL/tradition-of-vedic-chanting-00062" target="_blank" rel="noopener">Tradition of Vedic chanting</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://kids.britannica.com/students/article/Veda/603097" target="_blank" rel="noopener">Veda - Student Encyclopedia</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0412.html">&larr; Kural 412</a>
+  <a href="kural-0414.html">Kural 414 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-042.html">Hearing</a>
+  <a class="skip-btn" href="kural-0421.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

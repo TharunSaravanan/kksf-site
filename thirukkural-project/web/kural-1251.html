@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1251 — Reserve Overcome | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1251</h1>
+<p class="adhikaram"><a href="adhikaram-126.html">Reserve Overcome</a> &middot; Niraiyazhithal &middot; <span class="tamil">நிறையழிதல்</span></p>
+
+<div class="tamil-text">காமக் கணிச்சி உடைக்கும் நிறையென்னும்
+நாணுத்தாழ் வீழ்த்த கதவு.</div>
+<div class="translit">Kaamak kanichchi utaikkum niraiyennum
+naanuththaazh veezhththa kadhavu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>My self-control was like a door locked tight with the bolt of modesty. But the axe of love smashes that door down.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a girl who keeps her feelings locked behind a strong door, with shyness as the bolt. But her love for someone is like a big axe, and one swing breaks the whole door open. Feelings that strong cannot stay locked away.</p>
+
+<h2 class="section">University</h2>
+<p>Chapter 126, niṟai aḻital (‘the breaking of reserve’), opens with the heroine (talaivi), parted from her husband, admitting that the self-command she prized has given way. The image is architectural: niṟai (reserve, the firmness that keeps inner feeling from showing) is the door (katavu), nāṇ (modesty, shame) is the bolt (tāḻ) that holds it, and kāmam (love-longing) is the kaṇicci, a heavy axe or pick, which breaks it; Mu. Varadarasanar and Solomon Pappaiah both gloss kaṇicci as an axe (கோடாலி/கோடரி). In the reading associated with Parimelazhagar, niṟai is the faculty that guards what should be kept within and nāṇ is its fastening, so the couplet states the chapter’s claim that love overpowers both together. The couplet reads identically on ytamizh.com and thirukkural.net. Textual note: ytamizh.com’s English ‘Couplet Explanation’ for 1251 (‘My precious life is saved by the raise of rumour…’) does not fit this couplet and appears to be misplaced from another kural; its Pope couplet (‘The axe of lust can break the door of chastity…’) is the relevant rendering.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;The senses are so strong and impetuous, O Arjuna, that they forcibly carry away the mind even of a man of discrimination who is endeavoring to control them.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 2.60 (tr. A.C. Bhaktivedanta Swami Prabhupada, Bhagavad-gita As It Is)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna warns that even a wise person who is trying to stay in control can have his mind seized by the force of the senses.</div>
+  <div class="tieback">The Kural’s heroine had the same careful control, and love carries it off by force like an axe through a bolted door.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;My beloved put in his hand by the hole of the door, and my bowels were moved for him. I rose up to open to my beloved; and my hands dropped with myrrh, and my fingers with sweet smelling myrrh, upon the handles of the lock.&rdquo;</div>
+  <div class="cite">&mdash; Song of Solomon 5:4-5 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The bride, already settled for the night, is so moved by her beloved’s hand at the door that she rises to unbolt it.</div>
+  <div class="tieback">Both texts use a bolted door to picture a woman’s reserve, and in both love gets through it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And she, in whose house he was, sought to seduce him. She closed the doors and said, ‘Come, you.’&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 12:23 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an tells how the wife of al-Aziz, overcome by longing for Joseph, set aside her position and modesty.</div>
+  <div class="tieback">The Kural shows love breaking down a woman’s reserve; here the same passion overrides a noblewoman’s dignity, though the Qur’an condemns her intent.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;…for love is strong as death, jealousy is cruel as the grave; the flashes thereof are flashes of fire, a very flame of the LORD. Many waters cannot quench love, neither can the floods drown it…&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">Song of Songs 8:6-7 (JPS 1917, via Mechon-Mamre)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Song of Songs declares love a force as unstoppable as death that nothing can put out.</div>
+  <div class="tieback">The Kural’s axe expresses the same conviction: no bolt of modesty can hold love back.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Just as rain breaks through an ill-thatched house, so passion penetrates an undeveloped mind.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 13 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha compares an untrained mind to a badly roofed house that passion gets into as easily as rain.</div>
+  <div class="tieback">Both texts picture the self as a house that passion breaks into; the Buddha’s answer is to train the mind, while the Kural’s heroine simply admits the house has been breached.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;When Râgîmatî perceived that Rathanêmi’s strength of will was broken, and temptation had got the better of him, she did not lose her presence of mind and defended her Self on that occasion.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 22.39 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In a cave on Mount Raivataka, the monk Rathanemi’s resolve gives way on seeing Rajimati, while she keeps hers.</div>
+  <div class="tieback">Rathanemi is the Kural’s broken door in a monk’s robe: his will is broken by passion, exactly the collapse of niṟai the heroine describes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Behold, O Siblings of Destiny, the storm of spiritual wisdom has come. It has totally blown away the thatched huts of doubt, and torn apart the bonds of Maya.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 331, Raag Gauree, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Kabir describes an overwhelming inner force that sweeps away the flimsy shelter the mind had built around itself.</div>
+  <div class="tieback">The Kural pictures love as an axe smashing the door of reserve bolted with modesty; Kabir likewise pictures a force too strong for the mind&#x27;s defences, which simply tears the old structure down.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Sappho says that Eros the limb-loosener shakes her once again, a bittersweet creature against which there is no defence.</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Author:Sappho" target="_blank" rel="noopener">Sappho, fragment 130 (Lobel-Page / Voigt; paraphrase)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Greek lyric, Eros is a force that seizes the lover from outside and undoes her body and composure.</div>
+  <div class="tieback">Sappho and the Kural’s heroine both describe love as an attacker that breaks through a self-possession they cannot defend.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Hume argues that reason alone can never oppose a passion in directing the will, and that reason is, and ought only to be, the servant of the passions.</div>
+  <div class="cite">&mdash; David Hume, A Treatise of Human Nature 2.3.3 (paraphrase) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Hume denies that calm reasoning can stand guard against a strong passion on its own.</div>
+  <div class="tieback">The Kural makes the same point in a lover’s terms: the reasoned restraint of niṟai cannot hold against love.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Rumi meets Shams of Tabriz in Konya</div>
+  <div class="rle-meta">c. 1244 &middot; Konya, Anatolia (now Turkey)</div>
+  <div class="quote is-paraphrase">Jalal al-Din Rumi, a scholar and teacher who had taken over his father&#x27;s post in Konya, met the wandering Sufi Shams of Tabriz around 1244, and the two became close companions. The friendship strained Rumi&#x27;s relations with his students, family and associates, and Shams later left the city and was never seen again, around 1248. After this Rumi turned to mystical poetry, music and dance, and his major works, including the collection of lyrics named after Shams, date from this period.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A respected and self-contained scholar was so overcome by a single bond of love that his settled life and reputation gave way, and the feeling poured out in poetry.</div>
+  <div class="tieback">The kural says the axe of love smashes the door of reserve; Rumi&#x27;s scholarly composure was broken open by his love for Shams in just this way.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-126/" target="_blank" rel="noopener">Thirukkural Chapter 126: நிறையழிதல் / Reserve Overcome (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-126.html" target="_blank" rel="noopener">நிறையழிதல் - அதிகாரம் 126 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917), Hebrew-English Bible</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://en.wikisource.org/wiki/Author:Sappho" target="_blank" rel="noopener">Sappho, Fragments (Lobel-Page / Voigt numbering), fr. 130</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">David Hume, A Treatise of Human Nature (1739-40) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.poetryfoundation.org/poets/jalal-al-din-rumi" target="_blank" rel="noopener">Jalal al-Din Rumi</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.worldhistory.org/Rumi/" target="_blank" rel="noopener">Rumi (Joshua J. Mark)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1250.html">&larr; Kural 1250</a>
+  <a href="kural-1252.html">Kural 1252 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-126.html">Reserve Overcome</a>
+  <a class="skip-btn" href="kural-1261.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

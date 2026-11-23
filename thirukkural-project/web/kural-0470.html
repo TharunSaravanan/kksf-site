@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 470 — Acting after Due Consideration | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 470</h1>
+<p class="adhikaram"><a href="adhikaram-047.html">Acting after Due Consideration</a> &middot; Therindhu Seyalvakai &middot; <span class="tamil">தெரிந்து செயல்வகை</span></p>
+
+<div class="tamil-text">எள்ளாத எண்ணிச் செயல்வேண்டும் தம்மொடு
+கொள்ளாத கொள்ளாது உலகு.</div>
+<div class="translit">Ellaadha ennich cheyalventum thammotu,
+Kollaadha kollaadhu ulagu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Think carefully and do only things the world will not look down on. People do not accept actions that do not fit who you are and your place in life.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Before you act, ask: will good people respect this, and does it fit who I am? People won’t accept actions that don’t suit the person doing them.</p>
+
+<h2 class="section">University</h2>
+<p>The closing couplet adds a social test to the practical tests of the preceding kurals. எள்ளாத (‘what is not despised’) introduces public judgement, and the wordplay கொள்ளாத கொள்ளாது (‘the world will not accept what is not accepted with oneself’) sets the criterion of fit. An action must suit the agent’s station, capacity and character (தம்மொடு). Parimelazhagar takes it that the world will not approve deeds out of keeping with one’s status, even when the deeds themselves are not bad. For a ruler, legitimacy depends on acting in ways subjects and peers can recognise as fitting. The chapter thus ends by setting individual calculation inside a community of judgement.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Krishna teaches that it is better to perform one’s own duty (svadharma), even imperfectly, than another’s duty well; and that whatever a great person does, others follow as their standard.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 3.35 and 3.21</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Do what fits your own role and nature, and remember that people watch and copy those in high positions.</div>
+  <div class="tieback">Action fitting one’s own station, judged by the watching world, echoes தம்மொடு கொள்ளாத.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">Paul speaks of “providing for honest things, not only in the sight of the Lord, but also in the sight of men.</div>
+  <div class="cite">&mdash; 2 Corinthians 8:21 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Paul says it isn’t enough to be right before God; your conduct should also look honourable to other people.</div>
+  <div class="tieback">Acting in ways the world will not scorn is the Kural’s standard too.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">The Prophet said: righteousness is good character, and sin is what wavers in your soul and you would dislike people to find out about.</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/muslim:2553a" target="_blank" rel="noopener">Sahih Muslim 2553</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">One test of wrongdoing is whether you’d be embarrassed for others to learn of it.</div>
+  <div class="tieback">Uses the imagined judgement of others as a check on action, like the Kural’s ‘what the world will not scorn’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Rabbi said: which is the right path a person should choose? Whatever is an honour to the one who does it and brings him honour from others.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Mishnah, Pirkei Avot 2:1</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Pick the way of acting that you can respect in yourself and that other people will respect too.</div>
+  <div class="tieback">The same two tests as the Kural: fitting to oneself, and approved by the world.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Kalama Sutta the Buddha tells the Kalamas that when they know for themselves that certain things are unskillful, blameworthy and criticised by the wise, and lead to harm, they should abandon them.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an03/an03.065.soma.html" target="_blank" rel="noopener">Kalama Sutta (Kesamutti Sutta), Anguttara Nikaya 3.65</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">One way to check an action is to ask whether wise people would criticise it.</div>
+  <div class="tieback">‘Criticised by the wise’ is the Buddhist form of the Kural’s ‘what the worthy would not scorn’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Prasiddham desacharam samacharan : Following the reputable usages of the country.” … “Adsa-kalayoh charyam tyajan : Avoiding action which is inappropriate to time and place.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.jainworld.com/jainbooks/antiquity/ethcjain.htm" target="_blank" rel="noopener">Hemacandra, Yogaśāstra, list of the thirty-five qualities of an ideal śrāvaka, as rendered in Vilas A. Sangave, &#x27;Ethics of Jainism: Prescription of Ethical Code&#x27; (jainworld.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Among the qualities Hemacandra expects of a Jain householder are keeping to the respected customs of the land and avoiding conduct out of keeping with time and place.</div>
+  <div class="tieback">The Kural&#x27;s final test is that an act should be fitting so the world does not scorn it, and Hemacandra&#x27;s layman measures his conduct by the same standard of social fitness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Truth is higher than everything; but higher still is truthful living.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 62, Siree Raag, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Siree Raag Guru Nanak puts truthful conduct above even the knowledge of truth, so that how one lives is the final test.</div>
+  <div class="tieback">The Kural asks for conduct that will not earn the world&#x27;s scorn; Guru Nanak likewise makes conduct the test, though he measures it by truth rather than by public approval.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Arachne, a mortal weaver, challenges the goddess Athena and weaves the gods’ misdeeds; her presumption is punished and she is turned into a spider.</div>
+  <div class="cite">&mdash; Ovid, Metamorphoses 6.1–145 <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Arachne did something that didn’t fit her place in the world, and she was punished for it.</div>
+  <div class="tieback">Illustrates action out of keeping with one’s station meeting rejection, the Kural’s கொள்ளாத கொள்ளாது.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Adam Smith argues that we judge our own conduct by imagining how an impartial spectator would view it, and that we naturally desire not only to be praised but to be praiseworthy.</div>
+  <div class="cite">&mdash; <a href="https://oll.libertyfund.org/titles/smith-the-theory-of-moral-sentiments-and-on-the-origins-of-languages-stewart-ed" target="_blank" rel="noopener">Adam Smith, The Theory of Moral Sentiments (1759), Part III</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Smith says a good check on our actions is to picture how a fair-minded observer would see them.</div>
+  <div class="tieback">The Kural’s ‘act so that the world will not scorn’ is a version of Smith’s impartial-spectator test.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Emperor Nero competes at the Olympic Games</div>
+  <div class="rle-meta">67 CE &middot; Olympia, Greece</div>
+  <div class="quote is-paraphrase">During a tour of Greece, the Roman emperor Nero competed in the Greek games, adding contests in music and tragedy to the Olympic programme. At Olympia he drove a ten-horse chariot, fell from it and did not finish the race, yet was proclaimed the winner.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">An emperor performing as a competitor and accepting a victory he had not earned became a lasting example of conduct unworthy of a ruler.</div>
+  <div class="tieback">The kural says the world will not approve what does not suit one&#x27;s own station, and Nero&#x27;s games turned his rank into an object of ridicule.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/kural-461/" target="_blank" rel="noopener">Thirukural Chapter 47: தெரிந்துசெயல்வகை (Acting after due Consideration), Kurals 461–470</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/kural-0461.html" target="_blank" rel="noopener">Thirukkural Adhigaram 47: Acting after due Consideration (Kurals 461–470)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.tamilsirukathaigal.com/thirukkural/kural/461-azhivadhooum-aavadhooum-aaki-vazhipayakkum.html" target="_blank" rel="noopener">Thirukkural 461–470, தெரிந்துசெயல்வகை</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/muslim:2553a" target="_blank" rel="noopener">Sahih Muslim 2553: Righteousness and Sin</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.accesstoinsight.org/tipitaka/an/an03/an03.065.soma.html" target="_blank" rel="noopener">Kalama Sutta: To the Kalamas (AN 3.65), tr. Soma Thera</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://jainworld.jainworld.com/jainbooks/antiquity/ethcjain.htm" target="_blank" rel="noopener">Jaina ethics (English renderings of Jain householder texts, incl. Hemacandra&#x27;s Yogaśāstra) (Vilas A. Sangave)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Metamorphoses, Book VI (the myth of Arachne) (Ovid) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://oll.libertyfund.org/titles/smith-the-theory-of-moral-sentiments-and-on-the-origins-of-languages-stewart-ed" target="_blank" rel="noopener">Adam Smith, The Theory of Moral Sentiments (1759)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/list/8-olympic-cheating-scandals" target="_blank" rel="noopener">8 Olympic Cheating Scandals</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.penn.museum/sites/expedition/boycotts-bribes-and-fines/" target="_blank" rel="noopener">Boycotts, Bribes and Fines (Expedition Magazine)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0469.html">&larr; Kural 469</a>
+  <a href="kural-0471.html">Kural 471 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-047.html">Acting after Due Consideration</a>
+  <a class="skip-btn" href="kural-0471.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

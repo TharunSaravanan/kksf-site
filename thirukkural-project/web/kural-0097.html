@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 97 — Charming Utterance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 97</h1>
+<p class="adhikaram"><a href="adhikaram-010.html">Charming Utterance</a> &middot; Iniyavai Kooral &middot; <span class="tamil">இனியவை கூறல்</span></p>
+
+<div class="tamil-text">நயன்ஈன்று நன்றி பயக்கும் பயன்ஈன்று
+பண்பின் தலைப்பிரியாச் சொல்.</div>
+<div class="translit">Nayan eendru nandri payakkum payan eendru,
+Panbin thalaippiriyaach chol.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Words that truly help the listener and never go against good manners bring the speaker both goodwill and good results.</p>
+
+<h2 class="section">Elementary</h2>
+<p>There&#x27;s a difference between a friend who tells you what you want to hear and a friend who tells you something helpful, kindly. The second kind of talking does two jobs at once: it helps the other person, and it makes you a better person too. This kural is about that double win.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet is built on a careful distinction between two returns: நயன் (nayan, goodwill, favour, social benefit accruing to the speaker) and நன்றி (nandri, here in its older sense of moral good or merit rather than gratitude). The condition for both is that the speech must be பண்பின் தலைப்பிரியா — literally &#x27;not parting from the head of good character&#x27; — a striking idiom implying that speech remains tethered to the speaker&#x27;s cultivated disposition rather than floating free as mere technique. This anticipates by some centuries the point Aristotle makes about ethos, that the most potent mode of persuasion is the character the speech itself displays. The doubled ஈன்று (eendru, &#x27;having borne/given birth to&#x27;) repeated in both lines gives the verse a generative, almost obstetric image: beneficial speech reproduces itself as both goodwill and merit.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Austerity of speech consists in speaking words that are truthful, pleasing, beneficial, and not agitating to others, and also in regularly reciting Vedic literature.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 17.15 (trans. A. C. Bhaktivedanta Swami Prabhupada, Bhagavad-gītā As It Is)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Gita&#x27;s four conditions — truthful, pleasing, beneficial, non-agitating — must all hold simultaneously; satisfying only some of them does not qualify.</div>
+  <div class="tieback">&#x27;Beneficial&#x27; (hita) and &#x27;pleasing&#x27; (priya) held together is exactly the Kural&#x27;s demand that speech yield real benefit without departing from good character.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Let your speech be alway with grace, seasoned with salt, that ye may know how ye ought to answer every man.&rdquo;</div>
+  <div class="cite">&mdash; Colossians 4:6 (King James Version) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Paul asks for speech that is simultaneously gracious and substantive — salt being the ancient image for what preserves and gives savour, i.e. usefulness.</div>
+  <div class="tieback">Grace plus substance is the Kural&#x27;s pairing of pleasantness with real benefit.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And tell My servants to say that which is best. Indeed, Satan induces [dissension] among them.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 17:53 (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The instruction is comparative — not merely to say what is acceptable but to select what is best — and is immediately justified by the social damage that lesser speech causes.</div>
+  <div class="tieback">It matches the Kural&#x27;s standard that speech must actively benefit rather than merely avoid offence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Pleasant words are as an honeycomb, sweet to the soul, and health to the bones.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 16:24 (Hebrew Bible; King James Version rendering) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Proverbs gives kind words a double effect: immediate sweetness to the spirit and actual restorative benefit to the body.</div>
+  <div class="tieback">The Kural&#x27;s twin yields — pleasantness and real benefit — are the honeycomb&#x27;s sweetness and health.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;In the case of words that the Tathāgata knows to be factual, true, beneficial, and endearing and agreeable to others, he has a sense of the proper time for saying them.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/mn/mn.058.than.html" target="_blank" rel="noopener">Abhaya Sutta, Majjhima Nikāya 58 (trans. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha sets out a six-part grid of speech and will utter only what is both true and beneficial, adding pleasantness and timing as further filters — he will never say what is untrue or unbeneficial, however agreeable it might be.</div>
+  <div class="tieback">It is the Kural&#x27;s exact requirement: benefit and pleasantness together, never at the expense of good character.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;A person who speaks the truth becomes trustworthy like a mother, venerable like a preceptor to his people and dear to all others as their relatives.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.com/" target="_blank" rel="noopener">Saman Suttam v. 95 (cf. v. 96) (English tr. as published on jainworld.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jain teaching holds that truthful, harmless speech wins trust, reverence and affection among people, alongside its spiritual value; the next verse calls truthfulness the source of all other virtues.</div>
+  <div class="tieback">Valluvar says beneficial speech that stays true to good character brings the speaker both goodwill (nayan) and merit, and the Jain verse likewise promises the truthful speaker trust and affection from all.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;By speaking sweetly, behaving humbly and bestowing charities with one&#x27;s own hands, even the fallen ones have become pure.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.searchgurbani.com/bhai-gurdas-vaaran" target="_blank" rel="noopener">Vaaran Bhai Gurdas, Vaar 29, Pauri 4 (English translation as given on BaniDB / searchgurbani.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Bhai Gurdas teaches that sweet speech joined to humble conduct and giving is so powerful that it can redeem even those who had fallen.</div>
+  <div class="tieback">Like the Kural&#x27;s speech that never strays from good character and so brings both goodwill and merit, Bhai Gurdas ties sweet words to conduct and credits them with moral transformation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">The Muses greet Hesiod on Helicon with the taunt that they know how to speak many false things as though they were true, but also know, when they will, to utter true things — then breathe into him a divine voice and send him out to sing.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Hesiod, Theogony 27–34</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The scene explicitly separates two capacities that sound identical from outside: persuasive falsehood and persuasive truth, with the poet&#x27;s gift lying in the second.</div>
+  <div class="tieback">It dramatises the Kural&#x27;s condition that pleasing speech must never part company with integrity.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Persuasion is achieved by the speaker&#x27;s personal character when the speech is so spoken as to make us think him credible... We believe good men more fully and more readily than others.&rdquo;</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/rhetoric.html" target="_blank" rel="noopener">Aristotle, Rhetoric 1.2, 1356a (trans. W. Rhys Roberts)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle makes ethos one of the three proofs, insisting that the persuasive force resides in the character displayed by the speech itself, not in a reputation held independently of it.</div>
+  <div class="tieback">This is the Kural&#x27;s பண்பின் தலைப்பிரியாச் சொல் — speech that never departs from the speaker&#x27;s good character — analysed as a technical principle.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Ashoka&#x27;s Rock Edict XII on restraint in speech</div>
+  <div class="rle-meta">3rd century BCE &middot; Mauryan Empire, India</div>
+  <div class="quote is-paraphrase">The Mauryan emperor Ashoka had a series of edicts carved on rocks across his empire setting out his idea of dhamma. Rock Edict XII teaches that the root of growth in essentials for all religious groups is restraint in speech: people should not praise their own sect or condemn others without cause, and any criticism should be mild. It states that honouring other sects benefits both one&#x27;s own and theirs, while disparaging them harms both.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Ashoka made gracious, restrained speech a matter of public policy, arguing that it served the speaker&#x27;s own community as well as others.</div>
+  <div class="tieback">The kural says useful words that never depart from good character bring the speaker both goodwill and merit, and Ashoka&#x27;s edict taught that courteous speech towards others enriches both speaker and hearer.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://namthamizh.wordpress.com/010-%E0%AE%87%E0%AE%A9%E0%AE%BF%E0%AE%AF%E0%AE%B5%E0%AF%88-%E0%AE%95%E0%AF%82%E0%AE%B1%E0%AE%B2%E0%AF%8D/" target="_blank" rel="noopener">010. இனியவை கூறல் — Thirukkural Adhikaram 10 with word-by-word gloss (padavurai) and Tamil commentary</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.gunathamizh.com/2020/08/10.html" target="_blank" rel="noopener">திருக்குறள் - அதிகாரம் - 10. இனியவை கூறல் (one-line commentary series)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://telibrary.com/en/chapter-10/" target="_blank" rel="noopener">Chapter 10 – The Utterance of Pleasant Words / Iniyavaikooral (Tamil transliteration with G. U. Pope verse and W. H. Drew / John Lazarus prose translations)</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/mn/mn.058.than.html" target="_blank" rel="noopener">Abhaya Sutta: To Prince Abhaya (Majjhima Nikāya 58), trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://jainworld.com/" target="_blank" rel="noopener">Saman Suttam (anthology of Jain scripture, compiled 1974)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-9"><a href="https://www.searchgurbani.com/bhai-gurdas-vaaran" target="_blank" rel="noopener">Vaaran Bhai Gurdas (Bhai Gurdas (c. 1551-1636))</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Theogony (Hesiod)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/rhetoric.html" target="_blank" rel="noopener">Aristotle, Rhetoric</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/place/India/Ashokas-edicts" target="_blank" rel="noopener">India: Ashoka&#x27;s edicts (Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.columbia.edu/itc/religion/f2001/edit/docs/edicts_asoka.pdf" target="_blank" rel="noopener">The Edicts of Asoka</a> <span class="tier">[primary source]</span></li>
+<li id="cite-14"><a href="https://www.worldhistory.org/Edicts_of_Ashoka/" target="_blank" rel="noopener">The Edicts of Ashoka the Great</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0096.html">&larr; Kural 96</a>
+  <a href="kural-0098.html">Kural 98 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-010.html">Charming Utterance</a>
+  <a class="skip-btn" href="kural-0101.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 781 — Friendship | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 781</h1>
+<p class="adhikaram"><a href="adhikaram-079.html">Friendship</a> &middot; Natpu &middot; <span class="tamil">நட்பு</span></p>
+
+<div class="tamil-text">செயற்கரிய யாவுள நட்பின் அதுபோல்
+வினைக்கரிய யாவுள காப்பு.</div>
+<div class="translit">Seyarkariya yaavula natpin adhupol
+vinaikkariya yaavula kaappu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>What is as hard to gain as friendship? And once you have it, what protection is as hard for any enemy to break?</p>
+
+<h2 class="section">Elementary</h2>
+<p>Making a real friend is like growing a tree from a seed: it takes a long time and lots of care. But once the tree is big, it gives you shade that no storm can easily take away. A true friend is both the hardest thing to grow and the best shelter to have.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter opens the Natpiyal (நட்பியல், section on friendship, chapters 79-95) of the Porutpal, where friendship is treated not only as a private good but as one of the supports of a king and of any householder. The couplet is built on two parallel rhetorical questions: seyaRku ariya (செயற்கரிய, hard to make or acquire) and vinaikku ariya kaappu (வினைக்கரிய காப்பு, a guard hard for hostile action to breach). Parimelazhagar reads the second line as ‘what guard is so hard for enemies’ efforts to overcome’, which is why Pope renders it ‘What so sure defence ’gainst all that foe can do?’; Mu. Varadarasanar instead takes vinai as one’s own undertakings, so that friendship is the rare protection for one’s work, and Solomon Pappaiah combines the two senses. The text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Kishkindha book of the Ramayana, Rama and the exiled monkey-king Sugriva, both having lost kingdom and wife, swear friendship by walking around a sacred fire, each pledging to treat the other’s joys and sorrows as his own.</div>
+  <div class="cite">&mdash; <a href="https://www.valmikiramayan.net/utf8/kish/sarga5/kishkindhasans5.htm" target="_blank" rel="noopener">Valmiki Ramayana, Kishkindha Kanda, Sarga 5</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The pact is formal and costly: Rama must defeat Vali and Sugriva must later marshal the whole monkey army to find Sita.</div>
+  <div class="tieback">The alliance shows the Kural’s two points together: such a friendship is hard to make, and once made it becomes each ally’s strongest defence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;A man that hath friends must shew himself friendly: and there is a friend that sticketh closer than a brother.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 18:24 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The proverb says friendship has to be earned by being friendly, and that the best friend holds on more tightly than family.</div>
+  <div class="tieback">Like the Kural, it treats a true friend as something won with effort and then as an unusually firm support.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;The believers, both men and women, are guardians of one another.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://quran.com/" target="_blank" rel="noopener">Qur’an 9:71 (trans. Mustafa Khattab, The Clear Quran)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The verse describes the faithful as awliya, protecting allies who stand guard over each other’s welfare.</div>
+  <div class="tieback">The Kural’s word kaappu, guard, is close to the Qur’anic idea of believers as each other’s protectors.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;A faithful friend is a firm friend; And he that findeth him hath found a treasure. There is no exchange for a faithful friend; Nor price that can be weighed for his goodness.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Ben_Sira.6" target="_blank" rel="noopener">Ben Sira (Ecclesiasticus) 6:14-15 (The Wisdom of Ben Sira, Cambridge, 1899)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Ben Sira calls a faithful friend a treasure, something found rarely and worth more than any price.</div>
+  <div class="tieback">Both texts treat a true friend as a rare acquisition and a firm protection once found.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Admirable friendship, admirable companionship, admirable camaraderie is actually the whole of the holy life.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/sn/sn45/sn45.002.than.html" target="_blank" rel="noopener">Upaddha Sutta, SN 45.2 (trans. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Ananda suggests good friendship is half the spiritual life, and the Buddha corrects him: it is the whole of it.</div>
+  <div class="tieback">The Buddha, like Valluvar, ranks friendship as the hardest-won and most valuable support a person can have.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;I am without a protector, O great king; there is nobody to protect me, I know no friend nor any one to have sympathy with me.” … “My own Self is the doer and undoer of misery and happiness; my own Self, friend and foe, according as I act well or badly.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 20.9 and 20.37 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The young monk Anâthi tells King Śreṇika that no friend or kinsman could shield him from suffering, and that in the end only one&#x27;s own conduct acts as friend or enemy.</div>
+  <div class="tieback">The Kural calls friendship the rarest gain and the surest guard against enemies, while Jainism holds that the last line of defence is the self, which becomes its own friend by acting well.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;You took pity on me, and blessed me with Your Mercy, and I have met the True Guru, my Friend.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1429, Salok Mahalla 5, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Arjan&#x27;s closing salok calls the True Guru a friend (sajjan), and says such a friend is met only through God&#x27;s mercy, not won by one&#x27;s own merit.</div>
+  <div class="tieback">The Kural asks what is as hard to win as friendship; Guru Arjan says the truest friend is so hard to win that he comes only by grace.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When Heracles fought the Hydra, every head he struck off grew back, until his nephew and companion Iolaus seared each stump with fire so that the heads could not regrow.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0022" target="_blank" rel="noopener">Apollodorus, Library 2.5.2</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Heracles could not finish the labour alone; his companion’s help made the impossible task possible.</div>
+  <div class="tieback">Iolaus is the Kural’s ‘guard hard to break’: the friend whose help turns back what no single effort can.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;You might just as well take the sun out of the sky as friendship from life; for the immortal gods have given us nothing better or more delightful.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/2808" target="_blank" rel="noopener">Cicero, De Amicitia 13 (trans. E. S. Shuckburgh)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Laelius argues that nothing the gods have given is better than friendship, so taking it from life would be like taking the sun from the sky.</div>
+  <div class="tieback">Cicero answers the Kural’s question the same way: nothing is rarer or more precious than friendship.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The friendship of the Marquis de Lafayette and George Washington</div>
+  <div class="rle-meta">1777-1781 &middot; Pennsylvania and Virginia, United States</div>
+  <div class="quote is-paraphrase">In 1777 the nineteen-year-old Marquis de Lafayette defied King Louis XVI&#x27;s order to remain in France, sailed to America to join the cause of independence and was made a major general by Congress. Wounded at the Battle of Brandywine in September 1777, he was treated by George Washington&#x27;s own surgeon, and from then on the two men developed a bond that has been described as more like that of father and son than of commander and officer. Lafayette later returned to France to seek more support for the Americans and, in 1781, harried Cornwallis&#x27;s army in Virginia before the allied victory at Yorktown.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A friendship formed in wartime became one of the Revolution&#x27;s great assets, binding the American commander to a French nobleman who worked to win his own country&#x27;s help for the cause.</div>
+  <div class="tieback">The kural asks what is as hard to win as friendship and what guards as surely against an enemy&#x27;s efforts; Lafayette&#x27;s rare loyalty became a real defence for Washington&#x27;s cause.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-79/" target="_blank" rel="noopener">Thirukkural Chapter 79: நட்பு / Friendship (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-079.html" target="_blank" rel="noopener">நட்பு - அதிகாரம் 79 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah and Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.valmikiramayan.net/utf8/kish/sarga5/kishkindhasans5.htm" target="_blank" rel="noopener">Valmiki Ramayana, Kishkindha Kanda, Sarga 5 (the fire-witnessed alliance of Rama and Sugriva)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://quran.com/" target="_blank" rel="noopener">The Clear Quran, trans. Dr. Mustafa Khattab (verses 3:104, 6:132, 16:97, 64:16, 91:9-10)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Ben_Sira.6" target="_blank" rel="noopener">Ben Sira (Ecclesiasticus) 6, from The Wisdom of Ben Sira (Cambridge University Press, 1899)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/sn/sn45/sn45.002.than.html" target="_blank" rel="noopener">Upaddha Sutta: Half (of the Holy Life) (SN 45.2), trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0022" target="_blank" rel="noopener">Apollodorus, Bibliotheca (The Library), Book 2 — the labours and apotheosis of Heracles</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/2808" target="_blank" rel="noopener">Laelius de Amicitia (On Friendship), in Treatises on Friendship and Old Age (Marcus Tullius Cicero)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/marquis-de-lafayette" target="_blank" rel="noopener">Marquis de Lafayette (Mary Stockwell)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://podcast.history.org/2007/07/09/marquis-de-lafayette/" target="_blank" rel="noopener">Marquis de Lafayette (Past and Present podcast transcript) (Lloyd Dobyns and Mark Schneider)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0780.html">&larr; Kural 780</a>
+  <a href="kural-0782.html">Kural 782 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-079.html">Friendship</a>
+  <a class="skip-btn" href="kural-0791.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

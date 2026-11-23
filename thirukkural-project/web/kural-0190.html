@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 190 — Slander Avoidance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 190</h1>
+<p class="adhikaram"><a href="adhikaram-019.html">Slander Avoidance</a> &middot; Purangkooraamai &middot; <span class="tamil">புறங்கூறாமை</span></p>
+
+<div class="tamil-text">ஏதிலார் குற்றம்போல் தங்குற்றங் காண்கிற்பின்
+தீதுண்டோ மன்னும் உயிர்க்கு.</div>
+<div class="translit">Ethilaar kutrampol thankutrang kaankirpin,
+Theedhundo mannum uyirkku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If people could see their own faults the way they see the faults of others, could any harm ever come to anyone?</p>
+
+<h2 class="section">Elementary</h2>
+<p>It’s easy to notice when a friend makes a mistake, but hard to notice our own. If everyone checked their own mistakes as carefully as they check others’, there would be much less gossip — and much less trouble for everyone.</p>
+
+<h2 class="section">University</h2>
+<p>Valluvar closes the chapter by moving from prohibition to cure. The comparison ētilār kuṟṟampōl (“like the faults of strangers”) captures the ease and even pleasure with which we see others’ failings; if that same clear sight were turned on taṉ kuṟṟam, one’s own faults, the rhetorical question asks, would any harm (tītu) remain for mannum uyir — beings who endure, or, in some commentaries, the soul that persists? The logic is psychological: backbiting feeds on an asymmetry of attention, and self-examination removes both the motive and the moral standing for it. Mu. Karunanidhi’s gloss draws out the practical point — the habit of slander disappears and life becomes peaceful. The ending thus turns the chapter’s condemnation of the slanderer into a discipline for the reader, echoing a strikingly wide range of traditions that contrast the tiny flaw in others with the large one in oneself.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Thou seest, O king, the fault of others, even though they be as small as a mustard seed. But seeing, thou noticest not thy own faults even though they be as large as the Vilwa fruit.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Adi Parva, Sambhava Parva §74 (K. M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Shakuntala rebukes King Dushyanta, who slanders her while blind to his own wrong in denying her.</div>
+  <div class="tieback">Nearly the Kural’s exact image: others’ tiny faults seen, one’s own huge faults ignored.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And why beholdest thou the mote that is in thy brother’s eye, but considerest not the beam that is in thine own eye?&rdquo;</div>
+  <div class="cite">&mdash; Matthew 7:3 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus mocks the person who picks at a speck in someone else’s eye while ignoring a plank in his own.</div>
+  <div class="tieback">The same lesson as the Kural: look at your own faults as sharply as you look at others’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;One of you looks at the mote in his brother&#x27;s eye while forgetting the stump in his own eye.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/adab:592" target="_blank" rel="noopener">Al-Adab Al-Mufrad 592 (saying of Abu Hurayra)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Abu Hurayra warns against seeing a speck in a brother’s eye while forgetting the stump in one’s own.</div>
+  <div class="tieback">Same imbalance of sight that the Kural asks us to correct.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;I would be surprised if there is anyone in this generation who can receive rebuke. Why? Because if the one rebuking says to him: Remove the splinter from between your eyes, … the other says to him: Remove the beam from between your eyes&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Arakhin.16b" target="_blank" rel="noopener">Talmud Bavli, Arakhin 16b (Koren–Steinsaltz)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbi Tarfon laments that people tell a critic to deal with his own bigger faults first.</div>
+  <div class="tieback">Both texts note how differently we see small faults in others and large ones in ourselves.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Easily seen is the fault of others, but one&#x27;s own fault is difficult to see. Like chaff one winnows another&#x27;s faults, but hides one&#x27;s own, even as a crafty fowler hides behind sham branches.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 252 (Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada says we winnow others’ faults like chaff in the wind while hiding our own.</div>
+  <div class="tieback">An almost exact statement of the Kural’s point — and the winnowing image matches the Tamil tūṟṟu of kural 188.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The opposites of those mentioned in the previous sūtra and humility (namravṛtti) and modesty (anutseka) cause the influx (āsrava) of karmas that lead to high-status (uccagotra).&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/tattvartha-sutra-with-commentary" target="_blank" rel="noopener">Tattvārtha Sūtra 6.26, with Pūjyapāda&#x27;s Sarvārthasiddhi (tr. Vijay K. Jain, 2018; wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Pūjyapāda&#x27;s Sarvārthasiddhi, given with the sūtra, explains the opposites as censuring oneself, praising others, proclaiming the real qualities of others and not claiming qualities one lacks.</div>
+  <div class="tieback">Valluvar asks what harm could come if people saw their own faults as clearly as others&#x27; faults, and the Tattvārtha Sūtra praises exactly that reversal: blaming oneself instead of others.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Kabeer, I am the worst of all. Everyone else is good.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1364, Salok Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Bhagat Kabir, whose saloks are part of the Guru Granth Sahib, models a humility that looks first at one&#x27;s own faults and sees others as good.</div>
+  <div class="tieback">The Kural asks whether any harm could come to living beings if people saw their own faults as clearly as others&#x27;; Kabir turns that clear sight wholly on himself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Hence it is that men are quick to see the faults of others, and yet are often blind to their own failings.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/21" target="_blank" rel="noopener">Aesop, ‘The Two Bags’ (Townsend)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Aesop’s fable, every person carries two bags: a small one in front holding the neighbours’ faults and a large one behind holding their own.</div>
+  <div class="tieback">The fable explains the very blindness that the Kural asks us to overcome.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;We have other men&#x27;s vices before our eyes, and our own behind our backs.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Of_Anger/Book_II" target="_blank" rel="noopener">Seneca, Of Anger (De Ira), Book II, ch. 28 (tr. Aubrey Stewart)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Seneca says anger at other people grows from this lopsided vision, and gives the example of a father, worse than his son, who scolds the son for the very extravagance he once indulged in himself.</div>
+  <div class="tieback">Seneca names the same blindness as the Kural, and like Valluvar treats it as the root of the harm people do to one another.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Willy Brandt kneels at the Warsaw Ghetto memorial</div>
+  <div class="rle-meta">7 December 1970 &middot; Warsaw, Poland</div>
+  <div class="quote is-paraphrase">On 7 December 1970, the day West Germany signed the Treaty of Warsaw with Poland, Chancellor Willy Brandt laid a wreath at the memorial to the Warsaw Ghetto Uprising and then, unplanned, knelt in silence before it. Brandt, who had himself opposed the Nazis from exile, later said he had wanted to ask forgiveness in the name of the German people. The Nobel Committee cited the gesture when it awarded him the 1971 Nobel Peace Prize.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Instead of dwelling on others&#x27; wrongs, a German leader publicly acknowledged his own nation&#x27;s guilt, and the gesture became a lasting symbol of reconciliation.</div>
+  <div class="tieback">The kural asks whether any harm could remain if people saw their own faults as clearly as others&#x27;, and Brandt&#x27;s gesture shows how facing one&#x27;s own faults can open the way to healing.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-19/" target="_blank" rel="noopener">Thirukkural Chapter 19: புறங்கூறாமை / Not Backbiting (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries and transliteration)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-019.html" target="_blank" rel="noopener">புறங்கூறாமை – அதிகாரம் 19 (Tamil text with Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah, Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/adab:592" target="_blank" rel="noopener">Al-Adab Al-Mufrad 592 (Abu Hurayra: the mote and the stump)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Arakhin.16b" target="_blank" rel="noopener">Babylonian Talmud, Arakhin 16b (William Davidson Edition, Koren Noé Talmud with Steinsaltz commentary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/tattvartha-sutra-with-commentary" target="_blank" rel="noopener">Ācārya Umāsvāmī&#x27;s Tattvārthasūtra, with commentary</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.gutenberg.org/ebooks/21" target="_blank" rel="noopener">Aesop&#x27;s Fables (George Fyler Townsend trans.)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://en.wikisource.org/wiki/Of_Anger/Book_II" target="_blank" rel="noopener">Of Anger (De Ira), Book II (Lucius Annaeus Seneca)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.nobelprize.org/prizes/peace/1971/ceremony-speech/" target="_blank" rel="noopener">The Nobel Peace Prize 1971: Award ceremony speech (Aase Lionaes)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://willy-brandt.de/en/neuigkeiten/50-jahre-kniefall-von-warschau/" target="_blank" rel="noopener">50 Jahre Kniefall von Warschau</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://polin.pl/en/event/memory-and-awareness-holocaust-contemporary-world-50th-anniversary-willy-brandt-commemorating" target="_blank" rel="noopener">Memory and Awareness of the Holocaust in Contemporary World: 50th anniversary of Willy Brandt commemorating the victims</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0189.html">&larr; Kural 189</a>
+  <a href="kural-0191.html">Kural 191 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-019.html">Slander Avoidance</a>
+  <a class="skip-btn" href="kural-0191.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

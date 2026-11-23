@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>History of the Thirukkural | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="">The Kurals</a>
+<a href="history.html" class="active">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="page-title">History of the Thirukkural</h1>
+<div class="prose">
+
+<h3>Who was Thiruvalluvar?</h3>
+<p>Very little about Thiruvalluvar's life can actually be verified. Even basic details, such as where he lived, what work he did, what faith he followed, and when he lived, are debated by historians, and different traditions and scholars say different things. Because the evidence is so thin, this project does not pick a side. What we can say is that the Thirukkural itself never argues for one religion, and that people of many backgrounds have claimed it as their own.<sup class="src-ref"><a href="#src-1">[1]</a></sup> Popular stories about his life, including the one about his wife Vasuki and the handful of sand she turned into rice, are loved legends passed down over centuries. They are not documented history.<sup class="src-ref"><a href="#src-2">[2]</a></sup></p>
+
+<h3>When was it written?</h3>
+<p>Dating the Thirukkural is a genuinely open scholarly question, and estimates vary widely depending on the method used. Tamil Nadu's government officially adopted 31 BCE as Valluvar's year of birth in January 1935, and built an entire calendar system &mdash; the Valluvar Year, currently 31 years ahead of the Gregorian calendar &mdash; around that date.<sup class="src-ref"><a href="#src-3">[3]</a></sup> Scholars who work from the text's internal linguistic and cultural evidence tend to land elsewhere: Kamil Zvelebil, a Czech scholar of Tamil literature, considered dates earlier than 1 BCE unsupported by the text itself; a commonly cited scholarly window is roughly 200 BCE&ndash;200 CE; and Stuart Blackburn has described the present scholarly consensus as centering closer to 500 CE.<sup class="src-ref"><a href="#src-4">[4]</a></sup> In short: the traditional/official date and the range favored by textual scholars don't agree, and neither is settled beyond dispute.</p>
+
+<h3>How the text is organized</h3>
+<p>The Thirukkural's 1,330 couplets (kurals) are grouped into 133 chapters (adhikarams) of exactly 10 couplets each, and those 133 chapters are in turn organized into three books: <strong>Aram</strong> (virtue, chapters 1&ndash;38), <strong>Porul</strong> (wealth, statecraft, and worldly life, chapters 39&ndash;108), and <strong>Inbam</strong> (love, chapters 109&ndash;133).<sup class="src-ref"><a href="#src-5">[5]</a></sup> Each kural itself is written in a tight, fixed couplet form &mdash; traditionally described as seven metrical feet in total, four in the first line and three in the second &mdash; which is part of why the text reads so much like proverb or aphorism even in translation.<sup class="src-ref"><a href="#src-5">[5]</a></sup></p>
+
+<h3>The commentary tradition</h3>
+<p>Ten medieval commentators are traditionally credited with writing authoritative commentaries on the Kural; of these, five have survived and reached the modern era: Manakkudavar, Pari Perumal, Kaalingar, Paridhi, and Parimelalhagar.<sup class="src-ref"><a href="#src-6">[6]</a></sup> Parimelalhagar, writing around the 13th century CE, is generally regarded by scholars as having produced the finest of these commentaries, both textually and as literature, and his reading of the text remains the most influential traditional interpretation used today.<sup class="src-ref"><a href="#src-6">[6]</a></sup></p>
+
+<h3>Reaching the rest of the world</h3>
+<p>The Thirukkural's best-known bridge into English came in 1886, when the missionary-scholar G.U. Pope published <em>The Sacred Kurral of Tiruvalluva Nayanar</em> in London &mdash; the translation still most widely cross-referenced today, including throughout this project.<sup class="src-ref"><a href="#src-7">[7]</a></sup> Since then the text has been rendered into roughly 30 English versions on its own, and into more than 100 versions across around 30 languages worldwide.<sup class="src-ref"><a href="#src-7">[7]</a></sup></p>
+
+<h3>A living text in Tamil Nadu</h3>
+<p>The Thirukkural remains a genuinely public, civic text in Tamil Nadu rather than a purely academic or purely religious one. Thiruvalluvar Day is an official state holiday, observed as part of the Pongal harvest festival in mid-January.<sup class="src-ref"><a href="#src-8">[8]</a></sup> And at Kanyakumari, a 133-foot statue of Thiruvalluvar &mdash; dedicated on January 1, 2000 &mdash; encodes the text's own structure into its architecture: the statue and pedestal together stand 133 feet tall for the text's 133 chapters, with the 95-foot figure of Valluvar resting on a 38-foot pedestal representing the 38 chapters of the Aram (Virtue) book alone.<sup class="src-ref"><a href="#src-9">[9]</a></sup></p>
+
+</div>
+
+<footer class="sources">
+  <strong>Sources</strong>
+  <ol>
+    <li id="src-1">Thiruvalluvar &mdash; biographical summary, composite of standard sources including <a href="https://en.wikipedia.org/wiki/Thiruvalluvar" target="_blank" rel="noopener">Wikipedia: Thiruvalluvar</a> and <a href="https://www.britannica.com/biography/Tiruvalluvar" target="_blank" rel="noopener">Encyclop&aelig;dia Britannica: Tiruvalluvar</a>.</li>
+    <li id="src-2">Vasuki (wife of Valluvar) &mdash; traditional accounts and historians' caveats, <a href="https://en.wikipedia.org/wiki/Vasuki_(wife_of_Valluvar)" target="_blank" rel="noopener">Wikipedia: Vasuki (wife of Valluvar)</a>.</li>
+    <li id="src-3">Valluvar Year &mdash; official Tamil Nadu calendar reform of January 1935, <a href="https://en.wikipedia.org/wiki/Valluvar_year" target="_blank" rel="noopener">Wikipedia: Valluvar year</a>.</li>
+    <li id="src-4">Dating the Tirukkural &mdash; range of scholarly estimates (Zvelebil, Blackburn, and others), <a href="https://en.wikipedia.org/wiki/Dating_the_Tirukkural" target="_blank" rel="noopener">Wikipedia: Dating the Tirukkural</a>.</li>
+    <li id="src-5">Structure of the Tirukkural &mdash; 1,330 couplets / 133 chapters / 3 books, composite of standard reference sources including <a href="https://en.wikipedia.org/wiki/Aram_(Kural_book)" target="_blank" rel="noopener">Wikipedia: Aram (Kural book)</a> and <a href="https://en.wikipedia.org/wiki/Inbam_(Kural_book)" target="_blank" rel="noopener">Wikipedia: Inbam (Kural book)</a>.</li>
+    <li id="src-6">Parimelalhagar and the medieval commentary tradition, <a href="https://en.wikipedia.org/wiki/Parimelalhagar" target="_blank" rel="noopener">Wikipedia: Parimelalhagar</a>.</li>
+    <li id="src-7">G.U. Pope's 1886 translation and the Kural's translation history, composite of standard sources including the <a href="https://en.wikipedia.org/wiki/Tirukkural_translations_into_English" target="_blank" rel="noopener">Wikipedia: Tirukkural translations into English</a>.</li>
+    <li id="src-8">Thiruvalluvar Day as a Tamil Nadu public holiday during Pongal, composite of standard holiday-reference sources.</li>
+    <li id="src-9">Thiruvalluvar Statue, Kanyakumari &mdash; dimensions and symbolism, <a href="https://en.wikipedia.org/wiki/Thiruvalluvar_Statue" target="_blank" rel="noopener">Wikipedia: Thiruvalluvar Statue</a>.</li>
+  </ol>
+</footer>
+</body>
+</html>

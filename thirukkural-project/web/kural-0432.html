@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 432 — Error Correction | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 432</h1>
+<p class="adhikaram"><a href="adhikaram-044.html">Error Correction</a> &middot; Kutrankaditthal &middot; <span class="tamil">குற்றங்கடிதல்</span></p>
+
+<div class="tamil-text">இவறலும் மாண்பிறந்த மானமும் மாணா
+உவகையும் ஏதம் இறைக்கு.</div>
+<div class="translit">Ivaralum maanbirandha maanamum maanaa
+Uvakaiyum yedham iraikku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Being stingy, having pride about the wrong things, and taking joy in unworthy things are faults that harm a ruler.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A leader should not be stingy, should not be proud about the wrong things, and should not enjoy things that are low or harmful. This kural says those three habits are dangers for anyone in charge.</p>
+
+<h2 class="section">University</h2>
+<p>Valluvar adds a second triad specific to kingship (இறை, ‘the ruler’): இவறல் (miserliness, refusing to give what should be given), மாண்பு இறந்த மானம் (a sense of honour that has ‘died to excellence’, i.e. touchy pride over the wrong things; Solomon Pappaiah reads it as refusing to bow to the worthy out of pride of office), and மாணா உவகை (joy in what is unworthy). ஏதம் means harm or fault. Each is a perversion of a legitimate royal trait: prudence with wealth decays into avarice, dignity into vanity, and a king’s pleasures into indulgence. Miserliness returns in Kurals 437 and 438 as the gravest of all faults, so this couplet frames the chapter’s political core: a ruler’s private vices become public dangers.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Pride, arrogance, conceit, anger, harshness and ignorance – these qualities belong to those of demoniac nature, O son of Pṛthā.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 16.4</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna lists the traits of the ‘demoniac’ character, with pride and conceit at the head.</div>
+  <div class="tieback">The Kural’s ‘pride that has lost all worth’ is the Gita’s pride, arrogance and conceit, marked as a fault of character.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Not given to wine, no striker, not greedy of filthy lucre; but patient, not a brawler, not covetous;&rdquo;</div>
+  <div class="cite">&mdash; 1 Timothy 3:3 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul lists the qualities a church leader must have: not given to drink, not violent, not greedy for money.</div>
+  <div class="tieback">Both texts set out the disqualifying faults of a leader, and both put love of money and self-indulgent pleasure among them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Indeed, Qārūn was from the people of Moses, but he tyrannized them. And We gave him of treasures whose keys would burden a band of strong men; thereupon his people said to him, &quot;Do not exult. Indeed, Allāh does not like the exultant.&rdquo;</div>
+  <div class="cite">&mdash; Quran 28:76 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Qarun (Korah) was given enormous wealth, grew arrogant and oppressive, and gloated over his riches; his people warned him against this boastful delight.</div>
+  <div class="tieback">Qarun embodies all three faults of the Kural: hoarded wealth, arrogant pride and unworthy exultation, and his story ends in ruin (28:81).</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Neither shall he multiply wives to himself, that his heart turn not away: neither shall he greatly multiply to himself silver and gold.&rdquo;</div>
+  <div class="cite">&mdash; Deuteronomy 17:17 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Torah’s law of the king forbids him to pile up wives and wealth for himself, and (17:20) warns ‘that his heart be not lifted up above his brethren’.</div>
+  <div class="tieback">Like the Kural, the Torah names the specific faults that endanger a ruler: self-serving wealth, indulgence and a heart lifted up in pride.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The ‘ten royal virtues’ (dasa-rājadhamma) listed in the Jātaka commentary begin with dāna (generosity) and include maddava (gentleness, freedom from haughtiness), tapa (self-restraint in pleasures) and akkodha (non-anger).</div>
+  <div class="cite">&mdash; <a href="https://en.wikipedia.org/wiki/Jataka_tales" target="_blank" rel="noopener">Dasa-rājadhamma, Jātaka commentary (e.g. Mahāhaṃsa Jātaka, J 534)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Buddhist tradition teaches that a good king must be generous, gentle rather than proud, and restrained in his pleasures.</div>
+  <div class="tieback">Each of the Kural’s three royal faults is the opposite of one of these virtues: avarice versus generosity, false pride versus gentleness, unworthy joy versus restraint.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Anger destroys love, pride destroys modesty, deceit destroys friendship; greed is destructive of everything.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.com/" target="_blank" rel="noopener">Saman Suttam 135 (English tr., jainworld.com)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">This verse from the Saman Suttam anthology sets out what each of the four passions destroys, and singles out greed as the one that ruins everything.</div>
+  <div class="tieback">Valluvar names avarice and false pride among the faults that harm a ruler; the Jain verse likewise picks out greed and pride as destroyers, with greed the most sweeping of all.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Ego is a chronic disease, but it contains its own cure as well.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 466, Raag Aasaa (Asa di Vaar, salok), Guru Angad (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In Asa di Vaar Guru Angad calls haumai (ego) a long-lasting disease of the self, yet one that can be cured through the Guru&#x27;s grace and the Shabad.</div>
+  <div class="tieback">The Kural lists misplaced pride among the faults that harm a ruler; Guru Angad treats that same self-swelling as a chronic sickness that must be treated, not indulged.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">King Croesus of Lydia shows the Athenian sage Solon his treasuries and waits to be called the happiest of men; Solon refuses to call anyone happy before seeing his end, and Croesus later loses his kingdom to Cyrus.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Hdt.%206.86" target="_blank" rel="noopener">Herodotus, Histories 1.30-33, 1.86</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">A rich king delights in his wealth and his own greatness, ignores a wise warning, and falls.</div>
+  <div class="tieback">Croesus shows the Kural’s danger: a ruler’s pride in wealth and misplaced delight in fortune blind him to ruin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Plato has Socrates decree that the city’s guardians must own no private property and may not touch or possess gold and silver, so that greed does not turn them from guardians into tyrants.</div>
+  <div class="cite">&mdash; Plato, Republic, Book III (416d-417b) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Plato thought rulers should be kept away from private riches because love of money ruins people in power.</div>
+  <div class="tieback">Both Plato and the Kural treat the ruler’s relationship to wealth as a question of character that decides whether rule helps or harms.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">King Farouk of Egypt is forced to abdicate</div>
+  <div class="rle-meta">23-26 July 1952 &middot; Alexandria, Egypt</div>
+  <div class="quote is-paraphrase">King Farouk, who came to the throne of Egypt in 1936, became known for a self-indulgent lifestyle, lavish spending and expensive shopping trips abroad, while the army was angered by defeat in the 1948 war and by reports that the king&#x27;s associates had profited from supplying faulty weapons. On 23 July 1952 the Free Officers, led by Muhammad Naguib and Gamal Abdel Nasser, seized power. Surrounded at Ras el-Tin palace in Alexandria, Farouk abdicated on 26 July in favour of his infant son and sailed into exile; the monarchy was abolished the following year.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Farouk&#x27;s personal excesses steadily destroyed the loyalty and respect on which his throne rested.</div>
+  <div class="tieback">The kural warns that avarice, false pride and delight in unworthy things are the faults that harm a ruler, and Farouk&#x27;s indulgence cost him his crown.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.thirukkural.net/ta/kural/adhigaram-044.html" target="_blank" rel="noopener">Thirukkural, Adhigaram 44 (Kurals 431-440) with commentaries of Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah and Mu. Karunanidhi</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html" target="_blank" rel="noopener">Tirukkural of Tiruvalluvar (Tamil script, Unicode e-text)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://en.wikipedia.org/wiki/Jataka_tales" target="_blank" rel="noopener">Dasa-rājadhamma (Ten Duties of the King) in the Jātaka commentary</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-7"><a href="https://jainworld.com/" target="_blank" rel="noopener">Saman Suttam (anthology of Jain scripture, compiled 1974)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Hdt.%206.86" target="_blank" rel="noopener">Herodotus, Histories 6.86 — the story of Glaucus of Sparta and the Delphic oracle</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Republic, Book X (the Myth of Er) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/biography/Farouk-I" target="_blank" rel="noopener">Farouk I</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.historytoday.com/archive/months-past/abdication-king-farouk" target="_blank" rel="noopener">The Abdication of King Farouk</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0431.html">&larr; Kural 431</a>
+  <a href="kural-0433.html">Kural 433 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-044.html">Error Correction</a>
+  <a class="skip-btn" href="kural-0441.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

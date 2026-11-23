@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 988 — Perfectness | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 988</h1>
+<p class="adhikaram"><a href="adhikaram-099.html">Perfectness</a> &middot; Saandraanmai &middot; <span class="tamil">சான்றாண்மை</span></p>
+
+<div class="tamil-text">இன்மை ஒருவற்கு இளிவன்று சால்பென்னும்
+திண்மைஉண் டாகப் பெறின்.</div>
+<div class="translit">Inmai oruvarku ilivandru saalbennum
+thinmaiun daakap perin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Being poor is no shame for a person who has the inner strength called perfect character.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Some people have lots of toys and money, and some have very little. Valluvar says having little is nothing to be ashamed of, as long as you are honest, kind and strong inside. That inner strength is worth more than any treasure.</p>
+
+<h2 class="section">University</h2>
+<p>Inmai (இன்மை, &#x27;having nothing, poverty&#x27;) is not ilivu (இளிவு, &#x27;disgrace&#x27;) for one who has gained the thinmai (திண்மை, &#x27;firmness, solidity&#x27;) called saalbu. The image of perfection as a kind of solidity anticipates the stability of Kural 989. Varadarasanar, Pappaiah and Karunanidhi all read inmai as material poverty, and Karunanidhi adds that such a person treats saalbu itself as wealth; Sivayogi Sivakumar widens inmai to &#x27;hardships&#x27;. Textual note: ytamizh.com reads இளிவன்று (ilivandru, &#x27;is not disgrace&#x27;), the standard reading supported by the commentaries&#x27; gloss இழிவு; thirukkural.net&#x27;s main text prints இனிவன்று, which appears to be a typographical error (ன for ள), since its own commentaries gloss the word as இழிவு. This edition follows இளிவன்று. Placed just before the chapters on Nalkuravu (Poverty, ch. 105) and Iravu (Begging, ch. 106), the couplet establishes that character, not wealth, sets the limits of dignity.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Bhagavata Purana, a poor brahmin friend of Krishna&#x27;s boyhood (known in later tradition as Sudama or Kuchela), content and self-controlled despite his poverty, visits Krishna at Dvaraka carrying only a handful of flattened rice; Krishna receives him with great honour.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Bhagavata Purana 10.80-81</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The story shows that the poor man&#x27;s devotion and contentment made him worthy of the highest honour despite his lack of wealth.</div>
+  <div class="tieback">Like the Kural, it presents poverty as no disgrace to a person of firm character.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Better is the poor that walketh in his uprightness, than he that is perverse in his ways, though he be rich.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 28:6 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The proverb ranks an upright poor person above a rich person of crooked ways.</div>
+  <div class="tieback">This is the Kural&#x27;s point: integrity removes any shame from poverty.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Wealth is not in having many possessions, but rather (true) wealth is feeling sufficiency in the soul.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6446" target="_blank" rel="noopener">Sahih al-Bukhari 6446 (Sunnah.com)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet teaches that real wealth lies in inner contentment, not in property.</div>
+  <div class="tieback">Like the Kural, it relocates worth from possessions to inner strength.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Who is rich? He who rejoices in his lot, as it is said: “You shall enjoy the fruit of your labors, you shall be happy and you shall prosper” (Psalms 128:2)&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 4:1 (Mishnah Yomit, trans. Joshua Kulp, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Ben Zoma redefines wealth as being content with what one has.</div>
+  <div class="tieback">This supports the Kural&#x27;s view that lack of possessions does not diminish a person of firm character.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Health is the most precious gain and contentment the greatest wealth. A trustworthy person is the best kinsman, Nibbana the highest bliss.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 204 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha names contentment as the greatest wealth.</div>
+  <div class="tieback">Like the Kural, it implies that a person rich in inner qualities is not truly poor.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Happy are we, happy live we who call nothing our own; when Mithilâ is on fire, nothing is burned that belongs to me.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 9.14 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">King Nami, having renounced his kingdom, tells the disguised god Indra that he lives happily owning nothing, so even the burning of his former city costs him nothing.</div>
+  <div class="tieback">Like the Kural, it shows that having nothing is no disgrace, and even a joy, to one of firm spiritual character.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;No one respects the poor man. ... Says Kabir, he alone is poor, who does not have the Naam, the Name of the Lord, in his heart.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1159, Raag Bhairao, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Kabir begins by describing how the world despises the poor and fawns on the rich. He ends by turning the word around: the only real poverty is to lack the Name of God within.</div>
+  <div class="tieback">The Kural says poverty is no disgrace to one who has the inner strength of perfect character, and Kabir likewise denies that poverty of goods is real poverty for someone inwardly rich.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;... I have no time to give either to any public matter of interest or to any concern of my own, but I am in utter poverty by reason of my devotion to the god.&rdquo;</div>
+  <div class="cite">&mdash; Plato, Apology 23b-c (trans. Benjamin Jowett) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Socrates tells the Athenian jury that his philosophical mission has left him in complete poverty.</div>
+  <div class="tieback">Socrates&#x27; poverty, worn without shame, illustrates the Kural&#x27;s claim that want is no disgrace to the person of real worth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Seneca tells Lucilius that honest poverty is not a bad thing, and that it is not the man who has too little but the man who craves more who is poor.</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius 2.6 (cf. tr. Richard M. Gummere)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The Stoic argues that poverty is a matter of craving, not of possessions.</div>
+  <div class="tieback">This supports the Kural&#x27;s view that lack of wealth does not lower a person of firm character.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Spinoza declines the Heidelberg chair and lives by grinding lenses</div>
+  <div class="rle-meta">1673 &middot; The Hague, Dutch Republic (now the Netherlands)</div>
+  <div class="quote is-paraphrase">The philosopher Baruch (Benedict de) Spinoza supported himself modestly by grinding optical lenses for spectacles and microscopes. In 1673 he was offered the chair of philosophy at the University of Heidelberg, a prestigious post, and declined it because he feared he would not have full freedom to teach and think as he wished. He continued to live simply in The Hague until his death in 1677.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Spinoza chose a plain, modest life of independent work over position and comfort, and his modest means did nothing to lessen his standing.</div>
+  <div class="tieback">The kural says that poverty is no disgrace to someone with the firmness called perfect character, and Spinoza&#x27;s modest circumstances never diminished the respect in which he was held.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-99/" target="_blank" rel="noopener">Thirukkural Chapter 99: சான்றாண்மை / Perfectness (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-099.html" target="_blank" rel="noopener">சான்றாண்மை - அதிகாரம் 99 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Srimad Bhagavatam (Bhagavata Purana), Canto 8, chapters 5-8: the curse of Durvasa and the churning of the ocean of milk</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:6446" target="_blank" rel="noopener">Sahih al-Bukhari 6446 (Book of Ar-Riqaq, ‘True riches is self-contentment’)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Apology (Plato (recording Socrates)) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius (tr. Richard Mott Gummere, Loeb, 1917–1925)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Benedict-de-Spinoza/The-period-of-the-Ethics" target="_blank" rel="noopener">Benedict de Spinoza: The period of the Ethics</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://iep.utm.edu/spinoza/" target="_blank" rel="noopener">Spinoza, Benedict De</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0987.html">&larr; Kural 987</a>
+  <a href="kural-0989.html">Kural 989 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-099.html">Perfectness</a>
+  <a class="skip-btn" href="kural-0991.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

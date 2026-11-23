@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 292 — Veracity | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 292</h1>
+<p class="adhikaram"><a href="adhikaram-030.html">Veracity</a> &middot; Vaaymai &middot; <span class="tamil">வாய்மை</span></p>
+
+<div class="tamil-text">பொய்மையும் வாய்மை யிடத்த புரைதீர்ந்த
+நன்மை பயக்கும் எனின்.</div>
+<div class="translit">Poymaiyum vaaymai yidaththa puraitheerndha
+Nanmai payakkum enin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Even a lie can count as the truth if it brings about pure good with no harm in it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a friend is scared before a big test and asks if they look nervous. Saying “You look calm and ready!” — to help them, not to trick them for your own gain — is the kind of “kind untruth” this kural talks about. But it only counts if it does real good and hurts no one.</p>
+
+<h2 class="section">University</h2>
+<p>This is one of the most debated couplets in the Kural. Having defined truth by harmlessness in 291, Valluvar draws the logical consequence: a statement that is factually false but yields ‘faultless good’ (puraitheerndha nanmai) occupies ‘the place of truth’ (vaaymai idaththa). The qualifier purai theerndha — ‘with the defect removed’ — is strict: the good must be free of any taint, not merely useful to the speaker. Commentators diverge on scope: Varadarasan says such words ‘obtain the place’ of truth; Pappaiah reads it as permission to speak falsely where truth would otherwise be required. The verse places the Kural in a consequentialist line of Indian ethics (compare Krishna’s teaching in the Mahabharata) rather than the absolutism of Kant or of Buddhist precept.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Truth may be unutterable, and even falsehood may be utterable where falsehood would become truth and truth would become falsehood.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/m08/m08069.htm" target="_blank" rel="noopener">Mahabharata, Karna Parva, Section 69 (tr. K. M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna tells Arjuna the story of the ascetic Kausika, who had vowed always to speak the truth. When robbers asked him which way their fleeing victims had gone, he told them truthfully; the victims were killed, and Kausika fell into hell for the harm his ‘truth’ caused.</div>
+  <div class="tieback">Exactly the Kural’s logic: a harmful ‘truth’ ceases to be truth, and a harmless untruth can take truth’s place.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Likewise also was not Rahab the harlot justified by works, when she had received the messengers, and had sent them out another way?&rdquo;</div>
+  <div class="cite">&mdash; James 2:25 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Rahab hid Israel’s spies and misled the king’s men to save their lives (Joshua 2); the New Testament praises her as justified by her deed.</div>
+  <div class="tieback">A deception that saved innocent lives is honoured — close to the Kural’s ‘faultless good.’</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;He who makes peace between the people by inventing good information or saying good things, is not a liar.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:2692" target="_blank" rel="noopener">Sahih al-Bukhari 2692</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet taught that someone who carries good (even embellished) words between quarrelling people to reconcile them is not counted a liar.</div>
+  <div class="tieback">Like the Kural, Islam allows a narrowly bounded untruth when its fruit is pure good — here, peace.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;It is permitted for a person to depart from the truth in a matter that will bring peace.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Yevamot.65b" target="_blank" rel="noopener">Babylonian Talmud, Yevamot 65b (William Davidson / Koren-Steinsaltz tr.)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Talmud cites Joseph’s brothers, and even God’s softened report of Sarah’s words to Abraham, as examples of altering the truth to preserve peace. Rabbi Natan calls it a mitzvah.</div>
+  <div class="tieback">Jewish law, like the Kural, lets a peace-making untruth stand in truth’s place.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;In the case of words that the Tathagata knows to be unfactual, untrue, unbeneficial, but endearing &amp; agreeable to others, he does not say them.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/mn/mn.058.than.html" target="_blank" rel="noopener">Abhaya Sutta, Majjhima Nikaya 58 (tr. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha lists which words he will speak: only what is true and beneficial, with a sense of the proper time. As the translator notes, the possibility of saying something untrue but beneficial is not even considered.</div>
+  <div class="tieback">An honest contrast: early Buddhism shares the Kural’s concern for benefit, but will never allow falsehood to take truth’s place.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The mendicant should not tell it, nor show it, he should not comply with their request, but look on silently, or, though knowing it, he should say that he did not know.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Ācārāṅga Sūtra II.3.3.8 (tr. Hermann Jacobi, SBE 22, 1884, pp. 146-147)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">If travellers ask a wandering monk whether he has seen a man or an animal on the road, the Ācārāṅga tells him not to give them away. He should stay silent or, though he knows, say that he does not know, so that no living being comes to harm.</div>
+  <div class="tieback">Valluvar allows that even a falsehood stands in place of truth when it produces faultless good. The Jain monk is likewise permitted to say &#x27;I do not know&#x27;, against the literal facts, in order to protect life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Kabeer, where there is spiritual wisdom, there is righteousness and Dharma. Where there is falsehood, there is sin.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1372, Salok Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In his saloks Bhagat Kabir sets falsehood plainly on the side of sin. Gurbani as a whole treats kooR (falsehood) as the wall between the soul and God.</div>
+  <div class="tieback">The Kural allows that a falsehood can stand in the place of truth if it produces faultless good. Gurbani offers no such exception, which makes this verse a point of contrast rather than agreement.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;We know how to speak many false things as though they were true; but we know, when we will, to utter true things.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Hesiod, Theogony 27-28 (tr. H. G. Evelyn-White)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The Muses tell Hesiod that they can speak convincing falsehoods as well as truth — the divine source of poetry itself deals in both.</div>
+  <div class="tieback">Greek myth, like the Kural, recognises that falsehood can wear truth’s clothing — though the Muses do not limit it to ‘faultless good.’</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In the Republic (389b), Socrates says falsehood is useless to the gods but may be useful to humans ‘as a medicine,’ and that only the rulers may use it, for the good of the city.</div>
+  <div class="cite">&mdash; Plato, Republic 389b (paraphrase of Jowett tr.) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Plato accepts a ‘medicinal lie’ for the common good, while condemning the ‘true lie’ of self-deception in the soul.</div>
+  <div class="tieback">Both Plato and Valluvar allow falsehood when it heals rather than harms — though Plato restricts it to rulers.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Doctors at Rome&#x27;s Fatebenefratelli Hospital invent K Syndrome</div>
+  <div class="rle-meta">October 1943 - June 1944 &middot; Fatebenefratelli Hospital, Tiber Island, Rome, Italy</div>
+  <div class="quote is-paraphrase">After the Nazi round-up of Jews in Rome on 16 October 1943, doctors at the Fatebenefratelli Hospital, led by head physician Giovanni Borromeo, admitted Jewish and anti-fascist refugees as patients and listed them in official records as suffering from K Syndrome, an invented and supposedly contagious disease. Occupying soldiers who searched the hospital avoided the wards said to hold these patients, and the hospital continued sheltering refugees until the Allies entered Rome in June 1944. In 2004 Yad Vashem recognised Borromeo as Righteous Among the Nations.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The doctors deliberately told a falsehood whose only purpose and effect was to save innocent lives, at serious risk to themselves.</div>
+  <div class="tieback">The kural says even a falsehood takes the place of truth when it yields good wholly free of fault, and the invented disease that protected refugees is about as clear a case of such a blameless lie as history offers.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-30/" target="_blank" rel="noopener">திருக்குறள் அதிகாரம் 30: வாய்மை / Veracity (with Varadarasan, Pappaiah, Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-030.html" target="_blank" rel="noopener">வாய்மை - அதிகாரம் 30 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/m08/m08069.htm" target="_blank" rel="noopener">The Mahabharata, Book 8: Karna Parva, Section 69 (tr. Kisari Mohan Ganguli)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:2692" target="_blank" rel="noopener">Sahih al-Bukhari 2692 (Book of Peacemaking)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Yevamot.65b" target="_blank" rel="noopener">Babylonian Talmud, Yevamot 65b (William Davidson Edition, Koren-Steinsaltz English)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/mn/mn.058.than.html" target="_blank" rel="noopener">Abhaya Sutta: To Prince Abhaya (MN 58), tr. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Ākārāṅga Sūtra (Acaranga Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Theogony (Hesiod)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Republic, Book X (the Myth of Er) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.historytoday.com/print/pdf/node/55500/debug" target="_blank" rel="noopener">K Syndrome, the Disease that Saved (Francesco Buscemi)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.history.co.uk/article/syndrome-k-the-fake-ww2-disease-that-saved-jews-from-the-nazis" target="_blank" rel="noopener">How a fake disease saved Italian Jews from the Nazis</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0291.html">&larr; Kural 291</a>
+  <a href="kural-0293.html">Kural 293 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-030.html">Veracity</a>
+  <a class="skip-btn" href="kural-0301.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

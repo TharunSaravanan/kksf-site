@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 976 — Greatness | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 976</h1>
+<p class="adhikaram"><a href="adhikaram-098.html">Greatness</a> &middot; Perumai &middot; <span class="tamil">பெருமை</span></p>
+
+<div class="tamil-text">சிறியார் உணர்ச்சியுள் இல்லை பெரியாரைப்
+பேணிக்கொள் வேமென்னும் நோக்கு.</div>
+<div class="translit">Siriyaar unarchchiyul illai periyaaraip
+penikkol vemennum nokku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Small-minded people never have the thought, &#x27;Let us respect great people and follow their ways.&#x27;</p>
+
+<h2 class="section">Elementary</h2>
+<p>When a great teacher comes to school, some children run to listen and learn, hoping to become like her. Others just shrug and keep playing. Valluvar says wanting to learn from great people is itself a sign of a big heart.</p>
+
+<h2 class="section">University</h2>
+<p>Siriyaar (சிறியார், &#x27;the small&#x27;) is the counter-term to periyaar (பெரியார், &#x27;the great&#x27;) throughout this chapter and the next. The key phrase is peNikkoLvem (பேணிக்கொள்வேம், &#x27;we will cherish and take to ourselves&#x27;): Puliyur Kesikan reads it as &#x27;we will serve the great and attain their nature ourselves&#x27; (அவரியல்பை நாமும் அடைவோம்), Solomon Pappaiah as following them and preserving their tradition, and Mu. Varadarasanar as honouring them, which the small cannot do because they do not perceive the greatness at all. Nokku (நோக்கு, &#x27;aim, outlook&#x27;) and unarchchi (உணர்ச்சி, &#x27;feeling, awareness&#x27;) make the point psychological: the lack is in perception, not merely in will. Pope renders &#x27;As votaries of the truly great we will ourselves enroll&#x27;. The text matches on both sites, with ytamizh omitting the final full stop.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Just try to learn the truth by approaching a spiritual master. Inquire from him submissively and render service unto him. The self-realized souls can impart knowledge unto you because they have seen the truth.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 4.34 (Bhagavad-gītā As It Is, A.C. Bhaktivedanta Swami Prabhupāda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna urges Arjuna to approach the wise, serve them and learn from them.</div>
+  <div class="tieback">This is the &#x27;aim to cherish the great&#x27; that the Kural says small minds lack.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;He that walketh with wise men shall be wise: but a companion of fools shall be destroyed.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 13:20 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Proverbs says that seeking the company of the wise makes one wise.</div>
+  <div class="tieback">The Kural&#x27;s great-hearted seek the great; the small do not, and stay small.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Moses said to him, ‘May I follow you on [the condition] that you teach me from what you have been taught of sound judgement?’&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 18:66 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Even the prophet Moses humbly asks to follow and learn from a wiser servant of God.</div>
+  <div class="tieback">He shows the outlook the Kural finds lacking in small minds: the wish to follow the great and absorb their wisdom.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Let thy house be a house of meeting for the Sages and sit in the very dust of their feet, and drink in their words with thirst.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 1:4 (Mishnah Yomit, trans. Joshua Kulp, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Yose ben Yoezer urges eager, humble attachment to the wise.</div>
+  <div class="tieback">This thirst to cherish the great is exactly what the Kural says the small never feel.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Though all his life a fool associates with a wise man, he no more comprehends the Truth than a spoon tastes the flavor of the soup.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 64 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha says a fool can sit beside the wise for a lifetime and absorb nothing.</div>
+  <div class="tieback">This is the Kural&#x27;s point exactly: the small have no inner capacity to take on the nature of the great.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">The first lecture of the Uttaradhyayana, &#x27;On Discipline&#x27; (vinaya), contrasts the well-behaved disciple, who stays near his teacher, carries out his instructions and understands his wishes, with the ill-behaved disciple who neglects the teacher and so gains nothing.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra, Lecture 1, &#x27;On Discipline&#x27; (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jain monastic teaching treats reverent attachment to the teacher as the gateway to knowledge.</div>
+  <div class="tieback">The ill-behaved disciple is the Kural&#x27;s small person who has no wish to cherish the great.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">Macauliffe recounts that when Guru Nanak&#x27;s end drew near he appointed his devoted disciple Angad (Bhai Lehna), who had served him wholeheartedly, as his successor, because the Guru&#x27;s own sons had not obeyed him: their minds were insincere and they had rebelled and deserted him.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">Max Arthur Macauliffe, The Sikh Religion (1909), Vol. 1, Life of Guru Nanak, Chapter XVII; corroborated by Encyclopaedia Britannica, Guru Angad</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In the Sikh account Lehna&#x27;s readiness to serve the Guru and make the Guru&#x27;s way his own is what made him Guru Angad, while the Guru&#x27;s sons, though close to him by birth, never sought that service. Britannica likewise notes that Angad was known for his loyalty to the first Guru.</div>
+  <div class="tieback">The Kural says the resolve to cherish the great and take on their way never arises in small minds, and the story sets Lehna, who had that resolve, against the sons, who lacked it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Urged by Athena, the young Telemachus sails to Pylos and Sparta to seek out the aged Nestor and King Menelaus, learning from them about his father and about how great men act.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, Odyssey 3-4 (trans. Samuel Butler)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Telemachus&#x27; coming of age begins with going out to learn from the great.</div>
+  <div class="tieback">He shows the outlook the Kural says the small lack: wanting to learn from great men and become like them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In Plato&#x27;s allegory of the cave, the prisoners who have only ever seen shadows mock the one who returns from the light and would even kill anyone who tried to lead them upward.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Plato/republic.html" target="_blank" rel="noopener">Plato, Republic VII, 514a-517a (trans. Benjamin Jowett)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Plato portrays people who cannot recognise or welcome a mind greater than their own.</div>
+  <div class="tieback">The prisoners are the Kural&#x27;s small people, for whom honouring the great is simply not part of their outlook.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">James Boswell seeks out Samuel Johnson and becomes his biographer</div>
+  <div class="rle-meta">16 May 1763 (Life of Johnson published 1791) &middot; Thomas Davies&#x27;s bookshop, Russell Street, Covent Garden, London, England</div>
+  <div class="quote is-paraphrase">The young Scottish lawyer James Boswell, who had admired Samuel Johnson&#x27;s writings for years, spent months in London trying to meet him and finally did so on 16 May 1763 in the back parlour of the bookseller Thomas Davies, where Johnson&#x27;s sharp replies left him embarrassed. Undeterred, Boswell called on Johnson at his lodgings a week later and cultivated the friendship for twenty-one years, recording Johnson&#x27;s conversation in remarkable detail in his journals. His Life of Samuel Johnson, published in 1791, is regarded as one of the greatest biographies in English.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Boswell&#x27;s determination to learn from a great man and preserve his words gave the world its fullest portrait of Johnson.</div>
+  <div class="tieback">The kural says that the resolve to cherish the great and make their way one&#x27;s own never arises in small minds, and Boswell&#x27;s persistent pursuit of Johnson is the very resolve the kural says the small lack.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-98/" target="_blank" rel="noopener">Thirukkural Chapter 98: பெருமை / Greatness (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-098.html" target="_blank" rel="noopener">பெருமை - அதிகாரம் 98 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">The Sikh Religion: Its Gurus, Sacred Writings and Authors (6 vols.) (Max Arthur Macauliffe)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, The Odyssey, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Plato/republic.html" target="_blank" rel="noopener">Plato, The Republic, trans. Benjamin Jowett</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://lithub.com/of-course-samuel-johnson-met-james-boswell-in-a-bookstore/" target="_blank" rel="noopener">Of Course, Samuel Johnson Met James Boswell in a Bookstore (excerpt from The Club, Yale University Press) (Leo Damrosch)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/summary/James-Boswell" target="_blank" rel="noopener">James Boswell summary</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0975.html">&larr; Kural 975</a>
+  <a href="kural-0977.html">Kural 977 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-098.html">Greatness</a>
+  <a class="skip-btn" href="kural-0981.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

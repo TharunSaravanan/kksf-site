@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 786 — Friendship | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 786</h1>
+<p class="adhikaram"><a href="adhikaram-079.html">Friendship</a> &middot; Natpu &middot; <span class="tamil">நட்பு</span></p>
+
+<div class="tamil-text">முகநக நட்பது நட்பன்று நெஞ்சத்து
+அகநக நட்பது நட்பு.</div>
+<div class="translit">Muganaga natpadhu natpandru nenjaththu
+aganaga natpadhu natpu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Friendship that only makes the face smile is not real friendship. Real friendship makes the heart smile inside.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Some people smile at you only on the outside, like a mask, but inside they don’t really care. A true friend is happy all the way inside when they see you, even if they don’t make a big show of it. Real friendship is a smile in the heart, not just on the face.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet turns on a pair of near-rhyming compounds: muga-naga (முகநக, ‘so that the face smiles’) and aga-naga (அகநக, ‘so that the inside smiles’), with nenjatthu (நெஞ்சத்து, ‘in the heart’) making the inner sense explicit. Naga (நக) means to laugh, smile or blossom, so both commentators and translators often render it as the face or heart ‘blooming’. Parimelazhagar takes the first kind of friendship to be outward courtesy only, and the second to be friendship rooted in love (anbu). The word natpu appears four times in seven words, which gives the verse its proverbial ring. The text is the same on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Chanakya Niti advises avoiding the person who speaks sweetly to your face but works to ruin you behind your back, comparing him to a pot of poison with a layer of milk on top.</div>
+  <div class="cite">&mdash; <a href="https://subhashitani-en.blogspot.com/2012/07/blog-post_17.html" target="_blank" rel="noopener">Chanakya Niti 2.5</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The sweet surface hides a poisonous inside, just as a pleasant face can hide ill will.</div>
+  <div class="tieback">This is the Kural’s face-only friend, whose smile does not reach the heart.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Let love be without dissimulation. Abhor that which is evil; cleave to that which is good.&rdquo;</div>
+  <div class="cite">&mdash; Romans 12:9 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul asks that love be genuine, with no pretence behind it.</div>
+  <div class="tieback">Paul’s love ‘without dissimulation’ is the Kural’s smile of the heart rather than of the face.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;The worst people in the Sight of Allah on the Day of Resurrection will be the double faced people who appear to some people with one face and to other people with another face.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6058" target="_blank" rel="noopener">Sahih al-Bukhari 6058</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet condemns the two-faced person who shows a different face to different people.</div>
+  <div class="tieback">Both texts warn against friendship worn on the face but absent from the heart.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Many a friend doth a sweet palate make; And gracious lips that greet (?) with peace. Be they that are at peace with thee many; But he that hath thy secret one of a thousand.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Ben_Sira.6" target="_blank" rel="noopener">Ben Sira 6:5-6 (The Wisdom of Ben Sira, Cambridge, 1899)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Ben Sira says pleasant speech wins many friends, but the one you can trust with your heart is one in a thousand.</div>
+  <div class="tieback">Friends of the lips are many, friends of the heart are rare: the same contrast as the Kural’s face and heart.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;One is a bottle friend; one says, ‘friend, friend’ only to one’s face; one is a friend and an associate only when it is advantageous.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta, DN 31 (trans. Narada Thera)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha lists false friends, including the one whose friendship exists only in what he says to your face.</div>
+  <div class="tieback">The ‘friend, friend’ only to one’s face is exactly the Kural’s face-smiling friendship that is no friendship.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;It is better to be without the love of those who are without sincerity.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">Naladiyar, ch. 22 &#x27;The choice of friends&#x27;, stanza 9 (English tr. in The Indian Antiquary; wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Naladiyar holds that affection that is not sincere is worth less than no affection at all.</div>
+  <div class="tieback">The Kural rejects friendship that only makes the face smile and accepts only the kind that gladdens the heart, and the Naladiyar likewise rejects love that lacks inner sincerity.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;They alone are true, whose love for God is deep and heart-felt. Those who have one thing in their heart, and something else in their mouth, are judged to be false.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 488, Raag Aasaa, Sheikh Farid (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Sheikh Farid, whose hymns are part of the Guru Granth Sahib, sets heart-felt love against love that lives only on the lips.</div>
+  <div class="tieback">The Kural says friendship that only makes the face smile is not friendship, while friendship that makes the heart smile is; Farid likewise counts true only the love that is in the heart, not merely on the lips.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Aesop’s fable of the two travellers and the bear, one man scrambles up a tree and leaves his companion to lie still on the ground; when the bear has gone, the one who was left says the bear whispered to him never to travel with a friend who deserts you at the first sign of danger.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/21" target="_blank" rel="noopener">Aesop, Fables (trans. G. F. Townsend), ‘The Bear and the Two Travelers’</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The fable exposes a friendship that was pleasant on the road but empty when it was tested.</div>
+  <div class="tieback">The deserter’s friendship was only on the face, never in the heart.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;In everything false pretence is bad, for it suspends and vitiates our power of discerning the truth. But to nothing it is so hostile as to friendship; for it destroys that frankness without which friendship is an empty name.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/2808" target="_blank" rel="noopener">Cicero, De Amicitia 25 (trans. E. S. Shuckburgh)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Laelius argues that pretence destroys friendship because it takes away the openness that friendship depends on.</div>
+  <div class="tieback">Cicero’s ‘empty name’ is the Kural’s face-only friendship that is not friendship at all.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Montaigne&#x27;s friendship with Etienne de La Boetie</div>
+  <div class="rle-meta">c. 1559-1563 &middot; Bordeaux, France</div>
+  <div class="quote is-paraphrase">Around 1559 Michel de Montaigne, then a member of the Parlement of Bordeaux, met Etienne de La Boetie, who also worked for the Parlement, and the two formed a deep friendship that lasted until La Boetie&#x27;s death at the age of thirty-two in August 1563. Montaigne later oversaw the publication of several of his friend&#x27;s works. In his essay Of Friendship he set this bond apart from ordinary friendships, which he called mere acquaintances, describing a friendship in which two souls are blended so completely that the seam joining them disappears.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Montaigne&#x27;s essay made this friendship the classic European example of a bond rooted in the heart rather than in convenience or outward courtesy.</div>
+  <div class="tieback">The kural says friendship that only makes the face smile is not friendship, while friendship that makes the heart smile is, and Montaigne drew the same line between ordinary acquaintance and what he shared with La Boetie.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-79/" target="_blank" rel="noopener">Thirukkural Chapter 79: நட்பு / Friendship (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-079.html" target="_blank" rel="noopener">நட்பு - அதிகாரம் 79 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah and Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://subhashitani-en.blogspot.com/2012/07/blog-post_17.html" target="_blank" rel="noopener">Chāṇakya Nīti (Chāṇakya Nītiśāstra), with the subhāṣita also collected in the Subhāṣita Ratna Bhāṇḍāgāra</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:6058" target="_blank" rel="noopener">Sahih al-Bukhari 6058 (Book of Good Manners: the double-faced person)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Ben_Sira.6" target="_blank" rel="noopener">Ben Sira (Ecclesiasticus) 6, from The Wisdom of Ben Sira (Cambridge University Press, 1899)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta: The Discourse to Sigala (Digha Nikaya 31), tr. Narada Thera</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">The Nāladiyār (English translation serialised in The Indian Antiquary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.gutenberg.org/ebooks/21" target="_blank" rel="noopener">Aesop&#x27;s Fables (George Fyler Townsend trans.)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/2808" target="_blank" rel="noopener">Laelius de Amicitia (On Friendship), in Treatises on Friendship and Old Age (Marcus Tullius Cicero)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://wwwe.lib.cam.ac.uk/CUL/exhibitions/Montaigne/c3.html" target="_blank" rel="noopener">Of friendship (&#x27;My Booke and My Selfe&#x27;: Michel de Montaigne 1533-1592 exhibition)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://blog.oup.com/2017/03/friendship-michel-de-montaigne/" target="_blank" rel="noopener">Can we have more than one friend? According to Montaigne, no</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0785.html">&larr; Kural 785</a>
+  <a href="kural-0787.html">Kural 787 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-079.html">Friendship</a>
+  <a class="skip-btn" href="kural-0791.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

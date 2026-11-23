@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 836 — Folly | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 836</h1>
+<p class="adhikaram"><a href="adhikaram-084.html">Folly</a> &middot; Pedhaimai &middot; <span class="tamil">பேதைமை</span></p>
+
+<div class="tamil-text">பொய்படும் ஒன்றோ புனைபூணும் கையறியாப்
+பேதை வினைமேற் கொளின்.</div>
+<div class="translit">Poipadum ondro punaipoonum kaiyariyaap
+pedhai vinaimer kolin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>When a fool takes on a job they do not know how to do, the job fails, and they also end up in chains.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If someone who has never cooked tries to make a big dinner alone, the food gets burnt, and they might also burn their hand. Taking on a job you don’t know how to do can spoil the job and hurt you too.</p>
+
+<h2 class="section">University</h2>
+<p>Kaiyariyaa (கையறியா) means ‘not knowing the method’ (kai here is the way of doing), and the couplet’s rhetorical ondro (ஒன்றோ, ‘is it only one thing?’) introduces a double penalty: the work poipadum (பொய்படும், comes to nothing) and the doer punai poonum (புனைபூணும், wears fetters). Mu. Varadarasanar and Puliyur Kesigan take punai literally as the shackles of a man held culpable, which Pope follows (‘himself he binds with chains’), while Solomon Pappaiah and Kalaignar soften it to ‘he too is ruined’ or ‘punishes himself’. Mu. Varadarasanar and Kalaignar gloss kaiyariyaa morally (not knowing the right way of conduct), whereas Pappaiah reads it practically (not knowing how to do the work). Both base sources give the same text.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;That action performed in illusion, in disregard of scriptural injunctions, and without concern for future bondage or for violence or distress caused to others is said to be in the mode of ignorance.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 18.25 (As It Is)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Gita classes as tamasic any work begun in delusion without weighing its consequences, including future bondage.</div>
+  <div class="tieback">Valluvar’s ignorant undertaker likewise ruins the work and binds himself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For which of you, intending to build a tower, sitteth not down first, and counteth the cost, whether he have sufficient to finish it? Lest haply, after he hath laid the foundation, and is not able to finish it, all that behold it begin to mock him, Saying, This man began to build, and was not able to finish.&rdquo;</div>
+  <div class="cite">&mdash; Luke 14:28-30 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus warns that starting a project without weighing one’s ability leads to failure and public shame.</div>
+  <div class="tieback">Both texts describe a task begun without competence that ends in failure and harm to the doer.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And do not pursue that of which you have no knowledge. Indeed, the hearing, the sight and the heart - about all those [one] will be questioned.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 17:36 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an forbids acting on what one does not know and warns that one will be held accountable.</div>
+  <div class="tieback">Valluvar’s fool takes up work he does not understand and pays for it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;His own iniquities shall take the wicked himself, and he shall be holden with the cords of his sins. He shall die without instruction; and in the greatness of his folly he shall go astray.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 5:22-23 (Tanakh, KJV translation) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Proverbs pictures the wrongdoer caught and bound by the cords of his own actions, led astray by folly.</div>
+  <div class="tieback">The image of being bound by one’s own folly mirrors the Kural’s self-imposed fetters.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Aramadusaka Jataka, monkeys left to water a king’s garden pull up every sapling to check the length of its roots so they can measure the water, and the whole garden withers.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/bud/j3/index.htm" target="_blank" rel="noopener">Aramadusaka Jataka (Jataka No. 46)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Bodhisatta remarks that fools, trying to do good, end up doing harm.</div>
+  <div class="tieback">It is a vivid picture of the Kural’s fool who takes on work he does not understand and ruins it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As the burglar caught in the breach of the wall perishes by the work the sinner himself had executed, thus people in this life and the next cannot escape the effect of their own actions.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 4.3 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Uttarādhyayana pictures a burglar trapped and crushed in the very hole he dug, as an image of how a person&#x27;s own deeds catch and bind him.</div>
+  <div class="tieback">Valluvar says the fool who takes up work he does not understand not only fails but puts himself in fetters; the Uttarādhyayana&#x27;s burglar caught in his own breach is likewise undone by his own handiwork.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;If a fool does a job, he cannot do it right. Even if he does something right, he does the next thing wrong.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 474, Raag Aasaa, Asa Ki Vaar (salok 5 before pauri 22), Guru Angad (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In Asa Ki Vaar Guru Angad observes that whatever task a fool takes up goes wrong, and even a success is followed by a fresh mistake.</div>
+  <div class="tieback">The Kural says that when a fool who does not know the way takes up a task, the work fails; Guru Angad says the same of the fool&#x27;s undertakings.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Phaethon begged to drive the chariot of the Sun for one day, could not control the horses, set the earth on fire, and was struck down by Zeus’s thunderbolt.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Ov.+Met.+2.1" target="_blank" rel="noopener">Ovid, Metamorphoses 2.1-328</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Ovid tells it as the tale of a youth who took on a task far beyond his skill.</div>
+  <div class="tieback">As in the Kural, the work is ruined and the doer is destroyed with it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In the Apology, Socrates reports that the craftsmen he questioned truly knew their crafts, but because of that skill thought themselves wise in other weighty matters too, and this error overshadowed their wisdom.</div>
+  <div class="cite">&mdash; Plato, Apology 22d-e <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Socrates exposes people who act as experts beyond the reach of their real knowledge.</div>
+  <div class="tieback">Valluvar’s fool likewise takes on work whose method he does not know.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Francis I is defeated and captured at Pavia</div>
+  <div class="rle-meta">24 February 1525 &middot; Pavia, Lombardy, Italy</div>
+  <div class="quote is-paraphrase">During his war with Emperor Charles V, King Francis I of France laid siege to Pavia, and in the battle against the imperial relief army he led his armoured cavalry in a charge with couched lances. The charge put his horsemen where his own artillery could no longer fire on the enemy, and Spanish arquebusiers inflicted heavy losses on the French. Francis was captured, taken to Spain and held in Madrid for more than a year, and was released only after signing the Treaty of Madrid in January 1526.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The king&#x27;s old-fashioned tactics against an army using firearms not only lost the battle but made him a prisoner of his rival.</div>
+  <div class="tieback">The kural says that when one who does not know how to do a thing takes it on, the work fails and he ends up putting himself in chains, and Francis&#x27;s ill-judged charge lost the battle and his own freedom.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-84/" target="_blank" rel="noopener">Thirukkural Chapter 84: பேதைமை / Folly (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-084.html" target="_blank" rel="noopener">பேதைமை - அதிகாரம் 84 - திருக்குறள் (with Puliyur Kesigan, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sacred-texts.com/bud/j3/index.htm" target="_blank" rel="noopener">The Jataka, or Stories of the Buddha&#x27;s Former Births (ed. E.B. Cowell), incl. Mahakapi Jataka No. 407</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Ov.+Met.+2.1" target="_blank" rel="noopener">Ovid, Metamorphoses Book 2 (Phaethon)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Apology (Plato (recording Socrates)) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/event/Battle-of-Pavia" target="_blank" rel="noopener">Battle of Pavia (1525)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/event/Treaty-of-Madrid" target="_blank" rel="noopener">Treaty of Madrid</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.worldhistory.org/Charles_V,_Holy_Roman_Emperor/" target="_blank" rel="noopener">Charles V, Holy Roman Emperor</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0835.html">&larr; Kural 835</a>
+  <a href="kural-0837.html">Kural 837 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-084.html">Folly</a>
+  <a class="skip-btn" href="kural-0841.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 47 — Domestic Life | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 47</h1>
+<p class="adhikaram"><a href="adhikaram-005.html">Domestic Life</a> &middot; Ilvaazhkkai &middot; <span class="tamil">இல்வாழ்க்கை</span></p>
+
+<div class="tamil-text">இயல்பினான் இல்வாழ்க்கை வாழ்பவன் என்பான்
+முயல்வாருள் எல்லாம் தலை.</div>
+<div class="translit">Iyalpinaan ilvaazhkkai vaazhpavan enpaan,
+Muyalvaarul ellaam thalai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A person who lives family life the way it should be lived is the best of all who try to do good.</p>
+
+<h2 class="section">Elementary</h2>
+<p>In a race, lots of people train in fancy ways. But the one who simply runs correctly, step after step, finishes first. The person who does ordinary family life properly is that runner — ahead of everyone who is trying harder in more dramatic ways.</p>
+
+<h2 class="section">University</h2>
+<p>The decisive word is இயல்பினான் (iyalpinaan) — “by [its] nature,” the same root as இயல்புடைய in kural 41. Valluvar is not praising domestic life as such but domestic life lived *according to what it intrinsically is*, which chapters 41-46 have just specified: support of dependants, the fivefold obligation, blameless earning, shared food, love and virtue. Against that, முயல்வாருள் எல்லாம் தலை — “the head of all who exert themselves” — uses முயல் (muyal, to strive/labour), a word that in the religious register covers ascetic exertion and spiritual practice. The claim is competitive and startling for its time: the householder is not merely an acceptable alternative to the striving religious, he outranks them. Parimelazhagar&#x27;s commentary reads this as Valluvar explicitly ranking இல்லறம் above துறவறம்.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;And in accordance with the precepts of the Veda and of the Smriti, the housekeeper is declared to be superior to all of them; for he supports the other three.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/manu/manu08.htm" target="_blank" rel="noopener">Manusmriti 6.89 (Bühler, Sacred Books of the East XXV)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Having described the student, hermit and ascetic orders at length, Manu concludes by ranking the householder above all of them on the ground that he sustains them.</div>
+  <div class="tieback">This is the Kural&#x27;s exact claim — the householder is the head of all who strive — and with the same supporting reason.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;One that ruleth well his own house, having his children in subjection with all gravity; (For if a man know not how to rule his own house, how shall he take care of the church of God?)&rdquo;</div>
+  <div class="cite">&mdash; 1 Timothy 3:4-5 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The qualification for the highest office in the early church is not ascetic achievement but demonstrated competence as a householder.</div>
+  <div class="tieback">Both texts treat well-run domestic life as the benchmark against which other forms of religious striving are measured.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;The best of you is the best to his wives, and I am the best of you to my wives, and when your companion dies, leave him alone.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/tirmidhi:3895" target="_blank" rel="noopener">Jami` at-Tirmidhi 3895 (graded Sahih by Darussalam)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Prophet locates the measure of a person&#x27;s excellence squarely in domestic conduct, and names himself as the example.</div>
+  <div class="tieback">Like the Kural, it makes &#x27;best of all&#x27; a ranking decided inside the home rather than by any extraordinary religious exertion.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">The Talmud teaches that a man without a wife lives without joy, without blessing and without goodness, and in the surrounding discussion treats marriage and the household as the normal setting in which a Jew fulfils his obligations.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Yevamot.62b" target="_blank" rel="noopener">Babylonian Talmud, Yevamot 62b</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Rabbinic culture made the married scholar, not the celibate ascetic, the ideal type; an unmarried man was considered incomplete for religious as well as social purposes.</div>
+  <div class="tieback">Both traditions put the householder, not the solitary religious striver, at the top of the scale.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">Instructing the layman Dighajanu, who says he cannot live as a renunciant, the Buddha lays out four conditions for welfare in this life — persistent effort, protecting what one earns, good friendship, and balanced livelihood — and four for the life to come, treating lay life as a complete and honourable path.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an08/an08.054.nara.html" target="_blank" rel="noopener">Anguttara Nikaya 8.54, Dighajanu (Vyagghapajja) Sutta</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha gives householders a full curriculum rather than a consolation prize, though the monastic life remains the higher road in the Theravada scheme.</div>
+  <div class="tieback">It affirms the Kural&#x27;s respect for the striving householder without going as far as ranking him first.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">When Gautama, Mahāvīra&#x27;s chief disciple, doubted the lay votary Ānanda&#x27;s claim to have attained avadhi-jñāna (clairvoyant knowledge), Mahāvīra told him Ānanda was right and that Gautama himself should ask forgiveness, and Gautama went back to the householder and apologised.</div>
+  <div class="cite">&mdash; <a href="https://websites.umich.edu/~umjains/jain_story_series/anand_shravak.html" target="_blank" rel="noopener">Uvāsagadasāo (Upāsakadaśāḥ) ch. 1, story of Ānanda (tr. A. F. R. Hoernlé, 1890); retold in Jain Story Series, &#x27;Anand Shravak&#x27;</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In the Uvāsagadasāo a disciplined householder reaches a degree of spiritual knowledge that the foremost monk had wrongly doubted, and the Jina publicly confirms the layman&#x27;s standing.</div>
+  <div class="tieback">Valluvar places the true householder at the head of all who strive, and the story of Ānanda has Mahāvīra rank a householder&#x27;s attainment above the senior monk&#x27;s judgment.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Yoga is not the patched coat, Yoga is not the walking stick. Yoga is not smearing the body with ashes... Remaining unblemished in the midst of the filth of the world - this is the way to attain Yoga.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 730, Raag Soohee, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Answering yogis, Guru Nanak lists the outward marks of the ascetic striver one by one and rejects them all, placing true discipline in staying pure while living in the world.</div>
+  <div class="tieback">Like the Kural&#x27;s householder who stands at the head of all who strive, the person who stays pure in worldly life is here given the very title the ascetics claimed.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;So Zeus the Father gave her an high honour instead of marriage, and she has her place in the midst of the house and has the richest portion. In all the temples of the gods she has a share of honour, and among all mortal men she is chief of the goddesses.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/cla/homer/hymns.htm" target="_blank" rel="noopener">Homeric Hymn 5, To Aphrodite, ll. 21-32 (Evelyn-White)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Hestia, goddess of the hearth at the centre of every Greek house, received the first portion of every sacrifice; the household fire was literally the first claim in Greek worship.</div>
+  <div class="tieback">Greek cult makes the household hearth the foremost object of honour, as the Kural makes the householder foremost among all who strive.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Remember that you are an actor in a drama, of such a kind as the author pleases to make it. If short, of a short one; if long, of a long one. … For this is your business, to act well the character assigned you; to choose it is another&#x27;s.&rdquo;</div>
+  <div class="cite">&mdash; Epictetus, Enchiridion 17 (trans. Elizabeth Carter) <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Epictetus insists that excellence consists in performing well the role one actually has, not in acquiring a grander role.</div>
+  <div class="tieback">The Kural&#x27;s இயல்பினான் says the same: greatness comes from living domestic life according to its own proper nature, not from trading it for a loftier path.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Guru Nanak settles as a farmer at Kartarpur</div>
+  <div class="rle-meta">c. 1520-1539 &middot; Kartarpur, Punjab (now in Pakistan)</div>
+  <div class="quote is-paraphrase">After about twenty years of travel preaching his message, Guru Nanak settled again with his family in the Punjab, became a farmer and established the village of Kartarpur. Disciples gathered around him in a community of work and worship, and he devoted the last twenty years of his life to shaping the first Sikh community there. Before his death in 1539 he appointed a faithful follower, Guru Angad, as his successor.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">The founder of Sikhism chose to lead his community as a working family man rather than as a wandering ascetic, setting a pattern for the faith that followed.</div>
+  <div class="tieback">The kural says one who lives household life as it should be lived stands foremost among all who strive, and Guru Nanak made a farming family life the base from which he guided his followers.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-5/" target="_blank" rel="noopener">திருக்குறள் — அதிகாரம் 5: இல்வாழ்க்கை (Chapter 5: Domestic Life), with Tamil commentaries by Mu. Varadarajan, Salomon Pappaiah, Mu. Karunanidhi and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-005.html" target="_blank" rel="noopener">Thirukkural, Adhigaram 5 — Domestic Life / Married Life (Tamil text, transliteration, multi-language translations and classical commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://thirukural-world.blogspot.com/2014/12/41-50.html" target="_blank" rel="noopener">குறள் 41-50 இல்வாழ்க்கை (Kurals 41-50, Domestic Life) — Tamil text with Tamil and English meanings and Pope/Drew translations</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://sacred-texts.com/hin/manu/manu08.htm" target="_blank" rel="noopener">The Laws of Manu (Manusmriti), Chapter VIII</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/tirmidhi:3895" target="_blank" rel="noopener">Jami` at-Tirmidhi 3895 — &#x27;The best of you is the best to his wives&#x27; (Chapters on Virtues; graded Sahih by Darussalam)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Yevamot.62b" target="_blank" rel="noopener">Babylonian Talmud, Tractate Yevamot 62b — marriage, joy and blessing (William Davidson Edition / Koren-Steinsaltz)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.accesstoinsight.org/tipitaka/an/an08/an08.054.nara.html" target="_blank" rel="noopener">Anguttara Nikaya 8.54, Dighajanu (Vyagghapajja) Sutta: Conditions of Welfare for a Layperson</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://websites.umich.edu/~umjains/jain_story_series/anand_shravak.html" target="_blank" rel="noopener">Jain Story Series: Anand Shravak</a> <span class="tier">[web source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.sacred-texts.com/cla/homer/hymns.htm" target="_blank" rel="noopener">Homeric Hymn 5, To Aphrodite (the Hestia passage, ll. 21-32), trans. Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12">Enchiridion, Chapter 5 (Epictetus) <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://pluralism.org/guru-nanak" target="_blank" rel="noopener">Guru Nanak (The Pluralism Project)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.britannica.com/summary/Guru-Nanak" target="_blank" rel="noopener">Nanak summary (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0046.html">&larr; Kural 46</a>
+  <a href="kural-0048.html">Kural 48 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-005.html">Domestic Life</a>
+  <a class="skip-btn" href="kural-0051.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1192 — The Solitary Anguish | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1192</h1>
+<p class="adhikaram"><a href="adhikaram-120.html">The Solitary Anguish</a> &middot; Thanippadar Mikudhi &middot; <span class="tamil">தனிப்படர் மிகுதி</span></p>
+
+<div class="tamil-text">வாழ்வார்க்கு வானம் பயந்தற்றால் வீழ்வார்க்கு
+வீழ்வார் அளிக்கும் அளி.</div>
+<div class="translit">Vaazhvaarkku vaanam payandhatraal veezhvaarkku
+veezhvaar alikkum ali.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The kindness a lover shows to the one who loves him is like rain from the sky to those whose lives depend on it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Think of a thirsty garden in summer. When the rain finally comes, every leaf perks up. When someone you love is kind to you, your heart perks up the same way.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet sets the beloved’s aḷi (grace, tender kindness) beside the rain that the sky (vāṉam) yields (payanta) to living beings (vāḻvār), echoing the Kural’s own chapter on rain (vāṉ ciṟappu, ch. 2). Parimelazhagar and the modern commentators take vāḻvār as ‘those who live by it’ and insist on timeliness: Pappaiah stresses rain at the proper season, and Kalaignar reads it as lovers meeting at the right time. The point in this chapter is implicit contrast: the heroine is the parched field to whom no such rain is coming. Pope: ‘As heaven on living men showers blessings from above, / Is tender grace by lovers shown to those they love.’ Text identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Krishna teaches that living beings are sustained by food, food is produced from rain, and rain comes from sacrifice, so that the whole order of life hangs on the rain that falls in due season.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 3.14 (paraphrase; cf. tr. A.C. Bhaktivedanta Swami Prabhupada)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Gita presents rain as the link on which all living beings depend.</div>
+  <div class="tieback">The Kural borrows exactly this dependence of life on rain to describe how a loving spouse’s kindness keeps the beloved alive.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;he shall come unto us as the rain, as the latter and former rain unto the earth.&rdquo;</div>
+  <div class="cite">&mdash; Hosea 6:3 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Hosea pictures the coming of the beloved Lord to his people as seasonal rain on dry ground.</div>
+  <div class="tieback">Like the Kural, Hosea likens the arrival of love to rain that revives those who wait for it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">The Qur’an names as one of God’s signs that He created spouses for people so that they may find tranquillity in them, placing affection and mercy between them; a few verses later it names as another sign the rain He sends down to give life to the earth after its death.</div>
+  <div class="cite">&mdash; Qur’an 30:21 and 30:24 (paraphrase; cf. Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Surah ar-Rum sets marital affection and life-giving rain side by side among the signs of divine care.</div>
+  <div class="tieback">The Kural joins the same two signs into one simile: a spouse’s kindness is rain to the one who lives by it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">The Talmud teaches that any man who has no wife lives without joy, without blessing and without goodness.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Yevamot.62b" target="_blank" rel="noopener">Babylonian Talmud, Yevamot 62b (paraphrase)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The rabbis treat the love of a spouse as the source from which joy and blessing reach a person’s life.</div>
+  <div class="tieback">As the Kural says love is rain to the one who lives by it, the Talmud says a life without that love is dry of joy and blessing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Dhaniya Sutta a contented cowherd, his roof thatched and his fire lit, tells the sky it may rain if it likes, praising his wife as faithful, long his companion and pleasing to him; the Buddha answers each verse with his own freedom from all such supports.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/kn/snp/" target="_blank" rel="noopener">Sutta Nipata 1.2, Dhaniya Sutta (paraphrase)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The herdsman’s security rests on a loving wife and on rain that can do him no harm, while the Buddha points beyond both.</div>
+  <div class="tieback">The Kural’s rain-and-love pairing appears here too, though the Buddhist sutta finally sets both aside in favour of non-attachment.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">In the Tamil Jain epic Jivaka Chintamani, the hero Jivaka wins and marries a series of brides, and the poet dwells on the mutual delight of each newly united couple before Jivaka finally renounces the world.</div>
+  <div class="cite">&mdash; <a href="https://www.projectmadurai.org/" target="_blank" rel="noopener">Tiruttakkatevar, Jivaka Chintamani (paraphrase of the epic’s marriage episodes)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Jain epic describes reciprocal married love with real warmth, while framing it as a stage to be outgrown.</div>
+  <div class="tieback">Its scenes of shared delight answer the Kural’s picture of a lover’s kindness falling like rain, though the Jain poem ends in renunciation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Just as the earth looks beautiful when the rain falls, so does the Sikh blossom forth meeting the Guru.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 758, Raag Soohee, Guru Ram Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Ram Das compares the Sikh&#x27;s joy on meeting the Guru to the dry earth turning green and beautiful under rain.</div>
+  <div class="tieback">The Kural says a lover&#x27;s kindness to the one who loves him is like rain to those whose life depends on it; Gurbani uses the same rain image for the Guru&#x27;s grace to the longing Sikh.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In a fragment of Aeschylus’ lost Danaids, Aphrodite says the holy sky longs to wed the earth and the earth longs for union; rain falls from the bridegroom sky and the earth conceives pasture for flocks and grain for mortals.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/" target="_blank" rel="noopener">Aeschylus, Danaids, fragment 44 (Radt), preserved in Athenaeus, Deipnosophists 13.600b (paraphrase)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Aphrodite herself presents rain as the act of love by which heaven gives life to the earth.</div>
+  <div class="tieback">This is the Kural’s simile run in reverse: rain is love, as for the Kural love is rain.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Boethius’ Lady Philosophy sings that it is love which holds earth and sea together and rules the heavens, keeping the seasons in their order; if love slackened its reins, everything now bound in concord would fall into war.</div>
+  <div class="cite">&mdash; Boethius, Consolation of Philosophy, Book 2, metre 8 (paraphrase) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Boethius makes love the force that keeps the whole cosmos, seasons included, alive and in order.</div>
+  <div class="tieback">The Kural’s comparison of love to life-sustaining rain fits Boethius’ claim that love is what keeps the world going.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Robert Browning&#x27;s letters reach the invalid Elizabeth Barrett</div>
+  <div class="rle-meta">January 1845 – September 1846 &middot; London, England</div>
+  <div class="quote is-paraphrase">For years the poet Elizabeth Barrett lived as a chronic invalid, mostly confined to her room at 50 Wimpole Street. In January 1845 Robert Browning wrote to tell her he loved her verses with all his heart, and over the next twenty months the two exchanged 574 letters. They married secretly at St Marylebone Parish Church on 12 September 1846 and left for Italy, where her health improved and their son was born in 1849.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Browning&#x27;s love came into a shut-in, sickly life and helped open it up into marriage, travel, motherhood and her best-known love poetry.</div>
+  <div class="tieback">The kural likens a lover&#x27;s tenderness to rain for those whose life depends on it, and Browning&#x27;s devotion arrived like that rain in Elizabeth Barrett&#x27;s confined life.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-120/" target="_blank" rel="noopener">Thirukkural Chapter 120: தனிப்படர்மிகுதி / The Solitary Anguish (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-120.html" target="_blank" rel="noopener">தனிப்படர் மிகுதி - அதிகாரம் 120 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Yevamot.62b" target="_blank" rel="noopener">Babylonian Talmud, Yevamot 62b — &#x27;any man who does not have a wife is left without joy, without blessing, without goodness&#x27;</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/kn/snp/" target="_blank" rel="noopener">Sutta Nipata 1.4 Kasibharadvaja, 1.6 Parabhava, 1.7 Vasala</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.projectmadurai.org/" target="_blank" rel="noopener">Tiruttakkatevar, Jivaka Chintamani (Tamil Jain epic, c. 10th century)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/" target="_blank" rel="noopener">Aeschylus, Danaids, fragment 44 (Radt), preserved in Athenaeus, Deipnosophists 13.600b</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">The Consolation of Philosophy (Boethius) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.poetryfoundation.org/poets/elizabeth-barrett-browning" target="_blank" rel="noopener">Elizabeth Barrett Browning</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://poets.org/poet/elizabeth-barrett-browning" target="_blank" rel="noopener">About Elizabeth Barrett Browning</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1191.html">&larr; Kural 1191</a>
+  <a href="kural-1193.html">Kural 1193 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-120.html">The Solitary Anguish</a>
+  <a class="skip-btn" href="kural-1201.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

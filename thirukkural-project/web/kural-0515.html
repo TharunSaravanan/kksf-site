@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 515 — Selection and Employment | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 515</h1>
+<p class="adhikaram"><a href="adhikaram-052.html">Selection and Employment</a> &middot; Therindhu Vinaiyaadal &middot; <span class="tamil">தெரிந்து வினையாடல்</span></p>
+
+<div class="tamil-text">அறிந்தாற்றிச் செய்கிற்பாற்கு அல்லால் வினைதான்
+சிறந்தானென்று ஏவற்பாற் றன்று.</div>
+<div class="translit">Arindhaatrich cheygirpaarku allaal vinaidhaan
+Sirandhaanendru evarpaat randru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Give a job only to someone who knows how to do it and can push through the hard parts to finish it. Never give it to someone just because you like or admire them.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If the school play needs someone to run the lights, you don’t pick your best friend just because you like them. You pick the kid who knows how the lights work and won’t give up when something goes wrong.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet sets competence against favouritism. Its first line gives the positive standard: அறிந்து (knowing the method), ஆற்றி (enduring obstacles) and செய்கிற்பான் (able to carry the task through). Its second line rules out appointing someone because he is சிறந்தான், someone the ruler holds dear or considers excellent in a general way. Pope’s “specious fav’rite” and Pappaiah’s gloss “thinking him one of our own (party, clan)” bring out the anti-nepotism edge. Plato’s ship of state, where sailors who have never learned navigation clamour to steer, dramatises the same danger.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Mahabharata, the blind king Dhritarashtra keeps backing his son Duryodhana out of fatherly attachment, although wiser advisers such as Vidura warn him that Duryodhana is unfit, and the result is the destruction of the Kuru line.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Udyoga Parva (Ganguli trans.)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Power is handed to someone because he is beloved, not because he is capable, and it ends in disaster.</div>
+  <div class="tieback">The Kural forbids exactly this: giving work to someone because he is dear rather than because he can do it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Ye know not what ye ask. Are ye able to drink of the cup that I shall drink of...?” ... “but to sit on my right hand, and on my left, is not mine to give, but it shall be given to them for whom it is prepared of my Father.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 20:22-23 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">When the mother of James and John asks for places of honour for her sons, Jesus replies that such positions depend on being able to bear the cost, not on a personal request.</div>
+  <div class="tieback">Positions go to those prepared and able, not to those with the right connections.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Abu Dharr, thou art weak and authority is a trust. and on the Day of judgment it is a cause of humiliation and repentance except for one who fulfils its obligations and (properly) discharges the duties attendant thereon.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/muslim:1825" target="_blank" rel="noopener">Sahih Muslim 1825</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet, though fond of his close companion Abu Dharr, declines to appoint him to office because he is not suited to its burdens.</div>
+  <div class="tieback">Affection does not justify an appointment; only the ability to carry the duty does. This is the Kural exactly.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;But he forsook the counsel of the old men which they had given him, and took counsel with the young men that were grown up with him, that stood before him.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">1 Kings 12:8 (JPS 1917)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">King Rehoboam ignores experienced advisers and relies on his childhood friends, and the kingdom splits in two.</div>
+  <div class="tieback">Relying on familiar favourites instead of proven competence is the error the Kural warns against.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Buddha says that one fit to go on a mission (duteyya) listens, gets others to listen, learns, remembers, understands, helps others understand, knows what is relevant and what is not, and does not stir up quarrels, and names Sariputta as having these qualities.</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/an8.16" target="_blank" rel="noopener">Anguttara Nikaya 8.16 (Duteyya Sutta)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Envoys are chosen by a list of specific skills.</div>
+  <div class="tieback">Choosing an agent by demonstrated ability, not by rank, matches the Kural’s positive standard.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;An excellent pupil needs no express directions, or he is (at least) quickly directed; he always carries out his duties as he is told.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 1.44 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The lecture on discipline describes the worthy disciple as one who understands what is required and reliably carries it through.</div>
+  <div class="tieback">The kural would give a task only to one who knows how to do it and can see it through, not to a favourite; the Jain verse describes that kind of capable, reliable doer.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">Guru Nanak had two sons, yet before he died he appointed one of his faithful followers as his successor in leading the community, naming him Guru Angad, the &#x27;limb&#x27; of Guru Nanak.</div>
+  <div class="cite">&mdash; <a href="https://pluralism.org/guru-nanak" target="_blank" rel="noopener">The Pluralism Project, Harvard University, &#x27;Guru Nanak&#x27; (paraphrase)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The Harvard Pluralism Project records that leadership passed to a proven disciple rather than to the Guru&#x27;s own sons.</div>
+  <div class="tieback">The Kural says a task should go to one who knows how to do it and can see it through, never to someone because he is dear; Guru Nanak passed over his own sons for a faithful disciple.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Helios, bound by an oath and moved by love for his son, lets the inexperienced Phaethon drive the chariot of the sun; Phaethon loses control, scorches the earth, and Zeus strikes him down.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Ov.+Met.+2.1" target="_blank" rel="noopener">Ovid, Metamorphoses 2.1-328</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">A father gives a job to his son out of affection, although the son lacks the skill and strength for it.</div>
+  <div class="tieback">This is the Kural’s warning come to life: give the task to one who can do it, not to one you love.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;The sailors are quarrelling with one another about the steering—every one is of opinion that he has a right to steer, though he has never learned the art of navigation and cannot tell who taught him or when he learned...&rdquo;</div>
+  <div class="cite">&mdash; Plato, Republic VI, 488b (Jowett) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Plato’s ship of state shows people who lack the skill fighting for the helm while the real navigator is ignored.</div>
+  <div class="tieback">Plato and Valluvar agree that the helm belongs to whoever knows the craft, not to the popular or the favoured.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Prussian reformers open the officer corps to merit</div>
+  <div class="rle-meta">1807-1810 &middot; Prussia (now Germany)</div>
+  <div class="quote is-paraphrase">After Prussia&#x27;s crushing defeat by Napoleon in 1806, a reform commission led by Gerhard von Scharnhorst, himself not of Prussian noble birth, reorganised the army. The reformers opened the officer corps, previously drawn almost entirely from the nobility, to middle-class candidates and made advancement depend on merit and education. They also founded military schools and developed the modern general staff.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">A state that had lost a war with officers chosen by birth decided to choose them for knowledge and ability instead.</div>
+  <div class="tieback">The kural says a task should go to the one who knows how to do it and can see it through, not to someone favoured for other reasons, which is the principle the Prussian reformers adopted.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-52/" target="_blank" rel="noopener">தெரிந்துவினையாடல் / Selection and Employment, Chapter 52 (Kurals 511-520) with commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-052.html" target="_blank" rel="noopener">தெரிந்து வினையாடல் - அதிகாரம் 52 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/muslim:1825" target="_blank" rel="noopener">Sahih Muslim 1825, The Book on Government</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://suttacentral.net/an8.16" target="_blank" rel="noopener">Duteyya Sutta (AN 8.16)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://pluralism.org/guru-nanak" target="_blank" rel="noopener">Guru Nanak (The Pluralism Project)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Ov.+Met.+2.1" target="_blank" rel="noopener">Ovid, Metamorphoses Book 2 (Phaethon)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Republic, Book X (the Myth of Er) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.ebsco.com/research-starters/history/gerhard-johann-david-von-scharnhorst" target="_blank" rel="noopener">Gerhard Johann David von Scharnhorst</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://britannica.com/biography/August-Graf-Neidhart-von-Gneisenau" target="_blank" rel="noopener">August, Count Neidhardt von Gneisenau (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://ghdi.ghi-dc.org/sub_image.cfm?image_id=2691" target="_blank" rel="noopener">GHDI - Image: Gerhard von Scharnhorst</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0514.html">&larr; Kural 514</a>
+  <a href="kural-0516.html">Kural 516 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-052.html">Selection and Employment</a>
+  <a class="skip-btn" href="kural-0521.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

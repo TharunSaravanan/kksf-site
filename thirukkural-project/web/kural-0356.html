@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 356 — Knowledge of the True | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 356</h1>
+<p class="adhikaram"><a href="adhikaram-036.html">Knowledge of the True</a> &middot; Meyyunarthal &middot; <span class="tamil">மெய்யுணர்தல்</span></p>
+
+<div class="tamil-text">கற்றீண்டு மெய்ப்பொருள் கண்டார் தலைப்படுவர்
+மற்றீண்டு வாரா நெறி.</div>
+<div class="translit">Katreendu meypporul kandaar thalaippaduvar
+Matreendu vaaraa neri.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who have learned and seen what is truly real, here in this life, take the path that never leads back to this world. They are never born here again.</p>
+
+<h2 class="section">Elementary</h2>
+<p>When you finally solve a really hard maze, you don’t have to go back into it: you’ve found the way out. This kural says that people who learn deeply and truly understand what is real find the way out of the maze of being born again and again.</p>
+
+<h2 class="section">University</h2>
+<p>Two emphases distinguish this couplet: kattru (having learned) and eendu (here, in this very life). Valluvar insists that realization must happen within embodied existence, a ‘liberation while living’ close to the Vedantic jivanmukti and to the Buddhist arahant who knows ‘this is the last birth’. Learning is the necessary first step, but the verb is kandaar (they saw), not merely ‘they studied’: scholarship must end in direct seeing, and Solomon Pappaiah’s gloss stresses learning from the great as the start of that process. Vaaraa neri, ‘the path of no return’, closely echoes the Gita’s ‘one who reaches it never returns’. The formula reaches across traditions: Revelation’s ‘he shall go no more out’ and the Orphic initiate’s escape from the ‘circle’ of births voice the same idea of a final exit.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;That abode of Mine is not illumined by the sun or moon, nor by electricity. One who reaches it never returns to this material world.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 15.6</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna describes the supreme state as self-luminous and final: whoever reaches it is never born into this world again.</div>
+  <div class="tieback">The Kural’s ‘vaaraa neri’ (the path that does not come back) is almost a translation of the Gita’s ‘never returns’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Him that overcometh will I make a pillar in the temple of my God, and he shall go no more out.&rdquo;</div>
+  <div class="cite">&mdash; Revelation 3:12 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The risen Christ promises that the faithful will be made permanent in God’s presence and will never be sent away again.</div>
+  <div class="tieback">A final, irreversible arrival parallels the Kural’s path of no return.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Wherein they abide eternally. They will not desire from it any transfer.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 18:108 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Speaking of the gardens of Paradise, the Qur’an says their dwellers remain forever and never wish to leave.</div>
+  <div class="tieback">Like the Kural’s ‘vaaraa neri’, the destination is final: no departure and no return to the former state.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Rabbi Jacob said: this world is like a vestibule before the world to come; prepare yourself in the vestibule, so that you may enter the banqueting-hall.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 4:16 (trans. Joshua Kulp)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Mishnah teaches that this life is an entrance hall where one prepares (through Torah study and good deeds) to enter the lasting world to come.</div>
+  <div class="tieback">The Kural’s ‘kattru eendu’ (having learned here) likewise treats this life as the place where one prepares for the final destination.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;He who has reached the goal, is fearless, free from craving, passionless, and has plucked out the thorns of existence — for him this is the last body.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 351 (trans. Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha says the one who has fully realized the goal will never take another body: this life is their last.</div>
+  <div class="tieback">The Kural’s ‘matreendu vaaraa’ (never coming here again) is the Buddhist ‘last body’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Then he knows and sees all things, he is free from delusion and hindrances, his Âsravas have gone, and he is proficient in meditation and concentration of thoughts, and being pure he will arrive at beatitude when his life is spent.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 32.109 (tr. Hermann Jacobi, SBE 45, 1895, pp. 191-192)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The dispassionate sage reaches omniscience (kevala-jñāna) while still alive, knowing and seeing all things. At the end of that life he passes into liberation, from which, in Jain teaching, a soul never returns.</div>
+  <div class="tieback">Valluvar&#x27;s learned ones who have &#x27;seen&#x27; the truth &#x27;here&#x27; and take the path of no return match the Jain kevalin, who knows and sees in this very life and then reaches final release when his life ends.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;How rare are those who, as Gurmukh, become Jivan Mukta - liberated while yet alive.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 232, Raag Gauree, Guru Amar Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Amar Das speaks of jivan mukti, liberation while still living, as the rare attainment of the Gurmukh who follows the Guru.</div>
+  <div class="tieback">The Kural says those who have learned and seen the truth here, in this life, set out on the path of no return; Guru Amar Das likewise places liberation within this life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Gold leaves buried with Orphic-Bacchic initiates in southern Italy (4th century BCE) have the dead person declare to the underworld queen that they are pure and have escaped the grievous, weary circle, hoping to become a god instead of a mortal.</div>
+  <div class="cite">&mdash; <a href="https://en.wikipedia.org/wiki/Totenpass" target="_blank" rel="noopener">Orphic gold tablets (Thurii)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Initiates believed that sacred knowledge and purification let the soul break out of the cycle of births for good.</div>
+  <div class="tieback">Striking parallel: a Greek belief that knowledge and purity end the ‘circle’ of rebirth, the Kural’s path of no return.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In the closing myth of the Phaedo, Socrates says that those who have sufficiently purified themselves through philosophy live thereafter entirely without bodies and reach dwellings fairer still.</div>
+  <div class="cite">&mdash; <a href="https://chs.harvard.edu/primary-source/plato-phaedo-sb/" target="_blank" rel="noopener">Plato, Phaedo 114c</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Plato’s Socrates, the true philosopher’s lifelong pursuit of wisdom ends in the soul’s release from the cycle of embodiment.</div>
+  <div class="tieback">The same sequence as the Kural: learning and seeing the truth in this life leads to not coming back into a body.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Thomas Merton enters the Abbey of Gethsemani</div>
+  <div class="rle-meta">10 December 1941 &middot; Abbey of Gethsemani, Trappist, Kentucky, United States</div>
+  <div class="quote is-paraphrase">Thomas Merton, who graduated from Columbia University in 1938 and was received into the Catholic Church that same year, taught at Columbia&#x27;s extension school and at St. Bonaventure College before making a retreat at the Trappist Abbey of Gethsemani in 1941. On 10 December 1941 he entered the abbey as a monk, and he remained a member of the community until his death in 1968. His autobiography The Seven Storey Mountain, published in 1948, described his path from a restless student life to the monastery.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Merton&#x27;s path ran from wide academic learning to a decision to give his life wholly to contemplation, a step he never reversed.</div>
+  <div class="tieback">The kural speaks of those who have learned and, in this life, seen the truth, setting out on a path from which they do not return, and Merton&#x27;s move from the university to a lifelong monastic vow follows that pattern.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-36/" target="_blank" rel="noopener">Thirukkural Chapter 36: மெய்யுணர்தல் / Truth-Consciousness (Kurals 351–360), with commentaries of Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-036.html" target="_blank" rel="noopener">மெய்யுணர்தல் – அதிகாரம் 36 – திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://en.wikipedia.org/wiki/Totenpass" target="_blank" rel="noopener">The Orphic gold tablets (Petelia and Thurii lamellae, 4th-3rd century BCE) — instructions to the soul for escaping the cycle of rebirth</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-11"><a href="https://chs.harvard.edu/primary-source/plato-phaedo-sb/" target="_blank" rel="noopener">Plato, Phaedo 64a (trans. Benjamin Jowett)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://monks.org/monks-pages/thomas-merton/" target="_blank" rel="noopener">Thomas Merton</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://merton.org/chrono.aspx" target="_blank" rel="noopener">Thomas Merton&#x27;s Life and Work</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0355.html">&larr; Kural 355</a>
+  <a href="kural-0357.html">Kural 357 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-036.html">Knowledge of the True</a>
+  <a class="skip-btn" href="kural-0361.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

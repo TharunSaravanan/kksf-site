@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 940 — Gaming (Gambling) | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 940</h1>
+<p class="adhikaram"><a href="adhikaram-094.html">Gaming (Gambling)</a> &middot; Soodhu &middot; <span class="tamil">சூது</span></p>
+
+<div class="tamil-text">இழத்தொறூஉம் காதலிக்கும் சூதேபோல் துன்பம்
+உழத்தொறூஉம் காதற்று உயிர்.</div>
+<div class="translit">Izhaththoruum kaadhalikkum soodhepol thunbam
+uzhaththoruum kaadhatru uyir.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The more a gambler loses, the more they love gambling. In the same way, the more a soul suffers, the more it loves living in the body.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Have you ever lost a game and immediately shouted, &#x27;One more try!&#x27;? The more you lose, the more you want to play. Valluvar says life is like that too: even when it hurts, we hold on to it more tightly.</p>
+
+<h2 class="section">University</h2>
+<p>The closing couplet turns a psychological observation about gambling into a general statement about existence. Izhaththoruum (இழத்தொறூஉம்) and uzhaththoruum (உழத்தொறூஉம்), both with alapedai, mean &#x27;every time one loses&#x27; and &#x27;every time one suffers&#x27;, placing loss and pain in parallel. Kaadhalikkum (காதலிக்கும், &#x27;comes to love&#x27;) and kaadhatru (காதற்று) carry the comparison. Most commentators (Mu. Varadarasanar, Kesikan, Pope) read kaadhatru as kaadhal + atru, &#x27;has love, is fond&#x27;: the soul (uyir) loves the body more as it suffers, just as the gambler loves gambling more as he loses. Sivayogi Sivakumar on ytamizh instead splits it as kaadhal + atru &#x27;without love&#x27;, giving the opposite sense that the soul does not love suffering, and adds that gambling can lead to despair. Pappaiah reverses which half is the comparison. The text is identical on both sites.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;When I resolve to play with these no longer, my friends depart from me and leave me lonely. When the brown dice, thrown on the board, have rattled, like a fond girl I seek the place of meeting.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/rigveda/rv10034.htm" target="_blank" rel="noopener">Rig Veda 10.34.5, trans. Ralph T. H. Griffith</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Vedic gambler confesses that however much he resolves to stop, the rattle of dice pulls him back like a lover to a meeting.</div>
+  <div class="tieback">This is the Kural&#x27;s gambler, who loves the game more with every loss, described in his own words.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For the good that I would I do not: but the evil which I would not, that I do.&rdquo;</div>
+  <div class="cite">&mdash; Romans 7:19 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul describes being pulled again and again toward what he knows harms him.</div>
+  <div class="tieback">The gambler who loses and keeps playing shows this same divided will.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;They ask you about wine and gambling. Say, ‘In them is great sin and [yet, some] benefit for people. But their sin is greater than their benefit.’&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 2:219 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an acknowledges the small benefit that makes gambling attractive while judging its harm greater.</div>
+  <div class="tieback">That small benefit is the lure that keeps the Kural&#x27;s gambler loving the game through every loss.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;A lover of money is never satisfied with money, nor a lover of wealth, with income. That too is futile.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Ecclesiastes 5:9 (Hebrew numbering; JPS Tanakh, Gender-Sensitive Edition, 2023, on Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Kohelet notes that desire for money only grows and is never satisfied.</div>
+  <div class="tieback">Desire that feeds on itself is the Kural&#x27;s gambler, whose love grows as he loses.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;...the noble truth of the origination of stress: the craving that makes for further becoming — accompanied by passion &amp; delight, relishing now here &amp; now there — i.e., craving for sensual pleasure, craving for becoming, craving for non-becoming.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/sn/sn56/sn56.011.than.html" target="_blank" rel="noopener">Dhammacakkappavattana Sutta (SN 56.11), trans. Thanissaro Bhikkhu</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha&#x27;s Second Noble Truth names craving for continued existence (bhava-tanha) as what binds beings to suffering.</div>
+  <div class="tieback">The Kural&#x27;s soul clinging ever harder to a suffering body is this craving for becoming.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Those will reap pains who, in thoughts, words, or acts, are attached to their body, to colours, and to forms.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 6.13 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In the lecture on the false ascetic, Mahāvīra teaches that attachment to the body is itself a source of suffering, and in Jain thought this attachment keeps the soul (jīva) bound in saṃsāra.</div>
+  <div class="tieback">Valluvar ends by saying the soul loves the body all the more the more it suffers, as the gambler loves the game the more he loses; the Jain verse reverses the direction, teaching that attachment to the body is what produces the pain.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;as the gambler’s addiction does not leave him, So is this mind of Nanak’s attached to the Lord.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 838, Raag Bilaaval, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In a long list of passionate attachments (the moth to the flame, the elephant to its lust), Guru Arjan includes the gambler whose habit will not let him go. He then turns the image round: let the mind cling to the Lord just as tightly.</div>
+  <div class="tieback">The Kural observes that gambling is loved all the more the more one loses, and Guru Arjan names that same unbreakable addiction, though he redirects its force toward God.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Herodotus reports a Lydian legend that during an eighteen-year famine the people kept up their dice and games, playing on alternate days so they could endure the hunger.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Herodotus/history.1.i.html" target="_blank" rel="noopener">Herodotus, Histories 1.94 (trans. George Rawlinson)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">A whole people held on to their games, and to life, through years of suffering.</div>
+  <div class="tieback">Clinging to play and to life amid hardship echoes both halves of the Kural&#x27;s comparison.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Not that there is in fact any happiness in them, or that men imagine true bliss to consist in money won at play, or in the hare which they hunt; we would not take these as a gift. ... Reasons why we like the chase better than the quarry.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/18269" target="_blank" rel="noopener">Blaise Pascal, Pensées §139 (trans. W. F. Trotter)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Pascal observes that gamblers do not really want the winnings; they want the play itself, the chase rather than the prize.</div>
+  <div class="tieback">That is why, as the Kural says, losing only deepens the gambler&#x27;s love for the game.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Rigveda&#x27;s Gambler&#x27;s Lament is composed</div>
+  <div class="rle-meta">Late second millennium BCE &middot; North-western Indian subcontinent</div>
+  <div class="quote is-paraphrase">Hymn 10.34 of the Rigveda, more than 3,000 years old, is spoken by a compulsive dice player who says that a losing throw has driven away his devoted wife, that her mother hates him and that his own family disowns him while he wanders in debt. He describes how, whenever he swears he will not play again, the sound of the dice falling sends him running back to the gaming place like a lover to a meeting. The hymn ends with the god Savitr&#x27;s counsel to stop playing with dice and to till his field and value what he has.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The oldest known poem about gambling addiction already describes the pattern of ruin, resolve and relapse that later gamblers would recognise.</div>
+  <div class="tieback">The kural says gambling is loved all the more the more one loses, and the Rigveda&#x27;s gambler, having lost wife, family and wealth, still runs back to the dice whenever he hears them.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-94/" target="_blank" rel="noopener">Thirukkural Chapter 94: சூது / Gambling (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://thirukkural.net/ta/kural/adhigaram-094.html" target="_blank" rel="noopener">சூது - அதிகாரம் 94 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/rigveda/rv10034.htm" target="_blank" rel="noopener">Rig Veda, Book 10, Hymn 34 (Dice / the Gambler&#x27;s Hymn), trans. Ralph T. H. Griffith</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The JPS Tanakh: Gender-Sensitive Edition (Revised JPS, 2023)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/sn/sn56/sn56.011.than.html" target="_blank" rel="noopener">Dhammacakkappavattana Sutta: Setting the Wheel of Dhamma in Motion (SN 56.11), trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Herodotus/history.1.i.html" target="_blank" rel="noopener">Herodotus, The History, Book 1 (Clio), trans. George Rawlinson</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/18269" target="_blank" rel="noopener">Blaise Pascal, Pensées, tr. W. F. Trotter</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://public.websites.umich.edu/~pehook/250w97.gambler.html" target="_blank" rel="noopener">RV 10.34 The Gambler&#x27;s Lament (adapted from Wendy Doniger O&#x27;Flaherty)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://rootsofeurope.ku.dk/english/calendar/events-2026/rigveda-10.34/" target="_blank" rel="noopener">Rigveda 10.34: A dice player&#x27;s monologue or a hymn to dice for two voices? (Benedicte Nielsen Whitehead)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0939.html">&larr; Kural 939</a>
+  <a href="kural-0941.html">Kural 941 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-094.html">Gaming (Gambling)</a>
+  <a class="skip-btn" href="kural-0941.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

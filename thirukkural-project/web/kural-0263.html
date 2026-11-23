@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 263 — Penance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 263</h1>
+<p class="adhikaram"><a href="adhikaram-027.html">Penance</a> &middot; Thavam &middot; <span class="tamil">தவம்</span></p>
+
+<div class="tamil-text">துறந்தார்க்குத் துப்புரவு வேண்டி மறந்தார்கொல்
+மற்றை யவர்கள் தவம்.</div>
+<div class="translit">Thurandhaarkku thuppuravu vendi marandhaarkol
+Matraiyavargal thavam.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Is it because others wanted to give food and help to the people who gave up the world that they forgot to practice self-control themselves?</p>
+
+<h2 class="section">Elementary</h2>
+<p>Picture a whole village cooking lunch for a few hermits on the hill. Valluvar jokes: maybe everyone got so busy packing lunches for the hermits that they forgot to become good and disciplined themselves!</p>
+
+<h2 class="section">University</h2>
+<p>This is one of Valluvar’s rare ironic rhetorical questions (கொல் marks doubt). Read straightforwardly, it offers an indulgent explanation for why so few undertake tapas: society needs householders to feed the ascetics. Read more sharply — as Kalaignar does — it is a rebuke: supporting renunciants is no substitute for one’s own discipline. The verse also documents a real economic structure of early Indian religion, in which Jain, Buddhist and Brahmanical renouncers depended on lay donation, and in which donors believed they shared the merit of those they supported. Valluvar gently punctures the complacency that such a division of spiritual labour could produce.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Manu declares that just as all creatures live by depending on air, so the members of all the other orders of life (students, forest-dwellers, renunciants) subsist by the support of the householder, who is therefore the most excellent order.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">Manusmriti 3.77-78 (Bühler trans.)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Brahmanical law explicitly makes the householder the economic base on which ascetics rely.</div>
+  <div class="tieback">Describes the very arrangement Valluvar is teasing — householders feeding renunciants.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;He that receiveth a prophet in the name of a prophet shall receive a prophet’s reward; and he that receiveth a righteous man in the name of a righteous man shall receive a righteous man’s reward.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 10:41 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Those who host and support God’s messengers share in their reward.</div>
+  <div class="tieback">Supports the ‘merit through support’ logic that Valluvar suggests has made householders forget their own tapas.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;[Charity is] for the poor who have been restricted for the cause of Allah, unable to move about in the land. An ignorant [person] would think them self-sufficient because of their restraint, but you will know them by their [characteristic] sign.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 2:273 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an directs charity to those wholly devoted to God’s cause who cannot earn for themselves.</div>
+  <div class="tieback">Parallels lay support of renunciants as a religious duty.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Rashi explains that the tribe of Zebulun engaged in sea-trade and provided for Issachar, who devoted himself to Torah study, and so Moses blessed Zebulun first — the supporter shares in the scholar’s merit.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Rashi_on_Deuteronomy.33.18" target="_blank" rel="noopener">Rashi on Deuteronomy 33:18</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The ‘Issachar–Zebulun’ partnership became the classic Jewish model of lay support for full-time religious devotion.</div>
+  <div class="tieback">A direct counterpart to householders feeding ascetics; Valluvar’s question probes whether the Zebulun role lets one neglect one’s own discipline.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Sangha is praised as the ‘incomparable field of merit for the world’; monks on the dhutanga and alms-round path depend entirely on lay donors, who earn merit by giving.</div>
+  <div class="cite">&mdash; Dhajagga Sutta (SN 11.3) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Buddhism formalized the monk–lay relationship: renunciants practise, householders feed them and gain merit.</div>
+  <div class="tieback">Exactly the arrangement behind Valluvar’s question about why ‘others’ forgot tapas.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;You have left the dreadful âsrama (that of the householder) and are wanting to enter another; (remain what you were), O king, and be content with observing the Pôsaha-days.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 9.42 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Indra, testing Nami, suggests he stay a householder and keep only the lay fasting days (pōṣadha), reflecting the Jain arrangement in which lay people support monks with alms while practising lesser austerities themselves.</div>
+  <div class="tieback">Valluvar ironically asks whether householders forgot penance because they were busy feeding renunciants; the Jain scheme answers differently, expecting even householders to keep periodic fasts alongside their almsgiving.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;One who calls himself a guru or a spiritual teacher, while he goes around begging - don&#x27;t ever touch his feet. One who works for what he eats, and gives some of what he has - O Nanak, he knows the Path.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1245, Vaar Saarang (salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Vaar Saarang Guru Nanak refuses honour to holy men who live by begging and gives it instead to the householder who earns by his own labour and shares what he has.</div>
+  <div class="tieback">Valluvar wonders, perhaps ironically, whether householders have stopped doing penance because they are busy feeding renunciants; Guru Nanak answers that honest work and sharing (kirat karni, vand chhakna) is itself the true path.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">The poor old couple Baucis and Philemon feed two disguised gods from their meagre store and are rewarded by being made priests of a temple.</div>
+  <div class="cite">&mdash; Ovid, Metamorphoses 8.618-724 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hospitality to the sacred visitor is rewarded with sacred status.</div>
+  <div class="tieback">Weak parallel: support of the holy earns merit, but there is no ascetic class or critique.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In Plato’s ideal city the guardians own no property and receive their sustenance from the producing citizens as a wage for their guardianship.</div>
+  <div class="cite">&mdash; Plato, Republic 416d-417b <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Plato builds a division of labour in which a disciplined, propertyless elite is maintained by others.</div>
+  <div class="tieback">Resembles the lay–ascetic economy Valluvar describes, though Plato’s guardians are rulers, not penitents.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Duke William of Aquitaine founds the Abbey of Cluny</div>
+  <div class="rle-meta">910 &middot; Cluny, Burgundy, France</div>
+  <div class="quote is-paraphrase">William I, Duke of Aquitaine, signed a charter founding a Benedictine monastery at Cluny and endowed it with land. The charter says he gave part of his worldly goods for the benefit of his soul, and it requires the monks to pray for him, his family and others while living under the Rule of Saint Benedict. Cluny was placed under the protection of the pope, free from the duke&#x27;s own control.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Cluny became one of the most influential monasteries in medieval Europe, and its charter shows the common arrangement in which lay patrons supported monks and counted on their prayers for their own salvation.</div>
+  <div class="tieback">The kural wryly asks whether people neglect their own penance because they are busy supplying the renunciants, and Cluny&#x27;s founder openly paid monks to do the praying for his soul.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-27/" target="_blank" rel="noopener">Thirukkural Chapter 27: தவம் / Penance (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-027.html" target="_blank" rel="noopener">தவம் - அதிகாரம் 27 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">The Laws of Manu (Manusmṛti), translated by Georg Bühler, Sacred Books of the East vol. 25 (Oxford, 1886)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Rashi_on_Deuteronomy.33.18" target="_blank" rel="noopener">Rashi on Deuteronomy 33:18</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-7">Dhajagga Sutta (Samyutta Nikaya 11.3) <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Metamorphoses, Book VIII (Baucis and Philemon) (Ovid) <span class="tier">[primary source]</span></li>
+<li id="cite-11">Republic, Book X (the Myth of Er) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://sourcebooks.fordham.edu/source/chart-cluny.asp" target="_blank" rel="noopener">Medieval Sourcebook: Foundation Charter of Cluny, 910 (William I, Duke of Aquitaine (trans.))</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/place/Cluny-Abbey" target="_blank" rel="noopener">Cluny Abbey (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.metmuseum.org/toah/ht/06/euwf.html" target="_blank" rel="noopener">France, 500-1000 A.D. (Heilbrunn Timeline of Art History)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0262.html">&larr; Kural 262</a>
+  <a href="kural-0264.html">Kural 264 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-027.html">Penance</a>
+  <a class="skip-btn" href="kural-0271.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

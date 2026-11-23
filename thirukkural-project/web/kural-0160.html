@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 160 — The Possession of Patience | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 160</h1>
+<p class="adhikaram"><a href="adhikaram-016.html">The Possession of Patience</a> &middot; Poraiyudaimai &middot; <span class="tamil">பொறையுடைமை</span></p>
+
+<div class="tamil-text">உண்ணாது நோற்பார் பெரியர் பிறர்சொல்லும்
+இன்னாச்சொல் நோற்பாரின் பின்.</div>
+<div class="translit">Unnaadhu norpaar periyar pirarsollum,
+Innaachchol norpaarin pin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who go without food to train themselves are great. But they come second to people who put up with the cruel words others say to them.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Going without food for a whole day to be good is really hard, and people admire it. This kural says something is even harder and better: when someone says mean things to you and you swallow your anger and stay kind, you are the real champion.</p>
+
+<h2 class="section">University</h2>
+<p>Valluvar closes the chapter by ranking two kinds of நோன்பு (austerity): உண்ணாது நோற்றல், enduring hunger by fasting, and இன்னாச்சொல் நோற்றல், enduring cruel speech. By placing the faster &#x27;after&#x27; (பின்) the one who bears insult, he puts the most visible ascetic practice of his time, prominent in both Jain and Brahmanical asceticism, below an inner, social virtue. Repeating நோற்பார் in both lines insists that patience is itself tapas, completing the argument begun in Kural 159. The ranking resonates with the Dhammapada&#x27;s &#x27;Enduring patience is the highest austerity,&#x27; with the hadith that tells a fasting person to answer abuse by saying &#x27;I am fasting,&#x27; and with Isaiah&#x27;s prophetic critique that a true fast is measured by ethical conduct.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;forgiveness is stored ascetic merit; forgiveness protecteth the ascetic merit of the future; forgiveness is asceticism; forgiveness is holiness&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/m03/m03029.htm" target="_blank" rel="noopener">Mahabharata, Vana Parva, Section XXIX (trans. K. M. Ganguli)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In the verses Yudhishthira attributes to the sage Kashyapa, forgiveness is declared to be asceticism (tapas) itself and the guardian of all ascetic merit.</div>
+  <div class="tieback">Like the kural, it counts forbearance as the true austerity, above physical penances.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Blessed are ye, when men shall revile you, and persecute you, and shall say all manner of evil against you falsely, for my sake.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 5:11 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Jesus pronounces those who are reviled and slandered &#x27;blessed.&#x27; In the same sermon (Matthew 6:16-18) he warns that fasting done for show has no value.</div>
+  <div class="tieback">Enduring others&#x27; evil words is blessed, while external fasting is played down, which comes close to the kural&#x27;s ranking.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Fasting is a shield (or a screen or a shelter). So, the person observing fasting should avoid sexual relation with his wife and should not behave foolishly and impudently, and if somebody fights with him or abuses him, he should tell him twice, &#x27;I am fasting.&#x27;&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:1894" target="_blank" rel="noopener">Sahih al-Bukhari 1894</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Prophet teaches that a fast is only complete if the faster also refuses to return abuse. Bearing insult is part of the fast&#x27;s real substance.</div>
+  <div class="tieback">Both texts link fasting and enduring abusive speech, and make patience under insult the deeper discipline.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Is not this the fast that I have chosen? To loose the fetters of wickedness, To undo the bands of the yoke, And to let the oppressed go free, And that ye break every yoke?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Isaiah 58:6 (JPS 1917)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Isaiah rebukes people who fast while behaving badly. God values ethical conduct above abstaining from food.</div>
+  <div class="tieback">Like the kural, it ranks moral virtue above fasting as the true austerity.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Enduring patience is the highest austerity. ‘Nibbana is supreme,’ say the Buddhas. He is not a true monk who harms another, nor a true renunciate who oppresses others.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada, verse 184 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In the verses known as the Ovāda Pātimokkha, the Buddhas declare patient endurance (khanti) the supreme form of tapas.</div>
+  <div class="tieback">Almost a direct statement of the kural: patient endurance ranks above every other austerity, fasting included.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;A monk should not be angry if beaten, nor should he therefore entertain sinful thoughts; knowing patience to be the highest good, a monk should meditate on the Law.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 2.26 (cf. 2.2–3 on hunger) (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The same Uttarādhyayana lecture that begins its list of hardships with hunger calls patience under abuse and violence &#x27;the highest good&#x27;.</div>
+  <div class="tieback">Valluvar ranks those who fast below those who endure cruel words, and the Uttarādhyayana, which counts hunger among the hardships a monk must bear, likewise names patience the highest good.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;To practice forgiveness is the true fast, good conduct and contentment.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 223, Raag Gauri, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Guru Nanak redefines fasting: the real vow is forgiveness, together with good conduct and contentment.</div>
+  <div class="tieback">The Kural ranks those who fast below those who endure cruel words; Guru Nanak likewise puts forbearance in the place of the outward fast.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;He endured both being struck and insulted without a word, though he was in his own house&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, Odyssey, Book XXIV (trans. Samuel Butler)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The dead suitor Amphimedon recalls how the disguised Odysseus, a starving beggar in his own hall, silently bore their blows and insults.</div>
+  <div class="tieback">Odysseus endures hunger and insult together, and Homer presents his silent endurance of abuse as his greatest test.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;for the most part he was despised and laughed at, yet bore all this ill-usage patiently.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Lives_of_the_Eminent_Philosophers/Book_VI" target="_blank" rel="noopener">Diogenes Laertius, Lives of Eminent Philosophers II.21 (trans. R. D. Hicks)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Diogenes Laertius reports that Socrates was famous for plain living and endurance of hunger and cold, but even more for calmly bearing mockery and abuse, including Xanthippe&#x27;s scolding.</div>
+  <div class="tieback">Socrates combines bodily austerity with patience under insult, and it is the patience his biographer dwells on, much as the kural ranks it higher.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Michael Faraday bears Humphry Davy&#x27;s opposition to his election to the Royal Society</div>
+  <div class="rle-meta">1824 &middot; London, United Kingdom</div>
+  <div class="quote is-paraphrase">Michael Faraday had begun his scientific career in 1813 as an assistant to Humphry Davy, the leading chemist of his day, at the Royal Institution. When Faraday was put forward for Fellowship of the Royal Society, Davy opposed his election, and Faraday&#x27;s own papers record that Davy was angry with him at the time. Faraday did not respond with hostility; he consulted the chemist William Wollaston and called on Davy, and he was elected a Fellow in 1824.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Faraday&#x27;s restraint toward the patron who tried to block him allowed him to keep working within the scientific establishment, where he went on to become one of the greatest experimental scientists in history.</div>
+  <div class="tieback">The kural ranks those who endure cruel words above even those who endure fasting; Faraday endured the hostility of his own mentor without retaliating, an austerity of the inner life rather than the body.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-16/" target="_blank" rel="noopener">பொறையுடைமை / The Possession of Patience, Forbearance — Thirukural Chapter 16 (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries; G. U. Pope couplets)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-016.html" target="_blank" rel="noopener">பொறையுடைமை - அதிகாரம் 16 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html" target="_blank" rel="noopener">திருவள்ளுவர் அருளிய திருக்குறள் (Tirukkural, Unicode e-text)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-4"><a href="https://sacred-texts.com/hin/m03/m03029.htm" target="_blank" rel="noopener">The Mahabharata, Book 3: Vana Parva, Section XXIX (trans. Kisari Mohan Ganguli)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/bukhari:1894" target="_blank" rel="noopener">Sahih al-Bukhari 1894 — Book of Fasting, chapter on the superiority of As-Saum</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, The Odyssey, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://en.wikisource.org/wiki/Lives_of_the_Eminent_Philosophers/Book_VI" target="_blank" rel="noopener">Diogenes Laertius, Lives of the Eminent Philosophers, Book VI (tr. R. D. Hicks, 1925)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://epsilon.ac.uk/view/faraday/letters/Faraday0199" target="_blank" rel="noopener">Faraday correspondence: note endorsed by Faraday on Davy&#x27;s opposition to his election to the Royal Society (Michael Faraday)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-14"><a href="https://www.chemistryworld.com/review/a-hero-of-chemistry/3006015.article" target="_blank" rel="noopener">Humphry Davy: life beyond the lamp</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0159.html">&larr; Kural 159</a>
+  <a href="kural-0161.html">Kural 161 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-016.html">The Possession of Patience</a>
+  <a class="skip-btn" href="kural-0161.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

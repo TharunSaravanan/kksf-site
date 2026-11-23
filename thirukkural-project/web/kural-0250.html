@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 250 — Benevolence | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 250</h1>
+<p class="adhikaram"><a href="adhikaram-025.html">Benevolence</a> &middot; Arulodamai &middot; <span class="tamil">அருளுடைமை</span></p>
+
+<div class="tamil-text">வலியார்முன் தன்னை நினைக்கதான் தன்னின்
+மெலியார்மேல் செல்லு மிடத்து.</div>
+<div class="translit">Valiyaarmun thannai ninaikkadhaan thannin,
+Meliyaarmel sellu midaththu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>When you go to bully someone weaker than you, remember how you yourself felt standing scared before someone stronger than you.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Before you push around a smaller kid, remember how scared you felt when a bigger kid picked on you. That memory is a key that unlocks kindness.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter closes with a practical technique rather than a doctrine: a deliberate act of imagination (ninaikka, ‘let him think’) timed for the moment of temptation (sellumidaththu, ‘when he goes against’). Compassion is produced by recalling one’s own vulnerability, so the powerful person is asked to see themselves in the position of the weak. This is the reflective, perspective-taking root of the Golden Rule, and it matches Aristotle’s analysis of pity (eleos) as pain at undeserved suffering that one could imagine befalling oneself. Placing this couplet last grounds the lofty arul of the opening kurals in ordinary moral psychology: universal compassion begins with a remembered fear.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;I regard them to be perfect yogis who see the true equality of all living beings and respond to the joys and sorrows of others as if they were their own.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita 6.32 (trans. Mukundananda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Ātmaupamya, judging others by analogy with oneself, is presented as the mark of the highest yogi.</div>
+  <div class="tieback">The same self-analogy the kural recommends: feel another’s fear as your own.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;O thou wicked servant, I forgave thee all that debt, because thou desiredst me: Shouldest not thou also have had compassion on thy fellowservant, even as I had pity on thee?&rdquo;</div>
+  <div class="cite">&mdash; Matthew 18:32-33 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In the parable, a servant forgiven a vast debt by his master then chokes a fellow servant over a small one.</div>
+  <div class="tieback">Exactly the kural’s scenario: someone who once stood helpless before a stronger party forgets it when facing someone weaker.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;None of you will have faith till he wishes for his (Muslim) brother what he likes for himself.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:13" target="_blank" rel="noopener">Sahih al-Bukhari 13</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The hadith makes self-reference the measure of how one should treat others.</div>
+  <div class="tieback">Both rely on putting oneself in the other’s place; the kural specifically invokes the memory of one’s own weakness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Also thou shalt not oppress a stranger: for ye know the heart of a stranger, seeing ye were strangers in the land of Egypt.&rdquo;</div>
+  <div class="cite">&mdash; Exodus 23:9 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Israel is told to remember its own powerlessness in Egypt when dealing with the vulnerable.</div>
+  <div class="tieback">An almost exact parallel: recall your own weakness before the strong when you are tempted to oppress the weak.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;All tremble at violence; all fear death. Putting oneself in the place of another, one should not kill nor cause another to kill.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 129 (trans. Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha grounds non-violence in the shared fear of all beings and the practice of self-comparison.</div>
+  <div class="tieback">The kural’s method exactly: recall your own trembling and so spare the weaker.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As it would be unto thee, so it is with him whom thou intendest to kill. As it would be unto thee, so it is with him whom thou intendest to tyrannise over. As it would be unto thee, so it is with him whom thou intendest to torment.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Acaranga Sutra I.5.5.4 (tr. Hermann Jacobi, SBE 22)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Acaranga tells the would-be oppressor to put himself in his victim&#x27;s place, and concludes that the righteous man therefore neither kills nor causes killing.</div>
+  <div class="tieback">Valluvar asks the strong to remember how they once trembled before someone stronger when they turn on the weak; the Acaranga gives the same exercise of imagined reversal at the moment one means to harm or tyrannise.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;But if a powerful tiger attacks a flock of sheep and kills them, then its master must answer for it.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 360, Raag Aasaa, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In a hymn on Babar&#x27;s invasion Guru Nanak contrasts fights between equals with the strong falling on the defenceless, which the Lord who owns the flock must answer for.</div>
+  <div class="tieback">The Kural asks the powerful to remember their own fear before the stronger when they move against the weak; Guru Nanak likewise singles out the attack of the strong on the defenceless as the wrong that calls for an account.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Fear, O Achilles, the wrath of heaven; think on your own father and have compassion upon me&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad 24 (trans. Samuel Butler)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Priam kisses the hands that killed his son, and Achilles weeps as he thinks of his own father, then releases Hector’s body.</div>
+  <div class="tieback">Compassion comes through self-reference: Achilles softens when he pictures his own father in Priam’s helpless position.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Let pity then be a kind of pain excited by the sight of evil, deadly or painful, which befalls one who does not deserve it; an evil which one might expect to come upon himself or one of his friends&rdquo;</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/rhetoric.html" target="_blank" rel="noopener">Aristotle, Rhetoric 2.8 (trans. J. H. Freese)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Aristotle adds that ‘all that men fear in regard to themselves excites their pity when others are the victims.’</div>
+  <div class="tieback">Aristotle’s psychology of eleos is the kural’s technique made theory: pity arises from imagining oneself in the sufferer’s place.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">West Germany&#x27;s Basic Law guarantees asylum to the politically persecuted</div>
+  <div class="rle-meta">23 May 1949 &middot; Bonn, West Germany</div>
+  <div class="quote is-paraphrase">The Basic Law of the Federal Republic of Germany, drafted by the Parliamentary Council and proclaimed on 23 May 1949, stated in Article 16 that persons persecuted on political grounds enjoy the right of asylum. Germany&#x27;s Federal Agency for Civic Education explains that the right was included because many people persecuted for racial or political reasons under the Nazi regime had survived only by finding refuge abroad, while others had been refused such protection. The provision was deliberately worded without restrictions; it was later narrowed by an amendment in 1993.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">A new state wrote the memory of its own citizens&#x27; flight and vulnerability into a protection for the weak of other nations.</div>
+  <div class="tieback">The kural asks the strong to remember how they once stood helpless before the stronger, and the framers of the Basic Law turned the memory of persecution and exile into a guarantee for the persecuted.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-25/" target="_blank" rel="noopener">அருளுடைமை / Compassion, Chapter 25 (Kurals 241-250), with commentaries of Mu. Varadarasan, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-025.html" target="_blank" rel="noopener">அருளுடைமை - அதிகாரம் 25 - திருக்குறள் (with commentaries of Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah, Mu. Karunanidhi)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita, The Song of God (Swami Mukundananda)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:13" target="_blank" rel="noopener">Ṣaḥīḥ al-Bukhārī 13 — Book of Belief (&#x27;None of you will have faith till he wishes for his brother what he likes for himself&#x27;), narrated by Anas ibn Mālik</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Ākārāṅga Sūtra (Acaranga Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad, Book 21, translated by A. T. Murray (Loeb Classical Library, 1924)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="http://classics.mit.edu/Aristotle/rhetoric.html" target="_blank" rel="noopener">Aristotle, Rhetoric</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://www.bpb.de/gesellschaft/migration/kurzdossiers/224641/wie-ist-das-asylrecht-entstanden?p=all" target="_blank" rel="noopener">Wie ist das Asylrecht entstanden?</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.hdg.de/lemo/kapitel/deutsche-einheit/baustelle-deutsche-einheit/einwanderungsland-deutschland.html" target="_blank" rel="noopener">LeMO Kapitel: Einwanderungsland Deutschland</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0249.html">&larr; Kural 249</a>
+  <a href="kural-0251.html">Kural 251 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-025.html">Benevolence</a>
+  <a class="skip-btn" href="kural-0251.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

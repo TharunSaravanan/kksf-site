@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1016 — Shame | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1016</h1>
+<p class="adhikaram"><a href="adhikaram-102.html">Shame</a> &middot; Naanudaimai &middot; <span class="tamil">நாணுடைமை</span></p>
+
+<div class="tamil-text">நாண்வேலி கொள்ளாது மன்னோ வியன்ஞாலம்
+பேணலர் மேலா யவர்.</div>
+<div class="translit">Naanveli kollaadhu manno viyangnaalam
+paenalar melaa yavar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Great people would not want even the whole wide world if it meant losing shame, the fence that guards them.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A garden has a fence so goats can&#x27;t come in and eat the flowers. Valluvar says good people keep a fence of shame around their hearts. Even if someone offered them the whole world, they wouldn&#x27;t trade away that fence.</p>
+
+<h2 class="section">University</h2>
+<p>Naan veli (நாண்வேலி, &#x27;the hedge or fence that is shame&#x27;) is the central image. The melaayavar (மேலாயவர், &#x27;the superior ones&#x27;) will not paenal (பேணல், &#x27;cherish, desire&#x27;) the viyan gnaalam (வியன்ஞாலம், &#x27;vast world&#x27;) without taking (kollaadhu) that hedge; manno (மன்னோ) is an emphatic particle. Kesikan and Pappaiah, in the line of Parimelazhagar, take it to mean that the great choose shame rather than the wide world as their protection. Varadarasanar reads it as saying the great would not want to live in the wide world without the protecting hedge of shame. Pope gives a more poetic turn: ‘For men of lofty soul the earth&#x27;s vast realms no charms retain’ unless the hedge stays intact. Sivayogi Sivakumar&#x27;s modern reading, that one cannot rise to greatness without the hedge, is a minority interpretation. The text is identical on both sites.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Yama offers the boy Nachiketas long life, cattle, horses, gold, wide lands and every pleasure if only he will stop asking about what lies beyond death. Nachiketas refuses: let Yama keep the horses, the dance and the song; he will hold to the one boon he asked for.</div>
+  <div class="cite">&mdash; Katha Upanishad 1.1.23-29 <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Upanishad praises the one who turns down the whole pleasant world for the sake of what is truly good (śreyas).</div>
+  <div class="tieback">Nachiketas, like the Kural&#x27;s great ones, would not take the vast world at the price of what guards his soul.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For what shall it profit a man, if he shall gain the whole world, and lose his own soul?&rdquo;</div>
+  <div class="cite">&mdash; Mark 8:36 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus teaches that winning the whole world is worthless if it costs a person his soul.</div>
+  <div class="tieback">The same trade the Kural rejects: the vast world is not worth losing the inner safeguard.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Once Allah&#x27;s Messenger (ﷺ) passed by an Ansari (man) who was admonishing his brother regarding Haya&#x27;. On that Allah&#x27;s Messenger (ﷺ) said, ‘Leave him as Haya&#x27; is a part of faith.’&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:24" target="_blank" rel="noopener">Sahih al-Bukhari 24 (sunnah.com)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">A man scolds his brother for being too bashful, presumably because it cost him worldly advantage, and the Prophet defends the bashfulness as part of faith.</div>
+  <div class="tieback">Like the Kural&#x27;s great ones, the Prophet would rather keep haya&#x27; than gain worldly advantage by giving it up.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Tradition is a fence to the Torah; Tithes a fence to wealth, Vows a fence to abstinence; A fence to wisdom is silence.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 3:13 (Mishnah Yomit, tr. Joshua Kulp, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbi Akiva describes protective practices as fences (seyag) that guard a deeper good.</div>
+  <div class="tieback">This is the Kural&#x27;s image of shame as a fence guarding the good person.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Who in the world is a man constrained by conscience, who awakens to censure like a fine stallion to the whip? Those restrained by conscience are rare&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/sn/sn01/sn01.018.than.html" target="_blank" rel="noopener">Samyutta Nikaya 1.18, Hiri Sutta (tr. Thanissaro Bhikkhu, Access to Insight)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha pictures hiri (conscience, shame) as the restraint that keeps a person on the path, like a thoroughbred that answers to a mere touch of the whip.</div>
+  <div class="tieback">Shame here is the guard of the noble person, as in the Kural&#x27;s hedge.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;…by hearing and understanding which the monks will reach a high degree of self-discipline, of Samvara, and of contemplation, will be well protected (by the three Guptis), will guard their senses, guard their chastity, and will thus never be remiss&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 16, prose introduction (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Uttaradhyayana sets out ten protective conditions around celibacy. Later Jain tradition calls these the nava vāḍa, literally ‘nine fences’, of brahmacarya.</div>
+  <div class="tieback">Like the Kural&#x27;s naan veli, these are deliberate fences that guard a monk&#x27;s purity.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;If I were to become an emperor and raise a huge army, and sit on a throne, issuing commands and collecting taxes-O Nanak, all of this could pass away like a puff of wind.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 14, Sri Raag, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak imagines himself given an emperor&#x27;s throne and power, and refuses to value it if it would make him forget the Name.</div>
+  <div class="tieback">The Kural says the great would not want the whole wide world at the price of their hedge of shame; Guru Nanak would not want a whole empire at the price of forgetting God.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Through twenty years and the pressure of many powerful suitors who could give her a new household and status, Penelope keeps her faith with absent Odysseus. She puts them off with the trick of weaving and unweaving Laertes&#x27; shroud.</div>
+  <div class="cite">&mdash; Homer, Odyssey 2.93-110; 24.191-198 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Penelope&#x27;s guarded fidelity, which Homer praises as her renown, protects her and her house better than any worldly alliance could.</div>
+  <div class="tieback">She is the Kural&#x27;s noble one, who prefers the guard of honour to the gains the world offers.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Epictetus tells someone urging him to get money for his friends that if it can be had while keeping his self-respect, fidelity and magnanimity, he will get it. But if he is asked to lose his own proper good so that others can gain what is not truly good, the request is foolish and unjust.</div>
+  <div class="cite">&mdash; Epictetus, Enchiridion 24 <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For the Stoic, a person&#x27;s aidos (self-respect, modesty) and good faith are worth more than any external gain.</div>
+  <div class="tieback">Like the Kural&#x27;s great ones, Epictetus will not trade the guard of his own integrity for the goods of the world.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Nelson Mandela rejects a conditional release from prison</div>
+  <div class="rle-meta">10 February 1985 &middot; Jabulani Stadium, Soweto, South Africa</div>
+  <div class="quote is-paraphrase">On 31 January 1985 State President P. W. Botha offered Nelson Mandela, in prison since the Rivonia Trial, his release on condition that he renounce violence as a means of political change. Mandela refused, and on 10 February 1985 his daughter Zindzi read his written reply to a rally at Jabulani Stadium in Soweto, where he said he could not accept freedom while his organisation remained banned and his people were not free.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Mandela chose to remain in prison, where he stayed for five more years, rather than accept personal freedom on terms he considered dishonourable to his cause.</div>
+  <div class="tieback">The kural says the truly great would not take even the wide world without the hedge of shame, and Mandela declined freedom itself rather than accept it on dishonouring terms.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-102/" target="_blank" rel="noopener">Thirukkural Chapter 102: நாணுடைமை / Shame (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-102.html" target="_blank" rel="noopener">நாணுடைமை - அதிகாரம் 102 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3">Katha Upanishad 1.3.3 (the chariot allegory) <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:24" target="_blank" rel="noopener">Sahih al-Bukhari 24 (Book of Belief, Chapter: Al-Haya&#x27; is a part of faith)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/sn/sn01/sn01.018.than.html" target="_blank" rel="noopener">Samyutta Nikaya 1.18, Hiri Sutta: Conscience (tr. Thanissaro Bhikkhu)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11">Enchiridion, Chapter 5 (Epictetus) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://sahistory.org.za/dated-event/president-p-w-botha-offers-nelson-mandela-conditional-release-prison" target="_blank" rel="noopener">President P. W. Botha offers Nelson Mandela conditional release from prison</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://nelsonmandela.org/news/entry/foundation-marks-25-years-since-nelson-mandela-rejected-pw-bothas-offer-of-" target="_blank" rel="noopener">Foundation marks 25 years since Nelson Mandela rejected PW Botha&#x27;s offer</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1015.html">&larr; Kural 1015</a>
+  <a href="kural-1017.html">Kural 1017 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-102.html">Shame</a>
+  <a class="skip-btn" href="kural-1021.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

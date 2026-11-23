@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 182 — Slander Avoidance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 182</h1>
+<p class="adhikaram"><a href="adhikaram-019.html">Slander Avoidance</a> &middot; Purangkooraamai &middot; <span class="tamil">புறங்கூறாமை</span></p>
+
+<div class="tamil-text">அறனழீஇ அல்லவை செய்தலின் தீதே
+புறனழீஇப் பொய்த்து நகை.</div>
+<div class="translit">Aranazheei allavai seydhalin theedhe,
+Puranazheeip poiththu nagai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Saying bad things about someone behind their back and then giving them a fake smile to their face is worse than turning away from goodness and doing wrong.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Suppose a classmate says mean things about you when you’re gone, then comes up and grins at you like your best friend. That’s worse than someone who is just openly naughty — because the fake smile is a trick. This kural says the two-faced person is worse than the openly bad one.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet is built on a pointed parallelism: aṟaṉ-aḻīi (“destroying virtue”) against puṟaṉ-aḻīi (“destroying [someone] at the back”), with the second judged worse (tītē). What tips the scale is the final phrase poyttu nakai, “smiling falsely” — the backbiter compounds slander with a feigned intimacy in the victim’s presence. Valluvar is thus condemning not only malicious speech but hypocrisy as a structure of relationship, a split between the face and the back that corrupts the trust on which the householder’s social world rests. The claim that this is worse than open wickedness anticipates a widely shared intuition across ethical traditions: the open enemy can be guarded against, but the smiling detractor disarms his victim first. The verse also sharpens 181: there, abstaining from slander redeemed a sinner; here, slander joined to false friendliness sinks a man below the sinner.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;O Parth, the qualities of those who possess a demoniac nature are hypocrisy, arrogance, conceit, anger, harshness, and ignorance.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita 16.4 (Mukundananda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna names dambha — hypocrisy, showing a good face while hiding a bad heart — as the very first mark of a demonic nature.</div>
+  <div class="tieback">Both texts rank the false face above open vice; the smiling backbiter of the Kural is a textbook case of dambha.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;The words of his mouth were smoother than butter, but war was in his heart: his words were softer than oil, yet were they drawn swords.&rdquo;</div>
+  <div class="cite">&mdash; Psalm 55:21 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The psalmist laments a companion who spoke sweetly to his face while plotting against him.</div>
+  <div class="tieback">This is the Kural’s smiling backbiter exactly: soft speech in front, a drawn sword behind.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;The worst people in the Sight of Allah on the Day of Resurrection will be the double faced people who appear to some people with one face and to other people with another face.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6058" target="_blank" rel="noopener">Sahih al-Bukhari 6058</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet calls the two-faced person (dhu’l-wajhayn) the worst of people before God.</div>
+  <div class="tieback">Like Valluvar, the hadith ranks the double-faced person at the very bottom — below other kinds of sinners.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Their tongue is a sharpened arrow; it speaks deceit. One speaks peaceably to his neighbor with his mouth, but in his heart he lies in wait for him&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Arakhin.15b" target="_blank" rel="noopener">Talmud Bavli, Arakhin 15b, citing Jeremiah 9:7 (Koren–Steinsaltz)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Talmud’s discussion of malicious speech quotes Jeremiah’s picture of the peaceful-mouthed ambusher, and in the same passage the school of Rabbi Yishmael says lashon hara outweighs idolatry, sexual sin, and bloodshed combined.</div>
+  <div class="tieback">Both the ranking (worse than the gravest sins) and the peaceful face over a hidden attack match the Kural’s verdict.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;In four ways, young householder, should one who flatters be understood as a foe in the guise of a friend: (i) he approves of his friend&#x27;s evil deeds, (ii) he disapproves his friend&#x27;s good deeds, (iii) he praises him in his presence, (iv) he speaks ill of him in his absence.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Digha Nikaya 31, Sigalovada Sutta (Narada Thera)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha teaches the layman Sigala to recognise the false friend: praise to your face, slander behind your back.</div>
+  <div class="tieback">The Buddha’s ‘foe in the guise of a friend’ is the Kural’s backbiter who smiles falsely — almost word for word.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;पिट्ठिमंसं न खाएज्जा” (piṭṭhimaṃsaṃ na khāejjā) — “One should not talk ill of others in their absence.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.tattvagyan.com/jain-stotra/dasavaikalika-sutra/dont-talk-ill/" target="_blank" rel="noopener">Daśavaikālika Sūtra 8.47, Prakrit line with English rendering as given on tattvagyan.com (&#x27;Do not talk ill behind someone&#x27;s back&#x27;)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Daśavaikālika forbids a monk to &#x27;eat the flesh of the back&#x27;, its idiom for running people down when they are not there, and the tradition treats such talk as cowardly.</div>
+  <div class="tieback">Valluvar says tearing a man down behind his back and smiling at his face is worse than open wrongdoing, and the Jain sūtra uses the same &#x27;behind the back&#x27; image to ban that kind of talk outright.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Those who have one thing in their heart, and something else in their mouth, are judged to be false.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 488, Raag Aasaa, Sheikh Farid (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In a hymn preserved in the Guru Granth Sahib, Sheikh Farid says that those whose words do not match their hearts are counted false.</div>
+  <div class="tieback">The Kural judges the man who tears others down behind their backs and then smiles falsely to their faces as worse than an open evildoer; Farid names that same split between heart and mouth as falseness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;For hateful in my eyes, even as the gates of Hades, is that man that hideth one thing in his mind and sayeth another.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0134:book=9:card=286" target="_blank" rel="noopener">Homer, Iliad 9.312–313 (A. T. Murray)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Achilles rebuffs Agamemnon’s envoys, declaring that he loathes a man who says one thing and hides another in his heart.</div>
+  <div class="tieback">Achilles and Valluvar share a special loathing for the split between the face and the heart.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;But of all forms of injustice, none is more flagrant than that of the hypocrite who, at the very moment when he is most false, makes it his business to appear virtuous.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cicero/de_Officiis/1B*.html" target="_blank" rel="noopener">Cicero, De Officiis (On Duties), Book I, §41 (tr. Walter Miller (Loeb, 1913))</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Having said that wrong is done either by force or by fraud and that fraud is the more contemptible, Cicero ranks the hypocrite who wears a mask of goodness while deceiving as the worst wrongdoer of all.</div>
+  <div class="tieback">Like Valluvar, Cicero says the false friendly face is worse than open wrongdoing.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Procopius writes the Secret History</div>
+  <div class="rle-meta">c. 550 CE &middot; Constantinople, Byzantine Empire (now Istanbul, Turkey)</div>
+  <div class="quote is-paraphrase">Procopius of Caesarea served as secretary to the general Belisarius and became the official historian of Emperor Justinian&#x27;s reign, writing the Wars and a work called Buildings that praised Justinian&#x27;s building projects. At the same time he secretly composed the Anecdota, or Secret History, a fierce attack on Justinian, Empress Theodora, Belisarius and his wife Antonina, saying it contained what he could not write openly for fear of the rulers. It was not published until after his death.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">The same author praised his rulers in public and savaged them in private, and the Secret History is now a famous example of hidden disparagement behind a flattering front.</div>
+  <div class="tieback">The kural condemns tearing a person down behind his back while showing him a false smile to his face, and Procopius wrote praise for the court in public and invective against it in secret.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-19/" target="_blank" rel="noopener">Thirukkural Chapter 19: புறங்கூறாமை / Not Backbiting (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries and transliteration)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-019.html" target="_blank" rel="noopener">புறங்கூறாமை – அதிகாரம் 19 (Tamil text with Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah, Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita, The Song of God (Swami Mukundananda)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:6058" target="_blank" rel="noopener">Sahih al-Bukhari 6058 (Book of Good Manners: the double-faced person)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Arakhin.15b" target="_blank" rel="noopener">Babylonian Talmud, Arakhin 15b (William Davidson Edition, Koren Noé Talmud with Steinsaltz commentary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta: The Discourse to Sigala (DN 31), tr. Narada Thera</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.tattvagyan.com/jain-stotra/dasavaikalika-sutra/dont-talk-ill/" target="_blank" rel="noopener">Daśavaikālika Sūtra, selected verses with English renderings and explanations (&#x27;Do not talk ill behind someone&#x27;s back&#x27;, &#x27;How wicked is the evil word&#x27;)</a> <span class="tier">[web source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0134:book=9:card=286" target="_blank" rel="noopener">Homer, Iliad, Book 9, trans. A. T. Murray (1924)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cicero/de_Officiis/1B*.html" target="_blank" rel="noopener">De Officiis (On Duties), Book I.20-41 (Marcus Tullius Cicero)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Procopius-Byzantine-historian" target="_blank" rel="noopener">Procopius</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/topic/Secret-History" target="_blank" rel="noopener">Secret History</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://sourcebooks.web.fordham.edu/basis/procop-anec.asp" target="_blank" rel="noopener">Procopius: Secret History (Procopius (trans. Richard Atwater))</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0181.html">&larr; Kural 181</a>
+  <a href="kural-0183.html">Kural 183 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-019.html">Slander Avoidance</a>
+  <a class="skip-btn" href="kural-0191.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

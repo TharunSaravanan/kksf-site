@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 48 — Domestic Life | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 48</h1>
+<p class="adhikaram"><a href="adhikaram-005.html">Domestic Life</a> &middot; Ilvaazhkkai &middot; <span class="tamil">இல்வாழ்க்கை</span></p>
+
+<div class="tamil-text">ஆற்றின் ஒழுக்கி அறனிழுக்கா இல்வாழ்க்கை
+நோற்பாரின் நோன்மை உடைத்து.</div>
+<div class="translit">Aatrin ozhukki aranizhukkaa ilvaazhkkai,
+Norpaarin nonmai utaiththu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A family life that helps others stay on the right path, and never turns away from what is right itself, is stronger than the strict self-discipline of people who give up home life.</p>
+
+<h2 class="section">Elementary</h2>
+<p>One person sits alone on a hill and eats nothing for a week — that&#x27;s hard. Another person gets up every day, stays honest, feeds the family, and gently keeps everyone else honest too — for fifty years. This kural says the second one is doing the harder, stronger thing.</p>
+
+<h2 class="section">University</h2>
+<p>The verse builds a careful two-part condition before making its comparison. ஆற்றின் ஒழுக்கி (aatrin ozhukki) is causative — “having caused [others] to conduct themselves on the path” — while அறனிழுக்கா (aran-izhukkaa) is negative and reflexive: “not itself slipping from virtue.” Only a household meeting both conditions is then said to possess நோன்மை (nonmai) exceeding that of நோற்பார் (norpaar, those who undertake நோன்பு, austerity/penance). The pun is the point: நோன்மை means both “endurance under penance” and “strength,” so Valluvar claims the householder wins the ascetic&#x27;s own contest on the ascetic&#x27;s own metric. This is the chapter&#x27;s most polemical line and reflects a broader Tamil bhakti-era and post-Sangam argument against Jain and Buddhist monastic prestige.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Whatever action a great man performs, common men follow. And whatever standards he sets by exemplary acts, all the world pursues.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 3.21 (with 3.20 on Janaka)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Krishna cites the householder-king Janaka, who attained perfection through action, to argue that a person of standing must keep working precisely in order to guide others by example.</div>
+  <div class="tieback">This supplies the Kural&#x27;s first condition exactly — the householder&#x27;s virtue is measured by his capacity to keep others on the path.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 5:16 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Jesus places the moral value of visible, ordinary good conduct in its effect on others, immediately after warning against hiding a lamp under a bushel.</div>
+  <div class="tieback">Both texts make guiding others by one&#x27;s own consistent conduct the measure of a life, rather than private feats of self-denial.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O you who have believed, protect yourselves and your families from a Fire whose fuel is people and stones, over which are [appointed] angels, harsh and severe…&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 66:6, At-Tahrim (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The verse is traditionally read as commanding the head of a household to instruct and morally safeguard his dependants, not merely himself.</div>
+  <div class="tieback">It matches the Kural&#x27;s dual condition precisely: keep yourself from slipping and keep your household on the right path.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;And thou shalt teach them diligently unto thy children, and shalt talk of them when thou sittest in thine house, and when thou walkest by the way, and when thou liest down, and when thou risest up.&rdquo;</div>
+  <div class="cite">&mdash; Deuteronomy 6:7 (KJV, Tanakh) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Shema makes the ordinary rhythms of household life — sitting, walking, lying down, rising — the setting for transmitting the commandments to the next generation.</div>
+  <div class="tieback">This is the Kural&#x27;s ஆற்றின் ஒழுக்கி in practice: the household is where others are actually steered onto the right path.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;One should first establish oneself in what is proper; then only should one instruct others. Thus the wise man will not be reproached.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 158, Attavagga, trans. Acharya Buddharakkhita <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada&#x27;s self-chapter insists on the order of operations: self-correction precedes the correction of others, or the teaching is worthless.</div>
+  <div class="tieback">The Kural states the same two requirements in the same order — not slipping oneself, and guiding others along the path.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Some householders are superior to some monks in self-control; but the saints are superior to all householders in self-control.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 5.20 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Mahāvīra&#x27;s teaching admits that a disciplined householder can surpass a lax monk in self-restraint, while still ranking the true saints above every layman.</div>
+  <div class="tieback">The Kural says a virtuous household has more strength than the penance of ascetics, and the Uttarādhyayana grants the same point for some householders against some monks.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;How have you put off yogic garb and attired yourself in a household way.” … “You, while distancing and repudiating house hold life, go again to those householders for begging. Except their offerings you don’t get anything.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.allaboutsikhs.com/varan-bhai-gurdas-ji-vaar-1-v15-502/" target="_blank" rel="noopener">Vaaran Bhai Gurdas, Vaar 1, Pauri 40 (tr. Dr Jodh Singh)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Bhai Gurdas, the early Sikh scholar and scribe of the Adi Granth, describes the yogi Bhangar Nath at Achal Batala mocking Guru Nanak for living as a householder, and the Guru replying that renunciants who reject household life still live on householders&#x27; gifts.</div>
+  <div class="tieback">It is the Sikh form of Valluvar&#x27;s boldest claim: the householder who keeps to virtue is stronger than the ascetics, who depend on him for their food.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;To you, foolish Perses, I will speak good sense. Badness can be got easily and in shoals: the road to her is smooth, and she lives very near us. But between us and Goodness the gods have placed the sweat of our brows: long and steep is the path that leads to her, and it is rough at the first.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 286-292 (Evelyn-White)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Works and Days is framed as a farmer-householder correcting his idle brother, arguing that ordinary honest labour is the long steep road to virtue.</div>
+  <div class="tieback">Hesiod&#x27;s householder both walks the hard path himself and works to pull a wayward kinsman onto it — the Kural&#x27;s two conditions in a single poem.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">The Stoic Musonius Rufus argued in his lectures that marriage is no handicap to philosophy, that the philosopher must marry and raise children, and that the shared household is itself the arena in which self-control, justice and endurance are actually practised.</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Musonius_Rufus" target="_blank" rel="noopener">Musonius Rufus, Lecture XIV, &#x27;Is Marriage a Handicap for the Pursuit of Philosophy?&#x27;</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Against the Cynic model of the unencumbered sage, Musonius insisted that the demands of spouse, children and household are harder training in virtue than solitude.</div>
+  <div class="tieback">This is the Kural&#x27;s claim in Roman Stoic form: domestic life possesses more real endurance than the withdrawn ascetic&#x27;s regimen.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Susanna Wesley&#x27;s household at Epworth</div>
+  <div class="rle-meta">1690s-1735 &middot; Epworth, Lincolnshire, England, United Kingdom</div>
+  <div class="quote is-paraphrase">At the rectory in Epworth, Susanna Wesley raised the ten of her nineteen children who survived infancy and taught them herself on a strict daily timetable, with lessons from nine to noon and two to five, girls as well as boys learning to read from the age of five, and prayers at rising and bedtime. During her husband&#x27;s long absences she also read prayers and sermons to neighbours at the rectory, gatherings that at one time drew around 200 people. Her sons John and Charles Wesley went on to found the Methodist movement, and she is often called the Mother of Methodism.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Susanna Wesley&#x27;s ordered, devout household shaped two of the most influential religious leaders of the eighteenth century and reached out to her whole village.</div>
+  <div class="tieback">The kural praises a household that keeps others on the right path while never slipping itself as stronger than the austerities of ascetics, and Susanna Wesley&#x27;s home guided her children and neighbours alike.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-5/" target="_blank" rel="noopener">திருக்குறள் — அதிகாரம் 5: இல்வாழ்க்கை (Chapter 5: Domestic Life), with Tamil commentaries by Mu. Varadarajan, Salomon Pappaiah, Mu. Karunanidhi and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-005.html" target="_blank" rel="noopener">Thirukkural, Adhigaram 5 — Domestic Life / Married Life (Tamil text, transliteration, multi-language translations and classical commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://thirukural-world.blogspot.com/2014/12/41-50.html" target="_blank" rel="noopener">குறள் 41-50 இல்வாழ்க்கை (Kurals 41-50, Domestic Life) — Tamil text with Tamil and English meanings and Pope/Drew translations</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.allaboutsikhs.com/varan-bhai-gurdas-ji-vaar-1-v15-502/" target="_blank" rel="noopener">Varan Bhai Gurdas Ji, Vaar 1</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://en.wikisource.org/wiki/Musonius_Rufus" target="_blank" rel="noopener">Musonius Rufus, Lectures XIII-XIV (&#x27;What is the Chief End of Marriage&#x27; and &#x27;Is Marriage a Handicap for the Pursuit of Philosophy?&#x27;), trans. Cora E. Lutz</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.umc.org/en/content/mother-knows-best-parenting-tips-from-susanna-wesley" target="_blank" rel="noopener">Mother knows best: Parenting tips from Susanna Wesley (Joe Iovino)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.methodist.org.uk/about/our-stories/susanna-wesley-day/" target="_blank" rel="noopener">Susanna Wesley Day</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0047.html">&larr; Kural 47</a>
+  <a href="kural-0049.html">Kural 49 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-005.html">Domestic Life</a>
+  <a class="skip-btn" href="kural-0051.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

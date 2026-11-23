@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 436 — Error Correction | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 436</h1>
+<p class="adhikaram"><a href="adhikaram-044.html">Error Correction</a> &middot; Kutrankaditthal &middot; <span class="tamil">குற்றங்கடிதல்</span></p>
+
+<div class="tamil-text">தன்குற்றம் நீக்கிப் பிறர்குற்றங் காண்கிற்பின்
+என்குற்ற மாகும் இறைக்கு.</div>
+<div class="translit">Thankutram neekkip pirarkutrang kaankirpin
+Enkutra maakum iraikku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If a ruler first fixes his own faults and only then looks at the faults of others, what fault could ever harm him?</p>
+
+<h2 class="section">Elementary</h2>
+<p>It is easy to spot what others are doing wrong. This kural says a good leader first looks at and fixes their own mistakes, and only then points out other people’s. A leader who does that has nothing to be blamed for.</p>
+
+<h2 class="section">University</h2>
+<p>This is the chapter’s central statement of self-scrutiny and its logic is sequential: தன்குற்றம் நீக்கி (having removed one’s own fault) comes before பிறர்குற்றம் காண் (seeing others’ faults). The verb காண்கிற்பின் (‘if one is able to see’) implies that judging others rightly is a capacity earned by self-correction. The closing rhetorical question, என்குற்றம் ஆகும் இறைக்கு (‘what fault would there be for the king?’), expects the answer ‘none’. For a ruler whose office is to judge, this is the ethics of legitimate authority: the right to correct others rests on having corrected oneself. The couplet is the Tamil counterpart of the ‘mote and beam’ teaching and of the fable of the two wallets, but it is framed positively as a programme for governance rather than as a rebuke to hypocrisy.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Thou seest, O king, the fault of others, even though they be as small as a mustard seed. But seeing, thou noticest not thy own faults even though they be as large as the Vilwa fruit.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/m01/index.htm" target="_blank" rel="noopener">Mahabharata, Adi Parva, Section LXXIV (tr. K. M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Shakuntala rebukes King Dushyanta, who denies her, for spotting others’ tiny faults while missing his own huge ones.</div>
+  <div class="tieback">Addressed, like the Kural, to a king; it condemns exactly what the Kural says a king must avoid: judging others before seeing one’s own faults.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Thou hypocrite, first cast out the beam out of thine own eye; and then shalt thou see clearly to cast out the mote out of thy brother&#x27;s eye.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 7:5 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus tells his hearers to remove the plank in their own eye before trying to remove the speck in someone else’s.</div>
+  <div class="tieback">Identical order of operations: first remove your own fault, then you can rightly see and correct others’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;One of you looks at the mote in his brother&#x27;s eye while forgetting the stump in his own eye.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/adab:592" target="_blank" rel="noopener">Al-Adab al-Mufrad 592 (saying of Abu Hurayra)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Abu Hurayra warns against people who notice a speck in a brother’s eye but forget the log in their own.</div>
+  <div class="tieback">Same insight as the Kural: self-correction must precede correcting others. Elsewhere the Prophet calls the believer ‘the believer’s mirror’ (Abu Dawud 4918), mutual correction resting on sincerity.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;...Reish Lakish says concerning this: Adorn [keshot] yourself and afterward adorn others.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Bava_Metzia.107b" target="_blank" rel="noopener">Babylonian Talmud, Bava Metzia 107b (also Bava Batra 60b)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Reish Lakish teaches that you must correct your own conduct before requiring others to correct theirs; the Talmud applies it to a rabbi who first cut down his own trees before ruling that others must cut theirs.</div>
+  <div class="tieback">Same order as the Kural, and like the Kural it is applied to a person with authority to judge others.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Easily seen is the fault of others, but one&#x27;s own fault is difficult to see. Like chaff one winnows another&#x27;s faults, but hides one&#x27;s own, even as a crafty fowler hides behind sham branches.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 252 (tr. Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha observes that we broadcast others’ faults like chaff in the wind but hide our own, and (Dhp 253) that the fault-finder’s own defilements grow.</div>
+  <div class="tieback">The Dhammapada describes the problem the Kural solves: because one’s own faults are hard to see, they must be looked for and removed first.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Fight with your Self; why fight with external foes? He who conquers himself through himself, will obtain happiness.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 9.35 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">When Indra urges King Nami to subdue the princes who do not acknowledge him, Nami answers that the battle that matters is against oneself, and that only self-conquest brings happiness.</div>
+  <div class="tieback">Valluvar tells the ruler to remove his own faults before examining others&#x27;; Nami, also a king, likewise turns from the faults and hostility of others to the work of correcting himself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Fareed, if you have a keen understanding, then do not write black marks against anyone else. Look underneath your own collar instead.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1378, Salok Sheikh Farid (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Sheikh Farid, whose saloks are part of the Guru Granth Sahib, tells the wise to stop recording others&#x27; wrongs and to look first into their own conduct.</div>
+  <div class="tieback">The Kural asks the ruler to remove his own faults first and only then examine others&#x27;; Farid gives exactly this order of self-scrutiny before judging anyone else.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Jupiter has loaded us with a couple of Wallets: the one, filled with our own vices, he has placed at our backs, {the other}, heavy with those of others, he has hung before. From this circumstance, we are not able to see our own faults: but as soon as others make a slip, we are ready to censure.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/25512" target="_blank" rel="noopener">Phaedrus, Fables IV.10 (tr. H. T. Riley; Aesopic, Perry 266)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The fable says Jupiter hung two bags on every person: others’ faults in front, where we always see them, and our own behind, where we never do.</div>
+  <div class="tieback">Explains why the Kural must command the reversal: you have to turn the bag round and deal with your own faults before looking at others’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;The spirit ought to be brought up for examination daily. It was the custom of Sextius when the day was over... to inquire of his spirit: &quot;What bad habit of yours have you cured to-day? what vice have you checked? in what respect are you better?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Of_Anger" target="_blank" rel="noopener">Seneca, De Ira (On Anger) III.36 (tr. Aubrey Stewart)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Seneca describes reviewing his whole day every night, judging himself and correcting his own faults before sleep.</div>
+  <div class="tieback">Seneca’s nightly tribunal is a practical method for the Kural’s first step: finding and removing one’s own faults.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Pope John Paul II&#x27;s Day of Pardon</div>
+  <div class="rle-meta">12 March 2000 &middot; St Peter&#x27;s Basilica, Vatican City</div>
+  <div class="quote is-paraphrase">On the first Sunday of Lent in the Jubilee year 2000, Pope John Paul II led a service in St Peter&#x27;s Basilica in which senior cardinals and bishops confessed categories of sins committed by members of the Catholic Church over the centuries. These included divisions among Christians, the use of violence in the service of truth, hostility toward followers of other religions including Jews, and wrongs against women, the poor and minorities. After each confession the pope asked God&#x27;s forgiveness.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The ceremony was an unprecedented public act by a major institution examining and confessing its own past faults before addressing those of others.</div>
+  <div class="tieback">The kural says a ruler who first removes his own faults and only then examines others&#x27; will be free of fault, and the Day of Pardon began with the Church&#x27;s own record.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.thirukkural.net/ta/kural/adhigaram-044.html" target="_blank" rel="noopener">Thirukkural, Adhigaram 44 (Kurals 431-440) with commentaries of Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah and Mu. Karunanidhi</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html" target="_blank" rel="noopener">Tirukkural of Tiruvalluvar (Tamil script, Unicode e-text)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/m01/index.htm" target="_blank" rel="noopener">The Mahabharata, Book 1: Adi Parva (Jatugriha Parva), trans. Kisari Mohan Ganguli</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/adab:592" target="_blank" rel="noopener">Al-Adab Al-Mufrad 592 (Abu Hurayra: the mote and the stump)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Bava_Metzia.107b" target="_blank" rel="noopener">Babylonian Talmud, Bava Metzia 107b (William Davidson Edition, tr. Steinsaltz)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.gutenberg.org/ebooks/25512" target="_blank" rel="noopener">The Fables of Phaedrus, tr. Henry Thomas Riley (Book IV, Fable X: Of the Vices of Men)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://en.wikisource.org/wiki/Of_Anger" target="_blank" rel="noopener">Seneca, Of Anger (De Ira), trans. Aubrey Stewart (1900)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.vatican.va/content/john-paul-ii/en/homilies/2000/documents/hf_jp-ii_hom_20000312_pardon.html" target="_blank" rel="noopener">Homily of the Holy Father, Day of Pardon, 12 March 2000 (Pope John Paul II)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.cnn.com/2000/WORLD/europe/03/12/pope.apology/" target="_blank" rel="noopener">Pope makes historic pardon request for Church sins</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0435.html">&larr; Kural 435</a>
+  <a href="kural-0437.html">Kural 437 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-044.html">Error Correction</a>
+  <a class="skip-btn" href="kural-0441.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

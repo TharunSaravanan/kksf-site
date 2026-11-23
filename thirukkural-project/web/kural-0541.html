@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 541 — The Right Sceptre | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 541</h1>
+<p class="adhikaram"><a href="adhikaram-055.html">The Right Sceptre</a> &middot; Sengonmai &middot; <span class="tamil">செங்கோன்மை</span></p>
+
+<div class="tamil-text">ஓர்ந்துகண் ணோடாது இறைபுரிந்து யார்மாட்டும்
+தேர்ந்துசெய் வஃதே முறை.</div>
+<div class="translit">Orndhukan Notaadhu Iraipurindhu Yaarmaattum
+Therndhusey Vaqdhe Murai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Justice means looking into every case carefully, favoring no one, being fair to all, and then thinking it through before acting.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a teacher who finds two kids fighting over a broken toy. A fair teacher doesn’t just blame the kid she likes less. She asks questions, listens to both, thinks it over, and then decides. Even if the one who broke it is her favourite helper, the rule is the same for him. That is what “doing it the right way” means.</p>
+
+<h2 class="section">University</h2>
+<p>This opening couplet works as a definition: முறை (justice, right order) is a four-step procedure. ஓர்ந்து means investigating what offence was committed; கண்ணோடாது means without கண்ணோட்டம், the soft favour that comes from familiarity or affection (Valluvar gives this quality its own chapter, 58, where it is praised in private life, which is why it has to be ruled out here); இறைபுரிந்து is glossed by Parimelazhagar as holding to impartiality (இறை = நடுவுநிலைமை), though some modern readers take இறை as ‘the ruler’ and the phrase as ‘the king, wishing it’; and தேர்ந்து செய்வது means deciding with those learned in the law books and then giving the fitting penalty. யார்மாட்டும் (‘with anyone at all’) governs the whole sequence, so a kinsman gets no exemption. Varadarasan and Solomon Pappaiah follow this procedural reading; Kalaignar compresses it to ‘not leaning to either side’. Parimelazhagar notes that the chapter follows பொச்சாவாமை (vigilance) and comes before its opposite, கொடுங்கோன்மை (Ch. 56); செங்கோல், the ‘straight sceptre’, is the standard Tamil metonym for just rule. ytamizh and Thirukkural.net give the same text.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;A king should, without doubt, look upon his subjects as his own children. In determining their disputes, however, he should not show compassion.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/m12/m12a068.htm" target="_blank" rel="noopener">Mahabharata, Santi Parva, Section LXIX (tr. K. M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Bhishma tells Yudhishthira that a king should love his people like a father, but that this love must not tip the scales when he judges their quarrels.</div>
+  <div class="tieback">This is கண்ணோடாது exactly: when judgment is given, affection is set aside.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;I charge thee before God, and the Lord Jesus Christ, and the elect angels, that thou observe these things without preferring one before another, doing nothing by partiality.&rdquo;</div>
+  <div class="cite">&mdash; 1 Timothy 5:21 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul tells Timothy to handle discipline in the church without favouring anyone.</div>
+  <div class="tieback">Doing nothing by partiality is the Kural’s ‘showing favour to no one’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;What destroyed the nations preceding you, was that if a noble amongst them stole, they would forgive him, and if a poor person amongst them stole, they would inflict Allah&#x27;s Legal punishment on him. By Allah, if Fatima, the daughter of Muhammad stole, I would cut off her hand.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:3475" target="_blank" rel="noopener">Sahih al-Bukhari 3475</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">When the Quraysh sent Usama to plead for a noblewoman who had stolen, the Prophet refused and declared that the law would apply even to his own daughter.</div>
+  <div class="tieback">This is யார்மாட்டும் கண்ணோடாது, favour to no one, however close or high.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Ye shall not respect persons in judgment; ye shall hear the small and the great alike; ye shall not be afraid of the face of any man; for the judgment is God’s;&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">Deuteronomy 1:17 (JPS 1917)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Moses tells the judges of Israel to give poor and powerful the same hearing and to fear no one, since justice belongs to God.</div>
+  <div class="tieback">Hearing everyone alike and favouring no one is the same rule the Kural sets for the king.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Not by passing arbitrary judgments does a man become just; a wise man is he who investigates both right and wrong. He who does not judge others arbitrarily, but passes judgment impartially according to the truth, that sagacious man is a guardian of law and is called just.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 256–257 (trans. Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada says a judge is just only if he investigates both sides and decides impartially according to the truth, not on a whim.</div>
+  <div class="tieback">Investigate (ஓர்ந்து), judge impartially (கண்ணோடாது), and so be called just (முறை): the two texts follow the same sequence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Men frequently apply punishment wrongly: the innocent are put in prison, and the perpetrator of the crime is set at liberty.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 9.30 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">When Indra, disguised as a Brahmin, urges King Nami to punish thieves and robbers so that he may be a true Kshatriya, Nami answers that human punishment often lands on the wrong person.</div>
+  <div class="tieback">The Kural defines justice as investigating each case carefully and without favour before acting, and Nami&#x27;s reply shows what goes wrong when that investigation is skipped: the innocent are jailed and the guilty go free.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;For the king, cleansing is justice; for the scholar, it is true meditation.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1240, Raag Saarang (Saarang ki Vaar, salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Rejecting ritual purity, Guru Nanak says that what truly purifies each person is the duty of his station, and for a ruler that duty is justice.</div>
+  <div class="tieback">The Kural defines the right sceptre as justice done without favour after careful inquiry; Guru Nanak likewise makes justice the king&#x27;s essential practice.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In the myth that closes Plato’s Gorgias, Zeus decrees that souls are to be judged after death stripped of body, wealth and rank, by judges who are themselves stripped, because in earlier times the clothed judges had been deceived by fine appearances and false witnesses; Minos, Rhadamanthus and Aeacus are appointed to judge.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Plato/gorgias.html" target="_blank" rel="noopener">Plato, Gorgias 523a–524a (myth of judgment)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The myth shows the gods reforming judgment so that nothing (status, beauty, supporters) can sway the verdict.</div>
+  <div class="tieback">It dramatises கண்ணோடாது: a true verdict must look past whoever the person appears to be.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;to go to the judge is to go to justice; for the nature of the judge is to be a sort of animate justice;&rdquo;</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics V.4, 1132a (trans. W. D. Ross)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle says people in a dispute go to a judge because the judge is supposed to be justice itself in living form, standing at the fair midpoint between the parties.</div>
+  <div class="tieback">The Kural asks the king to be exactly this, the living ‘mean’ who leans to neither side.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Supreme Court orders President Nixon to hand over the Watergate tapes</div>
+  <div class="rle-meta">24 July 1974 &middot; Washington, D.C., United States</div>
+  <div class="quote is-paraphrase">During the Watergate investigation, Special Prosecutor Leon Jaworski subpoenaed tape recordings of conversations in President Richard Nixon&#x27;s White House, and Nixon refused to hand them over, claiming executive privilege. After hearing argument on 8 July 1974, the Supreme Court ruled 8-0 on 24 July, in an opinion by Chief Justice Warren Burger, that a president&#x27;s general claim of confidentiality must yield to the demonstrated, specific need for evidence in a criminal trial, with Justice William Rehnquist taking no part. Nixon complied, released transcripts that showed his part in the cover-up, and resigned in August 1974.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">The highest court examined the president&#x27;s claim on its merits and applied the law to the most powerful man in the country as it would to anyone else.</div>
+  <div class="tieback">The kural defines justice as examining the matter carefully, showing favour to no one and deciding with those learned in the law, and the Court&#x27;s unanimous ruling against a sitting president meets every part of that definition.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-55/" target="_blank" rel="noopener">செங்கோன்மை / The Right Sceptre, Chapter 55 (Kurals 541-550) with commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-055.html" target="_blank" rel="noopener">செங்கோன்மை - அதிகாரம் 55 - திருக்குறள் (The Right Sceptre)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/m12/m12a068.htm" target="_blank" rel="noopener">The Mahabharata, Book 12: Santi Parva, Sections LXIX-LXX (trans. K. M. Ganguli)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:3475" target="_blank" rel="noopener">Sahih al-Bukhari 3475 (the Makhzumi woman who stole)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Plato/gorgias.html" target="_blank" rel="noopener">Plato, Gorgias, trans. Benjamin Jowett</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.oyez.org/cases/1973/73-1766" target="_blank" rel="noopener">United States v. Nixon</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://guides.loc.gov/watergate-manuscripts/justices-judges" target="_blank" rel="noopener">Justices and Judges - Richard Nixon&#x27;s Political Scandal: Researching Watergate in the Manuscript Collections at the Library of Congress</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.britannica.com/topic/United-States-v-Nixon" target="_blank" rel="noopener">United States v. Nixon</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0540.html">&larr; Kural 540</a>
+  <a href="kural-0542.html">Kural 542 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-055.html">The Right Sceptre</a>
+  <a class="skip-btn" href="kural-0551.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

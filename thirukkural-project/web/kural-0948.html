@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 948 — Medicine | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 948</h1>
+<p class="adhikaram"><a href="adhikaram-095.html">Medicine</a> &middot; Marundhu &middot; <span class="tamil">மருந்து</span></p>
+
+<div class="tamil-text">நோய்நாடி நோய்முதல் நாடி அதுதணிக்கும்
+வாய்நாடி வாய்ப்பச் செயல்.</div>
+<div class="translit">Noinaadi noimudhal naadi adhuthanikkum
+vaainaadi vaaippach cheyal.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Find out what the sickness is, find its cause, find the way to ease it, and then treat it in the right way.</p>
+
+<h2 class="section">Elementary</h2>
+<p>When your bike makes a funny noise, a good mechanic first finds which part is wrong, then why it broke, then how to fix it, and only then gets out the tools. Valluvar says a good doctor does the same with a sick person.</p>
+
+<h2 class="section">University</h2>
+<p>The most quoted couplet of the chapter is built on a threefold naadi (நாடி, &#x27;having examined&#x27;): the disease (noi), its root or first cause (noi mudhal, நோய் முதல்), and the means (vaai, வாய்) that will abate it (thanikkum, தணிக்கும்). Only then comes vaaippach cheyal (வாய்ப்பச் செயல்), &#x27;act fittingly&#x27;: Kesikan reads it as treating without error in procedure, Varadarasanar as in a way suited to the body. Commentators note the sequence of diagnosis, aetiology and therapy as a complete clinical method; Kalaignar adds that it applies to the ills of society as well as of the body. The repetition of naadi and of vaai/vaaippa gives the line a deliberate, step-by-step rhythm. The couplet appears in the sung version of the chapter by P. A. Muthukrishnan quoted on thirukkural.net. Text identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Charaka instructs the physician to examine the disease first and only afterwards the medicine, and then to begin treatment with knowledge.</div>
+  <div class="cite">&mdash; <a href="https://www.carakasamhitaonline.com/" target="_blank" rel="noopener">Charaka Samhita, Sutrasthana 20.20, paraphrase</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Classical Ayurveda puts diagnosis before any prescription.</div>
+  <div class="tieback">This is the Kural&#x27;s order: know the disease and its cause before choosing the remedy.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Then give place to the physician, for the Lord hath created him: let him not go from thee, for thou hast need of him. There is a time when in their hands there is good success. For they shall also pray unto the Lord, that he would prosper that, which they give for ease and remedy to prolong life.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/bib/apo/sir037.htm" target="_blank" rel="noopener">Sirach (Ecclesiasticus) 38:12-14 (KJV Apocrypha)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Ben Sira honours the physician and describes him seeking the right remedy and the right moment to bring ease.</div>
+  <div class="tieback">It supports the Kural&#x27;s skilled, careful physician, though without its diagnostic method.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;There is a remedy for every malady, and when the remedy is applied to the disease it is cured with the permission of Allah, the Exalted and Glorious.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/muslim:2204" target="_blank" rel="noopener">Sahih Muslim 2204</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet teaches that every disease has its proper remedy, which cures when correctly matched to it.</div>
+  <div class="tieback">Matching the right remedy to the disease is the Kural&#x27;s &#x27;find the means that abates it&#x27;.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">The Talmud derives from the words &#x27;and he shall surely heal&#x27; that the Torah grants the physician permission to heal, so that medical treatment is a sanctioned and even obligatory act.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Bava_Kamma.85a" target="_blank" rel="noopener">Babylonian Talmud, Bava Kamma 85a (on Exodus 21:19), paraphrase</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbinic law affirms the physician&#x27;s work as legitimate rather than an intrusion on God&#x27;s will.</div>
+  <div class="tieback">It provides the religious warrant for the physician the Kural describes, though not his method.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">Buddhaghosa explains the Four Noble Truths through medicine: suffering is like the disease, its origin like the cause of the disease, its cessation like the cure, and the path like the medicine.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/lib/authors/nanamoli/PathofPurification2011.pdf" target="_blank" rel="noopener">Visuddhimagga XVI.87 (tr. Bhikkhu Nanamoli), paraphrase</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The commentarial tradition reads the Buddha&#x27;s core teaching as a physician&#x27;s diagnosis, aetiology, prognosis and prescription.</div>
+  <div class="tieback">This is the Kural&#x27;s sequence of disease, its cause and its remedy, raised to a spiritual method.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Love and hatred are caused by Karman, and they say that Karman has its origin in delusion; Karman is the root of birth and death, and birth and death they call misery. Misery ceases on the absence of delusion, delusion ceases on the absence of desire, desire ceases on the absence of greed, greed ceases on the absence of property.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 32.7-8, cf. 32.110 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Uttaradhyayana traces suffering back through karma and delusion to its roots and shows how removing each root ends it, calling final liberation recovery &#x27;from the long illness&#x27;.</div>
+  <div class="tieback">This is the Kural&#x27;s method of finding the disease, then its root cause, then what removes it, applied to the soul&#x27;s misery.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;O physician, you are a competent physician, if you first diagnose the disease. Prescribe such a remedy, by which all sorts of illnesses may be cured. Administer that medicine, which will cure the disease, and allow peace to come and dwell in the body.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1279, Raag Malaar, Malaar ki Vaar, salok of Guru Angad (Mahala 2) (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In a salok in Guru Nanak&#x27;s Malaar ki Vaar, Guru Angad addresses the physician: first find the disease, then the remedy, then give the medicine that truly cures.</div>
+  <div class="tieback">This is almost the Kural&#x27;s own three steps: find the disease, find the remedy, then act in the way that fits.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When Menelaus is wounded by an arrow, the healer Machaon, son of Asclepius, comes, draws the arrow, looks at the wound, sucks out the blood and skilfully spreads on it the soothing remedies that Chiron had given his father.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, Iliad 4.210-219 (tr. Samuel Butler), paraphrase</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Homer&#x27;s physician examines the wound first and then applies the proper remedy.</div>
+  <div class="tieback">Machaon follows the Kural&#x27;s order: look at the injury, then bring the fitting treatment.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Plato contrasts the slave doctor who prescribes hastily with the free doctor who examines the disease from its origin and according to nature, questions the patient and his friends, and prescribes only after understanding the case.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0166" target="_blank" rel="noopener">Plato, Laws IV, 720a-e (tr. Benjamin Jowett), paraphrase</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Plato&#x27;s model physician investigates the nature and origin of the illness before he treats.</div>
+  <div class="tieback">This is the Kural&#x27;s physician who examines the disease and its cause before acting.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Walter Reed&#x27;s commission confirms that mosquitoes spread yellow fever</div>
+  <div class="rle-meta">1900-1901 &middot; Havana, Cuba</div>
+  <div class="quote is-paraphrase">In 1900 the United States Army sent a commission led by Walter Reed to Cuba to study yellow fever, which was killing soldiers and civilians. Testing the hypothesis of the Cuban physician Carlos Finlay, the commission showed that the disease was carried by a mosquito and not spread by contact with patients&#x27; clothing or bedding. William Gorgas then directed a campaign in Havana to screen patients and destroy mosquito breeding places, and within months of its start in 1901 the city was freed of yellow fever.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Identifying the true cause of the disease made an effective remedy possible, and the same methods later protected workers building the Panama Canal.</div>
+  <div class="tieback">The kural&#x27;s method is to find the disease, find its cause, find what will relieve it and then act, and the Reed commission and Gorgas followed that sequence step by step.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-95/" target="_blank" rel="noopener">Thirukkural Chapter 95: மருந்து / Medicine (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://thirukkural.net/ta/kural/adhigaram-095.html" target="_blank" rel="noopener">மருந்து - அதிகாரம் 95 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.carakasamhitaonline.com/" target="_blank" rel="noopener">Charaka Samhita (Sutrasthana and Vimanasthana)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4"><a href="https://sacred-texts.com/bib/apo/sir037.htm" target="_blank" rel="noopener">The Apocrypha (King James Version): Sirach / Ecclesiasticus</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/muslim:2204" target="_blank" rel="noopener">Sahih Muslim 2204 (For every disease there is a remedy)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Bava_Kamma.85a" target="_blank" rel="noopener">Babylonian Talmud, Bava Kamma 85a (permission to heal)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/lib/authors/nanamoli/PathofPurification2011.pdf" target="_blank" rel="noopener">Buddhaghosa, Visuddhimagga (The Path of Purification), tr. Bhikkhu Nanamoli</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, The Iliad, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0166" target="_blank" rel="noopener">Plato, Laws — Book IV, 721b–c (marriage and the immortality of the line)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Walter-Reed" target="_blank" rel="noopener">Walter Reed</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://americanheritage.com/node/55090" target="_blank" rel="noopener">Yellow fever and the Reed commission</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0947.html">&larr; Kural 947</a>
+  <a href="kural-0949.html">Kural 949 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-095.html">Medicine</a>
+  <a class="skip-btn" href="kural-0951.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

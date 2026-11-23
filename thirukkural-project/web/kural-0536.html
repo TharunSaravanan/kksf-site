@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 536 — Unforgetfulness | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 536</h1>
+<p class="adhikaram"><a href="adhikaram-054.html">Unforgetfulness</a> &middot; Pocchaavaamai &middot; <span class="tamil">பொச்சாவாமை</span></p>
+
+<div class="tamil-text">இழுக்காமை யார்மாட்டும் என்றும் வழுக்காமை
+வாயின் அதுவொப்பது இல்.</div>
+<div class="translit">Izhukkaamai yaarmaattum endrum vazhukkaamai
+Vaayin adhuvoppadhu il.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If a person can stay alert and careful toward everyone and at all times, nothing else is as good as that.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Being careful once is easy. Being careful with everyone, every day, even when things are going great, is the real superpower. If you can do that, it&#x27;s better than almost any other gift you could have.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet plays on two near-synonyms: இழுக்காமை (‘not slipping’, that is, unforgetfulness) must be present வழுக்காமை (‘without a lapse’). Parimelazhagar explains யார்மாட்டும் as reaching even the king&#x27;s own people, the servants who do his work and his kin, and என்றும் as meaning ‘in days of growth and of decline alike’. He parses வாயின் as a conditional form built on the verbal-noun stem வாய் (‘to come right, to fall into place’). Pavanar adds that வழுக்காமை means applying this without fail in every task, and he explicitly rejects Parimelazhagar&#x27;s analysis of வாயின், citing Tolkāppiyam and Kural 737 to argue that வாய் is an intransitive verb. Manakkudavar reads the couplet as a rule for the careful administration of justice. Together with 537, this couplet forms Parimelazhagar&#x27;s pair on the excellence of unforgetfulness.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Therefore, Arjuna, you should always think of Me in the form of Kṛṣṇa and at the same time carry out your prescribed duty of fighting. With your activities dedicated to Me and your mind and intelligence fixed on Me, you will attain Me without doubt.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 8.7 (Bhagavad-gita As It Is, A. C. Bhaktivedanta Swami Prabhupada)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Sanskrit sarveṣu kāleṣu anusmara means ‘remember at all times’. Krishna asks for unbroken remembrance to go along with, not replace, active duty.</div>
+  <div class="tieback">The Kural&#x27;s ideal is likewise remembrance that never lapses, ‘at all times’, while one carries on one&#x27;s work.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Be sober, be vigilant; because your adversary the devil, as a roaring lion, walketh about, seeking whom he may devour:&rdquo;</div>
+  <div class="cite">&mdash; 1 Peter 5:8 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Peter calls for constant sobriety and alertness because the danger is always prowling nearby.</div>
+  <div class="tieback">Like the Kural, it treats unbroken vigilance as the essential safeguard.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And remember your Lord within yourself in humility and in fear without being apparent in speech - in the mornings and the evenings. And do not be among the heedless.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 7:205 (Saheeh International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Qur&#x27;an asks for remembrance (dhikr) morning and evening, as a standing guard against ghaflah, heedlessness.</div>
+  <div class="tieback">Like the Kural, it treats unbroken remembrance as the positive virtue that defeats heedlessness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Only take heed to thyself, and keep thy soul diligently, lest thou forget the things which thine eyes saw, and lest they depart from thy heart all the days of thy life;&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">Deuteronomy 4:9 (JPS 1917)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Moses commands a watchfulness that lasts ‘all the days of thy life’ so that what has been learned is never forgotten.</div>
+  <div class="tieback">This is the Kural&#x27;s unforgetfulness kept up at all times.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Just as the footprints of all living beings with legs can be encompassed by the footprint of the elephant, and the elephant&#x27;s footprint is declared to be supreme among them in terms of its great size; in the same way, heedfulness is the one quality that keeps both kinds of benefit secure — benefits in this life &amp; benefits in lives to come.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/sn/sn03/sn03.017.than.html" target="_blank" rel="noopener">Samyutta Nikaya 3.17 (Appamada Sutta), trans. Thanissaro Bhikkhu</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">King Pasenadi asks the Buddha whether one quality secures every kind of welfare, and the Buddha names heedfulness (appamāda) as supreme among them all.</div>
+  <div class="tieback">This is the Kural&#x27;s ‘nothing equals it’, stated almost word for word in Buddhist terms.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Though others sleep, be thou awake! Like a wise man, trust nobody, but be always on the alert; for dangerous is the time and weak the body. Be always watchful like a Bhârunda bird!&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 4.6 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Mahavira asks for unbroken vigilance at every moment and toward everyone, comparing it to the mythical two-necked Bharunda bird that can never relax its watch.</div>
+  <div class="tieback">The Kural praises unfailing watchfulness toward everyone and at all times as the highest good; this verse asks for exactly that constant, all-round alertness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;One who does not forget the Naam, for a moment or even an instant-how rare is such a person in this world!&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 21, Siree Raag, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Guru Nanak praises remembrance that never lapses even for an instant, and notes how rare it is.</div>
+  <div class="tieback">The Kural says nothing equals watchfulness kept without a lapse towards everyone and at all times; Guru Nanak prizes the same never-lapsing attention, directed to the Name.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Hera sets Argus Panoptes, the hundred-eyed watchman, to guard Io. Only some of his eyes ever sleep at a time while the rest keep watch, until Hermes lulls every eye shut with his pipes and a long story and kills him.</div>
+  <div class="cite">&mdash; <a href="https://www.poetryintranslation.com/PITBR/Latin/Metamorph15.php" target="_blank" rel="noopener">Ovid, Metamorphoses 1.622-721 (trans. A. S. Kline)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Argus is the Greek image of constant vigilance. His death shows that one lapse undoes everything.</div>
+  <div class="tieback">The Kural values watchfulness that never lapses at any time, and Argus&#x27;s end shows why ‘always’ matters.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In his discourse on attention (prosoche), Epictetus warns that once you relax your attention you should not imagine you can recover it whenever you like. Each lapse makes the next one easier and builds a habit of neglect, so attention has to be kept up continuously.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0236" target="_blank" rel="noopener">Epictetus, Discourses 4.12 (‘On Attention’)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">For Epictetus vigilance is not a single act but an unbroken state, and any intermission costs more than it seems to.</div>
+  <div class="tieback">The Kural&#x27;s ideal of never slipping, towards anyone, at any time, matches Epictetus&#x27;s demand exactly.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Walsingham&#x27;s watchfulness uncovers the Babington Plot</div>
+  <div class="rle-meta">1586 &middot; England</div>
+  <div class="quote is-paraphrase">Sir Francis Walsingham, secretary of state to Elizabeth I, kept a network of agents and informers to protect the queen. In 1586, learning through a double agent of a Catholic conspiracy, later named after Anthony Babington, to assassinate Elizabeth and put Mary, Queen of Scots, on the throne, Walsingham had Mary&#x27;s secret letters, smuggled in beer barrels, intercepted, deciphered by his codebreaker Thomas Phelippes and resealed before delivery. The correspondence exposed the plot, and the conspirators were arrested and tried.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Watchfulness extended even to letters their writers thought secure protected the queen from a plot that might otherwise have succeeded.</div>
+  <div class="tieback">The kural says nothing equals unfailing watchfulness kept towards everyone and at all times, and Walsingham&#x27;s constant vigilance is a classic example of it in statecraft.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-54/" target="_blank" rel="noopener">பொச்சாவாமை / Unforgetfulness, Chapter 54 (Kurals 531-540), with Varadarasan, Solomon Pappaiah, Karunanidhi and Sivayogi Sivakumar commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-054.html" target="_blank" rel="noopener">பொச்சாவாமை - அதிகாரம் 54 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://kural.page/tamil/adhigaram-pochchaavaamai" target="_blank" rel="noopener">பொச்சாவாமை (Pochchaavaamai), with per-kural commentaries of Parimelazhagar, Manakkudavar, Devaneya Pavanar and others</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.accesstoinsight.org/tipitaka/sn/sn03/sn03.017.than.html" target="_blank" rel="noopener">Appamada Sutta: Heedfulness (SN 3.17), trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.poetryintranslation.com/PITBR/Latin/Metamorph15.php" target="_blank" rel="noopener">Ovid, Metamorphoses (trans. A. S. Kline), incl. Book XV: Pythagoras’ Teachings</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0236" target="_blank" rel="noopener">Epictetus, Discourses, Book 3, ch. 22: On the Cynic Calling</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/topic/Babington-Plot" target="_blank" rel="noopener">Babington Plot</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://blogs.bl.uk/digitisedmanuscripts/2022/02/the-gallows-letter.html" target="_blank" rel="noopener">The Gallows Letter</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0535.html">&larr; Kural 535</a>
+  <a href="kural-0537.html">Kural 537 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-054.html">Unforgetfulness</a>
+  <a class="skip-btn" href="kural-0541.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

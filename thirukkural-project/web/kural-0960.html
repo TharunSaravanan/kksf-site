@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 960 — Lineage | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 960</h1>
+<p class="adhikaram"><a href="adhikaram-096.html">Lineage</a> &middot; Kudimai &middot; <span class="tamil">குடிமை</span></p>
+
+<div class="tamil-text">நலம்வேண்டின் நாணுடைமை வேண்டும் குலம்வேண்டின்
+வேண்டுக யார்க்கும் பணிவு.</div>
+<div class="translit">Nalamvendin naanudaimai vendum kulamvendin
+venduga yaarkkum panivu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If you want to be good, you must have a sense of shame about doing wrong. If you want your family to be respected, be modest and polite toward everyone.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Kids who say &#x27;I&#x27;m the best!&#x27; all the time do not get respect. Kids who are polite to everyone, even the youngest, do. Valluvar says that if you want your family to be respected, be humble with everyone.</p>
+
+<h2 class="section">University</h2>
+<p>The closing couplet turns the chapter from description to instruction with a double condition built on the verb vendu (வேண்டு, &#x27;to want, to require&#x27;): nalam vendin (நலம் வேண்டின், &#x27;if you want good&#x27;) requires naanudaimai (நாணுடைமை, the possession of shame), and kulam vendin (குலம் வேண்டின், &#x27;if you want family standing&#x27;) requires panivu (பணிவு, humility) towards yaarkkum (யார்க்கும், everyone). Puliyur Kesikan specifies shame at blame (பழிக்கு நாணம்), and Kalaignar adds &#x27;without arrogance&#x27; (ஆணவமின்றி). The effect is to make lineage something earned and maintained by humility rather than simply inherited, which ties the chapter&#x27;s ending back to the &#x27;by nature&#x27; of 951. Naanudaimai is also the title of chapter 102, and the two chapters are often read together. The Tamil text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Krishna begins his list of the marks of true knowledge with humility (amanitvam) and freedom from pride (adambhitvam), followed by non-violence, patience and simplicity.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 13.8</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Gita places humility first among the qualities of the wise.</div>
+  <div class="tieback">Like the Kural, it makes humility the foundation of real standing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For whosoever exalteth himself shall be abased; and he that humbleth himself shall be exalted.&rdquo;</div>
+  <div class="cite">&mdash; Luke 14:11 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus teaches that honour comes to those who humble themselves, not to those who seek it.</div>
+  <div class="tieback">This matches the Kural&#x27;s paradox: humility is the way to a noble name.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And the servants of the Most Merciful are those who walk upon the earth easily, and when the ignorant address them [harshly], they say [words of] peace.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 25:63 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an describes God&#x27;s true servants as walking humbly and answering rudeness with peace.</div>
+  <div class="tieback">Like the Kural, it makes humility towards everyone, even the rude, the mark of the honoured.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Rabbi Meir said: Engage but little in business, and busy yourself with the Torah. Be of humble spirit before all men.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 4:10 (Mishnah Yomit, tr. Joshua Kulp)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbi Meir tells his students to be humble before every person.</div>
+  <div class="tieback">&#x27;Before all men&#x27; is the Kural&#x27;s yaarkkum panivu, humility towards everyone.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;To be respectful, humble, contented and grateful; and to listen to the Dhamma on due occasions — this is the greatest blessing.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/kn/snp/snp.2.04.nara.html" target="_blank" rel="noopener">Maha-mangala Sutta, Sn 2.4 (tr. Narada Thera)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Mangala Sutta counts humility among the highest blessings of life.</div>
+  <div class="tieback">Like the Kural, it makes humility a source of good fortune and standing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;&#x27;Frequently (I have been born) in a high family, frequently in a low one; I am not mean, nor noble, nor do I desire (social preferment).&#x27; Thus reflecting, who would brag about his family or about his glory, or for what should he long?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Acaranga Sutra I.2.3.1 (tr. Hermann Jacobi, SBE 22)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Because the soul has been born countless times in high and low families, the Acaranga says no one has grounds to be proud of their family; Jain doctrine also teaches that pride and self-praise bind karma that leads to low birth, while humility leads to high birth.</div>
+  <div class="tieback">Like the Kural, it makes humility, not boasting, the right attitude to family standing, though for Jainism high birth is itself the fruit of humility.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Sweetness and humility, O Nanak, are the essence of virtue and goodness.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 470, Raag Aasaa, Asa di Vaar, salok of Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Asa di Vaar, Guru Nanak names sweetness of speech and humility (nimrata) as the sum of all good qualities.</div>
+  <div class="tieback">The Kural closes by saying that one who wants a noble name must be humble towards everyone; Guru Nanak makes humility the essence of goodness itself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Niobe, daughter of Tantalus, boasts to the women of Thebes about her divine ancestry and her fourteen children and says she deserves worship more than the goddess Leto; Apollo and Artemis kill her children and she is turned to weeping stone.</div>
+  <div class="cite">&mdash; <a href="https://www.poetryintranslation.com/PITBR/Latin/Metamorph6.php" target="_blank" rel="noopener">Ovid, Metamorphoses 6</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Ovid tells the story as the destruction of a proud family through boasting.</div>
+  <div class="tieback">Niobe shows the reverse of the Kural&#x27;s advice: pride in lineage ruins the lineage.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In the Laws, Plato&#x27;s Athenian says that justice always follows God, and whoever would be happy holds fast to her and follows in her company with humility and order, while one who is lifted up with pride of wealth, rank or beauty is soon left alone and brings ruin on himself and his house.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Plato/laws.5.v.html" target="_blank" rel="noopener">Plato, Laws 4.716a (tr. Benjamin Jowett)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Plato ties lasting good fortune to humility and warns that pride ruins both the person and his household.</div>
+  <div class="tieback">Like the Kural, he makes humility the condition for a person&#x27;s and a family&#x27;s good standing.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Emperor Akihito and Empress Michiko kneel to speak with evacuees</div>
+  <div class="rle-meta">10 July 1991 &middot; Shimabara, Nagasaki Prefecture, Japan</div>
+  <div class="quote is-paraphrase">On 10 July 1991, in his first official visit to a disaster area as emperor, Akihito travelled with Empress Michiko to Shimabara after the eruption of Mount Unzen had killed 43 people. At an evacuation shelter the couple knelt on the floor to talk face to face with residents, something scarcely imaginable under earlier emperors, and some people complained that the emperor had been made to kneel. They continued the practice in later disasters, and it became known in Japan as the Heisei style.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The imperial couple&#x27;s humility toward ordinary people helped bring the monarchy closer to the public and won it wide affection.</div>
+  <div class="tieback">The kural says that if you want a noble family name you must be humble toward everyone, and the emperor of an ancient line kneeling to listen to evacuees showed exactly that.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-96/" target="_blank" rel="noopener">Thirukkural Chapter 96: குடிமை / Nobility (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://thirukkural.net/ta/kural/adhigaram-096.html" target="_blank" rel="noopener">குடிமை - அதிகாரம் 96 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit, tr. Dr. Joshua Kulp), 2:5, 3:2, 4:1, 4:15, 4:21, 5:13</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/kn/snp/snp.2.04.nara.html" target="_blank" rel="noopener">Maha-mangala Sutta: Blessings (Sn 2.4), trans. Narada Thera</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Ākārāṅga Sūtra (Acaranga Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.poetryintranslation.com/PITBR/Latin/Metamorph6.php" target="_blank" rel="noopener">Ovid, Metamorphoses Book 6 (Niobe), trans. A. S. Kline</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Plato/laws.5.v.html" target="_blank" rel="noopener">Plato, Laws, Book V (tr. Benjamin Jowett)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.nippon.com/en/japan-topics/g02383/" target="_blank" rel="noopener">By the People&#x27;s Side: Imperial Family Visits to Disaster Areas</a> <span class="tier">[web source]</span></li>
+<li id="cite-13"><a href="https://www.itv.com/news/2019-04-30/akihito-abdication-as-a-country-reeled-their-emperor-kneeled" target="_blank" rel="noopener">Akihito abdication: As a country reeled, its emperor kneeled</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0959.html">&larr; Kural 959</a>
+  <a href="kural-0961.html">Kural 961 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-096.html">Lineage</a>
+  <a class="skip-btn" href="kural-0961.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

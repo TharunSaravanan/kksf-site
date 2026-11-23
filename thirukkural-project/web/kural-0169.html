@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 169 — Anti-envy | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 169</h1>
+<p class="adhikaram"><a href="adhikaram-017.html">Anti-envy</a> &middot; Azhukkaaraamai &middot; <span class="tamil">அழுக்காறாமை</span></p>
+
+<div class="tamil-text">அவ்விய நெஞ்சத்தான் ஆக்கமும் செவ்வியான்
+கேடும் நினைக்கப் படும்.</div>
+<div class="translit">Avviya nenjathaan aakkamum sevviyaan
+Kedum ninaikkap padum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>When a jealous person grows rich and a good, honest person falls into hard times, it is something strange that we should stop and think about.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Sometimes a mean, jealous kid seems to get everything, while a kind kid has a hard time. That looks unfair, and this kural says: stop and think about it. Things may not stay that way, and there is a deeper reason behind it.</p>
+
+<h2 class="section">University</h2>
+<p>Valluvar recognizes the classic problem of theodicy: the wicked sometimes prosper and the good sometimes suffer. He does not deny it. He calls these cases நினைக்கப்படும், “to be reflected upon.” Parimelazhagar resolves the anomaly through karma: the envious man&#x27;s prosperity comes from past merit now being used up, and the good man&#x27;s suffering from past deeds now being paid off, so neither lasts. The same wrestling appears in Psalm 73, in Rabbi Yannai&#x27;s admission in Pirkei Avot, in the Dhammapada&#x27;s teaching that evil “ripens” late, and in Glaucon&#x27;s challenge in Plato&#x27;s Republic, which makes this one of the most widely shared questions in world ethics.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In exile in the forest, Draupadi laments to Yudhishthira that the righteous king suffers while the wicked Duryodhana prospers, and questions divine justice; Yudhishthira answers that one practices dharma for its own sake and that its fruits come in time.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Vana Parva (Draupadi–Yudhishthira dialogue), Ganguli translation</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Mahabharata stages a full debate over why the virtuous suffer and the envious thrive.</div>
+  <div class="tieback">This is exactly the anomaly the Kural says must be pondered: the envious prosper and the upright suffer.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For I was envious at the foolish, when I saw the prosperity of the wicked. ... Until I went into the sanctuary of God; then understood I their end.&rdquo;</div>
+  <div class="cite">&mdash; Psalm 73:3, 17 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The psalmist is troubled that the wicked prosper, until reflection in God&#x27;s sanctuary shows him their final end.</div>
+  <div class="tieback">This is the Kural&#x27;s point: the prosperity of the wicked is a puzzle to be pondered until one sees how it ends.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And let not those who disbelieve ever think that [because] We extend their time [of enjoyment] it is better for them. We only extend it for them so that they may increase in sin, and for them is a humiliating punishment.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 3:178 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an explains that the apparent prosperity of wrongdoers is a respite that will end in punishment, not a sign of favor.</div>
+  <div class="tieback">Both texts ask the reader to think past the surface when the undeserving prosper.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Rabbi Yannai said: it is not in our hands [to explain the reason] either of the security of the wicked, or even of the afflictions of the righteous.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 4:15 (Kulp translation, Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Mishnah admits that the ease of the wicked and the suffering of the righteous are beyond full human explanation.</div>
+  <div class="tieback">It names the same two anomalies as the Kural: the wicked&#x27;s prosperity and the upright&#x27;s suffering.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;It may be well with the evil-doer as long as the evil ripens not. But when it does ripen, then the evil-doer sees (the painful results of) his evil deeds. It may be ill with the doer of good as long as the good ripens not. But when it does ripen, then the doer of good sees (the pleasant results of) his good deeds.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 119-120 (trans. Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha explains that results of deeds ripen with a delay, so the wicked may prosper and the good suffer for a while.</div>
+  <div class="tieback">This is the karmic resolution that Parimelazhagar gives for the Kural&#x27;s anomaly.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;When Mahāvīra broke his fast at the proud, wealthy Abhinava&#x27;s house, a stream of treasure fell there, while the devout but ruined Jinadatta, who had waited in vain, gained nothing visible; an omniscient disciple of Pārśva then explained that Jinadatta had earned rebirth in the Acyuta heaven, and that “the stream of treasure, fruit in this world of the Arhat’s fast-breaking was obtained by Sheth Abhinava, who is devoid of pure character.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Hemacandra, Triṣaṣṭiśalākāpuruṣacaritra, Book X, ch. IV, Part 4 (episode of Jīrṇaśreṣṭhin and Abhinava) (tr. Helen M. Johnson, GOS)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The episode answers why a man of poor character can prosper while a good man stays poor: visible wealth is only a this-worldly fruit, and the real merit lies with the pure-minded, to bear fruit in time.</div>
+  <div class="tieback">Valluvar says the prosperity of the envious and the poverty of the upright must be pondered, and this Jain story ponders exactly that case and resolves it through karma and inner disposition.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;By His Command, some are high and some are low; by His Written Command, pain and pleasure are obtained.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1, Japji Sahib, Pauri 2, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In the second pauri of Japji, Guru Nanak teaches that rise and fall, joy and suffering all happen within hukam, the divine order, which is beyond human calculation.</div>
+  <div class="tieback">The Kural asks us to ponder why the envious sometimes prosper and the upright suffer; Japji answers that such reversals of fortune lie within God&#x27;s hukam.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When the wealthy King Croesus asks Solon who is the happiest of men, Solon refuses to call Croesus happy and says no one should be called fortunate until one has seen how his life ends; Croesus later loses his kingdom.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Hdt.%206.86" target="_blank" rel="noopener">Herodotus, Histories 1.30-33, 1.86</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Solon warns that visible prosperity is no sure sign of lasting fortune.</div>
+  <div class="tieback">Like the Kural, the story invites reflection on why fortune seems to go to the wrong people, and on how it ends.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In Book II of the Republic, Glaucon challenges Socrates with the case of the perfectly unjust man who enjoys wealth and reputation and the perfectly just man who is thought unjust and suffers torture. Socrates spends the rest of the dialogue showing that justice is still better.</div>
+  <div class="cite">&mdash; Plato, Republic II, 360e-362c <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Plato builds his central ethical argument around the anomaly of the prosperous wicked and the suffering righteous.</div>
+  <div class="tieback">The Kural says the same anomaly must be pondered; the Republic ponders it at length.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Aristides the Just is ostracised and then recalled</div>
+  <div class="rle-meta">482-479 BCE &middot; Athens, Salamis and Plataea, Greece</div>
+  <div class="quote is-paraphrase">Aristides, an Athenian statesman renowned for his honesty and known as the Just, was ostracised in 482 BCE after political manoeuvring by his rival Themistocles and accusations of sympathy with Persia. When Xerxes invaded, the Athenians recalled the ostracised exiles in 480 BCE, and Aristides led a hoplite force at the battle of Salamis. In 479 BCE he was one of the Athenian commanders at the victory of Plataea.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">An upright man suffered exile while his rival prevailed, yet within two years his city recalled him and gave him high command.</div>
+  <div class="tieback">The kural invites reflection on the puzzle of the upright suffering misfortune, and Aristides&#x27; exile, soon reversed, shows such misfortune need not last.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-17/" target="_blank" rel="noopener">Thirukkural Chapter 17: அழுக்காறாமை / Not Envying (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar commentaries and Drew/Lazarus English)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-017.html" target="_blank" rel="noopener">அழுக்காறாமை - அதிகாரம் 17 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Avot), trans. Dr. Joshua Kulp (Mishnah Yomit)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Hdt.%206.86" target="_blank" rel="noopener">Herodotus, Histories 6.86 — the story of Glaucus of Sparta and the Delphic oracle</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Republic, Book X (the Myth of Er) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.worldhistory.org/Aristides/" target="_blank" rel="noopener">Aristides</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/biography/Themistocles" target="_blank" rel="noopener">Themistocles</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0168.html">&larr; Kural 168</a>
+  <a href="kural-0170.html">Kural 170 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-017.html">Anti-envy</a>
+  <a class="skip-btn" href="kural-0171.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

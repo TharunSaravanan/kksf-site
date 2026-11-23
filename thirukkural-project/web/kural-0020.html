@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 20 — The Excellence of Rain | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 20</h1>
+<p class="adhikaram"><a href="adhikaram-002.html">The Excellence of Rain</a> &middot; Vaan Sirappu &middot; <span class="tamil">வான் சிறப்பு</span></p>
+
+<div class="tamil-text">நீர்இன்று அமையாது உலகெனின் யார்யார்க்கும்
+வான்இன்று அமையாது ஒழுக்கு.</div>
+<div class="translit">Neer indru amaiyaadhu ulagenin yaaryaarkkum,
+Vaan indru amaiyaadhu ozhukku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>No one in the world can live without water. In the same way, good behaviour cannot last in the world without rain.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Think of electricity in a house. The lights, the fridge, the heating — none of it works if the power is cut. This kural says rain is the power supply for the whole world, and even being good to each other gets much harder when it fails.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet&#x27;s force rests on a deliberate pun in its final word, ஒழுக்கு (ozhukku), which means both &quot;a flowing, a stream&quot; and, through its near-twin ஒழுக்கம், &quot;right conduct&quot; — the subject of chapter 14. Valluvar thereby makes one word carry both the hydrological and the moral sense of &quot;keeping to its proper course,&quot; closing the chapter by fusing the two. யார்யார்க்கும் (&quot;for anyone whosoever&quot;) universalises the claim across rank, region and creed, an emphasis that recurs throughout the Kural&#x27;s ethics. Placed as the last verse of the chapter, it is the hinge that carries the reader into chapters 3 and 4 on the greatness of the renunciant and the assertion of virtue: the whole moral edifice that follows has just been shown to rest on rainfall.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The Gita sets out a turning wheel in which prescribed duty produces sacrifice, sacrifice produces rain, rain produces food, and food produces living beings; Krishna then says that whoever does not help turn this wheel lives in vain.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 3.14–16 (Bhaktivedanta, Bhagavad-gītā As It Is, 1972)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Rain is a load-bearing link in a single circuit that runs from moral obligation through nature and back to moral obligation again.</div>
+  <div class="tieback">Like the Kural, it makes right conduct and rainfall parts of one system rather than separate domains.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For the earth which drinketh in the rain that cometh oft upon it, and bringeth forth herbs meet for them by whom it is dressed, receiveth blessing from God:&rdquo;</div>
+  <div class="cite">&mdash; Hebrews 6:7 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Hebrews uses rain-fed ground yielding a useful crop as the image of a human life that responds rightly to what it has received.</div>
+  <div class="tieback">It makes the same move as the Kural&#x27;s pun, letting rain-fed fruitfulness stand simultaneously for agricultural and moral productivity.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And said, &#x27;Ask forgiveness of your Lord. Indeed, He is ever a Perpetual Forgiver. He will send [rain from] the sky upon you in [continuing] showers.&#x27;&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 71:10–11, Nuh (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Noah tells his people that setting their moral account right with God is what will open the sky over them in abundant rain.</div>
+  <div class="tieback">Both verses tie rainfall and right conduct into a single proposition, refusing to treat them as unrelated.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;That I will give you the rain of your land in his due season, the first rain and the latter rain, that thou mayest gather in thy corn, and thy wine, and thine oil … And then the LORD&#x27;S wrath be kindled against you, and he shut up the heaven, that there be no rain&rdquo;</div>
+  <div class="cite">&mdash; Deuteronomy 11:13–17 (KJV, rendering the Hebrew Tanakh; the second paragraph of the Shema) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The second paragraph of the Shema, recited twice daily, makes the rainfall of the land the direct consequence of Israel&#x27;s faithfulness or unfaithfulness.</div>
+  <div class="tieback">It is the most systematic statement anywhere of the Kural&#x27;s thesis that rain and right conduct stand or fall together.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Furthermore, humans become unprincipled. This is the fifth obstacle to rain, which the forecasters don&#x27;t know, and which their vision does not traverse.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/an5.197/en/sujato" target="_blank" rel="noopener">Vassa Sutta (Obstacles to Rain), Aṅguttara Nikāya 5.197 (Bhikkhu Sujato translation)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Listing five causes of drought that no weather-reader can detect, the Buddha ends with human beings becoming adhammika — unrighteous, not living by Dhamma.</div>
+  <div class="tieback">It makes rainfall and moral conduct two faces of one order, exactly as the Kural&#x27;s closing pun does.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;In the morning there will be destruction of right-conduct; at mid-day, of kingly duty; in the afternoon, of fire.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Hemacandra, Trishashtishalakapurushacharitra, Book X (Mahaviracharitra), ch. XIII, &#x27;The sixth spoke&#x27; (tr. Helen M. Johnson)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Hemacandra&#x27;s account of the coming age of pure sorrow links the collapse of right conduct with a world where &#x27;the clouds will be without water&#x27;, so moral and natural order fail together.</div>
+  <div class="tieback">Like the Kural&#x27;s pun on ozhukku as both flowing water and right conduct, the Jain picture treats the failure of rain and the failure of conduct as one decline.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Food and wealth are produced in abundance when it rains, if it is the Will of God. Consuming it, the minds of His creatures are satisfied, and they adopt the lifestyle of the way.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1282, Raag Malar, Vaar Malar, Salok Mahala 3, Guru Amar Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Amar Das links rain to food, food to a contented mind, and a contented mind to living rightly, the way of life.</div>
+  <div class="tieback">This is the Kural&#x27;s own conclusion: right conduct, like the world itself, cannot carry on without rain.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Neither famine nor disaster ever haunt men who do true justice; but light-heartedly they tend the fields which are all their care. The earth bears them victual in plenty, and on the mountains the oak bears acorns upon the top and bees in the midst.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 230–234 (Evelyn-White translation)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hesiod&#x27;s just city is rewarded with fertility and plenty, while the unjust city is visited with famine — justice and harvest are one subject for him.</div>
+  <div class="tieback">Like the Kural&#x27;s closing line, it refuses to separate the moral order of a community from the productivity of its land.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;It is not the consciousness of men that determines their existence, but their social existence that determines their consciousness.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.marxists.org/archive/marx/works/1859/critique-pol-economy/preface.htm" target="_blank" rel="noopener">Karl Marx, Preface to A Contribution to the Critique of Political Economy (1859)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Marx&#x27;s 1859 formulation of historical materialism holds that the material conditions of production shape the ideas, morality and institutions a society is able to sustain.</div>
+  <div class="tieback">It is the modern, secular form of the Kural&#x27;s final claim: the moral life of a people rests on the material base that supports it.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Water Tribunal of Valencia</div>
+  <div class="rle-meta">Medieval origins; still meets weekly (UNESCO recognition 2009) &middot; Valencia, Spain</div>
+  <div class="quote is-paraphrase">The Water Tribunal of the Plain of Valencia, whose roots go back to the al-Andalus period, meets every Thursday at noon at the Apostles&#x27; Door of Valencia Cathedral to settle disputes among farmers over irrigation water. Its members are elected representatives of the irrigation districts, its proceedings are oral, and its rulings are not appealed. In 2009 UNESCO inscribed it, with the Council of Wise Men of Murcia, on its list of Intangible Cultural Heritage.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">For about a thousand years a community has kept its water flowing fairly by keeping its people&#x27;s conduct in order, showing how closely right conduct and water are bound together.</div>
+  <div class="tieback">The kural plays on a word that means both flowing water and right conduct, and the Valencia tribunal is a living institution in which the flow of water and the order of conduct are kept together.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-2/" target="_blank" rel="noopener">வான்சிறப்பு / The Blessing of Rain — Thirukkural Chapter 2 (Kurals 11–20), Tamil text with transliteration, English couplets and four Tamil commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-002.html" target="_blank" rel="noopener">The Excellence of Rain — Adhigaram 2, Thirukkural</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://dailyprojectthirukkural.blogspot.com/2017/11/Athikaaram002.html" target="_blank" rel="noopener">002 வான்சிறப்பு — chapter index with the full Tamil text of Kurals 11–20</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://suttacentral.net/an5.197/en/sujato" target="_blank" rel="noopener">Aṅguttara Nikāya 5.197, Vassa Sutta (&#x27;Obstacles to Rain&#x27;), translated by Bhikkhu Sujato</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.marxists.org/archive/marx/works/1859/critique-pol-economy/preface.htm" target="_blank" rel="noopener">Karl Marx, Preface to A Contribution to the Critique of Political Economy (1859)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.unesco.org/archives/multimedia/document-371" target="_blank" rel="noopener">Irrigators&#x27; Tribunals of the Spanish Mediterranean Coast: the Council of Wise Men of the Plain of Murcia and the Water Tribunal of the Plain of Valencia</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.smithsonianmag.com/travel/drink-history-world-oldest-court-180956951/" target="_blank" rel="noopener">Drink in History at the World&#x27;s Oldest Court</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0019.html">&larr; Kural 19</a>
+  <a href="kural-0021.html">Kural 21 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-002.html">The Excellence of Rain</a>
+  <a class="skip-btn" href="kural-0021.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

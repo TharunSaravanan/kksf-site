@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 115 — Impartiality | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 115</h1>
+<p class="adhikaram"><a href="adhikaram-012.html">Impartiality</a> &middot; Naduvu Nilaimai &middot; <span class="tamil">நடுவு நிலைமை</span></p>
+
+<div class="tamil-text">கேடும் பெருக்கமும் இல்லல்ல நெஞ்சத்துக்
+கோடாமை சான்றோர்க் கணி.</div>
+<div class="translit">Kedum perukkamum illalla nenjaththuk
+Kodaamai saandrork kani.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Loss and gain come in every life. The jewel of good people is a mind that stays fair in both.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Some days you win, some days you lose; that happens to everyone. A good person plays fair on both kinds of days, and that fairness is their best jewel.</p>
+
+<h2 class="section">University</h2>
+<p>The first line states a plain fact: கேடும் பெருக்கமும் இல்லல்ல (“ruin and increase are not things that do not exist”), that is, they are inevitable. Parimelazhagar attributes them to past deeds (ūḻ), which is reflected in Pope’s “not mere accident” and Solomon Pappaiah’s “already ordained.” Given that fortune is outside our control, the only thing that distinguishes the சான்றோர் (saandror, “the accomplished/noble”) is நெஞ்சத்துக் கோடாமை, “not bending in the heart.” The verb கோடு (“to bend, to be crooked”) is the key image of the chapter and returns in Kurals 118 and 119. The ethic is close to Stoic doctrine, which separates externals from the governing faculty, and to the Gita’s samatva (evenness in gain and loss). The refrain கோடாமை சான்றோர்க்கு அணி is repeated word for word in Kural 118.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Do thou fight for the sake of fighting, without considering happiness or distress, loss or gain, victory or defeat – and by so doing you shall never incur sin.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 2.38</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Krishna tells Arjuna to treat gain and loss, victory and defeat as equal and keep doing his duty.</div>
+  <div class="tieback">Matches the Kural’s lābha-alābha (gain and loss) theme: stay steady in right action whatever fortune brings.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;I have learned, in whatsoever state I am, therewith to be content. I know both how to be abased, and I know how to abound&rdquo;</div>
+  <div class="cite">&mdash; Philippians 4:11–12 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Paul writes from prison that he has learned to stay the same person in poverty and plenty.</div>
+  <div class="tieback">Both portray inner steadiness through ups and downs as the mark of a mature person.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;In order that you not despair over what has eluded you and not exult [in pride] over what He has given you.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 57:23 (Saheeh International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Qur’an explains that knowing all events are decreed should keep believers from both despair at loss and arrogance at gain.</div>
+  <div class="tieback">Like the Kural (as Parimelazhagar reads it), it accepts loss and gain as ordained and asks for an unshaken heart in both.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;till I die I will not remove mine integrity from me. My righteousness I hold fast, and will not let it go: my heart shall not reproach me so long as I live.&rdquo;</div>
+  <div class="cite">&mdash; Job 27:5–6 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Job, having lost wealth, children and health, refuses to give up his integrity.</div>
+  <div class="tieback">Job is the model of a heart that does not bend when ruin comes, the Kural’s kōdāmai.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Just as a solid rock is not shaken by the storm, even so the wise are not affected by praise or blame.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 81 (trans. Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada compares the wise to a rock that storms cannot move. The next verse adds that they show no elation or depression in happiness or sorrow.</div>
+  <div class="tieback">The same picture of the noble person’s steady heart amid the “worldly winds” of gain and loss.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;He was indifferent to success or failure (in begging), to happiness and misery, to life and death, to blame and praise, to honour and insult.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 19.90 (tr. Hermann Jacobi, SBE 45; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Mṛgāputra, once a monk, holds the same even mind whether things go well or badly.</div>
+  <div class="tieback">Valluvar grants that loss and gain will come and calls the unbent heart the ornament of the noble, and this verse shows the Jain ideal of a mind that stays level through both.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;That man, who in the midst of pain, does not feel pain, who is not affected by pleasure, affection or fear, and who looks alike upon gold and dust;&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 633, Raag Sorath, Guru Tegh Bahadur (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Tegh Bahadur describes the person who stays even and unshaken through loss and gain, pain and pleasure.</div>
+  <div class="tieback">The Kural says loss and gain will surely come and the noble person&#x27;s ornament is a heart that does not bend in either; Guru Tegh Bahadur paints the same steadiness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Odysseus, back in his own house disguised as a beggar and seeing the suitors’ outrages, restrains his rising heart by reminding it that it has endured worse before, and keeps to his course rather than acting rashly.</div>
+  <div class="cite">&mdash; Homer, Odyssey 20 (opening scene) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Odysseus is the Greek model of a man who stays steady through twenty years of loss and reversal.</div>
+  <div class="tieback">Shares the ideal of a heart that does not swerve under changing fortune, though Odysseus’ steadiness is about endurance, not fairness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Don’t demand that things happen as you wish, but wish that they happen as they do happen, and you will go on well.&rdquo;</div>
+  <div class="cite">&mdash; Epictetus, Enchiridion 8 (trans. Elizabeth Carter) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Epictetus teaches that outcomes are not in our control, and that serenity comes from accepting them while governing our own choices.</div>
+  <div class="tieback">The Kural’s structure is the same: fortune is not ours to command; the uprightness of the heart is.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Justice H. R. Khanna&#x27;s dissent in ADM Jabalpur</div>
+  <div class="rle-meta">28 April 1976; 28 January 1977 &middot; Supreme Court of India, New Delhi, India</div>
+  <div class="quote is-paraphrase">During the national Emergency of 1975-77, the Supreme Court of India ruled 4 to 1 in ADM Jabalpur v. Shivkant Shukla that detained citizens could not approach the courts to enforce their right to life and liberty while the Emergency lasted. Justice H. R. Khanna, next in line by seniority to become Chief Justice, was the lone dissenter, holding that life and liberty could not be at the mercy of the executive; he later wrote that before the judgment he had told his sister it would cost him the Chief Justiceship. In January 1977 a junior judge, M. H. Beg, was appointed Chief Justice instead, and Khanna resigned the same day; in 2017 a nine-judge bench of the Supreme Court overruled the majority judgment.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Khanna knowingly gave up the highest judicial office in India rather than bend his reading of the law to the pressure of the moment.</div>
+  <div class="tieback">The kural says loss and gain will come, and the ornament of the noble is a heart that does not bend in either; Khanna accepted the loss and did not bend.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-12/" target="_blank" rel="noopener">Thirukkural Chapter 12: நடுவு நிலைமை / Impartiality (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar commentaries, Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-012.html" target="_blank" rel="noopener">நடுவு நிலைமை - அதிகாரம் 12 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html" target="_blank" rel="noopener">Tirukkural of Tiruvalluvar (Tamil script, Unicode e-text)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11">Enchiridion, Chapter 5 (Epictetus) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://theprint.in/theprint-essential/why-an-sc-judges-dissent-43-years-ago-is-relevant-to-kashmir-clampdown-today/285665/" target="_blank" rel="noopener">Why an SC judge&#x27;s dissent 43 years ago is relevant to Kashmir clampdown today (Revathi Krishnan)</a> <span class="tier">[web source]</span></li>
+<li id="cite-13"><a href="https://www.livelaw.in/columns/remembering-justice-h-r-khanna-on-the-44th-anniversary-of-adm-jabalpur-verdict-155863" target="_blank" rel="noopener">Remembering Justice H R Khanna On The 44th Anniversary Of ADM Jabalpur Verdict (Swapnil Tripathi)</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0114.html">&larr; Kural 114</a>
+  <a href="kural-0116.html">Kural 116 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-012.html">Impartiality</a>
+  <a class="skip-btn" href="kural-0121.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

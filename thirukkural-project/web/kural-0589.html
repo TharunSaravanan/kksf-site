@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 589 — Detectives | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 589</h1>
+<p class="adhikaram"><a href="adhikaram-059.html">Detectives</a> &middot; Otraadal &middot; <span class="tamil">ஒற்றாடல்</span></p>
+
+<div class="tamil-text">ஒற்றெற் றுணராமை ஆள்க உடன்மூவர்
+சொற்றொக்க தேறப் படும்.</div>
+<div class="translit">Otret runaraamai aalga udanmoovar
+Sotrokka thaerap padum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Use spies so that none of them knows about the others. When three such spies report the same thing, you can believe it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If three students are each asked separately what happened at recess, and they can’t talk to each other first, but all three tell the same story, the teacher can be pretty sure it is true. This kural says a wise leader checks the truth the same way.</p>
+
+<h2 class="section">University</h2>
+<p>The first line says to employ (ஆள்க) spies in a way that one does not become aware (உணராமை) of another. The second says that when the words of three (மூவர் சொல்) agree together (தொக்க), the thing may be trusted (தேறப்படும்). There is a real textual variant in the first word. ytamizh.com and thirukkural.net print ஒற்றெற் றுணராமை, while thirukkural-thamizh.org prints ஒற்றொற் றுணராமை, i.e. ஒற்று ஒற்று உணராமை, ‘one spy not knowing another spy’. That is the sense every commentator, including Parimelazhagar, gives, and the -எற்று form is best explained as a sandhi or scribal variant. Mu. Varadarasanar and Kalaignar read the second line as ‘if the three agree, take it as true’. Pappaiah is more cautious: even when three agree, examine it before accepting. The rule is strikingly close to Arthashastra 1.12, which requires agreement from three independent sources and says the spy-units must not know one another.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Neither the institutes of espionage nor they (the wandering spies) shall know each other … When the information thus received from these three different sources is exactly of the same version, it shall be held reliable. If they (the three sources) frequently differ, the spies concerned shall either be punished in secret or dismissed.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/kautilya-arthashastra/d/doc365590.html" target="_blank" rel="noopener">Kautilya, Arthashastra 1.12 (trans. R. Shamasastry)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Kautilya requires spy networks that do not know one another and accepts a report only when three independent sources agree.</div>
+  <div class="tieback">Spies unaware of one another and three agreeing sources: both halves of the Kural, point for point.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">In the story of Susanna, the young Daniel separates the two elders who have falsely accused her and questions each alone about which tree the alleged act happened under. One says a mastic tree and the other a holm oak, their lie is exposed, and Susanna is saved.</div>
+  <div class="cite">&mdash; <a href="https://www.kingjamesbibleonline.org/Susanna-Chapter-1/" target="_blank" rel="noopener">Susanna (Daniel 13 in Catholic and Orthodox Bibles; KJV Apocrypha), vv. 51-59 (paraphrase)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">By keeping the witnesses apart, Daniel makes sure their stories are truly independent, so their disagreement shows the truth.</div>
+  <div class="tieback">Keeping informants from knowing one another and then comparing their words is the Kural’s method exactly.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And bring to witness two witnesses from among your men … That is more just in the sight of Allāh and stronger as evidence and more likely to prevent doubt between you.&rdquo;</div>
+  <div class="cite">&mdash; Quran 2:282 (Sahih International, excerpt) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Quran requires more than one witness for important transactions, because corroboration strengthens evidence and removes doubt.</div>
+  <div class="tieback">Several witnesses to remove doubt reflects the Kural’s agreement of three.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;And afterward they bring in the second witness and examine him in the same manner. If their statements are found to be congruent the judges then discuss the matter.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Mishnah_Sanhedrin.3.6" target="_blank" rel="noopener">Mishnah Sanhedrin 3:6 (William Davidson / Koren-Steinsaltz translation, Sefaria)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Mishnah requires witnesses to be questioned one at a time with the others sent out of the room, and their testimony counts only if their separate accounts agree.</div>
+  <div class="tieback">Separate examination so that no witness knows another’s answer, followed by a check for agreement, is the Kural’s procedure in a courtroom.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Without approval and without scorn, but carefully studying the sentences word by word, one should trace them in the Discourses and verify them by the Discipline.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/dn/dn.16.1-6.vaji.html" target="_blank" rel="noopener">Digha Nikaya 16, Mahāparinibbāna Sutta 4.8-11 (trans. Sister Vajira &amp; Francis Story)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In the ‘four great references’, the Buddha says that any claim to be his teaching must be checked against two independent standards, the Suttas and the Vinaya, before it is accepted.</div>
+  <div class="tieback">Accepting a report only when independent sources agree is the principle behind the Kural’s three agreeing spies.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;He who understands the true nature of all substances by means of all proofs (pramâna) and nayas, believes by a complete course of study.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 28.24 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Jain epistemology holds that a thing is properly known only when it is examined through valid means of knowledge (pramāṇa) and from several partial standpoints (naya), which are then brought together.</div>
+  <div class="tieback">The Kural trusts a matter only when three independent spies&#x27; reports agree; the Jain method likewise reaches confidence by combining several separate lines of evidence and viewpoint rather than relying on one.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Meeting with the council, my doubts were not dispelled. The chiefs did not give me satisfaction.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 621, Raag Sorath, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Guru Arjan describes turning to the village council (the panch) and to the chiefs, and finding that neither could set his anxious mind at rest.</div>
+  <div class="tieback">The Kural trusts a matter once three independent spies agree; Guru Arjan&#x27;s verse is the nearest Sikh reflection on seeking certainty from several authorities, and it is partly a counterpoint, since their word did not settle his doubt.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">To test the oracles, King Croesus sent separate messengers to several shrines at once, each to ask on the hundredth day what the king was doing at that moment. Only Delphi (and, by some accounts, Amphiaraus) answered correctly, that he was boiling a tortoise and lamb in a bronze pot.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Hdt.%206.86" target="_blank" rel="noopener">Herodotus, Histories 1.46-49 (paraphrase)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Croesus set up independent, simultaneous inquiries so that the sources could not coordinate, then trusted only those that proved accurate.</div>
+  <div class="tieback">Independent informants who cannot confer, judged by whether their answers match reality, is the Kural’s method in legendary form.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Thucydides says he did not rely on the first account he heard or on his own impressions, but tested every report as rigorously as he could, which was hard because different eyewitnesses gave differing accounts of the same events.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/7142" target="_blank" rel="noopener">Thucydides, History of the Peloponnesian War 1.22 (paraphrase)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">The founder of critical history describes his method as cross-examining several independent witnesses.</div>
+  <div class="tieback">Comparing independent reports and accepting only what holds up is what the Kural asks of a king.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Independent reports and air photographs confirm the German rocket site at Peenemunde</div>
+  <div class="rle-meta">1939-1943 &middot; Peenemunde, Germany, and RAF Medmenham, England</div>
+  <div class="quote is-paraphrase">From 1939 British intelligence received scattered reports, including the anonymous Oslo Report, that Germany was developing long-range rockets and other secret weapons, but these were at first doubted. Reports from other sources pointed to Peenemunde on the Baltic coast, and photo-reconnaissance flights between 1942 and 1943 were examined by interpreters at RAF Medmenham, where Constance Babington Smith&#x27;s section searched for secret weapons. When separate lines of intelligence and the aerial photographs agreed, Bomber Command attacked Peenemunde on the night of 17-18 August 1943 in Operation Hydra.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">No single report was trusted on its own; action came only when separate, unconnected sources told the same story.</div>
+  <div class="tieback">The kural says to use agents who do not know of one another and to trust a matter when their separate reports agree, which is how Britain confirmed the threat from Peenemunde before striking it.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-59/" target="_blank" rel="noopener">Thirukkural Chapter 59: ஒற்றாடல் / Detectives (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-059.html" target="_blank" rel="noopener">ஒற்றாடல் - அதிகாரம் 59 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="http://thirukkural-thamizh.org/html/A059.html" target="_blank" rel="noopener">59. ஒற்றாடல் (ஒற்றரை ஆளும் திறம்) - Thirukkural text</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.wisdomlib.org/hinduism/book/kautilya-arthashastra/d/doc365590.html" target="_blank" rel="noopener">Kautilya, Arthashastra, Book 1, Chapter 12: Creation of Wandering Spies, trans. R. Shamasastry</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://www.kingjamesbibleonline.org/Susanna-Chapter-1/" target="_blank" rel="noopener">The History of Susanna (KJV Apocrypha; Daniel 13 in Catholic Bibles)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Mishnah_Sanhedrin.3.6" target="_blank" rel="noopener">Mishnah Sanhedrin 3:6 (William Davidson Edition, Koren-Steinsaltz English)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.accesstoinsight.org/tipitaka/dn/dn.16.1-6.vaji.html" target="_blank" rel="noopener">Maha-parinibbana Sutta: Last Days of the Buddha (DN 16), trans. Sister Vajira &amp; Francis Story</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Hdt.%206.86" target="_blank" rel="noopener">Herodotus, Histories 6.86 — the story of Glaucus of Sparta and the Delphic oracle</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.gutenberg.org/ebooks/7142" target="_blank" rel="noopener">Thucydides, History of the Peloponnesian War, Book 1, trans. Richard Crawley</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://cdn.nationalarchives.gov.uk/documents/education/v1.pdf" target="_blank" rel="noopener">British Response to V1 and V2</a> <span class="tier">[primary source]</span></li>
+<li id="cite-14"><a href="https://www.rafmuseum.org.uk/blog/constance-babington-smith/" target="_blank" rel="noopener">Constance Babington Smith</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0588.html">&larr; Kural 588</a>
+  <a href="kural-0590.html">Kural 590 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-059.html">Detectives</a>
+  <a class="skip-btn" href="kural-0591.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

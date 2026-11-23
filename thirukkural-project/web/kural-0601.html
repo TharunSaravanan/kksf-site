@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 601 — Unsluggishness | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 601</h1>
+<p class="adhikaram"><a href="adhikaram-061.html">Unsluggishness</a> &middot; Madiyinmai &middot; <span class="tamil">மடியின்மை</span></p>
+
+<div class="tamil-text">குடியென்னும் குன்றா விளக்கம் மடியென்னும்
+மாசூர மாய்ந்து கெடும்.</div>
+<div class="translit">Kudiyennum kundraa vilakkam madiyennum
+Maasoora maaindhu kedum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A family is like a lamp that should never go out. But when the dirt of laziness builds up on it, its light fades and dies.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Think of a lamp that has shone in your home for years. If nobody cleans the soot off the glass, the light gets dimmer and dimmer until the room is dark. Laziness is that soot: a family stays bright only if its people keep working and caring.</p>
+
+<h2 class="section">University</h2>
+<p>The opening couplet sets up the chapter’s governing image: குடி (family, lineage) is a குன்றா விளக்கம், a lamp or radiance that of itself would never diminish, and மடி (sloth) is the மாசு, the grime or darkness that ‘spreads over’ (ஊர) it until it dims (மாய்ந்து) and perishes (கெடும்). Parimelazhagar and Mu. Varadarasanar read மாசு as a film of dirt that accumulates by degrees, whereas Solomon Pappaiah and the Rev. Drew/Pope tradition render it as darkness; either way the point is that decline is gradual and self-inflicted rather than sudden and external. The chapter heading மடியின்மை (‘absence of sloth’) follows ஊக்கமுடைமை (ch. 60, energy) and precedes ஆள்வினையுடைமை (ch. 62, manly effort), so Valluvar moves from the positive virtue to the vice that undoes it before turning to sustained effort. The text agrees across ytamizh.com and thirukkural-thamizh.org; the latter prints the older sandhi-joined form (விளக்க மடியென்னு / மாசூர) with no change of wording.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;O Arjun, tamo guṇa, which is born of ignorance, is the cause of illusion for the embodied souls. It deludes all living beings through negligence, laziness, and sleep.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita 14.8 (trans. Swami Mukundananda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna names tamas, literally ‘darkness’, as the quality that binds people through negligence (pramāda), laziness (ālasya) and sleep (nidrā).</div>
+  <div class="tieback">Tamas as a darkness born of laziness is almost exactly the Kural’s image of sloth as the grime that dims the family lamp.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;While the bridegroom tarried, they all slumbered and slept. … And the foolish said unto the wise, Give us of your oil; for our lamps are gone out.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 25:5, 8 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In the parable of the ten virgins, the careless ones let their lamps go out and are shut out of the wedding feast.</div>
+  <div class="tieback">A lamp that goes out through neglect is the same picture as the Kural’s family light dying under sloth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O Allah! I seek refuge with you (Allah) from (worries) care and grief, from incapacity and laziness, from miserliness and cowardice, from being heavily in debt and from being overpowered by other men.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6363" target="_blank" rel="noopener">Sahih al-Bukhari 6363</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Anas reports that the Prophet prayed this often, listing laziness (kasal) among the things a believer should seek God’s protection from.</div>
+  <div class="tieback">Treating laziness as a danger to be warded off matches the Kural’s view of sloth as the stain that ruins a household.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Through slothfulness the ceiling sags, / Through lazy hands the house caves in.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Proverbs.24.30-34" target="_blank" rel="noopener">Ecclesiastes 10:18 (JPS Tanakh, Gender-Sensitive Edition, 2023, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Kohelet notes that a house does not collapse all at once; it sags and leaks gradually when its owners are idle.</div>
+  <div class="tieback">The slowly failing house is the Hebrew counterpart of the Kural’s slowly dimming family lamp.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Saṅgārava Sutta, the Buddha compares a mind overcome by sloth and torpor (thīna-middha) to a bowl of water covered with moss and water plants, in which a man cannot see the reflection of his own face.</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/sn46.55/en/sujato" target="_blank" rel="noopener">Saṃyutta Nikāya 46.55 (Saṅgārava Sutta)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Sloth and torpor is one of the five hindrances; like a film over water, it hides what should be clearly seen, including one’s own good.</div>
+  <div class="tieback">The Kural’s மாசு (grime) spreading over a lamp and the Buddha’s moss spreading over clear water are the same image of sloth as a covering film.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Wealth will not protect a careless man in this world and the next. Though he had seen the right way, he does not see it, even as one in the dark whose lamp has suddenly been put out.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 4.5 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Mahavira&#x27;s sermon on carelessness (pramāda) says that a negligent person loses even the light he once had, like a man whose lamp suddenly goes out in the dark.</div>
+  <div class="tieback">Valluvar&#x27;s family-lamp that sloth dims and puts out has a close counterpart in the Jain image of the careless man whose lamp is put out.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The self-willed manmukh is very lazy; he is trapped in the wilderness.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1011, Raag Maaroo, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak names laziness as a mark of the manmukh, the self-willed person, and says it leaves him lost and trapped.</div>
+  <div class="tieback">The Kural says the grime of laziness dims and puts out the lamp of a family; Guru Nanak likewise shows sloth leading to ruin, though of a person&#x27;s spiritual life rather than a family&#x27;s standing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">At the start of the Odyssey, the house of Odysseus is being eaten up by the suitors while young Telemachus sits passive, until Athena, disguised as Mentes, rouses him to act for his father’s house.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, Odyssey, Books 1-2 (trans. S. Butler)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The great house is wasting away not because of an outside attack but because its heir has not yet stirred himself.</div>
+  <div class="tieback">Like the Kural’s dimming lamp, a noble house fades while its heir stays inactive and revives only when he rouses himself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In The Way to Wealth, Benjamin Franklin’s Poor Richard warns that sloth, like rust, eats away faster than work wears things out, while a key that is used stays bright.</div>
+  <div class="cite">&mdash; <a href="https://founders.archives.gov/documents/Franklin/01-07-02-0146" target="_blank" rel="noopener">Benjamin Franklin, The Way to Wealth (1758)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Franklin argues that idleness wears things away more than work does, and that constant use keeps things bright.</div>
+  <div class="tieback">Franklin’s rust on an unused key and the Kural’s grime on a neglected lamp are the same image of sloth tarnishing what should shine.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Merovingian &#x27;do-nothing kings&#x27; fade before the mayors of the palace</div>
+  <div class="rle-meta">c. 639-751 &middot; Frankish kingdom (now France, Belgium and western Germany)</div>
+  <div class="quote is-paraphrase">After King Dagobert I died in 639, the later Merovingian kings of the Franks came to be called rois faineants, do-nothing kings, because real authority passed step by step to the mayors of the palace who governed in their name. By the 740s the mayors were placing Merovingians such as Childeric III on the throne only to keep up the appearance of royal rule. In 751 the mayor Pippin, with papal approval, had himself made king, and Childeric was deposed, tonsured and confined to the monastery of Sithiu near Saint-Omer.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The dynasty that had founded the Frankish kingdom did not fall in a single blow; its authority dimmed over about a century until it could be removed without a struggle.</div>
+  <div class="tieback">The kural pictures a family as a lamp that grows dim as the grime of sloth settles on it, and the Merovingian line faded in exactly this gradual way until its light went out.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-61/" target="_blank" rel="noopener">Thirukkural Chapter 61: மடியின்மை / Unsluggishness (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A061.html" target="_blank" rel="noopener">61. மடியின்மை (சோம்பல் இன்மை) — Thirukkural text</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita, The Song of God (Swami Mukundananda)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:6363" target="_blank" rel="noopener">Sahih al-Bukhari 6363, Book of Invocations: seeking refuge from incapacity and laziness</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Proverbs.24.30-34" target="_blank" rel="noopener">The JPS Tanakh: Gender-Sensitive Edition (Revised JPS, 2023) — Ecclesiastes 10:18; Proverbs 24:30-34</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://suttacentral.net/sn46.55/en/sujato" target="_blank" rel="noopener">Saṃyutta Nikāya 46.55, Saṅgārava Sutta (the five hindrances compared to troubled water)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, The Odyssey, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://founders.archives.gov/documents/Franklin/01-07-02-0146" target="_blank" rel="noopener">Benjamin Franklin, The Way to Wealth (preface to Poor Richard Improved, 1758)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Childeric-III" target="_blank" rel="noopener">Childeric III</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.worldhistory.org/Merovingian_Dynasty/" target="_blank" rel="noopener">Merovingian Dynasty</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0600.html">&larr; Kural 600</a>
+  <a href="kural-0602.html">Kural 602 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-061.html">Unsluggishness</a>
+  <a class="skip-btn" href="kural-0611.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 80 — The Possession of Love | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 80</h1>
+<p class="adhikaram"><a href="adhikaram-008.html">The Possession of Love</a> &middot; Anbudaimai &middot; <span class="tamil">அன்புடைமை</span></p>
+
+<div class="tamil-text">அன்பின் வழியது உயிர்நிலை அஃதிலார்க்கு
+என்புதோல் போர்த்த உடம்பு.</div>
+<div class="translit">Anbin vazhiyadhu uyirnilai aqdhilaarkku,
+Enbudhol porththa udambu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A body that lives with love is truly alive. For people without love, the body is just bones covered with skin.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A house with people laughing and cooking inside is a home. The same house with nobody in it is just walls. This kural says a person without love is like that empty house — everything is still standing, but nobody is living there.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter closes by pushing its anatomical argument to its conclusion. உயிர்நிலை (uyir-nilai) means the &quot;state&quot; or &quot;seat&quot; of life — the condition in which a body actually counts as living — and Valluvar makes that condition dependent on அன்பின் வழி, the path or way of love. The second line&#x27;s என்பு தோல் போர்த்த உடம்பு is deliberately clinical: bone with skin stretched over it, the description of a cadaver or a scarecrow, and it completes the அன்பு/என்பு wordplay that has run through Kurals 72, 73 and 77. The couplet is frequently cited as the single most quoted line of the chapter and has become proverbial in Tamil. Philosophically it takes a definite position in a live ancient debate about what individuates a living being: Valluvar&#x27;s answer is neither breath nor consciousness but relationship. A body that does not move along love&#x27;s path may be biologically intact and is nonetheless, by his definition, not the seat of a life.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Certainly that heart is steel-framed which, in spite of one&#x27;s chanting the holy name of the Lord with concentration, does not change when ecstasy takes place, tears fill the eyes and the hairs stand on end.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/" target="_blank" rel="noopener">Bhāgavata Purāṇa (Śrīmad-Bhāgavatam) 2.3.24, trans. A. C. Bhaktivedanta Swami Prabhupāda</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Bhāgavata diagnoses a devotee who performs every practice correctly yet feels nothing as having a heart made of metal rather than flesh.</div>
+  <div class="tieback">Both texts identify an unloving interior as a kind of non-living material — steel in one case, dry bone and skin in the other.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;He that loveth not his brother abideth in death.&rdquo;</div>
+  <div class="cite">&mdash; 1 John 3:14, King James Version <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The letter asserts that love is not evidence of spiritual life but its actual criterion — those who do not love are described as still residing in death, present tense.</div>
+  <div class="tieback">This is the Kural&#x27;s definition in five words: without love, what looks like a living person is a body in the condition of death.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Beware! There is a piece of flesh in the body; if it becomes good (reformed) the whole body becomes good, but if it gets spoilt the whole body gets spoilt, and that is the heart.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:52" target="_blank" rel="noopener">Ṣaḥīḥ al-Bukhārī 52 (Book of Belief), narrated by al-Nuʿmān ibn Bashīr</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet makes the condition of one internal organ determinative of the condition of the entire body, using the same part-whole anatomy the Kural uses.</div>
+  <div class="tieback">Both take the inner organ, not the frame, as the thing that decides whether the whole body amounts to anything.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;A new heart also will I give you, and a new spirit will I put within you: and I will take away the stony heart out of your flesh, and I will give you an heart of flesh.&rdquo;</div>
+  <div class="cite">&mdash; Ezekiel 36:26, King James Version <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Ezekiel&#x27;s promise of restoration is described as an organ transplant: the defining change is the replacement of a heart of stone with a heart capable of feeling.</div>
+  <div class="tieback">Ezekiel and Valluvar both treat the unloving person as physically miscomposed — stone where flesh should be, bone and skin where a life should be.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Ere long, alas! this body will lie upon the earth, unheeded and lifeless, like a useless log.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 41, trans. Acharya Buddharakkhita <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Spoken over a monk whose diseased body had been abandoned by his fellows, the verse strips the body of every claim to significance once life has left it.</div>
+  <div class="tieback">The Dhammapada&#x27;s useless log and the Kural&#x27;s bone wrapped in skin are the same reduction of a body without what animates it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;This body is not permanent, it is impure and of impure origin; it is but a transitory residence (of the soul) and a miserable vessel of suffering. I take no delight in this transitory body which one must leave sooner or later, and which is like foam or a bubble.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 19.12–13 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Prince Mrigâputra tells his parents why he will renounce the world: the body is only an impure, temporary lodging of the soul.</div>
+  <div class="tieback">Valluvar says that without love the body is just bones wrapped in skin; the Jain prince shares the view of the bare body as a mere vessel, but finds the remedy in renunciation rather than love.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Fareed, that body, within which love of the Lord does not well up - look upon that body as a cremation ground.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1379, Salok Sheikh Farid (salok 36) (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In a salok preserved in the Guru Granth Sahib, the Sufi saint Sheikh Farid declares that a body in which love does not arise is not truly alive but a place of the dead.</div>
+  <div class="tieback">It is almost exactly the Kural&#x27;s verdict: without love, the body is mere bone wrapped in skin, a corpse rather than the seat of life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In the underworld Odysseus meets the dead as bodiless shades — &#x27;strengthless heads&#x27; that flit and gibber, that he must feed with sacrificial blood before they can even speak, and that his arms pass straight through when he tries to embrace his own mother.</div>
+  <div class="cite">&mdash; Homer, Odyssey, Book XI (the Nekyia) <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Homer&#x27;s shades retain their shape and their memories but have lost everything that made them able to hold or be held by anyone.</div>
+  <div class="tieback">They are the Kural&#x27;s loveless body from the other direction: a human form that can no longer participate in any bond, and so is not really alive.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Suppose that the eye were an animal — sight would have been its soul… when seeing is removed the eye is no longer an eye, except in name — it is no more a real eye than the eye of a statue or of a painted figure.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/soul.2.ii.html" target="_blank" rel="noopener">Aristotle, De Anima II.1, 412b, trans. J. A. Smith</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Aristotle argues that the soul is the actuality or functional form of a body, so an organ that cannot perform its function is an organ in name only, however intact its matter.</div>
+  <div class="tieback">Aristotle supplies the exact metaphysics of Valluvar&#x27;s closing line: a body that cannot do what a body is for is bone and skin bearing the name of a person.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Baba Amte founds Anandwan for people with leprosy</div>
+  <div class="rle-meta">1949-1951 &middot; Warora, Chandrapur district, Maharashtra, India</div>
+  <div class="quote is-paraphrase">Murlidhar Devidas Amte, known as Baba Amte, gave up a prosperous legal career to serve people with leprosy, who were widely shunned. In 1951, with his family, six leprosy patients and a lame cow, he settled on a stretch of stony wasteland in Chandrapur district and built Anandwan, the Forest of Joy, a self-supporting community run by and for people with the disease. He received the Ramon Magsaysay Award in 1985 and shared the Templeton Prize in 1990.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Amte&#x27;s whole life was organised around love for people others rejected, and it turned barren land into a living community.</div>
+  <div class="tieback">The kural says a body that moves along the path of love is truly alive, and Amte&#x27;s life, spent in the service of the shunned, is a vivid example of that path.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-8/" target="_blank" rel="noopener">திருக்குறள் — அதிகாரம் 8: அன்புடைமை / The Possession of Love (Tamil text, transliteration, Pope&#x27;s English couplets, and commentaries of Mu. Varadarajan, Solomon Pappaiah, Karunanidhi and Sivayogi Sivakumar)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://kural.page/tamil/adhigaram-anputaimai" target="_blank" rel="noopener">அன்புடைமை | Anputaimai — Thirukkural Chapter 8 (Tamil text, transliteration, and the commentaries of Parimelalhagar, Manakkudavar, Devaneya Pavanar, Mu. Varadarajan, Solomon Pappaiah, Karunanidhi and Puliyur Kesikan)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/sb/" target="_blank" rel="noopener">Śrīmad-Bhāgavatam (Bhāgavata Purāṇa), translation and commentary by A. C. Bhaktivedanta Swami Prabhupāda</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:52" target="_blank" rel="noopener">Ṣaḥīḥ al-Bukhārī 52 — Book of Belief (the piece of flesh in the body: the heart), narrated by al-Nuʿmān ibn Bashīr</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Aristotle/soul.2.ii.html" target="_blank" rel="noopener">Aristotle, De Anima (On the Soul), Book II chapter 1 (412b), trans. J. A. Smith</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/biography/Baba-Amte" target="_blank" rel="noopener">Baba Amte (Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://rmaward.asia/rmawardees/amte-murlidhar-devidas/" target="_blank" rel="noopener">Amte, Murlidhar Devidas</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.templetonprize.org/serving-god-by-serving-others-the-legacy-of-baba-amte/" target="_blank" rel="noopener">Serving God by Serving Others: The Legacy of Baba Amte</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0079.html">&larr; Kural 79</a>
+  <a href="kural-0081.html">Kural 81 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-008.html">The Possession of Love</a>
+  <a class="skip-btn" href="kural-0081.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 70 — The Wealth of Children | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 70</h1>
+<p class="adhikaram"><a href="adhikaram-007.html">The Wealth of Children</a> &middot; Pudhalvaraip Perudhal &middot; <span class="tamil">புதல்வரைப் பெறுதல்</span></p>
+
+<div class="tamil-text">மகன்தந்தைக்கு ஆற்றும் உதவி இவன்தந்தை
+என்நோற்றான் கொல்எனும் சொல்.</div>
+<div class="translit">Makandhandhaikku Aatrum Udhavi Ivandhandhai,
+Ennotraan Kol Enum Sol.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The best thing a son can do for his father is to live so well that people ask, ‘What great good did his father do to have such a son?’</p>
+
+<h2 class="section">Elementary</h2>
+<p>How does a child pay a parent back? Not with money. This kural says you pay them back by being so good that when people meet you they think, &quot;Wow — whoever raised this person must have done something really special.&quot;</p>
+
+<h2 class="section">University</h2>
+<p>The chapter closes by completing the reciprocal pair begun in 67: there the father&#x27;s duty was to place the son foremost in the assembly; here the son&#x27;s உதவி (utavi, &quot;help, requital&quot;) is to generate a particular sentence in other people&#x27;s mouths. The verb நோல் / நோற்றல் (nōṟṟal) means to undertake tapas — ascetic austerity, penance — so என்நோற்றான் கொல் literally asks &quot;what penance can he have performed?&quot; The idiom presumes the karmic economy in which a son of high quality is earned by merit, and Valluvar&#x27;s wit is to make the son&#x27;s whole filial duty consist in causing that inference to be drawn. Parimēlaḻakar underlines the point that the requital is owed specifically to the father who made him learned — i.e. it answers couplet 67 directly — and he glosses சொல் as standing, by metonymy, for the conduct that produces the saying. Note what the couplet conspicuously does not say: nothing about supporting parents in old age, obedience, or ritual duty. The entire obligation is discharged through character as publicly perceived, which is a strikingly reputational, non-transactional construal of filial piety.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Daśaratha, childless and aging, performs the putrakāmeṣṭi sacrifice under Ṛṣyaśṛṅga to obtain sons, and receives Rāma and his brothers; thereafter the people of Ayodhyā speak of Rāma&#x27;s virtues in terms that reflect glory back onto the father who obtained him by austerity.</div>
+  <div class="cite">&mdash; <a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Vālmīki Rāmāyaṇa, Bāla Kāṇḍa (the putrakāmeṣṭi of Daśaratha)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The epic supplies the literal background the Kural&#x27;s idiom assumes — a father who performed rites and austerities in order to deserve a son, and a son whose excellence publicly vindicates them.</div>
+  <div class="tieback">The Kural&#x27;s imagined bystander asking what penance the father performed is asking exactly the question Daśaratha&#x27;s story answers.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And lo a voice from heaven, saying, This is my beloved Son, in whom I am well pleased.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 3:17 (King James Version) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">At the Jordan, the father&#x27;s satisfaction in the son is declared publicly, before the crowd, at the moment the son begins his work.</div>
+  <div class="tieback">Both texts make the son&#x27;s worth into a public utterance that redounds to the father, though here the father speaks rather than the onlookers.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And lower to them the wing of humility out of mercy and say, &#x27;My Lord, have mercy upon them as they brought me up [when I was] small.&#x27;&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 17:24, Sūrat al-Isrāʾ (Sahih International) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Qur&#x27;an prescribes the son&#x27;s requital to his parents in old age as humility and intercessory prayer, framed as repayment for the upbringing he received.</div>
+  <div class="tieback">Both texts define what a grown child owes a parent, though the Qur&#x27;an makes it prayer and deference while the Kural makes it reputation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;A wise son maketh a glad father: but a foolish son is the heaviness of his mother.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 10:1 (King James Version) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The proverb states the return on parenting in the simplest possible form: the child&#x27;s character is what the parent receives.</div>
+  <div class="tieback">Both texts make the son&#x27;s standing, rather than any material support, the thing the parent actually gets back.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Buddha says that even if one carried one&#x27;s mother on one shoulder and one&#x27;s father on the other for a hundred years, tending them the whole time, one would still not have repaid them; but whoever establishes parents who lack faith, virtue, generosity and wisdom in those four things has repaid them and more.</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/an2.32-41" target="_blank" rel="noopener">Aṅguttara Nikāya 2.34 (Book of the Twos, on repaying one&#x27;s parents)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Physical service is declared structurally insufficient as repayment; only raising the parents&#x27; own moral and spiritual condition counts.</div>
+  <div class="tieback">Like the Kural, it rejects material or bodily support as the true filial return and substitutes something the son achieves in the realm of character.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">Mahâvîra stayed in his parents&#x27; house until they died, then fulfilled his promise and renounced the world, and the Laukântika gods hailed him: ‘Victory, victory to thee, gladdener of the world! … Establish the religion of the law which benefits all living beings in the whole universe!’</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Kalpa Sutra, Life of Mahâvîra §§110–111 (tr. Hermann Jacobi, SBE 22, 1884)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The son kept his vow not to leave home during his parents&#x27; lifetime, and his later life drew the praise of gods and men.</div>
+  <div class="tieback">The kural says a son repays his father by living so that others marvel at the father who produced him; Mahâvîra&#x27;s dutiful wait and the praise that followed match this only loosely.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Blessed, blessed is the father; blessed, blessed is the family; blessed, blessed is the mother, who gave birth to the Guru.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 310, Raag Gauri, Gauri ki Vaar, Salok Mahala 4, Guru Ram Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Guru Ram Das praises the True Guru by calling his father, family and mother blessed for having produced him; the child&#x27;s greatness reflects back on the parents.</div>
+  <div class="tieback">This is almost exactly the response Valluvar says a worthy son should draw from people: seeing him, they call his father blessed.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Zeus, all you other gods, grant that this child, my son, may become, like me, pre-eminent among the Trojans, as strong and brave as me. Grant that he may rule Troy with strength. May people someday say, as he returns from war, &#x27;This man is far better than his father.&#x27;&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad 6.476–481 (trans. Ian Johnston, Vancouver Island University)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Hector, holding his infant son on the walls of Troy, prays not that the boy honour him but that strangers one day judge the son superior to the father — and counts that as the outcome he most wants.</div>
+  <div class="tieback">This is the Kural&#x27;s mechanism exactly: the son discharges his debt by causing a particular sentence to be said about him in public, which redounds to the father.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Would anyone have heard of Aristo and Gryllus except through Xenophon and Plato, their sons? Socrates keeps alive the memory of Sophroniscus.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/On_Benefits/Book_III" target="_blank" rel="noopener">Seneca, On Benefits (De Beneficiis), Book III, ch. 32 (tr. Aubrey Stewart)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Arguing that a son can repay and even surpass what his father gave him, Seneca points out that many fathers are remembered only because of what their sons became, citing Agrippa’s obscure father alongside the fathers of Plato, Xenophon and Socrates.</div>
+  <div class="tieback">This is the Kural’s idea of a son’s service exactly: the child’s worth becomes the way the world comes to honour the parent.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Dorabji Tata completes his father Jamsetji&#x27;s steel works</div>
+  <div class="rle-meta">1907 &middot; Sakchi (now Jamshedpur), Jharkhand, India</div>
+  <div class="quote is-paraphrase">Jamsetji Tata began planning India&#x27;s first large-scale iron and steel works in the early 1900s but died in Germany in May 1904. His elder son Dorabji carried the project forward, and the Tata Iron and Steel Company was incorporated in 1907, with a plant and township built at the village of Sakchi. In 1919 the township was renamed Jamshedpur in Jamsetji&#x27;s honour.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">The son&#x27;s work kept his father&#x27;s name at the centre of the achievement, so that a whole city came to be named after the father.</div>
+  <div class="tieback">The kural says a son repays his father by living so that people ask what the father did to deserve such a son, and Dorabji&#x27;s work made Jamsetji&#x27;s name permanent in the city of Jamshedpur.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.tamillexicon.com/thirukkural/araththuppaal/illaraviyal/pudhalvaraip-perudhal" target="_blank" rel="noopener">மக்கட்பேறு / The Wealth of Children / Pudhalvaraip Perudhal — Thirukkural Chapter 7, with Tamil paraphrase, Pope couplet, explanation and transliteration</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-007.html" target="_blank" rel="noopener">The Wealth of Children — Adhigaram 7, Thirukkural (Tamil text, transliteration, Brahmi script and multilingual translations)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.thirukkural.com/2009/01/blog-post_14.html" target="_blank" rel="noopener">மக்கட்பேறு — Thirukkural Chapter 7 with the classical commentaries of Parimelalagar, Manakkudavar, Mu. Varadarajan, Salamon Pappaiah and Kalaignar</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.ytamizh.com/thirukural/chapter-7/" target="_blank" rel="noopener">மக்கட்பேறு / புதல்வரைப் பெறுதல் — Thirukkural Chapter 7, Kurals 61–70 with Tamil commentaries and English translation</a> <span class="tier">[web source]</span></li>
+<li id="cite-5"><a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Vālmīki Rāmāyaṇa (Bāla Kāṇḍa: the putrakāmeṣṭi of Daśaratha; Ayodhyā Kāṇḍa: Kausalyā and Rāma)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://suttacentral.net/an2.32-41" target="_blank" rel="noopener">Aṅguttara Nikāya 2.33–34 (Book of the Twos) — one cannot repay one&#x27;s parents except by establishing them in faith, virtue, generosity and wisdom</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Kalpa Sūtra (Kalpa Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad, Book 21, translated by A. T. Murray (Loeb Classical Library, 1924)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://en.wikisource.org/wiki/On_Benefits/Book_III" target="_blank" rel="noopener">On Benefits (De Beneficiis), Book III (Lucius Annaeus Seneca)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/money/Jamsetji-Nusserwanji-Tata" target="_blank" rel="noopener">Jamsetji Tata (Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.tata.com/about-us/tata-group-our-heritage/Our-Timeline-The-Early-Years-1868-1917" target="_blank" rel="noopener">1868-1917: The Early Years (Tata Group)</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0069.html">&larr; Kural 69</a>
+  <a href="kural-0071.html">Kural 71 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-007.html">The Wealth of Children</a>
+  <a class="skip-btn" href="kural-0071.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

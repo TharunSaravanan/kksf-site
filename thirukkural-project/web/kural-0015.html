@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 15 — The Excellence of Rain | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 15</h1>
+<p class="adhikaram"><a href="adhikaram-002.html">The Excellence of Rain</a> &middot; Vaan Sirappu &middot; <span class="tamil">வான் சிறப்பு</span></p>
+
+<div class="tamil-text">கெடுப்பதூஉம் கெட்டார்க்குச் சார்வாய்மற் றாங்கே
+எடுப்பதூஉம் எல்லாம் மழை.</div>
+<div class="translit">Keduppadhoum kettaarkkuch chaarvaai matraange,
+Eduppadhoum ellaam mazhai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Rain can hurt people by not falling. And when it falls again, that same rain lifts those people back up. Rain does it all.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Fire can burn your hand, and fire can also cook your dinner — the same thing can hurt you or help you. This kural says rain is like that: too little or too much can wreck everything, and then the right rain at the right time puts it all back together.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet is built on a tight antithesis — கெடுப்பது (&quot;that which destroys&quot;) against எடுப்பது (&quot;that which lifts up&quot;) — each carrying the அளபெடை elongation -தூஉம் that gives the line its rocking, pendulum rhythm. Commentators divide on the mechanism of ruin: Parimelazhagar reads கெடுப்பது as rain destroying by withholding itself, while modern paraphrasts such as Kalaignar Karunanidhi allow the destructive flood as well, and both readings are defensible from the Tamil. Strikingly, Valluvar assigns the double agency to rain itself rather than to a god who sends it, and the closing எல்லாம் (&quot;all of it&quot;) refuses to split the credit. The verse is a favourite of Tamil ecological writing because it treats the same natural force as both hazard and remedy without moralising either face.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;O Arjuna, I control heat, the rain and the drought. I am immortality, and I am also death personified. Both being and nonbeing are in Me.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 9.19 (Bhaktivedanta, Bhagavad-gītā As It Is, 1972)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Krishna claims both the withholding and the sending of rain as his own act, and in the same breath claims both deathlessness and death.</div>
+  <div class="tieback">It is the Kural&#x27;s double agency exactly — the identical power that destroys by withholding also restores by pouring.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;He causeth it to come, whether for correction, or for his land, or for mercy.&rdquo;</div>
+  <div class="cite">&mdash; Job 37:13 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Elihu, describing the clouds, says the same rain may arrive as chastisement, as ordinary provision for the land, or as sheer mercy.</div>
+  <div class="tieback">This is the Kural&#x27;s claim that rain both ruins and raises, condensed into a single verse.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">During a drought a man interrupted the Friday sermon to say that livestock were dying and the roads cut off, and asked the Prophet to pray for rain; rain then fell for a week until people returned asking him to pray for it to stop, and he said, in effect, around us and not upon us — whereupon the clouds broke apart over Medina.</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari/15" target="_blank" rel="noopener">Sahih al-Bukhari 1013–1014 (Book of Istisqā), narrated by Anas ibn Malik</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">This well-known hadith of the istisqā (rain-seeking prayer) records a community harmed first by too little rain and then by too much within a single week.</div>
+  <div class="tieback">It is a lived instance of the Kural&#x27;s paradox: rain ruins and rain restores, and the difference is only measure and timing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Honi the Circle-Drawer, asked to pray for rain in a drought, drew a circle and refused to leave it until rain fell. Drops came, and he objected that he had asked for more; a violent, destructive downpour followed, and he objected again; only then did rain of goodwill and blessing fall.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Mishnah_Taanit.3.8" target="_blank" rel="noopener">Mishnah Ta&#x27;anit 3:8 (and Babylonian Talmud Ta&#x27;anit 19a–23a)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Mishnah preserves this story as a study in the difference between rain that is too little, rain that is ruinous, and rain that is a blessing.</div>
+  <div class="tieback">It stages the Kural&#x27;s whole couplet as a narrative — the same rain destroying and then lifting up.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Just as rain seeps into a poorly roofed house, lust seeps into an undeveloped mind. Just as rain doesn&#x27;t seep into a well roofed house, lust doesn&#x27;t seep into a well developed mind.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/dhp1-20/en/sujato" target="_blank" rel="noopener">Dhammapada 13–14 (Bhikkhu Sujato translation)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Dhammapada pairs two verses in which the identical rain either penetrates and damages or is harmlessly shed, depending entirely on the condition of what receives it.</div>
+  <div class="tieback">It shares the Kural&#x27;s structure of one rain producing opposite outcomes, though here the rain is harmful in both halves.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Then the clouds will be without water. Clouds of acid and clouds of vinegar, clouds of poison, fire, and lightning will rain what is similar to themselves.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Hemacandra, Trishashtishalakapurushacharitra, Book X (Mahaviracharitra), ch. XIII, &#x27;The sixth spoke&#x27; (tr. Helen M. Johnson)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Jain cosmology pictures the worst age ending with destructive rains that ruin fields, forests, and grass, after which the five nourishing clouds of the next age bring the earth back to life.</div>
+  <div class="tieback">This two-sided picture of rain that first lays the world waste and then raises it again closely mirrors the Kural&#x27;s claim that rain both ruins and restores.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Some sing that He fashions the body, and then again reduces it to dust. Some sing that He takes life away, and then again restores it.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1, Japji Sahib, Pauri 3, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Japji lists the ways people praise God: as the one who both destroys and restores, who takes life away and gives it back.</div>
+  <div class="tieback">The Kural gives rain this double power to ruin and to raise up again. Sikh scripture gives the same double power to God working through hukam.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Angered by human wickedness, Zeus unleashes unending rain and floods the world, drowning the whole race except Deucalion and Pyrrha; when the waters recede the pair are told to throw the bones of their mother behind them, and the stones they cast become a new human race.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses 1.253–415 (the flood of Deucalion and Pyrrha)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Ovid&#x27;s telling makes the same downpour the instrument of annihilation and the prelude to humanity&#x27;s re-founding.</div>
+  <div class="tieback">It is the Kural&#x27;s couplet in mythic form: rain destroys utterly, and then the destroyed are raised up again.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Philosophy, speaking in the voice of Fortune, tells Boethius that turning her wheel is simply what she is: she delights in raising the lowest to the top and bringing the highest down, and no one who steps onto the wheel may complain when it comes round.</div>
+  <div class="cite">&mdash; Boethius, The Consolation of Philosophy, Book II, Prose 2 (Fortune&#x27;s wheel) <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">The Consolation uses the wheel to argue that a single impersonal power is responsible for both elevation and ruin, and that expecting only its upward motion is a category error.</div>
+  <div class="tieback">It matches the Kural&#x27;s insistence that one and the same force is the destroyer and the lifter-up — &quot;all of it.&quot;</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Egypt completes the Aswan High Dam</div>
+  <div class="rle-meta">21 July 1970 &middot; Aswan, Egypt</div>
+  <div class="quote is-paraphrase">After about eleven years of construction, the Aswan High Dam across the Nile was completed in 1970. Its main purpose was to store enough water in its reservoir, Lake Nasser, to protect Egypt from years when the Nile flood was too high or too low. The dam ended the old cycle of damaging floods and droughts along the Egyptian Nile.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Egypt built one of the world&#x27;s largest dams because the same seasonal waters that made its farmland fertile could also ruin it, by flooding or by failing.</div>
+  <div class="tieback">The kural says rain both ruins people and raises them up again, and the Aswan High Dam was built precisely to manage the waters that had long done both to Egypt.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-2/" target="_blank" rel="noopener">வான்சிறப்பு / The Blessing of Rain — Thirukkural Chapter 2 (Kurals 11–20), Tamil text with transliteration, English couplets and four Tamil commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-002.html" target="_blank" rel="noopener">The Excellence of Rain — Adhigaram 2, Thirukkural</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://dailyprojectthirukkural.blogspot.com/2017/11/Athikaaram002.html" target="_blank" rel="noopener">002 வான்சிறப்பு — chapter index with the full Tamil text of Kurals 11–20</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/bukhari/15" target="_blank" rel="noopener">Sahih al-Bukhari 1013–1014, Book of Istisqā (Invoking Allah for Rain), narrated by Anas ibn Malik</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Mishnah_Taanit.3.8" target="_blank" rel="noopener">Mishnah Ta&#x27;anit 1:4–7 and 3:8 (the escalating public fasts for rain; Honi the Circle-Drawer)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://suttacentral.net/dhp1-20/en/sujato" target="_blank" rel="noopener">Dhammapada, translated by Bhikkhu Sujato</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses, Book 1 (the flood of Deucalion and Pyrrha, 1.253–415)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12">The Consolation of Philosophy (Boethius) <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.history.com/this-day-in-history/july-21/aswan-high-dam-completed" target="_blank" rel="noopener">Aswan High Dam completed</a> <span class="tier">[web source]</span></li>
+<li id="cite-14"><a href="https://www.britannica.com/topic/Aswan-High-Dam" target="_blank" rel="noopener">Aswan High Dam</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0014.html">&larr; Kural 14</a>
+  <a href="kural-0016.html">Kural 16 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-002.html">The Excellence of Rain</a>
+  <a class="skip-btn" href="kural-0021.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

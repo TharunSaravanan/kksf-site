@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1195 — The Solitary Anguish | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1195</h1>
+<p class="adhikaram"><a href="adhikaram-120.html">The Solitary Anguish</a> &middot; Thanippadar Mikudhi &middot; <span class="tamil">தனிப்படர் மிகுதி</span></p>
+
+<div class="tamil-text">நாம்காதல் கொண்டார் நமக்கெவன் செய்பவோ
+தாம்காதல் கொள்ளாக் கடை.</div>
+<div class="translit">Naamkaadhal kondaar namakkevan seypavo
+thaamkaadhal kollaak kadai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If the one I love does not love me back, what good can he possibly do for me?</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you keep waving at someone across the playground and they never wave back, the waving can’t make you happy. Love needs someone answering from the other side.</p>
+
+<h2 class="section">University</h2>
+<p>The question form nam(a)kku evaṉ ceypavō, ‘what will they do for us?’, is rhetorical: the heroine admits that her own love (nām kātal koṇṭār, ‘the one we have taken love for’) can bring her nothing if tām kātal koḷḷā kaṭai, ‘when he does not take love (for us).’ Parimelazhagar’s reading, followed by Varadarasanar, makes the implied answer ‘no good at all’; Pappaiah and Kalaignar render ‘what joy will he give?’ The polite plural (koṇṭār, ceypa) keeps the husband at a distance even as she complains. Pope: ‘From him I love to me what gain can be, / Unless, as I love him, he loveth me?’ Text identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Bhramara Gita, a gopi who has been left behind by Krishna sees a bee and addresses it as his messenger, bitterly asking what use his sweet words are when he has forgotten them, and comparing him to a bee that leaves each flower once it has drunk its nectar.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Bhagavata Purana 10.47, Bhramara Gita (paraphrase)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The gopis voice the bitterness of a love that is not answered with presence or care.</div>
+  <div class="tieback">The gopi’s question ‘what good is he to us now?’ is the heroine’s question in the Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For if ye love them which love you, what thank have ye? for sinners also love those that love them.&rdquo;</div>
+  <div class="cite">&mdash; Luke 6:32 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus teaches that love which only answers love is nothing special, and calls for love that expects no return.</div>
+  <div class="tieback">Here Christianity pushes against the Kural’s complaint: the Gospel asks for love that does not depend on being loved back.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O `Abbas ! are you not astonished at the love of Mughith for Barira and the hatred of Barira for Mughith?” … She said, “I am not in need of him.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:5283" target="_blank" rel="noopener">Sahih al-Bukhari 5283</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Ibn Abbas recalls Mughith following his freed wife Barira through Medina, weeping, while she refused even the Prophet’s intercession for him.</div>
+  <div class="tieback">Mughith’s tears show the Kural’s truth: love given to one who does not return it brings nothing but grief.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Because the LORD hath looked upon my affliction; for now my husband will love me.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">Genesis 29:32 (JPS 1917, via Mechon-Mamre)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Leah, married to Jacob who loves her sister Rachel, names her firstborn in the hope that this at last will win her husband’s love.</div>
+  <div class="tieback">Leah’s repeated longing for a husband who does not love her is the heroine’s question in the Kural lived out across a family history.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Sakkapanha Sutta the heavenly musician Pancasikha sings to his lute a love song for Bhadda, who does not return his love, mixing his longing with praise of the Buddha and the arahants; the Buddha remarks on how well the song and the strings agree.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/dn/dn.21.2x.than.html" target="_blank" rel="noopener">Digha Nikaya 21, Sakkapanha Sutta (paraphrase)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The sutta preserves a song of one-sided longing, set within a discourse that leads toward freedom from desire.</div>
+  <div class="tieback">Pancasikha’s unanswered song is the Kural’s situation: love offered to one who gives nothing back.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">Princess Rajimati is betrothed to Arishtanemi, but on the way to the wedding he hears the cries of animals penned for the feast, turns back and renounces the world; Rajimati, grieving, resolves that a love he will not return as a husband can only be followed into renunciation, and becomes a nun.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra, Lecture 22 (Rathanemi) (paraphrase; cf. tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The twenty-second Tirthankara’s story makes the bride’s unreturned love the turning point of her own spiritual life.</div>
+  <div class="tieback">Rajimati faces the Kural’s question, what can he do for me if he does not love me, and answers it the Jain way, by renunciation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;But one who feels good only when good is done for him, and feels bad when things go badly - do not call him a lover. He trades only for his own account.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 474, Raag Aasaa, Asa di Vaar, Guru Angad (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Asa di Vaar, Guru Angad says that love which asks what it will get, and sours when it gets nothing, is not love but trading.</div>
+  <div class="tieback">The Kural&#x27;s wife asks what good her beloved can do her if he does not love her back; Guru Angad answers that real love does not ask what it gains, so the verse is a gentle Sikh counterpoint to her complaint.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In her hymn to Aphrodite, Sappho begs the goddess to come again, and recalls Aphrodite smilingly asking whom she must now persuade to love her, promising that one who now flees will soon pursue.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/" target="_blank" rel="noopener">Sappho, fragment 1 (Hymn to Aphrodite) (paraphrase)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Sappho’s prayer arises because the one she loves does not love her back.</div>
+  <div class="tieback">The Kural’s heroine and Sappho share the same ache: love that is not returned brings only pain.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Spinoza argues that when we love something like ourselves, we strive as far as we can to bring it about that it loves us in return.</div>
+  <div class="cite">&mdash; Spinoza, Ethics, Part III, Proposition 33 (paraphrase) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Spinoza, the desire to be loved back is built into the very nature of love.</div>
+  <div class="tieback">The Kural’s question rests on this same law: love naturally seeks its return, and suffers when it fails.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Ivan Turgenev&#x27;s lifelong devotion to Pauline Viardot</div>
+  <div class="rle-meta">1843–1883 &middot; St Petersburg, Russia; Paris, France; Baden-Baden, Germany</div>
+  <div class="quote is-paraphrase">The Russian writer Ivan Turgenev fell in love with the singer Pauline Viardot when she first performed in Russia in 1843. In 1847 he left Russia for Paris to be near her, and after the Crimean War he moved to Baden-Baden, again to be with her; he wrote the libretto for her operetta Le dernier sorcier (1869). He later settled at Bougival, near Paris, where he died in 1883.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Turgenev organised his whole adult life around a woman who gave him friendship and artistic partnership but never married him.</div>
+  <div class="tieback">The kural asks what good the beloved can do if he does not love in return, and Turgenev&#x27;s decades of following Viardot show both how much such love asks and how little it can be sure of receiving.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-120/" target="_blank" rel="noopener">Thirukkural Chapter 120: தனிப்படர்மிகுதி / The Solitary Anguish (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-120.html" target="_blank" rel="noopener">தனிப்படர் மிகுதி - அதிகாரம் 120 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Srimad Bhagavatam (Bhagavata Purana), Canto 8, chapters 5-8: the curse of Durvasa and the churning of the ocean of milk</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:5283" target="_blank" rel="noopener">Sahih al-Bukhari 5283 (Divorce, Chapter: The intercession of the Prophet for Barira&#x27;s husband)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917), Hebrew-English Bible</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/dn/dn.21.2x.than.html" target="_blank" rel="noopener">Sakkapanha Sutta: Sakka’s Questions (DN 21)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/" target="_blank" rel="noopener">Sappho, fragment 1 (Hymn to Aphrodite)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Ethics, Part IV-V (Baruch Spinoza) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/print/article/627231" target="_blank" rel="noopener">Pauline Viardot</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://sites.middlebury.edu/fathersandsons/turgenev/early-life" target="_blank" rel="noopener">Turgenev: Early Life (Middlebury College)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1194.html">&larr; Kural 1194</a>
+  <a href="kural-1196.html">Kural 1196 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-120.html">The Solitary Anguish</a>
+  <a class="skip-btn" href="kural-1201.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

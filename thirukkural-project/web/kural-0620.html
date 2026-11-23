@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 620 — Manly Effort | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 620</h1>
+<p class="adhikaram"><a href="adhikaram-062.html">Manly Effort</a> &middot; Aalvinaiyudaimai &middot; <span class="tamil">ஆள்வினையுடைமை</span></p>
+
+<div class="tamil-text">ஊழையும் உப்பக்கம் காண்பர் உலைவின்றித்
+தாழாது உஞற்று பவர்.</div>
+<div class="translit">Oozhaiyum uppakkam kaanbar ulaivindrith
+Thaazhaadhu unjatru bavar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who keep working hard without giving up or slowing down will even see fate turn around and run away from them.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Think of a tiny stream running into a big rock. The rock seems stronger, but the water keeps flowing, day after day, until it carves a path around or even through. People who keep going without giving up can get past even the biggest ‘it’s just meant to be’.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter ends with its boldest claim, the one most often quoted: tireless strivers will காண்பர் (see) the உப்பக்கம் (back, rear side) of ஊழ் (fate) itself, a battlefield image of an enemy turning its back in flight (Solomon Pappaiah: விதியையும் புறமுதுகு காட்டக் காண்பர்). The conditions are exacting: உலைவின்றி (without wavering), தாழாது (without delay or slackening) and உஞற்றுபவர் (those who exert themselves, an old verb for effort). Because chapter 38 insists on ஊழின் பெருவலி (fate’s great strength, kural 380), commentators have laboured to reconcile the two; Parimelazhagar and Mu. Varadarasanar soften the claim so that strivers defeat the fate that obstructs a particular undertaking ‘in time’, while Kalaignar reads it as an outright rejection of fatalism. The couplet stands in the same Indian debate as the Mahabharata’s daiva-versus-puruṣakāra discussions and the Yoga Vasishtha’s praise of paurusha; the text agrees in both editions (sandhi: ஊழையு முப்பக்கங் காண்ப ருலைவின்றித் / தாழா துஞற்று பவர்).</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Yoga Vasishtha, Vasishtha tells Prince Rama that what people call fate (daiva) is nothing but the fruit of their own past effort, and that vigorous present effort (paurusha) can overcome it, as the stronger of two fighting rams prevails.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/yoga-vasistha-english" target="_blank" rel="noopener">Yoga Vasishtha, Mumukshu Prakarana (Book 2), chs. 4-9</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Mumukshu section devotes several chapters to arguing that self-effort, not destiny, is the decisive force in human life.</div>
+  <div class="tieback">This is the fullest Sanskrit statement of the Kural’s claim that relentless effort can put fate to flight.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;forgetting those things which are behind, and reaching forth unto those things which are before, I press toward the mark for the prize of the high calling of God in Christ Jesus.&rdquo;</div>
+  <div class="cite">&mdash; Philippians 3:13-14 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul describes his life as an unrelenting forward effort that refuses to be defined by the past.</div>
+  <div class="tieback">Paul’s tireless ‘pressing on’ is the Kural’s உலைவின்றித் தாழாது, striving without faltering or slackening.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Indeed, Allah will not change the condition of a people until they change what is in themselves.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 13:11 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an makes a people’s own inner change the condition on which their fortunes are transformed.</div>
+  <div class="tieback">Human effort as the hinge of changed destiny is the Kural’s point, though framed within divine decree.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Thy name shall be called no more Jacob, but Israel; for thou hast striven with God and with men, and hast prevailed.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Genesis 32:29 (JPS 1917)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">After wrestling all night with a mysterious being and refusing to let go, Jacob is renamed for his striving.</div>
+  <div class="tieback">Jacob’s victory through unrelenting struggle with a superhuman power is the Kural’s striver who makes fate turn its back.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;By effort and heedfulness, discipline and self-mastery, let the wise one make for himself an island which no flood can overwhelm.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 25 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada says that effort builds a refuge that the flood of circumstance cannot sweep away.</div>
+  <div class="tieback">An island built by effort that no flood can overwhelm matches the Kural’s effort that stands firm against fate.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As a large tank, when its supply of water has been stopped, gradually dries up by the consumption of the water and by evaporation, so the Karman of a monk, which he acquired in millions of births, is annihilated by austerities, if there is no influx of bad Karman.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 30.5-6 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jainism teaches that persistent, untiring austerity can wear away even karma built up over countless lives, so no &#x27;destiny&#x27; is beyond the reach of effort.</div>
+  <div class="tieback">The Kural&#x27;s tireless strivers who see fate turn its back match the Jain teaching that unflagging exertion drains away the accumulated karma that makes up one&#x27;s fate.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;He alone is known as a spiritual hero, who fights in defense of religion. He may be cut apart, piece by piece, but he never leaves the field of battle.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1105, Raag Maaroo, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In a hymn of Bhagat Kabir in Raag Maaroo, often recited by Sikhs, the true hero is the one who never gives up the fight, whatever it costs him.</div>
+  <div class="tieback">The Kural promises that those who strive without faltering will see even fate turn its back; Kabir praises the one who never leaves the field, even when cut to pieces.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Although Poseidon pursues him with storms and shipwreck for ten years, Odysseus keeps striving through every disaster and finally reaches Ithaca, winning his homecoming in the teeth of a god’s hostility.</div>
+  <div class="cite">&mdash; Homer, Odyssey, esp. Books 5 and 13 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The Odyssey shows sustained human endurance prevailing against a hostile divine power.</div>
+  <div class="tieback">Odysseus is the Greek image of the Kural’s striver who outlasts adverse fate.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Machiavelli judges that fortune may be arbiter of half our actions but leaves the other half to us, and compares her to a flooding river against which prudent men build dykes and embankments in calm times.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/1232" target="_blank" rel="noopener">Niccolò Machiavelli, The Prince, ch. 25</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">In The Prince, ch. 25, he rejects fatalism and argues that energetic foresight (virtù) can check fortune.</div>
+  <div class="tieback">Machiavelli’s dyke-building against fortune is a Renaissance version of the Kural’s effort that routs fate.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Lis Hartel wins an Olympic dressage medal after polio</div>
+  <div class="rle-meta">1944-1952 &middot; Denmark and Helsinki, Finland</div>
+  <div class="quote is-paraphrase">In 1944 the Danish rider Lis Hartel, then twenty-three and pregnant, contracted polio and was left paralysed below the knees. After years of rehabilitation she returned to competition, finishing second at the 1947 Scandinavian championships, and at the 1952 Helsinki Olympics, the first Games at which women could compete against men in dressage, she won the silver medal on her horse Jubilee. She needed help to mount and dismount, and the gold medallist Henri Saint Cyr helped her onto the podium; she won silver again in 1956.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A rider whom illness seemed to have shut out of her sport became the first woman to win an Olympic equestrian medal.</div>
+  <div class="tieback">The kural says those who strive without faltering or slackening will see even fate turn its back, and Hartel&#x27;s unbroken effort carried her past what polio seemed to have decided for her.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-62/" target="_blank" rel="noopener">Thirukkural Chapter 62: ஆள்வினையுடைமை / Manly Effort (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A062.html" target="_blank" rel="noopener">62. ஆள்வினையுடைமை (இடைவிடாத முயற்சியுடைமை) — Thirukkural text</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.wisdomlib.org/hinduism/book/yoga-vasistha-english" target="_blank" rel="noopener">Yoga Vasishtha, Book 2 (Mumukshu Prakarana), chapters on paurusha (self-effort) versus daiva (fate)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/1232" target="_blank" rel="noopener">Niccolò Machiavelli, The Prince, trans. W. K. Marriott</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.olympics.com/en/news/dressage-silver-for-inspirational-trailblazer-hartel" target="_blank" rel="noopener">Dressage silver for inspirational trailblazer Hartel</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.fei.org/history/olympic-games/1952-helsinki-finland" target="_blank" rel="noopener">1952 Helsinki - Olympic Games</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0619.html">&larr; Kural 619</a>
+  <a href="kural-0621.html">Kural 621 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-062.html">Manly Effort</a>
+  <a class="skip-btn" href="kural-0621.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

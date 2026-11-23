@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 637 — Ministry of State | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 637</h1>
+<p class="adhikaram"><a href="adhikaram-064.html">Ministry of State</a> &middot; Amaichu &middot; <span class="tamil">அமைச்சு</span></p>
+
+<div class="tamil-text">செயற்கை அறிந்தக் கடைத்தும் உலகத்து
+இயற்கை அறிந்து செயல்.</div>
+<div class="translit">Seyarkai arindhak kadaiththum ulakaththu
+Iyarkai arindhu seyal.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Even when you know from books how to do something, act only after you understand how the world really works.</p>
+
+<h2 class="section">Elementary</h2>
+<p>You can read a book about riding a bicycle, but you also need to notice the real road, the bumps and the traffic. This kural says that even after learning the rules, you must look at the real world and act in a way that fits it.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet sets seyarkai, the ‘made’ or acquired knowledge of methods found in treatises, against ulakaththu iyarkai, the natural ways of the world. The minister should act (seyal) only after knowing the second as well as the first. Mu. Varadarasanar’s gloss makes seyarkai explicitly nool arivu (book knowledge). Solomon Pappaiah extends it to methods learned from foreign books and applies iyarkai to the character of one’s own land and people. Commentators in Parimelazhagar’s tradition often recall the grammarians’ rule that ulakam, ‘world’, can mean the worthy or experienced people whose conduct sets the norm. There is a small textual variant. ytamizh.com and thirukkural-thamizh.org read arindhak kadaiththum (with the doubled k), while thirukkural.net prints arindha kadaiththum. The meaning does not change.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Even a man of knowledge acts according to his own nature, for everyone follows the nature he has acquired from the three modes. What can repression accomplish?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 3.33 (trans. A. C. Bhaktivedanta Swami Prabhupada)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Krishna observes that even the learned must reckon with the nature of beings, which cannot simply be overridden.</div>
+  <div class="tieback">Like the Kural, it warns that knowledge must take account of how things actually are (iyarkai).</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;To the weak became I as weak, that I might gain the weak: I am made all things to all men, that I might by all means save some.&rdquo;</div>
+  <div class="cite">&mdash; 1 Corinthians 9:22 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Paul describes adapting his approach to the character and situation of each audience.</div>
+  <div class="tieback">This is the Kural’s advice to fit one’s method to the ways of the people one is dealing with.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And We did not send any messenger except [speaking] in the language of his people to state clearly for them, and Allah sends astray [thereby] whom He wills and guides whom He wills.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 14:4 (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">God sends each messenger in his own people’s language so that the message fits those who hear it.</div>
+  <div class="tieback">Even revealed truth is delivered in a form suited to the world it enters, as the Kural advises.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;A person should never deviate from the local custom, as Moses ascended to heaven on high and did not eat bread while he was there, whereas the ministering angels descended down to this world, as guests visiting Abraham, and they ate bread.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Bava_Metzia.86b" target="_blank" rel="noopener">Babylonian Talmud, Bava Metzia 86b (William Davidson Edition, Koren-Steinsaltz)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Rabbi Tanhum bar Hanilai teaches that one should follow the customs of the place one is in, as even Moses and the angels did.</div>
+  <div class="tieback">This is the Kural’s rule to act in keeping with ulakaththu iyarkai, the ways of the world around you.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Aranavibhanga Sutta, the Buddha says that one should not insist on one’s own dialect or override ordinary usage. The same bowl is called by different names in different regions, and a wise person uses whatever word is current there instead of insisting on his own.</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/mn139" target="_blank" rel="noopener">Aranavibhanga Sutta, Majjhima Nikaya 139</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha warns against rigidly imposing one standard where local usage differs.</div>
+  <div class="tieback">This is the Kural’s point that correct theory must bend to the real ways of the world.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;You, although knowing nīti and well versed in the seventy stories, were caught by her like a parrot by a cat.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Hemacandra, Triṣaṣṭiśalākāpuruṣacaritra, Book 10, ch. 11, part 2 ‘Contest between Pradyota and Abhaya’ (tr. Helen M. Johnson, GOS; wisdomlib.org)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Pradyota taunts Abhayakumara, who was captured when a courtesan posing as a pious Jain laywoman drugged him: all his learning in statecraft (niti) did not protect him from a trick of the world.</div>
+  <div class="tieback">The Kural warns that knowing methods from books is not enough without knowing how the world actually behaves; Abhaya&#x27;s capture is a cautionary case of learned policy failing against real-world deceit.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;You may read and read loads of books; you may read and study vast multitudes of books. … O Nanak, only one thing is of any account: everything else is useless babbling and idle talk in ego.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 467, Raag Aasaa (Asa di Vaar, salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In a famous salok of Asa di Vaar, Guru Nanak says that mountains of book learning count for little unless they lead to what truly matters.</div>
+  <div class="tieback">The Kural tells the minister to know how the world actually works as well as what the books say; Guru Nanak likewise refuses to treat book learning as enough by itself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Shipwrecked on the Phaeacian shore, Odysseus meets the princess Nausicaa. He decides not to clasp her knees as a formal suppliant might, in case it offends her, and speaks gently from a distance instead.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, Odyssey 6 (trans. Samuel Butler)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Odysseus knows the formal rules of supplication but adjusts them to the real situation in front of him.</div>
+  <div class="tieback">This is the Kural’s advice: know the rules, then act according to how the world actually is.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Nor is practical wisdom concerned with universals only-it must also recognize the particulars; for it is practical, and practice is concerned with particulars. This is why some who do not know, and especially those who have experience, are more practical than others who know…&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/nicomachaen.6.vi.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics VI.7 (trans. W. D. Ross)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Aristotle argues that general knowledge is not enough for action; one must also grasp particular circumstances, which experience provides.</div>
+  <div class="tieback">This is the Kural’s contrast between book methods (seyarkai) and knowing the world (iyarkai).</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Tanganyika groundnut scheme fails</div>
+  <div class="rle-meta">1947-1951 &middot; Kongwa and other sites, Tanganyika (now Tanzania)</div>
+  <div class="quote is-paraphrase">In 1947 Britain&#x27;s Labour government launched a plan, run by the Overseas Food Corporation, to grow groundnuts on cleared land in Tanganyika to ease a post-war shortage of fats. It was commissioned after a survey completed in only seven weeks, with no pilot scheme, and it failed to allow for the area&#x27;s soil and rainfall; at Kongwa there was enough rain for a groundnut crop only once between 1947 and 1951. The scheme was abandoned on 9 January 1951, with about 36.5 million pounds written off.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">The planners relied on a plan drawn up on paper and on heavy machinery, while ignoring local conditions and the knowledge of local farmers, and the project collapsed.</div>
+  <div class="tieback">The kural warns that even someone who knows from books how a thing should be done must act only after learning how the world actually works, and the groundnut scheme failed for want of exactly that knowledge.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-64/" target="_blank" rel="noopener">Thirukkural Chapter 64: அமைச்சு / The Office of Minister of State (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A064.html" target="_blank" rel="noopener">64. அமைச்சு (Thirukkural, older-orthography text)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.thirukkural.net/ta/kural/adhigaram-064.html" target="_blank" rel="noopener">அமைச்சு - அதிகாரம் 64 (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah and Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Bava_Metzia.86b" target="_blank" rel="noopener">Babylonian Talmud, Bava Metzia 86b (William Davidson Edition, Koren Noé Talmud with Steinsaltz commentary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://suttacentral.net/mn139" target="_blank" rel="noopener">Aranavibhanga Sutta: The Exposition of Non-Conflict (Majjhima Nikaya 139)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, The Odyssey, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://classics.mit.edu/Aristotle/nicomachaen.6.vi.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, Book VI, trans. W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://merl.reading.ac.uk/explore/online-exhibitions/colonial-failure/" target="_blank" rel="noopener">The Groundnut Scheme: A colonial failure</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.historytoday.com/archive/britain-abandons-groundnuts-scheme" target="_blank" rel="noopener">Britain Abandons the Groundnuts Scheme</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0636.html">&larr; Kural 636</a>
+  <a href="kural-0638.html">Kural 638 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-064.html">Ministry of State</a>
+  <a class="skip-btn" href="kural-0641.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

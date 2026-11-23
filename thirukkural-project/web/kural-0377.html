@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 377 — Fate | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 377</h1>
+<p class="adhikaram"><a href="adhikaram-038.html">Fate</a> &middot; Uzhi &middot; <span class="tamil">ஊழ்</span></p>
+
+<div class="tamil-text">வகுத்தான் வகுத்த வகையல்லால் கோடி
+தொகுத்தார்க்கு துய்த்தல் அரிது.</div>
+<div class="translit">Vaguththaan vaguththa vagaiyallaal kodi
+Thoguththaarkku thuyththal aridhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Even people who pile up crores (tens of millions) of money can enjoy it only as much as the One who decides fate allows. Beyond that, they cannot enjoy it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>You could fill a whole room with candy, but if you have a toothache you can’t eat any of it. This kural says that piling up huge amounts of money doesn’t mean you’ll get to enjoy it; how much you actually enjoy is decided by fate.</p>
+
+<h2 class="section">University</h2>
+<p>The striking phrase வகுத்தான் வகுத்த வகை (‘the way apportioned by the Apportioner’) is one of the few places where Valluvar speaks of fate through an agent. Commentators differ on whether வகுத்தான் means God or the impersonal law of past deeds. The kural separates possession from enjoyment (துய்த்தல்): accumulation is within human reach, but the capacity to enjoy is allotted. The same gap appears in Ecclesiastes’ rich man to whom God does not give ‘power to eat thereof’, in Jesus’ parable of the rich fool, and in the myth of Midas starving amid gold. This makes the couplet a critique of hoarding as well as a statement about fate.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The opening verse of the Isha Upanishad teaches that all this is pervaded by the Lord, that one should enjoy through renunciation, and that one should not covet anyone’s wealth.</div>
+  <div class="cite">&mdash; Isha Upanishad 1 <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">True enjoyment comes only by accepting what is allotted by the Lord, not by grasping more.</div>
+  <div class="tieback">Both tie enjoyment (bhoga/துய்த்தல்) to what is apportioned, not to what is accumulated.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Thou fool, this night thy soul shall be required of thee: then whose shall those things be, which thou hast provided?&rdquo;</div>
+  <div class="cite">&mdash; Luke 12:20 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In the parable, a rich man plans to build bigger barns and enjoy his stores, but dies that very night.</div>
+  <div class="tieback">Wealth gathered is not wealth enjoyed; the decision lies with God, just as in the Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">Qārūn is given treasures whose keys alone would burden a band of strong men. He boasts that he earned them by his own knowledge, and the earth swallows him with his home. Onlookers then exclaim that Allāh extends provision to whom He wills and restricts it.</div>
+  <div class="cite">&mdash; Qur&#x27;an 28:76-82 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Enormous wealth could not protect Qārūn or be enjoyed, because it was not his by divine allotment.</div>
+  <div class="tieback">Like the Kural, it shows that hoarded riches are enjoyed only as far as the Apportioner allows.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;A man to whom God hath given riches, wealth, and honour, so that he wanteth nothing for his soul of all that he desireth, yet God giveth him not power to eat thereof, but a stranger eateth it.&rdquo;</div>
+  <div class="cite">&mdash; Ecclesiastes 6:2 (Hebrew Bible; KJV rendering) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Qoheleth describes a man with all the wealth he wants but without God-given power to enjoy it.</div>
+  <div class="tieback">Almost the Kural itself: possession without the allotted power to enjoy.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;There is no satisfying sensual desires, even with the rain of gold coins.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 186 (tr. Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Even a shower of gold cannot bring real satisfaction to a craving mind.</div>
+  <div class="tieback">Both separate the amount of wealth from the enjoyment actually obtained.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The third–bhoga antarāya–hinders the enjoyment of consumable things, though he is desirous of enjoyment. The fourth–upabhoga antarāya–prevents the enjoyment of non-consumable things, although he is eager after enjoyment of such things.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/tattvartha-sutra-with-commentary" target="_blank" rel="noopener">Tattvārtha Sūtra 8.13, with Pūjyapāda&#x27;s Sarvārthasiddhi (tr. Vijay K. Jain, 2018; wisdomlib.org)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Jainism separates owning things from being able to enjoy them. Two subtypes of obstructive karma block the enjoyment of consumables and of lasting goods, even when the person has them and wants to enjoy them.</div>
+  <div class="tieback">Valluvar says even those who amass crores can enjoy only as much as has been apportioned to them. The Jain account of enjoyment-obstructing karma makes the same distinction between possessing and enjoying.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Why, O mind, do you plot and plan, when the Dear Lord Himself provides for your care? From rocks and stones He created living beings; He places their nourishment before them.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 10, So Dar (Rehras), Raag Gujri, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In this hymn, recited daily in the evening prayer So Dar (Rehras), Guru Arjan tells the anxious mind that sustenance (rizak) is set out by God for every creature, even those born inside rock.</div>
+  <div class="tieback">The Kural says even those who amass crores enjoy only what the Ordainer has apportioned; Guru Arjan likewise teaches that each creature&#x27;s portion is arranged by the Lord, so scheming adds nothing to it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">King Midas asks Dionysus that everything he touches turn to gold. His bread and wine harden into gold in his mouth, and he begs to be freed from the gift.</div>
+  <div class="cite">&mdash; <a href="https://ovid.lib.virginia.edu/trans/Ovhome.htm" target="_blank" rel="noopener">Ovid, Metamorphoses XI.85-145</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Limitless gold becomes a curse because he cannot actually enjoy anything.</div>
+  <div class="tieback">The most vivid picture of the Kural: endless wealth, yet enjoyment is impossible.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Seneca writes to Lucilius that the poor man is not the one who has too little, but the one who craves more.</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_2" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius 2</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Wealth is measured by contentment, not by the size of one’s store.</div>
+  <div class="tieback">Both deny that heaping up riches secures their enjoyment.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Alexander the Great dies at Babylon</div>
+  <div class="rle-meta">June 323 BCE &middot; Babylon, Mesopotamia (now Iraq)</div>
+  <div class="quote is-paraphrase">By 323 BCE Alexander the Great had conquered the Persian Empire, taking possession of its royal treasuries, and ruled lands stretching from Greece to the Indus. In Babylon, while planning an expedition to Arabia and new projects for irrigation and sea routes, he fell ill after a banquet and died in June 323 BCE at the age of 32. He left no clear successor, and his generals soon fought one another and divided his empire.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">The ruler who had gathered more wealth and territory than anyone before him had almost no time to enjoy any of it.</div>
+  <div class="tieback">The kural says that even those who amass vast wealth can enjoy it only to the extent fate allows, and Alexander, master of the treasures of Persia, died within a few years of winning them.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-38/" target="_blank" rel="noopener">ஊழ் / Fate — Thirukkural Chapter 38 (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries and G. U. Pope couplets)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-038.html" target="_blank" rel="noopener">ஊழ் — அதிகாரம் 38, திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3">Isha Upanishad, verse 7 <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.wisdomlib.org/jainism/book/tattvartha-sutra-with-commentary" target="_blank" rel="noopener">Ācārya Umāsvāmī&#x27;s Tattvārthasūtra, with commentary</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://ovid.lib.virginia.edu/trans/Ovhome.htm" target="_blank" rel="noopener">Ovid, Metamorphoses 11 (Midas)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_2" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius — Letter 2 (on contented poverty, quoting Epicurus) and Letter 19 (on with whom one dines)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/biography/Alexander-the-Great" target="_blank" rel="noopener">Alexander the Great</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.history.com/this-day-in-history/june-11/alexander-the-great-dies" target="_blank" rel="noopener">Alexander the Great dies</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0376.html">&larr; Kural 376</a>
+  <a href="kural-0378.html">Kural 378 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-038.html">Fate</a>
+  <a class="skip-btn" href="kural-0381.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 491 — Knowledge of Location | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 491</h1>
+<p class="adhikaram"><a href="adhikaram-050.html">Knowledge of Location</a> &middot; Idanarithal &middot; <span class="tamil">இடனறிதல்</span></p>
+
+<div class="tamil-text">தொடங்கற்க எவ்வினையும் எள்ளற்க முற்றும்
+இடங்கண்ட பின்அல் லது.</div>
+<div class="translit">Thodangarka evvinaiyum ellarka mutrum
+Idanganda pinnal lathu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Do not start any action against an enemy, and do not look down on them, until you have found a place from which you can surround and defeat them.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Before a game of hide-and-seek, a smart player first looks around for the best hiding spot, and never thinks the seeker is too silly to find them. Valluvar says to do the same with any big task: find the right spot first, and never think the other side is weak.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter opens the third member of the triad that runs through chapters 48 to 50: strength (vali), time (kaalam) and now place (idam). The key word is ‘mutrum idam’, a place from which one can encircle or besiege (mutruthal, to surround, to lay siege); Parimelazhagar and the modern word-glosses (for example thirukkural-thamizh.org) take it as the ground suited for investing the enemy. The two prohibitions are joined: ‘thodangarka’ (do not begin) and ‘ellarka’ (do not despise), so over-confidence and bad positioning are treated as a single error. Mu. Varadarasan and Solomon Pappaiah take ‘ellarka’ as ‘do not scorn the enemy’, whereas Kalaignar reads it as ‘do not treat the undertaking itself as trivial’, a minor interpretive variant. Older printed texts give the sandhi form ‘தொடங்கற்க வெவ்வினையு மெள்ளற்க’, which modern editions split as ‘எவ்வினையும் எள்ளற்க’.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Kautilya opens Book IX of the Arthashastra by telling the would-be conqueror to weigh his own and his enemy’s power, place and time before marching, and he defines a good place as ground suited to the manoeuvres of one’s own army and unsuited to the enemy’s.</div>
+  <div class="cite">&mdash; <a href="https://archive.org/details/Arthasastra_English_Translation" target="_blank" rel="noopener">Kautilya, Arthaśāstra, Book IX, Chapter 1 (tr. R. Shamasastry)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">For Kautilya, desha (place) is one of the things a king has to calculate before starting any campaign, together with strength and the right season.</div>
+  <div class="tieback">Valluvar gives the same order: work out the ground first, and only then begin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;I will liken him unto a wise man, which built his house upon a rock… And every one that heareth these sayings of mine, and doeth them not, shall be likened unto a foolish man, which built his house upon the sand.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 7:24, 26 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus contrasts two builders: one picked solid ground and his house stood, the other picked sand and his house fell.</div>
+  <div class="tieback">Like the Kural, it says the outcome is decided by choosing the right ground before starting to build.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">Before Badr, the Companion al-Hubab ibn al-Mundhir asked the Prophet whether the chosen campsite was fixed by revelation or was a matter of war and strategy. When told it was strategy, he advised moving forward to the wells nearest the enemy, and the Prophet accepted.</div>
+  <div class="cite">&mdash; <a href="https://archive.org/details/TheLifeOfMohammedGuillaume" target="_blank" rel="noopener">Ibn Ishaq, Sirat Rasul Allah (tr. A. Guillaume, The Life of Muhammad), account of Badr</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The early biography presents this as a model of choosing a position carefully before fighting begins, by taking control of the water.</div>
+  <div class="tieback">It fits the Kural’s rule not to begin until the right position has been found.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Do not despise any man, and do not discriminate against anything, for there is no man that has not his hour, and there is no thing that has not its place.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot.4.3" target="_blank" rel="noopener">Pirkei Avot 4:3 (tr. Joshua Kulp, Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Ben Azzai warns that nobody should be dismissed, because every person has a moment and every thing has its place.</div>
+  <div class="tieback">The mishnah brings together the Kural’s two concerns, not despising the other side (ellarka) and taking place seriously.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Buddha describes Himalayan ground where only monkeys can go and level ground where hunters lay tar traps. Wise monkeys see the trap and keep away, while a careless monkey walks onto the hunter’s ground and gets stuck in five places.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/sn/sn47/sn47.007.than.html" target="_blank" rel="noopener">Saṃyutta Nikāya 47.7, Makkata Sutta (tr. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">He uses the story to warn monks against leaving their proper range (their own territory) for someone else’s ground.</div>
+  <div class="tieback">As in the Kural, the fatal mistake is acting before judging whether the ground belongs to you or to your enemy.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Fight with your Self; why fight with external foes? He who conquers himself through himself, will obtain happiness. The five senses, anger, pride, delusion, and greed--difficult to conquer is one&#x27;s self; but when that is conquered, everything is conquered.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 9.35-36 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Nami tells Indra that the real enemy is within and is hard to defeat, and that victory there carries every other victory with it.</div>
+  <div class="tieback">The kural warns against attacking or belittling a foe before securing the right ground; Nami also treats the enemy as difficult and names the self as the only ground from which full victory can be won.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">After Guru Gobind Singh sent him to the Punjab in 1708, Banda Singh Bahadur did not strike at once at Sirhind, the seat of the Mughal governor Wazir Khan. He first took Samana, Sadhaura and other towns, following a long, roundabout route while he waited for Sikhs from the Doaba and Majha to join him, and only then attacked Sirhind, which fell after the battle of Chappar Chiri in May 1710.</div>
+  <div class="cite">&mdash; <a href="https://www.thesikhencyclopedia.com/banda-singh-bahadur/" target="_blank" rel="noopener">Encyclopaedia of Sikhism (Punjabi University, Patiala, ed. Harbans Singh), &#x27;Banda Singh Bahadur&#x27;, via The Sikh Encyclopedia (paraphrase)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The Encyclopaedia of Sikhism records that Banda Singh deliberately delayed his main blow until he had gathered strength and secured the ground around his target.</div>
+  <div class="tieback">The Kural says not to move against an enemy, or to belittle him, until one has found ground from which to surround and overcome him; Banda Singh likewise waited and built a base before attacking Sirhind.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">As Xerxes advanced in 480 BCE, the Greek allies debated where to make their stand, first at Tempe and then at the narrow pass of Thermopylae with the strait of Artemisium beside it, and they chose the pass because the narrows would cancel out Persian numbers.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126" target="_blank" rel="noopener">Herodotus, Histories 7.172–177 (tr. A. D. Godley)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Herodotus shows the Greeks picking the position before committing to battle, having judged that the terrain mattered more than headcount.</div>
+  <div class="tieback">This is the Kural’s advice in practice: settle the ground first, then begin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;If you know the enemy and know yourself, your victory will not stand in doubt; if you know Heaven and know Earth, you may make your victory complete.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/132" target="_blank" rel="noopener">Sun Tzu, The Art of War X.31 (tr. Lionel Giles)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Sun Tzu ends his chapter on terrain by saying that knowing the ground (Earth) is what makes victory complete.</div>
+  <div class="tieback">Both texts treat knowing the ground as something you need before acting, and neither lets you underestimate the enemy.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Hannibal encircles the Roman army at Cannae</div>
+  <div class="rle-meta">August 216 BCE &middot; Cannae, Apulia, southern Italy</div>
+  <div class="quote is-paraphrase">In the Second Punic War a Roman army of more than 80,000 men under the consuls Lucius Aemilius Paullus and Gaius Terentius Varro met Hannibal&#x27;s smaller Carthaginian army of under 50,000 near the river Aufidus. Hannibal placed his line in a forward-curving crescent with cavalry on the wings, and as his centre gave way the Romans pressed into it. His infantry then closed on their flanks and his cavalry came round behind them, surrounding the Roman army and destroying it.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Cannae became the classic example of encirclement, studied by commanders for more than two thousand years.</div>
+  <div class="tieback">The kural warns against engaging an enemy before finding ground from which one can surround him, and Hannibal fought only where his formation could close around the larger Roman army.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.thirukkural.net/ta/kural/adhigaram-050.html" target="_blank" rel="noopener">இடன் அறிதல், Adhigaram 50, Thirukkural (Kurals 491–500), with commentaries by Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah and Mu. Karunanidhi</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A050.html" target="_blank" rel="noopener">50. இடனறிதல் (Thirukkural with old continuous text, word-by-word gloss and commentary)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://archive.org/details/Arthasastra_English_Translation" target="_blank" rel="noopener">Kautilya&#x27;s Arthaśāstra, translated by R. Shamasastry (1915), Book IX, Chapter 1: The Knowledge of Power, Place, Time, Strength and Weakness; the Time of Invasion</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://archive.org/details/TheLifeOfMohammedGuillaume" target="_blank" rel="noopener">Ibn Ishaq, Sirat Rasul Allah, translated by A. Guillaume as The Life of Muhammad (Oxford University Press, 1955)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot.4.3" target="_blank" rel="noopener">Pirkei Avot 4:3, trans. Dr. Joshua Kulp (Mishnah Yomit)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/sn/sn47/sn47.007.than.html" target="_blank" rel="noopener">Saṃyutta Nikāya 47.7, Makkata Sutta: The Monkey, translated by Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.thesikhencyclopedia.com/banda-singh-bahadur/" target="_blank" rel="noopener">Banda Singh Bahadur (Encyclopaedia of Sikhism, ed. Harbans Singh (Punjabi University, Patiala))</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126" target="_blank" rel="noopener">Herodotus, The Histories, trans. A. D. Godley (1920)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/132" target="_blank" rel="noopener">Sun Tzu, The Art of War (tr. Lionel Giles, 1910)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/event/Battle-of-Cannae" target="_blank" rel="noopener">Battle of Cannae</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.nationalgeographic.com/culture/article/hannibal" target="_blank" rel="noopener">Hannibal: facts and information</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0490.html">&larr; Kural 490</a>
+  <a href="kural-0492.html">Kural 492 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-050.html">Knowledge of Location</a>
+  <a class="skip-btn" href="kural-0501.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

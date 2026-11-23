@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 345 — Renunciation | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 345</h1>
+<p class="adhikaram"><a href="adhikaram-035.html">Renunciation</a> &middot; Thuravu &middot; <span class="tamil">துறவு</span></p>
+
+<div class="tamil-text">மற்றும் தொடர்ப்பாடு எவன்கொல் பிறப்பறுக்கல்
+உற்றார்க்கு உடம்பும் மிகை.</div>
+<div class="translit">Matrum thodarppaadu evankol pirapparukkal
+Utraarkku udambum migai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>For people working to end the cycle of being born again and again, even their own body is one thing too many. So why take on any more ties?</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you are trying to swim across a river, even your shoes feel heavy. Why would you carry a suitcase too? This kural says someone trying to be truly free finds even their own body a load, so they shouldn&#x27;t add extra burdens.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet argues a fortiori: if even the body — the one attachment that cannot simply be discarded — is migai (excess, surplus) to someone who has set out to cut off births (pirappu arukkal), then every additional bond (thodarppaadu) is indefensible. Parimelazhagar notes that the body is retained only as the instrument through which austerity is practised, not valued for its own sake. The verse does not counsel harming the body; it relocates the body from &#x27;self&#x27; to &#x27;tool&#x27;. The idea resonates with Plato&#x27;s Phaedo, where philosophy is a rehearsal for the soul&#x27;s release from the body, with Paul&#x27;s groaning &#x27;in this tabernacle&#x27;, and with the Buddha&#x27;s house-builder verse, in which the body is the house craving keeps rebuilding.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;When the embodied being is able to transcend these three modes, he can become free from birth, death, old age and their distresses and can enjoy nectar even in this life.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 14.20 (Prabhupada, As It Is)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna teaches that the soul, by rising above the qualities that arise from the body, escapes the cycle of birth, death and ageing.</div>
+  <div class="tieback">Both texts aim at ending rebirth by loosening identification with the body and what grows from it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For we that are in this tabernacle do groan, being burdened: not for that we would be unclothed, but clothed upon, that mortality might be swallowed up of life.&rdquo;</div>
+  <div class="cite">&mdash; 2 Corinthians 5:4 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul describes the present body as a tent in which believers groan under a burden while longing for a greater, immortal life.</div>
+  <div class="tieback">Like the Kural, Paul experiences the body itself as a burden for one set on a higher life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Be in this world as if you were a stranger or a traveler.&rdquo;</div>
+  <div class="cite">&mdash; Sahih al-Bukhari 6416 <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Taking Ibn Umar by the shoulder, the Prophet told him to live in the world as a passing traveller, not a settler.</div>
+  <div class="tieback">A traveller carries only what the road requires; the Kural likewise asks the seeker to add no ties beyond the bare vehicle of the journey.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;This world is like a vestibule before the world to come; prepare yourself in the vestibule, so that you may enter the banqueting-hall.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 4:16 (tr. Joshua Kulp, Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbi Jacob compares this life to an entry hall whose purpose is preparation for what lies beyond.</div>
+  <div class="tieback">Both treat present existence as a passage whose only value is to prepare for release beyond it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Through many a birth in samsara have I wandered in vain, seeking the builder of this house (of life). Repeated birth is indeed suffering! O house-builder, you are seen! You will not build this house again.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 153-154 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">At his awakening the Buddha declares that he has found craving, the builder of the body-house, and that it will build no more.</div>
+  <div class="tieback">The body is the &#x27;house&#x27; that craving keeps rebuilding; for one cutting off births, it is to be ended, not added to.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;(In order to be able) to practise control a monk should eat; he should desire to get rid of sin … he should wait for the advent of death; having annihilated his Karman he should not again mix with the world, but be rather like a car whose axle is broken.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga I.7.29-30 (tr. Hermann Jacobi, SBE 45, 1895, pp. 296-297)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The monk keeps up the body only as an instrument of self-control. Freed of karma, he never re-enters the round of worldly existence, like a cart whose axle is broken.</div>
+  <div class="tieback">Valluvar treats the body as surplus to someone set on ending births. The Jain text likewise allows food only so that control can be practised, and points beyond the body to a soul that never again &#x27;mixes with the world&#x27;.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;This human body has been given to you. This is your chance to meet the Lord of the Universe.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 12, Raag Aasaa (in the So Purakh section of Rehras), Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Arjan treats the human body as a precious opportunity, the one chance in which a soul can meet God.</div>
+  <div class="tieback">The Kural calls even the body one thing too many for those who seek to end rebirth; Sikh teaching shares the goal of ending rebirth but values the body as the very means of reaching it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Plato reports an Orphic teaching that the body (soma) is the soul&#x27;s tomb or prison-enclosure (sema), in which the soul pays a penalty until it is released.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Plato/cratylus.html" target="_blank" rel="noopener">Plato, Cratylus 400b-c (reporting Orphic doctrine)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The Orphic religious tradition, as Plato relays it, saw embodiment as a confinement to be escaped.</div>
+  <div class="tieback">If the body itself is a prison, adding further ties is only building more walls — the Kural&#x27;s reasoning in mythic-religious dress.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In the Phaedo, Socrates argues that true philosophers practise dying, striving throughout life to separate the soul as far as possible from the body and its demands.</div>
+  <div class="cite">&mdash; <a href="https://chs.harvard.edu/primary-source/plato-phaedo-sb/" target="_blank" rel="noopener">Plato, Phaedo 64a-67e (tr. Benjamin Jowett)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Facing execution, Socrates treats the body as an obstacle to wisdom and philosophy as training for the soul&#x27;s release.</div>
+  <div class="tieback">For Socrates as for Valluvar, the body is a necessary but excess encumbrance for one seeking release, so nothing further should be added to it.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Anthony of Egypt withdraws into the desert</div>
+  <div class="rle-meta">c. 270-305 CE &middot; Egyptian desert, Egypt</div>
+  <div class="quote is-paraphrase">Anthony, a young Egyptian Christian from a prosperous family, gave away his possessions and took up an ascetic life, eventually living in solitude in the desert near Pispir from about 286 to 305. Disciples gathered around him, and he is regarded as the founder of Christian monasticism.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Anthony reduced his life to the bare minimum the body needed, and his example inspired the monastic movement that spread across the Christian world.</div>
+  <div class="tieback">The kural says that for those seeking release even the body is one thing too many, so no further ties should be added, and Anthony kept only the body itself as a tool for his spiritual practice.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-35/" target="_blank" rel="noopener">Thirukkural Chapter 35: துறவு / Renunciation (with Mu. Varadarasan, Solomon Pappaiah, Karunanidhi, Sivayogi Sivakumar commentaries and G. U. Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-035.html" target="_blank" rel="noopener">துறவு - அதிகாரம் 35 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah, Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">Sahih al-Bukhari 6416, Book of Ar-Riqaq <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga (Sutrakritanga)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Plato/cratylus.html" target="_blank" rel="noopener">Plato, Cratylus, trans. Benjamin Jowett</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://chs.harvard.edu/primary-source/plato-phaedo-sb/" target="_blank" rel="noopener">Plato, Phaedo 64a (trans. Benjamin Jowett)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/question/Who-was-St-Anthony-of-Egypt" target="_blank" rel="noopener">Who was St. Anthony of Egypt? (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.newadvent.org/cathen/01553d.htm" target="_blank" rel="noopener">St. Anthony</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0344.html">&larr; Kural 344</a>
+  <a href="kural-0346.html">Kural 346 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-035.html">Renunciation</a>
+  <a class="skip-btn" href="kural-0351.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1038 — Agriculture | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1038</h1>
+<p class="adhikaram"><a href="adhikaram-104.html">Agriculture</a> &middot; Uzhavu &middot; <span class="tamil">உழவு</span></p>
+
+<div class="tamil-text">ஏரினும் நன்றால் எருவிடுதல் கட்டபின்
+நீரினும் நன்றதன் காப்பு.</div>
+<div class="translit">Erinum nandraal eruvidudhal kattapin
+neerinum nandradhan kaappu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Adding manure is better than ploughing. After weeding, guarding the crop is even better than watering it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Planting a garden is not the end of the job. You feed the soil, pull out the weeds, and then you have to protect the plants from birds, goats and trampling feet. Watching over what you grew matters even more than watering it.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet ranks the farmer&#x27;s tasks: eruviduthal (எருவிடுதல், &#x27;applying manure&#x27;) is better than Er (ஏர், &#x27;ploughing&#x27;), and after katta (கட்ட, &#x27;weeding&#x27;; Kesikan and Varadarasanar gloss kattapin as &#x27;after removing weeds&#x27;) kaappu (காப்பு, &#x27;guarding, protection&#x27;) is better than neer (நீர், &#x27;watering&#x27;). Puliyur Kesikan, following Parimelazhagar, reads the sequence as plough, manure, weed, water, guard, with each later step more decisive than the one before it; Kalaignar&#x27;s paraphrase ranks weeding and watering as &#x27;very good&#x27; and protection as best. The point is that the work ends with vigilant protection of what has been produced, a principle the Porutpal applies to wealth as well as crops. The Tamil text matches on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;May the Field&#x27;s Lord for us be full of sweetness, and may we follow after him uninjured.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/rigveda/rv05083.htm" target="_blank" rel="noopener">Rig Veda 4.57.3 (tr. Ralph T.H. Griffith, 1896, sacred-texts.com)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Vedic farmers invoke Kshetrapati, the Lord or guardian of the Field, to keep the field and its workers safe and fruitful.</div>
+  <div class="tieback">The hymn appeals to a guardian of the field, a religious form of the Kural&#x27;s stress on protecting the crop.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;The kingdom of heaven is likened unto a man which sowed good seed in his field: But while men slept, his enemy came and sowed tares among the wheat, and went his way.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 13:24-25 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In Jesus&#x27; parable the field is spoiled because no one watched it while the workers slept.</div>
+  <div class="tieback">Unguarded fields are ruined, so watching over a crop matters as much as sowing it, as the Kural says.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Whoever keeps a dog, one Qirat of the reward of his good deeds is deducted daily, unless the dog is used for guarding a farm or cattle.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:2322" target="_blank" rel="noopener">Sahih al-Bukhari 2322 (sunnah.com)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Islamic law makes a specific exception for dogs that guard crops and livestock, recognising the need to protect a farm.</div>
+  <div class="tieback">Guarding the crop is important enough to override a general rule, which matches the Kural&#x27;s high ranking of kaappu.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Catch us the foxes, The little foxes That ruin the vineyards— For our vineyard is in blossom.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Song of Songs 2:15 (JPS Tanakh, Gender-Sensitive Edition 2023, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The lovers&#x27; song calls for the vineyard to be protected from the small animals that damage it just when it blooms.</div>
+  <div class="tieback">Guarding the growing crop at its most vulnerable stage is the Kural&#x27;s kaappu.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;whatsoever wealth a householder is in possession of, obtained by dint of effort, collected by strength of arm, by the sweat of his brow, justly acquired by right means — such he husbands well by guarding and watching so that kings would not seize it, thieves would not steal it, fire would not burn it, water would not carry it away&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an08/an08.054.nara.html" target="_blank" rel="noopener">Dighajanu (Vyagghapajja) Sutta, AN 8.54 (tr. Narada Thera, accesstoinsight.org)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha names arakkha-sampada, the accomplishment of watchfulness, as essential for keeping what effort has produced.</div>
+  <div class="tieback">Guarding what one&#x27;s labour has produced is the Kural&#x27;s kaappu, which it ranks above further inputs.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;If you do not give me what I ask for, I who observe the Samitis, who am protected by the Guptis, who subdue my senses, what benefit, then, will you gain by your sacrifices?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 12.17 (tr. Hermann Jacobi, SBE 45, sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Jain monk is &#x27;protected by the guptis&#x27;, the three guards over mind, speech and body that keep new karma from flowing in.</div>
+  <div class="tieback">The Jain guptis apply the Kural&#x27;s lesson inwardly: after cultivating virtue, one must guard it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Make your mind the farmer, good deeds the farm, modesty the water, and your body the field. Let the Lord&#x27;s Name be the seed, contentment the plow, and your humble dress the fence.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 595, Raag Sorath, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Sorath, Guru Nanak lays out a full farming routine in spiritual terms, assigning a virtue to each task: tilling, watering, sowing, levelling and fencing the crop against harm.</div>
+  <div class="tieback">The Kural ranks the farmer&#x27;s tasks, placing manuring above ploughing and guarding above watering; Guru Nanak likewise lists each stage of farm work, ending with the fence that protects the crop.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Let a slave follow a little behind with a mattock and make trouble for the birds by hiding the seed; for good management is the best for mortal men as bad management is the worst.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 469-471 (tr. H.G. Evelyn-White, 1914, sacred-texts.com)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hesiod advises posting a helper with a mattock behind the sower to keep the birds from the seed.</div>
+  <div class="tieback">Hesiod&#x27;s guard behind the plough is the Kural&#x27;s kaappu, which it values above more inputs.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;If you want to make men fit to take charge, you must supervise their work and examine it, and be ready to reward work well carried through, and not shrink from punishing carelessness as it deserves.&rdquo;</div>
+  <div class="cite">&mdash; <a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0212:text=Ec.:chapter=12" target="_blank" rel="noopener">Xenophon, Oeconomicus 12.19 (tr. E.C. Marchant, Loeb 1923, Perseus Digital Library)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Ischomachus insists that a farm prospers only under constant supervision and careful attention.</div>
+  <div class="tieback">Constant watchfulness over the work, rather than more inputs, is what secures the yield, which is close to the Kural&#x27;s ranking.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Peru&#x27;s guano becomes the world&#x27;s most prized fertiliser</div>
+  <div class="rle-meta">1840s-1870s &middot; Chincha Islands, Peru</div>
+  <div class="quote is-paraphrase">From the early 1840s seabird guano from Peru&#x27;s Chincha Islands was mined on a large scale and shipped to farms in Britain, Europe and the United States, where demand grew into what contemporaries called a guano mania. U.S. imports peaked at about 176,000 tons in 1854, and for decades guano supplied a major share of the Peruvian government&#x27;s revenue.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Farmers on several continents were willing to pay heavily for manure, showing how decisive fertilising had become to harvests.</div>
+  <div class="tieback">The kural ranks manuring above ploughing, and the nineteenth-century world paid for Peruvian manure as though it were treasure.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-104/" target="_blank" rel="noopener">Thirukkural Chapter 104: உழவு / Farming (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-104.html" target="_blank" rel="noopener">உழவு - அதிகாரம் 104 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/rigveda/rv05083.htm" target="_blank" rel="noopener">The Rig Veda, translated by Ralph T. H. Griffith (1896)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:2322" target="_blank" rel="noopener">Sahih al-Bukhari 2322 (Book of Agriculture, Chapter: Keeping a watchdog for the farm)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The JPS Tanakh: Gender-Sensitive Edition (Revised JPS, 2023)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/an/an08/an08.054.nara.html" target="_blank" rel="noopener">Anguttara Nikaya 8.54, Dighajanu (Vyagghapajja) Sutta: Conditions of Welfare for a Layperson</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0212:text=Ec.:chapter=12" target="_blank" rel="noopener">Xenophon, Oeconomicus, tr. E.C. Marchant (Loeb, 1923), chapter 12</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/place/Chincha-Islands" target="_blank" rel="noopener">Chincha Islands</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.smithsonianmag.com/smithsonian-institution/how-gold-rush-led-real-riches-bird-poop-180957970/" target="_blank" rel="noopener">How the Gold Rush Led to Real Riches in Bird Poop</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1037.html">&larr; Kural 1037</a>
+  <a href="kural-1039.html">Kural 1039 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-104.html">Agriculture</a>
+  <a class="skip-btn" href="kural-1041.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

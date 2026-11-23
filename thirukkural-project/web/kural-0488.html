@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 488 — Knowledge of Apt Timing | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 488</h1>
+<p class="adhikaram"><a href="adhikaram-049.html">Knowledge of Apt Timing</a> &middot; Kaalamarithal &middot; <span class="tamil">காலமறிதல்</span></p>
+
+<div class="tamil-text">செறுநரைக் காணின் சுமக்க இறுவரை
+காணின் கிழக்காம் தலை.</div>
+<div class="translit">Serunaraik Kaanin Sumakka Iruvarai
+Kaanin Kizhakkaam Thalai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>When you meet your enemies, put up with them and even show them respect. When their time to fall comes, they will fall headfirst.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Sometimes you have to put up with someone difficult who is stronger than you right now. If you stay patient, a time will come when they lose their power. Wait for that time instead of starting a fight you can’t win.</p>
+
+<h2 class="section">University</h2>
+<p>Serunar are enemies, and sumakka means ‘carry’ or ‘bear’. Parimelazhagar understands this as even showing them deference, carrying them ‘on one’s head’ as it were. Iruvarai is the limit or end-time, the point at which the enemy’s fortune has run out. Kizhakkaam thalai, ‘the head will turn downward’, comes from kizh (below). Parimelazhagar reads kizhakku here as keezh, ‘downward’, not the homonym meaning ‘east’. The advice is openly realpolitik: submit outwardly while weak and strike when the enemy’s time has come. It closely echoes Kanika’s counsel to Dhritarashtra in the Mahābhārata to carry the enemy on one’s shoulder and then smash him like a pot on a stone. Both sources give identical text.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The minister Kanika advises Dhritarashtra that as long as time is unfavourable, a king should carry his foe on his shoulder. When the right time comes, he should dash the foe to pieces like an earthen pot thrown on a stone.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/m01/m01143.htm" target="_blank" rel="noopener">Mahābhārata, Ādi Parva, Section 142 (Kanika’s counsel; tr. K. M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Kanika’s Machiavellian counsel, given as the Kauravas turn against the Pandavas, recommends outward submission until the moment to destroy.</div>
+  <div class="tieback">‘Carry him on your shoulder’ is sumakka, ‘bear him’. The pot smashed on the stone is the head that falls at iruvarai.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Let both grow together until the harvest: and in the time of harvest I will say to the reapers, Gather ye together first the tares, and bind them in bundles to burn them: but gather the wheat into my barn.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 13:30 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In the parable of the wheat and the tares, the householder refuses to pull up the weeds too early and waits for harvest, when they can be removed safely.</div>
+  <div class="tieback">Enduring what is hostile until its appointed end is the Kural’s sumakka … iruvarai.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">In an early Meccan sura, the Prophet is told to bear patiently what his opponents say and to part from them gracefully. God says to leave the wealthy deniers to Him and to give them a little respite.</div>
+  <div class="cite">&mdash; Qur’an 73:10–11 <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The weak early community is told to endure hostility and not to retaliate, because the opponents’ end is fixed.</div>
+  <div class="tieback">Bearing the enemy now and trusting that his downfall will come in its time is the Kural’s counsel.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;David said furthermore, As the LORD liveth, the LORD shall smite him; or his day shall come to die; or he shall descend into battle, and perish.&rdquo;</div>
+  <div class="cite">&mdash; 1 Samuel 26:10 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">David, standing over the sleeping Saul, refuses to kill him. He is sure that Saul’s appointed end will come by itself.</div>
+  <div class="tieback">‘His day shall come’ is very nearly the Kural’s iruvarai, the boundary-time of the enemy’s fall.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">Devadatta repeatedly plotted against the Buddha. He tried to have him killed by assassins, a boulder and a maddened elephant. The Buddha never retaliated. Tradition says Devadatta was finally swallowed by the earth as the result of his own deeds.</div>
+  <div class="cite">&mdash; Vinaya, Cullavagga VII; Dhammapada Commentary on verse 17 <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha bore his enemy’s hostility, and the enemy fell by the working of his own karma.</div>
+  <div class="tieback">This shares the Kural’s pattern of enduring now until the enemy’s end, without the Kural’s idea of striking back.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;There is not the least hatred in me, neither now, nor before, nor in future. The Yakshas attend upon me, therefore they have beaten the boys.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 12.32 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The beaten monk Harikesa bears abuse and blows without hatred, and his attackers are nevertheless brought low, not by him but by the guardian spirits.</div>
+  <div class="tieback">The kural advises bearing one&#x27;s foes until their time of downfall comes; in this story the monk too bears his enemies and they fall, but Jainism insists that he wanted no revenge at all.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Fareed, do not turn around and strike those who strike you with their fists. Kiss their feet, and return to your own home.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1378, Salok Sheikh Farid (salok 7) (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Sheikh Farid tells the seeker not to return blows but to answer aggressors with deference and go home in peace.</div>
+  <div class="tieback">The Kural says to bear with foes and even honour them until their time of downfall comes; Farid also counsels bearing foes and honouring them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Returning to Ithaca disguised as a beggar, Odysseus endures the suitors’ insults, a stool thrown at him, and the taunts of his own disloyal servants. He waits until the contest of the bow puts a weapon in his hands. Then he throws off his rags and kills them all.</div>
+  <div class="cite">&mdash; Homer, Odyssey, Books 17–22 <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The king bears humiliation from his enemies in his own hall until the moment of their ruin comes.</div>
+  <div class="tieback">This is sumakka followed by the falling heads, in the most famous revenge story of Greek epic.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">After Rome’s disasters against Hannibal, Quintus Fabius Maximus refused pitched battle and shadowed the invader from the hills. He endured public mockery as ‘Hannibal’s pedagogue’ and ‘the Delayer’ (Cunctator) while Hannibal’s strength wore down. Plutarch praises his judgment, which Rome’s later victory vindicated.</div>
+  <div class="cite">&mdash; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Fabius_Maximus*.html" target="_blank" rel="noopener">Plutarch, Life of Fabius Maximus 5–10</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Plutarch holds up Fabius as the model of the statesman who bears an enemy’s presence and his own disgrace until time turns the balance.</div>
+  <div class="tieback">Fabius ‘carried’ Hannibal in Italy for years until the invader’s power ran out, as the Kural advises.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Tokugawa Ieyasu serves Hideyoshi, then wins Japan</div>
+  <div class="rle-meta">1584-1603 &middot; Japan</div>
+  <div class="quote is-paraphrase">After fighting Toyotomi Hideyoshi without success in 1584, Tokugawa Ieyasu agreed to become his vassal and served him for the rest of Hideyoshi&#x27;s life, strengthening his own domain around Edo and avoiding Hideyoshi&#x27;s costly invasions of Korea. Hideyoshi died in 1598, leaving a young heir, and in 1600 Ieyasu defeated the rival coalition at the Battle of Sekigahara, becoming the undisputed master of Japan. He received the title of shogun in 1603, founding the Tokugawa shogunate.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Ieyasu bowed to a stronger rival for more than a decade and moved only when that rival&#x27;s power had passed.</div>
+  <div class="tieback">The kural advises bearing with one&#x27;s foes, even showing them deference, until their time runs out, and Ieyasu&#x27;s long service to Hideyoshi ended in his own supremacy.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.thirukkural.net/en/kural/adhigaram-049.html" target="_blank" rel="noopener">The recognition of opportunity: Adhigaram 49, Thirukkural (Kurals 481–490)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html" target="_blank" rel="noopener">Tirukkural of Tiruvalluvar (Tamil script, Unicode e-text)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/m01/m01143.htm" target="_blank" rel="noopener">The Mahabharata, Book 1: Adi Parva, Section CXLII (Kanika’s counsel to Dhritarashtra), translated by Kisari Mohan Ganguli</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, composite of standard English translations <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Fabius_Maximus*.html" target="_blank" rel="noopener">Plutarch, Life of Fabius Maximus, translated by Bernadotte Perrin (Loeb Classical Library)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/summary/Tokugawa-Ieyasu" target="_blank" rel="noopener">Tokugawa Ieyasu summary</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.nippon.com/en/japan-topics/b06915/" target="_blank" rel="noopener">Ieyasu&#x27;s Ambition: The Road to Sekigahara</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.worldhistory.org/Tokugawa_Ieyasu/" target="_blank" rel="noopener">Tokugawa Ieyasu</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0487.html">&larr; Kural 487</a>
+  <a href="kural-0489.html">Kural 489 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-049.html">Knowledge of Apt Timing</a>
+  <a class="skip-btn" href="kural-0491.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

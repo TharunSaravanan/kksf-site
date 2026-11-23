@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 188 — Slander Avoidance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 188</h1>
+<p class="adhikaram"><a href="adhikaram-019.html">Slander Avoidance</a> &middot; Purangkooraamai &middot; <span class="tamil">புறங்கூறாமை</span></p>
+
+<div class="tamil-text">துன்னியார் குற்றமும் தூற்றும் மரபினார்
+என்னைகொல் ஏதிலார் மாட்டு.</div>
+<div class="translit">Thunniyaar kutramum thootrum marabinaar,
+Ennaikol ethilaar maattu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If people make a habit of telling everyone the faults of those closest to them, what will they not do to strangers?</p>
+
+<h2 class="section">Elementary</h2>
+<p>If someone spreads secrets about their own best friend, imagine what they’d say about you! This kural says: watch how people talk about their closest friends — that’s how they’ll treat everyone else.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet argues a fortiori from intimacy. Tuṉṉiyār (“those who are close”) are the people whom affection, obligation, and self-interest should all protect; if the slanderer’s marapu (settled disposition, habit) leads him to tūṟṟu (scatter abroad, as chaff is winnowed) even their faults, then no restraint can be expected toward ētilār, those who are unconnected to him. The rhetorical question ennaikol (“what indeed?”) leaves the outcome to the listener’s imagination. Valluvar is making a practical point about trust: how a person speaks of his intimates is the best predictor of how he will treat everyone else. The verse also implies that backbiting is not an occasional lapse but a trait, marapu, which, once formed, spares no one.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;As the honest are always pained at speaking ill of others, so do the wicked always rejoice in doing the same thing.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Adi Parva, Sambhava Parva §74 (K. M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Shakuntala says this after King Dushyanta, her own husband, publicly reviles her as a lewd woman and denies their son.</div>
+  <div class="tieback">The king who slanders his own wife and child shows the Kural’s point: one who defames his intimates will spare no one.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Thou sittest and speakest against thy brother; thou slanderest thine own mother’s son.&rdquo;</div>
+  <div class="cite">&mdash; Psalm 50:20 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">God rebukes the wicked man who slanders even his own brother.</div>
+  <div class="tieback">The same outrage as the Kural: slander aimed at the closest of kin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;whoever screened a Muslim, Allah will screen him on the Day of Resurrection.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:2442" target="_blank" rel="noopener">Sahih al-Bukhari 2442</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet teaches that a Muslim is a brother to be protected, and that covering a brother’s faults earns God’s covering of one’s own.</div>
+  <div class="tieback">Islam sets the opposite ideal: those close to you are owed concealment of their faults, not exposure.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Miriam and Aaron spoke against their own brother Moses; Miriam was struck with tzara’at and shut outside the camp for seven days.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Proverbs.31.10" target="_blank" rel="noopener">Numbers 12:1–15 (paraphrase)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Torah’s example of lashon hara is aimed at a sibling, and later tradition treats it as the model case of the sin.</div>
+  <div class="tieback">Even a prophetess who spoke against her own brother was punished, showing how serious it is to disparage intimates.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;For a liar who has violated the one law (of truthfulness) who holds in scorn the hereafter, there is no evil that he cannot do.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 176 (Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada warns that once a person abandons truthful speech, no evil is beyond him.</div>
+  <div class="tieback">Both argue from one proven vice to unlimited danger: if he does this, what won’t he do?</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;If he is frequently angry; if he perseveres in his wrath; if he spurns friendly advice; if he is proud of his learning; if he finds fault with others; if he is angry even with friends; if he speaks evil even of a good friend behind his back; ... then he is called ill-behaved.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 11.7–9 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Among the fourteen faults that mark an ill-behaved monk who cannot reach nirvāṇa, the Uttarādhyayana lists speaking evil even of a good friend behind his back.</div>
+  <div class="tieback">Valluvar asks what a man who spreads the faults even of those closest to him would not do to strangers, and the Jain text singles out exactly this, slandering even a good friend behind his back, as a sign of bad character.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;He slanders others, and pollutes himself with his own filth.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 88, Sri Raag (Sri Raag ki Vaar, salok), Guru Amar Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Amar Das teaches that the habit of slandering others dirties the slanderer&#x27;s own mind.</div>
+  <div class="tieback">The Kural asks what a person who habitually broadcasts even his intimates&#x27; faults will not do to strangers; Guru Amar Das shows how deeply such a habit corrupts the one who has it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;paying this penalty, they say, for the shameful weakness he displayed in failing to keep a bridle on his lips, when admitted by gods, though he was but mortal, to share the honours of their feasts like one of them.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Euripides/orestes.html" target="_blank" rel="noopener">Euripides, Orestes 4–10 (E. P. Coleridge)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Tantalus was welcomed to the gods’ own table and then betrayed their confidences with an unbridled tongue.</div>
+  <div class="tieback">Tantalus fits the Kural’s type: one who exposes even those who took him into their inner circle.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;When he is sitting with others, he loves to criticise one who has just left the circle; nay, if he has found an occasion, he will not abstain from abusing his own relations.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.eudaemonist.com/biblion/characters/" target="_blank" rel="noopener">Theophrastus, Characters 28, ‘The Evil-Speaker’ (Jebb)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Theophrastus sketches the Evil-Speaker, who attacks whoever has just left the room and does not spare his own family.</div>
+  <div class="tieback">Theophrastus draws the Kural’s portrait exactly: a backbiter who spares not even his kin.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Truman Capote publishes La Cote Basque 1965</div>
+  <div class="rle-meta">November 1975 &middot; New York City, United States</div>
+  <div class="quote is-paraphrase">In November 1975 Esquire magazine published La Cote Basque 1965, a chapter from Truman Capote&#x27;s unfinished novel Answered Prayers. Capote&#x27;s wealthy society friends, whom he called his swans, recognised themselves as thinly disguised characters whose private secrets, confided to him over years of friendship, were exposed. Most of them cut him off, and Babe Paley, his closest friend among them, never spoke to him again.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a> <a class="idx" href="#cite-15">[15]</a></div>
+  <div class="explain">Capote treated the confidences of his closest friends as material to broadcast, and in doing so lost nearly all of them.</div>
+  <div class="tieback">The kural asks what a person who broadcasts the faults even of his intimates will not do to strangers, and Capote&#x27;s friends, seeing their own secrets in print, drew exactly that conclusion.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-19/" target="_blank" rel="noopener">Thirukkural Chapter 19: புறங்கூறாமை / Not Backbiting (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries and transliteration)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-019.html" target="_blank" rel="noopener">புறங்கூறாமை – அதிகாரம் 19 (Tamil text with Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah, Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:2442" target="_blank" rel="noopener">Sahih al-Bukhari 2442 (Book of Oppressions: a Muslim should not oppress another Muslim)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Proverbs.31.10" target="_blank" rel="noopener">The Holy Scriptures According to the Masoretic Text (Jewish Publication Society, 1917) — Proverbs 31:10, &#x27;Eshet Chayil&#x27;</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Euripides/orestes.html" target="_blank" rel="noopener">Euripides, Orestes, trans. E. P. Coleridge</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.eudaemonist.com/biblion/characters/" target="_blank" rel="noopener">The Characters of Theophrastus, trans. R. C. Jebb (1870)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.smithsonianmag.com/history/the-real-history-behind-feud-capote-vs-the-swans-180983681/" target="_blank" rel="noopener">The Real History Behind Feud: Capote vs. the Swans</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/topic/Feud-Capote-vs-the-Swans" target="_blank" rel="noopener">The True Story Behind Feud: Capote vs. the Swans</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://blogs.loc.gov/headlinesandheroes/2024/02/capote-the-swans-make-headlines/" target="_blank" rel="noopener">Capote and The Swans Make Headlines</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-15"><a href="https://www.pbs.org/newshour/health/truman-capotes-unhappy-ending" target="_blank" rel="noopener">Truman Capote&#x27;s unhappy ending</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0187.html">&larr; Kural 187</a>
+  <a href="kural-0189.html">Kural 189 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-019.html">Slander Avoidance</a>
+  <a class="skip-btn" href="kural-0191.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

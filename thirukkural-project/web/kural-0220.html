@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 220 — Knowledge of What Is Befitting | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 220</h1>
+<p class="adhikaram"><a href="adhikaram-022.html">Knowledge of What Is Befitting</a> &middot; Oppuravarithal &middot; <span class="tamil">ஒப்புரவறிதல்</span></p>
+
+<div class="tamil-text">ஒப்புரவி னால்வரும் கேடெனின் அஃதொருவன்
+விற்றுக்கோள் தக்க துடைத்து.</div>
+<div class="translit">Oppuravi naalvarum kedenin aqdhoruvan
+Vitrukkol thakka thudaiththu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If helping others leads to ruin, that ruin is worth having, even if you had to sell yourself to get it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Some people say, ‘If you keep giving, you will end up with nothing!’ This kural answers: even if that happens, it is worth it — being someone who helps is worth more than anything you could lose.</p>
+
+<h2 class="section">University</h2>
+<p>The closing couplet answers a prudential objection: oppuravu may lead to kedu, material loss. Valluvar&#x27;s reply is deliberately extreme — such loss is worth acquiring by selling oneself — and Parimelazhagar notes the logic: nothing is normally bought by selling oneself, so this loss is valued above everything, because it yields lasting renown; hence ‘ruin through oppuravu is not ruin.’ Manakkudavar reframes it as a trade in which one thing is sold to buy a greater, so the apparent loss should be counted as gain. The hyperbole caps the chapter&#x27;s argument: from rain (211) through wealth (212-217) and poverty (218-219) to self-sacrifice (220), oppuravu is presented as a value that no calculation of self-interest can outweigh.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">King Harishchandra, to honour his promise of a gift to the sage Vishvamitra, gives away his kingdom, sells his wife and son, and finally sells himself into servitude at a cremation ground.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/the-markandeya-purana" target="_blank" rel="noopener">Markandeya Purana, Harishchandra legend (chs. 7–8), as summarised in secondary sources</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In the Markandeya Purana, Harishchandra literally sells himself rather than go back on his pledged gift, and is ultimately exalted by the gods.</div>
+  <div class="tieback">A literal enactment of the Kural&#x27;s ‘worth buying by selling oneself.’</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Jesus said unto him, If thou wilt be perfect, go and sell that thou hast, and give to the poor, and thou shalt have treasure in heaven: and come and follow me.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 19:21 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Jesus tells a rich young man to sell everything he owns and give to the poor.</div>
+  <div class="tieback">Shares the Kural&#x27;s verdict that material ruin for the sake of others is a worthwhile exchange.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And of the people is he who sells himself, seeking means to the approval of Allah. And Allah is kind to [His] servants.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 2:207 (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Qur&#x27;an praises the one who ‘sells himself’ — gives up his very self — to seek God&#x27;s pleasure.</div>
+  <div class="tieback">Uses the same language of selling oneself as the Kural for a supremely worthwhile sacrifice.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;In Usha the Sages instituted that one who dispenses his money to charity should not dispense more than one-fifth ... lest he render himself destitute and need the help of other people.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Ketubot.50a" target="_blank" rel="noopener">Babylonian Talmud, Ketubot 50a (Sefaria, William Davidson ed.)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The rabbis limited charitable giving to a fifth of one&#x27;s assets so that the giver would not become dependent on others.</div>
+  <div class="tieback">An honest contrast: Jewish law praises charity but deliberately guards against the self-ruin the Kural welcomes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;If it so happens that, when a disciple of the noble ones obtains these five benefits from wealth, his wealth goes to depletion, the thought occurs to him, ‘Even though my wealth has gone to depletion, I have obtained the five benefits that can be obtained from wealth,’ and he feels no remorse.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an05/an05.041.than.html" target="_blank" rel="noopener">Anguttara Nikaya 5.41, Adiya Sutta (trans. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha says that if wealth runs out because it was used well — for family, friends, guests, and the virtuous — the wise feel no regret.</div>
+  <div class="tieback">Like the Kural, it treats loss that comes from good use of wealth as no real loss.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The king said to him, “I will give you my own flesh, weighing it with the dove. Be satisfied. Do not die.” … When the king saw that the dove kept increasing in weight, he himself got on the scales with unequaled courage.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Hemacandra, Triṣaṣṭiśalākāpuruṣacaritra, Book V (Śāntināthacaritra), ch. IV, part 7 &#x27;Story of the dove and hawk&#x27; (tr. Helen M. Johnson, GOS; wisdomlib.org)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">King Megharatha, in a former birth of the sixteenth Tīrthaṅkara Śāntinātha, protects a dove from a hawk by offering his own flesh and finally his whole body, while his ministers protest at the loss.</div>
+  <div class="tieback">Valluvar says that if helping others brings ruin, that ruin is worth buying even by selling oneself; Megharatha literally puts himself on the scales to save another being.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">Guru Tegh Bahadur, the ninth Sikh Guru, was executed by the Mughal authorities in Delhi in 1675. He became the second Sikh martyr and is remembered particularly for his stand for religious freedom.</div>
+  <div class="cite">&mdash; <a href="https://www.britannica.com/biography/Guru-Tegh-Bahadur" target="_blank" rel="noopener">Encyclopaedia Britannica, Guru Tegh Bahadur (paraphrase)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Sikhs honour Guru Tegh Bahadur&#x27;s martyrdom as giving his own life in defence of the freedom of conscience of others.</div>
+  <div class="tieback">The Kural says that if helping others leads to ruin, that ruin is worth buying even by selling oneself; Guru Tegh Bahadur paid with his own life for others&#x27; freedom of faith.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Prometheus steals fire from the gods and gives it to humankind, and Zeus punishes him by chaining him to a rock where an eagle eats his liver each day.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Hesiod, Theogony 507–616</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Prometheus accepts terrible suffering as the price of benefiting humanity.</div>
+  <div class="tieback">Embodies the Kural&#x27;s idea that ruin incurred for others&#x27; good is worth bearing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;I should not have neglected all my own concerns or patiently seen the neglect of them during all these years, and have been doing yours ... And I have a sufficient witness to the truth of what I say—my poverty.&rdquo;</div>
+  <div class="cite">&mdash; Plato, Apology 31b–c (trans. Benjamin Jowett) <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Socrates tells the jury that he neglected his own affairs to serve Athens, and his poverty proves it.</div>
+  <div class="tieback">Like the Kural&#x27;s benefactor, Socrates accepts material ruin as the price of serving others.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Oskar Schindler spends his fortune to protect his Jewish workers</div>
+  <div class="rle-meta">October 1944 - May 1945 &middot; Brunnlitz (Brnenec), Sudetenland (now Czech Republic)</div>
+  <div class="quote is-paraphrase">Oskar Schindler, a German businessman and Nazi Party member who had grown rich in occupied Krakow, moved his armaments factory to Brunnlitz in 1944 and devoted himself until liberation in May 1945 to protecting its roughly 1,000 Jewish prisoners, paying for scarce food and medicine himself and deceiving the SS with false production figures. The US Holocaust Memorial Museum records that this required him to spend the fortune he had made in Krakow; he later claimed to have spent 2.64 million Reichsmarks. After the war he struggled financially and failed in business, and in 1993 Yad Vashem named him and his wife Emilie Righteous Among the Nations.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Schindler gave up a fortune and ended his life in financial hardship, but the more than 1,000 people he helped are why he is remembered.</div>
+  <div class="tieback">The kural says that if helping others brings ruin, that ruin is worth buying even by selling oneself, and Schindler exchanged his wealth for the survival of the people in his care.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-22/" target="_blank" rel="noopener">Thirukkural Chapter 22: ஒப்புரவறிதல் / Duty to Society (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries and G. U. Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-022.html" target="_blank" rel="noopener">The recognition of Duty — Adhigaram 22 — Thirukkural</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://thirukkural.io/22/oppuravu-arithal/" target="_blank" rel="noopener">ஒப்புரவறிதல் (Oppuravarithal) — with Parimelazhagar and Manakkudavar commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.wisdomlib.org/hinduism/book/the-markandeya-purana" target="_blank" rel="noopener">Markandeya Purana, Harishchandra episode (tr. F. E. Pargiter)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Ketubot.50a" target="_blank" rel="noopener">Babylonian Talmud, Ketubot 50a, William Davidson Edition (Koren-Steinsaltz)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.accesstoinsight.org/tipitaka/an/an05/an05.041.than.html" target="_blank" rel="noopener">Anguttara Nikaya 5.41, Adiya Sutta: Benefits to be Obtained (from Wealth)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.britannica.com/biography/Guru-Tegh-Bahadur" target="_blank" rel="noopener">Guru Tegh Bahadur (Tamanna Nangia (fact-checked by Britannica Editors))</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-11"><a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Theogony (Hesiod)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12">Apology (Plato (recording Socrates)) <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://encyclopedia.ushmm.org/content/en/article/oskar-schindler" target="_blank" rel="noopener">Oskar Schindler (United States Holocaust Memorial Museum)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.britannica.com/biography/Oskar-Schindler" target="_blank" rel="noopener">Oskar Schindler</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0219.html">&larr; Kural 219</a>
+  <a href="kural-0221.html">Kural 221 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-022.html">Knowledge of What Is Befitting</a>
+  <a class="skip-btn" href="kural-0221.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

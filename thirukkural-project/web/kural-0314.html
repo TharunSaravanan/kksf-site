@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 314 — Not Doing Evil | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 314</h1>
+<p class="adhikaram"><a href="adhikaram-032.html">Not Doing Evil</a> &middot; Innaa Seyyaamai &middot; <span class="tamil">இன்னா செய்யாமை</span></p>
+
+<div class="tamil-text">இன்னாசெய் தாரை ஒறுத்தல் அவர்நாண
+நன்னயஞ் செய்து விடல்.</div>
+<div class="translit">Innaa seydhaarai oruththal avar naana
+Nannayam seydhu vidal.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The best way to punish people who hurt you is to be so kind to them that they feel ashamed, and then to let the matter go.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If your brother breaks your toy and you share your snack with him anyway, he will probably feel really sorry about the toy. Valluvar says that is the best “punishment”: being so kind that the person feels ashamed of being mean, and then forgetting about it.</p>
+
+<h2 class="section">University</h2>
+<p>Perhaps the most quoted couplet of the chapter, 314 redefines punishment itself. Oruththal (to punish, chastise) is kept as the goal, but the means is nannayam (goodness, benefit), and its effect is naanam, the wrongdoer’s shame. The closing word vidal (to leave off, let go) led Parimelazhagar and later commentators such as Mu. Varadarasan to read the couplet as requiring one to forget both the injury received and the good returned, so that the kindness does not become a hidden weapon. The idea is found across traditions: Proverbs and Paul speak of heaping coals of fire on an enemy’s head by feeding him, and the Qur’an promises that repelling evil with what is better can turn an enemy into a close friend. What Valluvar adds is the paradox that the gentlest act is the most effective sanction.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;When One injures another, the injured turns round and injures the injurer. Similarly, when one cherishes another, that other cherishes the cherisher. One should frame one&#x27;s rule of conduct according to this.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/m13/m13b078.htm" target="_blank" rel="noopener">Mahabharata, Anushasana Parva, Section 113 (trans. K. M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Brihaspati tells Yudhishthira that harm invites harm in return while kindness invites kindness, and that one should build one’s conduct on this.</div>
+  <div class="tieback">The Kural’s strategy of answering harm with kindness uses this same principle: goodness shown draws goodness out of the other person.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Therefore if thine enemy hunger, feed him; if he thirst, give him drink: for in so doing thou shalt heap coals of fire on his head. Be not overcome of evil, but overcome evil with good.&rdquo;</div>
+  <div class="cite">&mdash; Romans 12:20–21 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul tells believers to meet an enemy’s need with kindness, which will bring the enemy to burning shame, and so to overcome evil with good.</div>
+  <div class="tieback">This is almost the Kural itself: the ‘coals of fire’ are the shame the kindness produces, and the punishment is goodness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Good and evil cannot be equal. Respond ˹to evil˺ with what is best, then the one you are in a feud with will be like a close friend.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://quran.com/" target="_blank" rel="noopener">Qur’an 41:34 (trans. Mustafa Khattab, The Clear Quran)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an tells believers to answer wrongdoing with the finest possible conduct, which can turn a bitter enemy into a devoted friend.</div>
+  <div class="tieback">Both texts answer harm with goodness and expect it to change the wrongdoer. The Kural stresses the enemy’s shame, the Qur’an the enemy’s transformation into a friend.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;If thine enemy be hungry, give him bread to eat; and if he be thirsty, give him water to drink: For thou shalt heap coals of fire upon his head, and the LORD shall reward thee.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 25:21–22 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Proverbs advises feeding a hungry enemy, which will heap burning shame on him, and promises that God will reward the kindness.</div>
+  <div class="tieback">The source of Paul’s later saying, and a close match to the Kural: kindness to one who harmed you produces shame in him.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Overcome the angry by non-anger; overcome the wicked by goodness; overcome the miser by generosity; overcome the liar by truth.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 223 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha teaches that each vice is best conquered by its opposite virtue, so wickedness is conquered by goodness.</div>
+  <div class="tieback">Both texts treat goodness as the true way to defeat someone who does wrong.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Knowing that he was near, the Blessed One said, ‘Caṇḍakauśika, wake up! wake up! Do not be confused.’ When he heard the Lord’s words, the recollection of his former births arose in the serpent … Then, after he had circumambulated the Lord of Three Worlds three times, free from passions, he undertook a fast of his own accord.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra, Book X (Mahāvīracaritra), ch. 3, part 10, &#x27;Episode of Caṇḍakauśika&#x27; (tr. Helen M. Johnson; wisdomlib.org)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The poison-eyed serpent Caṇḍakauśika burns and bites Mahāvīra repeatedly. Mahāvīra answers with compassion and a word of awakening, and the serpent, transformed, gives up violence entirely; Mahāvīra stays on &#x27;from compassion for him.&#x27;</div>
+  <div class="tieback">Valluvar says the way to punish a wrongdoer is to do him good until he is ashamed, and then let it go. Mahāvīra meets venom with kindness, and that kindness, not a counter-blow, is what turns the serpent away from violence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;A noble person does not adopt demerits in his heart and does good to the evil doer.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://api.banidb.com/v2/search/Kartarpur?searchtype=3&amp;source=B" target="_blank" rel="noopener">Vaaran Bhai Gurdas, Vaar 31, Pauri 15 (English translation as given in the BaniDB database)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In a stanza titled &#x27;good and bad&#x27;, Bhai Gurdas compares the noble person to madder, which bears the heat yet dyes others fast, and to sugarcane, which grows sweeter the more it is crushed. Bhai Gurdas&#x27;s Vaaran are early and authoritative Sikh exegesis, not scripture.</div>
+  <div class="tieback">The Kural&#x27;s way to punish wrongdoers is to do them good and let the matter go; Bhai Gurdas likewise praises the one who answers evil with good and keeps no grievance in the heart.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">At the close of Aeschylus’ Eumenides, the Furies threaten to poison Athens after Orestes is acquitted. Athena does not fight or punish them. She answers their rage with patient persuasion and offers of honour and a home in the city, until they give up their anger and become the Kindly Ones.</div>
+  <div class="cite">&mdash; Aeschylus, Eumenides 778–1047 (final scene) <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Athena defeats the hostile Furies not by force but by generosity and respect.</div>
+  <div class="tieback">Like the Kural’s ideal, Athena answers hostility with kindness, and the kindness, not punishment, ends the conflict.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;One thing here is worth a great deal, to pass thy life in truth and justice, with a benevolent disposition even to liars and unjust men.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Antoninus/meditations.html" target="_blank" rel="noopener">Marcus Aurelius, Meditations 6.47 (trans. George Long)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Marcus Aurelius says the one thing of real worth is to live truly and justly while keeping goodwill even toward liars and the unjust.</div>
+  <div class="tieback">Both call for positive goodwill toward those who do wrong, not just the absence of revenge.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Gandhi gives Jan Smuts a pair of sandals he made himself</div>
+  <div class="rle-meta">1914 (tribute 1939) &middot; South Africa</div>
+  <div class="quote is-paraphrase">In South Africa Mohandas Gandhi led nonviolent campaigns against discriminatory laws enforced by General Jan Smuts and was imprisoned several times. Before leaving for India in 1914, after the two men reached an agreement, Gandhi sent Smuts a pair of leather sandals he had made with his own hands. In 1939, in a tribute written for Gandhi&#x27;s 70th birthday, Smuts recalled that he had worn the sandals for many summers, though he felt he was not worthy to stand in the shoes of so great a man.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Gandhi answered his adversary not with bitterness but with a personal gift, and the gesture eventually drew from Smuts a public tribute of humility and respect.</div>
+  <div class="tieback">The kural says the true way to punish those who have harmed you is to do them such kindness that they feel ashamed, and Gandhi&#x27;s handmade gift led his old opponent to declare himself unworthy to stand in his shoes.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-32/" target="_blank" rel="noopener">Thirukkural Chapter 32: இன்னாசெய்யாமை / Not doing Evil (Kurals 311-320), with Sivayogi Sivakumar, Mu. Varadarasan, Solomon Pappaiah and Kalaignar commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-032.html" target="_blank" rel="noopener">இன்னா செய்யாமை - அதிகாரம் 32 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah, Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/m13/m13b078.htm" target="_blank" rel="noopener">The Mahabharata, Book 13: Anushasana Parva, Section CXIII (Brihaspati’s teaching to Yudhishthira), trans. Kisari Mohan Ganguli</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://quran.com/" target="_blank" rel="noopener">The Clear Quran, trans. Dr. Mustafa Khattab (verses 3:104, 6:132, 16:97, 64:16, 91:9-10)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://api.banidb.com/v2/search/Kartarpur?searchtype=3&amp;source=B" target="_blank" rel="noopener">Vaaran Bhai Gurdas (Bhai Gurdas (c. 1551-1636); English translation as given in BaniDB (translator not named))</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9">Eumenides (Aeschylus) <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Antoninus/meditations.html" target="_blank" rel="noopener">Marcus Aurelius, The Meditations (trans. George Long)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://sthp.saha.org.za/memorial/articles/gandhis_relationship_with_jan_smuts_and_the_story_of_the_sandals.htm" target="_blank" rel="noopener">Gandhi&#x27;s relationship with Jan Smuts and the story of the sandals</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.tribuneindia.com/2006/20061118/saturday/main1.htm" target="_blank" rel="noopener">A prison finds its conscience (A.J. Philip)</a> <span class="tier">[web source]</span></li>
+<li id="cite-13"><a href="https://samilhistory.com/2017/04/14/i-am-not-worthy-to-stand-in-the-shoes-of-so-great-a-man/" target="_blank" rel="noopener">... I am not worthy to stand in the shoes of so great a man (Peter Dickens)</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0313.html">&larr; Kural 313</a>
+  <a href="kural-0315.html">Kural 315 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-032.html">Not Doing Evil</a>
+  <a class="skip-btn" href="kural-0321.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

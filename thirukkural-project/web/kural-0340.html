@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 340 — Impermanence | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 340</h1>
+<p class="adhikaram"><a href="adhikaram-034.html">Impermanence</a> &middot; Nilaiyaamai &middot; <span class="tamil">நிலையாமை</span></p>
+
+<div class="tamil-text">புக்கில் அமைந்தின்று கொல்லோ உடம்பினுள்
+துச்சில் இருந்த உயிர்க்கு.</div>
+<div class="translit">Pukkil amaindhindru kollo udambinul
+Thuchchil irundha uyirkku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The soul only stays for a while in a corner of the body. It seems it has not yet found a lasting home of its own.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a traveller who keeps staying in borrowed rooms, moving from one to the next, never having a house of their own. This kural says the soul is like that traveller: the body is only a temporary room, and it is still looking for its true home.</p>
+
+<h2 class="section">University</h2>
+<p>Valluvar closes the chapter with a question rather than a statement. “Pukkil” (a settled dwelling, a home one enters to stay) is contrasted with “thuchchil” (a temporary lodging, a borrowed corner), and the particle “kollo” (is it perhaps that...?) gives the line a tone of wondering. The soul is pictured as a tenant in a rented corner of the body, which explains why it keeps moving from body to body: it has not yet reached its true home, which traditional commentators identify with veedu (liberation). The chapter thus moves from wealth (332-333), to time (334-337), to the body (338-339), and finally to the homelessness of the soul, handing on to the next chapter on renunciation. Parallels include the Gita&#x27;s ‘transient world’ from which liberated souls do not return, Paul&#x27;s ‘earthly house of this tabernacle’, the hadith of being a ‘stranger or traveller’, and Marcus Aurelius&#x27; ‘stranger&#x27;s sojourn’.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Having attained Me, the great souls are no more subject to rebirth in this world, which is transient and full of misery, because they have attained the highest perfection.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita 8.15</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna teaches that the soul keeps returning to this impermanent world until it reaches God, its final home.</div>
+  <div class="tieback">The Kural&#x27;s lodger who has not yet found a home is the soul still in this transient world; the Gita names the home it seeks.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For we know that if our earthly house of this tabernacle were dissolved, we have a building of God, an house not made with hands, eternal in the heavens.&rdquo;</div>
+  <div class="cite">&mdash; 2 Corinthians 5:1 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul calls the body a temporary tent, contrasted with the eternal home God provides.</div>
+  <div class="tieback">The body as a tent (tabernacle) rather than a permanent house is the Kural&#x27;s ‘thuchchil’ versus ‘pukkil’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Be in this world as if you were a stranger or a traveler.” Ibn `Umar used to say, “If you survive till the evening, do not expect to be alive in the morning.&rdquo;</div>
+  <div class="cite">&mdash; Sahih al-Bukhari 6416 <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet tells Ibn Umar to live in this world like a stranger or traveller passing through.</div>
+  <div class="tieback">The traveller who has not settled is the Kural&#x27;s soul lodging in a borrowed corner, with no permanent home here.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;For we are strangers before thee, and sojourners, as were all our fathers: our days on the earth are as a shadow, and there is none abiding.&rdquo;</div>
+  <div class="cite">&mdash; 1 Chronicles 29:15 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">King David prays that humans are strangers and temporary residents on earth, with no lasting place.</div>
+  <div class="tieback">‘Sojourners’ with ‘none abiding’ matches the Kural&#x27;s soul as a temporary lodger without a settled home.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Through many a birth in samsara have I wandered in vain, seeking the builder of this house (of life). Repeated birth is indeed suffering! O house-builder, you are seen! You will not build this house again.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 153-154 <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">At his awakening, the Buddha describes wandering through countless births, each a new ‘house’, until he ends the cycle.</div>
+  <div class="tieback">Both texts picture life moving from one temporary house to another without a lasting home, and point to an end of that wandering.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Going through the same religious practices as perfected saints, you will reach the world of perfection, Gautama, where there is safety and perfect happiness.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 10.35 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Mahāvīra points Gautama to Siddha-loka, the abode of the perfected at the summit of the universe, the soul&#x27;s only permanent home.</div>
+  <div class="tieback">The Kural suggests the soul only lodges in the body because it has not yet found a lasting home; Jainism names that home as the world of perfection reached at liberation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Burn away your hopes and desires, and live like a guest in this world.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 646, Raag Sorath (Sorath ki Vaar, salok), Guru Amar Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Guru Amar Das counsels living in the world as a visitor who knows the stay is temporary, not as an owner settling in for good.</div>
+  <div class="tieback">The Kural wonders whether the soul, lodging for a while in the body, has yet found a permanent home; Guru Amar Das likewise teaches that here we are only guests.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">After the fall of Troy, Odysseus wanders for ten years, lodging as a guest or captive in one strange place after another and longing for his home in Ithaca.</div>
+  <div class="cite">&mdash; Homer, Odyssey (esp. Books 1, 5, 9-12) <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The Odyssey is the story of a man who stays everywhere but belongs nowhere until he finally reaches home.</div>
+  <div class="tieback">Odysseus as a guest in foreign houses loosely mirrors the Kural&#x27;s soul lodging in a body while seeking its true home.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Everything which belongs to the body is a stream, and what belongs to the soul is a dream and vapour, and life is a warfare and a stranger&#x27;s sojourn, and after-fame is oblivion.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Antoninus/meditations.html" target="_blank" rel="noopener">Marcus Aurelius, Meditations 2.17 (George Long translation)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Marcus Aurelius calls life a stranger&#x27;s temporary stay, with the body constantly flowing away.</div>
+  <div class="tieback">‘A stranger&#x27;s sojourn’ is almost the Kural&#x27;s image of the soul as a temporary lodger in the body.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Basho sells his home and sets out on the Narrow Road to the Deep North</div>
+  <div class="rle-meta">1689 &middot; Edo (Tokyo) and northern Honshu, Japan</div>
+  <div class="quote is-paraphrase">In 1689 the haiku poet Matsuo Basho sold his home outside Edo and set out on foot, with a companion, on a journey of about five months through the remote northern provinces of Japan. He recorded the journey in prose and haiku in Oku no Hosomichi (The Narrow Road to the Deep North), published in 1694. Basho died in 1694 while on another journey.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Basho chose to live as a lifelong traveller without a fixed home, and his travel diary became a classic of Japanese literature. His life embodies the idea of existence as a passage rather than a settled dwelling.</div>
+  <div class="tieback">The kural pictures the soul as a lodger in a borrowed corner that has not yet found its permanent home, and Basho gave up his own house to live as a wanderer between temporary lodgings.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-34/" target="_blank" rel="noopener">Thirukkural Chapter 34: நிலையாமை / Instability (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A034.html" target="_blank" rel="noopener">34. நிலையாமை (Thirukkural with word-by-word gloss and commentary)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita, The Song of God (Swami Mukundananda)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">Sahih al-Bukhari 6416, Book of Ar-Riqaq <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Antoninus/meditations.html" target="_blank" rel="noopener">Marcus Aurelius, The Meditations (trans. George Long)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/biography/Basho-Japanese-poet" target="_blank" rel="noopener">Basho (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://japanupclose.web-japan.org/techculture/c20230317_2.html" target="_blank" rel="noopener">Basho Matsuo</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0339.html">&larr; Kural 339</a>
+  <a href="kural-0341.html">Kural 341 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-034.html">Impermanence</a>
+  <a class="skip-btn" href="kural-0341.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

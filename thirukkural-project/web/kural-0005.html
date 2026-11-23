@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 5 — The Praise of God | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 5</h1>
+<p class="adhikaram"><a href="adhikaram-001.html">The Praise of God</a> &middot; Kadavul Vaazhthu &middot; <span class="tamil">கடவுள் வாழ்த்து</span></p>
+
+<div class="tamil-text">இருள்சேர் இருவினையும் சேரா இறைவன்
+பொருள்சேர் புகழ்புரிந்தார் மாட்டு.</div>
+<div class="translit">Irul-ser iru-vinaiyum seraa iraivan,
+porul-ser pukazh-purindhaar maattu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The two kinds of karma (the good and bad results of our actions) that come from not knowing the truth will not stick to those who gladly praise God’s true greatness.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine collecting points for good things and bad things you do, without really understanding why they matter. This kural says truly understanding and loving God wipes the whole scoreboard clean — good points and bad.</p>
+
+<h2 class="section">University</h2>
+<p>“Irul” (darkness) signifies avidya (ignorance), and “iru vinai” (the twin deeds) refers to punya and papa — meritorious and demeritorious karma — both of which bind the soul to rebirth regardless of whether the deeds were “good” or “bad,” because both are performed from a standpoint of ignorance. Valluvar’s claim is that liberation is not more good karma outweighing bad, but a shift in understanding that removes a person from the karmic ledger altogether.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;buddhi-yukto jahātīha ubhe sukṛta-duṣkṛte” — “One who is united with wisdom casts off, even in this life, both good and evil deeds.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 2.50</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna teaches that someone acting from real wisdom stops accumulating both &#x27;good&#x27; and &#x27;bad&#x27; karma — they step outside the whole scorekeeping system.</div>
+  <div class="tieback">This is close to a word-for-word match for the Kural’s claim about the &#x27;two dark deeds.&#x27;</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;There is therefore now no condemnation to them which are in Christ Jesus.&rdquo;</div>
+  <div class="cite">&mdash; Romans 8:1 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul tells believers their standing is no longer measured by a record of right and wrong at all, because they are &#x27;in Christ.&#x27;</div>
+  <div class="tieback">A different route to a similar destination as the Kural — being freed from the deed-by-deed ledger through relationship rather than accumulated merit.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Those who repent, believe and do righteous work. For them Allah will replace their evil deeds with good.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 25:70, Al-Furqan <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">This verse says sincere repentance actually converts the record of past evil into a record of good, not just erasing it.</div>
+  <div class="tieback">An even closer image than Ezekiel&#x27;s to the Kural’s claim, since the negative record is positively transformed, not just wiped.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;If a wicked person turns away from all his sins... none of the transgressions that he has committed shall be remembered against him.&rdquo;</div>
+  <div class="cite">&mdash; Ezekiel 18:21-22 (Tanakh / KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Ezekiel insists that God doesn’t keep a running total against someone who genuinely turns their life around — the old record simply isn’t held against them.</div>
+  <div class="tieback">A real, if narrower, Jewish parallel to the Kural’s &#x27;deeds don&#x27;t stick&#x27; claim — here achieved through repentance rather than a general transcendence of karma.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">Describes an awakened mind as one that has “gone beyond both merit and demerit,” for whom “there is no fear.</div>
+  <div class="cite">&mdash; Dhammapada, verse 39 <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The verse describes an awakened mind as one that has gone beyond the entire category of merit and demerit, not just avoided bad and pursued good.</div>
+  <div class="tieback">Nearly identical conceptual move to the Kural: liberation isn’t better karma, it’s exiting the karma-ledger altogether.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Just as fetter whether made of iron or gold binds a person similarly Karma whether auspicious (punya) or inauspicious (Papa) binds the soul.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.com/" target="_blank" rel="noopener">Kundakunda, Samayasara 146, as given in Saman Suttam 201 (English edition, Jain World)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Kundakunda&#x27;s famous image teaches that meritorious karma is still bondage: a golden chain binds as surely as an iron one, so liberation means freedom from both punya and papa.</div>
+  <div class="tieback">It matches the Kural&#x27;s &#x27;two deeds born of darkness&#x27; almost exactly, naming good and bad karma together as the twin fetters that the soul must shed.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;On the banks of sacred rivers, the mind is not appeased. People remain entangled in good and bad deeds. Sin and virtue are both the same.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 325, Raag Gauri, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Kabir says people stay tangled up in both their good and their bad deeds, and that as bonds the two are the same. Release does not come from piling up merit. It comes from the treasure already within, the Name.</div>
+  <div class="tieback">This is the Kural&#x27;s own point: both kinds of karma bind, and only true knowledge of God lifts a person out of them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Initiates carried inscribed gold tablets into the grave declaring: “I have flown out of the sorrowful, weary Wheel.</div>
+  <div class="cite">&mdash; Orphic gold tablets (Thurii tablets) <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">These tablets were a kind of password, declaring the soul had escaped the exhausting cycle of rebirth through ritual purification.</div>
+  <div class="tieback">A rare Greek parallel to the Kural’s &#x27;stepping outside the whole system&#x27; idea, though framed as ritual escape from rebirth rather than transcending good and bad deeds specifically.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Spinoza’s ‘free man’ acts entirely from reason, understanding good and evil not as fixed cosmic categories but as relative to what helps or hinders a rational life.</div>
+  <div class="cite">&mdash; Spinoza, Ethics, Parts IV–V <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">For Spinoza, becoming wise means outgrowing the whole ordinary framework of moralized &#x27;good&#x27; and &#x27;bad&#x27; for a clearer, more rational vantage point.</div>
+  <div class="tieback">Shares the Kural’s basic move of transcending the entire good/bad framework through understanding, rather than just picking the &#x27;good&#x27; side of it.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Ashoka turns to the Dhamma after the Kalinga war</div>
+  <div class="rle-meta">c. 260 BCE &middot; Kalinga (present-day Odisha), India</div>
+  <div class="quote is-paraphrase">About eight years after his coronation, the Mauryan emperor Ashoka conquered Kalinga in a war that caused great loss of life. In his Thirteenth Major Rock Edict he recorded deep remorse for the conquest and declared that conquest by Dhamma was the best conquest. He embraced Buddhism and promoted ethical rule through edicts carved across his empire.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Ashoka did not try to cancel his past with more conquests or rituals; he changed his understanding of what rule was for, and his conduct changed with it.</div>
+  <div class="tieback">The kural teaches that deeds born of ignorance lose their grip on one who turns to God with true understanding, and Ashoka&#x27;s edict records a ruler whose change of understanding, not a tally of merit, transformed his reign.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-1/" target="_blank" rel="noopener">கடவுள் வாழ்த்து (The Praise of God) — Chapter 1, with commentary by Mu. Varadarajan, Solomon Pappaiah, M. Karunanidhi, and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-001.html" target="_blank" rel="noopener">The Praise of God — Adhigaram 1 (Tamil text, transliteration, English translation, song setting by Pu. A. Muthukrishnan)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, composite of standard English translations <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://jainworld.com/" target="_blank" rel="noopener">Saman Suttam (anthology of Jain scripture, compiled 1974)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9">Orphic gold tablets (Thurii tablets) <span class="tier">[secondary source]</span></li>
+<li id="cite-10">Ethics, Part IV-V (Baruch Spinoza) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/biography/Ashoka" target="_blank" rel="noopener">Ashoka</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.worldhistory.org/Edicts_of_Ashoka/" target="_blank" rel="noopener">The Edicts of Ashoka the Great (Joshua J. Mark)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0004.html">&larr; Kural 4</a>
+  <a href="kural-0006.html">Kural 6 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-001.html">The Praise of God</a>
+  <a class="skip-btn" href="kural-0011.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

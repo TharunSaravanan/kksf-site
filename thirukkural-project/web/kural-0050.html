@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 50 — Domestic Life | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 50</h1>
+<p class="adhikaram"><a href="adhikaram-005.html">Domestic Life</a> &middot; Ilvaazhkkai &middot; <span class="tamil">இல்வாழ்க்கை</span></p>
+
+<div class="tamil-text">வையத்துள் வாழ்வாங்கு வாழ்பவன் வான்உறையும்
+தெய்வத்துள் வைக்கப் படும்.</div>
+<div class="translit">Vaiyaththul vaazhvaangu vaazhpavan vaanuraiyum,
+Theyvaththul vaikkap padum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A person who lives on this earth the way people should live will be counted among the gods in heaven.</p>
+
+<h2 class="section">Elementary</h2>
+<p>You don&#x27;t have to go anywhere special to become great. If you live rightly here — kindly, honestly, taking care of people — the world will think of you the way it thinks of the shining beings in the sky. Being good on the ground is what puts you up there.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter&#x27;s closing couplet is built on a deliberate spatial contrast: வையத்துள் (vaiyaththul, “within the world/earth”) against வான் உறையும் (vaan uraiyum, “sky-dwelling”). The pivot is the untranslatable வாழ்வாங்கு வாழ்பவன் — “one who lives in the manner of living,” i.e. one who lives as living is properly done. The passive வைக்கப்படும் (vaikkap-padum, “will be placed/reckoned”) is carefully non-supernatural: Valluvar does not say such a person *becomes* a god or *goes* to heaven, but that he will be *counted among* them — an evaluative rather than metaphysical claim, which is why the verse has been read comfortably by Saiva, Vaishnava, Jain and secular-humanist commentators alike. It is also the structural answer to kural 1: the book opened by putting God first; it closes this chapter by putting the good householder alongside the gods.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Mahabharata, the sage Kaushika, proud of his ascetic powers, is sent to learn dharma from Dharmavyadha — a butcher in Mithila who supports his aged parents and does his ordinary trade honestly; the householder-butcher then instructs the brahmin ascetic in the highest teaching.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m03/index.htm" target="_blank" rel="noopener">Mahabharata, Vana Parva (Vyadha Gita / the story of Dharmavyadha)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Vyadha Gita makes an ordinary working householder the spiritual superior of a forest ascetic, precisely because he lives his worldly duties as they ought to be lived.</div>
+  <div class="tieback">It dramatises the Kural&#x27;s claim that living rightly in this world is what places a person among the highest, above those who chase higher states.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Whereby are given unto us exceeding great and precious promises: that by these ye might be partakers of the divine nature, having escaped the corruption that is in the world through lust.&rdquo;</div>
+  <div class="cite">&mdash; 2 Peter 1:4 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">2 Peter articulates what the Eastern churches call theosis — that human beings living rightly come to share in God&#x27;s own nature.</div>
+  <div class="tieback">This is the Kural&#x27;s promise in Christian terms: right living on earth results in being counted with the divine.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;[To the righteous it will be said], &#x27;O reassured soul, Return to your Lord, well-pleased and pleasing [to Him], And enter among My [righteous] servants And enter My Paradise.&#x27;&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 89:27-30, Al-Fajr (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Surah al-Fajr closes by contrasting the greedy who neglect the orphan and the poor with the soul at peace, who is welcomed into the ranks of God&#x27;s servants.</div>
+  <div class="tieback">Both passages describe the reward as being *placed among* an honoured company — the Kural among the sky-dwelling gods, the Qur&#x27;an among God&#x27;s servants.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Rabbi Jacob said: this world is like a vestibule before the world to come; prepare yourself in the vestibule, so that you may enter the banqueting-hall.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot.3.17" target="_blank" rel="noopener">Mishnah, Pirkei Avot 4:16 (trans. Dr. Joshua Kulp)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Pirkei Avot makes present, ordinary life the preparation whose quality determines one&#x27;s place in the world to come.</div>
+  <div class="tieback">Both sayings make how one lives here the sole determinant of the honoured company one joins hereafter.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Living with Brahma are those families where, in the home, mother &amp; father are revered by the children. Living with the first devas are those families where, in the home, mother &amp; father are revered by the children. … &#x27;Brahma&#x27; is a designation for mother &amp; father.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/kn/iti/iti.4.100-112.than.html" target="_blank" rel="noopener">Itivuttaka 106 (Iti 4.7), trans. Thanissaro Bhikkhu</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha says that a household which honours its parents is already living in the company of Brahma and the devas — and that the parents themselves *are* what those words name.</div>
+  <div class="tieback">This is the Kural&#x27;s claim almost exactly: rightly ordered domestic life places ordinary people among the gods.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;When under such discipline he lives piously even as a householder, he will, on quitting flesh and bones, share the world of the Yakshas.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 5.24 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The Uttarādhyayana promises a heavenly rebirth among the gods to a householder who keeps the lay rules and the fortnightly fast.</div>
+  <div class="tieback">Valluvar says the one who lives as life should be lived will be counted among the sky-dwelling gods, and the Jain sūtra gives the same reward to the pious householder.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;In the midst of this world, do seva, and you shall be given a place of honor in the Court of the Lord.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 26, Sri Raag, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Guru Nanak tells his listeners that selfless service done within ordinary worldly life is what wins honour before God.</div>
+  <div class="tieback">Like the Kural&#x27;s householder who lives on earth as one should and is counted among the gods in heaven, the one who serves within the world is given a place of honour in the divine court.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;But after earth had covered this generation -- they are called pure spirits dwelling on the earth, and are kindly, delivering from harm, and guardians of mortal men; for they roam everywhere over the earth, clothed in mist and keep watch on judgements and cruel deeds, givers of wealth&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 121-126 (Evelyn-White)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Hesiod&#x27;s golden race, who had lived rightly and died gently, were not simply extinguished but promoted to the status of daimones who guard and watch over the living.</div>
+  <div class="tieback">Like the Kural, it says that mortals who lived as one ought are afterwards reckoned among the divine order rather than merely remembered.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Wherefore we ought to fly away from earth to heaven as quickly as we can; and to fly away is to become like God, as far as this is possible; and to become like him, is to become holy, just, and wise.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Plato/theatu.html" target="_blank" rel="noopener">Plato, Theaetetus 176b (trans. Benjamin Jowett)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Socrates defines the philosopher&#x27;s goal as homoiōsis theōi — likeness to God — and immediately glosses it in purely ethical terms: holiness, justice, wisdom.</div>
+  <div class="tieback">The Kural makes the same move, defining nearness to the divine as a matter of how one lives rather than where one goes.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Imhotep, builder of the Step Pyramid, is later worshipped as a god</div>
+  <div class="rle-meta">c. 27th century BCE; worshipped in the Late Period &middot; Saqqara and Memphis, Egypt</div>
+  <div class="quote is-paraphrase">Imhotep was a high official of King Djoser of Egypt&#x27;s Third Dynasty; his name and titles are carved on the base of a statue of the king, and he is credited with designing Djoser&#x27;s Step Pyramid at Saqqara, Egypt&#x27;s first monumental structure in stone. His memory lasted for millennia: by the New Kingdom he was listed among the wise men of the past and revered as patron of scribes, and in the Late Period he was worshipped as a god of medicine and son of the god Ptah, later identified by the Greeks with Asklepios.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Imhotep is one of very few people in Egyptian history known to have been raised to divine status after death, purely through the regard in which his life and wisdom were held.</div>
+  <div class="tieback">The kural says one who lives on earth as one ought will be counted among the gods in the sky, and Imhotep, a human official remembered for wisdom and achievement, was literally later counted among Egypt&#x27;s gods.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-5/" target="_blank" rel="noopener">திருக்குறள் — அதிகாரம் 5: இல்வாழ்க்கை (Chapter 5: Domestic Life), with Tamil commentaries by Mu. Varadarajan, Salomon Pappaiah, Mu. Karunanidhi and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-005.html" target="_blank" rel="noopener">Thirukkural, Adhigaram 5 — Domestic Life / Married Life (Tamil text, transliteration, multi-language translations and classical commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://thirukural-world.blogspot.com/2014/12/41-50.html" target="_blank" rel="noopener">குறள் 41-50 இல்வாழ்க்கை (Kurals 41-50, Domestic Life) — Tamil text with Tamil and English meanings and Pope/Drew translations</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.sacred-texts.com/hin/m03/index.htm" target="_blank" rel="noopener">The Mahabharata, Vana Parva — the Vyadha Gita (Kaushika and Dharmavyadha), as recounted in the Kisari Mohan Ganguli translation and standard retellings</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Pirkei_Avot.3.17" target="_blank" rel="noopener">Pirkei Avot 3:17 (Mishnah Yomit translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.accesstoinsight.org/tipitaka/kn/iti/iti.4.100-112.than.html" target="_blank" rel="noopener">Itivuttaka 106 (Iti 4.7) — &#x27;Living with Brahma are those families where mother and father are revered&#x27;, trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://classics.mit.edu/Plato/theatu.html" target="_blank" rel="noopener">Plato, Theaetetus (176a-b, homoiōsis theōi), trans. Benjamin Jowett</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/biography/Imhotep" target="_blank" rel="noopener">Imhotep (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://arce.org/resource/imhotep-sage-between-fiction-and-reality/" target="_blank" rel="noopener">Imhotep: A Sage between Fiction and Reality (Marina Escolano-Poveda)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0049.html">&larr; Kural 49</a>
+  <a href="kural-0051.html">Kural 51 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-005.html">Domestic Life</a>
+  <a class="skip-btn" href="kural-0051.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

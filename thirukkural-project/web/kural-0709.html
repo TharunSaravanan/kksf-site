@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 709 — The Knowledge of Signals | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 709</h1>
+<p class="adhikaram"><a href="adhikaram-071.html">The Knowledge of Signals</a> &middot; Kurippu Arithal &middot; <span class="tamil">குறிப்பறிதல்</span></p>
+
+<div class="tamil-text">பகைமையும் கேண்மையும் கண்ணுரைக்கும் கண்ணின்
+வகைமை உணர்வார்ப் பெறின்.</div>
+<div class="translit">Pakaimaiyum kenmaiyum kannuraikkum kannin
+Vakaimai unarvaarp perin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>To people who understand the different ways eyes look, the eyes alone will show if someone is an enemy or a friend.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A dog can tell if you are friendly by the way you look at it. Soft eyes mean ‘friend’, a hard stare means ‘watch out’. Wise people learn to read eyes the same way, and the eyes tell them who is a friend and who is not.</p>
+
+<h2 class="section">University</h2>
+<p>Pakaimai (enmity) and kenmai (friendship, intimacy) are the two things kan uraikkum, ‘the eye will declare’. The condition is kannin vakaimai unarvaar, ‘those who perceive the varieties (vakai) of the eye’, i.e., the different kinds of look. Parimelazhagar applies it to foreign policy: if the king has ministers who can read the movements of the eye, the eyes of other kings and their envoys will themselves reveal hostility or friendship. Drew’s translation, following him, adds ‘(of foreign kings)’. Commentators link the verse with the Kural’s treatment of hidden enmity (ch. 89, Utpakai) and false friendship (ch. 83), where a smiling face may cover hostility: the eye is harder to disguise than the mouth. Sandhi text: பகைமையுங் கேண்மையுங் கண்ணுரைக்குங் கண்ணின் / வகைமை யுணர்வார்ப் பெறின்.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Angry appearance when the courtier is in sight; evading or refusal to hear his speech; no inclination to give him a seat or to see him; change in syllables and accents while talking to him; seeing with one eye; brow-beating ...&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/kautilya-arthashastra/d/doc366123.html" target="_blank" rel="noopener">Kautilya, Arthashastra 5.5 (‘Time-Serving’), trans. R. Shamasastry</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Kautilya lists the signs by which a courtier can tell that the king has turned against him, many of them in the eyes and brows.</div>
+  <div class="tieback">Kautilya catalogues the ‘varieties of the eye’ that, as the Kural says, reveal enmity to the trained observer.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And the Lord turned, and looked upon Peter. And Peter remembered the word of the Lord, how he had said unto him, Before the cock crow, thou shalt deny me thrice.&rdquo;</div>
+  <div class="cite">&mdash; Luke 22:61 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">After Peter’s third denial, a single look from Jesus tells Peter everything, and he goes out and weeps.</div>
+  <div class="tieback">A look carries a whole message of relationship without words, as the Kural says eyes speak friendship and estrangement.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Hatred has already appeared from their mouths, and what their breasts conceal is greater. We have certainly made clear to you the signs, if you will use reason.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 3:118 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Believers are warned that hostile outsiders give away their enmity through outward signs, if one pays attention.</div>
+  <div class="tieback">Enmity shows through outward signs to the attentive, which is the Kural’s claim about the eye.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;And Jacob beheld the countenance of Laban, and, behold, it was not toward him as beforetime.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Genesis 31:2 (JPS 1917)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Jacob reads in his father-in-law’s face that friendship has turned to hostility, and decides to leave.</div>
+  <div class="tieback">Jacob does exactly what the Kural describes: he reads enmity in a face and acts on it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Buddha teaches Sigala how to tell false friends, such as the flatterer and the one who only talks, from true friends, by the signs in their behaviour.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Digha Nikaya 31, Sigalovada Sutta</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Friendship and enmity in disguise can be recognised by those who know what to look for.</div>
+  <div class="tieback">Like the Kural, the sutta teaches that friend and foe can be told apart from their signs.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">Hemacandra tells how the serpent Caṇḍakauśika, reborn as a snake whose very look was poisonous because of anger carried over from former lives, turned its deadly glare on the wandering Mahavira. Mahavira&#x27;s calm, unhostile gaze did not change, and the serpent was pacified and awakened.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Hemacandra, Triṣaṣṭiśalākāpuruṣacaritra, Book 10 (Mahāvīra-caritra), ch. 3, part 10, &#x27;Episode of Caṇḍakauśika&#x27; (tr. Helen M. Johnson; wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The episode sets the look of hatred against the look of compassion and shows that anger carried in the soul comes out through the eyes.</div>
+  <div class="tieback">It dramatises the Kural&#x27;s claim that the eyes declare enmity or friendship to anyone who can read them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Bronze is bright and shiny, but when it is rubbed, its blackness appears.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 729, Raag Suhi, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">According to the Janamsakhi tradition, Guru Nanak sang this hymn to Sajjan, a welcoming host who secretly robbed and killed travellers; the shining surface hid an inner blackness, and Sajjan repented.</div>
+  <div class="tieback">The Kural says those who understand glances can tell an enemy from a friend; Guru Nanak saw the enemy beneath Sajjan&#x27;s friendly surface.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;whereon Minerva went up to Ulysses and prompted him to beg pieces of bread from each one of the suitors, that he might see what kind of people they were, and tell the good from the bad&rdquo;</div>
+  <div class="cite">&mdash; Homer, Odyssey 17 (trans. Samuel Butler) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Disguised as a beggar, Odysseus goes round the suitors to learn from their looks and conduct which are friendly and which hostile.</div>
+  <div class="tieback">Odysseus is the Kural’s trained observer, sorting friend from foe by watching them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;It is a point of cunning, to wait upon him with whom you speak, with your eye; as the Jesuits give it in precept: for there be many wise men, that have secret hearts, and transparent countenances.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.authorama.com/essays-of-francis-bacon-23.html" target="_blank" rel="noopener">Francis Bacon, Essays, ‘Of Cunning’</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Bacon advises watching the eyes and face of the person you negotiate with, because even guarded people give themselves away there.</div>
+  <div class="tieback">Bacon’s ‘secret hearts, transparent countenances’ is the Kural’s point that the eye tells what the tongue hides.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Margaret Thatcher judges Gorbachev a man she can do business with</div>
+  <div class="rle-meta">16-17 December 1984 &middot; Chequers and London, England, United Kingdom</div>
+  <div class="quote is-paraphrase">On 16 December 1984, British Prime Minister Margaret Thatcher held long talks at Chequers with Mikhail Gorbachev, then a rising Soviet leader who had been mentioned as a possible successor in Moscow. In a BBC interview with John Cole the next day she said: I like Mr Gorbachev. We can do business together. She explained that he had been ready for full, detailed discussion rather than prepared statements, and her assessment became international news, a first Western verdict on the man who became Soviet leader in 1985.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">From a face-to-face meeting Thatcher judged that a Soviet adversary could be dealt with as a partner, a judgement that proved important as the Cold War began to thaw.</div>
+  <div class="tieback">The kural says that to those who understand the different kinds of glances, the eyes themselves reveal friend or foe, and Thatcher read from a personal encounter that Gorbachev could be a partner rather than simply an enemy.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-71/" target="_blank" rel="noopener">Thirukkural Chapter 71: குறிப்பறிதல் / The Knowledge of Indications (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A071.html" target="_blank" rel="noopener">71. குறிப்பறிதல் — Thirukkural, sandhi-joined text</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.wisdomlib.org/hinduism/book/kautilya-arthashastra/d/doc366123.html" target="_blank" rel="noopener">Kautilya, Arthashastra, Book 5, Chapter 5: Time-Serving, trans. R. Shamasastry</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta: The Discourse to Sigala (DN 31), trans. Narada Thera</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.authorama.com/essays-of-francis-bacon-23.html" target="_blank" rel="noopener">Francis Bacon, The Essays or Counsels, Civil and Moral (1625), ‘Of Cunning’</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.margaretthatcher.org/document/105592" target="_blank" rel="noopener">TV Interview for BBC (I like Mr Gorbachev. We can do business together), 17 December 1984 (Margaret Thatcher; John Cole)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://worldhistorycommons.org/margaret-thatchers-views-mikhail-gorbachev" target="_blank" rel="noopener">Margaret Thatcher&#x27;s Views on Mikhail Gorbachev (World History Commons)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0708.html">&larr; Kural 708</a>
+  <a href="kural-0710.html">Kural 710 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-071.html">The Knowledge of Signals</a>
+  <a class="skip-btn" href="kural-0711.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

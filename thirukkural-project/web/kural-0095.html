@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 95 — Charming Utterance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 95</h1>
+<p class="adhikaram"><a href="adhikaram-010.html">Charming Utterance</a> &middot; Iniyavai Kooral &middot; <span class="tamil">இனியவை கூறல்</span></p>
+
+<div class="tamil-text">பணிவுடையன் இன்சொலன் ஆதல் ஒருவற்கு
+அணியல்ல மற்றுப் பிற.</div>
+<div class="translit">Panivudaiyan insolan aadhal oruvarku,
+Aniyalla matrup pira.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Being humble and speaking kindly are a person’s true jewels. Nothing else deserves to be called a jewel.</p>
+
+<h2 class="section">Elementary</h2>
+<p>You can put on the nicest shoes and the coolest jacket and still have nobody want to sit with you. But if you&#x27;re kind and you don&#x27;t act like you&#x27;re better than everyone, people want to be near you. This kural says humility and kind words are the jewellery that actually works.</p>
+
+<h2 class="section">University</h2>
+<p>அணி (ani) in Tamil poetic usage covers both physical ornament and rhetorical figure, so Valluvar&#x27;s metaphor carries a faint irony: the true &#x27;figure of speech&#x27; is not an embellishment of language but a quality of the speaker. The pairing of பணிவு (panivu, humility/bending) with இன்சொல் is deliberate — sweet speech without humility collapses into condescension, while humility without kind speech remains invisible. The closing அணியல்ல மற்றுப் பிற (&#x27;other things are not ornaments&#x27;) is an absolute exclusion, and Tamil commentators note it as a rejection of the courtly display culture in which jewellery signified rank. The trope of speech-as-the-only-true-ornament is remarkably widespread: Bhartrihari&#x27;s Sanskrit formulation is so close that some comparatists have argued for shared circulation of the image across the Deccan in the early centuries CE, though no dependency can be demonstrated.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Bhartrihari writes that armlets do not adorn a person, nor necklaces bright as the moon, nor bathing, nor perfumes, nor flowers, nor dressed hair — one thing alone adorns a person, and that is cultivated speech; all other ornaments perish, but the ornament of speech is the enduring ornament.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/" target="_blank" rel="noopener">Bhartrihari, Nīti Śataka, verse 19</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The verse works through a catalogue of conventional finery and dismisses each in turn before naming refined speech as the sole real adornment.</div>
+  <div class="tieback">It is the Kural&#x27;s claim in almost identical terms, including the explicit denial that anything else counts as an ornament.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Whose adorning let it not be that outward adorning of plaiting the hair, and of wearing of gold, or of putting on of apparel; But let it be the hidden man of the heart, in that which is not corruptible, even the ornament of a meek and quiet spirit, which is in the sight of God of great price.&rdquo;</div>
+  <div class="cite">&mdash; 1 Peter 3:3–4 (King James Version) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">1 Peter contrasts visible finery with an inward disposition of meekness, and names the latter the genuinely valuable ornament.</div>
+  <div class="tieback">Same metaphor, same exclusion, and the same pairing of humility with the true ornament.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And the servants of the Most Merciful are those who walk upon the earth easily, and when the ignorant address them [harshly], they say [words of] peace,&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 25:63 (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Qur&#x27;an&#x27;s portrait of the ideal believer fuses humility of bearing with gentleness of speech, even under provocation.</div>
+  <div class="tieback">It names the Kural&#x27;s exact pair — humility plus kind speech — as the defining marks of the highest human type.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Rabbi Yishmael taught that one should be yielding to a superior, pleasant and easy toward the young, and should receive every person with gladness.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot.3.17" target="_blank" rel="noopener">Mishnah, Pirkei Avot 3:12</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The maxim binds deference upward, gentleness downward and warmth in all directions into a single rule of bearing.</div>
+  <div class="tieback">It couples humility with pleasant speech exactly as the Kural does, as the whole of a person&#x27;s proper adornment.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Dhammapada repeatedly dismisses outward religious markers — matted hair, animal-skin robes, ritual bathing — as worthless while the interior remains impure, insisting that the only real distinction is an inward one.</div>
+  <div class="cite">&mdash; Dhammapada 393–394 (Brāhmaṇa Vagga) <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The verses attack the assumption that visible tokens can stand in for the cultivated qualities they are supposed to signify.</div>
+  <div class="tieback">It shares the Kural&#x27;s logic that external adornments are not ornaments at all; only inner quality is.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;He alone is really worthy of proud who is careful not to insult other people. A person who merely boasts, has no virtues, cannot command respect.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.com/" target="_blank" rel="noopener">Saman Suttam v. 89 (cf. v. 88) (English tr. as published on jainworld.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In the Jain virtue of humility (mārdava), real standing comes from never belittling others, not from display or boasting about one&#x27;s family, beauty or learning (the preceding verse).</div>
+  <div class="tieback">Valluvar says humility and kind speech are a person&#x27;s only true ornament, and the Jain verse likewise grants honour only to the one who neither boasts nor insults.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Sweetness and humility, O Nanak, are the essence of virtue and goodness.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 470, Raag Aasaa (Asa di Vaar, salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In the Asa di Vaar, after describing the showy but fruitless simmal tree, Guru Nanak names sweetness and humility as the very core of all good qualities.</div>
+  <div class="tieback">It is nearly the Kural&#x27;s own verdict: humility and sweet speech are a person&#x27;s true ornament, and nothing else deserves the name.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;For one man is inferior in comeliness, but the god sets a crown of beauty upon his words, and men look upon him with delight, and he speaks on unfalteringly with sweet modesty, and is conspicuous among the gathered people, and as he goes through the city men gaze upon him as upon a god.&rdquo;</div>
+  <div class="cite">&mdash; Homer, Odyssey 8.169–175 (trans. A. T. Murray, Loeb / Perseus) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Stung by a young Phaeacian&#x27;s mockery of his unimpressive appearance, Odysseus replies that the gods distribute gifts unevenly and that gracious, modest speech outshines physical beauty.</div>
+  <div class="tieback">This is the Kural&#x27;s thesis dramatised: speech joined to modesty is the adornment that actually makes a person admired.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Politeness is to human nature what warmth is to wax.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://monadnock.net/schopenhauer/counsels-3.html" target="_blank" rel="noopener">Arthur Schopenhauer, Counsels and Maxims, ch. III &#x27;Our Relation to Others&#x27;, §36</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Schopenhauer&#x27;s point is that courtesy softens people who are otherwise rigid and hostile, making them workable — a small expenditure with disproportionate effect.</div>
+  <div class="tieback">It backs the Kural&#x27;s claim that humble, kind speech is the one quality that genuinely does the work other displays only pretend to.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Gandhi attends the royal reception at Buckingham Palace in his dhoti</div>
+  <div class="rle-meta">5 November 1931 &middot; Buckingham Palace, London, United Kingdom</div>
+  <div class="quote is-paraphrase">While in London for the Second Round Table Conference on India&#x27;s future, Mahatma Gandhi attended King George V&#x27;s reception for the conference delegates at Buckingham Palace. He went in his customary dhoti, the garment the press called a loincloth, and slippers rather than formal court dress. Queen Mary recorded that he caused great excitement in what she called his odd get-up.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Gandhi treated humility and simplicity, not costly dress, as the proper adornment even at the most formal court in the world.</div>
+  <div class="tieback">The kural says humility and kind speech are a person&#x27;s only real ornament, and Gandhi appeared before a king wearing nothing grander than his everyday dhoti.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://namthamizh.wordpress.com/010-%E0%AE%87%E0%AE%A9%E0%AE%BF%E0%AE%AF%E0%AE%B5%E0%AF%88-%E0%AE%95%E0%AF%82%E0%AE%B1%E0%AE%B2%E0%AF%8D/" target="_blank" rel="noopener">010. இனியவை கூறல் — Thirukkural Adhikaram 10 with word-by-word gloss (padavurai) and Tamil commentary</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.gunathamizh.com/2020/08/10.html" target="_blank" rel="noopener">திருக்குறள் - அதிகாரம் - 10. இனியவை கூறல் (one-line commentary series)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://telibrary.com/en/chapter-10/" target="_blank" rel="noopener">Chapter 10 – The Utterance of Pleasant Words / Iniyavaikooral (Tamil transliteration with G. U. Pope verse and W. H. Drew / John Lazarus prose translations)</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.wisdomlib.org/" target="_blank" rel="noopener">Bhartṛhari, Nītiśataka (stanza on the three courses of wealth: dāna, bhoga, nāśa)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Pirkei_Avot.3.17" target="_blank" rel="noopener">Pirkei Avot 3:17 (Mishnah Yomit translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://jainworld.com/" target="_blank" rel="noopener">Saman Suttam (anthology of Jain scripture, compiled 1974)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://monadnock.net/schopenhauer/counsels-3.html" target="_blank" rel="noopener">Arthur Schopenhauer, Counsels and Maxims (from Aphorismen zur Lebensweisheit, 1851), ch. III &#x27;Our Relation to Others&#x27;, trans. T. Bailey Saunders</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.rct.uk/collection/themes/publications/eastern-encounters/chapter-4" target="_blank" rel="noopener">Eastern Encounters, Chapter 4: The South Asian Collections of King George V</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://gandhiheritageportal.org/eventcontentdetail/OA==/NzQxOQ==" target="_blank" rel="noopener">Gandhi chronology, 5 November 1931</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0094.html">&larr; Kural 94</a>
+  <a href="kural-0096.html">Kural 96 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-010.html">Charming Utterance</a>
+  <a class="skip-btn" href="kural-0101.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

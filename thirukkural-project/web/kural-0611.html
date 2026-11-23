@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 611 — Manly Effort | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 611</h1>
+<p class="adhikaram"><a href="adhikaram-062.html">Manly Effort</a> &middot; Aalvinaiyudaimai &middot; <span class="tamil">ஆள்வினையுடைமை</span></p>
+
+<div class="tamil-text">அருமை உடைத்தென்று அசாவாமை வேண்டும்
+பெருமை முயற்சி தரும்.</div>
+<div class="translit">Arumai udaiththendru asaavaamai vendum
+Perumai muyarchi tharum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Never give up by telling yourself a task is too hard. Effort itself gives you the strength and greatness to get it done.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a big hill you have to climb to get home. If you stand at the bottom saying &#x27;it’s too steep,&#x27; you never move. But every step you take makes your legs a little stronger, until the hill doesn’t look so big any more. Trying is what makes you able.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter title ஆள்வினை (literally ‘man-work’, human exertion) is glossed by the Thirukkural-Thamizh edition as இடைவிடாத முயற்சி, ‘unceasing effort’, and this opening couplet names the first enemy of effort: அசாவு, the despondency that sets in when a task is judged அருமை (difficult). Parimelazhagar takes பெருமை not as fame but as the ‘greatness’ or capacity needed to accomplish the deed, so the claim is causal: capacity is produced by striving rather than being a precondition for it; Mu. Varadarasanar and Solomon Pappaiah (ytamizh.com) both read it this way, while Kalaignar renders பெருமை as ‘great strength’. Placed immediately after ஊக்கமுடைமை (ch. 60, energy) and மடியின்மை (ch. 61, absence of sloth), the chapter moves from inner zeal to its outward expression in sustained work, culminating in the famous claim of kural 620 that effort can turn back fate itself. The text is identical in ytamizh.com and thirukkural-thamizh.org, the latter printing the older sandhi-joined form (அருமை யுடைத்தென் றசாவாமை).</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;You should thus perform your prescribed Vedic duties, since action is superior to inaction. By ceasing activity, even your bodily maintenance will not be possible.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita 3.8 (trans. Swami Mukundananda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna tells the hesitant Arjuna that withdrawing from action is never the higher path; even keeping the body alive requires work.</div>
+  <div class="tieback">Like the Kural, the Gita refuses to let the difficulty of a task become an excuse for not acting.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And let us not be weary in well doing: for in due season we shall reap, if we faint not.&rdquo;</div>
+  <div class="cite">&mdash; Galatians 6:9 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul urges the Galatians not to grow tired of doing good, promising a harvest to those who do not give up.</div>
+  <div class="tieback">‘Faint not’ is almost a translation of the Kural’s அசாவாமை, not sinking into weariness before the work is done.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Indeed, with hardship [will be] ease.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 94:6 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The short Meccan sura consoles the Prophet in difficulty by twice promising that ease comes together with hardship, then tells him to keep labouring (94:7).</div>
+  <div class="tieback">Both texts tell the believer that a task’s hardness is not a reason to despair of it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;It is not your duty to finish the work, but neither are you at liberty to neglect it&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot.2.16" target="_blank" rel="noopener">Mishnah, Pirkei Avot 2:16 (trans. Joshua Kulp, Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbi Tarfon teaches that the vastness of a task does not release a person from the obligation to work at it.</div>
+  <div class="tieback">Tarfon and Valluvar both deny that ‘it is too great for me’ is a valid reason to hold back.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;You yourselves must strive; the Buddhas only point the way.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 276 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha tells his followers that no teacher can do the work of liberation for them; the effort must be their own.</div>
+  <div class="tieback">Like the Kural, the verse locates the power to accomplish in one’s own striving, not in circumstances.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;One cannot quickly arrive at discernment; therefore one should exert one&#x27;s self, abstain from pleasures, understand the world, be impartial like a sage, and guard one&#x27;s self: (thus) never be careless.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 4.10 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The sutra admits the goal is hard and slow to reach, but takes that as a reason to exert oneself, not to give up.</div>
+  <div class="tieback">As the Kural says never to lose heart by calling a task too hard, because effort brings the strength to finish it, the Jain text answers difficulty with steady self-exertion.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;So tell me - how can the fort of doubt and the moat of Maya be overcome? … Worshipping the Perfect Guru, this awesome force is subdued.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 522, Raag Gujri (Gujri ki Vaar, pauri 15), Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In a pauri of Gujri ki Vaar, Guru Arjan describes the five passions as an army no hero can withstand, asks how such a fortress could ever be breached, and answers that it can be overcome.</div>
+  <div class="tieback">The Kural says never lose heart because a task looks too hard; Guru Arjan names the hardest of tasks and refuses to call it impossible.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;But between us and Goodness the gods have placed the sweat of our brows: long and steep is the path that leads to her, and it is rough at the first; but when a man has reached the top, then is she easy to reach, though before that she was hard.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 286-292 (trans. H. G. Evelyn-White)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hesiod tells his idle brother Perses that excellence lies up a steep road that becomes easy only once one has climbed it.</div>
+  <div class="tieback">Hesiod’s ‘hard at first, easy at the top’ is the Kural’s point that effort creates the capacity the task seemed to demand.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Seneca remarks to Lucilius that it is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius 104.26</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The Stoic argues that the difficulty we attribute to a task is largely produced by our own timidity toward it.</div>
+  <div class="tieback">This is almost exactly Valluvar’s warning against calling a thing ‘too hard’ and sinking into despondency.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Dashrath Manjhi cuts a road through a hill by hand</div>
+  <div class="rle-meta">c. 1960-1982 &middot; Gehlaur, Gaya district, Bihar, India</div>
+  <div class="quote is-paraphrase">Dashrath Manjhi, a poor labourer from the village of Gehlaur near Gaya, lived on one side of a rocky hill that forced villagers into a long detour to reach the nearest town and its services. After the death of his wife, he set out to cut a passage through the hill himself, working for about twenty-two years with a hammer and chisel. The finished cut, commonly described as about 360 feet long and 30 feet wide, greatly shortened the journey, and the Bihar government later honoured him as the Mountain Man.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">A task that looked impossible for one man with hand tools was completed because he kept working at it year after year, alongside his ordinary labour.</div>
+  <div class="tieback">The kural says never to lose heart by calling a task too hard, because effort itself gives the strength to accomplish it, and Manjhi&#x27;s road was cut by a man who simply refused to treat the hill as too big.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-62/" target="_blank" rel="noopener">Thirukkural Chapter 62: ஆள்வினையுடைமை / Manly Effort (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A062.html" target="_blank" rel="noopener">62. ஆள்வினையுடைமை (இடைவிடாத முயற்சியுடைமை) — Thirukkural text</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita, The Song of God (Swami Mukundananda)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot.2.16" target="_blank" rel="noopener">Mishnah, Pirkei Avot 2:16 (Mishnah Yomit, trans. Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius (tr. Richard Mott Gummere, Loeb, 1917–1925)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.downtoearth.org.in/environment/one-man-22-years-a-road-973" target="_blank" rel="noopener">One man, 22 years, a road</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.deccanherald.com/india/real-story-man-moved-mountain-2367057" target="_blank" rel="noopener">Real story of a man who moved mountain gets a reel adaptation</a> <span class="tier">[web source]</span></li>
+<li id="cite-14"><a href="https://theprint.in/india/despite-success-of-film-made-on-mountain-man-dashrath-manjhi-his-family-members-continue-to-live-in-poverty/2037328/" target="_blank" rel="noopener">Despite success of film made on Mountain Man Dashrath Manjhi, his family members continue to live in poverty</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0610.html">&larr; Kural 610</a>
+  <a href="kural-0612.html">Kural 612 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-062.html">Manly Effort</a>
+  <a class="skip-btn" href="kural-0621.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

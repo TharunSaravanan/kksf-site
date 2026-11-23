@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1238 — Wasting Away | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1238</h1>
+<p class="adhikaram"><a href="adhikaram-124.html">Wasting Away</a> &middot; Uruppu Nalanazhithal &middot; <span class="tamil">உறுப்புநலனழிதல்</span></p>
+
+<div class="tamil-text">முயங்கிய கைகளை ஊக்கப் பசந்தது
+பைந்தொடிப் பேதை நுதல்.</div>
+<div class="translit">Muyangiya kaikalai ookkap pasandhadhu
+paindhotip paedhai nudhal.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Once, when I only loosened my arms from our hug, the forehead of my innocent wife with her gold bangles turned pale at once.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a little child holding a parent’s hand at a busy fair. If the parent lets go for just a second, the child’s face might look worried right away. The husband in this verse remembers that his wife looked worried and pale even when he let go of a hug for just a moment, so he knows how much she must be missing him now that he is far away.</p>
+
+<h2 class="section">University</h2>
+<p>With 1238 the voice changes: Solomon Pappaiah and Kalaignar gloss in the husband’s first person (‘when I loosened my arms’), and the traditional reading has the talaivaṉ, away from home, recalling his wife’s fragility to explain why he must hurry back. Muyaṅkiya kaikaḷai ūkka is ‘when [I] loosened (ūkka, ‘to slacken, withdraw’) the arms that embraced’; pacantatu… nutal, ‘the forehead turned sallow’, applies pacappu, the pallor of love-longing, to her brow, the classic site of a woman’s brightness (oḷ nutal, 1240). Paintoṭip pētai, ‘the innocent one with fresh-gold bangles’, uses pētai, ‘young, guileless woman’, a tender term. The logic is a fortiori: if a moment’s slackening paled her, what must long absence do? Solomon Pappaiah adds that he loosened his grip fearing his tight hold would hurt her. Pope: ‘One day the fervent pressure of embracing arms I checked, / Grew wan the forehead of the maid with golden armlet decked.’ Text identical on both sites.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In Bhavabhuti’s Uttararamacharita, Rama, looking at paintings of their forest exile, recalls how Sita used to fall asleep with her head on his arm, and his tenderness for her is mixed with the pain of knowing he must soon part from her.</div>
+  <div class="cite">&mdash; <a href="https://en.wikipedia.org/wiki/Uttararamacharita" target="_blank" rel="noopener">Bhavabhuti, Uttararamacharita, Act 1 (paraphrase)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Bhavabhuti dwells on a husband’s memory of his wife’s closeness in his arms.</div>
+  <div class="tieback">The Kural’s husband likewise remembers the embrace and how fragile she was within it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;His left hand is under my head, and his right hand doth embrace me.&rdquo;</div>
+  <div class="cite">&mdash; Song of Solomon 2:6 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The bride of the Song describes the beloved’s embrace as her rest and security.</div>
+  <div class="tieback">The Kural shows the reverse side of the same embrace: when it is loosened even slightly, the beloved’s brightness falters.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;They are clothing for you and you are clothing for them.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 2:187 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an describes spouses as each other’s garment, close, protecting and covering.</div>
+  <div class="tieback">The Kural shows how a wife feels when that ‘garment’ is drawn back even for a moment.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;I held him, and would not let him go, until I had brought him into my mother’s house.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">Song of Songs 3:4 (JPS 1917, via Mechon-Mamre)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Having found her beloved after a night of searching, the woman of the Song will not loosen her hold.</div>
+  <div class="tieback">The Kural’s wife, too, cannot bear even a slackened embrace; she pales the moment it loosens.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;From affection springs grief, from affection springs fear. For one who is wholly free from affection there is no grief, whence then fear?&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 213 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada traces grief and fear to affection itself.</div>
+  <div class="tieback">The wife’s instant pallor at a loosened embrace is the fear that affection brings, exactly as the verse diagnoses.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">The Uttaradhyayana’s lecture on carelessness teaches that one passionately attached to pleasant touch suffers as soon as it is withdrawn, and never finds satisfaction in it.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra, Lecture 32, verses on touch (paraphrase; cf. tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jain teaching treats attachment to touch as one of the senses’ bonds that produce pain at every loss.</div>
+  <div class="tieback">The wife’s pallor at a slackened embrace is the pain of withdrawn touch; Jain doctrine would read it as the fruit of attachment.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Without water, she cannot live, even for an instant. God knows the suffering of her mind.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 60, Sri Raag, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak compares the soul&#x27;s love to a fish that cannot live a moment out of water, and says God knows her inner pain.</div>
+  <div class="tieback">In the Kural the husband remembers that the moment he loosened his embrace, his wife&#x27;s forehead turned pale; Guru Nanak too speaks of a love that cannot bear a moment&#x27;s separation, and of a Beloved who knows that pain.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Sappho describes what happens to her in the beloved’s presence: her tongue breaks, a fine fire runs under her skin, her ears hum, a sweat comes over her, and she is ‘greener than grass’, seeming to herself little short of dying.</div>
+  <div class="cite">&mdash; Sappho, fragment 31 (paraphrase) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The most famous Greek poem of love-sickness names a greenish pallor as love’s mark on the body.</div>
+  <div class="tieback">The Kural’s pacappu, the sallow-green pallor that spreads over the wife’s forehead, is the same colour of love.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In Plato’s Symposium, Aristophanes tells how humans were split in two, so that each half longs for its other; when they find each other they embrace and do not want to be parted even for a moment.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Plato/symposium.html" target="_blank" rel="noopener">Plato, Symposium 191a-192e (paraphrase; cf. tr. Benjamin Jowett)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristophanes’ myth explains lovers’ desire never to loosen their embrace as a longing to be whole again.</div>
+  <div class="tieback">The Kural’s wife pales at a slackened embrace because, in Aristophanes’ terms, she feels herself made half again.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Nelson Mandela&#x27;s prison letters to Winnie</div>
+  <div class="rle-meta">1962-1990 &middot; Robben Island and other prisons, South Africa</div>
+  <div class="quote is-paraphrase">Nelson Mandela was a sentenced political prisoner from 1962 to 1990, held in four prisons. At first he could write and receive only one 500-word letter every six months, and on Robben Island he was allowed one visitor a year for 30 minutes. In his letters to his wife Winnie he professed his love and gave her moral support in her own struggle.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The letters show how a separated husband kept his marriage alive through rare, censored words over decades.</div>
+  <div class="tieback">In this kural the absent husband remembers his wife&#x27;s tenderness and worries about her, and Mandela, separated from Winnie for decades, poured the same remembering love into his few permitted letters.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-124/" target="_blank" rel="noopener">Thirukkural Chapter 124: உறுப்புநலனழிதல் / Wasting Away (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-124.html" target="_blank" rel="noopener">உறுப்புநலன் அழிதல் - அதிகாரம் 124 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://en.wikipedia.org/wiki/Uttararamacharita" target="_blank" rel="noopener">Bhavabhuti, Uttararamacharita (The Later History of Rama), Act 1</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917), Hebrew-English Bible</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Sappho, Fragment 31 <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Plato/symposium.html" target="_blank" rel="noopener">Plato, Symposium, tr. Benjamin Jowett</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://nelsonmandela.org/news/entry/media-release-the-prison-letters-of-nelson-mandela-publication" target="_blank" rel="noopener">Media release: The Prison Letters of Nelson Mandela publication</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.pbs.org/wgbh/pages/frontline/shows/mandela/prison" target="_blank" rel="noopener">The Long Walk of Nelson Mandela: Prison</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1237.html">&larr; Kural 1237</a>
+  <a href="kural-1239.html">Kural 1239 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-124.html">Wasting Away</a>
+  <a class="skip-btn" href="kural-1241.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

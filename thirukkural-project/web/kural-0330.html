@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 330 — Not Killing | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 330</h1>
+<p class="adhikaram"><a href="adhikaram-033.html">Not Killing</a> &middot; Kollaamai &middot; <span class="tamil">கொல்லாமை</span></p>
+
+<div class="tamil-text">உயிருடம்பின் நீக்கியா ரென்ப செயிருடம்பின்
+செல்லாத்தீ வாழ்க்கை யவர்.</div>
+<div class="translit">Uyirudambin neekkiyaa renba seyirudambin
+Sellaaththee vaazhkkai yavar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People say that those who now live poor, miserable lives in sick bodies are the ones who once took the lives of other beings.</p>
+
+<h2 class="section">Elementary</h2>
+<p>It’s like planting seeds: if you plant thorns, you get thorns later. Valluvar says that hurting and killing are like planting thorn seeds — sooner or later, sickness and hard times grow back toward the one who planted them.</p>
+
+<h2 class="section">University</h2>
+<p>The final couplet adopts the voice of received wisdom (eṉpa, “they say”): those with diseased bodies (ceyir uṭampu) living a miserable, impoverished life (cellāt tī vāḻkkai) are those who “removed life from bodies” (uyir uṭampiṉ nīkkiyār). All the major commentators read this karmically, as the fruit of killing in a former birth. The couplet closes the chapter by grounding the ethics of non-killing in moral causation; it has parallels in Manu and in the Buddha’s teaching that harming beings leads to sickliness. Modern readers will note that such teaching can be misused to blame the sick and poor — a danger also recognised within other traditions, as when Jesus rejects the idea that a man’s blindness was caused by sin (John 9:3).</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;injury (to sentient beings) is punished by general sickliness&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">Manusmriti 11.52 (with 11.48) (G. Bühler trans.)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In its catalogue of the bodily marks of past sins, Manu assigns chronic illness as the consequence of harming living beings, stating earlier that some suffer for crimes “committed in a former (existence).”</div>
+  <div class="tieback">Almost identical to the Kural: harming life in a former existence yields a diseased body now.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Put up again thy sword into his place: for all they that take the sword shall perish with the sword.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 26:52 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Jesus tells Peter to sheathe his sword at the arrest, warning that violence returns upon the violent.</div>
+  <div class="tieback">Shares the Kural’s principle that those who take life reap suffering in return — though within one lifetime, not across births.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And whatever strikes you of disaster - it is for what your hands have earned; but He pardons much.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 42:30 (Saheeh International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Qur’an teaches that misfortunes are linked to one’s own deeds, though God forgives much.</div>
+  <div class="tieback">Like the Kural, it traces present suffering to past wrongdoing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;because you drowned others, they drowned you. And in the end, they that drowned you will be drowned.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot.3.17" target="_blank" rel="noopener">Pirkei Avot 2:6 (trans. Joshua Kulp, Sefaria)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Hillel, seeing a skull floating on the water, reflects that those who kill are killed in turn.</div>
+  <div class="tieback">Expresses the Kural’s logic of measure-for-measure consequence for taking life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;He who inflicts violence on those who are unarmed, and offends those who are inoffensive, will soon come upon one of these ten states: Sharp pain, or disaster, bodily injury, serious illness, or derangement of mind, … or loss of wealth…&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 137–140 (Buddharakkhita trans.) <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Dhammapada lists the painful consequences — including illness and poverty — that befall those who harm the harmless.</div>
+  <div class="tieback">Nearly the Kural: illness and a ruined life follow from violence against living beings (cf. MN 135 on sickliness).</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Carefully conducting himself, he should mind this: blindness, deafness, dumbness, one-eyedness, hunchbackedness, blackness, variety of colour (he will always experience); because of his carelessness he is born in many births, he experiences various feelings.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Ācārāṅga Sūtra I.2.3.2 (tr. Hermann Jacobi, SBE 22, 1884)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The Ācārāṅga teaches that bodily afflictions in later births follow from careless conduct, which in Jain terms (pramāda) is the root of injury to living beings.</div>
+  <div class="tieback">The Kural traces diseased bodies and wretched lives to past killing; the Ācārāṅga likewise attributes bodily defects in rebirth to careless, injurious conduct.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Kabeer, they oppress living beings and kill them, and call it proper. When the Lord calls for their account, what will their condition be?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1375, Salok Bhagat Kabir, Salok 199 (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Kabir warns that those who kill living beings by force and justify it as lawful must still answer for it when their deeds are reckoned.</div>
+  <div class="tieback">The Kural says the wise see wretched, diseased lives as the fruit of having taken life from bodies; Kabir likewise warns that killing is entered in the account and its consequence will come.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Tantalus, who in later tradition killed his son Pelops and served him to the gods, is shown by Odysseus in the underworld standing in a pool under fruit trees, forever hungry and thirsty as water and fruit recede from him.</div>
+  <div class="cite">&mdash; Homer, Odyssey 11.582–592; cf. Pindar, Olympian 1 <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">His endless deprivation is the archetypal Greek image of punishment for an abominable killing.</div>
+  <div class="tieback">Mirrors the Kural’s “wretched life” of want as the fruit of having taken life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Plato cites an ancient teaching that the murderer is punished in Hades and, when born again on earth, must suffer the very thing he did, dying at the hands of another.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0166" target="_blank" rel="noopener">Plato, Laws 9.870d–e, 872e–873a</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">In the Laws, Plato uses this tale of reincarnational justice to deter killing.</div>
+  <div class="tieback">Very close to the Kural: killing in one life brings suffering in the next.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Charles Myers brings shell shock into the medical literature</div>
+  <div class="rle-meta">13 February 1915 &middot; Le Touquet, France, and London, England (published in The Lancet)</div>
+  <div class="quote is-paraphrase">Charles Myers, a British psychologist, published in The Lancet an account of three soldiers admitted to a war hospital at Le Touquet who had lost memory, vision, smell and taste. His paper introduced the term shell shock into medical literature; soldiers had already been using it, as large numbers of men were being sent home with nervous and mental breakdown. Shell shock went on to affect very large numbers of soldiers during the First World War.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a> <a class="idx" href="#cite-15">[15]</a></div>
+  <div class="explain">Myers&#x27;s work began the medical recognition that war leaves lasting injuries of the mind and body on those who take part in it.</div>
+  <div class="tieback">The kural says those who live wretched lives in afflicted bodies are those who once took life, and shell shock showed how the work of killing in war could leave its participants broken.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-33/" target="_blank" rel="noopener">கொல்லாமை / Not killing, Chapter 33 — Thirukural (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukural.ai/paal/aram/adhigaram-33" target="_blank" rel="noopener">திருக்குறள் - அறத்துப்பால் அதிகாரம் 33 | கொல்லாமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.gunathamizh.com/2020/09/33.html" target="_blank" rel="noopener">திருக்குறள் - அதிகாரம் - 33. கொல்லாமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">The Laws of Manu (Manusmṛti), translated by Georg Bühler, Sacred Books of the East vol. 25 (Oxford, 1886)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Pirkei_Avot.3.17" target="_blank" rel="noopener">Pirkei Avot 3:17 (Mishnah Yomit translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Ākārāṅga Sūtra (Acaranga Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0166" target="_blank" rel="noopener">Plato, Laws — Book IV, 721b–c (marriage and the immortality of the line)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://wellcomecollection.org/works/qr6e95zp" target="_blank" rel="noopener">A contribution to the study of shell shock: being an account of three cases of loss of memory, vision, smell, and taste, admitted into the Duchess of Westminster&#x27;s War Hospital, Le Touquet (Charles S. Myers)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-14"><a href="https://wellcomecollection.org/works/fpmrstqf" target="_blank" rel="noopener">Myers, Charles Samuel (1873-1946)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-15"><a href="https://www.iwm.org.uk/history/voices-of-the-first-world-war-shell-shock" target="_blank" rel="noopener">Voices of the First World War: Shell Shock</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0329.html">&larr; Kural 329</a>
+  <a href="kural-0331.html">Kural 331 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-033.html">Not Killing</a>
+  <a class="skip-btn" href="kural-0331.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

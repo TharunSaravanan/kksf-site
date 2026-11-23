@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 756 — Wealth Accumulation | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 756</h1>
+<p class="adhikaram"><a href="adhikaram-076.html">Wealth Accumulation</a> &middot; Porul Seyalvakai &middot; <span class="tamil">பொருள் செயல்வகை</span></p>
+
+<div class="tamil-text">உறுபொருளும் உல்கு பொருளும்தன் ஒன்னார்த்
+தெறுபொருளும் வேந்தன் பொருள்.</div>
+<div class="translit">Uruporulum ulgu porulumthan onnaarth
+theruporulum vendhan porul.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A king’s money comes from property that has no owner, from taxes on goods and roads, and from payments made by enemies he has beaten.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Think of a school fund. It gets money from lost-and-found items nobody claims, from small fees for using the playground, and from the prize when the school wins a match against another school. Valluvar lists the kinds of money that belong to a king’s treasury in a similar way.</p>
+
+<h2 class="section">University</h2>
+<p>This is the chapter’s one technical verse, listing three lawful sources of royal revenue. Uruporul is ‘wealth that comes of itself’, which Parimelazhagar and Solomon Pappaiah explain as ownerless property such as heirless estates and treasure trove, while Mu. Varadarasanar and Kalaignar take it as ordinary tax (இறை, வரி). Ulgu porul is customs or toll revenue on goods, and theru porul is tribute or spoil taken from subdued enemies (onnaar). The verse spells out what 755 means in practice: a king’s legitimate income has clear, lawful channels. The sandhi-joined text reads உறுபொருளு முல்கு பொருளுந்தன் னொன்னார்த், which divides into the same words.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The Manusmriti directs that property whose owner has disappeared be held by the king in trust for three years, after which the king may take it, and elsewhere it sets out duties on merchandise and the king’s share of produce.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">Manusmriti 8.30 and 7.127-132 (trans. G. Bühler)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The dharma texts set out ownerless property and customs duties as lawful royal income.</div>
+  <div class="tieback">Manu covers two of the Kural’s three categories, unclaimed wealth and customs, almost term for term.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Render therefore to all their dues: tribute to whom tribute is due; custom to whom custom; fear to whom fear; honour to whom honour.&rdquo;</div>
+  <div class="cite">&mdash; Romans 13:7 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul tells Christians in Rome to pay the government its taxes and customs as rightful dues.</div>
+  <div class="tieback">Paul’s tribute and custom line up closely with the Kural’s tribute and ulgu (customs) as lawful royal revenue.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And know that anything you obtain of war booty - then indeed, for Allah is one fifth of it and for the Messenger and for [his] near relatives and the orphans, the needy, and the [stranded] traveler.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 8:41 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an assigns one fifth of the spoils of war to God and the Messenger, to be used for relatives, orphans, the needy and travellers.</div>
+  <div class="tieback">This matches the Kural’s third category, wealth taken from enemies, as a lawful share of public revenue.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">When Israel asks for a king, Samuel warns that the king will take a tenth of their grain, vineyards and flocks, and will take their fields and servants for his own use.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">1 Samuel 8:11-17</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Samuel describes royal revenue as a burden the people will bring on themselves by demanding a king.</div>
+  <div class="tieback">Samuel describes the same royal revenue the Kural lists, but warns against its excess.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Kutadanta Sutta, the Buddha tells of a wise chaplain who advises a king not to raise taxes to fund a sacrifice, but to give seed, capital and wages to farmers, traders and officials, so that the realm grows prosperous and the treasury fills.</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/dn5/en/sujato" target="_blank" rel="noopener">Digha Nikaya 5, Kutadanta Sutta</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The sutta teaches that a ruler’s revenue should grow out of a thriving people, not from heavier taxes.</div>
+  <div class="tieback">It gives a Buddhist view of the royal treasury the Kural lists, with the stress on lawful and non-oppressive revenue.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Multiply your gold and silver, your jewels and pearls, your copper, fine robes, and carriages, and your treasury; then you will be a true Kshattriya.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 9.46 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Indra, testing the renouncing King Nami, tells him that filling the royal treasury is what makes a true king; Nami replies that mountains of gold would not satisfy greed and turns to austerity.</div>
+  <div class="tieback">The Kural lists the lawful sources of a king&#x27;s treasury; the Jain text acknowledges the royal ideal of a full treasury but places it in the tempter&#x27;s mouth, setting the king&#x27;s wealth against the renouncer&#x27;s freedom.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">Under Guru Arjan a cadre of local leaders called masands looked after the Sikh sangats in distant places and collected from the disciples dasvandh, one-tenth of their income, which they were enjoined to give for communal sharing; by encouraging agriculture and trade and introducing this tithe for the common use of the community, a stable economic base was secured. When complaints arose against the masands, Guru Gobind Singh in 1698 told the Sikhs to bring their offerings to him directly.</div>
+  <div class="cite">&mdash; <a href="https://www.thesikhencyclopedia.com/arjan-dev-guru/" target="_blank" rel="noopener">Encyclopaedia of Sikhism (ed. Harbans Singh, Punjabi University, Patiala), entries Arjan Dev, Guru and Gobind Singh, Guru</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The early Sikh community had defined, lawful channels of revenue, and when collectors abused them the Guru reformed the system.</div>
+  <div class="tieback">The Kural lists the lawful sources of a ruler&#x27;s treasury; the Sikh Gurus likewise built a common treasury on a clearly defined, voluntary tithe and removed the intermediaries who misused it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">The Iliad opens with Achilles and Agamemnon quarrelling over the division of spoils taken from conquered towns, each claiming his share of the prizes as a right of honour.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad, Book 1</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Homer, wealth taken from defeated enemies was a recognised part of a king’s possessions and status.</div>
+  <div class="tieback">This shows the Kural’s theru porul, wealth from subdued foes, as royal income in the heroic world.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In Book V of The Wealth of Nations, Adam Smith examines the sources of the sovereign’s revenue, discussing income from crown property and from taxes on land, goods and consumption, including customs duties.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/3300" target="_blank" rel="noopener">Adam Smith, The Wealth of Nations, Book V, Chapter 2</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Smith analyses where a state’s income should come from and how to raise it fairly.</div>
+  <div class="tieback">Smith gives a modern, systematic version of the Kural’s short list of lawful royal income.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Denmark collects the Sound Dues at Elsinore</div>
+  <div class="rle-meta">1429-1857 &middot; Helsingor (Elsinore), Denmark</div>
+  <div class="quote is-paraphrase">From 1429 to 1857 the Danish crown required ships passing through the Oresund, the narrow strait between Denmark and Sweden that leads into the Baltic, to stop and pay a toll at Elsinore. Eric of Pomerania built the first fortress there in the 1420s, and Frederik II began the Renaissance castle of Kronborg in 1574. Around 1.8 million passages were recorded, and the toll was both a major source of royal income and a political instrument for Denmark.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">For more than four centuries a single customs toll at a narrow strait helped finance the Danish monarchy.</div>
+  <div class="tieback">The kural lists toll and customs revenue among the lawful wealth of a king, and the Sound Dues are one of history&#x27;s longest-running examples of exactly that kind of royal income.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-76/" target="_blank" rel="noopener">Thirukkural Chapter 76: பொருள்செயல்வகை / Way of Accumulating Wealth (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A076.html" target="_blank" rel="noopener">76. பொருள்செயல்வகை (பொருள் தேடும் முறை) — Thirukkural, sandhi-joined text</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">The Laws of Manu (Manusmṛti), translated by Georg Bühler, Sacred Books of the East vol. 25 (Oxford, 1886)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The JPS Tanakh: Gender-Sensitive Edition (Revised JPS, 2023)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://suttacentral.net/dn5/en/sujato" target="_blank" rel="noopener">Digha Nikaya 5, Kutadanta Sutta, trans. Bhikkhu Sujato</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.thesikhencyclopedia.com/arjan-dev-guru/" target="_blank" rel="noopener">Arjan Dev, Guru (Encyclopaedia of Sikhism) (Encyclopaedia of Sikhism, ed. Harbans Singh)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad, Book 21, translated by A. T. Murray (Loeb Classical Library, 1924)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/3300" target="_blank" rel="noopener">Adam Smith, An Inquiry into the Nature and Causes of the Wealth of Nations (1776)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://whc.unesco.org/en/list/696" target="_blank" rel="noopener">Kronborg Castle</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://fiscalmilitary.history.ox.ac.uk/node/2415536" target="_blank" rel="noopener">Having Fun with a Unique Source: The Sound Toll Registers Online (Cathleen Sarti)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0755.html">&larr; Kural 755</a>
+  <a href="kural-0757.html">Kural 757 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-076.html">Wealth Accumulation</a>
+  <a class="skip-btn" href="kural-0761.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

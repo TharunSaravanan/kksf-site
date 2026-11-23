@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 189 — Slander Avoidance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 189</h1>
+<p class="adhikaram"><a href="adhikaram-019.html">Slander Avoidance</a> &middot; Purangkooraamai &middot; <span class="tamil">புறங்கூறாமை</span></p>
+
+<div class="tamil-text">அறன்நோக்கி ஆற்றுங்கொல் வையம் புறன்நோக்கிப்
+புன்சொல் உரைப்பான் பொறை.</div>
+<div class="translit">Arannokki aatrungol vaiyam purannokkip,
+Punsol uraippaan porai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The earth still carries the person who waits until someone is gone and then says mean things about them. Is that only because the earth cares about being good?</p>
+
+<h2 class="section">Elementary</h2>
+<p>The ground holds up everyone who walks on it — good people and mean people. This kural jokes that the Earth must be very patient and kind to keep carrying a gossip who waits for people to leave so he can say nasty things about them.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet is one of Valluvar’s sharpest ironies. Vaiyam, the earth, is imagined as a moral agent who bears (āṟṟu) the poṟai (burden, weight) of the slanderer, and the poet wonders whether it does so only aṟaṉ nōkki — out of regard for dharma, since bearing all beings is its duty. The mirrored phrases aṟaṉ nōkki and puṟaṉ nōkki are carefully placed: the earth looks toward virtue, while the slanderer looks toward the back, watching for his victim’s absence before he speaks puṉ col, base words. The image draws on the Indian idea of the earth as the patient bearer of all beings, whose forbearance (poṟai also means patience) contrasts with the slanderer’s impatience to wound. Valluvar thus makes the slanderer a dead weight on the world, tolerated only by a patience he does not deserve.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Bhagavata Purana, the Earth (Bhūmi), weighed down by the burden of wicked kings, takes the form of a cow and goes weeping to Brahmā to ask for relief.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Bhagavata Purana 10.1 (paraphrase)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Hindu myth pictures the Earth as a patient mother who carries the weight of the wicked until it becomes too much.</div>
+  <div class="tieback">The Kural uses the same image: the earth patiently bearing the slanderer’s weight, only out of dharma.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;for he maketh his sun to rise on the evil and on the good, and sendeth rain on the just and on the unjust.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 5:45 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus points to God’s patience, which sustains even the wicked, as the model for loving enemies.</div>
+  <div class="tieback">Both texts marvel at a forbearance that keeps supporting even those who don’t deserve it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And if Allah were to impose blame on the people for what they have earned, He would not leave upon the earth any creature. But He defers them for a specified term.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 35:45 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an says only God’s forbearance keeps wrongdoers on the earth at all.</div>
+  <div class="tieback">As in the Kural, the wrongdoer stays on the earth only because of a patience he has not earned.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;He and I cannot dwell together in the world.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Arakhin.15b" target="_blank" rel="noopener">Talmud Bavli, Arakhin 15b (Koren–Steinsaltz)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rav Hisda, citing Mar Ukva, says God declares this about anyone who speaks lashon hara, reading Psalm 101:5.</div>
+  <div class="tieback">The Talmud and the Kural are equally astonished that the world has room for the slanderer at all.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Just as when people throw what is clean or unclean on the earth — feces, urine, saliva, pus, or blood — the earth is not horrified, humiliated, or disgusted by it&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/mn/mn.062.than.html" target="_blank" rel="noopener">Majjhima Nikaya 62, Maha-Rahulovada Sutta (Thanissaro)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha tells Rahula to make his mind like the earth, which accepts whatever is thrown on it without disgust.</div>
+  <div class="tieback">Both use the earth as the model of boundless forbearance; the Kural ironically applies it to carrying the slanderer.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Though life cannot be prolonged, as the saying is, still foolish people sin recklessly; a foolish man is filled to the brim (as it were) with sins. Considering this a sage is not conceited.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga I.2.2.21 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Sūtrakṛtāṅga pictures the reckless fool as a vessel filled to the brim with sin, a heavy load of karma he has made for himself.</div>
+  <div class="tieback">Valluvar wonders whether the earth bears the slanderer&#x27;s weight only out of duty, and the Jain verse likewise pictures the reckless sinner as loaded to the brim with sin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The mythical bull is Dharma, the son of compassion; this is what patiently holds the earth in its place.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 3, Japji Sahib, Pauri 16, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Japji Guru Nanak reinterprets the myth of the bull that carries the earth: what really holds the world up is dharma, born of compassion.</div>
+  <div class="tieback">The Kural wonders whether the earth bears the weight of the backbiter only out of regard for dharma; Japji says it is dharma itself that patiently holds the earth up.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;the gods by means of Helen&#x27;s loveliness embroiled Troy and Hellas, causing death thereby, that they might lighten mother Earth of the outrage done her by the increase of man&#x27;s number.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Euripides/orestes.html" target="_blank" rel="noopener">Euripides, Orestes (Apollo’s closing speech) (E. P. Coleridge)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Apollo explains that the Trojan War was sent to relieve Mother Earth of the weight of too many mortals.</div>
+  <div class="tieback">Greek myth, like the Kural, imagines the earth as burdened by humans who weigh on her.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;falling upon that earth out of which my father collected the seed … which bears me when I tread on it and abuse it for so many purposes.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Antoninus/meditations.5.five.html" target="_blank" rel="noopener">Marcus Aurelius, Meditations 5.4 (George Long)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Marcus Aurelius reflects with gratitude on the earth that patiently bears him even as he misuses it.</div>
+  <div class="tieback">Both texts marvel at the earth’s endurance of those who abuse it.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Pietro Aretino, the scourge of princes</div>
+  <div class="rle-meta">1527-1556 &middot; Venice, Republic of Venice (now Italy)</div>
+  <div class="quote is-paraphrase">The writer Pietro Aretino settled in Venice in 1527 after making many enemies in Rome. His satirical attacks on the powerful often amounted to blackmail, and he called himself the scourge of princes. Kings and nobles who feared his satire or wanted his praise sent him gifts, and he grew wealthy and lived in style in Venice until his death in 1556.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Aretino prospered for decades by trading on what he might say about people, a puzzle that his contemporaries and later historians have noted.</div>
+  <div class="tieback">The kural wonders whether the earth bears the weight of the man who speaks base words of others only out of its own patience, and Aretino lived comfortably for decades on such words.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-19/" target="_blank" rel="noopener">Thirukkural Chapter 19: புறங்கூறாமை / Not Backbiting (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries and transliteration)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-019.html" target="_blank" rel="noopener">புறங்கூறாமை – அதிகாரம் 19 (Tamil text with Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah, Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Srimad Bhagavatam (Bhagavata Purana), Canto 8, chapters 5-8: the curse of Durvasa and the churning of the ocean of milk</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Arakhin.15b" target="_blank" rel="noopener">Babylonian Talmud, Arakhin 15b (William Davidson Edition, Koren Noé Talmud with Steinsaltz commentary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/mn/mn.062.than.html" target="_blank" rel="noopener">Maha-Rahulovada Sutta: The Greater Exhortation to Rahula (MN 62), trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga (Sutrakritanga)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Euripides/orestes.html" target="_blank" rel="noopener">Euripides, Orestes, trans. E. P. Coleridge</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Antoninus/meditations.5.five.html" target="_blank" rel="noopener">Marcus Aurelius, Meditations Book 5, trans. George Long</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Pietro-Aretino" target="_blank" rel="noopener">Pietro Aretino</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.frick.org/exhibitions/parmigianino/aretino" target="_blank" rel="noopener">Pietro Aretino</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0188.html">&larr; Kural 188</a>
+  <a href="kural-0190.html">Kural 190 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-019.html">Slander Avoidance</a>
+  <a class="skip-btn" href="kural-0191.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

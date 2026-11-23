@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 328 — Not Killing | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 328</h1>
+<p class="adhikaram"><a href="adhikaram-033.html">Not Killing</a> &middot; Kollaamai &middot; <span class="tamil">கொல்லாமை</span></p>
+
+<div class="tamil-text">நன்றாகும் ஆக்கம் பெரிதெனினும் சான்றோர்க்குக்
+கொன்றாகும் ஆக்கங் கடை.</div>
+<div class="translit">Nandraakum aakkam peridheninum saandrorkkuk
+Kondraakum aakkam kadai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Even if killing brings a gain that is great and seems good, people of good character see any gain that comes from killing as the lowest of things.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine someone says, “If you trap and kill this bird, you’ll win a huge prize.” A good person says “No, thanks.” Valluvar says a prize that costs a life isn’t a prize at all — it’s the worst kind of win.</p>
+
+<h2 class="section">University</h2>
+<p>Valluvar concedes his opponent’s premise — the prosperity (ākkam) gained may indeed be “great” and even called “good” — and still pronounces it kaṭai, the very lowest, in the eyes of the cāṉṟōr (the noble, perfected ones). Parimelazhagar and Solomon Pappaiah read the verse as targeting Vedic animal sacrifice (vēḷvi), which promised wealth and heaven through ritual killing; the Kural thus sides with the Jain and Buddhist critique of sacrificial violence. More broadly the couplet rejects consequentialist justifications for killing: no outcome, however beneficial, can redeem the means. The same refusal to let ends justify the taking of life underlies Kant’s formula that persons may never be used merely as means.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;It would be better to live in this world by begging than to live at the cost of the lives of great souls who are my teachers. … If they are killed, everything we enjoy will be tainted with blood.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 2.5 (As It Is)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Arjuna, facing battle, refuses a kingdom won by killing his elders, calling such enjoyment blood-stained.</div>
+  <div class="tieback">Arjuna voices the Kural’s judgement that gain through killing is contemptible — though Krishna goes on to overrule him on grounds of duty.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But go ye and learn what that meaneth, I will have mercy, and not sacrifice&rdquo;</div>
+  <div class="cite">&mdash; Matthew 9:13 (KJV), quoting Hosea 6:6 <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Jesus quotes Hosea to teach that God desires mercy rather than ritual offerings.</div>
+  <div class="tieback">Echoes the commentators’ reading of the Kural as rejecting the promised benefits of sacrificial killing in favour of mercy.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;…do not say to one who gives you [a greeting of] peace, “You are not a believer,” aspiring for the goods of worldly life; for with Allāh are many acquisitions.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 4:94 (Saheeh International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Qur’an forbids killing someone who offers peace for the sake of worldly spoils, reminding believers that God’s rewards are greater.</div>
+  <div class="tieback">Like the Kural, it condemns gain obtained through killing, however tempting.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;So are the ways of every one that is greedy of gain; which taketh away the life of the owners thereof.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 1:19 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Proverbs warns against joining those who ambush and kill for plunder, noting that greed for gain destroys life.</div>
+  <div class="tieback">Directly condemns, as the Kural does, prosperity sought through killing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">Advising the brahmin Kutadanta, the Buddha describes a great sacrifice of an ancient king in which no oxen, goats, fowl or other creatures were slain, and all was offered with ghee, oil and honey; Kutadanta then releases the animals he had gathered for slaughter.</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/dn5" target="_blank" rel="noopener">Digha Nikaya 5, Kutadanta Sutta</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha redefines sacrifice so that its benefits come without killing.</div>
+  <div class="tieback">Matches the commentarial reading of the Kural as rejecting the promised gains of animal sacrifice.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The binding of animals (to the sacrificial pole), all the Vêdas, and sacrifices, being causes of sin, cannot save the sinner; for his works (or Karman) are very powerful.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 25.30 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jayaghosha rejects animal sacrifice: whatever rewards it promises, ritual killing is a cause of sin and binds the sacrificer with karma.</div>
+  <div class="tieback">Parimelazhagar reads the Kural as condemning the &#x27;great gain&#x27; promised by sacrificial killing; this verse makes the same anti-sacrificial judgement from the Jain canon.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">Macauliffe tells of Shaikh Sajjan, a robber who built a temple and a mosque for travellers, then threw his guests into a well at night and kept their property. After hearing Guru Nanak&#x27;s hymn he confessed his murders; the Guru had him bring out all the goods of his victims and give them to the poor, and he became the Guru&#x27;s follower.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">Max Arthur Macauliffe, The Sikh Religion (1909), Vol. 1, Life of Guru Nanak, Chapter IV, pp. 45-47 (paraphrase)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The story shows wealth gained through killing as wholly worthless: it cannot be kept, only given away in repentance.</div>
+  <div class="tieback">The Kural says that however great the gain, profit won by killing is the lowest of things to the noble; Guru Nanak made Sajjan give up every coin he had gained that way.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Agamemnon sacrifices his daughter Iphigenia to gain favourable winds for the fleet to Troy; the ‘gain’ is won, but the killing brings his own murder on his return.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0004" target="_blank" rel="noopener">Aeschylus, Agamemnon 184–247</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Aeschylus the great advantage bought with a life is shown to be ruinous and shameful.</div>
+  <div class="tieback">Illustrates the Kural: even a great gain won through killing is the lowest of things.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Kant’s formula of humanity: always treat humanity, in yourself or in another, as an end, and never merely as a means.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/5682" target="_blank" rel="noopener">Immanuel Kant, Groundwork of the Metaphysics of Morals, 4:429</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Kant holds that persons have dignity, not a price, so no advantage can justify sacrificing one for an outcome.</div>
+  <div class="tieback">Shares the Kural’s refusal to weigh a life against any gain, however great.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The International Whaling Commission adopts a moratorium on commercial whaling</div>
+  <div class="rle-meta">1982 (in force from 1986) &middot; International Whaling Commission (member states worldwide)</div>
+  <div class="quote is-paraphrase">In 1982 the International Whaling Commission decided that catch limits for all commercial whaling would be set to zero, a moratorium that came fully into force for the 1986 and 1985-86 seasons. The decision followed disagreement among members over the acceptability of whaling and uncertainty about whale stocks. The moratorium remains in place, though a few countries have objected to it or continue whaling under exceptions.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Nations gave up a long-established and profitable industry built on killing, choosing to protect whale populations instead.</div>
+  <div class="tieback">The kural says that gain through killing, however great, is the lowest of things to the noble, and the moratorium turned away from profits made by killing whales.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-33/" target="_blank" rel="noopener">கொல்லாமை / Not killing, Chapter 33 — Thirukural (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukural.ai/paal/aram/adhigaram-33" target="_blank" rel="noopener">திருக்குறள் - அறத்துப்பால் அதிகாரம் 33 | கொல்லாமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.gunathamizh.com/2020/09/33.html" target="_blank" rel="noopener">திருக்குறள் - அதிகாரம் - 33. கொல்லாமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://suttacentral.net/dn5" target="_blank" rel="noopener">Kutadanta Sutta (DN 5)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">The Sikh Religion: Its Gurus, Sacred Writings and Authors (6 vols.) (Max Arthur Macauliffe)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0004" target="_blank" rel="noopener">Aeschylus, Agamemnon (Oresteia)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/5682" target="_blank" rel="noopener">Immanuel Kant, Groundwork of the Metaphysic of Morals (Fundamental Principles of the Metaphysic of Morals), Section I, trans. Thomas Kingsmill Abbott</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://iwc.int/commission" target="_blank" rel="noopener">Commission Overview</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/topic/International-Whaling-Commission" target="_blank" rel="noopener">International Whaling Commission (IWC) (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0327.html">&larr; Kural 327</a>
+  <a href="kural-0329.html">Kural 329 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-033.html">Not Killing</a>
+  <a class="skip-btn" href="kural-0331.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1254 — Reserve Overcome | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1254</h1>
+<p class="adhikaram"><a href="adhikaram-126.html">Reserve Overcome</a> &middot; Niraiyazhithal &middot; <span class="tamil">நிறையழிதல்</span></p>
+
+<div class="tamil-text">நிறையுடையேன் என்பேன்மன் யானோஎன் காமம்
+மறையிறந்து மன்று படும்.</div>
+<div class="translit">Niraiyutaiyaen enpaenman yaanoa-en kaamam
+maraiyirandhu mandru patum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>I used to say I had strong self-control. But my love has come out of hiding and now shows itself for everyone to see.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine being sure you could keep a big secret, and then finding the whole town talking about it. The heroine thought she was strong enough to keep her love quiet, but now everyone can see it.</p>
+
+<h2 class="section">University</h2>
+<p>The heroine contrasts what she used to say (niṟaiyuṭaiyēṉ eṉpēṉmaṉ, ‘I would say I have reserve’, the maṉ again marking a claim now undone) with what happens: her kāmam, passing beyond concealment (maṟai iṟantu), appears in the maṉṟu, the village common or assembly place. The word maṉṟu makes the exposure social: her longing is now matter for public talk, recalling the alar (gossip) of chapter 115. Mu. Varadarasanar and Puliyur Kesikan gloss maṉṟam as the public assembly; Solomon Pappaiah renders the result as ‘known to the townspeople’ (ஊரவர் அறிய). Pope’s English on ytamizh.com (‘In womanly reserve I deemed myself beyond assail; / But love will come abroad, and casts away the veil’) brings out the gendered sense of niṟai in the commentary tradition associated with Parimelazhagar. The couplet is identical on both sources.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In her letter to Krishna, Princess Rukmini writes that, having heard of his qualities, her heart has set aside shame and entered into him, and she asks him to carry her off before her unwanted wedding.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/10/" target="_blank" rel="noopener">Bhagavata Purana 10.52.37-43 (paraphrase; cf. tr. A.C. Bhaktivedanta Swami Prabhupada)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Bhagavata presents a high-born maiden openly declaring a love that propriety would have kept hidden.</div>
+  <div class="tieback">Rukmini’s love, like the heroine’s, passes beyond concealment and declares itself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Then Joseph could not refrain himself before all them that stood by him… And he wept aloud: and the Egyptians and the house of Pharaoh heard.&rdquo;</div>
+  <div class="cite">&mdash; Genesis 45:1-2 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Joseph has long hidden who he is from his brothers, but his feeling finally bursts out so loudly that all Egypt hears it.</div>
+  <div class="tieback">As in the Kural, a restraint the person relied on gives way, and the feeling becomes public.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And women in the city said, ‘The wife of al-’Azeez is seeking to seduce her slave boy; he has impassioned her with love. Indeed, we see her [to be] in clear error.’&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 12:30 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an records how a noblewoman’s hidden passion for Joseph became the talk of the city’s women.</div>
+  <div class="tieback">The Kural’s heroine finds exactly this: her love has left its hiding place and become public talk.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;I adjure you, O daughters of Jerusalem, if ye find my beloved, what will ye tell him? that I am love-sick.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">Song of Songs 5:8 (JPS 1917, via Mechon-Mamre)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The woman of the Song no longer hides her state; she tells the women of the city outright that she is sick with love.</div>
+  <div class="tieback">The Kural’s heroine also finds her love has gone beyond concealment and become known to others.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Venerable Nanda, they say, has been hired. Venerable Nanda, they say, has been bought.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/kn/ud/ud.3.02.than.html" target="_blank" rel="noopener">Udana 3.2, Nanda Sutta (tr. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">When it became known that Nanda was keeping the holy life only for the sake of the promised nymphs, his fellow monks went around saying this, and he was humiliated and ashamed.</div>
+  <div class="tieback">Like the heroine, Nanda finds that the longing he kept inside has become the common talk of his whole community.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">The Sutrakritanga warns that when relations and friends see a monk becoming intimate with a woman, they grow angry and openly tell him that, being a man, he should protect and support her.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sutrakritanga 1.4.1.14 (paraphrase of tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Jain text shows a monk’s concealed attachment exposed to public judgement.</div>
+  <div class="tieback">Like the heroine, the monk who thought himself restrained finds his attachment has become known to all.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;My shyness and hesitation have died and gone, and I walk with my face unveiled.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 931, Raag Raamkalee, Dakhni Oankar, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak speaks as a soul-bride whose fear of what people will say has vanished, so that she now goes about openly, without her veil.</div>
+  <div class="tieback">The Kural&#x27;s wife admits that the reserve she once claimed is gone and her love now shows in the public square; Guru Nanak&#x27;s bride likewise has shed her shyness and walks unveiled before everyone.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In the Odyssey, the minstrel Demodocus sings how Hephaestus caught Ares and Aphrodite together in an invisible net and then called the gods to come and see, so that their secret love was exposed before the company of Olympus.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, Odyssey 8.266-366 (paraphrase; cf. tr. Samuel Butler)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Homer’s comic tale shows a hidden love dragged into public view.</div>
+  <div class="tieback">The Kural’s heroine experiences the same thing in gentler form: her love has left its hiding place and stands in the public square.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle says the person who lacks self-control knows what is right, but under passion holds that knowledge only as a drunk or sleeping man holds it, like someone reciting verses of Empedocles without understanding them.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics VII.3, 1147a (paraphrase; cf. tr. W.D. Ross)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle explains how a person who believes himself self-controlled can still be overrun by passion.</div>
+  <div class="tieback">The heroine’s ‘I used to say I had reserve’ is a lover’s version of Aristotle’s akrasia: her restraint existed, but passion overrode it.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Bamangwato kgotla debates Seretse Khama&#x27;s marriage</div>
+  <div class="rle-meta">November 1948 - June 1949 &middot; Bechuanaland Protectorate (now Botswana)</div>
+  <div class="quote is-paraphrase">Seretse Khama, heir to the chieftaincy of the Bamangwato people, married Ruth Williams, an Englishwoman, in a London registry office in September 1948, against the wishes of his uncle and regent Tshekedi Khama. The marriage was then debated at three meetings of the kgotla, the people&#x27;s public assembly; at the December 1948 meeting most of those present opposed it. At the third kgotla, in June 1949, the assembly changed its position and accepted Seretse as chief and Ruth as his wife.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A private marriage became a matter for open debate in the community&#x27;s assembly and later for the British government, showing how personal love can become public business.</div>
+  <div class="tieback">The kural&#x27;s heroine says her love has left concealment and now shows itself in the maṉṟu, the public assembly; Seretse&#x27;s love was literally argued over in the kgotla.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-126/" target="_blank" rel="noopener">Thirukkural Chapter 126: நிறையழிதல் / Reserve Overcome (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-126.html" target="_blank" rel="noopener">நிறையழிதல் - அதிகாரம் 126 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/sb/10/" target="_blank" rel="noopener">Srimad Bhagavatam, Canto 10, tr. A.C. Bhaktivedanta Swami Prabhupada and disciples</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917), Hebrew-English Bible</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/kn/ud/ud.3.02.than.html" target="_blank" rel="noopener">Udana 3.2, Nanda Sutta: About Nanda, tr. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga (Sutrakritanga)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, The Odyssey, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://blog.nationalarchives.gov.uk/a-love-story-that-threatened-the-commonwealth-seretse-khama-and-ruth-williams/" target="_blank" rel="noopener">A love story that threatened the Commonwealth: Seretse Khama and Ruth Williams (Jordan Farrell)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/sir-seretse-m-khama" target="_blank" rel="noopener">Sir Seretse M. Khama (Encyclopedia of World Biography)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1253.html">&larr; Kural 1253</a>
+  <a href="kural-1255.html">Kural 1255 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-126.html">Reserve Overcome</a>
+  <a class="skip-btn" href="kural-1261.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

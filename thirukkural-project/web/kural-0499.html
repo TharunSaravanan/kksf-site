@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 499 — Knowledge of Location | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 499</h1>
+<p class="adhikaram"><a href="adhikaram-050.html">Knowledge of Location</a> &middot; Idanarithal &middot; <span class="tamil">இடனறிதல்</span></p>
+
+<div class="tamil-text">சிறைநலனும் சீரும் இலரெனினும் மாந்தர்
+உறைநிலத்தோடு ஒட்டல் அரிது.</div>
+<div class="translit">Sirainalanum seerum ilareninum maanthar
+Urainilaththodu ottal arithu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Even people with no strong fort and no great power are hard to beat if you attack them in their own homeland.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Even a small puppy barks bravely and is hard to chase out of its own house, because it knows every corner. People are hardest to beat at home.</p>
+
+<h2 class="section">University</h2>
+<p>‘Sirai nalan’ is the excellence of an enclosure or defensive barrier (sirai also means a moat or a prison-wall), and ‘seer’ is any other kind of distinction or strength. ‘Urainilam’ is the land where people live, their home ground, and ‘ottal’ is read by Parimelazhagar as going there to engage them. The kural balances 492: there the advantage came from fortification, here it comes from simply being at home, with the home fighter’s knowledge of the land and motivation. The thirukkural-thamizh.org gloss makes the psychology explicit: the knowledge that one is defending one’s own place is itself a source of courage. The verse also works as a warning to the invader, who is always at a disadvantage on foreign ground.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In weighing campaigns, Kautilya advises the conqueror to consider whether the ground suits his own forces or the enemy’s. He treats the enemy’s home terrain, where the defender knows the land and the invader does not, as a factor that raises the cost of attack.</div>
+  <div class="cite">&mdash; <a href="https://archive.org/details/Arthasastra_English_Translation" target="_blank" rel="noopener">Kautilya, Arthaśāstra, Book IX, Chapter 1 (tr. R. Shamasastry)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Classical Indian statecraft counts the defender’s familiarity with his own land among the things to be calculated.</div>
+  <div class="tieback">The Kural states the resulting rule plainly: people are hard to beat in their own land.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;When a strong man armed keepeth his palace, his goods are in peace.&rdquo;</div>
+  <div class="cite">&mdash; Luke 11:21 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus uses the image of a householder guarding his own house, who can be overcome only by someone stronger.</div>
+  <div class="tieback">The defender in his own dwelling is secure, which fits the Kural’s ‘urainilam’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;When Allah’s Messenger (ﷺ) besieged Taif and could not conquer its people, he said, ‘We will return (to Medina) If Allah wills.’&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:4325" target="_blank" rel="noopener">Sahih al-Bukhari 4325</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">After the victory at Hunayn, the Muslim army besieged Taif but could not take it and withdrew.</div>
+  <div class="tieback">It illustrates how hard it is to dislodge people from their own home ground.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;The river of Kishon swept them away, that ancient river, the river Kishon. O my soul, thou hast trodden down strength.&rdquo;</div>
+  <div class="cite">&mdash; Judges 5:21 (KJV); cf. Judges 4:13–15 <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Deborah’s song celebrates Israelite tribes defending their own hill-country, where the invader Sisera’s nine hundred iron chariots were swept away by the local river.</div>
+  <div class="tieback">Lightly armed people on their own land beat a far better-equipped invader.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Suṃsumāra Jātaka, a crocodile tricks a monkey onto its back to steal its heart. The monkey says its heart hangs on the fig tree, gets carried back to the bank, leaps into the tree and cannot be caught.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/bud/j3/index.htm" target="_blank" rel="noopener">Jātaka No. 208, Suṃsumāra Jātaka (ed. E. B. Cowell)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Once the monkey is back in its own tree, the crocodile has no power over it.</div>
+  <div class="tieback">Like the Kural’s people at home, the monkey is safe in its own place.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Monks who equal the ocean in depth, who are difficult to overcome, are frightened by nobody (or nothing), and are not easily assailed, who are full of extensive learning and take care of themselves, will go to the highest place, after their Karman has been annihilated.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 11.31 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The very learned monk, who has no fort or army, is described as hard to overcome and not easily attacked because of his depth and self-guarding.</div>
+  <div class="tieback">The kural says people without strong forts or special strength are still hard to beat on their home ground; the Jain monk too is unconquerable without walls, because his strength lies in himself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">For much of the eighteenth century, after the death of Guru Gobind Singh, the Sikhs of the Punjab were under threat and siege from both Mughal and Afghan armies, yet they could not be put down in their own land, and from about the 1760s they were the de facto rulers of many parts of the Punjab.</div>
+  <div class="cite">&mdash; <a href="https://pluralism.org/the-struggle-for-survival" target="_blank" rel="noopener">The Pluralism Project, Harvard University, &#x27;The Struggle for Survival&#x27; (paraphrase)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Harvard Pluralism Project summarises how a community without great fortresses endured decades of campaigns against it in its home region and eventually came to rule there.</div>
+  <div class="tieback">The Kural says that even people with no strong fort or special strength are hard to beat when attacked in the land where they live; the Sikhs&#x27; survival in the Punjab bears this out.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When Darius invaded Scythia, the Scythians, who had no towns or farmland to defend, kept retreating across their own steppe and refused pitched battle. Their king Idanthyrsus told Darius they had nothing he could force them to defend, and the Persian army eventually had to withdraw.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126" target="_blank" rel="noopener">Herodotus, Histories 4.120–142, esp. 4.127 (tr. A. D. Godley)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">A people without forts or fixed wealth proved impossible to conquer in their own land.</div>
+  <div class="tieback">This is almost exactly the Kural’s case: no ‘sirai nalan’, and still ‘ottal arithu’, hard to attack at home.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Clausewitz argues that the defensive form of war is in itself stronger than the offensive, because the defender benefits from terrain, local support and waiting, while the attacker grows weaker the further he advances into hostile country.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/1946" target="_blank" rel="noopener">Carl von Clausewitz, On War, Book VI, Chapter 1 (tr. J. J. Graham)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">His analysis explains why invading someone’s homeland is so costly.</div>
+  <div class="tieback">It is the theory behind the Kural’s observation that people are hard to beat on their own ground.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Ethiopia defeats the Italian invasion at Adwa</div>
+  <div class="rle-meta">1 March 1896 &middot; Adwa, Tigray, Ethiopia</div>
+  <div class="quote is-paraphrase">After Italy claimed Ethiopia as a protectorate, Emperor Menelik II led a large army north to meet the Italian forces advancing from Eritrea. Italian commander Oreste Baratieri ordered a night march into the mountainous country around Adwa, but his brigades became separated in the unfamiliar terrain, and Menelik&#x27;s forces defeated them one after another. Italy recognised Ethiopia&#x27;s full independence in the peace that followed.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Adwa was the first decisive defeat of a European colonial army by an African state and kept Ethiopia independent.</div>
+  <div class="tieback">The kural warns that people are hard to defeat when you attack them in the land where they live, and the invaders lost their way and the battle in Ethiopia&#x27;s own mountains.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.thirukkural.net/ta/kural/adhigaram-050.html" target="_blank" rel="noopener">இடன் அறிதல், Adhigaram 50, Thirukkural (Kurals 491–500), with commentaries by Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah and Mu. Karunanidhi</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A050.html" target="_blank" rel="noopener">50. இடனறிதல் (Thirukkural with old continuous text, word-by-word gloss and commentary)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://archive.org/details/Arthasastra_English_Translation" target="_blank" rel="noopener">Kautilya&#x27;s Arthaśāstra, translated by R. Shamasastry (1915), Book IX, Chapter 1: The Knowledge of Power, Place, Time, Strength and Weakness; the Time of Invasion</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:4325" target="_blank" rel="noopener">Sahih al-Bukhari 4325, Book of Military Expeditions: the siege of Taif</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sacred-texts.com/bud/j3/index.htm" target="_blank" rel="noopener">The Jataka, or Stories of the Buddha&#x27;s Former Births (ed. E.B. Cowell), incl. Mahakapi Jataka No. 407</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://pluralism.org/the-struggle-for-survival" target="_blank" rel="noopener">The Struggle for Survival (The Pluralism Project)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-9"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126" target="_blank" rel="noopener">Herodotus, The Histories, trans. A. D. Godley (1920)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.gutenberg.org/ebooks/1946" target="_blank" rel="noopener">Carl von Clausewitz, On War, translated by J. J. Graham (1873), Book VI: Defence</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/topic/Italo-Ethiopian-War-1895-1896" target="_blank" rel="noopener">Italo-Ethiopian War (1895-1896)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://blackpast.org/global-african-history/battle-adwa-adowa-1896/" target="_blank" rel="noopener">Battle of Adwa (Adowa), 1896</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0498.html">&larr; Kural 498</a>
+  <a href="kural-0500.html">Kural 500 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-050.html">Knowledge of Location</a>
+  <a class="skip-btn" href="kural-0501.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

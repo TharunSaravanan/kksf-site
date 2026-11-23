@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 296 — Veracity | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 296</h1>
+<p class="adhikaram"><a href="adhikaram-030.html">Veracity</a> &middot; Vaaymai &middot; <span class="tamil">வாய்மை</span></p>
+
+<div class="tamil-text">பொய்யாமை அன்ன புகழில்லை எய்யாமை
+எல்லா அறமுந் தரும்.</div>
+<div class="translit">Poyyaamai anna pugazhillai eyyaamai
+Ellaa aramum tharum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>No praise is as great as the praise for never lying. Without any extra effort, it brings every other good quality with it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Being known as someone who never lies is the best reputation you can have. And it’s like a magnet — once you are truthful, other good habits, like fairness and kindness, come to you easily, without you even trying hard.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet makes two claims: truthfulness is the supreme source of pugazh (fame, cf. ch. 24), and it ‘yields every dharma’ (ellaa aramum tharum). The pivot word eyyaamai is read in two ways: Parimelazhagar-line commentators take it as ‘without suffering/strain’ — truthfulness produces all virtue effortlessly, unlike painful austerity; Varadarasan and Pappaiah read it as ‘without one’s knowing it,’ i.e., the virtues accrue unnoticed. Either way the claim is that veracity is a generative, master virtue from which the others follow — a thesis close to the Islamic hadith that truthfulness leads to righteousness.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;The true prevails, not the untrue; by the true the path is laid out, the way of the gods.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/sbe15/sbe15020.htm" target="_blank" rel="noopener">Mundaka Upanishad 3.1.6 (tr. F. Max Müller)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Mundaka Upanishad — source of India’s national motto ‘Satyameva Jayate’ — says truth wins, and that truth itself lays down the road to the divine.</div>
+  <div class="tieback">Truth that triumphs and opens the path to every good echoes the Kural’s truth that brings unmatched fame and all virtues.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Wherefore putting away lying, speak every man truth with his neighbour: for we are members one of another.&rdquo;</div>
+  <div class="cite">&mdash; Ephesians 4:25 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul makes truth-telling the first step of the new life, because believers belong to one another like parts of one body.</div>
+  <div class="tieback">Truthfulness as the foundation from which the rest of the moral life grows.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;…the truthful men and truthful women… for them Allāh has prepared forgiveness and a great reward.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 33:35 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Among the qualities God praises in believing men and women, truthfulness appears alongside patience, charity and fasting, all promised a great reward.</div>
+  <div class="tieback">Truthfulness earns the highest honour — divine praise and reward.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Rabban Shimon ben Gamaliel used to say: on three things does the world stand: On justice, on truth and on peace.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 1:18 (tr. Joshua Kulp)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Mishnah names truth as one of the three pillars that hold up the whole world.</div>
+  <div class="tieback">Truth as a foundation supporting everything else — the Kural’s ‘brings all virtues.’</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;He who utters gentle, instructive and truthful words, who imprecates none — him do I call a holy man.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 408 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha gives truthful, gentle speech as one mark of the true brahmin, the person worthy of the highest honour.</div>
+  <div class="tieback">Truthful speech earns the highest title of respect.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Truthfulness indeed is tapa (penance). In truthfulness do reside self-restraint and all other virtues. Just as the fish can live only in the sea, so can all other virtues reside in Truthfulness alone.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.com/scripture/jina-sutra-quotations/" target="_blank" rel="noopener">Bhagavatī Ārādhanā 842 (Śivārya), English rendering as given on Jainworld, &#x27;Jina Sutra – Quotations&#x27;</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Bhagavatī Ārādhanā calls truthfulness the element that all the other virtues live in, as fish live in the sea.</div>
+  <div class="tieback">Valluvar says that never lying brings every other virtue with it, without any strain. The Jain verse says that all virtues live in truthfulness, which is the same claim.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Truth is the medicine for all; it removes and washes away our sins.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 468, Raag Aasaa (Asa di Vaar, salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In the same salok of Asa di Vaar on what true living means, Guru Nanak calls Truth a cure for every ill, cleansing the person of wrongdoing.</div>
+  <div class="tieback">The Kural says truthfulness brings every other virtue with it, without strain. Guru Nanak makes truth the single remedy that heals everything else.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Muse, you and the daughter of Zeus, unforgetting Truth: with the hand that puts things right, keep from me the blame for lying, for wronging my friend.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://topostext.org/work/18" target="_blank" rel="noopener">Pindar, Olympian 10.3-6 (tr. Diane Arnson Svarlien)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Pindar calls on Aletheia (Truth), daughter of Zeus, to protect his reputation from the blame of a broken promise.</div>
+  <div class="tieback">In Greek thought Truth is a goddess who guards a person’s good name — the Kural’s link between truth and fame.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;And falsehood is in itself mean and culpable, and truth noble and worthy of praise.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics 4.7 (tr. W. D. Ross)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle states that truthfulness is by its very nature noble and deserves praise.</div>
+  <div class="tieback">Truth is ‘worthy of praise’ in itself — the Kural’s ‘no fame like truthfulness.’</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Raja Harishchandra, the story of the truthful king, opens India&#x27;s film industry</div>
+  <div class="rle-meta">3 May 1913 &middot; Coronation Cinema, Girgaon, Bombay (Mumbai), India</div>
+  <div class="quote is-paraphrase">Dadasaheb Phalke&#x27;s silent film Raja Harishchandra, widely regarded as the first full-length Indian feature film, was released at the Coronation Cinema in Bombay on 3 May 1913. It told the legend of King Harishchandra, who gave up his kingdom and family to keep his word to the sage Vishwamitra and was finally restored. Because no women would take the roles, Phalke cast men in the female parts, and the film was a great success; only fragments survive today.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">When India&#x27;s first feature film needed a story that every audience would know and honour, it turned to the legend of a king remembered above all for never breaking faith with the truth.</div>
+  <div class="tieback">The kural says there is no fame like that of never lying, and the enduring fame of the truthful Harishchandra was strong enough to launch an entire national cinema.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-30/" target="_blank" rel="noopener">திருக்குறள் அதிகாரம் 30: வாய்மை / Veracity (with Varadarasan, Pappaiah, Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-030.html" target="_blank" rel="noopener">வாய்மை - அதிகாரம் 30 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/sbe15/sbe15020.htm" target="_blank" rel="noopener">The Upanishads, Part 2 (SBE 15): Mundaka Upanishad III.1 (tr. F. Max Müller)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://jainworld.com/scripture/jina-sutra-quotations/" target="_blank" rel="noopener">Jina Sutra – Quotations (English renderings of verses from the Āgamas and Digambara texts, with verse references) (Jainworld (compiled; renderings largely follow the Saman Suttam English edition))</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://topostext.org/work/18" target="_blank" rel="noopener">Pindar, Olympian Odes (tr. Diane Arnson Svarlien)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, tr. W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://scroll.in/reel/836441/here-is-what-went-into-the-making-of-the-first-indian-feature-film" target="_blank" rel="noopener">Here is what went into the making of the first Indian feature film (Sruthi Ganapathy Raman)</a> <span class="tier">[web source]</span></li>
+<li id="cite-13"><a href="https://publicdomainreview.org/collection/raja-harishchandra-1913/" target="_blank" rel="noopener">Raja Harishchandra (1913)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0295.html">&larr; Kural 295</a>
+  <a href="kural-0297.html">Kural 297 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-030.html">Veracity</a>
+  <a class="skip-btn" href="kural-0301.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

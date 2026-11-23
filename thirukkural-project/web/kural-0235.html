@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 235 — Renown | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 235</h1>
+<p class="adhikaram"><a href="adhikaram-024.html">Renown</a> &middot; Pukazh &middot; <span class="tamil">புகழ்</span></p>
+
+<div class="tamil-text">நத்தம்போல் கேடும் உளதாகும் சாக்காடும்
+வித்தகர்க் கல்லால் அரிது.</div>
+<div class="translit">Naththampol kedum uladhaakum saakkaadum
+Viththakarkku allaal aridhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A loss that is really a gain, and a death that lets you live on in people&#x27;s memory, are hard for anyone except the truly wise to achieve.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A candle gets smaller as it burns, but it lights up the whole room. Some very wise people are like that. When they give away their time, money, or even their life for others, they seem to lose, but their goodness grows and people remember them forever.</p>
+
+<h2 class="section">University</h2>
+<p>This is the chapter’s most paradoxical and textually difficult couplet. நத்தம் is glossed by Parimelazhagan as ஆக்கம் (increase), giving ‘a ruin that is like gain’: the loss suffered by the physical body (poverty through giving, hardship) that enlarges the ‘body of fame’ (புகழுடம்பு). சாக்காடும் உளதாகும், ‘death that becomes existence’, refers to dying in such a way that one’s renown is fixed for ever. Only the வித்தகர் (the skilled, the wise) manage this conversion of loss into gain. Commentators including Mu. Varadarasan and Solomon Pappaiah explain it through the Tamil idea of two bodies, the perishing body of flesh and the enduring body of renown. Cross-culturally it matches the logic of heroic or sacrificial death: Achilles’ choice at Troy, Diotima’s account of those who die ‘for the sake of leaving behind them a name’, and the grain of wheat that must die to bear fruit.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;O son of Kuntī, either you will be killed on the battlefield and attain the heavenly planets, or you will conquer and enjoy the earthly kingdom.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 2.37 (As It Is)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna tells Arjuna that a righteous warrior cannot lose: death in duty brings heaven, and victory brings the kingdom.</div>
+  <div class="tieback">Like the Kural, it treats a rightly met death not as loss but as a form of gain.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Except a corn of wheat fall into the ground and die, it abideth alone: but if it die, it bringeth forth much fruit.&rdquo;</div>
+  <div class="cite">&mdash; John 12:24 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus uses the image of a seed that must die in the soil in order to produce a harvest, pointing to his own death.</div>
+  <div class="tieback">The same paradox as the Kural: an apparent loss or death that is actually increase.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And never think of those who have been killed in the cause of Allāh as dead. Rather, they are alive with their Lord, receiving provision,&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 3:169 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an declares that those who die in God’s cause are not truly dead but living and provided for.</div>
+  <div class="tieback">Both describe a death that is actually a continued life, ‘death that becomes existence’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;A good name is better than precious ointment; and the day of death than the day of one’s birth.&rdquo;</div>
+  <div class="cite">&mdash; Ecclesiastes 7:1 (Tanakh; KJV rendering) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Qoheleth pairs the value of a good name with the claim that the day of death surpasses the day of birth, since only at death is a life’s name complete.</div>
+  <div class="tieback">Death that seals a good name is better than a beginning: close to the Kural’s death that establishes lasting renown.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Sasa Jataka the Bodhisatta, born as a hare with nothing else to give, leaps into a fire to offer his own body as food to a brahmin, who is Sakka in disguise. The fire turns icy and does not burn him, and Sakka marks the sign of a hare on the moon so that the hare’s virtue will be known throughout the aeon.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/bud/j3/j3017.htm" target="_blank" rel="noopener">Jataka No. 316, Sasa-Jataka (ed. E.B. Cowell, Vol. III)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The hare’s willingness to give up his life is converted into an everlasting sign in the sky.</div>
+  <div class="tieback">A self-sacrifice that should have been pure loss becomes lasting renown, the very conversion the Kural credits to the wise.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;These two ways of life ending with death have been declared: death with one&#x27;s will, and death against one&#x27;s will. Death against one&#x27;s will is that of ignorant men, and it happens (to the same individual) many times. Death with one&#x27;s will is that of wise men, and at best it happens but once.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 5.2–3 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Mahāvīra&#x27;s lecture on death contrasts the fool&#x27;s repeated, unwilling deaths with the wise person&#x27;s single, willing death, which can bring the cycle of rebirth to an end.</div>
+  <div class="tieback">Valluvar says a loss that is really gain, and a death that is really living on, are within reach only of the wise. The Jain text likewise reserves a death that is a victory rather than a loss for the wise alone.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The death of brave heroes is blessed, if it is approved by God.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 579, Raag Vadhans, Alahanian, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In the Alahanian, hymns sung in mourning, Guru Nanak says that the death of the truly brave is blessed when it is accepted by God.</div>
+  <div class="tieback">The Kural speaks of a death that is really a way of living on, achieved only by the wise; Guru Nanak likewise calls a death approved by God not a loss but a blessing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;If I stay here and fight, I shall not return alive but my name will live for ever: whereas if I go home my name will die, but it will be long ere death shall take me.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/iliad.html" target="_blank" rel="noopener">Homer, Iliad 9 (trans. Samuel Butler)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Achilles explains his two possible fates: early death at Troy with undying fame, or a long, obscure life at home.</div>
+  <div class="tieback">The classic statement of trading the body’s life for a name that lives forever, the Kural’s ‘death that becomes existence’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;They are ready to run all risks greater far than they would have for their children, and to spend money and undergo any sort of toil, and even to die, for the sake of leaving behind them a name which shall be eternal.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Plato/symposium.html" target="_blank" rel="noopener">Plato, Symposium 208c-d (trans. Benjamin Jowett)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Diotima tells Socrates that the love of immortal fame drives people to spend, toil and even die, citing Alcestis, Achilles and Codrus.</div>
+  <div class="tieback">Both identify the paradoxical exchange of wealth and even life for an undying name.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Joan of Arc is executed, rehabilitated and canonised</div>
+  <div class="rle-meta">1431-1920 &middot; Rouen, France</div>
+  <div class="quote is-paraphrase">Joan of Arc, the peasant girl who led French forces to relieve Orleans during the Hundred Years&#x27; War, was tried by an ecclesiastical court and executed at Rouen on 30 May 1431. On the order of Pope Callixtus III, proceedings in 1455-56 annulled her conviction, and in 1920 she was canonised by Pope Benedict XV, while the French parliament decreed a yearly national festival in her honour.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">A death meant to discredit her became the foundation of a renown that has grown for nearly six centuries; she is honoured as France&#x27;s national heroine and patron saint.</div>
+  <div class="tieback">The kural speaks of a death that is really a way of living on, and Joan&#x27;s execution became the beginning of her enduring life in the memory of her nation.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-24/" target="_blank" rel="noopener">Thirukkural Chapter 24: புகழ் / Renown (Tamil text, commentaries of Mu. Varadarasan, Solomon Pappaiah, Karunanidhi; Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-024.html" target="_blank" rel="noopener">புகழ் - அதிகாரம் 24 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sacred-texts.com/bud/j3/j3017.htm" target="_blank" rel="noopener">The Jataka, Vol. III, No. 316: Sasa-Jataka, ed. E.B. Cowell</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://classics.mit.edu/Homer/iliad.html" target="_blank" rel="noopener">Homer, The Iliad, trans. Samuel Butler (Books IX, XII, XXII)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Plato/symposium.html" target="_blank" rel="noopener">Plato, Symposium, tr. Benjamin Jowett</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/explore/100women/profiles/saint-joan-of-arc" target="_blank" rel="noopener">Saint Joan of Arc</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.history.com/articles/joan-of-arc-acquittal" target="_blank" rel="noopener">Why Joan of Arc Was Acquitted, 25 Years After Her Execution</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0234.html">&larr; Kural 234</a>
+  <a href="kural-0236.html">Kural 236 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-024.html">Renown</a>
+  <a class="skip-btn" href="kural-0241.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

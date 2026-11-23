@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 112 — Impartiality | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 112</h1>
+<p class="adhikaram"><a href="adhikaram-012.html">Impartiality</a> &middot; Naduvu Nilaimai &middot; <span class="tamil">நடுவு நிலைமை</span></p>
+
+<div class="tamil-text">செப்பம் உடையவன் ஆக்கஞ் சிதைவின்றி
+எச்சத்திற் கேமாப்பு உடைத்து.</div>
+<div class="translit">Seppam udaiyavan aakkanj sidhaivindri
+Echchaththirku emaappu udaiththu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The riches of a fair-minded person do not fall apart. They last and support even their children and grandchildren.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Think of a house built on strong, straight foundations. It doesn’t fall down; the grandchildren can still live in it. Wealth earned fairly is like that house, and it keeps protecting the family.</p>
+
+<h2 class="section">University</h2>
+<p>செப்பம் (seppam, “straightness, rectitude”) is used here as a synonym for naduvu nilaimai, and the couplet makes a claim about consequences: the ஆக்கம் (aakkam, “increase, prosperity”) of the just person is சிதைவின்றி (“without disintegration”) and furnishes ஏமாப்பு (emaappu, “security, protection”) to the எச்சம் (echcham, “what remains after one”), which the commentators read as descendants or posterity. The point is intergenerational: unjust gain may be large but brittle, while justly earned wealth is durable. The idea that righteousness is an inheritance for children’s children is widespread, found in Proverbs, the Psalms, the Qur’anic story of the orphans’ buried treasure, and Hesiod’s claim that the truthful man’s “generation” prospers. The word echcham reappears in Kural 114, where its meaning (offspring or legacy) becomes a matter of commentarial debate.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;The Supreme Personality of Godhead said: Son of Pṛthā, a transcendentalist engaged in auspicious activities does not meet with destruction either in this world or in the spiritual world; one who does good, My friend, is never overcome by evil.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 6.40</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Krishna reassures Arjuna that a person who does good is never destroyed, in this life or the next.</div>
+  <div class="tieback">Shares the Kural’s promise that right conduct leads to lasting security rather than ruin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;A good man leaveth an inheritance to his children’s children: and the wealth of the sinner is laid up for the just.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 13:22 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">This proverb, part of the Christian Old Testament, says a good person’s legacy reaches even grandchildren, while the wicked person’s wealth ends up with others.</div>
+  <div class="tieback">Almost the Kural’s exact claim: the upright person’s wealth lasts and benefits their descendants.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And as for the wall, it belonged to two orphan boys in the city, and there was beneath it a treasure for them, and their father had been righteous. So your Lord intended that they reach maturity and extract their treasure, as a mercy from your Lord.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 18:82 (Saheeh International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">In the story of Moses and al-Khidr, a wall is repaired so that two orphans’ hidden treasure stays safe, explicitly because their father had been righteous.</div>
+  <div class="tieback">The righteous father’s goodness protects his children’s wealth after him, which is the Kural’s “security to posterity.”</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;His seed shall be mighty upon earth: the generation of the upright shall be blessed. Wealth and riches shall be in his house: and his righteousness endureth for ever.&rdquo;</div>
+  <div class="cite">&mdash; Psalm 112:2–3 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The psalm describes the upright person: their descendants are blessed, their house has wealth, and their righteousness lasts forever.</div>
+  <div class="tieback">Same three elements as the Kural: uprightness, lasting prosperity, and blessing to descendants.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;He who acquires his wealth in harmless ways like to a bee that honey gathers, riches mount up for him like ant hill’s rapid growth.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta, Digha Nikaya 31 (trans. Narada Thera)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha tells the householder Sigala that wealth gathered without harming anyone grows steadily, the way an anthill rises.</div>
+  <div class="tieback">Both say that wealth gained righteously grows and endures.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Nyayasampannavibhavah : Possessed of honestly earned wealth.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.jainworld.com/jainbooks/antiquity/ethcjain.htm" target="_blank" rel="noopener">Hemacandra, Yogaśāstra, list of 35 qualities of the ideal śrāvaka, no. 1, as rendered in Vilas A. Sangave, &#x27;Prescription of Ethical Code&#x27; (jainworld.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The first of Hemacandra&#x27;s thirty-five qualities of the ideal Jain householder is wealth acquired by just means (nyāya).</div>
+  <div class="tieback">Valluvar promises that the prosperity of the upright endures, and Jain householder ethics likewise puts justly earned wealth first, though it makes no explicit promise about its lasting for descendants.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;It does not run short, and it does not run out.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 375, Raag Aasaa, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Arjan describes the wealth of the Lord&#x27;s Name as a treasure that never diminishes however much it is used.</div>
+  <div class="tieback">The Kural promises that the upright person&#x27;s prosperity does not crumble; Gurbani makes the same claim, but for the spiritual wealth of the righteous rather than material gain.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;For whoever knows the right and is ready to speak it, far-seeing Zeus gives him prosperity; but whoever deliberately lies in his witness and forswears himself, and so hurts Justice and sins beyond repair, that man’s generation is left obscure thereafter. But the generation of the man who swears truly is better thenceforward.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 280–285 (trans. Evelyn-White)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hesiod says Zeus gives prosperity to the one who speaks what is right, and that this person’s descendants fare better, while the perjurer’s line fades into obscurity.</div>
+  <div class="tieback">An exact counterpart: justice brings prosperity that carries over to one’s descendants (echcham).</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Then this must be our notion of the just man, that even when he is in poverty or sickness, or any other seeming misfortune, all things will in the end work together for good to him in life and death&rdquo;</div>
+  <div class="cite">&mdash; Plato, Republic X, 613a (trans. Jowett) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">At the end of the Republic, Socrates concludes that the just person is ultimately secure: whatever happens, things work out for his good.</div>
+  <div class="tieback">Shares the Kural’s conviction that justice yields lasting security rather than eventual collapse.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Ernst Abbe creates the Carl Zeiss Foundation</div>
+  <div class="rle-meta">1889; statute 1896 &middot; Jena, Germany</div>
+  <div class="quote is-paraphrase">Physicist Ernst Abbe, who became head of the Zeiss optical works after Carl Zeiss&#x27;s death in 1888, was concerned that future owners might enrich themselves at the expense of the companies and their employees. In 1889 he set up and endowed the Carl Zeiss Foundation, which became sole owner of the Zeiss works in 1891, and his 1896 foundation statute gave employees rights such as profit-sharing, paid holidays, sick pay and pensions, with an eight-hour day introduced at Zeiss in 1900. The ZEISS company credits Abbe with a decisive role in the continued existence of ZEISS and SCHOTT, both of which still operate today.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Abbe chose to build fairness to workers into the ownership of the firm itself, so that it could not easily be undone by later owners.</div>
+  <div class="tieback">The kural says the prosperity of the just does not crumble but supports those who come after; Abbe&#x27;s fairly organised enterprise has outlasted him by more than a century.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-12/" target="_blank" rel="noopener">Thirukkural Chapter 12: நடுவு நிலைமை / Impartiality (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar commentaries, Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-012.html" target="_blank" rel="noopener">நடுவு நிலைமை - அதிகாரம் 12 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html" target="_blank" rel="noopener">Tirukkural of Tiruvalluvar (Tamil script, Unicode e-text)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta: The Discourse to Sigala (DN 31), trans. Narada Thera</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://jainworld.jainworld.com/jainbooks/antiquity/ethcjain.htm" target="_blank" rel="noopener">Jaina ethics (English renderings of Jain householder texts, incl. Hemacandra&#x27;s Yogaśāstra) (Vilas A. Sangave)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Republic, Book X (the Myth of Er) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/print/article/527" target="_blank" rel="noopener">Ernst Abbe (Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.zeiss.com/corporate/en/about-zeiss/past/history/ernst-abbe.html" target="_blank" rel="noopener">Ernst Abbe - physicist, inventor, entrepreneur, and social reformer (ZEISS Archives)</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0111.html">&larr; Kural 111</a>
+  <a href="kural-0113.html">Kural 113 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-012.html">Impartiality</a>
+  <a class="skip-btn" href="kural-0121.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

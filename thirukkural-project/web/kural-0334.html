@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 334 — Impermanence | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 334</h1>
+<p class="adhikaram"><a href="adhikaram-034.html">Impermanence</a> &middot; Nilaiyaamai &middot; <span class="tamil">நிலையாமை</span></p>
+
+<div class="tamil-text">நாளென ஒன்றுபோற் காட்டி உயிர்ஈரும்
+வாளது உணர்வார்ப் பெறின்.</div>
+<div class="translit">Naal ena ondru pol kaatti uyir eerum
+Vaal adhu unarvaar perin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A day looks like just a stretch of time. But people who understand know it is really a saw, cutting away at your life bit by bit.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Each day feels like just another day: you wake up, play, and sleep. But every day that passes is one less day you have left, like a saw slowly cutting through a log. This kural says wise people notice this.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet turns on an unmasking: “naal” (the day) displays itself (kaatti) as a neutral thing, an ordinary measure of time, but its real nature is a “vaal” (blade, commonly understood as a saw) that “eerum” (cleaves, saws through) life. The verb eer suggests the slow back-and-forth of a saw rather than a single cut, so life is shown being worn away in daily strokes. The conditional “unarvaarp perin” (if one finds those who understand) implies that such people are rare; most take the passing day at face value. Philosophically the kural anticipates Seneca&#x27;s remark that we die daily and the Psalmist&#x27;s prayer to ‘number our days’: time is not a container in which life takes place, but the very process by which life is used up.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Bhartrhari laments that with every rising and setting of the sun, life is shortened day by day, yet people, busy with their many affairs, do not notice time slipping away.</div>
+  <div class="cite">&mdash; Bhartrhari, Vairagyashataka (verse beginning ādityasya gatāgatair; numbering varies by edition) <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The poet observes that each passing day quietly takes something off a person&#x27;s lifespan.</div>
+  <div class="tieback">This is almost the Kural&#x27;s own image: the ordinary day, marked by sunrise and sunset, is secretly cutting away at life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Whereas ye know not what shall be on the morrow. For what is your life? It is even a vapour, that appeareth for a little time, and then vanisheth away.&rdquo;</div>
+  <div class="cite">&mdash; James 4:14 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">James reminds his readers that life is a brief vapour and tomorrow is never guaranteed.</div>
+  <div class="tieback">Both texts correct the illusion that time is plentiful: life is being used up day by day.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;By time, Indeed, mankind is in loss, Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience.&rdquo;</div>
+  <div class="cite">&mdash; Quran 103:1-3 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Surat al-Asr swears by time and declares that people are in loss as time passes, unless they fill it with faith and good deeds.</div>
+  <div class="tieback">Time as a steady loss of life is the Kural&#x27;s point; al-Asr adds the remedy the chapter goes on to give: good deeds.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;So teach us to number our days, that we may apply our hearts unto wisdom.&rdquo;</div>
+  <div class="cite">&mdash; Psalm 90:12 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Psalm asks God to help people count their days so they grow wise.</div>
+  <div class="tieback">The Kural&#x27;s ‘those who understand’ are exactly those who have learned to number their days.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Just as a cowherd drives the cattle to pasture with a staff, so do old age and death drive the life force of beings (from existence to existence).&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 135 <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha pictures aging and death steadily driving life onward, as a herdsman drives cattle with a stick.</div>
+  <div class="tieback">Both texts show time as an active force wearing life away, not a harmless backdrop.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Mankind is harassed by Death; it is taken hold of by Old Age; the days are called unfailing… The day that goes by will never return; the days elapse without profit to him who acts contrary to the Law.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 14.23–24 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Bhṛgu&#x27;s sons explain that the days pass unfailingly while death and old age seize humanity, and each lost day is gone for ever.</div>
+  <div class="tieback">Valluvar unmasks the ordinary day as a saw cutting away life; the Jain verses likewise reveal each passing day as irrecoverable life lost.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Day by day, hour by hour, life runs its course, and the body withers away.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 692, Raag Dhanaasree, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Kabir describes life being whittled away unit by unit of time, days into watches and watches into hours, until the body is spent.</div>
+  <div class="tieback">The Kural unmasks the day as a saw that cuts away at life; Kabir sees the same steady erosion of life in each passing day and hour.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Hesiod names the three Fates, Clotho, Lachesis and Atropos, who spin, measure out and finally cut the thread of each mortal life.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Hesiod, Theogony 217-219, 904-906</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Greek myth, every life is a thread that is spun, measured, and in the end cut by Atropos, ‘the one who cannot be turned’.</div>
+  <div class="tieback">The Fates&#x27; shears and the Kural&#x27;s saw both picture time as a blade working on the length of a life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;What man can you show me who places any value on his time, who reckons the worth of each day, who understands that he is dying daily?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_1" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius 1.2 (Gummere translation)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Seneca tells Lucilius that most people waste their days without noticing that each one is a part of their death already lived.</div>
+  <div class="tieback">Seneca&#x27;s ‘dying daily’ is the Kural&#x27;s day-saw, and his rare person who ‘understands’ matches Valluvar&#x27;s ‘those who understand’.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Steve Jobs&#x27;s Stanford commencement address on mortality</div>
+  <div class="rle-meta">12 June 2005 &middot; Stanford University, California, United States</div>
+  <div class="quote is-paraphrase">Apple co-founder Steve Jobs gave the commencement address at Stanford University and devoted the third of his three stories to death. He told the graduates that for 33 years he had looked in the mirror each morning and asked whether he would want to do what he was about to do if it were the last day of his life, and that when the answer was no for too many days in a row he knew he needed to change something. He described a recent brush with a serious illness and urged them not to waste their limited time.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">The speech became one of the most widely shared commencement addresses because it treated each ordinary day as a measured part of a limited life. It shows a practical habit of noticing that every day spent is a day used up.</div>
+  <div class="tieback">The kural says the day only looks like a harmless unit of time, while the wise see it as a saw cutting away at life, and Jobs described a daily practice built on exactly that awareness.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-34/" target="_blank" rel="noopener">Thirukkural Chapter 34: நிலையாமை / Instability (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A034.html" target="_blank" rel="noopener">34. நிலையாமை (Thirukkural with word-by-word gloss and commentary)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3">Bhartrihari, Vairagya Shataka <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Theogony (Hesiod)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_1" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius, Letter 1 (On Saving Time), trans. Richard Mott Gummere (Loeb, 1917-1925)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says" target="_blank" rel="noopener">&#x27;You&#x27;ve got to find what you love,&#x27; Jobs says (prepared text of the 2005 Commencement Address) (Steve Jobs)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.npr.org/transcripts/141120359" target="_blank" rel="noopener">Read And Watch: Steve Jobs&#x27; Stanford Commencement Address</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0333.html">&larr; Kural 333</a>
+  <a href="kural-0335.html">Kural 335 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-034.html">Impermanence</a>
+  <a class="skip-btn" href="kural-0341.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

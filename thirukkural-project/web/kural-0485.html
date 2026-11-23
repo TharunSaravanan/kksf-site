@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 485 — Knowledge of Apt Timing | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 485</h1>
+<p class="adhikaram"><a href="adhikaram-049.html">Knowledge of Apt Timing</a> &middot; Kaalamarithal &middot; <span class="tamil">காலமறிதல்</span></p>
+
+<div class="tamil-text">காலம் கருதி இருப்பர் கலங்காது
+ஞாலம் கருது பவர்.</div>
+<div class="translit">Kaalam Karudhi Iruppar Kalangaadhu
+Gnaalam Karudhu Pavar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who want to win the world do not get upset or hasty. They wait calmly and watch for the right time.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A cat watching a mouse-hole sits very still and doesn’t get upset or jump too early. People with big goals are like that. They stay calm and wait for their chance.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet picks up gnaalam karudhu (‘aiming at the world’) from the previous kural and shows the inner attitude that goes with it. Such people iruppar, ‘stay’ or ‘sit still’, and do so kalangaadhu, ‘without being agitated’. Parimelazhagar explains that they are not disturbed by the enemy’s present prosperity or by their own present setbacks, because they know that the favourable time will come. The virtue described is patience that is also watchfulness, an active waiting rather than inertia. The printed division ‘karudhu pavar’ is a metrical split of karudhupavar, and the two sources agree.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;When (the king) knows (that) at some future time his superiority (is) certain, and (that) at the time present (he will suffer) little injury, then let him have recourse to peaceful measures.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">Manusmṛti 7.169 (tr. G. Bühler)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Manu advises a king who is sure to gain the upper hand later to stay at peace for now, since waiting costs him little.</div>
+  <div class="tieback">This is the Kural’s calm waiting for the right time, written as a rule of royal policy.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Be patient therefore, brethren, unto the coming of the Lord. Behold, the husbandman waiteth for the precious fruit of the earth, and hath long patience for it, until he receive the early and latter rain.&rdquo;</div>
+  <div class="cite">&mdash; James 5:7 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">James uses the farmer who waits calmly for the rains as the model of patience before a great outcome.</div>
+  <div class="tieback">The waiting farmer matches the Kural’s unperturbed person who waits for the moment.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">At Hudaybiyyah (628 CE), the Prophet accepted a truce whose terms many companions found humiliating. They could not enter Mecca that year and had to return fugitives. The Qur’an nevertheless called it ‘a clear victory’ (48:1), and within two years Mecca opened to him.</div>
+  <div class="cite">&mdash; Qur’an 48:1; sira accounts of the Treaty of Hudaybiyyah <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet held back from forcing the issue and waited calmly while circumstances turned in his favour.</div>
+  <div class="tieback">This is the Kural’s waiting ‘without agitation’ by one who aims at the greater goal.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">David was already anointed king by Samuel, yet he refused to seize the throne from Saul. For years he lived as a fugitive in the wilderness and twice spared Saul’s life when he had the chance to kill him, waiting for the kingship to come in its own time.</div>
+  <div class="cite">&mdash; 1 Samuel 24 and 26 <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">David’s restraint while marked for kingship is the Bible’s classic picture of patient waiting for one’s hour.</div>
+  <div class="tieback">He was one who ‘aimed at the realm’ and waited without panic for the right time.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Dhammapada says that as a solid rock is not shaken by the wind, the wise are not moved by praise or blame.</div>
+  <div class="cite">&mdash; Dhammapada 81 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The wise person keeps an inner steadiness whatever happens outside.</div>
+  <div class="tieback">Kalangaadhu, ‘unshaken’, names the same calm that the Kural requires while waiting.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;A restrained, very learned, and wise (monk) should accept such alms as are freely given him, being free from passions and waiting for his end. This is the doctrine of the Kêvalin.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sutrakritanga I.11.38 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Path lecture closes by describing the sage who lives free of passion and calmly waits for his appointed end.</div>
+  <div class="tieback">The kural praises those who wait undisturbed for their time; the Jain sage also waits calmly and without agitation, though what he awaits is the end of life and liberation, not the chance to win the world.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Within yourself, make patience the bow, and make patience the bowstring. Make patience the arrow, the Creator will not let you miss the target.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1384, Salok Sheikh Farid (salok 115) (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Sheikh Farid, whose saloks are included in the Guru Granth Sahib, makes patience (sabar) the whole weapon: bow, string and arrow, which God will not let miss.</div>
+  <div class="tieback">The Kural shows those who aim at the world waiting calmly and unshaken for their time; Farid teaches that patience itself is the weapon that finds its mark.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">For years Penelope held off the suitors. She promised to choose one of them after finishing a shroud for Laertes, and each night she secretly unwove what she had woven by day. She kept the household intact until Odysseus returned.</div>
+  <div class="cite">&mdash; Homer, Odyssey, Books 2 and 19 <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">She could not overpower the suitors, so she bought time with calm cunning, waiting for the moment when things would change.</div>
+  <div class="tieback">Penelope shows the Kural’s patient waiting, steady amid pressure and alert to the coming time.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Sun Tzu said: The good fighters of old first put themselves beyond the possibility of defeat, and then waited for an opportunity of defeating the enemy.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/132" target="_blank" rel="noopener">Sun Tzu, The Art of War IV.1 (tr. Lionel Giles)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Sun Tzu teaches that security lies in your own hands, while the chance of victory must be waited for, since the enemy provides it.</div>
+  <div class="tieback">This is exactly the Kural’s picture: secure and unshaken, the aspirant waits for the time.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Fabius Maximus, the Delayer, wears down Hannibal</div>
+  <div class="rle-meta">217-216 BCE and after &middot; Italy</div>
+  <div class="quote is-paraphrase">After Hannibal&#x27;s victories in Italy, Quintus Fabius Maximus was made dictator in 217 BCE and refused to meet Hannibal in pitched battle, instead shadowing his army through the hills, harassing his foraging parties and cutting off his supplies. His caution was unpopular in Rome, earning him the nickname Cunctator, the Delayer, and his command was divided with his critic Minucius. After the Romans abandoned the strategy and suffered a disastrous defeat at Cannae in 216 BCE, they returned to his approach.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Fabius endured public ridicule rather than fight on the enemy&#x27;s terms, and his patience was later recognised as having saved Rome.</div>
+  <div class="tieback">The kural says those who aim high wait unshaken for their time, undisturbed by the enemy&#x27;s present success, and Fabius held to his course while Hannibal seemed unstoppable and Rome mocked him.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.thirukkural.net/en/kural/adhigaram-049.html" target="_blank" rel="noopener">The recognition of opportunity: Adhigaram 49, Thirukkural (Kurals 481–490)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html" target="_blank" rel="noopener">Tirukkural of Tiruvalluvar (Tamil script, Unicode e-text)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-3"><a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">The Laws of Manu (Manusmṛti), translated by Georg Bühler, Sacred Books of the East vol. 25 (Oxford, 1886)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, composite of standard English translations <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga (Sutrakritanga)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.gutenberg.org/ebooks/132" target="_blank" rel="noopener">Sun Tzu, The Art of War (tr. Lionel Giles, 1910)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/biography/Quintus-Fabius-Maximus-Verrucosus" target="_blank" rel="noopener">Quintus Fabius Maximus Verrucosus</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.worldhistory.org/Second_Punic_War/" target="_blank" rel="noopener">Second Punic War</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0484.html">&larr; Kural 484</a>
+  <a href="kural-0486.html">Kural 486 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-049.html">Knowledge of Apt Timing</a>
+  <a class="skip-btn" href="kural-0491.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 325 — Not Killing | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 325</h1>
+<p class="adhikaram"><a href="adhikaram-033.html">Not Killing</a> &middot; Kollaamai &middot; <span class="tamil">கொல்லாமை</span></p>
+
+<div class="tamil-text">நிலைஅஞ்சி நீத்தாருள் எல்லாம் கொலைஅஞ்சிக்
+கொல்லாமை சூழ்வான் தலை.</div>
+<div class="translit">Nilaianji neeththaarul ellaam kolaianjik
+Kollaamai soozhvaan thalai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Many people give up the world because they fear the endless cycle of life and death. The greatest of them is the one who fears the wrong of killing and carefully keeps from it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Some people give up their toys, their fancy food and their comfy beds to become monks. That’s hard! But Valluvar says the very best of them is the one who is most careful never to hurt a living thing. Being gentle matters more than giving things up.</p>
+
+<h2 class="section">University</h2>
+<p>Valluvar compares two kinds of fear: nilai añci — fear of the “state” of worldly existence and rebirth that drives ascetics to renounce (nīttār) — and kolai añci, fear of the guilt of killing. He declares that among all renunciants, the one moved by the second fear and who deliberates on non-killing is talai, the head. This subordinates the whole apparatus of asceticism to a single ethical commitment, a characteristic Kural move that ranks inner moral conduct over outward religious status. The same move appears in the Mahabharata’s claim that ahimsa is itself the highest penance, and in the Dhammapada’s definition of the true monk as one who has laid down violence toward all beings.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Abstention from injury is the highest religion. It is, again, the highest penance.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Anushasana Parva, Section CXV (K. M. Ganguli trans.)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Bhishma declares that ahimsa is not only the highest dharma but also the highest form of tapas (austerity).</div>
+  <div class="tieback">Directly supports the Kural: non-killing ranks above every other austerity practised by renunciants.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And though I bestow all my goods to feed the poor, and though I give my body to be burned, and have not charity, it profiteth me nothing.&rdquo;</div>
+  <div class="cite">&mdash; 1 Corinthians 13:3 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Paul teaches that even the most extreme renunciation is worthless without love.</div>
+  <div class="tieback">Like the Kural, it subordinates outward renunciation to an inner ethical disposition — here love, there non-killing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;The cases which will be decided first (on the Day of Resurrection) will be the cases of blood-shedding.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6533" target="_blank" rel="noopener">Sahih al-Bukhari 6533</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Prophet teaches that bloodshed is the first matter between people that God will judge.</div>
+  <div class="tieback">Reflects the Kural’s kolai añci — the fear of bloodguilt as the gravest concern of a God-fearing person.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;He hath shewed thee, O man, what is good; and what doth the LORD require of thee, but to do justly, and to love mercy, and to walk humbly with thy God?&rdquo;</div>
+  <div class="cite">&mdash; Micah 6:8 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">After asking whether God wants thousands of rams or even one’s firstborn, Micah answers that God wants justice and mercy instead.</div>
+  <div class="tieback">Like the Kural, it ranks ethical mercy above elaborate religious self-sacrifice.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Even though he be well-attired, yet if he is poised, calm, controlled and established in the holy life, having set aside violence towards all beings — he, truly, is a holy man, a renunciate, a monk.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 142 (Buddharakkhita trans.) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha says the true renunciant is marked not by outward austerities but by having laid down violence toward all beings.</div>
+  <div class="tieback">Almost exactly the Kural: among renunciants, the truest is the one who has renounced harming life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;He who thoroughly knows living beings, whether they move or not, and does not injure them in any of the three ways, him we call a Brâhmana.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 25.23 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The monk Jayaghosha tells a sacrificing priest that the true holy man is defined not by birth or ritual but by knowing all living beings and injuring none in thought, word or act.</div>
+  <div class="tieback">Valluvar places at the head of all renunciants the one who dreads killing; the Uttarādhyayana likewise makes non-injury the mark of the true ascetic.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;You call yourself the most excellent sage; then who would you call a butcher?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1103, Raag Maaroo, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Kabir mocks those who kill in religious sacrifice yet claim the rank of the highest sages: by their deeds they are no different from butchers.</div>
+  <div class="tieback">The Kural ranks highest among renunciants the one who fears the sin of killing; Kabir denies the title of great sage to anyone who kills, whatever his religious standing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When Apollo killed the Cyclopes, Zeus required even this god to atone by serving a mortal, Admetus, as a herdsman for a year; Heracles likewise served Omphale in expiation for killing Iphitus.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0022" target="_blank" rel="noopener">Apollodorus, Library 3.10.4 and 2.6.2–3</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Greek myth even gods and the greatest heroes had to submit to humiliating servitude to cleanse bloodguilt.</div>
+  <div class="tieback">Reflects kolai añci — the dread of bloodguilt is so great that it outranks divine or heroic status.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Empedocles, in his Purifications, portrays himself as an exiled daimon and calls on mortals to cease from the harsh-sounding slaughter by which, unknowingly, they devour one another.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/cla/app/app07.htm" target="_blank" rel="noopener">Empedocles, Katharmoi, fragments B136–137 (Diels-Kranz)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The philosopher-purifier treated abstention from bloodshed as the core of the purified, god-like life.</div>
+  <div class="tieback">Like the Kural, it makes refusal to kill the heart of the path of spiritual purification.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Swiss Brethren adopt the Schleitheim Confession</div>
+  <div class="rle-meta">February 1527 &middot; Schleitheim, Schaffhausen, Switzerland</div>
+  <div class="quote is-paraphrase">Leaders of the Swiss Brethren, an early Anabaptist movement, met at Schleitheim and agreed seven articles of faith, with Michael Sattler as their main author. The articles called for separation from the world and rejected the use of weapons of violence, treating the sword as belonging outside the perfection of Christ. The Swiss Brethren refused military service and were harshly persecuted, and Sattler was executed later that year.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Schleitheim became a founding statement for the nonresistance later kept by Mennonite and Hutterite communities.</div>
+  <div class="tieback">The kural says the foremost of all who renounce the world is the one who fears the guilt of killing, and these separatists made the refusal to wield the sword central to their renunciation.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-33/" target="_blank" rel="noopener">கொல்லாமை / Not killing, Chapter 33 — Thirukural (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukural.ai/paal/aram/adhigaram-33" target="_blank" rel="noopener">திருக்குறள் - அறத்துப்பால் அதிகாரம் 33 | கொல்லாமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.gunathamizh.com/2020/09/33.html" target="_blank" rel="noopener">திருக்குறள் - அதிகாரம் - 33. கொல்லாமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/bukhari:6533" target="_blank" rel="noopener">Sahih al-Bukhari 6533 (Book of Ar-Riqaq)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0022" target="_blank" rel="noopener">Apollodorus, Bibliotheca (The Library), Book 2 — the labours and apotheosis of Heracles</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://sacred-texts.com/cla/app/app07.htm" target="_blank" rel="noopener">Empedocles of Acragas, On Nature — surviving fragments on Love (Philotēs) and Strife (Neikos), Diels–Kranz B17, B35</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://gameo.org/index.php?title=Schleitheim_Confession" target="_blank" rel="noopener">Schleitheim Confession</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/topic/Swiss-Brethren" target="_blank" rel="noopener">Swiss Brethren (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0324.html">&larr; Kural 324</a>
+  <a href="kural-0326.html">Kural 326 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-033.html">Not Killing</a>
+  <a class="skip-btn" href="kural-0331.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

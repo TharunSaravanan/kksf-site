@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 967 — Honour | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 967</h1>
+<p class="adhikaram"><a href="adhikaram-097.html">Honour</a> &middot; Maanam &middot; <span class="tamil">மானம்</span></p>
+
+<div class="tamil-text">ஒட்டார்பின் சென்றொருவன் வாழ்தலின் அந்நிலையே
+கெட்டான் எனப்படுதல் நன்று.</div>
+<div class="translit">Ottaarpin sendroruvan vaazhdhalin annilaiye
+Kettaan enappadudhal nandru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>It is better to be called a person who has lost everything than to live by running after people who do not respect you.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine choosing between staying poor but proud, or getting treats every day by doing whatever an unkind person tells you. This kural says it is better to lose the treats and keep your self-respect.</p>
+
+<h2 class="section">University</h2>
+<p>Ottaar (ஒட்டார்) are those who do not &#x27;stick&#x27; to one: people who do not regard or accept one, or enemies. Living by following them (pin sendru vaazhdhal) is set against being called kettaan (கெட்டான், &#x27;he is ruined&#x27;, or &#x27;he perished&#x27;). The phrase annilaiye (அந்நிலையே), &#x27;in that very state&#x27;, is read by Mu. Varadarasanar as remaining in one&#x27;s own condition without stooping, while Puliyur Kesikan, Solomon Pappaiah and Kalaignar take kettaan more starkly as &#x27;died&#x27;. Pope&#x27;s English, quoted on ytamizh.com, follows the stronger reading: &#x27;Better &#x27;twere said, He&#x27;s perished! than to gain / The means to live, following in foeman&#x27;s train.&#x27; The couplet expresses a priority of honour over comfort, not an instruction to seek death. Text identical on both sources.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;People will always speak of your infamy, and for a respectable person, dishonor is worse than death.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 2.34 (tr. A. C. Bhaktivedanta Swami Prabhupada; vedabase.io)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna tells Arjuna that for a person of standing, disgrace is worse than dying.</div>
+  <div class="tieback">The Kural says the same in its own way: better to be called ruined than to live in disgrace.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But I have used none of these things: neither have I written these things, that it should be so done unto me: for it were better for me to die, than that any man should make my glorying void.&rdquo;</div>
+  <div class="cite">&mdash; 1 Corinthians 9:15 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul refuses to live off the financial support of his churches, saying he would rather die than lose the honour of preaching freely.</div>
+  <div class="tieback">Very close to the Kural: better to perish than to live dependent in a way that empties one&#x27;s honour.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;[Charity is] for the poor who have been restricted for the cause of Allah, unable to move about in the land. An ignorant [person] would think them self-sufficient because of their restraint, but you will know them by their [characteristic] sign. They do not ask people persistently [or at all].&rdquo;</div>
+  <div class="cite">&mdash; Quran 2:273 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Quran praises the poor whose dignity is so strong that people mistake them for well-off, because they will not beg.</div>
+  <div class="tieback">Like the Kural, it honours those who would rather endure want than live by depending on others.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;If our God whom we serve is able to deliver us, He will deliver us from the burning fiery furnace, and out of thy hand, O king. But if not, be it known unto thee, O king, that we will not serve thy gods, nor worship the golden image which thou hast set up.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">Daniel 3:17-18 (JPS 1917, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Three young Jews tell the king they will not bow even if it costs them their lives.</div>
+  <div class="tieback">They prefer possible death to living by submitting to a power that demands they betray themselves.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Do I carry muñja grass? I spit on my life. Death in battle would be better for me than that I, defeated, survive.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://accesstoinsight.org/tipitaka/kn/snp/snp.1.04.than.html" target="_blank" rel="noopener">Sutta Nipata 3.2, Padhana Sutta (tr. Thanissaro Bhikkhu; accesstoinsight.org; the site&#x27;s text has the typo &#x27;woud&#x27;)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Facing Mara&#x27;s army, the Bodhisatta says he would rather die fighting than live on in defeat.</div>
+  <div class="tieback">This strikingly echoes the Kural&#x27;s &#x27;better to be called dead&#x27; than to live in surrender.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The honourable, though they become through destitution mere bones and skin, will they follow those who are destitute of proper dispositions, to make known their afflictions to them?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">Naladiyar, ch. 30 (மானம், &#x27;Honour&#x27;), stanza 2 (English tr. in The Indian Antiquary; wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Naladiyar says the honourable, even when wasted by poverty, will not go after unworthy people to plead their troubles.</div>
+  <div class="tieback">This is almost the Kural&#x27;s own image of refusing to live by following those who do not value one.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;He alone is known as a spiritual hero, who fights in defense of religion. He may be cut apart, piece by piece, but he never leaves the field of battle.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1105, Raag Maru, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Bhagat Kabir describes the true hero as one who would be cut to pieces rather than leave the field, which Sikh tradition reads as standing firm for righteousness and the weak.</div>
+  <div class="tieback">The Kural says it is better to be called ruined than to live by trailing after one&#x27;s foes; Kabir&#x27;s hero chooses to be cut down rather than give ground.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Antigone, forbidden by King Creon to bury her brother, does so anyway, telling Creon she knew she must die some day and that if she dies before her time she counts it gain.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Sophocles/antigone.html" target="_blank" rel="noopener">Sophocles, Antigone 450-470</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Antigone chooses death over obeying a command that would dishonour her and her family.</div>
+  <div class="tieback">She chooses, like the Kural, to be counted lost rather than live by submitting to one who scorns what she holds sacred.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;I thought that I ought not to do anything common or mean in the hour of danger: nor do I now repent of the manner of my defence, and I would rather die having spoken after my manner, than speak in your manner and live.&rdquo;</div>
+  <div class="cite">&mdash; Plato, Apology 38e (tr. Benjamin Jowett; classics.mit.edu) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Condemned to death, Socrates says he would rather die true to himself than live by pleading in a way unworthy of him.</div>
+  <div class="tieback">A near one-to-one match: better to be called dead than to live by stooping to those who scorn one.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Arturo Toscanini refuses to serve the Fascist and Nazi regimes</div>
+  <div class="rle-meta">1931-1938 &middot; Bologna, Italy; Bayreuth, Germany; Salzburg, Austria</div>
+  <div class="quote is-paraphrase">On 14 May 1931 the conductor Arturo Toscanini refused to open a memorial concert in Bologna with the Fascist anthem Giovinezza, and was struck by a group of Fascist youths outside the theatre; his passport was later taken away for a time. In 1933 he withdrew from the Bayreuth Festival in protest at Nazi treatment of Jewish musicians, and in 1938 he broke with the Salzburg Festival as Austria came under Hitler&#x27;s control. He refused to conduct in Italy while the Fascist regime lasted and went to the United States, returning to conduct at the rebuilt La Scala in 1946.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Toscanini gave up the leading stages of Europe and his own country rather than lend his art to regimes he opposed.</div>
+  <div class="tieback">The kural says it is better to be called ruined than to live by trailing after those who do not value you, and Toscanini chose exile over serving rulers who demanded his submission.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-97/" target="_blank" rel="noopener">Thirukkural, Chapter 97: மானம் / Honour (Kurals 961-970), with commentaries of Sivayogi Sivakumar, Mu. Varadarasan, Solomon Pappaiah and Kalaignar, and G. U. Pope&#x27;s English couplets</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-097.html" target="_blank" rel="noopener">Thirukkural, Adhigaram 97 மானம் (Kurals 961-970) with commentaries of Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah and Mu. Karunanidhi</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://accesstoinsight.org/tipitaka/kn/snp/snp.1.04.than.html" target="_blank" rel="noopener">Kasi Bhāradvāja Sutta: To the Plowing Bharadvaja (Sn 1.4), translated from the Pali by Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">The Nāladiyār (English translation serialised in The Indian Antiquary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="http://classics.mit.edu/Sophocles/antigone.html" target="_blank" rel="noopener">Sophocles, Antigone (c. 441 BCE) — Antigone&#x27;s burial of Polyneices and the unwritten laws owed to the dead</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Apology (Plato (recording Socrates)) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.wpr.org/music/toscanini-and-fascists-0" target="_blank" rel="noopener">Toscanini and the Fascists (Norman Gilliland)</a> <span class="tier">[web source]</span></li>
+<li id="cite-13"><a href="https://historynet.com/war-stories-maestro-resistance/" target="_blank" rel="noopener">War Stories: Maestro of the Resistance</a> <span class="tier">[web source]</span></li>
+<li id="cite-14"><a href="https://www.britannica.com/biography/Arturo-Toscanini" target="_blank" rel="noopener">Arturo Toscanini</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0966.html">&larr; Kural 966</a>
+  <a href="kural-0968.html">Kural 968 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-097.html">Honour</a>
+  <a class="skip-btn" href="kural-0971.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1025 — Family Maintenance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1025</h1>
+<p class="adhikaram"><a href="adhikaram-103.html">Family Maintenance</a> &middot; Kudiseyalvakai &middot; <span class="tamil">குடிசெயல்வகை</span></p>
+
+<div class="tamil-text">குற்றம் இலனாய்க் குடிசெய்து வாழ்வானைச்
+சுற்றமாச் சுற்றும் உலகு.</div>
+<div class="translit">Kutram ilanaaik kudiseydhu vaazhvaanaich
+sutramaach chutrum ulagu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The world gathers around a person who lifts up their family without doing wrong, and treats them like one of its own family.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Think of a kind neighbour who works hard for her family and never cheats anyone. Soon the whole street treats her like family, bringing food and asking her advice. Valluvar says that is what happens to honest family-builders: everyone wants to be their relative.</p>
+
+<h2 class="section">University</h2>
+<p>Kutram ilanaai (குற்றம் இலனாய், ‘being without fault’) is the condition: the family must be raised by blameless means. The reward is a pun on sutram (சுற்றம், ‘kin, relatives’) and sutrum (சுற்றும், ‘surrounds, encircles’): the ulagu (உலகு, ‘world’) surrounds him as if it were his own relatives. Varadarasanar and Kesikan say people seek to become his kin; Pappaiah narrows ulagu to ‘the great’ (உயர்ந்தோர்), in keeping with the commentarial habit of reading ulagam as the worthy. Pope translates ‘The world shall circle him, and kindred claim.’ The text is identical on both sources.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Whatever action a great man performs, common men follow. And whatever standards he sets by exemplary acts, all the world pursues.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 3.21 (Bhagavad-gītā As It Is, A.C. Bhaktivedanta Swami Prabhupāda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna notes that the world gathers behind and imitates the person of exemplary conduct.</div>
+  <div class="tieback">Like the Kural&#x27;s blameless family-builder whom the world surrounds, the exemplary person draws everyone to follow.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">Proverbs tells the reader to keep mercy and truth close, and so to find favour and good understanding in the sight of God and man.</div>
+  <div class="cite">&mdash; Proverbs 3:3-4 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The sage promises that a life of faithfulness wins goodwill from people as well as from God.</div>
+  <div class="tieback">The Kural similarly says a blameless life makes the world want to be one&#x27;s kin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Indeed, those who have believed and done righteous deeds - the Most Merciful will appoint for them affection.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 19:96 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an promises that God will place love for the righteous in people&#x27;s hearts.</div>
+  <div class="tieback">Like the Kural, it says the upright are surrounded by affection as if they were family.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;which is the straight path that a man should choose for himself? One which is an honor to the person adopting it, and [on account of which] honor [accrues] to him from others.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Mishnah, Pirkei Avot 2:1 (tr. Joshua Kulp, Mishnah Yomit, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbi Judah the Prince defines the right path as one that is honourable in itself and earns honour from others.</div>
+  <div class="tieback">The Kural&#x27;s blameless family-builder, embraced by the world, follows exactly this path.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;He who is full of faith and virtue, and possesses good repute and wealth — he is respected everywhere, in whatever land he travels.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 303 (tr. Acharya Buddharakkhita, Access to Insight) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha says the virtuous householder of good name and honest wealth is honoured wherever he goes.</div>
+  <div class="tieback">The Kural likewise says the world embraces the blameless one who has raised his family.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">Hemachandra&#x27;s Yogashastra lists, as the first quality of a householder fit for the Jain path, wealth acquired by just and honest means (nyaya-sampanna-vibhava).</div>
+  <div class="cite">&mdash; Hemachandra, Yogashastra, Book 1 (the marganusari qualities of the householder) <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jain lay ethics makes honest earning the foundation of a good household life.</div>
+  <div class="tieback">This is the Kural&#x27;s ‘without fault’ condition for raising one&#x27;s family.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">According to the Janamsakhi tradition, Guru Nanak stayed in Saidpur (Eminabad) with Bhai Lalo, a poor carpenter who lived by honest labour, and declined a feast offered by the rich official Malik Bhago, saying that Lalo&#x27;s coarse bread was earned honestly while Bhago&#x27;s food was wrung from the poor.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">Janamsakhi tradition, as retold in M. A. Macauliffe, The Sikh Religion (1909), vol. 1, Life of Guru Nanak</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The story is told to show that honest work, not wealth or rank, wins the Guru&#x27;s company and honour.</div>
+  <div class="tieback">The Kural says the world gathers round and claims as kin the person who raises his family without doing wrong; in the story the Guru himself chooses to make his home with the blameless, honest-working Lalo.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Plutarch tells how Theseus gathered the scattered villages of Attica into one city, Athens, and the people came together under him as one community.</div>
+  <div class="cite">&mdash; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Theseus*.html" target="_blank" rel="noopener">Plutarch, Life of Theseus 24</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The hero&#x27;s work for his people turned many separate households into a single family-like city.</div>
+  <div class="tieback">It loosely matches the Kural&#x27;s picture of people drawn around a builder as his own kin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;For nothing inspires love, nothing conciliates affection, like virtue. Why, in a certain sense we may be said to feel affection even for men we have never seen, owing to their honesty and virtue.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/2808" target="_blank" rel="noopener">Cicero, Laelius de Amicitia, ch. 8 (§§27-28) (tr. E. S. Shuckburgh)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Laelius argues that friendship springs from the natural pull of virtue: goodness draws affection so strongly that we love even good men we have never met.</div>
+  <div class="tieback">This matches the Kural&#x27;s promise that people gather around the blameless man and treat him as their own kin.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Robert Owen&#x27;s New Lanark becomes a place of pilgrimage</div>
+  <div class="rle-meta">1800-1825 &middot; New Lanark, Scotland</div>
+  <div class="quote is-paraphrase">From 1800 Robert Owen managed the New Lanark cotton mills, where he shortened the working day, stopped children under ten from working in the mills, opened a nursery and infant school in 1816, and set up a village store selling good goods at fair prices. Paid for out of the mills&#x27; profits, these reforms drew visitors from many countries, and Britannica notes that the mills became a place of pilgrimage for political leaders, social reformers and royalty.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Owen showed that a working community could be raised without exploitation, and the world came to see and learn from it.</div>
+  <div class="tieback">The kural says the world gathers around the one who raises his people without fault, and New Lanark under Owen drew admirers from far and wide.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-103/" target="_blank" rel="noopener">Thirukkural Chapter 103: குடிசெயல்வகை / The Way of Maintaining the Family (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-103.html" target="_blank" rel="noopener">குடிசெயல்வகை - அதிகாரம் 103 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8">Yogaśāstra of Hemacandra <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">The Sikh Religion: Its Gurus, Sacred Writings and Authors (6 vols.) (Max Arthur Macauliffe)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Theseus*.html" target="_blank" rel="noopener">Plutarch, Life of Theseus (Parallel Lives)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/2808" target="_blank" rel="noopener">Laelius de Amicitia (On Friendship), in Treatises on Friendship and Old Age (Marcus Tullius Cicero)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Robert-Owen" target="_blank" rel="noopener">Robert Owen (Douglas F. Dowd)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://newlanark.org/introducing-robert-owen/" target="_blank" rel="noopener">Robert Owen</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1024.html">&larr; Kural 1024</a>
+  <a href="kural-1026.html">Kural 1026 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-103.html">Family Maintenance</a>
+  <a class="skip-btn" href="kural-1031.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

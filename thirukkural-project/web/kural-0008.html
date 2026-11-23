@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 8 — The Praise of God | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 8</h1>
+<p class="adhikaram"><a href="adhikaram-001.html">The Praise of God</a> &middot; Kadavul Vaazhthu &middot; <span class="tamil">கடவுள் வாழ்த்து</span></p>
+
+<div class="tamil-text">அறவாழி அந்தணன் தாள்சேர்ந்தார்க் கல்லால்
+பிறவாழி நீந்தல் அரிது.</div>
+<div class="translit">Aravaazhi andhanan thaal serndhaark kallaal,
+piRa vaazhi neendhal aridhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Unless people hold on to the feet of the kind God, who is like an ocean of goodness, it is hard to swim across the other ocean, the vast sea of worldly life.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Picture two huge oceans: one is how good God is, and the other is all of life’s ups and downs. This kural says the only way to cross the hard ocean is to hold onto the good one.</p>
+
+<h2 class="section">University</h2>
+<p>“Aravaazhi” (“ocean of dharma/virtue”) figures the divine as boundless moral reality, an ocean whose scale matches the second ocean it lets one cross — “piravaazhi,” the vast ocean of worldly existence one must traverse. The parallel construction is a deliberate rhetorical mirroring, reinforcing that only something of equal or greater vastness than the ocean of worldly existence can carry a being across it.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Even if you are considered to be the most sinful of all sinners, when you are situated in the boat of transcendental knowledge, you will be able to cross over the ocean of miseries.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 4.36</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna says that no matter how sinful someone has been, real spiritual knowledge works like a boat sturdy enough to carry them across the entire sea of suffering.</div>
+  <div class="tieback">The Kural’s exact image — an ocean that can only be crossed by boat/aid — appears here almost identically.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;I am the way, the truth, and the life: no man cometh unto the Father, but by me.&rdquo;</div>
+  <div class="cite">&mdash; John 14:6 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus states plainly that he is the sole route to God the Father — not one option among several, but the way itself.</div>
+  <div class="tieback">Matches the Kural’s exclusivity claim: only one path gets you across, and it runs through the divine specifically.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Be in this world as if you were a stranger or a traveler.&rdquo;</div>
+  <div class="cite">&mdash; Sahih al-Bukhari 6416 <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet Muhammad frames the whole of worldly life as a temporary journey through unfamiliar territory, not a place to settle down in.</div>
+  <div class="tieback">Shares the Kural’s underlying picture of life as something to be traveled through, though it&#x27;s a general life-orientation teaching rather than a specific claim that only God enables the crossing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">At the Red Sea, escape is physically impossible until God parts the water himself — the Israelites don’t build a way across, God makes one for them.</div>
+  <div class="cite">&mdash; Exodus 14:21-22 (Tanakh, Torah) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The sea only becomes crossable through direct divine action, not human effort or ingenuity.</div>
+  <div class="tieback">A literal, historical version of the Kural’s image: an impassable sea made passable only by direct divine action.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Buddha compares his own teaching to a raft — genuinely necessary to cross the water, but meant to be let go of once you&#x27;ve reached the other side.</div>
+  <div class="cite">&mdash; Majjhima Nikaya 22 (Alagaddupama Sutta) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Dharma gets you across, but it isn’t the destination — you’re meant to release it once it’s done its job.</div>
+  <div class="tieback">Shares the Kural’s crossing-the-water structure, though it&#x27;s the teaching/practice itself that&#x27;s the vessel here, not devotion to a personal God.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The body is the boat, life is the sailor, and the Circle of Births is the ocean which is crossed by the great sages.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 23.73 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">In the dialogue of Kesi and Gautama, the followers of Parshva and Mahavira agree that samsara is an ocean to be crossed by the boat of a disciplined life, which is why the Jinas are called Tirthankaras, &#x27;ford-makers&#x27;.</div>
+  <div class="tieback">The Kural&#x27;s &#x27;ocean of virtue&#x27; that lets one swim the &#x27;ocean of births&#x27; matches the Tirthankara, maker of the ford across samsara, whose path alone carries the soul over.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The soul is enlightened, and the intellect is exalted, meditating on the Lord, the ocean of excellence.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 516, Raag Gujri, Gujri ki Vaar, Salok Mahala 3, Guru Amar Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Guru Amar Das calls the Lord an ocean of excellence (gun, virtue). Elsewhere Gurbani repeatedly calls worldly life a terrifying world-ocean that only the Name can carry one across.</div>
+  <div class="tieback">The Kural sets an ocean of virtue against the ocean of worldly existence. Gurbani uses the same pair of oceans, though this verse names only the first.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">The dead cannot cross into the underworld on their own — they need Charon the ferryman, and even he requires payment before he’ll take them.</div>
+  <div class="cite">&mdash; Greek mythological tradition (Charon and the Styx) <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Crossing over isn’t something you can do by yourself; it requires both a specific helper and the right toll.</div>
+  <div class="tieback">The same basic claim as the Kural: crossing over requires help from something/someone beyond yourself, not just willpower.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Let us flee then to the beloved Fatherland... The Fatherland to us is There whence we have come, and There is the Father.&rdquo;</div>
+  <div class="cite">&mdash; Plotinus, Enneads, I.6 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Plotinus urges that the soul&#x27;s true home isn&#x27;t reachable by boat or road — it requires an inward turn back toward its divine source.</div>
+  <div class="tieback">A philosophical version of the Kural’s ocean — the real crossing isn&#x27;t geographic, it&#x27;s a return to the source.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">John Newton survives a storm at sea and later writes Amazing Grace</div>
+  <div class="rle-meta">1748 (storm); 1772 (hymn) &middot; North Atlantic Ocean; Olney, England</div>
+  <div class="quote is-paraphrase">In March 1748 John Newton, then a sailor connected with the slave trade, was aboard the ship Greyhound when it was overtaken by a violent storm; he prayed and afterwards credited his survival to the grace of God. The experience began his conversion; he became an Anglican clergyman in 1764 and wrote the hymn Amazing Grace in 1772, published in the Olney Hymns of 1779. He later wrote Thoughts upon the African Slave Trade and testified against the trade.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Newton&#x27;s crossing of a literal storm at sea became the starting point of a long moral crossing from slave-trade sailor to abolitionist clergyman.</div>
+  <div class="tieback">The kural says only those who hold to the ocean of virtue can cross the other ocean of worldly life, and Newton himself traced both his rescue at sea and his changed life to that grace.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-1/" target="_blank" rel="noopener">கடவுள் வாழ்த்து (The Praise of God) — Chapter 1, with commentary by Mu. Varadarajan, Solomon Pappaiah, M. Karunanidhi, and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-001.html" target="_blank" rel="noopener">The Praise of God — Adhigaram 1 (Tamil text, transliteration, English translation, song setting by Pu. A. Muthukrishnan)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">Sahih al-Bukhari 6416, Book of Ar-Riqaq <span class="tier">[primary source]</span></li>
+<li id="cite-6">Alagaddupama Sutta (Majjhima Nikaya 22) — the Raft Parable <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9">Charon, ferryman of the River Styx <span class="tier">[secondary source]</span></li>
+<li id="cite-10">Enneads, I.6 (&quot;On Beauty&quot;) (Plotinus) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/biography/John-Newton" target="_blank" rel="noopener">John Newton</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.loc.gov/collections/amazing-grace/articles-and-essays/creation-of-amazing-grace/" target="_blank" rel="noopener">The Creation of &quot;Amazing Grace&quot;</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0007.html">&larr; Kural 7</a>
+  <a href="kural-0009.html">Kural 9 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-001.html">The Praise of God</a>
+  <a class="skip-btn" href="kural-0011.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

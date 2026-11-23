@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 970 — Honour | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 970</h1>
+<p class="adhikaram"><a href="adhikaram-097.html">Honour</a> &middot; Maanam &middot; <span class="tamil">மானம்</span></p>
+
+<div class="tamil-text">இளிவரின் வாழாத மானம் உடையார்
+ஒளிதொழுது ஏத்தும் உலகு.</div>
+<div class="translit">Ilivarin vaazhaadha maanam udaiyaar
+Olidhozhudhu eththum ulagu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The world always bows to and praises the glory of honourable people who would rather die than live in shame.</p>
+
+<h2 class="section">Elementary</h2>
+<p>People remember and admire heroes who never gave up doing what was right, even when it was very hard. This kural says the whole world keeps honouring such people long after they are gone.</p>
+
+<h2 class="section">University</h2>
+<p>Ilivu (இளிவு) is disgrace, humiliation; ilivarin vaazhaadha (இளிவரின் வாழாத) are those who &#x27;do not live on when disgrace comes&#x27;. Oli (ஒளி), literally &#x27;light&#x27;, here means radiant fame, the glory that survives a person; Mu. Varadarasanar and Puliyur Kesikan gloss it as pugazh (புகழ்) or pugazh vadivu (the form of one&#x27;s fame). Thozhudhu eththum (தொழுது ஏத்தும்) is the language of worship: folding hands and praising. The chapter closes where Tamil heroic ethics often closes, with lasting fame as the reward of honour. Read today, its lasting point is that the world reveres those who keep their integrity at great cost. Pope: &#x27;Who, when dishonour comes, refuse to live, their honoured memory / Will live in worship and applause of all the world for aye!&#x27; Text identical on both sources.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">King Harishchandra keeps his word to the sage Vishvamitra though it costs him his kingdom, his wife and son, and his freedom, working at last as a servant at a cremation ground; the gods finally restore him, and his name became the Indian byword for truthfulness.</div>
+  <div class="cite">&mdash; <a href="https://archive.org/details/markandeyapurana00pargiala" target="_blank" rel="noopener">Markandeya Purana, chapters 7-8 (tr. F. E. Pargiter)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Harishchandra suffers every loss rather than break his word, and is remembered and revered for it.</div>
+  <div class="tieback">He is the Kural&#x27;s honourable person whose glory the world still praises.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;By faith Abel offered unto God a more excellent sacrifice than Cain, by which he obtained witness that he was righteous, God testifying of his gifts: and by it he being dead yet speaketh.&rdquo;</div>
+  <div class="cite">&mdash; Hebrews 11:4 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Hebrews says Abel&#x27;s faithfulness still speaks long after his death.</div>
+  <div class="tieback">The Kural too says the glory of the honourable outlives them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And We gave them of Our mercy, and We made for them a mention [i.e., reputation] of high honor.&rdquo;</div>
+  <div class="cite">&mdash; Quran 19:50 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Speaking of Abraham and his descendants, the Quran says God gave them an honoured name among later generations.</div>
+  <div class="tieback">Like the Kural, it promises enduring renown to those who held to what was right.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">The aged scribe Eleazar, ordered to eat pork, refuses even to pretend, saying it does not befit his years to deceive the young; he goes to his death, and the book says he left his death as an example of noble courage and a memorial of virtue for the young and for the whole nation.</div>
+  <div class="cite">&mdash; <a href="https://www.kingjamesbibleonline.org/2-Maccabees-Chapter-6/" target="_blank" rel="noopener">2 Maccabees 6:18-31 (Apocrypha; KJV Apocrypha wording paraphrased)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Eleazar chooses death over a disgraceful pretence and is remembered as a model.</div>
+  <div class="tieback">Almost the Kural&#x27;s scene: one who would not live in disgrace becomes a lasting memorial honoured by his people.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Not the sweet smell of flowers, not even the fragrance of sandal, tagara, or jasmine blows against the wind. But the fragrance of the virtuous blows against the wind. Truly the virtuous man pervades all directions with the fragrance of his virtue.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 54 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The good name of the virtuous spreads everywhere, even against the wind.</div>
+  <div class="tieback">The Kural similarly says the glory of the honourable spreads through the world.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">The opening verse of the Dasavaikalika Sutra calls dharma the highest good, names non-violence, self-control and austerity as its essence, and says that even the gods bow down to one whose mind is always set on dharma.</div>
+  <div class="cite">&mdash; <a href="https://jainworld.com/" target="_blank" rel="noopener">Dasavaikalika Sutra 1.1 (as Saman Suttam v. 82, tr. T. K. Tukol and K. K. Dixit)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In Jainism it is the person firm in dharma who receives the homage of gods and humans.</div>
+  <div class="tieback">The Kural&#x27;s world bows to the honourable; the Jain verse says even the gods bow to the steadfast in dharma.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">Guru Tegh Bahadur, the ninth Guru, was executed by the Mughal authorities in Delhi in 1675 and is remembered above all for his stand for religious freedom; Gurdwara Sis Ganj Sahib now stands at the place of his martyrdom.</div>
+  <div class="cite">&mdash; <a href="https://www.britannica.com/biography/Guru-Tegh-Bahadur" target="_blank" rel="noopener">Encyclopaedia Britannica, &#x27;Guru Tegh Bahadur&#x27; (paraphrase)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Tegh Bahadur chose death over submission to religious coercion, and Sikhs and many others still honour his sacrifice centuries later.</div>
+  <div class="tieback">The Kural says the world forever praises those who would not go on living in disgrace; Guru Tegh Bahadur&#x27;s memory, kept at Sis Ganj and in Sikh prayer, is exactly such lasting honour.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Achilles tells the embassy that his mother foretold two fates: if he stays and fights at Troy he will not return home but his glory (kleos) will never perish; if he goes home he will live long without fame.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, Iliad 9.410-416</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Achilles weighs a long life against undying glory.</div>
+  <div class="tieback">The Kural promises the same reward, lasting worldly praise, to those who put honour before life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In his funeral oration, Pericles says that the fallen gave their lives and in return won praise that never grows old, and that the whole earth is the tomb of famous men, whose memory lives on far from home.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/7142" target="_blank" rel="noopener">Thucydides, History of the Peloponnesian War 2.43 (tr. Richard Crawley)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Pericles says those who died rather than accept defeat are remembered everywhere.</div>
+  <div class="tieback">Close to the Kural&#x27;s world that worships the glory of the honourable.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Rani Lakshmi Bai of Jhansi is honoured as a national heroine</div>
+  <div class="rle-meta">1857-1858 &middot; Jhansi and Gwalior, India</div>
+  <div class="quote is-paraphrase">After the death of her husband, the ruler of Jhansi, the British East India Company refused to recognise their adopted son as heir and annexed the state in 1854, rejecting Lakshmi Bai&#x27;s petition to rule as regent. During the rebellion of 1857-58 she led the defence of Jhansi, escaped when the city fell in April 1858, joined other leaders in taking Gwalior, and was killed in combat near Gwalior in June 1858. Her British opponent, General Hugh Rose, called her the bravest and best of the rebel leaders, and she became a symbol of courage in India, honoured in poetry, statues and the names of institutions.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Lakshmi Bai&#x27;s refusal to accept the loss of her state and her son&#x27;s rights made her one of the most revered figures in Indian history.</div>
+  <div class="tieback">The kural says the world forever honours those who would not go on living in disgrace, and India&#x27;s lasting reverence for the Rani of Jhansi shows exactly that.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-97/" target="_blank" rel="noopener">Thirukkural, Chapter 97: மானம் / Honour (Kurals 961-970), with commentaries of Sivayogi Sivakumar, Mu. Varadarasan, Solomon Pappaiah and Kalaignar, and G. U. Pope&#x27;s English couplets</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-097.html" target="_blank" rel="noopener">Thirukkural, Adhigaram 97 மானம் (Kurals 961-970) with commentaries of Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah and Mu. Karunanidhi</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://archive.org/details/markandeyapurana00pargiala" target="_blank" rel="noopener">The Markandeya Purana (trans. F. E. Pargiter, 1904), Harishchandra episode, chapters 7–8</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.kingjamesbibleonline.org/2-Maccabees-Chapter-6/" target="_blank" rel="noopener">2 Maccabees, chapter 6 (the martyrdom of Eleazar), in the Apocrypha</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://jainworld.com/" target="_blank" rel="noopener">Saman Suttam (anthology of Jain scripture, compiled 1974)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-9"><a href="https://www.britannica.com/biography/Guru-Tegh-Bahadur" target="_blank" rel="noopener">Guru Tegh Bahadur (Tamanna Nangia (fact-checked by Britannica Editors))</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, The Iliad, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/7142" target="_blank" rel="noopener">Thucydides, History of the Peloponnesian War, translated by Richard Crawley (1874)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Lakshmi-Bai" target="_blank" rel="noopener">Lakshmi Bai</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://indianculture.gov.in/digital-district-repository/district-repository/battle-gwalior-rani-jhansi-leads-her-troops" target="_blank" rel="noopener">The Battle of Gwalior: The Rani of Jhansi Leads Her Troops</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0969.html">&larr; Kural 969</a>
+  <a href="kural-0971.html">Kural 971 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-097.html">Honour</a>
+  <a class="skip-btn" href="kural-0971.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

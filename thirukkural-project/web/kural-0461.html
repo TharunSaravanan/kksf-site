@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 461 — Acting after Due Consideration | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 461</h1>
+<p class="adhikaram"><a href="adhikaram-047.html">Acting after Due Consideration</a> &middot; Therindhu Seyalvakai &middot; <span class="tamil">தெரிந்து செயல்வகை</span></p>
+
+<div class="tamil-text">அழிவதூஉம் ஆவதூஉம் ஆகி வழிபயக்கும்
+ஊதியமும் சூழ்ந்து செயல்.</div>
+<div class="translit">Azhivadhooum aavadhooum aaki vazhipayakkum,
+Oodhiyamum soozhndhu seyal.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Before you do something, think about what you will lose, what you will gain, and what good will be left in the end. Only then begin.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Before you start something, ask three questions: What might I lose? What will I get? And after everything is added up, will it really be worth it? Only when you have thought about all three should you begin.</p>
+
+<h2 class="section">University</h2>
+<p>The opening couplet sets out a three-part calculus that governs the whole chapter: அழிவது (what is spent or destroyed at the outset — the cost), ஆவது (what comes into being — the gain), and வழிபயக்கும் ஊதியம் (the profit that results in due course — the net yield after costs are subtracted). The verb சூழ் (to deliberate, to survey all round) is the chapter’s keyword. Parimelazhagar reads the triad as capital outlay, return, and eventual surplus, which makes this one of the earliest cost-benefit formulations in world ethical literature. Placed in the Porul (polity) section, the kural is addressed first to rulers, but it is phrased generally enough to apply to any undertaking. The point is not to avoid risk but to see the whole ledger before committing.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Bhagavad Gita 18.25 describes “tamasic” action as action begun out of delusion, without regard to its consequences, the loss it will cause, the injury to others, and one’s own capacity.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 18.25</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Krishna ranks actions by the quality of mind behind them. The lowest kind is the one started blindly, without counting cost, consequence, harm, or whether you are even able to do it.</div>
+  <div class="tieback">The Gita lists the very factors the Kural tells us to weigh (loss, outcome, capacity) and condemns action that ignores them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">For which of you, intending to build a tower, sitteth not down first, and counteth the cost, whether he have sufficient to finish it?</div>
+  <div class="cite">&mdash; Luke 14:28 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Jesus uses an everyday picture: no sensible builder starts a tower without first sitting down and working out whether he can afford to finish it.</div>
+  <div class="tieback">Almost exactly the Kural’s instruction to reckon cost against outcome before starting.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">The Prophet taught his companions the istikhara prayer for every matter of consequence: before deciding, one asks God for the better course, naming whether the matter is good or bad “for my religion, my livelihood and the outcome of my affairs.</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:1162" target="_blank" rel="noopener">Sahih al-Bukhari 1162 (Book of Tahajjud)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Muslims are taught to pause before important decisions and ask God to guide them toward what is good in its consequences and away from what is harmful.</div>
+  <div class="tieback">Istikhara builds a deliberate pause and a weighing of outcomes into the start of any undertaking, as the Kural requires.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Alexander the Great asked the Elders of the South who deserves to be called wise. They answered: the one who sees what will result (ha-ro’eh et ha-nolad) — who anticipates the consequences of his conduct.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Tamid.32a" target="_blank" rel="noopener">Babylonian Talmud, Tamid 32a (cf. Mishnah Avot 2:9)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">For the rabbis, wisdom isn’t just knowing a lot; it’s seeing ahead to what your actions will produce.</div>
+  <div class="tieback">The Kural’s ‘வழிபயக்கும் ஊதியம்’ — what an action yields down the road — is exactly what the rabbis’ wise man foresees.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Buddha tells his son Rahula to reflect before any bodily, verbal or mental act: would this lead to my own affliction, to the affliction of others, or both? If so, it is unskillful and should not be done; if not, it may be done.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/mn/mn.061.than.html" target="_blank" rel="noopener">Ambalatthika-rahulovada Sutta, Majjhima Nikaya 61</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha teaches a child to use his actions like a mirror — look at them before, during and after, and check whether they will cause harm.</div>
+  <div class="tieback">A formal ‘check before you act’ procedure, weighing results before committing, like the Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Three merchants set out on their travels, each with his capital; one of them gained there much, the second returned with his capital, and the third merchant came home after having lost his capital. This parable is taken from common life; learn (to apply it) to the Law.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 7.14–15 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Mahavira&#x27;s sermon uses a merchant&#x27;s ledger of capital, gain and loss to teach how a human life should be spent, and closes by saying the wise man weighs the outcomes in his mind before choosing his course (7.30).</div>
+  <div class="tieback">The Kural&#x27;s three-part reckoning of what is spent, what is gained and the net profit matches the parable&#x27;s capital, profit and loss almost term for term.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Do not do any evil at all; look ahead to the future with foresight. So throw the dice in such a way, that you shall not lose with your Lord and Master. Do those deeds which shall bring you profit.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 474, Raag Aasaa, Asa Ki Vaar (pauri 21), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In a pauri of Asa Ki Vaar, Guru Nanak tells the seeker to look far ahead before acting, to play life&#x27;s game so as not to lose, and to do only what yields profit.</div>
+  <div class="tieback">The Kural asks for a reckoning of cost, gain and final yield before acting; Guru Nanak likewise asks for long foresight and deeds chosen for their profit.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Prometheus (‘Forethought’) warned his brother Epimetheus (‘Afterthought’) never to accept a gift from Zeus; Epimetheus accepted Pandora anyway and only understood the harm once it had come.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 83–89</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The two brothers’ names say it all: one thinks before, the other thinks after. The one who thinks after lets disaster into the world.</div>
+  <div class="tieback">The Kural asks us to be Prometheus — to calculate outcomes before acting, not after.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Benjamin Franklin’s “moral or prudential algebra”: divide a sheet into Pro and Con columns, list the reasons on each side over several days, strike out items of equal weight against each other, and see where the balance lies before deciding.</div>
+  <div class="cite">&mdash; <a href="https://founders.archives.gov/documents/Franklin/01-19-02-0200" target="_blank" rel="noopener">Benjamin Franklin, letter to Joseph Priestley, 19 September 1772</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Franklin gave a friend a practical method for hard decisions: write down everything for and against, cancel out equal items, and see what remains.</div>
+  <div class="tieback">A literal written version of the Kural’s ledger of loss, gain, and resulting profit.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Disraeli buys Egypt&#x27;s Suez Canal shares for Britain</div>
+  <div class="rle-meta">November 1875 &middot; London, United Kingdom</div>
+  <div class="quote is-paraphrase">When Egypt&#x27;s ruler Isma&#x27;il Pasha, deep in debt, put up for sale his country&#x27;s shares in the Suez Canal Company, nearly half of all its shares, the British government under Benjamin Disraeli bought them for about four million pounds. The Foreign Office had advised against the purchase, and because Parliament was not sitting, Disraeli obtained the money as a loan from the banking house of N. M. Rothschild and Sons, which the government repaid within months.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">A large immediate outlay bought Britain a major stake in the shortest sea route to India, a gain that shaped its policy in the region for decades.</div>
+  <div class="tieback">The kural asks a ruler to set what will be spent against what will be gained and the yield that follows, and Disraeli&#x27;s purchase was a case of paying a heavy price now for a lasting strategic return.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/kural-461/" target="_blank" rel="noopener">Thirukural Chapter 47: தெரிந்துசெயல்வகை (Acting after due Consideration), Kurals 461–470</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/kural-0461.html" target="_blank" rel="noopener">Thirukkural Adhigaram 47: Acting after due Consideration (Kurals 461–470)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.tamilsirukathaigal.com/thirukkural/kural/461-azhivadhooum-aavadhooum-aaki-vazhipayakkum.html" target="_blank" rel="noopener">Thirukkural 461–470, தெரிந்துசெயல்வகை</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/bukhari:1162" target="_blank" rel="noopener">Sahih al-Bukhari 1162: The Istikhara Prayer</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Tamid.32a" target="_blank" rel="noopener">Babylonian Talmud, Tractate Tamid 32a (William Davidson / Steinsaltz translation)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.accesstoinsight.org/tipitaka/mn/mn.061.than.html" target="_blank" rel="noopener">Ambalatthika-rahulovada Sutta: Instructions to Rahula at Mango Stone (MN 61), tr. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://founders.archives.gov/documents/Franklin/01-19-02-0200" target="_blank" rel="noopener">From Benjamin Franklin to Joseph Priestley, 19 September 1772</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/topic/Suez-Canal-Company" target="_blank" rel="noopener">Suez Canal Company</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.rothschildarchive.org/business/n_m_rothschild_and_sons_london/lionel_de_rothschild_and_the_suez_canal" target="_blank" rel="noopener">Lionel de Rothschild and the Suez Canal</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0460.html">&larr; Kural 460</a>
+  <a href="kural-0462.html">Kural 462 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-047.html">Acting after Due Consideration</a>
+  <a class="skip-btn" href="kural-0471.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

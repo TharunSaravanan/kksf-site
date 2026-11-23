@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 683 — The Envoy | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 683</h1>
+<p class="adhikaram"><a href="adhikaram-069.html">The Envoy</a> &middot; Thoodhu &middot; <span class="tamil">தூது</span></p>
+
+<div class="tamil-text">நூலாருள் நூல்வல்லன் ஆகுதல் வேலாருள்
+வென்றி வினையுரைப்பான் பண்பு.</div>
+<div class="translit">Noolaarul noolvallan aagudhal velaarul
+Vendri vinaiyuraippaan panbu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>An envoy who speaks for their own king&#x27;s victory in front of kings armed with spears must be the most skilled scholar even among learned people.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you have to explain your team’s plan to the biggest, toughest team in the playground, you had better know the rules of the game better than anyone there. Knowing more than the clever people is what keeps you safe in front of the strong ones.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet contrasts two audiences: nūlār, those learned in the treatises, and vēlār, the spear-bearers. Parimelazhagar identifies the first as the foreign court’s ministers, learned in nīti-nūl (works on polity), and the second as foreign kings. He says Valluvar wrote ‘vēlār’ to evoke their readiness to kill (kōṟal mālaiyar), and ‘veṉṟi viṉai’ to cover both kinds of envoy’s work. To be ‘vallaṉ’ (master) is more than knowing the texts: it is being able to set them out and apply them in front of ministers who only know them. Manakkudavar reads nūlāruḷ nūlvallaṉ as being able to expound all the texts before the learned. Pappaiah stresses knowledge of political ethics in a hostile court. On the text: the sandhi-joined text reads நூலாரு ணூல்வல்ல னாகுதல், the same words as the split form (நூலாருள் நூல்வல்லன் ஆகுதல்) in ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Before the war, Krishna goes as the Pandavas’ envoy to the Kaurava court. In front of Bhishma, Drona, Vidura and the assembled warriors, he argues for peace from dharma and statecraft. Duryodhana plots to seize him.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Udyoga Parva, Bhagavat-yana sections (trans. K. M. Ganguli)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The most learned of counsellors speaks in a hall full of armed kings, pressing his side’s case while in danger himself.</div>
+  <div class="tieback">This is the Kural’s picture: learning greater than the learned, used among spear-bearers for one’s own side’s success.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And as he thus spake for himself, Festus said with a loud voice, Paul, thou art beside thyself; much learning doth make thee mad.&rdquo;</div>
+  <div class="cite">&mdash; Acts 26:24 (KJV) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Paul, calling himself an ambassador, defends his message before the Roman governor Festus and King Agrippa, and his learning is so plain that Festus remarks on it.</div>
+  <div class="tieback">Like the Kural’s envoy, Paul stands before men of armed power and is marked out by superior learning.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">When the Quraysh sent envoys to the Negus of Abyssinia to demand the Muslim emigrants, Ja‘far ibn Abi Talib answered for the Muslims before the king and his bishops. He explained their faith and recited from Surat Maryam, and the Negus refused to hand them over.</div>
+  <div class="cite">&mdash; <a href="https://archive.org/details/TheLifeOfMohammedGuillaume" target="_blank" rel="noopener">Ibn Ishaq, Sirat Rasul Allah (trans. A. Guillaume, The Life of Muhammad)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Ja‘far’s learned, measured answer in a foreign court won protection for his people against an armed opponent’s embassy.</div>
+  <div class="tieback">He shows the Kural’s ideal: mastery of one’s own teaching, used among powerful rulers to win the case.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;And in all matters of wisdom and understanding, that the king enquired of them, he found them ten times better than all the magicians and astrologers that were in all his realm.&rdquo;</div>
+  <div class="cite">&mdash; Daniel 1:20 (KJV) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Daniel and his companions, exiles at a foreign court, prove more learned than all of Babylon’s scholars.</div>
+  <div class="tieback">This is the Kural’s nūlāruḷ nūlvallaṉ: foremost among the learned, in front of a powerful foreign king.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">When the Greek king Milinda invites the monk Nāgasena to debate, Nāgasena agrees only if the king will talk as a scholar does, not as a king does. Kings punish those who disagree; scholars can be refuted without anger.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/bud/sbe35/index.htm" target="_blank" rel="noopener">Milindapañha, Book II (trans. T. W. Rhys Davids, The Questions of King Milinda)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The learned monk faces a powerful king and relies on learning to set fair terms before answering the king’s hard questions.</div>
+  <div class="tieback">Like the Kural’s envoy, Nāgasena uses learning to hold his ground before a king who could use force.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As a trained Kambôga-steed, whom no noise frightens, exceeds all other horses in speed, so a very learned monk is superior to all others.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 11.16 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The lecture on &#x27;the very learned&#x27; praises the monk of deep learning as excelling all others, like a war-horse that no noise can frighten.</div>
+  <div class="tieback">The Kural wants the envoy to be the most learned among the learned when he faces spear-bearing kings; the Jain image likewise joins superior learning with fearlessness amid clamour.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Contemplate and reflect upon knowledge, and you will become a benefactor to others.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 356, Raag Aasaa, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Guru Nanak says that learning becomes real only when it is reflected on and turned to use for others, not when it is merely possessed.</div>
+  <div class="tieback">The Kural says an envoy among learned ministers and armed kings must be more than learned: he must be able to apply what he knows; Guru Nanak likewise values learning only when it is digested and put to work.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In the Homeric Hymn to Hermes, the infant Hermes steals Apollo’s cattle. Brought before Zeus, he talks his way out with clever speech and wins Apollo over with the lyre he has invented. He becomes the messenger and herald of the gods.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HomericHymns2.html" target="_blank" rel="noopener">Homeric Hymn 4, To Hermes</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Hermes, the divine herald, is a figure of cleverness and skilled speech who can win over more powerful gods.</div>
+  <div class="tieback">The god of messengers succeeds, as the Kural says an envoy must, by outdoing the clever in wit and learning.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Cicero has Crassus argue that no one can be a complete orator without knowledge of all the important subjects and arts, because eloquence without substance is empty noise.</div>
+  <div class="cite">&mdash; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cicero/de_Oratore/1*.html" target="_blank" rel="noopener">Cicero, De Oratore 1.20</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">For Cicero, persuasive speech in public affairs rests on wide learning.</div>
+  <div class="tieback">It fits the Kural’s demand that the envoy be the most learned among the learned.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Philosopher Sarvepalli Radhakrishnan meets Stalin as India&#x27;s ambassador</div>
+  <div class="rle-meta">5 April 1952 &middot; Moscow, Soviet Union</div>
+  <div class="quote is-paraphrase">Sarvepalli Radhakrishnan, professor of Eastern religions and ethics at Oxford and author of works on Indian philosophy, served as India&#x27;s ambassador to the Soviet Union from 1949 to 1952. Before leaving Moscow he was received by Joseph Stalin, and the Indian record of the conversation shows him explaining India&#x27;s parliamentary methods and independent foreign policy, correcting Stalin&#x27;s doubt that Indian women had voted, and raising complaints about Soviet press coverage of India. Stalin agreed to recall the Soviet correspondent concerned.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">A scholar sent among powerful rulers argued his country&#x27;s case point by point before one of the most feared leaders of the century and came away with a concrete concession.</div>
+  <div class="tieback">The kural says that the one who speaks for his king before spear-bearing rulers must be the most learned among the learned, and Radhakrishnan, an Oxford professor, was exactly such an envoy before Stalin.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-69/" target="_blank" rel="noopener">Thirukkural Chapter 69: தூது / The Envoy (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-069.html" target="_blank" rel="noopener">தூது - அதிகாரம் 69 (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah and Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="http://thirukkural-thamizh.org/html/A069.html" target="_blank" rel="noopener">69. தூது (Thirukkural, sandhi-joined text)</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="http://thirukkuralvilakkam.blogspot.com/2013/05/thoodhu.html" target="_blank" rel="noopener">திருக்குறள் விளக்கம்: தூது (with Manakkudavar and Parimelazhagar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-5"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://archive.org/details/TheLifeOfMohammedGuillaume" target="_blank" rel="noopener">The Life of Muhammad: A Translation of Ibn Ishaq’s Sirat Rasul Allah</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/bud/sbe35/index.htm" target="_blank" rel="noopener">The Questions of King Milinda (trans. T. W. Rhys Davids, Sacred Books of the East vol. 35)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.theoi.com/Text/HomericHymns2.html" target="_blank" rel="noopener">Homeric Hymn 4, To Hermes (trans. Hugh G. Evelyn-White, Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cicero/de_Oratore/1*.html" target="_blank" rel="noopener">Cicero, De Oratore, Book 1</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/print/article/488420" target="_blank" rel="noopener">Sarvepalli Radhakrishnan (Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://digitalarchive.umd.edu/document/record-conversation-iv-stalin-and-sarvepalli-radhakrishnan" target="_blank" rel="noopener">Record of the Conversation of I.V. Stalin and Sarvepalli Radhakrishnan, April 5, 1952 (Government of India record (Nehru Memorial Museum and Library))</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0682.html">&larr; Kural 682</a>
+  <a href="kural-0684.html">Kural 684 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-069.html">The Envoy</a>
+  <a class="skip-btn" href="kural-0691.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

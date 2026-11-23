@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 437 — Error Correction | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 437</h1>
+<p class="adhikaram"><a href="adhikaram-044.html">Error Correction</a> &middot; Kutrankaditthal &middot; <span class="tamil">குற்றங்கடிதல்</span></p>
+
+<div class="tamil-text">செயற்பால செய்யா திவறியான் செல்வம்
+உயற்பால தன்றிக் கெடும்.</div>
+<div class="translit">Seyarpaala seyyaa thivariyaan selvam
+Uyarpaala thandrik kedum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The riches of a stingy person who does not use them for what they should be used for will not last. They will be lost without doing any good.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Money is meant to be used for good things: helping people, caring for family, doing what is right. This kural says that if someone just sits on their money out of stinginess, it ends up wasted and lost anyway.</p>
+
+<h2 class="section">University</h2>
+<p>செயற்பால (‘things that ought to be done’) are the proper uses of wealth, which Valluvar elsewhere lists as giving, enjoyment and public works; இவறியான் is the one who clings (from இவறு, to hoard or be miserly). உயற்பாலது அன்றி means ‘without the quality of surviving / being saved’: hoarded wealth has no future. The argument is not only moral but practical: wealth that is not put to use is exposed to theft, confiscation and decay, and so the miser loses both the good he could have done and the wealth itself. The couplet returns to இவறல் from Kural 432 and prepares for 438’s verdict that miserliness is the worst of all faults.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Bhartṛhari teaches that wealth has only three possible fates: giving (dāna), enjoyment (bhoga) and destruction (nāśa); the one who neither gives nor enjoys is left with the third.</div>
+  <div class="cite">&mdash; <a href="https://www.hindisahityadarpan.in/2020/04/dhan-ki-teen-gatiyan-in-hindi.html" target="_blank" rel="noopener">Bhartṛhari, Nītiśataka (verse on the three fates of wealth, c. 43 in common editions)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">A classical Sanskrit verse says money that is not given away or used will simply be destroyed.</div>
+  <div class="tieback">Nearly the Kural’s argument: wealth not used for its proper ends ‘perishes without being saved’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Your riches are corrupted, and your garments are motheaten. Your gold and silver is cankered; and the rust of them shall be a witness against you, and shall eat your flesh as it were fire. Ye have heaped treasure together for the last days.&rdquo;</div>
+  <div class="cite">&mdash; James 5:2-3 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">James warns the hoarding rich that their piled-up wealth is rotting, and that its decay will testify against them.</div>
+  <div class="tieback">Both say hoarded wealth decays uselessly and turns against its owner.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And those who hoard gold and silver and spend it not in the way of Allāh - give them tidings of a painful punishment.&rdquo;</div>
+  <div class="cite">&mdash; Quran 9:34 (Sahih International, latter part of verse) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Quran condemns those who pile up gold and silver without spending it for good.</div>
+  <div class="tieback">Both condemn hoarding in place of using wealth for its proper purposes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;There is a sore evil which I have seen under the sun, namely, riches kept for the owners thereof to their hurt. But those riches perish by evil travail: and he begetteth a son, and there is nothing in his hand.&rdquo;</div>
+  <div class="cite">&mdash; Ecclesiastes 5:13-14 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Ecclesiastes (Kohelet) describes wealth hoarded to its owner’s harm and then lost in a bad venture, leaving nothing even for his child.</div>
+  <div class="tieback">Almost the Kural’s exact claim: wealth kept back instead of used ‘perishes’ without benefit.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;When his wealth isn&#x27;t properly put to use, kings make off with it, or thieves make off with it, or fire burns it, or water sweeps it away, or hateful heirs make off with it. Thus his wealth, not properly put to use, goes to waste and not to any good use.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/sn/sn03/sn03.019.than.html" target="_blank" rel="noopener">Samyutta Nikaya 3.19, Aputtaka Sutta (tr. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">After a miserly millionaire dies childless and his fortune goes to the king’s treasury, the Buddha explains that unused wealth is like a pure pond no one drinks from.</div>
+  <div class="tieback">The Buddha’s ‘not properly put to use, goes to waste’ is the Kural’s ‘perishes without being saved’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Or he heaps up treasures for the benefit of some spendthrifts, by pinching himself.” … “Then at one time, his manifold savings are a large treasure. Then at another time, his heirs divide it, or those who are without a living steal it, or the king takes it away, or it is ruined in some way or other, or it is consumed by the conflagration of the house.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Acaranga Sutra I.2.1.4 and I.2.3.5 (tr. Hermann Jacobi, SBE 22)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Acaranga describes the man who starves himself to pile up wealth, only to have it divided by heirs, stolen, seized by the king, or burnt with his house, so that he gets no good from it.</div>
+  <div class="tieback">Valluvar says the miser&#x27;s wealth, never put to its proper use, will perish without benefit to anyone; the Acaranga lists the very ways in which hoarded wealth slips away.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The bee stores up loads of honey; then someone comes and takes the honey, and throws dust in its mouth.” … “He takes the wealth of Maya, and buries it in the ground.” … “His wealth remains buried in the ground, while his body turns to dust.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1252, Raag Saarang, Bhagat Namdev (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Bhagat Namdev describes the hoarder who toils for wealth and buries it, only to leave it in the ground at death, like the bee whose stored honey is taken by another.</div>
+  <div class="tieback">The Kural says the miser&#x27;s wealth, never put to its proper use, perishes without benefit; Namdev&#x27;s buried treasure and robbed honey make the same point.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">King Midas asks Dionysus that all he touches turn to gold; his food and drink become gold, and he nearly starves amid riches until he begs to be freed from the gift.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses 11 (Midas)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Midas gets endless gold but cannot use it for anything, not even to eat.</div>
+  <div class="tieback">Midas pictures the Kural’s point that wealth not usable for life’s proper ends is worthless and ruinous.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;The life of money-making is one undertaken under compulsion, and wealth is evidently not the good we are seeking; for it is merely useful and for the sake of something else.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics I.5 (tr. W. D. Ross)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Aristotle argues that wealth has no value in itself; it is only worth what it is used for.</div>
+  <div class="tieback">If wealth is only ‘useful for something else’, then the miser who never uses it, as the Kural says, has wealth that comes to nothing.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Nadir Shah carries off the Mughal treasury and the Peacock Throne</div>
+  <div class="rle-meta">1739 &middot; Delhi, India</div>
+  <div class="quote is-paraphrase">In 1739 the Persian ruler Nadir Shah defeated the larger army of the Mughal emperor Muhammad Shah at Karnal and then entered Delhi. He took away the Mughal treasury and the jewelled Peacock Throne built for Shah Jahan, and the Koh-i-Noor diamond most likely formed part of the plunder. The loss left the Mughal treasury depleted and the empire greatly weakened.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Wealth that had been gathered and stored over generations did nothing to protect the empire and was lost to another in a matter of weeks.</div>
+  <div class="tieback">The kural says the wealth of one who will not put it to its proper use does not endure but perishes without benefit, and the Mughal hoard passed to a foreign conqueror.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.thirukkural.net/ta/kural/adhigaram-044.html" target="_blank" rel="noopener">Thirukkural, Adhigaram 44 (Kurals 431-440) with commentaries of Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah and Mu. Karunanidhi</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html" target="_blank" rel="noopener">Tirukkural of Tiruvalluvar (Tamil script, Unicode e-text)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-3"><a href="https://www.hindisahityadarpan.in/2020/04/dhan-ki-teen-gatiyan-in-hindi.html" target="_blank" rel="noopener">Bhartrhari, Nitishataka, v. 43 (dānaṃ bhogo nāśas tisro gatayo bhavanti vittasya)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.accesstoinsight.org/tipitaka/sn/sn03/sn03.019.than.html" target="_blank" rel="noopener">Saṃyutta Nikāya 3.19, Aputtaka Sutta (&#x27;Heirless&#x27;) — the miserly financier and the simile of the undrunk pool</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Ākārāṅga Sūtra (Acaranga Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses, Book 1 (the flood of Deucalion and Pyrrha, 1.253–415)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, tr. W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/topic/Peacock-Throne" target="_blank" rel="noopener">Peacock Throne</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.smithsonianmag.com/history/true-story-koh-i-noor-diamondand-why-british-wont-give-it-back-180964660/" target="_blank" rel="noopener">The True Story of the Koh-i-Noor Diamond, and Why the British Won&#x27;t Give It Back</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0436.html">&larr; Kural 436</a>
+  <a href="kural-0438.html">Kural 438 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-044.html">Error Correction</a>
+  <a class="skip-btn" href="kural-0441.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

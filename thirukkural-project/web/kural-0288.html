@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 288 — The Absence of Fraud | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 288</h1>
+<p class="adhikaram"><a href="adhikaram-029.html">The Absence of Fraud</a> &middot; Kallaamai &middot; <span class="tamil">கள்ளாமை</span></p>
+
+<div class="tamil-text">அளவறிந்தார் நெஞ்சத் தறம்போல நிற்கும்
+களவறிந்தார் நெஞ்சில் கரவு.</div>
+<div class="translit">Alavarindhaar nenjath tharampola nirkum,
+Kalavarindhaar nenjil karavu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Goodness stays firmly in the hearts of people who know proper limits. In the same way, sneaky deceit stays in the hearts of people who know stealing.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Your heart is like a room. If you practise being fair, fairness moves in and makes itself at home. If you practise cheating, sneakiness moves in instead — and whoever lives there decides how you act.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet is built on precise parallelism — aḷavu aṟintār / kaḷavu aṟintār (“those who know measure / those who know fraud”) — with the verb niṟkum (“stands, abides”) serving both halves. The point is that virtue and deceit (karavu, “concealment”) are both settled dispositions formed by what one has come to “know” through practice. This is close to Aristotle’s claim that we become just or unjust through our dealings with others, and to the Gospel image of the heart as a treasury from which good or evil is brought out. It also explains 284 and 286: once fraud is ‘known’ in this habitual sense, concealment becomes the heart’s standing condition.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Among them, the open rogues (are those) who subsist by (cheating in the sale of) various marketable commodities, but the concealed rogues are burglars, robbers in forests, and so forth.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">Manusmriti 9.257 (tr. G. Bühler)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Manu classifies thieves the king must restrain and puts dishonest traders among them, treating fraud in the market as a settled way of life.</div>
+  <div class="tieback">Manu’s ‘rogues who subsist by cheating’ are the Kural’s kaḷavu aṟintār, people for whom deceit has become a livelihood and a habit.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;A good man out of the good treasure of the heart bringeth forth good things: and an evil man out of the evil treasure bringeth forth evil things.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 12:35 (KJV) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Jesus describes the heart as a storehouse whose contents determine a person’s words and deeds.</div>
+  <div class="tieback">Same two-sided structure as the Kural: virtue dwells in one kind of heart, deceit in the other.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;…and when a thief steals, then he is not a believer at the time of stealing…&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:2475" target="_blank" rel="noopener">Sahih al-Bukhari 2475</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Prophet taught that faith and theft cannot occupy the heart at the same moment.</div>
+  <div class="tieback">Like the Kural, it treats the heart as holding either faith/virtue or deceit, but not both together.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;This is as Shmuel said: It is prohibited to deceive people, and even to deceive a gentile.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Chullin.94a" target="_blank" rel="noopener">Babylonian Talmud, Chullin 94a (William Davidson ed., Sefaria)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Talmud’s principle of geneivat da’at (‘theft of the mind’) treats creating false impressions as a form of theft, and lists many everyday examples.</div>
+  <div class="tieback">The rabbis, like Valluvar, see deceit (karavu) as fraud’s inner form, forbidden even when no goods change hands.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Think not lightly of evil, saying, ‘It will not come to me.’ Drop by drop is the water pot filled. Likewise, the fool, gathering it little by little, fills himself with evil.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 121 (tr. Buddharakkhita) <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The Dhammapada says character fills up gradually, one small deed at a time.</div>
+  <div class="tieback">Explains how kaḷavu aṟintār come to have deceit settled in the heart: little by little, through repeated practice.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;When he is overcome by violent desire, takes another&#x27;s property, and is not satisfied with those &#x27;colours&#x27; and their possession, then his deceit and falsehood increase on account of his greed; yet he will not get rid of his misery.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 32.30 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The Uttarādhyayana describes how one act of taking another&#x27;s property leads to settled habits of deceit and falsehood, fed by greed.</div>
+  <div class="tieback">The Kural says deceit lives steadily in the hearts of those who have learned fraud. The Jain verse shows how deceit grows and takes root in the one who takes what belongs to others.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Those who have one thing in their heart, and something else in their mouth, are judged to be false.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 488, Raag Aasaa, Sheikh Farid (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">In a hymn in Raag Aasaa, Sheikh Farid contrasts those whose love is true in the heart with those whose inner mind and outward words do not match.</div>
+  <div class="tieback">The Kural says virtue abides in the hearts of those who know measure, while deceit abides in the hearts of those who have learned fraud. Farid likewise judges people by what is settled in the heart, not by what they show.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Odysseus’ maternal grandfather Autolycus is said to have surpassed all men in thievery and in the oath, a skill given to him by Hermes, whom he honoured with sacrifices.</div>
+  <div class="cite">&mdash; Homer, Odyssey 19.394-398 <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Homer presents skill in theft and tricky oaths as a settled excellence of character, almost a gift of the gods.</div>
+  <div class="tieback">An example of the Kural’s kaḷavu aṟintār: for Autolycus deceit has become a stable second nature.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;by doing the acts that we do in our transactions with other men we become just or unjust&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics II.1 (tr. W. D. Ross)</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Aristotle teaches that moral character is formed by habit, and that justice or injustice is built up through how we deal with others.</div>
+  <div class="tieback">The same two-sided account of habituation as the Kural: repeated honest dealing makes virtue settle in, and repeated fraud makes deceit settle in.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Hwang Woo-suk&#x27;s stem cell papers are found to be fabricated</div>
+  <div class="rle-meta">December 2005 - January 2006 &middot; Seoul National University, Seoul, South Korea</div>
+  <div class="quote is-paraphrase">Korean scientist Hwang Woo-suk had published two celebrated papers in Science, in 2004 and 2005, claiming breakthroughs in cloned human embryonic stem cells. Investigations by Seoul National University found that a significant amount of the data in both papers had been fabricated, and Science retracted them. Hwang was dismissed from the university in March 2006.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-14">[14]</a> <a class="idx" href="#cite-15">[15]</a></div>
+  <div class="explain">The scandal revealed not a single lapse but deception repeated across separate papers, and it became one of the best-known cases of research fraud.</div>
+  <div class="tieback">The kural says deceit settles permanently in the hearts of those who have learned fraud, and Hwang&#x27;s fabrication recurred from one paper to the next.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-29/" target="_blank" rel="noopener">Thirukkural Chapter 29: கள்ளாமை / The Absence of Fraud (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar and Sivayogi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.tamilsurangam.in/literatures/pathinen_keezhkanakku/thirukural/thirukural29.html" target="_blank" rel="noopener">திருக்குறள் - 29.கள்ளாமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="http://www.thirukkural-thamizh.org/html/A029.html" target="_blank" rel="noopener">29. கள்ளாமை - களவு செய்யாமை (original sandhi text, split text and word-by-word gloss)</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.thirukural.ai/paal/aram/adhigaram-29" target="_blank" rel="noopener">திருக்குறள் - அறத்துப்பால் அதிகாரம் 29 | கள்ளாமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-5"><a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">The Laws of Manu (Manusmṛti), translated by Georg Bühler, Sacred Books of the East vol. 25 (Oxford, 1886)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sunnah.com/bukhari:2475" target="_blank" rel="noopener">Sahih al-Bukhari 2475 (Book of Oppressions)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.sefaria.org/Chullin.94a" target="_blank" rel="noopener">Babylonian Talmud, Chullin 94a (William Davidson Edition, Koren-Steinsaltz English)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, tr. W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-14"><a href="https://www.nature.com/news/2005/051219/full/news051219-3.html" target="_blank" rel="noopener">Timeline of a controversy</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-15"><a href="https://www.science.org/doi/10.1126/science.1137840" target="_blank" rel="noopener">Responding to Fraud</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0287.html">&larr; Kural 287</a>
+  <a href="kural-0289.html">Kural 289 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-029.html">The Absence of Fraud</a>
+  <a class="skip-btn" href="kural-0291.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

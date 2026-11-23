@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 253 — Flesh Renunciation | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 253</h1>
+<p class="adhikaram"><a href="adhikaram-026.html">Flesh Renunciation</a> &middot; Pulaan Maruthal &middot; <span class="tamil">புலான் மறுத்தல்</span></p>
+
+<div class="tamil-text">படைகொண்டார் நெஞ்சம்போல் நன்னூக்காது ஒன்றன்
+உடல்சுவை உண்டார் மனம்.</div>
+<div class="translit">Padaikondaar nenjampol nannookkaathu ondran,
+Udalsuvai undaar manam.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Like the heart of someone holding a weapon, the mind of someone who enjoys eating another creature&#x27;s body does not turn toward goodness.</p>
+
+<h2 class="section">Elementary</h2>
+<p>When someone is holding a sword ready to fight, they are not thinking gentle thoughts. The Kural says that someone who enjoys eating another animal’s body is in a similar mood inside — their heart is not turned toward kindness.</p>
+
+<h2 class="section">University</h2>
+<p>Valluvar here moves from action to psychology: the claim is about the state of the மனம் (mind) and நெஞ்சம் (heart). படைகொண்டார் — those who have taken up weapons — is a vivid image of a mind already committed to harm; the flesh-eater who has “tasted the body” (உடல்சுவை) is said to share that orientation. The key word நன்னூக்காது (“does not look toward the good”) implies a turning of attention: pleasure in flesh habituates the mind away from arul. The comparison is striking in a text that elsewhere honours warriors (Porutpaal), showing that Valluvar is describing a disposition, not condemning soldiers; it parallels the Upanishadic idea that food shapes the mind, and the Lankavatara Sutra’s claim that animals fear the meat-eater as they fear a hunter.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The Chandogya Upanishad teaches that when food is pure, the mind (sattva) becomes pure, and from a purified mind comes steady remembrance of the Self (āhāra-śuddhau sattva-śuddhiḥ).</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/chandogya-upanishad-english/d/doc239196.html" target="_blank" rel="noopener">Chandogya Upanishad 7.26.2</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">What we eat shapes the quality of our mind.</div>
+  <div class="tieback">The Kural similarly claims that relishing flesh shapes the mind, turning it away from goodness like a weapon-bearer’s.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And the fear of you and the dread of you shall be upon every beast of the earth, and upon every fowl of the air, upon all that moveth upon the earth, and upon all the fishes of the sea; into your hand are they delivered.&rdquo;</div>
+  <div class="cite">&mdash; Genesis 9:2 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">When God first permits meat after the Flood, the same passage says that animals will now fear and dread humans.</div>
+  <div class="tieback">The Bible links the start of meat-eating to a new relationship of fear — the same weapon-like stance toward other creatures the Kural describes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Verily Allah has enjoined goodness to everything; so when you kill, kill in a good way and when you slaughter, slaughter in a good way. So every one of you should sharpen his knife, and let the slaughtered animal die comfortably.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/muslim:1955a" target="_blank" rel="noopener">Sahih Muslim 1955a</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Islam permits slaughter but demands ihsan (excellence and kindness) even when the knife is in hand.</div>
+  <div class="tieback">Both texts worry about the heart of the one holding the blade; Islam answers by disciplining the slaughterer with mercy, the Kural by renouncing flesh altogether.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;He that killeth an ox is as if he slew a man; he that sacrificeth a lamb, as if he cut off a dog’s neck&rdquo;</div>
+  <div class="cite">&mdash; Isaiah 66:3 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Isaiah condemns those who kill animals in ritual while their hearts are far from God, equating it with violence against humans.</div>
+  <div class="tieback">Like the Kural, Isaiah refuses to separate killing animals from the violent disposition it reveals.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Lankavatara Sutra (chapter 8) argues that the Bodhisattva should not eat meat, because living beings sense the odour of death on the meat-eater and fear him, and because meat-eating is incompatible with the compassion a Bodhisattva must cultivate.</div>
+  <div class="cite">&mdash; <a href="http://lirs.ru/do/lanka_eng/lanka-chapter-4.htm#chap8" target="_blank" rel="noopener">Lankavatara Sutra, ch. 8 (on meat-eating)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The meat-eater becomes, in the eyes of animals, like a hunter — a figure of threat.</div>
+  <div class="tieback">A striking echo of the Kural’s comparison of the flesh-eater’s mind to that of a weapon-bearer.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;A man who always feeds two thousand worthy monks, does not control himself, and will be blamed in this world like a man with bloody hands. They kill a fattened sheep, and prepare food for the sake of a particular person; they season the meat with salt and oil, and dress it with pepper.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sutrakritanga II.6.36-37 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Ardraka says that a patron who has a sheep killed and its meat seasoned to feed monks stands, for all his piety, like a man with bloody hands.</div>
+  <div class="tieback">Valluvar compares the mind of one who relishes flesh to the heart of one who holds a weapon; Ardraka likewise puts the provider of a meat feast alongside a man with blood on his hands.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;If one&#x27;s clothes are stained with blood, the garment becomes polluted. Those who suck the blood of human beings-how can their consciousness be pure?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 140, Vaar Maajh (salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In a salok of Vaar Maajh, Guru Nanak points out that people call a bloodstained garment impure, and asks how the mind of someone who lives off other people&#x27;s blood can ever be clean.</div>
+  <div class="tieback">The Kural says a mind that has relished another body cannot turn toward goodness, like the mind of one holding a weapon; Guru Nanak likewise holds that feeding on others&#x27; blood leaves the consciousness impure.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">At the Athenian Bouphonia (“ox-slaying”) festival, after the sacrificial ox was killed the priest fled, and the axe itself was put on trial and condemned — a ritual acknowledgement of guilt for the killing.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/Pausanias1B.html" target="_blank" rel="noopener">Pausanias, Description of Greece 1.24.4; 1.28.10</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The Athenians felt that killing a working ox was close to murder, so they ritually blamed the weapon.</div>
+  <div class="tieback">The festival treats the weapon and the killing as morally charged — the same link between blade and heart that the Kural draws.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Note that the eating of flesh is not only physically against nature, but it also makes us spiritually coarse and gross by reason of satiety and surfeit.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Moralia/De_esu_carnium*/1.html" target="_blank" rel="noopener">Plutarch, Moralia, On the Eating of Flesh I.6 (995E; Loeb trans.)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Plutarch argues that meat-eating dulls and coarsens the soul.</div>
+  <div class="tieback">Matches the Kural’s claim that relishing flesh turns the mind away from goodness.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">William Hogarth publishes The Four Stages of Cruelty</div>
+  <div class="rle-meta">1 February 1751 &middot; London, England, United Kingdom</div>
+  <div class="quote is-paraphrase">William Hogarth published a series of four prints, The Four Stages of Cruelty, following the fictional Tom Nero from a boy who torments animals in the street to an adult who harms people and is finally punished by the law. Hogarth wrote that the prints were meant to reduce the cruel treatment of animals that was common on London&#x27;s streets, and he had them priced cheaply so that ordinary people could buy them. The series argued that cruelty tolerated in small things, even in children, grows into greater cruelty later.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Hogarth&#x27;s prints became a classic statement of the idea that harming animals hardens the heart and turns it away from goodness.</div>
+  <div class="tieback">The kural compares the heart of one who relishes another creature&#x27;s body to that of a man holding a weapon, and Hogarth&#x27;s series showed the same hardening of the mind toward harm.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-26/" target="_blank" rel="noopener">Thirukkural Chapter 26: புலான்மறுத்தல் / Abstinence from Flesh (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar and Sivayogi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-026.html" target="_blank" rel="noopener">புலால் மறுத்தல் - அதிகாரம் 26 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.wisdomlib.org/hinduism/book/chandogya-upanishad-english/d/doc239196.html" target="_blank" rel="noopener">Chandogya Upanishad, Verse 5.10.7 (English translation with Sanskrit text)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/muslim:1955a" target="_blank" rel="noopener">Sahih Muslim 1955a: The command to be proficient in slaughtering</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="http://lirs.ru/do/lanka_eng/lanka-chapter-4.htm#chap8" target="_blank" rel="noopener">The Lankavatara Sutra, Chapter 8: On Meat-Eating (trans. D. T. Suzuki)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga (Sutrakritanga)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.theoi.com/Text/Pausanias1B.html" target="_blank" rel="noopener">Pausanias, Description of Greece, Book 1: Attica (trans. W. H. S. Jones)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Moralia/De_esu_carnium*/1.html" target="_blank" rel="noopener">Plutarch, Moralia vol. XII: On the Eating of Flesh I (Loeb Classical Library, 1957)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.tate.org.uk/documents/178/hogarth_teachers_pack.pdf" target="_blank" rel="noopener">Hogarth: Teacher and Student Notes with Key Works</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.metmuseum.org/art/collection/search/400043" target="_blank" rel="noopener">William Hogarth - The First Stage of Cruelty (The Four Stages of Cruelty)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0252.html">&larr; Kural 252</a>
+  <a href="kural-0254.html">Kural 254 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-026.html">Flesh Renunciation</a>
+  <a class="skip-btn" href="kural-0261.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

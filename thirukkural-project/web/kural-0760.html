@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 760 — Wealth Accumulation | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 760</h1>
+<p class="adhikaram"><a href="adhikaram-076.html">Wealth Accumulation</a> &middot; Porul Seyalvakai &middot; <span class="tamil">பொருள் செயல்வகை</span></p>
+
+<div class="tamil-text">ஒண்பொருள் காழ்ப்ப இயற்றியார்க்கு எண்பொருள்
+ஏனை இரண்டும் ஒருங்கு.</div>
+<div class="translit">Onporul kaazhppa iyatriyaarkku enporul
+enai irandum orungu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>For people who have earned plenty of money honestly, the other two goals of life, doing good and being happy, come easily.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Think of a garden. Once the soil is rich and well watered, flowers and vegetables both grow easily. Valluvar says honest wealth is like that rich soil: once you have it, goodness and happiness grow easily too.</p>
+
+<h2 class="section">University</h2>
+<p>The closing verse ties the chapter to the three aims of life (muppaal: aram, porul, inbam) that give the Kural its three books. Onporul is ‘bright’ or excellent wealth, which the commentators take to mean wealth gained by good means, echoing 754; kaazhppa (from kaazh, hard core) means firmly and abundantly; enporul is ‘an easy thing’ (en, easy); and enai irandum orungu means ‘the other two, together’. Parimelazhagar explains that for such a person virtue and pleasure are both easily attained, and Kalaignar names the three purusharthas explicitly. The verse repeats the pairing in 754 and closes the chapter’s argument that honestly earned wealth underpins a complete life. The sandhi-joined text reads இயற்றியார்க் கெண்பொரு ளேனை யிரண்டு மொருங்கு, which divides into the same words.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Kautilya holds that wealth and wealth alone is important, inasmuch as charity and desire depend upon wealth for their realisation.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://franpritchett.com/00litlinks/kautilya/book01.htm" target="_blank" rel="noopener">Kautilya, Arthashastra, Book I, Chapter 7 (trans. R. Shamasastry)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Kautilya argues that among the three aims of life, artha comes first, because dharma and kama both depend on it.</div>
+  <div class="tieback">Kautilya and Valluvar make the same argument: once wealth is secured, the other two aims follow.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Charge them that are rich in this world, that they be not highminded, nor trust in uncertain riches, but in the living God, who giveth us richly all things to enjoy; That they do good, that they be rich in good works, ready to distribute, willing to communicate.&rdquo;</div>
+  <div class="cite">&mdash; 1 Timothy 6:17-18 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul tells Timothy to teach the rich to enjoy God’s gifts and use their wealth for good works.</div>
+  <div class="tieback">Paul pairs enjoyment (‘all things to enjoy’) with good works, the same two ends the Kural says wealth makes easy.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;But seek, through that which Allah has given you, the home of the Hereafter; and [yet], do not forget your share of the world. And do good as Allah has done good to you.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 28:77 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Qarun’s people advise him to use his wealth to seek the hereafter and do good, without neglecting his rightful share of worldly enjoyment.</div>
+  <div class="tieback">The verse joins virtue and lawful enjoyment through wealth, which is the Kural’s ‘other two, together’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Remember that it is the ETERNAL your God who gives you the power to get wealth, in fulfillment of the covenant made on oath with your fathers, as is still the case.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Deuteronomy 8:18 (JPS Tanakh, Revised JPS 2023, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Moses reminds Israel that the ability to prosper comes from God and serves the covenant.</div>
+  <div class="tieback">Wealth is placed inside a larger moral purpose, as the Kural places porul in the service of aram and inbam.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;I’ve achieved the goal for which an astute layperson wishes to gain wealth. I don’t regret what I’ve done.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/an4.61/en/sujato" target="_blank" rel="noopener">Anguttara Nikaya 4.61, Pattakamma Sutta (trans. Bhikkhu Sujato)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The householder who has used legitimate wealth to support family, guard against loss, make offerings and give to the virtuous can look back without regret.</div>
+  <div class="tieback">His fulfilled goal, joining enjoyment with merit, is the Kural’s aram and inbam gained through porul.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Anyonya-pratibandhena trivargam sadhayan : Fulfilling the three-fold aim of life - that is, dharma, artha and kama - without excluding any of its elements.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.jainworld.com/jainbooks/antiquity/ethcjain.htm" target="_blank" rel="noopener">Hemacandra, Yogaśāstra, thirty-five qualities of an ideal śrāvaka, no. 18, as rendered in Vilas A. Sangave, ‘Ethics of Jainism: Prescription of Ethical Code’ (jainworld.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Hemacandra&#x27;s ideal Jain householder pursues virtue, wealth and pleasure together in balance, none crowding out the others, alongside the first quality of honestly earned wealth.</div>
+  <div class="tieback">The Kural closes by saying that those with abundant honest wealth easily attain the other two aims of virtue and happiness, and the Jain householder code likewise holds the three aims together as one balanced pursuit.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;One who works for what he eats, and gives some of what he has - O Nanak, he knows the Path.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1245, Raag Saarang (Saarang ki Vaar, salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In a salok of Saarang ki Vaar, Guru Nanak sums up the Sikh householder ideal: earn honestly by one&#x27;s own labour and share part of it with others.</div>
+  <div class="tieback">The Kural says that for those who have gathered honest wealth, virtue and happiness follow easily; Guru Nanak says that the one who earns honestly and shares has found the true path of life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">King Midas, granted his wish that everything he touched would turn to gold, found that his food and drink also turned to gold, and he begged Dionysus to take the gift back.</div>
+  <div class="cite">&mdash; <a href="https://www.poetryintranslation.com/PITBR/Latin/Metamorph11.php" target="_blank" rel="noopener">Ovid, Metamorphoses, Book XI</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Midas learns that wealth pursued for its own sake destroys the very pleasures it was meant to buy.</div>
+  <div class="tieback">Midas is the reverse of the Kural: wealth cut off from virtue gives neither happiness nor goodness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In the Nicomachean Ethics, Aristotle says that happiness also needs external goods, since it is impossible, or not easy, to do noble acts without the proper equipment, and many actions are performed through friends, riches and political power as instruments.</div>
+  <div class="cite">&mdash; <a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, Book I, Chapter 8</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle holds that a complete happy life needs enough external resources to act on one’s virtue.</div>
+  <div class="tieback">Aristotle’s riches as the instruments of noble action and happiness state the same idea as Valluvar’s wealth that makes virtue and pleasure easy.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Banker Annamalai Chettiar founds Annamalai University</div>
+  <div class="rle-meta">1 January 1929 &middot; Chidambaram (Annamalainagar), Tamil Nadu, India</div>
+  <div class="quote is-paraphrase">Annamalai Chettiar, from a Nattukottai Chettiar banking family whose business he expanded into South-East Asia, founded Sri Minakshi College and Tamil and Sanskrit colleges at Chidambaram in the early 1920s. In 1928 he agreed with the Madras government to hand these institutions over to form a university, and Annamalai University came into being on 1 January 1929, founded by a private philanthropist. He was knighted in 1923 and later received the hereditary title of Raja of Chettinad.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A fortune made in banking was turned into a university that promoted Tamil learning and served students across the region.</div>
+  <div class="tieback">The kural says that for those who have built up abundant, honestly earned wealth, virtue and happiness come easily, and Annamalai Chettiar&#x27;s banking wealth made a lasting good work almost a matter of course.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-76/" target="_blank" rel="noopener">Thirukkural Chapter 76: பொருள்செயல்வகை / Way of Accumulating Wealth (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A076.html" target="_blank" rel="noopener">76. பொருள்செயல்வகை (பொருள் தேடும் முறை) — Thirukkural, sandhi-joined text</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://franpritchett.com/00litlinks/kautilya/book01.htm" target="_blank" rel="noopener">Kautilya, Arthashastra, Book I, Chapter 7: Restraint of the Organs of Sense, trans. R. Shamasastry (1915)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The JPS Tanakh: Gender-Sensitive Edition (Revised JPS, 2023)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://suttacentral.net/an4.61/en/sujato" target="_blank" rel="noopener">Anguttara Nikaya 4.61, Pattakamma Sutta (Fitting Deeds), trans. Bhikkhu Sujato</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://jainworld.jainworld.com/jainbooks/antiquity/ethcjain.htm" target="_blank" rel="noopener">Jaina ethics (English renderings of Jain householder texts, incl. Hemacandra&#x27;s Yogaśāstra) (Vilas A. Sangave)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.poetryintranslation.com/PITBR/Latin/Metamorph11.php" target="_blank" rel="noopener">Ovid, Metamorphoses, Book 11 (Midas), trans. A. S. Kline</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, translated by W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.annamalaiuniversity.ac.in/about_university.php" target="_blank" rel="noopener">About The University</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://istampgallery.com/rajah-annamalai-chettiar/" target="_blank" rel="noopener">Rajah Annamalai Chettiar (India Post commemorative stamp, 1980)</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0759.html">&larr; Kural 759</a>
+  <a href="kural-0761.html">Kural 761 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-076.html">Wealth Accumulation</a>
+  <a class="skip-btn" href="kural-0761.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

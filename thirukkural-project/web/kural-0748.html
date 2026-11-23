@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 748 — The Fortification | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 748</h1>
+<p class="adhikaram"><a href="adhikaram-075.html">The Fortification</a> &middot; Aran &middot; <span class="tamil">அரண்</span></p>
+
+<div class="tamil-text">முற்றாற்றி முற்றி யவரையும் பற்றாற்றிப்
+பற்றியார் வெல்வது அரண்.</div>
+<div class="translit">Mutraatri mutri yavaraiyum patraatrip
+patriyaar velvathu aran.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A true fort lets the people inside, holding their ground, beat even a strong army that is skilled at surrounding forts.</p>
+
+<h2 class="section">Elementary</h2>
+<p>In a game of king-of-the-hill, the one on top can hold off a crowd of climbers as long as he keeps his footing. Valluvar says a good fort works like that hill. Even when many skilled attackers surround it, the defenders who hold their ground can win.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet repeats two roots in a tight pattern. Mutraatri mutriyavar means ‘those who besiege, being skilled (aatri) in besieging’, i.e. an expert siege force, and patraatrip patriyaar means ‘those who hold on, being able to hold (their ground)’, i.e. the defenders who do not let go of the place they occupy. Varadarasanar reads patru as the defenders’ attachment to their position, and Pappaiah as not abandoning their post. The fort is defined by its result: it is that in which the holders defeat (velvathu) even a skilled besieger. The repeated sounds (mutru, patru) make the couplet memorable. It shifts the chapter from the fort’s structure to the fort in action, preparing for 749-750. The sandhi-joined text on thirukkural-thamizh.org is ‘முற்றாற்றி முற்றி யவரையும் பற்றாற்றிப் / பற்றியார் வெல்வ தரண்’, which matches ytamizh.com.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;As enemies do not hurt these (beings, when they are) sheltered by (their) fortresses, even so foes (can) not injure a king who has taken refuge in his fort.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/manu/manu07.htm" target="_blank" rel="noopener">Manusmriti 7.73 (trans. G. Bühler)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Manu compares a king in his fort to animals safe in their natural shelters, where enemies cannot harm them.</div>
+  <div class="tieback">Like the Kural, Manu promises that those who hold their fort cannot be overcome by those outside.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;There was a little city, and few men within it; and there came a great king against it, and besieged it, and built great bulwarks against it: Now there was found in it a poor wise man, and he by his wisdom delivered the city.&rdquo;</div>
+  <div class="cite">&mdash; Ecclesiastes 9:14-15 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Preacher tells of a small city with few defenders that was saved from a great king’s siege.</div>
+  <div class="tieback">It is the Kural’s scene: a few who hold their ground defeating a powerful besieger.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">At the Battle of the Trench (627 CE), the Muslims of Medina dug a trench across the city’s open approach and held their positions against a much larger confederate army. After a long siege, harsh weather and divisions among them led the besiegers to withdraw; the Qur’an recalls the episode in Surat al-Ahzab.</div>
+  <div class="cite">&mdash; Qur’an 33:9-25 and the sira accounts of the Battle of the Trench (al-Khandaq) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Defenders who kept their line behind a prepared defense outlasted a stronger besieging force.</div>
+  <div class="tieback">It is a clear case of the Kural’s holders who, keeping their ground, defeat the besiegers.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">The books of Kings, Isaiah and Chronicles tell how Sennacherib of Assyria surrounded Jerusalem in Hezekiah’s day, having already taken the other fortified towns of Judah. Jerusalem did not surrender, and the Assyrian army withdrew without taking the city.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/II_Chronicles.11.11-12" target="_blank" rel="noopener">2 Kings 18-19; Isaiah 36-37; 2 Chronicles 32</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Jerusalem, held by its defenders, outlasted the greatest siege army of its age.</div>
+  <div class="tieback">It is the Kural’s fort in practice: a skilled besieger defeated by those who held firm inside.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;then it is said to be a royal frontier fortress that can&#x27;t be undone by external foes or duplicitous allies.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an07/an07.063.than.html" target="_blank" rel="noopener">Anguttara Nikaya 7.63, Nagara Sutta (trans. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha says that a fully equipped frontier fortress cannot be defeated by enemies outside or false friends inside.</div>
+  <div class="tieback">‘Can’t be undone’ is the Kural’s fort, which beats even skilled besiegers.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;… making Zeal his bow, its string Carefulness in walking (iriyâ), and its top (where the string is fastened) Content, he should bend (this bow) with Truth, piercing with the arrow, Penance, (the foe&#x27;s) mail, Karman--(in this way) a sage will be the victor in battle and get rid of the Saṃsâra.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 9.20–22, second half (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Continuing his reply to Indra, Nami says that the sage, defending from within his fortress of faith, fights back with the bow of zeal and the arrow of penance and pierces the armour of karma.</div>
+  <div class="tieback">As the Kural&#x27;s defenders, holding their ground, defeat even an expert besieging army, the Jain sage holds his inner fortress and from it overcomes the besieging force of karma.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">After the evacuation of Anandpur, Guru Gobind Singh reached Chamkaur with barely forty Sikhs and his two elder sons; when the imperial army surrounded them, his sons Ajit Singh and Jujhar Singh and all but five of the Sikhs fell in the action, and the five survivors then bade the Guru save himself to reconsolidate the Khalsa.</div>
+  <div class="cite">&mdash; <a href="https://www.thesikhencyclopedia.com/sikh-gurus/gobind-singh-guru" target="_blank" rel="noopener">Encyclopaedia of Sikhism (ed. Harbans Singh, Punjabi University, Patiala), entry Gobind Singh, Guru</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">A handful of Sikhs held a small walled haveli against a far larger besieging force long enough for the Guru to escape.</div>
+  <div class="tieback">The Kural&#x27;s true fortress lets those inside, holding firm to their posts, prevail against a skilled besieging army; at Chamkaur the defenders held their ground to the death and secured what mattered most, the Guru&#x27;s survival.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">For nine years the Achaean army camped before Troy without taking it; in the Iliad the Trojans, holding the city, even drive the Greeks back to their ships during Achilles’ absence.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad (esp. Books 2, 8 and 12-15)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Troy’s defenders held their walls against the largest army of the heroic age for a decade.</div>
+  <div class="tieback">Troy long showed the Kural’s point: defenders who held their ground wore down a mighty besieger.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Sun Tzu said: The good fighters of old first put themselves beyond the possibility of defeat, and then waited for an opportunity of defeating the enemy.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Tzu/artwar.html" target="_blank" rel="noopener">Sun Tzu, The Art of War 4.1 (trans. Lionel Giles)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Sun Tzu teaches that a commander first makes himself safe from defeat and then waits for the chance to win.</div>
+  <div class="tieback">The Kural’s defenders do the same: they hold firm in their fort and then overcome the besiegers.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Rats of Tobruk hold the port against Rommel</div>
+  <div class="rle-meta">April-December 1941 &middot; Tobruk, Libya</div>
+  <div class="quote is-paraphrase">In April 1941 a German-Italian army under General Erwin Rommel surrounded the Libyan port of Tobruk, which was held by a garrison of mainly Australian troops under Lieutenant General Leslie Morshead, together with British and Indian units. The defenders, supplied by night by Royal Navy and Royal Australian Navy ships, held a long defensive perimeter, patrolled aggressively and repulsed repeated ground assaults under almost constant shelling and bombing. The siege ended in December 1941 without the Axis forces taking the port, and the soldiers adopted as a badge of honour the name Rats of Tobruk, first used as a taunt by German propaganda.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Holding Tobruk forced the Axis to bring most of their supplies overland across some 1,500 kilometres of desert and helped keep them from Egypt and the Suez Canal.</div>
+  <div class="tieback">The kural says a true fortress lets defenders who hold fast to their positions defeat even a strong army skilled in siegecraft, and the Tobruk garrison&#x27;s refusal to give up ground defeated one of the war&#x27;s most capable commanders.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-75/" target="_blank" rel="noopener">Thirukkural Chapter 75: அரண் / The Fortification (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A075.html" target="_blank" rel="noopener">75. அரண் (நாட்டைப் பாதுகாக்கும் அரணின் இலக்கணம்) — Thirukkural, sandhi-joined text</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/manu/manu07.htm" target="_blank" rel="noopener">The Laws of Manu, Chapter VII, trans. G. Bühler (Sacred Books of the East, vol. 25, 1886)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, composite of standard English translations <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/II_Chronicles.11.11-12" target="_blank" rel="noopener">Tanakh: The Holy Scriptures (JPS, 1985)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/an/an07/an07.063.than.html" target="_blank" rel="noopener">Nagara Sutta: The Fortress (AN 7.63), trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.thesikhencyclopedia.com/sikh-gurus/gobind-singh-guru" target="_blank" rel="noopener">Gobind Singh, Guru (Encyclopaedia of Sikhism) (Encyclopaedia of Sikhism, ed. Harbans Singh)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad, Book 21, translated by A. T. Murray (Loeb Classical Library, 1924)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Tzu/artwar.html" target="_blank" rel="noopener">Sun Tzu, The Art of War, trans. Lionel Giles</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://awm.gov.au/encyclopedia/tobruk" target="_blank" rel="noopener">Siege of Tobruk</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://anzacportal.dva.gov.au/wars-and-missions/ww2/where/mmea/tobruk-1941" target="_blank" rel="noopener">Siege of Tobruk 1941</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0747.html">&larr; Kural 747</a>
+  <a href="kural-0749.html">Kural 749 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-075.html">The Fortification</a>
+  <a class="skip-btn" href="kural-0751.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

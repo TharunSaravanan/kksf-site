@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 351 — Knowledge of the True | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 351</h1>
+<p class="adhikaram"><a href="adhikaram-036.html">Knowledge of the True</a> &middot; Meyyunarthal &middot; <span class="tamil">மெய்யுணர்தல்</span></p>
+
+<div class="tamil-text">பொருளல்ல வற்றைப் பொருளென்று உணரும்
+மருளானாம் மாணாப் பிறப்பு.</div>
+<div class="translit">Porulalla vatraip porulendru unarum
+Marulaanaam maanaap pirappu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Thinking that things which are not real are real is a mistake of the mind. From this mistake come unhappy births, again and again.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine chasing a shiny puddle on a hot road, sure it’s water, when it’s only a mirage. You’d run and run, get more and more thirsty, and never drink. This kural says that when we treat things that don’t last as if they were the real treasure, we keep chasing mirages again and again, life after life.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter opens with a diagnosis rather than a prescription: the root of bondage is marul (delusion, confusion), specifically the cognitive error of taking porul-alladhu (what is not the real) for porul (the real). Commentators such as Parimelazhagar read maanaa-p-pirappu (‘inglorious birth’) as the whole cycle of transmigration, which turns the couplet into an epistemological account of samsara: rebirth is caused less by particular sins than by misperception. This closely matches the Advaita Vedanta analysis of adhyasa (superimposition, the classic rope mistaken for a snake) and the Buddhist teaching that avijja (ignorance) is the first link of dependent origination. Because the Tamil ‘porul’ is richly ambiguous (thing, wealth, meaning, reality), the couplet also carries an ethical undertone: whoever treats wealth and possessions as the ultimate ‘thing’ has mistaken the counterfeit for the coin.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;From the unreal lead me to the real! From the darkness lead me to the light! From death lead me to immortality!&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikipedia.org/wiki/Pavamana_Mantra" target="_blank" rel="noopener">Brihadaranyaka Upanishad 1.3.28 (Pavamana Mantra), trans. Patrick Olivelle</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">This ancient Upanishadic prayer asks to be led away from what is unreal toward what is truly real. The Upanishad itself explains that the ‘unreal’ and ‘darkness’ mean death, and the ‘real’ and ‘light’ mean immortality.</div>
+  <div class="tieback">Valluvar names the same wrong turn (taking the unreal for the real) and the same cost: being caught in death and birth again and again.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;While we look not at the things which are seen, but at the things which are not seen: for the things which are seen are temporal; but the things which are not seen are eternal.&rdquo;</div>
+  <div class="cite">&mdash; 2 Corinthians 4:18 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul tells Christians not to fix their eyes on visible things, which pass away, but on unseen realities, which last forever.</div>
+  <div class="tieback">Same distinction the Kural draws between passing things wrongly treated as ‘real’ and the lasting reality; the Kural adds rebirth as the consequence of getting it wrong.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Know that the life of this world is but amusement and diversion and adornment and boasting to one another and competition in increase of wealth and children … And what is the worldly life except the enjoyment of delusion.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 57:20 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an describes worldly life as a passing show, like a plant that flourishes after rain and then dries into debris, and calls its enjoyment ‘delusion’.</div>
+  <div class="tieback">The Kural’s ‘marul’ (delusion) and the Qur’an’s ‘enjoyment of delusion’ both describe treating the fleeting world as the real prize.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Vanity of vanities, saith the Preacher, vanity of vanities; all is vanity.&rdquo;</div>
+  <div class="cite">&mdash; Ecclesiastes 1:2 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Hebrew word translated ‘vanity’ (hevel) literally means vapor or breath. Ecclesiastes says that what people chase as solid and lasting is really as thin as breath.</div>
+  <div class="tieback">Like the Kural, Ecclesiastes warns that what looks substantial is not the real thing; unlike the Kural, it does not tie this mistake to rebirth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Those who mistake the unessential to be essential and the essential to be unessential, dwelling in wrong thoughts, never arrive at the essential.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 11 (trans. Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha teaches that people who confuse the worthless with the valuable, and the valuable with the worthless, are stuck in wrong thinking and never reach what truly matters.</div>
+  <div class="tieback">Almost the same sentence as the Kural: mistaking the non-essential for the essential is the error that keeps beings in bondage.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;But they do not cross the Flood of Life, who, ignoring the true relation of things, and not versed in the true Law, hold the above heretical opinions.” … “They do not put an end to birth, who, &amp;c.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga I.1.1.20 and 23 (tr. Hermann Jacobi, SBE 45, 1895, p. 239)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">After surveying views it considers false, the Sūtrakṛtāṅga concludes that anyone who misreads the true nature of things stays in the flood of saṃsāra and cannot end birth. In Jain terms, wrong view (mithyātva) heads the causes of bondage.</div>
+  <div class="tieback">The Kural traces inglorious birth to the delusion that takes the unreal for the real. The Jain text likewise ties the failure to end birth to ignorance of &#x27;the true relation of things&#x27;.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;False doubts and dream objects - man believes them to be true.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 485, Raag Aasaa, Bhagat Namdev (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Bhagat Namdev says that people take illusions and the objects of a dream for real things, which is the root of their bondage.</div>
+  <div class="tieback">The Kural names taking what is not real for the real as the delusion from which lowly birth arises; Namdev names the same error of believing false things to be true.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Ixion, invited to dine among the gods, desired Hera. Zeus shaped a cloud (Nephele) into Hera’s likeness; Ixion embraced the phantom as if it were real and was punished by being bound to an ever-turning wheel.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0162:book=P.:poem=2" target="_blank" rel="noopener">Pindar, Pythian Ode 2</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Ixion fell for an illusion made to look like the real thing, and his punishment was an endless, spinning wheel.</div>
+  <div class="tieback">The Kural’s picture of mistaking a phantom for reality and being trapped in an endless cycle is strikingly mirrored in Ixion’s cloud and wheel.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;To them, I said, the truth would be literally nothing but the shadows of the images.&rdquo;</div>
+  <div class="cite">&mdash; Plato, Republic VII, 515c (trans. Jowett) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Plato’s Allegory of the Cave, prisoners chained since birth see only shadows on a wall and take them for the whole of reality.</div>
+  <div class="tieback">Exactly the Kural’s diagnosis: people take what is not real (shadows) for the real, and that mistake defines the whole condition they live in.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Piltdown Man is exposed as a forgery</div>
+  <div class="rle-meta">1912-1953 &middot; Piltdown, Sussex, and the Natural History Museum, London, England, United Kingdom</div>
+  <div class="quote is-paraphrase">In 1912 the amateur geologist Charles Dawson and the palaeontologist Arthur Smith Woodward announced skull and jaw fragments from a gravel pit at Piltdown as an early human ancestor, and many leading scientists accepted it as a missing link between apes and humans. For about forty years the find shaped debate about human origins, and it was one reason why Raymond Dart&#x27;s genuine 1925 Taung fossil from South Africa was widely doubted. In November 1953 Joseph Weiner, Kenneth Oakley and Wilfrid Le Gros Clark showed that the jaw came from a modern ape, that its teeth had been filed down and that the bones had been stained to look ancient.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">A counterfeit taken for the real thing did more than fool individuals: it sent a whole field of research down a false path for decades and caused genuine evidence to be dismissed.</div>
+  <div class="tieback">The kural says that mistaking what is not real for the real is the delusion from which an unworthy chain of consequences is born, and the Piltdown forgery, accepted as real, produced forty years of misdirected science.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-36/" target="_blank" rel="noopener">Thirukkural Chapter 36: மெய்யுணர்தல் / Truth-Consciousness (Kurals 351–360), with commentaries of Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-036.html" target="_blank" rel="noopener">மெய்யுணர்தல் – அதிகாரம் 36 – திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://en.wikipedia.org/wiki/Pavamana_Mantra" target="_blank" rel="noopener">Brihadaranyaka Upanishad 1.3.28 (Pavamana Mantra), trans. Patrick Olivelle, Upanisads (Oxford University Press, 1998), as cited in ‘Pavamana Mantra’</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga (Sutrakritanga)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0162:book=P.:poem=2" target="_blank" rel="noopener">Pindar, Pythian Ode 2 (Diane Svarlien trans., 1990)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Republic, Book X (the Myth of Er) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.pbs.org/wgbh/aso/databank/entries/do53pi.html" target="_blank" rel="noopener">A Science Odyssey: People and Discoveries: Piltdown Man is revealed as fake</a> <span class="tier">[web source]</span></li>
+<li id="cite-12"><a href="https://www.nhm.ac.uk/discover/news/2016/august/piltdown-man-charles-dawson-likely-fraudster.html" target="_blank" rel="noopener">Piltdown Man hoax findings: Charles Dawson the likely fraudster</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0350.html">&larr; Kural 350</a>
+  <a href="kural-0352.html">Kural 352 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-036.html">Knowledge of the True</a>
+  <a class="skip-btn" href="kural-0361.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

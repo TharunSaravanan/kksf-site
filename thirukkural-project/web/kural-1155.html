@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1155 — Unendurable Separation | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1155</h1>
+<p class="adhikaram"><a href="adhikaram-116.html">Unendurable Separation</a> &middot; Pirivaatraamai &middot; <span class="tamil">பிரிவாற்றாமை</span></p>
+
+<div class="tamil-text">ஓம்பின் அமைந்தார் பிரிவோம்பல் மற்றவர்
+நீங்கின் அரிதால் புணர்வு.</div>
+<div class="translit">Ompin amaindhaar pirivompal matravar
+neengin aridhaal punarvu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If you want to save me, stop my husband from going. Once he has left, it will be hard for us to be together again.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Have you ever seen a balloon start to float away? It is much easier to hold the string tight before it leaves your hand than to catch the balloon once it is in the sky. The wife in this couplet says the same: stop him from leaving now, because once he is gone, getting him back will be very hard.</p>
+
+<h2 class="section">University</h2>
+<p>Ompiṉ (ஓம்பின்) is ‘if you would protect (me)’, and amaintār (அமைந்தார்) ‘the one who is fitted (to me)’, that is, her destined husband; pirivu ōmpal (பிரிவு ஓம்பல்) means ‘prevent the parting’. The warning follows: avar nīṅkiṉ arito puṇarvu (அவர் நீங்கின் அரிதால் புணர்வு), ‘if he leaves, union is hard’, with the commentarial suggestion that she may not live to see his return. Commentators take the couplet as the heroine’s words to her confidante, asking her to stop the departure; Solomon Pappaiah instead has the husband himself, as the one whose role is to protect her life, avoid leaving her. Pope: ‘If you would guard my life, from going him restrain / Who fills my life! If he depart, hardly we meet again.’</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">When Akrura arrives to take Krishna and Balarama to Mathura, the gopis of Vraja lament, blame the ‘cruel’ Akrura and fate, and cling around the chariot in an attempt to keep Krishna from going.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Bhagavata Purana 10.39 (paraphrase)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Bhagavata Purana describes the gopis’ desperate attempt to prevent the separation they fear will be permanent.</div>
+  <div class="tieback">The gopis do what the Kural’s heroine asks of her friend: they try to stop the departure, sure that reunion afterwards will be hard.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But they constrained him, saying, Abide with us: for it is toward evening, and the day is far spent. And he went in to tarry with them.&rdquo;</div>
+  <div class="cite">&mdash; Luke 24:29 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">On the road to Emmaus, the two disciples urge the stranger, who is the risen Jesus, not to go on but to stay with them.</div>
+  <div class="tieback">Their plea ‘Abide with us’ is the action the Kural asks for: keep the beloved from going before the chance is lost.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;The date-palm cried like a child! The Prophet (ﷺ) descended (the pulpit) and embraced it while it continued moaning like a child being quietened.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:3584" target="_blank" rel="noopener">Sahih al-Bukhari 3584 (Book of Virtues and Merits)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">When the Prophet stopped preaching beside the palm trunk and moved to a new pulpit, the trunk wept until he came back and held it.</div>
+  <div class="tieback">The weeping trunk shows the Kural’s grief at the loved one’s moving away, a grief that only his return could quiet.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;I opened to my beloved; But my beloved had turned away, and was gone. My soul failed me when he spoke. I sought him, but I could not find him; I called him, but he gave me no answer.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/" target="_blank" rel="noopener">Song of Songs 5:6 (JPS 1917, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The woman in the Song of Songs hesitates for a moment, and when she opens the door her beloved has gone; she then searches for him in vain.</div>
+  <div class="tieback">Her search illustrates the Kural’s warning: once the beloved has left, finding him again is hard.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Therefore hold nothing dear, for separation from the dear is painful. There are no bonds for those who have nothing beloved or unloved.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 211 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha teaches that because parting from the beloved is painful, one should not cling to anything as dear.</div>
+  <div class="tieback">The Kural tries to prevent the painful parting; the Dhammapada prevents the pain at its root by releasing the attachment.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Now, as this sacred tree Manôrama is shaken by the storm, the birds, suffering, destitute of refuge, and miserable, scream aloud.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 9.10 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">When King Nami leaves Mithila to become a monk and the city is in uproar, he compares his people to birds crying when the tree that sheltered them is shaken.</div>
+  <div class="tieback">The Kural’s heroine fears becoming one of those birds, left without shelter when the one she depends on goes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;When the Husband goes away, the bride suffers in the pain of separation&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 56, Sri Raag, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak uses the image of a bride left behind when her husband travels to a distant land to describe the soul cut off from the Lord.</div>
+  <div class="tieback">The Kural&#x27;s heroine begs her confidante to stop her husband leaving, since once he has gone reunion will be hard; Guru Nanak names exactly that suffering of the bride whose husband has gone away.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Andromache meets Hector at the Scaean gate and begs him to stay on the walls and not go out to fight, warning that if he goes she will be left a widow and their son an orphan.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad 6 (Hector and Andromache) (paraphrase)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In the Iliad, Andromache tries to prevent a departure she fears will be final.</div>
+  <div class="tieback">She makes the Kural’s plea directly: keep him from going, because once he is gone there may be no meeting again.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In Aristophanes’ speech, Hephaestus offers two lovers the chance to be welded into one, so that they need never be parted in life or in death, and Aristophanes says no lover would refuse.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Plato/symposium.html" target="_blank" rel="noopener">Plato, Symposium 192d-e (paraphrase)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Plato’s Aristophanes explains love as the desire of two halves never to be separated again.</div>
+  <div class="tieback">The Kural’s heroine wants what Hephaestus offers: a union where the parting simply never happens.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Matthew Flinders sails without his new wife and is parted from her for nine years</div>
+  <div class="rle-meta">1801 to 1810 &middot; England, Australia and Mauritius</div>
+  <div class="quote is-paraphrase">The navigator Matthew Flinders married Ann Chappelle on 17 April 1801, and the couple hoped she could sail with him on HMS Investigator, but the Admiralty disapproved and she was left behind. Flinders departed about three months after the wedding to chart the coast of Australia, and on his way home he was detained on Mauritius. Ann did not see him again for nine years, until he returned to England in 1810, and she endured distress and ill health during his absence.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A parting that both had hoped to avoid, and that was meant to last for one voyage, stretched to nearly a decade once events took over.</div>
+  <div class="tieback">The kural pleads that the husband be kept from going, because once he has left, being together again will be hard to come by, and the Flinders&#x27; nine years apart show how true that fear could be.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-116/" target="_blank" rel="noopener">Thirukkural Chapter 116: பிரிவாற்றாமை / Separation unendurable (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-116.html" target="_blank" rel="noopener">பிரிவாற்றாமை - அதிகாரம் 116 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Srimad Bhagavatam (Bhagavata Purana), Canto 8, chapters 5-8: the curse of Durvasa and the churning of the ocean of milk</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:3584" target="_blank" rel="noopener">Sahih al-Bukhari 3584 (Virtues and Merits: the weeping date-palm)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad, Book 21, translated by A. T. Murray (Loeb Classical Library, 1924)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Plato/symposium.html" target="_blank" rel="noopener">Plato, Symposium, tr. Benjamin Jowett</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.daao.org.au/bio/version_history/ann-chappelle-flinders/biography" target="_blank" rel="noopener">Ann Chappelle Flinders: biography</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.flinders.edu.au/museum-of-art/collections/take-5/take-5--matthew-flinders" target="_blank" rel="noopener">Take 5: Matthew Flinders</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1154.html">&larr; Kural 1154</a>
+  <a href="kural-1156.html">Kural 1156 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-116.html">Unendurable Separation</a>
+  <a class="skip-btn" href="kural-1161.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

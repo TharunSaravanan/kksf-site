@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 741 — The Fortification | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 741</h1>
+<p class="adhikaram"><a href="adhikaram-075.html">The Fortification</a> &middot; Aran &middot; <span class="tamil">அரண்</span></p>
+
+<div class="tamil-text">ஆற்று பவர்க்கும் அரண்பொருள் அஞ்சித்தற்
+போற்று பவர்க்கும் பொருள்.</div>
+<div class="translit">Aatru pavarkkum aranporul anjiththar
+potru pavarkkum porul.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A fort is a treasure both for a king who goes out to attack and for a king who stays inside it to protect himself out of fear.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Think of a tree house with a strong ladder. When you want to go out and play a game of tag, it is your safe base to run out from. When it starts to rain or a big dog chases you, it is the place you run back into. Valluvar says a fort is useful in both ways, for going out and for staying safe.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter opens the Kural’s treatment of aran (fortification), the last of the six angas (limbs) of the state listed in kural 381 (padai, kudi, koozh, amaichu, natpu, aran). The couplet is built on a balanced contrast: aatrupavar are ‘those who act’, which Parimelazhagar and the modern commentators (Mu. Varadarasanar, Solomon Pappaiah, Kalaignar) take as those who go out to make war on others, while anjith than potrupavar are ‘those who, fearing, guard themselves’, the besieged who seek shelter. The word porul is used twice, first as ‘a thing of value’ (aran porul, ‘the fort is a treasure’) and then as the predicate, a deliberate play on the same word that also names the whole second book of the Kural (Porutpaal). The point is that a fortress is not merely defensive: it is a base of operations for offense and a refuge in weakness alike. The sandhi-joined text on thirukkural-thamizh.org reads ‘ஆற்று பவர்க்கு மரண்பொரு ளஞ்சித்தற்’, which divides into the same words as the ytamizh.com text.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;One bowman, placed on a rampart, is a match in battle for one hundred (foes), one hundred for ten thousand; hence it is prescribed (in the Sastras that a king will posses) a fortress.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/manu/manu07.htm" target="_blank" rel="noopener">Manusmriti 7.74 (trans. G. Bühler, Sacred Books of the East vol. 25)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Manu tells the king that a fort multiplies the strength of every defender, which is why the law books require a king to have one.</div>
+  <div class="tieback">Like the Kural, Manu treats the fort as an essential royal asset because of the military advantage it gives.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;When a strong man armed keepeth his palace, his goods are in peace.&rdquo;</div>
+  <div class="cite">&mdash; Luke 11:21 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus uses the image of an armed man guarding a stronghold to describe how security keeps what is inside safe.</div>
+  <div class="tieback">The image matches the Kural’s second half: a guarded stronghold is what keeps the fearful safe.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;They said, ‘O Dhul-Qarnayn, indeed Gog and Magog are [great] corrupters in the land. So may we assign for you an expenditure that you might make between us and them a barrier?’&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 18:94 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">A people suffering from raiders offer to pay Dhul-Qarnayn to build them a protective barrier.</div>
+  <div class="tieback">Their offer shows what the Kural says: to those who live in fear, a fortification is worth paying for.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;He acted with vigor, rebuilding the whole breached wall, raising towers on it, and building another wall outside it.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/II_Chronicles.11.11-12" target="_blank" rel="noopener">2 Chronicles 32:5 (JPS Tanakh 1985, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">When the Assyrian king Sennacherib came against Jerusalem, King Hezekiah’s first act was to repair and double the city walls.</div>
+  <div class="tieback">Hezekiah, threatened and afraid, turns to the fort as his chief asset, just as the Kural describes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;With this first requisite of a fortress it is well provided for the protection of those within and to ward off those without.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an07/an07.063.than.html" target="_blank" rel="noopener">Anguttara Nikaya 7.63, Nagara Sutta (trans. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">In the Nagara Sutta the Buddha lists the parts of a royal frontier fortress, repeating that each one both protects those inside and drives off those outside.</div>
+  <div class="tieback">The refrain has the same two-sided use as the Kural: the fort serves both defense and active resistance.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Erect a wall, gates, and battlements; dig a moat; construct śataghnîs: then you will be a Kshattriya.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 9.18 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In the Uttaradhyayana&#x27;s dialogue on King Nami&#x27;s renunciation, Indra, disguised as a Brahmin, urges the departing king that fortifying his city is the very mark of a warrior-ruler; Nami answers that the only fortress worth building is an inner one.</div>
+  <div class="tieback">Indra&#x27;s advice voices exactly the Kural&#x27;s premise that a fort is the prized possession of a king, while the Jain text then turns that premise toward renunciation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">Guru Hargobind, the sixth Guru, built up a Sikh army and fortified his cities; he built a fort near Amritsar named Lohgarh, instilled the will to fight and high morale in his followers, and his Sikhs went on to defeat Shah Jahan&#x27;s armies four times, adding to Sikh ideals the right and duty to defend the faith by the sword if necessary.</div>
+  <div class="cite">&mdash; <a href="https://www.britannica.com/biography/Guru-Hargobind" target="_blank" rel="noopener">Encyclopaedia Britannica, Guru Hargobind</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">After Guru Arjan&#x27;s martyrdom, Guru Hargobind gave the community both a spiritual and a temporal centre, and a fortress that served as a base for its armed defence.</div>
+  <div class="tieback">The Kural calls a fortress a treasure both for those who march out to fight and for those who shelter in fear; Guru Hargobind&#x27;s Lohgarh was built for a community that had to do both.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In the Iliad, Poseidon recalls that he and Apollo built the walls of Troy for King Laomedon, and those god-built walls sheltered the Trojans throughout the war while Hector used the city as a base for his attacks on the Greek camp.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad 7.452-453 and 21.441-457</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Troy’s walls served the Trojans both as a refuge when they were driven back and as the starting point for their sallies.</div>
+  <div class="tieback">Troy shows both uses the Kural names: a base for those who attack and a shelter for those who defend.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Those who have their cities surrounded by walls may either take advantage of them or not, but cities which are unwalled have no choice.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/politics.7.seven.html" target="_blank" rel="noopener">Aristotle, Politics VII.11 (trans. Benjamin Jowett)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle argues against those who scorn walls: walls give a city options, while having none leaves it no choice at all.</div>
+  <div class="tieback">Aristotle, like Valluvar, sees the fort as a resource that serves a city whether it attacks or defends.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Edward I builds his castles in north Wales</div>
+  <div class="rle-meta">1283-1330 &middot; Gwynedd, north Wales, United Kingdom</div>
+  <div class="quote is-paraphrase">After conquering the last independent part of Wales, King Edward I of England began building great castles at Conwy, Caernarfon and Harlech in 1283, and later at Beaumaris, largely designed by his chief military architect, James of St George. UNESCO describes them as works of both colonisation and defence. Harlech stood on a crag above the sea with access to a small quay, so that in times of trouble it could be supplied by boat, and it was attacked during the Welsh rising led by Madog ap Llywelyn in 1294-95.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The castles served Edward both as bases from which his officials and soldiers controlled newly conquered country and as strongholds where garrisons, supplied from the sea, could hold out when the Welsh rose against them.</div>
+  <div class="tieback">The kural says a fortress is precious both to the king who marches out to attack and to the one who shelters behind it in fear, and Edward&#x27;s castles were built to serve exactly both purposes.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-75/" target="_blank" rel="noopener">Thirukkural Chapter 75: அரண் / The Fortification (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A075.html" target="_blank" rel="noopener">75. அரண் (நாட்டைப் பாதுகாக்கும் அரணின் இலக்கணம்) — Thirukkural, sandhi-joined text</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/manu/manu07.htm" target="_blank" rel="noopener">The Laws of Manu, Chapter VII, trans. G. Bühler (Sacred Books of the East, vol. 25, 1886)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/II_Chronicles.11.11-12" target="_blank" rel="noopener">Tanakh: The Holy Scriptures (JPS, 1985)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/an/an07/an07.063.than.html" target="_blank" rel="noopener">Nagara Sutta: The Fortress (AN 7.63), trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.britannica.com/biography/Guru-Hargobind" target="_blank" rel="noopener">Guru Hargobind (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad, Book 21, translated by A. T. Murray (Loeb Classical Library, 1924)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Aristotle/politics.7.seven.html" target="_blank" rel="noopener">Aristotle, Politics, Book VII, trans. Benjamin Jowett</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://whc.unesco.org/en/list/374/" target="_blank" rel="noopener">Castles and Town Walls of King Edward in Gwynedd (UNESCO World Heritage Centre)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.worldhistory.org/Harlech_Castle/" target="_blank" rel="noopener">Harlech Castle (Mark Cartwright)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0740.html">&larr; Kural 740</a>
+  <a href="kural-0742.html">Kural 742 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-075.html">The Fortification</a>
+  <a class="skip-btn" href="kural-0751.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

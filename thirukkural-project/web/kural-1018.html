@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1018 — Shame | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1018</h1>
+<p class="adhikaram"><a href="adhikaram-102.html">Shame</a> &middot; Naanudaimai &middot; <span class="tamil">நாணுடைமை</span></p>
+
+<div class="tamil-text">பிறர்நாணத் தக்கது தான்நாணா னாயின்
+அறம்நாணத் தக்கது உடைத்து.</div>
+<div class="translit">Pirarnaanath thakkadhu thaannaanaa naayin
+aramnaanath thakkadhu udaiththu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If a person feels no shame at things that would make others ashamed, then goodness itself (what is right) will be ashamed of that person.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine someone does something so rude that everyone watching feels embarrassed, but he just grins. Valluvar says that even Goodness itself would feel embarrassed to be his friend and would quietly walk away from him.</p>
+
+<h2 class="section">University</h2>
+<p>The kural personifies aram (அறம், &#x27;virtue, dharma&#x27;). If one does not feel shame (thaan naanaan aayin) at what is pirar naanath thakkadhu (பிறர்நாணத் தக்கது, &#x27;fit to make others ashamed&#x27;), then he udaiththu (உடைத்து, &#x27;has in him&#x27;) something aram naanath thakkadhu, at which virtue itself would blush. There are two lines of interpretation. Varadarasanar and Kalaignar say virtue, ashamed, abandons him. Pappaiah and Kesikan say he harbours a fault at which virtue is ashamed. Kesikan&#x27;s gloss reads the first line as ‘what onlookers would blame’. Pope&#x27;s ‘Virtue will shrink away ashamed of thee!’ follows the abandonment reading. The repeated naanath thakkadhu across both lines is characteristic Valluvar wordplay. The text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Those who are demoniac do not know what is to be done and what is not to be done. Neither cleanliness nor proper behavior nor truth is found in them.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 16.7 (Bhagavad-gītā As It Is, A.C. Bhaktivedanta Swami Prabhupāda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Gita describes the āsuric person as one from whom right conduct and truth have departed.</div>
+  <div class="tieback">This is the shameless person of the Kural, from whom virtue has withdrawn.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Whose end is destruction, whose God is their belly, and whose glory is in their shame, who mind earthly things.&rdquo;</div>
+  <div class="cite">&mdash; Philippians 3:19 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul describes people who glory in what ought to shame them.</div>
+  <div class="tieback">They are the Kural&#x27;s shameless ones, unashamed of what should shame anyone.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;One of the sayings of the early Prophets which the people have got is: If you don&#x27;t feel ashamed … do whatever you like.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6120" target="_blank" rel="noopener">Sahih al-Bukhari 6120 (sunnah.com)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet quotes the ancient maxim that once shame is gone, nothing holds a person back from anything.</div>
+  <div class="tieback">Like the Kural, it makes shamelessness the moment moral restraint is lost.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;They shall be put to shame because they have committed abomination; Yea, they are not at all ashamed, Neither know they how to blush; Therefore they shall fall among them that fall&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Jeremiah 6:15 (JPS 1917, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Jeremiah condemns a people who commit abominations without the least blush.</div>
+  <div class="tieback">This is the Kural&#x27;s shameless man, who will not blush at what should shame him, and who falls.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Easy is life for the shameless one who is impudent as a crow, is backbiting and forward, arrogant and corrupt.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 244 (tr. Acharya Buddharakkhita, Access to Insight) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada says the shameless, brazen as a crow, find life easy precisely because nothing restrains them.</div>
+  <div class="tieback">This is the Kural&#x27;s person who feels no shame where others would.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;By repenting of one&#x27;s sins to oneself the soul obtains repentance, and becoming indifferent by repentance he prepares for himself an (ascending) scale of virtues, by which he destroys the Karman resulting from delusion.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 29.6 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Nindā, inwardly condemning one&#x27;s own faults, is what keeps a soul climbing the scale of virtues.</div>
+  <div class="tieback">This is the Kural&#x27;s point from the other side: without inner shame at wrongdoing, virtue has nowhere to stand.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Modesty and righteousness both have vanished, and falsehood struts around like a leader, O Lalo.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 722, Raag Tilang, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Describing the sack of Saidpur in his Babarvani hymns, Guru Nanak tells his disciple Lalo that saram (modesty) and dharam (righteousness) have both gone into hiding.</div>
+  <div class="tieback">The Kural warns that when a person loses shame, virtue itself is ashamed and leaves; Guru Nanak shows modesty and righteousness leaving together.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;And then Aidos and Nemesis … with their sweet forms wrapped in white robes, will go from the wide-pathed earth and forsake mankind to join the company of the deathless gods&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 197-200 (tr. H.G. Evelyn-White, Theoi Classical Texts Library)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hesiod foresees that when men grow utterly shameless, the goddesses Shame and Righteous Indignation will abandon the earth.</div>
+  <div class="tieback">This is the Kural&#x27;s image exactly: a divine personified virtue, ashamed, departs from the shameless.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Theophrastus sketches the Shameless Man (anaischyntos), who cheats the people he owes, borrows from the person he has just defrauded, and treats anything as acceptable as long as he gains by it, untroubled by what others think.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/search/?query=theophrastus+characters" target="_blank" rel="noopener">Theophrastus, Characters 9 (The Shameless Man)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Theophrastus&#x27; character sketch shows how one who feels no shame drifts from every decent norm.</div>
+  <div class="tieback">It portrays the man the Kural warns of, who does unblushingly what would shame anyone else.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Joseph Welch asks Senator McCarthy whether he has any sense of decency</div>
+  <div class="rle-meta">9 June 1954 &middot; Washington, D.C., United States</div>
+  <div class="quote is-paraphrase">During the televised Army-McCarthy hearings, Senator Joseph McCarthy publicly accused Fred Fisher, a young lawyer in the firm of Army counsel Joseph Welch, of past links to a group he called a Communist front. Welch rebuked him before the cameras, ending with the question &quot;Have you no sense of decency?&quot;, and the hearing room broke into applause. In December 1954 the Senate voted to condemn McCarthy&#x27;s conduct.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The exchange is widely seen as the turning point at which public opinion turned against McCarthy.</div>
+  <div class="tieback">The kural says that a man who feels no shame at what would shame others is abandoned by virtue itself, and McCarthy&#x27;s standing collapsed soon after he was publicly shown to lack that shame.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-102/" target="_blank" rel="noopener">Thirukkural Chapter 102: நாணுடைமை / Shame (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-102.html" target="_blank" rel="noopener">நாணுடைமை - அதிகாரம் 102 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:6120" target="_blank" rel="noopener">Sahih al-Bukhari 6120 (Book of Good Manners, Chapter: If you do not feel ashamed, then do whatever you like)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/search/?query=theophrastus+characters" target="_blank" rel="noopener">Theophrastus, Characters (tr. R.C. Jebb)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.senate.gov/about/powers-procedures/investigations/mccarthy-hearings/have-you-no-sense-of-decency.htm" target="_blank" rel="noopener">Have you no sense of decency?</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.history.com/this-day-in-history/june-9/joseph-mccarthy-meets-his-match" target="_blank" rel="noopener">&quot;Have you no sense of decency?&quot; Sen. Joseph McCarthy is asked in hearing</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1017.html">&larr; Kural 1017</a>
+  <a href="kural-1019.html">Kural 1019 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-102.html">Shame</a>
+  <a class="skip-btn" href="kural-1021.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 14 — The Excellence of Rain | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 14</h1>
+<p class="adhikaram"><a href="adhikaram-002.html">The Excellence of Rain</a> &middot; Vaan Sirappu &middot; <span class="tamil">வான் சிறப்பு</span></p>
+
+<div class="tamil-text">ஏரின் உழாஅர் உழவர் புயல்என்னும்
+வாரி வளங்குன்றிக் கால்.</div>
+<div class="translit">Erin uzhaaar uzhavar puyal ennum,
+Vaari valam kundrik kaal.</div>
+
+<h2 class="section">Meaning</h2>
+<p>When rain, the world’s great source of riches, does not fall enough, even farmers will stop ploughing their fields.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A bicycle is useless if the tyres have no air in them; you can own it, but you cannot ride it. This kural says a farmer&#x27;s plough is like that. However strong the farmer is, if the rain does not come, the plough just sits there.</p>
+
+<h2 class="section">University</h2>
+<p>The economic vocabulary here is deliberate: வாரி (vaari) is a revenue term, the yield or income of a realm, so Valluvar literally calls rain the kingdom&#x27;s principal income stream — a framing that anticipates the Poruṭpāl&#x27;s treatment of statecraft and chapter 104 on உழவு (agriculture). உழாஅர் (uzhaaar, &quot;they do not plough&quot;) carries an அளபெடை, a metrical elongation that lends the line a note of weary finality. புயல் (puyal) denotes rain in its abundant, gusting monsoon form rather than a drizzle. The couplet&#x27;s force lies in its choice of the farmer as subject: of all people the ploughman is the most industrious, and if even he downs tools, no amount of human effort can substitute for the sky.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Kautilya&#x27;s Arthaśāstra instructs the state&#x27;s superintendent of agriculture to measure annual rainfall in droṇas for each type of terrain — dry, wet and marshy country — and to decide which crops may be sown on the basis of how much rain has actually fallen.</div>
+  <div class="cite">&mdash; <a href="https://archive.org/details/Arthasastra_English_Translation" target="_blank" rel="noopener">Kautilya, Arthaśāstra, Book II, Chapter 24 (Shamasastry translation)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The treatise makes rainfall data an explicit input to agricultural planning and revenue forecasting for the realm.</div>
+  <div class="tieback">It is the administrative version of this Kural: below a certain rainfall the ploughing simply does not happen.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Behold, the husbandman waiteth for the precious fruit of the earth, and hath long patience for it, until he receive the early and latter rain.&rdquo;</div>
+  <div class="cite">&mdash; James 5:7 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">James takes the farmer as the model of patience precisely because the farmer&#x27;s work is hostage to rain he cannot command.</div>
+  <div class="tieback">Both verses make the farmer&#x27;s dependence on rainfall the definitive example of human effort waiting on the sky.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And have you seen that [seed] which you sow? Is it you who makes it grow, or are We the grower?&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 56:63–64, Al-Waqi&#x27;ah (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Qur&#x27;an confronts the farmer with the limits of his own agency: he can sow, but the growth is not in his hands.</div>
+  <div class="tieback">It makes the Kural&#x27;s point from the other direction — ploughing and sowing are worthless unless a power beyond the farmer supplies the water.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">The Mishnah prescribes an escalating public response when the winter rains fail: after successive rounds of communal fasts pass unanswered, Jews are to cut back on business, on building and planting, on betrothals and weddings, and on greetings between neighbours.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Mishnah_Taanit.3.8" target="_blank" rel="noopener">Mishnah Ta&#x27;anit 1:4–7</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Rabbinic law treats a failed rainy season as grounds for suspending ordinary economic activity, including planting itself.</div>
+  <div class="tieback">It legislates exactly what the Kural observes — when the rain does not come, the planting stops.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Conviction is my seed, / austerity my rain, / discernment my yoke &amp; plow, / conscience my pole, / mind my yoke-tie, / mindfulness my plowshare &amp; goad.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://accesstoinsight.org/tipitaka/kn/snp/snp.1.04.than.html" target="_blank" rel="noopener">Kasi Bhāradvāja Sutta, Sutta Nipāta 1.4 (Thanissaro Bhikkhu translation)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Challenged by the brahmin farmer Kasi Bharadvaja to justify eating without ploughing, the Buddha answers by mapping each part of the plough team onto a quality of spiritual practice.</div>
+  <div class="tieback">The Buddha&#x27;s metaphor concedes the Kural&#x27;s literal premise — no rain, no ploughing — which is exactly why rain can stand for the indispensable element in any cultivation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The husbandmen throw the corn on high ground and on low ground, hoping (for a return). For the like motive give unto me; I may be the field which may produce merit (as the return for your benevolence).&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 12.12 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The Jain monk Harikesha, refused alms at a Brahmin sacrifice, appeals to the farmer&#x27;s hope of a harvest to show that giving to a self-controlled ascetic is a field that yields merit.</div>
+  <div class="tieback">It draws on the same farming life the Kural describes, in which ploughing and sowing are acts of hope in a return, though the Jain verse uses farming as a metaphor rather than speaking of drought.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Make your mind the farmer, good deeds the farm, modesty the water, and your body the field. Let the Lord’s Name be the seed, contentment the plow, and your humble dress the fence.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 595, Raag Sorath, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Guru Nanak, who spent his last years farming at Kartarpur, uses the farmer&#x27;s whole round of work as a picture of the spiritual life. Water is one of its essential inputs.</div>
+  <div class="tieback">The Kural pictures the ploughman as the most hard-working of people, whose labour stops without rain. Guru Nanak builds a spiritual farm in which water is a necessary part.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Mark, when you hear the voice of the crane who cries year by year from the clouds above, for she gives the signal for ploughing and shows the season of rainy winter; but she vexes the heart of the man who has no oxen.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 448–451 (Evelyn-White translation)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Hesiod&#x27;s farming calendar ties the start of ploughing to the arrival of the rainy season, announced by migrating cranes.</div>
+  <div class="tieback">Both poets treat ploughing as an activity that begins only when the rains arrive and is meaningless without them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;A prayer of the Athenians: Rain, rain, O dear Zeus, down on the ploughed fields of the Athenians and on the plains.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Antoninus/meditations.5.five.html" target="_blank" rel="noopener">Marcus Aurelius, Meditations 5.7 (Long translation)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Marcus Aurelius cites this old Athenian prayer as his model of how one should pray at all — simply, nobly, and for the one thing the fields actually need.</div>
+  <div class="tieback">It puts the Kural&#x27;s insight in the mouth of a whole city: the ploughed field is finished work until rain falls on it.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Dust Bowl drives farmers off the Great Plains</div>
+  <div class="rle-meta">1930s &middot; Southern Great Plains, United States</div>
+  <div class="quote is-paraphrase">Severe drought struck the southern Great Plains in the 1930s, and crops began failing from 1931. Without deep-rooted prairie grasses to hold the over-ploughed soil, it blew away in great dust storms. With no way to make a living, many farm families abandoned their land, and hundreds of thousands of people left the region.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">The Dust Bowl showed how quickly a farming society collapses when the rain on which its ploughing depends fails.</div>
+  <div class="tieback">The kural says that when rain, the great source of a land&#x27;s yield, fails, even farmers stop driving the plough, and the Dust Bowl saw farm families abandon their fields entirely.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-2/" target="_blank" rel="noopener">வான்சிறப்பு / The Blessing of Rain — Thirukkural Chapter 2 (Kurals 11–20), Tamil text with transliteration, English couplets and four Tamil commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-002.html" target="_blank" rel="noopener">The Excellence of Rain — Adhigaram 2, Thirukkural</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://dailyprojectthirukkural.blogspot.com/2017/11/Athikaaram002.html" target="_blank" rel="noopener">002 வான்சிறப்பு — chapter index with the full Tamil text of Kurals 11–20</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://archive.org/details/Arthasastra_English_Translation" target="_blank" rel="noopener">Kautilya&#x27;s Arthaśāstra, translated by R. Shamasastry (1915), Book II Chapter 24, &#x27;The Superintendent of Agriculture&#x27;</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Mishnah_Taanit.3.8" target="_blank" rel="noopener">Mishnah Ta&#x27;anit 1:4–7 and 3:8 (the escalating public fasts for rain; Honi the Circle-Drawer)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://accesstoinsight.org/tipitaka/kn/snp/snp.1.04.than.html" target="_blank" rel="noopener">Kasi Bhāradvāja Sutta: To the Plowing Bharadvaja (Sn 1.4), translated from the Pali by Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://classics.mit.edu/Antoninus/meditations.5.five.html" target="_blank" rel="noopener">Marcus Aurelius, Meditations, Book 5, translated by George Long</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.loc.gov/classroom-materials/united-states-history-primary-source-timeline/great-depression-and-world-war-ii-1929-1945/dust-bowl/" target="_blank" rel="noopener">The Dust Bowl</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://drought.unl.edu/dustbowl/" target="_blank" rel="noopener">The Dust Bowl</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0013.html">&larr; Kural 13</a>
+  <a href="kural-0015.html">Kural 15 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-002.html">The Excellence of Rain</a>
+  <a class="skip-btn" href="kural-0021.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

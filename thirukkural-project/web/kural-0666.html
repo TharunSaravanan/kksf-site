@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 666 — Power in Execution | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 666</h1>
+<p class="adhikaram"><a href="adhikaram-067.html">Power in Execution</a> &middot; Vinaithitpam &middot; <span class="tamil">வினைத்திட்பம்</span></p>
+
+<div class="tamil-text">எண்ணிய எண்ணியாங்கு எய்துப எண்ணியார்
+திண்ணியர் ஆகப் பெறின்.</div>
+<div class="translit">ENNiya eNNiyaangu eydhupa eNNiyaar
+ThiNNiyar aagap peRin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If people who make plans stay firm in carrying them out, they will get what they planned, and in just the way they planned it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you decide to learn to ride a bike and you keep practising every day, even after wobbling, you will ride just the way you imagined. Wishing is the start; sticking with it is what makes the wish come true.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet plays on eṇṇu (to think, plan) four times: eṇṇiya (what was planned), eṇṇiyāṅku (as it was planned), eṇṇiyār (those who planned), set against tiṇṇiyar (the firm), which chimes with tiṭpam in the chapter title. Parimelazhagar reads it as a promise conditional on firmness in execution: planners who are also firm doers obtain both the object and the manner they intended; Mu. Varadarasanar and Solomon Pappaiah follow him. On the text: ytamizh.com and thirukkural.net print eytu (எய்து), but the sandhi-joined edition at thirukkural-thamizh.org has eytupa (எய்துப, ‘they will attain’, future plural), and thirukkural.net’s own musical setting of the couplet by P. A. Muthukrishnan also quotes எய்துப; that reading, which the metre and grammar need, is adopted here. The couplet is one of the most often quoted in the Porul section, as a maxim that resolve turns intention into result.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">King Bhagīratha undertakes long austerities to bring the celestial Gaṅgā down to earth for his ancestors, persisting through each obstacle until Śiva agrees to bear her fall and the river reaches its goal.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/9/9/" target="_blank" rel="noopener">Śrīmad Bhāgavatam 9.9 (Bhaktivedanta Vedabase)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">His persistence is so proverbial that ‘Bhagīratha prayatna’ (Bhagiratha’s effort) is a common Indian phrase for relentless, successful effort.</div>
+  <div class="tieback">Bhagīratha attains exactly what he set out to do because he stays firm, as the Kural promises.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For verily I say unto you, That whosoever shall say unto this mountain, Be thou removed, and be thou cast into the sea; and shall not doubt in his heart, but shall believe that those things which he saith shall come to pass; he shall have whatsoever he saith.&rdquo;</div>
+  <div class="cite">&mdash; Mark 11:23 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Jesus teaches that an undivided, undoubting heart obtains what it asks for.</div>
+  <div class="tieback">Like the Kural, it ties getting what one intends to an unwavering inner firmness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And that there is not for man except that [good] for which he strives&rdquo;</div>
+  <div class="cite">&mdash; Quran 53:39 (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Quran states that a person gains only what he has actively striven for.</div>
+  <div class="tieback">Both texts tie attainment to sustained effort toward the intended end.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;...along the path a person wishes to proceed, one leads and assists him.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Makkot.10b" target="_blank" rel="noopener">Babylonian Talmud, Makkot 10b (William Davidson Edition, via Sefaria)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Rabbi Elazar draws from Torah, Prophets and Writings the principle that a person is helped along whatever path he firmly chooses.</div>
+  <div class="tieback">As in the Kural, a settled intention is carried to fulfilment along the course it has chosen.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Gladly would I let the flesh &amp; blood in my body dry up, leaving just the skin, tendons, &amp; bones, but if I have not attained what can be reached through human firmness, human persistence, human striving, there will be no relaxing my persistence.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/mn/mn.070.than.html" target="_blank" rel="noopener">Majjhima Nikaya 70, Kitagiri Sutta (trans. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha describes the resolve (adhiṭṭhāna) of a committed disciple, who will not relax effort until the goal is reached, and says such a disciple can expect the fruit.</div>
+  <div class="tieback">‘Human firmness’ leading to attainment is the Kural’s tiṇṇiyar reaching what they planned.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;But he who has renounced pleasure, will not miss his aim&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 7.25-26 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In the parable of the ram, the Uttaradhyayana contrasts the one who, though taught the right way, goes astray again and again with the one who has renounced pleasure and therefore does not miss his aim.</div>
+  <div class="tieback">Like the kural&#x27;s promise that the firm will attain what they planned, this verse makes steadiness of purpose the condition for reaching one&#x27;s goal.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Make the effort, and you shall live; practicing it, you shall enjoy peace.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 522, Raag Gujri (Gujri ki Vaar, salok), Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Guru Arjan teaches that sustained effort (udam) and practice bring the fruit that is sought.</div>
+  <div class="tieback">The Kural promises that planners who are firm in carrying out their plans will attain what they aimed at; Guru Arjan likewise ties attainment to steady effort and practice.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Nevertheless, I want to get home, and can think of nothing else. If some god wrecks me when I am on the sea, I will bear it and make the best of it.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, Odyssey 5 (trans. Samuel Butler)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Offered immortality by Calypso, Odysseus holds to his single aim of returning home, and in the end he gets there.</div>
+  <div class="tieback">His fixed intention, held firmly through every setback, reaches its goal just as he meant it to.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Seneca writes that our plans miscarry because they have no fixed aim, and that when a man does not know which harbour he is making for, no wind is the right wind.</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius 71 (trans. R. M. Gummere)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">For Seneca, a firmly fixed purpose is the precondition for any course of action to succeed.</div>
+  <div class="tieback">He matches the Kural’s point that attainment follows a settled, firmly held intention.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Eiffel Tower is completed in time for the 1889 Exposition</div>
+  <div class="rle-meta">26 January 1887 - 31 March 1889 &middot; Paris, France</div>
+  <div class="quote is-paraphrase">For the 1889 Exposition Universelle, marking the centenary of the French Revolution, the organisers chose the design submitted by Gustave Eiffel&#x27;s firm from more than 100 proposals. Construction began on 26 January 1887 and the tower was finished on 31 March 1889, in two years, two months and five days, with a small workforce and some 2.5 million rivets. It served as the entrance to the Exposition, which opened that May, and was visited by about two million people during the fair.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a> <a class="idx" href="#cite-15">[15]</a></div>
+  <div class="explain">An unprecedented iron structure was built exactly to plan and on time, becoming a lasting symbol of engineering achievement.</div>
+  <div class="tieback">The kural says that planners who are firm in carrying out their plans attain what they aimed at in just the way they aimed at it, and Eiffel&#x27;s team delivered the tower as designed and in time for the event it was built for.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-67/" target="_blank" rel="noopener">Thirukkural Chapter 67: வினைத்திட்பம் / Power in Action (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-067.html" target="_blank" rel="noopener">வினைத்திட்பம் - அதிகாரம் 67 (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah and Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="http://thirukkural-thamizh.org/html/A067.html" target="_blank" rel="noopener">67. வினைத்திட்பம் (Thirukkural, sandhi-joined text)</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/sb/9/9/" target="_blank" rel="noopener">Śrīmad Bhāgavatam 9.9: The Dynasty of Aṁśumān (Bhagīratha brings the Gaṅgā to earth)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Makkot.10b" target="_blank" rel="noopener">Babylonian Talmud, Makkot 10b (William Davidson Edition): ‘along the path a person wishes to proceed, one leads him’</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.accesstoinsight.org/tipitaka/mn/mn.070.than.html" target="_blank" rel="noopener">Kitagiri Sutta: At Kitagiri (Majjhima Nikaya 70), trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, The Odyssey, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius (tr. Richard Mott Gummere, Loeb, 1917–1925)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://toureiffel.paris/en/the-monument/history" target="_blank" rel="noopener">Origins and Construction of the Eiffel Tower</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.britannica.com/topic/Eiffel-Tower-Paris-France" target="_blank" rel="noopener">Eiffel Tower</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-15"><a href="https://www.history.com/articles/eiffel-tower" target="_blank" rel="noopener">Eiffel Tower - Height, Timeline &amp; Facts</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0665.html">&larr; Kural 665</a>
+  <a href="kural-0667.html">Kural 667 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-067.html">Power in Execution</a>
+  <a class="skip-btn" href="kural-0671.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

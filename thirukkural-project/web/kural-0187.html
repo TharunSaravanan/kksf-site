@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 187 — Slander Avoidance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 187</h1>
+<p class="adhikaram"><a href="adhikaram-019.html">Slander Avoidance</a> &middot; Purangkooraamai &middot; <span class="tamil">புறங்கூறாமை</span></p>
+
+<div class="tamil-text">பகச்சொல்லிக் கேளிர்ப் பிரிப்பர் நகச்சொல்லி
+நட்பாடல் தேற்றா தவர்.</div>
+<div class="translit">Pagachchollik kelirp pirippar nagachcholli,
+Natpaadal thetraa thavar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who do not know how to make friends through warm, friendly talk will say things that split people apart, even their own close friends.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Some people know how to make friends by saying kind, fun things. Others only know how to say “Did you hear what she said about you?” — and that makes friends fight. This kural says people who can’t make friends with nice words end up breaking friendships with nasty ones.</p>
+
+<h2 class="section">University</h2>
+<p>The verse is built on the chiastic pair paka-c-colli (“speaking so as to split”) and naka-c-colli (“speaking so as to make [people] laugh/rejoice”). Valluvar diagnoses divisive speech as a failure of social skill as much as of morality: those who cannot tēṟṟu (be sure of, master) the art of naṭpāṭal, friendship-making through genial conversation, fall back on the easier currency of tale-bearing. The object kēḷir means kin or intimates, so the damage falls on the speaker’s own circle — Parimelazhagar notes they alienate even their friends from themselves. This connects the chapter to the book’s later treatment of friendship (naṭpu, chapters 79–83) and recalls the Buddhist category of pisuṇā vācā, speech that splits people apart. The couplet implies a positive programme: cultivate the speech that unites, and the temptation to divide loses its hold.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Ramayana, the maid Manthara whispers to Queen Kaikeyi that Rama’s coronation will ruin her and her son Bharata, turning a queen who loved Rama into the cause of his exile.</div>
+  <div class="cite">&mdash; <a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Valmiki Ramayana, Ayodhya Kanda 7–9 (paraphrase)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Manthara’s poisonous tale-bearing breaks apart a royal family that had been united and loving.</div>
+  <div class="tieback">Manthara is the Kural’s divider: her words split kin who had no quarrel until she spoke.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;A froward man soweth strife: and a whisperer separateth chief friends.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 16:28 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Proverbs observes that a whisperer — a gossip — breaks up even the closest friends.</div>
+  <div class="tieback">Nearly identical to the Kural: divisive whispering separates intimates.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And do not obey every worthless habitual swearer [And] scorner, going about with malicious gossip -&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 68:10–11 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an warns against following the one who goes about spreading namīm — tale-bearing that sows discord.</div>
+  <div class="tieback">Both texts point to the gossip who circulates tales between people as someone to reject.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;What is different and notable about a leper, that the Torah states: ‘He shall dwell alone; outside of the camp shall be his dwelling’? He replied: By speaking malicious speech he separated between husband and wife and between one person and another&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Arakhin.16b" target="_blank" rel="noopener">Talmud Bavli, Arakhin 16b (Koren–Steinsaltz)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Talmud explains that the slanderer is made to live alone because his words had separated spouses and friends.</div>
+  <div class="tieback">Both identify the slanderer as one who splits apart people who belong together — and who ends up alone.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;What he has heard here he tells there to break those people apart from these people here. What he has heard there he tells here to break these people apart from those people there.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an10/an10.176.than.html" target="_blank" rel="noopener">Anguttara Nikaya 10.176, Cunda Kammaraputta Sutta (Thanissaro)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha defines divisive speech (pisuṇā vācā) as carrying tales back and forth to break people apart.</div>
+  <div class="tieback">This is exactly the Kural’s ‘speaking to split’ — the canonical Buddhist description of it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;A monk or a nun, well considering, should not use speech whether truth or untruth, or truth mixed with untruth, if it be sinful, blamable, rough, stinging, coarse, hard, leading to sins, to discord and factions, to grief and outrage, to destruction of living beings.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Ācārāṅga Sūtra II.4.1.6 (tr. Hermann Jacobi, SBE 22, 1884)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Ācārāṅga forbids any speech, even true speech, that leads to discord and factions or causes grief.</div>
+  <div class="tieback">Valluvar condemns words that split people apart and drive away even close friends, and the Ācārāṅga bans speech that leads to discord and factions even when what it says is true.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;O Nanak, speaking insipid words, the body and mind become insipid.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 473, Raag Aasaa (Asa di Vaar, salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Asa di Vaar Guru Nanak teaches that harsh, graceless speech dries up the speaker himself, body and mind.</div>
+  <div class="tieback">The Kural says those who cannot win friends with pleasant talk fall into divisive speech that drives off even their own; Guru Nanak likewise warns that harsh speech leaves the speaker sour and estranged.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;But abhorred Strife bare painful Toil and Forgetfulness and Famine and tearful Sorrows, Fightings also, Battles, Murders, Manslaughters, Quarrels, Lying Words, Disputes, Lawlessness and Ruin&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Hesiod, Theogony 226–232 (Evelyn-White)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Hesiod’s family tree of the gods, Eris (Strife) gives birth to Lying Words and Disputes along with violence.</div>
+  <div class="tieback">Myth places divisive, lying speech in the family of Strife; the Kural shows that kind of speech tearing friends apart.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Many are the friendships that have been cut short, many the households set by the ears, because slander has found ready credence.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/cla/luc/wl4/wl402.htm" target="_blank" rel="noopener">Lucian, Slander, a Warning §1 (Fowler)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Lucian opens his essay on slander by listing the friendships and families it has destroyed.</div>
+  <div class="tieback">Lucian and Valluvar both describe slander as the force that tears apart friends and kin.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Rousseau breaks with David Hume</div>
+  <div class="rle-meta">1766 &middot; Wootton, Staffordshire, England, and Paris, France</div>
+  <div class="quote is-paraphrase">In 1766 the philosopher David Hume brought Jean-Jacques Rousseau, then facing persecution on the Continent, to England and found him a refuge at Wootton in Staffordshire. Rousseau became convinced, wrongly, that Hume was at the centre of a plot to mock and dishonour him, and spread accounts of Hume&#x27;s bad faith in letters that circulated in Paris. Hume answered by publishing their correspondence as A Concise and Genuine Account of the Dispute, and the friendship ended in a public quarrel.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Suspicion and accusatory talk turned a protector into an enemy and made the quarrel the talk of literary Europe.</div>
+  <div class="tieback">The kural says those who cannot build friendship through warm, cheerful words fall back on words that divide and drive away even their own friends, and Rousseau&#x27;s accusations cost him his greatest benefactor.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-19/" target="_blank" rel="noopener">Thirukkural Chapter 19: புறங்கூறாமை / Not Backbiting (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries and transliteration)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-019.html" target="_blank" rel="noopener">புறங்கூறாமை – அதிகாரம் 19 (Tamil text with Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah, Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Vālmīki Rāmāyaṇa (Bāla Kāṇḍa: the putrakāmeṣṭi of Daśaratha; Ayodhyā Kāṇḍa: Kausalyā and Rāma)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Arakhin.16b" target="_blank" rel="noopener">Babylonian Talmud, Arakhin 16b (William Davidson Edition, Koren Noé Talmud with Steinsaltz commentary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/an/an10/an10.176.than.html" target="_blank" rel="noopener">Cunda Kammaraputta Sutta: To Cunda the Silversmith (AN 10.176), trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Ākārāṅga Sūtra (Acaranga Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Theogony (Hesiod)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://sacred-texts.com/cla/luc/wl4/wl402.htm" target="_blank" rel="noopener">Lucian of Samosata, Slander, a Warning, trans. H. W. and F. G. Fowler (1905)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://plato.stanford.edu/entries/rousseau/" target="_blank" rel="noopener">Jean Jacques Rousseau (Christopher Bertram)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/biography/Jean-Jacques-Rousseau/Years-of-seclusion-and-exile" target="_blank" rel="noopener">Jean-Jacques Rousseau: Years of seclusion and exile</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://manuscripts.nls.uk/repositories/2/resources/22688" target="_blank" rel="noopener">Four letters of David Hume to Horace Walpole on Hume&#x27;s quarrel with Jean-Jacques Rousseau (David Hume)</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0186.html">&larr; Kural 186</a>
+  <a href="kural-0188.html">Kural 188 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-019.html">Slander Avoidance</a>
+  <a class="skip-btn" href="kural-0191.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 320 — Not Doing Evil | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 320</h1>
+<p class="adhikaram"><a href="adhikaram-032.html">Not Doing Evil</a> &middot; Innaa Seyyaamai &middot; <span class="tamil">இன்னா செய்யாமை</span></p>
+
+<div class="tamil-text">நோயெல்லாம் நோய்செய்தார் மேலவாம் நோய்செய்யார்
+நோயின்மை வேண்டு பவர்.</div>
+<div class="translit">Noyellaam noy seydhaar melavaam noy seyyaar
+Noyinmai vendu pavar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>All suffering comes back to those who cause suffering. So people who want to be free of suffering do not cause it to others.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you plant thorns, you will get pricked walking through your own garden. If you never want to get pricked, don’t plant thorns. This kural says: if you want a life without pain, don’t give pain to anyone.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter closes with a verbal tour de force: the word noy (pain, affliction, disease) appears four times in seven words, so that the sound of the couplet enacts its argument that pain circles back to its source. The first line states a law (all affliction settles on those who afflict), and the second draws the practical conclusion for anyone who wants noyinmai, freedom from suffering. The ethics of non-harm is here grounded partly in enlightened self-interest, rounding off a chapter that has moved from the stainless person’s principle (311–312), through empathy (315–318), to consequence (319–320). The idea is widely shared: Hesiod’s warning that the evil plotter harms himself most, the Qur’an’s statement that evil plotting backfires on the plotters, Marcus Aurelius’ remark that the wrongdoer wrongs himself, and the Dhammapada’s assurance that for one who does no evil there is no ill.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;He by whom no one is put into difficulty and who is not disturbed by anyone, who is equipoised in happiness and distress, fear and anxiety, is very dear to Me.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 12.15 (As It Is)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna describes the ideal devotee as one who troubles no one and is troubled by no one.</div>
+  <div class="tieback">The Gita pairs the two halves of the Kural: the one who causes no distress is also the one free of distress.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For with what judgment ye judge, ye shall be judged: and with what measure ye mete, it shall be measured to you again.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 7:2 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus teaches that the standard we apply to others will be applied to us.</div>
+  <div class="tieback">Both teach that what we deal out comes back to us, so the way to avoid harm is not to deal it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;But evil plotting only backfires on those who plot.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://quran.com/" target="_blank" rel="noopener">Qur’an 35:43 (trans. Mustafa Khattab, The Clear Quran)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an declares that evil schemes end up harming only the schemers.</div>
+  <div class="tieback">The Kural’s first line in Qur’anic form: harm settles on those who cause it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;He made a pit, and digged it, and is fallen into the ditch which he made. His mischief shall return upon his own head, and his violent dealing shall come down upon his own pate.&rdquo;</div>
+  <div class="cite">&mdash; Psalm 7:15–16 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Psalmist says the evildoer falls into his own trap and his violence comes down on his own head.</div>
+  <div class="tieback">Both declare that the pain one causes lands on oneself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;If on the hand there is no wound, one may carry even poison in it. Poison does not affect one who is free from wounds. For him who does no evil, there is no ill.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 124 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha compares the one who does no evil to a hand without cuts: poison cannot harm it.</div>
+  <div class="tieback">This matches the Kural’s second line: the person who does no harm stays free of harm.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Whatever cruelty he has done in a former birth, the same will be inflicted on him in the Circle of Births. Having been born in an extremely miserable state of life, the sufferer experiences infinite pain. A wise man hearing of these hells should not kill any living being in the whole world.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga I.5.2.23–24 (tr. Hermann Jacobi, SBE 45, 1895; wisdomlib.org)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">At the end of its description of the hells, the Sūtrakṛtāṅga states that the pain one inflicts is the pain one will suffer, and draws the practical conclusion of non-violence.</div>
+  <div class="tieback">Valluvar says all suffering falls on those who cause it, so those who wish to be free of suffering do not cause it. The Jain verses state both halves, the law and the conclusion, in the same order.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Do not harbor evil intentions against others in your mind, and you shall not be troubled, O Siblings of Destiny, O friends.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 386, Raag Aasaa, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Guru Arjan ties freedom from one&#x27;s own trouble directly to not wishing harm on others.</div>
+  <div class="tieback">The Kural concludes that those who wish to be free of suffering do not cause it to others; Guru Arjan gives the same practical counsel: wish no one harm, and harm will not trouble you.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;He does mischief to himself who does mischief to another, and evil planned harms the plotter most.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 265–266 (trans. H. G. Evelyn-White)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Hesiod warns his brother Perses that anyone who harms another is really harming himself.</div>
+  <div class="tieback">The Kural’s central claim in Greek form: pain caused to others falls on the one who causes it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Does any one do wrong? It is to himself that he does the wrong.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Antoninus/meditations.html" target="_blank" rel="noopener">Marcus Aurelius, Meditations 4.26 (trans. George Long)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Marcus Aurelius reminds himself that the wrongdoer is the real victim of his own wrong.</div>
+  <div class="tieback">Both place the harm of wrongdoing on the one who commits it.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Vidkun Quisling&#x27;s collaboration ends in his trial and execution</div>
+  <div class="rle-meta">1940-1945 &middot; Oslo, Norway</div>
+  <div class="quote is-paraphrase">During the German invasion of Norway in April 1940, Vidkun Quisling proclaimed himself head of a new government, and from 1942 he served as Minister President of a Nazi-controlled puppet government. He signed laws that enabled the arrest of Norway&#x27;s Jewish men and the confiscation of Jewish property, and 772 Norwegian Jews were deported, most to their deaths at Auschwitz. After Norway&#x27;s liberation in May 1945 he was arrested, convicted of treason and other crimes, and executed at Akershus Fortress in Oslo on 24 October 1945; his name became a synonym for traitor.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">The man who helped bring great suffering on his own country ended his life condemned by it, his very name turned into a word of disgrace.</div>
+  <div class="tieback">The kural says all suffering falls upon those who cause suffering, and Quisling&#x27;s betrayal of his people returned on him as condemnation and a lasting byword for treachery.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-32/" target="_blank" rel="noopener">Thirukkural Chapter 32: இன்னாசெய்யாமை / Not doing Evil (Kurals 311-320), with Sivayogi Sivakumar, Mu. Varadarasan, Solomon Pappaiah and Kalaignar commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-032.html" target="_blank" rel="noopener">இன்னா செய்யாமை - அதிகாரம் 32 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah, Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://quran.com/" target="_blank" rel="noopener">The Clear Quran, trans. Dr. Mustafa Khattab (verses 3:104, 6:132, 16:97, 64:16, 91:9-10)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga (Sutrakritanga)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Antoninus/meditations.html" target="_blank" rel="noopener">Marcus Aurelius, The Meditations (trans. George Long)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/biography/Vidkun-Abraham-Lauritz-Jonsson-Quisling" target="_blank" rel="noopener">Vidkun Quisling (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://encyclopedia.ushmm.org/content/en/article/vidkun-quisling-1" target="_blank" rel="noopener">Vidkun Quisling (United States Holocaust Memorial Museum)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0319.html">&larr; Kural 319</a>
+  <a href="kural-0321.html">Kural 321 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-032.html">Not Doing Evil</a>
+  <a class="skip-btn" href="kural-0321.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

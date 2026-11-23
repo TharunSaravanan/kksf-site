@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1244 — Soliloquy | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1244</h1>
+<p class="adhikaram"><a href="adhikaram-125.html">Soliloquy</a> &middot; Nenjodu Kilathal &middot; <span class="tamil">நெஞ்சொடு கிளத்தல்</span></p>
+
+<div class="tamil-text">கண்ணும் கொளச்சேறி நெஞ்சே இவையென்னைத்
+தின்னும் அவர்க்காணல் உற்று.</div>
+<div class="translit">Kannum kolachchaeri nenje ivaiyennaith
+thinnum avarkkaanal utru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>My heart, when you go to him, take my eyes with you too. They want so badly to see him that they are eating me alive.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine your heart can fly to visit someone you miss, but your eyes are stuck at home and keep crying because they want to see that person too. So you say, “Heart, please take my eyes with you, they won’t stop bothering me!”</p>
+
+<h2 class="section">University</h2>
+<p>This couplet presupposes that the heart has already gone to the absent husband (a convention developed in neighbouring couplets), so the heroine asks it to take the eyes too: kaṇṇum koḷa (‘taking the eyes also’) cēṟi (‘you will go’). The eyes, left behind, ivai eṉṉait tiṉṉum (‘these devour me’) avar kāṇal uṟṟu (‘set on seeing him’); Mu. Varadarasanar glosses tiṉṉum as பிடுங்கித் தின்கின்றன (‘pluck and eat’), and Pappaiah softens it to ‘grieve as though eating me’. The image of a body divided against itself, heart travelling while eyes torment the one who stays, extends the Kāmattuppāl motif of personified eyes (compare chapter 118, kaṇ vitumpu aḻital). Pope renders the line ‘O rid me of these eyes, my heart’. Text identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;When You go off to the forest during the day, a tiny fraction of a second becomes like a millennium for us because we cannot see You.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/10/" target="_blank" rel="noopener">Srimad Bhagavatam 10.31.15 (tr. A.C. Bhaktivedanta Swami Prabhupada)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The gopis tell Krishna that every moment their eyes cannot see him is unbearable.</div>
+  <div class="tieback">The Kural’s heroine likewise suffers through her eyes, which torment her with their craving to see the absent beloved.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Mine eyes fail for thy word, saying, When wilt thou comfort me?&rdquo;</div>
+  <div class="cite">&mdash; Psalms 119:82 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The psalmist describes his eyes wearing out with longing as he waits for a comfort that does not come.</div>
+  <div class="tieback">In the Kural the eyes, too, are consumed by longing for one who stays away.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;For indeed, it is not eyes that are blinded, but blinded are the hearts which are within the breasts.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 22:46 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an distinguishes the eyes from the heart and locates true seeing in the heart.</div>
+  <div class="tieback">The Kural also separates eyes and heart, imagining the heart going off while the eyes stay behind and suffer.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;I am weary of my crying; my throat is dried; Mine eyes fail while I wait for my God.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/" target="_blank" rel="noopener">Psalms 69:4 (JPS 1917, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The psalmist describes his eyes worn out with waiting and weeping for one who has not yet come.</div>
+  <div class="tieback">The Kural’s eyes are similarly ‘eaten up’ by waiting to see the absent beloved.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The monk Vakkali loved simply to gaze at the Buddha’s body; when he was ill and longed to see him, the Buddha came and told him that there was no point in looking at this body, for whoever sees the Dhamma sees the Buddha.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/sn/sn22/sn22.087.wlsh.html" target="_blank" rel="noopener">Samyutta Nikaya 22.87 (Vakkali Sutta) (paraphrase)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The story treats the eyes’ craving to see a beloved form as something to be redirected inward.</div>
+  <div class="tieback">The Kural’s eyes are consumed by the same craving to see the beloved, which the Buddha gently tells Vakkali to look beyond.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;He who is passionately fond of ‘colours,’ will come to untimely ruin; just as an impassioned moth which is attracted by the light rushes into death.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 32.24 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In Jain teaching each sense, beginning with the eye, can destroy a person through its passionate attachment to its object.</div>
+  <div class="tieback">The Kural’s eyes, ‘eating’ the heroine with their craving to see her husband, are just such a sense consuming its owner.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;My eyes long for You; when will I see Your Vision?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1094, Raag Maaroo, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Arjan voices the soul&#x27;s eyes as aching for a single sight of the Beloved.</div>
+  <div class="tieback">The Kural&#x27;s wife says her eyes, set on seeing him, are eating her alive and asks her heart to take them along; Guru Arjan likewise gives the eyes their own longing for the Beloved&#x27;s vision.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Clytie, abandoned by the sun-god Helios, sat on the bare ground for nine days without food, turning her face and eyes to follow him across the sky, until she was changed into a flower that still turns toward the sun.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses 4.256-270 (paraphrase)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Ovid’s story makes the abandoned lover’s gaze itself the thing that consumes her.</div>
+  <div class="tieback">Like the Kural’s eyes, which ‘eat’ the heroine in their longing to see her husband, Clytie’s eyes follow her beloved until she wastes away.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In Plato’s Phaedrus, Socrates describes how the lover’s soul, when parted from the beloved, becomes parched and frantic, unable to sleep or rest, and runs wherever it hopes to catch sight of the beautiful one, finding relief only in seeing him.</div>
+  <div class="cite">&mdash; Plato, Phaedrus 251d-e (paraphrase) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Plato treats the sight of the beloved as what nourishes the lover’s soul, and its absence as torment.</div>
+  <div class="tieback">The Kural’s eyes, tormenting the heroine in their need to see her husband, express the same dependence on sight.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Abigail Adams crosses the Atlantic to rejoin John Adams</div>
+  <div class="rle-meta">1784 &middot; Boston, Massachusetts, to England and Auteuil, France</div>
+  <div class="quote is-paraphrase">John Adams&#x27;s long absences on public service, including diplomatic posts in Europe, left his wife Abigail to raise their children and run the farm and household in Massachusetts. In the summer of 1784, after nearly five years apart, she made a month-long voyage from Boston to England with their daughter and joined John in Europe, settling with him at Auteuil, near Paris.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Her journey ended one of the longest separations of any founding American couple, and her record of the voyage survives in the Adams Papers.</div>
+  <div class="tieback">The kural&#x27;s heroine, longing to see her husband, wants her eyes carried to him, and Abigail Adams, after years of longing, went herself to see the husband her heart had followed.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-125/" target="_blank" rel="noopener">Thirukkural Chapter 125: நெஞ்சொடுகிளத்தல் / Soliloquy (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-125.html" target="_blank" rel="noopener">நெஞ்சோடு கிளத்தல் - அதிகாரம் 125 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/sb/10/" target="_blank" rel="noopener">Srimad Bhagavatam, Canto 10, tr. A.C. Bhaktivedanta Swami Prabhupada and disciples</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/sn/sn22/sn22.087.wlsh.html" target="_blank" rel="noopener">Samyutta Nikaya 22.87, Vakkali Sutta</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses, Book 1 (the flood of Deucalion and Pyrrha, 1.253–415)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Phaedrus (the charioteer allegory) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://masshist.org/adams/abigail_adams" target="_blank" rel="noopener">Abigail Adams</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.monticello.org/encyclopedia/abigail-adams" target="_blank" rel="noopener">Abigail Adams</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1243.html">&larr; Kural 1243</a>
+  <a href="kural-1245.html">Kural 1245 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-125.html">Soliloquy</a>
+  <a class="skip-btn" href="kural-1251.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

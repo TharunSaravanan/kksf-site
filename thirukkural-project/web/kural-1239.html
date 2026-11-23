@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1239 — Wasting Away | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1239</h1>
+<p class="adhikaram"><a href="adhikaram-124.html">Wasting Away</a> &middot; Uruppu Nalanazhithal &middot; <span class="tamil">உறுப்புநலனழிதல்</span></p>
+
+<div class="tamil-text">முயக்கிடைத் தண்வளி போழப் பசப்புற்ற
+பேதை பெருமழைக் கண்.</div>
+<div class="translit">Muyakkidaith thanvali poazhap pasapputra
+paedhai perumazhaik kan.</div>
+
+<h2 class="section">Meaning</h2>
+<p>When even a little breeze slipped in between us as we hugged, the big, cool eyes of my innocent wife turned pale.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Think of two friends sitting so close on a cold night that not even the wind can get between them. If a tiny gust slips in, one of them shivers. The husband here remembers that even a little breeze between them made his wife look sad, so he knows a long trip away must be very hard for her.</p>
+
+<h2 class="section">University</h2>
+<p>The husband’s recollection continues and intensifies 1238: now not his arms but a cool breeze (taṇ vaḷi) ‘split’ (pōḻa, ‘to cleave, pierce’) their embrace (muyakku iṭai, ‘in the midst of the embrace’), and at that hair’s-breadth separation her eyes, not her forehead, were touched with pacappu. Perumaḻaik kaṇ, ‘large rain-eyes’, is glossed by Mu. Varadarasanar as ‘large eyes like rain’ (cool and moist) and by Kalaignar as ‘wide, long eyes’; the image may suggest both their coolness and their readiness for tears. Solomon Pappaiah ends his gloss with the husband’s worried question, ‘how must they be now?’, which captures the a fortiori logic of 1238-1240. Pope: ‘As we embraced a breath of wind found entrance there; / The maid’s large liquid eyes were dimmed with care.’ Ytamizh.com and thirukkural.net give the same text.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Bhagavata Purana, when Krishna suddenly vanishes from the circle of dancing gopis at night, they are overwhelmed at once, searching for him from tree to tree and asking the creepers and deer where he has gone.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Bhagavata Purana 10.30 (paraphrase)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Bhagavata shows a moment’s disappearance of the beloved producing instant, overwhelming distress.</div>
+  <div class="tieback">The Kural’s wife, too, is stricken by the smallest break in closeness, a breeze slipping between them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Again, if two lie together, then they have heat: but how can one be warm alone?&rdquo;</div>
+  <div class="cite">&mdash; Ecclesiastes 4:11 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Preacher observes plainly that two together keep each other warm, and one alone cannot.</div>
+  <div class="tieback">The Kural’s cold breeze slipping between the lovers is exactly the chill the verse describes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And of His signs is that He created for you from yourselves mates that you may find tranquillity in them; and He placed between you affection and mercy.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 30:21 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an presents spouses as a source of tranquillity for each other, bound by affection and mercy.</div>
+  <div class="tieback">The Kural shows how fragile that tranquillity feels to a loving wife, broken even by a breath of air between them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;When our love was strong, we could have slept on a bed that was the width of a sword. Now that our love is not strong, a bed of sixty cubits is not sufficient for us.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Sanhedrin.7a.14" target="_blank" rel="noopener">Babylonian Talmud, Sanhedrin 7a (William Davidson Edition, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">A Talmudic proverb measures love by how little space a couple needs between them.</div>
+  <div class="tieback">In the Kural the lovers’ closeness is so complete that even a breeze in the gap is felt as a wound.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Canda-Kinnara Jataka, a pair of kinnaras are separated for a single night when a sudden flood fills the stream between them; they spend the night calling to each other, and for the rest of their long lives they grieve over that one lost night.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/bud/j3/index.htm" target="_blank" rel="noopener">Canda-Kinnara Jataka (Jataka 485) (paraphrase; cf. tr. E.B. Cowell et al.)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Jataka makes a single night’s separation the cause of lifelong lament between devoted mates.</div>
+  <div class="tieback">The Kural’s wife reacts the same way to the slightest gap, a breeze in the embrace.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">In the Jain Ramayana, Pavananjaya, encamped on a campaign, sees a female chakravaka bird crying all night for her mate, from whom she is parted till dawn; realising that his neglected wife Anjana must suffer far more, he secretly flies back to her that very night.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Hemachandra, Trishashtishalakapurushacharitra, Book 7, story of Anjana and Pavananjaya (paraphrase; cf. tr. Helen M. Johnson)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Jain narrative makes a bird’s single night of separation open a husband’s eyes to his wife’s pain.</div>
+  <div class="tieback">Like Pavananjaya, the Kural’s husband reasons from a small separation, a breeze in an embrace, to how much his wife must suffer in a long absence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;When I could not be with You for just one moment, the Dark Age of Kali Yuga dawned for me.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 96, Raag Maajh, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In the Shabad Hazare, Guru Arjan says that even a moment away from the beloved Guru felt like the darkest age of the world.</div>
+  <div class="tieback">In the Kural even a cool breeze slipping between the embracing couple was enough to make the wife&#x27;s eyes turn pale; Guru Arjan likewise finds a single moment&#x27;s separation unbearable.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When Ceyx resolves to sail to consult an oracle, his wife Alcyone turns pale, weeps and begs him not to go, or at least to take her with him, since even a short parting by sea terrifies her.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses 11.410-443 (Ceyx and Alcyone) (paraphrase)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Ovid’s devoted wife cannot bear the thought of even a brief separation from her husband.</div>
+  <div class="tieback">The Kural’s wife pales at a breath of wind between them; Alcyone pales at the mere mention of a voyage.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Lucretius says lovers clasp and press each other close, mouth to mouth, yet can take nothing from each other, since body cannot pass into body, and so even the tightest embrace leaves a gap that desire cannot close.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0131%3Abook%3D1%3Acard%3D238" target="_blank" rel="noopener">Lucretius, De Rerum Natura 4.1105-1111 (paraphrase; cf. tr. W.H.D. Rouse)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The Epicurean poet sees in lovers’ embraces a longing for a total union that bodies cannot achieve.</div>
+  <div class="tieback">The Kural’s breeze slipping into the embrace is the gap Lucretius points to, felt by the wife as a wound.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Captain Scott&#x27;s last letter to his wife Kathleen</div>
+  <div class="rle-meta">1912 &middot; Antarctica</div>
+  <div class="quote is-paraphrase">During the fatal return journey from the South Pole in 1912, Captain Robert Falcon Scott wrote last letters from his tent, including one to his wife Kathleen addressed To my widow. He wrote of the cold, 70 degrees below zero, and asked her to make their son Peter, then about three, interested in natural history if she could. The letter was given to the Scott Polar Research Institute at Cambridge and put on public display in 2007.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Written as he faced death, the letter shows a husband&#x27;s last thoughts turning to his wife and child far away.</div>
+  <div class="tieback">In this kural the husband, far from home, remembers his wife&#x27;s delicacy and worries how she will bear the separation, and Scott&#x27;s last letter turns from his own plight to her and their son&#x27;s future.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-124/" target="_blank" rel="noopener">Thirukkural Chapter 124: உறுப்புநலனழிதல் / Wasting Away (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-124.html" target="_blank" rel="noopener">உறுப்புநலன் அழிதல் - அதிகாரம் 124 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Srimad Bhagavatam (Bhagavata Purana), Canto 8, chapters 5-8: the curse of Durvasa and the churning of the ocean of milk</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Sanhedrin.7a.14" target="_blank" rel="noopener">Babylonian Talmud, Sanhedrin 7a (William Davidson Edition, Koren-Steinsaltz)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/bud/j3/index.htm" target="_blank" rel="noopener">The Jataka, or Stories of the Buddha&#x27;s Former Births (ed. E.B. Cowell), incl. Mahakapi Jataka No. 407</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses, Book 1 (the flood of Deucalion and Pyrrha, 1.253–415)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0131%3Abook%3D1%3Acard%3D238" target="_blank" rel="noopener">Lucretius, De Rerum Natura (On the Nature of Things), Book I, translated by William Ellery Leonard (1916)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.nbcnews.com/id/wbna16563811" target="_blank" rel="noopener">Doomed explorer&#x27;s letters made public (Associated Press)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.cam.ac.uk/research/news/last-letter-of-captain-scott-finally-revealed-in-full-101-years-on" target="_blank" rel="noopener">Last letter of Captain Scott finally revealed in full 101 years on</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1238.html">&larr; Kural 1238</a>
+  <a href="kural-1240.html">Kural 1240 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-124.html">Wasting Away</a>
+  <a class="skip-btn" href="kural-1241.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

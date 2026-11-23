@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 354 — Knowledge of the True | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 354</h1>
+<p class="adhikaram"><a href="adhikaram-036.html">Knowledge of the True</a> &middot; Meyyunarthal &middot; <span class="tamil">மெய்யுணர்தல்</span></p>
+
+<div class="tamil-text">ஐயுணர்வு எய்தியக் கண்ணும் பயமின்றே
+மெய்யுணர்வு இல்லா தவர்க்கு.</div>
+<div class="translit">Aiyunarvu eydhiyak kannum payamindre
+Meyyunarvu illaa thavarkku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Even if someone has fully learned everything the five senses can tell them, it is of no real use if they do not truly know what is real.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A person could have perfect eyes, sharp ears and a great nose, and still walk right past a treasure because they don’t know what it is. This kural says the five senses are like a camera: very useful, but you need a wise mind to understand what the pictures really mean.</p>
+
+<h2 class="section">University</h2>
+<p>Aiyunarvu, ‘five-fold awareness’, has two classical readings, both preserved in the commentary tradition. Mu. Varadarasanar and others take it as the complete knowledge gathered through the five senses, while Solomon Pappaiah and Kalaignar read it as the ascetic’s mastery or restraint of the five senses. Either way the claim is striking: neither sensory knowledge nor sensory discipline is enough without meyyunarvu, knowledge of the real. The second reading turns the couplet into a pointed warning to renunciants (the chapter sits in the Thuravaraviyal, the section on the ascetic life) that austerity without insight is barren. Philosophically it anticipates the argument of Plato’s Theaetetus that knowledge cannot simply be perception, and it parallels Heraclitus’s remark that eyes and ears are bad witnesses for souls that cannot interpret them.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;But, Sir, with all this I know the Mantras only, the sacred books, I do not know the Self. I have heard from men like you, that he who knows the Self overcomes grief.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/sbe01/index.htm" target="_blank" rel="noopener">Chandogya Upanishad 7.1.3 (trans. Max Müller)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The sage Narada lists every science he has mastered (the Vedas, grammar, logic, astronomy, the arts) and then admits to his teacher that he still does not know the Self and is in grief.</div>
+  <div class="tieback">The same point as the Kural: vast learning and perception bring no real benefit without knowledge of the ultimate truth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Therefore speak I to them in parables: because they seeing see not; and hearing they hear not, neither do they understand.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 13:13 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus says many people have working eyes and ears but miss the meaning of what they see and hear.</div>
+  <div class="tieback">Exactly the Kural’s paradox: full use of the senses, yet no real perception of truth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;They have hearts with which they do not understand, they have eyes with which they do not see, and they have ears with which they do not hear. Those are like livestock; rather, they are more astray.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 7:179 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an describes people who have every faculty of perception but fail to grasp the truth, so their senses bring them no benefit.</div>
+  <div class="tieback">Nearly identical to the Kural: complete sensory equipment is useless without true understanding.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Hear now this, O foolish people, and without understanding; which have eyes, and see not; which have ears, and hear not.&rdquo;</div>
+  <div class="cite">&mdash; Jeremiah 5:21 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The prophet Jeremiah rebukes people who have functioning senses but no understanding of God and of what is right.</div>
+  <div class="tieback">The same contrast the Kural draws between sensory capacity and true knowing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Much though he recites the sacred texts, but acts not accordingly, that heedless man is like a cowherd who only counts the cows of others — he does not partake of the blessings of the holy life.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 19 (trans. Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha compares a person who knows many texts but doesn’t realize them to a herdsman counting cows that belong to someone else.</div>
+  <div class="tieback">As in the Kural, accumulated knowledge without realization of truth yields no real benefit.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Without (right) faith there is no (right) knowledge, without (right) knowledge there is no virtuous conduct, without virtues there is no deliverance, and without deliverance there is no perfection.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 28.30 (tr. Hermann Jacobi, SBE 45, 1895, p. 156)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Uttarādhyayana sets out a strict chain: every later attainment depends on right faith and right knowledge, and nothing else can stand in for them.</div>
+  <div class="tieback">The Kural says that even complete mastery of the five senses brings no benefit without knowledge of the real. The Jain chain likewise makes all discipline and virtue fruitless without right knowledge of reality.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;You may read and read boat-loads of books; you may read and read and fill pits with them. ... O Nanak, only one thing is of any account: everything else is useless babbling and idle talk in ego.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 467, Raag Aasaa (Asa di Vaar, salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In Asa di Vaar Guru Nanak says that any amount of reading and learning is worthless without the one thing that counts, the Lord&#x27;s Name.</div>
+  <div class="tieback">The Kural says that even complete knowledge gathered through the senses brings no benefit without true knowledge of reality; Guru Nanak dismisses boat-loads of learning in the same way.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In the Oedipus legend, the blind seer Tiresias knows the terrible truth, while King Oedipus, clear-sighted and famous for solving the Sphinx’s riddle, cannot see his own situation. When the truth finally comes out, Oedipus blinds himself.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0191" target="_blank" rel="noopener">Sophocles, Oedipus Tyrannus</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The myth deliberately flips sight and insight: the man with perfect eyes is blind to reality, and the blind man sees it.</div>
+  <div class="tieback">A dramatic illustration of the Kural: perfect senses bring no benefit without perception of the truth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Eyes and ears are bad witnesses to men if they have souls that understand not their language.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Fragments_of_Heraclitus" target="_blank" rel="noopener">Heraclitus, Fragment 107 (DK B107; trans. John Burnet)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Heraclitus says the senses only report; without a soul able to interpret them, their testimony misleads.</div>
+  <div class="tieback">A near-exact philosophical restatement of the Kural: sense-knowledge is worthless without understanding of the real.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Al-Ghazali&#x27;s crisis of certainty and departure from Baghdad</div>
+  <div class="rle-meta">1095 &middot; Baghdad, Abbasid Caliphate (now Iraq)</div>
+  <div class="quote is-paraphrase">Al-Ghazali, appointed chief professor at the Nizamiyya college in Baghdad in 1091 and one of the most celebrated scholars of his day, fell into a spiritual crisis in 1095 in which his voice failed and he could no longer lecture. He left his post and Baghdad, travelled to Damascus and Jerusalem, and turned to the Sufi path. In his later book The Deliverer from Error he described how he had come to doubt whether the senses, and even reason, could give certain knowledge, and how certainty returned only as a gift of God rather than through argument.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">One of the most learned men of the medieval Islamic world concluded that neither sense-knowledge nor scholarship was enough without a deeper grasp of the truth.</div>
+  <div class="tieback">The kural says that even full mastery of what the five senses can know brings no benefit without knowledge of reality, which is close to the conclusion al-Ghazali reached when he found sense perception and learning alone could not give him certainty.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-36/" target="_blank" rel="noopener">Thirukkural Chapter 36: மெய்யுணர்தல் / Truth-Consciousness (Kurals 351–360), with commentaries of Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-036.html" target="_blank" rel="noopener">மெய்யுணர்தல் – அதிகாரம் 36 – திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/sbe01/index.htm" target="_blank" rel="noopener">Chandogya Upanishad, tr. F. Max Müller, The Upanishads Part I (Sacred Books of the East vol. 1, 1879)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0191" target="_blank" rel="noopener">Sophocles, Oedipus Tyrannus, trans. R. C. Jebb</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://en.wikisource.org/wiki/Fragments_of_Heraclitus" target="_blank" rel="noopener">Fragments of Heraclitus, trans. John Burnet, Early Greek Philosophy (1920)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/topic/The-Deliverer-from-Error" target="_blank" rel="noopener">The Deliverer from Error</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://iep.utm.edu/al-ghazali/" target="_blank" rel="noopener">Al-Ghazali</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://plato.stanford.edu/entries/al-ghazali/" target="_blank" rel="noopener">al-Ghazali (Frank Griffel)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0353.html">&larr; Kural 353</a>
+  <a href="kural-0355.html">Kural 355 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-036.html">Knowledge of the True</a>
+  <a class="skip-btn" href="kural-0361.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

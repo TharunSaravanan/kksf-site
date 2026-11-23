@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1071 — Baseness | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1071</h1>
+<p class="adhikaram"><a href="adhikaram-108.html">Baseness</a> &middot; Kayamai &middot; <span class="tamil">கயமை</span></p>
+
+<div class="tamil-text">மக்களே போல்வர் கயவர் அவரன்ன
+ஒப்பாரி யாங்கண்ட தில்.</div>
+<div class="translit">Makkale polvar kayavar avaranna
+oppaari yaangkanda thil.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Low, mean people look exactly like human beings. I have never seen any two other things look so much alike.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a shiny plastic apple in a fruit bowl. It looks just like a real apple, but you cannot eat it. Some people are like that: they look like everyone else on the outside, but inside they lack the kindness and goodness that make a real person.</p>
+
+<h2 class="section">University</h2>
+<p>Kayamai (கயமை, &#x27;baseness&#x27;) closes the Porutpal and its Kudiyiyal section, as a dark mirror to the preceding chapters on nobility of birth, honour, greatness, perfect goodness and courtesy (chs. 96-100). The first couplet is a famous piece of irony: kayavar (கயவர், &#x27;the base&#x27;) are makkale polvar (மக்களே போல்வர், &#x27;just like humans&#x27;), and oppaari (ஒப்பாரி, &#x27;resemblance&#x27;) so exact is found nowhere else. Parimelazhagar and the commentators who follow him (Mu. Varadarasanar, Puliyur Kesikan) read it as saying the base share only the outward form of humanity, so that the likeness is complete in shape and absent in substance; Solomon Pappaiah adds that no animal or bird species shows such a perfect double. Pope renders it &#x27;The base resemble men in outward form, I ween; / But counterpart exact to them I&#x27;ve never seen.&#x27; The text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Arrogance, pride, anger, conceit, harshness and ignorance—these qualities belong to those of demonic nature, O son of Pṛthā.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 16.4 (tr. A.C. Bhaktivedanta Swami Prabhupada)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna names the traits that mark the asuric (demonic) nature in people who are outwardly human.</div>
+  <div class="tieback">Like the Kural, the Gita locates what is base not in a person&#x27;s form but in qualities that hollow out their humanity.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Woe unto you, scribes and Pharisees, hypocrites! for ye are like unto whited sepulchres, which indeed appear beautiful outward, but are within full of dead men&#x27;s bones, and of all uncleanness.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 23:27 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus compares hypocrites to painted tombs that look fine outside and are full of decay inside.</div>
+  <div class="tieback">The Kural&#x27;s base person is likewise perfect on the outside and empty within.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;They have hearts with which they do not understand, they have eyes with which they do not see, and they have ears with which they do not hear. Those are like livestock; rather, they are more astray.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 7:179 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an describes people who have every human faculty but do not use them, and so fall below the animals.</div>
+  <div class="tieback">Like the Kural, it says such people have the human frame but not what makes it human.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;In a place where there are no men, strive to be a man.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 2:5 (Mishnah Yomit, tr. Joshua Kulp, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Hillel teaches that being truly human is a moral achievement, especially where others fail at it.</div>
+  <div class="tieback">Hillel&#x27;s saying assumes the Kural&#x27;s point, that many who look like men are not men in the full sense.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Not by mere eloquence nor by beauty of form does a man become accomplished, if he is jealous, selfish and deceitful.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 262 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha says outward gifts like fine speech or good looks count for nothing in a person who is envious, selfish and deceitful.</div>
+  <div class="tieback">As in the Kural, outward appearance cannot make up for a base character.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The base in prosperity will not do these things which those who are of high birth will do even in adversity. Though one place rings (of gold) upon the tusks of a hog, O thou who hast eyes like a lance! it will never become a warlike elephant.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">Naladiyar 36.8, chapter &#x27;Baseness or Envy&#x27; (English translation in The Indian Antiquary, via wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Jain Naladiyar says that dressing up a hog&#x27;s tusks in gold rings does not turn it into a war elephant, and outward finery does not change the nature of the base.</div>
+  <div class="tieback">Like the Kural, the stanza says the base may look like the real thing but stay what they are underneath.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;They belong to the human species, but they act like animals.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 267, Raag Gauri, Sukhmani, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Sukhmani Sahib, Guru Arjan describes people who are human by birth but whose conduct is that of beasts.</div>
+  <div class="tieback">The Kural ironically says the base look exactly like human beings; Guru Arjan makes the same point, that a human form can hide conduct that is not human at all.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Diogenes the Cynic is said to have lit a lamp in broad daylight and walked about saying he was looking for a man.</div>
+  <div class="cite">&mdash; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diogenes_Laertius/Lives_of_the_Eminent_Philosophers/6/Diogenes*.html" target="_blank" rel="noopener">Diogenes Laertius, Lives of Eminent Philosophers 6.41 (tr. R. D. Hicks)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The joke was that the streets were full of people but he could not find a real human being among them.</div>
+  <div class="tieback">Diogenes makes the Kural&#x27;s ironic point: many look like men, but few are.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle writes that man, when perfected, is the best of animals, but when separated from law and justice he is the worst of all.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/politics.1.one.html" target="_blank" rel="noopener">Aristotle, Politics 1.2 (tr. Benjamin Jowett)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Aristotle, being human is fulfilled only through virtue and justice; without them a human being sinks below the beasts.</div>
+  <div class="tieback">Aristotle, like the Kural, separates the human form from the human excellence that should fill it.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Anna Anderson claims to be Grand Duchess Anastasia</div>
+  <div class="rle-meta">1922–1994 &middot; Berlin, Germany, and Charlottesville, Virginia, United States</div>
+  <div class="quote is-paraphrase">In 1922 a young woman who later became known as Anna Anderson appeared in Berlin claiming to be Anastasia, the youngest daughter of the murdered Russian tsar Nicholas II. For decades she persuaded many people, and she later lived in Charlottesville, Virginia, where she died in 1984. In 1994 separate British and American scientific teams tested her DNA and concluded that she was not a Romanov.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Her case shows how closely a person can match an outward likeness, even convincing people who had known the royal family, while the inner truth is quite different.</div>
+  <div class="tieback">The kural&#x27;s irony is that the base look exactly like true human beings; Anderson&#x27;s near-perfect outward resemblance to a princess, exposed only by DNA, shows how convincing a mere likeness can be.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-108/" target="_blank" rel="noopener">Thirukkural Chapter 108: கயமை / Baseness (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-108.html" target="_blank" rel="noopener">கயமை - அதிகாரம் 108 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit, tr. Dr. Joshua Kulp), 2:5, 3:2, 4:1, 4:15, 4:21, 5:13</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">The Nāladiyār (English translation serialised in The Indian Antiquary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diogenes_Laertius/Lives_of_the_Eminent_Philosophers/6/Diogenes*.html" target="_blank" rel="noopener">Diogenes Laertius, Lives of Eminent Philosophers, Book VI (Diogenes), tr. R. D. Hicks (Loeb, 1925)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Aristotle/politics.1.one.html" target="_blank" rel="noopener">Aristotle, Politics, Book I, trans. Benjamin Jowett</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.history.com/this-day-in-history/july-9/romanov-remains-identified" target="_blank" rel="noopener">Romanov remains identified (HISTORY.com Editors)</a> <span class="tier">[web source]</span></li>
+<li id="cite-13"><a href="https://www.psu.edu/news/research/story/anastasia-story" target="_blank" rel="noopener">Anastasia story (Harlan Berger)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1070.html">&larr; Kural 1070</a>
+  <a href="kural-1072.html">Kural 1072 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-108.html">Baseness</a>
+  <a class="skip-btn" href="kural-1081.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

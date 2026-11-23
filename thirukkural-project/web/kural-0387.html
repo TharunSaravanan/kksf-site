@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 387 — The Greatness of a King | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 387</h1>
+<p class="adhikaram"><a href="adhikaram-039.html">The Greatness of a King</a> &middot; Iraimaatchi &middot; <span class="tamil">இறைமாட்சி</span></p>
+
+<div class="tamil-text">இன்சொலால் ஈத்தளிக்க வல்லார்க்குத் தன்சொலால்
+தான்கண் டனைத்திவ் வுலகு.</div>
+<div class="translit">Insolaal eeththalikka vallaarkkuth thansolaal
+Thaankan danaiththiv vulagu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>For a ruler who gives with kind words and protects the people, the world will praise him and follow his word, just as he wishes.</p>
+
+<h2 class="section">Elementary</h2>
+<p>When a friend shares their snacks and says something nice while doing it, everyone wants to be on their team. A king who gives generously, speaks kindly, and protects people finds that the whole world is happy to follow him.</p>
+
+<h2 class="section">University</h2>
+<p>The kural joins three verbs — speaking sweetly (insol), giving (eeththal), and protecting (alittal) — and makes their combination the source of consent. The second line is compressed: ‘the world becomes as he sees it by his word’, which commentators such as Parimelazhagar read as the world both praising him and conforming to his intentions. The insight is that legitimacy is earned through the manner as well as the substance of benefaction: gifts given with contempt create resentment, whereas gifts with kind words create loyalty. This closely matches the Buddhist ‘bases of fellowship’ (generosity, kind speech, beneficial help, consistency) and the counsel Rehoboam’s elders gave him — ‘speak good words to them, then they will be thy servants for ever’.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Valmiki describes Rama as one who always spoke gently, was the first to speak and greet others kindly, and was devoted to the welfare of his people, which is why the citizens longed for him to be crowned (Ayodhya Kanda 1-2).</div>
+  <div class="cite">&mdash; <a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Valmiki Ramayana, Ayodhya Kanda, sargas 1-2</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Rama was loved by everyone because he spoke kindly first and cared for the people, so they wanted him to be king.</div>
+  <div class="tieback">Sweet speech plus care for the people wins the world’s consent — the Kural’s formula for a ruler whom all follow.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Many will intreat the favour of the prince: and every man is a friend to him that giveth gifts.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 19:6 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Proverbs notes that people seek the favour of a generous ruler and befriend those who give.</div>
+  <div class="tieback">Generosity (eeththal) draws people to the ruler, as the Kural says the world follows the giving king.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;So by mercy from Allah, [O Muhammad], you were lenient with them. And if you had been rude [in speech] and harsh in heart, they would have disbanded from about you.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 3:159 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">God tells the Prophet that his gentleness kept his followers close; if he had been harsh they would have left.</div>
+  <div class="tieback">The same logic as the Kural: gentle speech is what keeps people gathered around a leader.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;If thou wilt be a servant unto this people this day, and wilt serve them, and answer them, and speak good words to them, then they will be thy servants for ever.&rdquo;</div>
+  <div class="cite">&mdash; 1 Kings 12:7 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The old advisers tell King Rehoboam that if he serves the people and speaks kindly, they will serve him forever. He ignores them and loses most of the kingdom.</div>
+  <div class="tieback">Almost a restatement of the Kural: good words and service make the people follow the ruler’s will.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;There are these four grounds for the bonds of fellowship. Which four? Generosity, kind words, beneficial help, consistency.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an04/an04.032.than.html" target="_blank" rel="noopener">Anguttara Nikaya 4.32 (tr. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha names four things that hold people together: giving, kind speech, helping, and treating people consistently.</div>
+  <div class="tieback">Generosity, kind words, and beneficial help map precisely onto the Kural’s giving, sweet speech, and protection.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Ishukara&#x27;s queen Kamalavati to the king: “If the whole world and all treasures were yours, you would still not be satisfied, nor would all this be able to save you. Whenever you die, O king, and leave all pleasant things behind, the Law alone, and nothing else in this world, will save you, O monarch.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 14.39–40 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The queen addresses the king gently, as &#x27;O king&#x27; and &#x27;O monarch&#x27;, and points him to the Law (dharma) as the only real protection. In the story the whole court, king included, takes up the Jain path and reaches perfection.</div>
+  <div class="tieback">Valluvar says the world comes round to the ruler who joins kind words with giving and protection. In the Jain story it is the king who receives that kind of benevolent counsel, and the &#x27;protection&#x27; it values is dharma rather than royal patronage.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The Lord lovingly embraces whoever comes to the Lord&#x27;s Sanctuary - this is the way of the Lord and Master.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 544, Raag Bihaagraa, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Guru Arjan says it is the innate nature (birad) of the Master to take into His embrace anyone who comes seeking refuge.</div>
+  <div class="tieback">The Kural praises the ruler who gives kindly and protects those who come to him; Guru Arjan describes the divine Master whose defining way is exactly such protection of all who seek shelter.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;...for therefore are there princes wise in heart, because when the people are being misguided in their assembly, they set right the matter again with ease, persuading them with gentle words.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Hesiod, Theogony 88-90 (tr. H. G. Evelyn-White)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Hesiod says the Muses give good kings the gift of gentle, persuasive speech, which lets them guide their people.</div>
+  <div class="tieback">A king who wins people by gentle words finds them following his word — the Kural’s second line.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;It is not easy to say how far an affable and courteous manner in conversation may go toward winning the affections.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cicero/de_Officiis/2B*.html" target="_blank" rel="noopener">Cicero, De Officiis (On Duties), Book II, §48 (tr. Walter Miller (Loeb, 1913))</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Cicero tells his son that a courteous, kindly manner of speech wins people over in ways that are hard to measure, and points to letters from Philip, Antipater and Antigonus urging their heirs to win the people with kind words.</div>
+  <div class="tieback">The Kural likewise says the ruler who gives with kind words finds the world following him, though Cicero stresses gracious speech more than giving and protection.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Jam Sahib of Nawanagar shelters Polish refugee children</div>
+  <div class="rle-meta">1942-1946 &middot; Balachadi, near Jamnagar, Gujarat, India</div>
+  <div class="quote is-paraphrase">During the Second World War, Polish children, many of them orphans, who had been released from the Soviet Union with nowhere to go were brought to India. Maharaja Digvijaysinhji, the Jam Sahib of Nawanagar, set up a camp for them near his summer palace at Balachadi from 1942 and maintained it largely at his own expense, with a school, a Polish library and activities that kept their culture alive. Hundreds of children lived under his protection until the camp closed and they were moved on after the war, and he is remembered in Poland as the Good Maharaja.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">The maharaja&#x27;s generosity was matched by personal warmth toward children far from home, and his care earned lasting gratitude between two distant nations.</div>
+  <div class="tieback">The kural says the world follows a ruler who gives with kind words and protects those who come to him, and the Jam Sahib gave refuge and care to children who had lost everything.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-39/" target="_blank" rel="noopener">Thirukural Chapter 39: இறைமாட்சி / The Greatness of a King</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-039.html" target="_blank" rel="noopener">இறைமாட்சி - அதிகாரம் 39 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Vālmīki Rāmāyaṇa (Bāla Kāṇḍa: the putrakāmeṣṭi of Daśaratha; Ayodhyā Kāṇḍa: Kausalyā and Rāma)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.accesstoinsight.org/tipitaka/an/an04/an04.032.than.html" target="_blank" rel="noopener">Sangaha Sutta: The Bonds of Fellowship (AN 4.32), tr. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Theogony (Hesiod)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cicero/de_Officiis/2B*.html" target="_blank" rel="noopener">De Officiis (On Duties), Book II.44-89 (Marcus Tullius Cicero)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://culture.pl/en/article/the-maharaja-who-saved-hundreds-of-polish-orphans" target="_blank" rel="noopener">The Maharaja Who Saved Hundreds of Polish Orphans</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.timesofisrael.com/when-a-maharajah-came-to-the-rescue/" target="_blank" rel="noopener">When a maharajah came to the rescue</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0386.html">&larr; Kural 386</a>
+  <a href="kural-0388.html">Kural 388 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-039.html">The Greatness of a King</a>
+  <a class="skip-btn" href="kural-0391.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

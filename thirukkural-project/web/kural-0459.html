@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 459 — Avoiding Mean Associations | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 459</h1>
+<p class="adhikaram"><a href="adhikaram-046.html">Avoiding Mean Associations</a> &middot; Sitrinanjeraamai &middot; <span class="tamil">சிற்றினஞ்சேராமை</span></p>
+
+<div class="tamil-text">மனநலத்தின் ஆகும் மறுமைமற் றஃதும்
+இனநலத்தின் ஏமாப் புடைத்து.</div>
+<div class="translit">Mananalaththin aakum marumaimat rahdhum
+Inanalaththin emaap pudaiththu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A good mind earns a happy life in the next world. Even that is made safe by keeping good company.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A good heart earns you happiness after this life. But good friends make that happiness even more certain by helping you stay good all the way through.</p>
+
+<h2 class="section">University</h2>
+<p>The previous couplet made good company a fortress for virtue in this life; this one extends the claim to மறுமை, the next world. Even the reward that seems most purely individual, earned by one’s own inner goodness (மனநலம்), is secured (ஏமாப்பு, repeated from 458) by one’s company. The மற்று… அஃதும் (‘and even that’) is emphatic. The pairing of 458 and 459 moves from this world to the next and leaves no domain where company does not matter.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;satsaṅgatve nissaṅgatvaṃ nissaṅgatve nirmohatvam | nirmohatve niścalatattvaṃ niścalatattve jīvanmuktiḥ&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikipedia.org/wiki/Bhaja_Govindam" target="_blank" rel="noopener">Adi Shankaracharya, Bhaja Govindam, verse 9</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Shankara’s verse traces a chain: from good company comes detachment, from detachment freedom from delusion, from that steadiness in truth, and from that liberation.</div>
+  <div class="tieback">This matches the Kural’s claim that the highest spiritual attainment is secured through good company.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And Jesus said unto him, Verily I say unto thee, To day shalt thou be with me in paradise.&rdquo;</div>
+  <div class="cite">&mdash; Luke 23:43 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The repentant thief, crucified next to Jesus, turns to him and receives the promise of paradise in his company.</div>
+  <div class="tieback">Salvation here comes through a change of heart and is sealed by the company he is with, which parallels the Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">When a man asked the Prophet when the Hour would come, the Prophet asked what he had prepared for it. The man said only his love of Allah and His Messenger, and the Prophet replied that he would be with those he loved.</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:3688" target="_blank" rel="noopener">Sahih al-Bukhari 3688</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The company one loves in this life decides one’s company in the next.</div>
+  <div class="tieback">This is close to the Kural’s claim that good company secures the afterlife.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Then they that feared the LORD spake often one to another: and the LORD hearkened, and heard it, and a book of remembrance was written before him for them that feared the LORD.&rdquo;</div>
+  <div class="cite">&mdash; Malachi 3:16 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The fellowship of the God-fearing is itself recorded for their future reward.</div>
+  <div class="tieback">This links good company to one’s standing in the world to come, as the Kural does.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Not to associate with fools, to associate with the wise, and to honor those who are worthy of honor — this is the highest blessing.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/kn/khp/khp.5.nara.html" target="_blank" rel="noopener">Mangala Sutta, Khuddakapatha 5 / Sutta Nipata 2.4 (trans. Narada Thera)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Mangala Sutta puts right association first in its ladder of blessings, which ends in the realisation of Nibbana.</div>
+  <div class="tieback">As in the Kural, the path to the ultimate good begins with and is secured by good company.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;His knowledge will be honoured, his doubts will be removed, he will gladden the heart of his teacher by his good acts; kept in safety by the performance of austerities and by meditation, being as it were a great light, he will keep the five vows.” … “Honoured by gods, Gandharvas, and men, he will, on leaving this body which consists of dirt and impurities, become either an eternal Siddha, or a god of great power and small imperfections.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 1.47–48 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The lecture on discipline ends by following the disciple who has served his teachers beyond death, to rebirth as a powerful god or to final liberation as a Siddha.</div>
+  <div class="tieback">Valluvar says bliss in the world to come is earned by goodness of mind and made secure by good company. The Jain disciple&#x27;s reward after death likewise comes through his own vows and his bond with his teachers.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;In the Company of the Holy, one meets the Incomprehensible Lord.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 271, Raag Gauree (Sukhmani), Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Arjan teaches that union with God, the highest spiritual goal, is reached within the Saadh Sangat.</div>
+  <div class="tieback">The Kural says even bliss in the world to come is made secure by goodness of company; Guru Arjan makes holy company the place where the soul meets God.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Proteus tells Menelaus that he will not die in Argos but be taken to the Elysian plain, because he is Helen’s husband and so son-in-law of Zeus.</div>
+  <div class="cite">&mdash; Homer, Odyssey 4.561–569 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">A blessed afterlife granted because of whom one is joined to.</div>
+  <div class="tieback">This is a near-literal case of the next world secured by association, though it is kinship, not moral company.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Socrates, facing death, says that if death leads to a place where he can talk with Orpheus, Musaeus, Hesiod and Homer, he would be willing to die again and again.</div>
+  <div class="cite">&mdash; Plato, Apology 41a <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Socrates, the good of the next world is largely the company of the good and wise.</div>
+  <div class="tieback">This echoes the Kural’s link between the afterlife and good company.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Geert Groote and the Brethren of the Common Life</div>
+  <div class="rle-meta">late 14th century &middot; Deventer, Netherlands</div>
+  <div class="quote is-paraphrase">After a religious conversion in 1374, the Dutch preacher Geert Groote gave up his worldly goods and began the movement later called the Devotio Moderna, which stressed meditation and the inner life. With his friend Florentius Radewyns he gathered followers who lived together, copied manuscripts for their living and prayed in common, forming the Brethren of the Common Life. The community shaped later figures such as Thomas a Kempis, the probable author of The Imitation of Christ.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">The movement was built on the idea that a devout life is best sustained by living and working alongside others who share it.</div>
+  <div class="tieback">The kural says that even blessedness in the world to come, earned by goodness of mind, is made secure by good company, which is the very principle on which the Brethren lived.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/kural-451/" target="_blank" rel="noopener">Thirukural Chapter 46: Avoiding mean Associations (சிற்றினஞ்சேராமை), Kurals 451–460</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/kural-0451.html" target="_blank" rel="noopener">Thirukkural – Not associating with the mean (Adhigaram 46), Kurals 451–460</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.thirukural.ai/kural/451" target="_blank" rel="noopener">Thirukkural 451–460 (சிற்றினஞ்சேராமை)</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://en.wikipedia.org/wiki/Bhaja_Govindam" target="_blank" rel="noopener">Adi Shankaracharya, Bhaja Govindam (Moha Mudgara)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/bukhari:3688" target="_blank" rel="noopener">Sahih al-Bukhari 3688 (‘You will be with those whom you love’)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/kn/khp/khp.5.nara.html" target="_blank" rel="noopener">Mangala Sutta, Khuddakapatha 5 (trans. Narada Thera)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11">Apology (Plato (recording Socrates)) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/topic/Brethren-of-the-Common-Life" target="_blank" rel="noopener">Brethren of the Common Life</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.oxfordreference.com/view/10.1093/oi/authority.20110803095714654" target="_blank" rel="noopener">Devotio Moderna</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.newadvent.org/cathen/07036a.htm" target="_blank" rel="noopener">Catholic Encyclopedia: Gerard Groote</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0458.html">&larr; Kural 458</a>
+  <a href="kural-0460.html">Kural 460 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-046.html">Avoiding Mean Associations</a>
+  <a class="skip-btn" href="kural-0461.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

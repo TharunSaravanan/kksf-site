@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 407 — Ignorance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 407</h1>
+<p class="adhikaram"><a href="adhikaram-041.html">Ignorance</a> &middot; Kallaamai &middot; <span class="tamil">கல்லாமை</span></p>
+
+<div class="tamil-text">நுண்மாண் நுழைபுலம் இல்லான் எழில்நலம்
+மண்மாண் புனைபாவை யற்று.</div>
+<div class="translit">Nunmaan nuzhaipulam illaan ezhilnalam
+Manmaan punaipaavai yattru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The good looks of a person who lacks deep, sharp understanding are like the beauty of a painted clay doll.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A clay doll can be painted to look wonderful, but there is nothing inside it — it can’t think. Valluvar says a good-looking person who hasn’t developed a sharp, curious mind is like that doll: nice to look at, but empty.</p>
+
+<h2 class="section">University</h2>
+<p>Nunmaan nuzhaipulam — ‘subtle, excellent, penetrating intellect’ — names the kind of understanding that learning produces, able to enter into (nuzhai) fine distinctions. Its absence makes ezhil nalam (beauty, handsomeness) into manmaan punai paavai: a clay figure elaborately decorated. The contrast is surface versus interior. Aesop’s fox, finding an actor’s mask, puts it memorably: a beautiful head, but no brains. Chanakya Niti 3.8 is an almost perfect Sanskrit parallel — beauty, youth and noble birth without learning are like scentless kimshuka flowers. The Qur’an describes those whose ‘forms please you’ as ‘pieces of wood propped up’, and Proverbs likens beauty without discretion to a gold ring in a swine’s snout.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Chanakya Niti says that those endowed with beauty and youth and born in great families, if devoid of learning, do not shine — like kimshuka flowers that have no fragrance.</div>
+  <div class="cite">&mdash; <a href="https://subhashitani-en.blogspot.com/2012/07/blog-post_17.html" target="_blank" rel="noopener">Chanakya Niti 3.8</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Looks, youth and noble birth are not enough; without learning, a person is like a bright flower with no scent.</div>
+  <div class="tieback">An almost exact parallel: outward beauty without learning is hollow.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Woe unto you, scribes and Pharisees, hypocrites! for ye are like unto whited sepulchres, which indeed appear beautiful outward, but are within full of dead men’s bones, and of all uncleanness.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 23:27 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Jesus condemns those who look impressive outside while being empty or corrupt inside.</div>
+  <div class="tieback">Both contrast a beautiful exterior with a lifeless interior.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And when you see them, their forms please you, and if they speak, you listen to their speech. [They are] as if they were pieces of wood propped up.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 63:4 (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Qur’an describes people whose appearance impresses, but who are inwardly like lifeless timber leaning against a wall.</div>
+  <div class="tieback">Very close to the Kural’s decorated clay doll: an attractive form with nothing living inside.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;As a jewel of gold in a swine’s snout, so is a fair woman which is without discretion.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 11:22 (Hebrew Bible; KJV wording) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Beauty without good sense is as incongruous and wasted as a gold ring in a pig’s nose.</div>
+  <div class="tieback">Both say that outward beauty is worthless without inner understanding.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Dhammapada asks us to look at the body as a painted image, a mass of sores held together, sickly and full of plans that do not last.</div>
+  <div class="cite">&mdash; Dhammapada 147 <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha urges looking past the attractive, decorated surface of the body to see how fragile it really is.</div>
+  <div class="tieback">The same ‘painted image’ idea as the Kural’s decorated clay doll: outward beauty that hides emptiness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;In the seagirt earth merit is various. The sensible should be great. Those who are foolish, and are like unbeaten steel and the thorny brinjâl, will flourish in silk and gay apparel.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">Naladiyar, ch. 27 &#x27;Riches without goodness&#x27;, stanza 4 (English tr. in The Indian Antiquary; wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Naladiyar notes that fools may be dressed in silk and finery while staying as crude and useless as unworked steel or a thorny plant.</div>
+  <div class="tieback">The Kural compares the good looks of someone without understanding to a painted clay doll. The Naladiyar likewise sees only fine outer show over an unformed, empty inside.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The simmal tree is straight as an arrow; it is very tall, and very thick. But those birds which visit it hopefully, depart disappointed. Its fruits are tasteless, its flowers are nauseating, and its leaves are useless.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 470, Raag Aasaa (Asa di Vaar, salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Asa di Vaar Guru Nanak describes the simmal (silk-cotton) tree, impressive to look at but giving nothing of use.</div>
+  <div class="tieback">The Kural likens a handsome person without subtle understanding to a painted clay doll; Guru Nanak&#x27;s tall, fine-looking but fruitless simmal tree makes the same point about outward show without inner worth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Aesop’s fable, a fox rummaging in an actor’s house finds a beautifully made mask and remarks that it is a fine head, but it has no brains.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/21" target="_blank" rel="noopener">Aesop’s Fables, ‘The Fox and the Mask’ (Perry 27)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The mask looks perfect, but there’s nothing inside it.</div>
+  <div class="tieback">Almost the Kural’s exact image: a beautiful crafted head, empty of mind.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In the Charmides, when everyone admires the young Charmides’ beauty, Socrates asks whether he also has a noble soul, proposing to ‘strip’ and examine that before his body.</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/The_Dialogues_of_Plato_(Jowett)/Charmides" target="_blank" rel="noopener">Plato, Charmides 154d–e</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Socrates redirects attention from a handsome appearance to the quality of the mind within.</div>
+  <div class="tieback">Both hold that physical beauty is of little worth unless the mind within is refined.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Kempelen&#x27;s chess-playing Turk</div>
+  <div class="rle-meta">1770 onward &middot; Vienna, Austria, and on tour in Europe and the United States</div>
+  <div class="quote is-paraphrase">Around 1770 Wolfgang von Kempelen presented to the court of Empress Maria Theresa in Vienna an automaton in the form of a robed Turk seated behind a cabinet, which appeared to play chess on its own. For decades the machine, later owned by Johann Maelzel, toured Europe and from 1826 the United States, astonishing audiences. In reality a skilled human chess player concealed inside the cabinet followed the game on a small board and moved the figure&#x27;s arm with levers.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The Turk became a byword for an impressive figure whose apparent intelligence belonged entirely to someone else.</div>
+  <div class="tieback">The kural compares the fine looks of one who lacks penetrating understanding to a beautifully painted clay doll, and the splendid Turk, with no understanding of its own, was exactly such a decorated figure.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.thirukural.ai/paal/porul/athigaram-41" target="_blank" rel="noopener">திருக்குறள் - பொருட்பால் அதிகாரம் 41 | கல்லாமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://tamilputhumai.com/thirukural/athikaram-41.html" target="_blank" rel="noopener">திருக்குறள் - அதிகாரம் 41 (கல்லாமை)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.thirukkural.net/en/kural/kural-0401.html" target="_blank" rel="noopener">Thirukkural — Ignorance (Kallaamai), Kurals 401–410</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://subhashitani-en.blogspot.com/2012/07/blog-post_17.html" target="_blank" rel="noopener">Chāṇakya Nīti (Chāṇakya Nītiśāstra), with the subhāṣita also collected in the Subhāṣita Ratna Bhāṇḍāgāra</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">The Nāladiyār (English translation serialised in The Indian Antiquary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.gutenberg.org/ebooks/21" target="_blank" rel="noopener">Aesop&#x27;s Fables, &#x27;The Miser and His Gold&#x27;</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://en.wikisource.org/wiki/The_Dialogues_of_Plato_(Jowett)/Charmides" target="_blank" rel="noopener">Plato, Charmides, trans. Benjamin Jowett</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/story/the-mechanical-turk-ai-marvel-or-parlor-trick" target="_blank" rel="noopener">The Mechanical Turk: AI Marvel or Parlor Trick?</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.computerhistory.org/chess/stl-431e1a07e7e40/" target="_blank" rel="noopener">Engraving of The Turk</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0406.html">&larr; Kural 406</a>
+  <a href="kural-0408.html">Kural 408 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-041.html">Ignorance</a>
+  <a class="skip-btn" href="kural-0411.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

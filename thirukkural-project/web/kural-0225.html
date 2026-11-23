@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 225 — Philanthropy | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 225</h1>
+<p class="adhikaram"><a href="adhikaram-023.html">Philanthropy</a> &middot; Eekai &middot; <span class="tamil">ஈகை</span></p>
+
+<div class="tamil-text">ஆற்றுவார் ஆற்றல் பசிஆற்றல் அப்பசியை
+மாற்றுவார் ஆற்றலின் பின்.</div>
+<div class="translit">Aatruvaar aatral pasi aatral appasiyai
+Maatruvaar aatralin pin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who train themselves by going hungry are strong. But they are less strong than people who take away the hunger of others.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Going without food on purpose takes a lot of strength. But this kural says there is an even greater strength: giving food to someone who is hungry. Helping others beats showing how tough you are.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet plays on the word ஆற்றல் (power, strength) and the verb ஆற்று (to endure, to perform): the ascetics’ power is பசி ஆற்றல், the power to endure hunger, whereas the philanthropist’s power is to மாற்று (change, remove) hunger. Valluvar deliberately ranks the householder’s charity above the ascetic’s self-mortification — a notable claim in a culture that deeply honoured tapas, and consistent with the Kural’s high regard for the householder (Chapter 5). The same contrast between self-denial and feeding the hungry is made by Isaiah, who says the fast God wants is to ‘deal thy bread to the hungry’. The couplet effectively redefines spiritual strength in social terms.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;I do not pray to the Supreme Personality of Godhead for the eight perfections of mystic yoga, nor for salvation from repeated birth and death. I want only to stay among all the living entities and suffer all distresses on their behalf, so that they may be freed from suffering.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/9/21/12/" target="_blank" rel="noopener">Srimad Bhagavatam 9.21.12 (Prabhupada translation)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">King Rantideva, after fasting for forty-eight days, gives away his food and water to hungry visitors and declares that he wants neither yogic powers nor liberation, only to relieve others’ suffering.</div>
+  <div class="tieback">Rantideva puts relieving others’ hunger above mystic attainments won by austerity — the same ranking as the Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For I was an hungred, and ye gave me meat: I was thirsty, and ye gave me drink... Inasmuch as ye have done it unto one of the least of these my brethren, ye have done it unto me.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 25:35, 40 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In the parable of the Last Judgement, Jesus identifies himself with the hungry and says feeding them is serving him.</div>
+  <div class="tieback">Feeding the hungry is treated as the highest religious act, as in the Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;But he has not broken through the difficult pass. And what can make you know what is [breaking through] the difficult pass? It is the freeing of a slave Or feeding on a day of severe hunger An orphan of near relationship Or a needy person in misery.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 90:11-16 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an calls feeding the hungry in a time of famine ‘the difficult pass’, a steep and demanding climb.</div>
+  <div class="tieback">Like the Kural, it frames relieving hunger as the true test of strength.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Is not this the fast that I have chosen? to loose the bands of wickedness, to undo the heavy burdens, and to let the oppressed go free, and that ye break every yoke? Is it not to deal thy bread to the hungry, and that thou bring the poor that are cast out to thy house?&rdquo;</div>
+  <div class="cite">&mdash; Isaiah 58:6-7 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Isaiah tells people who fast that God prefers them to share their bread with the hungry.</div>
+  <div class="tieback">Near-identical ranking to the Kural: feeding the hungry is valued above going hungry oneself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Sasa Jataka, the Bodhisatta is born as a hare who, having no food to offer a hungry brahmin visitor (the god Sakka in disguise), leaps into a fire so that his own body may be eaten. Sakka honours the gift by painting the hare’s image on the moon.</div>
+  <div class="cite">&mdash; <a href="https://en.wikipedia.org/wiki/Jataka_tales" target="_blank" rel="noopener">Jataka No. 316, Sasa Jataka</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The hare offers the ultimate gift, its own body, to relieve a stranger’s hunger.</div>
+  <div class="tieback">Relieving hunger is shown as the highest act of virtue, beyond any feat of self-control.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;By austerities he cuts off the Karman.” … “By doing service he acquires the Karman which brings about for him the nâman and gôtra of a Tîrthakara.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 29.27 and 29.43 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">In Mahāvīra&#x27;s list of the fruits of religious practice, austerity (tapas) wears away karma. Service to others (vaiyāvṛttya) is said to earn the karma that makes one a future Tīrthaṅkara, the highest rank Jain tradition recognises.</div>
+  <div class="tieback">Valluvar ranks relieving others&#x27; hunger above the ascetic&#x27;s power to endure hunger. This passage likewise gives service to others a spiritual fruit that austerity alone does not bring.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Without this grain, time does not pass in peace. Forsaking this grain, one does not meet the Lord of the World.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 873, Raag Gond, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In a hymn that opens by calling those who give up food hypocrites, Bhagat Kabir insists that food sustains life and that abandoning it does not bring anyone to God.</div>
+  <div class="tieback">Valluvar ranks relieving hunger above the ascetic&#x27;s power to endure it, and Kabir in the Guru Granth Sahib likewise refuses to treat fasting and self-starvation as a path to God.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Prometheus steals fire from the gods and gives it to mortals so that they can cook food and survive, and is punished by Zeus by being chained to a rock where an eagle eats his liver.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Hesiod, Theogony 561-616</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Prometheus uses his power not for himself but to meet human need, at great cost.</div>
+  <div class="tieback">Like the Kural, it honours power used to relieve others’ want above power used for oneself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;If it is in our power to prevent something bad from happening, without thereby sacrificing anything of comparable moral importance, we ought, morally, to do it.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.givingwhatwecan.org/get-involved/videos-books-and-essays/famine-affluence-and-morality-peter-singer" target="_blank" rel="noopener">Peter Singer, “Famine, Affluence, and Morality” (1972)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Peter Singer argues that people who can relieve starvation at modest cost are morally obliged to do so.</div>
+  <div class="tieback">Like the Kural, Singer makes the relief of hunger a central moral demand and a measure of moral strength.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Ramakrishna Mission&#x27;s monks begin famine relief at Mahula</div>
+  <div class="rle-meta">May 1897 &middot; Mahula, Murshidabad district, Bengal, India</div>
+  <div class="quote is-paraphrase">In 1897 Swami Vivekananda founded the Ramakrishna Mission near Calcutta, with the twofold aim of spreading Vedanta and improving social conditions in India. That May, Swami Akhandananda, a monk of the order who had found famine-stricken villages in Murshidabad district, opened the Mission&#x27;s first famine relief centre at Mahula, obtaining rice and distributing it to the hungry, with fellow monks and funds sent to help. The relief work lasted about a year.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">An order of renunciant monks made the feeding of the hungry a central part of their religious life rather than devoting themselves only to personal austerity.</div>
+  <div class="tieback">The kural ranks the strength of those who relieve others&#x27; hunger above the ascetic&#x27;s strength to endure hunger, and here ascetics themselves turned to relieving hunger.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-23/" target="_blank" rel="noopener">Thirukural Chapter 23: ஈகை / Giving (Tamil text, commentaries by Mu. Varadarasan, Solomon Pappaiah, Kalaignar; Pope couplet translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://murugaa.com/thirukkural/chapters/23" target="_blank" rel="noopener">திருக்குறள் 23. ஈகை — Thirukkural Chapter 23 with Meaning</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/sb/9/21/12/" target="_blank" rel="noopener">Srimad-Bhagavatam 9.21.12, translated by A. C. Bhaktivedanta Swami Prabhupada</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://en.wikipedia.org/wiki/Jataka_tales" target="_blank" rel="noopener">Jataka tales (overview of the Jataka collection, including the Sasa and Sivi Jatakas)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Theogony (Hesiod)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.givingwhatwecan.org/get-involved/videos-books-and-essays/famine-affluence-and-morality-peter-singer" target="_blank" rel="noopener">Peter Singer, “Famine, Affluence, and Morality,” Philosophy &amp; Public Affairs 1:3 (1972)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/topic/Ramakrishna-Mission" target="_blank" rel="noopener">Ramakrishna Mission</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://belurmath.org/swami-akhandananda/" target="_blank" rel="noopener">Swami Akhandananda</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0224.html">&larr; Kural 224</a>
+  <a href="kural-0226.html">Kural 226 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-023.html">Philanthropy</a>
+  <a class="skip-btn" href="kural-0231.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 645 — Oratory | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 645</h1>
+<p class="adhikaram"><a href="adhikaram-065.html">Oratory</a> &middot; Solvanmai &middot; <span class="tamil">சொல்வன்மை</span></p>
+
+<div class="tamil-text">சொல்லுக சொல்லைப் பிறிதோர்சொல் அச்சொல்லை
+வெல்லுஞ்சொல் இன்மை அறிந்து.</div>
+<div class="translit">Solluka sollaip pirithorsol achchollai
+Vellunjol inmai arindhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Say what you have to say only after making sure that no one can say something that beats your words.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Before you give your answer in a debate, check it from every side, like testing a bridge before you walk on it. If nobody can knock it down, then say it.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet is famous for its sound play: col (word) appears five times in two lines, in collu-ka, collai, piṟitōr col, accollai and vellum col, so the verse enacts the verbal skill it recommends. The sense is that before speaking one should know (aṟintu) that no other word (piṟitu ōr col) that would overcome (vellum) that word exists (inmai). Parimelazhagar applies this to the minister in council, whose proposal must be answer-proof before it is offered to the king; Mu. Varadarasanar and Kalaignar say the same. The older edition shows sandhi forms (பிறிதோர்சொ லச்சொல்லை / வெல்லுஞ்சொ லின்மை யறிந்து), with no difference in meaning.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">At King Janaka’s great debate, the sage Yajnavalkya answers challenger after challenger (Ashvala, Artabhaga, Gargi, Uddalaka and others) until none can refute him, and Gargi declares that no one will defeat him in argument about Brahman.</div>
+  <div class="cite">&mdash; <a href="https://www.swami-krishnananda.org/brdup/brhad_V-01.html" target="_blank" rel="noopener">Brihadaranyaka Upanishad, Book 3</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Upanishad presents Yajnavalkya’s answers as so exact that every counter-argument fails.</div>
+  <div class="tieback">Speech that no other speech can defeat is exactly what Yajnavalkya shows in Janaka’s court.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For I will give you a mouth and wisdom, which all your adversaries shall not be able to gainsay nor resist.&rdquo;</div>
+  <div class="cite">&mdash; Luke 21:15 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus promises his disciples that when they are put on trial they will be given words their opponents cannot answer.</div>
+  <div class="tieback">Words no adversary can gainsay are the Kural’s speech that no other word can overcome.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And We strengthened his kingdom and gave him wisdom and discernment in speech.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 38:20 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">David is given faṣl al-khiṭāb, which exegetes understand as decisive, conclusive speech that settles a matter.</div>
+  <div class="tieback">Decisive speech that ends dispute is the Kural’s speech that cannot be defeated.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Rabbi Eleazar teaches in Pirkei Avot to be diligent in study and to know what to answer an unbeliever (apikoros).</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 2:14</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The sage urges preparing answers in advance so that one’s reply to a challenger is sound.</div>
+  <div class="tieback">Preparing a reply that will hold against challenge is the discipline the Kural asks for before speaking.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The debater Saccaka boasts that no one could face him in debate without trembling, but when he challenges the Buddha his own theses are refuted, and he is left silent and sweating before the assembly.</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/mn35" target="_blank" rel="noopener">Majjhima Nikaya 35 (Cūḷasaccaka Sutta)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The sutta contrasts a boastful debater with the Buddha, whose carefully built answers cannot be overturned.</div>
+  <div class="tieback">The Buddha’s unanswerable replies show the kind of speech the Kural means; Saccaka shows what happens without it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Well considering (what one is to say), speaking with precision, one should employ language in moderation and restraint.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Ācārāṅga Sūtra II.4.1.3 (tr. Hermann Jacobi, SBE 22, 1884; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Acaranga asks the monk to weigh every word, down to number, gender and tense, before speaking, so that what he says is exact and cannot be faulted.</div>
+  <div class="tieback">The kural says to speak only after making sure no other word can defeat one&#x27;s own; the Jain rule of careful, precise speech aims at the same unassailable word.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">At Gorakhmata, Macauliffe relates from the Sikh biographies, Siddhs pressed the young Guru Nanak to put on the yogi&#x27;s dress; he answered with a hymn saying religion lies not in patched coats, earrings or ashes but in living pure amid the impurities of the world, and the Siddhs, unable to answer him, made obeisance.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">Max Arthur Macauliffe, The Sikh Religion, vol. 1 (1909), Life of Guru Nanak, ch. V, pp. 59-61</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak met the yogis on their own ground with a reply so complete that it ended the dispute, a pattern repeated in his recorded discourses with the Siddhs.</div>
+  <div class="tieback">The Kural advises speaking only after making sure no other word can defeat yours; in this account Guru Nanak&#x27;s answer to the Siddhs left them no rejoinder.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">After Achilles dies, Ajax and Ulysses (Odysseus) compete by speech for his armour before the Greek chiefs, and Ulysses’ carefully built argument defeats Ajax’s appeal to his strength.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses 13.1-398</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Ovid’s retelling, the armour goes to the man whose speech the council cannot answer.</div>
+  <div class="tieback">Ulysses wins because no counter-speech could overcome his, the Kural’s test for speaking.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle argues that the rhetorician must be able to argue both sides of a question, not to argue for the worse, but so that he can see how things stand and refute anyone who argues unfairly.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/rhetoric.html" target="_blank" rel="noopener">Aristotle, Rhetoric 1.1, 1355a</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Aristotle, good rhetoric means anticipating every counter-argument.</div>
+  <div class="tieback">Knowing the opposing case in advance is how one makes sure that no word can defeat one’s own.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Gandhi pleads guilty at the Great Trial in Ahmedabad</div>
+  <div class="rle-meta">18 March 1922 &middot; Circuit House, Ahmedabad, India</div>
+  <div class="quote is-paraphrase">Charged with sedition for three articles in his weekly Young India, Mohandas Gandhi pleaded guilty before Judge Robert Broomfield, leaving the prosecution nothing to prove. He then read a written statement explaining how he had turned from loyalty to the British Empire to non-cooperation, and said he was there to submit to the highest penalty the law could impose for what he regarded as the highest duty of a citizen. The judge, acknowledging that many regarded Gandhi as a great patriot, sentenced him to six years and said no one would be better pleased than he if the government later reduced the sentence.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">By admitting the facts and accepting the penalty in advance, Gandhi left no ground for argument against him and turned the trial into an examination of British rule.</div>
+  <div class="tieback">The kural advises speaking only after making sure no other word can defeat one&#x27;s own, and Gandhi&#x27;s carefully prepared statement left the court with nothing to refute.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-65/" target="_blank" rel="noopener">Thirukkural Chapter 65: சொல்வன்மை / Power of Speech (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A065.html" target="_blank" rel="noopener">65. சொல்வன்மை (Thirukkural, sandhi-joined text)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.swami-krishnananda.org/brdup/brhad_V-01.html" target="_blank" rel="noopener">Bṛhadāraṇyaka Upaniṣad, Chapter 5 (the teaching of the thunder, &#x27;Da Da Da&#x27;)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://suttacentral.net/mn35" target="_blank" rel="noopener">Cūḷasaccaka Sutta (Majjhima Nikaya 35)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Ākārāṅga Sūtra (Acaranga Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">The Sikh Religion: Its Gurus, Sacred Writings and Authors (6 vols.) (Max Arthur Macauliffe)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses, Book 1 (the flood of Deucalion and Pyrrha, 1.253–415)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/rhetoric.html" target="_blank" rel="noopener">Aristotle, Rhetoric</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.gandhiheritageportal.org/gandhi_heritage_site/writeup/MTI=" target="_blank" rel="noopener">Court Room, Circuit House, Ahmedabad</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.theindiaforum.in/article/great-trial-1922" target="_blank" rel="noopener">The Great Trial of 1922 (Venu Madhav Govindu)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0644.html">&larr; Kural 644</a>
+  <a href="kural-0646.html">Kural 646 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-065.html">Oratory</a>
+  <a class="skip-btn" href="kural-0651.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

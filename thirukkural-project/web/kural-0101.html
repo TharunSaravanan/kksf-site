@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 101 — Gratitude Recognition | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 101</h1>
+<p class="adhikaram"><a href="adhikaram-011.html">Gratitude Recognition</a> &middot; Seynnanri Arithal &middot; <span class="tamil">செய்ந்நன்றி அறிதல்</span></p>
+
+<div class="tamil-text">செய்யாமல் செய்த உதவிக்கு வையகமும்
+வானகமும் ஆற்றல் அரிது.</div>
+<div class="translit">Seyyaamal seydha udhavikku vaiyagamum
+Vaanagamum aatral aridhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Help given to you when you had done nothing for the helper is so great that even earth and heaven together could not repay it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a kid you barely know shares their lunch with you on a day you forgot yours, even though you never did anything for them. This kural says a kindness like that is so big that even if you gave them the whole world and the sky too, it still would not be enough to pay it back.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter opens with its most extreme claim. Parimelazhagar reads செய்யாமல் செய்த உதவி as help rendered to someone who had done no prior service to the giver: a benefit that is not itself a repayment and therefore springs from pure goodwill. The predicate வையகமும் வானகமும் ஆற்றல் அரிது (earth and heaven can hardly equal it) deliberately places the debt beyond any possible exchange; if the terrestrial and celestial worlds together are inadequate, gratitude cannot be discharged by payment and must become a permanent disposition instead. This anticipates a problem that Aristotle (Nicomachean Ethics 8.14) and Seneca (De Beneficiis) would both recognise: a class of benefits, above all those from parents and gods, that no return can equal. Placing the chapter in the இல்லறவியல் (householder&#x27;s section), immediately after Pleasant Speech, frames gratitude as a social virtue that sustains the web of reciprocity on which household and community life depend.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;That trouble (and pain) which the parents undergo on the birth of (their) children, cannot be compensated even in a hundred years.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">Manusmriti 2.227 (G. Bühler trans., Sacred Books of the East vol. 25)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Laws of Manu say that what parents go through to bring a child into the world is a debt so large that a whole century of repayment would not settle it.</div>
+  <div class="tieback">Like the Kural, it names a kindness that no amount of return can ever balance out.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us.&rdquo;</div>
+  <div class="cite">&mdash; Romans 5:8 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul says God&#x27;s love is shown by the fact that Christ died for people before they had done anything to deserve it, while they were still in the wrong.</div>
+  <div class="tieback">This is the ultimate &#x27;help given when nothing was done to earn it&#x27;, the exact kind of help the Kural calls beyond repayment.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;He who does not thank the people is not thankful to Allah.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/abudawud:4811" target="_blank" rel="noopener">Sunan Abi Dawud 4811 (graded sahih by al-Albani)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet taught that a person who fails to thank the humans who help them has not truly thanked God either.</div>
+  <div class="tieback">It raises gratitude to a human helper to the level of a religious duty, echoing the Kural&#x27;s claim that such help outweighs heaven and earth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Then she fell on her face, and bowed herself to the ground, and said unto him, Why have I found grace in thine eyes, that thou shouldest take knowledge of me, seeing I am a stranger?&rdquo;</div>
+  <div class="cite">&mdash; Ruth 2:10 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Ruth, a poor foreigner gleaning in Boaz&#x27;s field, bows to the ground in astonishment that a stranger with no obligation to her would show her such kindness.</div>
+  <div class="tieback">Ruth&#x27;s response models the Kural&#x27;s attitude: overwhelming gratitude for kindness she had not earned from the giver.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;If you were to establish your mother &amp; father in absolute sovereignty over this great earth, abounding in the seven treasures, you would not in that way pay or repay your parents.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an02/an02.031.than.html" target="_blank" rel="noopener">Anguttara Nikaya 2.32 (Kataññu Sutta, Thanissaro Bhikkhu trans.)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha says that even making your parents rulers of the whole earth and all its treasures would not repay what they did for you.</div>
+  <div class="tieback">Almost the same image as the Kural: the entire earth is not enough to repay a great kindness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Asked who should receive the rain of treasure that fell when she fed Mahāvīra, the former slave-girl Candanā answered: “Sheth Dhanāvaha, truly my father because of his protection of me.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Hemacandra, Triṣaṣṭiśalākāpuruṣacaritra, Book X (Mahāvīracaritra), ch. IV, part 7 &#x27;The story of Candanā&#x27; (tr. Helen M. Johnson, GOS; wisdomlib.org)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">In Hemacandra&#x27;s life of Mahāvīra, the merchant Dhanāvaha buys the captive princess Vasumatī off the street purely out of compassion, though she was a stranger who owed him nothing; when the gods later shower treasure on her, she gives the whole of it to him.</div>
+  <div class="tieback">Dhanāvaha&#x27;s help came to a girl who had never done anything for him, and Candanā&#x27;s answer treats that unearned rescue as worth more than a divine treasure, which is the measure Valluvar sets for help given without prior cause.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;You bless me with everything, showering me with Mercy; And I am such an ungrateful wretch!&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 809, Raag Bilaaval, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Guru Arjan contrasts God&#x27;s unearned, unceasing generosity with the human failure to acknowledge it; in Gurbani every blessing is grace, given before any merit of ours.</div>
+  <div class="tieback">Like the Kural&#x27;s help given to one who had done nothing to deserve it, the Lord&#x27;s gifts here are wholly unearned, and the only fitting response is a gratitude that can never repay them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In the Odyssey, the swineherd Eumaeus welcomes a ragged stranger (Odysseus in disguise) who has never done anything for him, feeds him from his own scanty stock, and says strangers and beggars come from Zeus; Odysseus prays that Zeus grant his host his heart&#x27;s desire in return.</div>
+  <div class="cite">&mdash; Homer, Odyssey 14.29-59 <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">A poor servant freely feeds a beggar he owes nothing to, and the beggar, moved, asks the gods to repay what he himself cannot.</div>
+  <div class="tieback">It shows unprompted kindness whose worth is so great that only the gods can balance it, close to the Kural&#x27;s heaven-and-earth image.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;for no one could ever return to them the equivalent of what he gets, but the man who serves them to the utmost of his power is thought to be a good man.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics 8.14, 1163b (W. D. Ross trans.)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Aristotle says that with gods and parents we can never pay back an equal amount, so a good person simply does as much as they possibly can.</div>
+  <div class="tieback">Same insight as the Kural: some benefits are too large to repay, so gratitude becomes a lifelong attitude rather than a settled account.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Raoul Wallenberg protects the Jews of Budapest</div>
+  <div class="rle-meta">July 1944 - January 1945 &middot; Budapest, Hungary</div>
+  <div class="quote is-paraphrase">Swedish businessman Raoul Wallenberg, recruited by the US War Refugee Board and given diplomatic status by the Swedish legation, arrived in Budapest on 9 July 1944 and began distributing Swedish certificates of protection to Hungarian Jews. Using Swedish and War Refugee Board funds he set up hospitals, nurseries, a soup kitchen and more than 30 protected houses, and he repeatedly intervened in person to have holders of protective papers released from deportation columns. He was last seen with Soviet officials on 17 January 1945 and disappeared in Soviet custody.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Wallenberg had no prior tie to the people he protected and nothing to gain from them; many of those he helped never had the chance even to thank him, and his fate has never been fully explained.</div>
+  <div class="tieback">Help given to strangers who had done nothing to earn it, at the risk of the giver&#x27;s own life, is exactly the kind of benefit the kural says earth and heaven together could not repay.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-11/" target="_blank" rel="noopener">Thirukkural Chapter 11: செய்ந்நன்றி அறிதல் / Gratitude (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries, Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://thirukkural.net/ta/kural/adhigaram-011.html" target="_blank" rel="noopener">செய்ந்நன்றி அறிதல் - அதிகாரம் 11 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">The Laws of Manu (Manusmṛti), translated by Georg Bühler, Sacred Books of the East vol. 25 (Oxford, 1886)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/abudawud:4811" target="_blank" rel="noopener">Sunan Abi Dawud 4811, Chapter: Regarding gratitude for acts of kindness</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.accesstoinsight.org/tipitaka/an/an02/an02.031.than.html" target="_blank" rel="noopener">Kataññu Suttas: Gratitude (AN 2.31-32), Thanissaro Bhikkhu trans.</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, tr. W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://encyclopedia.ushmm.org/content/en/article/raoul-wallenberg-and-the-rescue-of-jews-in-budapest" target="_blank" rel="noopener">Raoul Wallenberg and the Rescue of Jews in Budapest (United States Holocaust Memorial Museum)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.pbs.org/wgbh/americanexperience/features/holocaust-wallenberg/" target="_blank" rel="noopener">Raoul Wallenberg (1912-?) (American Experience)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0100.html">&larr; Kural 100</a>
+  <a href="kural-0102.html">Kural 102 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-011.html">Gratitude Recognition</a>
+  <a class="skip-btn" href="kural-0111.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 277 — Inconsistent Conduct | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 277</h1>
+<p class="adhikaram"><a href="adhikaram-028.html">Inconsistent Conduct</a> &middot; Koodaavozhukkam &middot; <span class="tamil">கூடாவொழுக்கம்</span></p>
+
+<div class="tamil-text">புறங்குன்றி கண்டனைய ரேனும் அகங்குன்றி
+முக்கிற் கரியார் உடைத்து.</div>
+<div class="translit">Purangundri kandanaiya renum agangundri
+Mukkir kariyaar udaiththu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Some people are bright red on the outside like the kundri seed (a small red seed), but inside they are as black as the seed&#x27;s dark tip.</p>
+
+<h2 class="section">Elementary</h2>
+<p>There’s a tiny seed that is shiny red all over — except for one small black spot. Some people are like that: they look bright and good on the outside, but they hide a dark spot inside. Don’t judge only by the shiny part.</p>
+
+<h2 class="section">University</h2>
+<p>The kundri (குன்றி, Abrus precatorius) is a brilliant scarlet seed with a black spot at its ‘nose’ (மூக்கு); Valluvar makes it an emblem of the hypocrite, crimson-bright in outward piety, black at the core. The line plays on the repeated குன்றி in புறம் (outer) and அகம் (inner) — the fundamental Tamil poetic pair — so that the seed embodies both states at once. The seed was also used as a jeweller’s weight and is poisonous, which adds a latent irony: something small, attractive and valued conceals toxicity. The image anticipates Jesus’ ‘whited sepulchres’ and Hesiod’s Pandora — beauty outside, deceit within.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;That Brahmana, who with downcast look, of a cruel disposition, is solely intent on attaining his own ends, dishonest and falsely gentle, is one who acts like a heron.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">Manusmriti 4.196 (Bühler translation)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Manu describes the ‘heron’ pretender who keeps his eyes lowered like a meditating saint but is cruel and selfish inside.</div>
+  <div class="tieback">Like the kundri seed, the heron-ascetic shows a gentle surface and a dark interior.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Woe unto you, scribes and Pharisees, hypocrites! for ye are like unto whited sepulchres, which indeed appear beautiful outward, but are within full of dead men’s bones, and of all uncleanness.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 23:27 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus likens hypocrites to whitewashed tombs — bright outside, full of corruption inside.</div>
+  <div class="tieback">The Christian twin of the kundri seed: a beautiful exterior with darkness at the core.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;The signs of a hypocrite are three: 1. Whenever he speaks, he tells a lie. 2. Whenever he promises, he always breaks it… 3. If you trust him, he proves to be dishonest.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:33" target="_blank" rel="noopener">Sahih al-Bukhari 33</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet lists the hidden traits by which someone who looks like a believer can be recognised as a hypocrite.</div>
+  <div class="tieback">Tells us how to find the ‘black tip’ behind the bright exterior: look at speech, promises and trust.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Burning lips and a wicked heart are like a potsherd covered with silver dross.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 26:23 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Proverbs compares warm, fervent speech covering a wicked heart to a cheap clay pot coated with a silvery glaze.</div>
+  <div class="tieback">A shiny surface over something base — the same contrast as the kundri’s red body and black tip.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Not by mere eloquence nor by beauty of form does a man become accomplished, if he is jealous, selfish and deceitful.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 262 (tr. Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha says fine speech and good looks mean nothing if the person inside is envious, selfish and deceptive.</div>
+  <div class="tieback">Same contrast as the Kural: a fine exterior cannot redeem a dark interior.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;He is empty like a clenched fist, (of no value) like an uncoined false Kârshâpana or like a piece of glass resembling turquoise, he is held lightly by men of discernment.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 20.42 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The false monk is compared to things that look valuable but are hollow or counterfeit, which discerning people see through.</div>
+  <div class="tieback">Valluvar&#x27;s kundri seed, bright red outside but black at the tip, matches this Jain image of coloured glass passing for a gem and a false coin passing for real money.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Bronze is bright and shiny, but when it is rubbed, its blackness appears.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 729, Raag Soohee, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Guru Nanak opens a hymn in Raag Soohee with the image of polished bronze, bright on the surface but leaving black marks once it is rubbed, as a picture of a person who only looks good.</div>
+  <div class="tieback">Valluvar&#x27;s kundri seed is bright red outside with a black tip; Guru Nanak&#x27;s bronze is likewise bright outside and black underneath.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Also the Guide, the Slayer of Argus, contrived within her lies and crafty words and a deceitful nature at the will of loud thundering Zeus…&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 69–82 (tr. H. G. Evelyn-White)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The gods adorn Pandora with beauty and finery, but Hermes places lies and a deceitful nature inside her.</div>
+  <div class="tieback">Pandora is the mythic kundri seed: dazzling outside, deceit within.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;But the affectation of simplicity is like a crooked stick. Nothing is more disgraceful than a wolfish friendship (false friendship). Avoid this most of all. The good and simple and benevolent show all these things in the eyes, and there is no mistaking.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Antoninus/meditations.5.five.html" target="_blank" rel="noopener">Marcus Aurelius, Meditations 11.15 (tr. George Long)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Marcus Aurelius says pretended goodness is twisted and false friendship is the worst disgrace; real goodness shows plainly.</div>
+  <div class="tieback">Condemns the same split between an appealing outside and a hidden, predatory inside.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The collapse of Ivar Kreuger, the Match King</div>
+  <div class="rle-meta">March 1932 &middot; Paris, France, and Stockholm, Sweden</div>
+  <div class="quote is-paraphrase">The Swedish financier Ivar Kreuger built a business empire that controlled much of the world&#x27;s match production and lent large sums to governments, and he was widely admired as a financial genius. After his death in Paris in March 1932, auditors from Price Waterhouse found that many of the assets and profits recorded by his companies were fictitious and that he had forged Italian government bonds. His group of companies collapsed and many of them went bankrupt.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Kreuger&#x27;s dazzling reputation concealed a hollow and fraudulent core that was revealed only when he was gone.</div>
+  <div class="tieback">The kural speaks of people who look as bright red outside as the kundri seed but are black within like its tip, and Kreuger&#x27;s empire was exactly such a bright surface over a dark centre.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-28/" target="_blank" rel="noopener">Thirukkural Chapter 28: கூடாவொழுக்கம் (Imposture) — text, commentaries and translation</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-028.html" target="_blank" rel="noopener">கூடாவொழுக்கம் — அதிகாரம் 28 — திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">The Laws of Manu (Manusmṛti), translated by Georg Bühler, Sacred Books of the East vol. 25 (Oxford, 1886)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:33" target="_blank" rel="noopener">Sahih al-Bukhari 33 — The signs of a hypocrite</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Antoninus/meditations.5.five.html" target="_blank" rel="noopener">Marcus Aurelius, Meditations Book 5, trans. George Long</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/money/Ivar-Kreuger" target="_blank" rel="noopener">Ivar Kreuger</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://business.time.com/2009/01/05/forget-charles-ponzi-and-bernie-madoff-ivar-kreuger-is-the-all-time-fraud-champ/" target="_blank" rel="noopener">Forget Charles Ponzi (and Bernie Madoff). Ivar Kreuger is the all-time fraud champ</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0276.html">&larr; Kural 276</a>
+  <a href="kural-0278.html">Kural 278 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-028.html">Inconsistent Conduct</a>
+  <a class="skip-btn" href="kural-0281.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

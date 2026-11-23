@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 69 — The Wealth of Children | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 69</h1>
+<p class="adhikaram"><a href="adhikaram-007.html">The Wealth of Children</a> &middot; Pudhalvaraip Perudhal &middot; <span class="tamil">புதல்வரைப் பெறுதல்</span></p>
+
+<div class="tamil-text">ஈன்ற பொழுதின் பெரிதுவக்கும் தன்மகனைச்
+சான்றோன் எனக்கேட்ட தாய்.</div>
+<div class="translit">Eendra Pozhudhin Peridhuvakkum Thanmakanaich,
+Chaandron Enakketta Thaai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A mother who hears people call her son a good and wise man feels more joy than she did on the day he was born.</p>
+
+<h2 class="section">Elementary</h2>
+<p>The day a baby is born is one of the happiest days a mother ever has. But this kural says there is a day that beats it: the day she overhears other people saying her child has grown up to be a genuinely good person.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet&#x27;s force comes from the word சான்றோன் (cāṉṟōṉ), from the root சால் — &quot;filled up, complete, sufficient.&quot; A cāṉṟōṉ is not merely a clever or successful man but one who is full in character, and the term carries enormous weight in Tamil ethical vocabulary; the Kural devotes a whole later chapter, சான்றாண்மை, to the quality. The second load-bearing word is கேட்ட (kēṭṭa, &quot;having heard&quot;): the mother&#x27;s supreme joy arrives not from seeing but from hearing others say it. Parimēlaḻakar reads this carefully, arguing that the ordinary joy of birth is the joy of what is seen with the eyes on one&#x27;s lap, while this is the distinct and greater joy of hearing one&#x27;s child pronounced complete by those qualified to judge. He also notes that the couplet names the mother specifically because her joy admits of no measure, which is why Valluvar separates it from the father&#x27;s case in 67. Read alongside 70, the chapter closes with a matched pair — the mother&#x27;s joy, then the father&#x27;s requital — with public reputation as the currency of both.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Kausalyā&#x27;s happiness in the Rāmāyaṇa is repeatedly portrayed not as pride in having borne a prince but as joy at the universal testimony of Ayodhyā&#x27;s people to Rāma&#x27;s righteousness — and her deepest grief, at his exile, is grief at being separated from a son whom everyone calls good.</div>
+  <div class="cite">&mdash; <a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Vālmīki Rāmāyaṇa, Ayodhyā Kāṇḍa (Kausalyā and Rāma)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The epic consistently locates a mother&#x27;s happiness in what the community says about her son&#x27;s character rather than in his rank or her own act of bearing him.</div>
+  <div class="tieback">Both texts make the mother&#x27;s great joy depend on hearing her son publicly reckoned a man of worth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;I have no greater joy than to hear that my children walk in truth.&rdquo;</div>
+  <div class="cite">&mdash; 3 John 1:4 (King James Version) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The elder writing to Gaius reports that travelling brethren have brought back news of Gaius&#x27;s conduct, and says that receiving such a report is the height of his happiness.</div>
+  <div class="tieback">This is the Kural&#x27;s exact structure — the joy is in hearing the report of a child&#x27;s moral worth, and it is named as the greatest joy there is.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And when she delivered her, she said, &#x27;My Lord, I have delivered a female.&#x27; And Allah was most knowing of what she delivered... Every time Zechariah entered upon her in the prayer chamber, he found with her provision. He said, &#x27;O Mary, from where is this [coming] to you?&#x27;&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 3:36–37, Sūrat Āl ʿImrān (Sahih International) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The wife of ʿImrān dedicates her child before birth and is initially disappointed at the outcome; the narrative then vindicates the daughter through Zechariah&#x27;s repeated astonishment at Mary&#x27;s standing with God.</div>
+  <div class="tieback">It touches the Kural&#x27;s theme — a mother&#x27;s estimate of her child transformed by what is later witnessed of that child&#x27;s worth — but only obliquely.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;The father of the righteous shall greatly rejoice: and he that begetteth a wise child shall have joy of him. Thy father and thy mother shall be glad, and she that bare thee shall rejoice.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 23:24–25 (King James Version) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The proverb moves from the general case to a direct address, and singles out the woman who gave birth as the one who will rejoice.</div>
+  <div class="tieback">The phrase &quot;she that bare thee shall rejoice&quot; is almost a translation of the Kural&#x27;s ஈன்ற... தாய் — the one who bore you, rejoicing at your wisdom.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">Rūpasārī, the brahmin mother of Sāriputta, had long resented her son&#x27;s renunciation; on the night of his death in the room where he was born, she saw the great deities of the heavens come in succession to attend him, realised what her son actually was, and only then rejoiced in him — after which he taught her and she attained stream-entry.</div>
+  <div class="cite">&mdash; <a href="https://en.wikipedia.org/wiki/R%C5%ABpa%C5%9B%C4%81r%C4%AB" target="_blank" rel="noopener">Pali commentarial tradition on Sāriputta&#x27;s death (Dhammapada Commentary; see also SN 47.13)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The commentarial tradition preserves this as the story of a mother who came late and overwhelmingly to the knowledge of her son&#x27;s true stature.</div>
+  <div class="tieback">Like the Kural, it makes the mother&#x27;s supreme joy arrive not at birth but at the moment her son is recognised for what he has become.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Then the eye-disease was washed away like mud by Lady Marudevī’s copious tears of joy, when she heard this. She saw her son’s Tirthakṛt-splendor accompanied by the supernatural powers, and from joy at the sight of that, her absorption-in-that took place.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Hemacandra, Trishashtishalakapurushacharitra, Book I (Âdîshvaracharitra), ch. III, part 12, &#x27;Marudevî&#x27;s omniscience and death&#x27; (tr. Helen M. Johnson, GOS, 1931)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Marudevî had wept herself nearly blind with grief for her son Rishabha, the first Tîrthankara, who had become a wandering ascetic; when Bharata told her of her son&#x27;s glory, her tears of joy healed her eyes and she attained omniscience and liberation then and there.</div>
+  <div class="tieback">A mother whose joy on hearing her son praised exceeds anything she felt before is exactly this kural&#x27;s picture, and the Jain account makes that joy powerful enough to liberate her.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;O son, this is your mother’s hope and prayer, that you may never forget the Lord, Har, Har, even for an instant. May you ever vibrate upon the Lord of the Universe.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 496, Raag Gujri, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In this hymn, known among Sikhs as &#x27;Poota Mata Ki Asees&#x27; (a mother&#x27;s blessing to her son), Guru Arjan puts into a mother&#x27;s mouth her deepest wish: not wealth or rank for her son, but a life of constant remembrance of God.</div>
+  <div class="tieback">Like Valluvar&#x27;s mother, whose greatest joy is to hear her son called a person of true worth, this mother&#x27;s highest hope is fixed on her son&#x27;s character, not on his birth or fortune.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;She then, seized with wonder, went back to her chamber, for she laid to heart the wise saying of her son.&rdquo;</div>
+  <div class="cite">&mdash; Homer, Odyssey 1.360 (trans. A. T. Murray, Loeb Classical Library, 1919) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Penelope has come down to ask the bard to stop his song; Telemachus, for the first time in the poem, answers her as a grown man and sends her back upstairs — and Homer records that what she takes away is not offence but amazement at his wisdom.</div>
+  <div class="tieback">It is the Kural&#x27;s moment precisely: a mother&#x27;s wonder at hearing her son reveal himself as a man of sense.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle observes that mothers who have given their children away to be raised elsewhere go on loving them and rejoice when they recognise them prospering, without ever seeking to be loved in return — because loving, rather than being loved, is what the affection of a parent consists in.</div>
+  <div class="cite">&mdash; <a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics VIII.8, 1159a (Bekker)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">For Aristotle a mother&#x27;s characteristic pleasure is in the child&#x27;s good as such, not in any benefit she receives from it.</div>
+  <div class="tieback">It explains philosophically why the Kural&#x27;s mother rejoices at a report she gains nothing from — it is the good of the child, heard about, that constitutes the joy.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Einstein sends his ailing mother news that his theory has been confirmed</div>
+  <div class="rle-meta">27 September 1919 &middot; Berlin, Germany</div>
+  <div class="quote is-paraphrase">In September 1919 Albert Einstein learned by telegram from the physicist H. A. Lorentz that British eclipse expeditions had confirmed the bending of starlight by the Sun predicted by his general theory of relativity. He at once sent a postcard with the good news to his mother, Pauline, who was seriously ill, and in the same card wished he could keep her company. Einstein became world-famous after the results were announced in November 1919, and his mother, whom he brought to his Berlin home at the end of that year, died there in February 1920.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">In the last months of her life, a mother heard that her son had been proved right before the whole scientific world.</div>
+  <div class="tieback">The kural says a mother&#x27;s joy on hearing her son called a person of true worth exceeds her joy at his birth, and Pauline Einstein lived just long enough to hear her son acclaimed.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.tamillexicon.com/thirukkural/araththuppaal/illaraviyal/pudhalvaraip-perudhal" target="_blank" rel="noopener">மக்கட்பேறு / The Wealth of Children / Pudhalvaraip Perudhal — Thirukkural Chapter 7, with Tamil paraphrase, Pope couplet, explanation and transliteration</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-007.html" target="_blank" rel="noopener">The Wealth of Children — Adhigaram 7, Thirukkural (Tamil text, transliteration, Brahmi script and multilingual translations)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.thirukkural.com/2009/01/blog-post_14.html" target="_blank" rel="noopener">மக்கட்பேறு — Thirukkural Chapter 7 with the classical commentaries of Parimelalagar, Manakkudavar, Mu. Varadarajan, Salamon Pappaiah and Kalaignar</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.ytamizh.com/thirukural/chapter-7/" target="_blank" rel="noopener">மக்கட்பேறு / புதல்வரைப் பெறுதல் — Thirukkural Chapter 7, Kurals 61–70 with Tamil commentaries and English translation</a> <span class="tier">[web source]</span></li>
+<li id="cite-5"><a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Vālmīki Rāmāyaṇa (Bāla Kāṇḍa: the putrakāmeṣṭi of Daśaratha; Ayodhyā Kāṇḍa: Kausalyā and Rāma)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://en.wikipedia.org/wiki/R%C5%ABpa%C5%9B%C4%81r%C4%AB" target="_blank" rel="noopener">The conversion of Rūpasārī, mother of Sāriputta, at her son&#x27;s deathbed (Pali commentarial tradition; cf. Saṃyutta Nikāya 47.13)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-9"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, translated by W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://history.aip.org/exhibits/einstein/fame1_text.htm" target="_blank" rel="noopener">Albert Einstein: Image and Impact (American Institute of Physics)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://einsteinpapers.press.princeton.edu/vol9-doc/31" target="_blank" rel="noopener">The Collected Papers of Albert Einstein, Volume 9 (Introduction) (Einstein Papers Project)</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0068.html">&larr; Kural 68</a>
+  <a href="kural-0070.html">Kural 70 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-007.html">The Wealth of Children</a>
+  <a class="skip-btn" href="kural-0071.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

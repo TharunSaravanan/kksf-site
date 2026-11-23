@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 505 — Selection and Confidence | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 505</h1>
+<p class="adhikaram"><a href="adhikaram-051.html">Selection and Confidence</a> &middot; Therindhu Thelithal &middot; <span class="tamil">தெரிந்து தெளிதல்</span></p>
+
+<div class="tamil-text">பெருமைக்கும் ஏனைச் சிறுமைக்கும் தத்தம்
+கருமமே கட்டளைக் கல்.</div>
+<div class="translit">Perumaikkum aenaich chirumaikkum thaththam
+Karumame kattalaik kal.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Whether a person is great or mean and small, their own actions are the test that shows it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A jeweller checks whether a ring is real gold by rubbing it on a special black stone and looking at the streak. You can check whether someone is really kind the same way, by looking at what they actually do, not what they say or what they wear.</p>
+
+<h2 class="section">University</h2>
+<p>கட்டளைக் கல் is the goldsmith’s touchstone (உரைகல்): gold rubbed on it leaves a streak whose colour shows its purity. The couplet says that deeds (கருமம், from Sanskrit karma) are such a stone for both பெருமை (greatness) and சிறுமை (meanness), and the emphatic ஏ in கருமமே excludes other tests such as birth, wealth or eloquence. It completes the lesson of 502: family is a starting presumption, but conduct is the decisive proof. Sivayogi Sivakumar reads கட்டளைக் கல் as an inscribed ‘edict stone’ that guides conduct, but the touchstone reading of Varadarasan, Pappaiah, Kalaignar and Pope (‘touchstone true’) is standard. Both sources agree on the text.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;…theoretical and practical knowledge, foresight, retentive memory, and affability shall be tested from successful application in works…&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/kautilya-arthashastra/d/doc365587.html" target="_blank" rel="noopener">Kautilya, Arthaśāstra 1.9 (trans. R. Shamasastry)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Kautilya lists how each quality of a candidate minister is to be verified, and ability is judged by work actually done.</div>
+  <div class="tieback">Work as proof of worth is the Kural’s touchstone.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Wherefore by their fruits ye shall know them.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 7:20 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus says people are known by what their lives produce, as trees are known by their fruit.</div>
+  <div class="tieback">‘Fruits’ play the role of the Kural’s touchstone of deeds.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Indeed, the most noble of you in the sight of Allah is the most righteous of you.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 49:13 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an says that tribes and peoples exist so we may know one another, but true nobility is measured by righteousness.</div>
+  <div class="tieback">Greatness is measured by conduct, not lineage, as the Kural says.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Study is not the most important thing, but actions; whoever indulges in too many words brings about sin.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Mishnah, Pirkei Avot 1:17 (trans. Joshua Kulp)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Shimon ben Gamaliel teaches that deeds, not learning or talk, are what finally count.</div>
+  <div class="tieback">The Kural too treats action as the decisive test.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Not by birth is one an outcast; not by birth is one a brahman. By deed one becomes an outcast, by deed one becomes a brahman.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/kn/snp/snp.1.07.piya.html" target="_blank" rel="noopener">Sutta Nipāta 1.7, Vasala Sutta, v. 21 (trans. Piyadassi Thera)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Insulted as an ‘outcast’, the Buddha replies that high and low status come from conduct, not birth.</div>
+  <div class="tieback">This is the Kural’s claim that deeds are the touchstone of greatness and meanness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;By one&#x27;s actions one becomes a Brâhmana, or a Kshattriya, or a Vaisya, or a Sûdra.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 25.33 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jayaghosha teaches that a person&#x27;s standing is made by deeds, not by birth or outward marks.</div>
+  <div class="tieback">The kural makes each person&#x27;s own deeds the touchstone of greatness or meanness; the Jain verse likewise makes actions alone the measure of what a person is.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Apply the Touchstone of Truth to your mind, and see if it comes up to its full weight.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 22, Siree Raag, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak borrows the goldsmith&#x27;s touchstone and scale: a person&#x27;s inner life is to be tested against truth as gold is tested on the stone.</div>
+  <div class="tieback">The Kural calls a person&#x27;s own deeds the touchstone of greatness and meanness; Guru Nanak uses the same touchstone image for testing a person&#x27;s worth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Instead of taking the safe sea route, the young Theseus walks the bandit-infested road to Athens, defeating Periphetes, Sinis, Sciron and Procrustes, so that his deeds announce him before his father Aegeus recognises him.</div>
+  <div class="cite">&mdash; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Theseus*.html" target="_blank" rel="noopener">Plutarch, Life of Theseus 6-12</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Theseus proves he is worthy of his royal birth by what he does on the road.</div>
+  <div class="tieback">His deeds, not his birth tokens alone, are the touchstone of his greatness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle argues that we become just by doing just acts and brave by doing brave acts, so that character is formed and shown in activity.</div>
+  <div class="cite">&mdash; <a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics 2.1</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Aristotle, virtue is a settled disposition revealed by repeated action.</div>
+  <div class="tieback">If character shows itself in action, then deeds are the fair touchstone the Kural names.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Bonaparte creates the Legion of Honour</div>
+  <div class="rle-meta">19 May 1802 &middot; Paris, France</div>
+  <div class="quote is-paraphrase">As First Consul, Napoleon Bonaparte created the Legion of Honour by a law of 19 May 1802. It was an order of merit for both military and civil service, open to recipients without regard to birth or religion. It remains France&#x27;s highest order of merit.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">In a society that had long rewarded noble birth, the state chose to honour people for what they had actually done.</div>
+  <div class="tieback">The kural calls deeds the touchstone of greatness and meanness, and the Legion of Honour made deeds, not birth, the test for honour.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-51/" target="_blank" rel="noopener">தெரிந்துதெளிதல் / Selection and Confidence, Chapter 51 (Kurals 501-510) with commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-051.html" target="_blank" rel="noopener">தெரிந்து தெளிதல் - அதிகாரம் 51 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.wisdomlib.org/hinduism/book/kautilya-arthashastra/d/doc365587.html" target="_blank" rel="noopener">Kautilya’s Arthashastra, trans. R. Shamasastry, Book 1, Chapter 9: The Creation of Councillors and Priests</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/kn/snp/snp.1.07.piya.html" target="_blank" rel="noopener">Vasala Sutta: Discourse on Outcasts (Sutta Nipata 1.7), trans. Piyadassi Thera</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Theseus*.html" target="_blank" rel="noopener">Plutarch, Life of Theseus (Parallel Lives)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, translated by W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/topic/Legion-of-Honour" target="_blank" rel="noopener">Legion of Honour (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.napoleon.org/jeunes-historiens/napodoc/lordre-de-la-legion-dhonneur-honneur-et-patrie-1802/" target="_blank" rel="noopener">The Legion of Honour, a military and civil award: Honour and Fatherland (1802)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0504.html">&larr; Kural 504</a>
+  <a href="kural-0506.html">Kural 506 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-051.html">Selection and Confidence</a>
+  <a class="skip-btn" href="kural-0511.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

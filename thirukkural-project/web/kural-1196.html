@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1196 — The Solitary Anguish | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1196</h1>
+<p class="adhikaram"><a href="adhikaram-120.html">The Solitary Anguish</a> &middot; Thanippadar Mikudhi &middot; <span class="tamil">தனிப்படர் மிகுதி</span></p>
+
+<div class="tamil-text">ஒருதலையான் இன்னாது காமம்காப் போல
+இருதலை யானும் இனிது.</div>
+<div class="translit">Orudhalaiyaan innaadhu kaamamkaap pola
+irudhalai yaanum inidhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Love on one side only is painful. Like the load on a carrying pole, it is sweet only when it is balanced at both ends.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Have you tried carrying two buckets on a stick across your shoulders? With one bucket it tips and hurts, but with one on each side it’s easy. Love is the same: it feels good only when both people carry it.</p>
+
+<h2 class="section">University</h2>
+<p>This is the Kural’s most famous image for mutual love. Kā is the kāvaṭi or shoulder-pole carried with a load at each end; orutalai (‘one end’) and irutalai (‘two ends’) give Tamil the still-current phrase orutalaik kātal for one-sided love. Kāmam orutalaiyāṉ iṉṉātu, ‘love on one end is painful’, irutalaiyāṉum iṉitu, ‘on both ends it is sweet.’ Parimelazhagar takes the kā simile as governing both halves; Kalaignar spells out that the pole’s two sides must be equally weighted, as love must bloom in both man and woman. Pope: ‘Love on one side is bad; like balanced load / By porter borne, love on both sides is good.’ Text identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The closing hymn of the Rigveda prays for concord: that those gathered may have a common purpose, hearts in accord and minds alike, so that all may live together in harmony.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/rigveda/rv05083.htm" target="_blank" rel="noopener">Rigveda 10.191.4 (paraphrase; cf. tr. Ralph T.H. Griffith)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Samjnana hymn makes agreement of hearts the basis of a good shared life.</div>
+  <div class="tieback">The Kural’s balanced carrying pole is the domestic form of this Vedic ideal of hearts in accord.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Be ye not unequally yoked together with unbelievers&rdquo;</div>
+  <div class="cite">&mdash; 2 Corinthians 6:14 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul uses the image of an unevenly matched yoke to warn against a partnership in which the two sides are not one.</div>
+  <div class="tieback">Like the Kural’s carrying pole, Paul’s yoke works only when both sides bear equally.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">Rumi teaches that no lover ever seeks union unless the beloved is also seeking him; the thirst in the lover is matched by a drawing from the other side, as the thirsty seek water and water seeks the thirsty.</div>
+  <div class="cite">&mdash; <a href="https://archive.org/details/RumiMasnaviNicholson" target="_blank" rel="noopener">Jalal al-Din Rumi, Masnavi, Book III (paraphrase; cf. tr. R.A. Nicholson)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">For Rumi true love is never one-sided: longing on one side always implies a pull from the other.</div>
+  <div class="tieback">Rumi’s mutual seeking is the Kural’s two-ended pole, love sweet because it is carried from both sides.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Two are better than one; because they have a good reward for their labour. For if they fall, the one will lift up his fellow; but woe to him that is alone when he falleth&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">Ecclesiastes 4:9-10 (JPS 1917, via Mechon-Mamre)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Koheleth praises the shared load of two who support each other, and pities the one left to carry life alone.</div>
+  <div class="tieback">This is the Kural’s carrying pole in words: two sides make the burden light, one side makes it painful.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Kusa Jataka, the wise but ugly King Kusa loves Princess Pabhavati, who flees from him; he follows her to her father’s city and toils as a potter, basket-maker and cook to be near her, suffering greatly until she finally returns his love.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/bud/j3/index.htm" target="_blank" rel="noopener">Kusa Jataka (Jataka 531) (paraphrase; cf. tr. E.B. Cowell et al.)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Jataka dramatises the long misery of a love carried by one side only, and the happiness when it is shared.</div>
+  <div class="tieback">Kusa’s story is the Kural’s carrying pole: unbearable at one end, sweet once both ends bear the weight.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;But all kinds of objects of the senses, sounds, &amp;c., will cause to the indifferent neither a pleasant nor an unpleasant feeling.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 32.106 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Uttaradhyayana teaches that pain and pleasure come from one’s own attachment, and that the dispassionate are untouched by either.</div>
+  <div class="tieback">Where the Kural seeks balance by making love mutual, Jainism seeks it by laying the burden of attachment down altogether.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;O Lord, if You will not break with me, then I will not break with You.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 658, Raag Sorath, Bhagat Ravidas (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Bhagat Ravidas describes his love for God as a two-way bond, kept whole because neither side breaks it.</div>
+  <div class="tieback">The Kural says love is painful when it rests on one end only and sweet, like a balanced carrying-pole, when it rests on both; Ravidas likewise sees true love as a bond held up from both sides.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Themistius tells how Aphrodite’s child Eros would not grow until Themis advised her to give him a brother, Anteros (‘love returned’); with Anteros beside him Eros flourished, but whenever they were parted Eros dwindled again.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Ouranios/ErosAnteros.html" target="_blank" rel="noopener">Themistius, Oration 24 (paraphrase)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The myth makes requited love the condition for love to grow at all.</div>
+  <div class="tieback">Eros and Anteros are the two ends of the Kural’s pole: love thrives only when it is returned.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle says goodwill is not yet friendship unless it is returned and each party knows of the other’s goodwill; friendship is goodwill that is reciprocated.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics 8.2, 1155b-1156a (paraphrase)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Aristotle love on one side only is not yet the real thing; reciprocity is part of its definition.</div>
+  <div class="tieback">This is the philosophical form of the Kural’s claim that love is sweet only when it runs both ways.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Goethe falls in love with the engaged Charlotte Buff</div>
+  <div class="rle-meta">1772 &middot; Wetzlar, Germany</div>
+  <div class="quote is-paraphrase">In May 1772 the young Goethe went to Wetzlar as a trainee at the Imperial Chamber Court. At a dance on 9 June he met Charlotte Buff, the fiancée of his friend Johann Christian Kestner, and fell in love with her; on 11 September he left the town. Within two years he turned the experience into his first novel, The Sorrows of Young Werther, in which the hero loves a Lotte who is engaged to another man, and the book became an immense success.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Goethe&#x27;s one-sided love was painful enough to drive him away, while Charlotte and her fiancé, whose love ran both ways, stayed together and became the models for Lotte and Albert.</div>
+  <div class="tieback">The kural compares love to a carrying pole that is painful when loaded at one end and sweet when balanced at both, and Wetzlar showed both ends: Goethe&#x27;s lopsided love and the engaged couple&#x27;s balanced one.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-120/" target="_blank" rel="noopener">Thirukkural Chapter 120: தனிப்படர்மிகுதி / The Solitary Anguish (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-120.html" target="_blank" rel="noopener">தனிப்படர் மிகுதி - அதிகாரம் 120 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/rigveda/rv05083.htm" target="_blank" rel="noopener">The Rig Veda, translated by Ralph T. H. Griffith (1896)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://archive.org/details/RumiMasnaviNicholson" target="_blank" rel="noopener">Jalal al-Din Rumi, The Mathnawi, Book I, tr. Reynold A. Nicholson (1926)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917), Hebrew-English Bible</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/bud/j3/index.htm" target="_blank" rel="noopener">The Jataka, or Stories of the Buddha&#x27;s Former Births (ed. E.B. Cowell), incl. Mahakapi Jataka No. 407</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Ouranios/ErosAnteros.html" target="_blank" rel="noopener">Themistius, Oration 24 (Exhortation to the Nicomedians), Eros and Anteros</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://guide.freies-deutsches-hochstift.de/en/mediaguide/goethe-galerie/goethe-galerie/werther-und-faust/charlotte-kestner-geb-buff/" target="_blank" rel="noopener">Charlotte Kestner geb. Buff</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.metopera.org/discover/education/educator-guides/werther/the-operas-plot-creation/" target="_blank" rel="noopener">Werther: The Opera&#x27;s Plot &amp; Creation</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1195.html">&larr; Kural 1195</a>
+  <a href="kural-1197.html">Kural 1197 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-120.html">The Solitary Anguish</a>
+  <a class="skip-btn" href="kural-1201.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

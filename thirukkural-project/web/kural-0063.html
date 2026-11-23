@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 63 — The Wealth of Children | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 63</h1>
+<p class="adhikaram"><a href="adhikaram-007.html">The Wealth of Children</a> &middot; Pudhalvaraip Perudhal &middot; <span class="tamil">புதல்வரைப் பெறுதல்</span></p>
+
+<div class="tamil-text">தம்பொருள் என்பதம் மக்கள் அவர்பொருள்
+தம்தம் வினையான் வரும்.</div>
+<div class="translit">Thamporul Enpadham Makkal Avarporul,
+Thamdham Vinaiyaan Varum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The wise say children are their parents’ true treasure. And each child’s own worth comes to them through the things they do.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Grown-ups sometimes call money their &quot;treasure.&quot; This kural says the real treasure is your children. And here&#x27;s the second part: nobody can just hand a child a good life the way you hand over a coin — what each child ends up with comes from the things they themselves do.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet turns on a deliberate double use of பொருள் (poruḷ, &quot;wealth, substance, thing of worth&quot;): children are the parents&#x27; poruḷ, and the children in turn have a poruḷ of their own, which arrives by வினை (viṉai, &quot;deed, act, karma&quot;). Parimēlaḻakar reads the second line as meaning that the good deeds children perform on their parents&#x27; behalf return to the parents as wealth; Maṇakkuṭavar and several moderns read it more directly, that each person&#x27;s fortune follows from their own acts. Valluvar&#x27;s compression permits both, and the ambiguity is productive: the family is a genuine economy of worth, yet no share in it is transferable by mere inheritance. The phrase தம்தம் (&quot;each one&#x27;s own&quot;) is the load-bearing word — it individuates moral responsibility inside a verse that has just made the family a single unit of value. That tension between collective wealth and non-transferable desert is what makes this the philosophically sharpest couplet in the chapter, and it anticipates the Kural&#x27;s later chapter on ஊழ் (Fate).</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The Upaniṣad teaches that a person is made of desire — as their desire is, so is their resolve; as their resolve, so the deed they do; and as the deed they do, so is what they come to inherit.</div>
+  <div class="cite">&mdash; <a href="https://www.swami-krishnananda.org/brdup/brhad_V-01.html" target="_blank" rel="noopener">Bṛhadāraṇyaka Upaniṣad 4.4.5</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">This is one of the earliest formulations of karma as personal moral causation: what accrues to a person follows from what that person has actually done, not from station or lineage.</div>
+  <div class="tieback">It is precisely the Kural&#x27;s second line — each one&#x27;s wealth comes by each one&#x27;s own deeds.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Children&#x27;s children are the crown of old men; and the glory of children are their fathers.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 17:6 (King James Version) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The proverb makes the generations each other&#x27;s ornament: the old are crowned by their descendants, and the young are honoured by their parentage.</div>
+  <div class="tieback">It matches the Kural&#x27;s first line — offspring counted as the substance and glory of a family — but not its second, which insists each person&#x27;s fortune is self-earned.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And that there is not for man except that [good] for which he strives, And that his effort is going to be seen.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 53:39–40, Sūrat an-Najm (Sahih International) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The verses deny that anyone can be credited or debited with another&#x27;s account: what a person has is what a person has worked for.</div>
+  <div class="tieback">This is a direct scriptural statement of the Kural&#x27;s claim that each child&#x27;s wealth comes by that child&#x27;s own deeds.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;The son shall not bear the iniquity of the father, neither shall the father bear the iniquity of the son: the righteousness of the righteous shall be upon him, and the wickedness of the wicked shall be upon him.&rdquo;</div>
+  <div class="cite">&mdash; Ezekiel 18:20 (King James Version) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Ezekiel is correcting a popular proverb about children&#x27;s teeth being set on edge by their parents&#x27; sour grapes, and insisting that moral accounts are strictly individual.</div>
+  <div class="tieback">It is the Kural&#x27;s second line stated as law: what belongs to each comes from each one&#x27;s own doing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Student, beings are owners of kammas, heirs of kammas, they have kammas as their progenitor, kammas as their kin, kammas as their homing-place. It is kammas that differentiate beings according to inferiority and superiority.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/mn/mn.135.nymo.html" target="_blank" rel="noopener">Majjhima Nikāya 135, Cūḷakammavibhaṅga Sutta (trans. Ñāṇamoli Thera)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha answers a young brahmin who wants to know why people are born into such unequal circumstances: the inheritance that actually matters is not property or birth but one&#x27;s own accumulated action.</div>
+  <div class="tieback">The Pali even uses the vocabulary of inheritance to say what the Kural says — the real estate anyone comes into is their own deeds.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As long as a tree retains its branches, it is really a tree; when they are lopped off, it is called a trunk. As a bird without its wings, as a king in battle without his followers, as a merchant on a boat without his goods, even so am I without my sons.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 14.29–30 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The priest Bhrigu, about to follow his renouncing sons into the order, says that a man&#x27;s sons are his branches, wings, retinue and cargo, and without them he is diminished.</div>
+  <div class="tieback">Bhrigu&#x27;s merchant &#x27;without his goods&#x27; makes the same point as the kural&#x27;s opening line, that one&#x27;s children are one&#x27;s true wealth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;His sons did not obey His Word; they turned their backs on Him as Guru... Whatever the Guru said, Lehna did, and so he was installed on the throne.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 967, Raag Ramkali, Ramkali ki Vaar, Pauri 2, Rai Balwand and Satta Doom (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The bards Satta and Balwand explain why Guru Nanak passed the Guruship to his disciple Lehna (Guru Angad) and not to his own sons: the inheritance went to the one whose deeds proved him worthy.</div>
+  <div class="tieback">It sharply illustrates the second half of the Kural: whatever wealth the next generation receives comes through each one&#x27;s own deeds, not by birth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Thou too, my friend, for I see that thou art comely and tall, be thou valiant, that many an one of men yet to be born may praise thee.&rdquo;</div>
+  <div class="cite">&mdash; Homer, Odyssey 1.301–302 (trans. A. T. Murray, Loeb Classical Library, 1919) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Athena, disguised as Mentes, tells Telemachus that his father&#x27;s estate is being eaten away and that he cannot go on relying on Odysseus&#x27; name — he must act, and earn a reputation of his own.</div>
+  <div class="tieback">The goddess makes the Kural&#x27;s point to a son&#x27;s face: the wealth and honour that will be yours must come from your own deeds.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Epictetus instructs the student never to say of anything that it has been lost, but that it has been given back — and to apply this to a child as much as to an estate, since both were only ever on loan.</div>
+  <div class="cite">&mdash; Epictetus, Enchiridion 11 <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">For the Stoic, calling a child &quot;mine&quot; in the possessive sense is a category error that guarantees suffering; what one has is custody, not ownership.</div>
+  <div class="tieback">It qualifies the Kural&#x27;s opening claim in exactly the way the couplet&#x27;s own second line does: children may be called one&#x27;s wealth, but they are not one&#x27;s property.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Andrew Carnegie publishes &#x27;Wealth&#x27;, the Gospel of Wealth</div>
+  <div class="rle-meta">June 1889 &middot; United States (published in the North American Review)</div>
+  <div class="quote is-paraphrase">In June 1889 the industrialist Andrew Carnegie published an essay titled &#x27;Wealth&#x27; in the North American Review, setting out what came to be called the Gospel of Wealth. He argued that a person who accumulates great wealth holds it as a trustee and should use the surplus for the improvement of mankind during his own lifetime, and he questioned the practice of passing great fortunes down to heirs. Carnegie went on to give away the great majority of his fortune to libraries, universities and foundations.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">One of the richest men of his age publicly argued that children are not best served by inherited riches, and that each person&#x27;s standing should come from what they themselves do.</div>
+  <div class="tieback">The kural says children are a parent&#x27;s true wealth while their own wealth must come through their own deeds, which is close to Carnegie&#x27;s case against handing heirs great fortunes.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.tamillexicon.com/thirukkural/araththuppaal/illaraviyal/pudhalvaraip-perudhal" target="_blank" rel="noopener">மக்கட்பேறு / The Wealth of Children / Pudhalvaraip Perudhal — Thirukkural Chapter 7, with Tamil paraphrase, Pope couplet, explanation and transliteration</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-007.html" target="_blank" rel="noopener">The Wealth of Children — Adhigaram 7, Thirukkural (Tamil text, transliteration, Brahmi script and multilingual translations)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.thirukkural.com/2009/01/blog-post_14.html" target="_blank" rel="noopener">மக்கட்பேறு — Thirukkural Chapter 7 with the classical commentaries of Parimelalagar, Manakkudavar, Mu. Varadarajan, Salamon Pappaiah and Kalaignar</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.ytamizh.com/thirukural/chapter-7/" target="_blank" rel="noopener">மக்கட்பேறு / புதல்வரைப் பெறுதல் — Thirukkural Chapter 7, Kurals 61–70 with Tamil commentaries and English translation</a> <span class="tier">[web source]</span></li>
+<li id="cite-5"><a href="https://www.swami-krishnananda.org/brdup/brhad_V-01.html" target="_blank" rel="noopener">Bṛhadāraṇyaka Upaniṣad, Chapter 5 (the teaching of the thunder, &#x27;Da Da Da&#x27;)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.accesstoinsight.org/tipitaka/mn/mn.135.nymo.html" target="_blank" rel="noopener">Majjhima Nikāya 135, Cūḷakammavibhaṅga Sutta: The Shorter Exposition of Kamma (trans. Ñāṇamoli Thera)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-12">Enchiridion, Chapter 5 (Epictetus) <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/money/Andrew-Carnegie" target="_blank" rel="noopener">Andrew Carnegie (Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://carnegie.org/publication/the-gospel-of-wealth/" target="_blank" rel="noopener">The Gospel of Wealth (Andrew Carnegie)</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0062.html">&larr; Kural 62</a>
+  <a href="kural-0064.html">Kural 64 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-007.html">The Wealth of Children</a>
+  <a class="skip-btn" href="kural-0071.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

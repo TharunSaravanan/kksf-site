@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 972 — Greatness | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 972</h1>
+<p class="adhikaram"><a href="adhikaram-098.html">Greatness</a> &middot; Perumai &middot; <span class="tamil">பெருமை</span></p>
+
+<div class="tamil-text">பிறப்பொக்கும் எல்லா உயிர்க்கும் சிறப்பொவ்வா
+செய்தொழில் வேற்றுமை யான்.</div>
+<div class="translit">Pirappokkum ellaa uyirkkum sirappovvaa
+seydhozhil vetrumai yaan.</div>
+
+<h2 class="section">Meaning</h2>
+<p>All living beings are born the same way. They become different in worth only because of the different work they do.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Every baby is born the same way, crying and tiny, whether in a palace or a hut. What makes people different later is what they choose to do: who helps, who works hard, who is kind. That is where real specialness comes from.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet sets piRappu (பிறப்பு, &#x27;birth&#x27;) against siRappu (சிறப்பு, &#x27;distinction&#x27;): the first ஒக்கும் (&#x27;is equal&#x27;) for all, the second ஒவ்வா (&#x27;is not equal&#x27;) because of seydhozhil vetrumai (செய்தொழில் வேற்றுமை, &#x27;difference in the work done&#x27;). Commentators differ on the scope of uyir: Puliyur Kesikan restricts it to &#x27;all human lives&#x27; (எல்லா மக்களுயிர்க்கும்), the older reading, while modern glosses keep &#x27;all living beings&#x27;. They also differ on tozhil: Mu. Varadarasanar speaks of the high and low grades of occupations, whereas Solomon Pappaiah and Kalaignar read it as one&#x27;s deeds or skill and make the verse an explicit statement that all are equal by birth. This egalitarian reading has made the couplet one of the most frequently cited in modern Tamil debates on caste. The text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;The humble sages, by virtue of true knowledge, see with equal vision a learned and gentle brāhmaṇa, a cow, an elephant, a dog and a dog-eater [outcaste].&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 5.18 (Bhagavad-gītā As It Is, A.C. Bhaktivedanta Swami Prabhupāda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna says the wise look past outward birth and see the same self in every being.</div>
+  <div class="tieback">This is the Kural&#x27;s first half: all beings are alike in birth and essence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And hath made of one blood all nations of men for to dwell on all the face of the earth, and hath determined the times before appointed, and the bounds of their habitation;&rdquo;</div>
+  <div class="cite">&mdash; Acts 17:26 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul tells the Athenians that all peoples come from a single origin.</div>
+  <div class="tieback">Like the Kural, it grounds human equality in a shared birth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O mankind, indeed We have created you from male and female and made you peoples and tribes that you may know one another. Indeed, the most noble of you in the sight of Allah is the most righteous of you.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 49:13 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an says humanity shares one origin and that nobility is measured by righteousness, not lineage.</div>
+  <div class="tieback">Both halves of the Kural are here: equal origin, and distinction earned by conduct.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;And this was done due to the importance of maintaining peace among people, so that one person will not say to another: My father, i.e., progenitor, is greater than your father.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Mishnah_Sanhedrin.4.5" target="_blank" rel="noopener">Mishnah Sanhedrin 4:5 (William Davidson Edition, Koren-Steinsaltz English, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Mishnah teaches that humanity was created from a single person so that no one could claim superior ancestry.</div>
+  <div class="tieback">Like the Kural, it denies that birth can make one person higher than another.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Not by birth is one an outcast; not by birth is one a brahman. By deed one becomes an outcast, by deed one becomes a brahman.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/kn/snp/snp.1.07.piya.html" target="_blank" rel="noopener">Vasala Sutta, Sutta Nipata 1.7, v. 21 (trans. Piyadassi Thera)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Answering a brahman who insulted him, the Buddha says worth is made by action, not by birth.</div>
+  <div class="tieback">This is almost the Kural restated: birth does not differ, deeds do.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;By one&#x27;s actions one becomes a Brâhmana, or a Kshattriya, or a Vaisya, or a Sûdra.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 25.33 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The monk Jayaghosha tells a sacrificing priest that a person&#x27;s class is made by conduct, not by birth or ritual marks.</div>
+  <div class="tieback">The Jain canon states the Kural&#x27;s point directly: distinction comes from what one does.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;First, Allah created the Light; then, by His Creative Power, He made all mortal beings. From the One Light, the entire universe welled up. So who is good, and who is bad?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1349, Raag Prabhaati, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Bhagat Kabir, a low-caste weaver whose hymns the Gurus placed in the scripture, says that every person comes from the same divine Light. Birth therefore gives no one superiority, and the Sikh tradition draws from this its rejection of caste.</div>
+  <div class="tieback">Like Valluvar&#x27;s claim that all are equal at birth, Kabir&#x27;s verse refuses to rank people by where they come from, which leaves only conduct to tell them apart.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Euripides&#x27; Electra, Electra has been married off to a poor farmer, who treats her with honour and restraint; Orestes, seeing this, reflects that there is no sure test of a man&#x27;s nobility, since a man of humble station can prove more noble than the well-born.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0096" target="_blank" rel="noopener">Euripides, Electra (Orestes&#x27; speech on nobility, c. lines 367-390)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The play uses a lowly farmer to show that nobility of character does not follow birth.</div>
+  <div class="tieback">Like the Kural, it separates worth from lineage and ties it to conduct.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In his 44th letter Seneca tells Lucilius that philosophy does not ask about a person&#x27;s pedigree, citing Plato&#x27;s remark that every king comes from a race of slaves and every slave from kings, and concluding that it is the mind, not ancestry, that makes a person noble.</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius 44 (trans. R. M. Gummere)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Seneca argues that long lines of ancestry mix high and low, so only character can confer nobility.</div>
+  <div class="tieback">Seneca, like Valluvar, says birth is common to all and distinction is earned.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Zhu Yuanzhang, an orphaned peasant and beggar monk, founds the Ming dynasty</div>
+  <div class="rle-meta">1368 &middot; Nanjing, China</div>
+  <div class="quote is-paraphrase">Zhu Yuanzhang was born in 1328 into a poor farming family in Haozhou, and when he was a teenager his parents and brothers died, leaving him to enter a Buddhist monastery to avoid starvation and then to wander as a begging monk when the temple could no longer feed him. He joined a rebel army against the Mongol Yuan dynasty at about twenty-four, rose to command, educated himself with the help of scholars, and defeated rival leaders. In 1368 he proclaimed himself emperor at Nanjing, taking the reign title Hongwu, and founded the Ming dynasty, which ruled China for 276 years.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A boy with no family, land or schooling rose by his own deeds to found one of China&#x27;s great dynasties, though his later rule became harsh and despotic.</div>
+  <div class="tieback">The kural says all are equal by birth and that distinction differs only by the deeds people do, and Zhu&#x27;s humble birth did not prevent his deeds from making him emperor.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-98/" target="_blank" rel="noopener">Thirukkural Chapter 98: பெருமை / Greatness (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-098.html" target="_blank" rel="noopener">பெருமை - அதிகாரம் 98 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Mishnah_Sanhedrin.4.5" target="_blank" rel="noopener">Mishnah Sanhedrin 4:5 (William Davidson Edition, Koren-Steinsaltz English)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/kn/snp/snp.1.07.piya.html" target="_blank" rel="noopener">Vasala Sutta: Discourse on Outcasts (Sutta Nipata 1.7), trans. Piyadassi Thera</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0096" target="_blank" rel="noopener">Euripides, Electra</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius (tr. Richard Mott Gummere, Loeb, 1917–1925)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/summary/Hongwu" target="_blank" rel="noopener">Hongwu emperor summary</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://chiculture.org.hk/en/china-five-thousand-years/4066" target="_blank" rel="noopener">Zhu Yuanzhang: An Emperor Through the Ages (Peng Yong)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0971.html">&larr; Kural 971</a>
+  <a href="kural-0973.html">Kural 973 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-098.html">Greatness</a>
+  <a class="skip-btn" href="kural-0981.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 94 — Charming Utterance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 94</h1>
+<p class="adhikaram"><a href="adhikaram-010.html">Charming Utterance</a> &middot; Iniyavai Kooral &middot; <span class="tamil">இனியவை கூறல்</span></p>
+
+<div class="tamil-text">துன்புறூஉம் துவ்வாமை இல்லாகும் யார்மாட்டும்
+இன்புறூஉம் இன்சொ லவர்க்கு.</div>
+<div class="translit">Thunburooum thuvvaamai illaagum yaarmaattum,
+Inburooum inso lavarkku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who speak words that make everyone happy will never suffer the pain of poverty.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Think of someone at school everybody likes because they&#x27;re kind to everyone — not just their own friends. When that person needs help, ten people offer. Being warm to everybody builds up a kind of invisible savings account. This kural says people like that don&#x27;t end up with nothing.</p>
+
+<h2 class="section">University</h2>
+<p>The key word is யார்மாட்டும் (yaarmaattum, &#x27;toward anyone at all&#x27;), which universalises the obligation and rules out selective charm directed at the useful. துவ்வாமை (thuvvaamai) is a striking choice: it derives from துவ்வு (to eat/enjoy) and so denotes destitution specifically as the inability to consume or enjoy — want at the level of the body. Valluvar claims that the person who gives everyone the enjoyment (இன்புறூஉம், inburooum) of a kind word will not suffer the want of enjoyment. Commentators from Parimelazhagar onward have read this both prudentially (goodwill converts into material support) and karmically (the merit of universal kindness bears fruit). The verse also uses the elongated alapedai forms துன்புறூஉம் / இன்புறூஉம் to set the two states of misery and delight in exact metrical opposition.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">A widely transmitted Sanskrit maxim states that all creatures are gratified by the giving of pleasing words, and therefore one should speak only in that way — asking, pointedly, &#x27;where is the poverty in words?&#x27;</div>
+  <div class="cite">&mdash; <a href="https://subhashitani-en.blogspot.com/2012/07/blog-post_17.html" target="_blank" rel="noopener">Subhāṣita, attributed to Chāṇakya Nīti 16.13 (also collected in the Subhāṣita Ratna Bhāṇḍāgāra)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The verse notes that kind speech is the one currency that never runs out, so there can be no economic excuse for withholding it.</div>
+  <div class="tieback">It joins kind speech directly to the vocabulary of poverty (daridratā), exactly as the Kural joins insol to thuvvaamai.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;He that loveth pureness of heart, for the grace of his lips the king shall be his friend.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 22:11 (King James Version) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Proverbs links a pure heart and gracious speech to concrete advancement — securing the favour of the most powerful patron available.</div>
+  <div class="tieback">It makes the Kural&#x27;s prudential claim that gracious speech protects a person from destitution.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">The Prophet taught that every good word is itself an act of charity (sadaqah), placing speech within the same economy of giving and reward as almsgiving.</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:2989" target="_blank" rel="noopener">Sahih al-Bukhari 2989 (Book of Jihad, chapter on charity)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The hadith reclassifies speech as a transferable good, so the person with nothing to give materially is never actually empty-handed.</div>
+  <div class="tieback">It supports the Kural&#x27;s link between kind speech and freedom from want by making the kind word a form of wealth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Sweet language will multiply friends: and a fairspeaking tongue will increase kind greetings.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://ebible.org/eng-kjv/SIR18.htm" target="_blank" rel="noopener">Ben Sira / Ecclesiasticus 6:5 (King James Version, Apocrypha)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Ben Sira presents pleasant speech as an investment that compounds: it generates a widening circle of allies and reciprocal goodwill.</div>
+  <div class="tieback">This is the practical mechanism behind the Kural&#x27;s promise that the kind speaker will not fall into destitution.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Maṅgala Sutta, the Buddha&#x27;s catalogue of the highest blessings (maṅgala) available in a human life, lists well-spoken speech alongside vast learning, mastered discipline and skilled craft as among the things that make a life auspicious and secure.</div>
+  <div class="cite">&mdash; <a href="https://en.wikipedia.org/wiki/Ma%E1%B9%85gala_Sutta" target="_blank" rel="noopener">Maṅgala Sutta, Sutta Nipāta 2.4</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Pleasant, well-formed speech is counted as an actual component of worldly good fortune, not merely of moral character.</div>
+  <div class="tieback">It matches the Kural&#x27;s claim that kind speech produces the good fortune that keeps misery-bringing want at bay.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;I forgive all living beings and may all living beings forgive me; I cherish feelings of friendship towards all and I harbour enmity towards none.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.com/" target="_blank" rel="noopener">Saman Suttam v. 86 (English tr. as published on jainworld.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">This well-known Jain formula of mutual forgiveness and friendship toward all beings is recited at the close of Paryuṣaṇa. It extends goodwill to every creature without exception.</div>
+  <div class="tieback">Valluvar&#x27;s speaker gladdens everyone he meets, whoever they are, and the Jain vow of friendship toward all beings expresses the same universal goodwill.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;A mild spoken, humble and giver through his hands moves in equipoise and remains happy.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.searchgurbani.com/bhai-gurdas-vaaran" target="_blank" rel="noopener">Vaaran Bhai Gurdas, Vaar 12, Pauri 16 (English translation as given on BaniDB / searchgurbani.com)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Bhai Gurdas holds that the person who speaks gently, walks humbly and gives freely lives in calm contentment.</div>
+  <div class="tieback">Like the Kural&#x27;s promise that those who speak gladdening words to all will escape misery, it ties mild speech to a life free of distress.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;...they pour sweet dew upon his tongue, and from his lips flow gracious words.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Hesiod, Theogony 81–84 (trans. Hugh G. Evelyn-White)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Hesiod describes the Muses&#x27; gift to a king they favour at birth: his gracious speech settles disputes, and in consequence the whole people look to him and he is conspicuous in the assembly.</div>
+  <div class="tieback">It ties honeyed speech directly to standing and security, the same causal link the Kural draws.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Acquire the Reputation of Courtesy; for it is enough to make you liked. Politeness is the main ingredient of culture,—a kind of witchery that wins the regard of all as surely as discourtesy gains their disfavour and opposition...&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/eso/aww/index.htm" target="_blank" rel="noopener">Baltasar Gracián, The Art of Worldly Wisdom, §118 (trans. Joseph Jacobs, 1892)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Gracián, writing a manual of worldly survival for the seventeenth-century court, treats courtesy as the cheapest and most reliable instrument of advantage available to anyone.</div>
+  <div class="tieback">It is the Kural&#x27;s prudential argument stated frankly: kind speech is what keeps a person from being left with nothing.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Fred Rogers testifies to the US Senate for public television</div>
+  <div class="rle-meta">1 May 1969 &middot; Washington, D.C., United States</div>
+  <div class="quote is-paraphrase">When President Nixon proposed cutting the planned 20 million dollar budget of the new Corporation for Public Broadcasting by half, the children&#x27;s television host Fred Rogers testified before the Senate Communications Subcommittee. In a calm, gentle statement he described how his programme dealt with the inner drama of childhood and recited the words of one of his songs. The subcommittee chairman, Senator John Pastore, said the testimony had given him goosebumps and that Rogers appeared to have earned the 20 million dollars.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a> <a class="idx" href="#cite-15">[15]</a></div>
+  <div class="explain">Rogers won over a sceptical senator through gentle, sincere speech rather than argument or pressure, helping to protect the funding his work depended on.</div>
+  <div class="tieback">The kural promises that those who speak words that gladden everyone will not be overtaken by want, and Rogers&#x27;s kindly words helped secure the support public broadcasting needed.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://namthamizh.wordpress.com/010-%E0%AE%87%E0%AE%A9%E0%AE%BF%E0%AE%AF%E0%AE%B5%E0%AF%88-%E0%AE%95%E0%AF%82%E0%AE%B1%E0%AE%B2%E0%AF%8D/" target="_blank" rel="noopener">010. இனியவை கூறல் — Thirukkural Adhikaram 10 with word-by-word gloss (padavurai) and Tamil commentary</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.gunathamizh.com/2020/08/10.html" target="_blank" rel="noopener">திருக்குறள் - அதிகாரம் - 10. இனியவை கூறல் (one-line commentary series)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://telibrary.com/en/chapter-10/" target="_blank" rel="noopener">Chapter 10 – The Utterance of Pleasant Words / Iniyavaikooral (Tamil transliteration with G. U. Pope verse and W. H. Drew / John Lazarus prose translations)</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://subhashitani-en.blogspot.com/2012/07/blog-post_17.html" target="_blank" rel="noopener">Chāṇakya Nīti (Chāṇakya Nītiśāstra), with the subhāṣita also collected in the Subhāṣita Ratna Bhāṇḍāgāra</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/bukhari:2989" target="_blank" rel="noopener">Sahih al-Bukhari 2989 (on every good word being charity)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://ebible.org/eng-kjv/SIR18.htm" target="_blank" rel="noopener">Ecclesiasticus (The Wisdom of Jesus ben Sira), King James Version with Apocrypha (1611)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://en.wikipedia.org/wiki/Ma%E1%B9%85gala_Sutta" target="_blank" rel="noopener">Maṅgala Sutta: The Discourse on Blessings (Sutta Nipāta 2.4 / Khuddakapāṭha 5)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://jainworld.com/" target="_blank" rel="noopener">Saman Suttam (anthology of Jain scripture, compiled 1974)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://www.searchgurbani.com/bhai-gurdas-vaaran" target="_blank" rel="noopener">Vaaran Bhai Gurdas (Bhai Gurdas (c. 1551-1636))</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Theogony (Hesiod)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://sacred-texts.com/eso/aww/index.htm" target="_blank" rel="noopener">Baltasar Gracián, The Art of Worldly Wisdom (Oráculo manual y arte de prudencia, 1647), §118, trans. Joseph Jacobs (1892)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.pbs.org/newshour/arts/hello-neighbor-itsabeautifulday-to-pay-tribute-to-mister-rogers" target="_blank" rel="noopener">Hello, neighbor! #ItsABeautifulDay to pay tribute to Mister Rogers</a> <span class="tier">[web source]</span></li>
+<li id="cite-14"><a href="https://www.npr.org/2018/02/19/586180373/its-a-beautiful-50th-birthday-for-mister-rogers-neighborhood" target="_blank" rel="noopener">It&#x27;s A Beautiful 50th Birthday For &#x27;Mister Rogers&#x27; Neighborhood&#x27;</a> <span class="tier">[web source]</span></li>
+<li id="cite-15"><a href="https://americanarchive.org/catalog/cpb-aacip-15-32d7wxf3" target="_blank" rel="noopener">Public Affairs; Senate Commerce Communications Hearings 4/30-5/1/1969</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0093.html">&larr; Kural 93</a>
+  <a href="kural-0095.html">Kural 95 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-010.html">Charming Utterance</a>
+  <a class="skip-btn" href="kural-0101.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

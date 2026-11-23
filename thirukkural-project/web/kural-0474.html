@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 474 — The Knowledge of Power | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 474</h1>
+<p class="adhikaram"><a href="adhikaram-048.html">The Knowledge of Power</a> &middot; Valiyarithal &middot; <span class="tamil">வலியறிதல்</span></p>
+
+<div class="tamil-text">அமைந்தாங் கொழுகான் அளவறியான் தன்னை
+வியந்தான் விரைந்து கெடும்.</div>
+<div class="translit">Amaindhaangu ozhugaan alavariyaan thannai
+Viyandhaan viraindhu kedum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A person who does not get along with others, does not know their own limits, and thinks too highly of themselves will soon be ruined.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Someone who won’t get along with others, doesn’t know how strong they really are, and keeps bragging about how great they are will fall very fast.</p>
+
+<h2 class="section">University</h2>
+<p>Three faults are linked here. The first is failing to fit one’s conduct to others (amaindhaangu ozhugaan, which commentators read as refusing to accommodate those around one, especially more powerful neighbours). The second is ignorance of one’s own measure (alavu ariyaan). The third is self-admiration (thannai viyandhaan). The first two are errors of judgement, and the third is the emotional state that keeps them going, because the self-admirer stops checking. Viraindhu (‘swiftly’) matters: pride does not merely lead to ruin eventually, it speeds it up.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Confident in his army and his own prowess, Duryodhana rejects Krishna’s peace embassy and every counsel of Bhishma, Drona, Vidura and his own parents. He refuses to give the Pandavas even five villages, and the war that follows destroys him and his house.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahābhārata, Udyoga Parva (Bhagavad-yana sections; tr. K. M. Ganguli)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Duryodhana will not accommodate others, misjudges his real strength, and is swollen with self-regard, the three faults the Kural lists.</div>
+  <div class="tieback">His swift ruin at Kurukshetra illustrates the Kural’s viraindhu kedum.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For I say, through the grace given unto me, to every man that is among you, not to think of himself more highly than he ought to think; but to think soberly, according as God hath dealt to every man the measure of faith.&rdquo;</div>
+  <div class="cite">&mdash; Romans 12:3 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Paul warns against inflated self-estimation and calls for a sober judgement of oneself according to the measure actually given.</div>
+  <div class="tieback">It addresses the Kural’s alavu ariyaan and thannai viyandhaan: not knowing one’s measure, and thinking too highly of oneself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And do not turn your cheek [in contempt] toward people and do not walk through the earth exultantly. Indeed, Allah does not like everyone self-deluded and boastful.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 31:18 (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Luqman’s counsel to his son forbids arrogance toward people and conceited self-display.</div>
+  <div class="tieback">It matches the Kural’s pairing of failing to get along with others and self-admiration. The Kural adds the practical consequence of swift ruin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Pride goeth before destruction, and an haughty spirit before a fall.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 16:18 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The proverb holds that pride is the prelude to collapse.</div>
+  <div class="tieback">It gives the same causal chain as the Kural’s thannai viyandhaan … kedum: self-exaltation leading to ruin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;A fool who knows his foolishness is wise at least to that extent, but a fool who thinks himself wise is called a fool indeed.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 63 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada treats inflated self-assessment as the deepest form of folly.</div>
+  <div class="tieback">It matches the Kural’s alavu ariyaan and thannai viyandhaan: not knowing one’s real measure and admiring oneself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">In the Jain story of Bahubali, son of Rishabhanatha, Bahubali renounces the world after his contest with his brother Bharata, but at first will not go to bow before his younger brothers, who had become monks before him. He stands motionless in meditation for a year, yet omniscience does not come to him until his sisters Brahmi and Sundari tell him to get down from the elephant of pride. When he lets go of his pride, he attains kevala-jnana.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Hemacandra, Triṣaṣṭiśalākāpuruṣacaritra, Parva 1 (life of Ṛṣabha; tr. Helen M. Johnson, Gaekwad&#x27;s Oriental Series)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The story teaches that even heroic austerity is blocked by pride (mana), one of the four passions that bind karma to the soul.</div>
+  <div class="tieback">The Kural says that self-admiration and refusing to fit in with others bring swift ruin; in the Bahubali story it is exactly such pride that holds back a great soul until he gives it up.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The humble beings abide in peace; subduing egotism, they are meek. The very proud and arrogant persons, O Nanak, are consumed by their own pride.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 278, Raag Gauree, Sukhmani Sahib (ashtapadi 12, salok), Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Sukhmani Sahib Guru Arjan contrasts the humble, who live in peace, with the proud, who are destroyed by their own pride (haumai).</div>
+  <div class="tieback">The Kural says the self-admiring man who ignores his own measure soon comes to ruin; Guru Arjan says the arrogant are consumed by their pride.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Arachne, a gifted weaver, boasts that her skill surpasses Athena’s and refuses to admit any debt to the goddess. She rejects Athena’s warning, delivered in the guise of an old woman, and challenges her to a contest. Enraged, Athena destroys her work, and Arachne is turned into a spider.</div>
+  <div class="cite">&mdash; Ovid, Metamorphoses 6.1–145 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Arachne’s self-admiration and refusal to accept advice bring swift ruin, even though her skill is real.</div>
+  <div class="tieback">It illustrates the Kural’s three faults: refusing to accommodate, misjudging one’s standing, and admiring oneself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">After questioning a man reputed to be wise, Socrates concludes that he himself is wiser in one small way: neither of them knows anything fine and good, but the other man thinks he knows when he does not, while Socrates does not think he knows.</div>
+  <div class="cite">&mdash; Plato, Apology 21d <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Socrates makes accurate knowledge of one’s own limits the beginning of wisdom and exposes self-admiration as ignorance.</div>
+  <div class="tieback">It parallels the Kural’s alavu ariyaan and thannai viyandhaan: self-flattery comes from not knowing one’s own measure.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Charles XII of Sweden is defeated at Poltava</div>
+  <div class="rle-meta">8 July 1709 &middot; Poltava, Ukraine</div>
+  <div class="quote is-paraphrase">After years of victories in the Great Northern War, Charles XII of Sweden invaded Russia and turned south into Ukraine, far from his supplies. Though wounded in the foot, he chose to attack Peter the Great&#x27;s fortified camp at Poltava, the assault failed, and three days later most of the Swedish army surrendered at Perevolochna. Charles escaped to Ottoman territory, where he spent about five years trying in vain to persuade the Ottomans to attack Russia.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A king who had won many battles staked his army on one more deep campaign and lost Sweden&#x27;s standing as a great power.</div>
+  <div class="tieback">The kural warns that one who misjudges his own measure and acts without regard to others is quickly ruined, and Poltava destroyed Charles&#x27;s army in a single day.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-48/" target="_blank" rel="noopener">The Knowledge of Power, வலியறிதல், Chapter 48 — Thirukural (Tamil text, transliteration, English translation, Tamil commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-048.html" target="_blank" rel="noopener">The recognition of power: Adhigaram 48, Thirukkural (Kurals 471–480)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.valaitamil.com/vinaivaliyum-thanvaliyum-maatraan-valiyum-thunaivaliyum-thookkich-cheyal-kural-471.html" target="_blank" rel="noopener">Thirukkural 471–480, வலியறிதல் (with Tamil commentaries and English translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Metamorphoses, Book VI (the myth of Arachne) (Ovid) <span class="tier">[primary source]</span></li>
+<li id="cite-11">Apology (Plato (recording Socrates)) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Charles-XII" target="_blank" rel="noopener">Charles XII</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.worldhistory.org/Great_Northern_War/" target="_blank" rel="noopener">Great Northern War</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0473.html">&larr; Kural 473</a>
+  <a href="kural-0475.html">Kural 475 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-048.html">The Knowledge of Power</a>
+  <a class="skip-btn" href="kural-0481.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

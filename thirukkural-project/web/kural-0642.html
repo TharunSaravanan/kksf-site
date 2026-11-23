@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 642 — Oratory | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 642</h1>
+<p class="adhikaram"><a href="adhikaram-065.html">Oratory</a> &middot; Solvanmai &middot; <span class="tamil">சொல்வன்மை</span></p>
+
+<div class="tamil-text">ஆக்கமுங் கேடும் அதனால் வருதலால்
+காத்தோம்பல் சொல்லின்கட் சோர்வு.</div>
+<div class="translit">Aakkamung kedum adhanaal varudhalaal
+Kaaththombal sollinkat sorvu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Both success and ruin can come from what we say. So be very careful never to make a slip in your speech.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Words are like the steering wheel of a car: turn it well and you get home safely, jerk it carelessly and you crash. Because words can build things up or break them down, we should be careful never to say the wrong thing.</p>
+
+<h2 class="section">University</h2>
+<p>Ākkam (growth, prosperity) and kēṭu (ruin) are the paired outcomes that Valluvar often sets against each other, and here both are said to arrive “by it” (atanāl), meaning speech. The verb phrase kāttu ōmpal, “guarding and protecting”, is a doubled imperative of care, and cōrvu names a lapse, slip or momentary negligence, not deliberate lying. Parimelazhagar reads the couplet as advice to the minister, whose words in council can raise or ruin the king’s affairs, and so the lapse to be guarded against is any fault in word choice or timing. Modern commentators (Mu. Varadarasanar, Kalaignar) widen it into a universal maxim of verbal care. The older edition prints the first line in sandhi form (ஆக்கமுங் கேடு மதனால் வருதலாற்), with no difference in meaning.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Udyoga Parva, Vidura warns Dhritarashtra that wounds from arrows and axes heal, but wounds from harsh words do not, and that a wise person never lets such arrows of speech fly.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Udyoga Parva (Vidura Niti), trans. K. M. Ganguli</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Vidura’s political counsel treats careless speech as a direct cause of lasting enmity and ruin in a royal household.</div>
+  <div class="tieback">Like the Kural, Vidura tells a ruler’s counsellor to guard every word because ruin can come from speech.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For by thy words thou shalt be justified, and by thy words thou shalt be condemned.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 12:37 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus teaches that a person’s words decide their standing, for good or ill.</div>
+  <div class="tieback">Words bring either justification or condemnation, just as the Kural says they bring either gain or ruin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O you who have believed, fear Allah and speak words of appropriate justice.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 33:70 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The verse commands qawlan sadīdan, straight and well-aimed speech, and the next verse promises that God will then set right the believers’ deeds.</div>
+  <div class="tieback">The Qur’an ties good outcomes to carefully aimed speech, as the Kural ties prosperity to guarding one’s words.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Proverbs 18:21 teaches that death and life are in the power of the tongue, and that those who love it will eat its fruit.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">Proverbs 18:21 (JPS 1917)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The sage says the tongue decides between life and death, and people reap the results of how they use it.</div>
+  <div class="tieback">Death and life in Proverbs, like ruin and gain in the Kural, both come through speech.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Kokālika Sutta the Buddha says that a person is born with an axe in the mouth, with which the fool cuts himself when he speaks wrongly.</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/snp3.10" target="_blank" rel="noopener">Sutta Nipata 3.10 (Kokālika Sutta)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The monk Kokālika slanders the chief disciples and suffers terribly for it; the verses warn that reckless words wound the speaker most of all.</div>
+  <div class="tieback">The axe in the mouth is a vivid picture of the Kural’s warning that ruin can come through one’s own careless speech.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;A monk or a nun, well considering, should not use speech whether truth or untruth, or truth mixed with untruth, if it be sinful, blamable, rough, stinging, coarse, hard, leading to sins, to discord and factions, to grief and outrage, to destruction of living beings.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Ācārāṅga Sūtra II.4.1.6 (tr. Hermann Jacobi, SBE 22, 1884; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In the Acaranga&#x27;s lecture on modes of speech, every word is weighed before it is spoken, because speech can lead to sin, discord, grief and even the destruction of life.</div>
+  <div class="tieback">The kural warns that both gain and ruin come through speech, so one must guard against any slip; the Jain rule turns that same care into a discipline of considering each word first.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Those words are acceptable, which, when spoken, bring honor. Harsh words bring only grief. Listen, O foolish and ignorant mind!&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 15, Siree Raag, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak teaches that speech is the hinge of a person&#x27;s standing: words that bring honour are accepted, while harsh or insipid words bring only ruin and grief.</div>
+  <div class="tieback">The Kural says both prosperity and ruin come through speech, so one must guard against any slip of the tongue; Guru Nanak names the same two outcomes, honour and grief, as the fruit of what one says.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Niobe publicly boasts that her many children make her greater than the goddess Leto, and in response Apollo and Artemis kill her children one by one.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses 6.146-312</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">A single proud speech in front of the people of Thebes brings total ruin on her household.</div>
+  <div class="tieback">Niobe’s story shows the ruin side of the Kural: one slip of the tongue destroys everything.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In the Encomium of Helen, Gorgias calls speech a mighty lord that with a tiny body does divine works, and compares its effect on the soul to drugs on the body: some cure, some kill.</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Encomium_of_Helen" target="_blank" rel="noopener">Gorgias, Encomium of Helen 8-14</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Gorgias argues that speech can bring either healing or harm, depending on how it is used.</div>
+  <div class="tieback">Speech as both cure and poison is Gorgias’ version of the Kural’s gain and ruin.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">A loosely worded order sends the Light Brigade down the wrong valley</div>
+  <div class="rle-meta">25 October 1854 &middot; Balaklava, Crimea</div>
+  <div class="quote is-paraphrase">During the Battle of Balaklava in the Crimean War, Lord Raglan sent a written order for the cavalry to advance rapidly to the front and try to prevent the enemy carrying away the guns. The cavalry commanders could not see which guns he meant from their position, and the Light Brigade charged instead at a Russian battery at the end of a heavily defended valley. Of the roughly 670 men who charged, about 260 were killed or wounded, and the episode became one of the most infamous blunders in British military history.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The order made perfect sense from Raglan&#x27;s viewpoint on the heights but was dangerously ambiguous to those who had to carry it out, and no one stopped to clarify it.</div>
+  <div class="tieback">The kural warns that both prosperity and ruin come through words, so one must guard against any lapse in speech, and the vague wording of a single order at Balaklava turned into disaster.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-65/" target="_blank" rel="noopener">Thirukkural Chapter 65: சொல்வன்மை / Power of Speech (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A065.html" target="_blank" rel="noopener">65. சொல்வன்மை (Thirukkural, sandhi-joined text)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://suttacentral.net/snp3.10" target="_blank" rel="noopener">Kokālika Sutta (Sutta Nipata 3.10)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Ākārāṅga Sūtra (Acaranga Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses, Book 1 (the flood of Deucalion and Pyrrha, 1.253–415)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://en.wikisource.org/wiki/Encomium_of_Helen" target="_blank" rel="noopener">Gorgias, Encomium of Helen</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.nam.ac.uk/explore/battle-balaklava" target="_blank" rel="noopener">Battle of Balaklava</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.history.com/articles/the-charge-of-the-light-brigade-160-years-ago" target="_blank" rel="noopener">What Was the Charge of the Light Brigade? (Jesse Greenspan)</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0641.html">&larr; Kural 641</a>
+  <a href="kural-0643.html">Kural 643 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-065.html">Oratory</a>
+  <a class="skip-btn" href="kural-0651.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

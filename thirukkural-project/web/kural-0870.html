@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 870 — The Might of Hatred | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 870</h1>
+<p class="adhikaram"><a href="adhikaram-087.html">The Might of Hatred</a> &middot; Pakai Maatchi &middot; <span class="tamil">பகை மாட்சி</span></p>
+
+<div class="tamil-text">கல்லான் வெகுளும் சிறுபொருள் எஞ்ஞான்றும்
+ஒல்லானை ஒல்லா தொளி.</div>
+<div class="translit">Kallaan vekulum siruporul enjnaandrum
+ollaanai ollaa tholi.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A person who will not take even the small, easy win of fighting an enemy with no learning will never become famous.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you won’t even try an easy level of a game, how will you ever beat the hard ones and earn a trophy? Valluvar says that someone who shies away from small, easy challenges never earns a great name.</p>
+
+<h2 class="section">University</h2>
+<p>The syntax is compressed: kallaan vekulum siruporul (கல்லான் வெகுளும் சிறுபொருள்) is ‘the small gain of being angry with (fighting) the unlearned man’, and ollaanai ollaadhu oli (ஒல்லானை ஒல்லாது ஒளி) says that light, i.e. fame, will not unite with the one who does not obtain it. Varadarasanar on thirukkural.net reads: one who cannot do the easy thing of opposing the unlearned will never gain glory; Pappaiah adds that the gain from fighting one ignorant of the treatises is small, yet the king who disdains it earns no renown; Kalaignar has fame mock such a man for hesitating even before untrained foes. Note: ytamizh.com’s Varadarasanar, Pappaiah and Kalaignar glosses for 870 are misplaced (they discuss forgiving old friends, the theme of kural 810); the couplet text itself is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Krishna tells Arjuna that if he refuses to fight this righteous battle he will abandon his duty and his good name, and people will speak of his dishonour for ever.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 2.33-34</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">For a warrior, shrinking from a fight he ought to take means the loss of glory.</div>
+  <div class="tieback">The Kural likewise says that glory never comes to one who will not take up a fight within his reach.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">Jesus teaches that the one who is faithful in what is least is faithful also in much, and the one unjust in the least is unjust also in much.</div>
+  <div class="cite">&mdash; Luke 16:10 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Small tasks are the test that qualifies a person for greater ones.</div>
+  <div class="tieback">Valluvar’s man who will not take the small gain shows he is unfit for great glory.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O you who have believed, what is [the matter] with you that, when you are told to go forth in the cause of Allāh, you adhere heavily to the earth?&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 9:38 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an rebukes those who hang back when called to act.</div>
+  <div class="tieback">Like the Kural, it faults the reluctance that forfeits honour.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Hillel teaches that in a place where there are no worthy men, one should strive to be one.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot.2.5" target="_blank" rel="noopener">Pirkei Avot 2:5 (Hillel; numbered 2:6 in some editions)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Mishnah urges a person to step up when the situation calls for it, rather than hold back.</div>
+  <div class="tieback">Valluvar likewise expects the capable to take up what lies before them, or forfeit their standing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Dhammapada says that one who conquers himself is a greater victor than one who conquers a thousand times a thousand men in battle.</div>
+  <div class="cite">&mdash; Dhammapada 103 <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha redirects the idea of glory from outer victories to inner mastery.</div>
+  <div class="tieback">It offers a counterpoint to the Kural’s worldly calculus of fame through victory.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Penance is of no good if performed by noble men who have turned monks (for the sake of fame); but that penance of which nobody else knows anything (is meritorious). Do not spread your own fame!&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga I.8.24 (tr. Hermann Jacobi, SBE 45, 1895; wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Sūtrakṛtāṅga denies that seeking glory has any spiritual worth and says that hidden, unadvertised effort is the only kind that counts.</div>
+  <div class="tieback">The Kural says glory never comes to the man who will not take the easy gain of opposing an unlearned foe, while the Jain verse tells the seeker not to pursue glory at all, an honest contrast rather than a parallel.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;That wretched being, whom no one knows - chanting the Naam, the Name of the Lord, he is honored in the four directions.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 386, Raag Aasaa, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Arjan says that even an unknown, lowly person wins honour everywhere through the Name of God.</div>
+  <div class="tieback">The Kural says glory never comes to one who will not take even the easy gain of opposing an unlearned foe; Gurbani locates the source of lasting honour elsewhere, in the Naam.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Achilles tells the embassy that his mother foretold two fates: if he stays and fights at Troy he will die young but win undying glory; if he goes home he will live long without fame.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad 9.410-416</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Homer, glory (kleos) is won only by those who accept the fight.</div>
+  <div class="tieback">Valluvar likewise says fame never comes to one who declines the contest.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Sun Tzu says that what the ancients called a clever fighter is one who not only wins but wins with ease, by defeating an enemy already defeated.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/132" target="_blank" rel="noopener">Sun Tzu, The Art of War IV.11-13 (tr. Lionel Giles)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Strategy consists in seizing victories that are within easy reach.</div>
+  <div class="tieback">Valluvar likewise faults the man who will not take the easy win over an unlearned foe.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Howe halts after Long Island and Washington&#x27;s army escapes</div>
+  <div class="rle-meta">27-30 August 1776 &middot; Brooklyn, New York, United States</div>
+  <div class="quote is-paraphrase">After defeating the inexperienced Continental Army at the Battle of Long Island on 27 August 1776, British General William Howe halted his attack and began siege works rather than pressing the assault, overruling subordinates who argued for a renewed attack. On the night of 29-30 August, George Washington ferried about 9,000 troops across the East River to Manhattan, helped at dawn by fog. Howe did not pursue, and the American army survived to fight on.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">A commander who held every advantage over a raw, untrained army let the chance of a decisive victory slip away.</div>
+  <div class="tieback">The kural says one who will not take even the easy gain of opposing an untrained foe will never win glory, and Howe&#x27;s pause at Brooklyn is remembered as just such a missed opportunity.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-87/" target="_blank" rel="noopener">Thirukkural Chapter 87: பகைமாட்சி / The Might of Hatred, kurals 861-870 (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-087.html" target="_blank" rel="noopener">பகைமாட்சி - அதிகாரம் 87 - திருக்குறள் (with Puliyur Kesigan, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot.2.5" target="_blank" rel="noopener">Mishnah Pirkei Avot 2:5, sayings of Hillel (Mishnah Yomit trans. Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga (Sutrakritanga)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad, Book 21, translated by A. T. Murray (Loeb Classical Library, 1924)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/132" target="_blank" rel="noopener">Sun Tzu, The Art of War (tr. Lionel Giles, 1910)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/battle-of-long-island" target="_blank" rel="noopener">Battle of Long Island</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.battlefields.org/learn/revolutionary-war/battles/brooklyn" target="_blank" rel="noopener">Brooklyn Battle Facts and Summary</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.history.com/topics/american-revolution/battle-of-long-island" target="_blank" rel="noopener">Battle of Long Island</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0869.html">&larr; Kural 869</a>
+  <a href="kural-0871.html">Kural 871 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-087.html">The Might of Hatred</a>
+  <a class="skip-btn" href="kural-0871.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

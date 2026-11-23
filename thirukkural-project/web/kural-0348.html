@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 348 — Renunciation | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 348</h1>
+<p class="adhikaram"><a href="adhikaram-035.html">Renunciation</a> &middot; Thuravu &middot; <span class="tamil">துறவு</span></p>
+
+<div class="tamil-text">தலைப்பட்டார் தீரத் துறந்தார் மயங்கி
+வலைப்பட்டார் மற்றை யவர்.</div>
+<div class="translit">Thalaippattaar theerath thurandhaar mayangi
+Valaippattaar matrai yavar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who have given up everything completely have reached the highest goal. All others are confused and caught in a net.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A fish that swims completely clear of the net stays free, but a fish that stays near it &#x27;just a little&#x27; gets caught. This kural says people who give up everything are truly free, while the rest get tangled up.</p>
+
+<h2 class="section">University</h2>
+<p>Theera (“wholly, to the very end”) is the key word: Valluvar contrasts complete renunciants, who have thalaippattaar — &#x27;reached the head&#x27;, attained the goal — with the rest, who, bewildered (mayangi), are valaippattaar, &#x27;netted&#x27;. The rhyming pair thalaippattaar/valaippattaar sharpens the stark binary. Commentators differ over the net: Parimelazhagar and Solomon Pappaiah take it as the net of repeated births, Mu. Varadarasan and Karunanidhi as the net of ignorance. The couplet refuses any comfortable middle position — a half-renunciation still counts as capture — in line with Luke 9:62&#x27;s warning against looking back from the plough and the Gita&#x27;s &#x27;mesh of delusion&#x27;.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Possessed and led astray by such imaginings, enveloped in a mesh of delusion, and addicted to the gratification of sensuous pleasures, they descend to the murkiest hell.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita 16.16 (Swami Mukundananda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna describes those driven by endless desires as caught in a &#x27;moha-jala&#x27; — a net of delusion — that drags them downward.</div>
+  <div class="tieback">The Gita&#x27;s moha-jala (net of delusion) is precisely the Kural&#x27;s mayangi valaippattaar, &#x27;bewildered and netted&#x27;.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;No man, having put his hand to the plough, and looking back, is fit for the kingdom of God.&rdquo;</div>
+  <div class="cite">&mdash; Luke 9:62 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus answers a would-be follower who wants first to say goodbye to his family: discipleship admits no looking back.</div>
+  <div class="tieback">Both insist that renunciation must be total; divided attention disqualifies.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And what is the life of this world except the enjoyment of delusion.&rdquo;</div>
+  <div class="cite">&mdash; Quran 3:185 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Quran closes a verse about death and judgment by calling worldly life an enjoyment that deceives.</div>
+  <div class="tieback">The Kural&#x27;s &#x27;mayangi&#x27; (bewildered) corresponds to the Quran&#x27;s delusion: those who remain attached to worldly life are deceived by it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;For man also knoweth not his time: as the fishes that are taken in an evil net, and as the birds that are caught in the snare; so are the sons of men snared in an evil time, when it falleth suddenly upon them.&rdquo;</div>
+  <div class="cite">&mdash; Ecclesiastes 9:12 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Qoheleth compares humans to fish and birds suddenly caught in nets and snares.</div>
+  <div class="tieback">The same image of human beings caught in a net, though Ecclesiastes speaks of sudden misfortune rather than attachment.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Those who are lust-infatuated fall back into the swirling current (of samsara) like a spider on its self-spun web. This, too, the wise cut off. Without any longing, they abandon all suffering and renounce the world.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 347 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha pictures the passionate as trapped in a web of their own making, while the wise cut it and renounce the world.</div>
+  <div class="tieback">The same two outcomes as the Kural: the renunciants go free; the infatuated remain entangled in a self-spun net.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As an elephant, sinking down in a quagmire, sees the raised ground but does not get to the shore, so do we who long for sensual pleasures, not follow the path of monks.” … “But Kitra the great sage, of excellent conduct and penance, was indifferent to pleasure; after he had practised the highest self-control, he reached the highest place of perfection.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 13.30 and 13.35 (tr. Hermann Jacobi, SBE 45, 1895, pp. 60-61)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">King Brahmadatta admits that he is stuck like an elephant in a swamp and cannot leave his pleasures, and he ends in hell. His brother Citra renounces fully and reaches perfection.</div>
+  <div class="tieback">The Kural&#x27;s sharp contrast between those who renounce completely and reach the goal and those caught in the net is acted out by the two brothers. One is mired, the other reaches the summit.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The fish did not notice the net in the deep and salty sea.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 55, Siree Raag, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In Siree Raag Guru Nanak uses the fish caught unawares in the fisherman&#x27;s net as an image of the heedless soul trapped by Maya and death.</div>
+  <div class="tieback">The Kural says that those who have not wholly renounced are bewildered and netted; Guru Nanak&#x27;s fish, which never saw the net, is the same bewildered captive.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Hephaestus forges an invisible, unbreakable net and traps Ares and Aphrodite in it in the very act of their illicit passion, exposing them to the laughter of the gods.</div>
+  <div class="cite">&mdash; Homer, Odyssey 8.266-366 <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In the song of Demodocus, the lovers&#x27; desire leads them straight into a finely wrought trap.</div>
+  <div class="tieback">Those led by desire end up caught in a net — a vivid mythic counterpart to the Kural&#x27;s valaippattaar.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In the allegory of the cave, prisoners chained since birth mistake shadows for reality; only one who is freed and turns fully around can climb out to the sunlight.</div>
+  <div class="cite">&mdash; Plato, Republic 7.514a-518b <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Plato depicts ordinary human life as bondage to illusion, from which only a complete turning of the soul releases one.</div>
+  <div class="tieback">Plato&#x27;s chained, deluded prisoners correspond to the Kural&#x27;s &#x27;bewildered, netted&#x27; majority; the freed philosopher to the one who has reached the height.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Emperor Shirakawa abdicates but keeps ruling as a cloistered emperor</div>
+  <div class="rle-meta">1086 &middot; Kyoto, Japan</div>
+  <div class="quote is-paraphrase">Emperor Shirakawa of Japan abdicated in 1086 in favour of his young son, and he later took Buddhist vows. Rather than withdrawing from public life, he set up his own administrative centre with judicial functions and a military guard, and as retired emperor he dominated his successors and the government for decades. His example created the insei or cloister government, through which later emperors exercised power after abdicating until 1185.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Shirakawa outwardly renounced the throne and took religious vows, yet remained fully entangled in politics. The system he founded shows how a partial renunciation can leave a person as bound as before.</div>
+  <div class="tieback">The kural says only those who renounce completely reach the goal while the rest remain caught in the net, and Shirakawa&#x27;s half-renunciation left him more entangled in power than ever.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-35/" target="_blank" rel="noopener">Thirukkural Chapter 35: துறவு / Renunciation (with Mu. Varadarasan, Solomon Pappaiah, Karunanidhi, Sivayogi Sivakumar commentaries and G. U. Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-035.html" target="_blank" rel="noopener">துறவு - அதிகாரம் 35 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah, Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita, The Song of God (Swami Mukundananda)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-10">Republic, Book X (the Myth of Er) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/biography/Shirakawa" target="_blank" rel="noopener">Shirakawa (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.metmuseum.org/toah/ht/07/eaj.html" target="_blank" rel="noopener">Japan, 1000-1400 A.D. (Heilbrunn Timeline of Art History)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0347.html">&larr; Kural 347</a>
+  <a href="kural-0349.html">Kural 349 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-035.html">Renunciation</a>
+  <a class="skip-btn" href="kural-0351.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

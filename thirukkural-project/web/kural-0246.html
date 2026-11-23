@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 246 — Benevolence | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 246</h1>
+<p class="adhikaram"><a href="adhikaram-025.html">Benevolence</a> &middot; Arulodamai &middot; <span class="tamil">அருளுடைமை</span></p>
+
+<div class="tamil-text">பொருள்நீங்கிப் பொச்சாந்தார் என்பர் அருள்நீங்கி
+அல்லவை செய்தொழுகு வார்.</div>
+<div class="translit">Porulneengip pochchaandhaar enbar arulneengi,
+Allavai seidhozhugu vaar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Wise people say that those who give up kindness and live by doing wrong have lost sight of life&#x27;s real purpose and forgotten the pain they once suffered.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine someone who once got badly hurt, forgets how much it hurt, and then starts hurting others. Valluvar says people who throw away kindness and do mean things have forgotten what really matters, as if they lost the map of their own life.</p>
+
+<h2 class="section">University</h2>
+<p>The kural turns on the word porul, which can mean ‘wealth’, ‘meaning’ or ‘the real object (of life)’. Varadarasan and Pulavar Kesikan read porul neengi as ‘having left the true end, that is, virtue’, and pochchaandhaar as ‘those who have forgotten their life’s purpose’. Parimelazhagar reads it karmically: such people neglected virtue in an earlier life and have now forgotten the sufferings it brought. Solomon Pappaiah combines the two senses: they lose their wealth and also forget the pain they once endured. The unifying idea is moral amnesia. Cruelty is presented less as malice than as a forgetting, of one’s purpose and of the fellow-feeling one’s own suffering should have taught. This anticipates the reciprocal logic of Kural 250.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;O Parth, the qualities of those who possess a demoniac nature are hypocrisy, arrogance, conceit, anger, harshness, and ignorance.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita 16.4 (trans. Mukundananda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Gita’s list of demonic qualities includes pāruṣya (harshness) and ends with ajñāna (ignorance).</div>
+  <div class="tieback">Like the kural, the Gita pairs pitilessness with a kind of ignorance or forgetting of the real goal.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For what is a man profited, if he shall gain the whole world, and lose his own soul?&rdquo;</div>
+  <div class="cite">&mdash; Matthew 16:26 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus warns that someone can gain everything while losing the one thing that gives life its worth.</div>
+  <div class="tieback">Both texts describe losing the true porul, life’s real object, while pursuing the wrong things.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;A woman entered the (Hell) Fire because of a cat which she had tied, neither giving it food nor setting it free to eat from the vermin of the earth.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:3318" target="_blank" rel="noopener">Sahih al-Bukhari 3318</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">A single sustained act of cruelty to a helpless animal was enough to ruin the woman.</div>
+  <div class="tieback">Abandoning compassion and persisting in cruelty (seidhozhugu, ‘continually doing’) means losing the true gain of life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;The merciful man doeth good to his own soul: but he that is cruel troubleth his own flesh.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 11:17 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Proverbs presents cruelty as self-harm and mercy as self-benefit.</div>
+  <div class="tieback">The cruel person in the kural has likewise lost their own true good; they are their own chief victim.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;He who inflicts violence on those who are unarmed, and offends those who are inoffensive, will soon come upon one of these ten states”, among them “loss of wealth, or houses destroyed by ravaging fire”.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 137-140 (trans. Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Dhammapada lists the calamities that follow cruelty toward the harmless, ending with rebirth in hell.</div>
+  <div class="tieback">Includes the literal loss of porul (wealth), matching the double meaning in the kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;A cut-throat enemy will not do him such harm as his own perversity will do him; the man without pity will feel repentance in the hour of death.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 20.48 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The sage warns that a man without pity is ruined by his own perversity more surely than by any enemy, and will know it only at death.</div>
+  <div class="tieback">Valluvar says those who abandon compassion and do wrong have lost sight of life&#x27;s real purpose; the Uttaradhyayana likewise says the pitiless man is ruined by his own perversity and learns too late what he has lost.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The Creation is in the Creator, and the Creator is in the Creation, totally pervading and permeating all places.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1350, Raag Prabhaatee, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Bhagat Kabir teaches that God dwells in all creatures and all creatures dwell in God.</div>
+  <div class="tieback">The Kural says those who abandon compassion and do wrong have lost sight of life&#x27;s true purpose; Kabir supplies the Sikh reason such cruelty is a forgetting, since the one harmed carries the same divine presence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Even so has Achilles flung aside all pity, and all that conscience which at once so greatly banes yet greatly boons him that will heed it.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad 24 (trans. Samuel Butler)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Apollo rebukes the gods for tolerating Achilles, who drags Hector’s corpse daily and ‘knows neither right nor ruth’.</div>
+  <div class="tieback">Achilles, having cast off pity and persisting in outrage, has lost his true self, until Priam reminds him of his father (see Kural 250).</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;And, generally, we feel pity whenever we are in the condition of remembering that similar misfortunes have happened to us or ours, or expecting them to happen in the future.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/rhetoric.2.ii.html" target="_blank" rel="noopener">Aristotle, Rhetoric, Book II, ch. 8 (1386a) (tr. W. Rhys Roberts)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In his analysis of the emotions, Aristotle says pity depends on remembering or expecting suffering of one’s own, so those who think themselves beyond harm feel little of it.</div>
+  <div class="tieback">This gives the psychology behind the Kural’s charge: those who drop compassion have forgotten what they themselves have suffered.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Massachusetts Bay banishes Roger Williams</div>
+  <div class="rle-meta">October 1635 - 1636 &middot; Massachusetts Bay Colony and Providence, New England</div>
+  <div class="quote is-paraphrase">The Puritan colony of Massachusetts Bay, founded by people who had left England in search of freedom to worship in their own way, banished the minister Roger Williams in October 1635 for his dangerous opinions, including his view that magistrates had no right to interfere in matters of religion. Williams fled and in 1636 founded Providence on land from the Narragansett, as a refuge for people troubled in conscience. It became a haven for Baptists, Quakers, Jews and other dissenters.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">A community shaped by the experience of religious pressure imposed the same pressure on a dissenter in its midst, while the man it expelled built a refuge for others.</div>
+  <div class="tieback">The kural says those who abandon compassion have forgotten what they themselves suffered, and the colony&#x27;s leaders treated a dissenter as they had once complained of being treated.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-25/" target="_blank" rel="noopener">அருளுடைமை / Compassion, Chapter 25 (Kurals 241-250), with commentaries of Mu. Varadarasan, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-025.html" target="_blank" rel="noopener">அருளுடைமை - அதிகாரம் 25 - திருக்குறள் (with commentaries of Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah, Mu. Karunanidhi)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita, The Song of God (Swami Mukundananda)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:3318" target="_blank" rel="noopener">Sahih al-Bukhari 3318</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad, Book 21, translated by A. T. Murray (Loeb Classical Library, 1924)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Aristotle/rhetoric.2.ii.html" target="_blank" rel="noopener">Rhetoric, Book II (Aristotle)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/biography/Roger-Williams-American-religious-leader" target="_blank" rel="noopener">Roger Williams</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.nps.gov/rowi/learn/historyculture/rw1631-1636.htm" target="_blank" rel="noopener">Roger Williams 1631-1636</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0245.html">&larr; Kural 245</a>
+  <a href="kural-0247.html">Kural 247 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-025.html">Benevolence</a>
+  <a class="skip-btn" href="kural-0251.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

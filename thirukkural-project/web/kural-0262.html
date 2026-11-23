@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 262 — Penance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 262</h1>
+<p class="adhikaram"><a href="adhikaram-027.html">Penance</a> &middot; Thavam &middot; <span class="tamil">தவம்</span></p>
+
+<div class="tamil-text">தவமும் தவமுடையார்க்கு ஆகும் அதனை
+அஃதிலார் மேற்கொள் வது.</div>
+<div class="translit">Thavamum thavamudaiyaarkku aagum adhanai
+Aqdhilaar merkolvadhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Penance (a life of strict self-control) works only for those who truly have its inner strength. For others, just going through the motions of it is useless.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Wearing a doctor’s coat does not make you a doctor. In the same way, putting on the clothes and habits of a holy person does not work unless you really have the patience and goodness inside.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet turns on a pun-like repetition: தவம் (tapas) comes only to those who have தவம். Commentators split on what the second ‘tapas’ means. Parimelazhagar and Solomon Pappaiah read it karmically — only those who accumulated tapas in earlier births can undertake it now — while Mu. Varadarasan reads it as a warning against தவக்கோலம், the ascetic costume adopted without ascetic conduct. The second reading anticipates the very next chapter, கூடாவொழுக்கம் (‘Imposture’), and fits Valluvar’s habitual suspicion of form without substance. Either way, the verse asserts that tapas is not a technique anyone can pick up but the outward expression of an already-formed inner capacity.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Those who undergo severe austerities and penances not recommended in the scriptures, performing them out of pride and egoism, who are impelled by lust and attachment, who are foolish and who torture the material elements of the body as well as the Supersoul dwelling within, are to be known as demons.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 17.5-6</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna condemns austerity performed by those whose inner disposition is proud and desirous — the outward act is present but the right nature is not.</div>
+  <div class="tieback">Both texts insist that tapas without the proper inner quality is worthless or worse.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Moreover when ye fast, be not, as the hypocrites, of a sad countenance: for they disfigure their faces, that they may appear unto men to fast. Verily I say unto you, They have their reward.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 6:16 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus warns against fasting as a public performance; the show earns only human notice, not God’s reward.</div>
+  <div class="tieback">Matches Varadarasan’s reading: the ascetic ‘look’ without the ascetic reality is empty.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Whoever does not give up forged speech and evil actions, Allah is not in need of his leaving his food and drink.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:1903" target="_blank" rel="noopener">Sahih al-Bukhari 1903</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">A fast that leaves the character unchanged is declared meaningless in God’s sight.</div>
+  <div class="tieback">The outward discipline without the inner reality is futile — Valluvar’s exact verdict.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Is it such a fast that I have chosen? a day for a man to afflict his soul? is it to bow down his head as a bulrush, and to spread sackcloth and ashes under him? wilt thou call this a fast, and an acceptable day to the LORD?&rdquo;</div>
+  <div class="cite">&mdash; Isaiah 58:5 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Isaiah mocks ritual fasting and sackcloth performed by people whose conduct stays unjust, and redefines the true fast as freeing the oppressed.</div>
+  <div class="tieback">Both reject the costume of penance when the substance is missing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;What is the use of your matted hair, O witless man? What of your garment of antelope’s hide? Within you is the tangle (of passion); only outwardly do you cleanse yourself.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 394 <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha ridicules the ascetic whose matted locks and deerskin conceal an untamed mind.</div>
+  <div class="tieback">Precisely the ‘tavakkōlam’ critique: the ascetic garb is useless without the inner tapas.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;If an ignorant man should eat but a blade of Kusa-grass every month, (the merit of his penance) will not equal the sixteenth part of his who possesses the Law as it has been taught.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 9.44 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">King Nami tells Indra that even the most extreme fasting by one who lacks right understanding is worth almost nothing beside the inner possession of the true Law.</div>
+  <div class="tieback">The Kural says outward tapas is futile for those who lack its inner quality; Nami makes the same point by ranking the severest fast of an ignorant man below a sixteenth of true inner discipline.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Yoga is not the patched coat, Yoga is not the walking stick. Yoga is not smearing the body with ashes.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 730, Raag Soohee, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In Raag Soohee Guru Nanak tells the yogis that the ascetic&#x27;s coat, staff and ash do not make a person one with God; union comes from living purely in the midst of the world.</div>
+  <div class="tieback">The Kural says putting on the outward form of penance is futile without the inner quality; Guru Nanak likewise empties the ascetic&#x27;s outfit of any value.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Phaethon begs his father Helios to let him drive the sun-chariot; lacking the strength and skill for it, he loses control, scorches the earth, and is struck down by Zeus.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Ov.+Met.+2.1" target="_blank" rel="noopener">Ovid, Metamorphoses Book 2</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">A task suited only to one with the proper power ends in ruin when attempted by one without it.</div>
+  <div class="tieback">Illustrates the Kural’s principle that a discipline belongs only to those with the capacity for it; others who take it up fail.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Epictetus warns that whoever takes up the Cynic’s cloak, wallet and staff without the inner preparation and divine calling undertakes a great matter in vain and makes himself ridiculous.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0236" target="_blank" rel="noopener">Epictetus, Discourses 3.22 (On the Calling of a Cynic)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">For Epictetus the Cynic life is a vocation for the rare person fitted for it, not a costume anyone may wear.</div>
+  <div class="tieback">A close philosophical parallel: the ascetic life ‘belongs to’ those who possess its inner qualification.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Pope Clement VI condemns the flagellant processions</div>
+  <div class="rle-meta">20 October 1349 &middot; Avignon, France (papal court), with the processions spreading across Germany and the Low Countries</div>
+  <div class="quote is-paraphrase">During the Black Death, bands of flagellants travelled from town to town in Germany and neighbouring lands, performing public penance by scourging themselves in organised processions. As the movement spread and grew hostile to church authority, the University of Paris appealed to the pope. In letters dated 20 October 1349, Pope Clement VI condemned the movement and forbade the processions, and it soon dwindled into a small, hunted sect.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">The church judged that a dramatic outward display of penance, cut loose from inner discipline and authority, had become a danger rather than a virtue.</div>
+  <div class="tieback">The kural warns that taking up the outward form of penance is futile for those who lack its inner quality, and the flagellant episode shows outward austerity being rejected as hollow.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-27/" target="_blank" rel="noopener">Thirukkural Chapter 27: தவம் / Penance (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-027.html" target="_blank" rel="noopener">தவம் - அதிகாரம் 27 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:1903" target="_blank" rel="noopener">Sahih al-Bukhari 1903, Book of Fasting</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Ov.+Met.+2.1" target="_blank" rel="noopener">Ovid, Metamorphoses Book 2 (Phaethon)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0236" target="_blank" rel="noopener">Epictetus, Discourses, Book 3, ch. 22: On the Cynic Calling</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/topic/flagellants" target="_blank" rel="noopener">Flagellants (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.newadvent.org/cathen/06089c.htm" target="_blank" rel="noopener">Flagellants (Catholic Encyclopedia (1909))</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0261.html">&larr; Kural 261</a>
+  <a href="kural-0263.html">Kural 263 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-027.html">Penance</a>
+  <a class="skip-btn" href="kural-0271.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

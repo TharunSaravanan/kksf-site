@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1188 — The Pallid Hue | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1188</h1>
+<p class="adhikaram"><a href="adhikaram-119.html">The Pallid Hue</a> &middot; Pasapparu Paruvaral &middot; <span class="tamil">பசப்பறு பருவரல்</span></p>
+
+<div class="tamil-text">பசந்தாள் இவள்என்பது அல்லால் இவளைத்
+துறந்தார் அவர்என்பார் இல்.</div>
+<div class="translit">pasandhaal ival-enpadhu allaal ivalaith
+thurandhaar avar-enpaar il</div>
+
+<h2 class="section">Meaning</h2>
+<p>People only say, &#x27;She has turned pale.&#x27; No one says, &#x27;He has left her.&#x27;</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine your friend broke your toy, and everyone said, ‘Why is that toy broken? You must be careless!’ but nobody said, ‘Your friend broke it.’ That feels unfair. The wife feels the same: everybody notices her pale face, but nobody says it’s because her husband went away.</p>
+
+<h2 class="section">University</h2>
+<p>A couplet about public opinion (alar, the village gossip that runs through the Kamattuppal): people say pasantāḷ ivaḷ (பசந்தாள் இவள், ‘she has grown pale’), but none says tuṟantār avar (துறந்தார் அவர், ‘he has abandoned her’). Tuṟa- is the same root as tuṟavu, ‘renunciation, forsaking’, giving the complaint a sharp edge. Mu. Varadarasanar and Kalaignar read the first clause as blame (பழி) directed at the woman for showing her grief, while the man’s departure, the real cause, escapes comment. Pope: ‘On me, because I pine, they cast a slur; / But no one says, “He first deserted her.”’ Text identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">When Shakuntala arrives at Dushyanta’s court, the king, under Durvasas’s curse, does not remember her; it is she whose honesty and conduct are questioned before the assembly, while the husband who forgot her is not blamed.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/" target="_blank" rel="noopener">Kalidasa, Abhijnanashakuntalam, Act 5 (paraphrase)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Kalidasa stages a scene in which public suspicion falls on the wife rather than on the husband who failed her.</div>
+  <div class="tieback">The Kural’s heroine complains of the same imbalance: people remark on her, not on the man who left.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">The scribes and Pharisees bring to Jesus a woman taken in adultery and set her in the midst for judgment; the man is not brought, and Jesus answers that whoever is without sin should cast the first stone.</div>
+  <div class="cite">&mdash; John 8:3-11 (KJV) (paraphrase) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The episode exposes a public judgment that singles out the woman while the man escapes notice.</div>
+  <div class="tieback">The Kural’s complaint has the same shape: the woman’s condition is talked about, the man’s part is ignored.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Why, when you heard it, did not the believing men and believing women think good of themselves [i.e., one another] and say, ‘This is an obvious falsehood’?&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 24:12 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an rebukes the community for repeating talk that wrongly blamed a woman instead of assuming the best.</div>
+  <div class="tieback">The Kural’s heroine also suffers from talk that blames her while ignoring the true cause.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Look not upon me, that I am swarthy, That the sun hath tanned me; My mother’s sons were incensed against me, They made me keeper of the vineyards; But mine own vineyard have I not kept.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/" target="_blank" rel="noopener">Song of Songs 1:6 (JPS 1917, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The bride asks onlookers not to stare at her darkened skin, explaining that it was caused by others who sent her out under the sun.</div>
+  <div class="tieback">Like the Kural’s heroine, she knows people will judge her changed colour without seeing who caused it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;O Atula! Indeed, this is an ancient practice, not one only of today: they blame those who remain silent, they blame those who speak much, they blame those who speak in moderation. There is none in the world who is not blamed.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 227 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha observes that public blame is universal and arbitrary.</div>
+  <div class="tieback">The heroine discovers the same arbitrariness: the village blames her pallor, never his absence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">Anjana Sundari, neglected for years by her husband Pavananjaya, is visited by him secretly before he leaves for war; when she is found to be with child, her mother-in-law accuses her of misconduct and drives her out, and even her own family refuses to take her in, while no one questions the absent husband.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Hemacandra, Trishashtishalakapurushacharitra, Book 7 (story of Anjana) (paraphrase)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In this Jain narrative, the mother of Hanuman bears all the blame for a situation her absent husband created.</div>
+  <div class="tieback">Her story is the Kural’s complaint writ large: everyone speaks of what has happened to her, and no one speaks of him.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Dadda: Do not blame anyone else; blame instead your own actions.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 433, Raag Aasaa, Patti, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In the Patti (acrostic) in Raag Aasaa, Guru Nanak teaches that one should not blame others for one&#x27;s suffering but look at one&#x27;s own deeds.</div>
+  <div class="tieback">The Kural&#x27;s wife complains that people blame her for turning pale while no one blames the husband who left; Gurbani turns this around, telling the sufferer never to blame the other but to look at her own actions.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Virgil’s Rumour (Fama) spreads through the cities of Libya the tale of Dido’s love for Aeneas and her neglect of her kingdom; when Aeneas sails away, it is Dido who is left disgraced and talked about.</div>
+  <div class="cite">&mdash; Virgil, Aeneid 4.173-197 (paraphrase) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In the Aeneid public talk fastens on the abandoned woman while the departing hero sails on.</div>
+  <div class="tieback">The Kural’s heroine complains of the same: the talk is all about her, never about the man who left.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle holds that praise and blame are properly given only for voluntary actions, while what is involuntary, done under compulsion or in ignorance, deserves pardon and sometimes pity.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics 3.1 (1109b30-35) (paraphrase)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Aristotle, blame should follow responsibility.</div>
+  <div class="tieback">By that standard the village has it backward: her pallor is involuntary, while his departure was his choice.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Catherine of Aragon refuses to accept the annulment of her marriage</div>
+  <div class="rle-meta">1533-1536 &middot; England</div>
+  <div class="quote is-paraphrase">Henry VIII sought to end his marriage to Catherine of Aragon mainly because she had not given him a male heir. Archbishop Thomas Cranmer annulled the marriage on 23 May 1533, but Catherine refused to accept it and kept calling herself queen, until the 1534 Act of Succession required her to use the title Princess Dowager. She was separated from her daughter Mary, confined to residences including Kimbolton, and died there in January 1536.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The official reasons for ending the marriage centred on Catherine, while it was Henry who set her aside.</div>
+  <div class="tieback">The kural complains that people say &#x27;she has grown pale&#x27; but no one says &#x27;he has left her&#x27;, and Catherine bore the official blame for a marriage that her husband chose to end.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-119/" target="_blank" rel="noopener">Thirukkural Chapter 119: பசப்புறுபருவரல் / The Pallid Hue (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-119.html" target="_blank" rel="noopener">பசப்புறு பருவரல் - அதிகாரம் 119 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.gutenberg.org/" target="_blank" rel="noopener">Kalidasa, Abhijnanashakuntalam (Shakuntala)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Virgil, Aeneid, Book 4 <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Catherine-of-Aragon" target="_blank" rel="noopener">Catherine of Aragon (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.worldhistory.org/Catherine_of_Aragon/" target="_blank" rel="noopener">Catherine of Aragon (Mark Cartwright)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1187.html">&larr; Kural 1187</a>
+  <a href="kural-1189.html">Kural 1189 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-119.html">The Pallid Hue</a>
+  <a class="skip-btn" href="kural-1191.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

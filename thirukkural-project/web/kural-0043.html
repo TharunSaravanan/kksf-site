@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 43 — Domestic Life | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 43</h1>
+<p class="adhikaram"><a href="adhikaram-005.html">Domestic Life</a> &middot; Ilvaazhkkai &middot; <span class="tamil">இல்வாழ்க்கை</span></p>
+
+<div class="tamil-text">தென்புலத்தார் தெய்வம் விருந்தொக்கல் தானென்றாங்கு
+ஐம்புலத்தாறு ஓம்பல் தலை.</div>
+<div class="translit">Thenpulaththaar theyvam virundhokkal thaanendraangu,
+Aimpulaththaaru ompal thalai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The main duty of a family person is to take good care of these five: their ancestors who have died, the gods, guests, relatives, and themselves.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A good household is like a table set with five plates. One is for the grandparents who have passed away, one is for God, one for whoever knocks at the door, one for the family, and one for yourself. Forgetting any plate — including your own — means the table isn&#x27;t really set.</p>
+
+<h2 class="section">University</h2>
+<p>This is the Kural&#x27;s compressed version of the fivefold domestic obligation. தென்புலத்தார் (thenpulaththaar) literally means “those of the southern region” — the dead, since the south is Yama&#x27;s quarter — and is the standard Tamil term for the ancestors (pitṛ). The other four are தெய்வம் (theyvam, the gods), விருந்து (virundhu, the guest — a theme Valluvar gives a whole chapter to at 9), ஒக்கல் (okkal, kin), and தான் (thaan, oneself). The inclusion of *oneself* is philosophically important: Valluvar&#x27;s domestic ethic is not self-erasing asceticism but a balanced distribution, captured by ஓம்பல் (ombal, “to cherish/tend/guard”) and by தலை (thalai, “the head, the foremost thing”). The scheme corresponds closely to the Brahminical pañca-mahāyajña, but Valluvar strips it of ritual technicality and states it as household budgeting of love and resources.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;But he who does not feed these five, the gods, his guests, those whom he is bound to maintain, the manes, and himself, lives not, though he breathes.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/manu/manu08.htm" target="_blank" rel="noopener">Manusmriti 3.72 (Bühler, Sacred Books of the East XXV)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Manu&#x27;s formulation of the five great sacrifices makes daily household life itself a continuous ritual obligation toward gods, guests, dependants, ancestors and self.</div>
+  <div class="tieback">The five items and their order are effectively identical to the Kural&#x27;s ஐம்புலம் — gods, guests, kin, the departed, and oneself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Be not forgetful to entertain strangers: for thereby some have entertained angels unawares.&rdquo;</div>
+  <div class="cite">&mdash; Hebrews 13:2 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Hebrews grounds Christian hospitality in the Genesis episode of Abraham unknowingly hosting divine messengers, making the guest a potential bearer of the sacred.</div>
+  <div class="tieback">It fuses two of the Kural&#x27;s five claims — the guest (விருந்து) and the divine (தெய்வம்) — into a single duty of the household.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Anybody who believes in Allah and the Last Day should not harm his neighbor, and anybody who believes in Allah and the Last Day should entertain his guest generously and anybody who believes in Allah and the Last Day should talk what is good or keep quiet.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6018" target="_blank" rel="noopener">Sahih al-Bukhari 6018, Book of Good Manners (Al-Adab)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Prophet lists domestic and neighbourly conduct — not private devotion — as the direct proof of belief in God and the hereafter.</div>
+  <div class="tieback">Like the Kural, it treats honouring the guest and one&#x27;s immediate circle as the householder&#x27;s headline religious duty.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Hospitality toward guests is greater than receiving the Divine Presence.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Shabbat.127a" target="_blank" rel="noopener">Babylonian Talmud, Shabbat 127a (Koren-Steinsaltz / William Davidson Edition)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Rav derives this from Abraham asking God to wait while he attends to three travellers (Genesis 18:3), making hachnasat orchim outrank even direct communion with God.</div>
+  <div class="tieback">The Kural lists guests alongside the gods among the five claims; the Talmud goes further and ranks the guest above the divine visitation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;…performs the five oblations: to relatives, guests, the dead, kings, &amp; devas. This is the fourth benefit that can be obtained from wealth.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an05/an05.041.than.html" target="_blank" rel="noopener">Anguttara Nikaya 5.41, Adiya Sutta, trans. Thanissaro Bhikkhu</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha tells the householder Anathapindika that righteously earned wealth should be used for five purposes, one of which is a set of five customary offerings.</div>
+  <div class="tieback">Four of the Kural&#x27;s five claims appear verbatim here — relatives, guests, the dead, and the gods — as duties of household wealth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The six daily activities or duties of householders are : worship of God, worship of the preceptor, study of scriptures, practice of self control, practice of austerities, and giving gifts.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.jainworld.com/jainbooks/antiquity/ethcjain.htm" target="_blank" rel="noopener">Ṣaḍ-āvaśyaka verse for householders, as quoted and translated in V. A. Sangave, Ethics of Jainism (jainworld.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">A widely cited Sanskrit verse (devapūjā gurūpāstiḥ svādhyāyaḥ saṃyamas tapaḥ / dānaṃ ceti gṛhasthānāṃ ṣaṭ karmāṇi dine dine) gives the Jain householder a fixed list of daily duties.</div>
+  <div class="tieback">Jainism has its own list of the householder&#x27;s daily duties that sits beside Valluvar&#x27;s fivefold one, though the two lists are not the same.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;He does not honor his ancestors while they are alive, but he holds feasts in their honor after they have died. Tell me, how can his poor ancestors receive what the crows and the dogs have eaten up?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 332, Raag Gauri Bairaagan, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Bhagat Kabir, whose hymns the Gurus included in the scripture, mocks memorial feasts for the dead and offerings to gods made of clay, and asks people to honour their elders while they live and to remember the one Lord who has no ancestors.</div>
+  <div class="tieback">It speaks to two of the Kural&#x27;s five claims, ancestors and gods, but turns them around: Sikh teaching keeps the duty to kin and guests and drops ritual offerings to the dead and the gods.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Ovid tells how Jupiter and Mercury, travelling disguised, are turned away by a thousand homes until the poor elderly couple Baucis and Philemon welcome them into their one-room cottage, share their scant food, and are spared the flood that destroys their impious neighbours.</div>
+  <div class="cite">&mdash; Ovid, Metamorphoses VIII (Baucis and Philemon) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The tale is the definitive Greco-Roman statement of xenia — the sacred obligation of the household hearth to the stranger, enforced by Zeus Xenios himself.</div>
+  <div class="tieback">It dramatises three of the Kural&#x27;s five claims at once: the guest, the gods, and the household itself, all met at a single hearth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Cicero maps the degrees of human fellowship in concentric circles and holds that the first bond of society is that between husband and wife, then parents and children, then the household — which he calls the foundation of civil government and, as it were, the nursery of the state.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2007.01.0048" target="_blank" rel="noopener">Cicero, De Officiis 1.53-55</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">For Cicero, moral obligation is graded: we owe most to those nearest, and the household is the training ground from which civic duty grows.</div>
+  <div class="tieback">Both texts organise the householder&#x27;s duties as a ranked set of claims radiating outward from the home.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">UNESCO recognises Mexico&#x27;s Day of the Dead</div>
+  <div class="rle-meta">2003 (proclaimed); 2008 (inscribed) &middot; Mexico</div>
+  <div class="quote is-paraphrase">In 2003 UNESCO proclaimed the indigenous festivity dedicated to the dead, as practised in Mexico, a masterpiece of humanity&#x27;s intangible heritage, and in 2008 inscribed it on its Representative List. At the end of October and start of November, families lay flower petals and candles along the path from the cemetery to their homes, prepare the favourite dishes of departed relatives, and place them with offerings on home altars and graves. The custom blends pre-Hispanic rites with the Catholic feasts of All Saints and All Souls.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">The festival shows a whole society setting aside time each year to honour its ancestors through family gatherings, shared food and religious observance.</div>
+  <div class="tieback">The kural lists the householder&#x27;s duty to the departed ancestors, the gods, kin and others, and the Day of the Dead joins remembrance of ancestors, worship and family feasting in a single household observance.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-5/" target="_blank" rel="noopener">திருக்குறள் — அதிகாரம் 5: இல்வாழ்க்கை (Chapter 5: Domestic Life), with Tamil commentaries by Mu. Varadarajan, Salomon Pappaiah, Mu. Karunanidhi and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-005.html" target="_blank" rel="noopener">Thirukkural, Adhigaram 5 — Domestic Life / Married Life (Tamil text, transliteration, multi-language translations and classical commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://thirukural-world.blogspot.com/2014/12/41-50.html" target="_blank" rel="noopener">குறள் 41-50 இல்வாழ்க்கை (Kurals 41-50, Domestic Life) — Tamil text with Tamil and English meanings and Pope/Drew translations</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://sacred-texts.com/hin/manu/manu08.htm" target="_blank" rel="noopener">The Laws of Manu (Manusmriti), Chapter VIII</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/bukhari:6018" target="_blank" rel="noopener">Sahih al-Bukhari 6018 — &#x27;Whoever believes in Allah and the Last Day should entertain his guest generously&#x27; (Book of Good Manners, Al-Adab)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Shabbat.127a" target="_blank" rel="noopener">Babylonian Talmud, Tractate Shabbat 127a — hospitality toward guests is greater than receiving the Divine Presence (William Davidson Edition / Koren-Steinsaltz)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.accesstoinsight.org/tipitaka/an/an05/an05.041.than.html" target="_blank" rel="noopener">Anguttara Nikaya 5.41, Adiya Sutta: Benefits to be Obtained from Wealth — the five oblations, trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://jainworld.jainworld.com/jainbooks/antiquity/ethcjain.htm" target="_blank" rel="noopener">Jaina ethics (English renderings of Jain householder texts, incl. Hemacandra&#x27;s Yogaśāstra) (Vilas A. Sangave)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Metamorphoses, Book VIII (Baucis and Philemon) (Ovid) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2007.01.0048" target="_blank" rel="noopener">Cicero, De Officiis (On Duties), Book I, trans. Walter Miller (Loeb Classical Library, 1913)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://ich.unesco.org/en/RL/indigenous-festivity-dedicated-to-the-dead-00054" target="_blank" rel="noopener">Indigenous festivity dedicated to the dead (Nomination file No. 00054)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-14"><a href="https://www.si.edu/stories/5-facts-about-dia-de-los-muertos-day-dead" target="_blank" rel="noopener">Five facts about Día de los Muertos (The Day of the Dead) (Maria Anderson)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0042.html">&larr; Kural 42</a>
+  <a href="kural-0044.html">Kural 44 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-005.html">Domestic Life</a>
+  <a class="skip-btn" href="kural-0051.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

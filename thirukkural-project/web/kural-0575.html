@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 575 — Benignity | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 575</h1>
+<p class="adhikaram"><a href="adhikaram-058.html">Benignity</a> &middot; Kannottam &middot; <span class="tamil">கண்ணோட்டம்</span></p>
+
+<div class="tamil-text">கண்ணிற்கு அணிகலம் கண்ணோட்டம் அஃதின்றேல்
+புண்ணென்று உணரப் படும்.</div>
+<div class="translit">Kannirku anigalam kannottam aqdhindrel
+Punnendru unarap padum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Kindness is the jewel that makes the eye beautiful. Without it, the eyes will look like nothing more than two sores.</p>
+
+<h2 class="section">Elementary</h2>
+<p>People wear necklaces and bracelets to look nice. Valluvar says the nicest thing your eyes can ‘wear’ is kindness. If your eyes are always angry or cold, people will not see pretty eyes at all; they will see something that hurts, like a scrape.</p>
+
+<h2 class="section">University</h2>
+<p>அணிகலம் (‘ornament, jewel’) recalls the காரிகை (‘beauty’) of 571: kannottam is the eye’s jewellery, not merely its function. The shocking alternative, புண் (‘wound, sore’), plays on the near-rhyme கண்/புண், and the passive உணரப்படும் (‘will be perceived as’) implies the judgement of others; Solomon Pappaiah specifies ‘by the wise’ (பெரியோரால்), as does the Pope/Drew-style English gloss on ytamizh. Parimelazhagar’s point is that eyes are honoured only because they carry grace; without it they are merely openings in the flesh. This is the couplet the chapter is most remembered for, and its imagery of ornament versus wound is found in later Tamil ethical literature. The two sources agree; thirukkural-thamizh.org has the sandhi forms கண்ணிற் கணிகலங் … மஃதின்றேற் / புண்ணென் றுணரப்.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In Adi Shankara’s Kanakadhara Stotram, the poet praises the gracious sidelong glance (kaṭākṣa) of the goddess Lakshmi, whose kindly look alone is said to shower prosperity on a poor household.</div>
+  <div class="cite">&mdash; <a href="https://en.wikipedia.org/wiki/Kanakadhara_Stotram" target="_blank" rel="noopener">Adi Shankara, Kanakadhara Stotram (traditional attribution)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">In Hindu devotion the deity’s kindly glance is itself the gift and the adornment of divine beauty.</div>
+  <div class="tieback">Like the Kural, the hymn treats the kindly look as the eye’s true jewel and source of blessing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Then Jesus beholding him loved him, and said unto him, One thing thou lackest…&rdquo;</div>
+  <div class="cite">&mdash; Mark 10:21 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Before challenging the rich young man, Jesus looks at him with love, so that even a hard word comes through a kindly gaze.</div>
+  <div class="tieback">This is kannottam in action: the eye’s true adornment is the love it carries toward the person it looks at.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Your smiling in the face of your brother is charity…&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/tirmidhi:1956" target="_blank" rel="noopener">Jami` at-Tirmidhi 1956 (graded hasan)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet counts even a smile toward another as an act of charity (sadaqah).</div>
+  <div class="tieback">A kindly face is itself a gift, just as the Kural calls kindly regard the eye’s jewel.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;He that hath a bountiful eye shall be blessed; for he giveth of his bread to the poor.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 22:9 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Hebrew is tov ayin, literally ‘good of eye’, the biblical idiom for a generous, kindly disposition toward others.</div>
+  <div class="tieback">The ‘good eye’ that is blessed is a close Hebrew counterpart to the kindly eye that the Kural calls adorned.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;One is dear to human beings, dear to non-human beings. The devas protect one. Neither fire, poison, nor weapons can touch one. One’s mind gains concentration quickly. One’s complexion is bright.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an11/an11.016.than.html" target="_blank" rel="noopener">Anguttara Nikaya 11.16, Metta Sutta (trans. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Among the eleven benefits of cultivating goodwill (metta), the Buddha lists being dear to others and having a bright, clear complexion.</div>
+  <div class="tieback">Goodwill brightens the face and makes one beloved, just as kannottam is the ornament of the eye.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As you look so happy in outward appearance, you must have peace of mind.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 18.20 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">A former Kshatriya who has turned monk reads Sanjaya&#x27;s inner peace from the brightness of his face.</div>
+  <div class="tieback">The Kural calls kindly regard the jewel of the eye; the Jain verse likewise assumes that a person&#x27;s inner quality shows in, and adorns, the face.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;I am adorned with Truth, and I have applied the mascara of the Fear of God to my eyes.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 737, Raag Soohee, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Speaking as the bride-soul, Guru Arjan says her true adornment is a virtue, and that what she puts on her eyes is reverence for God.</div>
+  <div class="tieback">The Kural calls kindly regard the jewel that adorns the eye, without which eyes are mere sores; Guru Arjan likewise makes a virtue the real ornament of the eyes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">The Cyclops Polyphemus, with his single great eye, looks on Odysseus and his men not as guests but as food; Odysseus blinds that eye with a burning stake and escapes.</div>
+  <div class="cite">&mdash; Homer, Odyssey 9 <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Homer’s monster embodies the eye without regard for guests, and his punishment falls on the very eye that showed no kindness.</div>
+  <div class="tieback">Polyphemus’s pitiless eye, turned into a wound, is a vivid picture of the Kural’s eye without kannottam becoming a sore.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle describes a nameless virtue of social life, a kind of friendliness, the mean between the obsequious flatterer and the quarrelsome, surly person who cares nothing for giving pain to others.</div>
+  <div class="cite">&mdash; <a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics IV.6</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">For Aristotle the pleasant, considerate manner in dealings with others is a genuine virtue, and its absence makes one disagreeable.</div>
+  <div class="tieback">Aristotle’s friendly mean is close to kannottam as the grace of social interaction, whose lack makes a person offensive to others.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Audrey Hepburn&#x27;s UNICEF mission to famine-struck Somalia</div>
+  <div class="rle-meta">1992 &middot; Baidoa and central Somalia</div>
+  <div class="quote is-paraphrase">Audrey Hepburn, the film star, served as a UNICEF Goodwill Ambassador for a token salary of one dollar a year and had already visited Ethiopia, Sudan and Bangladesh for the agency. In 1992 she spent several days flying around central Somalia during the famine, visiting a feeding centre at Baidoa where starving children were being cared for. She was already seriously ill, underwent surgery in November 1992, and died in January 1993.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">In her last working year, one of the world&#x27;s most admired faces chose to be seen looking with compassion at suffering that much of the world had ignored.</div>
+  <div class="tieback">The kural calls kindly regard the jewel of the eye, and Hepburn is remembered less for her famous looks than for the compassionate gaze she turned on Somalia&#x27;s children.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-58/" target="_blank" rel="noopener">Thirukkural Chapter 58: கண்ணோட்டம் / Benignity (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A058.html" target="_blank" rel="noopener">58. கண்ணோட்டம் (Thirukkural text)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://en.wikipedia.org/wiki/Kanakadhara_Stotram" target="_blank" rel="noopener">Kanakadhara Stotram</a> <span class="tier">[web source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/tirmidhi:1956" target="_blank" rel="noopener">Jami` at-Tirmidhi 1956 (Chapters on Righteousness and Maintaining Good Relations)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.accesstoinsight.org/tipitaka/an/an11/an11.016.than.html" target="_blank" rel="noopener">Metta (Mettanisamsa) Sutta: Good Will (AN 11.16), trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, translated by W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.csmonitor.com/1992/1005/05141.html" target="_blank" rel="noopener">A Visit of Compassion to Somalia</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.upi.com/Archives/1993/01/20/Actress-Audrey-Hepburn-dead-at-63/1201727506000/" target="_blank" rel="noopener">Actress Audrey Hepburn dead at 63</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0574.html">&larr; Kural 574</a>
+  <a href="kural-0576.html">Kural 576 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-058.html">Benignity</a>
+  <a class="skip-btn" href="kural-0581.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

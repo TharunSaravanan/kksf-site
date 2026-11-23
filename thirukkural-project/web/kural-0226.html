@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 226 — Philanthropy | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 226</h1>
+<p class="adhikaram"><a href="adhikaram-023.html">Philanthropy</a> &middot; Eekai &middot; <span class="tamil">ஈகை</span></p>
+
+<div class="tamil-text">அற்றார் அழிபசி தீர்த்தல் அஃதொருவன்
+பெற்றான் பொருள்வைப் புழி.</div>
+<div class="translit">Atraar azhipasi theerththal agdhoruvan
+Petraan porul vaippuzhi.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Feeding the poor whose hunger is crushing them is the best place for a person with money to store it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>People keep money in a piggy bank or a bank to keep it safe. This kural says the safest place to keep your money is in a hungry person’s full stomach. When you feed someone, your wealth becomes goodness that can never be stolen.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet takes the image of a treasury (பொருள் வைப்புழி, ‘the place where wealth is deposited’) and relocates it: the proper strongroom for wealth is the relief of அழிபசி, ‘destroying hunger’, suffered by those who have nothing (அற்றார்). The metaphor inverts ordinary prudence, which stores wealth by withholding it, and claims that wealth is truly secured only by giving it away. Commentators read this both as moral merit that follows the giver into future lives and as social security in this life. The same ‘treasury’ inversion appears in Jesus’ ‘treasures in heaven’, in King Munbaz’s reply in the Talmud and in the Buddhist ‘well-stored fund’ of Khp 8, showing a widely shared intuition that generosity is the only wealth immune to loss.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Let the rich satisfy the poor implorer, and bend his eye upon a longer pathway. Riches come now to one, now to another, and like the wheels of cars are ever rolling.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/rigveda/rv05083.htm" target="_blank" rel="noopener">Rig Veda 10.117.5 (tr. Ralph T. H. Griffith)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Rig Vedic hymn on Liberality urges the rich to feed the poor and look to the long run, since wealth never stays in one place.</div>
+  <div class="tieback">Like the Kural, it treats feeding the poor as the far-sighted use of wealth that cannot be kept anyway.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Lay not up for yourselves treasures upon earth, where moth and rust doth corrupt, and where thieves break through and steal: But lay up for yourselves treasures in heaven, where neither moth nor rust doth corrupt, and where thieves do not break through nor steal.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 6:19-20 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus contrasts perishable earthly treasure with lasting heavenly treasure.</div>
+  <div class="tieback">Same ‘true storehouse’ inversion as the Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;The example of those who spend their wealth in the way of Allāh is like a seed [of grain] which grows seven spikes; in each spike is a hundred grains. And Allāh multiplies [His reward] for whom He wills.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 2:261 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Wealth spent in God’s way is compared to a seed that multiplies many times over.</div>
+  <div class="tieback">Like the Kural, giving is presented not as loss but as the best investment of wealth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;My ancestors stored up below, whereas I am storing above... My ancestors stored up treasures in a place where the human hand can reach, and so their treasures could have been robbed, whereas I am storing up treasures in a place where the human hand cannot reach.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Bava_Batra.11a" target="_blank" rel="noopener">Babylonian Talmud, Bava Batra 11a (William Davidson/Koren translation)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">King Munbaz, criticised for spending his family treasure on the poor during a drought, replies that he is storing it in a safer place.</div>
+  <div class="tieback">An almost exact parallel: relieving hunger in famine is the true treasury of wealth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;But when a man or woman has laid aside a well-stored fund of generosity, virtue, restraint, &amp; self-control... That’s a well-stored fund. It can’t be wrested away. It follows you along.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.dhammatalks.org/suttas/KN/Khp/khp8.html" target="_blank" rel="noopener">Khuddakapatha 8, Nidhi Kanda (tr. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Reserve Fund discourse compares buried treasure, which can be lost, with the ‘fund’ of generosity, which cannot.</div>
+  <div class="tieback">Same idea as the Kural: generosity is where wealth is kept safe.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;When by blameless means thou hast acquired great wealth, then eat with others rice imported by oxen, for wealth never remaineth in the centre with anyone, but changes its position like a cart-wheel.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">Nālaṭiyār, ch. 1 (&#x27;Unstable Wealth&#x27;), st. 2 (English translation in The Indian Antiquary, via wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Nālaṭiyār&#x27;s chapter on unstable wealth says that wealth, once honestly gained, should be shared at the table, because riches never stay with anyone for long.</div>
+  <div class="tieback">Valluvar tells the person who has gained wealth to &#x27;store&#x27; it in relieving others&#x27; hunger; the Nālaṭiyār gives the same advice for the same reason, that wealth kept to oneself does not last.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">According to the Janamsakhi tradition recorded by Macauliffe, Guru Nanak visited Duni Chand, a millionaire of Lahore who flew a flag for every lakh of rupees he owned. The Guru gave him a needle to return in the next world; when Duni Chand realised that not even a needle could go with him, the Guru told him to give some of his wealth in God&#x27;s name and feed the poor so that it would accompany him, and Duni Chand distributed his treasure.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">Max Arthur Macauliffe, The Sikh Religion (1909), Vol. 1, Life of Guru Nanak, Chapter XI, pp. 129-130 (paraphrase)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The story teaches that wealth hoarded stays behind at death, while wealth used to feed the poor goes with the giver.</div>
+  <div class="tieback">The Kural names relief of the destitute&#x27;s hunger as the proper place to deposit wealth, and the Guru&#x27;s counsel to Duni Chand, feed the poor and your wealth shall accompany you, makes exactly that point.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Ovid’s tale, the poor elderly couple Baucis and Philemon share their meagre meal with two disguised gods whom everyone else in the village had turned away. The gods flood the village but turn the couple’s cottage into a temple and grant their wish to serve there together and to die at the same moment.</div>
+  <div class="cite">&mdash; Ovid, Metamorphoses 8.611-724 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The couple’s generosity from poverty becomes their lasting reward.</div>
+  <div class="tieback">Their small gift of food turns out to be the safest ‘deposit’ they ever made, as the Kural suggests.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;These fine things show their quality better in the spending than in the hoarding... money is only precious when it is given away.&rdquo;</div>
+  <div class="cite">&mdash; Boethius, The Consolation of Philosophy II, Prose 5 (tr. W. V. Cooper) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Lady Philosophy tells Boethius that riches have value only when they are spent or given, not when they are piled up.</div>
+  <div class="tieback">Like the Kural, it relocates the value of wealth from keeping it to giving it.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Quaker soup kitchens in the Great Irish Famine</div>
+  <div class="rle-meta">1846-1847 &middot; Ireland</div>
+  <div class="quote is-paraphrase">In late 1846, as famine spread in Ireland, Quakers led by Joseph Bewley formed the Central Relief Committee of the Society of Friends in Dublin, with a sister committee in London. Although Irish Quakers numbered only about 3,000, they set up soup kitchens in towns such as Waterford, Limerick, Clonmel and Cork, supplied large boilers, and distributed thousands of tons of food and seed. When the government adopted soup kitchens as its main relief in 1847, the Quakers provided boilers and cauldrons for them.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A small religious community poured its resources into feeding the starving and pioneered the method the state then adopted.</div>
+  <div class="tieback">The kural says the proper place to store wealth is in relieving the killing hunger of the destitute, which is exactly where the Quakers put theirs.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-23/" target="_blank" rel="noopener">Thirukural Chapter 23: ஈகை / Giving (Tamil text, commentaries by Mu. Varadarasan, Solomon Pappaiah, Kalaignar; Pope couplet translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://murugaa.com/thirukkural/chapters/23" target="_blank" rel="noopener">திருக்குறள் 23. ஈகை — Thirukkural Chapter 23 with Meaning</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/rigveda/rv05083.htm" target="_blank" rel="noopener">The Rig Veda, translated by Ralph T. H. Griffith (1896)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Bava_Batra.11a" target="_blank" rel="noopener">Babylonian Talmud, Bava Batra 11a (King Monobaz)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.dhammatalks.org/suttas/KN/Khp/khp8.html" target="_blank" rel="noopener">Khp 8 Nidhi Kanda — The Reserve Fund, translated by Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">The Nāladiyār (English translation serialised in The Indian Antiquary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">The Sikh Religion: Its Gurus, Sacred Writings and Authors (6 vols.) (Max Arthur Macauliffe)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10">Metamorphoses, Book VIII (Baucis and Philemon) (Ovid) <span class="tier">[primary source]</span></li>
+<li id="cite-11">The Consolation of Philosophy (Boethius) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.rte.ie/history/famine-ireland/2020/1116/1178533-a-labour-of-love-the-contributions-of-the-society-of-friends/" target="_blank" rel="noopener">&#x27;A Labour of Love&#x27;: the Contribution of the Society of Friends</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://historyireland.com/quakers-the-famine/" target="_blank" rel="noopener">Quakers &amp; the Famine</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0225.html">&larr; Kural 225</a>
+  <a href="kural-0227.html">Kural 227 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-023.html">Philanthropy</a>
+  <a class="skip-btn" href="kural-0231.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

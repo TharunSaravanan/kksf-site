@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 557 — The Cruel Sceptre | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 557</h1>
+<p class="adhikaram"><a href="adhikaram-056.html">The Cruel Sceptre</a> &middot; Kodungonmai &middot; <span class="tamil">கொடுங்கோன்மை</span></p>
+
+<div class="tamil-text">துளியின்மை ஞாலத்திற்கு எற்றற்றே வேந்தன்
+அளியின்மை வாழும் உயிர்க்கு.</div>
+<div class="translit">Thuliyinmai gnaalaththirku etratre vendhan
+Aliyinmai vaazhum uyirkku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A king without kindness is to his people what a lack of rain is to the earth.</p>
+
+<h2 class="section">Elementary</h2>
+<p>When it doesn’t rain for a long time, plants wilt, rivers shrink, and animals go thirsty. A king without kindness makes his people wilt in just the same way, because his care is like rain to them.</p>
+
+<h2 class="section">University</h2>
+<p>துளி (a drop) stands for rain by synecdoche. Parimelazhagar says the word was chosen because a drop is the most telling part of rain. அளி means gracious, tender care, and உயிர் (life, living beings) here stands for the subjects. The construction எற்று… அற்றே (‘of what kind…? just so’) makes a rhetorical comparison. Parimelazhagar notes that this couplet puts negatively what kural 542 had said positively: the whole world lives looking to the sky for rain, and the subjects look to the king’s sceptre. He groups kurals 557-558 as stating the evils that fall on those who live in the tyrant’s land. Solomon Pappaiah reads அளி more broadly as ‘righteous governance’. The text is the same across the sources consulted.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Manu tells the king to act like Indra: as Indra sends plentiful rain in the four months of the rainy season, so the king should shower benefits on his kingdom.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/manu/manu09.htm" target="_blank" rel="noopener">Manusmṛti 9.304 (trans. G. Bühler)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The ‘vow of Indra’ makes the king’s generosity the political counterpart of rain.</div>
+  <div class="tieback">It is the positive form of the Kural’s image: the king’s kindness is rain to his people.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;…for he maketh his sun to rise on the evil and on the good, and sendeth rain on the just and on the unjust.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 5:45 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Jesus points to God’s rain, given freely to everyone, as the model for goodness that does not pick and choose.</div>
+  <div class="tieback">The Kural calls a ruler’s kindness a kind of rain; here God’s rain is the pattern of such kindness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">The Prophet said that whoever is not merciful to people, God will not be merciful to him.</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:7376" target="_blank" rel="noopener">Sahih al-Bukhari 7376</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Mercy toward others is made the condition of receiving God’s mercy.</div>
+  <div class="tieback">The Kural’s merciless king cuts himself off from mercy, and his people from relief.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;May he come down like rain upon the mown grass, as showers that water the earth.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">Psalm 72:6 (JPS 1917)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The psalm for the king prays that his just rule will refresh the land as rain does.</div>
+  <div class="tieback">It is the same image as the Kural: a king’s gracious rule is rain for his people.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Lotus Sutra, the Buddha compares his teaching to a great rain cloud that pours down equally on every herb, shrub and tree, each drinking according to its kind.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/bud/lotus/lot05.htm" target="_blank" rel="noopener">Saddharmapuṇḍarīka (Lotus Sutra), ch. 5 (trans. H. Kern)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Compassion is pictured as rain that nourishes every living thing without discrimination.</div>
+  <div class="tieback">The Kural’s ‘kindness as rain’ is the same image, applied to a king.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The customs, taxes, and confiscations were released, buying and selling prohibited, no policemen were allowed to enter houses, great and small fines were remitted, and debts cancelled.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Kalpa Sūtra, Life of Mahāvīra §102 (with §100) (tr. Hermann Jacobi, SBE 22, 1884; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">At Mahāvīra&#x27;s birth King Siddhārtha also freed all prisoners, and the Kalpa Sūtra says the whole population of town and country rejoiced at this display of royal grace.</div>
+  <div class="tieback">The Kural says a king&#x27;s lack of kindness is like drought to his people. Siddhārtha&#x27;s festival shows the reverse: a king&#x27;s kindness falling on his subjects like relief.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;When it rains, there is happiness. Water is the key to all life.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 150, Raag Maajh (Maajh ki Vaar), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Guru Nanak celebrates rain as the source of joy and the sustainer of every living thing.</div>
+  <div class="tieback">The Kural compares a king&#x27;s lack of kindness to drought on the world; Guru Nanak&#x27;s verse shows how completely all life hangs on the rain, which is what gives the Kural&#x27;s comparison its force.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When Demeter withdrew in grief and anger, she made the earth bear no crops, and mankind would have perished of famine if Zeus had not brought her daughter back.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0138%3Ahymn%3D2" target="_blank" rel="noopener">Homeric Hymn to Demeter 305-312</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">When the goddess who sustains life holds back her care, the whole world goes hungry.</div>
+  <div class="tieback">Like the Kural’s drought, the withdrawal of care from above leaves every living being in distress.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Answering Thrasymachus, Socrates argues that a true ruler, like a true shepherd, looks to the good of those in his care, not his own profit.</div>
+  <div class="cite">&mdash; Plato, Republic I, 345c-e <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Rule is defined as care for the ruled.</div>
+  <div class="tieback">The Kural’s king without அளி (gracious care) fails the very definition of ruling.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Haile Selassie&#x27;s government and the Wollo famine</div>
+  <div class="rle-meta">1972-1974 &middot; Wollo province, Ethiopia</div>
+  <div class="quote is-paraphrase">During a drought in 1972-73, famine struck the province of Wollo in northern Ethiopia, and tens of thousands of people died. The imperial government of Haile Selassie tried to conceal the famine, and its denial became an international scandal after it was exposed in a British television documentary. Famine, unemployment and political stagnation fed the unrest that led army officers to depose the emperor on 12 September 1974.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">The lack of care from the ruler turned a natural drought into a human disaster and cost him his throne.</div>
+  <div class="tieback">The kural says a king&#x27;s lack of kindness is to his people what drought is to the world, and in Wollo the two came together.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-56/" target="_blank" rel="noopener">கொடுங்கோன்மை (The Cruel Sceptre), Chapter 56, with commentary by Mu. Varadarajan, Solomon Pappaiah, M. Karunanidhi and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-056.html" target="_blank" rel="noopener">கொடுங்கோன்மை, Adhigaram 56, Thirukkural (Kurals 551-560), with commentaries by Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah and Mu. Karunanidhi</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="http://www.thirukkural.com/2009/02/blog-post_4597.html" target="_blank" rel="noopener">கொடுங்கோன்மை (Kurals 551-560), with the commentaries of Parimelazhagar, Manakkudavar, Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and V. Munisamy</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://sacred-texts.com/hin/manu/manu09.htm" target="_blank" rel="noopener">The Laws of Manu, trans. G. Bühler, Sacred Books of the East vol. 25, Chapter IX</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/bukhari:7376" target="_blank" rel="noopener">Sahih al-Bukhari 7376</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/bud/lotus/lot05.htm" target="_blank" rel="noopener">The Saddharma-Pundarîka, or The Lotus of the True Law, Chapter 5 &#x27;On Plants&#x27;, translated by H. Kern, Sacred Books of the East vol. 21 (1884)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Kalpa Sūtra (Kalpa Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0138%3Ahymn%3D2" target="_blank" rel="noopener">Homeric Hymn 2, To Demeter, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12">Republic, Book X (the Myth of Er) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/biography/Haile-Selassie-I" target="_blank" rel="noopener">Haile Selassie I (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/c3wollo.pdf" target="_blank" rel="noopener">Evil Days: 30 Years of War and Famine in Ethiopia, chapter 3: Rebellion and Famine in the North under Haile Selassie (Africa Watch)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0556.html">&larr; Kural 556</a>
+  <a href="kural-0558.html">Kural 558 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-056.html">The Cruel Sceptre</a>
+  <a class="skip-btn" href="kural-0561.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 212 — Knowledge of What Is Befitting | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 212</h1>
+<p class="adhikaram"><a href="adhikaram-022.html">Knowledge of What Is Befitting</a> &middot; Oppuravarithal &middot; <span class="tamil">ஒப்புரவறிதல்</span></p>
+
+<div class="tamil-text">தாளாற்றித் தந்த பொருளெல்லாம் தக்கார்க்கு
+வேளாண்மை செய்தற் பொருட்டு.</div>
+<div class="translit">Thaalaatrith thandha porulellaam thakkaarkku
+Velaanmai seydhar poruttu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>All the money a person earns through hard work is meant for one thing: helping people who deserve help.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine you worked all summer and saved up money. This kural says the best reason to work hard and earn is so that you have something to share with people who really need it.</p>
+
+<h2 class="section">University</h2>
+<p>The first line honours effort (thaal aatri, ‘exerting one&#x27;s foot/strength’), so the kural is not a critique of wealth but a statement of its telos. Velaanmai here does not mean agriculture but ubakaram, beneficence — Parimelazhagar glosses it as oppuravu seydhal, adding that wealth is not meant for eating alone or for hoarding until it is lost. Thakkaar, ‘the worthy,’ introduces discernment: Manakkudavar defines oppuravu as giving to fitting recipients in proportion to one&#x27;s income, which distinguishes it from the indiscriminate almsgiving of the next chapter (Eekai). The couplet thus rejects both the miser and the ascetic view of wealth, proposing instead a stewardship model in which earnings are held in trust for the community.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Charity given out of duty, without expectation of return, at the proper time and place, and to a worthy person is considered to be in the mode of goodness.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 17.20</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Krishna describes the highest kind of charity: given as a duty, at the right time and place, to someone who deserves it.</div>
+  <div class="tieback">Matches the Kural&#x27;s thakkaar (the worthy) and its sense that giving is the proper use of what one has.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Let him that stole steal no more: but rather let him labour, working with his hands the thing which is good, that he may have to give to him that needeth.&rdquo;</div>
+  <div class="cite">&mdash; Ephesians 4:28 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Paul tells believers to work honestly so that they will have something to give to people in need.</div>
+  <div class="tieback">Almost the same logic: the purpose of one&#x27;s labour is to be able to help others.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Believe in Allah and His Messenger and spend out of that in which He has made you successors. For those who have believed among you and spent, there will be a great reward.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 57:7 (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Qur&#x27;an presents wealth as a trust from God, which believers are to spend for good.</div>
+  <div class="tieback">Like the Kural, wealth is not simply owned but held for the purpose of beneficial spending.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;For the poor shall never cease out of the land: therefore I command thee, saying, Thou shalt open thine hand wide unto thy brother, to thy poor, and to thy needy, in thy land.&rdquo;</div>
+  <div class="cite">&mdash; Deuteronomy 15:11 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Torah commands generosity as a permanent duty, since need will always exist in society.</div>
+  <div class="tieback">Like the Kural, it makes helping others the proper, commanded use of one&#x27;s means.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;the disciple of the noble ones — using the wealth earned through his efforts &amp; enterprise, amassed through the strength of his arm, and piled up through the sweat of his brow, righteous wealth righteously gained — provides his friends &amp; associates with pleasure &amp; satisfaction, and maintains that pleasure rightly.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an05/an05.041.than.html" target="_blank" rel="noopener">Anguttara Nikaya 5.41, Adiya Sutta (trans. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha lists the good uses of honestly earned wealth, including supporting friends, relatives, guests, and the virtuous.</div>
+  <div class="tieback">Echoes the Kural&#x27;s ‘wealth earned by effort’ and its purpose of benefiting others.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Nyayasampannavibhavah : Possessed of honestly earned wealth.” … “Yathavat atithau sadhau dine cha pratipatti-krt : Diligent in succoring the ascetics, the righteous and the needy.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.jainworld.com/jainbooks/antiquity/ethcjain.htm" target="_blank" rel="noopener">Hemacandra, Yogaśāstra, list of thirty-five qualities of the ideal householder, items 1 and 19, as rendered in Vilas A. Sangave, Jaina Ethics (jainworld.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Hemacandra&#x27;s model Jain householder earns his wealth honestly and uses it to support ascetics, the righteous and the needy.</div>
+  <div class="tieback">Valluvar says wealth earned by hard effort exists to help the deserving; Hemacandra&#x27;s ideal householder pairs honest earning with diligent support of worthy recipients.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;One who works for what he eats, and gives some of what he has - O Nanak, he knows the Path.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1245, Raag Saarang (Sarang ki Vaar, salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In a salok of Sarang ki Vaar, Guru Nanak joins honest labour (kirat karni) to sharing its fruits (vand chhakna) as the mark of one who knows the true way.</div>
+  <div class="tieback">The Kural says all the wealth earned through hard, persistent effort exists to help those who deserve help; Guru Nanak likewise ties hard-earned livelihood directly to giving.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Give to one who gives, but do not give to one who does not give. A man gives to the free-handed, but no one gives to the close-fisted. Give is a good girl, but Take is bad and she brings death.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 352–369 (trans. H. G. Evelyn-White)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hesiod&#x27;s farmer&#x27;s wisdom praises giving but ties it to reciprocity among neighbours.</div>
+  <div class="tieback">Shares the Kural&#x27;s praise of giving and its concern with choosing recipients, but grounds it in exchange rather than duty.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;the liberal man, like other virtuous men, will give for the sake of the noble, and rightly; for he will give to the right people, the right amounts, and at the right time, with all the other qualifications that accompany right giving&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics IV.1 (trans. W. D. Ross)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle describes the virtue of liberality: using wealth well by giving it rightly to the right people.</div>
+  <div class="tieback">Same idea as the Kural&#x27;s velaanmai to the thakkaar — wealth&#x27;s proper use is fitting generosity.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Alfred Nobel leaves his fortune to fund the Nobel Prizes</div>
+  <div class="rle-meta">27 November 1895 (will signed); first prizes 10 December 1901 &middot; Paris, France (will signed); Stockholm, Sweden</div>
+  <div class="quote is-paraphrase">Alfred Nobel, the Swedish chemist and industrialist who had built a fortune from dynamite and other inventions, signed his last will at the Swedish-Norwegian Club in Paris on 27 November 1895. It directed that most of his estate be invested and the income awarded each year as prizes to those who had conferred the greatest benefit on humankind in physics, chemistry, physiology or medicine, literature and peace. After Nobel&#x27;s death in 1896 the will met opposition from relatives and others, and the first prizes were awarded in 1901.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A fortune built over a lifetime of industrial work was turned, by one document, into a permanent reward for those who benefit the world.</div>
+  <div class="tieback">The kural says that wealth earned by hard and persistent effort exists to help the deserving, and Nobel&#x27;s will directed his earnings to the people who most benefit humanity.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-22/" target="_blank" rel="noopener">Thirukkural Chapter 22: ஒப்புரவறிதல் / Duty to Society (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries and G. U. Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-022.html" target="_blank" rel="noopener">The recognition of Duty — Adhigaram 22 — Thirukkural</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://thirukkural.io/22/oppuravu-arithal/" target="_blank" rel="noopener">ஒப்புரவறிதல் (Oppuravarithal) — with Parimelazhagar and Manakkudavar commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/an/an05/an05.041.than.html" target="_blank" rel="noopener">Anguttara Nikaya 5.41, Adiya Sutta: Benefits to be Obtained (from Wealth)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://jainworld.jainworld.com/jainbooks/antiquity/ethcjain.htm" target="_blank" rel="noopener">Jaina ethics (English renderings of Jain householder texts, incl. Hemacandra&#x27;s Yogaśāstra) (Vilas A. Sangave)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, translated by W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.nobelprize.org/alfred-nobel/alfred-nobels-will/" target="_blank" rel="noopener">The will of Alfred Nobel from 27 November, 1895 (Alfred Nobel)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/topic/Nobel-Prize" target="_blank" rel="noopener">Nobel Prize</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0211.html">&larr; Kural 211</a>
+  <a href="kural-0213.html">Kural 213 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-022.html">Knowledge of What Is Befitting</a>
+  <a class="skip-btn" href="kural-0221.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

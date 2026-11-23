@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 406 — Ignorance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 406</h1>
+<p class="adhikaram"><a href="adhikaram-041.html">Ignorance</a> &middot; Kallaamai &middot; <span class="tamil">கல்லாமை</span></p>
+
+<div class="tamil-text">உளரென்னும் மாத்திரையர் அல்லால் பயவாக்
+களரனையர் கல்லா தவர்.</div>
+<div class="translit">Ularennum maaththiraiyar allaal payavaak
+Kalaranaiyar kallaa thavar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Uneducated people can only be said to exist. Beyond that, they are like salty land where nothing grows.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Some land is so salty that nothing grows on it, no matter how much rain falls. Valluvar says a person who never learns is like that land: they are there, alive, but nothing useful grows from them for themselves or anyone else.</p>
+
+<h2 class="section">University</h2>
+<p>Ularennum maaththiraiyar — ‘mere measure of existing’ — reduces the unlearned to bare presence. Kalar is saline or alkaline soil, proverbial in Tamil for barrenness; payavaa (‘unyielding’) insists on the absence of any fruit. The agricultural image makes learning the cultivation that turns land into field. Striking parallels exist: the Buddha’s Desana Sutta (SN 42.7) speaks of a field that is ‘salty’ and poor as the worst kind of soil; the hadith in Sahih al-Bukhari 79 compares recipients of knowledge to types of land, including barren land that neither holds water nor grows anything; Jeremiah 17:6 speaks of ‘a salt land and not inhabited’; Hesiod calls the man who neither thinks nor learns ‘unprofitable’; and Seneca’s ‘leisure without study is death… a tomb for the living man’ matches the Kural’s reduction of such a life to mere existence.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The Hitopadesha asks what use is a son who is born but is neither learned nor virtuous — like a blind eye, which brings only pain.</div>
+  <div class="cite">&mdash; Hitopadesha, Prastavika (Introduction), verse on the unlearned son <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">A life without learning, even in a family, is compared to an organ that is present but useless.</div>
+  <div class="tieback">Both reduce the unlearned person to mere presence without benefit — existing, but yielding nothing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Behold, these three years I come seeking fruit on this fig tree, and find none: cut it down; why cumbereth it the ground?&rdquo;</div>
+  <div class="cite">&mdash; Luke 13:7 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">In Jesus’s parable, a fig tree that bears no fruit year after year is judged to be merely taking up space.</div>
+  <div class="tieback">The Kural’s unlearned person likewise merely occupies the ground, yielding nothing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">The Prophet compared the guidance and knowledge sent through him to abundant rain falling on land: some fertile soil absorbs it and grows vegetation, some holds water for others, and “a portion of it was barren which could neither hold the water nor bring forth vegetation.</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:79" target="_blank" rel="noopener">Sahih al-Bukhari 79 (tr. Muhsin Khan)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">People respond to knowledge like different kinds of land; some benefit themselves and others, while some remain barren.</div>
+  <div class="tieback">An almost identical image: the one who takes in no knowledge is barren land that yields nothing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;For he shall be like the heath in the desert, and shall not see when good cometh; but shall inhabit the parched places in the wilderness, in a salt land and not inhabited.&rdquo;</div>
+  <div class="cite">&mdash; Jeremiah 17:6 (Hebrew Bible; KJV wording) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Jeremiah compares a spiritually cut-off person to a shrub in salty, barren ground where nothing good comes.</div>
+  <div class="tieback">The same ‘salt land’ image the Kural uses for the unlearned.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Desana Sutta the Buddha compares three fields — excellent, middling, and one that is poor, hard, salty, with bad soil — to three kinds of listeners to his teaching.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/sn/sn42/sn42.007.than.html" target="_blank" rel="noopener">Samyutta Nikaya 42.7 (Desana Sutta)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The same seed does very differently depending on the ground; the salty, poor field yields least.</div>
+  <div class="tieback">The Kural uses the same image of saline, unproductive soil for the person who has not taken in learning.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Though great stones do not understand the speech of men, yet since they do what is required of them, as standing, sitting, lying down, or moving, they are far more useful than a fool (as it is impossible to induce a fool to act as we wish him).&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">Naladiyar, ch. 34 &#x27;Ignorance&#x27;, stanza 4 (English tr. in The Indian Antiquary; wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Naladiyar&#x27;s chapter on ignorance ranks the fool below even dead stones. Stones are at least of some use, while the fool yields nothing.</div>
+  <div class="tieback">Valluvar says the unlearned merely exist, like barren saline land that bears nothing. The Naladiyar similarly calls the fool more useless than lifeless stone.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The evil-minded ones plant their seed in the barren soil; such is the sign of those who have no Guru.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1275, Raag Malaar, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Raag Malaar Guru Nanak uses the image of seed sown in barren, saline soil for the effort of those without the Guru&#x27;s guidance.</div>
+  <div class="tieback">The Kural compares the unlearned to barren saline land that yields nothing; Guru Nanak uses the same image of barren soil (kalar) for a life without the Guru&#x27;s teaching.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Hesiod says the best man thinks things through for himself, the next best listens to good advice, but the man who neither thinks for himself nor takes to heart what another tells him is an unprofitable man.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 293–297</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The person who neither reasons nor learns from others is of no use.</div>
+  <div class="tieback">Both call the unlearned person ‘unyielding’ or ‘unprofitable’ — present but without fruit.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Leisure without study is death; it is a tomb for the living man.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_2" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius 82.3 (tr. R. M. Gummere)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Seneca says a life with free time but no study is not truly living — it is a kind of burial while still alive.</div>
+  <div class="tieback">Just as the Kural says the unlearned merely ‘exist’, Seneca says a life without learning is death in life.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Japan&#x27;s Education System Order aims for no illiterate household</div>
+  <div class="rle-meta">1872 &middot; Japan</div>
+  <div class="quote is-paraphrase">In 1872 the Meiji government issued the Gakusei, Japan&#x27;s first comprehensive national education system, which divided the country into school districts and in principle required all children to attend elementary school regardless of sex, family occupation or social status. Its preamble declared that learning was the key to success in life and set the goal that no community should contain an illiterate family and no family an illiterate member. Lack of money, teachers and facilities meant the plan was only partly realised, and it was replaced by a new Education Order in 1879.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The order treated universal learning as the soil from which productive lives and a modern nation would grow.</div>
+  <div class="tieback">The kural likens the unlearned to barren saline land that yields nothing, and the Gakusei rested on the same conviction that only learning makes a person&#x27;s life fruitful.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.thirukural.ai/paal/porul/athigaram-41" target="_blank" rel="noopener">திருக்குறள் - பொருட்பால் அதிகாரம் 41 | கல்லாமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://tamilputhumai.com/thirukural/athikaram-41.html" target="_blank" rel="noopener">திருக்குறள் - அதிகாரம் 41 (கல்லாமை)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.thirukkural.net/en/kural/kural-0401.html" target="_blank" rel="noopener">Thirukkural — Ignorance (Kallaamai), Kurals 401–410</a> <span class="tier">[web source]</span></li>
+<li id="cite-4">Hitopadeśa of Nārāyaṇa, Introduction (prastāvikā) <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/bukhari:79" target="_blank" rel="noopener">Sahih al-Bukhari 79, Book of Knowledge</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/sn/sn42/sn42.007.than.html" target="_blank" rel="noopener">Samyutta Nikaya 42.7 — Desana Sutta (The Teaching / The Field)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">The Nāladiyār (English translation serialised in The Indian Antiquary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_2" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius — Letter 2 (on contented poverty, quoting Epicurus) and Letter 19 (on with whom one dines)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://chnm.gmu.edu/cyh/primary-sources/129" target="_blank" rel="noopener">Preamble to the Fundamental Code of Education, 1872 (Government of Japan)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/topic/education/Japan" target="_blank" rel="noopener">Education - Japanese Schools, Curriculum, and Reforms</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0405.html">&larr; Kural 405</a>
+  <a href="kural-0407.html">Kural 407 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-041.html">Ignorance</a>
+  <a class="skip-btn" href="kural-0411.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

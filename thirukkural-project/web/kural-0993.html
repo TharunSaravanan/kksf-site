@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 993 — Courtesy | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 993</h1>
+<p class="adhikaram"><a href="adhikaram-100.html">Courtesy</a> &middot; Panpudaimai &middot; <span class="tamil">பண்புடைமை</span></p>
+
+<div class="tamil-text">உறுப்பொத்தல் மக்களொப்பு அன்றால் வெறுத்தக்க
+பண்பொத்தல் ஒப்பதாம் ஒப்பு.</div>
+<div class="translit">Uruppoththal makkaloppu andraal veruththakka
+panpoththal oppadhaam oppu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Having the same body parts does not make people truly alike. Being alike in good, pleasing character is the real likeness.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Two dolls can look exactly the same on the outside, but one might be stuffed with cotton and the other with sharp pins. People are like that too: having two eyes and two hands like someone does not make you like them. Being kind like them does.</p>
+
+<h2 class="section">University</h2>
+<p>Uruppu-oththal (உறுப்பொத்தல், &#x27;sameness of limbs&#x27;) is denied the status of makkal-oppu (மக்களொப்பு, &#x27;likeness among humans&#x27;); true oppu is panb-oththal (பண்பொத்தல்), likeness in qualities. The crux is veruththakka (வெறுத்தக்க): Mu. Varadarasanar glosses it as &#x27;fit to be joined&#x27; (பொருந்தத்தக்க), Solomon Pappaiah as qualities that unite heart with heart, and Pope as &#x27;kindred quality&#x27; (&#x27;Similitude of kindred quality makes likeness true&#x27;), reflecting the older commentarial reading of வெறு as &#x27;to be close, to cohere&#x27;. Sivayogi Sivakumar instead reads it in the modern sense &#x27;hateful&#x27;, yielding &#x27;likeness in shunning what deserves shunning&#x27;, a minority interpretation. Kalaignar draws the strong conclusion that only those alike in good qualities deserve to be counted as human at all, which anticipates kural 997. The Tamil text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;O son of Pṛthā, in this world there are two kinds of created beings. One is called divine and the other demoniac. I have already explained to you at length the divine qualities. Now hear from Me of the demoniac.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 16.6 (Bhagavad-gītā As It Is, A.C. Bhaktivedanta Swami Prabhupāda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna divides human beings not by appearance or birth but by whether they bear divine or demonic qualities.</div>
+  <div class="tieback">Like the Kural, it classes people by their qualities rather than their bodily sameness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But the LORD said unto Samuel, Look not on his countenance, or on the height of his stature; because I have refused him: for the LORD seeth not as man seeth; for man looketh on the outward appearance, but the LORD looketh on the heart.&rdquo;</div>
+  <div class="cite">&mdash; 1 Samuel 16:7 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">When Samuel is impressed by Eliab&#x27;s looks, God tells him that the true measure of a person is the heart, not the body.</div>
+  <div class="tieback">This sets aside outward bodily form in favour of inner character, as the Kural does.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Verily Allah does not look to your faces and your wealth but He looks to your heart and to your deeds.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/muslim:2564c" target="_blank" rel="noopener">Sahih Muslim 2564c (Book of Virtue, Enjoining Good Manners)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet teaches that appearance and possessions count for nothing before God compared with the heart and actions.</div>
+  <div class="tieback">As in the Kural, a person&#x27;s real identity lies in qualities and deeds, not in the shape of the face or body.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Rabbi said: don’t look at the container but at that which is in it: there is a new container full of old wine, and an old [container] in which there is not even new [wine].&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 4:20 (Mishnah Yomit, tr. Joshua Kulp, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbi Judah the Prince warns that outward vessels deceive and that worth lies in what they hold.</div>
+  <div class="tieback">The Kural&#x27;s point is the same: the body is a container, and true likeness lies in the qualities within.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Vasettha Sutta the Buddha explains that grasses, insects, animals, fish and birds show distinct marks of species by birth, but among human beings there are no such distinguishing bodily marks; distinctions among humans are only by name, and a person is what his deeds make him.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/kn/snp/snp.3.09.than.html" target="_blank" rel="noopener">Vasettha Sutta, Sutta Nipata 3.9 (also Majjhima Nikaya 98)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha argues that human bodies are basically alike, so the real differences between people must lie in conduct.</div>
+  <div class="tieback">This is close to the Kural&#x27;s argument: bodily sameness is shared by all, and what truly distinguishes or unites people is their qualities.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;One does not become a Sramana by the tonsure, nor a Brâhmana by the sacred syllable ôm, nor a Muni by living in the woods, nor a Tâpasa by wearing (clothes of) Kusa-grass and bark. One becomes a Sramana by equanimity, a Brâhmana by chastity, a Muni by knowledge, and a Tâpasa by penance.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 25.31–32 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Gayaghosha teaches that outward marks such as a shaven head or bark clothing do not make a monk or sage; only the inner qualities do.</div>
+  <div class="tieback">Like the Kural, it rejects outward resemblance as the measure of a person and locates true likeness in character.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;If you are indeed a Brahmin, born of a Brahmin mother, then why didn&#x27;t you come by some other way?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 324, Raag Gauri, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Kabir mocks the claim of birth-superiority by pointing out that every human body comes into the world in the same way. Bodily sameness proves nobody is higher, and what distinguishes people has to lie elsewhere.</div>
+  <div class="tieback">The Kural says sameness of limbs does not make people truly alike and that real likeness is likeness of character, and Kabir likewise treats the shared body as settling nothing about a person&#x27;s worth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When Circe turns Odysseus&#x27; companions into swine, they take on the heads, voices and bristles of pigs, yet their minds remain as before, and they weep in their sties.</div>
+  <div class="cite">&mdash; Homer, Odyssey 10.237–243 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Homer imagines bodies changed into beasts while the human mind stays intact.</div>
+  <div class="tieback">The myth makes the Kural&#x27;s point from the other side: what makes someone human is not the shape of the limbs but what is within.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;He lit a lamp in broad daylight and said, as he went about, ‘I am looking for a man.’&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Lives_of_the_Eminent_Philosophers/Book_VI" target="_blank" rel="noopener">Diogenes Laertius, Lives of Eminent Philosophers 6.41 (tr. R. D. Hicks, via Wikisource)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Diogenes the Cynic mocked the crowds of Athens by implying that among all the human bodies around him he could not find a true human being.</div>
+  <div class="tieback">Diogenes dramatizes the Kural&#x27;s claim that sharing the human form does not make one truly human.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Albert Einstein gives Marian Anderson a room when a hotel refuses her</div>
+  <div class="rle-meta">16 April 1937 &middot; Princeton, New Jersey, United States</div>
+  <div class="quote is-paraphrase">After the African American contralto Marian Anderson sang at the McCarter Theatre in Princeton on 16 April 1937, the town&#x27;s Nassau Inn refused her a room because of her race. Albert Einstein, who had attended the concert, invited her to stay at his home instead. The two became friends, and on later visits to Princeton she stayed with Einstein until his death in 1955.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Einstein saw in Anderson a kindred spirit and an artist he admired, and treated the colour line that the hotel enforced as meaningless.</div>
+  <div class="tieback">The kural says that real likeness between people lies in shared qualities of character rather than in bodily sameness, and the friendship between the physicist and the singer rested on exactly such kinship.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-100/" target="_blank" rel="noopener">Thirukkural Chapter 100: பண்புடைமை / Courtesy (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-100.html" target="_blank" rel="noopener">பண்புடைமை - அதிகாரம் 100 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/muslim:2564c" target="_blank" rel="noopener">Ṣaḥīḥ Muslim 2564c — Book of Virtue (&#x27;Allah does not look to your bodies nor to your faces but He looks to your hearts&#x27;), narrated by Abū Hurayra</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/kn/snp/snp.3.09.than.html" target="_blank" rel="noopener">Vasettha Sutta (Sutta Nipata 3.9 / Majjhima Nikaya 98)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://en.wikisource.org/wiki/Lives_of_the_Eminent_Philosophers/Book_VI" target="_blank" rel="noopener">Diogenes Laertius, Lives of the Eminent Philosophers, Book VI (tr. R. D. Hicks, 1925)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.pbs.org/wnet/americanmasters/marian-anderson-and-albert-einsteins-unexpected-friendship/20766" target="_blank" rel="noopener">Marian Anderson and Albert Einstein&#x27;s unexpected friendship</a> <span class="tier">[web source]</span></li>
+<li id="cite-13"><a href="https://fords.org/?p=1075" target="_blank" rel="noopener">Albert Einstein and Marian Anderson&#x27;s Friendship of Happenstance</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0992.html">&larr; Kural 992</a>
+  <a href="kural-0994.html">Kural 994 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-100.html">Courtesy</a>
+  <a class="skip-btn" href="kural-1001.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

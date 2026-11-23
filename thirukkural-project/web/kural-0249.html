@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 249 — Benevolence | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 249</h1>
+<p class="adhikaram"><a href="adhikaram-025.html">Benevolence</a> &middot; Arulodamai &middot; <span class="tamil">அருளுடைமை</span></p>
+
+<div class="tamil-text">தெருளாதான் மெய்ப்பொருள் கண்டற்றால் தேரின்
+அருளாதான் செய்யும் அறம்.</div>
+<div class="translit">Therulaadhaan meypporul kandatraal therin,
+Arulaadhaan seyyum aram.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If you look closely, the good deeds of an unkind person are like a confused person claiming to understand the deepest truth. They are not real.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine someone who has never understood maths saying they solved the hardest puzzle in the book. You would not believe them. Valluvar says good deeds done by someone who does not care about others are just like that: they look right, but there is nothing real inside.</p>
+
+<h2 class="section">University</h2>
+<p>The comparison is carefully chosen: therulaadhaan is one whose mind is not clear, and meypporul is ultimate reality or the true meaning of scripture. Such a person may recite the words, but cannot genuinely grasp the truth. In the same way, aram (dharma, virtuous action) performed by one who does not have arul may copy the outward form (gifts, rituals, observances) without the inner substance. The kural thus makes compassion the condition of authenticity for all other virtue, a thesis found in Paul’s ‘if I have not charity’ and in the Talmudic teaching that charity is rewarded only according to the kindness in it. Kant offers a pointed contrast: he held that acts done from sympathy alone lack moral worth and that only acts done from duty have it. Valluvar’s position is closer to virtue and sentiment theorists such as Hume and Schopenhauer, for whom the motive of fellow-feeling is what makes an act good.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;And that charity, which is given at the wrong place and wrong time to unworthy persons, without showing respect, or with contempt, is held to be of the nature of nescience.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita 17.22 (trans. Mukundananda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Gita classifies giving done with contempt as tāmasic, the lowest grade, belonging to ignorance.</div>
+  <div class="tieback">Charity without inner regard for the recipient is, as in the kural, a kind of ignorance dressed up as virtue.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And though I bestow all my goods to feed the poor, and though I give my body to be burned, and have not charity, it profiteth me nothing.&rdquo;</div>
+  <div class="cite">&mdash; 1 Corinthians 13:3 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul says even the most extreme acts of generosity are worthless without agapē (love).</div>
+  <div class="tieback">Almost exactly the kural: aram performed without arul is empty.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O believers! Do not waste your charity with reminders ˹of your generosity˺ or hurtful words, like those who donate their wealth just to show off&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://quran.com/" target="_blank" rel="noopener">Quran 2:264 (trans. Mustafa Khattab, The Clear Quran)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The verse compares such charity to soil on a bare rock that is washed away by rain.</div>
+  <div class="tieback">Giving without inner goodwill has no substance, like the unclear mind’s ‘vision’ of truth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;The reward for charity is paid from Heaven only in accordance with the kindness and generosity included therein&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Sukkah.49b" target="_blank" rel="noopener">Talmud, Sukkah 49b</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbi Elazar also teaches that gemilut chasadim (acts of lovingkindness) are greater than tzedakah (charity) in three respects.</div>
+  <div class="tieback">The value of a virtuous act is measured by the compassion inside it, which is the kural’s thesis.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Even though he be well-attired, yet if he is poised, calm, controlled and established in the holy life, having set aside violence towards all beings — he, truly, is a holy man, a renunciate, a monk.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 141-142 (trans. Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The preceding verse (141) says nakedness, matted hair, fasting and ash-smearing cannot purify one who has not overcome inner defilement.</div>
+  <div class="tieback">Outward religious practice is empty without the inner disposition of harmlessness, matching the kural’s view of aram without arul.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Those who do not know this (Law), are not awakened, though they fancy themselves awakened; believing themselves awakened, they are beyond the boundary of right faith.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sutrakritanga I.11.25 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Having just called non-killing &#x27;the quintessence of wisdom&#x27;, the Sutrakritanga says that those who miss this law only imagine they are enlightened and are in fact outside right faith.</div>
+  <div class="tieback">Valluvar likens virtue without compassion to a confused mind claiming to see the truth; the Sutrakritanga likewise says that those ignorant of the law of non-harm only fancy themselves awakened.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;You kill living beings, and call it a righteous action. Tell me, brother, what would you call an unrighteous action?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1103, Raag Maaroo, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Kabir challenges those who sacrifice animals and call it dharma, asking what could count as sin if that is righteousness.</div>
+  <div class="tieback">Valluvar says the virtue of someone without compassion is no more real than a muddled mind&#x27;s claim to have seen truth; Kabir likewise exposes religious acts done without compassion as false righteousness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">King Lycaon receives the disguised Jupiter with a show of hospitality, but secretly serves him the flesh of a slaughtered hostage and plots to kill him in his sleep; Jupiter destroys his house and turns him into a wolf, still thirsting for blood.</div>
+  <div class="cite">&mdash; <a href="https://www.poetryintranslation.com/PITBR/Latin/Metamorph1.php" target="_blank" rel="noopener">Ovid, Metamorphoses 1.209-243</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">A sacred duty, hospitality to a guest, is performed in outward form by a man with no pity.</div>
+  <div class="tieback">The ‘virtue’ of the pitiless is a hollow performance, as the kural warns; Lycaon’s case is an extreme one.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Kant argues that a philanthropist who helps others out of sympathy acts amiably but without true moral worth; only if sympathy were extinguished and he helped purely from duty would the act have moral worth.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/5682" target="_blank" rel="noopener">Immanuel Kant, Groundwork of the Metaphysics of Morals 4:398</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Kant, the moral value of an act lies in its maxim of duty, not in the feeling behind it.</div>
+  <div class="tieback">A direct counterpoint: Valluvar holds that virtue without compassion is hollow, whereas Kant holds that virtue from compassion alone is not yet moral. The contrast shows what is distinctive in the Kural’s sentiment-centred ethics.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Spanish Requerimiento is read to Indigenous peoples</div>
+  <div class="rle-meta">1513 &middot; Spanish Americas (first read on the coast of present-day Colombia)</div>
+  <div class="quote is-paraphrase">Around 1510-1513 the Council of Castile drew up the Requerimiento, a formal text to be read aloud to Indigenous peoples before conquest, asserting the authority of the pope and the Spanish crown and demanding their submission and acceptance of Christian preaching. It was often read only in Spanish, sometimes from a distance, so that its hearers could not understand it, and translation was merely recommended. Historians describe it as a legal formality that served chiefly to justify conquest to the Spanish themselves.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">An outward ritual of legality and religion was performed without any real concern for the people it addressed.</div>
+  <div class="tieback">The kural says virtue practised without compassion is as unreal as a confused mind claiming to see the truth, and the Requerimiento was a show of righteousness emptied of any regard for its hearers.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-25/" target="_blank" rel="noopener">அருளுடைமை / Compassion, Chapter 25 (Kurals 241-250), with commentaries of Mu. Varadarasan, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-025.html" target="_blank" rel="noopener">அருளுடைமை - அதிகாரம் 25 - திருக்குறள் (with commentaries of Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah, Mu. Karunanidhi)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita, The Song of God (Swami Mukundananda)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://quran.com/" target="_blank" rel="noopener">The Clear Quran, trans. Dr. Mustafa Khattab</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Sukkah.49b" target="_blank" rel="noopener">Babylonian Talmud, Sukkah 49b (William Davidson Edition, Koren-Steinsaltz English)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga (Sutrakritanga)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.poetryintranslation.com/PITBR/Latin/Metamorph1.php" target="_blank" rel="noopener">Ovid, Metamorphoses Book 1 (Lycaon), trans. A. S. Kline</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/5682" target="_blank" rel="noopener">Immanuel Kant, Groundwork of the Metaphysic of Morals (Fundamental Principles of the Metaphysic of Morals), Section I, trans. Thomas Kingsmill Abbott</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.worldhistory.org/Spanish_Requirement/" target="_blank" rel="noopener">Spanish Requirement</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://nationalhumanitiescenter.org/pds/amerbegin/contact/text7/requirement.pdf" target="_blank" rel="noopener">The Requerimiento [Requirement], Council of Castile</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0248.html">&larr; Kural 248</a>
+  <a href="kural-0250.html">Kural 250 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-025.html">Benevolence</a>
+  <a class="skip-btn" href="kural-0251.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1057 — Mendicancy | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1057</h1>
+<p class="adhikaram"><a href="adhikaram-106.html">Mendicancy</a> &middot; Iravu &middot; <span class="tamil">இரவு</span></p>
+
+<div class="tamil-text">இகழ்ந்தெள்ளாது ஈவாரைக் காணின் மகிழ்ந்துள்ளம்
+உள்ளுள் உவப்பது உடைத்து.</div>
+<div class="translit">Igazhndhellaadhu eevaaraik kaanin magizhndhullam
+ullul uvappadhu udaiththu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>When someone who asks meets givers who give without looking down on them or mocking them, their heart is filled with deep joy.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you ask for help and the person helps you with a kind smile instead of laughing at you, you feel warm and happy inside. How we give matters as much as what we give.</p>
+
+<h2 class="section">University</h2>
+<p>Igazhndhu ellaadhu (இகழ்ந்து எள்ளாது, &#x27;without despising, without mocking&#x27;) names the two insults a giver can add to a gift, contempt and derision; Pappaiah glosses them as அவமதிக்காமல், இழிவாகப் பேசாமல். The response is doubled for emphasis: magizhndhu (மகிழ்ந்து, &#x27;rejoicing&#x27;) and ullul uvappadhu (உள்ளுள் உவப்பது, &#x27;delighting within the innermost heart&#x27;). The commentarial tradition following Parimelazhagar places the joy in the asker, and the next chapter, Iravachcham, will show the opposite case, where contempt makes asking unbearable. Pope: &#x27;The minds of askers, through and through, will thrill with joy.&#x27; The texts on ytamizh.com and thirukkural.net agree.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;And charity performed at an impure place, at an improper time, to unworthy persons, or without proper attention and respect is said to be in the mode of ignorance.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 17.22 (Bhagavad-gītā As It Is, A.C. Bhaktivedanta Swami Prabhupāda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Gita places at the lowest grade the gift given without respect (asat-kṛtam) and with disdain (avajñātam).</div>
+  <div class="tieback">The Gita&#x27;s avajñātam, contempt, is exactly the scorn (igazhchi, ellal) that the Kural says spoils a gift.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him.&rdquo;</div>
+  <div class="cite">&mdash; James 1:5 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">James invites believers to ask God freely, because God gives generously and does not reproach the one who asks.</div>
+  <div class="tieback">&#x27;Giveth liberally, and upbraideth not&#x27; is almost word for word the Kural&#x27;s &#x27;gives without scorn or ridicule&#x27;.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Kind speech and forgiveness are better than charity followed by injury. And Allāh is Free of need and Forbearing.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 2:263 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an ranks a kind word above a gift that is followed by hurt or humiliation.</div>
+  <div class="tieback">The Kural&#x27;s joy at a gift given without scorn is the other side of the Qur&#x27;an&#x27;s warning against gifts that injure.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Whenever a person gives charity to a poor person with an unpleasant countenance and with his face buried in the earth, he loses and destroys his merit even if he gives him 1000 gold pieces. Instead, he should give him with a pleasant countenance and with happiness, commiserating with him about his troubles&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Mishneh_Torah,_Gifts_to_the_Poor.10" target="_blank" rel="noopener">Maimonides, Mishneh Torah, Gifts to the Poor 10:4 (tr. Eliyahu Touger, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Maimonides rules that a gift given with a sour face loses all merit, while a gift given cheerfully and with sympathy is the proper way.</div>
+  <div class="tieback">This states the Kural&#x27;s lesson as law: the manner of a gift decides whether the poor person&#x27;s heart is gladdened.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Sappurisadana Sutta the Buddha lists the gifts of a person of integrity: given with conviction, attentively and with respect, at the right time, with an empathetic heart, and without harming oneself or others, and each brings its own good result.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an05/an05.148.than.html" target="_blank" rel="noopener">Anguttara Nikaya 5.148, Sappurisadana Sutta (paraphrase)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha teaches that a gift given respectfully and with empathy differs in kind from one carelessly thrown.</div>
+  <div class="tieback">Giving with respect and empathy is what produces the asker&#x27;s inner joy in the Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">In the Uttaradhyayana&#x27;s twelfth lecture, the outcaste-born monk Harikesa comes begging to a Brahmin sacrifice and is mocked and beaten. A yaksha who serves him intervenes, and the Brahmins finally honour him and give him alms.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra, Lecture 12 (Harikesa) (tr. Hermann Jacobi, SBE 45) (paraphrase)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The story condemns those who insult a mendicant and shows that a gift offered with respect is what honours both sides.</div>
+  <div class="tieback">It is a negative example of the Kural&#x27;s lesson: scorn spoils the giving, and respect brings joy.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">In the Sikh langar, as Britannica describes it, everyone sits together in a straight line, neither ahead to claim higher status nor behind to mark inferiority; the institution began as a protest against caste, and under Guru Amar Das visitors ate in the casteless langar.</div>
+  <div class="cite">&mdash; <a href="https://www.britannica.com/topic/Sikhism/Sikh-practice" target="_blank" rel="noopener">Encyclopaedia Britannica, &#x27;Sikhism: Sikh practice&#x27; (sections on the rejection of caste and the worship service) and &#x27;Guru Amar Das&#x27;</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The langar gives food freely and without any mark of contempt or rank: rich and poor, high and low caste sit side by side and are served the same meal as equals.</div>
+  <div class="tieback">The Kural says the asker&#x27;s heart rejoices when givers give without scorn or ridicule; the langar is built precisely so that no one who receives food is looked down upon.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;With these words he threw a footstool at him, and hit him on the right shoulder-blade near the top of his back.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, Odyssey 17 (tr. Samuel Butler)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Antinous answers the disguised Odysseus&#x27;s request by throwing a footstool at him, and even the other suitors are shocked.</div>
+  <div class="tieback">This is the opposite of the giver the Kural praises, and it shows why a gift without scorn gladdens the heart.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Seneca reports that Fabius Verrucosus called a favour granted harshly by an unfeeling man &#x27;bread full of stones&#x27;: welcome to a hungry man, but painful to swallow.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/files/3794/3794-h/3794-h.htm" target="_blank" rel="noopener">Seneca, On Benefits 2.7 (tr. Aubrey Stewart) (paraphrase)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Seneca holds that the manner of giving can spoil the benefit itself.</div>
+  <div class="tieback">A gift given with scorn is the stony bread the Kural&#x27;s asker cannot enjoy, while one given kindly makes the heart rejoice.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Mother Teresa opens Nirmal Hriday for the dying destitute</div>
+  <div class="rle-meta">1952 &middot; Kalighat, Calcutta (Kolkata), West Bengal, India</div>
+  <div class="quote is-paraphrase">In 1952 Mother Teresa opened Nirmal Hriday, a hospice at Kalighat in Calcutta, for destitute people who were dying and whom many hospitals of the time would not admit. Residents were washed, fed and cared for so that they could die with dignity, and she required workers to respect each person&#x27;s own religious beliefs; the Nobel Committee later described the dying destitute there as received with warm compassion devoid of condescension.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Nirmal Hriday became known worldwide for giving the poorest people care without contempt, and it was a central part of the work recognised by the 1979 Nobel Peace Prize.</div>
+  <div class="tieback">The kural says the heart of the one in need rejoices deep within when givers give without scorn or ridicule, and Nirmal Hriday was founded on giving the destitute care with respect rather than condescension.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-106/" target="_blank" rel="noopener">Thirukkural Chapter 106: இரவு / Mendicancy (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-106.html" target="_blank" rel="noopener">இரவு - அதிகாரம் 106 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Mishneh_Torah,_Gifts_to_the_Poor.10" target="_blank" rel="noopener">Maimonides, Mishneh Torah, Gifts to the Poor (Matanot Aniyim), chapter 10 (tr. Eliyahu Touger, Moznaim)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/an/an05/an05.148.than.html" target="_blank" rel="noopener">Aṅguttara Nikāya 5.148, Sappurisadāna Sutta — &#x27;A Person of Integrity&#x27;s Gifts&#x27;</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.britannica.com/topic/Sikhism/Sikh-practice" target="_blank" rel="noopener">Sikhism: Sikh practice (The worship service; The rejection of caste); Guru Amar Das (Encyclopaedia Britannica editors)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, The Odyssey, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/files/3794/3794-h/3794-h.htm" target="_blank" rel="noopener">L. Annaeus Seneca, On Benefits, translated by Aubrey Stewart (1887)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Mother-Teresa" target="_blank" rel="noopener">Mother Teresa</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.nobelprize.org/prizes/peace/1979/ceremony-speech/" target="_blank" rel="noopener">The Nobel Peace Prize 1979 - Presentation Speech (John Sanness)</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1056.html">&larr; Kural 1056</a>
+  <a href="kural-1058.html">Kural 1058 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-106.html">Mendicancy</a>
+  <a class="skip-btn" href="kural-1061.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

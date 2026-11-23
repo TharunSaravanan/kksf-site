@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 708 — The Knowledge of Signals | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 708</h1>
+<p class="adhikaram"><a href="adhikaram-071.html">The Knowledge of Signals</a> &middot; Kurippu Arithal &middot; <span class="tamil">குறிப்பறிதல்</span></p>
+
+<div class="tamil-text">முகம்நோக்கி நிற்க அமையும் அகம்நோக்கி
+உற்ற துணர்வார்ப் பெறின்.</div>
+<div class="translit">Mukamnokki nirka amaiyum akamnokki
+Utradhu unarvaarp perin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If you have people who can look into your heart and understand what has happened to you, it is enough to stand where they can see your face.</p>
+
+<h2 class="section">Elementary</h2>
+<p>When you come home after a bad day, a good parent can often tell just by looking at you. You don’t have to explain; you just stand there, and they already know you need a hug. Valluvar says that is what great helpers are like.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet balances two ‘lookings’: mukam nokki (looking at the face) and akam nokki (looking into the heart). Nirka amaiyum means ‘it suffices to stand’, and utradhu is ‘what has befallen’ (a trouble or need). Parimelazhagar makes the king the one who stands: if he has ministers able to look into his mind and perceive what has occurred, he need not voice his trouble; standing and looking at their faces is enough, and they will understand and remedy it. Some modern readers (e.g., Kalaignar) generalise it to anyone who can read hearts. The couplet is the practical payoff of 701 and 703: the value of the perceptive minister is that the ruler is spared the need to speak, which in court may itself be dangerous. Variant spelling: ytamizh prints முகம்நோக்கி, the sandhi edition முகநோக்கி நிற்க வமையு மகநோக்கி.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The poor Brahmin Sudama visits his boyhood friend Krishna but is too ashamed to ask for help; Krishna understands his need unspoken and sends him home to find his hut turned into a mansion.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/10/81/" target="_blank" rel="noopener">Bhagavata Purana 10.80-81</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Sudama asks for nothing; his presence is enough for Krishna, who reads his heart.</div>
+  <div class="tieback">This is the Kural’s scene exactly: standing before one who reads hearts is enough.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;for your Father knoweth what things ye have need of, before ye ask him.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 6:8 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus tells his followers not to pile up words in prayer, since God already knows their needs.</div>
+  <div class="tieback">As in the Kural, one who knows the heart makes spoken requests unnecessary.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Finally Abu-l-Qasim (the Prophet) passed by me and he smiled when he saw me, for he knew what was in my heart and on my face.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6452" target="_blank" rel="noopener">Sahih al-Bukhari 6452</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Abu Hurayrah, starving, hints at his hunger to others who miss it; the Prophet reads it on his face and feeds him.</div>
+  <div class="tieback">Abu Hurayrah only had to stand before the right person; his face was enough, as the Kural says.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;And it was so, when the king saw Esther the queen standing in the court, that she obtained favour in his sight ... Then said the king unto her: ‘What wilt thou, queen Esther? for whatever thy request, even to the half of the kingdom, it shall be given thee.’&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Esther 5:2-3 (JPS 1917)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Esther risks her life simply by standing uninvited before the king; seeing her, he understands she has an urgent request before she speaks.</div>
+  <div class="tieback">Esther only has to stand before the king’s gaze, and her unspoken purpose is recognised.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">After his awakening the Buddha inclines not to teach; Brahma Sahampati, knowing the Buddha’s thought with his own mind, appears before him and begs him to teach.</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/mn26/en/sujato" target="_blank" rel="noopener">Majjhima Nikaya 26, Ariyapariyesana Sutta</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha says nothing aloud; the deity perceives his unspoken inclination and responds.</div>
+  <div class="tieback">An unspoken inner state is perceived and answered by one who looks into the mind, as the Kural describes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Guessing the teacher&#x27;s thoughts and the purport of his words, one should express one&#x27;s assent, and execute (what he desires to be done).&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 1.43 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The ideal disciple reads his teacher&#x27;s thoughts and acts on them, so the teacher does not have to explain what he needs.</div>
+  <div class="tieback">The Kural says it is enough to stand before those who read the heart; the Jain verse describes exactly that kind of attendant from the other side.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;You know completely the condition of my mind; who else could I go to tell of it?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 382, Raag Aasaa, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Arjan tells God that the whole condition (birtha) of his mind is already known to Him, so there is no need to explain it to anyone.</div>
+  <div class="tieback">The Kural says that before those who look into the heart it is enough simply to stand and be seen; Guru Arjan says the Lord already knows the mind&#x27;s trouble without being told.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;You know it; why tell you what you know well already?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, Iliad 1 (trans. Samuel Butler)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">When Thetis rises from the sea to her weeping son, Achilles says she already knows his grief without being told.</div>
+  <div class="tieback">Achilles only has to be seen by one who knows his heart; explanation is unnecessary.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Adam Smith argues that we come to feel what another feels by imaginatively placing ourselves in their situation, so that a sympathetic observer grasps a sufferer’s state from their circumstances and looks.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/cache/epub/67363/pg67363-images.html" target="_blank" rel="noopener">Adam Smith, The Theory of Moral Sentiments I.i.1</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Sympathy is the faculty that lets one person understand another’s condition without full explanation.</div>
+  <div class="tieback">The Kural’s perceptive helper is Smith’s sympathetic spectator at work.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Jean-Dominique Bauby dictates a memoir by blinking one eye</div>
+  <div class="rle-meta">1995-1997 &middot; A naval hospital near Calais, France</div>
+  <div class="quote is-paraphrase">On 8 December 1995, Jean-Dominique Bauby, editor of the French edition of Elle, suffered a stroke and awoke from a coma about 20 days later unable to speak and able to move only his left eyelid. A therapist devised a system in which the alphabet was read aloud and he blinked at the letter he wanted, and with an assistant writing down each letter he dictated his memoir, The Diving Bell and the Butterfly. The book was published just days before he died of pneumonia at the age of 44.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Bauby could no longer speak, but the people around him learned to read his eye so well that he could share a whole book of his inner life.</div>
+  <div class="tieback">The kural says that if you have people who can look into your heart, it is enough simply to stand before them, and Bauby&#x27;s helpers understood him through his face and eye alone.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-71/" target="_blank" rel="noopener">Thirukkural Chapter 71: குறிப்பறிதல் / The Knowledge of Indications (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A071.html" target="_blank" rel="noopener">71. குறிப்பறிதல் — Thirukkural, sandhi-joined text</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/sb/10/81/" target="_blank" rel="noopener">Srimad Bhagavatam, Canto 10, Chapters 80-81 (Krishna and Sudama)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:6452" target="_blank" rel="noopener">Sahih al-Bukhari 6452, Book of Ar-Riqaq: How the Prophet and his Companions used to live</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://suttacentral.net/mn26/en/sujato" target="_blank" rel="noopener">Majjhima Nikaya 26: Ariyapariyesana Sutta (The Noble Search)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, The Iliad, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/cache/epub/67363/pg67363-images.html" target="_blank" rel="noopener">Adam Smith, The Theory of Moral Sentiments (1759), Part I, Section I, Chapter I (&#x27;Of Sympathy&#x27;)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.npr.org/2007/11/29/16755782/the-diving-bell-and-the-butterfly" target="_blank" rel="noopener">The Diving Bell and the Butterfly (review) (NPR)</a> <span class="tier">[web source]</span></li>
+<li id="cite-13"><a href="http://www.washingtonpost.com/wp-dyn/content/article/2007/12/20/AR2007122002420.html" target="_blank" rel="noopener">The Diving Bell: An Awakening Beyond Words (Ann Hornaday)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0707.html">&larr; Kural 707</a>
+  <a href="kural-0709.html">Kural 709 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-071.html">The Knowledge of Signals</a>
+  <a class="skip-btn" href="kural-0711.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

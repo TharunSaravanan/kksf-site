@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 660 — Purity in Execution | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 660</h1>
+<p class="adhikaram"><a href="adhikaram-066.html">Purity in Execution</a> &middot; Vinaithooymai &middot; <span class="tamil">வினைத்தூய்மை</span></p>
+
+<div class="tamil-text">சலத்தால் பொருள்செய்தே மார்த்தல் பசுமண்
+கலத்துள்நீர் பெய்திரீஇ யற்று.</div>
+<div class="translit">Salaththaal porulseydhe maarththal pasuman
+Kalaththulneer peydhireei yatru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Trying to keep yourself safe with money gained by cheating is like pouring water into a pot of wet, unbaked clay and hoping it holds.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you pour water into a pot made of wet, unbaked clay, the pot softens and falls apart, and the water leaks away. Money gained by cheating is like that: it seems to hold for a moment, but it melts away and takes the ‘pot’ with it.</p>
+
+<h2 class="section">University</h2>
+<p>Calam means deceit or crooked means, and poruḷ ceytu ēmārttal (sandhi ceytē mārttal) is ‘to make wealth and guard/secure (with it)’, from ēmam, safety or protection. Parimelazhagar reads the verse in its ministerial setting: a minister who tries to protect his king and realm with wealth gained by fraud. This is why the prose explanation printed with Pope says ‘(For a minister) to protect (his king)’. The image is pacu-maṇ kalam, a pot of green, unfired clay: pouring water in and trying to keep it there (peytu irīi, with irīi an alapeṭai of iruttal, ‘to keep’) destroys both the water and the vessel. The metaphor makes the same point as the rest of the chapter: foul means undo themselves and ruin the very thing they were meant to protect. ytamizh.com and thirukkural.net agree on the text; thirukkural-thamizh.org has the sandhi forms சலத்தாற் … பசுமட் / கலத்துணீர்.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The Isha Upanishad opens by teaching that all this world is pervaded by the Lord, that one should enjoy it through renunciation, and that one must not covet anyone’s wealth.</div>
+  <div class="cite">&mdash; Isha Upanishad 1 <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The verse bases right possession on non-grasping and forbids reaching for what belongs to others.</div>
+  <div class="tieback">The Kural shows what happens when that rule is broken: wealth grasped wrongly cannot be held.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And every one that heareth these sayings of mine, and doeth them not, shall be likened unto a foolish man, which built his house upon the sand: And the rain descended, and the floods came, and the winds blew, and beat upon that house; and it fell: and great was the fall of it.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 7:26-27 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Jesus compares a life built without obedience to a house on sand that collapses when the waters come.</div>
+  <div class="tieback">Like the unbaked pot, the house on sand is a structure that fails the moment water tests it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O people, Allah is Good and He therefore, accepts only that which is good.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/muslim:1015" target="_blank" rel="noopener">Sahih Muslim 1015</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Prophet teaches that God accepts nothing gained unlawfully, and describes a man whose food, drink and clothing are unlawful, asking how his prayer could be accepted.</div>
+  <div class="tieback">Just as the Kural’s clay pot cannot hold water, the hadith says wealth from unlawful sources cannot support even prayer.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">The Talmud rules that a commandment fulfilled through a transgression (mitzvah ha-ba’ah ba-aveirah), such as waving a stolen lulav on Sukkot, is invalid, citing Isaiah’s ‘I the Lord love justice, I hate robbery with a burnt offering’.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Sukkah.45b" target="_blank" rel="noopener">Babylonian Talmud, Sukkah 30a</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Even a sacred purpose cannot be achieved with stolen means; the tainted means cancel the act.</div>
+  <div class="tieback">This is the Kural’s point in legal form: foul means ruin the very purpose they are meant to serve.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Great Forty discourse the Buddha defines wrong livelihood as scheming, persuading, hinting, belittling and using gain to pursue gain, and teaches that right livelihood means abandoning these.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/mn/mn.117.than.html" target="_blank" rel="noopener">Majjhima Nikaya 117 (Maha-cattarisaka Sutta)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Right livelihood (sammā-ājīva) is a limb of the Noble Eightfold Path, so earning by deceit is itself a departure from the path.</div>
+  <div class="tieback">The Kural’s calam (deceit) as a way of getting wealth is exactly what the Buddha calls wrong livelihood.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Wealth will not protect a careless man in this world and the next. Though he had seen the right way, he does not see it, even as one in the dark whose lamp has suddenly been put out.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 4.5 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Mahavira teaches that wealth gives no real protection, in this life or the next, to one who has strayed from right conduct.</div>
+  <div class="tieback">The kural says that trying to secure oneself with wealth gained by deceit is like keeping water in an unfired clay pot; the Jain verse likewise denies that wealth can be relied on for protection.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Falsehood will come to an end, O Nanak, and Truth will prevail in the end.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 953, Raag Raamkalee (Ramkali ki Vaar, salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Guru Nanak teaches that whatever rests on falsehood runs out, and only what rests on truth endures.</div>
+  <div class="tieback">The Kural compares securing oneself with wealth gained by deceit to storing water in an unbaked clay pot; Guru Nanak likewise says that what is built on falsehood cannot last.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Hesiod teaches that wealth should not be seized, since god-given wealth is far better; if a man takes great wealth by violence or by lying tongue, the gods easily bring him low, his house dwindles, and his wealth stays with him only a short time.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 320-326</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The poet says ill-gotten riches are always unstable, because the gods undo them.</div>
+  <div class="tieback">This is the Kural’s claim in Greek terms: wealth gathered by fraud will not stay, just as water will not stay in unbaked clay.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle classes those who take from wrong sources, such as usurers, gamblers and robbers, as guilty of ‘sordid love of gain’ (aischrokerdeia), since they accept reproach for the sake of profit.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics 4.1 (1121b-1122a)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">For Aristotle, where wealth comes from is itself a moral question, and gain bought with disgrace is a vice.</div>
+  <div class="tieback">The Kural condemns the same thing, wealth made by crooked means, and adds that it cannot last.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Regulators close the Bank of Credit and Commerce International</div>
+  <div class="rle-meta">5 July 1991 &middot; London and branches in about 70 countries</div>
+  <div class="quote is-paraphrase">The Bank of Credit and Commerce International (BCCI), founded by Agha Hasan Abedi, grew into a bank with about 20 billion dollars in assets operating in some 70 countries, but a US Senate investigation later found that it had been built on fraud, concealed losses and a deliberately confusing corporate structure designed to evade regulators. After its auditors documented the fraud, regulators in Britain and other countries shut the bank down worldwide on 5 July 1991. Depositors around the world were left facing heavy losses; in Hong Kong alone some 1.4 billion dollars in local deposits were put in doubt.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">An institution whose apparent strength rested on deceit could not hold its value once the truth came out, and it collapsed taking its depositors&#x27; savings with it.</div>
+  <div class="tieback">The kural compares trying to secure oneself with wealth gained by deceit to pouring water into an unbaked clay pot, and BCCI&#x27;s sudden collapse shows such a vessel failing and losing everything it held.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-66/" target="_blank" rel="noopener">Thirukkural Chapter 66: வினைத்தூய்மை / Purity in Action (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-066.html" target="_blank" rel="noopener">வினைத்தூய்மை - அதிகாரம் 66 (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah and Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="http://thirukkural-thamizh.org/html/A066.html" target="_blank" rel="noopener">66. வினைத்தூய்மை (Thirukkural, sandhi-joined text)</a> <span class="tier">[web source]</span></li>
+<li id="cite-4">Isha Upanishad, verse 7 <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/muslim:1015" target="_blank" rel="noopener">Sahih Muslim 1015, The Book of Zakat: Acceptance of charity that comes from good (Tayyib) earnings</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Sukkah.45b" target="_blank" rel="noopener">Babylonian Talmud, Tractate Sukkah 45b (William Davidson / Koren–Steinsaltz English)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.accesstoinsight.org/tipitaka/mn/mn.117.than.html" target="_blank" rel="noopener">Maha-cattarisaka Sutta: The Great Forty (MN 117), trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://irp.fas.org/congress/1992_rpt/bcci/01exec.htm" target="_blank" rel="noopener">The BCCI Affair: Executive Summary (report to the US Senate Committee on Foreign Relations, 1992) (Senators John Kerry and Hank Brown)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-14"><a href="https://www.upi.com/Archives/1991/07/17/BCCI-Hong-Kong-to-liquidate/8654679723200/" target="_blank" rel="noopener">BCCI Hong Kong to liquidate</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0659.html">&larr; Kural 659</a>
+  <a href="kural-0661.html">Kural 661 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-066.html">Purity in Execution</a>
+  <a class="skip-btn" href="kural-0661.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

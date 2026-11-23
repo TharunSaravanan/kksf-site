@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 665 — Power in Execution | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 665</h1>
+<p class="adhikaram"><a href="adhikaram-067.html">Power in Execution</a> &middot; Vinaithitpam &middot; <span class="tamil">வினைத்திட்பம்</span></p>
+
+<div class="tamil-text">வீறெய்தி மாண்டார் வினைத்திட்பம் வேந்தன்கண்
+ஊறெய்தி உள்ளப் படும்.</div>
+<div class="translit">VeeReydhi maaNdaar vinaiththitpam vaendhankaN
+OoReydhi uLLap padum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The firm action of people who have become great reaches even the king, and so everyone comes to respect it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>When a student works hard and finishes a great project, the teacher notices, then the principal hears about it, and soon the whole school knows. Steady, finished work travels up to the people in charge, and everyone respects it.</p>
+
+<h2 class="section">University</h2>
+<p>Vīṟu is distinction or excellence and māṇṭār those who are great or eminent; the verb māḷ can also mean ‘to die’, and Sivayogi Sivakumar’s gloss on ytamizh.com reads the phrase as ‘those who died valiantly’, but the mainstream commentators (Parimelazhagar, Mu. Varadarasanar, Solomon Pappaiah, Kalaignar, Puliyur Kesikan) take māṇṭār as ‘the eminent’. Parimelazhagar specifies that their eminence comes from excellence of counsel (eṇṇam), and that their firmness in execution, by ‘reaching’ the king (vēntaṉkaṇ ūṟu eyti, where ūṟu means contact or effect, not harm as in 662), is then esteemed by everyone (uḷḷappaṭum). The couplet thus explains how a minister’s firmness is rewarded: it becomes visible through the ruler’s regard. Pope’s ‘With king acceptance finds and fame through all the state’ follows the same reading. The three sources agree on the text.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Whatever action a great man performs, common men follow. And whatever standards he sets by exemplary acts, all the world pursues.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 3.21 (Prabhupada, Bhagavad-gita As It Is)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Krishna notes that the deeds of eminent people become the standard everyone else follows.</div>
+  <div class="tieback">As in the Kural, the firm action of the great becomes widely known and honoured.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;His lord said unto him, Well done, thou good and faithful servant: thou hast been faithful over a few things, I will make thee ruler over many things...&rdquo;</div>
+  <div class="cite">&mdash; Matthew 25:21 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">In the parable of the talents, the servant who carried his charge through faithfully is praised and promoted by his master.</div>
+  <div class="tieback">Diligent execution reaches the lord’s notice and wins honour, as the Kural says.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And the king said, &quot;Bring him to me; I will appoint him exclusively for myself.&quot; And when he spoke to him, he said, &quot;Indeed, you are today established [in position] and trusted.&rdquo;</div>
+  <div class="cite">&mdash; Quran 12:54 (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Having seen Joseph’s wisdom and integrity, the king of Egypt takes him into his own service and gives him high standing.</div>
+  <div class="tieback">Joseph’s proven worth ‘reaches the king’ and brings him esteem, as the Kural describes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;See a man skilled at his work— He shall attend upon kings; He shall not attend upon the lowly.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Proverbs 22:29 (JPS Tanakh, Gender-Sensitive Edition, via Sefaria)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Proverbs promises that someone who excels at his work will end up serving before kings.</div>
+  <div class="tieback">Almost the Kural’s exact claim: excellence in action reaches the king.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Ever grows the glory of him who is energetic, mindful and pure in conduct, discerning and self-controlled, righteous and heedful.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 24 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Dhammapada says the reputation of an energetic, disciplined person keeps growing.</div>
+  <div class="tieback">Both texts say sustained, disciplined action brings growing renown.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;An intelligent man who has learned (the sacred texts) takes his duties upon himself, and he becomes renowned in the world; as the earth is the dwelling of all beings, so he will be a dwelling of all duties.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 1.45 (cf. 1.48) (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The Uttaradhyayana&#x27;s lecture on discipline says the pupil who reliably shoulders his duties becomes renowned, and goes on to say he will be honoured by gods, Gandharvas and men.</div>
+  <div class="tieback">Just as the kural says the firmness of eminent men reaches the king and wins general esteem, the Jain text makes steadfast discharge of duty the source of a person&#x27;s renown.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Nanak proclaimed Lehna&#x27;s succession - he earned it.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 966, Raag Raamkalee (Ramkali ki Vaar), Satta and Balwand (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The bards Satta and Balwand record that Guru Nanak raised his devoted disciple Lehna (Guru Angad) to the Guruship because of his proven, steadfast service.</div>
+  <div class="tieback">The Kural says the firmness in action of the distinguished reaches the king and wins everyone&#x27;s esteem; Lehna&#x27;s steadfast service reached Guru Nanak himself and won him the highest seat.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Then the king knew that he must be the valiant offspring of a god, so he kept him in Lycia, gave him his daughter in marriage, and made him of equal honour in the kingdom with himself...&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, Iliad 6 (trans. Samuel Butler)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Sent by the Lycian king on deadly tasks, Bellerophon completes each one (the Chimaera, the Solymi, the Amazons, an ambush), and the king finally honours him instead.</div>
+  <div class="tieback">Bellerophon’s firmness in carrying out every task reaches the king and wins him the highest honour.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;...honour is the prize of virtue, and it is to the good that it is rendered.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics IV.3 (trans. W. D. Ross)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Aristotle argues that honour is the proper reward that follows real excellence.</div>
+  <div class="tieback">The Kural likewise has esteem follow proven excellence in action.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Engineer M. Visvesvaraya becomes Diwan of Mysore and later receives the Bharat Ratna</div>
+  <div class="rle-meta">1909-1955 &middot; Mysore State (now Karnataka), India</div>
+  <div class="quote is-paraphrase">Mokshagundam Visvesvaraya joined the Mysore State service as Chief Engineer in 1909 and led work on the Krishnaraja Sagara dam, using automatic sluice gates of his own design; the dam created what was then one of the largest reservoirs in Asia. In 1912 the Maharaja&#x27;s government made him Diwan of Mysore, a post he held until 1918, during which the dam project was given top priority. In 1955 he received the Bharat Ratna, India&#x27;s highest civilian honour, and his birthday, 15 September, is observed as Engineers&#x27; Day in India.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a> <a class="idx" href="#cite-15">[15]</a></div>
+  <div class="explain">Visvesvaraya&#x27;s record of carrying great works through to completion brought him first the ruler&#x27;s trust and then the esteem of the whole nation.</div>
+  <div class="tieback">The kural says the firmness in action of the eminent reaches the king and so comes to be held in regard by all, and Visvesvaraya&#x27;s proven firmness as an engineer won him the Maharaja&#x27;s highest office and, later, national honour.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-67/" target="_blank" rel="noopener">Thirukkural Chapter 67: வினைத்திட்பம் / Power in Action (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-067.html" target="_blank" rel="noopener">வினைத்திட்பம் - அதிகாரம் 67 (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah and Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="http://thirukkural-thamizh.org/html/A067.html" target="_blank" rel="noopener">67. வினைத்திட்பம் (Thirukkural, sandhi-joined text)</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The JPS Tanakh: Gender-Sensitive Edition (Psalms 112:7, 126:5; Proverbs 22:3, 22:29, 24:16; Nehemiah 2:12, 2:16; 1 Samuel 16:7)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, The Iliad, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Nicomachean Ethics, Book IV (Aristotle)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.karnataka.gov.in/info-1/History/History/en" target="_blank" rel="noopener">History</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.ias.ac.in/article/fulltext/reso/007/05/0003-0005" target="_blank" rel="noopener">Sir Mokshagundam Visvesvaraya</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-15"><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2166651" target="_blank" rel="noopener">Prime Minister pays tribute to Sir M. Visvesvaraya on Engineers&#x27; Day</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0664.html">&larr; Kural 664</a>
+  <a href="kural-0666.html">Kural 666 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-067.html">Power in Execution</a>
+  <a class="skip-btn" href="kural-0671.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

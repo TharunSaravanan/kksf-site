@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1200 — The Solitary Anguish | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1200</h1>
+<p class="adhikaram"><a href="adhikaram-120.html">The Solitary Anguish</a> &middot; Thanippadar Mikudhi &middot; <span class="tamil">தனிப்படர் மிகுதி</span></p>
+
+<div class="tamil-text">உறாஅர்க்கு உறுநோய் உரைப்பாய் கடலைச்
+செறாஅஅய் வாழிய நெஞ்சு.</div>
+<div class="translit">Uraaarkku urunoi uraippaai kadalaich
+cheraaaai vaazhiya nenju.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Long live you, my heart! Telling your great pain to someone who does not care about you is like trying to fill up the sea.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine trying to fill the ocean with a bucket. No matter how much you pour, it never fills. The girl tells her own heart that telling her sadness to someone who doesn’t care is just like that.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter closes with an apostrophe to the heart (neñcu), a figure that the next chapters develop. Uṟāarkku is ‘to one who is not attached (to you)’, uṟunōy ‘the great affliction (you suffer)’, uraippāy ‘you who tell’; kaṭalaic ceṟāaay is read as an ironic imperative, ‘(go and) fill up the sea!’ Parimelazhagar’s reading, followed by Varadarasanar, Puliyur Kesikan and Kalaignar, is comparative: filling the sea would be easier than winning comfort from the indifferent. Vāḻiya, ‘may you live / bless you’, is half-pitying, half-mocking. Pope: ‘Tell him thy pain that loves not thee? / Farewell, my soul, fill up the sea!’, while his prose gloss reads the sea as her own sea of sorrow. Text identical on ytamizh.com and thirukkural.net, both with the triple alapeṭai செறாஅஅய்.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">A yaksha, exiled from his wife, sees a rain-cloud and pours out his message of longing to it, asking it to carry his words to her; the poet remarks that those tormented by love cannot tell living beings from lifeless things when they make their pleas.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/16659" target="_blank" rel="noopener">Kalidasa, Meghaduta, Purvamegha 5 and following (paraphrase)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Kalidasa’s exile speaks his pain to a cloud that cannot answer, and the poet gently notes the folly of love.</div>
+  <div class="tieback">The yaksha addressing the unhearing cloud is the Kural’s heart telling its pain to one who will not respond.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;I charge you, O daughters of Jerusalem, if ye find my beloved, that ye tell him, that I am sick of love.&rdquo;</div>
+  <div class="cite">&mdash; Song of Solomon 5:8 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The bride, unable to reach her beloved, begs others to carry word of her lovesickness to him.</div>
+  <div class="tieback">Like the Kural’s heroine, she keeps trying to make her pain known to a beloved who has turned away.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">The Masnavi opens with the reed flute telling its tale of separation: cut from the reed-bed, it laments, and everyone who hears it weeps, yet few understand its secret.</div>
+  <div class="cite">&mdash; <a href="https://archive.org/details/RumiMasnaviNicholson" target="_blank" rel="noopener">Jalal al-Din Rumi, Masnavi, Book I, opening verses (Song of the Reed) (paraphrase; cf. tr. R.A. Nicholson)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Rumi’s reed voices the pain of separation endlessly, to listeners who mostly cannot grasp it.</div>
+  <div class="tieback">The reed’s endless lament to those who do not understand is the Kural’s heart pouring its sorrow into a sea that never fills.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;All the rivers run into the sea, yet the sea is not full&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">Ecclesiastes 1:7 (JPS 1917, via Mechon-Mamre)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Koheleth uses the sea that never fills as an emblem of endless, unfulfilled effort.</div>
+  <div class="tieback">The Kural uses the same unfillable sea as the image of telling one’s pain to someone who does not care.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Salla Sutta the Buddha teaches that one does not gain peace of mind by weeping and lamenting; it only brings more pain and wastes the body, and the wise pull out the arrow of grief.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/kn/snp/" target="_blank" rel="noopener">Sutta Nipata 3.8, Salla Sutta (paraphrase)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The sutta counsels that pouring out lament does not heal the wound of loss.</div>
+  <div class="tieback">As the Kural tells the heart that pouring out pain to the indifferent is futile, the Buddha says lament itself cannot ease grief.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">In his dialogue with Indra, the royal sage Nami teaches that if one had countless mountains of gold and silver as big as Mount Kailasa, they would not satisfy a covetous man, for desire is as boundless as space.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra, Lecture 9 (Nami Pravrajya) (paraphrase; cf. tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Uttaradhyayana uses the image of endless riches that never satisfy to show that desire cannot be filled.</div>
+  <div class="tieback">As the Kural likens telling pain to the indifferent to filling the sea, Nami says desire itself is an emptiness no amount can fill.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Tell your troubles to the One who is the Source of all comfort.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 16, Sri Raag, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak advises taking one&#x27;s sorrows only to the Lord, who alone can relieve them.</div>
+  <div class="tieback">The Kural&#x27;s heart is mocked for telling its great pain to one who does not care, like trying to fill the sea; Guru Nanak points to where pain should be told: to the One who holds all comfort.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">The Cyclops Polyphemus, in love with the sea-nymph Galatea who will not come to him, sits on the shore singing his pain out over the sea, then rebukes himself, asking where his wits have flown and telling himself to tend his flocks and find another who will love him.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/TheocritusIdylls1.html" target="_blank" rel="noopener">Theocritus, Idyll 11 (The Cyclops) (paraphrase)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Theocritus shows a lover addressing his own heart and recognising the folly of courting one who does not care.</div>
+  <div class="tieback">Polyphemus addressing himself by the sea is almost the exact scene of the Kural: a heart told to stop pouring its pain on an indifferent beloved.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Epictetus teaches that some things are within our power and some are not; other people’s opinions and feelings are not ours to control, and to treat them as if they were brings only frustration and lament.</div>
+  <div class="cite">&mdash; Epictetus, Enchiridion 1 (paraphrase) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Stoic wisdom draws the line between what one can change and what belongs to others.</div>
+  <div class="tieback">The Kural’s heroine reaches the Stoic insight that another’s love is not hers to command, and that pleading for it is like filling the sea.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Petrarch&#x27;s poems to Laura</div>
+  <div class="rle-meta">6 April 1327 – 6 April 1348 &middot; Avignon, France</div>
+  <div class="quote is-paraphrase">In a note on the flyleaf of his copy of Virgil, Petrarch recorded that he first saw Laura on 6 April 1327 in Avignon and that she died on 6 April 1348. Over some twenty years of work he collected his Italian love lyrics in the Canzoniere, with 263 poems on Laura in life and 103 after her death; in them she offers him little encouragement. Her real identity and feelings remain uncertain.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Petrarch kept pouring his longing into poem after poem addressed to a woman who, in his own account, did not answer it, and in doing so shaped European love poetry for centuries.</div>
+  <div class="tieback">The kural tells the heart that telling its pain to one who does not care is like trying to fill the sea, and Petrarch&#x27;s hundreds of poems to an unresponsive Laura are that endless pouring.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-120/" target="_blank" rel="noopener">Thirukkural Chapter 120: தனிப்படர்மிகுதி / The Solitary Anguish (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-120.html" target="_blank" rel="noopener">தனிப்படர் மிகுதி - அதிகாரம் 120 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.gutenberg.org/ebooks/16659" target="_blank" rel="noopener">Kalidasa, Meghaduta (The Cloud Messenger), Uttaramegha</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://archive.org/details/RumiMasnaviNicholson" target="_blank" rel="noopener">Jalal al-Din Rumi, The Mathnawi, Book I, tr. Reynold A. Nicholson (1926)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917), Hebrew-English Bible</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/kn/snp/" target="_blank" rel="noopener">Sutta Nipata 1.4 Kasibharadvaja, 1.6 Parabhava, 1.7 Vasala</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/TheocritusIdylls1.html" target="_blank" rel="noopener">Theocritus, Idyll 11 (The Cyclops)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Enchiridion, Chapter 5 (Epictetus) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/print/article/332346" target="_blank" rel="noopener">Laura (Petrarch&#x27;s Laura)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://lrb.co.uk/v41/n03/charles-nicholl/on-the-sixth-day" target="_blank" rel="noopener">On the Sixth Day (review of Petrarch: Everywhere a Wanderer) (Charles Nicholl)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1199.html">&larr; Kural 1199</a>
+  <a href="kural-1201.html">Kural 1201 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-120.html">The Solitary Anguish</a>
+  <a class="skip-btn" href="kural-1201.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

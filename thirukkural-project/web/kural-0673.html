@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 673 — The Method of Execution | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 673</h1>
+<p class="adhikaram"><a href="adhikaram-068.html">The Method of Execution</a> &middot; Vinai Seyalvakai &middot; <span class="tamil">வினை செயல்வகை</span></p>
+
+<div class="tamil-text">ஒல்லும்வா யெல்லாம் வினைநன்றே ஒல்லாக்கால்
+செல்லும்வாய் நோக்கிச் செயல்.</div>
+<div class="translit">Ollumvaai ellaam vinai nandre ollaakkaal
+Sellumvaai nokkich cheyal.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Whenever you can act directly, that is best. When you cannot, find another way that will work and do it that way.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If the front door is open, you walk straight in. If it is locked, you don&#x27;t give up; you go round to the back door or ask someone for the key. Pick the way that actually works.</p>
+
+<h2 class="section">University</h2>
+<p>Ollum vaai means &#x27;where it is possible (feasible)&#x27;, and sellum vaai &#x27;the way that will go through, the effective route&#x27;. Parimelazhagar reads vinai here in its political sense of open action against an enemy, that is, danda (force), the last of the four classical expedients (sama, dana, bheda, danda); where force can succeed it is best, and where it cannot one must choose among the remaining expedients. Solomon Pappaiah follows this reading explicitly, while Mu. Varadarasanar and Kalaignar read the couplet more generally as &#x27;do the work directly where you can, otherwise find a workable way&#x27;. The older sandhi text reads வினைநன்றே யொல்லாக்காற் with no difference of meaning. The teaching is pragmatic flexibility of means within a fixed end, a theme shared with the Arthashastra and later Machiavelli.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Manu teaches that among the four expedients, conciliation, gifts, division and force, the wise commend conciliation and force for the prosperity of a kingdom, choosing the means that suit the situation.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">Manusmriti 7.109 (trans. G. Bühler)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The law code gives the king a menu of methods and expects him to pick whichever will actually work.</div>
+  <div class="tieback">Parimelazhagar reads this Kural within the same fourfold scheme of upayas: use force where it can succeed, otherwise another means.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;To the weak became I as weak, that I might gain the weak: I am made all things to all men, that I might by all means save some.&rdquo;</div>
+  <div class="cite">&mdash; 1 Corinthians 9:22 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul describes changing his approach for each audience so that his mission succeeds by whatever route is open.</div>
+  <div class="tieback">Both texts hold the goal fixed and treat the method as flexible, choosing whatever way will get through.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;So, if I forbid you to do something, then keep away from it. And if I order you to do something, then do of it as much as you can.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:7288" target="_blank" rel="noopener">Sahih al-Bukhari 7288</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet ties duty to capacity: do what is possible, to the extent it is possible.</div>
+  <div class="tieback">The hadith shares the Kural&#x27;s ollum vaai logic: act fully wherever you are able.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Before meeting his estranged brother Esau, Jacob prepares on three fronts at once: a gift to appease him, prayer to God, and a plan for battle, dividing his camp so that one part could escape.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Rashi_on_Genesis.32.9" target="_blank" rel="noopener">Genesis 32:8-9 with Rashi&#x27;s commentary</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rashi draws from the verses that Jacob readied himself for gifts, prayer and war, so that if one means failed another would be at hand.</div>
+  <div class="tieback">Jacob embodies the Kural&#x27;s teaching: prepare the direct way, and have other workable routes ready when it will not serve.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the parable of the burning house, a father cannot get his playing children out by simply calling them, so he promises them wonderful carts outside, and they run out to safety.</div>
+  <div class="cite">&mdash; <a href="https://www.nichirenlibrary.org/en/lsoc/Content/3" target="_blank" rel="noopener">Lotus Sutra, chapter 3 (parable of the burning house)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Lotus Sutra uses this story to explain upaya, skilful means: when the direct way fails, a teacher finds another route that works.</div>
+  <div class="tieback">The father does exactly what the Kural says: when the direct approach is not possible, look for the way that gets through.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">In the meeting of Kesi and Gautama, the followers of Parshvanatha (four vows) and of Mahavira (five vows) ask why two Jinas pursuing the same goal prescribed different forms of the Law. Gautama explains that the form was adapted to the people of each age, the earliest of whom could only with difficulty understand the precepts and the latest only with difficulty observe them.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 23 (Kesi and Gautama), esp. 23.26 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jain tradition holds that the same end may be reached by different prescribed means, chosen according to what will actually work for those concerned.</div>
+  <div class="tieback">The kural&#x27;s advice to act directly where possible and otherwise to find a route that will work has a loose echo in this Jain acceptance of adapting means to circumstances.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">In the Zafarnama, the Persian letter Guru Gobind Singh sent to the emperor Aurangzeb in 1705, verse 22 states the principle that when every other means of redressing a wrong has failed, it is lawful and just to take up the sword.</div>
+  <div class="cite">&mdash; <a href="https://en.wikipedia.org/wiki/Zafarnama_(letter)" target="_blank" rel="noopener">Guru Gobind Singh, Zafarnama, verse 22 (Dasam Granth), as summarised in Wikipedia, Zafarnama (letter)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The verse, borrowed almost word for word from Saadi, became a classic summary of the Sikh idea of righteous struggle (dharam yudh): force is legitimate only after other means have been tried and have failed.</div>
+  <div class="tieback">The Kural teaches choosing the means that will actually work, direct action where possible and another route where not; the Zafarnama also grades the means, but in the reverse order, putting force last.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">After ten years of failed assaults on Troy, the Greeks, on Odysseus&#x27; plan, build the wooden horse, and the city falls by stratagem where force had not succeeded.</div>
+  <div class="cite">&mdash; Homer, Odyssey 8.492-520 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The bard Demodocus sings of the horse at the Phaeacian court, celebrating Odysseus&#x27; cunning.</div>
+  <div class="tieback">When the direct way (siege) proved impossible, the Greeks looked for the route that would get through, just as the Kural advises.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Machiavelli says a prince must know how to fight both by law and by force, and must imitate both the lion and the fox, since the lion cannot avoid traps and the fox cannot drive off wolves.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/1232" target="_blank" rel="noopener">Niccolò Machiavelli, The Prince, ch. 18</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">He argues that a ruler needs more than one way of acting and must switch according to what the situation allows.</div>
+  <div class="tieback">The Kural likewise holds that where one means (force) will not work, the wise agent turns to another.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Berlin Airlift supplies a blockaded city by air</div>
+  <div class="rle-meta">June 1948 - September 1949 &middot; Berlin, Germany</div>
+  <div class="quote is-paraphrase">Beginning on 24 June 1948, Soviet forces blocked rail, road and water access to the western sectors of Berlin, home to about two million people. Lacking the ground forces to break through, the United States and Britain flew in food, fuel and other supplies from airbases in western Germany, starting on 26 June 1948 and eventually landing aircraft every minute or so at the peak. The Soviets lifted the blockade in May 1949, and the airlift, which delivered about 2.3 million tons of cargo, continued until 30 September 1949.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Instead of forcing the land routes, which risked war, the Western allies found another route that worked, and the city was kept alive without a shot being fired.</div>
+  <div class="tieback">The kural says direct action is best where it is possible, and where it is not, one should find a route that will work, and the Berlin Airlift replaced a blocked road with a highway in the sky.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-68/" target="_blank" rel="noopener">Thirukkural Chapter 68: வினைசெயல்வகை / Modes of Action (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A068.html" target="_blank" rel="noopener">68. வினைசெயல்வகை (Thirukkural text, amaichiyal section)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">The Laws of Manu (Manusmṛti), translated by Georg Bühler, Sacred Books of the East vol. 25 (Oxford, 1886)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:7288" target="_blank" rel="noopener">Sahih al-Bukhari 7288 (Holding fast to the Qur&#x27;an and Sunnah)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Rashi_on_Genesis.32.9" target="_blank" rel="noopener">Rashi on Genesis 32:9</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-7"><a href="https://www.nichirenlibrary.org/en/lsoc/Content/3" target="_blank" rel="noopener">The Lotus Sutra, Chapter 3: Simile and Parable, trans. Burton Watson</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://en.wikipedia.org/wiki/Zafarnama_(letter)" target="_blank" rel="noopener">Zafarnama (letter) (Wikipedia contributors)</a> <span class="tier">[web source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/1232" target="_blank" rel="noopener">Niccolò Machiavelli, The Prince, trans. W. K. Marriott</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://history.state.gov/milestones/1945-1952/berlin-airlift" target="_blank" rel="noopener">Milestones: The Berlin Airlift, 1948-1949</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.afhistory.af.mil/FAQs/Fact-Sheets/Article/458961/1949-the-berlin-airlift/" target="_blank" rel="noopener">1949 - The Berlin Airlift (Fact Sheet)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0672.html">&larr; Kural 672</a>
+  <a href="kural-0674.html">Kural 674 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-068.html">The Method of Execution</a>
+  <a class="skip-btn" href="kural-0681.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1108 — Delight in Union | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1108</h1>
+<p class="adhikaram"><a href="adhikaram-111.html">Delight in Union</a> &middot; Punarchi Makizhthal &middot; <span class="tamil">புணர்ச்சி மகிழ்தல்</span></p>
+
+<div class="tamil-text">வீழும் இருவர்க்கு இனிதே வளியிடை
+போழப் படாஅ முயக்கு.</div>
+<div class="translit">Veezhum iruvarkku inidhe valiyidai
+pozhap padaaa muyakku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Sweet to two people in love is a hug so close that not even a breath of wind can pass between them.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Have you ever hugged someone so tightly that you felt like one person? The verse says that for two people who love each other, the sweetest hug is one so close that not even a tiny puff of air could slip in between.</p>
+
+<h2 class="section">University</h2>
+<p>Vīḻum iruvar (வீழும் இருவர், ‘two who desire each other’) stresses that the love is mutual, and the embrace (muyakku) is one that vaḷi iṭai pōḻap paṭāa (‘is not split apart in the middle by the wind’). Paṭāa carries the metrical lengthening (aḷapeṭai) also seen in teṟūum of kural 1104. Every gloss on both sites (Mu. Varadarasanar, Puliyur Kesikan, Solomon Pappaiah, Kalaignar) reads it as an embrace so close that even air cannot enter. Pope, characteristically, turns the image moral: ‘Sweet is the strict embrace of those whom fond affection binds, / Where no dissevering breath of discord entrance finds’, treating the wind as discord, a reading the Tamil commentators do not share. Text identical on both source sites.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Now as a man, when embraced by a beloved wife, knows nothing that is without, nothing that is within, thus this person, when embraced by the intelligent (prâgña) Self, knows nothing that is without, nothing that is within.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.swami-krishnananda.org/brdup/brhad_V-01.html" target="_blank" rel="noopener">Brihadaranyaka Upanishad 4.3.21 (tr. F. Max Müller, SBE 15)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Upanishad uses the embrace of loving spouses, in which nothing outside or inside is felt, as an image of union with the Self.</div>
+  <div class="tieback">The Kural’s embrace that lets nothing come between is the same image of complete union.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Therefore shall a man leave his father and his mother, and shall cleave unto his wife: and they shall be one flesh.&rdquo;</div>
+  <div class="cite">&mdash; Genesis 2:24 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Genesis says that husband and wife cling together and become one flesh.</div>
+  <div class="tieback">The Kural’s embrace with no gap between the two is a picture of becoming one.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;They are a clothing for you and you are a clothing for them.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 2:187 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an describes husband and wife as garments for each other, as close as clothing to the skin.</div>
+  <div class="tieback">Like the Kural’s embrace that admits no wind, the garment image leaves nothing between the spouses.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;When our love was strong, we could have slept on a bed that was the width of a sword. Now that our love is not strong, a bed of sixty cubits is not sufficient for us.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Sanhedrin.7a.14" target="_blank" rel="noopener">Babylonian Talmud, Sanhedrin 7a (William Davidson Edition, Koren-Steinsaltz, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Talmud quotes a popular saying: loving spouses need almost no room between them, but estranged ones cannot be far enough apart.</div>
+  <div class="tieback">This is the Kural’s point exactly: true lovers leave no space at all between them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Bhallatiya Jataka a pair of kinnaras (forest spirits) still weep for the one night, seven hundred years earlier, when a flooded stream kept them apart.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/bud/j4/index.htm" target="_blank" rel="noopener">Jataka 504, Bhallatiya Jataka (tr. ed. E. B. Cowell, vol. IV)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The couple’s love is so close that a single night’s separation is mourned for centuries, and the story leads the king to value his own wife.</div>
+  <div class="tieback">Like the Kural, the tale shows lovers for whom even the smallest gap is unbearable.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;But a man who is indifferent to ‘colours,’ is free from sorrows; though still in the Samsâra, he is not affected by that long succession of pains, just as the leaf of the Lotus (is not moistened) by water.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 32.34 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Mahavira holds up the lotus leaf, which stays untouched by the water around it, as the model of a detached soul.</div>
+  <div class="tieback">The Kural praises an embrace where nothing comes between; Jainism praises the opposite, a soul that nothing clings to.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;They alone are called husband and wife, who have one light in two bodies.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 788, Raag Suhi, Suhi ki Vaar (salok), Guru Amar Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Raag Suhi, Guru Amar Das says that true marriage is not just living side by side, but two people sharing one inner light.</div>
+  <div class="tieback">The Kural praises an embrace so close that not even a breath of air can come between the two lovers; Guru Amar Das describes a union so close that two bodies share a single light.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Ovid tells how Alcyone, grieving her drowned husband Ceyx, is changed into a bird together with him, and the two stay faithful mates even as birds.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/OvidMetamorphoses4.html" target="_blank" rel="noopener">Ovid, Metamorphoses 11.710-748</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Even transformation and death do not separate the loving pair.</div>
+  <div class="tieback">The Kural’s lovers allow not even a breath of wind between them; Ceyx and Alcyone remain together beyond death.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In Plato’s Symposium Aristophanes imagines Hephaestus asking two lovers lying side by side whether they wish to be wholly one, day and night in each other’s company, and offering to melt them into one and let them grow together.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Plato/symposium.html" target="_blank" rel="noopener">Plato, Symposium 192d-e (tr. Benjamin Jowett)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Aristophanes, love is the longing of two halves to become one whole.</div>
+  <div class="tieback">The Kural’s embrace that leaves no room even for air is the same wish to be wholly one.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Gustav Klimt paints The Kiss</div>
+  <div class="rle-meta">1908–1909 &middot; Vienna, Austria</div>
+  <div class="quote is-paraphrase">The Austrian painter Gustav Klimt painted The Kiss, an image of a couple locked in an embrace, in oil on canvas with gold leaf. It was first shown at the Kunstschau exhibition in Vienna in 1908, and the Austrian state bought it there for 25,000 kronen. It is regarded as the high point of Klimt&#x27;s Golden Period and hangs in the Belvedere museum in Vienna.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The painting became one of the best-known images of love in Western art.</div>
+  <div class="tieback">The kural praises an embrace so close that not even a breath of wind can pass between the two lovers, and Klimt&#x27;s couple are painted so tightly enfolded that they seem to become a single shape.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-111/" target="_blank" rel="noopener">Thirukkural Chapter 111: புணர்ச்சிமகிழ்தல் / Rejoicing in the Embrace (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-111.html" target="_blank" rel="noopener">புணர்ச்சி மகிழ்தல் - அதிகாரம் 111 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.swami-krishnananda.org/brdup/brhad_V-01.html" target="_blank" rel="noopener">Bṛhadāraṇyaka Upaniṣad, Chapter 5 (the teaching of the thunder, &#x27;Da Da Da&#x27;)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Sanhedrin.7a.14" target="_blank" rel="noopener">Babylonian Talmud, Sanhedrin 7a (William Davidson Edition, Koren-Steinsaltz)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/bud/j4/index.htm" target="_blank" rel="noopener">The Jataka, vol. IV, No. 504, Bhallatiya-Jataka, ed. E. B. Cowell (tr. W. H. D. Rouse)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/OvidMetamorphoses4.html" target="_blank" rel="noopener">Ovid, Metamorphoses, Book 4 (Pyramus and Thisbe), tr. Brookes More (1922)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Plato/symposium.html" target="_blank" rel="noopener">Plato, Symposium, tr. Benjamin Jowett</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/topic/The-Kiss-painting-by-Klimt" target="_blank" rel="noopener">The Kiss (painting by Klimt)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://artsandculture.google.com/asset/the-kiss/HQGxUutM_F6ZGg" target="_blank" rel="noopener">The Kiss, Gustav Klimt</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1107.html">&larr; Kural 1107</a>
+  <a href="kural-1109.html">Kural 1109 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-111.html">Delight in Union</a>
+  <a class="skip-btn" href="kural-1111.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

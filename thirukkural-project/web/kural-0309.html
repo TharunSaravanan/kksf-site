@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 309 — The Not Being Angry | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 309</h1>
+<p class="adhikaram"><a href="adhikaram-031.html">The Not Being Angry</a> &middot; Vekulaamai &middot; <span class="tamil">வெகுளாமை</span></p>
+
+<div class="tamil-text">உள்ளிய தெல்லாம் உடனெய்தும் உள்ளத்தால்
+உள்ளான் வெகுளி எனின்.</div>
+<div class="translit">Ulliyadhellaam udaneydhum ullaththaal
+Ullaan vekuli enin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If a person never lets even a thought of anger into their mind, they will right away get everything they hope for.</p>
+
+<h2 class="section">Elementary</h2>
+<p>When your mind isn&#x27;t full of angry thoughts, it has lots of room for good ideas and plans. People also like to help calm, kind people. So a mind without anger can reach its goals much more easily.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet plays on the root ul- (&#x27;to think&#x27;, &#x27;the mind&#x27;): ulliyadhu (&#x27;what one has thought of&#x27;), ullaththaal (&#x27;in the mind&#x27;), and ullaan (&#x27;does not think of&#x27;). Valluvar sets the standard at the level of thought itself: it is not enough to avoid angry acts or words; one must not entertain (ullaan) anger inwardly. The promised reward, attaining all one intends &#x27;at once&#x27; (udan), is striking, and commentators variously read it as worldly success (a clear mind and goodwill from others) or spiritual attainment. The couplet thus links inner purity from anger to efficacy in the world, a pattern also found in the Gita&#x27;s promise of liberation for those free of desire and anger.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Those who are free from anger and all material desires, who are self-realized, self-disciplined and constantly endeavoring for perfection, are assured of liberation in the Supreme in the very near future.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 5.26 (Bhagavad-gita As It Is)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna promises that freedom from anger and desire brings the highest goal near at hand.</div>
+  <div class="tieback">Close to the kural: the one free of anger in mind attains what is sought, and attains it soon (&#x27;abhitaḥ&#x27;, &#x27;near at hand&#x27;, like Valluvar&#x27;s &#x27;udan&#x27;, &#x27;at once&#x27;).</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Blessed are the meek: for they shall inherit the earth.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 5:5 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In the Beatitudes, Jesus promises the whole earth to the meek, those gentle and slow to anger.</div>
+  <div class="tieback">Like the kural, the non-angry are promised a surprisingly large reward.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And hasten to forgiveness from your Lord and a garden as wide as the heavens and earth, prepared for the righteous ... who restrain anger and who pardon the people - and Allah loves the doers of good;&rdquo;</div>
+  <div class="cite">&mdash; Quran 3:133-134 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Quran lists restraining anger and pardoning others among the qualities of those promised a vast paradise.</div>
+  <div class="tieback">Like the kural, freedom from anger is tied directly to receiving the greatest reward.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;With regard to whoever forgoes his reckonings with others for injustices done to him, the heavenly court in turn forgoes punishment for all his sins.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Rosh_Hashanah.17a" target="_blank" rel="noopener">Babylonian Talmud, Rosh Hashanah 17a (William Davidson/Koren-Steinsaltz trans., via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rava teaches that one who lets go of grievances receives complete forgiveness; the passage then tells of Rav Huna recovering from near-death because he never insisted on his rights.</div>
+  <div class="tieback">Like the kural, the person who does not hold anger in mind receives an extraordinary, all-encompassing reward.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;One should give up anger, renounce pride, and overcome all fetters. Suffering never befalls him who clings not to mind and body and is detached.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 221 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The opening verse of the Dhammapada&#x27;s chapter on anger promises freedom from suffering to one who gives up anger and clinging.</div>
+  <div class="tieback">As in the kural, giving up anger leads to the fulfilment one seeks.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;By conquering anger he obtains patience; he acquires no Karman productive of anger, and destroys the Karman he had acquired before.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 29.67 (tr. Hermann Jacobi, SBE 45, 1895; wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In the catalogue of spiritual exertions, Mahāvīra says that overcoming anger (krodhavijaya) produces patience, stops new anger-producing karma, and wears away the old.</div>
+  <div class="tieback">Valluvar promises that someone who never lets anger into his mind will gain whatever he desires. The Jain text also promises a reward for conquering anger, but the reward is freedom from karma rather than fulfilled wishes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Fareed, answer evil with goodness; do not fill your mind with anger. Your body shall not suffer from any disease, and you shall obtain everything.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1381-1382, Salok Sheikh Farid (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In his saloks Sheikh Farid tells the seeker to repay harm with good and keep anger out of the mind, promising wholeness and fulfilment in return.</div>
+  <div class="tieback">The Kural promises that one who never lets even the thought of anger into the mind will attain everything he sets his heart on. Farid makes the same promise in nearly the same terms.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Back in his own house in disguise, Odysseus sees the suitors and disloyal maids and is seized with fury, but he strikes his breast and commands his heart to endure, recalling that it endured worse in the Cyclops&#x27; cave; this restraint lets him eventually regain his home and family.</div>
+  <div class="cite">&mdash; Homer, Odyssey, Book 20 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Odysseus&#x27; mastery of rage at the critical moment is what makes his homecoming possible.</div>
+  <div class="tieback">Keeping anger from ruling the mind leads to attaining what the heart has long desired, as the kural promises.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Ninth, consider that a good disposition is invincible, if it be genuine, and not an affected smile and acting a part.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Antoninus/meditations.html" target="_blank" rel="noopener">Marcus Aurelius, Meditations 11.18 (trans. George Long)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Marcus argues that true gentleness cannot be defeated, since the aggressor only harms himself.</div>
+  <div class="tieback">Like the kural, a mind genuinely free of anger is presented as unstoppable in achieving its ends.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Bjorn Borg, the Ice Man of tennis, wins five straight Wimbledon titles</div>
+  <div class="rle-meta">1976-1980 &middot; Wimbledon, London, England</div>
+  <div class="quote is-paraphrase">Swedish player Bjorn Borg won the Wimbledon singles championship five years in a row from 1976 to 1980 and six French Open titles, and was known as the Ice Man for never letting opponents see what he was feeling on court. Borg later recalled that he had been suspended as a 13-year-old for bad behaviour and afterwards kept his emotions inside, receiving penalty points only once in his professional career. He retired at 26 with 11 major singles titles.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Borg&#x27;s refusal to let anger take hold during matches was regarded by himself and others as a central strength of his game.</div>
+  <div class="tieback">The kural promises that one who never lets anger enter the mind will attain what he sets his heart on, and Borg&#x27;s famous composure accompanied one of the most successful careers in tennis.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-31/" target="_blank" rel="noopener">Thirukkural Chapter 31 – வெகுளாமை / Restraining Anger (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://dheivegam.com/thirukkural-vegulaamai-adhikaram/" target="_blank" rel="noopener">திருக்குறள் அதிகாரம் 31 – வெகுளாமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Rosh_Hashanah.17a" target="_blank" rel="noopener">Babylonian Talmud, Rosh Hashanah 17a (William Davidson Edition, Koren-Steinsaltz English)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Antoninus/meditations.html" target="_blank" rel="noopener">Marcus Aurelius, The Meditations (trans. George Long)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.tennisfame.com/hall-of-famers/inductees/bjorn-borg" target="_blank" rel="noopener">Bjorn Borg (Class of 1987)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.atptour.com/en/news/borg-two-time-masters-champion" target="_blank" rel="noopener">The Day Ice-Borg Melted At Madison Square Garden (Dave Seminara)</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0308.html">&larr; Kural 308</a>
+  <a href="kural-0310.html">Kural 310 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-031.html">The Not Being Angry</a>
+  <a class="skip-btn" href="kural-0311.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

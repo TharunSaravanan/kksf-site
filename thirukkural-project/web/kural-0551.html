@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 551 — The Cruel Sceptre | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 551</h1>
+<p class="adhikaram"><a href="adhikaram-056.html">The Cruel Sceptre</a> &middot; Kodungonmai &middot; <span class="tamil">கொடுங்கோன்மை</span></p>
+
+<div class="tamil-text">கொலைமேற்கொண் டாரிற் கொடிதே அலைமேற்கொண்டு
+அல்லவை செய்தொழுகும் வேந்து.</div>
+<div class="translit">Kolaimerkon daarir kodithe alaimerkondu
+Allavai seythozhukum vendhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A king who keeps troubling his people and doing wrong to them is crueler than a murderer.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Picture a playground bully who knocks you over once, and then picture a class monitor who is supposed to look after everyone but pushes kids around every single day. The monitor is worse, because the hurt never stops and the one person meant to protect you is the one hurting you. Valluvar says a cruel king is like that monitor, only much bigger.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter is the mirror image of the preceding one, செங்கோன்மை (the straight sceptre, ch. 55): கொடுங்கோல் is the ‘bent’ rod of a ruler who governs by oppression. The key word அலை means harassing or tormenting, and Parimelazhagar glosses அலைமேற்கொண்டு as taking up, out of covetousness for wealth (பொருள்வெஃகி), the business of harassing the subjects. His reason for the comparison is that the murderer’s harm lasts a moment, whereas the tyrant’s is lifelong, so ‘harassment is crueller than killing’. He also notes the grammatical point that வேந்து, a neuter-class noun, is used here of a person (திணை/பால் மயக்கம்). Manakkudavar gives substantially the same reading, while Solomon Pappaiah stresses greed for the people’s property. The text is uniform across ytamizh.com, thirukkural.net and thirukkural.com; the older continuous text on thirukkural-thamizh.org shows the unsplit sandhi forms யலைமேற்கொண் / டல்லவை.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Kamsa, king of Mathura, imprisoned his own father, persecuted the Yadus and had the infant children of his sister Devaki put to death one after another, until Krishna, the child he feared, grew up and killed him.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/10/" target="_blank" rel="noopener">Bhagavata Purana, Canto 10, chapters 1-4 and 44</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In the Bhagavata Purana, Kamsa is the classic tyrant whose power is used against the very people and kin he should protect.</div>
+  <div class="tieback">Like Valluvar’s cruel king, Kamsa does more harm than an ordinary killer because the whole kingdom lives under his fear.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;As a roaring lion, and a ranging bear; so is a wicked ruler over the poor people.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 28:15 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The proverb compares a wicked ruler to beasts of prey loose among the helpless.</div>
+  <div class="tieback">Like the Kural, it ranks an unjust ruler alongside the most dangerous killers.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Indeed, Pharaoh exalted himself in the land and made its people into factions, oppressing a sector among them, slaughtering their [newborn] sons and keeping their females alive. Indeed, he was of the corrupters.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 28:4 (Saheeh International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Qur’an’s portrait of Pharaoh is its central image of a ruler who turns state power into ongoing oppression of his own subjects.</div>
+  <div class="tieback">Pharaoh is the Kural’s tyrant exactly: a king whose rule is itself a form of killing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Ezekiel says that the princes of Jerusalem have become like wolves tearing their prey, shedding blood and destroying lives for the sake of dishonest gain.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">Ezekiel 22:27 (JPS 1917)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The prophet accuses the rulers themselves, not outside enemies, of preying on the people for profit.</div>
+  <div class="tieback">It matches Parimelazhagar’s reading that the tyrant harasses his subjects out of greed for their wealth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;The whole nation sleeps badly, when the king is unprincipled.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/an4.70" target="_blank" rel="noopener">Aṅguttara Nikāya 4.70, Adhammika Sutta (trans. Bhikkhu Sujato)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha teaches that when the king goes astray, his officials and then the whole people follow, just as a herd follows its lead bull.</div>
+  <div class="tieback">The whole nation suffering day and night echoes Parimelazhagar’s point that the tyrant’s harm never stops, unlike a killer’s single act.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Be without fear, O king; but grant safety to others also; in this transient world of living beings, why are you addicted to cruelty?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 18.11 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The monk Gardabhāli answers King Sañjaya, who has been hunting terrified deer in the royal park, by asking him to give other beings the same safety he wants for himself.</div>
+  <div class="tieback">The Kural calls a ruler who torments his subjects crueler than a murderer, and the Jain sage likewise confronts a king directly with his cruelty toward helpless beings.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Those who act like tyrants are accepted and approved - recognize that this is the sign of the Dark Age of Kali Yuga.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 902, Raag Raamkalee, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Guru Nanak lists the marks of a degenerate age, and one of them is that oppression by the powerful comes to be treated as lawful and normal.</div>
+  <div class="tieback">The Kural calls the ruler who habitually harasses his people crueller than a professional killer; Guru Nanak likewise refuses to let accepted tyranny pass as legitimate and names it a sign of moral darkness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">King Lycaon of Arcadia, a cruel ruler, served human flesh to Zeus to test him; Zeus destroyed his house and turned him into a wolf whose savage nature matched his reign.</div>
+  <div class="cite">&mdash; <a href="https://www.poetryintranslation.com/PITBR/Latin/Metamorph1.php" target="_blank" rel="noopener">Ovid, Metamorphoses I.209-243</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Ovid tells the story as the first example of human wickedness that moves the gods to punish the world.</div>
+  <div class="tieback">A king who becomes a literal wolf pictures the Kural’s claim that a tyrant is worse than an ordinary killer.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Socrates describes how the people’s ‘protector’ becomes a tyrant: once he has tasted the blood of his own citizens through unjust trials and killings, he turns into a wolf, as in the Arcadian legend.</div>
+  <div class="cite">&mdash; Plato, Republic VIII, 565d-566a <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">For Plato the tyrant is the worst of men because he turns the power of the state against those he rules.</div>
+  <div class="tieback">Plato and Valluvar agree that the ruler who preys on his own people is worse than a common criminal.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Idi Amin expels Uganda&#x27;s Asian community</div>
+  <div class="rle-meta">4 August 1972 &middot; Uganda</div>
+  <div class="quote is-paraphrase">On 4 August 1972 Uganda&#x27;s military ruler Idi Amin ordered the country&#x27;s Asian population, most of them of Indian and Pakistani descent, to leave within 90 days, claiming they were sabotaging the economy. Tens of thousands were forced out, allowed to take only what they could carry, and received no compensation for their homes and businesses. The community had played a central role in Uganda&#x27;s commerce, and the expulsion contributed to the country&#x27;s economic decline in the 1970s.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">A ruler used the power of the state to strip a whole community of its livelihood and property, causing suffering that lasted for years.</div>
+  <div class="tieback">The kural says a king who makes a practice of harassing his people and doing injustice is crueller than a murderer, and Amin&#x27;s expulsion order harmed tens of thousands for the rest of their lives.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-56/" target="_blank" rel="noopener">கொடுங்கோன்மை (The Cruel Sceptre), Chapter 56, with commentary by Mu. Varadarajan, Solomon Pappaiah, M. Karunanidhi and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-056.html" target="_blank" rel="noopener">கொடுங்கோன்மை, Adhigaram 56, Thirukkural (Kurals 551-560), with commentaries by Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah and Mu. Karunanidhi</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="http://www.thirukkural.com/2009/02/blog-post_4597.html" target="_blank" rel="noopener">கொடுங்கோன்மை (Kurals 551-560), with the commentaries of Parimelazhagar, Manakkudavar, Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and V. Munisamy</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/sb/10/" target="_blank" rel="noopener">Śrīmad Bhāgavatam (Bhāgavata Purāṇa), Canto 10: Kaṁsa’s persecution of Devakī and the Yadus, and his death</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://suttacentral.net/an4.70" target="_blank" rel="noopener">Adhammika Sutta: Unrighteous (AN 4.70)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.poetryintranslation.com/PITBR/Latin/Metamorph1.php" target="_blank" rel="noopener">Ovid, Metamorphoses Book 1 (Lycaon), trans. A. S. Kline</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12">Republic, Book X (the Myth of Er) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://lordslibrary.parliament.uk/ugandan-asians-50-years-since-their-expulsion-from-uganda/" target="_blank" rel="noopener">Ugandan Asians: 50 years since their expulsion from Uganda</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.nationalarchives.gov.uk/education/outreach/projects/migration-histories/ugandan-asians-40-years-on/" target="_blank" rel="noopener">Ugandan Asians 40 years on (2012)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0550.html">&larr; Kural 550</a>
+  <a href="kural-0552.html">Kural 552 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-056.html">The Cruel Sceptre</a>
+  <a class="skip-btn" href="kural-0561.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 883 — Internal Enmity | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 883</h1>
+<p class="adhikaram"><a href="adhikaram-089.html">Internal Enmity</a> &middot; Utpakai &middot; <span class="tamil">உட்பகை</span></p>
+
+<div class="tamil-text">உட்பகை அஞ்சித்தற் காக்க உலைவிடத்து
+மட்பகையின் மாணத் தெறும்.</div>
+<div class="translit">Utpakai anjiththar kaakka ulaivitaththu
+matpakaiyin maanath therum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Fear the enemy within your own circle and protect yourself. When you are weak, it will cut you down as surely as a potter’s tool cuts clay.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A potter uses a thin wire or blade to slice through soft clay in one easy stroke. Hidden enemies wait for a time when you are tired or in trouble, and then they can hurt you just as easily, so it is wise to watch out for them early.</p>
+
+<h2 class="section">University</h2>
+<p>The verse pairs a command, utpakai anji thar kaakka (உட்பகை அஞ்சித் தற்காக்க, &#x27;fearing internal enmity, guard yourself&#x27;), with a warning about timing: ulaividaththu (உலைவிடத்து), &#x27;at the time of tottering&#x27; or decline. The image matpakai (மட்பகை), literally &#x27;clay-enemy&#x27;, is glossed by Mu. Varadarasanar, Solomon Pappaiah and Kalaignar as the potter&#x27;s cutting tool that slices clay vessels, so that maana therum (மாணத் தெறும்) means &#x27;will destroy thoroughly&#x27;. Pope&#x27;s &#x27;potter&#x27;s knife&#x27; follows the same reading. Sivayogi Sivakumar instead reads the second line as setting a cooking pot on an unfired clay vessel, an interpretive variant rather than a textual one. The Tamil text is identical in ytamizh and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Protect thyself, O king, from all fears that arise from within. Fears, however, that arise from outside are of little consequence. The first kind of fear, O king, may cut thy roots in a single day.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/m12/m12a106.htm" target="_blank" rel="noopener">Mahabharata, Santi Parva, Section CVII (trans. K. M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Bhishma tells Yudhishthira that internal dissension is the real danger to a ruler, able to destroy him suddenly.</div>
+  <div class="tieback">This matches the Kural almost point for point: guard against the enemy within, which strikes all at once.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">In Gethsemane, while Jesus&#x27; disciples sleep, Judas, one of the Twelve, arrives with an armed crowd and betrays him with a kiss.</div>
+  <div class="cite">&mdash; Matthew 26:47-50 <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The betrayal comes from inside the inner circle and at the hour of greatest vulnerability.</div>
+  <div class="tieback">As the Kural warns, the internal enemy strikes when one is weakest.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;They are the enemy, so beware of them.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 63:4 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Describing the hypocrites inside the Medinan community, whose appearance and speech are pleasing, the Qur&#x27;an names them the real enemy.</div>
+  <div class="tieback">Both texts urge vigilance against the foe who lives within one&#x27;s own community.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Ahithophel, David&#x27;s trusted counsellor, joins Absalom&#x27;s rebellion; David prays that his counsel be turned to foolishness, and Ahithophel urges an immediate strike while David is weary and weak-handed.</div>
+  <div class="cite">&mdash; 2 Samuel 15:12, 31; 17:1-2 <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The trusted insider knows exactly when the king is most vulnerable.</div>
+  <div class="tieback">This illustrates the Kural&#x27;s warning that an internal enemy strikes in a time of weakness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Whatever harm an enemy may do to an enemy, or a hater to a hater, an ill-directed mind inflicts on oneself a greater harm.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 42 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Dhammapada teaches that the most damaging enemy is the one inside oneself.</div>
+  <div class="tieback">The Kural speaks of a hostile insider, the Dhammapada of a hostile mind, but both rank the inner foe above the outer one.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Self is the one invincible foe, (together with the four) cardinal passions, (viz. anger, pride, deceit, and greed, they are five) and the (five) senses (make ten). These (foes), O great sage, I have regularly vanquished.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 23.38 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Asked by Keśi how he withstands the thousands of foes that attack him, Gautama names the true enemies as the unsubdued self, the four passions and the five senses, all of them inside the person.</div>
+  <div class="tieback">The Kural urges a man to fear the enemy within and guard himself, and Gautama&#x27;s answer turns the same vigilance on the foes that live inside one&#x27;s own camp.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Within this body dwell the five thieves: sexual desire, anger, greed, emotional attachment and egotism.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 600, Raag Sorath, Guru Amar Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Guru Amar Das locates the most dangerous enemies inside the person, as thieves already living within the house of the body who plunder its true wealth.</div>
+  <div class="tieback">The Kural urges guarding oneself against the enemy within before it strikes at a moment of weakness, and Gurbani names that inner enemy as the five thieves.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In the underworld, Agamemnon&#x27;s shade tells Odysseus how he survived the Trojan War only to be killed at his own homecoming feast by his wife Clytemnestra and her lover Aegisthus.</div>
+  <div class="cite">&mdash; Homer, Odyssey 11.405-434 <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The victor of a ten-year war dies in his own house, at the moment he lets down his guard.</div>
+  <div class="tieback">The enemy within strikes when defences are down, just as the Kural warns.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In his 1838 Lyceum Address, Abraham Lincoln argued that danger to the American republic would not come from abroad but would spring up from among its own people.</div>
+  <div class="cite">&mdash; <a href="https://www.abrahamlincolnonline.org/lincoln/speeches/lyceum.htm" target="_blank" rel="noopener">Abraham Lincoln, Address before the Young Men&#x27;s Lyceum of Springfield (1838)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Lincoln held that no external power could crush the nation, and that only internal disorder could destroy it.</div>
+  <div class="tieback">Like the Kural, he identifies the internal enemy as the one to fear and guard against.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Kobayakawa Hideaki changes sides at Sekigahara</div>
+  <div class="rle-meta">21 October 1600 &middot; Sekigahara, Mino Province, Japan</div>
+  <div class="quote is-paraphrase">At the Battle of Sekigahara the western coalition led by Ishida Mitsunari faced the eastern army of Tokugawa Ieyasu. Kobayakawa Hideaki, whose troops were posted on Mount Matsuo as part of the western army, had secretly promised to support Ieyasu; during the battle he led his forces down the mountain against his nominal ally Otani Yoshitsugu, and other commanders switched sides with him. The collapse that followed destroyed the western army and opened the way for Tokugawa rule.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">The western coalition was undone not by the enemy facing it but by a commander standing within its own lines.</div>
+  <div class="tieback">The kural warns that the enemy within strikes at the moment of weakness and cuts as surely as the potter&#x27;s tool, as Kobayakawa&#x27;s turn did at the battle&#x27;s turning point.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-89/" target="_blank" rel="noopener">Thirukkural Chapter 89: உட்பகை / Enmity within (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-089.html" target="_blank" rel="noopener">உட்பகை - அதிகாரம் 89 - திருக்குறள் (Enmity within)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/m12/m12a106.htm" target="_blank" rel="noopener">The Mahabharata, Book 12: Santi Parva, Section CVII (on the ganas and the danger of disunion), trans. Kisari Mohan Ganguli</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.abrahamlincolnonline.org/lincoln/speeches/lyceum.htm" target="_blank" rel="noopener">Abraham Lincoln, Address before the Young Men&#x27;s Lyceum of Springfield, Illinois (January 27, 1838)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://kids.britannica.com/scholars/article/Battle-of-Sekigahara/66644" target="_blank" rel="noopener">Battle of Sekigahara</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.nippon.com/en/japan-topics/b06916/" target="_blank" rel="noopener">The Battle of Sekigahara: A Fight for the Future of Japan</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0882.html">&larr; Kural 882</a>
+  <a href="kural-0884.html">Kural 884 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-089.html">Internal Enmity</a>
+  <a class="skip-btn" href="kural-0891.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

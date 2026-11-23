@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 308 — The Not Being Angry | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 308</h1>
+<p class="adhikaram"><a href="adhikaram-031.html">The Not Being Angry</a> &middot; Vekulaamai &middot; <span class="tamil">வெகுளாமை</span></p>
+
+<div class="tamil-text">இணர்எரி தோய்வன்ன இன்னா செயினும்
+புணரின் வெகுளாமை நன்று.</div>
+<div class="translit">Inar eri thoivanna innaa seyinum
+Punarin vekulaamai nandru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Even if someone hurts you as badly as throwing you into a blazing fire, it is good, if you possibly can, not to get angry with them.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Sometimes people are so mean it feels like being burned. The kural says: even then, if you can, try not to become angry back. It is really hard, but it is the best and bravest thing to do.</p>
+
+<h2 class="section">University</h2>
+<p>This is the chapter&#x27;s high-water mark of demand: inar eri, a fire of many clustered flames, is the image of the worst possible injury. The concessive punarin (&#x27;if it is possible&#x27;, or in some readings &#x27;if the offender seeks reconciliation&#x27;) is realistic, acknowledging that non-anger in such extremity may exceed ordinary capacity, but it does not lower the ideal. Kalaignar&#x27;s gloss takes punarin as the wrongdoer returning to seek friendship, making the couplet about accepting reconciliation without resentment. Either way, the teaching approaches the most radical ethics of non-retaliation found across traditions.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The boy Prahlada is subjected by his own father, Hiranyakashipu, to repeated attempts on his life, including poison, serpents, being thrown from heights, and fire, yet he keeps his devotion and shows no hatred toward his father.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Bhagavata Purana, Canto 7, chapters 5-9</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Prahlada becomes the Puranic model of a person who suffers extreme cruelty without answering in anger.</div>
+  <div class="tieback">A living example of the kural&#x27;s ideal: meeting fire-like torment without wrath.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Then said Jesus, Father, forgive them; for they know not what they do.&rdquo;</div>
+  <div class="cite">&mdash; Luke 23:34 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">On the cross, in extreme agony, Jesus prays for those who are crucifying him.</div>
+  <div class="tieback">The fullest Christian expression of the kural&#x27;s ideal: no anger even under torment &#x27;like fire&#x27;.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And not equal are the good deed and the bad. Repel [evil] by that [deed] which is better; and thereupon the one whom between you and him is enmity [will become] as though he was a devoted friend.&rdquo;</div>
+  <div class="cite">&mdash; Quran 41:34 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Quran instructs believers to answer harm with good, promising that this can turn an enemy into a close friend.</div>
+  <div class="tieback">Matches both the non-anger ideal and Kalaignar&#x27;s reading of punarin as reconciliation with the offender.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;About those who are insulted and do not insult, who hear their shame and do not respond, who act out of love and are joyful in suffering, the verse says: ‘And they that love Him are as the sun going forth in its might’ (Judges 5:31).&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Shabbat.88b" target="_blank" rel="noopener">Babylonian Talmud, Shabbat 88b (William Davidson/Koren-Steinsaltz trans., via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Sages praise those who absorb humiliation without striking back, comparing them to the rising sun in its strength.</div>
+  <div class="tieback">Like the kural, the Talmud treats not answering injury with anger as a sign of greatness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Monks, even if bandits were to carve you up savagely, limb by limb, with a two-handled saw, he among you who let his heart get angered even at that would not be doing my bidding.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/mn/mn.021x.than.html" target="_blank" rel="noopener">Majjhima Nikaya 21, Kakacupama Sutta (trans. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">In the Simile of the Saw, the Buddha sets the most extreme standard of non-anger imaginable.</div>
+  <div class="tieback">Near one-to-one with the kural&#x27;s &#x27;even if they plunge you into fire&#x27;, and even stricter, since it drops the &#x27;if possible&#x27; qualification.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Angry at this thought, Somaśarman, malevolent, stood the neck of a water-jar, filled with blazing coals from a funeral-pyre, on his head. Though burned severely by it, absorbed in meditation, he endured it. The fuel of karma being consumed, omniscience having arisen, he went to emancipation.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra, Book VIII (Nemināthacaritra), ch. 10, part 3, &#x27;Gajasukumāla&#x27; (tr. Helen M. Johnson; wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The newly ordained monk Gajasukumāla, Kṛṣṇa&#x27;s younger brother, is standing in meditation in a cemetery when his father-in-law places live coals on his head. He bears it without breaking his meditation and attains liberation. Afterwards Neminātha tells the grieving Kṛṣṇa, &#x27;Do not be angry at Somaśarman.&#x27;</div>
+  <div class="tieback">Valluvar asks us to hold back anger even when the harm done to us is like being plunged into blazing fire. In Gajasukumāla&#x27;s case the fire was literal, and he endured it without retaliating.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">Guru Arjan, the fifth Guru, was summoned by the Mughal emperor Jahangir and ordered to remove passages of the Adi Granth. He refused and was tortured to death at Lahore in 1606. Sikh tradition holds that he was made to sit on a red-hot iron plate while burning sand was poured over him. Through it he remained calm and without hatred, accepting God&#x27;s will as sweet.</div>
+  <div class="cite">&mdash; <a href="https://www.britannica.com/biography/Guru-Arjan" target="_blank" rel="noopener">Encyclopaedia Britannica, &#x27;How did Guru Arjan die?&#x27; (paraphrase); hot-plate details from Sikh tradition</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Arjan is Sikhism&#x27;s first martyr. His serenity under torture is remembered in Sikh tradition as the supreme example of bearing extreme injury without anger.</div>
+  <div class="tieback">The Kural says that even if someone does you harm like plunging you into a blazing fire, it is good to refrain from anger. Guru Arjan&#x27;s martyrdom is almost a literal enactment of that teaching.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">King Priam goes alone to the tent of Achilles, who has killed his son Hector and defiled his body, and kisses the hands of his son&#x27;s killer to beg for the corpse; Achilles, moved, puts aside his wrath and returns the body.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, Iliad, Book 24</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The Iliad ends not with victory but with two enemies setting aside anger in the face of unbearable loss.</div>
+  <div class="tieback">Priam&#x27;s restraint before the man who burned his life to ashes reflects the kural&#x27;s ideal of non-anger after the worst injury.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Then we ought not to retaliate or render evil for evil to anyone, whatever evil we may have suffered from him.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Plato/crito.html" target="_blank" rel="noopener">Plato, Crito 49c (trans. Benjamin Jowett)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">In prison awaiting execution, Socrates holds that retaliation is never just, no matter how much one has suffered.</div>
+  <div class="tieback">Socrates&#x27; &#x27;whatever evil we may have suffered&#x27; is the Greek counterpart of the kural&#x27;s &#x27;even if they harm you like fire&#x27;.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Eva Mozes Kor forgives her Nazi persecutors at Auschwitz</div>
+  <div class="rle-meta">January 1995 &middot; Auschwitz-Birkenau, Poland</div>
+  <div class="quote is-paraphrase">As a ten-year-old twin, Eva Mozes Kor had been subjected to Josef Mengele&#x27;s experiments at Auschwitz, where her parents and two older sisters were killed. On the 50th anniversary of the camp&#x27;s liberation, she returned to Auschwitz with Dr. Hans Munch, a former camp doctor who signed a document attesting to the operation of the gas chambers, and she read and signed her own declaration forgiving the Nazis. Her decision drew criticism from some fellow survivors, but she said it freed her from the pain she had carried for fifty years.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Kor chose to give up resentment toward those who had inflicted the worst imaginable suffering on her family, and she described the act as her own liberation.</div>
+  <div class="tieback">The kural says that even when someone does you harm as painful as being plunged into a blazing fire, it is good, if you can, to refrain from anger toward them, and Kor did so after enduring one of history&#x27;s greatest injuries.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-31/" target="_blank" rel="noopener">Thirukkural Chapter 31 – வெகுளாமை / Restraining Anger (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://dheivegam.com/thirukkural-vegulaamai-adhikaram/" target="_blank" rel="noopener">திருக்குறள் அதிகாரம் 31 – வெகுளாமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Srimad Bhagavatam (Bhagavata Purana), Canto 8, chapters 5-8: the curse of Durvasa and the churning of the ocean of milk</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Shabbat.88b" target="_blank" rel="noopener">Babylonian Talmud, Shabbat 88b (William Davidson Edition, Koren-Steinsaltz English)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/mn/mn.021x.than.html" target="_blank" rel="noopener">Kakacupama Sutta: The Simile of the Saw (MN 21, excerpt; trans. Thanissaro Bhikkhu)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.britannica.com/biography/Guru-Arjan" target="_blank" rel="noopener">Guru Arjan (Tamanna Nangia (fact-checked by Britannica Editors))</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, The Iliad, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Plato/crito.html" target="_blank" rel="noopener">Plato, Crito 49a-e — Socrates&#x27; argument that one must never do wrong, not even in return for wrong</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://sfi.usc.edu/news/2015/02/8673-why-eva-kor-forgave-nazis" target="_blank" rel="noopener">Why Eva Kor forgave the Nazis</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.myjewishlearning.com/article/the-nazi-victim-who-forgave-her-perpetrators/" target="_blank" rel="noopener">The Nazi Victim Who Forgave Her Perpetrators (Debra Nussbaum Cohen)</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0307.html">&larr; Kural 307</a>
+  <a href="kural-0309.html">Kural 309 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-031.html">The Not Being Angry</a>
+  <a class="skip-btn" href="kural-0311.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

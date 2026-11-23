@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 269 — Penance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 269</h1>
+<p class="adhikaram"><a href="adhikaram-027.html">Penance</a> &middot; Thavam &middot; <span class="tamil">தவம்</span></p>
+
+<div class="tamil-text">கூற்றம் குதித்தலும் கைகூடும் நோற்றலின்
+ஆற்றல் தலைப்பட் டவர்க்கு.</div>
+<div class="translit">Kootram kudhiththalum kaikoodum notralin
+Aatral thalaippattavarkku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who have gained the power that comes from strict self-control can even escape death itself.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Everyone is scared of death, like a giant monster nobody can beat. Valluvar says a person who has become really strong through tapas can even jump right over that monster.</p>
+
+<h2 class="section">University</h2>
+<p>கூற்றம் (Kūṟṟam), ‘the one who separates [soul from body]’, is the Tamil personification of Death, identified with Yama; குதித்தல் means to leap over or escape. The inclusive உம் (‘even’) signals this as the ultimate limit case of tapas-power, following the curse-and-blessing powers of 264. The medieval commentator Manakkudavar explicitly glosses the verse with the legend of Markandeya, the boy-devotee who escaped Yama’s noose, while Parimelazhagar identifies ஆற்றல் as the power of curse and grace. Philosophically, the verse can also be read as conquest of the fear of death, or as liberation from the cycle of births — interpretations that let the verse speak beyond its mythological frame.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Markandeya, destined to die at sixteen, clings to the Shiva linga in devotion and austerity; when Yama casts his noose, Shiva emerges, kicks Yama away, and grants the boy eternal youth.</div>
+  <div class="cite">&mdash; <a href="https://dailyprojectthirukkural.blogspot.com/2020/07/Kural269.html" target="_blank" rel="noopener">Markandeya legend (Shaiva Puranas; Tirukkadavur tradition), cited by Manakkudavar on Kural 269</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Manakkudavar’s own commentary on this Kural cites Markandeya’s escape from death.</div>
+  <div class="tieback">The traditional illustration of ‘leaping beyond Kūṟṟam’ through tapas.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;O death, where is thy sting? O grave, where is thy victory?&rdquo;</div>
+  <div class="cite">&mdash; 1 Corinthians 15:55 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Paul proclaims death conquered for the faithful through resurrection.</div>
+  <div class="tieback">Shares the claim that death can be overcome; in Christianity through grace rather than accumulated austerity.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And never think of those who have been killed in the cause of Allah as dead. Rather, they are alive with their Lord, receiving provision.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 3:169 (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Those who give themselves wholly for God are not truly subject to death.</div>
+  <div class="tieback">Supreme self-sacrifice transcends death, a partial echo of the Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">The Talmud relates that the Angel of Death could not take King David because his mouth never ceased from Torah study; only by distracting him for a moment could it approach.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Shabbat.88b" target="_blank" rel="noopener">Babylonian Talmud, Shabbat 30b</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Unbroken spiritual discipline held death itself at bay.</div>
+  <div class="tieback">Close to the Kural’s image of disciplined power holding off Death.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Heedfulness is the path to the Deathless. Heedlessness is the path to death. The heedful die not. The heedless are as if dead already.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 21 <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Sustained vigilance leads to the Deathless (amata), Nibbana.</div>
+  <div class="tieback">Discipline conquers death — understood as release from the round of rebirth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;If a sage truly performs these two kinds of austerities, he will soon be thoroughly released from the Circle of Births.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 30.37 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">After listing the six external and six internal austerities, the lecture promises that their true practice frees the soul entirely from repeated birth and death.</div>
+  <div class="tieback">Valluvar says the power of tapas lets one leap even beyond Death; for Jainism, austerity ends the cycle of birth and death altogether, so death no longer has a hold.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Remembering God, death is eliminated.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 262, Raag Gauree, Sukhmani Sahib, Ashtpadi 1, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In the opening section of the Sukhmani Guru Arjan says that remembering God drives death away.</div>
+  <div class="tieback">The Kural says those with the power of penance can leap even beyond Death; Guru Arjan says the same for one who remembers God.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Heracles wrestles Thanatos (Death) at the tomb of Alcestis and forces him to give her back to life.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0155" target="_blank" rel="noopener">Euripides, Alcestis</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The much-enduring hero physically overpowers Death.</div>
+  <div class="tieback">A mythic ‘leap over Death’ by one whose strength was forged through labours.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Other people are likely not to be aware that those who pursue philosophy aright study nothing but dying and being dead.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://chs.harvard.edu/primary-source/plato-phaedo-sb/" target="_blank" rel="noopener">Plato, Phaedo 64a (trans. H. N. Fowler)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Socrates says the philosopher’s discipline of detaching soul from body is a rehearsal for death, leaving him unafraid of it.</div>
+  <div class="tieback">The disciplined life overcomes death by mastering it in advance.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Shackleton brings every man of the Endurance expedition home alive</div>
+  <div class="rle-meta">1915-1916 &middot; Weddell Sea, Elephant Island and South Georgia, Southern Ocean</div>
+  <div class="quote is-paraphrase">After the ship Endurance was crushed by Antarctic pack ice, Ernest Shackleton&#x27;s 28 men camped on the ice and reached Elephant Island in lifeboats. Shackleton and five companions sailed the small boat James Caird about 800 miles to South Georgia, and three of them crossed the island&#x27;s mountains on foot to reach the Stromness whaling station on 20 May 1916. On 30 August 1916 the Chilean tug Yelcho rescued the 22 men left on Elephant Island, and not one member of the ship&#x27;s crew died.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a> <a class="idx" href="#cite-15">[15]</a></div>
+  <div class="explain">The expedition became a classic example of endurance and self-discipline defeating seemingly certain death.</div>
+  <div class="tieback">The kural says those who gain the strength of disciplined endurance can leap even beyond Death, and Shackleton&#x27;s men survived an ordeal that should have killed them.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-27/" target="_blank" rel="noopener">Thirukkural Chapter 27: தவம் / Penance (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-027.html" target="_blank" rel="noopener">தவம் - அதிகாரம் 27 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.merkol.in/tirukkural/arattupal/turavaraviyal/thirukkural-kural-269" target="_blank" rel="noopener">Thirukkural | குறள் 269</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://dailyprojectthirukkural.blogspot.com/2020/07/Kural269.html" target="_blank" rel="noopener">குறள் 269: கூற்றம் குதித்தலும் கைகூடும் நோற்றலின் (with Parimelazhagar and Manakkudavar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Shabbat.88b" target="_blank" rel="noopener">Babylonian Talmud, Tractate Shabbat (William Davidson / Koren–Steinsaltz English)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0155" target="_blank" rel="noopener">Euripides, Alcestis (438 BCE), translated by David Kovacs, Loeb Classical Library</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://chs.harvard.edu/primary-source/plato-phaedo-sb/" target="_blank" rel="noopener">Plato, Phaedo 64a (trans. Benjamin Jowett)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/biography/Ernest-Henry-Shackleton" target="_blank" rel="noopener">Ernest Shackleton (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.spri.cam.ac.uk/archives/shackleton/expeditions/endurance.html" target="_blank" rel="noopener">Virtual Shackleton - Imperial Trans-Antarctic Expedition (Endurance)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-15"><a href="https://www.history.com/articles/shackleton-endurance-survival" target="_blank" rel="noopener">The Stunning Survival Story of Ernest Shackleton and His Endurance Crew (History.com Editors)</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0268.html">&larr; Kural 268</a>
+  <a href="kural-0270.html">Kural 270 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-027.html">Penance</a>
+  <a class="skip-btn" href="kural-0271.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

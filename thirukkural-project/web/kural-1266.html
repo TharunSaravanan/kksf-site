@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1266 — Mutual Desire | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1266</h1>
+<p class="adhikaram"><a href="adhikaram-127.html">Mutual Desire</a> &middot; Avarvayin Vidhumpal &middot; <span class="tamil">அவர்வயின் விதும்பல்</span></p>
+
+<div class="tamil-text">வருகமன் கொண்கன் ஒருநாள் பருகுவன்
+பைதல்நோய் எல்லாம் கெட.</div>
+<div class="translit">Varukaman kon-kan oru-naal parukuvan
+paidhalnhoi ellaam keda.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Let my husband come back, even for one day. I will drink in his love until all this sickness of sorrow is gone.</p>
+
+<h2 class="section">Elementary</h2>
+<p>When you are very thirsty, a cool drink makes you feel better all over. The lady says being with her husband again would be like that: after missing him for so long, being with him would wash away all her sadness.</p>
+
+<h2 class="section">University</h2>
+<p>Again an optative: varuka maṉ, ‘may he come’, with oru nāḷ, ‘even one day’, suggesting that a single day would suffice. Parukuvaṉ, ‘I shall drink’, is the chapter’s boldest metaphor: she will take in his presence as one drinks to slake thirst (Pope: ‘I’ll drink that nectar’), so that paital nōy, the anguished sickness of separation, is wholly destroyed (ellām keṭa). Mu. Varadarasanar and Pappaiah gloss parukuvaṉ as ‘enjoy fully’ (நுகர்வேன்), and Puliyur Kesikan as ‘drink in delight’ (இன்பத்தை பருகுவேன்). The image belongs to the conventions of akam poetry and should be read as the delight of reunion. Text agrees on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">When the gopis meet Krishna again at Kurukshetra after long separation, they drink him in with their eyes, cursing the creator of eyelids for interrupting their gaze, and embrace him within their hearts.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/10/" target="_blank" rel="noopener">Bhagavata Purana 10.82 (Krishna meets the gopis at Kurukshetra) (paraphrase)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Bhagavata pictures reunion as a thirsty drinking-in of the beloved through the eyes.</div>
+  <div class="tieback">The gopis and the Kural’s heroine use the same metaphor: the long-absent beloved is drunk in until the pain of separation is gone.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;It was but a little that I passed from them, but I found him whom my soul loveth: I held him, and would not let him go, until I had brought him into my mother’s house, and into the chamber of her that conceived me.&rdquo;</div>
+  <div class="cite">&mdash; Song of Solomon 3:4 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">After searching the city at night, the bride finds her beloved and holds him fast.</div>
+  <div class="tieback">The heroine longs for exactly this: to have him back and not let go until all the ache of absence is gone.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And of His signs is that He created for you from yourselves mates that you may find tranquillity in them; and He placed between you affection and mercy. Indeed in that are signs for a people who give thought.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 30:21 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an names a spouse as a source of tranquillity, bound by affection and mercy.</div>
+  <div class="tieback">The heroine seeks just that: in her husband’s return she will find rest from her anguish.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Stay ye me with dainties, refresh me with apples; for I am love-sick.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">Song of Songs 2:5 (JPS 1917, via Mechon-Mamre)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The bride calls herself love-sick and asks to be revived with sweet things.</div>
+  <div class="tieback">The Kural’s heroine also names her longing a sickness and expects to drink her cure in the beloved’s presence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Canda-Kinnara Jataka, a king shoots the kinnara Canda; his wife Canda laments over him until Sakka restores him to life, and the two rejoice together again.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/bud/j3/index.htm" target="_blank" rel="noopener">Canda-Kinnara Jataka (Jataka No. 485, tr. E.B. Cowell et al.; paraphrase)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Jataka tells of a wife’s grief over her lost husband turned to joy when he is restored to her.</div>
+  <div class="tieback">Like the Kural’s heroine, the kinnari’s sorrow ends only with her husband given back to her.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">Citta and Sambhuta, brothers through five successive births, are born apart in the sixth; when they meet again, Citta the monk urges King Brahmadatta to renounce, but Brahmadatta, bound by pleasures, cannot.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 13, Citta and Sambhuta (tr. Hermann Jacobi, SBE 45; paraphrase)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Jain story of a long-separated pair reunited turns the reunion into a test of whether one can let go of worldly delight.</div>
+  <div class="tieback">The Kural’s heroine longs to drink in the delight of reunion; the Jain reunion story warns that such delight is what binds the soul.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The Dear Lord is the fruit-bearing tree; drinking in the Ambrosial Nectar, thirst is quenched.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 114, Raag Maajh, Guru Amar Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Amar Das pictures the Lord as a tree that gives nourishing fruit; drinking in His nectar ends the soul&#x27;s thirst.</div>
+  <div class="tieback">The Kural&#x27;s wife wants to drink in her husband&#x27;s presence until her sickness of longing is gone; Guru Amar Das likewise speaks of drinking in the Beloved&#x27;s nectar until thirst is satisfied.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When Penelope at last recognises Odysseus, Homer compares her joy to that of shipwrecked sailors who reach the shore, and she cannot take her arms from around his neck.</div>
+  <div class="cite">&mdash; Homer, Odyssey 23 (paraphrase) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The Odyssey’s great reunion turns twenty years of grief into overwhelming relief.</div>
+  <div class="tieback">This is the reunion the Kural’s heroine longs for, when all her anguish will drain away at once.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In the Symposium, Aristophanes says that love is the desire and pursuit of the whole, the healer who seeks to make one of two and so cure the wound of human nature.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Plato/symposium.html" target="_blank" rel="noopener">Plato, Symposium 189d-193d, speech of Aristophanes (paraphrase)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristophanes’ myth treats love as the cure for the pain of having been divided from one’s other half.</div>
+  <div class="tieback">The heroine likewise sees reunion with her husband as the cure for the sickness of separation.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Operation Homecoming brings American prisoners of war home</div>
+  <div class="rle-meta">12 February - April 1973 &middot; Hanoi, Vietnam; Clark Air Base, Philippines; Travis Air Force Base, California</div>
+  <div class="quote is-paraphrase">Under the Paris Peace Accords, the first flight of Operation Homecoming carried 40 American prisoners of war out of Hanoi on 12 February 1973 to Clark Air Base in the Philippines. Flights continued into late March, and 591 prisoners returned to the United States, some after more than seven years in captivity. The first group of 20 reached Travis Air Force Base in California on 14 February 1973.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">After years of uncertainty for their families, the return flights ended long separations in a matter of days.</div>
+  <div class="tieback">The kural&#x27;s heroine says that if her husband comes back even for one day, all her grief will be gone; for the families of these prisoners, the day of return ended years of anxious waiting.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-127/" target="_blank" rel="noopener">Thirukkural Chapter 127: அவர்வயின்விதும்பல் / Mutual Desire (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-127.html" target="_blank" rel="noopener">அவர்வயின் விதும்பல் - அதிகாரம் 127 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/sb/10/" target="_blank" rel="noopener">Srimad Bhagavatam, Canto 10, tr. A.C. Bhaktivedanta Swami Prabhupada and disciples</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917), Hebrew-English Bible</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/bud/j3/index.htm" target="_blank" rel="noopener">The Jataka, or Stories of the Buddha&#x27;s Former Births (ed. E.B. Cowell), incl. Mahakapi Jataka No. 407</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Plato/symposium.html" target="_blank" rel="noopener">Plato, Symposium, tr. Benjamin Jowett</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.af.mil/News/Article-Display/Article/109716/operation-homecoming-for-vietnam-pows-marks-40-years/" target="_blank" rel="noopener">Operation Homecoming for Vietnam POWs marks 40 years</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="http://www.encyclopediaofalabama.org/article/h-2969" target="_blank" rel="noopener">Jeremiah Denton</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.travis.af.mil/News/Display/Article/3339675/50th-anniversary-of-operation-homecoming-at-travis-afb/" target="_blank" rel="noopener">50th anniversary of Operation Homecoming at Travis AFB (Nicholas Pilch)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1265.html">&larr; Kural 1265</a>
+  <a href="kural-1267.html">Kural 1267 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-127.html">Mutual Desire</a>
+  <a class="skip-btn" href="kural-1271.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

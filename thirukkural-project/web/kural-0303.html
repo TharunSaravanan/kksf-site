@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 303 — The Not Being Angry | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 303</h1>
+<p class="adhikaram"><a href="adhikaram-031.html">The Not Being Angry</a> &middot; Vekulaamai &middot; <span class="tamil">வெகுளாமை</span></p>
+
+<div class="tamil-text">மறத்தல் வெகுளியை யார்மாட்டும் தீய
+பிறத்தல் அதனான் வரும்.</div>
+<div class="translit">Maraththal vekuliyai yaarmaattum theeya
+Piraththal adhanaan varum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Forget your anger toward anyone at all, because every kind of harm grows out of anger.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Anger is like a seed that grows weeds. If you keep it, bad things grow out of it: mean words, fights, broken friendships. So the kural says: let go of anger, no matter who made you angry.</p>
+
+<h2 class="section">University</h2>
+<p>The verb maraththal (&#x27;forgetting&#x27;, &#x27;letting go&#x27;) is significant: Valluvar does not ask merely for suppression but for the anger to be dropped from memory, since resentment that is stored continues to generate harm. Yaarmaattum (&#x27;toward anyone whatsoever&#x27;) universalises the precept, removing the distinctions of power drawn in 301 and 302. The second line offers a causal claim: evils (theeya) are &#x27;born&#x27; (piraththal) from anger, making it a root vice rather than one fault among many. This genealogical view of anger as a source of other wrongs parallels the Buddhist treatment of dosa as one of the three roots of unwholesome action and the Gita&#x27;s chain from desire to anger to ruin.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;There are three gates leading to this hell – lust, anger and greed. Every sane man should give these up, for they lead to the degradation of the soul.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 16.21 (Bhagavad-gita As It Is)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna names anger as one of three gateways to ruin and commands that it be abandoned.</div>
+  <div class="tieback">Like the kural, the Gita calls for giving anger up entirely because destruction flows from it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Be ye angry, and sin not: let not the sun go down upon your wrath: Neither give place to the devil.&rdquo;</div>
+  <div class="cite">&mdash; Ephesians 4:26-27 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul allows that anger may arise but insists it not be kept overnight, since lingering wrath gives the devil a foothold.</div>
+  <div class="tieback">Parallels the kural&#x27;s &#x27;forget anger&#x27;: do not hold on to it, because harm grows from it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;A man said to the Prophet, ‘Advise me!’ The Prophet said, ‘Do not become angry.’ The man asked (the same) again and again, and the Prophet said in each case, ‘Do not become angry.’&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6116" target="_blank" rel="noopener">Sahih al-Bukhari 6116</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Asked for comprehensive advice, the Prophet gives a single repeated instruction to avoid anger.</div>
+  <div class="tieback">Like the kural, this treats giving up anger as a master key, since so much wrongdoing springs from it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Thou shalt not take vengeance, nor bear any grudge against the children of thy people, but thou shalt love thy neighbour as thyself: I am the LORD.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Leviticus 19:18 (JPS 1917)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Torah forbids both revenge and holding a grudge, pairing this with the command to love one&#x27;s neighbour.</div>
+  <div class="tieback">The ban on &#x27;bearing a grudge&#x27; is close to the kural&#x27;s &#x27;forget anger&#x27;; both demand that resentment be released, not stored.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;‘He abused me, he struck me, he overpowered me, he robbed me.’ Those who do not harbor such thoughts still their hatred.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 4 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha teaches that rehearsing grievances keeps hatred alive, while letting them go ends it.</div>
+  <div class="tieback">Nearly the kural&#x27;s own advice: forgetting the offence is how anger, and the evils it breeds, are ended.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;If a layman abuses a monk, he should not grow angry against him; because he would be like a child, a monk should not grow angry. If a monk hears bad words, cruel and rankling ones, he should silently overlook them, and not take them to heart.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 2.24–25 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Abuse (ākrośa) is one of the twenty-two hardships (parīṣaha) a Jain monk must learn to bear. He is told neither to answer it with anger nor to store it up in his mind.</div>
+  <div class="tieback">&#x27;Not take them to heart&#x27; is close to Valluvar&#x27;s &#x27;forget&#x27; (maraththal): the offence is to be dropped from the mind, not merely held back for the moment.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Where there is greed, there is death. Where there is forgiveness, there is God Himself.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1372, Salok Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In his saloks Bhagat Kabir sets forgiveness (khima) at the very centre of the spiritual life: where it is present, God is present.</div>
+  <div class="tieback">The Kural asks us to let go of anger toward anyone at all, because every evil is born of it. Kabir treats that letting go, forgiveness, as the place where God dwells.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Sing, O goddess, the anger of Achilles son of Peleus, that brought countless ills upon the Achaeans.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, Iliad, Book 1, opening lines (trans. Samuel Butler)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Western literature&#x27;s first epic opens by naming its subject as one man&#x27;s wrath and the endless suffering it caused.</div>
+  <div class="tieback">Homer and Valluvar agree that anger is a fountain of evils; the Iliad is effectively a narrative proof of the kural&#x27;s second line.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Next, if you choose to view its results and the mischief that it does, no plague has cost the human race more dear.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Of_Anger" target="_blank" rel="noopener">Seneca, On Anger (De Ira), Book I (trans. Aubrey Stewart, 1900)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Seneca lists the slaughters, poisonings, and ruined cities that anger has produced.</div>
+  <div class="tieback">A direct philosophical counterpart to &#x27;evils are born of anger&#x27;.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Peace of Westphalia declares perpetual oblivion and amnesty</div>
+  <div class="rle-meta">24 October 1648 &middot; Munster and Osnabruck, Westphalia, Germany (Holy Roman Empire)</div>
+  <div class="quote is-paraphrase">The treaties of Munster and Osnabruck, together known as the Peace of Westphalia, ended the Thirty Years&#x27; War. Their second articles declared that there should be on both sides a perpetual oblivion and amnesty for all hostile acts committed since the beginning of the troubles. Grievances and claims arising from the war were to be buried in perpetual oblivion so that they could not be used against the other side.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">After decades of devastating war, the peacemakers wrote into law that past injuries must be forgotten, recognising that remembered grievances would only breed new conflict.</div>
+  <div class="tieback">The kural asks us to let go of anger toward anyone and forget it, because every evil is born from anger, and the Westphalian treaties made such forgetting a binding legal duty.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-31/" target="_blank" rel="noopener">Thirukkural Chapter 31 – வெகுளாமை / Restraining Anger (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://dheivegam.com/thirukkural-vegulaamai-adhikaram/" target="_blank" rel="noopener">திருக்குறள் அதிகாரம் 31 – வெகுளாமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:6116" target="_blank" rel="noopener">Sahih al-Bukhari 6116 (Book of Good Manners: To be cautious from being angry)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, The Iliad, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://en.wikisource.org/wiki/Of_Anger" target="_blank" rel="noopener">Seneca, Of Anger (De Ira), trans. Aubrey Stewart (1900)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://avalon.law.yale.edu/17th_century/westphal.asp" target="_blank" rel="noopener">Treaty of Westphalia: Peace Treaty between the Holy Roman Emperor and the King of France and their respective Allies</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/ghdi:document-5460" target="_blank" rel="noopener">Peace Treaties of Westphalia (October 14/24, 1648)</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0302.html">&larr; Kural 302</a>
+  <a href="kural-0304.html">Kural 304 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-031.html">The Not Being Angry</a>
+  <a class="skip-btn" href="kural-0311.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

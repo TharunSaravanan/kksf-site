@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 969 — Honour | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 969</h1>
+<p class="adhikaram"><a href="adhikaram-097.html">Honour</a> &middot; Maanam &middot; <span class="tamil">மானம்</span></p>
+
+<div class="tamil-text">மயிர்நீப்பின் வாழாக் கவரிமா அன்னார்
+உயிர்நீப்பர் மானம் வரின்.</div>
+<div class="translit">Mayirneeppin vaazhaak kavarimaa annaar
+Uyirneeppar maanam varin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The yak is said to die if it loses its hair. Like that yak, people of honour would rather give up their life than live without honour.</p>
+
+<h2 class="section">Elementary</h2>
+<p>An old story says the yak loves its long, beautiful hair so much it cannot live without it. This kural uses that story to say that some people treasure their good name the way the yak treasures its hair: nothing is worth losing it for.</p>
+
+<h2 class="section">University</h2>
+<p>The kavarimaa (கவரிமா) is the yak (Bos grunniens), whose tail-hair was prized for the chowrie or royal fly-whisk (chamara); popular Tamil usage later turned it into &#x27;kavarimaan&#x27;, a deer, though commentators identify it as the yak. The belief that it dies on losing its hair is poetic convention, not natural history; Solomon Pappaiah reads it as losing all its hair. Maanam varin (மானம் வரின்) is read by Mu. Varadarasanar as &#x27;if honour is about to be destroyed&#x27;. The Parimelazhagar tradition sees here the culmination of the chapter: honour valued above life. This is classical heroic ethics and should be read historically, as a statement of honour&#x27;s supreme worth, not as a recommendation to end one&#x27;s life; several traditions compared below explicitly reject taking one&#x27;s own life. Text identical on both sources; Pope: &#x27;Like the wild ox that, of its tuft bereft, will pine away.&#x27;</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Warned by his father Surya that Indra will come disguised as a Brahmin to ask for his divine armour and earrings, Karna still gives them away when asked, cutting them from his body, because he has vowed never to refuse a gift and will not break his word even to save his life.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m03/index.htm" target="_blank" rel="noopener">Mahabharata, Vana Parva, Kundala-harana sub-parva</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Karna gives up his protection, knowing it may cost him his life, rather than lose his honour as a giver.</div>
+  <div class="tieback">Like the Kural&#x27;s yak, Karna will not keep living at the price of what makes him who he is.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Women received their dead raised to life again: and others were tortured, not accepting deliverance; that they might obtain a better resurrection:&rdquo;</div>
+  <div class="cite">&mdash; Hebrews 11:35 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Hebrews honours believers who refused release from torture rather than renounce their faith.</div>
+  <div class="tieback">Like the Kural&#x27;s honourable, they valued something above survival.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O you who have believed, do not consume one another&#x27;s wealth unjustly but only [in lawful] business by mutual consent. And do not kill yourselves [or one another]. Indeed, Allah is to you ever Merciful.&rdquo;</div>
+  <div class="cite">&mdash; Quran 4:29 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Quran forbids taking one&#x27;s own life.</div>
+  <div class="tieback">This is an honest counterpoint: Islam values honour but rejects the Kural&#x27;s ideal of giving up life when honour is lost.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">The Talmud rules that for three sins, idolatry, forbidden sexual relations and murder, a person must let himself be killed rather than commit them: yehareg ve&#x27;al ya&#x27;avor, let him be killed and not transgress.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Sanhedrin.74a" target="_blank" rel="noopener">Babylonian Talmud, Sanhedrin 74a</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Jewish law names a few lines that must not be crossed even to save one&#x27;s life.</div>
+  <div class="tieback">Like the Kural, it sets certain values above life itself, though the trigger is a forced sin, not loss of personal honour.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Path of Purification, Buddhaghosa tells the monk to guard his virtue like a hen guarding her eggs, or like a yak (camari) guarding its tail, or like a mother her only child, or a person their only eye.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/lib/authors/nanamoli/PathofPurification2011.pdf" target="_blank" rel="noopener">Buddhaghosa, Visuddhimagga I (on guarding virtue; tr. Bhikkhu Nanamoli, The Path of Purification)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddhist commentary uses the very same animal, the yak that guards its tail-hair at any cost, as the image of guarding one&#x27;s moral purity.</div>
+  <div class="tieback">The same yak image as the Kural, but applied to protecting virtue, not to giving up life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">Amritachandra discusses sallekhana, the gradual, vowed giving up of food at the end of life, and argues that it is not suicide because it is undertaken without passion; by contrast, a person who ends their life under the sway of passions such as anger or wounded pride commits himsa against the self.</div>
+  <div class="cite">&mdash; Amritachandra, Purusharthasiddhyupaya, verses on sallekhana (c. vv. 175-180; tr. Ajit Prasada) <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jainism allows a calm, vowed death only in narrow conditions and treats dying out of injured pride as a form of violence.</div>
+  <div class="tieback">This is an honest contrast: Jain teaching would see a death prompted by lost honour (mana) as a passion to be overcome, not an ideal.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;If you desire to play this game of love with Me, then step onto My Path with your head in hand.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1412, Salok Vaaran te Vadheek, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak says the path of love for God asks for complete readiness to give oneself, pictured as carrying one&#x27;s own head in hand.</div>
+  <div class="tieback">The Kural speaks of the honourable who would give up life itself rather than live when honour is taken; Guru Nanak asks for the same readiness to give one&#x27;s life, for love of God.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Sophocles&#x27; Ajax, the hero, shamed after his madness, tells his wife Tecmessa that a man of noble birth must either live with honour or die with honour, and then goes alone to the shore rather than live disgraced.</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Tragedies_of_Sophocles_(Jebb_1917)/Ajax" target="_blank" rel="noopener">Sophocles, Ajax 479-480 (tr. R. C. Jebb)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Ajax holds that a noble person cannot go on living once his honour is gone.</div>
+  <div class="tieback">This is the tragic Greek counterpart of the Kural&#x27;s yak: life is not worth keeping without honour.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle argues that to die in order to escape poverty, love or anything painful is not the mark of a brave man but of a coward, because it is running from trouble rather than facing it for a noble end.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/nicomachaen.3.iii.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics 3.7, 1116a12-15 (tr. W. D. Ross)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Aristotle, giving up life to flee suffering is not courage.</div>
+  <div class="tieback">An honest counterweight to the Kural: classical philosophy questions dying to escape disgrace.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The soldiers of HMS Birkenhead stand fast as the ship sinks</div>
+  <div class="rle-meta">26 February 1852 &middot; Danger Point, near Gansbaai, South Africa</div>
+  <div class="quote is-paraphrase">The troopship HMS Birkenhead, carrying soldiers and some of their families to the Eastern Cape, struck rocks off Danger Point on 26 February 1852. With only a few lifeboats usable, the officers ordered the soldiers to stand fast rather than rush the boats and swamp them, and the men kept their ranks on deck as the ship went down. All the women and children aboard were saved, but about 445 of the 638 people on board were lost, and the soldiers&#x27; conduct gave rise to the phrase the Birkenhead drill.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The soldiers&#x27; discipline became a lasting example of putting honour and duty above one&#x27;s own survival, and helped establish the rule of women and children first.</div>
+  <div class="tieback">The kural says people of honour would give up life itself rather than lose their honour, and the Birkenhead soldiers held their ranks to the end rather than save themselves at others&#x27; cost.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-97/" target="_blank" rel="noopener">Thirukkural, Chapter 97: மானம் / Honour (Kurals 961-970), with commentaries of Sivayogi Sivakumar, Mu. Varadarasan, Solomon Pappaiah and Kalaignar, and G. U. Pope&#x27;s English couplets</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-097.html" target="_blank" rel="noopener">Thirukkural, Adhigaram 97 மானம் (Kurals 961-970) with commentaries of Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah and Mu. Karunanidhi</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m03/index.htm" target="_blank" rel="noopener">The Mahabharata, Book 3: Vana Parva, Kundala-harana sub-parva (Karna gives away his armour and earrings), trans. Kisari Mohan Ganguli</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Sanhedrin.74a" target="_blank" rel="noopener">Babylonian Talmud, Sanhedrin 74a: the three transgressions for which one must die rather than transgress (William Davidson edition)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/lib/authors/nanamoli/PathofPurification2011.pdf" target="_blank" rel="noopener">Buddhaghosa, Visuddhimagga (The Path of Purification), tr. Bhikkhu Nanamoli</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">Puruṣārthasiddhyupāya of Amṛtacandra <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://en.wikisource.org/wiki/Tragedies_of_Sophocles_(Jebb_1917)/Ajax" target="_blank" rel="noopener">Sophocles, Ajax, trans. R. C. Jebb</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Aristotle/nicomachaen.3.iii.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, Book III (chs. 6-9 on courage), trans. W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.nam.ac.uk/explore/birkenhead-sinking" target="_blank" rel="noopener">Women and children first: the sinking of the Birkenhead</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.rmg.co.uk/collections/objects/rmgc-object-140878" target="_blank" rel="noopener">Wreck of H.M. Steamship &#x27;Birkenhead&#x27;, 26 February 1852</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0968.html">&larr; Kural 968</a>
+  <a href="kural-0970.html">Kural 970 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-097.html">Honour</a>
+  <a class="skip-btn" href="kural-0971.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

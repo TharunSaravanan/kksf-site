@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1257 — Reserve Overcome | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1257</h1>
+<p class="adhikaram"><a href="adhikaram-126.html">Reserve Overcome</a> &middot; Niraiyazhithal &middot; <span class="tamil">நிறையழிதல்</span></p>
+
+<div class="tamil-text">நாணென ஒன்றோ அறியலம் காமத்தால்
+பேணியார் பெட்ப செயின்.</div>
+<div class="translit">Naanena ondroa ariyalam kaamaththaal
+paeniyaar petpa seyin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>When the one I love, out of love, does the things I long for, I no longer know anything called modesty.</p>
+
+<h2 class="section">Elementary</h2>
+<p>When someone you love is kind to you and does just what you hoped, you forget to be shy around them. You just feel happy and close. The heroine says that is how she feels when her husband shows his love.</p>
+
+<h2 class="section">University</h2>
+<p>Here nāṇ (shyness, modesty) is not broken by force but forgotten: when pēṇiyār (the one I cherish) does peṭpa (what I desire) out of kāmam, ‘we do not know anything called shame’ (nāṇ eṉa oṉṟō aṟiyalam). The plural aṟiyalam can be inclusive (‘we women’) or the heroine’s own, and commentators differ on tense: Mu. Varadarasanar and Puliyur Kesikan read it conditionally (‘if he does…, we shall not know’), Solomon Pappaiah as past experience (‘when he did… I did not know shame’). Pope’s rendering on ytamizh.com (‘No sense of shame my gladdened mind shall prove, / When he returns my longing heart to bless with love’) takes it as a hope for his return. Read within the chapter, the couplet explains why reserve fails: in the presence of a loving husband, nāṇ has no place. The text is identical on both sources.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the last canto of the Gita Govinda, after Radha and Krishna are reunited, Radha playfully asks Krishna to paint her forehead mark, set her ornaments and arrange her hair, and he gladly does as she asks.</div>
+  <div class="cite">&mdash; Jayadeva, Gita Govinda, canto 12 (paraphrase) <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Jayadeva ends his poem with a beloved who, with a loving partner, sets shyness aside entirely.</div>
+  <div class="tieback">The Kural’s heroine says the same: when her beloved does what she desires, she knows no shyness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And they were both naked, the man and his wife, and were not ashamed.&rdquo;</div>
+  <div class="cite">&mdash; Genesis 2:25 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In the garden before the fall, the first husband and wife stand before each other with no shame at all.</div>
+  <div class="tieback">The Kural’s heroine describes the same freedom: in love returned, shame has no place.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;They are clothing for you and you are clothing for them.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 2:187 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an describes husband and wife as each other’s garment: closeness, comfort and covering.</div>
+  <div class="tieback">The Kural’s couple share the same closeness: in mutual love, the wife no longer needs the cover of shyness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Oh that thou wert as my brother, that sucked the breasts of my mother! When I should find thee without, I would kiss thee; yea, and none would despise me.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">Song of Songs 8:1 (JPS 1917, via Mechon-Mamre)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The woman of the Song wishes she could show her love openly, without anyone thinking it shameful.</div>
+  <div class="tieback">The Kural’s heroine says that when her love is returned, she does not even feel shyness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">Nakula’s father and Nakula’s mother tell the Buddha that since they were married young they have never been unfaithful to each other even in thought, and that they wish to see each other in this life and in lives to come.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an04/an04.055.than.html" target="_blank" rel="noopener">Anguttara Nikaya 4.55, Samajivina Sutta (paraphrase; cf. tr. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Anguttara Nikaya praises a lay couple whose love is open, mutual and wholehearted.</div>
+  <div class="tieback">Their unguarded devotion parallels the Kural’s picture of love so mutual that shyness falls away.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Come, let us enjoy pleasures, for it is a rare chance to be born a human being; after we have enjoyed pleasures, we shall enter on the path of the Ginas.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 22.38 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Overcome by passion, the monk Rathanemi forgets his vows and the shame they should bring, and urges Rajimati to enjoy pleasures with him.</div>
+  <div class="tieback">Like the Kural’s heroine, Rathanemi forgets shame in desire; but the Jain text treats this forgetting as a fall, whereas the Kural sees it within a loving marriage.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;She surrenders her body and mind to Him, and does not remain separate from Him.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 793, Raag Soohee, Bhagat Ravidas (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Bhagat Ravidas describes the beloved bride who holds nothing back from her Husband and keeps no distance from Him.</div>
+  <div class="tieback">The Kural&#x27;s wife says that when her beloved lovingly does what she desires she no longer knows anything called shyness; Ravidas&#x27;s bride likewise keeps no reserve at all before the Husband she loves.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Sappho says the most beautiful thing is whatever one loves, and gives Helen as proof: she left behind her husband, her child and her parents and sailed to Troy, led astray by love.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/" target="_blank" rel="noopener">Sappho, fragment 16 (paraphrase)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Sappho uses Helen to show that love can make a person forget every claim of propriety and family.</div>
+  <div class="tieback">The Kural’s heroine also forgets shyness in love, though within her own marriage.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Pascal writes that the heart has its reasons, which reason does not know.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/18269" target="_blank" rel="noopener">Blaise Pascal, Pensées, no. 277 (Brunschvicg numbering; paraphrase; cf. tr. W.F. Trotter)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Pascal argues that the heart follows a logic of its own that calm reason cannot fully grasp.</div>
+  <div class="tieback">The Kural’s heroine finds this in her own heart: when love is returned, the reasoned reserve of shyness simply disappears.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Queen Victoria&#x27;s journal on her wedding day</div>
+  <div class="rle-meta">10 February 1840 &middot; London, England</div>
+  <div class="quote is-paraphrase">Queen Victoria married Prince Albert on 10 February 1840. That night she wrote in her journal about Albert&#x27;s great love and affection, calling him her precious Angel and saying his love gave her a happiness she had never hoped to feel. She ended the entry by calling it the happiest day of her life.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A reigning monarch, trained to be reserved in public, wrote with complete openness once her husband showed her love.</div>
+  <div class="tieback">The kural says that when the beloved, out of love, does what one longs for, shyness is forgotten; Victoria&#x27;s unguarded wedding-night journal shows reserve melting in the warmth of returned love.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-126/" target="_blank" rel="noopener">Thirukkural Chapter 126: நிறையழிதல் / Reserve Overcome (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-126.html" target="_blank" rel="noopener">நிறையழிதல் - அதிகாரம் 126 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3">Jayadeva, Gita Govinda <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917), Hebrew-English Bible</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/an/an04/an04.055.than.html" target="_blank" rel="noopener">Anguttara Nikaya 4.55, Samajivina Sutta: Living in Tune, tr. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/" target="_blank" rel="noopener">Sappho, fragment 16 (‘Some say an army of horsemen…’)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/18269" target="_blank" rel="noopener">Blaise Pascal, Pensées, tr. W. F. Trotter</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://blog.tepapa.govt.nz/2011/11/17/unveiled-royalty-romance-and-politics/" target="_blank" rel="noopener">Unveiled: royalty, romance and politics</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://cmsadmin.rct.uk/sites/default/files/resources/Queen%20Victoria%20-%20%20Dear%20Diary.%20Remote%20Activity%20KS2.pdf" target="_blank" rel="noopener">Queen Victoria - Dear Diary (KS2 learning resource with journal extracts)</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1256.html">&larr; Kural 1256</a>
+  <a href="kural-1258.html">Kural 1258 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-126.html">Reserve Overcome</a>
+  <a class="skip-btn" href="kural-1261.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

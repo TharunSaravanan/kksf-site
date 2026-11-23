@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1029 — Family Maintenance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1029</h1>
+<p class="adhikaram"><a href="adhikaram-103.html">Family Maintenance</a> &middot; Kudiseyalvakai &middot; <span class="tamil">குடிசெயல்வகை</span></p>
+
+<div class="tamil-text">இடும்பைக்கே கொள்கலம் கொல்லோ குடும்பத்தைக்
+குற்ற மறைப்பான் உடம்பு.</div>
+<div class="translit">Idumbaikke kolkalam kollo kudumbaththaik
+kutra maraippaan udambu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Is the body of a person who protects their family from harm made only to hold suffering?</p>
+
+<h2 class="section">Elementary</h2>
+<p>Think of a parent who works late, carries heavy bags, and gets up at night when the baby cries. Their body is tired and sore. Valluvar asks: is that body only made for hardship? His answer is that their toil is also full of love and worth.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet is a rhetorical question: is the udambu (உடம்பு, ‘body’) of the one who kutram maraippaan (குற்றம் மறைப்பான், ‘wards off harm’ from his kudumbam, குடும்பம், ‘family’) merely an idumbaikke kolkalam (இடும்பைக்கே கொள்கலம், ‘a vessel for suffering alone’)? The particle kollo (கொல்லோ) marks wonder or doubt. Varadarasanar reads it plainly as ‘is his body only a home for suffering?’, conceding the hardship; Kesikan and Pappaiah draw the implied answer, that it is also a vessel of joy; Karunanidhi says such a person is honoured as one born to bear suffering. Pope gives ‘Is not his body vase that various sorrows fill, / Who would his household screen from every ill?’ The text is identical on both sources.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;O son of Kuntī, the nonpermanent appearance of happiness and distress, and their disappearance in due course, are like the appearance and disappearance of winter and summer seasons. They arise from sense perception, O scion of Bharata, and one must learn to tolerate them without being disturbed.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 2.14 (Bhagavad-gītā As It Is, A.C. Bhaktivedanta Swami Prabhupāda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna tells Arjuna that bodily pain and pleasure come and go like seasons and must be borne with steadiness.</div>
+  <div class="tieback">It matches the Kural&#x27;s picture of a body that must bear hardship for the sake of duty.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">Jesus teaches that no one has greater love than the person who lays down his life for his friends.</div>
+  <div class="cite">&mdash; John 15:13 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Self-sacrifice for others is presented as the highest form of love.</div>
+  <div class="tieback">The Kural&#x27;s body given over to hardship to protect the family is this kind of love.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O you who have believed, protect yourselves and your families from a Fire whose fuel is people and stones&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 66:6 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an commands believers to shield their families from ruin.</div>
+  <div class="tieback">Like the Kural&#x27;s family-protector, the believer is charged with guarding his household from harm.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Nehemiah, rebuilding Jerusalem&#x27;s walls under threat, tells the people not to fear but to remember the great and awesome Lord and fight for their brothers, sons, daughters, wives and homes.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Nehemiah 4:8 (Hebrew numbering; 4:14 in English Bibles), Tanakh via Sefaria</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The builders work with one hand and keep a weapon in the other, to protect their families while they build.</div>
+  <div class="tieback">It is the Kural&#x27;s picture of a body spent in shielding one&#x27;s family.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Mahakapi Jataka the Bodhisatta, born as a monkey king, stretches his own body as a bridge across a river so his troop can escape the king&#x27;s archers, and is fatally hurt doing so.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/bud/j3/index.htm" target="_blank" rel="noopener">Mahakapi Jataka (Jataka No. 407, tr. E.B. Cowell et al.)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The monkey king turns his own body into the means of his people&#x27;s safety.</div>
+  <div class="tieback">It vividly answers the Kural&#x27;s question about the body of the one who shields his family.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Mother, father, daughter-in-law, brother, wife, and sons will not be able to help me, when I suffer for my own deeds.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 6.3 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Uttaradhyayana teaches that no family member can share the suffering that one&#x27;s own karma brings.</div>
+  <div class="tieback">Jainism sees bodily suffering as one&#x27;s own karma and the family as no refuge, so it offers a contrast to the Kural&#x27;s ideal of suffering for one&#x27;s family.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">In 1675 the ninth Guru, Guru Tegh Bahadur, went to Delhi on behalf of Kashmiri Brahmins who were being forced to convert, refused to give up his faith himself, and was publicly executed on the emperor Aurangzeb&#x27;s orders.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">M. A. Macauliffe, The Sikh Religion (1909), vol. 4, Life of Guru Tegh Bahadur</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Sikhs remember his martyrdom as giving his life to shield others&#x27; freedom of faith, people who were not even of his own religion.</div>
+  <div class="tieback">The Kural asks whether the body of one who shields his people from harm is only a vessel for suffering; Guru Tegh Bahadur took suffering and death on his own body to shield those who came to him for protection.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Prometheus, chained to a rock as punishment for giving fire and the arts to humankind, endures endless bodily torment rather than betray those he protected.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0010" target="_blank" rel="noopener">Aeschylus, Prometheus Bound</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">His body becomes a vessel of suffering because he chose to shield and raise up humanity.</div>
+  <div class="tieback">He embodies the Kural&#x27;s question about the body of the one who protects his own.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;It is true of the good man too that he does many acts for the sake of his friends and his country, and if necessary dies for them; for he will throw away both wealth and honours and in general the goods that are objects of competition, gaining for himself nobility …&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/nicomachaen.9.ix.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics IX.8, 1169a (tr. W. D. Ross)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle argues that the good man&#x27;s sacrifices for others, even his life, are not losses, because he wins for himself the greater good of nobility.</div>
+  <div class="tieback">This gives the answer the Kural&#x27;s question implies: the protector&#x27;s suffering body is not a mere vessel of pain, since his sacrifice is what makes him noble.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Dostoevsky takes on his late brother&#x27;s family and debts</div>
+  <div class="rle-meta">1864-1865 &middot; St Petersburg, Russia</div>
+  <div class="quote is-paraphrase">When Fyodor Dostoevsky&#x27;s brother and co-editor Mikhail died in 1864, Fyodor assumed financial responsibility for Mikhail&#x27;s family and the debts of their journal Epoch, which collapsed in 1865. The years that followed were a time of acute financial hardship in which he wrote under heavy pressure and spent long periods abroad to escape creditors.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Dostoevsky shouldered burdens that were not strictly his own, and they shaped years of his life and work.</div>
+  <div class="tieback">The kural asks whether the body of one who shields his family from harm is only a vessel for suffering, and Dostoevsky&#x27;s hard years carrying his brother&#x27;s family are a vivid case.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-103/" target="_blank" rel="noopener">Thirukkural Chapter 103: குடிசெயல்வகை / The Way of Maintaining the Family (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-103.html" target="_blank" rel="noopener">குடிசெயல்வகை - அதிகாரம் 103 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Tanakh (Hebrew text, Miqra according to the Masorah, with JPS translations)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/bud/j3/index.htm" target="_blank" rel="noopener">The Jataka, or Stories of the Buddha&#x27;s Former Births (ed. E.B. Cowell), incl. Mahakapi Jataka No. 407</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">The Sikh Religion: Its Gurus, Sacred Writings and Authors (6 vols.) (Max Arthur Macauliffe)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0010" target="_blank" rel="noopener">Aeschylus, Prometheus Bound</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Aristotle/nicomachaen.9.ix.html" target="_blank" rel="noopener">Nicomachean Ethics, Book IX (Aristotle)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Fyodor-Dostoyevsky" target="_blank" rel="noopener">Fyodor Dostoyevsky</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://catdir.loc.gov/catdir/samples/cam033/2002067684.pdf" target="_blank" rel="noopener">The Cambridge Companion to Dostoevskii (sample chapter) (ed. W. J. Leatherbarrow)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1028.html">&larr; Kural 1028</a>
+  <a href="kural-1030.html">Kural 1030 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-103.html">Family Maintenance</a>
+  <a class="skip-btn" href="kural-1031.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

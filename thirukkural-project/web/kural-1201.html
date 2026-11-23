@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1201 — Sad Memories | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1201</h1>
+<p class="adhikaram"><a href="adhikaram-121.html">Sad Memories</a> &middot; Ninaindhavar Pulampal &middot; <span class="tamil">நினைந்தவர் புலம்பல்</span></p>
+
+<div class="tamil-text">உள்ளினும் தீராப் பெருமகிழ் செய்தலால்
+கள்ளினும் காமம் இனிது.</div>
+<div class="translit">Ullinum theeraap perumakizh seydhalaal
+kallinum kaamam inidhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Love is sweeter than strong drink. Drink makes you happy only while you drink it, but love gives great joy that never runs out, even when you only remember it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A sweet drink makes you happy only while you are sipping it. But think of a wonderful day with someone you love, and you smile all over again. That is why the poet says love is sweeter than any drink: even the memory of it makes you glad.</p>
+
+<h2 class="section">University</h2>
+<p>Chapter 121, ninaintavar pulampal (‘the lament of those who remember’), stands in the karpiyal (wedded love) sequence on separation, where the absent partner is sustained and tormented by memory. The opening couplet sets the chapter’s premise by comparison with kaḷ (toddy, palm wine): uḷḷiṉum, ‘even when merely thought of’, love yields tīrā perumakiḻ, a great joy that does not run out, whereas kaḷ delights only when consumed, as Mu. Varadarasanar and Kalaignar both gloss. Solomon Pappaiah, following the traditional assignment, hears the husband speaking of past union with his wife, while modern readers often extend it to both lovers. Pope renders: ‘From thought of her unfailing gladness springs, / Sweeter than palm-rice wine the joy love brings.’ The couplet is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the second canto of Jayadeva’s Gita Govinda, Radha, left alone in a bower after Krishna has wandered off with other cowherd girls, dwells in song on her memories of him, and her heart takes delight in recalling his play even as she grieves.</div>
+  <div class="cite">&mdash; Jayadeva, Gita Govinda, Canto 2 (paraphrase; cf. tr. Barbara Stoler Miller) <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Jayadeva’s Radha shows how, in the bhakti love lyric, remembering the beloved is itself a source of rapture.</div>
+  <div class="tieback">Radha’s memory-song illustrates the Kural’s claim that love delights even when it is only thought of.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;We will remember thy love more than wine: the upright love thee.&rdquo;</div>
+  <div class="cite">&mdash; Song of Solomon 1:4 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The bride of the Song of Solomon says that she and her companions will remember the beloved’s love more than wine.</div>
+  <div class="tieback">Both texts set the remembrance of love above the pleasure of wine, the Kural’s exact comparison.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">The Sufi poet Ibn al-Farid opens his Wine Ode by saying that, in remembrance of the Beloved, he and his companions drank a wine that made them drunk before ever the vine was created.</div>
+  <div class="cite">&mdash; <a href="https://archive.org/details/studiesinislamic00nichuoft" target="_blank" rel="noopener">Ibn al-Farid, al-Khamriyya (The Wine Ode), opening verse (paraphrase; cf. tr. A.J. Arberry and R.A. Nicholson)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">In the Khamriyya, the intoxication of love is a wine that comes from remembering the Beloved, needing no cup.</div>
+  <div class="tieback">Like the Kural, Ibn al-Farid makes love-remembered a better intoxicant than any drink, though his Beloved is divine.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;How fair is thy love, my sister, my bride! How much better is thy love than wine!&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/" target="_blank" rel="noopener">Song of Songs 4:10 (JPS 1917, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The lover of the Song of Songs ranks his bride’s love above wine.</div>
+  <div class="tieback">The Kural’s verdict that love is sweeter than toddy is the same judgment, made in a Tamil key.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;From endearment springs grief, from endearment springs fear. For one who is wholly free from endearment there is no grief, whence then fear?&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 212 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada traces grief and fear to endearment and praises freedom from it.</div>
+  <div class="tieback">Where the Kural calls remembered love an unfailing joy, the Buddha warns that such endearment is the very root of sorrow, a deliberate contrast.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">In the dialogue of the priest’s sons, the youths tell their father that pleasures bring a moment’s happiness but long and intense suffering, and so are a hindrance to liberation.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 14.13 (paraphrase; cf. tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Uttaradhyayana treats every sensual joy, love included, as brief sweetness bought with long pain.</div>
+  <div class="tieback">The Kural praises love for a joy that never runs out; Jain teaching answers that such joy is fleeting and binding, a candid contrast.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;I drink in the sublime essence of the Lord. With the taste of this essence, I have forgotten all other tastes.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 337, Raag Gauree, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Bhagat Kabir says the sweetness of the Lord&#x27;s Name is so great that every other drink and pleasure fades beside it.</div>
+  <div class="tieback">The Kural says love is sweeter than toddy, because its joy does not run out even when it is only remembered; Kabir likewise rates the taste of divine love above every intoxicant.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Sappho says that some call an army of horsemen or of ships the loveliest thing on the dark earth, but she says it is whatever one loves, and she recalls the absent Anactoria, whose lovely walk and shining face she would rather see than all the chariots of Lydia.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/" target="_blank" rel="noopener">Sappho, fragment 16 (paraphrase; cf. tr. Anne Carson)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Sappho ranks the beloved above every rival splendour, and does so by remembering someone far away.</div>
+  <div class="tieback">Like the Kural’s speaker, Sappho finds love, recalled in absence, sweeter than anything else the world offers.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle observes that lovers take pleasure in talking, writing and composing about the absent beloved, because in remembering him they seem to perceive him, and that love begins when one delights not only in the beloved’s presence but in remembering him when absent.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/rhetoric.html" target="_blank" rel="noopener">Aristotle, Rhetoric 1.11, 1370b (paraphrase; cf. tr. W. Rhys Roberts)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Aristotle, remembered love is a genuine pleasure and even the mark that love has begun.</div>
+  <div class="tieback">This is the Kural’s point in analytic form: love gives joy even when it is only thought of.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Mozart&#x27;s travel letters to Constanze</div>
+  <div class="rle-meta">April 1789 &middot; Prague and Dresden, on the journey from Vienna to Berlin</div>
+  <div class="quote is-paraphrase">In the spring of 1789, short of money, Mozart travelled to Prague, Dresden, Leipzig and Berlin hoping to earn from concerts and court appearances. Along the way he wrote affectionate letters to his wife Constanze; from Prague on 10 April he called her his dearest, best little wife, sent kisses to her and their son Karl, and hoped to find a letter from her in Dresden. He carried a small portrait of her, and in a letter of 13 April he described greeting the portrait each day.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">On a hard, uncertain business trip, the mere thought of his wife, kept alive by a portrait and letters, was clearly one of Mozart&#x27;s chief pleasures.</div>
+  <div class="tieback">The kural says love is sweeter than wine because it gives joy even when only remembered, and Mozart&#x27;s playful letters show the delight he took simply in thinking of Constanze while far away.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-121/" target="_blank" rel="noopener">Thirukkural Chapter 121: நினைந்தவர்புலம்பல் / Sad Memories (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-121.html" target="_blank" rel="noopener">நினைந்தவர் புலம்பல் - அதிகாரம் 121 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3">Jayadeva, Gita Govinda <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://archive.org/details/studiesinislamic00nichuoft" target="_blank" rel="noopener">Ibn al-Farid, al-Khamriyya (The Wine Ode), in R.A. Nicholson, Studies in Islamic Mysticism (1921) and A.J. Arberry, The Mystical Poems of Ibn al-Farid (1956)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/" target="_blank" rel="noopener">Sappho, fragment 16 (‘Some say an army of horsemen…’)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/rhetoric.html" target="_blank" rel="noopener">Aristotle, Rhetoric</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://mozarteum.at/en/press_release/the-salzburg-mozarteum-foundation-has-acquired-a-rare-letter-that-mozart-wrote-to-his-beloved-wife-constanze-while-in-prague-on-good-friday-1789" target="_blank" rel="noopener">The Salzburg Mozarteum Foundation has acquired a rare letter that Mozart wrote to his beloved wife Constanze while in Prague on Good Friday 1789</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.wosu.org/show/classical-music-with-jennifer-hambrick/2016-02-26/mozart-minute-what-mozart-says-to-his-wifes-portrait" target="_blank" rel="noopener">Mozart Minute: What Mozart Says to His Wife&#x27;s Portrait (Jennifer Hambrick)</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1200.html">&larr; Kural 1200</a>
+  <a href="kural-1202.html">Kural 1202 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-121.html">Sad Memories</a>
+  <a class="skip-btn" href="kural-1211.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

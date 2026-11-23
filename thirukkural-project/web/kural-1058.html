@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1058 — Mendicancy | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1058</h1>
+<p class="adhikaram"><a href="adhikaram-106.html">Mendicancy</a> &middot; Iravu &middot; <span class="tamil">இரவு</span></p>
+
+<div class="tamil-text">இரப்பாரை இல்லாயின் ஈர்ங்கண்மா ஞாலம்
+மரப்பாவை சென்றுவந் தற்று.</div>
+<div class="translit">Irappaarai illaayin eerngkanmaa nyaalam
+marappaavai sendruvan thatru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If there were no people who ask for help, all the coming and going in this cool, wide world would be like wooden puppets moving back and forth.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a toy theatre where wooden puppets bounce around on strings. They move, but they don&#x27;t really care about anything. Valluvar says that if no one ever needed help, people would be like those puppets, busy but with no kindness to show.</p>
+
+<h2 class="section">University</h2>
+<p>Eerngkanmaa nyaalam (ஈர்ங்கண்மா ஞாலம், &#x27;the cool, wide, great earth&#x27;) and marappaavai (மரப்பாவை, &#x27;wooden doll&#x27;) give the image: Mu. Varadarasanar explains it as a wooden puppet moved by strings, so that human activity without askers would be mechanical motion without inner meaning. The commentarial tradition following Parimelazhagar takes the point to be that giving is what gives life its moral content, and giving needs askers. Kalaignar reads the couplet differently, making those who keep the poor at a distance no different from operated puppets. Pope: &#x27;The mighty earth ... Will be a stage where wooden puppets come and go.&#x27; The texts on ytamizh.com and thirukkural.net agree (சென்றுவந் தற்று in both).</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;He feeds no trusty friend, no man to love him. All guilt is he who eats with no partaker.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/rigveda/rv05083.htm" target="_blank" rel="noopener">Rig Veda 10.117.6 (tr. Ralph T. H. Griffith)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Vedic hymn says that someone who eats without sharing is &#x27;all guilt&#x27;, his life empty of bonds of love.</div>
+  <div class="tieback">A life with no one to share with has lost its point, which comes close to the Kural&#x27;s world of puppets.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Inasmuch as ye have done it unto one of the least of these my brethren, ye have done it unto me.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 25:40 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In the judgment scene, Christ says that what is done for the hungry, the stranger and the poor is done for him.</div>
+  <div class="tieback">Without the needy there would be no meeting with Christ through them, an echo of the Kural&#x27;s claim that askers give the world its meaning.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;The example of those who spend their wealth in the way of Allāh is like a seed [of grain] which grows seven spikes; in each spike is a hundred grains.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 2:261 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an compares charity to a seed that multiplies into hundreds of grains.</div>
+  <div class="tieback">Giving is what makes wealth grow and bear fruit, and there is no giving without someone to receive.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;the world stands upon three things: the Torah, the Temple service, and the practice of acts of piety.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot.1.2" target="_blank" rel="noopener">Pirkei Avot 1:2 (Mishnah Yomit, tr. Dr. Joshua Kulp, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Shimon the Righteous names acts of kindness (gemilut chasadim) as one of the three pillars that hold up the world.</div>
+  <div class="tieback">If kindness is a pillar of the world, a world with no one to receive it would lose something essential, close to the Kural&#x27;s image.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the recollection of the Sangha recited in the Dhajagga Sutta, the community of noble disciples is called worthy of gifts and of hospitality and &#x27;an unsurpassed field of merit for the world&#x27;.</div>
+  <div class="cite">&mdash; Dhajagga Sutta, SN 11.3 (recollection of the Sangha) (paraphrase) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Buddhist teaching treats the alms-receiving community as the &#x27;field&#x27; in which the world&#x27;s giving bears fruit.</div>
+  <div class="tieback">Without such a field the world&#x27;s generosity would have nowhere to take root, near the Kural&#x27;s claim that askers give the world meaning.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">Jain teaching on householder conduct (vaiyavrittya and gifts to ascetics) describes householders and mendicants as depending on each other: monks rely on pure alms freely given, and householders gain merit and spiritual progress by giving.</div>
+  <div class="cite">&mdash; <a href="https://archive.org/details/TheRatnaKarandaSravakachara" target="_blank" rel="noopener">Samantabhadra, Ratnakaranda Shravakachara (section on vaiyavrittya / gifts) (paraphrase)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In Jain practice, lay giving finds its fullest meaning in supporting the mendicant order.</div>
+  <div class="tieback">A world with no one to give to would empty this exchange, roughly what the Kural pictures.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">According to the Janamsakhi tradition, the young Nanak was given money by his father to make a profitable bargain, but spent it feeding a group of hungry holy men, calling this the true bargain (sacha sauda).</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">Janamsakhi tradition, as retold in Max Arthur Macauliffe, The Sikh Religion, Vol. 1 (1909) (paraphrase)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The story presents giving to those in need as the only trade that gives worldly dealings real worth; it is hagiography rather than documented history.</div>
+  <div class="tieback">The Kural says that without askers the world&#x27;s busy comings and goings would be mere puppet-motion; the Sacha Sauda story likewise implies that commerce gains meaning only when it meets the needs of those who ask.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;we know the gods go about disguised in all sorts of ways as people from foreign countries, and travel about the world to see who do amiss and who righteously.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, Odyssey 17 (tr. Samuel Butler)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">A suitor warns Antinous that a beggar may be a god in disguise, testing who behaves rightly.</div>
+  <div class="tieback">In the Greek view the beggar at the door is how a person&#x27;s character is shown, a sense close to the Kural&#x27;s claim that askers give human life its meaning.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Seneca opens On Benefits by treating the giving and receiving of benefits as the practice that, more than any other, holds human society together.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/files/3794/3794-h/3794-h.htm" target="_blank" rel="noopener">Seneca, On Benefits, Book I (tr. Aubrey Stewart) (paraphrase)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Seneca, benefits are a social bond, not a private transaction.</div>
+  <div class="tieback">Without people in need of benefits that bond would vanish, like the Kural&#x27;s world of puppets.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Marcel Mauss publishes The Gift</div>
+  <div class="rle-meta">1925 &middot; Paris, France</div>
+  <div class="quote is-paraphrase">The French sociologist and anthropologist Marcel Mauss published Essai sur le don (The Gift) in 1925 in the journal L&#x27;Annee sociologique. Comparing forms of exchange in Melanesia, Polynesia and northwestern North America, he examined the religious, legal, economic and mythological sides of giving, receiving and repaying, and argued that such exchanges bind people together through mutual obligation.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The essay became one of the most influential works in the social sciences, showing that the giving and receiving of gifts is a basic thread of social life rather than a side matter.</div>
+  <div class="tieback">The kural says that without people who ask, the busy world would be wooden puppets moving to and fro, and Mauss argued that the exchange of giving and receiving is what gives human society its living bonds.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-106/" target="_blank" rel="noopener">Thirukkural Chapter 106: இரவு / Mendicancy (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-106.html" target="_blank" rel="noopener">இரவு - அதிகாரம் 106 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/rigveda/rv05083.htm" target="_blank" rel="noopener">The Rig Veda, translated by Ralph T. H. Griffith (1896)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot.1.2" target="_blank" rel="noopener">Pirkei Avot 1:2 (Mishnah Yomit, tr. Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">Dhajagga Sutta (Samyutta Nikaya 11.3) <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://archive.org/details/TheRatnaKarandaSravakachara" target="_blank" rel="noopener">Ratnakaraṇḍa Śrāvakācāra of Samantabhadra (The Householder&#x27;s Dharma)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">The Sikh Religion: Its Gurus, Sacred Writings and Authors (6 vols.) (Max Arthur Macauliffe)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, The Odyssey, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/files/3794/3794-h/3794-h.htm" target="_blank" rel="noopener">L. Annaeus Seneca, On Benefits, translated by Aubrey Stewart (1887)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Marcel-Mauss" target="_blank" rel="noopener">Marcel Mauss (Britannica Editors)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://rome.nd.edu/events/2025/11/11/the-paradoxes-of-gift-100-years-after-marcel-mauss-essai-sur-le-don-1925/" target="_blank" rel="noopener">The Paradoxes of Gift - 100 years after Marcel Mauss&#x27; Essai sur le don (1925)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1057.html">&larr; Kural 1057</a>
+  <a href="kural-1059.html">Kural 1059 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-106.html">Mendicancy</a>
+  <a class="skip-btn" href="kural-1061.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

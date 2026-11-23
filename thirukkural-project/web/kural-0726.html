@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 726 — Dread Avoidance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 726</h1>
+<p class="adhikaram"><a href="adhikaram-073.html">Dread Avoidance</a> &middot; Avaiyanjaamai &middot; <span class="tamil">அவையஞ்சாமை</span></p>
+
+<div class="tamil-text">வாளொடென் வன்கண்ணர் அல்லார்க்கு நூலொடென்
+நுண்ணவை அஞ்சு பவர்க்கு.</div>
+<div class="translit">Vaalodden vankannar allaarkku noolodden
+Nunnavai anju pavarkku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>What use is a sword to someone who is not brave? What use are books to someone afraid of a group of sharp thinkers?</p>
+
+<h2 class="section">Elementary</h2>
+<p>A shiny sword is no use to a knight who runs away. In the same way, knowing lots of facts doesn’t help if you’re too scared ever to say them.</p>
+
+<h2 class="section">University</h2>
+<p>Two parallel questions, vāḷoṭu eṉ (“what [has he] to do with a sword?”) and nūloṭu eṉ (“what with books?”), set weapons and learning side by side. Vaṉkaṇ, literally “hard eye,” means steady courage. Nuṇ-avai is an assembly of subtle, sharp minds. Solomon Pappaiah takes nūl specifically as books of logic, continuing from 725, while Kalaignar reads it broadly as learning in general. On all readings the logic is the same: just as a sword is useful only to the brave, learning is useful only to someone who can use it before the learned. Owning it without using it is the same as not owning it. The sandhi text reads “வன்கண்ண ரல்லார்க்கு நூலொடெ / னுண்ணவை யஞ்சு பவர்க்கு.”</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;My whole body is trembling, and my hair is standing on end. My bow Gāṇḍīva is slipping from my hand, and my skin is burning.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 1.29 (trans. A. C. Bhaktivedanta Swami Prabhupada)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Overwhelmed by dread on the battlefield, Arjuna, the finest archer of his age, feels his famous bow slipping from his grasp.</div>
+  <div class="tieback">This is the Kural’s image made literal: the best weapon is useless in a hand that shakes with fear.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And I was afraid, and went and hid thy talent in the earth: lo, there thou hast that is thine.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 25:25 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In the parable of the talents, the servant who buried his master’s money out of fear is condemned for letting it go unused.</div>
+  <div class="tieback">A gift left unused because of fear is worthless, just like books in the hands of someone who fears the assembly.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;The example of those who were entrusted with the Torah and then did not take it on is like that of a donkey who carries volumes [of books].&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 62:5 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an likens people who carry scripture but do not act on it to a donkey loaded with books it cannot use.</div>
+  <div class="tieback">Learning that is carried but never used is as useless as the books the Kural says a timid scholar owns.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">When God calls him to be a prophet, Jeremiah protests that he cannot speak because he is only a youth. God tells him not to fear their faces, promises to be with him, and puts words in his mouth.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Jeremiah 1:6-9</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The prophet is given his message and still has to overcome his fear of audiences before the message can be of any use.</div>
+  <div class="tieback">The word without the courage to speak it goes unused, which is the Kural’s point.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;A learned person doesn’t have the insecurities of a person of little learning.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/an5.101/en/sujato" target="_blank" rel="noopener">Anguttara Nikaya 5.101, Sārajja Sutta (trans. Bhikkhu Sujato)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha lists learning among the qualities that make a trainee self-assured rather than timid.</div>
+  <div class="tieback">Buddhism holds that learning should remove timidity, so learning that leaves a person afraid has failed at its purpose.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As a trained Kambôga-steed, whom no noise frightens, exceeds all other horses in speed, so a very learned monk is superior to all others.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 11.16 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In praising the very learned monk, the Uttaradhyayana chooses a war-horse that no noise can frighten, so fearlessness becomes part of what makes learning excel.</div>
+  <div class="tieback">The Kural asks what use books are to someone who fears a sharp assembly; the Jain simile likewise counts learning as excellent only when it comes with steady nerve.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;If you desire to play this game of love with Me, then step onto My Path with your head in hand.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1412, Salok Vaaran Thay Vadheek, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak makes courage, being ready to give one&#x27;s head, the entry condition for the path of love.</div>
+  <div class="tieback">The Kural asks what use a sword or books are to one without courage; Guru Nanak likewise says nothing on the path is of use without the courage to stake everything.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Alexandrus quailed as he saw Menelaus come forward, and shrank in fear of his life under cover of his men.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, Iliad 3 (trans. Samuel Butler)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Paris, armed with bow, sword and two spears, shrinks back from Menelaus, and Hector scolds him as someone fair to look at but with neither wit nor courage.</div>
+  <div class="tieback">Paris is the Kural’s man with a sword but without courage.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;it is absurd to hold that a man ought to be ashamed of being unable to defend himself with his limbs, but not of being unable to defend himself with speech and reason, when the use of rational speech is more distinctive of a human being than the use of his limbs.&rdquo;</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/rhetoric.html" target="_blank" rel="noopener">Aristotle, Rhetoric 1.1, 1355a38-b2 (trans. W. Rhys Roberts)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle argues that being unable to defend oneself in speech is at least as shameful as being unable to defend oneself physically.</div>
+  <div class="tieback">Aristotle, like the Kural, puts armed self-defence and verbal self-defence side by side and counts failure in either as shameful.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Copernicus withholds On the Revolutions until the end of his life</div>
+  <div class="rle-meta">1514 to 1543 &middot; Frombork, Poland, and Nuremberg, Germany</div>
+  <div class="quote is-paraphrase">Nicolaus Copernicus privately circulated an outline of his sun-centred system around 1514, but his full work, De revolutionibus, with its mathematical proofs, was not published until 1543, the year of his death. Publication came only after his supporter Georg Joachim Rheticus had printed a summary in 1540 or 1541 and then arranged the printing of the full book. In his dedication to Pope Paul III, Copernicus anticipated many of the objections his ideas would raise.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Scholars have taken the long delay as a sign that Copernicus was well aware of the furore his work might cause among the learned.</div>
+  <div class="tieback">The kural asks what use books are to one who fears an assembly of sharp minds, and for decades Copernicus&#x27;s knowledge sat largely unused because he hesitated to set it before the learned.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-73/" target="_blank" rel="noopener">Thirukkural Chapter 73: அவையஞ்சாமை / Not to dread the Council (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A073.html" target="_blank" rel="noopener">73. அவையஞ்சாமை (அவையில் பேச அச்சம் கொள்ளாதிருத்தல்) — Thirukkural, sandhi-joined text</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://suttacentral.net/an5.101/en/sujato" target="_blank" rel="noopener">Anguttara Nikaya 5.101: Assurance (Sārajja Sutta), trans. Bhikkhu Sujato</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, The Iliad, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/rhetoric.html" target="_blank" rel="noopener">Aristotle, Rhetoric</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://math.dartmouth.edu/~matc/Readers/renaissance.astro/1.0.Copernicus.html" target="_blank" rel="noopener">Nicholas Copernicus (Renaissance Astronomy reader) (MATC, Dartmouth College)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.sites.hps.cam.ac.uk/starry/coperbooks.html" target="_blank" rel="noopener">Starry Messenger: Copernicus&#x27;s Book (Sachiko Kusukawa)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0725.html">&larr; Kural 725</a>
+  <a href="kural-0727.html">Kural 727 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-073.html">Dread Avoidance</a>
+  <a class="skip-btn" href="kural-0731.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

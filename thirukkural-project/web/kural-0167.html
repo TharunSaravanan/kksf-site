@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 167 — Anti-envy | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 167</h1>
+<p class="adhikaram"><a href="adhikaram-017.html">Anti-envy</a> &middot; Azhukkaaraamai &middot; <span class="tamil">அழுக்காறாமை</span></p>
+
+<div class="tamil-text">அவ்வித்து அழுக்காறு உடையானைச் செய்யவள்
+தவ்வையைக் காட்டி விடும்.</div>
+<div class="translit">Avvithu azhukkaaru udaiyaanaich cheyyaval
+Thavvaiyaik kaatti vidum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The goddess of good luck turns away from the jealous person and points them out to her older sister, the goddess of bad luck.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine Good Luck as a friendly person who visits your house. When she sees you&#x27;re always jealous, she leaves, and on her way out she tells her grumpy sister, Bad Luck, “This house is yours now.”</p>
+
+<h2 class="section">University</h2>
+<p>Valluvar here uses a mythological image unusual for a text that mostly avoids sectarian deities. செய்யவள் (“the red/fair one”) is Lakshmi (Tiru), and தவ்வை (“elder sister”) is Mudevi/Jyeshtha, goddess of misfortune, who in the Padma and Linga Puranas rises from the churned ocean before Lakshmi and is told to dwell among the quarrelsome and wicked. அவ்வித்து is read by Parimelazhagar as “being herself envious [of him],” so the goddess answers envy with envy, a measure-for-measure punishment. The image turns an abstract claim, that envy drives away prosperity, into a vivid scene, a technique Valluvar uses sparingly and to strong effect.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Jyeshtha (Mudevi), elder sister and opposite of Lakshmi, emerges from the churning of the ocean before Lakshmi; in the Padma and Linga Puranas she is told to dwell in homes of quarrel, harsh speech, and wicked people.</div>
+  <div class="cite">&mdash; <a href="https://en.wikipedia.org/wiki/Jyestha_(goddess)" target="_blank" rel="noopener">Padma Purana and Linga Purana, as summarized in the Wikipedia article on Jyestha (citing Leslie 1992 and Kinsley 1997)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Hindu myth pairs prosperity (Lakshmi) with her elder sister misfortune (Jyeshtha), who takes over where vice lives.</div>
+  <div class="tieback">The Kural uses this exact pair: Lakshmi leaves the envious man and hands him over to her elder sister.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;He that hasteth to be rich hath an evil eye, and considereth not that poverty shall come upon him.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 28:22 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The proverb warns that the grasping, “evil-eyed” person does not see that poverty is coming for him.</div>
+  <div class="tieback">Like the Kural, it says the envious “evil eye” drives prosperity away and invites poverty.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Iblis refuses to bow to Adam, saying “I am better than him,” and is told: “Descend from it [i.e., Paradise]... So get out; indeed, you are of the debased.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 7:12-13 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Iblis resents the honor given to Adam and is expelled from the place of favor.</div>
+  <div class="tieback">As Lakshmi abandons the envious man, divine favor is withdrawn from Iblis because he resented another&#x27;s elevation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;And Saul eyed David from that day and forward.” ... “And Saul was afraid of David, because the LORD was with him, and was departed from Saul.&rdquo;</div>
+  <div class="cite">&mdash; 1 Samuel 18:9, 12 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">After hearing David praised above him, Saul watches him with an envious eye, and the text notes that God&#x27;s presence has left Saul and gone to David.</div>
+  <div class="tieback">As in the Kural, the envious man is abandoned by divine favor, which passes to the one he envies.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;There is the case where a woman or man is envious. He/she envies, begrudges, &amp; broods about others&#x27; gains, honor, respect, reverence, salutations, &amp; veneration. ... If instead he/she comes to the human state, then he/she is not influential wherever reborn.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/mn/mn.135.than.html" target="_blank" rel="noopener">Majjhima Nikaya 135 (Cula-kammavibhanga Sutta), trans. Thanissaro Bhikkhu</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha teaches that envy leads to rebirth in bad destinations or, if reborn human, to a life without influence or standing.</div>
+  <div class="tieback">Envy drives good fortune away, which is the Kural&#x27;s point in karmic rather than mythological terms.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">When the envious god Saṅgamaka returned to heaven after failing to shake Mahāvīra, Śakra at once turned his back on him and declared him unfit to be seen; Saṅgamaka, his beauty blurred like a mirror sprinkled with water, was expelled from the Saudharma heaven.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Hemacandra, Triṣaṣṭiśalākāpuruṣacaritra, Book X, ch. IV, Part 4 “Attacks by Saṅgamaka” (tr. Helen M. Johnson, GOS)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">In Hemacandra&#x27;s telling the envious god loses his splendour and his place among the gods, and the king of gods publicly turns away from him and casts him out.</div>
+  <div class="tieback">Valluvar pictures Fortune turning from the envious man and pointing him out to Misfortune, and the nearest Jain image is Śakra turning his back on the envious Saṅgamaka and driving him from heaven&#x27;s prosperity.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;All the nine treasures, and the eighteen supernatural powers are held by our Lord and Master in the Palm of His Hand.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 10, Rehras (So Dar section), Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Guru Arjan teaches that all wealth and power rest in the hand of the one God, not with any separate deity of fortune.</div>
+  <div class="tieback">The Kural pictures the goddess of fortune leaving the envious man for her sister Misfortune; Sikh teaching sets aside such goddesses and places all fortune in the One Lord&#x27;s hand alone.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;In Hesiod&#x27;s iron age, “Envy, foul-mouthed, delighting in evil, with scowling face, will go along with wretched men one and all. And then Aidos and Nemesis ... will go from the wide-pathed earth.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 195-200 (trans. Evelyn-White)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">When Envy becomes people&#x27;s companion, the goddesses of shame and righteous retribution leave the earth.</div>
+  <div class="tieback">As Lakshmi leaves the envious man, Hesiod&#x27;s good goddesses abandon a humanity that keeps company with Envy.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;For jealousy has no place in the celestial choir.&rdquo;</div>
+  <div class="cite">&mdash; Plato, Phaedrus 247a (trans. Jowett) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Socrates&#x27; myth of the soul&#x27;s journey, the gods move freely through heaven and anyone able may follow, because envy has no place among the divine.</div>
+  <div class="tieback">Plato puts envy outside the divine company; the Kural shows the goddess of fortune leaving the envious.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Li Si brings down his gifted schoolmate Han Fei</div>
+  <div class="rle-meta">233 BCE and 208 BCE &middot; Qin state (Xianyang), China</div>
+  <div class="quote is-paraphrase">Han Fei, a brilliant Legalist thinker whose writings the King of Qin admired, came to the Qin court on a diplomatic mission in 233 BCE. According to Britannica, Li Si, the chief minister and Han Fei&#x27;s former schoolmate, apparently fearing that Han Fei might win the king&#x27;s favour with his superior learning, had him imprisoned, and Han Fei died in prison. Li Si rose to great power under the First Emperor, but after the emperor&#x27;s death he fell out with the eunuch Zhao Gao, who had him executed in 208 BCE.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Li Si removed a more gifted rival and reached the summit of power, yet his fortune did not last and he ended in ruin.</div>
+  <div class="tieback">The kural pictures fortune deserting the envious and handing him over to misfortune, and Li Si&#x27;s high fortune ended in disgrace and death.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-17/" target="_blank" rel="noopener">Thirukkural Chapter 17: அழுக்காறாமை / Not Envying (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar commentaries and Drew/Lazarus English)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-017.html" target="_blank" rel="noopener">அழுக்காறாமை - அதிகாரம் 17 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://en.wikipedia.org/wiki/Jyestha_(goddess)" target="_blank" rel="noopener">Jyestha (goddess) — summarizing Padma Purana and Linga Purana accounts (citing Leslie 1992; Kinsley 1997)</a> <span class="tier">[web source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.accesstoinsight.org/tipitaka/mn/mn.135.than.html" target="_blank" rel="noopener">Cula-kammavibhanga Sutta: The Shorter Analysis of Action (MN 135), trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Phaedrus (the charioteer allegory) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/biography/Han-Feizi" target="_blank" rel="noopener">Han Feizi</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Li-Si" target="_blank" rel="noopener">Li Si</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="http://www.chinaknowledge.de/History/Zhou/personslisi.html" target="_blank" rel="noopener">Li Si (Ulrich Theobald)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0166.html">&larr; Kural 166</a>
+  <a href="kural-0168.html">Kural 168 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-017.html">Anti-envy</a>
+  <a class="skip-btn" href="kural-0171.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

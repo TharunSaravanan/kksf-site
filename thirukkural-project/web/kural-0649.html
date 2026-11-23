@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 649 — Oratory | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 649</h1>
+<p class="adhikaram"><a href="adhikaram-065.html">Oratory</a> &middot; Solvanmai &middot; <span class="tamil">சொல்வன்மை</span></p>
+
+<div class="tamil-text">பலசொல்லக் காமுறுவர் மன்றமா சற்ற
+சிலசொல்லல் தேற்றா தவர்.</div>
+<div class="translit">Palasollak kaamuruvar mandramaa satra
+Silasollal thetraa thavar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who do not know how to say a few words without faults are surely the ones who love to say many words.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Some people talk and talk because they can’t find the right few words. Someone who knows exactly what to say can say it quickly and clearly, like a good arrow that hits the target in one shot.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet sets pala (many) against cila (few), and māc aṟṟa (stainless, faultless) qualifies the few words. Kāmuṟuvar, “they desire”, turns wordiness into a craving. Maṉṟa is an emphatic particle, “certainly, surely”, which Mu. Varadarasanar renders as uṇmaiyāka. Tēṟṟātavar means those who are not able or not skilled: Parimelazhagar takes it as inability to express a matter in few faultless words, so wordiness is a symptom of lacking the skill, not a separate vice. Pope’s rendering (“Who have not skill ten faultless words to utter plain”) adds a number not in the Tamil. In the older edition the second line reads சிலசொல்ல றேற்றா தவர், where sandhi turns collal tēṟṟā into colla ṟēṟṟā.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The Sanskrit poet Śrīharṣa defines eloquence (vāgmitā) as speech that is measured and substantial (mitaṃ ca sāraṃ ca), a line that became a common saying.</div>
+  <div class="cite">&mdash; <a href="https://sa.wikisource.org/wiki/नैषधीयचरितम्" target="_blank" rel="noopener">Śrīharṣa, Naiṣadhīyacarita 9.8</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The epic poem Naiṣadhīyacarita places true eloquence in brief speech full of substance, not in many words.</div>
+  <div class="tieback">Few words full of substance is the Kural’s ideal, and its opposite is the lover of many words.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But when ye pray, use not vain repetitions, as the heathen do: for they think that they shall be heard for their much speaking.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 6:7 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus rejects the idea that more words make speech more effective.</div>
+  <div class="tieback">Trusting in much speaking is the fault the Kural traces to lacking skill with a few good words.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;The Prophet (ﷺ) used to talk so clearly that if somebody wanted to count the number of his words, he could do so.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:3567" target="_blank" rel="noopener">Sahih al-Bukhari 3567-3568</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Aisha describes the Prophet’s speech as measured and distinct, in contrast to someone who rushed through narrations.</div>
+  <div class="tieback">Countable, deliberate words are the few faultless words the Kural praises.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;all my days I grew up among the sages, and I have found nothing better for a person than silence. Study is not the most important thing, but actions; whoever indulges in too many words brings about sin.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 1:17, trans. Joshua Kulp</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Shimon son of Rabban Gamaliel warns that many words lead to fault.</div>
+  <div class="tieback">Too many words bringing sin is the reverse of the Kural’s few flawless words.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Better than a thousand useless words is one useful word, hearing which one attains peace.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 100, trans. Acharya Buddharakkhita <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada values one meaningful word above a flood of empty ones.</div>
+  <div class="tieback">One useful word against a thousand useless ones is exactly the Kural’s few against many.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;One should always be meek, and not be talkative in the presence of the wise; one should acquire valuable knowledge, and avoid what is worthless.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 1.8 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The opening lecture on discipline warns the pupil against talkativeness and links it to the worthless, as opposed to valuable knowledge.</div>
+  <div class="tieback">Valluvar says those who love to say many words are those unable to say a few faultless ones; the Jain verse likewise sets idle talk against what has real worth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;To speak too much and babble is useless.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 661, Raag Dhanaasree, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak dismisses much talking as empty babble, since God knows everything without being told.</div>
+  <div class="tieback">The Kural says those who cannot speak a few flawless words are the very ones who love to speak many; Guru Nanak likewise rejects wordiness as worthless.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;the speech of Menelaus ran trippingly on the tongue; he did not say much, for he was a man of few words, but he spoke very clearly and to the point&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, Iliad 3.213-215, trans. Samuel Butler</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Antenor remembers Menelaus as a speaker who used few words but made each count.</div>
+  <div class="tieback">Menelaus is the Kural’s master of few, faultless words.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Pascal ends one of his Provincial Letters by apologising that he made it longer than usual only because he had not had the time to make it shorter.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/5102" target="_blank" rel="noopener">Blaise Pascal, Provincial Letters, Letter 16 (1656)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Pascal’s joke makes the point that brevity takes more skill and effort than length.</div>
+  <div class="tieback">Length as the fallback of one without time or skill is exactly the Kural’s diagnosis.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Lincoln&#x27;s two-minute Gettysburg Address follows a two-hour oration</div>
+  <div class="rle-meta">19 November 1863 &middot; Gettysburg, Pennsylvania, United States</div>
+  <div class="quote is-paraphrase">At the dedication of the national cemetery at Gettysburg, the main address was a two-hour oration of some 13,000 words by Edward Everett, the best-known orator of the day. President Abraham Lincoln then spoke for barely more than two minutes, delivering 272 words. The next day Everett wrote to Lincoln that he wished he had come as near to the central idea of the occasion in two hours as Lincoln had in two minutes.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Lincoln&#x27;s brief, carefully chosen words became one of the most celebrated speeches in history, while the far longer oration is now largely forgotten.</div>
+  <div class="tieback">The kural says those who cannot say a few flawless words are the ones who love to say many, and the contrast at Gettysburg, acknowledged by Everett himself, shows the power of a few faultless words.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-65/" target="_blank" rel="noopener">Thirukkural Chapter 65: சொல்வன்மை / Power of Speech (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A065.html" target="_blank" rel="noopener">65. சொல்வன்மை (Thirukkural, sandhi-joined text)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sa.wikisource.org/wiki/नैषधीयचरितम्" target="_blank" rel="noopener">Śrīharṣa, Naiṣadhīyacarita, Canto 9 (mitaṃ ca sāraṃ ca vaco hi vāgmitā)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:3567" target="_blank" rel="noopener">Sahih al-Bukhari 3567-3568, Virtues and Merits of the Prophet (Description of the Prophet)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, The Iliad, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/5102" target="_blank" rel="noopener">Blaise Pascal, The Provincial Letters (1656-57), Letter XVI</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/event/Gettysburg-Address" target="_blank" rel="noopener">Gettysburg Address (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://exhibitions.lib.udel.edu/gettysburg-2023/3-the-speech/" target="_blank" rel="noopener">The Gettysburg Address in 2023: 3 - The Speech</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0648.html">&larr; Kural 648</a>
+  <a href="kural-0650.html">Kural 650 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-065.html">Oratory</a>
+  <a class="skip-btn" href="kural-0651.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

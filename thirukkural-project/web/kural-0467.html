@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 467 — Acting after Due Consideration | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 467</h1>
+<p class="adhikaram"><a href="adhikaram-047.html">Acting after Due Consideration</a> &middot; Therindhu Seyalvakai &middot; <span class="tamil">தெரிந்து செயல்வகை</span></p>
+
+<div class="tamil-text">எண்ணித் துணிக கருமம் துணிந்தபின்
+எண்ணுவம் என்பது இழுக்கு.</div>
+<div class="translit">Ennith thunika karumam thunindhapin,
+Ennuvam enbadhu izhukku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Think it through first, and then decide what to do. Saying “we will think about it after we start” is a mistake.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Do your thinking first, then make up your mind and go. Starting first and figuring it out later is a big mistake.</p>
+
+<h2 class="section">University</h2>
+<p>Probably the most-quoted couplet of the chapter. Its force comes from the sequence எண்ணி → துணிக (reflect → resolve) and the rejection of the reversed order துணிந்தபின் எண்ணுவம் (‘having resolved, we shall reflect’). Two faults are excluded at once. One is beginning without deliberation. The other, implied, is wavering and reopening the question after committing, which dissipates resolve. துணிவு means both decision and courage, so the couplet unites prudence and boldness: deliberation belongs before action, and firmness belongs after decision. இழுக்கு (a slip, a blemish) casts the failure as a lapse of character, not merely of technique.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">After eighteen chapters of dialogue, Arjuna tells Krishna that his delusion is destroyed, his doubts are gone, and he stands firm, ready to act on Krishna’s word.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 18.73</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The whole Gita is one long pause to think before battle. Only when Arjuna’s doubts are cleared does he commit to action.</div>
+  <div class="tieback">The Gita’s structure (deliberation first, then firm resolve) is the Kural’s sequence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">No man, having put his hand to the plough, and looking back, is fit for the kingdom of God.</div>
+  <div class="cite">&mdash; Luke 9:62 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Once you’ve committed to something important, you mustn’t keep looking back and second-guessing.</div>
+  <div class="tieback">Matches the Kural’s condemnation of reconsidering after resolving.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">…and consult them in the matter. And when you have decided, then rely upon Allah.</div>
+  <div class="cite">&mdash; Qur’an 3:159 (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">God tells the Prophet: talk things over with your people first, but once you’ve decided, act with trust and don’t hesitate.</div>
+  <div class="tieback">An exact counterpart: consult and deliberate, then resolve and proceed firmly.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Let thine eyes look right on, and let thine eyelids look straight before thee. Ponder the path of thy feet, and let all thy ways be established.</div>
+  <div class="cite">&mdash; Proverbs 4:25–26 (Hebrew Bible; KJV rendering) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Think carefully about where you are going, then walk steadily ahead without turning aside.</div>
+  <div class="tieback">Pondering first and then holding firmly to the path is the Kural’s order.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Buddha describes the resolve of a disciple who has set out on the path: willingly let only skin, sinews and bones remain, let flesh and blood dry up; energy will not be relaxed until the goal is attained.</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/mn70" target="_blank" rel="noopener">Kitagiri Sutta, Majjhima Nikaya 70</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Once a Buddhist practitioner decides to seek awakening, they commit completely and don’t turn back.</div>
+  <div class="tieback">Illustrates the unwavering resolve that should follow deliberation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Vratas or a vow is a solemn resolve made after deliberation to observe a particular rule of conduct … A vow affords stability to the will and guards its votary from the evils of temptation or of unguarded life&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.jainworld.com/jainbooks/antiquity/ethcjain.htm" target="_blank" rel="noopener">Vilas A. Sangave, &#x27;Ethics of Jainism: Prescription of Ethical Code&#x27;, section on the twelve vratas (jainworld.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jain ethics defines the vow, the basic unit of a layman&#x27;s discipline, as a resolve taken only after deliberation, which then keeps the will steady.</div>
+  <div class="tieback">The Kural&#x27;s order (reflect, then resolve, and do not reopen the question afterwards) is how the Jain vow works: deliberation comes first, and steadiness follows.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;If you desire to play this game of love with Me, then step onto My Path with your head in hand. When you place your feet on this Path, give Me your head, and do not pay any attention to public opinion.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1412, Salok Vaaran Thay Vadheek (salok 20), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak asks that the full cost be accepted before the first step on the path of love; once the step is taken, there is no holding back.</div>
+  <div class="tieback">The Kural says to think first and then resolve, not to begin and think afterwards; Guru Nanak asks the seeker to settle the price before setting foot on the path, then give without hesitation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Trapped in the Cyclops’s cave, Odysseus first thinks of stabbing Polyphemus as he sleeps, but a second thought stops him: no one could move the boulder from the door. He devises the stake-and-ram plan and carries it out without hesitation.</div>
+  <div class="cite">&mdash; Homer, Odyssey 9.299–305 and following <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Odysseus thinks through his options before he acts, then sticks to the plan he chooses.</div>
+  <div class="tieback">Odysseus’s metis is the Kural’s ‘think, then resolve’ in action.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Descartes’s second maxim: be as firm and resolute in action as possible once a course is chosen, like travellers lost in a forest who should walk straight in one direction rather than wander in circles.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/59" target="_blank" rel="noopener">René Descartes, Discourse on Method (1637), Part 3</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Descartes says that once you’ve picked a direction, keep going; changing your mind every few steps gets you nowhere.</div>
+  <div class="tieback">Matches the Kural’s rule against reopening deliberation after resolving.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Construction of the Sydney Opera House begins before the design is resolved</div>
+  <div class="rle-meta">1959-1973 &middot; Sydney, New South Wales, Australia</div>
+  <div class="quote is-paraphrase">Work on the Sydney Opera House began in 1959, pressed forward before a state election, long before Jorn Utzon&#x27;s design for the roof shells and their supports had been worked out. As each new design was produced the cost rose and the completion date moved back, and the estimated cost of 3.5 million pounds had reached 13.7 million by 1962. After a dispute with the state government over payments, Utzon resigned in 1966, and other architects completed the building, which opened in 1973.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The building became a world icon, but starting before the plan was settled led to years of delay, a vastly higher cost and the departure of its architect.</div>
+  <div class="tieback">The kural calls it a disgrace to say we will think it through after we have begun, and the Opera House was begun on precisely that basis.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/kural-461/" target="_blank" rel="noopener">Thirukural Chapter 47: தெரிந்துசெயல்வகை (Acting after due Consideration), Kurals 461–470</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/kural-0461.html" target="_blank" rel="noopener">Thirukkural Adhigaram 47: Acting after due Consideration (Kurals 461–470)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.tamilsirukathaigal.com/thirukkural/kural/461-azhivadhooum-aavadhooum-aaki-vazhipayakkum.html" target="_blank" rel="noopener">Thirukkural 461–470, தெரிந்துசெயல்வகை</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://suttacentral.net/mn70" target="_blank" rel="noopener">Kitagiri Sutta: At Kitagiri (MN 70)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://jainworld.jainworld.com/jainbooks/antiquity/ethcjain.htm" target="_blank" rel="noopener">Jaina ethics (English renderings of Jain householder texts, incl. Hemacandra&#x27;s Yogaśāstra) (Vilas A. Sangave)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/59" target="_blank" rel="noopener">Discourse on the Method (Part 3) (René Descartes)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.sydneyoperahouse.com/our-story/construction-begins" target="_blank" rel="noopener">Construction begins</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.nma.gov.au/defining-moments/resources/sydney-opera-house" target="_blank" rel="noopener">Sydney Opera House (Defining Moments)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0466.html">&larr; Kural 466</a>
+  <a href="kural-0468.html">Kural 468 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-047.html">Acting after Due Consideration</a>
+  <a class="skip-btn" href="kural-0471.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 438 — Error Correction | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 438</h1>
+<p class="adhikaram"><a href="adhikaram-044.html">Error Correction</a> &middot; Kutrankaditthal &middot; <span class="tamil">குற்றங்கடிதல்</span></p>
+
+<div class="tamil-text">பற்றுள்ளம் என்னும் இவறன்மை எற்றுள்ளும்
+எண்ணப் படுவதொன் றன்று.</div>
+<div class="translit">Patrullam ennum ivaranmai etrullum
+Ennap paduvathon randru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Stinginess, the greedy grip that holds on to everything, is not counted along with other faults. It stands apart as worse than all of them.</p>
+
+<h2 class="section">Elementary</h2>
+<p>This kural says that stinginess, a heart that grabs and won’t let go, is not just one bad habit on a list. It is in a class of its own, worse than all the others.</p>
+
+<h2 class="section">University</h2>
+<p>பற்றுள்ளம் (‘a clinging heart’) defines இவறன்மை (miserliness) as a disposition of attachment, not merely an act of not giving. The phrase எற்றுள்ளும் எண்ணப்படுவது ஒன்று அன்று (‘it is not a thing to be counted among any [faults]’) is deliberately ambiguous: Mu. Varadarasan reads it as ‘a separate fault that cannot be counted along with others’, and Solomon Pappaiah and Karunanidhi read it as ‘the most terrible of all faults’. Either way it is the chapter’s climax on avarice, which has now appeared three times (432, 437, 438). The ruler-centred reading matters: a stingy king starves the gifts, rewards and public works on which loyalty and prosperity depend, so his avarice spreads into every other failure.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;There are three gates leading to this hell – lust, anger and greed. Every sane man should give these up, for they lead to the degradation of the soul.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 16.21</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna names greed as one of the three gateways to hell that must be abandoned.</div>
+  <div class="tieback">Both rank greed among the most destructive faults; the Kural goes further and sets it above all others.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For the love of money is the root of all evil: which while some coveted after, they have erred from the faith, and pierced themselves through with many sorrows.&rdquo;</div>
+  <div class="cite">&mdash; 1 Timothy 6:10 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul calls the love of money the root from which all kinds of evil grow.</div>
+  <div class="tieback">Like the Kural, Paul sets the grasping attachment to wealth apart from, and beneath, other evils.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;...be on your guard against stinginess for stinginess destroyed those who were before you, as it incited them to shed blood and make lawful what was unlawful for them.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/muslim:2578" target="_blank" rel="noopener">Sahih Muslim 2578</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet warns that stinginess (shuḥḥ) destroyed earlier peoples by driving them to bloodshed and lawbreaking.</div>
+  <div class="tieback">Both treat miserliness not as a small failing but as a master-fault that leads to every other wrong.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;There are four types of character in human beings: One that says: ‘mine is mine, and yours is yours’: this is a commonplace type; and some say this is a sodom-type of character.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 5:10</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Mishnah notes that some sages see the attitude ‘what’s mine is mine’ as the character of Sodom, whose sin (Ezekiel 16:49) was not helping the poor.</div>
+  <div class="tieback">Both texts see the refusal to share as worse than it looks: the Kural sets it apart from all faults, the Mishnah links it to Sodom.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Truly, misers fare not to heavenly realms; nor, indeed, do fools praise generosity. But the wise man rejoices in giving, and by that alone does he become happy hereafter.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 177 (tr. Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha says misers cannot reach heaven, while the wise find joy in giving.</div>
+  <div class="tieback">Both single out miserliness as a fault with uniquely serious results.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;If there were numberless mountains of gold and silver, as big as Kailâsa, they would not satisfy a greedy man; for his avidity is boundless like space.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 9.48 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Refusing Indra&#x27;s advice to fill his treasury, Nami answers that greed has no limit: no amount of wealth can ever satisfy a grasping heart.</div>
+  <div class="tieback">Valluvar sets the clinging, miserly heart apart from every other fault; Nami likewise describes avarice as boundless, unlike any fault that can be measured or satisfied.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;O mortal, why have you attached yourself to greed, and lost the jewel of life?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 481, Raag Aasaa, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Bhagat Kabir warns that clinging greed (lobh) squanders the priceless human birth.</div>
+  <div class="tieback">The Kural sets the grasping, clinging heart of avarice apart as a fault beyond all others; Kabir likewise treats attachment to greed as the loss of life&#x27;s single jewel.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Erysichthon cuts down Demeter’s sacred oak for his own use; she curses him with insatiable hunger, so he consumes all his wealth, sells his daughter, and finally devours his own body.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses 8 (Erysichthon)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">A man who grabs for himself is cursed with a craving that can never be satisfied and destroys him completely.</div>
+  <div class="tieback">Erysichthon dramatises the Kural’s ‘grasping heart’ as a fault that swallows everything else.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;But meanness is both incurable (for old age and every disability is thought to make men mean) and more innate in men than prodigality... for not only is it a greater evil than prodigality, but men err more often in this direction...&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics IV.1 (tr. W. D. Ross)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle says stinginess is worse than wastefulness: it is incurable, more natural to people, and more common.</div>
+  <div class="tieback">Aristotle, like the Kural, gives miserliness a special rank as the worse and more stubborn fault.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Emperor Galba refuses the soldiers&#x27; promised reward</div>
+  <div class="rle-meta">68-69 CE &middot; Rome, Roman Empire (now Italy)</div>
+  <div class="quote is-paraphrase">Servius Sulpicius Galba became Roman emperor in 68 CE after the fall of Nero, and Suetonius describes his reputation for stinginess. He refused to pay the Praetorian Guard the donative, a cash reward, that had been promised in his name, and he passed over his ally Otho to name another man as his heir. Otho won the guard over with a promise of payment, and on 15 January 69 the praetorians killed Galba in the Roman Forum after a reign of about seven months.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Galba&#x27;s tight grip on money turned the very soldiers who should have protected him into the instrument of his fall.</div>
+  <div class="tieback">The kural calls a grasping heart a fault beyond all others, and Galba&#x27;s refusal to part with what he owed undid every other strength he had as emperor.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.thirukkural.net/ta/kural/adhigaram-044.html" target="_blank" rel="noopener">Thirukkural, Adhigaram 44 (Kurals 431-440) with commentaries of Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah and Mu. Karunanidhi</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html" target="_blank" rel="noopener">Tirukkural of Tiruvalluvar (Tamil script, Unicode e-text)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/muslim:2578" target="_blank" rel="noopener">Sahih Muslim 2578</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses, Book 1 (the flood of Deucalion and Pyrrha, 1.253–415)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, tr. W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Galba" target="_blank" rel="noopener">Galba</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Galba*.html" target="_blank" rel="noopener">The Lives of the Twelve Caesars: Life of Galba (Suetonius, trans. J. C. Rolfe)</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0437.html">&larr; Kural 437</a>
+  <a href="kural-0439.html">Kural 439 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-044.html">Error Correction</a>
+  <a class="skip-btn" href="kural-0441.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

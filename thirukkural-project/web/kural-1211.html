@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1211 — The Visions of the Night | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1211</h1>
+<p class="adhikaram"><a href="adhikaram-122.html">The Visions of the Night</a> &middot; Kanavunilaiyuraithal &middot; <span class="tamil">கனவுநிலையுரைத்தல்</span></p>
+
+<div class="tamil-text">காதலர் தூதொடு வந்த கனவினுக்கு
+யாதுசெய் வேன்கொல் விருந்து.</div>
+<div class="translit">Kaadhalar thoodhodu vandha kanavinukku
+yaadhusey vaenkol virundhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A dream came to me carrying a message from my faraway love. What special meal can I give that dream, like a guest, to thank it?</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine you are missing a grandparent who lives far away, and one night you dream they send you a happy note saying they will visit soon. You wake up so glad that you want to thank the dream itself, as if it were a postman who knocked at your door with the best letter ever.</p>
+
+<h2 class="section">University</h2>
+<p>Chapter 122, kaṉavunilai uraittal (‘telling of the state of dreams’), continues the karpiyal sequence on separation: in the traditional reading associated with Parimelazhagar, the wife, long parted from her husband, tells her confidante (tōḻi) what she has seen in dreams, and the dreams become her way of enduring absence. The opening couplet personifies the dream as a guest who arrives with a tūtu (messenger, embassy), so that the hospitality word viruntu (feast offered to a guest, the virtue praised in Aṟam ch. 9) is turned on the dream itself; yātu ceyvēṉ-kol is a helpless rhetorical question, ‘what can I possibly do?’. Mu. Varadarasanar and Puliyur Kesikan gloss the line as asking what return (kaimmāṟu) she can make to the dream that came with her lover’s envoy. Pope renders: ‘It came and brought to me, that nightly vision rare, / A message from my love,- what feast shall I prepare?’ The couplet is identical on ytamizh.com and thirukkural.net (which spells the chapter title as two words, kaṉavunilai uraittal).</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the story of Nala and Damayanti, a golden swan that Nala has caught and released flies to Damayanti and praises Nala to her, carrying love between two people who have never met.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Vana Parva, Nalopakhyana (paraphrase; cf. tr. K.M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Mahabharata’s tale makes a winged messenger the first bearer of love’s news between separated lovers.</div>
+  <div class="tieback">The Kural’s dream plays the same part as Nala’s swan: a go-between who brings the beloved’s message across distance, and earns the receiver’s gratitude.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;The angel of the Lord appeared unto him in a dream, saying, Joseph, thou son of David, fear not to take unto thee Mary thy wife.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 1:20 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Matthew’s Gospel has a heavenly messenger arrive through a dream to settle Joseph’s anguish about the woman he is to marry.</div>
+  <div class="tieback">As in the Kural, a dream comes bearing a message about the beloved, and it changes the dreamer’s heart.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;If anyone of you sees a dream that he likes, then it is from Allah, and he should thank Allah for it and narrate it to others.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6985" target="_blank" rel="noopener">Sahih al-Bukhari 6985</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet teaches that a pleasing dream is a gift to be met with gratitude and shared.</div>
+  <div class="tieback">The Kural’s heroine likewise wants to repay a welcome dream; Islam directs that gratitude to God and asks the dreamer to tell it, much as she tells her confidante.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;A dream not interpreted is like a letter not read.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Berakhot.55b" target="_blank" rel="noopener">Babylonian Talmud, Berakhot 55b (William Davidson Edition, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rav Hisda, quoted in the Talmud’s long discussion of dreams, treats a dream as a sealed message addressed to the dreamer.</div>
+  <div class="tieback">The Kural’s dream is exactly such a letter, arriving with the beloved’s envoy and waiting to be received with honour.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">Queen Maya dreams that a white elephant enters her side; on waking she tells King Suddhodana, who summons learned brahmins, feasts them generously and asks them to explain the dream, which they read as news of a great son to come.</div>
+  <div class="cite">&mdash; <a href="https://archive.org/details/buddhistbirthsto00fausuoft" target="_blank" rel="noopener">Nidanakatha (Introduction to the Jataka), the conception of the Bodhisatta (paraphrase; cf. tr. T.W. Rhys Davids, Buddhist Birth Stories)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">In the Buddhist birth narrative, a dream arrives as a herald of joyful tidings and is answered with lavish hospitality.</div>
+  <div class="tieback">The royal feast given in thanks for Maya’s dream is the very kind of ‘viruntu’ the Kural’s heroine wishes she could offer her dream.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;He accepted the true meaning of the dreams, and honoured the interpreters of dreams with praise and plenty of food, flowers, perfumes, garlands, and ornaments.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Kalpa Sutra, Life of Mahavira §83 (tr. Hermann Jacobi, SBE 22)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">After Queen Trisala’s fourteen auspicious dreams foretell Mahavira’s birth, King Siddhartha thanks those who opened the dreams’ message with a lavish reception.</div>
+  <div class="tieback">Jain scripture shows the gratitude the Kural’s heroine longs to express: a dream bearing good news is answered with a feast.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;If only someone would come, and lead me to meet my Darling Beloved; I would sell myself to him.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 757, Raag Soohee, Guru Ram Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Ram Das, speaking as the longing soul-bride, says she would give herself away to whoever brings her Beloved to meet her.</div>
+  <div class="tieback">The Kural&#x27;s wife wonders what feast could repay the dream that brought word of her husband; the Guru&#x27;s bride likewise has nothing smaller to offer such a go-between than her whole self.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">While Penelope sleeps in grief, Athena sends a phantom in the likeness of her sister Iphthime, who stands over her head and comforts her with the message that her absent son Telemachus will return safely.</div>
+  <div class="cite">&mdash; Homer, Odyssey 4.795-841 (paraphrase; cf. tr. Samuel Butler) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Homer gives the anxious wife a dream-messenger sent from outside to carry word of an absent loved one.</div>
+  <div class="tieback">Penelope’s dream-envoy is the Greek twin of the Kural’s dream ‘that came with my beloved’s messenger’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In prison Socrates tells Crito he has dreamed of a fair woman in white who called him and spoke a line from Homer, telling him that on the third day he would come to fertile Phthia.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Plato/crito.html" target="_blank" rel="noopener">Plato, Crito 44a-b (paraphrase; cf. tr. Benjamin Jowett)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Plato presents a dream as a gracious visitor delivering a message that Socrates trusts and acts upon.</div>
+  <div class="tieback">Socrates’ dream-woman, like the Kural’s dream, arrives as a courier from beyond and is welcomed rather than dismissed.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Thutmose IV sets up the Dream Stela at the Sphinx</div>
+  <div class="rle-meta">c. 1400 BCE &middot; Giza, Egypt</div>
+  <div class="quote is-paraphrase">A granite stela set up in front of the Great Sphinx at Giza records that Prince Thutmose fell asleep in the Sphinx&#x27;s shade and dreamed that the Sphinx, speaking as the sun god, promised him the throne if he would clear away the sand that buried it. After becoming king, Thutmose IV restored the Sphinx and erected the stela to record the dream. Scholars often read the inscription as royal propaganda supporting the legitimacy of his reign.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The stela is one of the oldest surviving records of a dream treated as a message worth honouring with action and a monument.</div>
+  <div class="tieback">The kural&#x27;s heroine wonders what feast she could give to the dream that brought her a message, and Thutmose IV repaid his dream-messenger with a restoration and a monument.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-122/" target="_blank" rel="noopener">Thirukkural Chapter 122: கனவுநிலையுரைத்தல் / The Visions of the Night (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-122.html" target="_blank" rel="noopener">கனவுநிலை உரைத்தல் - அதிகாரம் 122 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:6985" target="_blank" rel="noopener">Sahih al-Bukhari 6985 (Book of the Interpretation of Dreams: good dreams are from Allah)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Berakhot.55b" target="_blank" rel="noopener">Babylonian Talmud, Berakhot 55b (William Davidson Edition, Koren Noé Talmud with Steinsaltz commentary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://archive.org/details/buddhistbirthsto00fausuoft" target="_blank" rel="noopener">Buddhist Birth Stories (Jataka Tales): The Nidana-katha, tr. T.W. Rhys Davids (1880)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Kalpa Sūtra (Kalpa Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Plato/crito.html" target="_blank" rel="noopener">Plato, Crito 49a-e — Socrates&#x27; argument that one must never do wrong, not even in return for wrong</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://hmane.harvard.edu/dream-stela" target="_blank" rel="noopener">Dream Stela</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.worldhistory.org/Great_Sphinx_of_Giza/" target="_blank" rel="noopener">Great Sphinx of Giza</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1210.html">&larr; Kural 1210</a>
+  <a href="kural-1212.html">Kural 1212 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-122.html">The Visions of the Night</a>
+  <a class="skip-btn" href="kural-1221.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

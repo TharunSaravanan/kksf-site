@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 954 — Lineage | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 954</h1>
+<p class="adhikaram"><a href="adhikaram-096.html">Lineage</a> &middot; Kudimai &middot; <span class="tamil">குடிமை</span></p>
+
+<div class="tamil-text">அடுக்கிய கோடி பெறினும் குடிப்பிறந்தார்
+குன்றுவ செய்தல் இலர்.</div>
+<div class="translit">Adukkiya kodi perinum kudippirandhaar
+kundruva seydhal ilar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Even if they could get crores upon crores (huge piles of money), people from good families will not do anything that brings their family down.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine someone offers you a giant pile of money if you will just cheat once. A person from a good family says no, because no pile of money is worth losing their good name.</p>
+
+<h2 class="section">University</h2>
+<p>Adukkiya kodi (அடுக்கிய கோடி) is &#x27;crores stacked one upon another&#x27;, hyperbole for limitless wealth, and perinum (பெறினும், &#x27;even if they obtain&#x27;) concedes the strongest temptation. Kundruva (குன்றுவ) are acts that diminish, literally &#x27;that make small&#x27;, and the commentators unanimously take the diminished thing to be the family&#x27;s honour: Mu. Varadarasanar speaks of faults that would lower the family&#x27;s distinction, and Kalaignar of deeds that would spoil that excellence. The couplet thus sets the chapter&#x27;s characteristic contrast between wealth (Porul) and the inherited good name that the section on family (Kudiyiyal) values above it. The Tamil text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">King Harishchandra, tested by the sage Vishvamitra, gives away his whole kingdom, sells his wife and son and himself becomes a servant at a cremation ground rather than break his given word.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/the-markandeya-purana" target="_blank" rel="noopener">Markandeya Purana, chs. 7-8 (Harishchandra episode)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Puranic story makes Harishchandra the ideal of a king of the Solar line who will lose every possession before he loses his truth.</div>
+  <div class="tieback">Like the Kural&#x27;s well-born, he refuses any gain that would require a shameful act.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Again, the devil taketh him up into an exceeding high mountain, and sheweth him all the kingdoms of the world, and the glory of them; And saith unto him, All these things will I give thee, if thou wilt fall down and worship me. Then saith Jesus unto him, Get thee hence, Satan.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 4:8-10 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Offered every kingdom on earth in exchange for one act of false worship, Jesus refuses outright.</div>
+  <div class="tieback">This is the Kural&#x27;s &#x27;crores upon crores&#x27; offered and declined.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And do not exchange the covenant of Allah for a small price. Indeed, what is with Allah is best for you, if only you could know.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 16:95 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an warns that any worldly price, however large it seems, is small next to keeping faith.</div>
+  <div class="tieback">Both texts call any payment for a dishonourable act too low.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Rabbi Yose ben Kisma tells how a man offered him a thousand thousand gold dinars, precious stones and pearls to come and live in his town, and he replied that even for all the silver and gold in the world he would live only in a place of Torah.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 6:9</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The sage turns down a fortune rather than leave the setting that keeps him true to his calling.</div>
+  <div class="tieback">His &#x27;thousand thousand&#x27; dinars echo the Kural&#x27;s piled-up crores, refused for something worth more.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;He is indeed virtuous, wise, and righteous who neither for his own sake nor for the sake of another (does any wrong), who does not crave for sons, wealth, or kingdom, and does not desire success by unjust means.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 84 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada defines the righteous person as one who will not seek wealth or power by wrong means.</div>
+  <div class="tieback">Like the Kural, it sets wealth gained through wrongdoing below the person&#x27;s integrity.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">When Indra, in disguise, urges King Nami to increase his gold, silver and treasure before renouncing, Nami answers that even countless mountains of gold and silver as large as Kailasa would not satisfy a greedy man, for desire is as endless as the sky.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra, Lecture 9 (The Pravrajya of King Nami), tr. Hermann Jacobi, SBE 45</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The royal sage Nami refuses to let any amount of treasure turn him from his chosen path.</div>
+  <div class="tieback">His mountains of gold are the Jain counterpart to the Kural&#x27;s piled crores, and both are refused.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;To take what rightfully belongs to another, is like a Muslim eating pork, or a Hindu eating beef.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 141, Raag Majh, Majh ki Vaar, salok of Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Majh ki Vaar, Guru Nanak says that taking what is not rightfully one&#x27;s own is as forbidden as the strongest food taboo of each community.</div>
+  <div class="tieback">The Kural says the noble will not do anything base even for crores of wealth; Guru Nanak makes ill-gotten gain something to recoil from absolutely.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Prodicus&#x27;s fable, the young Heracles at a crossroads is met by Vice, who promises him every pleasure without toil, and by Virtue, who promises honour through hard work, and he chooses Virtue.</div>
+  <div class="cite">&mdash; Xenophon, Memorabilia 2.1 (Prodicus&#x27;s Choice of Heracles) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The hero turns down an easy life of luxury for the harder road that keeps his honour.</div>
+  <div class="tieback">Like the Kural&#x27;s well-born, Heracles will not trade his worth for easy gain.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">At his trial Socrates tells the jury that he will not stop doing philosophy even to be acquitted, and that virtue does not come from money, but money and every other good come from virtue.</div>
+  <div class="cite">&mdash; Plato, Apology 29d-30b (tr. Benjamin Jowett) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Socrates refuses to buy his life by abandoning what he thinks right.</div>
+  <div class="tieback">He shows the Kural&#x27;s resolve: no gain, even life itself, is worth a deed that lowers one&#x27;s worth.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">King Albert I of Belgium rejects the German ultimatum</div>
+  <div class="rle-meta">2-3 August 1914 &middot; Brussels, Belgium</div>
+  <div class="quote is-paraphrase">On 2 August 1914 Germany delivered an ultimatum demanding free passage for its armies across neutral Belgium, offering assurances that Belgium would keep its independence and possessions after the war if it agreed. The Belgian government, meeting under King Albert I, rejected the demand on 3 August, stating that to accept would sacrifice the nation&#x27;s honour and betray its duty. German forces invaded the next day, and the violation of Belgian neutrality brought Britain into the war.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Belgium chose to defend its pledged neutrality at enormous cost rather than accept a safe bargain that would have dishonoured it.</div>
+  <div class="tieback">The kural says the nobly born will not do a lowering deed even for untold riches, and King Albert would not trade his country&#x27;s honour for the guarantees Germany offered.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-96/" target="_blank" rel="noopener">Thirukkural Chapter 96: குடிமை / Nobility (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://thirukkural.net/ta/kural/adhigaram-096.html" target="_blank" rel="noopener">குடிமை - அதிகாரம் 96 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.wisdomlib.org/hinduism/book/the-markandeya-purana" target="_blank" rel="noopener">Markandeya Purana, Harishchandra episode (tr. F. E. Pargiter)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit, tr. Dr. Joshua Kulp), 2:5, 3:2, 4:1, 4:15, 4:21, 5:13</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">The Choice of Hercules (Prodicus), as recorded in Xenophon, Memorabilia 2.1.21-33 <span class="tier">[primary source]</span></li>
+<li id="cite-11">Apology (Plato (recording Socrates)) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/print/article/12708" target="_blank" rel="noopener">Albert I, king of Belgium</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.nationalarchives.gov.uk/europe/belgium/" target="_blank" rel="noopener">Belgium (First World War: Europe)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0953.html">&larr; Kural 953</a>
+  <a href="kural-0955.html">Kural 955 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-096.html">Lineage</a>
+  <a class="skip-btn" href="kural-0961.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

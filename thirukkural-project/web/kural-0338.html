@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 338 — Impermanence | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 338</h1>
+<p class="adhikaram"><a href="adhikaram-034.html">Impermanence</a> &middot; Nilaiyaamai &middot; <span class="tamil">நிலையாமை</span></p>
+
+<div class="tamil-text">குடம்பை தனித்துஒழியப் புள்பறந் தற்றே
+உடம்பொடு உயிரிடை நட்பு.</div>
+<div class="translit">Kudambai thaniththu ozhiyap pul parandhatre
+Udambodu uyiridai natpu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The friendship between the body and the soul is like a bird that flies away and leaves its egg (or nest) behind, empty and alone.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A baby bird grows inside an egg, but one day it breaks out and flies off, leaving the empty shell behind. This kural says our life and our body are like that: one day life flies off, and the body is left behind like the shell.</p>
+
+<h2 class="section">University</h2>
+<p>The meaning turns on the word “kudambai”, which Parimelazhagar and many commentators gloss as ‘egg’ (so the chick breaks out and leaves the shell), while others read it as ‘nest’ (so a grown bird abandons its home); both readings agree that the container is left “thaniththu ozhiya” (abandoned, alone). Calling the relationship “natpu” (friendship) is pointed, since it is a friendship of convenience that ends the moment the occupant departs. The egg reading adds the idea that the body was the soul&#x27;s place of formation, not its permanent home, which prepares for kural 340. The image of soul and body as distinct, one of them leaving the other, parallels the Gita&#x27;s worn-out garments, Ecclesiastes&#x27; spirit returning to God, and Plato&#x27;s definition of death in the Phaedo as the separation of soul from body.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;As a person sheds worn-out garments and wears new ones, likewise, at the time of death, the soul casts off its worn-out body and enters a new one.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita 2.22</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna explains that the soul discards the body at death as one discards old clothes.</div>
+  <div class="tieback">In both images the soul leaves and the body is left behind like an empty covering: garments in the Gita, shell or nest in the Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;We are confident, I say, and willing rather to be absent from the body, and to be present with the Lord.&rdquo;</div>
+  <div class="cite">&mdash; 2 Corinthians 5:8 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul speaks of leaving the body behind at death to be with Christ.</div>
+  <div class="tieback">Both texts see the body as something the self eventually leaves, not the self&#x27;s permanent place.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;No! When the soul has reached the collar bones ... And the dying one is certain that it is the [time of] separation&rdquo;</div>
+  <div class="cite">&mdash; Quran 75:26, 75:28 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Quran describes the soul rising in the dying body, and the dying person knowing it is time for separation.</div>
+  <div class="tieback">‘Separation’ (al-firaq) is the Kural&#x27;s parting of bird and shell, soul and body.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Then shall the dust return to the earth as it was: and the spirit shall return unto God who gave it.&rdquo;</div>
+  <div class="cite">&mdash; Ecclesiastes 12:7 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Ecclesiastes describes death as the body returning to dust and the spirit returning to God.</div>
+  <div class="tieback">Body and spirit part ways at death: the body stays behind like the Kural&#x27;s empty shell, while the spirit goes on.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Ere long, alas! this body will lie upon the earth, unheeded and lifeless, like a useless log.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 41 <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha reminds his followers that the body will soon lie lifeless and ignored, like a discarded log.</div>
+  <div class="tieback">The abandoned body, left alone and useless, is the Kural&#x27;s deserted shell or nest.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;(The soul) cannot be apprehended by the senses, because it possesses no corporeal form, and since it possesses no corporeal form it is eternal. The fetter of the soul has been ascertained to be caused by its bad qualities, and this fetter is called the cause of worldly existence.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 14.19 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Answering the materialist claim that the soul is produced by and perishes with the body, Bhṛgu&#x27;s sons say the soul is formless and eternal, only temporarily bound to embodiment by karma.</div>
+  <div class="tieback">The Kural pictures body and soul as egg (or nest) and bird, the one abandoned when the other leaves; the Jain verse likewise holds the soul to be distinct from the body and only temporarily joined to it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;When the soul-swan flies away, by the Command of the Lord, her dust mingles with dust.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1111, Raag Tukhaari, Chhant, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Guru Nanak pictures death as the soul, imagined as a swan, flying off at God&#x27;s command while the body it leaves behind returns to dust.</div>
+  <div class="tieback">The Kural compares the bond of body and soul to a bird leaving its egg or nest empty behind it; Guru Nanak uses the same image of a bird flying from an abandoned body.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When Patroclus is struck down by Hector, his soul leaves his limbs and flies down to the house of Hades, mourning its fate and the youth and strength it leaves behind.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, Iliad 16.855-857</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Homer pictures the psyche flying out of the body at the moment of death.</div>
+  <div class="tieback">The soul flying away and leaving the body behind is the Kural&#x27;s bird deserting its shell.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;And is this anything but the separation of soul and body? And being dead is the attainment of this separation; when the soul exists in herself, and is parted from the body and the body is parted from the soul-that is death?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://chs.harvard.edu/primary-source/plato-phaedo-sb/" target="_blank" rel="noopener">Plato, Phaedo 64c (Jowett translation)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Socrates defines death as the soul and the body parting from each other.</div>
+  <div class="tieback">Plato&#x27;s definition is the philosophical form of the Kural&#x27;s image: two companions whose ‘friendship’ ends when one departs.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Benjamin Franklin writes his own mock epitaph</div>
+  <div class="rle-meta">1728 &middot; Philadelphia, Pennsylvania, British America</div>
+  <div class="quote is-paraphrase">As a young printer of about 22, Benjamin Franklin wrote a humorous epitaph for himself, describing his body in the grave as the cover of an old book whose contents had been torn out and whose lettering and gilding had been stripped away. He added that the work itself would not be lost but would appear again in a new and better edition. Several autograph copies survive, and in his will he asked for a simple inscription on his actual gravestone instead.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Franklin&#x27;s famous image treats the body as an outer case that is left empty once its real contents depart. It became one of the best-known epitaphs in American literature.</div>
+  <div class="tieback">The kural compares body and life to an egg or nest left empty and alone when the bird flies off, and Franklin pictured his own body as an empty book cover left behind.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-34/" target="_blank" rel="noopener">Thirukkural Chapter 34: நிலையாமை / Instability (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A034.html" target="_blank" rel="noopener">34. நிலையாமை (Thirukkural with word-by-word gloss and commentary)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita, The Song of God (Swami Mukundananda)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, The Iliad, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://chs.harvard.edu/primary-source/plato-phaedo-sb/" target="_blank" rel="noopener">Plato, Phaedo 64a (trans. Benjamin Jowett)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://founders.archives.gov/documents/Franklin/01-01-02-0033" target="_blank" rel="noopener">Epitaph, 1728 (Benjamin Franklin)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://christchurchphila.org/remembering-benjamin-franklin/" target="_blank" rel="noopener">Remembering Benjamin Franklin</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0337.html">&larr; Kural 337</a>
+  <a href="kural-0339.html">Kural 339 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-034.html">Impermanence</a>
+  <a class="skip-btn" href="kural-0341.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

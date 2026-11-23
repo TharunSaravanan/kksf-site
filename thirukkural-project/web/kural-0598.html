@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 598 — Energetics | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 598</h1>
+<p class="adhikaram"><a href="adhikaram-060.html">Energetics</a> &middot; Ookkamudaimai &middot; <span class="tamil">ஊக்கமுடைமை</span></p>
+
+<div class="tamil-text">உள்ளம் இலாதவர் எய்தார் உலகத்து
+வள்ளியம் என்னுஞ் செருக்கு.</div>
+<div class="translit">Ullam ilaadhavar eydhaar ulagaththu
+Valliyam ennum serukku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People without inner drive will never know the proud joy of saying, “We are the generous givers of the world.”</p>
+
+<h2 class="section">Elementary</h2>
+<p>To share lots of cookies with your friends, you first have to bake them. The Kural says people without energy never get to feel the happy pride of being the one who gives to everyone, because they never make enough to give.</p>
+
+<h2 class="section">University</h2>
+<p>‘Ullam ilaadhavar’ again uses ullam for ookkam; ‘vallium ennum serukku’ is the elation or proud self-regard (serukku) of being able to say ‘we are liberal’ (valliyam, from vallal, a munificent patron). The logic, drawn out by Parimelazhagar, is that liberality requires wealth, wealth requires effort, and effort requires ookkam, so the unenergetic are cut off from one of the highest satisfactions of kingship and householdership, the role of the vallal celebrated in Sangam poetry (the seven great patrons, kadaiyezhu vallalgal). Solomon Pappaiah calls it ‘mana uyarvu’, uplift of mind, while Kalaignar reads ‘ullam’ as the eager will to give freely. Sivayogi Sivakumar’s reading, ‘pride of having conquered the world’, diverges from the mainstream. Thirukkural.net’s ‘the poor in spirit can never attain the pride of being the generous patrons of the world’ matches the majority view; the Tamil is identical in both sources.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The teacher’s parting instruction to graduating students tells them to give with faith, not without faith, to give with liberality (śriyā), with modesty, with awe and with understanding.</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Taittiriya_Upanishad" target="_blank" rel="noopener">Taittiriya Upanishad 1.11.3</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Upanishad treats generous giving as a mark of a noble, full-hearted life.</div>
+  <div class="tieback">The Kural adds that such magnificent giving is only possible for the energetic.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Every man according as he purposeth in his heart, so let him give; not grudgingly, or of necessity: for God loveth a cheerful giver.&rdquo;</div>
+  <div class="cite">&mdash; 2 Corinthians 9:7 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul says true giving flows from a willing, glad heart rather than reluctance.</div>
+  <div class="tieback">Both texts see generous giving as springing from largeness of heart.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;The upper hand is better than the lower hand. The upper hand is that of the giver and the lower (hand) is that of the beggar.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:1429" target="_blank" rel="noopener">Sahih al-Bukhari 1429</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet praises the dignity of being the one who gives rather than the one who must ask.</div>
+  <div class="tieback">The Kural likewise prizes the honour of being a giver, which the unenergetic never attain.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Proverbs observes that one person scatters freely and yet grows richer, while another withholds and comes to want, and that the generous soul will be enriched and the one who waters others will himself be watered.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">Proverbs 11:24-25</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The sages praise the open-handed, large-spirited person who gives freely.</div>
+  <div class="tieback">Like the Kural, Proverbs treats generosity as the mark of a big spirit.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Dhammapada says that misers do not reach the heavenly realms and fools do not praise generosity, but the wise rejoice in giving and are happy because of it.</div>
+  <div class="cite">&mdash; Dhammapada 177 <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha contrasts small-minded misers with the wise, who find joy in giving.</div>
+  <div class="tieback">The Kural similarly says only the large-spirited taste the joy of generosity.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;He gave up his gold and silver, his troops and chariots, and distributed, portioned out, and gave away his valuable treasures (consisting of) riches, corn, gold, pearls, &amp;c., and distributed among those who wanted to make presents to others. Thus he gave away during a whole year.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Ācārāṅga Sūtra 2.15.17 (tr. Hermann Jacobi, SBE 22, 1884; wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Before renouncing the world Mahavira spent a whole year giving away his wealth, a great gift that Jain tradition says every Tirthankara makes before renunciation.</div>
+  <div class="tieback">The Kural says only those with energy of spirit can know the joy of being the world&#x27;s generous givers; in Jainism the year of giving comes from the same resolute spirit that leads to renunciation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;One who works for what he eats, and gives some of what he has - O Nanak, he knows the Path.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1245, Raag Saarang (Saarang ki Vaar, salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak joins honest labour (kirat karni) to sharing (vand chhakna): one who earns by his own effort can give from his own hand.</div>
+  <div class="tieback">The Kural says those without energy of spirit will never know the joy of being generous givers; Guru Nanak likewise makes one&#x27;s own labour the basis of true giving.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">The poor elderly couple Baucis and Philemon, who had almost nothing, eagerly served disguised Zeus and Hermes their best food and wine when every rich household had turned the gods away.</div>
+  <div class="cite">&mdash; Ovid, Metamorphoses 8.618-724 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The poorest couple in the district proved the most generous because their hearts were large.</div>
+  <div class="tieback">The story shows that the pride of generosity belongs to the large-hearted, as the Kural says.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle’s great-souled (megalopsychos) person is the sort who confers benefits but is ashamed to receive them, and who likes to repay more than he received.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics 4.3 (1124b)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle’s ideal of greatness of soul includes taking pride in being a benefactor.</div>
+  <div class="tieback">This matches the Kural’s ‘pride of being generous’, which belongs only to those with a large spirit.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Milton Hershey rises from bankruptcy to found a school for orphaned boys</div>
+  <div class="rle-meta">1876-1918 &middot; Philadelphia, New York and Hershey, Pennsylvania, United States</div>
+  <div class="quote is-paraphrase">Milton Hershey&#x27;s first candy business in Philadelphia went bankrupt after six years, and a second attempt in New York also failed. Returning to Lancaster with little money, he built the Lancaster Caramel Company, sold it in 1900 for one million dollars, and went on to build the Hershey Chocolate Company. On 15 November 1909 he and his wife Catherine signed the deed of trust founding the Hershey Industrial School for orphaned boys, and in 1918 he placed his controlling interest in the chocolate company in trust for the school.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">The same drive that carried Hershey through repeated business failures later made him one of the most generous benefactors of his time.</div>
+  <div class="tieback">The kural says those without energy of spirit will never know the proud joy of being generous givers, and Hershey&#x27;s school shows the giving that energy made possible.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-60/" target="_blank" rel="noopener">ஊக்கமுடைமை / Energy, Chapter 60 (Kurals 591-600) with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-060.html" target="_blank" rel="noopener">ஊக்கமுடைமை - அதிகாரம் 60 - திருக்குறள் (Magnanimity)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://en.wikisource.org/wiki/Taittiriya_Upanishad" target="_blank" rel="noopener">Taittiriya Upanishad (Ananda Valli, the graded calculus of bliss, 2.8-2.9)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:1429" target="_blank" rel="noopener">Sahih al-Bukhari 1429 (Book of Zakat)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Ākārāṅga Sūtra (Acaranga Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Metamorphoses, Book VIII (Baucis and Philemon) (Ovid) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://hersheyarchives.org/encyclopedia/hershey-milton-snavely-1857-1945/" target="_blank" rel="noopener">Milton Snavely Hershey, 1857-1945</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://hersheyarchives.org/encyclopedia/history-of-milton-hershey-school/" target="_blank" rel="noopener">History of Milton Hershey School</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.britannica.com/biography/Milton-Snavely-Hershey" target="_blank" rel="noopener">Milton Snavely Hershey</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0597.html">&larr; Kural 597</a>
+  <a href="kural-0599.html">Kural 599 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-060.html">Energetics</a>
+  <a class="skip-btn" href="kural-0601.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

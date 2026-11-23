@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 301 — The Not Being Angry | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 301</h1>
+<p class="adhikaram"><a href="adhikaram-031.html">The Not Being Angry</a> &middot; Vekulaamai &middot; <span class="tamil">வெகுளாமை</span></p>
+
+<div class="tamil-text">செல்லிடத்துக் காப்பான் சினங்காப்பான் அல்லிடத்துக்
+காக்கின்என் காவாக்கா லென்.</div>
+<div class="translit">Sellidaththuk kaappaan sinangaappaan allidaththuk
+Kaakkin en kaavaakkaal en.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Holding back anger only counts when you could actually hurt someone with it. If your anger has no power to do harm anyway, what does it matter whether you hold it back or not?</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a big kid who could easily push a small kid, but chooses not to. That is real self-control. If a small kid can&#x27;t push a big kid anyway, &#x27;not pushing&#x27; isn&#x27;t really a choice. This kural says being calm only counts when you really could have hurt someone and you don&#x27;t.</p>
+
+<h2 class="section">University</h2>
+<p>Valluvar opens the chapter by redefining the virtue itself: restraint of anger (sinam kaaththal) is morally meaningful only where one has the power (sellidam, literally &#x27;the place where it goes through&#x27;) to make the anger effective. Classical commentators such as Parimelazhagar read sellidam as the case of anger toward those weaker than oneself, where retaliation would succeed; restraint toward the stronger is mere prudence or fear. The couplet thus locates virtue in the gap between capacity and action, anticipating the Aristotelian and Stoic view that a virtue is shown only where its opposite is genuinely available. The rhetorical question of the second line (&#x27;what if he guards it, what if he does not?&#x27;) dismisses &#x27;restraint&#x27; that costs nothing as morally empty.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Mahabharata&#x27;s Adi Parva, the sage Vasishtha, who possessed immense spiritual power, suffered the killing of his hundred sons through the machinations tied to his rival Vishvamitra, yet he did not use that power to destroy Vishvamitra; instead he bore his grief without retaliation.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Adi Parva (Chaitraratha Parva, the Vasishtha–Vishvamitra episode)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Vasishtha is the classic Indian image of a sage who could have annihilated his enemy but chose not to unleash his wrath.</div>
+  <div class="tieback">This is exactly the kural&#x27;s &#x27;restraint where anger would take effect&#x27;: Vasishtha&#x27;s patience matters because his power to punish was real.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Thinkest thou that I cannot now pray to my Father, and he shall presently give me more than twelve legions of angels?&rdquo;</div>
+  <div class="cite">&mdash; Matthew 26:53 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">At his arrest, Jesus tells Peter to put away his sword and points out that he could summon overwhelming force, yet he chooses not to.</div>
+  <div class="tieback">Like the kural, the restraint is meaningful precisely because the power to retaliate is fully available.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;If anyone suppresses anger when he is in a position to give vent to it, Allah, the Exalted, will call him on the Day of Resurrection over the heads of all creatures...&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/abudawud:4777" target="_blank" rel="noopener">Sunan Abi Dawud 4777 (graded hasan by al-Albani)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Prophet singles out for special honour the person who swallows anger at the very moment he is able to act on it.</div>
+  <div class="tieback">Near one-to-one with the kural: the merit lies in restraining anger &#x27;when in a position to give vent to it&#x27;, which is exactly Valluvar&#x27;s sellidam.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Who is mighty? He who subdues his [evil] inclination, as it is said: ‘He that is slow to anger is better than the mighty; and he that rules his spirit than he that takes a city’ (Proverbs 16:32).&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 4:1 (trans. Joshua Kulp, via Sefaria)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Ben Zoma redefines strength: real might is mastery over one&#x27;s own impulses, and he grounds this in the verse praising the one who is slow to anger.</div>
+  <div class="tieback">Both texts say that the real test of power is turning it inward to master one&#x27;s own anger rather than outward against others.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;He who checks rising anger as a charioteer checks a rolling chariot, him I call a true charioteer. Others only hold the reins.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 222 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha compares controlling anger to reining in a chariot already in motion; merely holding the reins when nothing is moving is not mastery.</div>
+  <div class="tieback">Like the kural, only restraint at the moment of real momentum counts; &#x27;others only hold the reins&#x27; parallels Valluvar&#x27;s dismissal of costless restraint.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Suddenly he stopped, like the ocean at the earth as a boundary and, noble, thought to himself: ‘Shame on a brother’s murder which I, as well as he, greedy for a kingdom, more wicked even than a hunter, have undertaken.’&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra, Book I (Ādīśvaracaritra), ch. 5, part 11, &#x27;The fight between Bharata and Bāhubali&#x27; (tr. Helen M. Johnson; wisdomlib.org)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Hemacandra&#x27;s account of the duel, Bāhubali has already beaten Bharata in every contest and has just had the cakra hurled at him. He raises his fist to crush his brother, then stops in mid-charge, condemns his own fury, and renounces the kingdom to become a monk.</div>
+  <div class="tieback">Valluvar says restraint only counts where anger could actually do harm. Bāhubali&#x27;s fist was raised against a brother he had already defeated, so holding back meant giving up a blow that would surely have landed.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">According to Sikh tradition, Datu, the son of Guru Angad, resented that Amar Das had been made Guru in his place. He came to Goindwal, taunted Amar Das as a former water-carrier, and kicked him off his seat. Guru Amar Das did not retaliate. He humbly asked Datu&#x27;s pardon, saying his foot must have been hurt, and then withdrew quietly to his home village.</div>
+  <div class="cite">&mdash; <a href="https://en.wikipedia.org/wiki/Guru_Amar_Das" target="_blank" rel="noopener">Wikipedia, &#x27;Guru Amar Das&#x27; (paraphrase of traditional accounts)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Guru Amar Das was by then Guru with a following of his own, yet he answered a public insult and a physical assault with humility. Sikh tradition remembers the episode as a model of forbearance.</div>
+  <div class="tieback">The Kural says true restraint of anger is restraint where one has the power to act on it. Guru Amar Das held back his anger exactly where his position would have let it take effect.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;He stayed his hand on the silver hilt of his sword, and thrust it back into the scabbard as Minerva bade him.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, Iliad, Book 1 (trans. Samuel Butler)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Insulted by Agamemnon, Achilles is already drawing his sword to kill him when Athena (Minerva) intervenes and he sheathes it.</div>
+  <div class="tieback">A picture of anger checked at the moment it could take effect, though in Homer the restraint comes from a goddess rather than from Achilles&#x27; own virtue.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Am I more powerful than Philip? yet he allowed a man to curse him with impunity. Have I more authority in my own house than the Emperor Augustus possessed throughout the world?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Of_Anger" target="_blank" rel="noopener">Seneca, On Anger (De Ira), Book III (trans. Aubrey Stewart, 1900)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Seneca advises that whenever we are provoked we should recall rulers who had total power to punish yet chose to let insults pass.</div>
+  <div class="tieback">Seneca, like Valluvar, measures self-control by what one could do with one&#x27;s power and refrains from doing.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Grant offers generous terms to Lee&#x27;s army at Appomattox</div>
+  <div class="rle-meta">9 April 1865 &middot; McLean House, Appomattox Court House, Virginia, United States</div>
+  <div class="quote is-paraphrase">With the Confederate Army of Northern Virginia surrounded, General Robert E. Lee met General Ulysses S. Grant in Wilmer McLean&#x27;s parlour to surrender. Grant&#x27;s terms paroled the Confederate soldiers and sent them home rather than to prison camps, allowed officers to keep their side arms, horses and baggage, and permitted men who owned horses or mules to take them home. Grant also offered 25,000 rations for Lee&#x27;s hungry troops, and at the end of the meeting he and his staff raised their hats to Lee as he rode away.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">At the moment when Grant held complete power over a defeated enemy that had cost his side dearly, he chose restraint and generosity instead of punishment.</div>
+  <div class="tieback">The kural says the true test of restraining anger comes where one has the power to make it effective, and Grant, with Lee&#x27;s army at his mercy, showed exactly that restraint.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-31/" target="_blank" rel="noopener">Thirukkural Chapter 31 – வெகுளாமை / Restraining Anger (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://dheivegam.com/thirukkural-vegulaamai-adhikaram/" target="_blank" rel="noopener">திருக்குறள் அதிகாரம் 31 – வெகுளாமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.thirukkural.net/en/kural/kural-0301.html" target="_blank" rel="noopener">Kural 301 – Absence of Wrath</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/abudawud:4777" target="_blank" rel="noopener">Sunan Abi Dawud 4777 (Kitab al-Adab: Regarding suppressing anger)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://en.wikipedia.org/wiki/Guru_Amar_Das" target="_blank" rel="noopener">Guru Amar Das</a> <span class="tier">[web source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, The Iliad, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://en.wikisource.org/wiki/Of_Anger" target="_blank" rel="noopener">Seneca, Of Anger (De Ira), trans. Aubrey Stewart (1900)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.nps.gov/apco/learn/historyculture/the-surrender-meeting.htm" target="_blank" rel="noopener">The Surrender Meeting</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://encyclopediavirginia.org/entries/appomattox-surrender-at/" target="_blank" rel="noopener">Appomattox, Surrender at (Stephen Cushman)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0300.html">&larr; Kural 300</a>
+  <a href="kural-0302.html">Kural 302 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-031.html">The Not Being Angry</a>
+  <a class="skip-btn" href="kural-0311.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

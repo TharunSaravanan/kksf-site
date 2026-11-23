@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 111 — Impartiality | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 111</h1>
+<p class="adhikaram"><a href="adhikaram-012.html">Impartiality</a> &middot; Naduvu Nilaimai &middot; <span class="tamil">நடுவு நிலைமை</span></p>
+
+<div class="tamil-text">தகுதி எனவொன்று நன்றே பகுதியால்
+பாற்பட்டு ஒழுகப் பெறின்.</div>
+<div class="translit">Thakudhi enavondru nandre pakudhiyaal
+Paarpattu ozhukap perin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Being fair is truly good when a person treats everyone rightly, whether they are enemies, strangers or friends.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a referee who calls the game the same way whether the player is his best friend, a stranger, or someone he doesn’t like. That fairness to everyone is what this kural calls a truly good quality.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter opens by naming impartiality with the word தகுதி (thakudhi, “fitness, propriety, worthiness”), implying that fairness is not one virtue among many but the very measure of whether a person is fit to be trusted. The key phrase பகுதியால் பாற்பட்டு (“keeping to what is due in each division”) was read by the medieval commentator Parimelazhagar, and after him by modern commentators such as Solomon Pappaiah and Karunanidhi, as the threefold division of people into enemies, strangers (neutrals) and friends; the test of justice is that the same standard applies across all three. Placing this chapter in the Illaraviyal (the householder’s section) signals that Valluvar sees impartiality as an everyday domestic and civic duty, not only a king’s or judge’s duty (royal justice is treated separately in chapter 55, செங்கோன்மை). The idea parallels the classical definition of justice as rendering to each their due, and Aristotle’s observation that justice, unlike the other virtues, is directed essentially toward others.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;A person is considered still further advanced when he regards honest well-wishers, affectionate benefactors, the neutral, mediators, the envious, friends and enemies, the pious and the sinners all with an equal mind.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 6.9</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Krishna lists every kind of person, from friends to enemies to neutral bystanders, and says the advanced person treats them all with the same even mind (sama-buddhi).</div>
+  <div class="tieback">Almost the same list the Kural’s commentators give (friends, strangers, enemies), with the same demand: one equal standard for all of them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But if ye have respect to persons, ye commit sin, and are convinced of the law as transgressors.&rdquo;</div>
+  <div class="cite">&mdash; James 2:9 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">James warns churches against giving rich visitors the good seats and poor visitors the floor. Favouritism, “respect of persons,” is called outright sin.</div>
+  <div class="tieback">Both texts treat favouring one group over another as a moral failure, and even-handed treatment as the real virtue.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O you who have believed, be persistently standing firm for Allah, witnesses in justice, and do not let the hatred of a people prevent you from being just. Be just; that is nearer to righteousness.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 5:8 (Saheeh International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Qur’an commands believers to stay just even toward people they hate. Hostility is no excuse for bending fairness.</div>
+  <div class="tieback">Matches the Kural’s point that fairness must hold even toward enemies, the hardest of the three “divisions.”</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Ye shall do no unrighteousness in judgment: thou shalt not respect the person of the poor, nor honour the person of the mighty: but in righteousness shalt thou judge thy neighbour.&rdquo;</div>
+  <div class="cite">&mdash; Leviticus 19:15 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Torah forbids tilting a judgment either way, whether out of pity for the poor or deference to the powerful.</div>
+  <div class="tieback">Same principle as the Kural: every category of person gets the same straight standard.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Not by passing arbitrary judgments does a man become just; a wise man is he who investigates both right and wrong. He who does not judge others arbitrarily, but passes judgment impartially according to the truth, that sagacious man is a guardian of law and is called just.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 256–257 (trans. Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada’s chapter “The Just” says a person earns the title “just” only by judging impartially and according to truth, not by hasty or biased verdicts.</div>
+  <div class="tieback">The Kural and the Dhammapada both define the just person by impartiality, not by status.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Impartiality towards all beings in the world, whether friends or enemies, and abstention from injury to living beings throughout the whole life: this is a difficult duty.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 19.25 (tr. Hermann Jacobi, SBE 45; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">When the prince Mṛgāputra seeks to renounce, his parents warn him that the monk&#x27;s path demands an even-handed attitude toward friend and foe alike, together with lifelong non-injury.</div>
+  <div class="tieback">Valluvar defines the virtue of fitness as acting rightly toward every group, whether enemies, strangers or friends, and Jain scripture names this same impartiality as one of the hardest duties.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">During the fighting at Anandpur, Bhai Kanhaiya, a Sikh of Guru Gobind Singh, carried water to the wounded of both armies, Sikh and Mughal alike. When Sikhs complained that he was helping the enemy, he answered that he saw no enemy, only the Guru in every face, and the Guru approved and gave him ointment to dress the wounds of all.</div>
+  <div class="cite">&mdash; <a href="https://sikhnet.com/node/2362" target="_blank" rel="noopener">SikhNet, &#x27;The Story of Bhai Kanhaiya Singh&#x27; (paraphrase of the Sikh tradition)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The story is the classic Sikh image of service that makes no distinction between friend and foe; it inspired later Sikh humanitarian seva.</div>
+  <div class="tieback">It is a lived version of the Kural&#x27;s fitness: dealing rightly and equally with enemies, strangers and friends.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;But they who give straight judgements to strangers and to the men of the land, and go not aside from what is just, their city flourishes, and the people prosper in it&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 225–227 (trans. Evelyn-White)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hesiod tells his brother that Zeus blesses cities whose judges treat foreigners and citizens with the same straight justice.</div>
+  <div class="tieback">Hesiod’s “strangers and men of the land” lines up with the Kural’s strangers and one’s own people, both judged the same way.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;For this same reason justice, alone of the virtues, is thought to be ‘another’s good’, because it is related to our neighbour; for it does what is advantageous to another, either a ruler or a copartner.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics V.1 (trans. W. D. Ross)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle notes that justice is the one virtue that looks outward to others, so it is tested in how we treat people other than ourselves.</div>
+  <div class="tieback">Like the Kural, it treats justice as a relational virtue proved by how fairly we deal with every other person.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Henry Dunant and the women of Castiglione after Solferino</div>
+  <div class="rle-meta">24 June 1859 and following days &middot; Solferino and Castiglione delle Stiviere, Lombardy, Italy</div>
+  <div class="quote is-paraphrase">Swiss businessman Henry Dunant arrived near the northern Italian town of Solferino in time to witness the aftermath of the battle of 24 June 1859 between the French and Piedmontese-Sardinian armies and the Austrian army. In nearby Castiglione delle Stiviere he joined local people caring for the wounded in the town&#x27;s main church, which sheltered more than 500 men, and the town&#x27;s women tended French, Italian and Austrian soldiers without distinction. Dunant&#x27;s book A Memory of Solferino (1862) led to the founding of the Red Cross movement and to the first Geneva Convention, signed in 1864.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Care given equally to allies and enemies on a battlefield became the founding principle of impartial humanitarian aid.</div>
+  <div class="tieback">The kural calls it true fitness to deal rightly with enemies, strangers and friends alike; Dunant and the women of Castiglione treated soldiers of every army the same.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-12/" target="_blank" rel="noopener">Thirukkural Chapter 12: நடுவு நிலைமை / Impartiality (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar commentaries, Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-012.html" target="_blank" rel="noopener">நடுவு நிலைமை - அதிகாரம் 12 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html" target="_blank" rel="noopener">Tirukkural of Tiruvalluvar (Tamil script, Unicode e-text)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sikhnet.com/node/2362" target="_blank" rel="noopener">The Story of Bhai Kanhaiya Singh</a> <span class="tier">[web source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, tr. W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.nobelprize.org/prizes/peace/1901/dunant/biographical/" target="_blank" rel="noopener">Henry Dunant - Biographical (Nobel Lectures, Peace 1901-1925 (ed. Frederick W. Haberman))</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://blogs.icrc.org/cross-files/a-memory-of-solferino-the-fiaccolata-and-a-brief-research-guide/" target="_blank" rel="noopener">A Memory of Solferino: The &#x27;Fiaccolata&#x27; and a Brief Research Guide (Clara Palmisano)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0110.html">&larr; Kural 110</a>
+  <a href="kural-0112.html">Kural 112 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-012.html">Impartiality</a>
+  <a class="skip-btn" href="kural-0121.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

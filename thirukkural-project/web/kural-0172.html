@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 172 — Anti-covet Action | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 172</h1>
+<p class="adhikaram"><a href="adhikaram-018.html">Anti-covet Action</a> &middot; Vehkaamai &middot; <span class="tamil">வெஃகாமை</span></p>
+
+<div class="tamil-text">படுபயன் வெஃகிப் பழிப்படுவ செய்யார்
+நடுவன்மை நாணு பவர்.</div>
+<div class="translit">Padupayan vehkip pazhippaduva seyyaar
+Naduvanmai naanu pavar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who are ashamed to be unfair will never do shameful things just because they want the profit those things could bring.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Suppose you could win a game by quietly peeking at someone’s cards. A person who would feel embarrassed to cheat just won’t do it, even if it means winning. This kural says that feeling of shame protects you from doing wrong for a prize.</p>
+
+<h2 class="section">University</h2>
+<p>Where kural 171 threatened consequences, 172 names the internal safeguard: நாண் (naan), a moral sense of shame or modesty, here specifically shame at நடுவன்மை (naduvanmai, “non-equity”). The phrase படுபயன் (padupayan) denotes the gain that “falls” to one, the benefit that would accrue from taking another’s property, and பழிப்படுவ (pazhippaduva) are acts that incur public blame. Valluvar’s psychology is notable: the person of integrity is restrained less by fear of punishment than by an internalised aversion to injustice, a theme developed fully in chapter 102 (நாணுடைமை). This aligns with Gita ethics, in which modesty (Sanskrit hri) and the reflex of weighing gain against righteousness are marks of a mature moral agent.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;…compassion and freedom from covetousness; gentleness, modesty and steady determination … these transcendental qualities, O son of Bharata, belong to godly men endowed with divine nature.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 16.1-3 (tr. Prabhupada)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna lists the qualities of a divinely-natured person; two of them are freedom from covetousness (aloluptvam) and modesty, or a sense of shame at wrongdoing (hri).</div>
+  <div class="tieback">The Kural pairs the same two things: shame at wrongdoing, and therefore no coveting.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But fornication, and all uncleanness, or covetousness, let it not be once named among you, as becometh saints.&rdquo;</div>
+  <div class="cite">&mdash; Ephesians 5:3 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul tells believers that covetousness is so unfitting for holy people that it should not even be mentioned among them.</div>
+  <div class="tieback">Both texts appeal to a sense of what is fitting or shameful: good people recoil from covetousness itself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And do not consume one another’s wealth unjustly or send it [in bribery] to the rulers in order that [they might aid] you [to] consume a portion of the wealth of the people in sin, while you know [it is unlawful].&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 2:188 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an forbids scheming, including bribery, to get other people’s wealth, noting that people do this even while knowing it is wrong.</div>
+  <div class="tieback">The Kural says the person with a conscience will not do blameworthy deeds for profit; the Qur’an names exactly those blameworthy schemes and forbids them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Behold, here I am: witness against me before the LORD, and before his anointed: whose ox have I taken? or whose ass have I taken? or whom have I defrauded? whom have I oppressed? or of whose hand have I received any bribe to blind mine eyes therewith?&rdquo;</div>
+  <div class="cite">&mdash; 1 Samuel 12:3 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">At the end of his career Samuel publicly challenges the people to name anything he took unjustly; no one can.</div>
+  <div class="tieback">Samuel is the portrait of the person the Kural describes: someone so ashamed of injustice that he never profited from it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;He is indeed virtuous, wise, and righteous who neither for his own sake nor for the sake of another (does any wrong), who does not crave for sons, wealth, or kingdom, and does not desire success by unjust means.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 84 (tr. Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha defines the righteous person as someone who will not seek wealth or success through unjust means.</div>
+  <div class="tieback">Nearly the Kural’s statement: the righteous person does not pursue gain through injustice.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Queen Kamalāvatī to King Ishukāra: “A man who returns, as it were, to the vomit, is not praised; but you want to confiscate the property left by the Brâhmaṇa. If the whole world and all treasures were yours, you would still not be satisfied, nor would all this be able to save you.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 14.38–39 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">When the king prepares to seize the estate abandoned by the family that renounced the world, the queen shames him by likening such greed to eating vomit, and the king himself then renounces.</div>
+  <div class="tieback">Valluvar says those with a sense of shame at unfairness will not stoop to disgraceful acts for gain, and the queen&#x27;s rebuke shows shame checking a king who was about to take another&#x27;s property.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;They accept bribes, and block justice.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 951, Raag Raamkalee (Ramkali ki Vaar, salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In a salok of Ramkali ki Vaar, Guru Nanak condemns those who sit in judgment and make a show of piety, but sell justice for a bribe.</div>
+  <div class="tieback">The Kural says those who feel shame at unfairness will never do disgraceful things for gain; Guru Nanak shows the shameless opposite, people who trade fairness for a bribe.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Do not get base gain: base gain is as bad as ruin.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 352 (tr. Evelyn-White)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Hesiod warns his brother that dishonest profit is no profit at all; it is equivalent to disaster.</div>
+  <div class="tieback">The Kural says the honourable will not do blameworthy deeds for gain; Hesiod gives the same rule in one line.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Now, suppose a wise man had just such a ring, he would not imagine that he was free to do wrongly any more than if he did not have it; for good men aim to secure not secrecy but the right.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cicero/de_Officiis/3B*.html" target="_blank" rel="noopener">Cicero, De Officiis (On Duties), Book III, §38 (tr. Walter Miller (Loeb, 1913))</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Retelling Plato’s story of Gyges’ ring of invisibility, Cicero argues that a good person would not use a guarantee of impunity to take what is not his, because what restrains him is the wrongness of the act and not fear of being found out.</div>
+  <div class="tieback">This matches the Kural’s inner safeguard: the person who is ashamed of injustice turns down disgraceful gain even when nothing outside him would stop him.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The insulin team sells its patent to the University of Toronto for one dollar each</div>
+  <div class="rle-meta">1922-1923 &middot; Toronto, Ontario, Canada</div>
+  <div class="quote is-paraphrase">After Frederick Banting, Charles Best, James Collip and their colleagues developed insulin at the University of Toronto, Banting objected to taking out patents and charging royalties for its manufacture. Banting, Best and Collip assigned their patent rights on insulin and its method of preparation to the University of Toronto for one dollar each, so that no one could secure a profitable private monopoly. The university then licensed manufacturers and used the royalties to fund further research.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">The discoverers of a life-saving drug could have grown rich from it but chose to place it in public trust.</div>
+  <div class="tieback">The kural says those who feel shame at unfairness will not do disgraceful things for gain, and the insulin team refused to profit privately from the suffering of diabetic patients.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-18/" target="_blank" rel="noopener">Not Coveting, வெஃகாமை, Chapter 18 (Thirukkural with commentaries of Sivayogi Sivakumar, Mu. Varadarasan, Solomon Pappaiah, and M. Karunanidhi)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-018.html" target="_blank" rel="noopener">வெஃகாமை - அதிகாரம் 18 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cicero/de_Officiis/3B*.html" target="_blank" rel="noopener">De Officiis (On Duties), Book III.35-95 (Marcus Tullius Cicero)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.nobelprize.org/the-miracle-discovery-that-reversed-the-diabetes-death-sentence/" target="_blank" rel="noopener">The miracle discovery that reversed the diabetes death sentence</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://insulin.library.utoronto.ca/islandora/object/insulin:L10256" target="_blank" rel="noopener">Letter to Sir Robert Falconer regarding Banting&#x27;s views on patents, 27/01/1923</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0171.html">&larr; Kural 171</a>
+  <a href="kural-0173.html">Kural 173 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-018.html">Anti-covet Action</a>
+  <a class="skip-btn" href="kural-0181.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

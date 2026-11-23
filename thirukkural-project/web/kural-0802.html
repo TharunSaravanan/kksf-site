@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 802 — Familiarity | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 802</h1>
+<p class="adhikaram"><a href="adhikaram-081.html">Familiarity</a> &middot; Pazhaimai &middot; <span class="tamil">பழைமை</span></p>
+
+<div class="tamil-text">நட்பிற் குறுப்புக் கெழுதகைமை மற்றதற்கு
+உப்பாதல் சான்றோர் கடன்.</div>
+<div class="translit">Natpir kuruppuk kezhudhakaimai matradharku
+uppaadhal saandror kadan.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The freedoms friends take with each other are part of friendship. Good people should welcome those freedoms and enjoy them.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Salt makes food taste right. In a friendship, the little freedoms friends take, like finishing your sentences or grabbing a fry off your plate, are the salt. A good person does not complain about the salt; they enjoy the meal.</p>
+
+<h2 class="section">University</h2>
+<p>Uruppu (உறுப்பு, ‘limb, constituent part’) makes kezhudhakaimai (கெழுதகைமை, ‘the quality of intimate right’) a structural part of friendship, not an extra. The second line turns on uppu (உப்பு, ‘salt’), which the commentators read figuratively as relish or sweetness: the wise should be the salt to that intimacy, accepting it and taking pleasure in it. Mu. Varadarasanar reads uppaadhal as ‘agreeing to’ the friend’s act of right, Solomon Pappaiah as ‘rejoicing at it’, and Puliyur Kesigan as ‘acting as the very model of that intimacy’. G. U. Pope’s ‘to be its savour sweet is duty of the wise’ keeps the image of salt. Saandror (சான்றோர்) are the cultivated people whose kadan (கடன், ‘duty, obligation’) this is. Both base sources give the same text.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">When the poor Brahmin Sudama visits his childhood friend Krishna, now a king, he is too ashamed to offer the handful of flattened rice he has brought. Krishna pulls the bundle from him himself and eats it with delight.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/10/80/" target="_blank" rel="noopener">Bhagavata Purana 10.80-81 (story of Sudama)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">In the Bhagavata Purana, Krishna takes an old friend’s liberty, grabbing a gift that was not offered, and treats the humble rice as a treasure.</div>
+  <div class="tieback">The episode shows familiarity working as the ‘salt’ of friendship: freedom taken and freedom received with joy on both sides.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">Jesus tells his disciples that he no longer calls them servants, because a servant does not know what his master is doing, but calls them friends, because he has made known to them everything he heard from the Father.</div>
+  <div class="cite">&mdash; John 15:15 <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The relationship moves from formal service to the openness of friendship, defined by shared confidence.</div>
+  <div class="tieback">As in the Kural, intimacy and its freedoms are what separate friendship from a mere formal tie.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">After the emigration to Medina, the Prophet paired emigrants with Medinan helpers as brothers. Sa‘d ibn al-Rabi‘ offered his new brother ‘Abd al-Rahman ibn ‘Awf half of his property; ‘Abd al-Rahman thanked him, declined, and asked only to be shown the market.</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari" target="_blank" rel="noopener">Sahih al-Bukhari, Book of the Merits of the Helpers (Ansar), report of Sa‘d ibn al-Rabi‘ and ‘Abd al-Rahman ibn ‘Awf</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The early brotherhood (mu’akhat) was a bond of such familiarity that each could claim from the other what strangers could not.</div>
+  <div class="tieback">Islamic tradition treats such claims between bonded friends as natural and generous, which is the urimai the Kural calls part of friendship itself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;appoint for thyself a teacher, and acquire for thyself a companion and judge all men with the scale weighted in his favor.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 1:6 (Mishnah Yomit, trans. Joshua Kulp, Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Joshua ben Perahiah tells each person to make the effort to gain a companion and to read others’ actions charitably.</div>
+  <div class="tieback">Gaining a companion and judging generously together come close to the Kural’s view that taking friends’ freedoms in good part is a duty.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the advice to Sigala, the Buddha says a lay follower should treat friends with generosity, kind speech, helpfulness, impartiality and sincerity, and lists among the marks of a true friend one who is the same in happiness and in sorrow.</div>
+  <div class="cite">&mdash; <a href="https://accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Digha Nikaya 31, Sigalovada Sutta</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Friendship is described as a set of mutual, reciprocal duties.</div>
+  <div class="tieback">Like Valluvar, the Buddha makes friendship a duty for good people, not just a pleasure.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Though they do evil exceedingly, is it not fitting to be patient with one&#x27;s friend? … the forbearance of one is the friendship of both.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">Naladiyar, ch. 23 &#x27;The bearing with the faults of others&#x27;, stanza 3 (English tr. in The Indian Antiquary; wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The poet makes forbearance the thing that holds a friendship together: when one friend bears with the other, both keep the bond.</div>
+  <div class="tieback">The Kural calls the freedoms of intimacy a structural part of friendship that the wise should welcome, and the Naladiyar likewise treats bearing with a friend as what friendship is made of.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">According to the Puratan Janamsakhi, soon after leaving Sultanpur Mardana complained of hunger, went to a nearby village on the Guru&#x27;s suggestion, and came back loaded with a bundle of gifts; Guru Nanak rolled on the ground laughing, and Mardana, seeing the oddity of what he had done, threw the bundle away.</div>
+  <div class="cite">&mdash; <a href="https://eos.learnpunjabi.org/MARDANA%20BHAI%20(1459-1534).html" target="_blank" rel="noopener">The Encyclopaedia of Sikhism, ed. Harbans Singh (Punjabi University, Patiala), entry &#x27;Mardana, Bhai (1459-1534)&#x27; by Satbir Singh, citing the Puratan Janamsakhi (paraphrase)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The Encyclopaedia of Sikhism notes that the biographers tell several such humorous stories of Mardana&#x27;s amiable faux pas, which the Guru met with laughter and patience rather than reproach.</div>
+  <div class="tieback">The Kural says the freedoms friends take are part of friendship and the good should welcome and relish them; Guru Nanak&#x27;s laughter at Mardana&#x27;s blunder shows that kind of easy, affectionate tolerance between old companions.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Achilles and Patroclus grew up together in Peleus’ house and share a tent, food and armour at Troy; Patroclus’ ghost asks that their bones lie together in one urn.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad 23</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The Iliad presents their companionship as shared life and shared possessions, built up from childhood.</div>
+  <div class="tieback">Their total familiarity, with nothing held back, is the kind of bond in which the Kural says liberties are part of friendship.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;to comrades and brothers one should allow freedom of speech and common use of all things.&rdquo;</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics IX.2 (trans. W. D. Ross)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Discussing what is owed to different kinds of people, Aristotle says close companions are owed frankness and shared use of possessions.</div>
+  <div class="tieback">This is almost exactly Valluvar’s point: the freedoms of intimacy belong to friendship, and allowing them is a duty.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Elgar&#x27;s Enigma Variations portray his friends with affectionate humour</div>
+  <div class="rle-meta">19 June 1899 &middot; St James&#x27;s Hall, London, England</div>
+  <div class="quote is-paraphrase">Between October 1898 and February 1899 Edward Elgar composed a set of orchestral variations in which each variation is a musical portrait of one of his circle, often built on a friend&#x27;s quirks or on humorous incidents, such as an organist&#x27;s bulldog falling into a river and paddling out. He dedicated the work to the friends pictured in it, and his publisher and close friend August Jaeger appeared as Nimrod. The work was first performed under Hans Richter on 19 June 1899 and became Elgar&#x27;s breakthrough.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The Enigma Variations turned the teasing familiarity of a circle of friends into one of the best-loved works of English music, with the affectionate Nimrod variation now used at national commemorations.</div>
+  <div class="tieback">The kural says the freedoms friends take with one another are part of friendship itself and that the wise relish them, and Elgar&#x27;s friends were immortalised precisely through the playful liberties he took with their foibles.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-81/" target="_blank" rel="noopener">Thirukkural Chapter 81: பழைமை / Familiarity (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-081.html" target="_blank" rel="noopener">பழைமை - அதிகாரம் 81 - திருக்குறள் (with Puliyur Kesigan, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/sb/10/80/" target="_blank" rel="noopener">Srimad Bhagavatam (Bhagavata Purana) 10.80-81: the story of Sudama (the brahmana friend of Krishna)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari" target="_blank" rel="noopener">Sahih al-Bukhari (English translation, M. Muhsin Khan)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Dīgha Nikāya 31, Sigālovāda Sutta: The Discourse to Sigāla — the six directions and the duties of parents and children</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">The Nāladiyār (English translation serialised in The Indian Antiquary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://eos.learnpunjabi.org/MARDANA%20BHAI%20(1459-1534).html" target="_blank" rel="noopener">Mardana, Bhai (1459-1534) (entry in The Encyclopaedia of Sikhism) (Satbir Singh, in The Encyclopaedia of Sikhism, ed. Harbans Singh)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad, Book 21, translated by A. T. Murray (Loeb Classical Library, 1924)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.bso.org/works/elgar-enigma-variations" target="_blank" rel="noopener">Variations on an Original Theme, Opus 36, Enigma (Steven Ledbetter)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.berliner-philharmoniker.de/en/programme-notes/edward-elgar-enigma-variations-on-an-original-theme-op-36/" target="_blank" rel="noopener">Edward Elgar: Enigma, Variations on an Original Theme, op. 36 (programme note) (Malte Krasting)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0801.html">&larr; Kural 801</a>
+  <a href="kural-0803.html">Kural 803 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-081.html">Familiarity</a>
+  <a class="skip-btn" href="kural-0811.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 140 — The Possession of Decorum | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 140</h1>
+<p class="adhikaram"><a href="adhikaram-014.html">The Possession of Decorum</a> &middot; Ozhukkamudaimai &middot; <span class="tamil">ஒழுக்கமுடைமை</span></p>
+
+<div class="tamil-text">உலகத்தோடு ஒட்ட ஒழுகல் பலகற்றும்
+கல்லார் அறிவிலா தார்.</div>
+<div class="translit">Ulagaththoadu otta ozhugal pala-katrum
+Kallaar arivilaa thaar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who have not learned to live in step with the world are still unlearned and foolish, no matter how much they have studied.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Someone could read every book in the library, but if they cannot get along with people, share, or be polite, they have not really learned the most important lesson.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter closes on a paradox: pala-katrum kallaar, ‘having learned much, they have not learned’. What they lack is ulagaththoadu otta ozhugal, conduct that ‘sticks to’ or fits with the world. Commentators differ on what ‘the world’ means. Parimelazhagar and Varadarasanar take it as the worthy (uyarndhor). Pappaiah boldly reads it as adapting the old ethical texts to present circumstances and dropping what no longer fits, which turns the couplet into almost a charter for moral reasoning over rote rule-following. On any reading, social wisdom is the test of learning. This echoes the rabbinic principle that derech eretz (right conduct) comes before Torah, and Aristotle&#x27;s scorn for people who ‘take refuge in theory’.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Professors and pupils, in fact, all who study the scriptures, if addicted to wicked habits, are to be regarded as illiterate wretches. He only is learned who performeth his religious duties.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m03/index.htm" target="_blank" rel="noopener">Mahabharata, Vana Parva, Section 311 (Yaksha Prashna), tr. K. M. Ganguli</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Yudhishthira tells the Yaksha that scholars without good conduct are really unlearned, and that only right action makes a person learned.</div>
+  <div class="tieback">This is nearly identical to the Kural&#x27;s ‘having learned much, they have not learned’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Ever learning, and never able to come to the knowledge of the truth.&rdquo;</div>
+  <div class="cite">&mdash; 2 Timothy 3:7 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul describes people who keep studying but never reach real understanding.</div>
+  <div class="tieback">It captures the Kural&#x27;s paradox of much learning without true knowledge.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;The example of those who were entrusted with the Torah and then did not take it on is like that of a donkey who carries volumes [of books].&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 62:5 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an compares those who carry scripture without living by it to a donkey loaded with books.</div>
+  <div class="tieback">This is the same point as the Kural: knowledge carried but not lived counts as no knowledge at all.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Where there is no Torah, there is no right conduct; where there is no right conduct, there is no Torah.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot.3.17" target="_blank" rel="noopener">Pirkei Avot 3:17 (tr. J. Kulp, Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbi Elazar ben Azariah makes learning and derech eretz (proper conduct in the world) depend on each other.</div>
+  <div class="tieback">Both hold that learning without right conduct in the world is empty.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Much though he recites the sacred texts, but acts not accordingly, that heedless man is like a cowherd who only counts the cows of others — he does not partake of the blessings of the holy life.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 19 (tr. Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha compares the learned person who does not practice to a herdsman counting cattle he does not own.</div>
+  <div class="tieback">This is the Kural&#x27;s paradox exactly: much learning, no real gain.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Acknowledging the truth about bondage and liberation, but talking only, not acting (in accordance with these tenets), they seek comfort for themselves in mighty words. Clever talking will not work salvation; how should philosophical instruction do it? Fools, though sinking lower and lower through their sins, believe themselves to be wise men.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 6.8–10 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Mahāvīra condemns those who know the doctrine but do not live it, calling them fools who think themselves wise.</div>
+  <div class="tieback">Valluvar says those who have learned much but cannot live in harmony with the world are ignorant; the Jain verse likewise judges learning without matching conduct to be no wisdom at all.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;If an educated person is a sinner, then the illiterate holy man is not to be punished.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 469, Raag Asa, Asa di Vaar, Salok Mahala 1, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak teaches that learning counts for nothing at the reckoning; a learned wrongdoer is judged by his deeds, while an unlettered good person is safe.</div>
+  <div class="tieback">The Kural says the much-read who do not live well with the world remain ignorant; Guru Nanak likewise refuses to let book-learning stand in for right living.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Hesiod names Eunomia (Good Order), with her sisters Dike (Justice) and Eirene (Peace), as a daughter of Zeus and Themis. She personifies the lawful harmony that holds human communities together.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Hesiod, Theogony 901–903</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">For the Greeks, living in well-ordered harmony with the community was itself a divine gift.</div>
+  <div class="tieback">This loosely matches the Kural&#x27;s ideal of conduct in harmony with the world.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;But most people do not do these, but take refuge in theory and think they are being philosophers and will become good in this way, behaving somewhat like patients who listen attentively to their doctors, but do none of the things they are ordered to do.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics 2.4, 1105b (tr. W. D. Ross)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle mocks people who think that studying ethics makes them good without practising it.</div>
+  <div class="tieback">Both hold that learning without conduct is not real knowledge.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Ignaz Semmelweis fails to win over his colleagues</div>
+  <div class="rle-meta">1847-1861 &middot; Vienna, Austria, and Pest, Hungary</div>
+  <div class="quote is-paraphrase">In 1847 Ignaz Semmelweis, a doctor at the maternity clinic of the Vienna General Hospital, required staff to wash their hands in a chlorinated lime solution before examining patients, and deaths from childbed fever fell sharply. Many colleagues rejected his explanation, partly because it implied that doctors themselves were carrying the disease to their patients. He set out his findings in a full book only in 1861, and after unfavourable reviews he answered his critics with harshly worded open letters; his doctrine was generally accepted only later.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Semmelweis was right on the science, yet his discovery saved far fewer lives in his own time than it might have, in part because he could not bring the medical world along with him.</div>
+  <div class="tieback">The kural says that those who cannot live in harmony with the world remain ignorant however much they have learned; Semmelweis&#x27;s case shows how knowledge without the skill of persuading others can fail to do its good.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-14/" target="_blank" rel="noopener">Thirukkural Chapter 14: ஒழுக்கமுடைமை / The Possession of Decorum (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar commentaries, Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-014.html" target="_blank" rel="noopener">ஒழுக்கமுடைமை - அதிகாரம் 14 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m03/index.htm" target="_blank" rel="noopener">The Mahabharata, Vana Parva — the Vyadha Gita (Kaushika and Dharmavyadha), as recounted in the Kisari Mohan Ganguli translation and standard retellings</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot.3.17" target="_blank" rel="noopener">Pirkei Avot 3:17 (Mishnah Yomit translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Theogony (Hesiod)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, translated by W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Ignaz-Semmelweis" target="_blank" rel="noopener">Ignaz Semmelweis (Encyclopaedia Britannica editors)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6333090/" target="_blank" rel="noopener">Ignaz Semmelweis: The Savior of Mothers. On the 200th Anniversary of the Birth</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1299347" target="_blank" rel="noopener">Irvine Loudon on Semmelweis&#x27;s 1861 treatise on childbed fever (Journal of the Royal Society of Medicine, 2005) (Irvine Loudon)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0139.html">&larr; Kural 139</a>
+  <a href="kural-0141.html">Kural 141 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-014.html">The Possession of Decorum</a>
+  <a class="skip-btn" href="kural-0141.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

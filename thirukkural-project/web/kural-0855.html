@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 855 — Hostility | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 855</h1>
+<p class="adhikaram"><a href="adhikaram-086.html">Hostility</a> &middot; Ikal &middot; <span class="tamil">இகல்</span></p>
+
+<div class="tamil-text">இகலெதிர் சாய்ந்தொழுக வல்லாரை யாரே
+மிக்லூக்கும் தன்மை யவர்.</div>
+<div class="translit">Ikaledhir saaindhozhuka vallaarai yaare
+mikalookkum thanmai yavar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Who could ever beat people who can turn away from hostility whenever it rises inside them?</p>
+
+<h2 class="section">Elementary</h2>
+<p>Picture someone trying to start a fight with a kid who just smiles and won’t fight back. After a while, there is nothing to fight about, and the bully gives up. The poet says nobody can beat a person who never lets anger take over.</p>
+
+<h2 class="section">University</h2>
+<p>The key phrase is ikal edhir saaindhu ozhuga (இகல் எதிர் சாய்ந்து ஒழுக): to ‘lean away against’ hostility, i.e. to recoil from it and conduct oneself in the opposite direction when it arises within. Puliyur Kesigan specifies ‘when hostility arises in one’s own heart’, so the victory is first over oneself; mikal ūkkum (to aspire to overcome) then describes would-be conquerors, of whom ‘who’ (yaare) implies none. Textual note: both ytamizh.com and thirukkural.net print the second line as ‘மிக்லூக்கும்’ while their own romanizations read ‘mikalookkum’ and thirukkural.net’s song version prints ‘மிகலூக்கும்’; the word is mikal + ūkkum, and the printed form appears to be a shared digital orthographic slip. The same form recurs in 858. The text is otherwise identical in both sources.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Before giving up this present body, if one is able to tolerate the urges of the material senses and check the force of desire and anger, he is well situated and is happy in this world.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 5.23 (Prabhupada, As It Is)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna teaches that the one who can check the force of anger becomes steady and secure.</div>
+  <div class="tieback">The Kural calls such a person unconquerable.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Be not overcome of evil, but overcome evil with good.&rdquo;</div>
+  <div class="cite">&mdash; Romans 12:21 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul says the way to win against evil is not to be dragged into it but to answer with good.</div>
+  <div class="tieback">The Kural likewise makes refusal of hostility the secret of being unconquered.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;The strong is not the one who overcomes the people by his strength, but the strong is the one who controls himself while in anger.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6114" target="_blank" rel="noopener">Sahih al-Bukhari 6114</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet redefines strength as mastery over one’s own anger.</div>
+  <div class="tieback">Valluvar’s unconquerable person is exactly this kind of strong one.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Who is mighty? He who subdues his [evil] inclination, as it is said: ‘He that is slow to anger is better than the mighty; and he that rules his spirit than he that takes a city.’&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot.4.1" target="_blank" rel="noopener">Pirkei Avot 4:1 (tr. Joshua Kulp, Sefaria), citing Proverbs 16:32</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The sage Ben Zoma defines true might as self-mastery, quoting Proverbs on slowness to anger.</div>
+  <div class="tieback">Both texts place real power in conquering one’s own hostility.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Overcome the angry by non-anger; overcome the wicked by goodness; overcome the miser by generosity; overcome the liar by truth.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 223 (tr. Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha teaches that non-anger is itself the means of victory.</div>
+  <div class="tieback">The Kural’s unconquerable person wins by the same non-anger.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;They indeed had no effect whatever on the Lord whose power was great. Is a wind, even great, able to shake Meru?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Hemacandra, Triṣaṣṭiśalākāpuruṣacaritra, Book X (Mahāvīracaritra), ch. III, part 10 &#x27;Episode of Caṇḍakauśika&#x27; (tr. Helen M. Johnson; wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The furious serpent Caṇḍakauśika burns Mahavira with its poisonous gaze and bites him again and again. The Lord stays unmoved and without hostility, and the serpent, overcome by his calm, gives up its anger altogether.</div>
+  <div class="tieback">The Kural asks who could ever defeat those who turn away from hostility, and Caṇḍakauśika&#x27;s venom cannot even shake Mahavira, who wins not by fighting back but by staying free of enmity.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;See the brotherhood of all mankind as the highest order of Yogis; conquer your own mind, and conquer the world.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 6, Japji Sahib (pauri 28), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Japji Sahib Guru Nanak makes kinship with all people the true spiritual order and says that whoever conquers his own mind has conquered the world.</div>
+  <div class="tieback">The Kural asks who could ever defeat those who turn away from hostility when it rises within; Guru Nanak likewise makes victory over one&#x27;s own mind, held in brotherhood with all, the victory over the world.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Aesop’s fable of the North Wind and the Sun, the Wind blows harder and harder but cannot strip a traveller of his cloak, while the Sun’s gentle warmth makes him take it off.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/21" target="_blank" rel="noopener">Aesop, The North Wind and the Sun (Townsend tr.)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Gentleness succeeds where force and aggression fail.</div>
+  <div class="tieback">The Kural likewise says the one who refuses hostility cannot be overcome.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Marcus Aurelius writes that kindness is invincible if it is genuine, since even the most insolent person can do nothing to one who stays kind and gently corrects him.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Antoninus/meditations.html" target="_blank" rel="noopener">Marcus Aurelius, Meditations 11.18</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The Stoic emperor holds that sincere goodwill disarms every attacker.</div>
+  <div class="tieback">Valluvar’s ‘who could overcome them?’ makes the same claim.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Martin Luther King Jr. calms the crowd after his home is bombed</div>
+  <div class="rle-meta">30 January 1956 &middot; Montgomery, Alabama, United States</div>
+  <div class="quote is-paraphrase">During the Montgomery bus boycott, Martin Luther King Jr.&#x27;s home was bombed on the evening of 30 January 1956 while he was speaking at a mass meeting; his wife Coretta and their baby daughter were unhurt. He returned to find a large, angry crowd, many of them armed, gathered outside and refusing police orders to leave. Standing on his damaged porch, King urged them to love their enemies and to go home calmly, and what could have become a riot ended peacefully.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">King&#x27;s refusal to answer violence with violence kept the boycott nonviolent, and the movement went on to win the desegregation of Montgomery&#x27;s buses later that year.</div>
+  <div class="tieback">The kural asks who could ever overcome those who turn away from hostility whenever it rises, and King turned himself and his supporters away from retaliation at the very moment it was most provoked, making the movement unbeatable.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-86/" target="_blank" rel="noopener">Thirukkural Chapter 86: இகல் / Hostility (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-086.html" target="_blank" rel="noopener">இகல் - அதிகாரம் 86 - திருக்குறள் (with Puliyur Kesigan, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:6114" target="_blank" rel="noopener">Sahih al-Bukhari 6114: the strong man is the one who controls himself in anger</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot.4.1" target="_blank" rel="noopener">Pirkei Avot 4:1 (Mishnah Yomit, tr. Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.gutenberg.org/ebooks/21" target="_blank" rel="noopener">Aesop&#x27;s Fables (George Fyler Townsend trans.)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Antoninus/meditations.html" target="_blank" rel="noopener">Marcus Aurelius, The Meditations (trans. George Long)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://kinginstitute.stanford.edu/kings-home-bombed" target="_blank" rel="noopener">King&#x27;s Home Bombed (Martin Luther King, Jr. Research and Education Institute)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.history.com/this-day-in-history/martin-luther-king-jr-home-bombed-montgomery" target="_blank" rel="noopener">Martin Luther King Jr.&#x27;s home is bombed (HISTORY.com Editors)</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0854.html">&larr; Kural 854</a>
+  <a href="kural-0856.html">Kural 856 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-086.html">Hostility</a>
+  <a class="skip-btn" href="kural-0861.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

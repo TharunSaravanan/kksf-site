@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 42 — Domestic Life | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 42</h1>
+<p class="adhikaram"><a href="adhikaram-005.html">Domestic Life</a> &middot; Ilvaazhkkai &middot; <span class="tamil">இல்வாழ்க்கை</span></p>
+
+<div class="tamil-text">துறந்தார்க்கும் துவ்வாதவர்க்கும் இறந்தார்க்கும்
+இல்வாழ்வான் என்பான் துணை.</div>
+<div class="translit">Thurandhaarkkum thuvvaadhavarkkum irandhaarkkum,
+Ilvaazhvaan enpaan thunai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A family person supports those who have given up worldly life, those who are poor and hungry, and those who have died.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine one family in a village that keeps a pot of rice always ready. The travelling monk who owns nothing eats from it. The hungry neighbour eats from it. And a share is set aside in memory of grandparents who have died. That one household quietly feeds three groups who cannot feed themselves.</p>
+
+<h2 class="section">University</h2>
+<p>Valluvar names three classes with three neat participial nouns: துறந்தார் (thurandhaar, “those who have let go”), துவ்வாதவர் (thuvvaadhavar, literally “those who do not eat” — the destitute), and இறந்தார் (irandhaar, “those who have passed”). The last is the most striking to a modern reader: the dead are treated as an ongoing claim on the living, through the memorial offerings (தென்புலத்தார் rites) that the next couplet will name explicitly. The verse is a deliberate argumentative move within a Tamil intellectual landscape in which Jain and Buddhist renunciant ideals were culturally prestigious: Valluvar concedes the renunciant&#x27;s standing and then points out that the renunciant literally eats because a householder cooked. Economic dependency becomes a moral argument for the dignity of domestic life.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Charity given out of duty, without expectation of return, at the proper time and place, and to a worthy person is considered to be in the mode of goodness.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 17.20</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Krishna classifies charity by motive: sattvic giving is given because it ought to be given, to those who genuinely merit it, with no thought of return.</div>
+  <div class="tieback">The Kural&#x27;s householder gives to renunciants, the destitute and the dead — three classes that by definition can never repay him.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Pure religion and undefiled before God and the Father is this, To visit the fatherless and widows in their affliction, and to keep himself unspotted from the world.&rdquo;</div>
+  <div class="cite">&mdash; James 1:27 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">James relocates the essence of religion from ritual to the concrete care of society&#x27;s most defenceless members.</div>
+  <div class="tieback">Both verses define true piety as practical support for those who cannot support themselves, rather than as withdrawal or ceremony.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;…but [true] righteousness is [in] one who believes in Allah, the Last Day, the angels, the Book, and the prophets and gives wealth, in spite of love for it, to relatives, orphans, the needy, the traveler, those who ask [for help], and for freeing slaves…&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 2:177, Al-Baqarah (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The famous &#x27;verse of righteousness&#x27; lists the specific categories of dependent people whose support constitutes real piety, against merely outward observance.</div>
+  <div class="tieback">Like the Kural, it measures a person&#x27;s virtue by the list of unrepaying dependants he sustains out of his own household wealth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Charity is given to the living, while acts of kindness are performed both for the living and for the dead.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Sukkah.49b" target="_blank" rel="noopener">Babylonian Talmud, Sukkah 49b (Koren-Steinsaltz / William Davidson Edition)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Talmud ranks gemilut chasadim above tzedakah partly because kindness extends to the dead — burial and mourning rites are called chesed shel emet, &#x27;true kindness&#x27;, since the recipient can never repay.</div>
+  <div class="tieback">This is an unusually exact parallel: the Kural likewise lists the dead alongside the poor as recipients of the householder&#x27;s support.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Householders &amp; the homeless / in mutual dependence / both reach the true Dhamma: / the unsurpassed safety from bondage. / From householders, the homeless / receive requisites: robes, lodgings, / protection from inclemencies.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/kn/iti/iti.4.100-112.than.html" target="_blank" rel="noopener">Itivuttaka 107 (Iti 4.8), trans. Thanissaro Bhikkhu</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha describes the lay-monastic relationship as reciprocal: householders supply material requisites, monastics supply the Dhamma, and neither reaches the goal without the other.</div>
+  <div class="tieback">This states the Kural&#x27;s first clause outright — the renunciant (துறந்தார்) survives because the householder supports him.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Yathavat atithau sadhau dine cha pratipatti-krt : Diligent in succoring the ascetics, the righteous and the needy.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.jainworld.com/jainbooks/antiquity/ethcjain.htm" target="_blank" rel="noopener">Hemacandra, Yogaśāstra 1.47–56 (the thirty-five householder qualities, no. 19), English as given in V. A. Sangave, Ethics of Jainism</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Hemacandra counts care for ascetics and the destitute among the defining qualities of a good Jain layman, and the lay vow of atithi-saṃvibhāga commits the householder to eat only after feeding mendicants.</div>
+  <div class="tieback">Two of the Kural&#x27;s three dependants, those who have renounced and those who have nothing to eat, are exactly the people Jain lay ethics charges the householder to support.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">Sent by his father with money to start trading, the young Nanak met a band of holy men who had not eaten for days, gave them the money, and bought them food, saying he had spent it to the best advantage.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">Max Arthur Macauliffe, The Sikh Religion (1909), Vol. 1, Life of Guru Nanak, Chapter III, pp. 30-31</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Macauliffe retells this Janamsakhi episode, remembered by Sikhs as the sacha sauda or true bargain: the first act of the future Guru&#x27;s working life is to feed renunciants and the hungry from household money.</div>
+  <div class="tieback">It enacts the Kural&#x27;s claim that the renunciant and the destitute eat because a householder provides, here literally with a householder&#x27;s trading capital.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Sophocles&#x27; Antigone, Antigone defies Creon&#x27;s edict and performs burial rites for her brother Polyneices, insisting that the unwritten laws owed to the dead outrank a ruler&#x27;s decree, and accepts death rather than leave him unburied.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Sophocles/antigone.html" target="_blank" rel="noopener">Sophocles, Antigone (c. 441 BCE)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Greek religion held that the dead had an enforceable claim on their kin for burial and grave offerings, and that failing them polluted the whole household and city.</div>
+  <div class="tieback">It matches the Kural&#x27;s most distinctive element — that the dead (இறந்தார்) remain dependants of the living household.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Cicero argues in De Officiis that we are not born for ourselves alone — our country, our parents, our friends and our fellow human beings each claim a share of our existence — and that this is why generosity and beneficence are duties of justice rather than optional favours.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2007.01.0048" target="_blank" rel="noopener">Cicero, De Officiis 1.22</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Stoic-influenced Roman ethics grounds the obligation to support others in the claim that a person&#x27;s life is partly owned by the communities that made it possible.</div>
+  <div class="tieback">Both texts derive the householder&#x27;s obligation to support non-reciprocating others from the simple fact of belonging to a community.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Emperor Harsha&#x27;s five-yearly gift-giving at Prayag</div>
+  <div class="rle-meta">7th century CE (reign 606-647) &middot; Prayag (Prayagraj), Uttar Pradesh, India</div>
+  <div class="quote is-paraphrase">Harsha, who ruled much of northern India from 606 to 647, held a great gathering every five years at Prayag, where the Ganges and Yamuna meet. The Chinese pilgrim Xuanzang, who travelled in India between 629 and 645, recorded the king&#x27;s generosity there, describing how he gave gifts and donations to scholars and ascetics. At these ceremonies of giving, most of the wealth gathered over the previous five years was given away in charity.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Harsha&#x27;s assemblies became one of the most celebrated examples of royal charity in early Indian history, preserved by an eyewitness from another land.</div>
+  <div class="tieback">The kural names the householder as the support of those who have renounced the world and of the destitute, and Harsha&#x27;s gifts to ascetics and to the needy at Prayag show such support given on a grand scale.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-5/" target="_blank" rel="noopener">திருக்குறள் — அதிகாரம் 5: இல்வாழ்க்கை (Chapter 5: Domestic Life), with Tamil commentaries by Mu. Varadarajan, Salomon Pappaiah, Mu. Karunanidhi and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-005.html" target="_blank" rel="noopener">Thirukkural, Adhigaram 5 — Domestic Life / Married Life (Tamil text, transliteration, multi-language translations and classical commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://thirukural-world.blogspot.com/2014/12/41-50.html" target="_blank" rel="noopener">குறள் 41-50 இல்வாழ்க்கை (Kurals 41-50, Domestic Life) — Tamil text with Tamil and English meanings and Pope/Drew translations</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Sukkah.49b" target="_blank" rel="noopener">Babylonian Talmud, Tractate Sukkah 49b — acts of loving kindness for the living and the dead (William Davidson Edition / Koren-Steinsaltz)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.accesstoinsight.org/tipitaka/kn/iti/iti.4.100-112.than.html" target="_blank" rel="noopener">Itivuttaka 107 (Iti 4.8) — householders and the homeless in mutual dependence, trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://jainworld.jainworld.com/jainbooks/antiquity/ethcjain.htm" target="_blank" rel="noopener">Jaina ethics (English renderings of Jain householder texts, incl. Hemacandra&#x27;s Yogaśāstra) (Vilas A. Sangave)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">The Sikh Religion: Its Gurus, Sacred Writings and Authors (6 vols.) (Max Arthur Macauliffe)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Sophocles/antigone.html" target="_blank" rel="noopener">Sophocles, Antigone (c. 441 BCE) — Antigone&#x27;s burial of Polyneices and the unwritten laws owed to the dead</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2007.01.0048" target="_blank" rel="noopener">Cicero, De Officiis (On Duties), Book I, trans. Walter Miller (Loeb Classical Library, 1913)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.worldhistory.org/Harsha/" target="_blank" rel="noopener">Harsha (Gaurav Chugani)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.britannica.com/topic/Kumbh-Mela" target="_blank" rel="noopener">Kumbh Mela (Tamanna Nangia)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0041.html">&larr; Kural 41</a>
+  <a href="kural-0043.html">Kural 43 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-005.html">Domestic Life</a>
+  <a class="skip-btn" href="kural-0051.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

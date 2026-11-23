@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 273 — Inconsistent Conduct | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 273</h1>
+<p class="adhikaram"><a href="adhikaram-028.html">Inconsistent Conduct</a> &middot; Koodaavozhukkam &middot; <span class="tamil">கூடாவொழுக்கம்</span></p>
+
+<div class="tamil-text">வலியில் நிலைமையான் வல்லுருவம் பெற்றம்
+புலியின்தோல் போர்த்துமேய்ந் தற்று.</div>
+<div class="translit">Valiyil nilaimaiyaan valluruvam petram
+Puliyinthol porththumeindh thatru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Someone with no control over themselves who dresses up like a strict holy person is like a cow eating crops while wearing a tiger&#x27;s skin.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Picture a cow wearing a tiger costume so it can sneak into a farm and eat the crops. It looks scary, but it’s still just a cow munching grass. A person who dresses like a strong holy person but can’t control himself is the same — a costume on the outside, the same old habits inside.</p>
+
+<h2 class="section">University</h2>
+<p>The simile is doubly pointed: the cow is weak, not fierce, and the tiger-skin lends it a borrowed terror that lets it graze unchallenged on another’s field. வலியில் நிலைமையான் (“one lacking the strength” — traditionally, strength to restrain the senses) contrasts with வல்லுருவம் (“a mighty form”), the forbidding garb of tapas. The target is not ordinary weakness but the exploitation of a sacred appearance to feed appetite. The same fable circulated widely in the ancient world — the Panchatantra’s ass in the tiger-skin and Aesop’s ass in the lion’s skin — and in both the disguise ultimately betrays itself.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Panchatantra story “The Ass in the Tiger-Skin,” a washerman dresses his donkey in a tiger’s skin and turns it loose in the farmers’ fields at night; everyone flees from the ‘tiger’ while it eats the grain, until it brays and is recognised and killed.</div>
+  <div class="cite">&mdash; <a href="https://franpritchett.com/00litlinks/panchatantra_ryder/index.html" target="_blank" rel="noopener">Panchatantra, Book 4, “The Ass in the Tiger-Skin” (tr. Arthur W. Ryder)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">A weak animal wearing a fearsome skin feeds on others’ crops until its real voice gives it away.</div>
+  <div class="tieback">This is essentially the Kural’s image told as a story — the borrowed skin, the grazing on crops, and the inevitable exposure.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Beware of false prophets, which come to you in sheep’s clothing, but inwardly they are ravening wolves.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 7:15 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus warns of religious teachers whose gentle outward appearance hides a predatory nature.</div>
+  <div class="tieback">The same animal-disguise logic as the Kural, inverted: here the predator wears the harmless skin, but in both the costume misrepresents the real creature.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And when you see them, their forms please you, and if they speak, you listen to their speech. [They are] as if they were pieces of wood propped up…&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 63:4 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an describes hypocrites whose impressive outward forms hide inner hollowness, like dry timber propped up to look solid.</div>
+  <div class="tieback">Like the tiger-skinned cow, the hypocrite’s imposing exterior has nothing strong behind it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Do not be afraid of the Pharisees, and neither [should you fear] from those who are not Pharisees; rather, beware of the hypocrites who appear like Pharisees, as their actions are like the act of the wicked Zimri and they request a reward like that of the righteous Pinehas.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Sotah.22b" target="_blank" rel="noopener">Babylonian Talmud, Sotah 22b (William Davidson / Koren–Steinsaltz translation)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">King Yannai warns his wife that the real danger is people who look like pious Pharisees but act like sinners while demanding a saint’s reward.</div>
+  <div class="tieback">Exactly the Kural’s type: someone borrowing the appearance of the devout while their deeds belong to a weaker, baser nature.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;There are many evil characters and uncontrolled men wearing the saffron robe. These wicked men will be born in states of woe because of their evil deeds.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 307 (tr. Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha observes that plenty of undisciplined people wear the monk’s robe, and their robe will not save them.</div>
+  <div class="tieback">Matches the Kural’s ‘weak in self-control but strong in appearance’ figure.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As the poison Kâlakûta kills him who drinks it; as a weapon cuts him who awkwardly handles it; as a Vêtâla kills him who does not lay him; so the Law harms him who mixes it up with sensuality.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 20.44 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The text warns that taking up the monk&#x27;s discipline while still giving in to the senses turns the discipline itself into a danger to the false monk.</div>
+  <div class="tieback">Valluvar&#x27;s cow grazing in a tiger&#x27;s skin is a weakling hiding sensual appetite under a fierce ascetic guise; the Jain verse condemns the same mixture of religious garb and unmastered senses.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Fareed, you wear your prayer shawl on your shoulders and the robes of a Sufi; your words are sweet, but there is a dagger in your heart.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1380, Salok Sheikh Farid 50 (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Shaikh Farid rebukes the false holy man who puts on the prayer shawl and robe of a Sufi and talks sweetly while hiding a dagger in his heart.</div>
+  <div class="tieback">Valluvar likens the weak-willed man in an ascetic&#x27;s fierce form to a cow in a tiger&#x27;s skin grazing another&#x27;s crop; Farid&#x27;s false Sufi likewise uses borrowed holy dress to cover what he really is.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;An Ass found a Lion’s Skin, and dressed himself up in it. Then he went about frightening every one he met… Elated by the success of his trick, he loudly brayed in triumph.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/files/11339/11339-h/11339-h.htm" target="_blank" rel="noopener">Aesop, “The Ass in the Lion’s Skin” (tr. V. S. Vernon Jones)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The ass in the lion’s skin scares everyone until its own braying reveals what it really is.</div>
+  <div class="tieback">The Greek twin of Valluvar’s simile: a weak animal in a predator’s skin, exposed by its true nature.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;The boastful man, then, is thought to be apt to claim the things that bring glory, when he has not got them, or to claim more of them than he has…&rdquo;</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics 4.7 (tr. W. D. Ross)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle defines the boaster as someone who claims admirable qualities he does not possess.</div>
+  <div class="tieback">The tiger-skinned cow is a boaster in Aristotle’s sense: claiming the strength of austerity without having it.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Captain of Kopenick</div>
+  <div class="rle-meta">16 October 1906 &middot; Kopenick, near Berlin, German Empire (now Germany)</div>
+  <div class="quote is-paraphrase">Wilhelm Voigt, an unemployed shoemaker with a criminal record, put together a Prussian army captain&#x27;s uniform from second-hand pieces. Wearing it, he ordered a squad of about ten real soldiers to follow him to the town hall of Kopenick, where they arrested the mayor and the treasurer on his orders and he took about 4,000 marks from the town treasury. He was arrested ten days later and sentenced to four years in prison.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The episode became a byword for how a borrowed uniform could make soldiers and officials obey a man with no real authority at all.</div>
+  <div class="tieback">The kural compares the weak man in the imposing garb of an ascetic to a cow grazing on crops in a tiger&#x27;s skin, and Voigt fed himself from the town&#x27;s treasury by wearing a captain&#x27;s borrowed form.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-28/" target="_blank" rel="noopener">Thirukkural Chapter 28: கூடாவொழுக்கம் (Imposture) — text, commentaries and translation</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-028.html" target="_blank" rel="noopener">கூடாவொழுக்கம் — அதிகாரம் 28 — திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://franpritchett.com/00litlinks/panchatantra_ryder/index.html" target="_blank" rel="noopener">The Panchatantra (tr. Arthur W. Ryder, University of Chicago Press, 1925), Book Four</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Sotah.22b" target="_blank" rel="noopener">Babylonian Talmud, Sotah 22b (William Davidson Edition, Koren Noé Talmud with Steinsaltz commentary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.gutenberg.org/files/11339/11339-h/11339-h.htm" target="_blank" rel="noopener">Aesop&#x27;s Fables, trans. V. S. Vernon Jones (1912)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.history.com/this-day-in-history/a-shoemaker-leads-german-soldiers-in-a-robbery" target="_blank" rel="noopener">A shoemaker leads German soldiers in a robbery</a> <span class="tier">[web source]</span></li>
+<li id="cite-13"><a href="https://www.berlin.de/ba-treptow-koepenick/ueber-den-bezirk/100_jahre_hauptmann_von_k__penick.pdf" target="_blank" rel="noopener">Hundert Jahre Hauptmann von Kopenick</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0272.html">&larr; Kural 272</a>
+  <a href="kural-0274.html">Kural 274 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-028.html">Inconsistent Conduct</a>
+  <a class="skip-btn" href="kural-0281.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

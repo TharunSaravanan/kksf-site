@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 663 — Power in Execution | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 663</h1>
+<p class="adhikaram"><a href="adhikaram-067.html">Power in Execution</a> &middot; Vinaithitpam &middot; <span class="tamil">வினைத்திட்பம்</span></p>
+
+<div class="tamil-text">கடைக்கொட்கச் செய்தக்க தாண்மை இடைக்கொட்கின்
+எற்றா விழுமந் தரும்.</div>
+<div class="translit">Kadaikkotkach seydhakka thaaNmai idaikkotkin
+Etraa vizhumanh tharum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Real skill means keeping a task quiet until it is finished. If people learn about it halfway, it can cause trouble that cannot be fixed.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you are making a surprise birthday card for your mom and you show it to her half-done, the surprise is ruined and you can’t get it back. It is better to work quietly and show it when it’s finished. Some plans work best when they are kept secret until they are done.</p>
+
+<h2 class="section">University</h2>
+<p>The key verb is koṭku, to become manifest: kaṭai-k-koṭka, so that it appears at the end, versus iṭai-k-koṭkiṉ, if it appears in the middle. Āṇmai is literally ‘manliness’ but here means competence or mastery in execution (Solomon Pappaiah renders it āḷumai, capability), and eṟṟā vizhumam is sorrow that cannot be removed. Parimelazhagar explains that a plan disclosed before completion lets enemies obstruct it, so secrecy is part of firmness; Kalaignar makes the point explicitly, calling concealment till completion the very ‘firmness of execution’. This couplet echoes the Arthashastra tradition on the secrecy of counsel (mantra-rakṣā) and anticipates the chapter on the conduct of affairs (ch. 68). Some readers print the first line with sandhi, ceytakkatāṇmai; the three sources consulted agree on the wording.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Kautilya’s chapter on the business of council insists that deliberation be held in secret and that no outsider learn of a plan before it is carried out, since disclosure ruins undertakings and brings disaster to the king.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/kautilya-arthashastra/d/doc365593.html" target="_blank" rel="noopener">Kautilya, Arthashastra 1.15 (trans. R. Shamasastry)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Arthashastra makes guarding the secrecy of counsel (mantra) a basic rule of statecraft.</div>
+  <div class="tieback">It gives the political reasoning behind the Kural: a plan revealed midway is exposed to its enemies.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But when his brethren were gone up, then went he also up unto the feast, not openly, but as it were in secret.&rdquo;</div>
+  <div class="cite">&mdash; John 7:10 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Jesus declines to go publicly to the feast, saying his time has not yet come, then goes quietly and reveals himself only midway through the festival.</div>
+  <div class="tieback">Like the Kural, it shows a purpose that is kept hidden until the right moment for it to be revealed.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;He said, &quot;O my son, do not relate your vision to your brothers or they will contrive against you a plan...&rdquo;</div>
+  <div class="cite">&mdash; Quran 12:5 (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Jacob tells young Joseph to keep his dream of future greatness to himself, since disclosing it early will stir his brothers’ envy and plotting.</div>
+  <div class="tieback">The same logic as the Kural: revealing a destiny or plan before it is fulfilled invites obstruction.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;I got up at night, I and a few men with me, and telling no one what my God had put into my mind to do for Jerusalem...&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Nehemiah 2:12, 2:16 (JPS Tanakh, Gender-Sensitive Edition, via Sefaria)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Nehemiah surveys Jerusalem’s broken walls by night and tells no one his plan (2:16 adds that even the officials knew nothing) until he is ready to begin the rebuilding.</div>
+  <div class="tieback">A textbook case of the Kural’s counsel: keep the work hidden until it can go forward, since enemies will try to stop it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Mahā-Ummagga Jātaka the wise Mahosadha, the Bodhisatta, has a great tunnel dug in secret and lets its existence be known only when it is complete and his king must be rescued.</div>
+  <div class="cite">&mdash; <a href="https://www.palikanon.com/english/pali_names/maha/mahaummagga_jat_546.htm" target="_blank" rel="noopener">Mahā-Ummagga Jātaka (No. 546), summary in Malalasekera’s Dictionary of Pali Proper Names</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Jātaka praises the sage’s concealed preparation, which succeeds because rivals do not learn of it in time.</div>
+  <div class="tieback">The tunnel is revealed only at the end, as the Kural advises.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;A monk should avoid untruth, nor should he speak positively (about future things, his plans, &amp;c.)&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 1.24 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Among the rules of discipline, a monk is told not to make confident declarations about future things or his own plans, as part of guarding his speech from untruth.</div>
+  <div class="tieback">The kural&#x27;s advice that a task should become known only when it is done finds a partial echo in this Jain restraint on announcing one&#x27;s plans before they are fulfilled.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">On Baisakhi 1699 at Anandpur, according to Sikh tradition, Guru Gobind Singh asked for five Sikhs to offer their heads and took each volunteer into his tent; only at the end did he come out with all five alive in new garments and reveal his purpose, founding the Khalsa.</div>
+  <div class="cite">&mdash; <a href="https://pluralism.org/the-khalsa" target="_blank" rel="noopener">The Pluralism Project, Harvard University, The Khalsa</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The Guru kept his design hidden until it was complete, so the meaning of the event became clear only when he presented the five beloved ones (panj pyare).</div>
+  <div class="tieback">The Kural says true capability carries a task through so it becomes known only when finished; Guru Gobind Singh&#x27;s founding of the Khalsa was disclosed only at its completion.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Odysseus stays disguised as a beggar in his own palace and reveals himself only after he has strung the great bow and his vengeance on the suitors has begun.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, Odyssey 21-22 (trans. Samuel Butler)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">His return succeeds because his identity and plan stay hidden until the decisive moment.</div>
+  <div class="tieback">His concealment until the deed is under way is the Kural’s kaṭai-k-koṭka in action.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Let your plans be dark and impenetrable as night, and when you move, fall like a thunderbolt.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/132" target="_blank" rel="noopener">Sun Tzu, The Art of War VII.19 (trans. Lionel Giles)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Sun Tzu advises that intentions be kept wholly hidden until the moment of action.</div>
+  <div class="tieback">The same strategic rule as the Kural: hide the plan, and let it be seen only in its result.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The secret evacuation of Anzac and Suvla at Gallipoli</div>
+  <div class="rle-meta">December 1915 - January 1916 &middot; Gallipoli Peninsula, Turkey</div>
+  <div class="quote is-paraphrase">After the failure of the Allied campaign at Gallipoli, a withdrawal plan devised largely by Lieutenant Colonel Brudenell White was carried out in stages and kept hidden from the Ottoman forces facing the Allied trenches. Periods of silence and irregular firing accustomed the enemy to quiet lines, men were taken off by night, and in the last hours self-firing drip rifles kept up occasional shots after the trenches were empty. About 36,000 troops left Anzac and Suvla over several nights ending on 20 December 1915 with very few casualties, and Helles was evacuated in the same way by 9 January 1916.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Because the plan stayed secret until it was complete, an operation that commanders had feared might cost heavy losses was achieved almost without loss of life, and it is often called the best-planned part of the whole campaign.</div>
+  <div class="tieback">The kural says true capability lies in carrying out a task so that it becomes known only when it is finished, and the Gallipoli withdrawal succeeded precisely because the enemy did not learn of it until the last troops had gone.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-67/" target="_blank" rel="noopener">Thirukkural Chapter 67: வினைத்திட்பம் / Power in Action (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-067.html" target="_blank" rel="noopener">வினைத்திட்பம் - அதிகாரம் 67 (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah and Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="http://thirukkural-thamizh.org/html/A067.html" target="_blank" rel="noopener">67. வினைத்திட்பம் (Thirukkural, sandhi-joined text)</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.wisdomlib.org/hinduism/book/kautilya-arthashastra/d/doc365593.html" target="_blank" rel="noopener">Kautilya, Arthashastra, Book 1, Chapter 15: The Business of Council Meeting, trans. R. Shamasastry</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The JPS Tanakh: Gender-Sensitive Edition (Psalms 112:7, 126:5; Proverbs 22:3, 22:29, 24:16; Nehemiah 2:12, 2:16; 1 Samuel 16:7)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.palikanon.com/english/pali_names/maha/mahaummagga_jat_546.htm" target="_blank" rel="noopener">Mahā Ummagga Jātaka (No. 546), Dictionary of Pali Proper Names (G. P. Malalasekera)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://pluralism.org/the-khalsa" target="_blank" rel="noopener">The Khalsa (Introduction to Sikhism) (The Pluralism Project)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, The Odyssey, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.gutenberg.org/ebooks/132" target="_blank" rel="noopener">Sun Tzu, The Art of War (tr. Lionel Giles, 1910)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.anzacmemorial.nsw.gov.au/evacuation" target="_blank" rel="noopener">Evacuation (Gallipoli)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.iwm.org.uk/history/first-world-war/gallipoli/what-you-need-to-know-about-the-gallipoli-campaign" target="_blank" rel="noopener">What You Need To Know About The Gallipoli Campaign</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0662.html">&larr; Kural 662</a>
+  <a href="kural-0664.html">Kural 664 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-067.html">Power in Execution</a>
+  <a class="skip-btn" href="kural-0671.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

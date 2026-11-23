@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 991 — Courtesy | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 991</h1>
+<p class="adhikaram"><a href="adhikaram-100.html">Courtesy</a> &middot; Panpudaimai &middot; <span class="tamil">பண்புடைமை</span></p>
+
+<div class="tamil-text">எண்பதத்தால் எய்தல் எளிதென்ப யார்மாட்டும்
+பண்புடைமை என்னும் வழக்கு.</div>
+<div class="translit">Enpadhaththaal eydhal elidhenpa yaarmaattum
+panputaimai ennum vazhakku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People say that being easy for anyone to approach makes it easy to gain the good way called courtesy (being polite and kind to all).</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a class helper whose door is always open, who smiles at every kid, big or small, and listens. Being kind and polite is easy for that helper because they already let everyone come close. Valluvar says good manners grow out of being easy to reach.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter on panbudaimai (பண்புடைமை, &#x27;possession of refined character, courtesy&#x27;) opens with a practical claim: the path is easy for the one who has en-padham (எண்பதம்), &#x27;easy access&#x27;, the quality of being approachable (எளிய செவ்வி) to everyone, yaar-maattum (யார்மாட்டும், &#x27;towards whomsoever&#x27;). Puliyur Kesikan on thirukkural.net and Mu. Varadarasanar on ytamizh both gloss en-padham as எளிய செவ்வி, availability to all comers, and vazhakku (வழக்கு) as the established good path or usage; Solomon Pappaiah adds that the claim is reported, &#x27;say the learned&#x27; (நூலோர் கூறுவர்), reflecting the verb enpa (என்ப, &#x27;they say&#x27;). Sivayogi Sivakumar&#x27;s reading of en as &#x27;numbers&#x27; (speaking in words as plain as numerals) is an idiosyncratic minority interpretation not shared by the classical glosses. Pope renders the couplet &#x27;Who easy access give to every man, they say, / Of kindly courtesy will learn with ease the way&#x27;, and the same accessibility motif appears in the earlier kural 386 on the king who is kaatchikku eliyan (easy of audience). Placed in the Kudiyiyal after Saanraanmai (ch. 99), the chapter turns from the inner perfection of the noble to its outward social face. The Tamil text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;One who is not envious but is a kind friend to all living entities, who does not think himself a proprietor and is free from false ego, who is equal in both happiness and distress, who is tolerant, always satisfied, self-controlled, and engaged in devotional service with determination, his mind and intelligence fixed on Me – such a devotee of Mine is very dear to Me.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 12.13–14 (Bhagavad-gītā As It Is, A.C. Bhaktivedanta Swami Prabhupāda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna lists the marks of the beloved devotee, beginning with being free of envy and a kindly friend (maitraḥ karuṇaḥ) to every living being.</div>
+  <div class="tieback">Being a friend to all without exception is the same open, easy-to-reach disposition the Kural calls the easy road to courtesy.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Be of the same mind one toward another. Mind not high things, but condescend to men of low estate. Be not wise in your own conceits.&rdquo;</div>
+  <div class="cite">&mdash; Romans 12:16 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul tells believers not to hold themselves aloof but to come down to and associate with ordinary and lowly people.</div>
+  <div class="tieback">Refusing to stand on dignity and staying reachable by the lowly is exactly the &#x27;easy access to all&#x27; that the Kural sets as the gateway to courtesy.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Any of the female slaves of Medina could take hold of the hand of Allah&#x27;s Messenger (ﷺ) and take him wherever she wished.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6072" target="_blank" rel="noopener">Sahih al-Bukhari 6072, Book of Good Manners (Al-Adab), chapter on pride and arrogance</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Anas reports that the Prophet was so approachable that even the humblest slave-girl of Medina could lead him by the hand to attend to her need.</div>
+  <div class="tieback">This is a living picture of en-padham, the easy accessibility to anyone that the Kural says makes courtesy come naturally.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Shammai used to say: make your [study of the] Torah a fixed practice; speak little, but do much; and receive all men with a pleasant countenance.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 1:15 (Mishnah Yomit, tr. Joshua Kulp, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Mishnah&#x27;s ethical tractate teaches that every person, without distinction, should be greeted warmly and graciously.</div>
+  <div class="tieback">Receiving all men pleasantly is the open-door manner that, in the Kural, makes the path of courtesy easy.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Who is hospitable, and friendly, / Liberal and unselfish, / A guide, an instructor, a leader, / Such a one to honor may attain.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta, Digha Nikaya 31 (tr. Narada Thera, Access to Insight)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">In the householder&#x27;s code the Buddha praises the hospitable and friendly person as one who rises to honour.</div>
+  <div class="tieback">Like the Kural, it makes friendliness toward all the ground on which a person&#x27;s refined standing is built.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Disobedient, rough speaking, ill-behaved pupils will exasperate even a gentle teacher; but those will soon win even a hot-tempered teacher who humour him and are polite.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 1.13 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Mahavira&#x27;s lecture on discipline (vinaya) contrasts rough, ill-behaved conduct with polite, accommodating manners that win over even a difficult person.</div>
+  <div class="tieback">The Jain text, like the Kural, treats easy, pleasant bearing toward others as what makes good conduct succeed.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;No one is my enemy, and no one is a stranger. I get along with everyone.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1299, Raag Kaanraa, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Arjan describes the state of one who has found the company of the holy: no one is an enemy or an outsider any more, and he is at ease with everyone. The Sikh institutions of the open langar and the sangat put this openness into practice.</div>
+  <div class="tieback">The Kural says courtesy comes easily to someone approachable by all, and Guru Arjan describes exactly that state of being on easy terms with everyone, with no one treated as a stranger.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Ovid&#x27;s tale, Jupiter and Mercury, disguised as mortals, are turned away from a thousand doors until the poor old couple Baucis and Philemon welcome them, and they alone are rewarded when the inhospitable valley is flooded.</div>
+  <div class="cite">&mdash; Ovid, Metamorphoses 8.611–724 (Baucis and Philemon) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The story celebrates the humble couple whose door and hearth were open to unknown strangers.</div>
+  <div class="tieback">Their openness to whoever came is the same easy accessibility that the Kural treats as the doorway to true courtesy.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;For he will behave so alike towards those he knows and those he does not know, towards intimates and those who are not so, except that in each of these cases he will behave as is befitting.&rdquo;</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics IV.6 (tr. W. D. Ross, Internet Classics Archive)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle describes the nameless social virtue between obsequiousness and churlishness, by which a man is pleasant in the right way toward everyone he meets.</div>
+  <div class="tieback">Treating known and unknown alike with fitting pleasantness is Aristotle&#x27;s version of the Kural&#x27;s courtesy toward &#x27;whomsoever&#x27;.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">King Christian X keeps up his rides through occupied Copenhagen</div>
+  <div class="rle-meta">1940-1942 &middot; Copenhagen, Denmark</div>
+  <div class="quote is-paraphrase">King Christian X of Denmark had long been in the habit of riding on horseback through the streets of Copenhagen, and after Germany occupied Denmark in April 1940 he continued the rides. Britannica notes that he rode frequently through the city during the occupation, showing that he had not given up his claim to national sovereignty. The Royal Danish Collection records that these rides created his image as the equestrian king and that many Danes still remember him riding among them during the occupation.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">By remaining visible and within reach of ordinary citizens in a frightening time, the king became a focus of national loyalty and affection.</div>
+  <div class="tieback">The kural says courtesy comes easily to one who is easy for anyone to approach, and Christian X&#x27;s accessible presence on the streets won him the lasting regard of his people.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-100/" target="_blank" rel="noopener">Thirukkural Chapter 100: பண்புடைமை / Courtesy (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-100.html" target="_blank" rel="noopener">பண்புடைமை - அதிகாரம் 100 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:6072" target="_blank" rel="noopener">Sahih al-Bukhari 6072 (Book of Good Manners and Form, Al-Adab)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta: The Discourse to Sigala (Digha Nikaya 31), tr. Narada Thera</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Metamorphoses, Book VIII (Baucis and Philemon) (Ovid) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Christian-X" target="_blank" rel="noopener">Christian X (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://kongernessamling.dk/en/amalienborg/person/christian-x" target="_blank" rel="noopener">Christian X</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://collections.ushmm.org/search/catalog/pa1099652" target="_blank" rel="noopener">Portrait of King Christian X of Denmark (photo archives record)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0990.html">&larr; Kural 990</a>
+  <a href="kural-0992.html">Kural 992 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-100.html">Courtesy</a>
+  <a class="skip-btn" href="kural-1001.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

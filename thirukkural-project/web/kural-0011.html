@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 11 — The Excellence of Rain | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 11</h1>
+<p class="adhikaram"><a href="adhikaram-002.html">The Excellence of Rain</a> &middot; Vaan Sirappu &middot; <span class="tamil">வான் சிறப்பு</span></p>
+
+<div class="tamil-text">வான்நின்று உலகம் வழங்கி வருதலால்
+தான்அமிழ்தம் என்றுணரற் பாற்று.</div>
+<div class="translit">Vaan nindru ulagam vazhangi varudhalaal,
+Thaan amizhdham endru unarar paatru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The world keeps living because rain falls without fail. So rain deserves to be called amrita (the drink that makes the gods live forever).</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a plant on your windowsill. Water it, and it stays green and grows; forget it for a week, and it droops and dies. This kural says the whole world is that plant, and rain is the water. Because rain keeps everything alive, we should treat it like the most precious drink there is.</p>
+
+<h2 class="section">University</h2>
+<p>Valluvar&#x27;s second chapter makes a striking structural choice: immediately after invoking God he turns not to ritual or scripture but to வான் (vaan), the sky and the rain that comes from it. The key term is அமிழ்தம் (amizhdham), the Tamil form of Sanskrit अमृत (amṛta), the deathless nectar of the gods — so rain is not merely useful but the very substance of continued life, which is why G. U. Pope rendered it &quot;the true ambrosial food of all that lives.&quot; The verb வழங்கி (vazhangi, &quot;conducting itself, carrying on&quot;) frames the world as an ongoing transaction that rain alone keeps in motion. Medieval commentators such as Parimelazhagar read the chapter as establishing the material precondition of அறம் (aram, virtue) itself, and modern secular and ecological readers have seized on exactly this move: Valluvar grounds ethics in a physical dependency rather than in divine command.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Amrit is in the Waters, in the Waters there is healing balm&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/rigveda/rv05083.htm" target="_blank" rel="noopener">Rigveda 1.23.19 (Griffith translation)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In this Vedic hymn to the Waters, the poet declares that the immortal nectar (amṛta) and every medicine that heals are literally present within water itself.</div>
+  <div class="tieback">This is the same identification Valluvar makes — rain is not merely like nectar, it is amrita.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Nevertheless he left not himself without witness, in that he did good, and gave us rain from heaven, and fruitful seasons, filling our hearts with food and gladness.&rdquo;</div>
+  <div class="cite">&mdash; Acts 14:17 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Paul, preaching at Lystra, argues that rain and the harvest it produces are themselves sufficient evidence of a good God at work in the world.</div>
+  <div class="tieback">Like the Kural, it treats rain as the single most visible thing that keeps human life going and worth honouring.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And We have sent down blessed rain from the sky and made grow thereby gardens and grain from the harvest&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 50:9, Qaf (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Qur&#x27;an calls rain mubārakan — &quot;blessed&quot; — and names it as the direct cause of every garden and grain crop.</div>
+  <div class="tieback">The epithet &quot;blessed&quot; for rain parallels the Kural&#x27;s &quot;amrita&quot;: rain is singled out as the uniquely life-giving substance.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Rabbi Abbahu said: The day of rain is greater than the resurrection of the dead.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Taanit.7a" target="_blank" rel="noopener">Babylonian Talmud, Ta&#x27;anit 7a (Koren–Steinsaltz, William Davidson Edition)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Talmud&#x27;s praise of rainfall ranks it above resurrection, reasoning that resurrection benefits only the righteous while rain benefits righteous and wicked alike.</div>
+  <div class="tieback">Both texts rank rain alongside immortality itself — the Kural calls it nectar, the Talmud calls it greater than the raising of the dead.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Even as the great cloud, Kâsyapa, after expanding over the whole universe, pours out the same water and recreates by it all grasses, shrubs, herbs, and trees&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/bud/lotus/lot05.htm" target="_blank" rel="noopener">Saddharma-Pundarika (Lotus Sutra), Chapter 5, &quot;On Plants&quot; (Kern translation, SBE vol. 21)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In the Parable of the Medicinal Herbs, one cloud rains impartially on the whole world and every plant, small or large, takes what it can and grows — the image for how one Dharma nourishes all beings.</div>
+  <div class="tieback">It shares the Kural&#x27;s premise that a single rain is what recreates and sustains every living thing in the world.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;At the end of duḥṣamāduḥṣamā in utsarpiṇī, there will be five clouds that will rain for seven days each. Among these the first, named Puṣkara will sow the earth; the second, named Kṣīramegha, will make grain spring up; the third, Ghṛtamegha, will produce oil; the fourth, Amṛtamegha, will make herbs, et cetera.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Hemacandra, Trishashtishalakapurushacharitra, Book X (Mahaviracharitra), ch. XIII, &#x27;Utsarpini&#x27; (tr. Helen M. Johnson)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Jain cosmology, when the worst age of the time-cycle ends, a series of great rains, including an &#x27;amrita-cloud&#x27;, restores the ruined earth and makes life possible again.</div>
+  <div class="tieback">Jain tradition, too, imagines world-renewing rain as amrita, the nectar that brings the dead world back to life, which is just what the Kural calls rain.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;O rainbird, the One unto whom you call - everyone longs for that Lord. When He grants His Grace, it rains, and the forests and fields blossom forth in their greenery... O Nanak! The Ambrosial Nectar rains down forever; the Lord gives it to the Gurmukh.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1281, Raag Malar, Vaar Malar, Salok Mahala 3, Guru Amar Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In the monsoon raag Malar, Guru Amar Das moves from real rain, which turns forests and fields green, to amrit (ambrosial nectar) raining down without end. Rain and amrit are spoken of in the same breath.</div>
+  <div class="tieback">Like the Kural, Gurbani connects life-giving rain with amrit, the deathless nectar.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Homer, the gods live on ambrosia and nectar, the food and drink that make them deathless; Calypso sets ambrosia before Hermes, and gods use it to preserve mortal bodies from decay.</div>
+  <div class="cite">&mdash; Homer, Odyssey 5.92–94, 199 (ambrosia and nectar of the gods) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Ambrosia is Greek myth&#x27;s substance of immortality, reserved for the Olympians and occasionally used to keep a human body incorruptible.</div>
+  <div class="tieback">The Greek ambrosia and the Kural&#x27;s amizhdham descend from the same Indo-European root (*n̥-mr̥tos, &quot;undying&quot;), so Valluvar is quite literally calling rain the ambrosia of the world.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Thales, the founder of this school of philosophy, says the principle is water … getting the notion perhaps from seeing that the nutriment of all things is moist, and that heat itself is generated from the moist and kept alive by it&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/metaphysics.12.xii.html" target="_blank" rel="noopener">Aristotle, Metaphysics 983b20 (Ross translation)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Aristotle reports the first recorded Greek philosophical thesis: water is the archē, the first principle out of which everything comes and by which everything is nourished.</div>
+  <div class="tieback">Both Thales and Valluvar reach for water as the one substance without which the world cannot be or continue.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Parakramabahu I builds the Parakrama Samudra reservoir</div>
+  <div class="rle-meta">12th century (reign 1153-1186) &middot; Polonnaruwa, Sri Lanka</div>
+  <div class="quote is-paraphrase">King Parakramabahu I, under whom the Polonnaruwa kingdom reached its greatest prosperity, built the great reservoir known as the Parakrama Samudra, the Sea of Parakrama. Britannica describes it as the crowning glory of his reign, with a storage area of more than 5,000 acres serving the irrigation of about 18,000 acres. The reservoir, formed by joining older tanks with new ones built in his reign, still holds water today.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">A whole kingdom&#x27;s prosperity was built on capturing and storing the monsoon rain, and the reservoir has continued to sustain farming for more than eight centuries.</div>
+  <div class="tieback">The kural calls rain the nectar by which the world keeps living, and Parakramabahu&#x27;s vast tank shows a state treating every season&#x27;s rainfall as the treasure on which its life depended.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-2/" target="_blank" rel="noopener">வான்சிறப்பு / The Blessing of Rain — Thirukkural Chapter 2 (Kurals 11–20), Tamil text with transliteration, English couplets and four Tamil commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-002.html" target="_blank" rel="noopener">The Excellence of Rain — Adhigaram 2, Thirukkural</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://dailyprojectthirukkural.blogspot.com/2017/11/Athikaaram002.html" target="_blank" rel="noopener">002 வான்சிறப்பு — chapter index with the full Tamil text of Kurals 11–20</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://sacred-texts.com/hin/rigveda/rv05083.htm" target="_blank" rel="noopener">The Rig Veda, translated by Ralph T. H. Griffith (1896)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Taanit.7a" target="_blank" rel="noopener">Babylonian Talmud, Tractate Ta&#x27;anit 7a (William Davidson digital edition of the Koren Noé Talmud, with commentary by Rabbi Adin Even-Israel Steinsaltz)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/bud/lotus/lot05.htm" target="_blank" rel="noopener">The Saddharma-Pundarîka, or The Lotus of the True Law, Chapter 5 &#x27;On Plants&#x27;, translated by H. Kern, Sacred Books of the East vol. 21 (1884)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://classics.mit.edu/Aristotle/metaphysics.12.xii.html" target="_blank" rel="noopener">Metaphysics, Book XII (Lambda) (Aristotle)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/topic/Parakrama-Samudra" target="_blank" rel="noopener">Parakrama Samudra</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.fao.org/4/t0028e/t0028e03.htm" target="_blank" rel="noopener">Reservoirs of Sri Lanka and their fisheries</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0010.html">&larr; Kural 10</a>
+  <a href="kural-0012.html">Kural 12 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-002.html">The Excellence of Rain</a>
+  <a class="skip-btn" href="kural-0021.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

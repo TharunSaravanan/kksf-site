@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 856 — Hostility | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 856</h1>
+<p class="adhikaram"><a href="adhikaram-086.html">Hostility</a> &middot; Ikal &middot; <span class="tamil">இகல்</span></p>
+
+<div class="tamil-text">இகலின் மிகலினிது என்பவன் வாழ்க்கை
+தவலும் கெடலும் நணித்து.</div>
+<div class="translit">Ikalin mikalinidhu enbavan vaazhkkai
+thavalum kedalum naniththu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A person who thinks it is sweet to get ahead by fighting with others will soon see their life fail and fall apart.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Some people enjoy picking fights because winning feels good. But someone who always looks for a fight soon has no friends and lots of enemies, and things start to go wrong fast. The poet warns that loving fights leads to falling down.</p>
+
+<h2 class="section">University</h2>
+<p>Ikalin mikal inidhu (இகலின் மிகல் இனிது): ‘to excel (mikal) by means of hostility is sweet’ is the boast of the quarrelsome man. Valluvar answers that for him thavalum (தவலும், failing, slipping) and kedalum (கெடலும், perishing) are naniththu (நணித்து, near). Puliyur Kesigan reads mikal as ‘exceeding others in hostility’, Mu. Varadarasanar as ‘victory through hostility’, and Kalaignar as ‘thinking victory easy through opposition’. Pappaiah gives a distinctive reading: such a life’s survival is brief, and its ruin also comes within a brief time. The couplet turns from the inner disease to its social consequence. Text identical on both sources.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Sabha Parva of the Mahabharata, Shishupala heaps insult after insult on Krishna at Yudhishthira’s Rajasuya sacrifice, delighting in his hostility, until Krishna, having forborne a hundred offences, slays him in the assembly.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m02/index.htm" target="_blank" rel="noopener">Mahabharata, Sabha Parva (Shishupala-vadha)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">A king who revelled in hostility met swift destruction.</div>
+  <div class="tieback">He is the Kural’s man who found hostility sweet and found ruin near.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But if ye bite and devour one another, take heed that ye be not consumed one of another.&rdquo;</div>
+  <div class="cite">&mdash; Galatians 5:15 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul warns that a community that feeds on infighting will consume itself.</div>
+  <div class="tieback">Both texts warn that relish for hostility ends in self-destruction.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And obey Allah and His Messenger, and do not dispute and [thus] lose courage and [then] your strength would depart; and be patient.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 8:46 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an warns that quarrelling saps courage and makes strength vanish.</div>
+  <div class="tieback">The Kural similarly says hostility brings swift failure.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">The Talmud tells of a host who, out of personal hatred, threw a man named Bar Kamsa out of his feast; the humiliated guest’s revenge set in motion events the sages connect with the destruction of Jerusalem.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Gittin.55b" target="_blank" rel="noopener">Babylonian Talmud, Gittin 55b-56a</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">A private grudge, enjoyed and indulged, escalated into national catastrophe.</div>
+  <div class="tieback">This shows how near ruin is to those who indulge hostility.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Victory begets enmity; the defeated dwell in pain. Happily the peaceful live, discarding both victory and defeat.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 201 (tr. Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha observes that winning by conflict only breeds more enmity.</div>
+  <div class="tieback">The Kural likewise exposes the sweetness of victory through hostility as a trap.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;He stumbled and fell into a pit that was like the mouth of hell. As he fell, the sharp axe fell on him and split his head in two. For there was maturing of bad karma.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Hemacandra, Triṣaṣṭiśalākāpuruṣacaritra, Book X (Mahāvīracaritra), ch. III, part 10 &#x27;Episode of Caṇḍakauśika&#x27; (tr. Helen M. Johnson; wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In a former birth, the hot-tempered ascetic Kauśika rushes with an axe at men breaking into his woods. His own fury throws him into a pit, where his own axe kills him, and the text adds that anger carries on into the next birth.</div>
+  <div class="tieback">The Kural warns that for whoever thinks it sweet to get ahead through hostility, failure and ruin are close at hand, and Kauśika&#x27;s charge ends in his destruction within moments.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Do not speak ill of others, or get involved in arguments.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 566, Raag Vadhans, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In a chhant in Raag Vadhans Guru Nanak warns against calling others bad and stirring up quarrels.</div>
+  <div class="tieback">The Kural warns that one who finds it sweet to get ahead through hostility is close to ruin; Guru Nanak likewise steers the seeker away from picking quarrels.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Iliad 18, after Patroclus dies because of his quarrel with Agamemnon, Achilles wishes that strife would perish from gods and men, along with the anger that grows sweeter than honey in a man’s heart.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, Iliad 18.107-110</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Achilles recognises too late that the sweetness of his anger brought ruin on those he loved.</div>
+  <div class="tieback">This is the Kural’s warning: hostility tastes sweet, but ruin is near.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Thucydides describes how, during the civil strife at Corcyra, factions came to prize revenge over self-preservation and admired the violent, until the whole Greek world was convulsed and its character corrupted.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/7142" target="_blank" rel="noopener">Thucydides, History of the Peloponnesian War 3.82-83</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The historian shows that a culture which comes to love conflict quickly destroys itself.</div>
+  <div class="tieback">The Kural states the same law for a single life.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Charles the Bold&#x27;s wars end in his death at Nancy</div>
+  <div class="rle-meta">1474-1477 &middot; Grandson and Morat, Switzerland; Nancy, Lorraine, France</div>
+  <div class="quote is-paraphrase">Charles the Bold, Duke of Burgundy, pursued constant wars of expansion, and after a failed siege of Neuss he went to war against the Swiss confederates and the Duke of Lorraine. In 1476 the Swiss defeated him at Grandson and again at Morat. On 5 January 1477 he was killed in battle at Nancy against Rene II of Lorraine and his Swiss allies, and his Burgundian state was then divided between the King of France and the Habsburgs.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Within three years of his greatest power, Charles&#x27;s appetite for war had destroyed both himself and the independent Burgundian state he had sought to enlarge.</div>
+  <div class="tieback">The kural warns that for one who thinks it sweet to get ahead through hostility, failure and ruin are near, and Charles&#x27;s relentless warring brought defeat, death and the break-up of his realm within a few years.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-86/" target="_blank" rel="noopener">Thirukkural Chapter 86: இகல் / Hostility (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-086.html" target="_blank" rel="noopener">இகல் - அதிகாரம் 86 - திருக்குறள் (with Puliyur Kesigan, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m02/index.htm" target="_blank" rel="noopener">The Mahabharata, Book 2: Sabha Parva (Sisupala-badha sub-parva), trans. Kisari Mohan Ganguli</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Gittin.55b" target="_blank" rel="noopener">Babylonian Talmud, Gittin 55b-56a (Kamsa and Bar Kamsa)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, The Iliad, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/7142" target="_blank" rel="noopener">Thucydides, History of the Peloponnesian War, translated by Richard Crawley (1874)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.encyclopedia.com/people/history/french-history-biographies/charles-bold" target="_blank" rel="noopener">Charles the Bold (Burgundy) (1433-1477) (Encyclopedia.com)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.ebsco.com/research-starters/history/charles-bold" target="_blank" rel="noopener">Charles the Bold (Research Starter) (EBSCO)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0855.html">&larr; Kural 855</a>
+  <a href="kural-0857.html">Kural 857 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-086.html">Hostility</a>
+  <a class="skip-btn" href="kural-0861.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

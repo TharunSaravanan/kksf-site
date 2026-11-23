@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 641 — Oratory | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 641</h1>
+<p class="adhikaram"><a href="adhikaram-065.html">Oratory</a> &middot; Solvanmai &middot; <span class="tamil">சொல்வன்மை</span></p>
+
+<div class="tamil-text">நாநலம் என்னும் நலனுடைமை அந்நலம்
+யாநலத்து உள்ளதூஉம் அன்று.</div>
+<div class="translit">Naanalam ennum nalanudaimai annalam
+Yaanalaththu ulladhooum andru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The gift of speaking well is a treasure all by itself. It is not just one of the many other good things a person may have.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a treasure box holding gold, toys and books. A kind, clear way of speaking is not just one more thing in the box; it is like a special key that opens many other boxes. This kural says being able to speak well is a treasure all by itself.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter opens the minister’s second great qualification after the preceding chapter on the minister (அமைச்சு, ch. 64): nā-nalam, literally “tongue-goodness”, is framed as a nalan-uṭaimai, a possession or wealth in the same grammatical mould as kalvi-uṭaimai or aṟivu-uṭaimai elsewhere in the text. The second line, yā-nalattu uḷḷatūum anṟu, says this good is “not contained within any other good”; the lengthened form uḷḷatūum is an alapeṭai (metrical prolongation). Parimelazhagar explains that eloquence is a distinct excellence because the other goods of a minister (lineage, learning, wealth) cannot be made effective in council without it, and Mu. Varadarasanar and Solomon Pappaiah follow this reading of it as a unique, self-standing merit. Some later commentators, including Kalaignar, read the line more strongly as “the best of all wealth”, a slight shift from “not included among” to “superior to” the other goods. The text is stable across ytamizh.com and the older sandhi-joined edition at thirukkural-thamizh.org (நாநல மென்னு நலனுடைமை யந்நலம்).</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Vak Sukta of the Rigveda, Vāk (divine Speech) speaks of herself as a queen and gatherer of treasures, the power who makes the one she loves mighty, a seer and a sage.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/rigveda/rv05083.htm" target="_blank" rel="noopener">Rigveda 10.125 (Vak Sukta), trans. R. T. H. Griffith</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The hymn treats Speech not as a tool but as a sovereign goddess who holds wealth and gives greatness to those she favours; later tradition connects her with Sarasvatī.</div>
+  <div class="tieback">Like the Kural, the hymn counts speech itself as a treasure, not an accessory to other treasures.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;The officers answered, Never man spake like this man.&rdquo;</div>
+  <div class="cite">&mdash; John 7:46 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Temple officers sent to arrest Jesus return empty-handed, giving as their only excuse the unmatched quality of his speech.</div>
+  <div class="tieback">The officers treat Jesus’ speech as a power in a class of its own, which is what the Kural means by a good not contained in other goods.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;[And] taught him eloquence.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 55:4 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Surah ar-Rahman lists al-bayān (clear, articulate expression) among God’s first gifts to humankind, right after creating the human being and teaching the Qur’an.</div>
+  <div class="tieback">The Qur’an counts clear speech as a distinct divine gift, much as the Kural counts nā-nalam as its own kind of wealth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;A word fitly spoken Is like apples of gold in settings of silver.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">Proverbs 25:11 (JPS 1917)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The proverb compares a well-placed word to a precious object set in precious metal, a thing of both value and beauty.</div>
+  <div class="tieback">Both texts describe good speech as treasure, with value apart from the speaker’s other goods.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Anguttara Nikaya’s list of pre-eminent disciples, the Buddha names the monk Vangīsa as foremost among those gifted with ready, inspired speech (paṭibhāna).</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/an1.188-197" target="_blank" rel="noopener">Anguttara Nikaya 1 (Etadagga Vagga)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Eloquence is recognised as a separate excellence worth naming, alongside wisdom, psychic power and other distinctions.</div>
+  <div class="tieback">The Kural also treats eloquence as its own distinct merit, not something absorbed into other virtues.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Those who having investigated the Law expound it, are awakened and put an end to mundane existence; able to liberate both (themselves and others), they answer the well-deliberated questions.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga I.14.18 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Sutrakritanga&#x27;s lecture on the ideal monk counts the ability to expound the Law clearly as a gift of its own, one that frees both the speaker and those who hear him.</div>
+  <div class="tieback">Valluvar calls goodness of the tongue a wealth in its own right; the Jain verse likewise gives skilled exposition a distinct worth, since it benefits others as well as oneself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Sweetness and humility, O Nanak, are the essence of virtue and goodness.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 470, Raag Aasaa (Asa ki Vaar, salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Asa ki Vaar Guru Nanak names sweetness (mithat), above all in speech and bearing, together with humility as the very essence of every virtue.</div>
+  <div class="tieback">The Kural calls goodness of the tongue a wealth in its own right, not one good among many; Guru Nanak likewise sets sweetness at the core of all goodness rather than treating it as a minor accomplishment.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Hermes, messenger of the gods, was honoured as Hermes Logios, patron of eloquence and persuasive speech, and the Homeric Hymn to Hermes shows the infant god talking his way out of trouble before Zeus.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HomericHymns2.html" target="_blank" rel="noopener">Homeric Hymn 4, To Hermes</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The Greeks gave eloquence its own divine patron, separate from the gods of war, wealth or wisdom.</div>
+  <div class="tieback">Giving eloquence its own god reflects the Kural’s view that speech is a good in its own category.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In the Nicocles, Isocrates delivers his famous praise of logos: speech is what raises humans above animals, lets them found cities, make laws and invent arts, and good speech is the outward sign of a sound mind.</div>
+  <div class="cite">&mdash; <a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0144:speech%3D3:section%3D61" target="_blank" rel="noopener">Isocrates, Nicocles 5-9</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Isocrates argues that the capacity for speech is the source of nearly every civilised good.</div>
+  <div class="tieback">Isocrates, like Valluvar, ranks eloquence as a good of its own order rather than one virtue among many.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Cicero, a &#x27;new man&#x27;, wins the consulship through his oratory</div>
+  <div class="rle-meta">63 BCE &middot; Rome, Roman Republic</div>
+  <div class="quote is-paraphrase">Marcus Tullius Cicero came from a wealthy equestrian family with no consuls among his ancestors, and he built his career largely on his work as an advocate in the law courts, including his successful prosecution of Verres in 70 BCE. He rose through each office at the minimum legal age and was elected consul for 63 BCE as a novus homo, a &#x27;new man&#x27;, heading the poll. He is remembered as the greatest Roman orator, and his speeches against Catiline during his consulship are among his best-known works.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Without noble birth or a military record, Cicero reached the highest office of the Republic mainly through the power of his speech.</div>
+  <div class="tieback">The kural calls the goodness of the tongue a wealth in its own right, not merely one good among others, and Cicero&#x27;s rise shows eloquence serving as the capital that a lack of lineage denied him.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-65/" target="_blank" rel="noopener">Thirukkural Chapter 65: சொல்வன்மை / Power of Speech (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A065.html" target="_blank" rel="noopener">65. சொல்வன்மை (Thirukkural, sandhi-joined text)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/rigveda/rv05083.htm" target="_blank" rel="noopener">The Rig Veda, translated by Ralph T. H. Griffith (1896)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://suttacentral.net/an1.188-197" target="_blank" rel="noopener">Anguttara Nikaya 1, Etadagga Vagga (the foremost disciples)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga (Sutrakritanga)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HomericHymns2.html" target="_blank" rel="noopener">Homeric Hymn 4, To Hermes (trans. Hugh G. Evelyn-White, Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0144:speech%3D3:section%3D61" target="_blank" rel="noopener">Isocrates, Nicocles or the Cyprians (Or. 3), section 61, trans. George Norlin</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/summary/Cicero" target="_blank" rel="noopener">Marcus Tullius Cicero summary (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.worldhistory.org/Cicero/" target="_blank" rel="noopener">Cicero (James Lloyd)</a> <span class="tier">[web source]</span></li>
+<li id="cite-14"><a href="https://plato.stanford.edu/entries/cicero/" target="_blank" rel="noopener">Cicero</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0640.html">&larr; Kural 640</a>
+  <a href="kural-0642.html">Kural 642 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-065.html">Oratory</a>
+  <a class="skip-btn" href="kural-0651.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1000 — Courtesy | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1000</h1>
+<p class="adhikaram"><a href="adhikaram-100.html">Courtesy</a> &middot; Panpudaimai &middot; <span class="tamil">பண்புடைமை</span></p>
+
+<div class="tamil-text">பண்பிலான் பெற்ற பெருஞ்செல்வம் நன்பால்
+கலந்தீமை யால்திரிந் தற்று.</div>
+<div class="translit">Panpilaan petra perunjelvam nanpaal
+kalandheemai yaaldhirin thatru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Great riches that come to a person without good manners are like good milk spoiled by a dirty pot.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Pour fresh milk into a dirty cup and it turns sour and yucky. Valluvar says money is like that milk: if it goes to a rude, unkind person, it turns sour and does nobody any good.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter closes with a domestic simile: the perum-selvam (பெருஞ்செல்வம், &#x27;great wealth&#x27;) of the panbilaan (பண்பிலான், &#x27;man without courtesy&#x27;) is like nan-paal (நன்பால், &#x27;good milk&#x27;) that has &#x27;turned&#x27; (thirindhu, திரிந்து) through kalam-theemai (கலந்தீமை, &#x27;defect of the vessel&#x27;). Mu. Varadarasanar, Pappaiah and Kalaignar all read kalan as the container (கலம், பாத்திரம்), Kalaignar specifying a vessel coated with verdigris (களிம்பு); Pope&#x27;s verse &#x27;Like sweet milk soured because in filthy vessel poured&#x27; agrees, while his prose &#x27;will perish like pure milk spoilt by the impurity of the vessel&#x27; stresses waste. The segmentation kalan + theemai, rather than kalandhu + theemai (&#x27;mixed with evil&#x27;), is the standard one; Sivayogi Sivakumar&#x27;s &#x27;by the evil mixed with it&#x27; reflects the alternative split. The kural also bridges to the next chapter, Nanriyil Selvam (ch. 101, &#x27;Useless wealth&#x27;). Transliterations differ slightly (yaaldhirinh thatru on ytamizh; yaaldhirin thatru on thirukkural.net), but the Tamil text is identical on both sites.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;The demoniac person thinks: “So much wealth do I have today, and I will gain more according to my schemes. So much is mine now, and it will increase in the future, more and more. He is my enemy, and I have killed him, and my other enemies will also be killed. I am the lord of everything. I am the enjoyer. I am perfect, powerful and happy. I am the richest man, surrounded by aristocratic relatives. There is none so powerful and happy as I am. I shall perform sacrifices, I shall give some charity, and thus I shall rejoice.” In this way, such persons are deluded by ignorance.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 16.13–15 (Bhagavad-gītā As It Is, A.C. Bhaktivedanta Swami Prabhupāda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna depicts how wealth in the hands of a person of demonic character feeds arrogance, enmity and delusion.</div>
+  <div class="tieback">Like the Kural, it shows riches turning to evil in a person without good character.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Neither do men put new wine into old bottles: else the bottles break, and the wine runneth out, and the bottles perish: but they put new wine into new bottles, and both are preserved.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 9:17 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus&#x27; parable warns that a good substance poured into an unfit container is lost along with the container.</div>
+  <div class="tieback">It shares the Kural&#x27;s image of a good thing ruined by an unfit vessel, though Jesus applies it to his new teaching.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O you who have believed, do not invalidate your charities with reminders or injury as does one who spends his wealth [only] to be seen by the people and does not believe in Allah and the Last Day. His example is like that of a [large] smooth stone upon which is dust and is hit by a downpour that leaves it bare.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 2:264 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an warns that wealth given with insult or for show is washed away, leaving nothing of value.</div>
+  <div class="tieback">Like the Kural, it shows the good of wealth spoiled by the giver&#x27;s ungracious character.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;There is a sore evil which I have seen under the sun, namely, riches kept for the owners thereof to their hurt.&rdquo;</div>
+  <div class="cite">&mdash; Ecclesiastes 5:13 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Ecclesiastes observes that wealth can be hoarded only to harm its owner.</div>
+  <div class="tieback">This shares the Kural&#x27;s insight that riches can turn bad in the wrong hands.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Riches ruin only the foolish, not those in quest of the Beyond. By craving for riches the witless man ruins himself as well as others.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 355 (tr. Acharya Buddharakkhita, Access to Insight) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Dhammapada teaches that wealth destroys the foolish but not the wise.</div>
+  <div class="tieback">As in the Kural, whether wealth is good or ruinous depends on the character of its holder.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Men who adhering to wrong principles acquire wealth by evil deeds, will lose it, falling into the snares (of their passions) and being held captive by their hatred.” … “Wealth will not protect a careless man in this world and the next. Though he had seen the right way, he does not see it, even as one in the dark whose lamp has suddenly been put out.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 4.2 and 4.5 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Mahavira teaches that wealth gained or held without right conduct is lost and brings no protection.</div>
+  <div class="tieback">Like the Kural, it shows wealth becoming useless and ruinous when held by one lacking good character.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Wash the vessel, sit down and anoint it with fragrance; then, go out and get the milk. Add the rennet of clear consciousness to the milk of good deeds, and then, free of desire, let it curdle.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 728, Raag Suhi, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Guru Nanak takes the household work of setting milk to curd as an image of the spiritual life: the vessel, the inner self, must be cleaned first, or the milk of good deeds will not set into anything good.</div>
+  <div class="tieback">The Kural says great wealth in the hands of a discourteous person is like good milk spoiled by an unclean vessel, and Guru Nanak uses the very same image of a clean vessel needed before good milk can turn out well.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Granted his wish that everything he touched would turn to gold, King Midas finds that his food and drink become metal in his mouth, so that his great wealth becomes a curse until he begs to be released from it.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses 11.85–145</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Midas&#x27; foolish greed turns the gift of riches into something that cannot nourish him.</div>
+  <div class="tieback">Like milk spoiled in a bad vessel, wealth in the hands of the unwise turns from blessing to curse.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Sincerum est nisi uas, quodcumque infundis acescit.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.thelatinlibrary.com/horace/epist1.shtml" target="_blank" rel="noopener">Horace, Epistles 1.2.54 (Latin text, The Latin Library)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Horace tells Lollius that unless the vessel is clean, whatever you pour into it turns sour, meaning that possessions and pleasures cannot benefit a corrupted mind.</div>
+  <div class="tieback">Horace uses the very same image as the Kural, a good liquid spoiled by an impure vessel, to say that wealth is wasted on a flawed character.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Leona Helmsley is convicted of tax evasion</div>
+  <div class="rle-meta">30 August 1989 (verdict); 12 December 1989 (sentence) &middot; New York City, United States</div>
+  <div class="quote is-paraphrase">The hotel and property billionaire Leona Helmsley was tried in federal court in New York in 1989, and many of the witnesses were her own former employees, whose testimony portrayed her as harsh and abusive toward staff. On 30 August 1989 she was convicted of evading about 1.2 million dollars in federal income tax by charging more than 4 million dollars of personal expenses, mostly renovations to her Connecticut estate, to her businesses. In December 1989 she was sentenced to four years in prison and heavy fines, and the press had long nicknamed her the Queen of Mean.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Helmsley&#x27;s great fortune brought her public contempt rather than honour, largely because of how she treated the people who worked for her.</div>
+  <div class="tieback">The kural says that great wealth in the hands of someone without courtesy is like good milk spoiled by an unclean vessel, and Helmsley&#x27;s wealth was soured in the public eye by her treatment of others.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-100/" target="_blank" rel="noopener">Thirukkural Chapter 100: பண்புடைமை / Courtesy (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-100.html" target="_blank" rel="noopener">பண்புடைமை - அதிகாரம் 100 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses, Book 1 (the flood of Deucalion and Pyrrha, 1.253–415)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.thelatinlibrary.com/horace/epist1.shtml" target="_blank" rel="noopener">Horace, Epistulae, Book I (Latin text)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.upi.com/Archives/1989/12/12/Helmsley-sentenced-to-4-years-for-tax-evasion/5863629442000/" target="_blank" rel="noopener">Helmsley sentenced to 4 years for tax-evasion</a> <span class="tier">[web source]</span></li>
+<li id="cite-12"><a href="https://www.deseret.com/2007/8/21/20036500/the-queen-of-mean-leona-helmsley-dies/" target="_blank" rel="noopener">The &#x27;queen of mean,&#x27; Leona Helmsley, dies (Associated Press)</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0999.html">&larr; Kural 999</a>
+  <a href="kural-1001.html">Kural 1001 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-100.html">Courtesy</a>
+  <a class="skip-btn" href="kural-1001.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

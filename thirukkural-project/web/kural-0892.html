@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 892 — Not Offending the Great | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 892</h1>
+<p class="adhikaram"><a href="adhikaram-090.html">Not Offending the Great</a> &middot; Periyaaraip Pizhaiyaamai &middot; <span class="tamil">பெரியாரைப் பிழையாமை</span></p>
+
+<div class="tamil-text">பெரியாரைப் பேணாது ஒழுகிற் பெரியாரால்
+பேரா இடும்பை தரும்.</div>
+<div class="translit">Periyaaraip penaadhu ozhukir periyaaraal
+peraa itumpai tharum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If you act without respect for great people, they will bring you trouble that never goes away.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you keep ignoring your coach and being rude, you might find yourself benched for the whole season. Not treating important people with respect can bring trouble that doesn’t go away quickly.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet turns on the repeated periyaar (பெரியார், the great): conduct (ozhugal, ஒழுகல்) that does not penu (பேணு, cherish, honour) the great yields, through those same great ones, peraa idumbai (பேரா இடும்பை, affliction that does not depart). The adjective peraa (from pe-, to move away) stresses permanence, which Mu. Varadarasanar renders as நீங்காத துன்பம். Solomon Pappaiah and Kalaignar read it simply as disrespect to elders or great persons, while the traditional reading behind Pope’s explanation glosses periyaar as powerful rulers. The phrase periyaaraal (by the great) shows that the harm is not mere fate but the active response of the offended party. Both sources agree on the text, including the sandhi form ஒழுகிற்.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In Kalidasa’s Abhijnanashakuntalam, Shakuntala, lost in thoughts of Dushyanta, fails to greet the visiting sage Durvasa, who curses her that her beloved will forget her; much of the play’s suffering follows.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/" target="_blank" rel="noopener">Kalidasa, Abhijnanashakuntalam, Act 4 (Durvasa’s curse)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">A single lapse in honouring a great ascetic brings a long chain of sorrow that is only lifted much later.</div>
+  <div class="tieback">This is the Kural’s peraa idumbai: lasting trouble that comes from the very great one who was neglected.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Whosoever therefore resisteth the power, resisteth the ordinance of God: and they that resist shall receive to themselves damnation.&rdquo;</div>
+  <div class="cite">&mdash; Romans 13:2 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul teaches that opposing rightful authority brings judgment upon the one who resists.</div>
+  <div class="tieback">Like the Kural, it warns that defying those in power returns as heavy consequence on oneself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O you who have believed, do not raise your voices above the voice of the Prophet or be loud to him in speech like the loudness of some of you to others, lest your deeds become worthless while you perceive not.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 49:2 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Believers are warned that even careless disrespect toward the Prophet can quietly nullify their good deeds.</div>
+  <div class="tieback">As in the Kural, failing to honour the great carries a serious and lasting loss, sometimes unnoticed until too late.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Curse not the king, no not in thy thought; and curse not the rich in thy bedchamber: for a bird of the air shall carry the voice, and that which hath wings shall tell the matter.&rdquo;</div>
+  <div class="cite">&mdash; Ecclesiastes 10:20 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Kohelet advises against even private contempt for the powerful, since word of it will reach them.</div>
+  <div class="tieback">The Kural likewise warns that disregard for the great returns as trouble from the great themselves.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Not to associate with the foolish, but to associate with the wise; and to honor those who are worthy of honor — this is the greatest blessing.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/kn/snp/snp.2.04.nara.html" target="_blank" rel="noopener">Maha-mangala Sutta, Sutta Nipata 2.4 (trans. Narada Thera)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha lists honouring those worthy of honour among the highest blessings of life.</div>
+  <div class="tieback">The Kural states the reverse side: failing to honour the great invites lasting harm.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;O lord of the fair hill-land resounding with streams! we should not, thinking they will forgive us, do what is hateful to the guiltless, for none can remove their anger when once they are provoked.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">Nāladiyār 17.1 (English translation serialised in The Indian Antiquary; wisdomlib.org)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The first quatrain of the Nāladiyār&#x27;s chapter &#x27;Against reproaching the great&#x27; warns against wronging the worthy on the assumption that they will forgive, because their anger once roused cannot be undone.</div>
+  <div class="tieback">The Kural says disregard for the great brings affliction that will not leave, and the Jain Tamil quatrain names the same lasting, irremovable consequence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;One who slanders the Saints, O Nanak! Shall be reincarnated over and over again.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 279, Raag Gauree (Sukhmani), Guru Arjan (tr. Sant Singh Khalsa, as given on srigranth.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The shalok opening the thirteenth ashtapadi of Sukhmani Sahib says that contempt for the holy brings suffering that keeps returning, birth after birth.</div>
+  <div class="tieback">The Kural says disregard for the great brings lasting trouble that will not go away, and Guru Arjan likewise describes a penalty that keeps coming back.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In the Iliad, Agamemnon rudely dismisses Chryses, priest of Apollo, who comes to ransom his daughter; Apollo answers the priest’s prayer with a plague on the Greek camp.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134" target="_blank" rel="noopener">Homer, Iliad, Book 1</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Insulting a man under divine protection brought sustained disaster on the whole army until the wrong was put right.</div>
+  <div class="tieback">Agamemnon’s contempt for a great one’s claim produced the Kural’s trouble that comes through the great.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In Plato’s Apology, Socrates tells the Athenian jurors that if they put him to death they will harm themselves more than him, and will not easily find another like him.</div>
+  <div class="cite">&mdash; Plato, Apology 30c-31a <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Socrates argues that a city which mistreats its wisest citizen injures itself most of all.</div>
+  <div class="tieback">The Kural similarly holds that disregarding the great rebounds as lasting harm on the offender.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Einstein signs the letter warning Roosevelt about atomic bombs</div>
+  <div class="rle-meta">2 August 1939 &middot; Long Island, New York, United States</div>
+  <div class="quote is-paraphrase">Albert Einstein left Germany after the Nazis came to power in 1933 and settled in the United States, and the Hungarian-born physicist Leo Szilard also left Germany in 1933 because of rising anti-Semitism. In 1939, fearing that Germany might build an atomic bomb, Szilard drafted a letter dated 2 August 1939 that Einstein signed, warning President Franklin D. Roosevelt that uranium fission could lead to extremely powerful bombs. Delivered by Alexander Sachs in October, the letter led Roosevelt to set up the Advisory Committee on Uranium, a step towards the Manhattan Project.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Scientists whom Nazi Germany had driven out played a key part in starting the effort that gave its enemies the decisive weapon of the war.</div>
+  <div class="tieback">The kural warns that disregarding the great brings lasting trouble at their hands, and Germany&#x27;s treatment of its own scientists turned their talents to the service of its foes.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-90/" target="_blank" rel="noopener">Thirukkural Chapter 90: பெரியாரைப் பிழையாமை / Not Offending the Great (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-090.html" target="_blank" rel="noopener">பெரியாரைப் பிழையாமை - அதிகாரம் 90 - திருக்குறள் (Not Offending the Great)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.gutenberg.org/" target="_blank" rel="noopener">Kalidasa, Abhijnanashakuntalam (Shakuntala)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.accesstoinsight.org/tipitaka/kn/snp/snp.2.04.nara.html" target="_blank" rel="noopener">Maha-mangala Sutta: Blessings (Sn 2.4), trans. Narada Thera</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">The Nāladiyār (English translation serialised in The Indian Antiquary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134" target="_blank" rel="noopener">Homer, Iliad, Books 1 and 6, translated by A. T. Murray (Loeb Classical Library, 1924)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Apology (Plato (recording Socrates)) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://ahf.nuclearmuseum.org/ahf/history/einstein-szilard-letter-1939/" target="_blank" rel="noopener">The Einstein-Szilard Letter - 1939</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://ahf.nuclearmuseum.org/ahf/profile/albert-einstein/" target="_blank" rel="noopener">Albert Einstein</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.osti.gov/opennet/manhattan-project-history/Events/1939-1942/einstein_letter.htm" target="_blank" rel="noopener">Einstein&#x27;s Letter (1939)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0891.html">&larr; Kural 891</a>
+  <a href="kural-0893.html">Kural 893 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-090.html">Not Offending the Great</a>
+  <a class="skip-btn" href="kural-0901.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

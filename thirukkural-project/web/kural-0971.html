@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 971 — Greatness | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 971</h1>
+<p class="adhikaram"><a href="adhikaram-098.html">Greatness</a> &middot; Perumai &middot; <span class="tamil">பெருமை</span></p>
+
+<div class="tamil-text">ஒளிஒருவற்கு உள்ள வெறுக்கை இளிஒருவற்கு
+அஃதிறந்து வாழ்தும் எனல்.</div>
+<div class="translit">Olioruvarku ulla verukkai ilioruvarku
+ahdhirandhu vaazhdhum enal.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A person&#x27;s true glory is a mind full of energy and drive. A person&#x27;s shame is saying, &#x27;I will get by without it.&#x27;</p>
+
+<h2 class="section">Elementary</h2>
+<p>Some kids say, &#x27;I will try the hard puzzle!&#x27; and their faces light up. Others say, &#x27;I&#x27;ll just skip it and sit.&#x27; Valluvar says the first kind of heart is what makes a person shine, and the lazy &#x27;I&#x27;ll just skip it&#x27; is what makes a person small.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter opens by defining greatness as an inner quality rather than a rank: oli (ஒளி, &#x27;light, lustre, renown&#x27;) is ulla verukkai (உள்ள வெறுக்கை), literally &#x27;the wealth/abundance of the mind&#x27;, which Mu. Varadarasanar glosses as ஊக்கமிகுதி (&#x27;excess of zeal&#x27;) and Puliyur Kesikan, following the older commentarial line descending from Parimelazhagar, as the resolve &#x27;I will do what others find hard to do&#x27;. Its opposite, ili (இளி, &#x27;disgrace&#x27;), is not failure but the attitude ahdhirandhu vaazhdhum enal (அஃதிறந்து வாழ்தும் எனல்), &#x27;saying we shall live having let it go&#x27;. Pope&#x27;s &#x27;The light of life is mental energy&#x27; follows the majority reading; Sivayogi Sivakumar on ytamizh reads verukkai as வெறுமை (&#x27;emptiness of mind&#x27;), a contemplative minority interpretation not shared by the classical glosses. Placed in the Kudiyiyal after Maanam (Honour, ch. 97), the chapter moves from guarding one&#x27;s dignity to the active, self-effacing greatness of the noble. The Tamil text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;O son of Pṛthā, do not yield to this degrading impotence. It does not become you. Give up such petty weakness of heart and arise, O chastiser of the enemy.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 2.3 (Bhagavad-gītā As It Is, A.C. Bhaktivedanta Swami Prabhupāda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna tells the despondent Arjuna that giving up in faintheartedness is beneath him and urges him to rise to his task.</div>
+  <div class="tieback">Like the Kural, it calls the loss of spirit a disgrace and summons a person back to energetic effort.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Whatsoever thy hand findeth to do, do it with thy might; for there is no work, nor device, nor knowledge, nor wisdom, in the grave, whither thou goest.&rdquo;</div>
+  <div class="cite">&mdash; Ecclesiastes 9:10 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Preacher urges wholehearted effort in every task because life&#x27;s chance to act is brief.</div>
+  <div class="tieback">Both texts prize the full-strength drive to act over a life coasting without it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And that there is not for man except that [good] for which he strives&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 53:39 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an teaches that a person&#x27;s portion is tied to their own striving.</div>
+  <div class="tieback">Like the Kural, it locates a person&#x27;s worth in their own effort rather than in what they happen to have.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Judah ben Tema said: Be strong as a leopard, and swift as an eagle, and fleet as a gazelle, and brave as a lion, to do the will of your Father who is in heaven.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 5:20 (Mishnah Yomit, trans. Joshua Kulp, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Mishnah demands boldness, speed and courage in carrying out what is right.</div>
+  <div class="tieback">It pictures exactly the abundance of inner energy that the Kural calls a person&#x27;s light.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;The idler who does not exert himself when he should, who though young and strong is full of sloth, with a mind full of vain thoughts — such an indolent man does not find the path to wisdom.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 280 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha warns that one who is able but will not exert himself misses the path.</div>
+  <div class="tieback">This is the Kural&#x27;s disgraced man who thinks he can live without effort.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As the fallow leaf of the tree falls to the ground, when its days are gone, even so the life of men (will come to its close); Gautama, be careful all the while!&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 10.1 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Mahavira repeatedly urges his disciple Gautama never to be slack (apramada), because human life and its rare opportunity pass quickly.</div>
+  <div class="tieback">The Jain call to unbroken vigilance matches the Kural&#x27;s scorn for anyone content to live without striving.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Make the effort, and you shall live; practicing it, you shall enjoy peace.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 522, Raag Gujri, Gujri ki Vaar, Salok Mahala 5, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In this salok Guru Arjan ties real life to udham, the effort a person actually puts in. For Sikhs this effort is both honest work (kirat) and the steady practice of the Name, and the Gurus repeatedly reject the idle hope that life will turn out well without it.</div>
+  <div class="tieback">The Kural calls an abundance of inner drive a person&#x27;s glory and the thought of getting by without it a disgrace, and Guru Arjan likewise makes effort the condition of a life that is really lived.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Work is no disgrace: it is idleness which is a disgrace.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 311 (trans. H. G. Evelyn-White)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hesiod tells his idle brother Perses that honour comes from labour and shame from idleness.</div>
+  <div class="tieback">Hesiod uses the Kural&#x27;s very pairing: effort brings honour and a slack life brings disgrace.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;…let this thought be present—I am rising to the work of a human being. Why then am I dissatisfied if I am going to do the things for which I exist and for which I was brought into the world?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Antoninus/meditations.5.five.html" target="_blank" rel="noopener">Marcus Aurelius, Meditations 5.1 (trans. George Long)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Marcus Aurelius rebukes his own reluctance to get out of bed, reminding himself that he exists for action.</div>
+  <div class="tieback">Like the Kural, he treats wanting to live without exertion as a betrayal of what makes a person worthy.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Emil Zatopek wins the 5,000 metres, 10,000 metres and marathon at one Olympics</div>
+  <div class="rle-meta">July 1952 &middot; Helsinki, Finland</div>
+  <div class="quote is-paraphrase">Emil Zatopek, a Czechoslovak runner who had taken up the sport while working in a shoe factory and was nicknamed the Human Locomotive for his relentless training, built his success on a punishing interval-training method that others at first scoffed at. At the 1952 Olympic Games in Helsinki he won the 10,000 metres and then the 5,000 metres, both in Olympic record times, and then entered the marathon, a race he had never run before, and won it by more than two and a half minutes. No athlete before or since has won all three long-distance events at the same Games.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Zatopek&#x27;s triple victory is remembered as one of the greatest feats in athletics, and it grew from his drive to train harder than anyone thought sensible.</div>
+  <div class="tieback">The kural says a person&#x27;s true glory is an abundance of inner drive and his disgrace is the thought of getting through life without it, and Zatopek&#x27;s achievement came from exactly that inner zeal.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-98/" target="_blank" rel="noopener">Thirukkural Chapter 98: பெருமை / Greatness (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-098.html" target="_blank" rel="noopener">பெருமை - அதிகாரம் 98 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Antoninus/meditations.5.five.html" target="_blank" rel="noopener">Marcus Aurelius, Meditations, Book 5, translated by George Long</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://worldathletics.org/news/news/hall-of-fame-profile-emil-zatopek-czechoslo" target="_blank" rel="noopener">Hall of Fame Profile - Emil Zatopek (Czechoslovakia)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/biography/Emil-Zatopek" target="_blank" rel="noopener">Emil Zatopek</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0970.html">&larr; Kural 970</a>
+  <a href="kural-0972.html">Kural 972 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-098.html">Greatness</a>
+  <a class="skip-btn" href="kural-0981.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

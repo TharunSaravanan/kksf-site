@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 605 — Unsluggishness | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 605</h1>
+<p class="adhikaram"><a href="adhikaram-061.html">Unsluggishness</a> &middot; Madiyinmai &middot; <span class="tamil">மடியின்மை</span></p>
+
+<div class="tamil-text">நெடுநீர் மறவி மடிதுயில் நான்கும்
+கெடுநீரார் காமக் கலன்.</div>
+<div class="translit">Neduneer maravi madidhuyil naangum
+Keduneeraar kaamak kalan.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Putting things off, forgetting, laziness and too much sleep are four things people headed for ruin love. They are like a pleasure boat that carries them to disaster.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine four friends who always say: ‘Do it later’, ‘Oops, I forgot’, ‘I’m too tired’, and ‘Just five more minutes of sleep.’ They feel comfy, like a boat ride, but the boat is floating toward a waterfall. Good habits are how you steer the boat back.</p>
+
+<h2 class="section">University</h2>
+<p>This is the chapter’s best-known couplet and its most careful analysis. It lists four linked dispositions: நெடுநீர், literally ‘long-drawn nature’, i.e. procrastination (Varadarasanar: காலம் நீட்டித்தல்); மறவி, forgetfulness or heedlessness (compare ch. 54, பொச்சாவாமை); மடி, sloth; and துயில், excessive sleep. It calls them the காமக் கலன் of the கெடுநீரார், ‘those whose nature is to perish’. Parimelazhagar and most modern commentators take கலன் as a vessel or ship (மரக்கலம்; Pappaiah: சிறு படகு), giving Pope’s ‘pleasure-boat … to ruin’s shore’. Because கலன் can also mean ‘ornament’, some readers take the line as ‘the ornaments the doomed love to wear’, but the vessel reading is standard. The rhyme நெடுநீர் / கெடுநீரார் binds cause to result. Sivayogi Sivakumar’s gloss of நெடுநீர் as ‘long weeping’ is idiosyncratic and not followed by the classical commentators. The text is identical in both sources apart from sandhi (மடிதுயி னான்குங்).</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;The six faults should be avoided by a person who wisheth to attain prosperity, viz., sleep, drowsiness, fear, anger, indolence and procrastination.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m05/m05033.htm" target="_blank" rel="noopener">Mahābhārata, Udyoga Parva 33 (Vidura Nīti), trans. K. M. Ganguli</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Vidura advises King Dhritarashtra that anyone who wants prosperity must give up six faults, which include sleep, indolence and procrastination.</div>
+  <div class="tieback">Three of Vidura’s six (sleep, indolence, procrastination) are three of Valluvar’s four, and both are warnings addressed to rulers about ruin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And he cometh, and findeth them sleeping, and saith unto Peter, Simon, sleepest thou? couldest not thou watch one hour? Watch ye and pray, lest ye enter into temptation.&rdquo;</div>
+  <div class="cite">&mdash; Mark 14:37-38 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In Gethsemane, the disciples fall asleep at the critical hour, and Jesus warns that sleep and slackness leave them open to failure.</div>
+  <div class="tieback">Sleep at the decisive moment, one of the Kural’s four, is shown here as the beginning of the disciples’ collapse that night.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Satan puts three knots at the back of the head of any of you if he is asleep. On every knot he reads and exhales the following words, ‘The night is long, so stay asleep.’ … otherwise one gets up lazy and with a mischievous heart.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:1142" target="_blank" rel="noopener">Sahih al-Bukhari 1142</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet describes the pull of sleep as Satan whispering ‘the night is long’, which can only be broken by remembering God, washing and prayer.</div>
+  <div class="tieback">‘The night is long, so stay asleep’ is the voice of procrastination and sleep together, which is the attraction of the Kural’s pleasure boat.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Rabbi Dosa ben Harkinas said: morning sleep, midday wine, children’s talk and sitting in the assemblies of the ignorant put a man out of the world.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 3:10 (trans. Joshua Kulp, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbi Dosa gives a list of four comfortable habits, starting with sleeping late, that together drive a person out of the world.</div>
+  <div class="tieback">Like Valluvar, the sage gives a list of four pleasant indulgences that carry a person to ruin, and oversleeping comes first.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Dhammapada describes the sluggish, gluttonous person who spends his time sleeping and rolling about like a fattened hog, and says such a fool is reborn again and again.</div>
+  <div class="cite">&mdash; Dhammapada 325 <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The verse pictures laziness and oversleeping as keeping a person trapped in the cycle of repeated birth.</div>
+  <div class="tieback">Sleep and sloth carrying the fool around the round of rebirth is the Buddhist form of the Kural’s boat bearing the doomed to ruin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;&#x27;If he does not get (victory over his will) early, he will get it afterwards;&#x27; such reasoning presupposes the eternity of human life. But such a man despairs when his life draws to its close, and the dissolution of his body approaches.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 4.9; cf. 4.6 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The text attacks procrastination: putting off effort assumes life lasts for ever. The same lecture (4.6) urges, &#x27;Though others sleep, be thou awake!&#x27;</div>
+  <div class="tieback">Two of the Kural&#x27;s four vices on the &#x27;pleasure boat&#x27; to ruin, procrastination and oversleeping, are exactly what Uttaradhyayana 4 condemns.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Wake up, O mind! Wake up! Why are you sleeping unaware?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 726, Raag Tilang, Guru Tegh Bahadur (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Tegh Bahadur calls the heedless (gaafal) mind out of its sleep.</div>
+  <div class="tieback">The Kural names procrastination, forgetfulness, laziness and oversleeping as the pleasure boat of those bound for ruin; Guru Tegh Bahadur&#x27;s cry against heedless sleep addresses two of the four, forgetfulness and sleep, directly.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Odyssey Book 10, Odysseus has sailed for nine days within sight of Ithaca with the bag of winds from Aeolus. He falls asleep from exhaustion, his crew open the bag, and the storm drives the ship all the way back.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, Odyssey 10.28-55 (trans. S. Butler)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">A single sleep at the wrong time, together with the crew’s careless curiosity, wrecks a homecoming that was almost complete.</div>
+  <div class="tieback">Sleep literally steers the ship to disaster, a close picture of the Kural’s ‘vessel’ of the doomed.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In On the Shortness of Life, Seneca warns that the greatest obstacle to living is expectancy, which hangs on tomorrow and loses today, and that people postpone life while it runs past them.</div>
+  <div class="cite">&mdash; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Seneca/de_Brevitate_Vitae/text*.html" target="_blank" rel="noopener">Seneca, De Brevitate Vitae 9 (trans. J. W. Basore)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Seneca argues that habitual postponement wastes the only time we really have, the present.</div>
+  <div class="tieback">Seneca’s diagnosis of postponement explains the first and most dangerous passenger in the Kural’s boat, நெடுநீர்.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Swiss watch industry is overtaken by the quartz watch</div>
+  <div class="rle-meta">1969-early 1980s &middot; Switzerland</div>
+  <div class="quote is-paraphrase">Although quartz timekeeping had been developed in Switzerland, Swiss watchmakers were slow to adopt it, while Seiko of Japan launched the Quartz Astron, the first quartz wristwatch on the market, on 25 December 1969. Cheaper and more accurate quartz watches from Asia then took over the market, and by the late 1970s the two largest Swiss watch groups were close to insolvency. Employment in the Swiss watch industry fell from almost 90,000 at the end of the 1960s to about 30,000 by the mid-1980s, before the Swatch, launched in 1983, helped lead a recovery.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">A world-leading industry that delayed acting on a technology it had helped create lost most of its jobs within about fifteen years.</div>
+  <div class="tieback">The kural names delay and heedlessness among the pleasant vessels that carry people to ruin, and the Swiss watchmakers&#x27; slowness to act on quartz carried a proud industry close to collapse.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-61/" target="_blank" rel="noopener">Thirukkural Chapter 61: மடியின்மை / Unsluggishness (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A061.html" target="_blank" rel="noopener">61. மடியின்மை (சோம்பல் இன்மை) — Thirukkural text</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m05/m05033.htm" target="_blank" rel="noopener">The Mahabharata, Book 5: Udyoga Parva, Section XXXIII (Vidura Niti; trans. Kisari Mohan Ganguli)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:1142" target="_blank" rel="noopener">Sahih al-Bukhari 1142, Book of Tahajjud: Satan’s three knots on the sleeper</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, The Odyssey, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Seneca/de_Brevitate_Vitae/text*.html" target="_blank" rel="noopener">Seneca, On the Shortness of Life (De Brevitate Vitae), trans. John W. Basore (Loeb, 1932)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.swissinfo.ch/eng/business/baselworld_six-things-you-should-know-about-the-watchmaking-industry/43038180" target="_blank" rel="noopener">Six things you should know about the watchmaking industry</a> <span class="tier">[web source]</span></li>
+<li id="cite-13"><a href="https://www.swatchgroup.com/en/swatch-group/swatch-group-history" target="_blank" rel="noopener">Swatch Group History</a> <span class="tier">[web source]</span></li>
+<li id="cite-14"><a href="https://www.seikowatches.com/us-en/products/astron/astron-history" target="_blank" rel="noopener">The Astron History</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0604.html">&larr; Kural 604</a>
+  <a href="kural-0606.html">Kural 606 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-061.html">Unsluggishness</a>
+  <a class="skip-btn" href="kural-0611.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

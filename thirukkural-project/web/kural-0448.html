@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 448 — Seeking the Aid of Great Men | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 448</h1>
+<p class="adhikaram"><a href="adhikaram-045.html">Seeking the Aid of Great Men</a> &middot; Periyaaraith Thunaikkodal &middot; <span class="tamil">பெரியாரைத் துணைக்கோடல்</span></p>
+
+<div class="tamil-text">இடிப்பாரை இல்லாத ஏமரா மன்னன்
+கெடுப்பா ரிலானுங் கெடும்.</div>
+<div class="translit">Idippaarai illaadha emaraa mannan
+Keduppaa rilaanung kedum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A king without anyone to scold and correct him has no protection, and he will be ruined even when no enemy is there to destroy him.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A king with nobody brave enough to tell him he’s wrong is like someone walking without looking. Even if no enemy attacks him, he will trip over his own mistakes and fall.</p>
+
+<h2 class="section">University</h2>
+<p>This is the converse of 447. ‘Emaraa’ means unprotected or unsafeguarded — the missing protection is precisely the rebuker. The striking phrase ‘keduppaar ilaanum kedum’ (perishes even without destroyers) locates the source of ruin inside: unchecked error compounds until it destroys. Valluvar thus anticipates a well-known insight of political thought — that autocrats surrounded by yes-men fall by their own misjudgments more often than by foreign conquest.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Yuddha Kanda, Vibhishana urges his brother Ravana to return Sita to Rama; Ravana, surrounded by flattering ministers, insults and expels him, and Lanka is destroyed.</div>
+  <div class="cite">&mdash; <a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Valmiki Ramayana, Yuddha Kanda</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Ravana drives away the one counselor willing to correct him and is ruined by his own obstinacy.</div>
+  <div class="tieback">The king who rejects his rebuker brings about his own destruction.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;He, that being often reproved hardeneth his neck, shall suddenly be destroyed, and that without remedy.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 29:1 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">One who refuses correction again and again collapses suddenly and beyond repair.</div>
+  <div class="tieback">Refusing rebuke leads to self-inflicted ruin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">The Prophet said that the religion is sincere advice (nasihah) — to God, His Book, His Messenger, the leaders of the Muslims and their common folk.</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/muslim:55a" target="_blank" rel="noopener">Sahih Muslim 55</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Sincere counsel to rulers is part of faith itself, implying that leaders deprived of it are endangered.</div>
+  <div class="tieback">Supports the Kural’s view that a ruler needs honest advisers.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;There is yet one man, Micaiah the son of Imlah, by whom we may enquire of the LORD: but I hate him; for he doth not prophesy good concerning me, but evil.&rdquo;</div>
+  <div class="cite">&mdash; 1 Kings 22:8 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">King Ahab prefers four hundred agreeable prophets to the one who tells him the truth; he goes to battle and is killed.</div>
+  <div class="tieback">A king who shuts out his only honest critic perishes by his own choice.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Dhammapada says that the one who admonishes, instructs and shields one from wrong is dear to the good and disliked by the bad.</div>
+  <div class="cite">&mdash; Dhammapada 77 <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Only those who are good welcome correction; those who reject the admonisher show their own ruin.</div>
+  <div class="tieback">Implies the fate the Kural states outright for the uncorrected.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;If admonished by a young or an old monk, by one above him or one of equal age, he should not retort against him, being perfectly free from passion; for one who is (as it were) carried away (by the stream of the Samsâra), will not get to its opposite shore.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sutrakritanga 1.14.7 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Sutrakritanga tells the monk to accept admonition from anyone, of any age or rank, and warns that one who rejects it is carried off by the current and never reaches the far shore.</div>
+  <div class="tieback">Valluvar says the king with no one to rebuke him perishes even without enemies. The Jain verse likewise shows ruin coming from within, to one who refuses correction, with no outside destroyer needed.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;One who is attached to Maya is totally blind and deaf. He does not listen to the Word of the Shabad; he makes a great uproar and tumult.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 313, Raag Gauree (Gauree ki Vaar, salok), Guru Amar Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Amar Das describes the person ruled by Maya as deaf to the Guru&#x27;s corrective Word, lost in his own noise.</div>
+  <div class="tieback">The Kural says the king with no one to rebuke him perishes even without enemies; Guru Amar Das portrays the one who will not hear correction as destroying himself from within.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Iliad 18, Polydamas urges Hector to withdraw the Trojans inside the walls now that Achilles has returned; Hector scorns him, the Trojans applaud Hector’s bad plan, and ‘no one praised Polydamas’ good counsel.’ The next day the Trojans are routed and Hector is killed.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad 18.249–313</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hector rejects his wise critic and brings disaster on himself and Troy.</div>
+  <div class="tieback">The leader without a heeded rebuker falls through his own error.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;A prince who is not wise himself will never take good advice.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.marxists.org/reference/archive/machiavelli/works/prince/ch23.htm" target="_blank" rel="noopener">Machiavelli, The Prince, ch. 23 (tr. W. K. Marriott)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">In his chapter on how to avoid flatterers, Machiavelli warns that a prince surrounded by flatterers, and unable to take counsel, is ruined.</div>
+  <div class="tieback">The ruler without honest counsel undoes himself.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Nicholas II takes personal command against his ministers&#x27; advice</div>
+  <div class="rle-meta">1915-1917 &middot; Russian Empire (now Russia)</div>
+  <div class="quote is-paraphrase">In the late summer of 1915, with Russian armies in retreat, Tsar Nicholas II dismissed the commander in chief, Grand Duke Nicholas, and took supreme command himself, despite objections from his Council of Ministers. With the tsar away at headquarters, power in the capital passed largely to Empress Alexandra, and capable ministers were replaced by weaker figures, many favoured by Grigori Rasputin. The government lost the confidence of the country, and in March 1917 Nicholas was forced to abdicate.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">By overruling and removing those who warned him, Nicholas cut himself off from correction at the moment his throne most needed it.</div>
+  <div class="tieback">The kural says an unguarded king with no one to rebuke him perishes even without enemies to destroy him, and Nicholas&#x27;s monarchy collapsed from within.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-45/" target="_blank" rel="noopener">Thirukural Chapter 45: பெரியாரைத் துணைக்கோடல் (Seeking the Aid of Great Men)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/kural-0441.html" target="_blank" rel="noopener">Thirukkural Adhigaram 45 – Seeking the Aid of Great Men</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://ta.wikisource.org/wiki/திருக்குறள்_பரிமேலழகர்_உரை/பொருட்பால்/45.பெரியாரைத்துணைக்கோடல்" target="_blank" rel="noopener">திருக்குறள் பரிமேலழகர் உரை / பொருட்பால் / 45. பெரியாரைத்துணைக்கோடல்</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-4"><a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Vālmīki Rāmāyaṇa (Bāla Kāṇḍa: the putrakāmeṣṭi of Daśaratha; Ayodhyā Kāṇḍa: Kausalyā and Rāma)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/muslim:55a" target="_blank" rel="noopener">Sahih Muslim 55 (Book of Faith: The religion is sincere advice)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga (Sutrakritanga)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad, Book 21, translated by A. T. Murray (Loeb Classical Library, 1924)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.marxists.org/reference/archive/machiavelli/works/prince/ch23.htm" target="_blank" rel="noopener">The Prince, tr. W. K. Marriott, chs. XXII–XXIII</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Nicholas-II-tsar-of-Russia" target="_blank" rel="noopener">Nicholas II</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://encyclopedia.1914-1918-online.net/article/nicholas-ii-emperor-of-russia/" target="_blank" rel="noopener">Nicholas II, Emperor of Russia</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0447.html">&larr; Kural 447</a>
+  <a href="kural-0449.html">Kural 449 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-045.html">Seeking the Aid of Great Men</a>
+  <a class="skip-btn" href="kural-0451.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

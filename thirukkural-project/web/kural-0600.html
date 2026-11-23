@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 600 — Energetics | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 600</h1>
+<p class="adhikaram"><a href="adhikaram-060.html">Energetics</a> &middot; Ookkamudaimai &middot; <span class="tamil">ஊக்கமுடைமை</span></p>
+
+<div class="tamil-text">உரமொருவற்கு உள்ள வெறுக்கைஅஃ தில்லார்
+மரம்மக்க ளாதலே வேறு.</div>
+<div class="translit">Uram oruvarku ulla verukkai aqdhillaar
+Maram makkal aadhale veru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A person’s real strength is having lots of inner drive. People without it are just trees that happen to have human shape.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A tree stands in one place all day and never tries anything new. The Kural says a person with no energy or drive is like a tree that happens to look like a human. What makes us truly alive is our eagerness to act.</p>
+
+<h2 class="section">University</h2>
+<p>‘Uram’ is strength or firmness, and ‘ulla verukkai’ is read in two ways: Mu. Varadarasanar takes verukkai as abundance, hence ‘excess of ookkam is one’s strength’, while others take verukkai in its lexical sense of wealth (selvam), hence ‘energy is the mind’s wealth’, which is Pope’s ‘energy is mental wealth’. Solomon Pappaiah glosses uram as thinniya arivu (firm understanding). The second line’s ‘maram makkal aadhale veru’ is devastating: the only difference (veru) between the energy-less and trees is that they have become human in form. Parimelazhagar notes the chapter closes by returning to 591, where the energy-less were denied possession; here they are denied full humanity. The text is identical in the base sources; the sandhi form ‘verukkaiaqdhillaar’ contains the aaydham (ஃ) of ‘aqdhu’.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Queen Vidula rebukes her son Sanjaya, who lies despondent after defeat, telling him it is better to blaze up for a moment than to smoulder for a long time, and urging him to rise and fight.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/m05/m05133.htm" target="_blank" rel="noopener">Mahabharata, Udyoga Parva 133-136 (Vidula’s counsel), tr. K. M. Ganguli</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">A mother shames her listless son, saying a life without energy is not worth living.</div>
+  <div class="tieback">Vidula’s contempt for smouldering inertia matches the Kural’s picture of the energy-less as mere trees.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Not slothful in business; fervent in spirit; serving the Lord;&rdquo;</div>
+  <div class="cite">&mdash; Romans 12:11 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul lists fervour of spirit and freedom from sloth as marks of Christian life.</div>
+  <div class="tieback">Both texts see spiritual energy as essential and sluggishness as a failure of real life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And when you see them, their forms please you, and if they speak, you listen to their speech. [They are] as if they were pieces of wood propped up…&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 63:4 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an says the hypocrites look impressive but are hollow inside, like timber propped against a wall.</div>
+  <div class="tieback">The Kural uses the same wood image for people with human form but no inner life of energy.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;In a place where there are no men, strive to be a man.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 2:5 (tr. Joshua Kulp)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Hillel urges people to step up with energy and responsibility when others do nothing.</div>
+  <div class="tieback">Like the Kural, it treats being fully human as a matter of active striving, not mere form.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Better it is to live one day strenuous and resolute than to live a hundred years sluggish and dissipated.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 112 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada values a single day of energetic life above a century of lazy existence.</div>
+  <div class="tieback">Both texts say that life without energy is hardly life at all.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;When the soul has once got into a vegetable-body, it remains long in that state, for an endless time, after which its lot is not much bettered; Gautama, be careful all the while!&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 10.9 (refrain from 10.1) (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jain doctrine treats plants as living souls with a single sense; Mahavira warns that a soul which falls into plant-existence through carelessness may stay there for endless time, which is why human birth must not be wasted.</div>
+  <div class="tieback">The Kural says people without inner energy are mere trees in human form; Jainism makes the warning literal, since slackness can lead the soul into an actual vegetable body.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;They belong to the human species, but they act like animals.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 267, Raag Gauree (Sukhmani), Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In the Sukhmani, Guru Arjan says of those who live without the Name that they have human birth but not human worth.</div>
+  <div class="tieback">The Kural says those without inner energy differ from trees only in having human shape; Guru Arjan likewise denies full humanity to those who have the form without the substance.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Hesiod says both gods and men are angry with the man who lives idle, for he is like the stingless drones that waste the bees’ labour, eating without working.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 303-306</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hesiod compares the idle to drones in a hive, living beings that contribute nothing.</div>
+  <div class="tieback">Hesiod’s drone and the Kural’s tree are both images of life without energy.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle, seeking the distinctive human function, sets aside mere life because it is shared even with plants, and locates the human good in the active exercise of the rational soul.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics 1.7 (1097b-1098a)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Aristotle, a person who only lives and grows is functioning at the level of a plant, not yet as a human being.</div>
+  <div class="tieback">This is almost the Kural’s own claim: without active energy, humans are trees in human shape.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The deaf Beethoven completes and premieres his Ninth Symphony</div>
+  <div class="rle-meta">7 May 1824 &middot; Vienna, Austria</div>
+  <div class="quote is-paraphrase">Ludwig van Beethoven&#x27;s hearing had been failing since his late twenties, and by the 1820s he was profoundly deaf. He nevertheless completed his Ninth Symphony, with a choral finale setting Schiller&#x27;s Ode to Joy, and it was first performed at the Theater am Karntnertor in Vienna on 7 May 1824. Beethoven stood on stage beside the conductor indicating the tempos while the performance was actually directed by others.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Deprived of the sense on which a composer most depends, Beethoven still produced one of the most celebrated works in Western music.</div>
+  <div class="tieback">The kural says a person&#x27;s real strength is abundance of inner energy, and Beethoven&#x27;s Ninth shows that energy accomplishing what physical loss seemed to forbid.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-60/" target="_blank" rel="noopener">ஊக்கமுடைமை / Energy, Chapter 60 (Kurals 591-600) with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-060.html" target="_blank" rel="noopener">ஊக்கமுடைமை - அதிகாரம் 60 - திருக்குறள் (Magnanimity)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/m05/m05133.htm" target="_blank" rel="noopener">The Mahabharata, Udyoga Parva, Sections 133-136 (Vidula and Sanjaya), trans. Kisari Mohan Ganguli</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/topic/Symphony-No-9-in-D-Minor" target="_blank" rel="noopener">Symphony No. 9 in D Minor, Op. 125</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.history.com/this-day-in-history/may-7/beethoven-ninth-symphony-debuts-vienna" target="_blank" rel="noopener">Beethoven&#x27;s Symphony No. 9 debuts (HISTORY.com Editors)</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0599.html">&larr; Kural 599</a>
+  <a href="kural-0601.html">Kural 601 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-060.html">Energetics</a>
+  <a class="skip-btn" href="kural-0601.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

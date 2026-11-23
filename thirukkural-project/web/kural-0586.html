@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 586 — Detectives | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 586</h1>
+<p class="adhikaram"><a href="adhikaram-059.html">Detectives</a> &middot; Otraadal &middot; <span class="tamil">ஒற்றாடல்</span></p>
+
+<div class="tamil-text">துறந்தார் படிவத்த ராகி இறந்தாராய்ந்து
+என்செயினும் சோர்விலது ஒற்று.</div>
+<div class="translit">Thurandhaar padivaththa raagi irandhaaraaindhu
+Enseyinum soarviladhu otru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A good spy disguises himself as a holy man who has given up the world, goes into places no one else can, learns everything, and never gives himself away, whatever is done to him.</p>
+
+<h2 class="section">Elementary</h2>
+<p>In old stories, a clever messenger sometimes dresses as a humble traveller so he can pass through the gates. Even if guards question him roughly, he stays in character and keeps his secret. This kural describes that kind of brave, patient spy.</p>
+
+<h2 class="section">University</h2>
+<p>துறந்தார் படிவத்தர் ஆகி means ‘taking on the form (படிவம்) of those who have renounced’, that is, dressing as an ascetic or wandering monk. Such figures could travel freely in ancient India. இறந்து ஆராய்ந்து is read by Parimelazhagar and Mu. Varadarasanar as ‘going beyond [ordinary limits], into places otherwise unreachable, and examining’. Pappaiah makes it explicit: places one cannot go. என்செயினும் சோர்வு இலது means ‘whatever [the suspicious] may do to him, he does not slip’. Here சோர்வு means a lapse that gives the secret away, not tiredness, and Pappaiah and Kalaignar both read it as holding out under torture. The disguise matches the Arthashastra’s tāpasa (ascetic) spy closely, which is often cited in comparative studies of the Kural. ytamizh.com and thirukkural.net give identical text; thirukkural-thamizh.org has the sandhi forms ராகி யிறந்தாராய்ந் / தென்செயினுஞ் சோர்வில தொற்று.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;A man with shaved head (muṇḍa) or braided hair (jaṭila) and desirous to earn livelihood is a spy under the guise of an ascetic practising austerities. Such a spy surrounded by a host of disciples with shaved head or braided hair may take his abode in the suburbs of a city …&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/kautilya-arthashastra/d/doc365589.html" target="_blank" rel="noopener">Kautilya, Arthashastra 1.11 (trans. R. Shamasastry)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Kautilya describes in detail the spy disguised as an ascetic, a figure respected enough to go anywhere and hear everything.</div>
+  <div class="tieback">This is the Kural’s துறந்தார் படிவம், the guise of a renunciant, almost exactly.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Beware of false prophets, which come to you in sheep’s clothing, but inwardly they are ravening wolves.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 7:15 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Jesus warns that a harmless religious appearance can hide a very different inner purpose.</div>
+  <div class="tieback">Seen from the other side, this is the Kural’s spy in a renunciant’s robe. Scripture condemns the deceit, while Valluvar approves of it for the service of a just state.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">On the freezing night of the Battle of the Trench, the Prophet sent Hudhayfah ibn al-Yaman into the enemy camp for news, telling him to do nothing that would alarm them. Hudhayfah saw Abu Sufyan warming himself by a fire, held back from shooting him, and returned with his report.</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/muslim:1788" target="_blank" rel="noopener">Sahih Muslim 1788 (paraphrase)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Hudhayfah went through cold and danger into the enemy’s midst, stayed undetected, and kept strictly to his mission.</div>
+  <div class="tieback">He entered where others would not go, kept his cover, and did not break discipline, which is the Kural’s இறந்து ஆராய்ந்து … சோர்வு இலது.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;And they went, and came unto the mountain, and abode there three days, until the pursuers were returned: and the pursuers sought them throughout all the way, but found them not.&rdquo;</div>
+  <div class="cite">&mdash; Joshua 2:22 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Joshua’s two spies, hunted after their mission in Jericho, hid patiently in the hills until it was safe to return with their report.</div>
+  <div class="tieback">Their patience and their refusal to be caught match the Kural’s spy who does not slip whatever happens.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;What is the use of your matted hair, O witless man? What of your garment of antelope’s hide? Within you is the tangle (of passion); only outwardly do you cleanse yourself.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 394 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha warns that ascetic dress, such as matted hair and hide garments, can be a mere outward costume over an unrenounced mind.</div>
+  <div class="tieback">The verse shows how common it was for renunciant dress to be only a costume, the very disguise the Kural’s spy uses.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">Jain tradition relates that early in his ascetic wanderings Mahavira came near the village of Corāka, where guards wary of thieves asked who he was. Bound by his vow of silence, he did not answer; the guards took him for a thief or spy, seized him and tormented him, until two women who knew him (Somā and Jayantī) came and had him freed, and the guards begged forgiveness.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/definition/coraka" target="_blank" rel="noopener">Life of Mahāvīra, episode at Corāka in his fourth year of ascetic practice (HereNow4U, &#x27;Lord Śrī Mahāvīra&#x27;, as summarised in the wisdomlib.org Jainism glossary s.v. Corāka)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The story shows how a silent wandering renunciant could be suspected of being a spy, and how Mahavira kept his silence even under torture.</div>
+  <div class="tieback">The Kural&#x27;s spy goes about in a renunciant&#x27;s guise and never gives himself away whatever is done to him; this Jain story turns the image round, showing a real ascetic who was mistaken for a spy and still revealed nothing under torment.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The lazy unemployed has his ears pierced to look like a Yogi. Someone else becomes a pan-handler, and loses his social status.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1245, Raag Saarang (Saarang ki Vaar, salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak mocks those who put on the marks and dress of renunciation, not from inner detachment but to live without honest work.</div>
+  <div class="tieback">The Kural approves of a spy who takes the guise of a renunciant to go where others cannot; Gurbani knows the same disguise but condemns it, since for Sikhs the ascetic&#x27;s outward garb proves nothing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Helen recalls how Odysseus disfigured himself with blows, put on a beggar’s rags like a slave, and slipped into Troy. He went unrecognised by all but her, gathered much knowledge, and got back safely to the Greeks.</div>
+  <div class="cite">&mdash; Homer, Odyssey 4.240-264 (paraphrase) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The master spy of Greek legend takes on the humblest disguise, that of a beggar, to enter the enemy city.</div>
+  <div class="tieback">A beggar’s disguise in Greece matches the renunciant’s disguise in the Kural: the lowest-status, least-suspected costume to get where others cannot.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Epictetus calls the true Cynic philosopher, who wears only a rough cloak and owns nothing, a ‘scout’ (kataskopos) sent ahead by God to spy out what is truly friendly or hostile to human beings and to report back fearlessly, as Diogenes did.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0236" target="_blank" rel="noopener">Epictetus, Discourses 1.24 and 3.22 (paraphrase)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Stoic teaching pictures the ascetic philosopher as a spy who goes into frightening territory and returns with a report that is not distorted by fear.</div>
+  <div class="tieback">An ascetic who is really a scout and cannot be shaken is the Kural’s spy, turned into a moral image.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Nain Singh surveys Tibet disguised as a Buddhist pilgrim</div>
+  <div class="rle-meta">1865-1866 &middot; Tibet, including Lhasa</div>
+  <div class="quote is-paraphrase">Nain Singh, one of the Indian surveyors known as pundits who were trained by the Survey of India, set out in 1865 to map Tibet, which was then closed to outsiders. Travelling disguised as a Buddhist pilgrim and trader, he counted his paces on a rosary of 100 beads instead of the usual 108, hid notes and a compass in a prayer wheel and concealed instruments in his baggage, reaching Lhasa in 1866. He fixed the position and altitude of Lhasa and mapped a long stretch of the trade route, and the Royal Geographical Society later awarded him its Patron&#x27;s Medal.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">By taking the outward form of a pilgrim, Nain Singh entered a country that no ordinary surveyor could enter and brought back accurate information without ever being exposed.</div>
+  <div class="tieback">The kural describes the spy who takes on the guise of a renunciant, enters places others cannot reach, examines them thoroughly and never gives himself away, which is almost exactly Nain Singh&#x27;s journey.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-59/" target="_blank" rel="noopener">Thirukkural Chapter 59: ஒற்றாடல் / Detectives (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-059.html" target="_blank" rel="noopener">ஒற்றாடல் - அதிகாரம் 59 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="http://thirukkural-thamizh.org/html/A059.html" target="_blank" rel="noopener">59. ஒற்றாடல் (ஒற்றரை ஆளும் திறம்) - Thirukkural text</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.wisdomlib.org/hinduism/book/kautilya-arthashastra/d/doc365589.html" target="_blank" rel="noopener">Kautilya, Arthashastra, Book 1, Chapter 11: The Institution of Spies, trans. R. Shamasastry</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/muslim:1788" target="_blank" rel="noopener">Sahih Muslim 1788, The Book of Jihad and Expeditions: The Battle of al-Ahzab</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/definition/coraka" target="_blank" rel="noopener">Lord Śrī Mahāvīra (life of Mahavira, episode at Corāka)</a> <span class="tier">[web source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0236" target="_blank" rel="noopener">Epictetus, Discourses, Book 3, ch. 22: On the Cynic Calling</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://apps.lib.umich.edu/online-exhibits/exhibits/show/india-maps/survey" target="_blank" rel="noopener">The Survey of India (Maps and Map-making in India)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://kids.britannica.com/students/article/exploration-of-Eurasia/543377" target="_blank" rel="noopener">Exploration of Eurasia</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.rgs.org/media/a3whs0mj/gold-medalists-1832-2025.pdf" target="_blank" rel="noopener">Medals and Awards: Gold Medal recipients 1832-2025</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0585.html">&larr; Kural 585</a>
+  <a href="kural-0587.html">Kural 587 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-059.html">Detectives</a>
+  <a class="skip-btn" href="kural-0591.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

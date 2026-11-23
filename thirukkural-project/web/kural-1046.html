@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1046 — Poverty | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1046</h1>
+<p class="adhikaram"><a href="adhikaram-105.html">Poverty</a> &middot; Nalkuravu &middot; <span class="tamil">நல்குரவு</span></p>
+
+<div class="tamil-text">நற்பொருள் நன்குணர்ந்து சொல்லினும் நல்கூர்ந்தார்
+சொற்பொருள் சோர்வு படும்.</div>
+<div class="translit">NaRporuL nangunarndhu sollinum nalkoorndhaar
+soRporuL soarvu padum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Even when poor people speak true and wise things that they fully understand, their words are ignored and come to nothing.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine two children giving the same right answer in class, but everyone only listens to the one with the fancy new shoes. Valluvar noticed that people often ignore what poor people say, even when it is wise, and that this is unfair.</p>
+
+<h2 class="section">University</h2>
+<p>NaRporuL (நற்பொருள்) is ‘good matter’, which Mu. Varadarasanar and Kalaignar specify as the sense of good books (nool), and nangunarndhu (‘having understood well’) stresses that the speaker is genuinely learned. Yet the soRporuL (சொற்பொருள், ‘the meaning of the words’) of nalkoorndhaar (நல்கூர்ந்தார், ‘those who have become poor’) suffers soarvu, here ‘failure, lapse’: it is not heard or heeded. The same word soarvu that meant inner weariness in 1044 here describes the social fate of the poor man’s speech, a deliberate echo. Solomon Pappaiah puts it simply: if the speaker is poor, his words are not honoured. Pope’s ‘Their sense from memory of mankind will fade away’ takes the lapse as being forgotten. The observation is descriptive and critical, not an endorsement of the bias. The text matches on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;He that has wealth is regarded as a learned man.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Santi Parva, Section VIII (tr. K.M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Arjuna bluntly notes that society credits the wealthy with learning, and adds that a poor man is accused falsely even when he stands near.</div>
+  <div class="tieback">If wealth is taken for learning, then, as the Kural says, the poor man’s real learning goes unheard.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For if there come unto your assembly a man with a gold ring, in goodly apparel, and there come in also a poor man in vile raiment; And ye have respect to him that weareth the gay clothing... and say to the poor, Stand thou there, or sit here under my footstool.&rdquo;</div>
+  <div class="cite">&mdash; James 2:2-3 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">James rebukes a congregation that honours the rich visitor and pushes the poor one aside.</div>
+  <div class="tieback">The poor man is dismissed before he speaks, exactly the bias the Kural records, though James condemns it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And they said, ‘Why was this Qur’an not sent down upon a great man from [one of] the two cities?’&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 43:31 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Meccan elite questioned the revelation because it came through a man without great wealth or rank.</div>
+  <div class="tieback">They judged the message by the messenger’s means, the very prejudice the Kural observes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;So I observed: Wisdom is better than valor; but The wisdom of the poor is scorned, And their words are not heeded.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Ecclesiastes.9.16" target="_blank" rel="noopener">Ecclesiastes 9:16 (THE JPS TANAKH: Gender-Sensitive Edition, 2023)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Kohelet tells of a poor wise man who saved a city yet was forgotten, and concludes that the poor man’s wisdom is despised.</div>
+  <div class="tieback">This is a near-exact match: wise words from the poor go unheeded.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;...whoever has no conviction with regard to skillful mental qualities... no discernment with regard to skillful mental qualities is, in the discipline of a noble one, said to be poor, destitute, &amp; penniless.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an06/an06.045.than.html" target="_blank" rel="noopener">Ina Sutta, AN 6.45 (tr. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha redefines real poverty as the lack of conviction, conscience, persistence and discernment.</div>
+  <div class="tieback">Against the world’s habit of dismissing the materially poor, the Buddha says the truly poor are those without wisdom, a pointed counterpoint to the Kural’s observation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;If a monk hears bad words, cruel and rankling ones, he should silently overlook them, and not take them to heart.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 2.25 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The mendicant, who owns nothing, must expect contempt and abuse from householders and bear it without resentment.</div>
+  <div class="tieback">Jainism assumes the poor will be slighted, as the Kural observes, and asks the voluntarily poor to meet it with equanimity.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;No one respects the poor man. He may make thousands of efforts, but no one pays any attention to him.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1159, Raag Bhairao, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Bhagat Kabir describes with sharp realism how society ignores the destitute, however hard they try to be heard.</div>
+  <div class="tieback">The Kural says that even when the poor speak sound truths, their words are disregarded; Kabir likewise says that whatever the poor man does, no one pays him any attention.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When Odysseus, disguised as a beggar in his own hall, speaks wisely to the suitors, Antinous mocks him and hurls a footstool at him; his words carry no weight because he appears to be a destitute stranger.</div>
+  <div class="cite">&mdash; Homer, Odyssey 17 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The rightful king is scorned because of his rags, even though his speech is shrewd.</div>
+  <div class="tieback">Homer dramatises the Kural’s observation that a poor man’s well-understood words are brushed aside.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;A man’s word is believed in exact proportion to the amount of cash which he keeps in his strong box.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.tertullian.org/fathers/juvenal_satires_03.htm" target="_blank" rel="noopener">Juvenal, Satire 3 (tr. G.G. Ramsay, 1918)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Juvenal’s Umbritius complains that in Rome a witness is asked first about his wealth and last about his character.</div>
+  <div class="tieback">This is the Kural’s point stated almost as a formula: credibility tracks money, not understanding.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Jarrow March brings a petition of the unemployed to Parliament</div>
+  <div class="rle-meta">5 October - 4 November 1936 &middot; Jarrow to London, England, United Kingdom</div>
+  <div class="quote is-paraphrase">After the closure of Palmer&#x27;s shipyard left most of Jarrow&#x27;s workforce without jobs, about 200 unemployed men, each medically examined, marched nearly 300 miles to London carrying a petition signed by some 12,000 people asking for new industry. Their MP, Ellen Wilkinson, presented the petition to Parliament on 4 November 1936, but Prime Minister Stanley Baldwin did not meet the marchers, the petition was received without being debated, and the march produced few immediate results.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">The marchers&#x27; orderly, well-reasoned plea won public sympathy along the route yet was largely passed over by the government, though the march later came to be seen as a defining event of the 1930s.</div>
+  <div class="tieback">The kural observes that even sound and well-understood words lose their force when spoken by the poor, and the Jarrow men&#x27;s carefully argued petition was received in Parliament and left undebated.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-105/" target="_blank" rel="noopener">Thirukkural Chapter 105: நல்குரவு / Poverty (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-105.html" target="_blank" rel="noopener">நல்குரவு - அதிகாரம் 105 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Ecclesiastes.9.16" target="_blank" rel="noopener">THE JPS TANAKH: Gender-Sensitive Edition (Revised JPS, 2023)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/an/an06/an06.045.than.html" target="_blank" rel="noopener">Ina Sutta: Debt (AN 6.45), tr. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.tertullian.org/fathers/juvenal_satires_03.htm" target="_blank" rel="noopener">Juvenal, Satire 3, tr. G.G. Ramsay (Loeb, 1918)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://heritagecalling.com/2021/10/04/the-story-of-the-jarrow-march/" target="_blank" rel="noopener">People and Protest: The Story of the Jarrow March (Historic England)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.nationalarchives.gov.uk/education/resources/thirties-britain/jarrow-crusade/" target="_blank" rel="noopener">Jarrow Crusade (Ministry of Labour report to the Home Office, MEPO 2/3097)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-14"><a href="https://co-curate.ncl.ac.uk/jarrow-crusade-1936/" target="_blank" rel="noopener">Jarrow March, 1936</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1045.html">&larr; Kural 1045</a>
+  <a href="kural-1047.html">Kural 1047 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-105.html">Poverty</a>
+  <a class="skip-btn" href="kural-1051.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

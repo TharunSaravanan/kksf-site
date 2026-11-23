@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 331 — Impermanence | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 331</h1>
+<p class="adhikaram"><a href="adhikaram-034.html">Impermanence</a> &middot; Nilaiyaamai &middot; <span class="tamil">நிலையாமை</span></p>
+
+<div class="tamil-text">நில்லாத வற்றை நிலையின என்றுணரும்
+புல்லறி வாண்மை கடை.</div>
+<div class="translit">Nillaadha vatrai nilaiyina endru unarum
+Pullarivu aanmai kadai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Believing that things which cannot last will last forever is the worst kind of foolishness.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine building a sandcastle and believing it will stay on the beach forever, even though the waves always come. This kural says that treating things that will surely change or go away as if they will last forever is the silliest mistake a person can make.</p>
+
+<h2 class="section">University</h2>
+<p>Valluvar opens the chapter on impermanence not with a description of transience but with an epistemic judgement: the root error is a false cognition, mistaking the non-abiding (nillaadhavai) for the abiding (nilaiyina). The phrase “pullarivaanmai” (petty-mindedness, a paltry intelligence that presumes itself competent) frames the problem as a defect of understanding rather than of morals, and “kadai” (the lowest, the most base) ranks it at the bottom of human conditions. Commentators from Parimelazhagar onward read the chapter as the doorway of the renunciate section (thuravaraviyal), since recognising impermanence (nilaiyaamai) is what loosens attachment and makes renunciation (the next chapter, thuravu) intelligible. The idea sits close to the Buddhist and Jain analysis of avidya/moha, where suffering follows from treating the impermanent as permanent, and to the Stoic insistence that disturbance comes from our judgements about things rather than from the things themselves.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;O son of Kunti, the contact between the senses and the sense objects gives rise to fleeting perceptions of happiness and distress. These are non-permanent, and come and go like the winter and summer seasons.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita 2.14</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna tells Arjuna that the pleasures and pains people cling to are passing like the seasons, and a wise person does not treat them as solid or lasting.</div>
+  <div class="tieback">The Gita labels these experiences anitya (non-permanent), which is the same diagnosis the Kural makes: the mistake is treating the non-lasting as lasting.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;While we look not at the things which are seen, but at the things which are not seen: for the things which are seen are temporal; but the things which are not seen are eternal.&rdquo;</div>
+  <div class="cite">&mdash; 2 Corinthians 4:18 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul tells believers to fix their attention on what lasts rather than on visible things, which are only temporary.</div>
+  <div class="tieback">The Kural condemns mistaking the temporary for the permanent; Paul teaches the right way to tell the temporal from the eternal.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Everyone upon the earth will perish, And there will remain the Face of your Lord, Owner of Majesty and Honor.&rdquo;</div>
+  <div class="cite">&mdash; Quran 55:26-27 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Quran says everything on earth will pass away and only God remains.</div>
+  <div class="tieback">Only one thing truly abides, so treating anything worldly as permanent is exactly the error the Kural calls the lowest foolishness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Vanity of vanities, saith the Preacher, vanity of vanities; all is vanity.&rdquo;</div>
+  <div class="cite">&mdash; Ecclesiastes 1:2 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Kohelet (Ecclesiastes) opens by calling everything under the sun hevel, a breath or vapour that does not last.</div>
+  <div class="tieback">Both texts start from the same claim: worldly things are fleeting, and seeing them as solid is a mistake.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;All conditioned things are impermanent” — when one sees this with wisdom, one turns away from suffering. This is the path to purification.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 277 <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha names impermanence (anicca) as a mark of all conditioned things; seeing it clearly frees a person from suffering.</div>
+  <div class="tieback">The Kural&#x27;s ‘lowest foolishness’ is the reverse of this wisdom: the fool sees permanence where the Buddha teaches there is only anicca.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As you must, of necessity, one day part with everything, in this transient world of living beings, why do you cling to kingly power?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 18.12 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The monk Gardabhāli confronts King Sañjaya with the folly of clinging to power and possessions in a world where everything must be given up.</div>
+  <div class="tieback">Valluvar calls it the lowest folly to take the impermanent for the permanent; the monk asks why the king clings to what he must inevitably lose.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The world and its affairs are totally false; know this well, my friend. Says Nanak, it is like a wall of sand; it shall not endure.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1429, Salok Mahala 9, Salok 49, Guru Tegh Bahadur (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In his saloks Guru Tegh Bahadur warns that everything built in the world is as unstable as a wall of sand, and that recognising this is the beginning of wisdom.</div>
+  <div class="tieback">The Kural calls it the lowest folly to take passing things for permanent; Guru Tegh Bahadur urges us to know clearly that the world&#x27;s affairs will not endure.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Eos, goddess of the dawn, asked Zeus to make her mortal lover Tithonus immortal but forgot to ask for eternal youth; he went on living while shrivelling with age until he could not move.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/cla/homer/hymns.htm" target="_blank" rel="noopener">Homeric Hymn to Aphrodite (Hymn 5), lines 218-238</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The myth shows the danger of assuming that what belongs to a mortal, like youth, can simply be made to last.</div>
+  <div class="tieback">Eos treated youth as if it were permanent, the very mistake the Kural calls the lowest kind of understanding.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Heracleitus is supposed to say that all things are in motion and nothing at rest; he compares them to the stream of a river, and says that you cannot go into the same water twice.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Plato/cratylus.html" target="_blank" rel="noopener">Plato, Cratylus 402a (Jowett translation)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Socrates reports Heraclitus&#x27; view that everything is constantly changing, like a flowing river.</div>
+  <div class="tieback">If everything flows, then believing things are fixed and permanent is exactly the misperception the Kural condemns.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Dutch tulip mania collapses</div>
+  <div class="rle-meta">1637 &middot; Holland, Dutch Republic (present-day Netherlands)</div>
+  <div class="quote is-paraphrase">In the 1630s prices for rare tulip bulbs in Holland rose to extraordinary heights, and ordinary families were drawn into buying bulbs for resale, with bulbs sold and resold many times without ever leaving the ground. Early in 1637 doubts arose as to whether prices would keep rising, and the price structure collapsed almost overnight, ruining many who had bought at the top. Historians still debate how widespread the damage was, but the boom and sudden crash of early 1637 are well documented.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Buyers acted as if the high value of a flower bulb was a lasting fact rather than a passing mood of the market. The episode became one of history&#x27;s best-known warnings about treating a temporary condition as permanent.</div>
+  <div class="tieback">Valluvar calls it the lowest folly to take what cannot last as if it will endure, which is exactly the mistake the tulip buyers made about bulb prices.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-34/" target="_blank" rel="noopener">Thirukkural Chapter 34: நிலையாமை / Instability (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A034.html" target="_blank" rel="noopener">34. நிலையாமை (Thirukkural with word-by-word gloss and commentary)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita, The Song of God (Swami Mukundananda)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.sacred-texts.com/cla/homer/hymns.htm" target="_blank" rel="noopener">Homeric Hymn 5, To Aphrodite (the Hestia passage, ll. 21-32), trans. Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Plato/cratylus.html" target="_blank" rel="noopener">Plato, Cratylus, trans. Benjamin Jowett</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/money/Tulip-Mania" target="_blank" rel="noopener">Tulip Mania (Doug Ashburn)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.rijksmuseum.nl/en/press/press-releases/rijksmuseum-displays-tulip-book-from-the-six-collection" target="_blank" rel="noopener">Rijksmuseum displays tulip book from the Six Collection</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0330.html">&larr; Kural 330</a>
+  <a href="kural-0332.html">Kural 332 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-034.html">Impermanence</a>
+  <a class="skip-btn" href="kural-0341.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

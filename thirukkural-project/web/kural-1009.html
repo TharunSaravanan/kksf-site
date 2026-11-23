@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1009 — Wealth without Benefaction | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1009</h1>
+<p class="adhikaram"><a href="adhikaram-101.html">Wealth without Benefaction</a> &middot; Nandriyil Selvam &middot; <span class="tamil">நன்றியில் செல்வம்</span></p>
+
+<div class="tamil-text">அன்பொரீஇத் தற்செற்று அறநோக்காது ஈட்டிய
+ஒண்பொருள் கொள்வார் பிறர்.</div>
+<div class="translit">Anporeeith Tharsetru Aranokkaadhu Eettiya
+Onporul Kolvaar Pirar</div>
+
+<h2 class="section">Meaning</h2>
+<p>Shining riches gathered by giving up love, making yourself go without, and ignoring what is right will be taken by others in the end.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A boy saves all his pocket money, never shares, never buys himself a treat, and even cheats a little to get more. One day he moves away and leaves the jar behind, and other kids spend it. Valluvar says money gathered in such a selfish, unhappy way ends up with someone else.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet lists three things sacrificed in the getting: anbu oreei (அன்பு ஒரீஇ, &#x27;having forsaken love&#x27;, the -īi lengthening marking the verbal participle), thaR setRu (தற்செற்று, &#x27;having afflicted oneself&#x27;, i.e. denying oneself comfort), and aRam nokkaadhu (அறம் நோக்காது, &#x27;without regard for virtue&#x27;). The resulting oNporuL (ஒண்பொருள், &#x27;bright, glittering wealth&#x27;) is taken by piRar (பிறர், &#x27;others&#x27;). Mu. Varadarasanar, Solomon Pappaiah and Sivayogi Sivakumar read &#x27;others will enjoy it&#x27;, Kalaignar sharpens it to &#x27;others will plunder it&#x27;, and Pope&#x27;s explanation has &#x27;strangers will inherit&#x27;; Pope glosses the three omissions as friendship, comfort and charity. Pappaiah reads anbu as love shown to others through giving, which ties the couplet to the chapter&#x27;s theme rather than to domestic affection. The text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The Isha Upanishad opens by saying that all this world is pervaded by the Lord; enjoy it through renunciation, and do not covet, for whose is wealth?</div>
+  <div class="cite">&mdash; Isha Upanishad 1 <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Wealth never truly belongs to anyone, so grasping at it is futile.</div>
+  <div class="tieback">The Kural&#x27;s hoarder discovers this when the wealth he amassed passes to others.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;There is one alone, and there is not a second; yea, he hath neither child nor brother: yet is there no end of all his labour; neither is his eye satisfied with riches; neither saith he, For whom do I labour, and bereave my soul of good? This is also vanity, yea, it is a sore travail.&rdquo;</div>
+  <div class="cite">&mdash; Ecclesiastes 4:8 (KJV, kingjamesbibleonline.org) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Preacher portrays a solitary man who toils endlessly and denies himself, never asking who will benefit.</div>
+  <div class="tieback">It mirrors the Kural&#x27;s three omissions, love, self-care and wisdom, and the question of who will finally have the wealth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Who among you considers the wealth of his heirs dearer to him than his own wealth?” They replied, “O Allah&#x27;s Messenger! There is none among us but loves his own wealth more.” The Prophet said, “So his wealth is whatever he spends (in Allah&#x27;s Cause) during his life (on good deeds) while the wealth of his heirs is whatever he leaves after his death.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6442" target="_blank" rel="noopener">Sahih al-Bukhari 6442 (sunnah.com)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet teaches that what one does not spend on good belongs, in truth, to one&#x27;s heirs.</div>
+  <div class="tieback">This is the Kural&#x27;s point that wealth amassed without virtue or generosity is really gathered for others.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">When King Monobaz gave away his treasures in a famine, his relatives protested; he replied that his fathers had stored treasures below and for others, while he was storing them above and for himself.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Bava_Batra.11a" target="_blank" rel="noopener">Babylonian Talmud, Bava Batra 11a</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Giving converts wealth into a treasure one truly keeps; hoarding merely saves it for others.</div>
+  <div class="tieback">The Kural likewise warns that wealth hoarded without virtue goes to others.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">A deva tells the Buddha that when a house is on fire, the vessel carried out is of use, not what burns inside; so, since the world is ablaze with aging and death, one should take out wealth by giving, for what is given is well saved.</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/sn1.41" target="_blank" rel="noopener">Samyutta Nikaya 1.41, Aditta Sutta</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Only wealth given away is truly rescued; what is kept is lost.</div>
+  <div class="tieback">The Kural&#x27;s hoarder, who never gave, loses all his amassed wealth to others.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Leaving behind bipeds and quadrupeds, his fields, his house, his wealth, his corn, and everything; against his will, and accompanied only by his Karman, he enters a new existence, either a good or a bad one. When they have burned with fire on the funeral pile his forlorn, helpless corpse, his wife and sons and kinsfolk will choose another man to provide for them.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 13.24–25 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The monk Citra warns King Brahmadatta that at death all property is left behind and others carry on, while only one&#x27;s karma goes with the soul.</div>
+  <div class="tieback">Like the Kural, it shows that wealth gathered without regard for dharma passes to others, leaving its gatherer only the karma of how he got it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;It was not gathered without sin, and it does not go along with the dead.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 417, Raag Aasaa, Ashtpadi (Babarvani), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Reflecting on the wealth of rulers ruined in Babur&#x27;s invasion, Guru Nanak says that such riches are never amassed without wrongdoing and are left behind at death.</div>
+  <div class="tieback">The Kural says wealth gathered by abandoning love and virtue will be taken by others; Guru Nanak says it is gathered through sin and stays behind when its owner dies.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When Cyrus&#x27;s troops sack Sardis, the captured Croesus tells Cyrus that the soldiers are not plundering his city or his treasures, for nothing is his any longer, but are carrying off what now belongs to Cyrus.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Herodotus/history.1.i.html" target="_blank" rel="noopener">Herodotus, Histories 1.88</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The richest king of his age sees his hoard pass in a single day to another.</div>
+  <div class="tieback">Croesus&#x27;s fate illustrates the Kural&#x27;s warning that amassed wealth is finally taken by others.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Horace reminds Postumus that the years slip away and death comes for all, and that a worthier heir will drink the Caecuban wine he guarded behind a hundred locks.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0025" target="_blank" rel="noopener">Horace, Odes 2.14.25–28</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">What one jealously hoards will be enjoyed by an heir after one&#x27;s death.</div>
+  <div class="tieback">This is the Kural&#x27;s verdict that the hoarder&#x27;s shining wealth will be taken by others.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Louis XIV seizes Fouquet&#x27;s wealth and takes his artists for Versailles</div>
+  <div class="rle-meta">1661 &middot; Vaux-le-Vicomte and Nantes, France</div>
+  <div class="quote is-paraphrase">Nicolas Fouquet, Louis XIV&#x27;s superintendent of finances, amassed a vast fortune and built the magnificent chateau of Vaux-le-Vicomte, where he entertained the king at a lavish fete on 17 August 1661. Less than three weeks later, on 5 September 1661, he was arrested at Nantes and charged over his handling of state finances; his assets were seized, and many works of art from Vaux passed into the royal collections. The king took into his own service Fouquet&#x27;s architect Louis Le Vau, painter Charles Le Brun and garden designer Andre Le Notre, with the team of craftsmen they had assembled, and set them to work on Versailles, while Fouquet spent the rest of his life in prison.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">The splendour Fouquet had built up passed almost overnight to the king, who used it to create something even grander for himself.</div>
+  <div class="tieback">The kural says that shining wealth gathered without regard for virtue will in the end be taken by others, and Fouquet&#x27;s fortune, artists and treasures were taken over by the king.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-101/" target="_blank" rel="noopener">Thirukkural Chapter 101: நன்றியில்செல்வம் / Wealth without Benefaction (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-101.html" target="_blank" rel="noopener">நன்றியில் செல்வம் - அதிகாரம் 101 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses; English adhigaram page)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3">Isha Upanishad, verse 7 <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:6442" target="_blank" rel="noopener">Sahih al-Bukhari 6442 (Book of Ar-Riqaq, Chapter: Whatever one spends from his money will be better for him)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Bava_Batra.11a" target="_blank" rel="noopener">Babylonian Talmud, Bava Batra 11a (King Monobaz)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://suttacentral.net/sn1.41" target="_blank" rel="noopener">Samyutta Nikaya 1.41, Aditta Sutta (On Fire)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Herodotus/history.1.i.html" target="_blank" rel="noopener">Herodotus, Histories, Book 1</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0025" target="_blank" rel="noopener">Horace, Odes 2.14 (to Postumus)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://vaux-le-vicomte.com/en/decouvrir/the-history/three-centuries-of-history/" target="_blank" rel="noopener">Three centuries of history</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/topic/Vaux-le-Vicomte" target="_blank" rel="noopener">Vaux-le-Vicomte (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.worldhistory.org/Louis_XIV_of_France/" target="_blank" rel="noopener">Louis XIV of France: The Sun King</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1008.html">&larr; Kural 1008</a>
+  <a href="kural-1010.html">Kural 1010 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-101.html">Wealth without Benefaction</a>
+  <a class="skip-btn" href="kural-1011.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

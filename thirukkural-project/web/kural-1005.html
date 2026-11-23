@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1005 — Wealth without Benefaction | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1005</h1>
+<p class="adhikaram"><a href="adhikaram-101.html">Wealth without Benefaction</a> &middot; Nandriyil Selvam &middot; <span class="tamil">நன்றியில் செல்வம்</span></p>
+
+<div class="tamil-text">கொடுப்பதூஉம் துய்ப்பதூஉம் இல்லார்க்கு அடுக்கிய
+கோடியுண் டாயினும் இல்.</div>
+<div class="translit">Kotuppadhooum Thuyppadhooum Illaarkku Atukkiya
+Kotiyun Taayinum Il</div>
+
+<h2 class="section">Meaning</h2>
+<p>For people who neither give their money away nor enjoy it themselves, even crores upon crores (huge piles of money) are as good as nothing.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you have a big box of crayons but never draw with them and never lend them to a friend, it is just like having no crayons at all. Valluvar says money works the same way: if you never use it and never share it, you are really poor.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet names the two proper uses of wealth, koduppadhu (கொடுப்பது, &#x27;giving&#x27;) and thuyppadhu (துய்ப்பது, &#x27;enjoying, consuming&#x27;), with the emphatic lengthening -ūum (கொடுப்பதூஉம், துய்ப்பதூஉம்) marking each as indispensable. Adukkiya kodi (அடுக்கிய கோடி) means &#x27;crores stacked one upon another&#x27;; Mu. Varadarasanar glosses &#x27;many crores ever increasing&#x27;. The verdict il (இல், &#x27;there is not&#x27;) says such people are effectively without wealth; Pope renders the sense as &#x27;they are poor&#x27;. Solomon Pappaiah adds the qualifier that giving should be to those in need and enjoying should be as need requires, guarding against reading the couplet as licence for extravagance. The two-fold scheme parallels the Sanskrit gnomic triad of dāna, bhoga and nāśa (giving, enjoyment, destruction) found in Bhartrihari. The text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Bhartrihari&#x27;s well-known stanza says that wealth has only three possible courses, giving, enjoyment and destruction; for the man who neither gives nor enjoys, the third course is what becomes of it.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/" target="_blank" rel="noopener">Bhartrihari, Nītiśataka (dānaṃ bhogo nāśas tisro gatayo bhavanti vittasya; verse numbering varies by edition)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Wealth not given or used is bound simply to be lost.</div>
+  <div class="tieback">This is the Kural&#x27;s own scheme of giving and enjoying, with the same conclusion that otherwise the wealth amounts to nothing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">Paul tells Timothy to charge the rich not to trust in uncertain riches but in God, who gives us richly all things to enjoy, and to be rich in good works, ready to distribute and willing to share.</div>
+  <div class="cite">&mdash; 1 Timothy 6:17–18 <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Wealth is meant both to be enjoyed with gratitude and to be shared generously.</div>
+  <div class="tieback">It names the same two uses, enjoying and giving, that the Kural says give wealth its meaning.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;A servant says, My wealth. my wealth, but out of his wealth three things are only his: whatever he eats and makes use of or by means of which he dresses himself and it wears out or he gives as charity, and this is what he stored for himself (as a reward for the Hereafter), and what is beyond this (it is of no use to you) because you are to depart and leave it for other people.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/muslim:2959a" target="_blank" rel="noopener">Sahih Muslim 2959a (sunnah.com)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet teaches that only what one consumes or gives away is truly one&#x27;s own; the rest is merely left behind.</div>
+  <div class="tieback">Exactly the Kural&#x27;s teaching: wealth neither used nor given is as good as nothing to its owner.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Proverbs observes that one person gives freely and yet grows richer, while another withholds more than is right and only comes to want.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Proverbs 11:24</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Withholding does not make one rich; generosity does.</div>
+  <div class="tieback">The Kural likewise says the one who never gives is poor despite heaped-up crores.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Buddha tells Anathapindika that rightly earned wealth should be used to bring pleasure to oneself, to parents, family and workers, to friends, to protect against losses, and to make offerings to relatives, guests, the dead, kings, devas and contemplatives.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an05/an05.041.than.html" target="_blank" rel="noopener">Anguttara Nikaya 5.41, Adiya Sutta</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Wealth&#x27;s benefits lie in using it for one&#x27;s own and others&#x27; good, not in storing it.</div>
+  <div class="tieback">This is the Kural&#x27;s pairing of enjoyment and giving as the purpose of riches.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Those who, though utterly poor, will not beg, are the truly rich. Even the rich are poor if they give not.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">Nāladiyār, ch. 27 (&#x27;Riches without goodness&#x27;), st. 10 (English translation in The Indian Antiquary, via wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Jain Tamil quatrain redefines riches by conduct: the non-giver is poor whatever he owns.</div>
+  <div class="tieback">It restates the Kural&#x27;s verdict that crores amount to nothing for one who does not give.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;One who works for what he eats, and gives some of what he has - O Nanak, he knows the Path.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1245, Raag Sarang, Sarang ki Vaar (salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak names the right use of earnings: live on what you have earned by honest work and give part of it to others. This salok is the scriptural root of kirat karni (honest work) and vand chhakna (sharing).</div>
+  <div class="tieback">The Kural names enjoying and giving as the two uses of wealth, without which crores are worth nothing; Guru Nanak names the same two, eating what one earns and giving some away.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Aesop&#x27;s fable a miser buries his gold and visits it daily; when a thief steals it and he laments, a neighbour advises him to bury a stone in its place, since it will serve him just as well as the gold he never used.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/21" target="_blank" rel="noopener">Aesop&#x27;s Fables, &#x27;The Miser and His Gold&#x27;</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Wealth that is never used has no more value than a stone.</div>
+  <div class="tieback">This is the Kural&#x27;s point that unused, ungiven crores amount to nothing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle remarks that being rich consists in using things rather than in owning them, since it is the actual use of possessions that constitutes wealth.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/rhetoric.html" target="_blank" rel="noopener">Aristotle, Rhetoric I.5, 1361a23–24</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Wealth is defined by its use, not by mere ownership.</div>
+  <div class="tieback">The Kural likewise denies that unused, ungiven riches are wealth at all.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Russell Sage dies with 70 million dollars after a lifetime of tight-fistedness</div>
+  <div class="rle-meta">22 July 1906 &middot; New York, United States</div>
+  <div class="quote is-paraphrase">Russell Sage, a financier who helped organise American railroads and telegraphs and became a major Wall Street moneylender, died in 1906 with a fortune estimated at about 70 million dollars. He was known for his frugality, and over a marriage of 37 years he and his wife made only three major charitable gifts. His widow, Margaret Olivia Sage, then gave the fortune away, beginning with 10 million dollars in 1907 to establish the Russell Sage Foundation for the improvement of social and living conditions in the United States.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Sage&#x27;s fortune did almost nothing for anyone in his own lifetime; it became a force for good only once it passed out of his hands.</div>
+  <div class="tieback">The kural says that for those who neither give nor enjoy, wealth counts for nothing even if they own crores heaped upon crores, and Sage&#x27;s millions achieved nothing until his widow gave them away.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-101/" target="_blank" rel="noopener">Thirukkural Chapter 101: நன்றியில்செல்வம் / Wealth without Benefaction (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-101.html" target="_blank" rel="noopener">நன்றியில் செல்வம் - அதிகாரம் 101 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses; English adhigaram page)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.wisdomlib.org/" target="_blank" rel="noopener">Bhartṛhari, Nītiśataka (stanza on the three courses of wealth: dāna, bhoga, nāśa)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/muslim:2959a" target="_blank" rel="noopener">Sahih Muslim 2959a (Book of Zuhd and Softening of Hearts)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Tanakh (Proverbs 11:24; Deuteronomy 15:7–8), JPS translations</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/an/an05/an05.041.than.html" target="_blank" rel="noopener">Anguttara Nikaya 5.41, Adiya Sutta: Benefits to be Obtained (from Wealth)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">The Nāladiyār (English translation serialised in The Indian Antiquary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.gutenberg.org/ebooks/21" target="_blank" rel="noopener">Aesop&#x27;s Fables, &#x27;The Miser and His Gold&#x27;</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/rhetoric.html" target="_blank" rel="noopener">Aristotle, Rhetoric</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/money/Russell-Sage" target="_blank" rel="noopener">Russell Sage (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.philanthropyroundtable.org/hall-of-fame/margaret-olivia-sage/" target="_blank" rel="noopener">Margaret Olivia Sage (Philanthropy Hall of Fame)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.russellsage.org/about/history" target="_blank" rel="noopener">History of the Russell Sage Foundation</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1004.html">&larr; Kural 1004</a>
+  <a href="kural-1006.html">Kural 1006 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-101.html">Wealth without Benefaction</a>
+  <a class="skip-btn" href="kural-1011.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

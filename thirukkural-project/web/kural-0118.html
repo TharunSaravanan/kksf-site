@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 118 — Impartiality | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 118</h1>
+<p class="adhikaram"><a href="adhikaram-012.html">Impartiality</a> &middot; Naduvu Nilaimai &middot; <span class="tamil">நடுவு நிலைமை</span></p>
+
+<div class="tamil-text">சமன்செய்து சீர்தூக்குங் கோல்போல் அமைந்தொருபால்
+கோடாமை சான்றோர்க் கணி.</div>
+<div class="translit">Saman seydhu seerthookkung kolpol amaindhorupaal
+Kodaamai saandrork kani.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Like a scale that is first set level and then weighs things exactly, a good person stays steady and does not lean to either side. This is their jewel.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A good weighing scale sits perfectly flat before you put anything on it, then shows the true weight, no matter whose apples they are. A fair person is like that scale: steady and not tipping toward anyone.</p>
+
+<h2 class="section">University</h2>
+<p>This is the chapter’s central image. The துலாக்கோல் (tulaakkol, balance-beam) first சமன்செய்து (“makes itself even”), then சீர்தூக்கும் (“weighs rightly”), and does not ஒருபால் கோடாமை (“incline to one side”). Varadarasanar and Pappaiah stress the two-stage sequence: the judge must first be internally level, free of prior bias, and only then evaluate. That is a sharp account of impartiality as a disposition as well as a procedure. The scale is a near-universal emblem of justice: Zeus’s golden scales in Homer, the Qur’anic mīzān, the “just balances” of Leviticus, and the Dhammapada’s sage who weighs good and evil “as if holding a balance-scale.” Aristotle’s description of the judge as “animate justice” and “intermediate” states the same idea philosophically. The second line repeats the refrain of Kural 115, linking inner steadiness under fortune to outer impartiality in judgment.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">King Shibi, when a hawk demands a dove that has taken refuge with him, refuses to wrong either bird. He offers his own flesh equal in weight to the dove, placing it on a scale, and finally climbs onto the scale himself, after which the gods (Indra and Agni in disguise) reveal themselves and praise him.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Vana Parva (Shibi and the dove)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In the Mahabharata, Shibi will not favour the dove at the hawk’s expense or the hawk at the dove’s, and a literal pair of scales settles the matter.</div>
+  <div class="tieback">An Indian story in which the scale itself is the emblem of refusing to lean toward either party.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Judge not according to the appearance, but judge righteous judgment.&rdquo;</div>
+  <div class="cite">&mdash; John 7:24 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Jesus tells his critics to judge by what is truly right, not by surface impressions.</div>
+  <div class="tieback">Like the level scale, righteous judgment weighs the real substance and not appearances or bias.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;That you not transgress within the balance. And establish weight in justice and do not make deficient the balance.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 55:8–9 (Saheeh International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Qur’an says God set up the cosmic balance (al-mīzān) and commands people not to violate it but to weigh with justice.</div>
+  <div class="tieback">The same image of the balance as the model of justice, which must not be tipped.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Ye shall do no unrighteousness in judgment, in meteyard, in weight, or in measure. Just balances, just weights, a just ephah, and a just hin, shall ye have&rdquo;</div>
+  <div class="cite">&mdash; Leviticus 19:35–36 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Torah puts judgment and weights and measures in the same command: both must be exact and fair.</div>
+  <div class="tieback">The Kural’s scale-and-judgment pairing appears here in one sentence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Not by observing silence does one become a sage, if he be foolish and ignorant. But that man is wise who, as if holding a balance-scale accepts only the good.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 268 (trans. Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada uses a balance-scale image: the true sage weighs things carefully, taking the good and rejecting the evil.</div>
+  <div class="tieback">A direct balance-scale metaphor for the discerning person, as in the Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;He, in whom attachment and aversion do not create any disturbance, (is said to have) steadfast equanimity, according to the preaching of the omniscient.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.com/scripture/niyamsara/supreme-equanimity/" target="_blank" rel="noopener">Kundakunda, Niyamasāra 9.128 &#x27;Supreme Equanimity&#x27; (English rendering on jainworld.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Kundakunda defines true equanimity (sāmāyika) as a mind that neither attachment nor aversion can tip.</div>
+  <div class="tieback">Valluvar&#x27;s balance-beam first sets itself level and leans to neither side, and Kundakunda&#x27;s sage, unmoved by attachment or aversion, is that balance in Jain terms.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Mind is the scale, consciousness the weights, and the performance of Your service is the appraiser.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 731, Raag Soohee, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak uses the merchant&#x27;s balance as an image for the inner discipline by which a person weighs rightly.</div>
+  <div class="tieback">The Kural&#x27;s balance-beam first sets itself level and then weighs without leaning; Guru Nanak likewise makes the mind itself the scale that must be true.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;the father of all balanced his golden scales and placed a doom in each of them, one for Achilles and the other for Hector. As he held the scales by the middle, the doom of Hector fell down deep into the house of Hades&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, Iliad 22 (trans. Samuel Butler)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Even Zeus, who pities Hector, does not decide by favour; he weighs the two fates on his golden scales, holding them “by the middle,” and accepts the result.</div>
+  <div class="tieback">The balance held level at the centre, deciding without favour, is the Kural’s image.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;to go to the judge is to go to justice; for the nature of the judge is to be a sort of animate justice; and they seek the judge as an intermediate&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics V.4 (trans. W. D. Ross)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle describes the judge as justice in living form: a mean point that restores equality between two parties.</div>
+  <div class="tieback">Aristotle’s judge-as-intermediate is the philosophical version of the Kural’s level balance-beam.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Athens chooses jurors by allotment machine</div>
+  <div class="rle-meta">4th century BCE (procedure described); surviving machines mid-2nd century BCE &middot; Athenian Agora, Athens, Greece</div>
+  <div class="quote is-paraphrase">Classical Athens chose many officials and jurors by lot rather than by election. The Aristotelian Constitution of the Athenians gives a detailed account of how jurors for the courts were allotted, and stone allotment machines called kleroteria, found in and around the Athenian Agora, confirm that picture: citizens&#x27; bronze tickets were inserted into rows of slots, and an attached mechanical device made the selection by chance. The surviving inscribed machines date to the mid-second century BCE.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The Athenians built the removal of favouritism into the procedure itself, so that the panel was settled by chance before any case was weighed.</div>
+  <div class="tieback">The kural compares the just to a balance that first sets itself level and then weighs; the allotment machine levelled the scale before judgment began.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-12/" target="_blank" rel="noopener">Thirukkural Chapter 12: நடுவு நிலைமை / Impartiality (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar commentaries, Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-012.html" target="_blank" rel="noopener">நடுவு நிலைமை - அதிகாரம் 12 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html" target="_blank" rel="noopener">Tirukkural of Tiruvalluvar (Tamil script, Unicode e-text)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-4"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://jainworld.com/scripture/niyamsara/supreme-equanimity/" target="_blank" rel="noopener">Niyamasāra of Ācārya Kundakunda, ch. IX &#x27;Supreme Equanimity (Parama Samādhi)&#x27; (English rendering)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, The Iliad, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, tr. W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://research-bulletin.chs.harvard.edu/2011/02/16/athenian-kleroteria-and-hellenistic-sortition/" target="_blank" rel="noopener">Athenian Kleroteria and Hellenistic sortition (Nikolaos Papazarkadas)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://agathe.gr/id/agora/image/2008.18.0174" target="_blank" rel="noopener">Agora Image 2008.18.0174: Fragment of an allotment machine (kleroterion) (Athenian Agora Excavations)</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0117.html">&larr; Kural 117</a>
+  <a href="kural-0119.html">Kural 119 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-012.html">Impartiality</a>
+  <a class="skip-btn" href="kural-0121.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 845 — Ignorance of Fools | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 845</h1>
+<p class="adhikaram"><a href="adhikaram-085.html">Ignorance of Fools</a> &middot; Pullarivaanmai &middot; <span class="tamil">புல்லறிவாண்மை</span></p>
+
+<div class="tamil-text">கல்லாத மேற்கொண் டொழுகல் கசடற
+வல்லதூஉம் ஐயம் தரும்.</div>
+<div class="translit">Kallaadha merkon dozhugal kasadara
+valladhooum aiyam tharum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Pretending to know things you never learned makes people doubt even the things you really do know well.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If a boy who is great at football starts bragging that he is also a chess champion, and everyone sees he can’t play chess, they start wondering whether he is really good at football either. Faking one thing makes people doubt the real things too.</p>
+
+<h2 class="section">University</h2>
+<p>Kallaadha (கல்லாத, what one has not learned) set against kasadara valladhu (கசடற வல்லது, what one has mastered without flaw) gives the kural its hinge, and the emphatic -ooum (‘even that’) shows the reach of the damage: aiyam (ஐயம், doubt) spreads from the pretended to the genuine. Mu. Varadarasanar and Pappaiah read kallaadha as unread books (nool), so the fool pretends to scholarship; Kalaignar widens it to any field one pretends to know. Puliyur Kesigan reads merkondu ozhugal more actively as rashly undertaking a task one has not learned, which casts doubt even on work one could do perfectly. The kural is a pointed observation about credibility: a single exposed pretense devalues an entire reputation. Both sources give identical text.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Panchatantra a jackal who falls into a vat of indigo dye passes himself off as a new king of the beasts; when he hears other jackals howl and howls back, his true nature is exposed and he loses everything.</div>
+  <div class="cite">&mdash; <a href="https://franpritchett.com/00litlinks/panchatantra_ryder/index.html" target="_blank" rel="noopener">Panchatantra, Book I, ‘The Blue Jackal’</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The fable mocks the impostor whose pretense is found out by a single slip.</div>
+  <div class="tieback">Once the pretense is exposed, nothing he claimed is believed any more.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Desiring to be teachers of the law; understanding neither what they say, nor whereof they affirm.&rdquo;</div>
+  <div class="cite">&mdash; 1 Timothy 1:7 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul describes would-be teachers who claim expertise they do not have.</div>
+  <div class="tieback">This is the posture Valluvar warns against: acting learned in what one has not learned.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And do not pursue that of which you have no knowledge. Indeed, the hearing, the sight and the heart - about all those [one] will be questioned.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 17:36 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an forbids claiming or acting on what one does not know.</div>
+  <div class="tieback">Valluvar gives the worldly cost of the same fault: lost trust.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;And concerning that which he has not heard, he says: I have not heard; And he acknowledges the truth.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot.5.7" target="_blank" rel="noopener">Pirkei Avot 5:7 (Kulp)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Among the seven marks of the wise person, the Mishnah lists honestly admitting what one has not learned.</div>
+  <div class="tieback">The wise admit gaps; the fool pretends and so loses credit for what he does know.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Sihacamma Jataka a merchant’s donkey, dressed in a lion’s skin, is left to graze in fields; villagers fear it until it brays, revealing itself, and it is beaten.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/bud/j2/index.htm" target="_blank" rel="noopener">Jataka 189, Sihacamma Jataka (Cowell ed.)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The borrowed image of strength collapses the moment the true voice is heard.</div>
+  <div class="tieback">Pretended mastery, once exposed, brings disgrace instead of respect.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">In its chapter on purity of speech, the Daśavaikālika Sūtra tells the monk that where there is doubt about a matter, he must not declare &#x27;it is just so&#x27;. He may speak with certainty only about what he truly knows.</div>
+  <div class="cite">&mdash; Daśavaikālika Sūtra ch. 7 (Vākyaśuddhi, &#x27;purity of speech&#x27;), Prakrit &#x27;jattha saṃkā bhave taṃ tu, evameyaṃ ti no vae&#x27; <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jain monastic rules on speech forbid asserting as certain anything one does not know, because false certainty breaks the vow of truthfulness (satya).</div>
+  <div class="tieback">The Kural warns that pretending to know what one never learned makes people doubt even one&#x27;s real knowledge, and the Jain rule removes the cause by forbidding any confident claim beyond what one knows.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;O Nanak! The blind man may go to appraise the jewels, but he will not know their value; he will return home after exposing his ignorance.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 954, Raag Raamkalee, Ramkali Ki Vaar (salok 1 before pauri 15), Guru Angad (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Ramkali Ki Vaar Guru Angad describes the blind man who sets himself up to value jewels and only shows how little he knows.</div>
+  <div class="tieback">The Kural says pretending to know what you never learned destroys your credibility; Guru Angad&#x27;s blind appraiser exposes his own ignorance the same way.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Phaethon insists on driving his father Helios’ sun chariot though he has never learned how; he loses control, scorches the earth and is struck down.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Ov.+Met.+2.1" target="_blank" rel="noopener">Ovid, Metamorphoses 2</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">He takes up a task he has not mastered, with disastrous results.</div>
+  <div class="tieback">Undertaking what one has not learned, as Puliyur Kesigan reads the kural, brings ruin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Because they were good workmen they thought that they also knew all sorts of high matters, and this defect in them overshadowed their wisdom.&rdquo;</div>
+  <div class="cite">&mdash; Plato, Apology 22d (Jowett) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Socrates found that skilled craftsmen spoiled their real expertise by claiming knowledge beyond it.</div>
+  <div class="tieback">Exactly the kural: pretending to unlearned knowledge clouds even real mastery.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Henry Ford&#x27;s ignorance of history is exposed at his libel trial</div>
+  <div class="rle-meta">July 1919 &middot; Mount Clemens, Michigan, United States</div>
+  <div class="quote is-paraphrase">Henry Ford sued the Chicago Tribune for libel after it called him an ignorant idealist and an anarchist. At the 1919 trial in Mount Clemens, the newspaper&#x27;s lawyers questioned him on subjects outside his expertise, and he mangled basic facts of American history, placing the American Revolution in 1812 and describing Benedict Arnold as a writer. The jury found in Ford&#x27;s favour but awarded him only six cents in damages.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The trial made the world&#x27;s most famous industrialist an object of ridicule on subjects he had pronounced on publicly, even as his genius in manufacturing remained undisputed.</div>
+  <div class="tieback">The kural warns that pretending to know what one never learned makes people doubt even what one has mastered, and Ford&#x27;s public pronouncements beyond his field brought scorn that touched his whole reputation.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-85/" target="_blank" rel="noopener">Thirukkural Chapter 85: புல்லறிவாண்மை / Ignorance (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-085.html" target="_blank" rel="noopener">புல்லறிவாண்மை - அதிகாரம் 85 - திருக்குறள் (with Puliyur Kesigan, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://franpritchett.com/00litlinks/panchatantra_ryder/index.html" target="_blank" rel="noopener">The Panchatantra (tr. Arthur W. Ryder, University of Chicago Press, 1925), Book Four</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot.5.7" target="_blank" rel="noopener">Mishnah, Pirkei Avot 5:7 (Mishnah Yomit, trans. Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/bud/j2/index.htm" target="_blank" rel="noopener">The Jataka, Vol. II, No. 189: Siha-Camma-Jataka, ed. E. B. Cowell</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">Daśavaikālika Sūtra (Dasavaikalika Sutra) <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Ov.+Met.+2.1" target="_blank" rel="noopener">Ovid, Metamorphoses Book 2 (Phaethon)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Apology (Plato (recording Socrates)) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.thehenryford.org/collections/explore/artifact/297335" target="_blank" rel="noopener">Sketches from the Ford-Tribune Libel Suit, by Irving R. Bacon, 1919 (The Henry Ford)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://digital.janeaddams.ramapo.edu/items/show/19649" target="_blank" rel="noopener">Henry Ford Testimony in Ford-Tribune Libel Case, July 15, 1919 (Jane Addams Papers Project)</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0844.html">&larr; Kural 844</a>
+  <a href="kural-0846.html">Kural 846 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-085.html">Ignorance of Fools</a>
+  <a class="skip-btn" href="kural-0851.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

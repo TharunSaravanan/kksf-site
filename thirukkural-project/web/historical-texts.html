@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Historical Texts | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="active">Historical Texts</a></nav>
+</header>
+<h1 class="page-title">Historical Texts</h1>
+<p>&ldquo;Through the Lens of&rdquo; draws a correspondence for every kural from nine traditions. This page is background on those nine sources themselves &mdash; where each comes from, what it looks like today, and the core principles it teaches &mdash; independent of any single kural.</p>
+<div class="text-entry">
+  <h2>Hindu Scriptures</h2>
+  <p class="meta">Vedas &middot; Upanishads &middot; Bhagavad Gita &middot; Ramayana &middot; Mahabharata &middot; Puranas<br>Composed roughly 1500 BCE &ndash; 200 CE &middot; oral tradition, later written down in Sanskrit</p>
+  <h4>Brief History</h4>
+  <p>Hindu scripture isn't one book but a layered library built up over more than a thousand years. The four Vedas (Rigveda, Samaveda, Yajurveda, Atharvaveda) are the oldest layer, hymns and ritual texts from roughly 1500&ndash;500 BCE. The Upanishads, composed mostly between 800 and 200 BCE, turn from ritual toward philosophy &mdash; the nature of the self (Atman) and ultimate reality (Brahman). The Bhagavad Gita, a 700-verse dialogue embedded in the sixth book of the epic Mahabharata, is traditionally attributed to the sage Vyasa but was most likely assembled between 400 BCE and 200 CE through centuries of oral transmission. The Ramayana and Puranas add narrative and devotional material to the same tradition.</p>
+  <h4>Impact Today</h4>
+  <p>These texts remain the living scripture of roughly 1.2 billion Hindus worldwide, recited, performed, and studied daily. The Bhagavad Gita in particular has traveled far outside Hindu practice: it shaped Mahatma Gandhi's philosophy of nonviolent resistance and influenced Western writers and thinkers including Ralph Waldo Emerson, Henry David Thoreau, and Aldous Huxley. Its language of "acting without attachment to outcomes" is now common currency in modern leadership and mindfulness writing.</p>
+  <h4>Morals, Philosophy &amp; Core Principles</h4>
+  <p>Central ideas include dharma (one's duty or right action), karma (action and consequence across lifetimes), and moksha (liberation from the cycle of rebirth). The Gita teaches three principal paths toward that liberation &mdash; karma yoga (selfless action), bhakti yoga (devotion), and jnana yoga (knowledge) &mdash; and argues, distinctively, that liberation doesn't require withdrawing from worldly duties, only performing them without attachment to their results.</p>
+  <p class="learn-more">Learn more: <a href="https://iep.utm.edu/bhagavad-gita/" target="_blank" rel="noopener">Bhagavad Gītā — Internet Encyclopedia of Philosophy</a> &middot; <a href="https://en.wikipedia.org/wiki/Bhagavad_Gita" target="_blank" rel="noopener">Bhagavad Gita — Wikipedia</a></p>
+</div><div class="text-entry">
+  <h2>Christianity</h2>
+  <p class="meta">The Holy Bible &mdash; Old and New Testament<br>Old Testament ≈ 1000–100 BCE &middot; New Testament ≈ 50–100 CE &middot; 66 books (Protestant canon)</p>
+  <h4>Brief History</h4>
+  <p>The Bible was written over roughly a thousand years by many authors in Hebrew, Aramaic, and Greek. The Old Testament's 39 books were composed mainly between 1000 and 100 BCE, though they preserve older oral material; they tell the story of Israel's covenant with God, from creation through the prophets. The New Testament's 27 books were written within decades of Jesus's death and resurrection, in the second half of the 1st century CE &mdash; four Gospels recounting his life and teaching, the Book of Acts describing the early church, and letters (many attributed to Paul) addressed to those first Christian communities.</p>
+  <h4>Impact Today</h4>
+  <p>The Bible is the most translated and most widely distributed book in history, central to the practice of roughly 2.3 billion Christians worldwide. Its framework of universal human dignity is among the most cited foundations of modern international human-rights law, and it has been a primary driver of literacy programs, hospitals, orphanages, and relief organizations across history. Its stories and language run through Western art, from Michelangelo and da Vinci to Handel's Messiah, and remain a constant reference point in law, politics, and everyday English idiom.</p>
+  <h4>Morals, Philosophy &amp; Core Principles</h4>
+  <p>Its central claims are monotheism and covenant &mdash; a binding relationship between God and God's people &mdash; expressed through commandments (most famously the Ten Commandments) and summarized by Jesus as loving God and loving one's neighbor. The New Testament adds the claim of redemption through Christ's death and resurrection, and an ethic built around grace, humility, and forgiveness rather than merit alone.</p>
+  <p class="learn-more">Learn more: <a href="https://www.biblestudytools.com/books-of-the-bible/" target="_blank" rel="noopener">Books of the Bible — Bible Study Tools</a> &middot; <a href="https://www.britannica.com/topic/New-Testament" target="_blank" rel="noopener">New Testament — Encyclopædia Britannica</a></p>
+</div><div class="text-entry">
+  <h2>Islam</h2>
+  <p class="meta">The Qur'an<br>Revealed 610–632 CE &middot; 114 surahs, 6,000+ verses (ayahs) &middot; Classical Arabic</p>
+  <h4>Brief History</h4>
+  <p>Muslims hold that the Qur'an was revealed to the Prophet Muhammad by the angel Jibril (Gabriel) in installments over 23 years, beginning in 610 CE and continuing until Muhammad's death in 632 CE. It was compiled into the single standardized written text still used today within about two decades of his death, under the caliph Uthman. The 114 surahs (chapters) are arranged roughly from longest to shortest rather than chronologically, and are further divided into 30 sections (juz) to support recitation and memorization.</p>
+  <h4>Impact Today</h4>
+  <p>The Qur'an holds central spiritual, legal, and linguistic authority for more than 1.9 billion Muslims worldwide. It shaped the law, governance, art, architecture, and science of Islamic civilization across more than a millennium, and its principles of justice and accountability remain foundational to Islamic jurisprudence today. Millions of Muslims memorize the entire text (hifz), and though it is recited in its original Arabic, translations have carried its message to non-Arabic-speaking Muslims worldwide.</p>
+  <h4>Morals, Philosophy &amp; Core Principles</h4>
+  <p>Its central tenet is tawhid, the oneness and uniqueness of God, expressed through the Five Pillars of Islam &mdash; testimony of faith, prayer, almsgiving, fasting, and pilgrimage. Alongside theology, the Qur'an offers detailed ethical and legal guidance covering personal conduct, family life, and social responsibility, consistently emphasizing justice, humility, patience, and care for the poor.</p>
+  <p class="learn-more">Learn more: <a href="https://quran.com/about-the-quran" target="_blank" rel="noopener">About the Quran — Quran.com</a> &middot; <a href="https://islamicmentors.com/structure-of-the-quran/" target="_blank" rel="noopener">Structure of the Quran — Islamic Mentors</a></p>
+</div><div class="text-entry">
+  <h2>Judaism</h2>
+  <p class="meta">Torah &middot; Tanakh (Hebrew Bible)<br>Torah tradition: c. 13th century BCE &middot; canon finalized ≈ 2nd century CE &middot; 24 books</p>
+  <h4>Brief History</h4>
+  <p>The Torah &mdash; the five books of Moses, also called the Pentateuch &mdash; is traditionally understood as given to Moses at Sinai; modern scholarship dates its final compilation to roughly the 6th&ndash;5th centuries BCE, drawn from older sources. "Tanakh" is an acronym for its three sections: Torah (the five books), Nevi'im (Prophets), and Ketuvim (Writings), a 24-book canon finalized by around the 2nd century CE. Alongside this Written Torah, Jewish tradition holds an Oral Torah &mdash; interpretation and legal discussion eventually recorded in the Mishnah and Talmud.</p>
+  <h4>Impact Today</h4>
+  <p>The Tanakh remains the foundational text for roughly 15 million Jews worldwide and for Jewish law (halakha), identity, and communal life, studied continuously across generations in its original Hebrew. It is also the shared root of both Christian and Islamic scripture, making it one of the most consequential texts in world history well beyond its own community of readers.</p>
+  <h4>Morals, Philosophy &amp; Core Principles</h4>
+  <p>Its core narrative is the covenant between God and the people of Israel: creation, the patriarchs and matriarchs, the Exodus from Egypt, and the giving of the Law at Sinai. Central themes include ethical monotheism, justice, the 613 commandments (mitzvot) governing daily and communal life, and a continuing relationship between a people and God worked out across historical time rather than resolved once and for all.</p>
+  <p class="learn-more">Learn more: <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Tanakh — The Sefaria Library</a> &middot; <a href="https://www.newworldencyclopedia.org/entry/Torah" target="_blank" rel="noopener">Torah — New World Encyclopedia</a></p>
+</div><div class="text-entry">
+  <h2>Buddhism</h2>
+  <p class="meta">The Tripitaka (Pali Canon), including the Dhammapada<br>Buddha's teachings c. 5th–4th century BCE &middot; first written down c. 1st century BCE, Sri Lanka</p>
+  <h4>Brief History</h4>
+  <p>The Tripitaka ("three baskets") is the earliest surviving canon of Buddhist scripture, preserving teachings attributed to the Buddha in the 5th&ndash;4th century BCE. Passed down orally by his disciples for centuries, it was first committed to writing in Sri Lanka around the 1st century BCE to protect it amid political upheaval. Its three sections are the Vinaya Pitaka (monastic discipline), the Sutta Pitaka (the Buddha's discourses), and the Abhidhamma Pitaka (philosophical analysis). The Dhammapada &mdash; 423 verses across 26 chapters, among the most-read Buddhist texts anywhere &mdash; sits within the Sutta Pitaka.</p>
+  <h4>Impact Today</h4>
+  <p>The Pali Canon is the scriptural foundation of Theravada Buddhism, practiced widely across Sri Lanka, Thailand, Myanmar, and Southeast Asia, within a global Buddhist population estimated at roughly 500 million. Despite existing in written form for two thousand years, memorization and oral recitation remain living practice &mdash; many laypeople still know passages by heart. The Dhammapada specifically has been translated into dozens of languages and is a frequent entry point for readers outside the tradition, including through the modern mindfulness movement.</p>
+  <h4>Morals, Philosophy &amp; Core Principles</h4>
+  <p>At its core are the Four Noble Truths (the reality of suffering, its cause, its cessation, and the path to that cessation) and the Noble Eightfold Path that follows from them. Other central ideas include anatta (there is no fixed, permanent self), anicca (impermanence), karma and rebirth, and the ultimate goal of Nirvana &mdash; release from the cycle of craving and rebirth.</p>
+  <p class="learn-more">Learn more: <a href="https://www.britannica.com/topic/Buddhism/The-Pali-canon-Tipitaka" target="_blank" rel="noopener">Buddhism: The Pali Canon (Tipitaka) — Encyclopædia Britannica</a> &middot; <a href="https://accesstoinsight.org/tipitaka/" target="_blank" rel="noopener">Tipitaka: The Pali Canon — Access to Insight</a></p>
+</div><div class="text-entry">
+  <h2>Jainism</h2>
+  <p class="meta">The Agamas, the Tattvartha Sutra, and the Tamil Jain classics<br>Mahavira traditionally 599&ndash;527 BCE (many scholars: c. 5th century BCE) &middot; Svetambara canon fixed at Valabhi, c. 5th century CE</p>
+  <h4>Brief History</h4>
+  <p>Jains regard their teaching as eternal, renewed in each cosmic age by 24 Tirthankaras (&ldquo;ford-makers&rdquo;); the last, Mahavira, is traditionally dated 599&ndash;527 BCE, though many scholars place him about a century later, as a near-contemporary of the Buddha. His teachings were transmitted orally. The Svetambara sect's canon, the Agamas, was compiled at a final council at Valabhi in Gujarat around 453 or 466 CE, after earlier recitations. The Digambara sect holds that the original canon was lost, relying instead on works such as the Shatkhandagama and the Prakrit treatises attributed to Kundakunda. The Tattvartha Sutra (c. 2nd&ndash;5th century CE), the oldest Jain treatise in Sanskrit, is accepted by both.</p>
+  <h4>Impact Today</h4>
+  <p>Jainism is especially relevant to this book: Tamil-Brahmi inscriptions in Tamil Nadu caves, among the oldest Tamil writing, record stone beds carved for Jain monks, and Jain authors produced classics such as the Naladiyar and the epic Jivaka Chintamani. Whether Thiruvalluvar was himself a Jain remains debated &mdash; some scholars point to the Kural's ethics of non-harm and vegetarianism, while others cite its references to a creator God. Today there are roughly 4&ndash;5 million Jains, about 4.5 million of them in India (2011 census). Jain ahimsa shaped Gandhi's nonviolence through his Jain mentor Shrimad Rajchandra, and Jain ethics continue to inform vegetarian and animal-welfare thought.</p>
+  <h4>Morals, Philosophy &amp; Core Principles</h4>
+  <p>At the center is ahimsa, non-harming of every living being, since all life, even plants and the smallest creatures, is held to possess a soul (jiva). Karma is understood literally as fine matter that binds to the jiva through passion and action, and liberation comes by stopping its inflow and wearing it away. The path is the &ldquo;three jewels&rdquo;: right faith, right knowledge, and right conduct. Conduct is framed by five vows &mdash; non-violence, truthfulness, non-stealing, chastity, and non-possession (aparigraha) &mdash; taken fully by monks and in moderated form by laypeople. Anekantavada, &ldquo;many-sidedness,&rdquo; teaches that no single viewpoint captures the whole truth. Jainism denies a creator God; the universe is uncreated and eternal.</p>
+  <p class="learn-more">Learn more: <a href="https://www.britannica.com/topic/Jainism" target="_blank" rel="noopener">Jainism — Encyclopaedia Britannica</a> &middot; <a href="https://plato.stanford.edu/entries/jaina-philosophy/" target="_blank" rel="noopener">Jaina Philosophy — Stanford Encyclopedia of Philosophy</a> &middot; <a href="https://iep.utm.edu/jain/" target="_blank" rel="noopener">Jain Philosophy — Internet Encyclopedia of Philosophy</a></p>
+</div><div class="text-entry">
+  <h2>Sikhism</h2>
+  <p class="meta">The Guru Granth Sahib and Vaaran Bhai Gurdas<br>Guru Nanak 1469&ndash;1539 &middot; Adi Granth compiled by Guru Arjan, installed at Amritsar 1604 &middot; Khalsa founded c. 1699 &middot; Guruship vested in the scripture, 1708</p>
+  <h4>Brief History</h4>
+  <p>Sikhism arose in the Punjab with Guru Nanak (1469&ndash;1539), who taught devotion to one formless God through remembrance of the divine Name, and was carried forward by a succession of nine further human Gurus. The fifth, Guru Arjan (1563&ndash;1606), gathered the hymns of the earlier Gurus, his own, and those of Hindu and Muslim saints; written out by the scribe Bhai Gurdas, whose own Vaaran became the classic early exposition of the faith, this Adi Granth (&ldquo;First Book&rdquo;) was installed at Amritsar in 1604. On Baisakhi day, traditionally in 1699, the tenth Guru, Gobind Singh, founded the Khalsa, the order of initiated Sikhs. He also made the final recension of the scripture, adding the hymns of his father Guru Tegh Bahadur, and before his death in 1708 ended the line of human Gurus, vesting the Guruship in the scripture and the community. The book has since been revered as the Guru Granth Sahib; its standard printed edition runs to 1,430 pages (angs).</p>
+  <h4>Impact Today</h4>
+  <p>There are today about 25 million Sikhs. India&rsquo;s 2011 census counted nearly 21 million, most of them in Punjab, where they form a majority, and sizeable communities have grown up in Britain, Canada, the United States, Australia and East Africa. The Harmandir Sahib (Golden Temple) at Amritsar is the faith&rsquo;s holiest shrine, and the adjoining Akal Takht its principal seat of religious authority. Every gurdwara keeps a langar, a free communal kitchen where all may sit and eat together regardless of caste, creed or rank. The scripture is also strikingly plural: beside the Gurus&rsquo; hymns it preserves those of fifteen non-Sikh saints of Hindu and Muslim background, among them Kabir, Ravidas, Namdev and the Sufi Sheikh Farid &mdash; which makes it a natural companion to an ethical text, like the Kural, that many traditions have claimed as their own.</p>
+  <h4>Morals, Philosophy &amp; Core Principles</h4>
+  <p>Sikh teaching opens with Ik Onkar, &ldquo;One Universal Creator&rdquo;: God is one and formless, without fear or enmity, beyond birth and death, and known through the Guru&rsquo;s grace. The root human problem is haumai, ego or self-centredness, which feeds the five &ldquo;thieves&rdquo; of lust, anger, greed, attachment and pride; it is overcome by living in tune with hukam, the divine order or will. Daily life rests on three pillars: naam japna, remembering and meditating on the divine Name; kirat karni, earning an honest living; and vand chhakna, sharing what one has, expressed above all in seva, selfless service. The Gurus rejected caste distinctions, empty ritual and withdrawal from the world, teaching that liberation is reached as a householder, within family and work. Sikhs accept karma and rebirth, but hold that release from the cycle comes through God&rsquo;s grace.</p>
+  <p class="learn-more">Learn more: <a href="https://www.britannica.com/topic/Sikhism" target="_blank" rel="noopener">Sikhism — Encyclopaedia Britannica</a> &middot; <a href="https://pluralism.org/the-sikh-scripture" target="_blank" rel="noopener">The Sikh Scripture — The Pluralism Project, Harvard University</a> &middot; <a href="https://www.pewresearch.org/religion/2021/09/21/population-growth-and-religious-composition/" target="_blank" rel="noopener">Population Growth and Religious Composition (India) — Pew Research Center</a></p>
+</div><div class="text-entry">
+  <h2>Greek Mythology</h2>
+  <p class="meta">Hesiod &middot; Homer &middot; Ovid &middot; the broader mythological corpus<br>Oral tradition from c. 1600 BCE &middot; first written down c. 8th century BCE (Homer, Hesiod)</p>
+  <h4>Brief History</h4>
+  <p>Greek mythology isn't a single scripture but a body of story handed down orally from the Minoan (c. 3000&ndash;1450 BCE) and Mycenaean (c. 1600&ndash;1100 BCE) civilizations, first fixed in writing around the 8th century BCE. Homer's epics, the Iliad and the Odyssey, established the character of the gods and the great mythic heroes; Hesiod's Theogony gave the fullest early account of the gods' origins and genealogy. Centuries later, the Roman poet Ovid's Metamorphoses (1st century CE) retold and reshaped over 250 of these myths for a Roman audience, becoming, after the Renaissance rediscovery of antiquity, the version most later European art and poetry actually drew on.</p>
+  <h4>Impact Today</h4>
+  <p>Greek mythology is a cornerstone of Western literature, art, and language: everyday expressions like "Achilles' heel," "narcissism," and "Oedipal" trace straight back to these stories. Its themes are continually retold in modern film, fiction, and psychology, and its imagery has shaped Western visual art from classical sculpture through the Renaissance to the present.</p>
+  <h4>Morals, Philosophy &amp; Core Principles</h4>
+  <p>Rather than a single moral system, these myths circle recurring themes: fate versus free will, hubris (overreaching pride) and its inevitable punishment, the uneasy relationship between mortals and gods, and transformation as both punishment and revelation. A moral order (often called dike, or justice) runs underneath the stories even when the gods themselves behave capriciously.</p>
+  <p class="learn-more">Learn more: <a href="https://www.britannica.com/topic/Greek-mythology" target="_blank" rel="noopener">Greek mythology — Encyclopædia Britannica</a> &middot; <a href="https://en.wikipedia.org/wiki/Classical_mythology_in_culture" target="_blank" rel="noopener">Classical mythology in culture — Wikipedia</a></p>
+</div><div class="text-entry">
+  <h2>Philosophy</h2>
+  <p class="meta">Plato &middot; Aristotle &middot; the Stoics &middot; Plotinus &middot; Boethius, and the wider classical tradition<br>Begins c. 6th century BCE (Pre-Socratics) &middot; continues through late antiquity</p>
+  <h4>Brief History</h4>
+  <p>Western philosophy in this tradition begins with the Pre-Socratic thinkers of the 6th century BCE and comes into its own with Socrates, Plato, and Aristotle in 5th&ndash;4th century BCE Athens. Plato's dialogues located ultimate truth in a realm of eternal Forms; his student Aristotle turned instead to careful, systematic observation of the natural world and human life, and developed formal logic as a tool for reasoning about both. In the Hellenistic period, Zeno of Citium founded Stoicism around 300 BCE, teaching that a good life comes from living in harmony with reason and nature rather than chasing pleasure or fleeing pain — a line of thought later carried forward by the Roman-era writers Epictetus and Boethius, and, in a different key, by the Neoplatonist Plotinus.</p>
+  <h4>Impact Today</h4>
+  <p>These texts are foundational to Western philosophy, science, logic, and political thought; medieval Jewish, Muslim, and Christian scholars all rediscovered and absorbed Plato and Aristotle into their own theology. Stoicism in particular has seen a major modern revival, both in popular self-help writing and, more substantively, as an intellectual ancestor of cognitive behavioral therapy's core insight that our reactions to events, not the events themselves, are what we can actually control.</p>
+  <h4>Morals, Philosophy &amp; Core Principles</h4>
+  <p>Across these different schools runs a shared commitment to pursuing truth, virtue, and the good life (eudaimonia) through reasoned argument rather than myth or tradition alone. Aristotle's ethics center on virtue as a mean between extremes; the Stoics distinguish sharply between what is and isn't within a person's control; and later writers like Plotinus and Boethius fold this ethical inquiry into a search for a single highest Good underlying all of reality.</p>
+  <p class="learn-more">Learn more: <a href="https://www.britannica.com/topic/Greek-philosophy" target="_blank" rel="noopener">Greek philosophy — Encyclopædia Britannica</a> &middot; <a href="https://iep.utm.edu/ancient-greek-philosophy/" target="_blank" rel="noopener">Ancient Greek Philosophy — Internet Encyclopedia of Philosophy</a></p>
+</div>
+</body>
+</html>

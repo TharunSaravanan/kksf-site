@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 576 — Benignity | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 576</h1>
+<p class="adhikaram"><a href="adhikaram-058.html">Benignity</a> &middot; Kannottam &middot; <span class="tamil">கண்ணோட்டம்</span></p>
+
+<div class="tamil-text">மண்ணோ டியைந்த மரத்தனையர் கண்ணோ
+டியைந்துகண் ணோடா தவர்.</div>
+<div class="translit">Mannodu iyaindha maraththanaiyar kannodu
+iyaindhukan nodaa thavar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who have eyes but never look kindly at others are no better than trees standing in the ground.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A tree stands in one place and can’t notice when someone near it is crying. Valluvar says a person who has eyes but never looks kindly at others is just like that tree: standing there, but not really caring about anyone.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet is built on a careful parallel: மண்ணோடு இயைந்த மரம் (‘a tree joined to the soil’) and கண்ணோடு இயைந்து கண்ணோடாதவர் (‘those who, though joined to eyes, do not let the eye run out [in kindness]’). The verb கண்ணோடு is the root of the chapter’s title, so the line plays on having கண் (eyes) but not doing கண்ணோட்டம். Parimelazhagar is usually cited as noting that trees too were said to have ‘eyes’ (buds or nodes), so that the unkind are no better than eyed trees; this pun is reported in commentary tradition and should be treated with some caution. Mu. Varadarasanar glosses ‘like a tree that has eyes but does not see’, while Solomon Pappaiah stresses that such people move about but are as insensible as a tree fixed in the earth. The two texts agree word for word, with the line break falling inside கண்ணோ / டியைந்து in both.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Pride, arrogance, conceit, anger, harshness and ignorance – these qualities belong to those of demoniac nature, O son of Pṛthā.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 16.4 (Bhagavad-gītā As It Is)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Gita lists pāruṣya (harshness, hardness) among the traits of the āsurī (demonic) nature, the opposite of the gentle divine nature.</div>
+  <div class="tieback">The hard, unfeeling person the Kural likens to a tree is the Gita’s harsh āsuric type.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Having eyes, see ye not? and having ears, hear ye not? and do ye not remember?&rdquo;</div>
+  <div class="cite">&mdash; Mark 8:18 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus rebukes his disciples for having working eyes and ears yet failing to perceive what is before them.</div>
+  <div class="tieback">‘Having eyes yet not seeing’ is the same paradox the Kural sets out: joined to eyes, yet not using them as eyes should be used.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;For indeed, it is not eyes that are blinded, but blinded are the hearts which are within the breasts.&rdquo;</div>
+  <div class="cite">&mdash; Quran 22:46 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Quran says true blindness lies not in the eyes but in hearts that will not respond.</div>
+  <div class="tieback">The Kural’s tree-like people have seeing eyes but unfeeling hearts, exactly the blindness this verse describes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;They have mouths, but they speak not: eyes have they, but they see not… They that make them are like unto them; so is every one that trusteth in them.&rdquo;</div>
+  <div class="cite">&mdash; Psalm 115:5-8 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Psalm mocks idols of wood and metal that have eyes without sight, and says their makers become like them.</div>
+  <div class="tieback">The Kural’s people with eyes who are no better than trees resemble the Psalm’s lifeless images with unseeing eyes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;The man of little learning grows old like a bull. He grows only in bulk, but, his wisdom does not grow.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 152 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Dhammapada compares a person who never develops inwardly to an ox that merely grows bigger.</div>
+  <div class="tieback">Like the Kural’s tree-like person, this one has bodily existence without the inner quality that makes a human being.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">Jain teaching classes plants among the ekendriya beings, souls that possess only one sense, touch; human birth with all five senses is counted a rare chance that should not be wasted.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 10.5-9 and 10.17, with Jacobi&#x27;s note on the ekendriyas (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">In Jain cosmology a tree is a living soul limited to a single sense, while a human being has the full faculties needed for right conduct.</div>
+  <div class="tieback">The Kural compares people who have eyes but show no kindly regard to trees standing in the soil; on Jain terms, such a person lives with five senses but, morally, no better than a one-sensed being.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;What can cold do to a stone?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 143, Raag Maajh (Maajh ki Vaar), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Guru Nanak uses the stone that feels no cold as an image of the person on whom nothing outside can make an impression.</div>
+  <div class="tieback">The Kural says those who have eyes yet never look kindly on others are like trees rooted in the soil, with form but no feeling; Guru Nanak&#x27;s unfeeling stone makes the same point about outward form with no inner response.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">The Gorgon Medusa’s gaze turns everyone who meets it to stone, until Perseus beheads her using a mirrored shield.</div>
+  <div class="cite">&mdash; <a href="https://www.poetryintranslation.com/PITBR/Latin/Metamorph4.php" target="_blank" rel="noopener">Ovid, Metamorphoses 4.604-803</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Medusa’s look is the opposite of a kindly regard: it does not warm or soften others but deadens them.</div>
+  <div class="tieback">A gaze with no warmth is lifeless and makes others lifeless, like the Kural’s eyed yet wooden people.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Marcus Aurelius writes that a branch cut off from the branch next to it is cut off from the whole tree, and so a person who separates himself from even one fellow human has cut himself off from the whole community.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Antoninus/meditations.2.two.html" target="_blank" rel="noopener">Marcus Aurelius, Meditations 11.8</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">For the Stoic emperor, withdrawing one’s goodwill from others amounts to self-amputation from the living body of humanity.</div>
+  <div class="tieback">Both use tree imagery to say that a person without fellow-feeling is cut off from true human life.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Evian Conference on refugees from Nazi Germany</div>
+  <div class="rle-meta">July 1938 &middot; Evian-les-Bains, France</div>
+  <div class="quote is-paraphrase">At President Franklin Roosevelt&#x27;s initiative, delegates from 32 countries and a number of aid organisations met for nine days at Evian on Lake Geneva to discuss Jewish refugees fleeing Nazi Germany and annexed Austria. Nearly all the governments represented declined to open their doors to more refugees, and the Dominican Republic was the only participant that offered to accept significant additional numbers. The United States Holocaust Memorial Museum concludes that the conference had very little impact on the refugees&#x27; plight.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">The conference is remembered as a moment when the world&#x27;s governments looked directly at people in danger and, apart from rare exceptions, did not act.</div>
+  <div class="tieback">The kural says those who have eyes but never look kindly are like trees rooted in the soil, having the form of seeing without the feeling, which is what most delegations at Evian displayed.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-58/" target="_blank" rel="noopener">Thirukkural Chapter 58: கண்ணோட்டம் / Benignity (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A058.html" target="_blank" rel="noopener">58. கண்ணோட்டம் (Thirukkural text)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.poetryintranslation.com/PITBR/Latin/Metamorph4.php" target="_blank" rel="noopener">Ovid, Metamorphoses, Book IV (Perseus and Medusa), trans. A. S. Kline</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Antoninus/meditations.2.two.html" target="_blank" rel="noopener">Marcus Aurelius, Meditations, Book II.5, trans. George Long (1862)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://encyclopedia.ushmm.org/narrative/6748/en" target="_blank" rel="noopener">The Evian Conference</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.facinghistory.org/node/1073" target="_blank" rel="noopener">The Evian Conference</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0575.html">&larr; Kural 575</a>
+  <a href="kural-0577.html">Kural 577 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-058.html">Benignity</a>
+  <a class="skip-btn" href="kural-0581.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

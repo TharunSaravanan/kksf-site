@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 599 — Energetics | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 599</h1>
+<p class="adhikaram"><a href="adhikaram-060.html">Energetics</a> &middot; Ookkamudaimai &middot; <span class="tamil">ஊக்கமுடைமை</span></p>
+
+<div class="tamil-text">பரியது கூர்ங்கோட்டது ஆயினும் யானை
+வெரூஉம் புலிதாக் குறின்.</div>
+<div class="translit">Pariyadhu koorngottadhu aayinum yaanai
+Veruum pulidhaakkurin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>An elephant is huge and has sharp tusks, yet it gets scared when a tiger attacks.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A big dog can run away from a small, brave cat that hisses and charges. The Kural says size and weapons don’t decide who wins; the fierce spirit does, like a tiger that can scare an elephant.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet is a pure illustration (eduththukkaattu uvamai) with the moral left implicit: ‘pariyadhu’ (bulky) and ‘koorng kottadhu’ (having sharp tusks) list the elephant’s physical advantages, and ‘veruum’ (fears) is an alapedai (vowel-lengthened) form of verum, which heightens the sense of sudden fright. Parimelazhagar explains that the tiger prevails because it has ookkam, and that the verse teaches that energy, not bulk or weaponry, decides contests; Kalaignar makes this explicit, calling ookkam stronger than physique. The pairing with 597, where the elephant is the image of steadfastness, shows Valluvar using the same animal both ways: wounded but energetic it stands, huge but unenergetic it flees. The text is identical in the base sources; transliterations differ only in rendering the alapedai (veru-um / veruum).</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Kautilya records a debate on whether energy (utsāha-śakti) or material power (prabhāva-śakti) is superior: his teacher argues that an energetic king, brave and skilled, can overcome even a stronger one, while Kautilya himself ranks power, and above both good counsel, higher.</div>
+  <div class="cite">&mdash; <a href="https://archive.org/details/Arthasastra_English_Translation" target="_blank" rel="noopener">Kautilya, Arthashastra 9.1</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Arthashastra weighs energy against sheer resources as sources of victory.</div>
+  <div class="tieback">The teacher’s view is the Kural’s tiger-and-elephant lesson; Kautilya’s own view is a candid counterpoint.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">The young shepherd David, without armour and armed only with a sling, faces the giant Philistine champion Goliath, clad in bronze with a massive spear, and fells him with one stone.</div>
+  <div class="cite">&mdash; 1 Samuel 17 <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The small but fearless fighter overcomes the huge, heavily armed one.</div>
+  <div class="tieback">Like the Kural’s tiger, David shows that spirit beats size and weapons.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;How many a small company has overcome a large company by permission of Allah. And Allah is with the patient.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 2:249 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Before facing Goliath’s army, Saul’s few steadfast soldiers declare that small, determined forces often defeat larger ones.</div>
+  <div class="tieback">This is the Kural’s tiger-versus-elephant lesson applied to armies.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Be strong as a leopard, and swift as an eagle, and fleet as a gazelle, and brave as a lion, to do the will of your Father who is in heaven.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 5:20 (tr. Joshua Kulp)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Judah ben Tema calls for the fierce energy of predators in the service of God.</div>
+  <div class="tieback">His leopard and lion are the Jewish counterpart of the Kural’s tiger, symbols of energetic spirit.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Heedful among the heedless, wide-awake among the sleepy, the wise man advances like a swift horse leaving behind a weak jade.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 29 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The alert, energetic person pulls far ahead of those who are sluggish.</div>
+  <div class="tieback">Like the Kural, it teaches that alert energy, not bulk, decides who prevails.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As a strong and irresistible elephant of sixty years, surrounded by his females, (has no equal), neither has a very learned monk. … As a proud lion with sharp fangs, who brooks no assault, is superior to all animals, so is a very learned monk (superior to all men).&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 11.18 and 11.20 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In a chain of similes the Uttaradhyayana praises the accomplished monk through the mightiest animals, setting the lion that brooks no assault above all other beasts.</div>
+  <div class="tieback">The Kural&#x27;s point is that the great elephant still fears the attacking tiger, so courage outweighs size; the Jain verses use the same animal world of strength, with the fearless big cat at the top.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The Lord is like sugar, scattered in the sand; the elephant cannot pick it up. Says Kabeer, the Guru has given me this sublime understanding: become an ant, and feed on it.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1377, Salok Bhagat Kabir (238), Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Kabir says the great elephant, an image of pride, cannot gather the sugar of the Lord from the sand, while a tiny ant can.</div>
+  <div class="tieback">The Kural&#x27;s huge, sharp-tusked elephant takes fright before a tiger, showing that bulk does not decide a contest; Kabir also shows the great elephant beaten by something small, though what wins for him is humility, not energy.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Trapped in the cave of the giant Cyclops Polyphemus, the far smaller Odysseus blinds him with a sharpened stake and escapes with his men under the giant’s sheep.</div>
+  <div class="cite">&mdash; Homer, Odyssey 9 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The small but bold hero overcomes a monstrous opponent many times his size.</div>
+  <div class="tieback">The episode matches the Kural’s point that bulk does not guarantee victory over a spirited foe.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Rallying the Greek officers after their generals had been seized by the Persians, Xenophon tells them that it is neither numbers nor strength that wins victories in war: whichever side advances with the stronger spirit, its enemies as a rule will not stand against it.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/1170" target="_blank" rel="noopener">Xenophon, Anabasis, Book III, ch. 1, §42 (tr. H. G. Dakyns)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Xenophon urges the officers to restore the courage of their troops, since morale, not size, decides battles.</div>
+  <div class="tieback">Like the tiger routing the huge, tusked elephant, the side with the stronger spirit prevails over sheer bulk.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Athenians defeat the Persian army at Marathon</div>
+  <div class="rle-meta">490 BCE &middot; Marathon, Attica, Greece</div>
+  <div class="quote is-paraphrase">In 490 BCE a Persian expeditionary force sent by King Darius I landed at the bay of Marathon, northeast of Athens. About 10,000 Athenians and 1,000 Plataeans, without Spartan help, faced a larger Persian army and, under generals including Miltiades, attacked with a thinned centre and strengthened wings that routed the Persian flanks and then closed on the centre. The Persians withdrew to their ships and sailed away.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The smaller force won because of its boldness and determination, not its numbers.</div>
+  <div class="tieback">The kural says that the huge, sharp-tusked elephant still takes fright when a tiger attacks, meaning that spirit and energy defeat sheer size, as the Athenians showed at Marathon.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-60/" target="_blank" rel="noopener">ஊக்கமுடைமை / Energy, Chapter 60 (Kurals 591-600) with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-060.html" target="_blank" rel="noopener">ஊக்கமுடைமை - அதிகாரம் 60 - திருக்குறள் (Magnanimity)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://archive.org/details/Arthasastra_English_Translation" target="_blank" rel="noopener">Kautilya&#x27;s Arthaśāstra, translated by R. Shamasastry (1915), Book IX, Chapter 1: The Knowledge of Power, Place, Time, Strength and Weakness; the Time of Invasion</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/1170" target="_blank" rel="noopener">Anabasis (Xenophon)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/event/Greco-Persian-Wars/The-Ionian-Revolt-499-493-bce" target="_blank" rel="noopener">Greco-Persian Wars</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.worldhistory.org/marathon/" target="_blank" rel="noopener">Battle of Marathon</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0598.html">&larr; Kural 598</a>
+  <a href="kural-0600.html">Kural 600 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-060.html">Energetics</a>
+  <a class="skip-btn" href="kural-0601.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 127 — The Possession of Self-restraint | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 127</h1>
+<p class="adhikaram"><a href="adhikaram-013.html">The Possession of Self-restraint</a> &middot; Adakkamudaimai &middot; <span class="tamil">அடக்கமுடைமை</span></p>
+
+<div class="tamil-text">யாகாவா ராயினும் நாகாக்க காவாக்கால்
+சோகாப்பர் சொல்லிழுக்குப் பட்டு.</div>
+<div class="translit">Yaakaavaa raayinum naakaakka kaavaakkaal
+Sokaappar sollizhukkup pattu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Whatever else you fail to guard, guard your tongue. If you do not, you will suffer because of the mistakes in your own words.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you can only remember one rule, remember this: watch what you say. A friend who blurts out a secret or says something mean in anger can lose friends in a second. Even if you mess up other things, keeping your words kind protects you.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet performs its own lesson in sound: the syllable kaa (‘guard’) recurs in yaa-kaavaar, naa-kaakka, kaavaak-kaal and so-kaappar, which makes the verse itself an exercise in controlled, measured speech. Parimelazhagar treats sokaappar (‘they will grieve’) as a single verb, like allaappar, and reads yaa (‘whatever’) as meaning ‘all things without exception.’ This couplet opens the three-verse unit on restraint of speech (mozhi adakkam, 127–129). Its claim that the tongue ranks above every other thing needing guard is a striking priority that other traditions also make: the Hadith pairs the tongue with chastity as the key to Paradise, and the Epistle of James calls the untamed tongue a fire.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Austerity of speech consists in speaking words that are truthful, pleasing, beneficial, and not agitating to others, and also in regularly reciting Vedic literature.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 17.15</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Gita counts disciplined speech as one of the three forms of austerity (tapas), alongside those of body and mind.</div>
+  <div class="tieback">Both treat control of the tongue as a spiritual discipline in its own right, not a mere nicety.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;If any man among you seem to be religious, and bridleth not his tongue, but deceiveth his own heart, this man’s religion is vain.&rdquo;</div>
+  <div class="cite">&mdash; James 1:26 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">James says that all outward religion is empty if a person does not bridle his tongue.</div>
+  <div class="tieback">Like the Kural, James makes guarding the tongue the one indispensable restraint, the test of all the rest.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Whoever can guarantee (the chastity of) what is between his two jaw-bones and what is between his two legs (i.e. his tongue and his private parts), I guarantee Paradise for him.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6474" target="_blank" rel="noopener">Sahih al-Bukhari 6474</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Prophet singles out guarding the tongue (with chastity) as the key to Paradise.</div>
+  <div class="tieback">Both texts pick out the tongue as the one thing a person above all must guard.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Whoso keepeth his mouth and his tongue keepeth his soul from troubles.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Proverbs.31.10" target="_blank" rel="noopener">Proverbs 21:23 (JPS 1917)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Proverbs teaches that guarding one’s speech protects one from trouble.</div>
+  <div class="tieback">Almost exactly the Kural’s point: guard the tongue, or suffer the troubles that loose speech brings.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Let a man guard himself against irritability in speech; let him be controlled in speech. Abandoning verbal misconduct, let him practice good conduct in speech.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 232 <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha tells his followers to guard and control their speech and give up verbal misconduct.</div>
+  <div class="tieback">Both use the language of ‘guarding’ speech and warn against faults of the tongue.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;By watchfulness of speech he keeps free from prevarication; thereby he enables his mind to act properly.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 29.54 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Vāg-gupti, the guarding of speech, is one of the three Jain guptis (guards of mind, speech and body); the Uttarādhyayana says that guarding the tongue keeps one from falsehood and steadies the mind.</div>
+  <div class="tieback">Valluvar ranks the tongue above every other thing a person must guard; Jain discipline likewise makes guarding speech one of the three basic protections of the soul.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;and who speaks insipid words with his tongue, is ruined, again and again.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 594, Raag Vadhans, Guru Amar Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Guru Amar Das warns that the person whose tongue speaks harsh, insipid words brings ruin on himself over and over.</div>
+  <div class="tieback">The Kural tells us to guard the tongue above all, since those who do not come to grief through their own words; Gurbani says the unguarded tongue leads to repeated ruin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;The best treasure a man can have is a sparing tongue, and the greatest pleasure, one that moves orderly; for if you speak evil, you yourself will soon be worse spoken of.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 719–721 (trans. H. G. Evelyn-White)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Hesiod, the poet of the Theogony, advises that a sparing, orderly tongue is a person’s greatest treasure.</div>
+  <div class="tieback">Hesiod, like Valluvar, ranks the guarded tongue above other goods and warns that careless speech comes back on the speaker.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;And let silence be the general rule, or let only what is necessary be said, and in few words.&rdquo;</div>
+  <div class="cite">&mdash; Epictetus, Enchiridion 33 <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Epictetus makes restraint of speech a basic rule of the Stoic life.</div>
+  <div class="tieback">Both philosophers see a guarded tongue as the base of a disciplined life.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Kaiser Wilhelm II and the Daily Telegraph interview</div>
+  <div class="rle-meta">28 October 1908 &middot; London, United Kingdom, and Berlin, Germany</div>
+  <div class="quote is-paraphrase">On 28 October 1908 the London Daily Telegraph published an account of conversations in which Kaiser Wilhelm II spoke with what the paper called impulsive and unusual frankness, telling the English they were mad as March hares and saying that much of his own people was unfriendly to England. The remarks angered the British public, were seen in France and Russia as a diplomatic blunder, and set off a political crisis in Germany: in the Reichstag debate of 10 and 11 November all parties criticised the Kaiser, who considered abdicating, and Chancellor Bernhard von Bulow demanded that he change his behaviour. German History in Documents notes that the affair discredited him in the eyes of many Germans and ultimately weakened his position.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">An emperor&#x27;s unguarded talk, meant to improve relations, instead offended three foreign nations and his own parliament at once.</div>
+  <div class="tieback">The kural says that whatever else you fail to guard, guard your tongue, for those who do not will grieve; the Kaiser&#x27;s careless words brought him exactly that grief.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-13/" target="_blank" rel="noopener">அடக்கமுடைமை / The Possession of Self-restraint, Chapter 13 (Kurals 121–130), with commentaries of Mu. Varadarasan, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar, and G. U. Pope’s English couplets</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://www.thirukkural.com/2009/01/blog-post_3155.html" target="_blank" rel="noopener">அடக்கமுடைமை (Kurals 121–130), with Parimelazhagar, Manakkudavar, Mu. Varadarasan, Solomon Pappaiah, Kalaignar, V. Munisamy and V. Sp. Manickam commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.thirukural.ai/paal/aram/adhigaram-13" target="_blank" rel="noopener">திருக்குறள் – அறத்துப்பால் அதிகாரம் 13: அடக்கமுடைமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/bukhari:6474" target="_blank" rel="noopener">Sahih al-Bukhari 6474 (Book of Ar-Riqaq, ‘To protect one’s tongue’)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Proverbs.31.10" target="_blank" rel="noopener">The Holy Scriptures According to the Masoretic Text (Jewish Publication Society, 1917) — Proverbs 31:10, &#x27;Eshet Chayil&#x27;</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12">Enchiridion, Chapter 5 (Epictetus) <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://germanhistorydocs.org/en/wilhelmine-germany-and-the-first-world-war-1890-1918/the-daily-telegraph-affair-october-28-1908" target="_blank" rel="noopener">The Daily Telegraph Affair (October 28, 1908) (German History in Documents and Images)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-14"><a href="https://www.dhm.de/lemo/kapitel/kaiserreich/innenpolitik/telegraph" target="_blank" rel="noopener">Die Daily-Telegraph-Affaere (Jelena Peter)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0126.html">&larr; Kural 126</a>
+  <a href="kural-0128.html">Kural 128 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-013.html">The Possession of Self-restraint</a>
+  <a class="skip-btn" href="kural-0131.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

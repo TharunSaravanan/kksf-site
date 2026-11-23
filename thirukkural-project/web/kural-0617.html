@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 617 — Manly Effort | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 617</h1>
+<p class="adhikaram"><a href="adhikaram-062.html">Manly Effort</a> &middot; Aalvinaiyudaimai &middot; <span class="tamil">ஆள்வினையுடைமை</span></p>
+
+<div class="tamil-text">மடியுளாள் மாமுகடி என்ப மடியிலான்
+தாளுளாள் தாமரையி னாள்.</div>
+<div class="translit">Madiyulaal maamugadi enba madiyilaan
+Thaalulaal thaamaraiyinaal.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People say the dark goddess of bad luck lives with the lazy. The goddess of good fortune, who sits on a lotus, lives with the hard work of someone who is not lazy.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Pretend Good Luck and Bad Luck are two visitors looking for a home. Bad Luck loves a messy room where someone is napping all day. Good Luck knocks on the door of the kid who’s busy building and practising. Where you work, good luck moves in.</p>
+
+<h2 class="section">University</h2>
+<p>Valluvar borrows two goddesses of popular belief: மாமுகடி, the ‘great dark Mugadi’ (மூதேவி, Sanskrit Jyeṣṭhā or Alakṣmī), goddess of misfortune, and தாமரையினாள், ‘she of the lotus’, Tirumagal or Lakshmi; the verb என்ப (‘they say’) signals that he is citing received wisdom. Parimelazhagar notes that sloth is the ‘dwelling’ of the one and effort (தாள்) the dwelling of the other, so fortune is located not in fate but in conduct; Kalaignar demythologises the pair entirely, treating the goddess names as figures for the industrious and the idle. There is a textual point: ytamizh.com prints தாளுளான் (masculine), but the parallelism with மடியுளாள் and the sandhi form றாளுளா டாமரையி னாள் in thirukkural-thamizh.org (தாளுளாள் + தாமரை) confirm the feminine தாளுளாள், ‘she dwells in the effort’, which is the reading adopted here.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">A famous Hitopadesha verse says that Lakshmi, goddess of fortune, approaches the lion-like man of effort, and only cowards say that fortune is handed out by fate; so set fate aside and exert yourself with your own strength.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/hitopadesha-sanskrit/d/doc276486.html" target="_blank" rel="noopener">Hitopadesha, Introduction, verse 33</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Sanskrit maxim (udyoginaṃ puruṣasiṃham upaiti lakṣmīḥ) names the same goddess and the same condition for her favour.</div>
+  <div class="tieback">This is almost the Kural itself: the lotus-goddess comes to dwell with the diligent.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">In the parable of the talents, the servants who trade with their master’s money double it and are rewarded, while the one who buries his talent out of fear and sloth is called ‘wicked and slothful’ and loses even what he had.</div>
+  <div class="cite">&mdash; Matthew 25:14-30 <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus’ parable shows increase coming to the active and loss to the idle.</div>
+  <div class="tieback">Blessing dwells with the diligent and deprivation with the lazy, as in Valluvar’s two goddesses.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Nobody has ever eaten a better meal than that which one has earned by working with one’s own hands. The Prophet of Allah, David used to eat from the earnings of his manual labor.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:2072" target="_blank" rel="noopener">Sahih al-Bukhari 2072 (Sunnah.com)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet praises self-earned sustenance as the best, citing even a prophet-king who lived by his own labour.</div>
+  <div class="tieback">Blessing is found in one’s own labour, the ‘dwelling’ the Kural gives to the goddess of fortune.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Rabbi Yitzhak teaches that if someone tells you, ‘I laboured and did not find,’ do not believe him; ‘I did not labour yet found,’ do not believe him; but ‘I laboured and found,’ believe him.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Megillah.6b" target="_blank" rel="noopener">Babylonian Talmud, Megillah 6b</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Talmud treats real attainment as something that only comes with toil.</div>
+  <div class="tieback">Success lodging only where there is labour is the Kural’s fortune that ‘dwells in effort’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Ever grows the glory of him who is energetic, mindful and pure in conduct, discerning and self-controlled, righteous and heedful.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 24 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada links steadily increasing glory to energy and heedfulness.</div>
+  <div class="tieback">Glory growing with the energetic parallels fortune taking up residence with the diligent.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">Jain tradition knows the goddess Śrī (Lakṣmī) seated on a lotus: she is the fourth of the fourteen auspicious dreams Queen Triśalā saw before Mahavira&#x27;s birth. But Jain doctrine credits fortune and misfortune to a person&#x27;s own karma and conduct, not to goddesses of luck.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Kalpa Sutra, Life of Mahavira §36 (the dream of the goddess Śrī) (tr. Hermann Jacobi, SBE 22)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jainism keeps Śrī as an auspicious symbol, but in its non-theistic karma theory prosperity and adversity follow one&#x27;s own deeds, a view close to Valluvar&#x27;s actual point about effort and sloth.</div>
+  <div class="tieback">The Kural&#x27;s image of the lotus goddess living in effort and Misfortune living in sloth fits Jainism only as metaphor: in Jain teaching one&#x27;s own conduct, not a deity, brings fortune.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Cheated and plundered by Maya, you do not think of God, and you waste your life in laziness.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 92, Siree Raag, Bhagat Trilochan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In a hymn of Bhagat Trilochan included in the Guru Granth Sahib, the idle person is pictured as robbed and ruined, his life squandered through laziness.</div>
+  <div class="tieback">The Kural says misfortune dwells in sloth; Trilochan&#x27;s hymn likewise shows laziness leaving a person plundered and his life wasted.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;work, high-born Perses, that Hunger may hate you, and venerable Demeter richly crowned may love you and fill your barn with food; for Hunger is altogether a meet comrade for the sluggard.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 299-302 (trans. H. G. Evelyn-White)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hesiod pairs the grain-goddess Demeter, who favours the worker, with Hunger, the sluggard’s companion.</div>
+  <div class="tieback">Demeter and Hunger are an exact Greek counterpart to the lotus-goddess and the dark Mugadi.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Samuel Smiles opens Self-Help with the maxim ‘Heaven helps those who help themselves’, arguing that the spirit of self-help is the root of all genuine growth in the individual.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/935" target="_blank" rel="noopener">Samuel Smiles, Self-Help (1859), ch. 1</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The Victorian moralist made personal industry the true source of what people call good fortune.</div>
+  <div class="tieback">Like the Kural, Smiles says fortune favours the self-reliant worker.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Alexander Fleming notices the mould that leads to penicillin</div>
+  <div class="rle-meta">September 1928 &middot; St Mary&#x27;s Hospital, London, United Kingdom</div>
+  <div class="quote is-paraphrase">Returning from holiday on 3 September 1928, the bacteriologist Alexander Fleming began sorting through culture plates of Staphylococcus bacteria in his laboratory. On one plate contaminated by a mould he saw that the bacteria around the mould had been destroyed, and he went on to show that the mould produced a substance, which he named penicillin, that killed many kinds of bacteria. He published his findings in 1929, and penicillin was later developed into a medicine by Howard Florey, Ernst Chain and their Oxford team; the three shared the 1945 Nobel Prize.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A chance contamination became a medical revolution only because an experienced researcher was at work, paying attention, and followed up what he saw.</div>
+  <div class="tieback">The kural says good fortune dwells in the effort of the industrious, and Fleming&#x27;s lucky mould brought its fortune to the world through a working scientist who was ready to recognise it.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-62/" target="_blank" rel="noopener">Thirukkural Chapter 62: ஆள்வினையுடைமை / Manly Effort (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A062.html" target="_blank" rel="noopener">62. ஆள்வினையுடைமை (இடைவிடாத முயற்சியுடைமை) — Thirukkural text</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.wisdomlib.org/hinduism/book/hitopadesha-sanskrit/d/doc276486.html" target="_blank" rel="noopener">Hitopadesha, Introduction, Verse 33 (udyoginaṃ puruṣasiṃham upaiti lakṣmīḥ)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:2072" target="_blank" rel="noopener">Sahih al-Bukhari 2072 (Book of Sales and Trade, Chapter: The earnings of a person and his manual labour)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Megillah.6b" target="_blank" rel="noopener">Babylonian Talmud, Megillah 6b, William Davidson Edition (Koren Noé, Steinsaltz)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Kalpa Sūtra (Kalpa Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/935" target="_blank" rel="noopener">Samuel Smiles, Self-Help; with Illustrations of Character and Conduct (1859)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Alexander-Fleming" target="_blank" rel="noopener">Alexander Fleming</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.acs.org/education/whatischemistry/landmarks/flemingpenicillin.html" target="_blank" rel="noopener">Alexander Fleming Discovery and Development of Penicillin (National Historic Chemical Landmark)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0616.html">&larr; Kural 616</a>
+  <a href="kural-0618.html">Kural 618 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-062.html">Manly Effort</a>
+  <a class="skip-btn" href="kural-0621.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

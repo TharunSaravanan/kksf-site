@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1246 — Soliloquy | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1246</h1>
+<p class="adhikaram"><a href="adhikaram-125.html">Soliloquy</a> &middot; Nenjodu Kilathal &middot; <span class="tamil">நெஞ்சொடு கிளத்தல்</span></p>
+
+<div class="tamil-text">கலந்துணர்த்தும் காதலர்க் கண்டாற் புலந்துணராய்
+பொய்க்காய்வு காய்திஎன் நெஞ்சு.</div>
+<div class="translit">Kalandhunarththum kaadhalark kandaar pulandhunaraai
+poikkaaivu kaaidhi-en nenju.</div>
+
+<h2 class="section">Meaning</h2>
+<p>My heart, when you see the one you love, who ends our sulking by holding us close, you cannot even stay upset. So the anger you show him now is fake.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine pretending to be cross with your best friend, but the moment they come and give you a hug, you start smiling. So you tell yourself, “I’m not really angry, I’m just pretending!”</p>
+
+<h2 class="section">University</h2>
+<p>The couplet turns on the Tamil love-poetry concept of ūṭal / pulavi (a lover’s feigned sulking that is meant to be dissolved): the husband is one who kalantu uṇarttum (‘removes the sulk by union’), and when the heart sees him it does not pulantu uṇar (‘sulk and then make up’) at all. Hence its present anger is poykkāyvu (‘false heat, sham anger’, from kāy ‘to burn, be angry’) that it kāyti (‘burns with’). Mu. Varadarasanar and Puliyur Kesikan follow this reading closely, while Solomon Pappaiah expands it into an exhortation: ‘give up this pretended hatred and go to him’. The couplet anticipates the later chapters on pulavi (131-133). Text identical on ytamizh.com and thirukkural.net (both read kaṇṭāṟ with the sandhi ṟ).</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In Jayadeva’s Gita Govinda, Radha, hurt by Krishna’s wandering, holds herself aloof in proud anger (mana), and her friend urges her not to be harsh with Krishna, since her resentment hurts only herself, and to go to him.</div>
+  <div class="cite">&mdash; Jayadeva, Gita Govinda, Sargas 8-9 (paraphrase) <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The poem portrays a lover’s anger as a pose that melts away when faced with the beloved’s return.</div>
+  <div class="tieback">The Kural’s heroine admits the same: the anger her heart shows her husband is false and would vanish at the sight of him.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Be ye angry, and sin not: let not the sun go down upon your wrath:&rdquo;</div>
+  <div class="cite">&mdash; Ephesians 4:26 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul allows that anger arises but insists it must not be held on to.</div>
+  <div class="tieback">The Kural’s heroine sees that her anger toward her husband cannot and should not last, for it is not real.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Who spend [in the cause of Allah] during ease and hardship and who restrain anger and who pardon the people - and Allah loves the doers of good;&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 3:134 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an praises those who hold back their anger and forgive.</div>
+  <div class="tieback">The Kural’s heroine recognises that her anger toward her husband is hollow and gives way at once to love.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">In the Song of Songs, the woman at first makes excuses not to open the door to her beloved, but her heart is moved for him and she rises to open, only to find he has gone.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/" target="_blank" rel="noopener">Song of Songs 5:2-6 (JPS 1917, via Sefaria) (paraphrase)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Her show of reluctance gives way immediately to longing once she senses him near.</div>
+  <div class="tieback">The Kural’s heroine likewise knows her reluctance and anger are a pose that her heart cannot keep up when the beloved is near.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;He who checks rising anger as a charioteer checks a rolling chariot, him I call a true charioteer. Others only hold the reins.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 222 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha praises the person who can stop anger the moment it arises.</div>
+  <div class="tieback">The Kural’s heroine sees that her anger toward her husband is not even worth reining in, for it is false and gives way at the sight of him.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Pleasant things (by themselves) do not cause indifference nor emotions (as anger, &amp;c.); but by either hating or loving them, a man undergoes such a change through delusion.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 32.101 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jain teaching traces both love and anger to the same root of delusion, so that one easily turns into the other.</div>
+  <div class="tieback">The Kural’s heroine sees that her anger at her husband is only the other face of her love, and so is not real anger at all.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The happy soul-bride knows the worth of her Husband Lord. Renouncing pride, she enjoys peace and pleasure.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 793, Raag Soohee, Bhagat Ravidas (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Bhagat Ravidas says the bride who truly values her Husband lets go of her pride, and so enjoys union with Him.</div>
+  <div class="tieback">The Kural&#x27;s wife tells her heart its anger is false, since it melts the moment the beloved embraces them; Ravidas likewise teaches that the bride who knows her Husband&#x27;s worth drops her pride and enjoys His company.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When Troy fell, Menelaus came upon Helen intending to kill her for her betrayal, but at the sight of her beauty he let his sword fall and took her back.</div>
+  <div class="cite">&mdash; <a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0086" target="_blank" rel="noopener">Euripides, Andromache c. 627-631; cf. Aristophanes, Lysistrata 155-156 (paraphrase)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In this well-known tradition, the husband’s anger cannot survive the sight of the woman he loves.</div>
+  <div class="tieback">The Kural’s heroine knows her anger is equally hollow and would collapse the moment she saw her husband.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Seneca argues that anger is not a natural necessity but a choice of the mind, which can be checked at its first stirring by reason.</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Of_Anger" target="_blank" rel="noopener">Seneca, De Ira, Book 2 (paraphrase)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Seneca, anger exists only because the mind assents to it, and so it can be dissolved.</div>
+  <div class="tieback">The Kural’s heroine sees through her own anger in just this way: it is a pose her heart has adopted, not something real.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Elizabeth Taylor and Richard Burton remarry in Botswana</div>
+  <div class="rle-meta">10 October 1975 &middot; Kasane, near Chobe Game Park, Botswana</div>
+  <div class="quote is-paraphrase">Actors Elizabeth Taylor and Richard Burton married in Montreal in 1964 and divorced in 1974 after stormy years together. About sixteen months later, on 10 October 1975, they secretly remarried in a ceremony performed by a district commissioner at Kasane, near Chobe Game Park in Botswana. The second marriage lasted about nine months.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Their remarriage became the best-known modern example of a couple whose quarrels could not keep them apart.</div>
+  <div class="tieback">The kural says the heart cannot even keep up a sulk when it sees the beloved, so its anger is false, and Taylor and Burton&#x27;s divorce gave way to remarriage as soon as they were together again.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-125/" target="_blank" rel="noopener">Thirukkural Chapter 125: நெஞ்சொடுகிளத்தல் / Soliloquy (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-125.html" target="_blank" rel="noopener">நெஞ்சோடு கிளத்தல் - அதிகாரம் 125 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3">Jayadeva, Gita Govinda <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0086" target="_blank" rel="noopener">Euripides, Andromache</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://en.wikisource.org/wiki/Of_Anger" target="_blank" rel="noopener">Seneca, De Ira (On Anger), Books I and III</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.sahistory.org.za/node/12244" target="_blank" rel="noopener">Elizabeth Taylor and Richard Burton remarry in Botswana</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.biography.com/people/groups/elizabeth-taylor-and-richard-burton" target="_blank" rel="noopener">Elizabeth Taylor and Richard Burton</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1245.html">&larr; Kural 1245</a>
+  <a href="kural-1247.html">Kural 1247 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-125.html">Soliloquy</a>
+  <a class="skip-btn" href="kural-1251.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

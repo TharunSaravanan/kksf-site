@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 738 — The Land | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 738</h1>
+<p class="adhikaram"><a href="adhikaram-074.html">The Land</a> &middot; Naadu &middot; <span class="tamil">நாடு</span></p>
+
+<div class="tamil-text">பிணியின்மை செல்வம் விளைவின்பம் ஏமம்
+அணியென்ப நாட்டிற்கிவ் வைந்து.</div>
+<div class="translit">Piniyinmai selvam vilaivinpam emam
+aniyenpa naattirkiv vaindhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Wise people say a country has five jewels: no disease, riches, good crops, happiness and safety.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A birthday cake looks best with candles, icing, fruit, sprinkles and a name on top. A country has its own five decorations: healthy people, enough money, good crops, happy faces and safe streets.</p>
+
+<h2 class="section">University</h2>
+<p>Ani means ‘ornament’ or ‘jewel’, so where kural 737 listed the land’s limbs (uruppu), this one lists its adornments. The five are piniyinmai (absence of disease), selvam (wealth), vilaivu (produce), inpam (enjoyment, happiness) and emam (safety, protection); Parimelazhagar glosses emam as the protection given to subjects. Mu. Varadarasanar and Pope follow the same five, while some modern readers join vilaivu and inpam as ‘the joy of harvest’. The verse sums up the chapter’s positive ideal in a single list. The ytamizh text prints the second line as ‘அணியென்ப நாட்டிவ் வைந்து’, but the sandhi text and the standard editions read ‘நாட்டிற்கிவ் வைந்து’ (naattirku + iv + aindhu, ‘these five for a land’), which is needed for the metre and is followed here.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;In consequence again of royal protection, men can everywhere sleep fearlessly and at their case without shutting their houses and doors with bolts and bars.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/m12/m12a067.htm" target="_blank" rel="noopener">Mahabharata, Shanti Parva, Section 68 (trans. K. M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Brihaspati tells King Vasumanas that good royal protection lets people live without fear, so that they can sleep with their doors unlocked.</div>
+  <div class="tieback">Sleeping with open doors is a vivid picture of emam, the security that is one of the Kural’s five ornaments of a land.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;That our garners may be full, affording all manner of store: that our sheep may bring forth thousands and ten thousands in our streets: That our oxen may be strong to labour; that there be no breaking in, nor going out; that there be no complaining in our streets. Happy is that people, that is in such a case.&rdquo;</div>
+  <div class="cite">&mdash; Psalm 144:13-15 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The psalmist prays for full barns, growing flocks, strong oxen, no invasion and no distress, and calls such a people happy.</div>
+  <div class="tieback">Full barns, no breaking in and a happy people are the Kural’s produce, security and joy in one prayer.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And [mention] when Abraham said, ‘My Lord, make this a secure city and provide its people with fruits.’&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 2:126 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Abraham prays for Mecca to be a safe city whose people are fed with fruit.</div>
+  <div class="tieback">Abraham asks for two of the Kural’s ornaments, security and produce, as the essentials of a good city.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;But they shall sit every man under his vine and under his fig-tree; And none shall make them afraid.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">Micah 4:4 (JPS 1917, Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Micah pictures a time of peace when everyone enjoys the fruit of his own land without fear.</div>
+  <div class="tieback">Sitting under one’s own vine without fear joins produce, happiness and security, three of the Kural’s five ornaments.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Health is the most precious gain and contentment the greatest wealth. A trustworthy person is the best kinsman, Nibbana the highest bliss.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 204 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada ranks health first among gains and contentment as the truest wealth.</div>
+  <div class="tieback">The Kural also puts freedom from disease first among a land’s ornaments, followed by wealth and happiness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;May all subjects prosper, the king be strong and righteous, rains fall timely, diseases be eradicated, and may there be no fear of famine, theft, fire, or illness.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://frontdesk.co.in/jainism/shanti-path-with-meaning/" target="_blank" rel="noopener">Shanti Path (Hindi Shanti Path of Digambara worship), verse 7, English rendering at frontdesk.co.in (&#x27;Shanti Path with Meaning&#x27;, 2025)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Shanti Path recited at the end of Digambara worship, addressed to Shantinatha, includes a prayer for the welfare of the whole realm: health, timely rain, plenty and security under a righteous king.</div>
+  <div class="tieback">The Kural names freedom from disease, wealth, harvests, happiness and security as a land&#x27;s five ornaments; this Jain prayer asks for almost exactly the same goods for every country.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Baygumpura, ’the city without sorrow’, is the name of the town. There is no suffering or anxiety there. There are no troubles or taxes on commodities there. There is no fear, blemish or downfall there. … There is lasting peace and safety there, O Siblings of Destiny. … That city is populous and eternally famous. Those who live there are wealthy and contented.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 345, Raag Gauree, Bhagat Ravidas (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Bhagat Ravidas, whose hymns are included in the Guru Granth Sahib, describes Begampura, the ideal city where suffering, fear and inequality are absent and its citizens are prosperous, secure and at peace.</div>
+  <div class="tieback">The Kural names five ornaments of a land, freedom from disease, wealth, harvests, happiness and security; Ravidas&#x27;s Begampura is adorned with almost the same list: no suffering, wealth, contentment, peace and safety.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Hesiod tells that Zeus married Themis, who bore the Horai: Eunomia (Good Order), Dike (Justice) and Eirene (Peace), goddesses who watch over the works of mortal men.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Hesiod, Theogony 901-903</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Greek myth, order, justice and peace are divine sisters who make human communities flourish.</div>
+  <div class="tieback">The Horai are, in effect, the ornaments of a well-ordered land, as the Kural’s five are.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;We may define happiness as prosperity combined with virtue; or as independence of life; or as the secure enjoyment of the maximum of pleasure; or as a good condition of property and body, together with the power of guarding one&#x27;s property and body and making use of them.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/rhetoric.1.i.html" target="_blank" rel="noopener">Aristotle, Rhetoric, I.5, 1360b (tr. W. Rhys Roberts)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">In his guide for political speakers, Aristotle sets out the commonly agreed parts of happiness, including wealth, health and the secure enjoyment of life, and applies several of them to whole communities as well as to individuals.</div>
+  <div class="tieback">Aristotle&#x27;s list of what makes life good overlaps closely with the Kural&#x27;s ornaments of a country, which are health, wealth, happiness and security.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The first Human Development Report introduces the Human Development Index</div>
+  <div class="rle-meta">1990 &middot; United Nations Development Programme, New York, United States</div>
+  <div class="quote is-paraphrase">In 1990 the UN Development Programme published the first Human Development Report, led by the economist Mahbub ul Haq with Amartya Sen as a key collaborator. It introduced the Human Development Index, which ranks countries not by income alone but by an average of longevity, education and standard of living. The report argued that development should be judged by whether people can lead long, healthy and creative lives.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The index changed how the world measures national success, treating health and knowledge as being as important as wealth.</div>
+  <div class="tieback">The kural names freedom from disease, wealth, good harvests, happiness and security as the ornaments of a country, and the Human Development Index similarly judges nations by health and well-being as well as wealth.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-74/" target="_blank" rel="noopener">Thirukkural Chapter 74: நாடு / The Land (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A074.html" target="_blank" rel="noopener">74. நாடு (நாட்டிற்குரிய இலக்கணம்) — Thirukkural, sandhi-joined text</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/m12/m12a067.htm" target="_blank" rel="noopener">The Mahabharata, Book 12: Santi Parva, Section LXVIII (Vrihaspati’s discourse to Vasumanas on kingship), trans. Kisari Mohan Ganguli</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://frontdesk.co.in/jainism/shanti-path-with-meaning/" target="_blank" rel="noopener">Shanti Path with Meaning (Hindi Shanti Path with Hindi and English translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Theogony (Hesiod)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Aristotle/rhetoric.1.i.html" target="_blank" rel="noopener">Rhetoric, Book I (Aristotle)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://hdr.undp.org/about/human-development" target="_blank" rel="noopener">What is human development? (Human Development Report Office)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.ipsnews.net/?p=43683" target="_blank" rel="noopener">Developing World Scores on Health, Wealth and Education (Inter Press Service)</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0737.html">&larr; Kural 737</a>
+  <a href="kural-0739.html">Kural 739 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-074.html">The Land</a>
+  <a class="skip-btn" href="kural-0741.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

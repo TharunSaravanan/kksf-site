@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1165 — Complaint | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1165</h1>
+<p class="adhikaram"><a href="adhikaram-117.html">Complaint</a> &middot; Padar Melindhirankal &middot; <span class="tamil">படர் மெலிந்திரங்கல்</span></p>
+
+<div class="tamil-text">துப்பின் எவனாவர் மன்கொல் துயர்வரவு
+நட்பினுள் ஆற்று பவர்.</div>
+<div class="translit">Thuppin evanaavar mankol thuyarvaravu
+natpinul aatru pavar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If he can bring me such sadness while we are lovers, what would he do to me if he were my enemy?</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine your best friend forgets your birthday and it really hurts. You might say, ‘If this is how much my friend can hurt me, I would hate to see what an enemy could do!’ The wife is half-joking, half-hurt in the same way about her husband who has gone away.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet is ironic reproach: the husband ‘accomplishes the coming of sorrow’ (tuyar varavu āṟṟupavar, துயர்வரவு ஆற்றுபவர்) even within naṭpu (நட்பு, friendship, intimacy), so what (evaṉ, எவன்) would he become in tuppu (துப்பு)? The commentators divide over tuppu: Mu. Varadarasanar and Puliyur Kesikan take it as ‘strength’, the power needed against a foe, while Solomon Pappaiah and Kalaignar take it directly as ‘enmity’ (pakai), and the sense is the same either way. Maṉ kol (மன்கொல்) adds wondering doubt. The reproach is affectionate rather than bitter, in keeping with the karpu ideal in which the wife complains of, but does not renounce, the absent husband. Pope: ‘Who work us woe in friendship’s trustful hour, / What will they prove when angry tempests lower?’ The text is identical on both base sources.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">When Shakuntala comes to Dushyanta’s court, the king, his memory clouded by a curse, denies he ever married her, and she reproaches him for treating with such cruelty the woman he had won with tender words.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/" target="_blank" rel="noopener">Kalidasa, Abhijnanashakuntalam, Act 5 (paraphrase)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The very man who loved her becomes the source of her deepest wound.</div>
+  <div class="tieback">Like the Kural’s heroine, Shakuntala finds that the one bound to her by love can hurt her more than any enemy.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Yea, mine own familiar friend, in whom I trusted, which did eat of my bread, hath lifted up his heel against me.&rdquo;</div>
+  <div class="cite">&mdash; Psalms 41:9 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The psalmist laments that the wound came not from a stranger but from his trusted companion.</div>
+  <div class="tieback">The Kural’s heroine makes the same complaint: the hurt comes from the one bound to her in love.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Oh, woe to me! I wish I had not taken that one as a friend.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 25:28 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">On the Day of Judgment the wrongdoer laments the friendship that led him to ruin.</div>
+  <div class="tieback">The Kural’s heroine, more gently, also counts the sorrow that comes through a bond of friendship.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;For it was not an enemy that taunted me, Then I could have borne it; Neither was it mine adversary that did magnify himself against me, Then I would have hid myself from him. But it was thou, a man mine equal, My companion, and my familiar friend.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/" target="_blank" rel="noopener">Psalms 55:13-14 (JPS 1917, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The psalmist says he could have endured an enemy’s hostility; it is the hurt from a close companion that is unbearable.</div>
+  <div class="tieback">This is the Kural’s comparison of friend and foe turned the same way: the wound from one who loves is the hardest to bear.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Seek no intimacy with the beloved and also not with the unloved, for not to see the beloved and to see the unloved, both are painful.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 210 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha observes that the beloved can cause pain just as surely as the disliked, simply by being absent.</div>
+  <div class="tieback">The Kural’s heroine finds the same thing: the beloved, by being away, causes as much pain as an enemy could.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">In Kapila’s verses a monk is told to quit his former connections and set his affection on nothing, for one who loves not even those who love him will be free from sin and hatred.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 8.2 (tr. Hermann Jacobi, SBE 45) (paraphrase)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jain teaching sees affection itself as the channel through which suffering enters, and so advises withdrawing it.</div>
+  <div class="tieback">The Kural’s heroine discovers that the bond of love is what lets her husband hurt her; the Jain text draws the renunciant’s conclusion from that same fact.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;O my Husband Lord, You are angry with me in Your Mind. The fault is with me, and not with my Husband Lord.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 794, Raag Soohee, Sheikh Farid (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Sheikh Farid, speaking as the soul-bride, feels the Husband Lord&#x27;s displeasure but lays the blame on her own failings, not on Him.</div>
+  <div class="tieback">The Kural&#x27;s heroine reproaches her husband, asking what he would do as an enemy if he brings such sorrow as a lover; Farid&#x27;s bride feels the same estrangement but turns the reproach on herself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Ovid’s Heroides, Ariadne, abandoned on the island of Naxos by Theseus, writes that she saved his life and was repaid with desertion, so that the man she helped has wounded her worse than any foe.</div>
+  <div class="cite">&mdash; Ovid, Heroides 10 (Ariadne to Theseus) (paraphrase) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Ariadne’s complaint is that her pain comes from the very person she loved and served.</div>
+  <div class="tieback">She voices the Kural’s question: if love does this, what could enmity do?</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In Cicero’s On Friendship, Laelius reflects that friendships which break down often turn into bitter enmities, and that the hurt is the sharper because of the intimacy that preceded it.</div>
+  <div class="cite">&mdash; Cicero, Laelius de Amicitia (On Friendship) (paraphrase) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Cicero notes that closeness gives a friend unusual power to wound.</div>
+  <div class="tieback">The heroine’s rueful question rests on the same insight: love gives the beloved the power to cause the deepest pain.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Heloise writes her first letter to Abelard</div>
+  <div class="rle-meta">c. 1132 &middot; Abbey of the Paraclete, near Nogent-sur-Seine, France</div>
+  <div class="quote is-paraphrase">Around 1130 the philosopher Peter Abelard wrote a long letter of consolation to a friend, known as the Historia calamitatum, describing his misfortunes. Heloise, by then abbess of the Paraclete, wrote to him after it came into her hands, complaining that he had written to comfort a friend but had neglected her, and asking him to write to her of his dangers and of the convent he had founded. This letter opened one of the most famous correspondences of the Middle Ages.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Heloise&#x27;s letter is a loving reproach: she does not renounce Abelard but asks why the man she loves has left her without a word.</div>
+  <div class="tieback">The kural&#x27;s heroine asks, half in reproach and half in love, what her husband would do as an enemy if he brings such grief as a lover, and Heloise&#x27;s complaint of neglect has that same tender anger.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-117/" target="_blank" rel="noopener">Thirukkural Chapter 117: படர்மெலிந்திரங்கல் / Complainings (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-117.html" target="_blank" rel="noopener">படர்மெலிந்திரங்கல் - அதிகாரம் 117 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.gutenberg.org/" target="_blank" rel="noopener">Kalidasa, Abhijnanashakuntalam (Shakuntala)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Ovid, Heroides <span class="tier">[primary source]</span></li>
+<li id="cite-11">Cicero, Laelius de Amicitia (On Friendship) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.encyclopedia.com/women/dictionaries-thesauruses-pictures-and-press-releases/heloise-c-1100-1163" target="_blank" rel="noopener">Heloise (c. 1100-1163)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://epistolae.ctl.columbia.edu/letter/175.html" target="_blank" rel="noopener">Letter 175: Heloise to Peter Abelard</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1164.html">&larr; Kural 1164</a>
+  <a href="kural-1166.html">Kural 1166 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-117.html">Complaint</a>
+  <a class="skip-btn" href="kural-1171.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

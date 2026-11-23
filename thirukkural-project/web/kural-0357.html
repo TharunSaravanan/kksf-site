@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 357 — Knowledge of the True | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 357</h1>
+<p class="adhikaram"><a href="adhikaram-036.html">Knowledge of the True</a> &middot; Meyyunarthal &middot; <span class="tamil">மெய்யுணர்தல்</span></p>
+
+<div class="tamil-text">ஓர்த்துள்ளம் உள்ளது உணரின் ஒருதலையாப்
+பேர்த்துள்ள வேண்டா பிறப்பு.</div>
+<div class="translit">Orththullam ulladhu unarin orudhalaiyaap
+Perththulla vendaa pirappu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If the mind has carefully studied and firmly understood what is truly real, there is no need to think about being born again.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Once you truly understand that the monster under the bed was only a shadow, you don’t have to be scared of it again tomorrow night. This kural says that once your mind really and firmly understands what is real, you don’t have to worry about coming back to be born again.</p>
+
+<h2 class="section">University</h2>
+<p>Ulladhu, literally ‘that which is’, is one of the most philosophically loaded words in the chapter. It corresponds to the Sanskrit sat (Being) and later gave its name to Ramana Maharshi’s Tamil work Ulladhu Narpadhu (‘Forty Verses on That Which Is’). Orththu (having reflected or investigated) and oru-thalaiyaa (with complete, one-pointed certainty) spell out the method: truth is reached by sustained inquiry until conviction is total. Traditional glosses (Solomon Pappaiah speaks of holding fully in mind ‘what was heard from the great’) connect this to the Vedantic sequence of hearing, reflection and contemplation (shravana, manana, nididhyasana). The language of ‘what is’ invites comparison with Parmenides, for whom Being is ‘uncreated and indestructible’, and with Maimonides, for whom knowing the Primary Being is ‘the foundation of all foundations’. Valluvar’s distinctive claim is soteriological: to grasp Being is to end becoming.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;The fetter of the heart is broken, all doubts are solved, all his works (and their effects) perish when He has been beheld who is high and low.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/sbe15/sbe15019.htm" target="_blank" rel="noopener">Mundaka Upanishad 2.2.8 (trans. Max Müller)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Upanishad says that when the ultimate Reality is directly seen, every bond, every doubt, and all karma that would cause future births fall away.</div>
+  <div class="tieback">Just as the Kural says, firm realization of ‘ulladhu’ removes the karmic cause of rebirth; the same Upanishad describes aiming the mind ‘at that which is’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And this is life eternal, that they might know thee the only true God, and Jesus Christ, whom thou hast sent.&rdquo;</div>
+  <div class="cite">&mdash; John 17:3 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In his prayer before his arrest, Jesus defines eternal life itself as knowing the one true God.</div>
+  <div class="tieback">Both teach that knowing the ultimate Reality is itself the deathless state.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Who remember Allāh while standing or sitting or [lying] on their sides and give thought to the creation of the heavens and the earth, [saying], ‘Our Lord, You did not create this aimlessly; exalted are You [above such a thing]; then protect us from the punishment of the Fire.’&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 3:191 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an praises those who reflect deeply on creation, reach certainty of its purpose and its Creator, and so seek salvation.</div>
+  <div class="tieback">Like the Kural’s ‘orththu’ (having reflected), careful contemplation leads to grasping the Real and being saved from a dreaded fate.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;The foundation of all foundations and the pillar of wisdom is to know that there is a Primary Being who brought into being all existence.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Mishneh_Torah,_Foundations_of_the_Torah.1.1" target="_blank" rel="noopener">Maimonides, Mishneh Torah, Foundations of the Torah 1:1 (trans. Eliyahu Touger)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Maimonides opens his code of Jewish law by making knowledge of the one true Being, from whose truth everything exists, the first commandment and the basis of wisdom.</div>
+  <div class="tieback">The Kural’s ‘ulladhu’ (That Which Is) and Maimonides’s ‘Primary Being’ both place knowing true Being at the summit of wisdom.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;There is, monks, an unborn — unbecome — unmade — unfabricated. If there were not that unborn — unbecome — unmade — unfabricated, there would not be the case that escape from the born — become — made — fabricated would be discerned.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/kn/ud/ud.8.03.than.html" target="_blank" rel="noopener">Udana 8.3 (trans. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha affirms that there really is an unborn, unconditioned reality, and that because it exists, escape from birth is possible.</div>
+  <div class="tieback">Echoes the Kural’s logic: realizing what truly ‘is’ (the unborn) removes the need to be born again.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;1. jîva, Soul; 2. ajîva, the inanimate things; 3. bandha, the binding of the soul by Karman; 4. puṇya, merit; 5. pâpa, demerit; 6. âsrava … 7. saṃvara … 8. the annihilation of Karman; 9. final deliverance: these are the nine truths (or categories). He who verily believes the true teaching of the (above nine) fundamental truths, possesses righteousness.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 28.14-15 (tr. Hermann Jacobi, SBE 45, 1895, p. 154)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">For Jainism, &#x27;that which is&#x27; is spelled out as the nine tattvas, and firm conviction in them is the right view with which the path to the end of rebirth begins.</div>
+  <div class="tieback">Valluvar says that once the mind has examined and firmly grasped That Which Is, no further birth need be feared. The Jain counterpart is firm conviction in the real categories (tattvārtha), which is where the soteriological path starts.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;True In The Primal Beginning. True Throughout The Ages. True Here And Now. O Nanak, Forever And Ever True.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1, Japji Sahib, opening salok, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The opening salok of Japji Sahib declares that the One is Sat, true and real, in the beginning, through the ages, now and forever.</div>
+  <div class="tieback">The Kural speaks of the mind that has examined and grasped That Which Truly Is; the Japji salok names that Ulladhu, the One who simply is, in every time.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In the Myth of Er, souls about to be reborn must drink from the River of Unmindfulness (Lethe) on the Plain of Forgetfulness. Those not protected by wisdom drink more than the measure and forget everything before entering a new life.</div>
+  <div class="cite">&mdash; Plato, Republic X, 621a–b (Myth of Er) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In this Greek picture of reincarnation, forgetting the truth goes hand in hand with being reborn; wisdom is what limits that forgetting.</div>
+  <div class="tieback">Inverse parallel: in the Kural, firmly remembering and knowing the truth is what makes rebirth unnecessary.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;In this path are very many tokens that what is is uncreated and indestructible; for it is complete, immovable, and without end.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Fragments_of_Parmenides" target="_blank" rel="noopener">Parmenides, Fragment 8 (DK B8; trans. John Burnet)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Parmenides argues that true Being (‘what is’) never comes into being or passes away; birth and death belong only to mortal opinion.</div>
+  <div class="tieback">The Kural’s ‘ulladhu’ is Parmenides’s ‘what is’: to grasp the ungenerated is to stand outside birth.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Ramana Maharshi&#x27;s self-inquiry in Madurai</div>
+  <div class="rle-meta">1896 &middot; Madurai, Tamil Nadu, India</div>
+  <div class="quote is-paraphrase">In 1896 the teenage student Venkataraman, later known as Ramana Maharshi, was overcome in his uncle&#x27;s house in Madurai by a sudden fear of death. Lying still as if dead, he inquired into what it was that dies and concluded that his true self was not the body; Britannica describes this as the experience from which he derived his method of self-inquiry, vichara. About six weeks later he left home for the holy hill of Arunachala at Tiruvannamalai, where he lived until his death in 1950.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">By his own account the fear of death never returned after that single inquiry, and the rest of his life and teaching grew from it.</div>
+  <div class="tieback">The kural says that once the mind has examined and firmly grasped That Which Is, there is no more need to think of birth, and Ramana&#x27;s inquiry into the self, the root of his later teaching, is perhaps the closest documented illustration.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-36/" target="_blank" rel="noopener">Thirukkural Chapter 36: மெய்யுணர்தல் / Truth-Consciousness (Kurals 351–360), with commentaries of Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-036.html" target="_blank" rel="noopener">மெய்யுணர்தல் – அதிகாரம் 36 – திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/sbe15/sbe15019.htm" target="_blank" rel="noopener">Mundaka Upanishad II.2, trans. F. Max Müller, The Upanishads Part 2 (Sacred Books of the East, vol. 15, 1884)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Mishneh_Torah,_Foundations_of_the_Torah.1.1" target="_blank" rel="noopener">Maimonides, Mishneh Torah, Foundations of the Torah 1:1, trans. Eliyahu Touger (Moznaim)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/kn/ud/ud.8.03.than.html" target="_blank" rel="noopener">Nibbāna Sutta: Unbinding (3) (Udana 8.3), trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Republic, Book X (the Myth of Er) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://en.wikisource.org/wiki/Fragments_of_Parmenides" target="_blank" rel="noopener">Fragments of Parmenides, trans. John Burnet, Early Greek Philosophy (1920)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Ramana-Maharshi" target="_blank" rel="noopener">Ramana Maharshi</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.davidgodman.org/bhagavans-self-realisation/" target="_blank" rel="noopener">Bhagavan&#x27;s Self-realisation (David Godman)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0356.html">&larr; Kural 356</a>
+  <a href="kural-0358.html">Kural 358 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-036.html">Knowledge of the True</a>
+  <a class="skip-btn" href="kural-0361.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

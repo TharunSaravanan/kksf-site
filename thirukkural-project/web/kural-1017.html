@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1017 — Shame | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1017</h1>
+<p class="adhikaram"><a href="adhikaram-102.html">Shame</a> &middot; Naanudaimai &middot; <span class="tamil">நாணுடைமை</span></p>
+
+<div class="tamil-text">நாணால் உயிரைத் துறப்பர் உயிர்ப்பொருட்டால்
+நாண்துறவார் நாணாள் பவர்.</div>
+<div class="translit">Naanaal uyiraith thurappar uyirpporuttaal
+naanthuravaar naanaal pavar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who live by shame will give up their life to keep it, but they will never give up shame to save their life.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Some heroes in stories are asked to do something really wrong, like betray a friend, or else they&#x27;ll be hurt. And they say no, even though it&#x27;s scary. Valluvar says people with real shame would rather lose everything than do something shameful.</p>
+
+<h2 class="section">University</h2>
+<p>The kural is built as a chiasmus. Naanaal uyiraith thurappar (நாணால் உயிரைத் துறப்பர், &#x27;for shame&#x27;s sake they renounce life&#x27;) is mirrored by uyir poruttaal naan thuravaar (உயிர்ப்பொருட்டால் நாண்துறவார், &#x27;for life&#x27;s sake they do not renounce shame&#x27;). Naan aalpavar (நாணாள்பவர், &#x27;those who wield or rule by shame&#x27;) are its subject. Kesikan frames it as a dilemma: when shame and life cannot both be kept, the noble let life go. Kalaignar substitutes maanam (honour), linking the kural to ch. 97 (Maanam), where similar sentiments appear (e.g. kural 969 on the yak that dies on losing its hair). Pope: ‘The men of modest soul for shame would life an offering make.’ The text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;People will always speak of your infamy, and for a respectable person, dishonor is worse than death.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 2.34 (Bhagavad-gītā As It Is, A.C. Bhaktivedanta Swami Prabhupāda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna tells Arjuna that for an honoured man, disgrace is worse than dying.</div>
+  <div class="tieback">This is the Kural&#x27;s ranking exactly: losing one&#x27;s shame or honour is worse than losing one&#x27;s life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And fear not them which kill the body, but are not able to kill the soul: but rather fear him which is able to destroy both soul and body in hell.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 10:28 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus tells his disciples to value faithfulness above bodily survival.</div>
+  <div class="tieback">Like the Kural, it ranks bodily life below the inner good one must never surrender.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;He said, ‘My Lord, prison is more to my liking than that to which they invite me. And if You do not avert from me their plan, I might incline toward them and [thus] be of the ignorant.’&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 12:33 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Pressed to give in to seduction or face prison, Joseph (Yusuf) chooses the dungeon over a shameful act.</div>
+  <div class="tieback">Yusuf would give up his freedom rather than his modesty, the Kural&#x27;s choice made concrete.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">The Talmud rules that for three sins, idol worship, forbidden sexual relations and bloodshed, a person must let himself be killed rather than transgress (yehareg ve&#x27;al ya&#x27;avor).</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Sanhedrin.74a" target="_blank" rel="noopener">Babylonian Talmud, Sanhedrin 74a</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbinic law sets certain boundaries that may not be crossed even to save one&#x27;s life.</div>
+  <div class="tieback">This is the Kural&#x27;s principle as law: life is given up before the deepest integrity is.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Buddha tells his monks that even if bandits were to saw them limb from limb with a two-handled saw, anyone who let his mind turn to hatred would not be following his teaching.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/mn/mn.021.than.html" target="_blank" rel="noopener">Majjhima Nikaya 21, Kakacupama Sutta (The Simile of the Saw)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Saw Simile demands that a monk keep his inner discipline even at the cost of a terrible death.</div>
+  <div class="tieback">Like the Kural, it ranks keeping one&#x27;s moral self above keeping one&#x27;s body alive.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Fie upon you, famous knight, who want to quaff the vomited drink for the sake of this life; it would be better for you to die.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 22.42 (tr. Hermann Jacobi, SBE 45); the same verse appears in Dasavaikalika Sutra 2</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The nun Rajimati rebukes the monk Rathanemi when he tempts her to break their vows, telling him death would be better than such shamelessness. Shamed, he returns to the Law.</div>
+  <div class="tieback">Rajimati states the Kural&#x27;s principle outright: better to die than to give up shame for the sake of this life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;those who merely live shall depart in dishonor; everything they eat is impure.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 142, Raag Majh, Majh ki Vaar (salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Majh ki Vaar, Guru Nanak says that a life that goes on after its honour (pat) is lost is worthless, and everything it consumes is tainted.</div>
+  <div class="tieback">The Kural says those who live by shame will give up life rather than shame; Guru Nanak says that life kept at the cost of honour is not worth living.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">After Troy falls, the captive princess Polyxena is led to be sacrificed at Achilles&#x27; tomb. She refuses to be held and goes freely to her death rather than live as a slave, and even as she falls she takes care to fall modestly.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0098" target="_blank" rel="noopener">Euripides, Hecuba 342-378, 546-570</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Euripides presents Polyxena as choosing an honourable death over a shameful life and keeping her modesty to the end.</div>
+  <div class="tieback">Polyxena is the Kural&#x27;s naan-aalpavar: she gives up life for shame&#x27;s sake and never gives up shame for life&#x27;s sake.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">At his trial Socrates says that a man worth anything should not weigh the chances of living or dying. He should ask only whether he is acting rightly or wrongly. Achilles chose death rather than disgrace.</div>
+  <div class="cite">&mdash; Plato, Apology 28b-d (tr. Benjamin Jowett) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Socrates refuses to save his life by giving up philosophy or begging shamefully.</div>
+  <div class="tieback">His stance is the Kural&#x27;s: life may be given up, integrity may not.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Giordano Bruno refuses to recant</div>
+  <div class="rle-meta">February 1600 &middot; Rome, Papal States (Italy)</div>
+  <div class="quote is-paraphrase">After years of imprisonment and trial by the Roman Inquisition, the philosopher Giordano Bruno declared that he had nothing to retract. Pope Clement VIII ordered him sentenced as an impenitent heretic; the sentence was read to him on 8 February 1600, and he was executed in the Campo de&#x27; Fiori on 17 February 1600.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Bruno is remembered as a person who gave up his life rather than disown the convictions he held, and a statue was raised to him at the place of his execution in 1889.</div>
+  <div class="tieback">The kural says those who live by shame will give up life for its sake but never give it up to save life, and Bruno would not recant even to escape death.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-102/" target="_blank" rel="noopener">Thirukkural Chapter 102: நாணுடைமை / Shame (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-102.html" target="_blank" rel="noopener">நாணுடைமை - அதிகாரம் 102 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Sanhedrin.74a" target="_blank" rel="noopener">Babylonian Talmud, Sanhedrin 74a</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/mn/mn.021.than.html" target="_blank" rel="noopener">Majjhima Nikaya 21, Kakacupama Sutta: The Simile of the Saw</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0098" target="_blank" rel="noopener">Euripides, Hecuba</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Apology (Plato (recording Socrates)) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Giordano-Bruno/Final-years" target="_blank" rel="noopener">Giordano Bruno: Final years</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.lindahall.org/about/news/scientist-of-the-day/giordano-bruno/" target="_blank" rel="noopener">Giordano Bruno - Scientist of the Day (William B. Ashworth Jr.)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1016.html">&larr; Kural 1016</a>
+  <a href="kural-1018.html">Kural 1018 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-102.html">Shame</a>
+  <a class="skip-btn" href="kural-1021.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

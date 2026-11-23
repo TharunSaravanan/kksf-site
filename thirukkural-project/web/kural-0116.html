@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 116 — Impartiality | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 116</h1>
+<p class="adhikaram"><a href="adhikaram-012.html">Impartiality</a> &middot; Naduvu Nilaimai &middot; <span class="tamil">நடுவு நிலைமை</span></p>
+
+<div class="tamil-text">கெடுவல்யான் என்பது அறிகதன் நெஞ்சம்
+நடுவொரீஇ அல்ல செயின்.</div>
+<div class="translit">Keduval yaan enbadhu arika than nenjam
+Naduvoreei alla seyin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If your heart leaves fairness and turns to doing wrong, take it as a sure sign: ‘I am going to be ruined.’</p>
+
+<h2 class="section">Elementary</h2>
+<p>When a car starts drifting out of its lane, a warning beeps. This kural says that when your heart starts wanting to be unfair, that is your warning beep: trouble is coming if you don’t steer back.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet is written as an internal monologue: கெடுவல் யான் (“I shall perish”) is what one should say to oneself the moment the heart நடு ஒரீஇ (“having abandoned the middle”) turns toward அல்ல (“what is not [right]”). Commentators differ on emphasis. Varadarasanar and Karunanidhi stress the intention itself as the omen (“if the heart even thinks of it”), while Pope renders it “let man impending ruin’s sign discern.” Either way, injustice is presented as self-destructive, not merely harmful to others. This matches the Manusmriti’s maxim that violated justice destroys the violator, the Qur’anic warning to David that following desire in judgment leads astray, and Plato’s argument that injustice is a disease of the soul.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Justice, being violated, destroys; justice, being preserved, preserves: therefore justice must not be violated, lest violated justice destroy us.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">Manusmriti 8.15 (trans. G. Bühler, Sacred Books of the East vol. 25)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Laws of Manu state the principle dharmo rakṣati rakṣitaḥ: dharma (justice) destroys whoever violates it and protects whoever protects it.</div>
+  <div class="tieback">An almost exact counterpart: whoever abandons justice should know it will destroy them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Be not deceived; God is not mocked: for whatsoever a man soweth, that shall he also reap.&rdquo;</div>
+  <div class="cite">&mdash; Galatians 6:7 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Paul warns that a person inevitably reaps the consequences of what they sow.</div>
+  <div class="tieback">Both warn that wrongdoing carries its own ruin back to the doer.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O David, indeed We have made you a successor upon the earth, so judge between the people in truth and do not follow [your own] desire, as it will lead you astray from the way of Allah.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 38:26 (Saheeh International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">God tells King David to judge by truth and not by personal inclination, warning that following desire leads astray and to punishment.</div>
+  <div class="tieback">The same inner movement as the Kural: when the heart leaves fairness for desire, ruin follows.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;He that soweth iniquity shall reap vanity: and the rod of his anger shall fail.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 22:8 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The proverb says whoever sows injustice will harvest emptiness, and his power will fail.</div>
+  <div class="tieback">Injustice leads to the doer’s own ruin, the self-warning of the Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Whoever through desire, hate or fear, Or ignorance should transgress the Dhamma, All his glory fades away Like the moon during the waning half.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta, Digha Nikaya 31 (trans. Narada Thera)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha names the four biases (agati: desire, hatred, fear, delusion) that lead people to act wrongly, and says whoever is swayed by them declines like the waning moon.</div>
+  <div class="tieback">The agati are exactly the forces that pull a heart away from the “middle.” The Kural and the Sutta both predict decline.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;A cut-throat enemy will not do him such harm as his own perversity will do him; the man without pity will feel repentance in the hour of death.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 20.48 (tr. Hermann Jacobi, SBE 45; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The sermon to King Śreṇika warns that a person&#x27;s own inner corruption ruins them more surely than any outside foe.</div>
+  <div class="tieback">Valluvar asks one whose heart turns from fairness to recognise it as the sign of their own ruin, and the Uttarādhyayana likewise names the perverted heart as the real destroyer.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Do not harbor evil intentions against others in your mind, and you shall not be troubled, O Siblings of Destiny, O friends.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 386, Raag Aasaa, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Arjan ties freedom from suffering to keeping ill will toward others out of one&#x27;s heart.</div>
+  <div class="tieback">The Kural tells the person whose heart turns to wrong to read it as a sign of coming ruin; Gurbani teaches the converse: keep the heart free of ill intent and trouble will not come.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;And there is virgin Justice, the daughter of Zeus, who is honoured and reverenced among the gods who dwell on Olympus, and whenever anyone hurts her with lying slander, she sits beside her father, Zeus the son of Cronos, and tells him of men’s wicked heart, until the people pay for the mad folly …&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 256–262 (trans. Evelyn-White)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hesiod portrays Dike (Justice) as a goddess who reports every injury done to her to Zeus, who then punishes the wrongdoers.</div>
+  <div class="tieback">Both warn that turning away from justice brings certain ruin, and Hesiod even locates the problem in the “wicked heart.”</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Then virtue is the health and beauty and well-being of the soul, and vice the disease and weakness and deformity of the same?&rdquo;</div>
+  <div class="cite">&mdash; Plato, Republic IV, 444d–e (trans. Jowett) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Socrates argues that injustice is to the soul what disease is to the body: it harms the unjust person first.</div>
+  <div class="tieback">Like the Kural, it treats departure from justice as self-destruction.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Former Prime Minister Tanaka and the Lockheed bribery scandal</div>
+  <div class="rle-meta">1976 - 1983 &middot; Tokyo, Japan</div>
+  <div class="quote is-paraphrase">Tanaka Kakuei, prime minister of Japan from 1972 to 1974, was accused of having accepted, while in office, the equivalent of about 2 million US dollars from the American aircraft maker Lockheed to influence All Nippon Airways to buy Lockheed airliners. He was arrested on 27 July 1976, and in 1983 the Tokyo District Court found him guilty and sentenced him to four years in prison and a fine of 500 million yen. He remained free while appealing, suffered a serious stroke in 1985 after which his power and influence waned, and died in 1993 before the appeal was decided.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A leader at the height of power who turned public office toward private gain saw his reputation and influence destroyed, and the case became a lasting symbol of political corruption in Japan.</div>
+  <div class="tieback">The kural warns that when the heart turns from fairness to wrongdoing, ruin is near; Tanaka&#x27;s fall followed from a decision to sell the influence of his office.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-12/" target="_blank" rel="noopener">Thirukkural Chapter 12: நடுவு நிலைமை / Impartiality (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar commentaries, Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-012.html" target="_blank" rel="noopener">நடுவு நிலைமை - அதிகாரம் 12 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html" target="_blank" rel="noopener">Tirukkural of Tiruvalluvar (Tamil script, Unicode e-text)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-4"><a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">The Laws of Manu (Manusmṛti), translated by Georg Bühler, Sacred Books of the East vol. 25 (Oxford, 1886)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta: The Discourse to Sigala (DN 31), trans. Narada Thera</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Republic, Book X (the Myth of Er) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Tanaka-Kakuei" target="_blank" rel="noopener">Tanaka Kakuei (Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.upi.com/Archives/1995/02/22/Japan-renders-Lockheed-verdict-19-years-later/9542793429200/" target="_blank" rel="noopener">Japan renders Lockheed verdict 19 years later (United Press International)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0115.html">&larr; Kural 115</a>
+  <a href="kural-0117.html">Kural 117 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-012.html">Impartiality</a>
+  <a class="skip-btn" href="kural-0121.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

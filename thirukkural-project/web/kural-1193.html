@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1193 — The Solitary Anguish | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1193</h1>
+<p class="adhikaram"><a href="adhikaram-120.html">The Solitary Anguish</a> &middot; Thanippadar Mikudhi &middot; <span class="tamil">தனிப்படர் மிகுதி</span></p>
+
+<div class="tamil-text">வீழுநர் வீழப் படுவார்க்கு அமையுமே
+வாழுநம் என்னும் செருக்கு.</div>
+<div class="translit">Veezhunar veezhap paduvaarkku amaiyume
+vaazhunam ennum serukku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Only a woman truly loved by the one she loves can proudly say, &#x27;We will live happily again,&#x27; even while he is away.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If your mom goes on a trip and you know she loves you and will come back, you can wait bravely and even smile. Knowing you are loved makes waiting easier.</p>
+
+<h2 class="section">University</h2>
+<p>Vīḻunar vīḻappaṭuvār is ‘those who are desired by the ones who desire them’; for such women alone amaiyumē (it is fitting) to hold the ceruukku (pride, proud confidence) of saying vāḻunam, ‘we shall live (in joy).’ In the separation context Parimelazhagar and Varadarasanar read the pride as forward-looking: despite present parting, the loved wife can be sure that reunion and happiness will come; Pappaiah adds ‘by the certainty that he will soon return.’ The heroine’s unspoken complaint is that she cannot claim this pride. Pope: ‘Who love and are beloved to them alone / Belongs the boast, “We’ve made life’s very joys our own.”’ Text identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">When Yama comes for her husband Satyavan, the devoted Savitri follows the god of death, and her steadfast love and wisdom win back Satyavan’s life so that the two can return home together.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Vana Parva, Pativrata-mahatmya Parva (Savitri episode) (paraphrase; cf. tr. K.M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Savitri’s certainty in a love that is mutual gives her the courage to argue with Death himself.</div>
+  <div class="tieback">Savitri embodies the Kural’s ‘we shall live’ confidence that belongs to the wife who knows her love is shared.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Many waters cannot quench love, neither can the floods drown it&rdquo;</div>
+  <div class="cite">&mdash; Song of Solomon 8:7 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Song of Solomon declares love able to survive every flood that might overwhelm it.</div>
+  <div class="tieback">This is the ground of the loved wife’s confidence in the Kural: real, returned love will outlast the present separation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">In the hadith of Umm Zar‘, Aisha relates eleven women describing their husbands; Umm Zar‘ proudly recalls a husband who treated her with lavish kindness, and the Prophet tells Aisha that he is to her as Abu Zar‘ was to Umm Zar‘.</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari/67" target="_blank" rel="noopener">Sahih al-Bukhari, Book of Marriage, hadith of Umm Zar‘ (paraphrase)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">A wife’s happy boast about a loving husband is affirmed by the Prophet as true of his own marriage.</div>
+  <div class="tieback">Umm Zar‘’s pride is the ‘boast’ the Kural says belongs only to a wife whose love is returned.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;for love is strong as death, jealousy is cruel as the grave; the flashes thereof are flashes of fire, a very flame of the LORD.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">Song of Songs 8:6 (JPS 1917, via Mechon-Mamre)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Song’s climax claims for love a strength equal to death itself.</div>
+  <div class="tieback">The loved wife of the Kural can say ‘we shall live’ because she trusts a love as strong as this.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">Describing seven kinds of wives, the Buddha praises the wife who is like a friend: she rejoices on seeing her husband as one rejoices at seeing a long-absent companion.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/index.html" target="_blank" rel="noopener">Bhariya Sutta, Anguttara Nikaya, Book of Sevens (paraphrase)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The ‘friend-wife’ of this sutta is marked by glad, confident affection toward her husband.</div>
+  <div class="tieback">Her joy at reunion is the Kural’s ‘we shall live’, available only where affection runs both ways.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">In the Jain story of Shripal and Mayanasundari, the princess is married off in anger to a man suffering from leprosy; trusting in her husband and in her faith, she remains devoted and confident, and through their shared worship of the Siddhachakra he is healed and the couple prosper.</div>
+  <div class="cite">&mdash; <a href="https://jainqq.org/" target="_blank" rel="noopener">Shripal Ras (Vinayavijaya and Yashovijaya, 17th c.), story of Shripal and Mayanasundari (paraphrase)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Mayanasundari’s calm certainty that she and her husband will flourish together is a celebrated Jain model of faithful love.</div>
+  <div class="tieback">Her confidence echoes the Kural’s ‘we shall live’, though the Jain story credits faith and merit rather than love alone.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;O Nanak, the soul-bride is forever the Lord&#x27;s favorite wife; her Husband Lord does not die, and He shall never leave.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 245, Raag Gauree, Guru Amar Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Amar Das says the soul-bride who is truly loved by the Lord is sure of her happiness, because her Husband never dies and never leaves her.</div>
+  <div class="tieback">The Kural says only a woman loved by the one she loves can say with proud confidence, &#x27;We shall live happily yet&#x27;; Gurbani gives the loved soul-bride the same sure confidence, since her Beloved will never leave.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">After twenty years apart, Penelope tests Odysseus with the secret of their marriage bed, carved from a living olive tree; when he describes it, she knows him, and the two are reunited in the home he built.</div>
+  <div class="cite">&mdash; Homer, Odyssey 23.173-240 (paraphrase) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The bed rooted in a living tree is the sign that their love was fixed on both sides throughout the long separation.</div>
+  <div class="tieback">Penelope’s long patience could hold because, as the Kural says, the one she loved also loved her.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle notes that most people, out of ambition, wish to be loved rather than to love, since being loved is close to being honoured, and that people enjoy being loved for its own sake.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics 8.8, 1159a (paraphrase)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle recognises the special satisfaction and standing that comes from being loved.</div>
+  <div class="tieback">The Kural’s ‘pride’ of the loved wife is the same satisfaction Aristotle describes in being loved.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Sullivan Ballou&#x27;s last letter to his wife Sarah</div>
+  <div class="rle-meta">14 July 1861 &middot; Camp Clark, Washington, D.C., United States</div>
+  <div class="quote is-paraphrase">A week before the First Battle of Bull Run (First Manassas), Union Major Sullivan Ballou wrote a long letter to his wife Sarah, telling her of his love and of the possibility that he might not return. He was killed in the battle. The letter was never mailed; it was found among his belongings when Rhode Island&#x27;s governor went to Virginia to recover the remains of the state&#x27;s soldiers.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The letter became one of the most famous love letters in American history because it speaks of a love so secure that even separation and death could not shake it.</div>
+  <div class="tieback">The kural says only a woman truly loved can say with proud confidence that they will yet live happily even while he is away, and Ballou&#x27;s letter is the kind of assurance that gives a wife that confidence.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-120/" target="_blank" rel="noopener">Thirukkural Chapter 120: தனிப்படர்மிகுதி / The Solitary Anguish (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-120.html" target="_blank" rel="noopener">தனிப்படர் மிகுதி - அதிகாரம் 120 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari/67" target="_blank" rel="noopener">Sahih al-Bukhari, Book of Marriage, hadith of Umm Zar‘</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917), Hebrew-English Bible</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/an/index.html" target="_blank" rel="noopener">Bhariya Sutta: Wives (Anguttara Nikaya, Book of Sevens)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://jainqq.org/" target="_blank" rel="noopener">Shripal Ras (Shripal-Mayanasundari story), by Vinayavijaya and Yashovijaya, 17th century</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.nps.gov/articles/-my-very-dear-wife-the-last-letter-of-major-sullivan-ballou.htm" target="_blank" rel="noopener">&quot;My Very Dear Wife&quot; - The Last Letter of Major Sullivan Ballou</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://housedivided.dickinson.edu/sites/civilwar/2012/08/01/sullivan-ballou-letter/" target="_blank" rel="noopener">Sullivan Ballou Letter</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1192.html">&larr; Kural 1192</a>
+  <a href="kural-1194.html">Kural 1194 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-120.html">The Solitary Anguish</a>
+  <a class="skip-btn" href="kural-1201.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

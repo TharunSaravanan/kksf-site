@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 651 — Purity in Execution | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 651</h1>
+<p class="adhikaram"><a href="adhikaram-066.html">Purity in Execution</a> &middot; Vinaithooymai &middot; <span class="tamil">வினைத்தூய்மை</span></p>
+
+<div class="tamil-text">துணைநலம் ஆக்கம் தரூஉம் வினைநலம்
+வேண்டிய எல்லாந் தரும்.</div>
+<div class="translit">Thunainalam aakkam tharooum vinainalam
+Vendiya ellaan tharum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Good helpers can bring a person success, but good actions bring everything a person could want.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Good friends can help you build a bigger sandcastle. But if you build it the right way, patiently and fairly, you get the castle, you keep your friends, and people want to play with you again. Doing things the right way gives you more than any helper can.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter opens by ranking two kinds of nalam (goodness, excellence): tuṇai-nalam, the excellence of one’s supporters, the theme of the earlier chapter on seeking the help of the great (ch. 45), and vinai-nalam, the goodness or purity of the action itself, which gives the chapter its name, vinai-t-tūymai. Parimelazhagar reads ākkam narrowly as material increase, while vēṇṭiya ellām (all that is desired) takes in fame and merit in this world and the next, so good allies secure only one good while pure action secures all of them. The line sets the ethical frame for this part of the Amaichiyal (chapters on the minister, 64-73): a minister’s competence (ch. 64) and eloquence (ch. 65) are worthless unless the means he uses are clean. Mu. Varadarasanar and Solomon Pappaiah follow this contrast closely, while Kalaignar softens it into a partnership in which allies add strength and good deeds done with them bring every benefit. On the text: ytamizh.com and thirukkural.net both print த்ருஉம், an evident keying error. The sandhi-joined text at thirukkural-thamizh.org has தரூஉம் (tarūum, the alapeṭai lengthening of tarum), and that reading is adopted here.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;By worship of the Lord, who is the source of all beings and who is all-pervading, a man can attain perfection through performing his own work.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 18.46 (Prabhupada, Bhagavad-gita As It Is)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Krishna teaches that one’s own duty, rightly done and offered to God, is itself the path to perfection; nothing outside the right action is needed.</div>
+  <div class="tieback">Like vinai-nalam, rightly performed action is the source from which every good end follows.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 6:33 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Jesus tells his hearers to put righteousness first and trust that the material needs they worry about will follow.</div>
+  <div class="tieback">Both texts say that putting rightness first brings ‘all these things’ along with it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Whoever does righteousness, whether male or female, while he is a believer - We will surely cause him to live a good life, and We will surely give them their reward [in the Hereafter] according to the best of what they used to do.&rdquo;</div>
+  <div class="cite">&mdash; Quran 16:97 (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Quran promises that righteous action brings a good life now and the best reward later.</div>
+  <div class="tieback">Righteous deeds yielding both this-worldly and next-worldly good match Parimelazhagar’s gloss of ‘all that is desired’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Study is not the most important thing, but actions&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 1:17 (trans. Joshua Kulp)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Shimon ben Gamaliel sums up a lifetime among the sages: what counts in the end is not learning or talk but deeds.</div>
+  <div class="tieback">The Kural likewise puts the quality of the deed above every outside aid.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;If with a pure mind a person speaks or acts happiness follows him like his never-departing shadow.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 2 (trans. Buddharakkhita) <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Dhammapada opens by teaching that action from a pure mind brings happiness that never leaves the doer.</div>
+  <div class="tieback">Pure action (tūymai) as the thing that brings every good matches the Kural’s vinai-nalam.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Wilt thou not cease to long for a family? How long wilt thou live in sorrow saying, It is for children? O my heart! there is no advantage that accrues to the soul except the good thou doest, though it be but little.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">Naladiyar, ch. 13 &#x27;The fear of misconduct&#x27;, stanza 10 (English tr. in The Indian Antiquary; wisdomlib.org)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The Naladiyar&#x27;s chapter on the fear of misconduct says that no support from family or dependants profits the soul; only the good one does oneself, however small, brings real gain.</div>
+  <div class="tieback">Valluvar ranks the goodness of one&#x27;s own deeds above the goodness of one&#x27;s supporters; the Naladiyar likewise sets aside what others can do for us and counts only one&#x27;s own good action.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Truth is higher than everything; but higher still is truthful living.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 62, Siree Raag, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Guru Nanak ranks truthful conduct (sach aachaar) above everything, even above knowing the truth.</div>
+  <div class="tieback">The Kural says good allies bring increase, but goodness in the deeds themselves brings everything one could wish for; Guru Nanak likewise places the purity of one&#x27;s own conduct above all else.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Prodicus’ fable, told by Socrates in Xenophon, the young Heracles meets Virtue and Vice at a crossroads, and Virtue tells him the gods give nothing truly good without toil and right effort.</div>
+  <div class="cite">&mdash; Xenophon, Memorabilia 2.1.21-34 (Prodicus’ Choice of Heracles) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Vice offers an easy road to pleasure; Virtue promises real goods, honour, friends and a blessed name, only through honest labour.</div>
+  <div class="tieback">Like the Kural, the myth says the right way of acting, not easy help, wins everything worth having.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle notes that at the Olympic Games the crown goes not to the finest or strongest onlookers but to those who compete, and in the same way it is those who act rightly who win the noble and good things in life.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics 1.8 (1099a)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">For Aristotle happiness is found in virtuous activity itself, not in possessions or outside advantages.</div>
+  <div class="tieback">The Kural too puts the quality of the action ahead of outside supports.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Johnson &amp; Johnson recalls Tylenol nationwide</div>
+  <div class="rle-meta">1982 &middot; United States</div>
+  <div class="quote is-paraphrase">After seven people in the Chicago area died in September 1982 from Extra-Strength Tylenol capsules that someone had laced with cyanide, Johnson &amp; Johnson&#x27;s subsidiary McNeil Consumer Products carried out what was then the largest consumer product recall in American history, about 31 million bottles. Chairman James Burke said the recall and replacement would cost over 100 million dollars and that none of it would be passed on to customers. In November 1982 the company became the first to return to the market with the new tamper-resistant packaging required by the Food and Drug Administration, offering to replace any bottle customers had thrown away.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">The poisonings were not the company&#x27;s fault, yet it chose the costly, public-spirited course, and that conduct rebuilt the trust on which the brand depended.</div>
+  <div class="tieback">The kural says good allies bring increase, but goodness in one&#x27;s own deeds brings everything one could wish for, and Johnson &amp; Johnson set about rebuilding its standing through the integrity of its own response rather than outside help.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-66/" target="_blank" rel="noopener">Thirukkural Chapter 66: வினைத்தூய்மை / Purity in Action (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-066.html" target="_blank" rel="noopener">வினைத்தூய்மை - அதிகாரம் 66 (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah and Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="http://thirukkural-thamizh.org/html/A066.html" target="_blank" rel="noopener">66. வினைத்தூய்மை (Thirukkural, sandhi-joined text)</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">The Nāladiyār (English translation serialised in The Indian Antiquary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">The Choice of Hercules (Prodicus), as recorded in Xenophon, Memorabilia 2.1.21-33 <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.history.com/articles/extra-strength-tylenol-poisonings-1982" target="_blank" rel="noopener">How the 1982 Tylenol Poisonings Nearly Canceled Halloween (Dave Roos)</a> <span class="tier">[web source]</span></li>
+<li id="cite-14"><a href="https://www.washingtonpost.com/archive/politics/1982/11/12/tylenol-is-reintroduced-in-triple-sealed-package/1831aa9c-be08-4c93-a4de-b54e8c0428ed/" target="_blank" rel="noopener">Tylenol Is Reintroduced In Triple-Sealed Package</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0650.html">&larr; Kural 650</a>
+  <a href="kural-0652.html">Kural 652 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-066.html">Purity in Execution</a>
+  <a class="skip-btn" href="kural-0661.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

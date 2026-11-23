@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 279 — Inconsistent Conduct | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 279</h1>
+<p class="adhikaram"><a href="adhikaram-028.html">Inconsistent Conduct</a> &middot; Koodaavozhukkam &middot; <span class="tamil">கூடாவொழுக்கம்</span></p>
+
+<div class="tamil-text">கணைகொடிது யாழ்கோடு செவ்விதுஆங் கன்ன
+வினைபடு பாலால் கொளல்.</div>
+<div class="translit">Kanaikodidhu yaazhkodu sevvidhuaang kanna
+Vinaipadu paalaal kolal.</div>
+
+<h2 class="section">Meaning</h2>
+<p>An arrow is straight but does harm. A lute (a stringed instrument) is bent but makes sweet music. So judge people by what they do, not by how they look.</p>
+
+<h2 class="section">Elementary</h2>
+<p>An arrow looks perfectly straight, but it’s made for hurting. A guitar has a curvy neck, but it makes lovely music. So don’t decide who is good just by how they look — watch what they actually do.</p>
+
+<h2 class="section">University</h2>
+<p>Here Valluvar moves from condemnation to method: how can one tell the hypocrite from the saint? The paired images turn the usual metaphors upside down — கணை (arrow) is straight yet கொடிது (cruel), while யாழ்கோடு (the curved neck of the yazh, the ancient Tamil harp-lute) is bent yet செவ்விது (upright, good). Since செம்மை and கொடுமை mean both ‘straight/crooked’ and ‘good/cruel’, the kural exploits the double meaning to show that visual straightness and moral straightness are different things. The conclusion — வினைபடு பாலால் கொளல், ‘assess by the quality of deeds’ — is a pragmatic epistemology of character that parallels Jesus’ ‘by their fruits ye shall know them’ and the Yaksha’s answer that conduct, not birth or learning, makes a Brahmin.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;It is neither birth, nor study, nor learning, that is the cause of Brahmanahood, without doubt, it is behaviour that constitutes it.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/m03/m03311.htm" target="_blank" rel="noopener">Mahabharata, Vana Parva, Section 311 (tr. K. M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Yudhishthira tells the Yaksha that a person is truly a Brahmin by conduct alone, not by birth or scholarship.</div>
+  <div class="tieback">Same standard as the Kural: judge people by their actions, not by outward markers of status.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Ye shall know them by their fruits. Do men gather grapes of thorns, or figs of thistles?&rdquo;</div>
+  <div class="cite">&mdash; Matthew 7:16 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Right after warning about wolves in sheep’s clothing, Jesus says people are known by what they produce.</div>
+  <div class="tieback">Almost identical rule to the Kural’s: ignore the look, judge by the results.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Verily Allah does not look to your faces and your wealth but He looks to your heart and to your deeds.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/muslim:2564a" target="_blank" rel="noopener">Sahih Muslim 2564c</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet says God judges by hearts and actions, not by appearance or riches.</div>
+  <div class="tieback">Shares the Kural’s rejection of appearance as a measure; adds the heart alongside deeds.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Rabbi said: don’t look at the container but at that which is in it: there is a new container full of old wine, and an old [container] in which there is not even new [wine].&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot.4.20" target="_blank" rel="noopener">Mishnah, Pirkei Avot 4:20 (tr. Joshua Kulp)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Mishnah teaches that the vessel’s look tells you nothing about its contents.</div>
+  <div class="tieback">Like the straight arrow and curved lute, the outward shape misleads; what matters is what the thing really holds and does.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Even though he be well-attired, yet if he is poised, calm, controlled and established in the holy life, having set aside violence towards all beings — he, truly, is a holy man, a renunciate, a monk.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 142 (tr. Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha says someone dressed like an ordinary layperson can still be a true holy man if his conduct is right.</div>
+  <div class="tieback">The ‘curved lute’ case: the wrong look, but the right deeds — judge by conduct.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;By one&#x27;s actions one becomes a Brâhmana, or a Kshattriya, or a Vaisya, or a Sûdra.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 25.33 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jayaghosha teaches that a person&#x27;s real standing comes from conduct, not from birth or outward marks.</div>
+  <div class="tieback">Valluvar says to judge people by their deeds and not by appearance, as the straight arrow is cruel and the bent lute sweet; the Jain verse likewise makes deeds, not outward signs, the measure of a person.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The simmal tree is straight as an arrow; it is very tall, and very thick. … Sweetness and humility, O Nanak, are the essence of virtue and goodness.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 470, Asa di Vaar (salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Asa di Vaar Guru Nanak notes that the silk-cotton tree is straight, tall and imposing, yet birds that come to it leave disappointed, and concludes that sweetness and humility are what make a person good.</div>
+  <div class="tieback">Valluvar says the arrow is straight but cruel and the lute bent but sweet, so people must be judged by their deeds, not their looks; Guru Nanak&#x27;s straight-as-an-arrow tree yields nothing, while humble sweetness is the real worth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When Odysseus returns to Ithaca, Athena disguises him as a ragged old beggar; the suitors mock and abuse him, but he is in fact the rightful king, revealed by his deeds when he strings the great bow.</div>
+  <div class="cite">&mdash; Homer, Odyssey 13 and 21 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">A shabby appearance hides a hero, whose true identity is shown by what he does.</div>
+  <div class="tieback">The ‘bent lute’ half of the Kural: an unimpressive look that hides real worth, known only through action.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Alcibiades compares Socrates to the statues of Silenus sold in shops — grotesque figures that open up to reveal images of the gods inside — saying that Socrates’ ugly, satyr-like exterior hides divine virtue within.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Plato/symposium.html" target="_blank" rel="noopener">Plato, Symposium 215a–b, 216d–217a</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Plato presents Socrates as proof that an unappealing outside can contain the finest character.</div>
+  <div class="tieback">Exactly the Kural’s curved lute: a crooked-looking form that produces something beautiful.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Joseph Merrick, the Elephant Man, finds a home at the London Hospital</div>
+  <div class="rle-meta">1886-1890 &middot; London Hospital, Whitechapel, London, England</div>
+  <div class="quote is-paraphrase">Joseph Merrick was born with severe physical deformities and was exhibited in a freak show before the surgeon Frederick Treves arranged for him to live at the London Hospital in 1886. Treves at first assumed from his appearance and difficult speech that he was mentally impaired, but came to recognise him as intelligent and sensitive; Merrick could read and write and enjoyed books. Public donations allowed him to remain at the hospital until his death in April 1890 at the age of 27.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Merrick&#x27;s story is a lasting lesson that a person&#x27;s appearance can mislead even an expert observer about the person within.</div>
+  <div class="tieback">The kural says the bent-necked lute is sweet while the straight arrow is cruel, so people must be judged by their deeds and not their looks, and Merrick&#x27;s life taught that lesson to Victorian London.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-28/" target="_blank" rel="noopener">Thirukkural Chapter 28: கூடாவொழுக்கம் (Imposture) — text, commentaries and translation</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-028.html" target="_blank" rel="noopener">கூடாவொழுக்கம் — அதிகாரம் 28 — திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/m03/m03311.htm" target="_blank" rel="noopener">The Mahabharata, Book 3: Vana Parva, Section CCCXI (tr. Kisari Mohan Ganguli)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/muslim:2564a" target="_blank" rel="noopener">Sahih Muslim 2564a, Book of Virtue, Enjoining Good Manners and Joining of the Ties of Kinship — &#x27;Do not envy one another... piety is here&#x27;</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot.4.20" target="_blank" rel="noopener">Mishnah, Pirkei Avot 4:20 (Mishnah Yomit tr. Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Plato/symposium.html" target="_blank" rel="noopener">Plato, Symposium, tr. Benjamin Jowett</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Elephant-Man" target="_blank" rel="noopener">Joseph Merrick</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://publishing.rcseng.ac.uk/doi/pdf/10.1308/147363512X13311314198931" target="_blank" rel="noopener">Saints and sinner: Sir Frederick Treves</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0278.html">&larr; Kural 278</a>
+  <a href="kural-0280.html">Kural 280 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-028.html">Inconsistent Conduct</a>
+  <a class="skip-btn" href="kural-0281.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

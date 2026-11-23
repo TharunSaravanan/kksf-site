@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 784 — Friendship | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 784</h1>
+<p class="adhikaram"><a href="adhikaram-079.html">Friendship</a> &middot; Natpu &middot; <span class="tamil">நட்பு</span></p>
+
+<div class="tamil-text">நகுதற் பொருட்டன்று நட்டல் மிகுதிக்கண்
+மேற்சென்று இடித்தற் பொருட்டு.</div>
+<div class="translit">Nagudhar poruttandru nattal migudhikkan
+merchendru idiththar poruttu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>We make friends not just to laugh together, but so that when a friend goes the wrong way, we can step in first and correct them.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine your friend is about to cross the road without looking. A pretend friend just keeps laughing with them. A real friend grabs their arm and says, ‘Stop! That’s dangerous!’ even if it makes them a bit cross. Friends are for fun, but most of all they are for stopping each other from doing something wrong.</p>
+
+<h2 class="section">University</h2>
+<p>This is the chapter’s key statement on the moral purpose of friendship. Nagudhal (நகுதல்) is laughing or merriment; nattal (நட்டல்) is the act of befriending; migudhi (மிகுதி) means excess, that is, a friend’s overstepping or wrongdoing; mēRsenRu (மேற்சென்று) means ‘going ahead, taking the initiative’; and iditthal (இடித்தல், literally ‘striking’) is the classical term for sharp rebuke, related to iḍipparai (இடிப்பார், the rebuking counsellor) in kural 448. Parimelazhagar stresses that the friend must rebuke before the fault grows, without waiting to be asked. Both ytamizh.com and thirukkural.net print மேற்செனறு, which looks like a shared typing error; the standard reading மேற்சென்று (as in Mu. Varadarasanar’s ‘முற்பட்டுச் சென்று’ gloss) is given here.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;They are abundant, O king, that can always speak agreeable words. The speaker, however, is rare, as also the hearer, of words that are disagreeable but medicinal.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/m05/m05037.htm" target="_blank" rel="noopener">Mahabharata, Udyoga Parva, Section XXXVII (trans. K. M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Vidura tells Dhritarashtra that flatterers are everywhere, but rare is the one who will speak, or listen to, unwelcome words that heal.</div>
+  <div class="tieback">Vidura is the friend the Kural describes, who rebukes for the other’s good rather than merely pleasing him.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Faithful are the wounds of a friend; but the kisses of an enemy are deceitful.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 27:6 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The proverb says a friend’s painful honesty can be trusted, while an enemy’s show of affection cannot.</div>
+  <div class="tieback">This is the Kural’s point exactly: a friend is there to strike when needed, not to keep you laughing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Help your brother, whether he is an oppressor or he is an oppressed one. People asked, ‘O Allah’s Messenger! It is all right to help him if he is oppressed, but how should we help him if he is an oppressor?’ The Prophet said, ‘By preventing him from oppressing others.’&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:2444" target="_blank" rel="noopener">Sahih al-Bukhari 2444</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet teaches that helping a brother who does wrong means stopping him.</div>
+  <div class="tieback">As in the Kural, true loyalty means stepping in to stop a friend when he goes too far.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;You shall not hate your kinsfolk in your heart. Reprove your kindred but incur no guilt on their account.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Leviticus.19.17" target="_blank" rel="noopener">Leviticus 19:17 (JPS Tanakh, Gender-Sensitive Edition)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Torah commands open rebuke instead of silent resentment, so that you do not share in another’s wrongdoing.</div>
+  <div class="tieback">Like the Kural, it makes rebuke a duty of love rather than a breach of it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Should one find a man who points out faults and who reproves, let him follow such a wise and sagacious person as one would a guide to hidden treasure. It is always better, and never worse, to cultivate such an association.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 76 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada tells us to value the person who points out our faults as we would a guide to buried treasure.</div>
+  <div class="tieback">This is the rebuking friend of the Kural, and the advice to keep such friends close.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As the virtuous Kitra, for old friendship&#x27;s sake, loved the king who was attached to sensual pleasures, and as he had at heart his welfare, he spoke to him the following words&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 13.15 (Kitra and Sambhûta; tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The monk Kitra, who had been King Brahmadatta&#x27;s companion through several past births, meets him again and, out of that old friendship, bluntly warns him that his pleasures lead to suffering and urges him to give them up.</div>
+  <div class="tieback">The Kural says friendship exists to step forward and rebuke a friend who goes too far, and Kitra does exactly that, speaking against his friend&#x27;s excess because he cares about his welfare.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">According to the Janamsakhi tradition, Guru Nanak stayed at the inn of Sajjan at Tulamba, a man who posed as pious but robbed his guests. Instead of flattering his host, the Guru sang a hymn exposing hollow shininess (now in the Guru Granth Sahib, Ang 729); Sajjan confessed, gave away his ill-gotten goods and turned his house into a dharamsala.</div>
+  <div class="cite">&mdash; <a href="https://eos.learnpunjabi.org/" target="_blank" rel="noopener">The Encyclopaedia of Sikhism, &#x27;Sajjan, Shaikh&#x27; and &#x27;Tulamba&#x27; (paraphrase of the Janamsakhi tradition)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The story shows the Guru as a guest who took the initiative to confront a host&#x27;s wrongdoing, and so saved him.</div>
+  <div class="tieback">The Kural says friendship exists so that we can step in first and rebuke a friend who goes too far; Guru Nanak&#x27;s hymn to Sajjan was just such a timely rebuke that turned him back.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">At the moment Orestes falters before killing his mother, he turns to his silent friend Pylades and asks what to do; Pylades, speaking for the only time in the play, reminds him of Apollo’s command and tells him to hold all men his enemies rather than the gods.</div>
+  <div class="cite">&mdash; <a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0008" target="_blank" rel="noopener">Aeschylus, Libation Bearers 899-902</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Pylades says nothing through the whole play until his friend wavers, and then speaks firmly to hold him to his duty.</div>
+  <div class="tieback">Pylades steps forward at the crucial moment, as the Kural says a friend should.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;If we remonstrate, it should be without bitterness; if we reprove, there should be no word of insult. … ‘There are people who owe more to bitter enemies than to apparently pleasant friends: the former often speak the truth, the latter never.’&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/2808" target="_blank" rel="noopener">Cicero, De Amicitia 24 (trans. E. S. Shuckburgh)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Laelius insists that friends must reprove one another, gently but honestly, and quotes Cato on the danger of merely pleasant friends.</div>
+  <div class="tieback">Cicero and the Kural agree that a friendship that only pleases has failed its purpose.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Ezra Pound urges T. S. Eliot to cut The Waste Land</div>
+  <div class="rle-meta">1922 &middot; Europe</div>
+  <div class="quote is-paraphrase">Before The Waste Land was published in 1922, T. S. Eliot submitted his drafts to his friend and fellow poet Ezra Pound, who had championed Eliot&#x27;s work since they met in London in 1914. Pound urged Eliot to cut several long passages, among them a long section in heroic couplets imitating Pope, and Eliot accepted much of his advice, though not all of it. The drafts with Pound&#x27;s markings were later found among the papers of the New York lawyer John Quinn and published in facsimile in 1971.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Pound&#x27;s blunt criticism is widely credited with shaping a sprawling draft into one of the most influential poems of the twentieth century.</div>
+  <div class="tieback">The kural says friends are not only for laughing together but for stepping in first to rebuke one another when one goes too far, and Pound did exactly this, cutting away his friend&#x27;s excesses.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-79/" target="_blank" rel="noopener">Thirukkural Chapter 79: நட்பு / Friendship (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-079.html" target="_blank" rel="noopener">நட்பு - அதிகாரம் 79 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah and Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/m05/m05037.htm" target="_blank" rel="noopener">The Mahabharata, Book 5: Udyoga Parva, Section XXXVII (Vidura Niti), trans. Kisari Mohan Ganguli</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:2444" target="_blank" rel="noopener">Sahih al-Bukhari 2444, Book of Oppressions, Chapter: Help your brother</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Leviticus.19.17" target="_blank" rel="noopener">Leviticus 19:17, The JPS Tanakh: Gender-Sensitive Edition (Revised JPS, 2023)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://eos.learnpunjabi.org/" target="_blank" rel="noopener">The Encyclopaedia of Sikhism</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0008" target="_blank" rel="noopener">Aeschylus, Libation Bearers, trans. Herbert Weir Smyth (Loeb, 1926)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/2808" target="_blank" rel="noopener">Laelius de Amicitia (On Friendship), in Treatises on Friendship and Old Age (Marcus Tullius Cicero)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.poetryfoundation.org/poets/t-s-eliot" target="_blank" rel="noopener">T. S. Eliot</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.nybooks.com/articles/1971/11/18/the-first-waste-landii/" target="_blank" rel="noopener">The First Waste Land - II (Edmund Wilson)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0783.html">&larr; Kural 783</a>
+  <a href="kural-0785.html">Kural 785 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-079.html">Friendship</a>
+  <a class="skip-btn" href="kural-0791.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 302 — The Not Being Angry | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 302</h1>
+<p class="adhikaram"><a href="adhikaram-031.html">The Not Being Angry</a> &middot; Vekulaamai &middot; <span class="tamil">வெகுளாமை</span></p>
+
+<div class="tamil-text">செல்லா இடத்துச் சினந்தீது செல்லிடத்தும்
+இல்அதனின் தீய பிற.</div>
+<div class="translit">Sellaa idaththuch sinandheedhu sellidaththum
+Il adhanin theeya pira.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Anger at people stronger than you, where it can do nothing, is bad. Anger at people weaker than you, where it can do harm, is worse than anything else.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you get angry at a much bigger kid, you will probably get hurt. If you get angry at a much smaller kid, you might hurt them, and that is even worse. So anger is bad either way: it hurts you, or it makes you hurt someone who can&#x27;t fight back.</p>
+
+<h2 class="section">University</h2>
+<p>This couplet completes the argument of 301 by closing every escape route: anger is bad where it is ineffective (sellaa idam, anger toward the powerful, which rebounds on oneself) and worst of all where it is effective (sellidam, anger toward the weak, which inflicts real injury). Mu. Varadarasanar&#x27;s gloss makes the two cases explicit as &#x27;stronger&#x27; and &#x27;weaker&#x27; persons. The ethical weight falls on the second line: power over others magnifies the moral gravity of anger rather than licensing it. The structure anticipates modern concerns about abuse of authority in households, workplaces, and states, where anger combined with power becomes cruelty.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Mahabharata, the ascetic Kaushika burns a crane to death with an angry glance after it soils him; later, when a devoted housewife keeps him waiting, his anger has no effect on her, and she rebukes him with the words that she is not a crane, directing him to learn true dharma from a humble meat-seller.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Vana Parva (Markandeya-Samasya Parva, the tale of Kaushika, the devoted wife, and the Dharmavyadha)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Kaushika&#x27;s anger kills a helpless bird but is powerless against a righteous woman, and the story treats both as evidence of his spiritual failure.</div>
+  <div class="tieback">The two halves of the kural in narrative form: anger at the weak is destructive evil, and anger at the strong is futile and humiliating.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And, ye masters, do the same things unto them, forbearing threatening: knowing that your Master also is in heaven; neither is there respect of persons with him.&rdquo;</div>
+  <div class="cite">&mdash; Ephesians 6:9 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul tells those who hold power over servants to give up threats, reminding them that they themselves answer to a higher Master.</div>
+  <div class="tieback">Matches the kural&#x27;s second line: where you have power over the weak, harsh anger and threats are especially wrong.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Bear in mind, Abu Mas&#x27;ud; verily Allah has more dominance upon you than you have upon your slave.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/muslim:1659a" target="_blank" rel="noopener">Sahih Muslim 1659a</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Abu Mas&#x27;ud was whipping his slave in intense anger when the Prophet stopped him with this reminder; he dropped the whip and vowed never to beat a servant again.</div>
+  <div class="tieback">Directly illustrates the kural&#x27;s warning that anger toward those under your power is the worst evil, and that you yourself stand under a greater power.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;A person should never impose excessive fear upon the members of his household, as the husband of the concubine of Gibeah imposed excessive fear upon her and this ultimately caused the downfall of many tens of thousands of Jews.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Gittin.6b" target="_blank" rel="noopener">Babylonian Talmud, Gittin 6b (William Davidson/Koren-Steinsaltz trans., via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rav Hisda warns that intimidating those under your authority at home can spiral into catastrophe, citing the story in Judges 19–20.</div>
+  <div class="tieback">Like the kural, the Talmud singles out anger and intimidation directed at dependents as especially destructive.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Angered &amp; displeased, she grabbed hold of a rolling pin and gave her a whack over the head, cutting it open.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/mn/mn.021x.than.html" target="_blank" rel="noopener">Majjhima Nikaya 21, Kakacupama Sutta (trans. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Lady Vedehika was famed for gentleness, but her slave Kali tested her; when provoked, the mistress struck her only slave, and her reputation became &#x27;vicious&#x27; and &#x27;violent&#x27;.</div>
+  <div class="tieback">The story shows that anger vented on someone powerless is the true test of character and the worst of evils, just as the kural says.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;He will sink through anger; he will go down through pride; delusion will block up his path; through greed he will incur dangers in both worlds.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 9.54 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">King Nami tells the disguised Indra that each of the four passions (kaṣāyas) drags down the person who harbours it, and anger comes first.</div>
+  <div class="tieback">This matches the Kural&#x27;s first half: anger harms the one who feels it, even when it cannot touch its target. It does not match the second half, which says anger against the weak is the worst evil of all.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;O anger, you are the root of conflict; compassion never rises up in you.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1358, Salok Sahaskriti, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In the Salok Sahaskriti, Guru Arjan addresses anger directly as the source of strife and as wholly without compassion. Anger (krodh) is one of the five thieves in Sikh teaching.</div>
+  <div class="tieback">The Kural says anger harms oneself when vented on the strong and is the worst evil when vented on the weak. Guru Arjan names what makes it so evil against the weak: it has no compassion.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;A plain man cannot stand against the anger of a king, who if he swallow his displeasure now, will yet nurse revenge till he has wreaked it.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, Iliad, Book 1 (trans. Samuel Butler)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The seer Calchas fears Agamemnon&#x27;s anger, and indeed Agamemnon&#x27;s harsh treatment of the helpless priest Chryses brings a plague on the army, while his quarrel with the stronger Achilles brings disaster on the Greeks.</div>
+  <div class="tieback">Iliad Book 1 shows both halves: anger at the powerless (Chryses) is cruelty, and anger at the powerful (Achilles) rebounds on oneself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Why should I make my slave atone by stripes and manacles for having answered me too loudly or having put on a stubborn look, or muttered something which I did not catch? Who am I, that it should be a crime to shock my ears?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Of_Anger" target="_blank" rel="noopener">Seneca, On Anger (De Ira), Book III (trans. Aubrey Stewart, 1900)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Seneca argues against anger at dependents, and elsewhere in the same book praises Augustus for stopping Vedius Pollio from feeding a slave to lampreys over a broken cup.</div>
+  <div class="tieback">Seneca, like the kural, finds anger most shameful where one has total power over its victim.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">John McEnroe is defaulted from the Australian Open</div>
+  <div class="rle-meta">21 January 1990 &middot; Melbourne, Australia</div>
+  <div class="quote is-paraphrase">Playing Mikael Pernfors in the fourth round of the 1990 Australian Open, John McEnroe received a warning for glaring at a lineswoman and then a point penalty for cracking his racket. When he protested and swore at the Grand Slam chief of supervisors, the umpire defaulted him from the match. He became the first player since 1963 to be disqualified from a Grand Slam tournament for misconduct, and afterwards accepted that he had himself to blame.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">McEnroe&#x27;s anger was aimed at officials he had no power to overrule, so it could change nothing except the outcome for himself.</div>
+  <div class="tieback">The kural says anger directed where it cannot prevail only harms oneself, and McEnroe&#x27;s outburst against the officials cost him the match he had been leading.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-31/" target="_blank" rel="noopener">Thirukkural Chapter 31 – வெகுளாமை / Restraining Anger (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://dheivegam.com/thirukkural-vegulaamai-adhikaram/" target="_blank" rel="noopener">திருக்குறள் அதிகாரம் 31 – வெகுளாமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/muslim:1659a" target="_blank" rel="noopener">Sahih Muslim 1659a (Book of Oaths: Treatment of slaves)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Gittin.6b" target="_blank" rel="noopener">Babylonian Talmud, Gittin 6b (William Davidson Edition, Koren-Steinsaltz English)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/mn/mn.021x.than.html" target="_blank" rel="noopener">Kakacupama Sutta: The Simile of the Saw (MN 21, excerpt; trans. Thanissaro Bhikkhu)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, The Iliad, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://en.wikisource.org/wiki/Of_Anger" target="_blank" rel="noopener">Seneca, Of Anger (De Ira), trans. Aubrey Stewart (1900)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.history.com/this-day-in-history/january-21/john-mcenroe-disqualified-from-the-australian-open" target="_blank" rel="noopener">John McEnroe disqualified from the Australian Open (HISTORY.com Editors)</a> <span class="tier">[web source]</span></li>
+<li id="cite-13"><a href="https://www.tennis.com/news/articles/tbt-1990-john-mcenroe-defaulted-in-fourth-round-of-australian-open" target="_blank" rel="noopener">TBT, 1990: John McEnroe defaulted in fourth round of Australian Open (Joel Drucker)</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0301.html">&larr; Kural 301</a>
+  <a href="kural-0303.html">Kural 303 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-031.html">The Not Being Angry</a>
+  <a class="skip-btn" href="kural-0311.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

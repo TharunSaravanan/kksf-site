@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 827 — Unreal Friendship | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 827</h1>
+<p class="adhikaram"><a href="adhikaram-083.html">Unreal Friendship</a> &middot; Koodaa Natpu &middot; <span class="tamil">கூடா நட்பு</span></p>
+
+<div class="tamil-text">சொல்வணக்கம் ஒன்னார்கண் கொள்ளற்க வில்வணக்கம்
+தீங்கு குறித்தமை யான்.</div>
+<div class="translit">Solvanakkam onnaarkan kollar̲ka vilvanakkam
+theengu kur̲iththamai yaan.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Do not trust an enemy’s polite, bowing words. A bow bends low only so it can shoot and do harm.</p>
+
+<h2 class="section">Elementary</h2>
+<p>When an archer pulls back a bow, it bends down low, almost like it is bowing politely. But that bend is what sends the arrow flying. Sometimes people who don’t like you act extra polite right before they try to hurt you.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet turns on a pun in vaṇakkam (வணக்கம்), which means both ‘bowing, reverence’ and ‘bending’: sol-vaṇakkam is ‘humility in speech’, vil-vaṇakkam ‘the bending of a bow’. Onnaar (ஒன்னார்) are those who are not one with us, enemies. Since the bow’s bend ‘signals harm’ (theengu kuṟiththamaiyaan, தீங்கு குறித்தமையான்), a foe’s deferential words should be read the same way; Pappaiah and Kalaignar draw out the simile in this sense, and Pope translates ‘pliant speech’ and ‘pliant bow’. The text is identical in ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Ravana, planning to abduct Sita, approaches her hermitage disguised as a gentle wandering ascetic, praising her with courteous and reverent words until she offers him hospitality; then he reveals his true form and carries her off.</div>
+  <div class="cite">&mdash; <a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Valmiki Ramayana, Aranya Kanda, Sargas 46-49</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Humble, respectful speech is the opening move of an act of violence.</div>
+  <div class="tieback">Ravana’s bowing words are the bent bow of the Kural, curved for harm.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Judas, betrayest thou the Son of man with a kiss?&rdquo;</div>
+  <div class="cite">&mdash; Luke 22:48 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Judas greets Jesus with a disciple’s kiss of respect, the agreed signal for his arrest.</div>
+  <div class="tieback">A gesture of reverence used as the trigger for harm is the Kural’s bending bow.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O you who have believed, do not take as intimates those other than yourselves, for they will not spare you [any] ruin. They wish you would have hardship. Hatred has already appeared from their mouths, and what their breasts conceal is greater.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 3:118 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an warns against taking as intimates those whose words already betray hostility and whose hearts hide more.</div>
+  <div class="tieback">Like the Kural, it tells believers not to accept hostile people’s outward speech as friendship.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Wounds by a loved one are long lasting; / The kisses of an enemy are profuse.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Proverbs 27:6 (Revised JPS 2023, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Proverbs contrasts a true friend’s honest blows with an enemy’s lavish shows of affection.</div>
+  <div class="tieback">An enemy’s profuse kisses are the foe’s humble words that the Kural says not to accept.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;In four ways, young householder, should one who flatters be understood as a foe in the guise of a friend: (i) he approves of his friend&#x27;s evil deeds, (ii) he disapproves his friend&#x27;s good deeds, (iii) he praises him in his presence, (iv) he speaks ill of him in his absence.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta, DN 31 (trans. Narada Thera)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The flatterer praises to your face and undermines you behind your back.</div>
+  <div class="tieback">His praise is the respectful ‘bowing’ speech that the Kural says hides harm.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The absence of benevolence of disposition in him whose form is beautiful is like water mixed with milk, that is pleasant to drink. For those who are wise, to become companions of the wicked is like the nâgâ playing with the female cobra.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">Nālaṭiyār, ch. 24 (&#x27;Improper Friendship&#x27;), st. 10 (English translation in The Indian Antiquary, via wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Nālaṭiyār&#x27;s chapter on improper friendship says a pleasing exterior can hide a lack of goodwill, and that the wise who keep company with the wicked are like a snake playing with a deadly cobra.</div>
+  <div class="tieback">Valluvar says a foe&#x27;s humble, bowing speech is like the bend of a bow, which signals harm; the Nālaṭiyār similarly warns that a pleasant surface and playful closeness can hide venom.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Everyone bows down to himself; no one bows down to another. … The sinner, like the deer hunter, bows down twice as much. But what can be achieved by bowing the head, when the heart is impure?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 470, Raag Aasaa, Asa Ki Vaar (salok 1 before pauri 14), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Asa Ki Vaar Guru Nanak observes that the hunter stalking a deer bends lowest of all, so deep bowing can serve harm, and bowing means nothing when the heart is impure.</div>
+  <div class="tieback">The Kural says a foe&#x27;s humble speech is like the bending of a bow, which bends only to harm; Guru Nanak&#x27;s sinner who bows twice as much, like the hunter, makes the same point.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When Agamemnon returns from Troy, Clytemnestra greets him with an elaborate, flattering speech of welcome and has rich purple tapestries spread for him to walk on into the palace, where she then kills him.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0004" target="_blank" rel="noopener">Aeschylus, Agamemnon (the carpet scene)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Extravagant reverence is the prelude to murder.</div>
+  <div class="tieback">Clytemnestra’s bowing welcome is the Kural’s bent bow: deference that signals harm.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Sun Tzu advises that when the enemy’s envoys use humble words while the enemy steps up its preparations, it is a sign that he is about to advance.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/132" target="_blank" rel="noopener">Sun Tzu, The Art of War, Chapter IX (trans. Lionel Giles)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Strategic thought reads humility from a foe as a warning, not a reassurance.</div>
+  <div class="tieback">Sun Tzu and Valluvar both read a foe’s humble speech the way one reads a drawn bow.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Japan&#x27;s envoys keep negotiating in Washington as the Pearl Harbor fleet sails</div>
+  <div class="rle-meta">26 November - 7 December 1941 &middot; Washington, D.C., and Pearl Harbor, Hawaii, United States</div>
+  <div class="quote is-paraphrase">Through late 1941 Ambassador Kichisaburo Nomura and special envoy Saburo Kurusu held talks in Washington with Secretary of State Cordell Hull, holding out hope of a negotiated settlement. On 26 November 1941 a Japanese carrier fleet secretly left the Kuril Islands for Hawaii while the talks continued. On 7 December the envoys reached Hull&#x27;s office with Japan&#x27;s reply shortly after 2 p.m. Washington time, after the attack on Pearl Harbor had already begun.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Courteous diplomacy continued in Washington while a striking force was already on its way, so the talks gave no warning of what was coming.</div>
+  <div class="tieback">The kural says a foe&#x27;s humble, bowing speech should not be trusted, just as a bow bends only to do harm, and the polite negotiations ran side by side with the preparation of the attack.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-83/" target="_blank" rel="noopener">Thirukkural Chapter 83: கூடாநட்பு / Unreal Friendship (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://thirukkural.net/ta/kural/adhigaram-083.html" target="_blank" rel="noopener">கூடா நட்பு - அதிகாரம் 83 - திருக்குறள் (with Puliyur Kesigan, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Vālmīki Rāmāyaṇa (Bāla Kāṇḍa: the putrakāmeṣṭi of Daśaratha; Ayodhyā Kāṇḍa: Kausalyā and Rāma)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The JPS Tanakh: Gender-Sensitive Edition (Revised JPS, 2023)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta: The Discourse to Sigala (Digha Nikaya 31), tr. Narada Thera</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">The Nāladiyār (English translation serialised in The Indian Antiquary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0004" target="_blank" rel="noopener">Aeschylus, Agamemnon (Oresteia)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/132" target="_blank" rel="noopener">Sun Tzu, The Art of War (tr. Lionel Giles, 1910)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.nps.gov/articles/pearlattackww2.htm" target="_blank" rel="noopener">The Pearl Harbor Attack</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.nationalww2museum.org/war/articles/road-to-pearl-harbor-short-fuse" target="_blank" rel="noopener">The Road to Pearl Harbor: The Short Fuse</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.britannica.com/topic/20th-century-international-relations-2085155/Japans-challenge" target="_blank" rel="noopener">20th-century international relations: Japan&#x27;s challenge</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0826.html">&larr; Kural 826</a>
+  <a href="kural-0828.html">Kural 828 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-083.html">Unreal Friendship</a>
+  <a class="skip-btn" href="kural-0831.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

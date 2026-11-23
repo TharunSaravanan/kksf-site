@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 716 — The Knowledge of the Council Chamber | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 716</h1>
+<p class="adhikaram"><a href="adhikaram-072.html">The Knowledge of the Council Chamber</a> &middot; Avaiyarithal &middot; <span class="tamil">அவையறிதல்</span></p>
+
+<div class="tamil-text">ஆற்றின் நிலைதளர்ந் தற்றே வியன்புலம்
+ஏற்றுணர்வார் முன்னர் இழுக்கு.</div>
+<div class="translit">Aatrin nilaithalarndh thatre viyanpulam
+Etrunarvaar munnar izhukku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Making a mistake in speech in front of people who understand many subjects is like slipping and falling off the right path.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A spelling mistake in a note to your friend is no big deal. The same mistake in the final round of a spelling bee, in front of the judges, feels like tripping on stage. Mistakes count most in front of experts.</p>
+
+<h2 class="section">University</h2>
+<p>Viyanpulam (wide fields, meaning vast areas of learning) etrunarvaar (those who have received and understood them) are the most demanding audience there is, and an izhukku (slip or lapse) before them is compared to aatrin nilaithalarndhatru, losing one’s footing on the way. Commentators disagree about aaru. Parimelazhagar and most modern commentators (Mu. Varadarasanar, Solomon Pappaiah, Kalaignar) take it as the path of right conduct, so a verbal slip before the learned is as disgraceful as a good man’s moral lapse. Puliyur Kesikan takes aaru as a river and reads the image as a swimmer losing his footing mid-stream, so the lapse is dangerous and hard to recover from. The kural thus explains why 715’s restraint matters: before the learned the cost of error is very high. The text agrees in all sources; the sandhi text reads “ஆற்றி னிலைதளர்ந் தற்றே வியன்புல மேற்றுணர்வார் முன்ன ரிழுக்கு”.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">At King Janaka’s sacrifice, the boy-sage Ashtavakra challenges Bandin, the court debater who had defeated and drowned many scholars. In the debate before the learned assembly Ashtavakra wins, and Bandin, now silenced, meets the same fate he had imposed on others.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m03/index.htm" target="_blank" rel="noopener">Mahabharata, Vana Parva, Sections 132-134 (story of Ashtavakra), trans. K. M. Ganguli</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Mahabharata tells how a famous debater’s failure before an assembly of the learned brought his complete downfall.</div>
+  <div class="tieback">Bandin’s fall is the Kural’s image made literal: a slip before the learned is a fatal loss of footing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For in many things we offend all. If any man offend not in word, the same is a perfect man, and able also to bridle the whole body.&rdquo;</div>
+  <div class="cite">&mdash; James 3:2 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">James treats stumbling in speech as the hardest failing to avoid, and calls the person who never slips in word perfect.</div>
+  <div class="tieback">The Kural’s izhukku, a slip of speech, is the stumbling James speaks of.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;A slave of Allah may utter a word without thinking whether it is right or wrong, he may slip down in the Fire as far away a distance equal to that between the east.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6477" target="_blank" rel="noopener">Sahih al-Bukhari 6477 (narrated by Abu Huraira)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Prophet warns that one careless word can make a person slip and fall a great distance.</div>
+  <div class="tieback">The hadith uses the same picture of a verbal slip as a fall, as the Kural does.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;To slip upon a pavement is better than to slip with the tongue: so the fall of the wicked shall come speedily.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://ebible.org/eng-kjv/SIR18.htm" target="_blank" rel="noopener">Sirach (Ecclesiasticus) 20:18 (KJV Apocrypha)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Ben Sira compares a slip of the tongue with a physical fall, and judges the verbal one worse.</div>
+  <div class="tieback">This is the Kural’s own comparison, a verbal slip likened to losing one’s footing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">Saccaka, a famous debater, boasts that he can make the Buddha tremble. In front of a large assembly of Licchavis he is refuted, and then sits silent, dismayed, with shoulders drooping and head bowed, unable to reply.</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/mn35" target="_blank" rel="noopener">Culasaccaka Sutta, Majjhima Nikaya 35</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The sutta shows how a proud speaker’s reputation collapses at once when he stumbles before a discerning audience.</div>
+  <div class="tieback">Saccaka’s humiliation is the Kural’s izhukku before the learned, a public loss of footing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;He should not pervert nor render obscure (the truth); he should fabricate neither text nor meaning, being a saviour; being devoted to the Teacher and considering well his words, he delivers faithfully what he has learned.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga I.14.26 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The Jain expounder must speak with great care, because a slip in handing on the doctrine distorts the truth that others rely on.</div>
+  <div class="tieback">The Kural compares a slip of speech before the deeply learned to falling from the path, and the Jain verse likewise treats error in learned speech as a serious lapse to guard against.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;O Nanak, speaking insipid words, the body and mind become insipid. He is called the most insipid of the insipid; the most insipid of the insipid is his reputation.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 473, Raag Aasaa, Asa ki Vaar (salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Guru Nanak warns that careless, graceless speech spoils the speaker inwardly and ruins his name.</div>
+  <div class="tieback">The Kural compares a slip of speech before the deeply learned to losing one&#x27;s footing on the path; Guru Nanak says bad speech brings a fall in one&#x27;s whole standing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">The Thracian singer Thamyris boasted that he could out-sing the Muses themselves. In the contest he failed before them, and they maimed him and took away his gift of song.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, Iliad 2.594-600 (trans. Samuel Butler)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Homer’s brief story shows how overreaching before the greatest masters of an art ends in disgrace.</div>
+  <div class="tieback">Failing before the Muses, the ultimate learned audience, is the Kural’s slip before those of vast learning.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Socrates describes questioning men with a reputation for wisdom, first politicians, then poets and craftsmen, and exposing, often in front of listeners, that they did not know what they claimed to know. This earned him their lasting resentment.</div>
+  <div class="cite">&mdash; Plato, Apology 21b-22e <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Plato shows how damaging it is to have one’s claim to knowledge fail under the questioning of someone more discerning.</div>
+  <div class="tieback">Socrates’ targets suffered what the Kural warns of: a lapse exposed before a keen examiner.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Benjamin Disraeli&#x27;s maiden speech is shouted down in the House of Commons</div>
+  <div class="rle-meta">1837 &middot; House of Commons, London, England, United Kingdom</div>
+  <div class="quote is-paraphrase">Benjamin Disraeli, elected for Maidstone in 1837, was already ridiculed for his dandified appearance and affected manner when he rose to make his first speech in the House of Commons. Members heckled and mocked him, and he defiantly declared as he sat down that the time would come when they would hear him. He went on to become a celebrated parliamentary debater and, in 1868 and again from 1874, prime minister.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Before the most demanding audience in the country, a gifted speaker&#x27;s misjudged first appearance turned into a famous humiliation that took him years to overcome.</div>
+  <div class="tieback">The kural compares a slip in speech before learned and experienced people to losing one&#x27;s footing on the path, and Disraeli&#x27;s maiden speech was just such a fall before the Commons.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-72/" target="_blank" rel="noopener">Thirukkural Chapter 72: அவையறிதல் / The Knowledge of the Council Chamber (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-072.html" target="_blank" rel="noopener">அவையறிதல் - அதிகாரம் 72 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah and Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="http://thirukkural-thamizh.org/html/A072.html" target="_blank" rel="noopener">72. அவையறிதல் (அவையின் தன்மை அறிந்து பேசுதல்) — Thirukkural, sandhi-joined text</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.sacred-texts.com/hin/m03/index.htm" target="_blank" rel="noopener">The Mahabharata, Book 3: Vana Parva, Sections CXXXII-CXXXIV (Ashtavakra and Bandin at Janaka’s court), trans. Kisari Mohan Ganguli</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/bukhari:6477" target="_blank" rel="noopener">Sahih al-Bukhari 6477 (To Make the Heart Tender: To protect one&#x27;s tongue), trans. Muhsin Khan</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://ebible.org/eng-kjv/SIR18.htm" target="_blank" rel="noopener">Ecclesiasticus (The Wisdom of Jesus ben Sira), King James Version with Apocrypha (1611)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://suttacentral.net/mn35" target="_blank" rel="noopener">Cūḷasaccaka Sutta: The Shorter Discourse to Saccaka (Majjhima Nikaya 35)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga (Sutrakritanga)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, The Iliad, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12">Apology (Plato (recording Socrates)) <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.gov.uk/government/history/past-prime-ministers/benjamin-disraeli-the-earl-of-beaconsfield" target="_blank" rel="noopener">Benjamin Disraeli, the Earl of Beaconsfield (History of the UK Government)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://kids.britannica.com/students/article/Benjamin-Disraeli/274021" target="_blank" rel="noopener">Benjamin Disraeli (Students) (Britannica Kids)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0715.html">&larr; Kural 715</a>
+  <a href="kural-0717.html">Kural 717 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-072.html">The Knowledge of the Council Chamber</a>
+  <a class="skip-btn" href="kural-0721.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

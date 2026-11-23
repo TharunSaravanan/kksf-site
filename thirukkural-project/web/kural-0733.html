@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 733 — The Land | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 733</h1>
+<p class="adhikaram"><a href="adhikaram-074.html">The Land</a> &middot; Naadu &middot; <span class="tamil">நாடு</span></p>
+
+<div class="tamil-text">பொறையொருங்கு மேல்வருங்கால் தாங்கி இறைவற்கு
+இறையொருங்கு நேர்வது நாடு.</div>
+<div class="translit">Poraiyorungu melvarungaal thaangi iraivarku
+iraiyorungu nervadhu naadu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A true country can carry heavy burdens that fall on it all at once, and still pay its ruler all the taxes it owes.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Picture a strong family. When cousins suddenly arrive because their house was flooded, the family makes room and shares its food, and it still pays its bills on time. A good country is strong in the same way.</p>
+
+<h2 class="section">University</h2>
+<p>Porai is ‘burden’ and orungu ‘all together’, so the first line describes a load that arrives all at once. Parimelazhagar specifies the load as people fleeing from neighbouring lands in distress, and Mu. Varadarasanar and Solomon Pappaiah follow him, Pappaiah adding refugees from war and natural disaster. The second line plays on the double sense of irai: iraivan is the king and irai is the tax due to him, so a land ‘yields fully the king’s due to the king’ (iraivarku irai orungu nervadhu). The kural therefore measures a country’s strength by its surplus, since only a land with reserves can absorb strangers and still pay its revenue gladly. The sandhi text reads ‘மேல்வருங்காற் றாங்கி யிறைவற் கிறையொருங்கு’, the same words joined.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;As the leech, the calf, and the bee take their food little by little, even so must the king draw from his realm moderate annual taxes.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/manu/manu02.htm" target="_blank" rel="noopener">Manusmriti 7.129 (trans. G. Bühler)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Manu tells the king to take taxes gently, a little at a time, so that the country is never drained.</div>
+  <div class="tieback">The Kural’s land pays its full dues willingly, and Manu explains the other half of that bargain: the king must tax lightly.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For for this cause pay ye tribute also: for they are God’s ministers, attending continually upon this very thing. Render therefore to all their dues: tribute to whom tribute is due; custom to whom custom.&rdquo;</div>
+  <div class="cite">&mdash; Romans 13:6-7 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul tells the Christians in Rome to pay taxes and customs to the authorities as a duty.</div>
+  <div class="tieback">Paul’s ‘render to all their dues’ is the attitude of the Kural’s land, which gives the king his due in full.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And [also for] those who were settled in al-Madinah and [adopted] the faith before them. They love those who emigrated to them and find not any want in their breasts of what the emigrants were given but give [them] preference over themselves, even though they are in privation.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 59:9 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an praises the Ansar of Medina, who welcomed the emigrants from Mecca and shared with them even when they themselves were in need.</div>
+  <div class="tieback">Medina carrying the load of the emigrants is exactly the burden Parimelazhagar sees in this kural: newcomers arriving all at once.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Under Solomon, the Book of Kings says, Judah and Israel were as many as the sand of the sea, eating, drinking and rejoicing; twelve district officers each supplied the king’s household for one month of the year, and the people dwelt safely, every man under his vine and fig tree.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">1 Kings 4:7, 4:20 and 5:5 (Sefaria numbering)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Solomon’s kingdom is shown as so prosperous that it fed a very large population and also kept the royal court supplied.</div>
+  <div class="tieback">This is the Kural’s strong land: it carries a great population and still meets the king’s dues in full.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Kutadanta Sutta the Buddha tells of a king whose land is plagued by bandits. His wise chaplain advises him not to raise taxes or punish, but to give seed and fodder to farmers, capital to traders and proper wages to officials. The people prosper, crime ends, and the king’s revenue grows.</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/dn5" target="_blank" rel="noopener">Digha Nikaya 5, Kutadanta Sutta</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The story teaches that a prosperous people is what makes a ruler’s revenue secure, not heavier taxes.</div>
+  <div class="tieback">The Kural’s land pays the king in full because it has surplus; the Kutadanta story shows how that surplus is created.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Karuna-Dana means gifts or offerings made out of compassion to any one who deserves it, being hungry, thirsty, diseased, distressed, disabled, helpless, or the like.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.com/library/jain-books/books-on-line/jainworld-books-in-indian-languages/the-jaina-path-of-ahimsa/basic-positivity-of-ahimsa/" target="_blank" rel="noopener">&#x27;Basic Positivity of Ahimsa&#x27;, in The Jaina Path of Ahimsa (online book, jainworld.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jain lay ethics urges the householder to give compassionate gifts (karuna-dana), commonly grouped as food, medicine, knowledge and protection from fear, to anyone in need, human or animal.</div>
+  <div class="tieback">Commentators read this Kural&#x27;s sudden burden as people fleeing distress in other lands; the Jain duty of compassionate giving, including protection from fear, is the closest Jain counterpart to a land that can absorb such a burden.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">Under Guru Amar Das the Guru ka Langar became still more renowned: he expected every visitor to eat in it before seeing him, and Emperor Akbar is said to have eaten there like any other pilgrim. Guru Angad had called Amar Das the home of the homeless and the shelter of the unsheltered, and as Guru he organised twenty-two preaching districts whose leaders transmitted the disciples&#x27; offerings to Goindval.</div>
+  <div class="cite">&mdash; <a href="https://www.thesikhencyclopedia.com/amar-das-guru/" target="_blank" rel="noopener">Encyclopaedia of Sikhism (ed. Harbans Singh, Punjabi University, Patiala), entry Amar Das, Guru</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The langar was built to absorb whoever arrived, however many and however suddenly, while the community&#x27;s offerings still flowed in an orderly way to the centre.</div>
+  <div class="tieback">The Kural praises a land that can carry a sudden influx of people and still pay its ruler&#x27;s dues in full; Guru Amar Das&#x27;s langar and offering network did the same for the Sikh community.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;We will recoup ourselves by the levy of a general rate; for private individuals cannot be expected to bear the burden of such a handsome present.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, Odyssey 13 (trans. Samuel Butler)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">King Alcinous of the Phaeacians has his nobles give rich gifts to the stranger Odysseus and says the cost will be met by a levy on the whole people.</div>
+  <div class="tieback">The Phaeacian land shoulders the cost of a stranger and meets it through a common levy, much as the Kural’s land bears a sudden burden and pays its dues.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Productive of subsistence not only to its own people, but also to outsiders on occasions of calamities ... capable of bearing the burden of a vast army and heavy taxation ... these are the qualities of a good country.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://franpritchett.com/00litlinks/kautilya/book06.htm" target="_blank" rel="noopener">Kautilya, Arthashastra 6.1 (trans. R. Shamasastry)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Kautilya lists the marks of a good country (janapada), including feeding outsiders in times of calamity and bearing heavy taxation.</div>
+  <div class="tieback">Kautilya names both halves of this kural: supporting outsiders in their distress and carrying the burden of the king’s taxes.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Edict of Potsdam opens Brandenburg to Huguenot refugees</div>
+  <div class="rle-meta">29 October 1685 &middot; Potsdam, Brandenburg (now Germany)</div>
+  <div class="quote is-paraphrase">After Louis XIV revoked the Edict of Nantes, which had protected French Protestants, Elector Frederick William of Brandenburg issued the Edict of Potsdam offering the Huguenots refuge. It promised help with travel, free choice of where to settle, houses and building materials, tax exemptions, the right to practise their trades and their own French-language churches. At least 20,000 Huguenots settled in his lands, which had been thinned by the Thirty Years&#x27; War.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A land with resources to spare took in a sudden wave of refugees and turned them into farmers, artisans and manufacturers who strengthened the state.</div>
+  <div class="tieback">The kural praises the country that can bear a heavy burden that falls on it all at once, which Parimelazhagar explains as people fleeing from neighbouring lands, and Brandenburg&#x27;s welcome of the Huguenots is a classic example.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-74/" target="_blank" rel="noopener">Thirukkural Chapter 74: நாடு / The Land (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A074.html" target="_blank" rel="noopener">74. நாடு (நாட்டிற்குரிய இலக்கணம்) — Thirukkural, sandhi-joined text</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/manu/manu02.htm" target="_blank" rel="noopener">The Laws of Manu, tr. Georg Bühler (Sacred Books of the East, vol. 25, 1886)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://suttacentral.net/dn5" target="_blank" rel="noopener">Kūṭadanta Sutta, Dīgha Nikāya 5</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://jainworld.com/library/jain-books/books-on-line/jainworld-books-in-indian-languages/the-jaina-path-of-ahimsa/basic-positivity-of-ahimsa/" target="_blank" rel="noopener">The Jaina Path of Ahimsa, chapter &#x27;Basic Positivity of Ahimsa&#x27; (online book)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-9"><a href="https://www.thesikhencyclopedia.com/amar-das-guru/" target="_blank" rel="noopener">Amar Das, Guru (Encyclopaedia of Sikhism) (Encyclopaedia of Sikhism, ed. Harbans Singh)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, The Odyssey, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://franpritchett.com/00litlinks/kautilya/book06.htm" target="_blank" rel="noopener">Kautilya, Arthashastra, Book VI, Chapter I: The Elements of Sovereignty, trans. R. Shamasastry (1915)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://germanhistorydocs.org/en/the-holy-roman-empire-1648-1815/quot-edict-of-potsdam-quot-issued-by-frederick-william-quot-the-great-elector-quot-october-29-1685" target="_blank" rel="noopener">Edict of Potsdam, issued by Frederick William (the Great Elector) (October 29, 1685) (Frederick William, Elector of Brandenburg; trans. C.A. Macartney)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.potsdam.de/node/50423" target="_blank" rel="noopener">Elector Frederick William, the Great Elector (City of Potsdam)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0732.html">&larr; Kural 732</a>
+  <a href="kural-0734.html">Kural 734 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-074.html">The Land</a>
+  <a class="skip-btn" href="kural-0741.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

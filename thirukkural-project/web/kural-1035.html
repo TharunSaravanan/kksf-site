@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1035 — Agriculture | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1035</h1>
+<p class="adhikaram"><a href="adhikaram-104.html">Agriculture</a> &middot; Uzhavu &middot; <span class="tamil">உழவு</span></p>
+
+<div class="tamil-text">இரவார் இரப்பார்க்கொன்று ஈவர் கரவாது
+கைசெய்தூண் மாலை யவர்.</div>
+<div class="translit">Iravaar irappaarkkondru eevar karavaadhu
+kaiseydhooN maalai yavar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who live by the work of their own hands never beg. They give to those who beg, without hiding what they have.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A girl who grows her own strawberries never has to ask anyone for strawberries. And when a friend asks for some, she shares happily instead of hiding the basket. Working with your own hands lets you be both proud and generous.</p>
+
+<h2 class="section">University</h2>
+<p>kai seydhu ooN maalaiyavar (கைசெய்து ஊண் மாலையவர்) means &#x27;those whose nature (maalai, மாலை) is to eat by the work of their hands&#x27;. Puliyur Kesikan, following Parimelazhagar, identifies them with farmers (uzhavar) whose effort yields food. Two consequences follow: iravaar (இரவார், &#x27;they do not beg&#x27;) and they give irappaarkku ondru (இரப்பார்க்கு ஒன்று, &#x27;something to those who beg&#x27;) karavaadhu (கரவாது, &#x27;without concealment&#x27;). Mu. Varadarasanar widens the subject to all who labour with their hands (thozhilaalar), while Solomon Pappaiah and Kesikan keep the focus on ploughing. The couplet also looks ahead to the later chapters Iravu (106) and Iravachcham (107) on begging. The Tamil text matches on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Bounteous is he who gives unto the beggar who comes to him in want of food and feeble.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/rigveda/rv05083.htm" target="_blank" rel="noopener">Rig Veda 10.117.3 (tr. Ralph T.H. Griffith, 1896, sacred-texts.com)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The hymn praises the man with food who freely gives to a hungry petitioner.</div>
+  <div class="tieback">The hymn&#x27;s bounteous giver is the Kural&#x27;s self-supporting farmer who gives to askers without concealment.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Let him that stole steal no more: but rather let him labour, working with his hands the thing which is good, that he may have to give to him that needeth.&rdquo;</div>
+  <div class="cite">&mdash; Ephesians 4:28 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul tells the converted thief to support himself by honest handwork so that he will have something to give to the needy.</div>
+  <div class="tieback">Working with one&#x27;s own hands in order to give to those in need is almost exactly the Kural&#x27;s teaching.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;It is better for anyone of you to take a rope (and cut) and bring a bundle of wood (from the forest) over his back and sell it and Allah will save his face (from the Hell-Fire) because of that, rather than to ask the people who may give him or not.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:1471" target="_blank" rel="noopener">Sahih al-Bukhari 1471 (sunnah.com)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet prefers the humblest manual labour to begging from others.</div>
+  <div class="tieback">This is the Kural&#x27;s iravaar, &#x27;they do not beg&#x27;, grounded in work with one&#x27;s own hands.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;When you reap the harvest of your land, you shall not reap all the way to the edges of your field, or gather the gleanings of your harvest. … you shall leave them for the poor and the stranger&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Leviticus 19:9-10 (JPS Tanakh, Gender-Sensitive Edition 2023, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Torah requires every farmer to leave part of the harvest for the poor and the stranger.</div>
+  <div class="tieback">The farmer&#x27;s own harvest becomes open, unconcealed giving, the generosity the Kural expects of those who eat by their own work.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;using the wealth earned through his efforts &amp; enterprise, amassed through the strength of his arm, and piled up through the sweat of his brow, righteous wealth righteously gained — provides his friends &amp; associates with pleasure &amp; satisfaction&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an05/an05.041.than.html" target="_blank" rel="noopener">Adiya Sutta, AN 5.41 (tr. Thanissaro Bhikkhu, accesstoinsight.org)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha lists the benefits of self-earned wealth: supporting oneself, one&#x27;s family and friends, and giving offerings to contemplatives.</div>
+  <div class="tieback">Wealth &#x27;amassed through the strength of his arm&#x27; and shared with others is the Kural&#x27;s kai seydhu ooN joined to generous giving.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The husbandmen throw the corn on high ground and on low ground, hoping (for a return). For the like motive give unto me; I may be the field which may produce merit (as the return for your benevolence).&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 12.12 (tr. Hermann Jacobi, SBE 45, sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Jain monk Harikesa, begging at a sacrifice, asks the priests to give as freely as farmers sow, since a gift to the worthy yields merit as seed yields grain.</div>
+  <div class="tieback">The farmer who sows without stinting is the model for generous giving to an asker, which is the Kural&#x27;s second line.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;One who works for what he eats, and gives some of what he has - O Nanak, he knows the Path.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1245, Raag Sarang, Sarang ki Vaar (salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Sarang ki Vaar, Guru Nanak contrasts the so-called holy man who goes around begging with the person who earns his food by honest labour and shares part of it. This salok is a classic statement of kirat karni (honest work) and vand chhakna (sharing).</div>
+  <div class="tieback">The Kural says those who eat by the work of their own hands never beg and give freely to those who do; Guru Nanak names exactly that person, who earns and then gives, as the one who knows the Path.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Else, afterwards, you may chance to be in want, and go begging to other men&#x27;s houses, but without avail; as you have already come to me. But I will give you no more nor give you further measure.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 394-397 (tr. H.G. Evelyn-White, 1914, sacred-texts.com)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hesiod warns his idle brother Perses that whoever neglects the seasons of farm work ends up begging from door to door.</div>
+  <div class="tieback">Hesiod gives the negative of the Kural&#x27;s lesson: whoever does not work the land with his own hands will have to beg.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Earth, in the first place, freely offers to those that labour all things necessary to the life of man … She is the generous hostess; she keeps open house for the stranger.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/1173" target="_blank" rel="noopener">Xenophon, Oeconomicus ch. 5 (tr. H.G. Dakyns, Project Gutenberg)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Xenophon&#x27;s Socrates praises farming because the land rewards labour and makes hospitality to strangers possible.</div>
+  <div class="tieback">The farmer&#x27;s &#x27;open house for the stranger&#x27; is the Kural&#x27;s ungrudging gift to the asker, made possible by labour on the land.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Tolstoy ploughs for poor families on his estate</div>
+  <div class="rle-meta">August 1887 &middot; Yasnaya Polyana, Tula Province, Russia</div>
+  <div class="quote is-paraphrase">In the 1880s Leo Tolstoy took up manual labour on his estate, and in August 1887 the painter Ilya Repin sketched him ploughing a field, a study now in the State Tretyakov Gallery. The Yasnaya Polyana museum notes that the field was where peasants had their allotments and that Tolstoy often ploughed for poor families who had no breadwinner.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">One of the world&#x27;s most famous writers chose to live by the work of his hands and to give that work freely to those in need.</div>
+  <div class="tieback">The kural says those who eat by the work of their own hands never beg and give to others without holding back, and Tolstoy&#x27;s ploughing for the needy is a direct example.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-104/" target="_blank" rel="noopener">Thirukkural Chapter 104: உழவு / Farming (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-104.html" target="_blank" rel="noopener">உழவு - அதிகாரம் 104 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/rigveda/rv05083.htm" target="_blank" rel="noopener">The Rig Veda, translated by Ralph T. H. Griffith (1896)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:1471" target="_blank" rel="noopener">Sahih al-Bukhari 1471 (Book of Zakat, Chapter: To abstain from begging)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The JPS Tanakh: Gender-Sensitive Edition (Revised JPS, 2023)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/an/an05/an05.041.than.html" target="_blank" rel="noopener">Anguttara Nikaya 5.41, Adiya Sutta: Benefits to be Obtained (from Wealth)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/1173" target="_blank" rel="noopener">The Economist (Oeconomicus) (Xenophon)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://ypmuseum.ru/object/pashnya-za-chepyjom?lang=en" target="_blank" rel="noopener">Ploughing behind Chepyzh</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://npg.si.edu/object/npg_RU900003" target="_blank" rel="noopener">Leo Nikolayevich Tolstoy on arable land (Ilya Repin, 1887)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1034.html">&larr; Kural 1034</a>
+  <a href="kural-1036.html">Kural 1036 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-104.html">Agriculture</a>
+  <a class="skip-btn" href="kural-1041.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

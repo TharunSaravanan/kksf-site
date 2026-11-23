@@ -1,0 +1,2978 @@
+# Thirukkural Accuracy Report (auto-generated, Oct 10 2026)
+
+Source: thirukkural-project/data/accuracy_log.json (regenerated every build). Flagged = accuracy below 60%.
+
+## Summary by tradition
+
+| Tradition | Entries | Avg accuracy | Flagged (<60%) | Below 40% |
+|---|---|---|---|---|
+| hinduism | 1330 | 73.5% | 162 | 0 |
+| christianity | 1330 | 69.9% | 272 | 3 |
+| islam | 1330 | 69.3% | 294 | 8 |
+| judaism | 1330 | 72.5% | 171 | 2 |
+| buddhism | 1330 | 69.4% | 313 | 11 |
+| jainism | 1330 | 64.8% | 440 | 37 |
+| sikhism | 1330 | 64.8% | 414 | 11 |
+| greek_mythology | 1330 | 65.6% | 401 | 9 |
+| philosophy | 1330 | 70.4% | 235 | 4 |
+| real_life_example | 1290 | 68.9% | 253 | 18 |
+
+PENDING: Real Life Example for Kurals 1291-1330 (history ch130-133) - drafts in _rejected/ need a 2nd independent source on some entries; no unverified entry is published.
+
+## Flagged entries (lowest first)
+
+- Kural 257 / buddhism - 30% (primary): Counterpoint rather than parallel; included for honesty about intra-Buddhist diversity.
+- Kural 969 / islam - 30% (primary): Contrast rather than parallel; included because no Islamic source endorses the Kural's point here.
+- Kural 1037 / jainism - 30% (primary): Paraphrase, not re-verified against a live text this session; included as an honest doctrinal contrast because no Jain text endorses intensive tillage.
+- Kural 1115 / sikhism - 30% (primary): Weak, next-best match: Sikh scripture has nothing like this comic hyperbole about a fragile waist, and the line repeats the source used for kural 1113.
+- Kural 1182 / real_life_example - 30% (secondary/secondary): Next-best only: the pride of bearing something the beloved gave is a loose parallel, but honour is the opposite of the kural's pallor of grief; the Britannica support for the Abu Simbel temple is a photo caption.
+- Kural 1212 / real_life_example - 30% (secondary/secondary): Next-best only: the shared idea is needing a dream to reach what waking cannot, but there is no lover or plea for sleep in the documented event.
+- Kural 1215 / real_life_example - 30% (secondary/secondary): Next-best only: the kural compares the passing sweetness of dream and waking meetings with a lover, and no documented event shows that; Kekulé illustrates only the brief, momentary value of a dream.
+- Kural 1240 / real_life_example - 30% (secondary/secondary): Next-best only: it shows a husband's close attention to his wife's face, but nothing of the pallor, grief or separation the kural describes.
+- Kural 1264 / real_life_example - 30% (secondary/web): Next-best only: eager hope for a return is the shared idea, but there is no beloved, and the sources do not describe him keeping a lookout.
+- Kural 1273 / real_life_example - 30% (secondary/secondary): Next-best only: the link is the crystal image itself, not the kural's subject of a lover's feeling showing through her looks.
+- Kural 55 / real_life_example - 32% (secondary/web): Next-best only: no historical event can show a person commanding the rain, and this couplet's literal claim is contested even among commentators; Kasturba illustrates only the authority that devotion can confer.
+- Kural 590 / sikhism - 32% (primary): Weak, next-best only: Sikh teaching on humility shares the idea that display spoils what is good, but Gurbani says nothing about secrecy in statecraft or the treatment of agents.
+- Kural 870 / sikhism - 32% (primary): Next-best and a contrast: both speak of how fame is won, but Sikhism does not seek glory in easy victories over the ignorant, and grounds honour in devotion.
+- Kural 944 / greek_mythology - 32% (primary): Next-best match, paraphrased: about hunger's insistence, not about choosing wholesome food or waiting for digestion.
+- Kural 1116 / real_life_example - 32% (secondary/web): Next-best only: the image of a new light upsetting the heavens matches, but the event has no connection with love or with a beloved's face.
+- Kural 1127 / philosophy - 32% (primary): Paraphrase, not checked word for word this session; a weak next-best match that shares only the rejection of cosmetics.
+- Kural 1203 / jainism - 32% (primary): Paraphrase of a famous episode; only a loose parallel on omens, with no romantic content.
+- Kural 1216 / jainism - 32% (primary): Paraphrase, not verified verbatim this session; a contrastive match only, since Jainism values the waking the Kural laments.
+- Kural 1275 / jainism - 32% (primary): Verified verbatim on sacred-texts.com; used as an honest contrast, since Jain monastic teaching rejects the Kural’s view of a lover’s sign as healing.
+- Kural 1325 / jainism - 32% (primary): Paraphrase of a famous Jain story; a contrast only, since the separation is renunciation, not lovers’ play.
+- Kural 1326 / buddhism - 32% (primary): Paraphrase; an honest contrast that shares only the food imagery.
+- Kural 258 / sikhism - 35% (primary): Honest contrast rather than parallel: Guru Nanak refuses to make diet the measure of wisdom, which runs against this Kural, and Sikh opinion on meat-eating remains divided.
+- Kural 264 / philosophy - 35% (primary): Weak; philosophy generally rejects curse-and-blessing powers.
+- Kural 291 / philosophy - 35% (web): Deliberate contrast, not a parallel: Kant’s absolutism is the opposite pole from the Kural’s harm-based definition.
+- Kural 295 / greek_mythology - 35% (primary): Weak, contrastive match: no Greek myth directly ranks truthfulness above sacrifice; this story shows ritual detached from truth.
+- Kural 350 / greek_mythology - 35% (primary): Weak, analogical match only; no Greek myth closely parallels clinging to a detached deity to release attachments.
+- Kural 369 / greek_mythology - 35% (primary): Weak/next-best: shares the image of sorrowless bliss but not its cause (the end of desire).
+- Kural 404 / judaism - 35% (primary): Contrast rather than parallel. Included honestly because no close Jewish parallel was found; it frames the tension the Kural resolves the other way.
+- Kural 404 / greek_mythology - 35% (primary): Contrast/complication rather than parallel; Cassandra is inspired, not unlearned. Best available myth on truth disregarded because of its source.
+- Kural 506 / buddhism - 35% (primary): Deliberately a contrast rather than a parallel; the two texts value non-attachment differently because their goals differ.
+- Kural 589 / sikhism - 35% (primary): Weak and partly contrasting: the verse is about seeking certainty from several human authorities, but its point is that they failed, not that agreement among witnesses establishes truth.
+- Kural 861 / sikhism - 35% (primary): Next-best and largely a contrast: Sikh ethics judge a fight by its cause, not by picking weaker opponents, and the Sikh tradition honours those who stood against far stronger powers.
+- Kural 869 / sikhism - 35% (primary): Next-best only: Sikhism has no teaching that relishes foolish or cowardly enemies; the parallel is limited to coming through a hostile world unharmed.
+- Kural 880 / buddhism - 35% (primary): Contrast rather than parallel; Buddhism does not advise crushing enemies.
+- Kural 903 / buddhism - 35% (primary): Indirect; it is addressed to a wife about her conduct and only loosely relates to a husband's timidity.
+- Kural 903 / sikhism - 35% (primary): Contrast rather than parallel: Sikh teaching affirms women's dignity and does not regard respect for a wife as shameful, so it disagrees with this kural's assumption.
+- Kural 907 / buddhism - 35% (primary): Thematic only; it does not address men following women's commands.
+- Kural 909 / islam - 35% (primary): Contrasting text; included for balance rather than as a parallel.
+- Kural 941 / jainism - 35% (primary): Verified verbatim on sacred-texts.com; included as an honest contrast, since canonical Jain scripture offers no humoral theory of disease.
+- Kural 942 / greek_mythology - 35% (primary): Next-best match: shares the picture of life without need for cure, but the myth blames fate, not diet.
+- Kural 969 / jainism - 35% (primary): Doctrinal contrast, scored low; verse numbers given approximately and paraphrased without live verification of the translation.
+- Kural 1033 / jainism - 35% (primary): Paraphrase not verified against a live text this session; included as an honest contrast, because Jain ethics conflicts with the Kural's praise of ploughing.
+- Kural 1115 / buddhism - 35% (primary): Paraphrase not checked word for word this session; only the flower-and-fragility link is shared.
+- Kural 1115 / real_life_example - 35% (secondary/web/web): Next-best only: just the idea of exquisite, breakable delicacy links them; the kural is playful hyperbole about a beloved, and the ballet is not about love.
+- Kural 1116 / buddhism - 35% (primary): Paraphrase not checked word for word this session; only the moon-radiance image is shared.
+- Kural 1129 / greek_mythology - 35% (primary): Paraphrase of a well-known myth; a weak next-best match that shares only the never-closing eyes.
+- Kural 1129 / real_life_example - 35% (secondary/web): Next-best only: outsiders misjudging a couple is the link, but the town here feared illness rather than calling the lover unloving, and the kural's sleepless heroine has no parallel.
+- Kural 1143 / real_life_example - 35% (secondary/secondary): Next-best only: the waiting heart fits, but no public rumour is documented in Longfellow's courtship; this event is also used for kural 1132.
+- Kural 1146 / real_life_example - 35% (web/secondary): Next-best only: the wide public knowledge fits, but the relationship lasted years rather than one meeting, and the sources checked do not describe the press coverage in detail; this event is also used for kural 1137.
+- Kural 1180 / jainism - 35% (primary): Verified verbatim on sacred-texts.com (excerpted); a weak, next-best match that explains the arising of sorrow but not its public betrayal by the eyes.
+- Kural 1199 / jainism - 35% (primary): A next-best match only; the shared theme is a beloved voice, but the Jain context is devotional, not romantic, and no specific verse was checked live.
+- Kural 1201 / jainism - 35% (primary): Paraphrase from memory of a well-known verse, not checked live; a contrasting Jain view rather than a parallel.
+- Kural 1203 / islam - 35% (primary): Paraphrase of a well-known hadith; matches only on the sneeze itself, offered as the nearest Islamic treatment.
+- Kural 1203 / real_life_example - 35% (web/secondary): Next-best only: the kural rests on a folk belief about sneezing and a lover's thoughts, and no documented event matches it; the cable is an analogy for a fading sign of contact, not a love story.
+- Kural 1212 / jainism - 35% (primary): Paraphrase of a standard Jain teaching; only a next-best match, since Jainism diagnoses the longing as bondage rather than sharing it.
+- Kural 1217 / real_life_example - 35% (secondary/secondary): Next-best only: it captures tormenting dreams, but Goya's subject is reason and imagination, not an absent lover.
+- Kural 1219 / real_life_example - 35% (secondary/secondary): Next-best only: the relationship was not romantic in any documented sense and involved letters, not dreams; it shows only a bond sustained without meeting.
+- Kural 1223 / real_life_example - 35% (secondary/secondary): Next-best: it shows grief for a lost beloved growing, but the loss is by death rather than a husband's absence and there is no evening imagery.
+- Kural 1224 / real_life_example - 35% (secondary/web): Next-best: it makes the image of evening arriving like an enemy literal, but it has nothing to do with love or separation.
+- Kural 1268 / jainism - 35% (primary): Verified verbatim on sacred-texts.com; a candid contrast addressed to monks, not a parallel; no closer Jain source on a husband’s longing was found.
+- Kural 1274 / jainism - 35% (primary): Verified verbatim on sacred-texts.com; a weak next-best match on gentle outward signs with an inner purpose, from a renunciatory text hostile to romance.
+- Kural 1316 / jainism - 35% (primary): Paraphrase of a verse read on sacred-texts.com; a contrastive, next-best link only, since Jain monastic teaching sets aside the remembrance that married love demands.
+- Kural 1324 / buddhism - 35% (primary): Paraphrase of a canonical episode; offered as an honest contrast, since Buddhism prizes the resolve the Kural happily loses.
+- Kural 1328 / buddhism - 35% (primary): Paraphrase of a well-known verse; an honest contrast, since Buddhism treats the longing to repeat pleasure as a cause of suffering.
+- Kural 1329 / jainism - 35% (primary): General paraphrase of the epic’s arc (a Tamil Jain text); a weak, next-best match, since no specific scene of a prolonged night of pleading is cited.
+- Kural 1330 / jainism - 35% (primary): Verified verbatim on archive.sacred-texts.com; an honest contrast, since Jain teaching seeks freedom from both sulk and embrace.
+- Kural 37 / real_life_example - 38% (secondary/secondary): Next-best only: it shows unequal fortunes made directly visible, but the kural's claim that these differences are the fruit of past virtue is a karmic teaching that no historical event can demonstrate, and Booth's maps imply nothing of the kind.
+- Kural 353 / greek_mythology - 38% (primary): Weak match. Menelaus earns Elysium through his marriage to Helen (a daughter of Zeus), not through knowledge or certainty; included as the nearest Greek ‘heaven’ image.
+- Kural 575 / jainism - 38% (primary): Checked word for word against Jacobi on sacred-texts.com. A weak next-best match: there is no ornament or wound image, and peace of mind is not kindness.
+- Kural 694 / sikhism - 38% (primary): Next-best only: Sikh scripture has no teaching on courtly decorum; this matches only the idea that private whispering about others is wrong.
+- Kural 870 / jainism - 38% (primary): Checked word for word against Jacobi on wisdomlib.org. No Jain text recommends gaining fame by attacking the unlearned, so this is a next-best, contrasting match on the theme of glory.
+- Kural 906 / sikhism - 38% (primary): Contrast more than parallel: both care about a healthy marriage, but Sikhism's ideal of spiritual equality does not fit the Kural's ranking of husband over wife.
+- Kural 939 / christianity - 38% (primary): Verified verbatim; a weak, inverted parallel offered as the best available, since it depicts the gamblers, not the gambler's loss.
+- Kural 941 / christianity - 38% (primary): Next-best match: shares the two-sided logic of excess and defect but has nothing to say about bodily humours or medicine.
+- Kural 946 / greek_mythology - 38% (primary): Next-best match, paraphrased: Irus's weakness is not presented as disease, and there is no moderate counterpart.
+- Kural 947 / islam - 38% (primary): Next-best match, paraphrased: concerns heedlessness and faith, not illness from overeating.
+- Kural 1034 / jainism - 38% (primary): Paraphrase, not verified against a live text this session; Jain sources treat Bharata's conquest ambivalently and do not tie it to agriculture, so this is a weak next-best match.
+- Kural 1108 / jainism - 38% (primary): Verified verbatim on sacred-texts.com; offered as a deliberate contrast, so the score is low.
+- Kural 1115 / christianity - 38% (primary): Verified verbatim via bolls.life KJV; a next-best match on fragility, with no body imagery.
+- Kural 1120 / sikhism - 38% (primary): Weak, next-best match: Gurbani has no praise of the beloved's delicate feet; Farid shares only the theme of the hard road beneath the lover's feet, and his love is spiritual, not romantic.
+- Kural 1126 / jainism - 38% (primary): Paraphrase, not checked word for word and sutra numbering approximate; a next-best doctrinal parallel to 'subtle', with no romantic content.
+- Kural 1127 / islam - 38% (primary): Paraphrase, not verified word for word this session; a next-best match on adornment directed to the beloved, in a context of modesty law.
+- Kural 1127 / judaism - 38% (primary): Paraphrase, not verified word for word this session; a next-best match built on eye-paint, used as a negative image.
+- Kural 1127 / buddhism - 38% (primary): Paraphrase, not checked word for word this session; a next-best match on giving up cosmetics, for a different reason.
+- Kural 1127 / jainism - 38% (primary): Paraphrase, not checked word for word this session; it shares the specific detail of forgoing collyrium but for opposite reasons.
+- Kural 1168 / jainism - 38% (primary): Paraphrase of verses read on archive.sacred-texts.com this session; the burning passion connects only loosely, and there is no image of night or of solitude.
+- Kural 1186 / islam - 38% (primary): Verified verbatim via the quran.com API; only the image of encroaching darkness matches, the verse has nothing to do with lovers.
+- Kural 1210 / islam - 38% (primary): Paraphrase of a well-known passage; shares only the image of the setting moon, offered as the best available match.
+- Kural 1212 / philosophy - 38% (primary): Paraphrase; an analytic sidelight on the heroine’s plea rather than a parallel teaching about love.
+- Kural 1214 / jainism - 38% (primary): Paraphrase from secondary summaries of the Bhagavati’s dream typology, not verified against a live translation; explanatory only.
+- Kural 1219 / jainism - 38% (primary): Verified verbatim on sacred-texts.com (diacritics simplified); only a next-best match on loss of blessed dreams, with no lover involved.
+- Kural 1238 / jainism - 38% (primary): Next-best match given as paraphrase; it reinterprets the Kural’s tenderness as attachment rather than echoing it.
+- Kural 1259 / jainism - 38% (primary): Verified verbatim on sacred-texts.com; a next-best match only, since the reversal runs in the opposite direction to the Kural’s.
+- Kural 1273 / jainism - 38% (primary): Verified verbatim on sacred-texts.com; only a loose next-best link (a hidden aim beneath ornaments), in a renunciatory text whose wary view of women differs sharply from the Kural’s.
+- Kural 1280 / jainism - 38% (primary): Verified verbatim on sacred-texts.com; a weak next-best match on the hardship and dignity of asking, in a monastic context unrelated to love.
+- Kural 1287 / islam - 38% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a loose next-best match on knowingly courting ruin, in an unrelated context.
+- Kural 1289 / jainism - 38% (primary): Paraphrase of a well-known sutra; a loose next-best match resting on the shared idea of softness, in a very different ascetic context.
+- Kural 1290 / jainism - 38% (primary): Paraphrase of a well-known Jain narrative; a weak next-best match, since the ‘reunion’ is spiritual and the story turns away from married love.
+- Kural 1294 / jainism - 38% (primary): Verified verbatim on sacred-texts.com; only a loose next-best link on love overturning a planned mood, in an ascetic text that would reject the Kural’s whole game of love.
+- Kural 1305 / jainism - 38% (primary): Next-best only: a general reference to a Tamil Jain romance epic, not a specific verse, and Jain doctrine does not prize lovers’ pique.
+- Kural 1322 / jainism - 38% (primary): Verified verbatim on archive.sacred-texts.com; an honest contrast, since Jainism sees no gain in anger or pride.
+- Kural 1324 / jainism - 38% (primary): Verified on archive.sacred-texts.com (Jacobi’s page-break dash kept); offered as a contrast between a resolve lost to love and self-mastery.
+- Kural 1328 / jainism - 38% (primary): Verified verbatim on archive.sacred-texts.com (‘colours’ is Jacobi’s term for all visible objects); an honest contrast on wanting pleasure again.
+- Kural 1 / buddhism - 40% (secondary): Genuine textual basis, but represents a specific, later Vajrayana/tantric development, not classical or Theravada Buddhism, which explicitly rejects a single first cause.
+- Kural 5 / greek_mythology - 40% (secondary): Striking 'escape the wheel' language, but the underlying mechanism (Orphic ritual purification) and target (rebirth, not the merit/demerit ledger) differ from the Kural's claim.
+- Kural 5 / philosophy - 40% (primary): Structurally similar (wisdom relativizes the good-evil ledger), but Spinoza's rationalist framework is a world apart from the Kural's devotional, karma-based context.
+- Kural 8 / islam - 40% (primary): Authentic hadith about life-as-a-journey, but doesn't make the Kural's specific claim that only God enables the crossing — a looser fit than the other citations here.
+- Kural 10 / judaism - 40% (secondary): Real textual basis in Kabbalah, but this is a mystical minority position within Judaism, not found in the Tanakh and rejected by mainstream Rabbinic/Maimonidean thought.
+- Kural 10 / real_life_example - 40% (secondary/web): Next-best only: a well-documented journey toward God, but no historical event can show liberation from the cycle of rebirth.
+- Kural 59 / sikhism - 40% (primary): Next-best only and largely a contrast: no SGGS passage found makes a husband's honour depend on his wife's conduct, and Sikh teaching places responsibility for reputation on each individual.
+- Kural 64 / jainism - 40% (primary): Paraphrased from the verified Jacobi text. No Jain source found treats a child's touch on food as a delight; this is a next-best thematic neighbour only.
+- Kural 65 / buddhism - 40% (primary): Included honestly as an inversion, not an echo — the renunciate strand of Buddhism directly contradicts this couplet, and there is no strong affirming parallel in the early canon.
+- Kural 66 / buddhism - 40% (primary): Deliberately scored low and honestly: the early Buddhist canon has no praise of a child's babble, and this is the closest scene available rather than a true parallel.
+- Kural 220 / judaism - 40% (primary): Contrasting view included for honesty; shares high esteem for giving but rejects impoverishing oneself.
+- Kural 233 / philosophy - 40% (primary): Honest contrast rather than parallel; included because Stoicism is the major philosophical challenge to valuing renown.
+- Kural 255 / christianity - 40% (primary): Next-best: parallel on irreversible punishment; the parable concerns neglect of the poor, not meat.
+- Kural 256 / christianity - 40% (primary): Honest note: Paul elsewhere (1 Cor 10:25) allows eating whatever is sold in the market without question, which runs against the Kural’s argument.
+- Kural 256 / greek_mythology - 40% (primary): Next-best: aetiological myth about meat and sacrifice; no ethical condemnation of demand.
+- Kural 257 / islam - 40% (primary): Next-best: shared attention to blood and wounding; Islam permits properly slaughtered meat.
+- Kural 258 / judaism - 40% (primary): Next-best; an inverted parallel, included for its link between knowledge and meat.
+- Kural 263 / greek_mythology - 40% (primary): Only the ‘feeding the holy’ motif overlaps.
+- Kural 264 / sikhism - 40% (primary): Next-best and partly opposed: Sikhism rejects the idea that austerity gives a person power to curse or bless, so the verse addresses the Kural's theme mainly by contrast.
+- Kural 265 / buddhism - 40% (primary): Counterpoint rather than parallel.
+- Kural 292 / sikhism - 40% (primary): A candid contrast, not a parallel: I found no SGGS passage that permits a beneficial falsehood, and this verse places falsehood squarely with sin.
+- Kural 292 / greek_mythology - 40% (primary): Weak match: acknowledges truth-like falsehood but adds no moral test of benefit.
+- Kural 330 / real_life_example - 40% (primary/secondary/secondary): Next-best only: the kural's claim is karmic and across lives, and shell shock arose from enduring bombardment rather than specifically from killing, so the connection is loose.
+- Kural 365 / greek_mythology - 40% (primary): Weak/next-best: Midas’ flaw is folly rather than lingering desire; used as the closest mythic image of incomplete renunciation.
+- Kural 367 / greek_mythology - 40% (primary): Weak/next-best: shares the idea of ‘imperishable deeds’, but Achilles’ motive is desire for fame, which the Kural would reject.
+- Kural 385 / jainism - 40% (primary): Checked word for word on sacred-texts.com. Jain scripture has no positive theory of royal public finance comparable to this kural. This is an honest contrast on the theme of the treasury, scored well below 60.
+- Kural 502 / sikhism - 40% (primary): Included as a candid contrast: Gurbani rejects judging people by birth, which conflicts with the Kural's emphasis on good family; it agrees only on valuing character.
+- Kural 506 / jainism - 40% (primary): Checked word for word against Jacobi on sacred-texts.com. Offered as a contrast: the verse values the renunciation of kin that the kural treats as a warning sign for worldly office.
+- Kural 559 / jainism - 40% (primary): Paraphrased from Johnson's translation read on wisdomlib.org this session. Jain doctrine contradicts the Kural's claim that a king's injustice causes rain to fail, so this entry is a contrast, not a parallel.
+- Kural 576 / greek_mythology - 40% (primary): Loose symbolic contrast only; the myth has no moral about benignity.
+- Kural 580 / greek_mythology - 40% (web): Weak match: the poisoning was accidental, and the sources do not stress courtesy.
+- Kural 585 / buddhism - 40% (primary): Only the composure-among-enemies trait matches; the verse describes an arahant, not an agent.
+- Kural 586 / sikhism - 40% (primary): Contrast more than parallel: both recognise ascetic dress as a cover, but the Kural uses it as a tool of statecraft while Guru Nanak denounces it as hypocrisy.
+- Kural 590 / buddhism - 40% (primary): Only a loose parallel on discretion; the Buddhist rule targets divisive speech.
+- Kural 617 / jainism - 40% (primary): Paraphrase from general knowledge of the Kalpa Sutra's dream list; I did not recheck the section number this session. A weak, next-best match: the Kural's two folk goddesses have no real doctrinal counterpart in Jainism.
+- Kural 695 / sikhism - 40% (primary): Next-best only: an analogy from the divine King to an earthly one; Japji speaks of God's unknowable will, not a courtier's discretion about state secrets.
+- Kural 771 / christianity - 40% (primary): Deliberate contrast: the shared observation that fighters fall is used by the Gospel to discourage, not celebrate, combat.
+- Kural 776 / buddhism - 40% (primary): Contrast rather than parallel.
+- Kural 804 / christianity - 40% (primary): Weak match: the parable is about persistence in prayer, and the friend responds reluctantly.
+- Kural 804 / greek_mythology - 40% (primary): Weak match: the liberty comes before the friendship, not out of it.
+- Kural 808 / philosophy - 40% (primary): Weak match: the general theme is present, but the specific passage was not re-verified.
+- Kural 810 / philosophy - 40% (primary): Weak match: it concerns how to end a friendship, which the Kural’s ideal does not consider, and says nothing of enemies’ esteem.
+- Kural 829 / buddhism - 40% (primary): Offered as a contrasting view; no close Buddhist parallel to strategic counter-pretence was found.
+- Kural 839 / hinduism - 40% (secondary): Weak match: about the futility of reaching a fool, not the painless parting; verse number not verified.
+- Kural 861 / buddhism - 40% (primary): Contrast rather than parallel; Buddhism has no direct counterpart to choosing weaker enemies.
+- Kural 870 / buddhism - 40% (primary): Contrast rather than parallel; Buddhism does not prize martial glory.
+- Kural 876 / sikhism - 40% (primary): Next-best: the shared idea is evenness toward friend and foe, but Gurbani means spiritual detachment, while the Kural means cautious diplomacy in a crisis.
+- Kural 881 / philosophy - 40% (secondary): Matches only the shade-and-water image, not the Kural's point about kinsfolk; a weak, next-best parallel.
+- Kural 896 / islam - 40% (primary): Weak, indirect match built on the survivable-fire image; paraphrased.
+- Kural 897 / philosophy - 40% (primary): Weak match: shares the low view of wealth, not the theme of offending the great.
+- Kural 903 / christianity - 40% (primary): Weak match; it concerns domestic strife, not a husband's timidity, and reflects gendered assumptions of its time.
+- Kural 903 / greek_mythology - 40% (primary): Contrasting rather than parallel, and from Socratic literature rather than myth.
+- Kural 904 / christianity - 40% (primary): Contrasting parallel, included to show that wifely counsel is not uniformly portrayed as harmful.
+- Kural 904 / philosophy - 40% (primary): General principle about fear and freedom; not about marriage.
+- Kural 905 / islam - 40% (primary): Weak match; the surah holds both spouses equally responsible rather than describing a fearful husband.
+- Kural 905 / buddhism - 40% (primary): Contrasting parallel; the tale also raises its own ethical questions about giving away one's family.
+- Kural 905 / greek_mythology - 40% (primary): Contrasting exemplar of joint hospitality; Roman literature of Greek myth.
+- Kural 906 / judaism - 40% (primary): Contrasting text; rabbinic tradition cites it to show that wives' counsel can be prophetically sound.
+- Kural 907 / islam - 40% (primary): Contrasting parallel about a woman's wise authority.
+- Kural 907 / philosophy - 40% (primary): Contrasting philosophical position; Plato still holds women to be generally weaker.
+- Kural 909 / philosophy - 40% (primary): Deliberately contrasting modern critique, included for scholarly balance.
+- Kural 913 / greek_mythology - 40% (primary): Only the image of an empty embrace is shared; the emotional context is the opposite.
+- Kural 915 / greek_mythology - 40% (primary): Weak match: Calypso is not mercenary, and Homer stresses longing for home more than wisdom.
+- Kural 920 / greek_mythology - 40% (primary): Covers only drink, and Elpenor is foolish rather than abandoned by fortune.
+- Kural 927 / greek_mythology - 40% (primary): Loose parallel; Silenus is treated with honour, not mockery.
+- Kural 932 / greek_mythology - 40% (primary): Episode verified in Butler's text; it is a loose fit, since no stake or winnings are involved.
+- Kural 935 / christianity - 40% (primary): Verified verbatim; it depicts gambling but not the gambler's ruin, so the match is weak.
+- Kural 939 / greek_mythology - 40% (primary): Passage verified in Rawlinson; it is history rather than myth, and the parallel to the five goods is loose.
+- Kural 942 / christianity - 40% (primary): Next-best match: shares the healthy-need-no-physician premise, but Jesus uses it as a metaphor for sinners and says nothing about diet.
+- Kural 969 / philosophy - 40% (primary): Counterpoint rather than parallel; paraphrased.
+- Kural 1003 / greek_mythology - 40% (primary): Paraphrase; next-best only: the 'burden on the earth' image matches, but the myth concerns population, not greed or fame.
+- Kural 1038 / hinduism - 40% (primary): Verified verbatim; the guardian-of-the-field idea is only loosely related to the Kural's practical advice to guard the crop.
+- Kural 1038 / jainism - 40% (primary): Verified verbatim; the gupti concept of guarding is an analogy only, since Jain monks do not guard crops.
+- Kural 1098 / jainism - 40% (primary): Verified verbatim on sacred-texts.com; a contrasting next-best match.
+- Kural 1099 / jainism - 40% (primary): Verified verbatim on sacred-texts.com; a contrasting next-best match.
+- Kural 1109 / jainism - 40% (primary): Verified verbatim on sacred-texts.com; a contrast rather than a parallel.
+- Kural 1111 / buddhism - 40% (primary): Paraphrase not checked word for word this session; a next-best match that answers the theme of fragile beauty with the opposite conclusion.
+- Kural 1112 / christianity - 40% (primary): Verified verbatim via bolls.life KJV; a next-best match, since the verse links flowers and love but has no comparison of eyes to blossoms.
+- Kural 1112 / islam - 40% (primary): Paraphrase, not re-checked word for word this session; a next-best match on the eye leading the heart astray, with a very different moral setting.
+- Kural 1112 / judaism - 40% (primary): Verified on Sefaria; the flowers-and-beloved association fits only loosely, and there is no rebuke of the heart’s confusion.
+- Kural 1114 / real_life_example - 40% (secondary/web): Next-best only: the event shows celebrated beauty, but it has nothing of the kural's playful picture of flowers ashamed before a beloved's eyes.
+- Kural 1115 / judaism - 40% (primary): Verified on Sefaria; shares the vocabulary of delicacy only, in a prophecy of judgment, so a next-best match.
+- Kural 1115 / jainism - 40% (primary): Verified verbatim on sacred-texts.com; only the adorned hair is shared, and the meaning is the reverse of the Kural’s.
+- Kural 1117 / judaism - 40% (primary): Verified on Sefaria; a general statement of beauty with no image of a spot or the moon, so only a next-best match.
+- Kural 1117 / greek_mythology - 40% (primary): Paraphrase, not checked against a translation this session; only the praise of the full moon is shared.
+- Kural 1119 / buddhism - 40% (primary): Paraphrase not checked word for word this session; it shares only the power of beauty over onlookers, from the opposite viewpoint.
+- Kural 1121 / philosophy - 40% (primary): Paraphrase of a well-known passage, not checked word for word this session; a next-best match that discusses the same kind of pleasure from a moral distance.
+- Kural 1123 / buddhism - 40% (primary): Paraphrase, not checked word for word this session; a next-best match built on the eye image but pointing in the opposite direction.
+- Kural 1129 / buddhism - 40% (primary): Verified verbatim on Access to Insight; a next-best match on wakefulness with a different purpose.
+- Kural 1140 / jainism - 40% (primary): Paraphrase, not verified this session; a next-best match on enduring mockery, with nothing about love.
+- Kural 1142 / real_life_example - 40% (secondary/secondary): Next-best only: a rumour did surround the broken engagement, but it protected the woman's reputation rather than helping the lover as in the kural, and the two sources disagree on who ended the engagement.
+- Kural 1143 / christianity - 40% (primary): Paraphrase from memory of a familiar verse; only a structural parallel, since Hebrews speaks of religious faith, not love.
+- Kural 1143 / jainism - 40% (primary): Verified verbatim on sacred-texts.com (Jacobi’s diacritics simplified); the theme of imagined possession is present, but the context is renunciation, not love.
+- Kural 1156 / islam - 40% (primary): Verified verbatim via the quran.com API; a contrast in attitude to hope during separation rather than a parallel.
+- Kural 1156 / jainism - 40% (primary): Verified verbatim on sacred-texts.com; a firm spoken farewell, but between former brothers and with no romantic content, so the fit is loose.
+- Kural 1162 / jainism - 40% (primary): Verified verbatim on sacred-texts.com; only the image of being trapped connects to the Kural, and the Jain verse condemns the passion the Kural treats sympathetically.
+- Kural 1165 / islam - 40% (primary): Verified verbatim via the quran.com API (Sahih International); only the idea of harm through friendship connects, and the Qur’anic regret is far graver than the Kural’s loving reproach.
+- Kural 1169 / jainism - 40% (primary): Verified verbatim on sacred-texts.com, with Jacobi’s footnote on ‘nights’; the link is the passing of nights, but the Jain verse is about wasted time, not their painful length.
+- Kural 1176 / real_life_example - 40% (primary/secondary): The idea of the one who caused love's suffering being trapped in it too is only loosely present, and the details of the barge come from Plutarch's later account, so this is a next-best fit.
+- Kural 1177 / real_life_example - 40% (secondary/secondary): The drawing documents the loving gaze, but the later aching of the eyes is only implied by Saskia's early death, so the fit is next-best.
+- Kural 1179 / judaism - 40% (primary): Verified verbatim on Sefaria (JPS 1917); sleep fleeing the eyes matches, but the cause is hard labour, linked only indirectly to love for Rachel.
+- Kural 1186 / buddhism - 40% (primary): Verified verbatim on accesstoinsight.org; a shared lamp-and-darkness image only, the theme differs.
+- Kural 1192 / jainism - 40% (primary): Paraphrase from a Tamil Jain text, used as a next-best match; it lacks the rain image and its arc favours renunciation.
+- Kural 1196 / jainism - 40% (primary): Verified verbatim on sacred-texts.com; an honest contrast rather than a parallel, since Jainism resolves one-sided love through non-attachment.
+- Kural 1201 / buddhism - 40% (primary): Verified verbatim on accesstoinsight.org; a contrasting rather than parallel teaching, offered as the most relevant Buddhist view.
+- Kural 1203 / judaism - 40% (primary): Paraphrase of a midrashic tradition from memory; the shared element is the sneeze as omen, not love.
+- Kural 1204 / jainism - 40% (primary): Paraphrase from memory, not checked live; matches only on the beloved dwelling in the heart, since the Jina, free of attachment, keeps no one in his.
+- Kural 1208 / buddhism - 40% (primary): Paraphrase of a well-known sutta; only a general fit on a husband’s kindly regard, offered as the next-best match.
+- Kural 1213 / buddhism - 40% (primary): Paraphrase; a contrastive rather than parallel match, since Buddhism counsels release from the attachment the Kural celebrates.
+- Kural 1217 / jainism - 40% (primary): Paraphrase, not verified verbatim this session; a next-best match, since Jainism’s answer is renunciation rather than complaint.
+- Kural 1219 / christianity - 40% (primary): Verified verbatim via bolls.life KJV; a loose next-best match on sleep as a gift to the beloved, without the theme of blame.
+- Kural 1219 / buddhism - 40% (secondary): Paraphrase of a famous story; only a next-best match on understanding through shared experience, with no lover involved.
+- Kural 1232 / jainism - 40% (primary): Next-best match given as paraphrase; the Jain text condemns sensory attachment rather than sympathising with a lover, so it reframes the Kural instead of echoing it.
+- Kural 1238 / real_life_example - 40% (secondary/secondary): Next-best: it shows a husband far away cherishing his wife, but not the kural's specific memory of her paling at the smallest parting.
+- Kural 1257 / jainism - 40% (primary): Verified verbatim on sacred-texts.com; a next-best match only, since the Jain frame condemns what the Kural accepts within marriage.
+- Kural 1260 / real_life_example - 40% (secondary/primary): Next-best only: it shows reasoned restraint yielding to love, but there is no sulk or quarrel with a beloved as in the kural.
+- Kural 1264 / jainism - 40% (primary): Verified verbatim on sacred-texts.com; included as a candid contrast, since Jain scripture offers no praise of eager longing for a spouse.
+- Kural 1265 / jainism - 40% (primary): Verified verbatim on sacred-texts.com; a contrast, not a parallel: Jainism locates the end of suffering in liberation, not in the sight of a beloved.
+- Kural 1269 / jainism - 40% (primary): Verified verbatim on sacred-texts.com; next-best match: it concerns the value of time, but not the stretching of time in longing.
+- Kural 1271 / buddhism - 40% (primary): Paraphrase of a real short sutta; only a loose next-best link on hiddenness versus disclosure, with no reference to eyes or love.
+- Kural 1274 / islam - 40% (primary): Paraphrase of a well-known hadith, not re-verified this session; only a loose next-best match on the meaning a smile carries.
+- Kural 1274 / philosophy - 40% (primary): Paraphrase of a central doctrine; only a loose philosophical parallel to the bud image, with nothing about love; the acorn example is illustrative, not Aristotle’s own wording.
+- Kural 1276 / real_life_example - 40% (secondary/web): Next-best only: tenderness marking an approaching parting is shared, but this is a public farewell to a town, not a husband's embrace read by his wife.
+- Kural 1277 / real_life_example - 40% (secondary/secondary): Next-best only: it supports the idea that the body registers separation and grief, but it is a medical finding, not an event of parted lovers.
+- Kural 1281 / jainism - 40% (primary): Verified verbatim on sacred-texts.com; a next-best match by contrast, since the Jain monastic text rejects the pleasures the Kural praises.
+- Kural 1285 / real_life_example - 40% (secondary/secondary): Next-best only: shows a wife's eagerness to be with her husband, but nothing in the sources concerns overlooking his faults; already used once elsewhere in the book.
+- Kural 1286 / real_life_example - 40% (primary/secondary): Next-best only: the letter is playful rather than sincere fault-finding, and it was written by the man, not the wife; already used once elsewhere in the book (chapter 110).
+- Kural 1287 / sikhism - 40% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) on 2026-10-10; weak, next-best match: only the flood image is shared; the Kural's point that sulking is futile when one knows love will win has no real Sikh parallel, and only this single line is quoted.
+- Kural 1301 / buddhism - 40% (primary): Next-best only: the Buddhist teaching runs against the Kural’s playful sulking, though it shares the concern that grievance be brief.
+- Kural 1301 / jainism - 40% (primary): Next-best only: Jainism does not celebrate the lovers’ game, so this is a contrasting parallel; paraphrased, not verified verbatim this session.
+- Kural 1309 / jainism - 40% (primary): Verified verbatim on sacred-texts.com; a contrasting parallel only, since the verse renounces the very love the Kural celebrates.
+- Kural 1312 / christianity - 40% (primary): Verified verbatim via bible-api.com (KJV); only a next-best link through the sneeze as a sign of life, with nothing about love or sulking.
+- Kural 1321 / buddhism - 40% (primary): Paraphrase; a real Buddhist teaching on a husband’s attentiveness, but it has no idea of playful sulking, so this is a next-best match.
+- Kural 1321 / jainism - 40% (primary): Paraphrase of a widely cited verse; included as an honest contrast, since Jain teaching sees any anger as harmful to love.
+- Kural 1322 / buddhism - 40% (primary): Paraphrase of a famous verse; it concerns real enmity rather than lovers’ play, so the fit is partial.
+- Kural 1323 / jainism - 40% (primary): Verified verbatim on archive.sacred-texts.com; shares the comparison of love’s pleasure with heaven, but as a contrast.
+- Kural 1324 / islam - 40% (primary): Paraphrase of a well-known hadith; it shares the idea of love outweighing irritation, but not the image of a resolve-breaking weapon.
+- Kural 1329 / islam - 40% (primary): Paraphrase of a well-known hadith; it shows loving, unhurried time together, but has no sulk or prolonged night.
+- Kural 1329 / judaism - 40% (primary): Paraphrase; a next-best match on a night of pleading between future spouses, without any sulk or wish for a longer night.
+- Kural 66 / sikhism - 42% (primary): Next-best only: no SGGS passage was found comparing a child's lisping speech with music; this verse shares only the image of a trusting child speaking to a parent.
+- Kural 323 / greek_mythology - 42% (primary): Weak match — no strong Greek myth ranks non-killing above truthfulness; offered as the best available parallel.
+- Kural 378 / real_life_example - 42% (web/primary): Next-best only: the diary documents that poverty brings suffering rather than detachment, but this compressed kural about renunciation and allotted suffering has no close historical illustration.
+- Kural 387 / jainism - 42% (primary): Checked word for word on sacred-texts.com. This is a weak, next-best fit. Jain scripture offers no close parallel to winning the world's consent through sweet words, gifts and protection, and the passage reverses the kural's roles.
+- Kural 475 / sikhism - 42% (primary): Next-best only: the cartload image is shared, but Guru Nanak's lesson (piled learning is empty without the Name) differs from the Kural's (small things in excess break the strongest).
+- Kural 487 / sikhism - 42% (primary): Mainly a contrast: the Kural counsels hiding anger for strategic use, whereas Gurbani condemns anger outright as one of the five thieves.
+- Kural 490 / sikhism - 42% (primary): Next-best only: the heron or crane and the sudden strike are shared, but Farid reverses the roles and warns of death, not of timing one's attack.
+- Kural 564 / jainism - 42% (primary): Checked word for word against Jacobi on sacred-texts.com. This is a weak next-best match: it concerns a disobedient pupil, not a harsh ruler, and has nothing about a shortened life or reign.
+- Kural 576 / sikhism - 42% (primary): Next-best only: the image of insensibility is parallel, but Guru Nanak's verse is about people unmoved by spiritual teaching, not about lack of kindness to others.
+- Kural 580 / sikhism - 42% (primary): Next-best only: Guru Arjan accepts the divine Will, not harm from a friend for courtesy's sake, and Sikh teaching does not commend submitting to a friend's wrongdoing.
+- Kural 588 / sikhism - 42% (primary): Next-best: testing before acceptance matches, but the Gurbani image concerns the judgment of souls, not cross-checking intelligence.
+- Kural 599 / sikhism - 42% (primary): Next-best: the shared lesson is that size does not prevail, but Kabir's ant stands for humility while the Kural's tiger stands for energy and courage.
+- Kural 681 / sikhism - 42% (primary): Mainly a contrast: Sikhism's rejection of caste and lineage conflicts with the Kural's 'good family' criterion, so this marks a real difference rather than a parallel.
+- Kural 710 / sikhism - 42% (primary): Next-best only: the verse uses bride-soul imagery for spiritual, not romantic, sight of God and says nothing about using the eye to judge others.
+- Kural 759 / sikhism - 42% (primary): Next-best only: the shared image is the sharpest sword against pride, but the Kural recommends accumulating wealth to humble enemies, which Gurbani does not teach; Sikhism turns the weapon against haumai within.
+- Kural 862 / jainism - 42% (primary): Checked word for word against Jacobi on sacred-texts.com. Only a partial and partly opposed parallel: the Kural praises kin and allies as political assets, while the Jain verse says they are of no help against karma.
+- Kural 879 / sikhism - 42% (primary): Next-best: shares the thorn-tree imagery and the logic of consequences, but Farid speaks of one's own deeds and their fruit, not of uprooting an enemy early.
+- Kural 935 / greek_mythology - 42% (primary): Paraphrased from memory of the well-known scene, not checked line by line this session; the board games are incidental to their ruin.
+- Kural 945 / greek_mythology - 42% (primary): Next-best match: the food was sacrilegious rather than unhealthy, so the parallel is only to restraint saving life.
+- Kural 950 / judaism - 42% (primary): Verified verbatim on Sefaria; next-best match, since it lists medical personnel but not the patient-physician-remedy-attendant scheme.
+- Kural 998 / greek_mythology - 42% (primary): Paraphrase from memory; a next-best match only, since Odysseus' restraint serves eventual vengeance.
+- Kural 999 / hinduism - 42% (primary): Verified verbatim on vedabase.io; a next-best match only, as it concerns spiritual peace rather than friendly cheerfulness.
+- Kural 1020 / jainism - 42% (primary): Interpretive paraphrase of doctrine, not verified line by line; a next-best match, since no Jain text found here uses the puppet image for the shameless.
+- Kural 1029 / jainism - 42% (primary): Verified verbatim on sacred-texts.com; included as an honest contrast, since Jain doctrine counsels detachment from family rather than toil for it.
+- Kural 1039 / buddhism - 42% (primary): Verified verbatim (ellipsis marks omitted words); it is about choosing fields rather than neglecting them, so this is a weak, next-best match.
+- Kural 1094 / buddhism - 42% (primary): Paraphrase, not verified verbatim this session; only the modesty theme connects, so this is a next-best match.
+- Kural 1094 / jainism - 42% (primary): Verified verbatim on sacred-texts.com; a contrasting match where the averted gaze serves renunciation.
+- Kural 1098 / buddhism - 42% (primary): Paraphrase, not verified verbatim; a loose next-best match about married reciprocity.
+- Kural 1099 / buddhism - 42% (secondary): Paraphrase, not verified verbatim; a loose next-best match.
+- Kural 1103 / jainism - 42% (primary): Verified verbatim on sacred-texts.com; it addresses heaven’s pleasures but rejects both sides of the Kural’s comparison.
+- Kural 1105 / buddhism - 42% (primary): Verified verbatim on accesstoinsight.org; a direct counter-teaching, so only a next-best match.
+- Kural 1105 / jainism - 42% (primary): Verified verbatim on sacred-texts.com; a direct contrast rather than a parallel.
+- Kural 1105 / philosophy - 42% (primary): Paraphrase from the standard Ross translation, not checked verbatim this session; it qualifies rather than echoes the Kural.
+- Kural 1106 / jainism - 42% (primary): Verified verbatim on sacred-texts.com; the revival image is shared, but its source is the opposite of the Kural’s.
+- Kural 1114 / jainism - 42% (primary): Verified verbatim on sacred-texts.com (diacritics simplified); shares the language of unmatched beauty but uses it to reject attachment, so it is a next-best match.
+- Kural 1116 / hinduism - 42% (primary): Verified verbatim on the Project Gutenberg text of Ryder’s translation; only the moon-that-confuses theme is shared, so a next-best match.
+- Kural 1116 / judaism - 42% (primary): Verified on Sefaria; a next-best match on beauty’s effect on beholders, with no cosmic imagery.
+- Kural 1118 / real_life_example - 42% (secondary/secondary): Next-best only: the moon and a beloved meet in this famous work, but by later accident of naming rather than by any comparison of her face with the moon.
+- Kural 1119 / sikhism - 42% (primary): Weak, next-best match: Gurbani teaches that God is present everywhere and can be seen by anyone who turns to the Guru, which only loosely matches the Kural's wish that the beloved be seen by one person alone.
+- Kural 1121 / buddhism - 42% (primary): Paraphrase, not checked word for word this session; it recognises the same sweetness but treats it as a fetter, the opposite evaluation.
+- Kural 1122 / jainism - 42% (primary): Paraphrase of the sword-and-scabbard argument, not checked word for word this session; it addresses the same body-and-soul image but with the opposite valuation.
+- Kural 1123 / jainism - 42% (primary): Verified verbatim on sacred-texts.com; matches the theme of the eye held by a loved form but condemns it.
+- Kural 1126 / buddhism - 42% (primary): Verified verbatim on Access to Insight; a next-best match that diagnoses the heroine's anxious tenderness rather than sharing her image.
+- Kural 1126 / greek_mythology - 42% (primary): Paraphrase, not checked word for word this session; a next-best match linking love and the eyes.
+- Kural 1138 / buddhism - 42% (primary): Paraphrase not verified word for word this session; a next-best match on love and secrecy, with a different point.
+- Kural 1139 / jainism - 42% (primary): Paraphrase of the chapter's general argument, not verified this session; a next-best match written from a monastic and disapproving angle.
+- Kural 1140 / greek_mythology - 42% (primary): Paraphrase of a well-known episode; a next-best match, since the lovers are adulterers rather than sympathetic sufferers.
+- Kural 1141 / christianity - 42% (primary): Paraphrase from memory of a familiar verse; it shares the theme of public talk about a betrothed couple but treats it as a threat to be avoided.
+- Kural 1141 / buddhism - 42% (primary): Paraphrase of a well-known Udana episode; it is about scandalous rumour but the attitude to it is the opposite of the Kural’s.
+- Kural 1141 / jainism - 42% (primary): Paraphrase checked against Jacobi’s note on sacred-texts.com; a genuine Jain story of a love made public, but it lacks the rumour-as-lifeline idea.
+- Kural 1145 / jainism - 42% (primary): Verified verbatim on sacred-texts.com; a genuine Jain teaching on the sweetness of pleasure, but it speaks against the Kural’s celebration of it.
+- Kural 1147 / christianity - 42% (primary): Paraphrase of a familiar parable, not rechecked this session; it shares only the image of manuring a plant.
+- Kural 1165 / jainism - 42% (primary): Paraphrase of a verse read on sacred-texts.com this session; the link is only that love exposes one to pain, and the Jain counsel of detachment is the opposite of the Kural’s loyal complaint.
+- Kural 1169 / islam - 42% (primary): Verified verbatim via the quran.com API (Sahih International), quoted in part; it shares the idea of grief distorting one’s sense of the world, but concerns repentance, not love or time.
+- Kural 1173 / islam - 42% (primary): Verified verbatim via the quran.com API; it pairs laughter and weeping, but as signs of God’s power rather than as ironic self-reproach.
+- Kural 1175 / philosophy - 42% (primary): Paraphrase of a well-known passage, not checked word for word this session; a general account of being overpowered by emotion, not specific to love or sleeplessness.
+- Kural 1176 / greek_mythology - 42% (primary): Paraphrase of a well-known scene, not checked against a translation this session; it shares the motif of the eyes punished as culprits, but in tragedy, not love.
+- Kural 1186 / jainism - 42% (primary): Verified verbatim on sacred-texts.com; it shares a lamp image and the theme of suffering from attachment, but the simile works differently.
+- Kural 1188 / christianity - 42% (primary): Paraphrase of a well-known passage; the one-sided blame matches structurally, but the context is a charge of adultery, quite unlike a faithful wife’s pallor.
+- Kural 1197 / sikhism - 42% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); weak, next-best match offered as an honest contrast: both speak to desire as a power that causes suffering, but Sikhism does not worship a love-god, and it ranks kaam among the five thieves, while the Kural's Kama is a conventional poetic deity of married love.
+- Kural 1206 / buddhism - 42% (primary): Paraphrase of a canonical sutta; a contrasting diagnosis of the same experience, and about bereavement rather than separation.
+- Kural 1213 / jainism - 42% (primary): Paraphrase of the Jain Ramayana tradition, not verified line by line; only a next-best match, as no dream is involved.
+- Kural 1216 / islam - 42% (primary): Verified verbatim via quran.com API; a theological frame for sleep and waking rather than a parallel teaching on love.
+- Kural 1220 / jainism - 42% (primary): Paraphrase of a central Jain doctrine; an analogical match on partial viewpoints, not about love.
+- Kural 1247 / jainism - 42% (primary): Verified verbatim on sacred-texts.com (Jacobi, Lecture 32, final clause); weak next-best match: it links desire with shame but has no real dilemma, and Jainism would resolve it by renunciation.
+- Kural 1266 / jainism - 42% (primary): Paraphrase of a canonical story not re-read this session; a reunion after separation, but between brothers and with the opposite moral.
+- Kural 1271 / jainism - 42% (primary): Verified verbatim on sacred-texts.com; shares only the idea that hidden things are perceived by the discerning, in a monastic warning context very different from the Kural’s.
+- Kural 1275 / buddhism - 42% (primary): Paraphrase of a real sutta; matches only the idea of curing lovesickness, and the cure points in the opposite direction from the Kural.
+- Kural 1280 / buddhism - 42% (primary): Verified verbatim on accesstoinsight.org; only a loose next-best match on gentle, wordless asking, in a monastic rather than romantic setting.
+- Kural 1281 / buddhism - 42% (primary): Verified verbatim on accesstoinsight.org; a next-best match by contrast, since Buddhism warns against the very passion the Kural praises.
+- Kural 1282 / buddhism - 42% (primary): Verified verbatim on accesstoinsight.org; a loose next-best match, since the verse concerns hatred, not a lover’s mild sulking.
+- Kural 1285 / buddhism - 42% (primary): Paraphrase of a well-known verse, not re-checked word for word in this session; a loose match on biased fault-finding, inverted relative to the Kural.
+- Kural 1285 / jainism - 42% (primary): Verified verbatim on sacred-texts.com; a partial match explaining love’s blindness as delusion, which the Jain text condemns and the Kural treats tenderly.
+- Kural 1286 / christianity - 42% (primary): Verified verbatim via bible-api.com (KJV); only a loose match on biased perception of faults, in a moral rather than romantic context.
+- Kural 1289 / buddhism - 42% (primary): Verified verbatim on accesstoinsight.org; a loose next-best match on flower and rarity, with a different subject.
+- Kural 1294 / christianity - 42% (primary): Verified verbatim via bible-api.com (KJV); a loose next-best link on short-lived anger, with none of the Kural’s playful lovers’ quarrel.
+- Kural 1294 / islam - 42% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a loose link on quick forgiveness, which the Qur’an praises and the Kural’s speaker playfully regrets.
+- Kural 1294 / buddhism - 42% (primary): Verified verbatim on accesstoinsight.org; a next-best match on a fickle mind that will not hold a resolve, with no connection to love’s quarrels.
+- Kural 1301 / sikhism - 42% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) this session; next-best only: shares the ache of love-longing, but the Kural is about deliberately making the beloved suffer a little, which has no Sikh parallel. This is spiritual love for God, not romantic love.
+- Kural 1306 / buddhism - 42% (primary): Verified verbatim on accesstoinsight.org; included as a contrasting view, since Buddhism does not prize love’s quarrels.
+- Kural 1311 / sikhism - 42% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) this session; next-best, by contrast: the Kural's playful jealousy over a love shared by many has no Sikh parallel; Gurbani celebrates the Lord belonging to all.
+- Kural 1312 / jainism - 42% (primary): Verified verbatim on sacred-texts.com (Jacobi); a next-best match on sound as a lure, but the Jain verse warns against sense-attachment while the Kural is a playful domestic scene.
+- Kural 1318 / christianity - 42% (primary): Verified verbatim via bible-api.com (KJV); a next-best match on suspicion of the hidden, from a very different context of judgement.
+- Kural 1321 / judaism - 42% (primary): Paraphrase of a well-known mishnah; it speaks of love’s security in general, not of lovers’ quarrels, so it is a next-best match.
+- Kural 1329 / christianity - 42% (primary): Verified verbatim via bible-api.com (KJV); a next-best match on persistent pleading at night, set in prayer rather than love.
+- Kural 1284 / jainism - 44% (primary): Paraphrase of a well-known dialogue, cited without a verse number; a partial match on the mind running away, framed as something to master.
+- Kural 1286 / buddhism - 44% (primary): Verified verbatim on accesstoinsight.org; a loose next-best match on seeing others’ faults, without the Kural’s presence-absence contrast.
+- Kural 1293 / islam - 44% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a loose next-best match on following one’s desire, with a far stronger moral judgement than the Kural’s tender reproach.
+- Kural 1297 / jainism - 44% (primary): Verified verbatim on sacred-texts.com; a contrasting parallel on the power of memory over restraint, from a monastic rule that rejects the Kural’s marital love.
+- Kural 1306 / islam - 44% (primary): Paraphrase of a very familiar verse; next-best only, since it concerns life’s trials generally, not lovers’ quarrels.
+- Kural 1306 / jainism - 44% (secondary): Paraphrase of a standard doctrine from a secondary summary, not verified this session; the grading parallels the Kural, but the valuation is opposite.
+- Kural 2 / greek_mythology - 45% (secondary): Matches the danger of applying skill/knowledge without heeding wisdom or restraint, but is not specifically about reverence for a deity.
+- Kural 3 / philosophy - 45% (primary): Same general shape (aligned living produces lasting flourishing) but not a devotional or theistic framework, so the parallel is structural rather than doctrinal.
+- Kural 4 / greek_mythology - 45% (primary): Shares the craving-vs-aversion structure, but the fable is about a moral choice at a crossroads, not a description of an already-attained equanimity.
+- Kural 7 / greek_mythology - 45% (primary): Good structural echo (relief only through a higher power) but the Furies represent guilt over an actual crime, a narrower kind of anguish than the Kural's general 'mental anxiety.'
+- Kural 19 / greek_mythology - 45% (primary): Weak next-best match: the elements of generosity, water from the sky and worship all appear, but the causal claim of the Kural is absent.
+- Kural 19 / real_life_example - 45% (secondary/secondary): Next-best only: the sources document migration after drought, not the specific collapse of charity and austerity the kural names.
+- Kural 21 / greek_mythology - 45% (primary): Weak, and honestly so: these are an idealised foreign tribe, not chosen renunciants, and Homer's aside is two lines long — Greek myth simply has no established ascetic class to exalt.
+- Kural 41 / greek_mythology - 45% (primary): Honest next-best match: Hesiod grounds virtue in the household, but his point is not depending on others, which is nearly the inverse of the Kural's point about being depended upon.
+- Kural 52 / real_life_example - 45% (secondary/secondary): Next-best only: the roles are reversed (a queen losing her husband rather than a man lacking a worthy wife), and the kural speaks of a partner's character rather than her loss, but it vividly shows splendour made empty without the partner.
+- Kural 55 / buddhism - 45% (primary): Deliberately scored low: Buddhism explicitly rejects husband-worship and treats spouses as ethical equals, so this is a best-available 'next-best' match only.
+- Kural 140 / greek_mythology - 45% (primary): Weak match. No Greek myth directly makes the learned-yet-ignorant point; this is the best available image of social harmony.
+- Kural 149 / real_life_example - 45% (secondary/secondary): Next-best only: it shows the blessings of a faithful marriage, but no documented temptation was resisted, and the kural's claim of desert is moral, not historical.
+- Kural 162 / greek_mythology - 45% (primary): Weak match: the story centers on hospitality and piety; freedom from envy is implied, not stated.
+- Kural 183 / greek_mythology - 45% (primary): Weak match: shares the honour-over-life principle only; no slander involved, and the Kural does not endorse suicide. Paraphrased, not quoted.
+- Kural 189 / jainism - 45% (primary): Verified verbatim on sacred-texts.com; a weak next-best match, since the verse is about reckless sin in general and has neither the slanderer nor the Kural's image of the patient earth.
+- Kural 195 / hinduism - 45% (primary): Weak and interpretive: the episode concerns mockery, and the famous Draupadi line is a later popular addition. Best available Hindu narrative match.
+- Kural 212 / greek_mythology - 45% (primary): Partial and contrasting: Hesiod's selectivity is based on return, while the Kural's thakkaar is about worthiness.
+- Kural 221 / greek_mythology - 45% (primary): Contrast rather than parallel: archaic Greek ethics of reciprocity is the position the Kural rejects.
+- Kural 224 / sikhism - 45% (primary): Next-best only: no Sikh text found in this session matches the Kural's psychology of the giver's pain dissolving at the sight of the asker's happy face; this verse shares only the theme of joyful, untiring giving.
+- Kural 225 / greek_mythology - 45% (primary): Paraphrase; a loose thematic parallel about using power for others’ survival, not specifically about hunger versus fasting.
+- Kural 229 / real_life_example - 45% (secondary/secondary): Next-best only: the messes show a society that rejected solitary eating, but they were compulsory and funded by helot labour, so they are not an act of generous sharing.
+- Kural 230 / judaism - 45% (primary): Loose parallel; rabbinic tradition reads ‘tzedakah’ here as charity, but the verse does not say death is preferable to being unable to give.
+- Kural 230 / jainism - 45% (primary): Paraphrase only: the verse's content was checked through a secondary (Wikipedia) rendering, not against Champat Rai Jain's translation. The parallel is structural, and sallekhanā has nothing to do with being unable to give.
+- Kural 230 / greek_mythology - 45% (primary): Paraphrase; a self-sacrifice myth, only loosely related to the Kural’s claim about being unable to give.
+- Kural 230 / real_life_example - 45% (secondary/secondary): Next-best only: it shows a life and fortune organised entirely around giving, but nothing documents the kural's claim that death is sweeter than being unable to give.
+- Kural 239 / real_life_example - 45% (secondary/secondary): Next-best only: the kural's claim of a moral link between a person's renown and the fertility of the soil cannot be illustrated literally, so this shows the converse in a practical sense.
+- Kural 240 / greek_mythology - 45% (primary): Honest contrast rather than parallel; shows the tension within Greek heroic culture over the worth of fame.
+- Kural 249 / philosophy - 45% (primary): Deliberate contrast rather than a parallel; included because no Western philosophical text maps more directly onto the kural’s specific claim.
+- Kural 251 / greek_mythology - 45% (primary): Thematic only: the myth is about insatiable greed and impiety, not about eating animals.
+- Kural 252 / judaism - 45% (primary): Next-best match: restraint rather than abstention; no explicit compassion argument.
+- Kural 254 / greek_mythology - 45% (primary): Next-best: contrasts devouring with justice, but Hesiod did not advocate vegetarianism.
+- Kural 256 / islam - 45% (primary): Partial: accountability for killing, but food is explicitly a “just reason” in this hadith.
+- Kural 256 / judaism - 45% (primary): Grants permission rather than forbidding; the ‘desire drives killing’ reading is interpretive.
+- Kural 257 / christianity - 45% (primary): Parallel in act, not in reason.
+- Kural 258 / greek_mythology - 45% (primary): Hesiod does not explicitly say the golden race abstained from meat; the vegetarian reading comes from later writers.
+- Kural 262 / greek_mythology - 45% (primary): Structural analogy only; not about asceticism.
+- Kural 263 / philosophy - 45% (primary): Structural resemblance only.
+- Kural 272 / greek_mythology - 45% (primary): Next-best mythic parallel: guilt that holy status cannot remove; Orestes is not a hypocrite and his act was divinely commanded.
+- Kural 283 / philosophy - 45% (primary): Weak-to-moderate: shares the instability-of-wealth theme but does not single out fraudulent gain.
+- Kural 289 / hinduism - 45% (primary): Weak-to-moderate: defines a thief by non-reciprocity, but does not state immediate ruin; chosen as the best available Hindu parallel.
+- Kural 292 / buddhism - 45% (primary): Partial contrast: shared benefit test, opposite conclusion on beneficial untruths (later Mahayana upaya teaching comes closer to the Kural).
+- Kural 297 / greek_mythology - 45% (primary): Truthfulness in oaths as supreme; narrower (oaths only) and punitive rather than a claim of sufficiency.
+- Kural 323 / sikhism - 45% (primary): Next-best only: Sikh teaching puts truthful living at the summit and has no verse ranking non-killing above truth, so this is a partial contrast more than a parallel.
+- Kural 325 / greek_mythology - 45% (primary): Paraphrase; weak-to-moderate parallel on the gravity of killing, without the renunciant comparison.
+- Kural 326 / greek_mythology - 45% (primary): Paraphrase; the reward is for hospitality more than non-killing, so the match is partial.
+- Kural 326 / real_life_example - 45% (secondary/secondary/web): Next-best only: the truce shows death pausing where killing stops, but the kural promises long life to those who live by non-killing, which no historical event can strictly show.
+- Kural 340 / greek_mythology - 45% (primary): Paraphrase and loose, allegorical match only: later Neoplatonist readers took Odysseus' voyage as the soul's journey, but Homer's story is literal.
+- Kural 345 / sikhism - 45% (primary): Low, a deliberate contrast: Sikhism does not regard the body as an encumbrance to be shed and explicitly honours human birth, so it agrees only on the goal of liberation.
+- Kural 349 / judaism - 45% (primary): Weak-to-moderate: shares the impermanence theme, but Judaism has no doctrine of cutting off rebirth.
+- Kural 349 / philosophy - 45% (primary): Paraphrase; matches the instability strand only, not the ending of rebirth.
+- Kural 358 / greek_mythology - 45% (primary): Paraphrase; weak-to-moderate. Pessimism about birth matches, but there is no liberating ‘Truth’ or end to rebirth.
+- Kural 360 / greek_mythology - 45% (primary): Paraphrase; allegorical fit only. The myth itself is not about inner passions.
+- Kural 360 / real_life_example - 45% (primary/secondary): This is an analogy only: the event shows the principle of total eradication ending a disease, but has nothing to do with the inner faults the kural names.
+- Kural 361 / greek_mythology - 45% (primary): Next-best match: desire as the primordial generative force, but Greek myth celebrates rather than condemns it and has no rebirth doctrine.
+- Kural 362 / greek_mythology - 45% (primary): Next-best match: a choice between pleasures and a higher good, but there is no idea of liberation from birth.
+- Kural 364 / greek_mythology - 45% (primary): Philosophical myth rather than traditional mythology; parallel is thematic.
+- Kural 372 / hinduism - 45% (primary): Paraphrase. Shares the ‘ruin through loss of intelligence’ pattern; the cause is desire, not destiny.
+- Kural 372 / buddhism - 45% (primary): Weak-to-moderate: shares ‘knowledge leading to ruin’, with no doctrine of fate.
+- Kural 374 / hinduism - 45% (primary): Weak: lists fortune and intelligence as separate powers but does not contrast them. Best available Gita verse.
+- Kural 374 / greek_mythology - 45% (primary): Paraphrase. Weak match: shows separate allotment of gifts, not wealth versus wisdom.
+- Kural 375 / hinduism - 45% (primary): Weak: the reversal here is about spiritual discipline, not fortune in earning wealth.
+- Kural 377 / philosophy - 45% (primary): Paraphrase. Weak on fate; shares the gap between accumulation and enjoyment.
+- Kural 378 / christianity - 45% (primary): Weak-to-moderate: shares appointed limits on life; no link to poverty or renunciation.
+- Kural 378 / greek_mythology - 45% (primary): Paraphrase. Weak: general unavoidable ills, nothing on poverty or renunciation.
+- Kural 378 / philosophy - 45% (primary): Weak-to-moderate: a complementary response rather than a parallel claim.
+- Kural 385 / greek_mythology - 45% (primary): Contrast rather than parallel; no close Greek-myth analogue for royal finance.
+- Kural 391 / greek_mythology - 45% (primary): Weak match. Greek myth has no clear story commanding people to live by their learning. Athena's joining of wisdom and craft is the closest available parallel.
+- Kural 401 / greek_mythology - 45% (primary): Weak, analogical match: about presuming skill in general, not about speaking in a learned assembly. Best available myth.
+- Kural 403 / philosophy - 45% (primary): Weak match: Wittgenstein’s limit is what language can express, not what an individual has learned. Included as the best-known philosophical maxim on principled silence.
+- Kural 471 / sikhism - 45% (primary): Next-best only: both concern the measure of power, but Japji relativizes all human strength to God rather than advising how to compare strengths.
+- Kural 480 / buddhism - 45% (primary): Weak and contrasting: the same situation with the opposite evaluation. It is included as the most relevant Buddhist treatment of giving beyond means. The Dīghajāṇu Sutta (AN 8.54) would give the prudential side.
+- Kural 487 / jainism - 45% (primary): Checked word for word against Jacobi on sacred-texts.com. It agrees only on outward restraint. The kural's idea of seething inwardly while waiting conflicts with the Jain aim of removing anger (krodha), one of the four passions.
+- Kural 488 / jainism - 45% (primary): Checked word for word against Jacobi on sacred-texts.com. Partial match on enduring enemies who later fall; the strategic patience aimed at the enemy's ruin in the kural is opposed to Jain non-hatred.
+- Kural 491 / jainism - 45% (primary): Checked word for word against Jacobi on sacred-texts.com. The theme of not underestimating a difficult enemy is shared; the military idea of besieging ground is changed into an inner contest, so the fit is loose.
+- Kural 493 / hinduism - 45% (primary): Weak match: the same principle of preparing the place first, but in a contemplative setting with no adversary.
+- Kural 494 / christianity - 45% (primary): General call to prudence among enemies; nothing specific about position.
+- Kural 496 / islam - 45% (primary): Only an image-level parallel; the verse is about divine signs, not choosing a place.
+- Kural 497 / buddhism - 45% (primary): Parallel on fearlessness only; nothing about planning or place.
+- Kural 502 / jainism - 45% (secondary): Checked word for word on the jainworld.com Saman Suttam (quoted from mid-verse). This is a partial contrast rather than a match: Jainism discounts the lineage criterion the kural leads with.
+- Kural 506 / islam - 45% (primary): Only a loose parallel: it values family ties but does not warn against trusting the unattached.
+- Kural 506 / sikhism - 45% (primary): Next-best only: the Kural's 'cut off' people lack kin and community, while Kabir's saakat is cut off from God; the shared idea of a missing restraining bond is partly interpretive.
+- Kural 510 / buddhism - 45% (primary): Only a partial parallel: vicikicchā is doubt about the path, not suspicion of a tested person.
+- Kural 516 / sikhism - 45% (primary): Next-best only: the shared element is attention to time, while the Kural's method of matching agent, task and moment has no direct Gurbani counterpart that I could find.
+- Kural 519 / sikhism - 45% (primary): Next-best only: both tie the loss of fortune to wronging the devoted, but Guru Arjan speaks of slandering saints, not of a ruler misreading a loyal servant's closeness.
+- Kural 534 / sikhism - 45% (primary): Next-best only: the futility of fortresses is shared, but Kabir's point is death and transience, not fear or heedlessness.
+- Kural 545 / sikhism - 45% (primary): Next-best only: Gurbani makes no causal link between a ruler's justice and rainfall; only the rain-as-blessing image is shared.
+- Kural 550 / buddhism - 45% (primary): A contrasting rather than agreeing text, chosen because Buddhism has no close endorsement of capital punishment.
+- Kural 550 / jainism - 45% (web): Checked word for word against the jainworld.com page; the page's authorship credit is ambiguous. Jain ahimsa is in real tension with this kural's endorsement of the death penalty, so this is an honest next-best match, not an endorsement.
+- Kural 559 / sikhism - 45% (primary): Next-best only: Gurbani makes no causal link between a king's injustice and failing rain; only the idea that rainfall depends on a moral-cosmic order is shared.
+- Kural 565 / jainism - 45% (web): Paraphrased from Wikipedia as a last resort; the Kural's point about hoarded, useless wealth has no Jain counterpart here, and the contrast is indirect.
+- Kural 574 / buddhism - 45% (primary): Parallels only the ‘measure’ element; the topic is effort in meditation, not kindness.
+- Kural 574 / jainism - 45% (primary): Checked word for word against Jacobi on sacred-texts.com. A next-best match: it concerns the rarity of hearing the Law, not kindness, and the idea of 'due measure' is absent.
+- Kural 574 / sikhism - 45% (primary): Next-best only: both treat the eyes as having a moral purpose, but for the Guru that purpose is seeing God in all, not showing kindness to people.
+- Kural 576 / jainism - 45% (primary): Paraphrased from verses and a footnote checked on sacred-texts.com. The comparison is my own interpretive bridge, and Jainism respects plants as living souls rather than using them as a figure of insensibility.
+- Kural 577 / greek_mythology - 45% (primary): Parallel paradox of sight and blindness; the true sight is knowledge of fate, not kindness.
+- Kural 585 / sikhism - 45% (primary): Next-best: the unseen observer is a real echo, but the Kural's points about holding out under hostile scrutiny and never leaking a secret have no counterpart here.
+- Kural 586 / christianity - 45% (primary): Contrast parallel: same device of a religious disguise, opposite moral judgment.
+- Kural 595 / sikhism - 45% (primary): Next-best: both make the mind the measure of a person's stature, but the Kural means energy and aspiration, Gurbani the divine light within, and the water-flower image is not shared.
+- Kural 606 / sikhism - 45% (secondary): Partial: the passing over of heirs fits the Kural's point, but Britannica credits Angad's loyalty and does not say the sons were idle, so the sloth element is not attested.
+- Kural 608 / sikhism - 45% (primary): Next-best: the unguarded person falling to enemies matches, but sloth is not named here and Sikhism gives no worth to noble birth (kul), which the Kural takes for granted.
+- Kural 663 / christianity - 45% (primary): Next-best match: secrecy about timing, but not a general maxim about concealing plans until completion.
+- Kural 678 / jainism - 45% (primary): Weak, next-best match: the shared image is the decoy-captured elephant, but Jainism uses it negatively; the line is from Jacobi's bracketed summary of a repeated verse.
+- Kural 678 / sikhism - 45% (primary): Next-best only: Sikh scripture has no teaching on using one undertaking to accomplish the next; this offers only a loose analogy of one success drawing in others.
+- Kural 681 / buddhism - 45% (primary): Matches only the kin-affection element and does not concern envoys.
+- Kural 692 / sikhism - 45% (primary): Next-best only: a general ban on taking another's due, not prudent restraint before a king, and the Kural's promised reward of lasting royal favour has no parallel.
+- Kural 694 / christianity - 45% (primary): Weak match. Paul condemns whispering as gossip in general, not as a breach of court etiquette.
+- Kural 695 / judaism - 45% (primary): Weak but real parallel about sovereigns and hidden things. It does not directly forbid courtiers from prying.
+- Kural 699 / sikhism - 45% (primary): Next-best only: shares the warning against presumption before a sovereign, but Japji's context is claiming to know God's greatness, not presuming on royal favour.
+- Kural 710 / jainism - 45% (primary): Paraphrase of a well-known doctrine, not quoted. This is a next-best match: Jainism partly disagrees with the Kural by placing direct, non-sensory knowledge above any reading of the eyes.
+- Kural 720 / jainism - 45% (primary): Checked word for word against Jacobi on sacred-texts.com. Next-best match: the imagery of good things versus filth is similar, but the Jain verse blames the unworthy receiver and gives no warning to the speaker about choosing an audience.
+- Kural 732 / jainism - 45% (primary): Checked word for word on sacred-texts.com. This is a contrast, not a parallel: Jainism names the same riches of the land but treats craving for them as bondage, so the fit is weak.
+- Kural 733 / jainism - 45% (secondary): Checked word for word on jainworld.com. Next-best only: this is a secondary summary of individual lay charity and has nothing to say about a land's capacity or about paying the ruler's dues.
+- Kural 742 / jainism - 45% (primary): Both sentences verified verbatim against Johnson's translation on wisdomlib.org; Jain scripture has no teaching on the natural defences of a fort, so this is a next-best structural echo only (no hill or forest belt is described).
+- Kural 744 / christianity - 45% (primary): A spiritual metaphor with only a loose structural parallel.
+- Kural 746 / christianity - 45% (primary): A parable about discipleship; only the concern with enough troops carries over.
+- Kural 752 / buddhism - 45% (primary): Contrast rather than parallel, recalled from memory; no Buddhist text found stating the Kural’s observation directly.
+- Kural 758 / jainism - 45% (secondary): Both items verified verbatim on jainworld.com; they share only the general theme of financial prudence, with nothing on the Kural's specific point or its elephant-fight simile, so this is a next-best match.
+- Kural 758 / sikhism - 45% (primary): Next-best only: both value independence from others, but the Kural's security lies in one's own funds, while Guru Arjan's lies in God alone; no Gurbani passage praises self-financing as such.
+- Kural 771 / buddhism - 45% (primary): Same subject (victory over foes) seen from the opposite moral angle.
+- Kural 776 / islam - 45% (primary): Mostly a contrast: duty without the Kural’s eagerness.
+- Kural 776 / judaism - 45% (primary): Contrasting definition of heroism, offered for honest comparison.
+- Kural 776 / sikhism - 45% (primary): Only the idea that comfortable days are wasted days carries over; Kabir's measure is remembrance of God, not wounds, so this is a next-best match.
+- Kural 776 / greek_mythology - 45% (primary): Loose parallel on the scar as a mark of identity; not a battle wound.
+- Kural 779 / buddhism - 45% (primary): Shares the value of resolve; does not address vows or death in battle.
+- Kural 785 / sikhism - 45% (primary): Only loosely parallel: the union meant is the soul's union with God, not like-mindedness between friends; no closer Sikh source was found.
+- Kural 790 / greek_mythology - 45% (primary): Interpretive parallel; the Iliad does not itself make the Kural’s point about boasting.
+- Kural 801 / greek_mythology - 45% (primary): Loose analogy: a story of loyalty between a man and a dog, not a teaching about friends’ liberties.
+- Kural 802 / greek_mythology - 45% (primary): Illustrates deep familiarity but not the ethic of accepting a friend’s presumptions.
+- Kural 803 / greek_mythology - 45% (primary): Illustrates friends sharing one fate; it is a story of self-sacrifice, not of accepting a friend’s liberties.
+- Kural 805 / christianity - 45% (primary): Shares the ‘they did not know’ reasoning, but concerns enemies, not old friends.
+- Kural 805 / buddhism - 45% (primary): Related only generally: it concerns self-examination, not interpreting a friend’s act.
+- Kural 805 / greek_mythology - 45% (primary): Illustrative; the Iliad does not frame Achilles’ response as a moral teaching.
+- Kural 807 / buddhism - 45% (web): The Buddha’s freedom from hatred is not the same as continuing an intimate friendship.
+- Kural 807 / greek_mythology - 45% (primary): Illustrative only; the myth is often read as a warning against blind loyalty, not praise of it.
+- Kural 809 / hinduism - 45% (primary): General praise of constant friendship; no direct statement that the world loves the loyal.
+- Kural 810 / christianity - 45% (primary): The mechanism, goodness winning enemies, matches; the specific virtue of loyalty to old friends does not.
+- Kural 829 / sikhism - 45% (primary): Next-best only: Gurbani shares the Kural's diagnosis of two-faced conduct but does not approve meeting pretence with pretence, which the Kural here allows as policy.
+- Kural 830 / buddhism - 45% (primary): Weak match: the Buddhist ideal is genuine goodwill, not strategic reserve.
+- Kural 834 / greek_mythology - 45% (primary): A philosophical anecdote rather than myth, and about impracticality rather than moral hypocrisy.
+- Kural 837 / sikhism - 45% (primary): Next-best only: both speak of the fool and his wealth, but Gurbani's point is its impermanence and forgetting the Giver, not strangers feasting while kin starve.
+- Kural 839 / christianity - 45% (primary): Shares the low value of foolish company but lacks the irony about painless parting.
+- Kural 839 / greek_mythology - 45% (primary): Fable rather than myth, and about a treacherous friend rather than a foolish one.
+- Kural 861 / jainism - 45% (primary): Both verses checked word for word against Jacobi on sacred-texts.com (9.33 is only a speaker tag and is omitted). The passage deals with the Kural's subject but takes the opposite position, because ahimsa rules out seeking enmity even with the weak, so it is scored as a next-best match.
+- Kural 862 / christianity - 45% (primary): Shared emphasis on love, but Paul speaks of spiritual worth, not political or military strength.
+- Kural 867 / sikhism - 45% (primary): Next-best: shares the theme of false friends, but Farid's line voices spiritual longing for the true Beloved and gives no advice to turn a false associate into an open enemy.
+- Kural 869 / christianity - 45% (primary): Weak parallel on ignorance leading to a fall; not about enemies or fear.
+- Kural 870 / judaism - 45% (primary): Loose match on rising to the occasion; not about enemies or fame.
+- Kural 875 / buddhism - 45% (primary): Indirect; the sutta teaches communal unity, and the division of the Vajjians comes from later tradition.
+- Kural 875 / jainism - 45% (primary): Checked word for word against Jacobi on wisdomlib.org. Keśi and Gautama were never enemies, and there is no second adversary or strategic motive, so this is only a next-best parallel of rivalry turned into alliance.
+- Kural 876 / islam - 45% (primary): General call to caution in conflict; does not address whom to trust or not break with.
+- Kural 880 / christianity - 45% (primary): Weak match: divine action against the proud, not human resolve; paraphrased.
+- Kural 887 / philosophy - 45% (primary): Weak, next-best match: Aristotle speaks of shallow friendship, not concealed enmity.
+- Kural 890 / philosophy - 45% (primary): Weak, next-best match: Seneca speaks of moral contagion, not hidden enmity.
+- Kural 893 / philosophy - 45% (primary): Looser parallel about ignoring expertise; it lacks the retaliation of a mighty person.
+- Kural 894 / islam - 45% (primary): Partial fit: the attackers were mighty in worldly terms, but powerless before God.
+- Kural 894 / buddhism - 45% (primary): Thematic only; Mara is defeated rather than killed, and the episode is about awakening, not prudence.
+- Kural 895 / philosophy - 45% (primary): Historical illustration only; the Consolation itself teaches detachment, not caution toward kings.
+- Kural 896 / philosophy - 45% (primary): Thematic only; Stesichorus recovers, whereas the Kural denies escape.
+- Kural 898 / philosophy - 45% (primary): Historical parallel only; the moral of the dialogue is ambiguous and critical of the strong.
+- Kural 901 / judaism - 45% (primary): A partial and contrasting parallel; it endorses time-limited devotion rather than warning against it.
+- Kural 904 / islam - 45% (primary): Verified; shares the link between domestic life and the hereafter but does not mention fear of a spouse.
+- Kural 904 / buddhism - 45% (primary): Verified; general teaching on passion, not about fear of a spouse.
+- Kural 904 / sikhism - 45% (primary): Partial and indirect: it backs the Kural's high regard for householder duty, but says nothing about a husband's fear of his wife.
+- Kural 905 / hinduism - 45% (primary): Matches the content of the neglected duty, not the cause (fear of a wife).
+- Kural 905 / philosophy - 45% (primary): Matches the virtue at stake, not the cause of its failure.
+- Kural 907 / hinduism - 45% (primary): Partial and complicating parallel; the epic presents her counsel sympathetically.
+- Kural 907 / judaism - 45% (primary): Partial parallel; Abigail acts without her husband's command rather than commanding him.
+- Kural 909 / buddhism - 45% (primary): Verified; general teaching on craving, not on domestic obedience.
+- Kural 913 / real_life_example - 45% (secondary/secondary): Next-best only: the kural's stark simile has no close historical equivalent, and the sources document the arranged marriage rather than the feelings within the relationship.
+- Kural 919 / greek_mythology - 45% (primary): Loose parallel of being stuck in pleasure; the lotus has nothing to do with mercenary love.
+- Kural 923 / buddhism - 45% (primary): Verified wording, but the link to drinking comes from elsewhere in the sutta; a weak match.
+- Kural 929 / greek_mythology - 45% (primary): Loose thematic parallel; the story does not show anyone trying to reason with them.
+- Kural 931 / greek_mythology - 45% (primary): Verified verbatim; shows dice leading to ruin, but says nothing about the danger of winning.
+- Kural 934 / greek_mythology - 45% (primary): Episode verified in Butler's text; there is no poverty here, only exile and disgrace.
+- Kural 936 / philosophy - 45% (primary): Verified verbatim; the psychology overlaps, but Pascal is not condemning gambling specifically.
+- Kural 940 / islam - 45% (primary): Verified verbatim; it explains the attraction but not the deepening attachment with loss.
+- Kural 940 / greek_mythology - 45% (primary): Summarised from the well-known passage but not re-checked verbatim this session; a loose thematic parallel.
+- Kural 941 / islam - 45% (primary): Verified verbatim; the balance-against-excess-and-deficiency structure matches, but the verse concerns cosmic and commercial justice, not health.
+- Kural 942 / islam - 45% (primary): Paraphrased, not checked live this session; it values health but gives no rule about eating after digestion.
+- Kural 942 / buddhism - 45% (primary): Paraphrase, not verified live; it praises health but supplies no dietary rule.
+- Kural 942 / sikhism - 45% (primary): Next-best only: both speak of a daily discipline that makes other cures unnecessary, but the Kural means diet and the body while Gurbani means spiritual remembrance; Sikhism does not reject ordinary medicine.
+- Kural 948 / judaism - 45% (primary): Paraphrase, not verified live; endorses medicine in general but does not describe diagnosis.
+- Kural 950 / islam - 45% (primary): Paraphrase, not verified live; covers the attendant's role only, not the fourfold scheme.
+- Kural 965 / greek_mythology - 45% (primary): Only a structural fit: the heel is a physical weakness, not a moral act.
+- Kural 965 / philosophy - 45% (primary): Next-best match on shame and disgraceful acts; lacks the small-act-great-fall point.
+- Kural 992 / buddhism - 45% (primary): Paraphrase; included as an honest contrast, since the sutta denies the value of birth that the Kural affirms.
+- Kural 999 / buddhism - 45% (primary): Paraphrase, as the page could not be re-fetched this session; a next-best match, since its joy is renunciant rather than sociable.
+- Kural 999 / sikhism - 45% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); a next-best match on the image of darkness in daylight only, since Guru Angad's cause of darkness is the absence of the Guru, not the inability to share cheerful company.
+- Kural 1034 / hinduism - 45% (primary): Verified verbatim (ellipses mark omitted words); it links agriculture with settled polity but lacks the Kural's point about the farmer's strength extending the king's rule.
+- Kural 1034 / greek_mythology - 45% (primary): Paraphrase; the live text was not re-checked this session. The myth is about spreading agriculture, not political dominion, so the fit is partial.
+- Kural 1037 / hinduism - 45% (primary): Verified verbatim; a blessing on ploughing rather than the Kural's technique of drying the soil, so only a general match.
+- Kural 1037 / sikhism - 45% (primary): Next-best only: the Kural's agronomic instruction on drying ploughed soil has no Sikh parallel, and the verse uses farming purely as a spiritual metaphor.
+- Kural 1038 / philosophy - 45% (primary): Verified verbatim on Perseus; it is about supervising workers rather than guarding the crop, so it is only a partial match.
+- Kural 1046 / buddhism - 45% (primary): Verified verbatim on accesstoinsight.org (ellipses mark omitted items); next-best match that reframes poverty rather than addressing the neglect of poor speakers.
+- Kural 1046 / jainism - 45% (primary): Verified verbatim on sacred-texts.com; next-best match, about enduring abuse rather than having one’s wise words ignored.
+- Kural 1047 / islam - 45% (primary): Verified verbatim on alquran.cloud; next-best match, since the estrangement is caused by the Last Day, not by poverty.
+- Kural 1050 / sikhism - 45% (primary): Weak, next-best only: Kabir's preference for simple alms-bread with devotion touches the Kural's advice to renounce, but Sikh teaching rejects renunciation and begging, so the Kural's counsel conflicts with the Sikh householder ideal.
+- Kural 1062 / sikhism - 45% (primary): Next-best match and really a contrast: Sikh teaching accepts the divine order and would not curse the Creator, so it answers the Kural's protest rather than echoing it.
+- Kural 1078 / greek_mythology - 45% (primary): Paraphrase, not verified this session; only a weak next-best match, since the fable is about ingratitude and shares only the image of yield under blows.
+- Kural 1079 / real_life_example - 45% (secondary/secondary): The sources do not show the protesters acted from envy, and the kural's image is of envy at others' food and clothes, so this is a next-best illustration of fault-finding only.
+- Kural 1086 / real_life_example - 45% (secondary/secondary): Brows, eyes and love meet in this image, but the kural's wish that the curved brows would hide the eyes is not illustrated.
+- Kural 1087 / real_life_example - 45% (secondary/secondary): The idea of cloth restraining a dangerous beauty matches, but the setting is religious art, not love; the sources also differ on the year (1559 or 1564).
+- Kural 1091 / islam - 45% (primary): Verified via the quran.com API; only the idea of overwhelming love from sight matches, and the Qur’anic context condemns it, so this is a next-best match.
+- Kural 1092 / jainism - 45% (primary): Verified verbatim on sacred-texts.com; a contrasting next-best match, since Jain teaching treats visual attraction as bondage.
+- Kural 1093 / jainism - 45% (primary): Verified verbatim on sacred-texts.com; only the idea of love feeding its own growth matches, in a contrasting frame.
+- Kural 1094 / real_life_example - 45% (secondary/secondary): Shows love that began hesitantly, but there is no record of the specific shy looking-away and hidden smile the kural describes.
+- Kural 1095 / buddhism - 45% (secondary): Paraphrase of a later Chan/Zen story, not verified verbatim; the link is the meaningful silent smile, in a non-romantic setting.
+- Kural 1095 / philosophy - 45% (primary): Paraphrase, not verified verbatim this session; only a loose thematic link to love’s indirection.
+- Kural 1096 / buddhism - 45% (primary): Verified verbatim on accesstoinsight.org; it shares the idea of reading the inner person but contrasts on speed, so it is a next-best match.
+- Kural 1100 / real_life_example - 45% (secondary/secondary): Shows wordless affection between a couple, but it is an artwork whose meaning is courtly and religious as much as personal, and the meeting of eyes is not described by the sources.
+- Kural 1102 / buddhism - 45% (primary): Verified verbatim on accesstoinsight.org; it shares the sickness idea but rejects the Kural’s remedy, so this is a next-best match.
+- Kural 1102 / jainism - 45% (primary): Verified verbatim on sacred-texts.com; it addresses the cure of desire but reverses the Kural’s answer.
+- Kural 1106 / buddhism - 45% (primary): Verified verbatim on accesstoinsight.org; shares the reviving-taste image but replaces the beloved with Nibbana.
+- Kural 1109 / buddhism - 45% (primary): Paraphrase of a famous verse, not re-checked verbatim this session; it concerns reconciliation in general, not lovers’ play.
+- Kural 1109 / real_life_example - 45% (secondary/web/secondary): Next-best only: the cycle of falling out and reuniting fits, but the kural means a brief playful sulk within a happy love, while this was a real divorce and the reunion did not last.
+- Kural 1110 / jainism - 45% (primary): Verified verbatim on sacred-texts.com; the endlessness is shared, but valued in the opposite way.
+- Kural 1111 / jainism - 45% (primary): Verified verbatim on wisdomlib.org (spacing as printed); a Tamil Jain text used because Jain scripture has no positive praise of beauty, and it directly opposes the Kural’s stance.
+- Kural 1112 / buddhism - 45% (primary): Paraphrase not checked word for word this session; it shares the idea of a mind misled by appearances, but the Kural’s point is loyal praise, not detachment.
+- Kural 1112 / greek_mythology - 45% (primary): Paraphrase of a well-known episode, not checked against a translation this session; the flower-recalls-beloved idea is only a partial fit.
+- Kural 1113 / philosophy - 45% (primary): Paraphrase, not verified word for word this session; a related account of bodily beauty that points beyond it.
+- Kural 1114 / sikhism - 45% (primary): Next-best only: the shared picture is nature bowing before something greater, but the Guru's point is God's hukam (order) over creation, not a flower outdone by a woman's eyes.
+- Kural 1115 / greek_mythology - 45% (primary): Paraphrase from memory of a well-known episode, not verified this session; delicacy is shared, though Homer’s scene is comic-heroic rather than romantic.
+- Kural 1118 / judaism - 45% (primary): Verified on Sefaria; shares the theme of the beloved surpassing all rivals for love, without the moon.
+- Kural 1118 / sikhism - 45% (primary): Next-best only: both put the moon below the beloved's radiance, but Kabir's verse is about God's majesty, and the sense of moons as lamps at His door comes from the commentary, not the English line.
+- Kural 1118 / greek_mythology - 45% (primary): Paraphrase of a widely attested myth, not checked against a translation this session; a playful, loose match on the moon and love.
+- Kural 1121 / islam - 45% (primary): Verified verbatim via api.alquran.cloud; the milk-and-honey pairing matches closely, but the subject is reward in the hereafter, not romantic love.
+- Kural 1121 / jainism - 45% (primary): Verified verbatim on sacred-texts.com; shares the image of sweet taste but reverses the Kural's judgment.
+- Kural 1121 / greek_mythology - 45% (primary): Paraphrase, not checked word for word this session; the honey-sweet speech image fits, but Nestor is an elder counsellor, not a beloved.
+- Kural 1123 / hinduism - 45% (primary): Paraphrase, not checked word for word this session; it shares the image of the figure in the pupil but has a philosophical purpose, not a romantic one.
+- Kural 1124 / islam - 45% (primary): Verified verbatim via api.alquran.cloud; a next-best match on spouses sustaining each other, with no life-and-death contrast.
+- Kural 1126 / philosophy - 45% (primary): Paraphrase, not checked word for word this session; it matches the notion of extreme fineness only, with no romantic content.
+- Kural 1127 / real_life_example - 45% (secondary/secondary): Next-best only: giving up something of one's own for the beloved fits in spirit, but the kural's specific, playful reason, not wanting to hide him in her eyes, has no parallel here.
+- Kural 1129 / islam - 45% (primary): Verified verbatim on sunnah.com; a next-best match on sleep and wakefulness, in a devotional rather than romantic context.
+- Kural 1129 / jainism - 45% (primary): Verified verbatim on sacred-texts.com; a match on deliberate sleeplessness, with the opposite motive.
+- Kural 1130 / jainism - 45% (primary): Verified verbatim on sacred-texts.com; shares only the theme of outsiders misjudging what they do not understand.
+- Kural 1130 / philosophy - 45% (primary): Paraphrase of a very well-known passage; a next-best match on appearance versus reality, without the love theme.
+- Kural 1133 / christianity - 45% (primary): Paraphrase; the before-and-after structure matches, but Paul speaks of devotion to Christ, not romantic love.
+- Kural 1134 / islam - 45% (primary): Paraphrase, not checked word for word this session; a general match on the pull of desire, with a moral judgment the Kural does not make.
+- Kural 1135 / jainism - 45% (primary): Paraphrase of a passage read on sacred-texts.com this session; only partly parallel, since the Jain story honours the renunciation that causes the grief.
+- Kural 1136 / jainism - 45% (primary): Based on Jacobi's footnote read on sacred-texts.com; the Nemiduta itself was not consulted, so the match is indirect.
+- Kural 1136 / real_life_example - 45% (secondary/secondary): Next-best only: the obsession fits, but the sources do not document sleeplessness, and the couple were engaged, not refused as in the kural; already used once elsewhere in the book (chapter 118); the two sources differ slightly on the year of the second engagement.
+- Kural 1138 / jainism - 45% (primary): Verified verbatim on sacred-texts.com; a contrasting ideal rather than a parallel.
+- Kural 1139 / buddhism - 45% (secondary): Paraphrase of a commentarial story; the bewildered public wandering matches, but the attachment is a mother's grief, not romantic love.
+- Kural 1140 / real_life_example - 45% (secondary/secondary): Next-best only: the Lovings faced legal condemnation rather than laughter, so the event is far graver than the kural's complaint about mockery.
+- Kural 1141 / greek_mythology - 45% (primary): Paraphrase of a well-known passage not rechecked this session; it shares the idea of rumour’s persistence, but Hesiod treats it as something to avoid.
+- Kural 1142 / buddhism - 45% (primary): Paraphrase of a famous verse not rechecked this session; it fits the town’s misjudgment only in general terms.
+- Kural 1143 / buddhism - 45% (primary): Paraphrase of a well-known simile, not rechecked this session; it matches ‘having as if had’ but evaluates it negatively.
+- Kural 1143 / greek_mythology - 45% (primary): Paraphrase of a famous episode; it shares ‘having as if one had’, though Pygmalion’s illusion comes from art, not rumour.
+- Kural 1144 / real_life_example - 45% (secondary/secondary): The couple's love was strong before the rumours, so the talk did not make it grow; this event is also used for kural 1138.
+- Kural 1146 / judaism - 45% (primary): Paraphrase of a known passage, not rechecked this session; it shares the eclipse image only, without the theme of rumour.
+- Kural 1149 / jainism - 45% (primary): Verified verbatim on sacred-texts.com; shares an indifference to public clamour, but it springs from renunciation, not abandonment.
+- Kural 1150 / jainism - 45% (primary): Paraphrase of a well-known Jain narrative, not rechecked word for word this session; a genuine ‘following the beloved’ story, turned toward renunciation.
+- Kural 1152 / judaism - 45% (primary): Verified verbatim on Sefaria (JPS 1917); later used as a lovers’ farewell, but in context it is a wary pact between rivals, so the fit is loose.
+- Kural 1153 / islam - 45% (primary): Verified verbatim via the quran.com API (footnote marker removed); it supports the general truth that separation is universal but is about mortality, not lovers’ promises.
+- Kural 1154 / judaism - 45% (primary): Paraphrase of a well-known passage, not checked against JPS this session; a contrast of faithful betrothal rather than a parallel to broken reassurance.
+- Kural 1154 / philosophy - 45% (primary): Paraphrase of a well-known argument; it concerns deliberately false promises, while the Kural’s husband may have meant his words.
+- Kural 1157 / buddhism - 45% (primary): Paraphrase of a well-known commentarial story; the visible grief matches, but her loss is bereavement, a far heavier matter than a husband’s journey.
+- Kural 1160 / christianity - 45% (primary): Verified verbatim via bolls.life KJV; a general call to endurance, with no reference to love or separation.
+- Kural 1163 / islam - 45% (primary): Verified verbatim via the quran.com API (Sahih International); it shares only the idea of an unbearable burden, and its context is religious obligation, not love.
+- Kural 1163 / jainism - 45% (primary): Verified verbatim on archive.sacred-texts.com; the shared idea is love as a heavy burden, but the Jain answer is renunciation, opposite to the Kural’s sympathy.
+- Kural 1164 / real_life_example - 45% (primary/secondary): The swim matches the kural's image of crossing a sea without a raft, but Byron swam as a sporting feat inspired by a legend, not out of love, so this is a next-best fit.
+- Kural 1165 / philosophy - 45% (primary): Paraphrase of a general theme of the dialogue, not checked against a translation this session and without a precise section number; only a partial fit, since the Kural describes no breach of friendship.
+- Kural 1168 / islam - 45% (primary): Verified verbatim via the quran.com API (Sahih International); it states the night’s gift of rest to all, which the Kural assumes, but contains nothing of loneliness or love.
+- Kural 1168 / buddhism - 45% (primary): Paraphrase of a well-known narrative, not checked against a translation this session; the sleeping household and the separation match, but the canonical account follows Siddhartha, not Yasodhara’s wakefulness.
+- Kural 1168 / philosophy - 45% (primary): Paraphrase of the discourse’s main distinction, not checked against Long’s translation this session; it analyses forlornness but counsels self-sufficiency, unlike the Kural.
+- Kural 1171 / greek_mythology - 45% (primary): Paraphrase of a well-known episode, not checked against a translation this session; the eyes-as-cause motif fits, but Orpheus loses his wife through one look rather than falling in love by sight.
+- Kural 1172 / philosophy - 45% (primary): Paraphrase of a famous passage, not checked word for word this session; it explains why the eyes looked without discerning, but Hume is making a general claim about motivation, not about love.
+- Kural 1173 / judaism - 45% (primary): Verified verbatim on Sefaria (JPS 1917); it shares the image of the restless eye, but lacks the Kural’s humour and its love context.
+- Kural 1173 / philosophy - 45% (primary): Paraphrase of a well-known definition, not checked word for word this session; it explains the laughter but not the grief beneath it.
+- Kural 1174 / jainism - 45% (primary): Verified verbatim on sacred-texts.com; the love-as-disease image is shared, but the Jain text offers a cure where the Kural insists there is none.
+- Kural 1174 / greek_mythology - 45% (primary): Paraphrase of a well-known episode, not checked against a translation this session; it shares the wasting love-sickness but not the image of tears running dry.
+- Kural 1174 / real_life_example - 45% (secondary/secondary): The incurable grief fits, but the loss was by death and the kural's specific idea that the eyes caused the sickness is missing, so this is next-best.
+- Kural 1175 / islam - 45% (primary): Verified verbatim via the quran.com API; it shares a grief too large to bear, but has no sleeplessness or ocean image and the love is paternal.
+- Kural 1175 / jainism - 45% (primary): Verified verbatim on sacred-texts.com; the ocean image and restlessness match, but the Jain verse diagnoses delusion rather than describing a lover’s sleeplessness.
+- Kural 1175 / real_life_example - 45% (secondary/secondary): The sheer scale of devotion matches the kural's love greater than the sea, but its focus on sleepless, suffering eyes is not documented in these sources.
+- Kural 1176 / hinduism - 45% (primary): Verified verbatim on vedabase.io; the idea of one’s own faculty as enemy fits, but the Gita speaks of the mind (not the eyes) and has no element of satisfaction in its suffering.
+- Kural 1176 / philosophy - 45% (primary): Paraphrase of a well-known argument, not checked word for word this session; the fittingness of deserved suffering fits, but Plato’s concern is moral wrongdoing, not love.
+- Kural 1177 / greek_mythology - 45% (primary): Paraphrase of a well-known episode, not checked against a translation this session; strong on endless weeping, but the grief is a mother’s and the tears never stop.
+- Kural 1181 / real_life_example - 45% (secondary/secondary): Next-best: a wife at home through a long chosen separation fits the setting, but the sources do not record her explicitly consenting to the voyage or describe her grief.
+- Kural 1182 / jainism - 45% (primary): Verified verbatim on sacred-texts.com; offered as a contrast, since Jain teaching would reject the Kural’s idea that the beloved is the giver of the change.
+- Kural 1183 / islam - 45% (secondary): Paraphrase of the romance’s general narrative, not checked against a translation this session; a Persian literary work from Muslim culture rather than scripture.
+- Kural 1183 / buddhism - 45% (primary): Paraphrase of well-known verses, not checked against a translation this session; the loss of beauty matches, but Ambapali’s cause is age, not separation.
+- Kural 1183 / jainism - 45% (primary): Paraphrase of a well-attested Jain story, not checked against Johnson’s translation this session; a next-best match about lost beauty, not love-sickness.
+- Kural 1183 / philosophy - 45% (primary): Paraphrase of a well-known passage, not checked word for word this session; love-as-lack is a loose fit to a concrete exchange of beauty for pallor.
+- Kural 1184 / real_life_example - 45% (secondary/secondary): Next-best: devotion to the husband's memory fits, but this is mourning after death, and the kural's point (constant remembrance should have prevented the pallor) has no parallel.
+- Kural 1185 / christianity - 45% (primary): Verified verbatim via bolls.life KJV; the watched departure matches, but the Ascension is a joyful theological event, not a lover’s parting.
+- Kural 1186 / real_life_example - 45% (secondary/secondary/secondary): Next-best: shortening separation fits the kural's fear of any gap, but the sources do not record her motive or any sign of pining in his absence.
+- Kural 1187 / islam - 45% (primary): Verified verbatim via the quran.com API (excerpt); it describes spousal closeness, not the grief of its loss.
+- Kural 1189 / jainism - 45% (primary): Verified verbatim on sacred-texts.com; her acceptance parallels the Kural’s, but Rajimati turns to renunciation rather than wishing a husband well in worldly life.
+- Kural 1191 / jainism - 45% (primary): Paraphrase of a standard Jain teaching on lay chastity; only a next-best match, since Jain texts treat marital love as a limit on desire, not as a fruit to be savoured.
+- Kural 1194 / christianity - 45% (primary): Verified verbatim via bolls.life KJV (excerpt); the structure matches, but Paul speaks of having love, not of being loved by a spouse.
+- Kural 1195 / christianity - 45% (primary): Verified verbatim via bolls.life KJV; an honest counterpoint rather than a parallel, since Jesus values love without return.
+- Kural 1198 / real_life_example - 45% (secondary/secondary): Next-best fit: we do not know how the woman felt or whether she ever sent him kind words, so the link to living without a sweet word is an inference from the unsent letter and his single life.
+- Kural 1202 / jainism - 45% (primary): Paraphrase from memory of a widely recited hymn, not checked live; only a structural parallel, since Jain devotion is not romantic.
+- Kural 1203 / christianity - 45% (primary): Verified verbatim via bolls.life KJV; matches the image of love that starts and fades, but with no omen and in a covenantal setting.
+- Kural 1205 / buddhism - 45% (primary): Paraphrase of a short sutta; diagnoses the experience rather than sharing the Kural’s tender reproach.
+- Kural 1208 / judaism - 45% (primary): Verified verbatim on Sefaria (JPS 1917); only a general fit on love’s forbearance.
+- Kural 1208 / greek_mythology - 45% (primary): Paraphrase of a well-known story; only a general fit on conflict-free married love, with no theme of remembrance.
+- Kural 1212 / buddhism - 45% (primary): Paraphrase; explains her sleeplessness well, but Buddhism prescribes giving up the longing the Kural cherishes.
+- Kural 1212 / greek_mythology - 45% (primary): Paraphrase; authorship of the fragment is disputed and it does not mention dreams, so this is a next-best match on sleepless solitude.
+- Kural 1214 / real_life_example - 45% (secondary/secondary/secondary): Next-best: the dream-as-retriever idea fits, but the subject is science, not love, and the dream story rests on Loewi's own later account.
+- Kural 1215 / hinduism - 45% (primary): Paraphrase; a metaphysical parallel to the Kural’s emotional claim, not a teaching about love.
+- Kural 1215 / islam - 45% (primary): Paraphrase of a well-known hadith; the hadith number was not verified this session, so none is given. Partial fit on dreams as genuine good.
+- Kural 1217 / islam - 45% (primary): Verified verbatim via quran.com API; only a partial fit on troubling dreams, and the courtiers turn out to be wrong.
+- Kural 1218 / philosophy - 45% (primary): Paraphrase; an analytic parallel to the Kural’s image, without its tenderness.
+- Kural 1218 / real_life_example - 45% (primary/web): Next-best: a former beloved living on in a dream image fits the spirit, but the painting shows the woman dreaming, not the painter, and little is documented about the relationship.
+- Kural 1227 / real_life_example - 45% (secondary/secondary): Next-best: the event is the writing of a poem about a legendary pair, and it shows love-sickness growing but not the kural's precise morning-to-evening cycle.
+- Kural 1228 / buddhism - 45% (primary): Next-best match, paraphrased; shares a sensory reminder rekindling longing, but there is no flute and the Buddha cures Nanda of it.
+- Kural 1233 / buddhism - 45% (primary): Next-best match given as paraphrase; it shares the theme of the body’s decline but speaks of age, not love-sickness.
+- Kural 1233 / jainism - 45% (primary): Paraphrase of a well-known Jain narrative, not verified against Johnson’s text this session; it shares the fading-beauty motif but has nothing to do with love or separation.
+- Kural 1234 / jainism - 45% (primary): Paraphrase of the Tamil Jain work’s general teaching, without a verified verse number; shares fading beauty but none of the Kural’s sympathy for love.
+- Kural 1237 / philosophy - 45% (primary): Next-best match; shares the form of addressing one’s own soul but not the content.
+- Kural 1240 / hinduism - 45% (primary): Next-best match given as paraphrase; shares the interdependence of bodily parts, but its subject is the primacy of breath, not love.
+- Kural 1240 / judaism - 45% (primary): Next-best match given as paraphrase (not re-verified this session); shares spreading bodily affliction, but as rebuke, not sympathy.
+- Kural 1240 / buddhism - 45% (primary): Next-best match given as paraphrase; the conditioning principle fits the conceit, but the sutta is metaphysical and has nothing to do with love.
+- Kural 1243 / real_life_example - 45% (secondary/secondary): Next-best: a long, one-sided pining matches, but the sources do not record Laura's feelings toward him, and he was a poet, not an abandoned wife.
+- Kural 1244 / islam - 45% (primary): Verified verbatim via api.alquran.cloud (en.sahih), quoting the verse’s second sentence; only the eyes-and-heart pairing connects, as the verse is about spiritual blindness.
+- Kural 1244 / real_life_example - 45% (secondary/secondary): Next-best: it shows longing to see a distant husband finally acted upon, but not the kural's image of the eyes tormenting the one who stays behind.
+- Kural 1246 / christianity - 45% (primary): Verified verbatim via bible-api.com (KJV); a loose ethical parallel on not prolonging anger, with nothing of the Kural’s playful lovers’ quarrel.
+- Kural 1246 / islam - 45% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a general virtue of restraining anger, not a parallel to a lover’s feigned sulk.
+- Kural 1246 / buddhism - 45% (primary): Verified verbatim on accesstoinsight.org; a loose parallel on anger that does not run its course; the Kural’s anger is playful, not a defilement.
+- Kural 1254 / jainism - 45% (primary): Paraphrase of a verse read on sacred-texts.com; it shares only the motif of hidden attachment becoming public, and its monastic warning is far from the Kural’s sympathy for a wife.
+- Kural 1257 / philosophy - 45% (primary): Paraphrase of a famous line; next-best match, as Pascal speaks mainly of faith and says nothing about shyness.
+- Kural 1259 / buddhism - 45% (primary): Verified verbatim on accesstoinsight.org; a next-best match, since the verse concerns hatred generally while the Kural describes playful sulking that love overcomes.
+- Kural 1260 / islam - 45% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a next-best match on hearts softening, but the context is reverence for God, not love for a spouse.
+- Kural 1262 / jainism - 45% (primary): Verified verbatim on sacred-texts.com; a contrast rather than a parallel: Jain scripture turns lost beauty into renunciation, the opposite of the Kural’s devoted remembering.
+- Kural 1267 / buddhism - 45% (primary): Verified verbatim on accesstoinsight.org; next-best match: it explains the root of her mixed feelings but counsels freedom from them rather than celebrating them.
+- Kural 1269 / islam - 45% (primary): Verified verbatim via api.alquran.cloud (en.sahih); next-best match: it shares the idea of one day equalling many, but the point is divine time, not a lover’s impatience.
+- Kural 1270 / real_life_example - 45% (secondary/web): Next-best: a wife's death during her husband's campaign echoes the husband's fear, but she was travelling with him and died in childbirth, not of the grief of waiting.
+- Kural 1272 / real_life_example - 45% (secondary/secondary): Next-best: extreme reserve hiding something precious fits, but the kural praises a wife's modesty in a love relationship, which this event does not involve.
+- Kural 1273 / greek_mythology - 45% (primary): Paraphrase of a famous passage; shares the structure of something hidden within adornment, but Hesiod’s view of women is hostile, so the fit is weak.
+- Kural 1274 / real_life_example - 45% (primary/secondary): Next-best: the shared idea is a smile that hides an inner feeling, but in the kural it is a sweet secret of love and in Dunbar it is suffering.
+- Kural 1277 / jainism - 45% (primary): Verified verbatim on sacred-texts.com; a partial parallel of ornaments signalling separation, but it is the departing groom, not the grieving bride, whose ornaments go.
+- Kural 1280 / real_life_example - 45% (secondary/secondary): Next-best: a silent plea carried by the face and eyes is the shared idea, but it is not a plea between lovers, and the subject did not intend to plead.
+- Kural 1283 / real_life_example - 45% (secondary/secondary): Next-best only: the longing to see the beloved fits, but Cayley was not her husband and did not neglect her; the sources give 1864 and 1866 for the refusal.
+- Kural 1284 / christianity - 45% (primary): Verified verbatim via bible-api.com (KJV); only a structural match on will and action diverging, in a context of sin rather than love.
+- Kural 1286 / sikhism - 45% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) on 2026-10-10; next-best match only: it concerns fault-finding, but as a moral warning about ego (haumai), not the Kural's tender observation that absence makes faults loom large.
+- Kural 1288 / real_life_example - 45% (secondary/secondary): Next-best only: the hardship borne for love fits loosely, but the kural's pain comes from the husband himself, not from family opposition; this event is also used for kural 1150.
+- Kural 1289 / real_life_example - 45% (secondary/secondary): Next-best only: the idea of love's right moment is an interpretation, since the sources do not explain why the couple came back together; this event is also used for kural 1142.
+- Kural 1296 / christianity - 45% (primary): Verified verbatim via bible-api.com (KJV); a loose next-best link on crushing inner sorrow, in a very different, sacred context.
+- Kural 1312 / sikhism - 45% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) this session; next-best: relevant to the sneeze custom the Kural relies on, but the Kural's scene is playful, not about superstition, and Sikhism rejects such omens.
+- Kural 1312 / philosophy - 45% (primary): Paraphrase from a work of the Aristotelian school; a next-best match on the custom behind the couplet, with no love theme.
+- Kural 1314 / jainism - 45% (primary): Verified verbatim on sacred-texts.com (Jacobi); a next-best match on attachment and comparison, framed as a warning against attachment.
+- Kural 1316 / buddhism - 45% (primary): Verified verbatim on accesstoinsight.org; a next-best match, since the verse is about real hatred and the Kural’s grievance is playful.
+- Kural 1317 / sikhism - 45% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) this session; next-best: directly relevant to the sneezing belief behind the couplet, but the Kural uses it for humour, not as teaching.
+- Kural 1318 / sikhism - 45% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) this session; next-best: shares the theme of hidden thoughts, but the Kural's suspicion is playful and human, while Gurbani speaks of God's knowledge.
+- Kural 1319 / jainism - 45% (primary): Verified verbatim on sacred-texts.com (Jacobi); a next-best match on a self-renewing cycle, from a teaching aimed at escaping desire altogether.
+- Kural 1319 / sikhism - 45% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) this session; next-best: both concern a bride's relation to a beloved shared by others, but Gurbani has no jealousy and the love is spiritual. This is spiritual love for God, not romantic love.
+- Kural 1323 / buddhism - 45% (primary): Paraphrase of a canonical story; an honest contrast, since the Buddhist text ranks heaven above earthly love (and both below release).
+- Kural 1325 / buddhism - 45% (primary): Paraphrase of a canonical Jataka; shares the faultless separation of lovers, but treats it as grief, not pleasure.
+- Kural 1326 / christianity - 45% (primary): Verified verbatim via bible-api.com (KJV); shares the shape of a later sweetness, but concerns discipline, not love.
+- Kural 1326 / jainism - 45% (primary): Verified verbatim on archive.sacred-texts.com; a striking structural parallel used as a contrast, since its verdict on pleasure is the reverse.
+- Kural 1328 / christianity - 45% (primary): Verified verbatim via bible-api.com (KJV); shares the savouring of remembered love, but not the idea of renewing it through a quarrel.
+- Kural 1328 / islam - 45% (primary): Paraphrase of a well-known verse (not re-read in this session, so not quoted); a general match on marital affection, not on renewed reunion.
+- Kural 1328 / judaism - 45% (primary): Verified verbatim on Sefaria (JPS 1917); a general match on enjoying married love, not on renewing it through a sulk.
+- Kural 1015 / jainism - 46% (primary): Paraphrase not checked against Tatia in this session; a next-best match, since no Jain text found here commends feeling shame for others' blame.
+- Kural 1272 / buddhism - 46% (primary): Paraphrase of a real sutta; a partial link between beauty and inner disposition, but the Buddhist frame is karmic cause, not a lover’s praise of modesty.
+- Kural 1284 / islam - 46% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a loose match on enmity becoming closeness, without the Kural’s involuntary heart.
+- Kural 1286 / islam - 46% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a partial match on suspicion in absence, but a general ethical command rather than about lovers.
+- Kural 1288 / islam - 46% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a partial match on wine’s harmful attraction, used as legal guidance rather than as a simile for love.
+- Kural 1296 / jainism - 46% (primary): Paraphrase of a well-known dialogue, not verified verse by verse this session; only a loose match on an unruly mind, with no reference to grief or love.
+- Kural 9 / real_life_example - 48% (secondary/secondary): Henry's bowing was political as much as religious and was made to a pope rather than to God, so the fit is loose.
+- Kural 15 / buddhism - 48% (primary): Honest stretch: the antithetical structure and rain imagery match, but rain here is purely a simile for defilement, not a life-giving force that also restores.
+- Kural 16 / buddhism - 48% (primary): Honest stretch: rain and grazing grass both appear, but the sutta never claims that without rain no grass grows.
+- Kural 29 / philosophy - 48% (primary): Deliberately a low-confidence, contrastive entry — Greco-Roman philosophy has no doctrine of the efficacious wrath of the holy, and the nearest sustained treatment denies the phenomenon exists.
+- Kural 33 / greek_mythology - 48% (primary): Honest stretch: the labours are penance under compulsion, not freely chosen everyday virtue — the shared element is only unremitting, adaptive effort.
+- Kural 58 / sikhism - 48% (primary): Next-best only: Sita's name links to wifely faithfulness, but in the Japji these are spiritual heroes filled with God, not wives rewarded for honouring husbands, and Sikhism teaches no special heaven earned by wifely devotion.
+- Kural 62 / christianity - 48% (primary): Verified verbatim but a weak match: the direction of moral transfer is reversed, and Christianity has no doctrine of seven births for the Kural's central image to land on.
+- Kural 98 / greek_mythology - 48% (primary): Honest weak match: Greek myth has no ethic of speech extending into the afterlife, so this is the best available structural analogue only.
+- Kural 150 / real_life_example - 48% (secondary/secondary/secondary): Next-best only: Grant's failings were mostly misfortune rather than wrongdoing, and the evidence is of devotion rather than of a temptation refused.
+- Kural 184 / sikhism - 48% (primary): Next-best only, with a real tension: the Kural tolerates harsh words to the face, while this verse rejects all harsh speech, and it does not address speaking behind someone's back.
+- Kural 230 / sikhism - 48% (primary): Next-best only: both say a life without its proper purpose is not worth having, but Gurbani's measure is remembrance of God rather than the capacity to give, and it does not speak of preferring death.
+- Kural 234 / philosophy - 48% (primary): Weak but real parallel; Socrates is speculative and speaks of conversing, not of heaven ranking humans above gods.
+- Kural 246 / sikhism - 48% (primary): Next-best only: the verse gives the ground of compassion but does not speak of the pitiless forgetting their own sufferings, which is the Kural's specific charge.
+- Kural 263 / jainism - 48% (primary): Verified verbatim on sacred-texts.com (diacritics as printed there); next-best only, since no Jain text echoes Valluvar's irony, and Jainism actually expects laity to practise some tapas rather than excusing them.
+- Kural 326 / sikhism - 48% (primary): Next-best only: the image of Death kept at bay matches, but the condition in Gurbani is God's favour through Naam, not non-killing, and the sense is spiritual rather than a longer life.
+- Kural 370 / real_life_example - 48% (secondary/secondary): Only a loose national-scale analogy to a kural about personal renunciation; sources also differ on the exact year and wording of the king's statement.
+- Kural 407 / real_life_example - 48% (secondary/secondary): Next-best only: the Turk is a machine, so it illustrates the kural's image of an empty decorated figure metaphorically rather than showing an unlearned person.
+- Kural 420 / real_life_example - 48% (secondary/secondary/primary): Next-best only: the kural condemns a whole life lived without cultivating the ear, while this is a single refusal of advice reported mainly by Plutarch.
+- Kural 440 / sikhism - 48% (primary): Next-best only: the Kural's point is political secrecy to thwart enemies' schemes, which has no real Sikh counterpart; Farid's line shares only the idea of keeping one's inner love hidden.
+- Kural 476 / sikhism - 48% (primary): Next-best only: both warn about overreaching height, but Kabir speaks of death's leveling of all pride, not of pushing past the limit of one's strength.
+- Kural 484 / sikhism - 48% (secondary): Next-best only: political history, not Sikh teaching; the source summary confirms the capture of Lahore (1799) but not the specific timing judgements the Kural stresses.
+- Kural 504 / jainism - 48% (primary): Paraphrase of a well-known doctrine, not verified against Tatia's translation in this session. It is a next-best match: anekantavada concerns knowing reality, not weighing a candidate's merits against faults.
+- Kural 508 / sikhism - 48% (primary): Next-best only: Kabir warns against a known kind of companion rather than against trusting without examination, and says nothing of harm to descendants.
+- Kural 542 / sikhism - 48% (primary): Next-best only: the rain-dependence image matches, but Gurbani applies it to devotion to God rather than to subjects and their ruler.
+- Kural 554 / jainism - 48% (primary): Checked word for word against Jacobi on sacred-texts.com. Only the double-loss structure matches; the verse is about a false ascetic, not a ruler, so this is a next-best match.
+- Kural 562 / sikhism - 48% (primary): Next-best only: the verse is about divine forgiveness of the devotee, not a ruler's measured punishment, and it has nothing like the Kural's stern warning.
+- Kural 563 / sikhism - 48% (primary): Next-best only: Kabir's immediate context is ritual slaughter of animals called halal, so the application to a ruler's terror is an extension, and the verse does not speak of the tyrant's ruin.
+- Kural 568 / sikhism - 48% (primary): Next-best only: the destructiveness of anger is shared, but the verse has nothing on failing to consult counsellors, which is half of the Kural's point.
+- Kural 581 / sikhism - 48% (primary): Next-best only: the shared image is wisdom as eyesight, but Gurbani's eye-salve is spiritual knowledge, not spies or a treatise on polity.
+- Kural 589 / jainism - 48% (primary): Checked word for word against Jacobi on sacred-texts.com (diacritics simplified). The parallel is only general (many sources, one conclusion); nothing in Jain texts I found matches the specific rule of three mutually unknown agents.
+- Kural 632 / jainism - 48% (primary): Checked word for word on sacred-texts.com. Next-best only: it touches the single quality of protecting others, and in a spiritual sense; no Jain passage found lists a minister's qualities as the Kural does.
+- Kural 673 / jainism - 48% (primary): Next-best match only: the kural is about practical (often military) expedients, while the Jain passage concerns adapting religious rules to people's capacities.
+- Kural 680 / sikhism - 48% (primary): Next-best only: Guru Nanak praises humility as a virtue before God and others, not political submission by a weaker state to a stronger one.
+- Kural 692 / jainism - 48% (primary): Checked word for word on sacred-texts.com. Next-best only: Jain non-possessiveness (aparigraha) is general, and the Kural's point about not competing with the king, and being rewarded by him, has no counterpart.
+- Kural 753 / sikhism - 48% (primary): Next-best only: the shared image is the lamp that dispels darkness, but the Kural's lamp is material wealth overcoming enmity abroad, while Guru Nanak's is spiritual and dispels suffering and death.
+- Kural 759 / jainism - 48% (primary): Verified verbatim on sacred-texts.com; Jain teaching does not endorse using wealth against enemies, so this is an honest contrasting match that shares only the language of conquering foes and their pride.
+- Kural 908 / sikhism - 48% (primary): Next-best: it shares the call to do good for others, but says nothing about being led by a spouse; the Sikh duty of seva falls equally on women and men.
+- Kural 937 / jainism - 48% (primary): Verified verbatim; it shares only the general theme of a life wasted on pleasure, and says nothing of the gaming hall, ancestral wealth or character, so this is a weak next-best match.
+- Kural 939 / philosophy - 48% (primary): Verified verbatim; it addresses honour only, not the other four goods.
+- Kural 944 / islam - 48% (primary): Paraphrase, not checked live; fits wholesome food with restraint, but not the Kural's rules on hunger and digestion.
+- Kural 965 / sikhism - 48% (primary): Next-best only: the great-against-tiny imagery is shared, but the lesson differs, since the verse is about ego blocking liberation rather than a small fault ruining a great reputation.
+- Kural 992 / jainism - 48% (primary): Verified verbatim on sacred-texts.com; a partial contrast rather than a match, since it denies birth the role the Kural gives it.
+- Kural 999 / jainism - 48% (primary): Verified verbatim on sacred-texts.com; a next-best match, since the cheerfulness is ascetic endurance rather than friendly laughter.
+- Kural 1006 / greek_mythology - 48% (primary): Paraphrase; next-best: the plenty-as-torment image fits, but Tantalus is punished by the gods, not by his own miserliness.
+- Kural 1008 / greek_mythology - 48% (primary): Paraphrase; next-best: wealth misplaced with the unworthy, but no direct parallel to the poison-tree image.
+- Kural 1013 / christianity - 48% (primary): Verified verbatim; a next-best match that parallels the abode imagery but says nothing directly about shame.
+- Kural 1030 / jainism - 48% (primary): Verified verbatim on sacred-texts.com; it shares the theme of who can prop up a person in distress but draws the opposite conclusion, so it is a contrastive next-best match.
+- Kural 1039 / jainism - 48% (primary): Verified verbatim; it shares the idea of neglect leading to loss, but concerns merchants and the soul, not land.
+- Kural 1049 / christianity - 48% (primary): Verified verbatim; an inverse parallel that shares the theme of sleep and means but disagrees with the Kural.
+- Kural 1080 / hinduism - 48% (primary): Paraphrase of a well-known story used as a contrast; only a next-best match, since Harishchandra's self-sale is virtuous, not base.
+- Kural 1091 / buddhism - 48% (primary): Verified verbatim on accesstoinsight.org; it shares the idea that love wounds but rejects the Kural’s romantic remedy, so the match is partial.
+- Kural 1093 / buddhism - 48% (primary): Paraphrase of a well-attested story (the maiden’s name differs in other versions); the link to the bowed head is loose.
+- Kural 1094 / sikhism - 48% (primary): Next-best only: the pattern of seeing without being seen is shared, but Japji is about God and creation, with no shyness or courtship involved.
+- Kural 1099 / philosophy - 48% (primary): Paraphrase of a famous line, not verified verbatim this session; a loose thematic link.
+- Kural 1104 / jainism - 48% (primary): Verified verbatim on sacred-texts.com; shares the fire image but denies that closeness can cool it.
+- Kural 1109 / sikhism - 48% (primary): Next-best only: Gurbani treats the bride's pride as a fault to be given up, while the Kural enjoys the lovers' quarrel as a pleasure, and the Sikh love here is spiritual, not romantic.
+- Kural 1113 / real_life_example - 48% (secondary/secondary): Next-best only: both portray the beloved's beauty in the language of nature, but the sources checked confirm only that the yaksha describes his wife, not the feature-by-feature comparisons that make this kural distinctive.
+- Kural 1114 / buddhism - 48% (primary): Verified verbatim on accesstoinsight.org; it shares the praise of eyes but turns it to impermanence.
+- Kural 1116 / sikhism - 48% (primary): Next-best only: both use the moon and stars to honour the beloved, but the Aarti is cosmic worship of God, and nothing in it matches the stars' confusion.
+- Kural 1116 / philosophy - 48% (primary): Paraphrase, not verified word for word this session; a partial thematic match on beauty’s shining visibility.
+- Kural 1120 / islam - 48% (primary): Verified via the quran.com API; shares the image of sheltered delicacy, in an eschatological setting and with no mention of feet.
+- Kural 1125 / jainism - 48% (primary): Verified verbatim on sacred-texts.com (diacritics simplified in 'Sramana'); a direct counterpoint about remembering a beloved's charms, addressed to monks.
+- Kural 1126 / islam - 48% (primary): Verified verbatim on sunnah.com; it matches the idea of an unseen presence held in sight, in a devotional rather than romantic context.
+- Kural 1127 / christianity - 48% (primary): Verified verbatim via bible-api.com (KJV); it shares the setting-aside of adornment for something inward, but the motive is moral, not romantic.
+- Kural 1128 / jainism - 48% (primary): Paraphrase, not checked word for word this session; a structural parallel of careful eating for an invisible being's sake, without romance.
+- Kural 1133 / jainism - 48% (primary): Verified verbatim on sacred-texts.com; a mirror-image of the Kural's movement rather than a parallel.
+- Kural 1141 / hinduism - 48% (primary): Paraphrase of a well-known opening; it shares the setting of a love hidden from, then known to, the village, but Jayadeva never says gossip keeps the lover alive.
+- Kural 1142 / jainism - 48% (primary): Paraphrase of a well-known Jain episode not rechecked word for word this session; it fits misjudging a woman’s rarity but involves no town rumour.
+- Kural 1142 / philosophy - 48% (primary): Paraphrase of the general argument of the essay, not rechecked this session; a general thematic fit only.
+- Kural 1146 / sikhism - 48% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match only: it shares the image of news spreading far from a single event, but the news is of the Guru's visit, not a lovers' rumour, and there is no eclipse image.
+- Kural 1147 / jainism - 48% (primary): Paraphrase of a well-known Jain narrative, not checked against a translation this session; a structural parallel only.
+- Kural 1149 / sikhism - 48% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match only: it shares the idea of honour that gossip cannot touch, but has nothing of the broken promise ('do not fear') or the abandoned heroine, and the Beloved is God, who in Sikh teaching never abandons.
+- Kural 1152 / jainism - 48% (primary): Verified verbatim on sacred-texts.com; the doctrine that pleasure turns to pain fits, but it is general renunciant teaching, not about love or parting.
+- Kural 1153 / philosophy - 48% (primary): Paraphrase of a well-known passage; it explains why bonds dissolve, but the Kural’s husband leaves for duty, not because his love has failed.
+- Kural 1157 / christianity - 48% (primary): Verified verbatim via bolls.life KJV; shares the bodily signs of grief, but the psalm’s distress is not about a lover’s absence.
+- Kural 1163 / buddhism - 48% (primary): Verified verbatim on accesstoinsight.org; it pairs two afflictions arising from love, but grief and fear are not the Kural’s love and shame, and the verse counsels detachment.
+- Kural 1164 / islam - 48% (primary): Verified verbatim via the quran.com API (Sahih International); the absence of any safe refuge from a flood matches, but the story is one of judgment, not love.
+- Kural 1172 / islam - 48% (primary): Verified verbatim via the quran.com API; the restraint-of-the-gaze principle fits, but the verse concerns modesty in general, not regret within marriage.
+- Kural 1176 / jainism - 48% (primary): Verified verbatim on sacred-texts.com; it supports the idea that the passionate sense suffers, though the Jain point is a call to dispassion, with none of the Kural’s ironic glee.
+- Kural 1178 / jainism - 48% (primary): Paraphrase of a well-known Jain narrative, not re-read this session; a genuine story of a forsaken bride, though its resolution is renunciation rather than continued romantic longing.
+- Kural 1180 / buddhism - 48% (primary): Paraphrase of the tale’s outline from general knowledge, not checked against a translation this session; the exposed lovesickness fits, though the king’s desire is for another man’s wife and the Jataka condemns it.
+- Kural 1183 / christianity - 48% (primary): Verified verbatim via bolls.life KJV; an inverse parallel built on the same idea of exchanged beauty and grief, not a direct match.
+- Kural 1185 / buddhism - 48% (primary): Paraphrase of a well-attested story, not checked against a translation this session; the bride’s call after the departing groom is a strong image, but the text says nothing of her pallor.
+- Kural 1186 / judaism - 48% (primary): Verified verbatim on Sefaria; it shares the light-shadow-beloved imagery but not the simile of darkness lying in wait.
+- Kural 1187 / christianity - 48% (primary): Verified verbatim via bolls.life KJV; the bridegroom-taken-away motif fits, but it is a figure for Jesus and his disciples.
+- Kural 1188 / greek_mythology - 48% (primary): Paraphrase of a well-known passage, not checked against a translation this session; a Roman epic on Greek-Trojan myth; Dido was not married to Aeneas in the Kural’s sense.
+- Kural 1190 / greek_mythology - 48% (primary): Paraphrase of a well-known myth, not checked against a translation this session; self-sacrifice to protect a husband fits, but the situation is far more extreme.
+- Kural 1192 / hinduism - 48% (primary): Paraphrase; matches only the rain-sustains-life simile, not its application to love.
+- Kural 1197 / jainism - 48% (primary): Verified verbatim on sacred-texts.com; addresses the same pain but rejects the idea of an external love-god, so only a partial fit.
+- Kural 1198 / judaism - 48% (primary): Paraphrase not checked live; a partial fit on the burden of inner suffering, without the love context.
+- Kural 1208 / philosophy - 48% (primary): Paraphrase of a specific passage; partial fit on love without complaint, analytic rather than tender.
+- Kural 1210 / christianity - 48% (primary): Verified verbatim via bolls.life KJV; the shared element is asking the moon to stay, in a very different context.
+- Kural 1215 / christianity - 48% (primary): Verified verbatim via bolls.life KJV; matches the sweetness of presence but says nothing about dreams.
+- Kural 1219 / judaism - 48% (primary): Close paraphrase of a passage read on Sefaria; a partial match on dreamlessness as a sign of distance, with a religious rather than romantic sense.
+- Kural 1220 / hinduism - 48% (primary): Paraphrase of a well-known episode; partial fit on gossip misjudging a couple, though the gossip targets the wife, not the husband.
+- Kural 1220 / buddhism - 48% (primary): Paraphrase of a famous parable; an analogical fit on partial knowledge, not a teaching about love.
+- Kural 1222 / greek_mythology - 48% (primary): Next-best match: Echo personifies love-grief in nature, but she is rejected rather than separated, and no one asks her about her partner.
+- Kural 1228 / sikhism - 48% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); weak, next-best match by contrast: both have the pastoral flute, but Namdev's flute brings joy where the Kural's brings pain, and Sikh teaching reads it as the divine sound, not a Krishna love scene.
+- Kural 1235 / buddhism - 48% (primary): Paraphrase; it supplies the norm the absent husband falls short of, but contains no lament or accusation.
+- Kural 1236 / buddhism - 48% (primary): Next-best match given as paraphrase; it criticises fault-finding in general, not the specific loyalty of a wife.
+- Kural 1246 / philosophy - 48% (primary): Paraphrase of the treatise’s general argument, not verified live; a conceptual parallel only, since Seneca condemns anger rather than describing lovers’ sulks.
+- Kural 1247 / christianity - 48% (primary): Verified verbatim via bible-api.com (KJV); a parallel on an inwardly divided self, but Paul’s conflict is between sin and the law, not love and modesty.
+- Kural 1249 / jainism - 48% (primary): Paraphrase of a central Samayasara theme without a specific verse, not verified live; only the ‘seek within’ structure matches, and the object differs entirely.
+- Kural 1267 / jainism - 48% (primary): Verified verbatim on sacred-texts.com; names the same two pulls (love and aversion) but treats them as bonds to cut, not as the play of married love.
+- Kural 1274 / buddhism - 48% (primary): Verified verbatim on accesstoinsight.org; shares the image of fragrance as the inner substance of a flower, but applied to sincere speech, not love.
+- Kural 1276 / christianity - 48% (primary): Verified verbatim via bible-api.com (KJV); only a general match on embrace and separation following each other, without the Kural’s reading of signs.
+- Kural 1279 / islam - 48% (primary): Paraphrase of a well-known hadith, not re-verified this session; a partial match on a wife facing her husband’s departure, with the opposite outcome.
+- Kural 1283 / islam - 48% (primary): Verified verbatim via api.alquran.cloud (en.sahih); only a partial match on love unmoved by rejection, in a morally very different context from the Kural’s married love.
+- Kural 1283 / jainism - 48% (primary): Verified verbatim on sacred-texts.com; a partial match on the eyes’ unsatisfied longing, framed as a danger rather than as love.
+- Kural 1284 / buddhism - 48% (primary): Paraphrase of a well-known verse, not re-checked word for word in this session; a partial match on the mind outrunning intention, with the opposite evaluation.
+- Kural 1289 / islam - 48% (primary): Paraphrase of a well-known hadith (the sunnah.com page did not load in this session); a partial match on gentleness, without reference to love’s delicacy.
+- Kural 1290 / islam - 48% (primary): Paraphrase of a well-known hadith; a partial match on love that runs ahead, in a theological rather than marital context.
+- Kural 1292 / islam - 48% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a loose next-best match on misplaced love, from a verse whose context is fighting.
+- Kural 1294 / sikhism - 48% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) this session; next-best: both describe an unruly heart that will not cooperate, but the Kural's context is a playful lovers' quarrel and Gurbani's is the mind's chase of worldly things.
+- Kural 1297 / islam - 48% (primary): Paraphrase of a well-known hadith; it shares the value placed on modesty but offers no parallel to love making one forget it.
+- Kural 1297 / buddhism - 48% (primary): Paraphrase of a short sutta; it shares the high value placed on shame but has nothing about love overpowering it.
+- Kural 1305 / buddhism - 48% (primary): Paraphrase of a standard sutta; a general match on a husband’s duties, but nothing on pique as an adornment.
+- Kural 1306 / christianity - 48% (primary): Verified verbatim via bible-api.com (KJV); only a loose match through the image of pain yielding fruit, since Hebrews speaks of divine discipline.
+- Kural 1306 / sikhism - 48% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) this session; next-best: both describe love that has properly matured, but Ravidas does not say quarrels are what ripen it. This is spiritual love for God, not romantic love.
+- Kural 1313 / jainism - 48% (primary): Verified verbatim on sacred-texts.com (Jacobi); a next-best match on adornment failing to please, but Rajimati’s refusal is a nun’s firm virtue, not a wife’s feigned jealousy.
+- Kural 1313 / greek_mythology - 48% (primary): Paraphrase of the play’s plot; a partial match on jealousy tied to adornment, but the tragedy is grim where the Kural is playful.
+- Kural 1314 / sikhism - 48% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) this session; next-best: both concern comparison with others in love, but Gurbani affirms God is beyond comparison rather than taking offence at it.
+- Kural 1317 / hinduism - 48% (primary): Paraphrase of well-known verses; a partial, psychological match only, as the Gita warns against attachment rather than describing lovers’ play.
+- Kural 1319 / christianity - 48% (primary): Verified verbatim via bible-api.com (KJV); a contrastive match only, since Paul describes love free of suspicion.
+- Kural 1319 / buddhism - 48% (primary): Verified verbatim on accesstoinsight.org; a contrastive match only, since the Kural’s fault-finding is affectionate play.
+- Kural 1320 / buddhism - 48% (primary): Paraphrase of a well-known sutta; a partial match on gladness in seeing a spouse, with no jealousy theme.
+- Kural 1330 / buddhism - 48% (primary): Paraphrase of a canonical sutta; a fair match on enduring married love, though it says nothing about lovers’ quarrels.
+- Kural 5 / real_life_example - 50% (secondary/secondary): A real shift of understanding, but the kural's metaphysical claim about karma ceasing to cling cannot be shown by any historical event.
+- Kural 10 / greek_mythology - 50% (secondary): Genuine ancient doctrine of cyclical rebirth and escape from it, matching the Kural's core claim well, though escape comes through ritual/philosophical purification rather than devotion to a personal God.
+- Kural 12 / jainism - 50% (primary): Verified verbatim; next-best match only, since the Jain text turns the Kural's praise of rain-as-drink into a caution about harming water-beings rather than a celebration.
+- Kural 17 / buddhism - 50% (primary): Honest stretch: the ocean-and-waters interdependence is real, but it functions purely as a simile for dependent origination and involves no rain.
+- Kural 18 / sikhism - 50% (secondary): Next-best only: the Hardwar episode (verified in Macauliffe, drawn from the Janamsakhi tradition and hagiographic in detail) links water and worship, but Sikh teaching rejects the very ritual worship whose survival the Kural defends.
+- Kural 18 / real_life_example - 50% (secondary/secondary): Drought is one documented contributor among several, and the sources do not record worship ending, so the fit is partial.
+- Kural 22 / real_life_example - 50% (secondary/secondary): The prize honours a renunciant's greatness, but the kural's point that such greatness is beyond counting cannot be shown directly by any event.
+- Kural 29 / real_life_example - 50% (secondary/secondary): Zola was not an ascetic and the wrongdoers were exposed over years, not in an instant, so the fit is partial.
+- Kural 43 / sikhism - 50% (primary): Next-best only: this is a deliberate contrast, since the SGGS rejects the ancestor rites and offerings to deities that Kural 43 lists among the householder's foremost duties.
+- Kural 49 / greek_mythology - 50% (primary): Honest weak match, given as a paraphrase: it honours domestic life beautifully but never calls it virtue, and Greek epic has no ascetic alternative to weigh it against.
+- Kural 58 / real_life_example - 50% (secondary/secondary): Partial fit: the glory the kural promises is in the world of the celestials, while Clara's fame is earthly and owed as much to her own artistry as to honouring her husband.
+- Kural 62 / jainism - 50% (primary): Verified verbatim; included as an honest counterpoint, because Jain karma theory denies that a child's merit can protect a parent across births.
+- Kural 66 / jainism - 50% (primary): The quoted clause is verbatim from Jacobi, but the entry is marked as a paraphrased event because it frames a narrative. It has nothing on a child's speech, so it is a partial, next-best match.
+- Kural 69 / islam - 50% (primary): Verified verbatim but honestly weak: it is Zechariah, not the mother, who marvels, and the joy-at-hearing-praise structure of the Kural is not present.
+- Kural 70 / jainism - 50% (primary): The hymn wording is verbatim from Jacobi, but the entry is a paraphrased event. The praise is for Mahâvîra himself, not for his father, so the fit is partial; the related vow of §94 was used for Kural 41.
+- Kural 76 / jainism - 50% (primary): Verified verbatim. Jainism's ahimsa conflicts with any endorsement of martial force, so this is a reinterpretation rather than agreement and is scored below 60.
+- Kural 88 / real_life_example - 50% (secondary/secondary): Next-best only: a documented case of hoarded wealth ending in total loss, but the sources tie his fall to corruption and politics, not to any failure of hospitality.
+- Kural 102 / buddhism - 50% (secondary): Weak-to-moderate: the 'gratitude' interpretation comes from later tradition rather than the canonical suttas; used as the best available narrative parallel.
+- Kural 108 / greek_mythology - 50% (primary): Weak: Achilles lets go only after catastrophe and mainly to avenge Patroclus; it is a counter-example to 'same day' forgetting as much as an example.
+- Kural 114 / jainism - 50% (primary): Next-best match only. The quote is verified, but Jain doctrine locates a person's results in their own karma, not in descendants or posthumous reputation, so the Kural's 'what remains' (echcham) has no direct Jain counterpart.
+- Kural 147 / philosophy - 50% (primary): Weak thematic link on self-controlled character; no direct reference to marriage or another's wife. Best available verified philosophical match.
+- Kural 150 / sikhism - 50% (primary): Next-best only: it condemns the same desire and reflects the Sikh critique of renunciation, but lacks the Kural's realistic concession that this is a minimum even for the imperfect.
+- Kural 153 / greek_mythology - 50% (primary): Covers only the hospitality half. There is no strong Greek myth about bearing fools as 'true strength'.
+- Kural 155 / greek_mythology - 50% (primary): Illustrates the vengeful half by contrast. Greek heroic culture generally honored retaliation, so no close positive parallel exists.
+- Kural 157 / greek_mythology - 50% (primary): Here Achilles is the aggressor who relents, not a victim who forbears, so the parallel is partial.
+- Kural 166 / hinduism - 50% (primary): Partial match. Shukra's motive in the Bhagavata is protective caution rather than envy, and the lost-eye detail comes from later/popular retellings, not the Bhagavata text itself.
+- Kural 166 / greek_mythology - 50% (primary): Verified wording. The link is thematic (envy's damage spreading to others) rather than about resenting gifts.
+- Kural 167 / sikhism - 50% (primary): Next-best only: Sikhism does not personify fortune as Lakshmi or misfortune as her elder sister, so this verse answers the Kural's image with a contrast; it says nothing about envy as such.
+- Kural 168 / philosophy - 50% (primary): Paraphrase with short verbatim phrases. Partial match on envy as inherently evil; nothing on lost wealth or hell.
+- Kural 170 / greek_mythology - 50% (primary): Paraphrase with verified phrases. Hesiod's emulation is competitive, so the match is partial.
+- Kural 183 / jainism - 50% (primary): Verified verbatim on sacred-texts.com; a next-best match only, since the verse speaks of pure conduct and a worthy death in general and says nothing about backbiting or about death being better than a dishonest life.
+- Kural 184 / hinduism - 50% (primary): General ethic of speech; does not address the face vs. behind-the-back distinction that defines this kural.
+- Kural 189 / greek_mythology - 50% (primary): Shares the ‘burdened Earth’ motif only; the burden is population, not wickedness or slander.
+- Kural 191 / buddhism - 50% (primary): Partial match only: the verse’s real point is that blame is universal, not that babbling specifically earns contempt.
+- Kural 197 / hinduism - 50% (primary): Partial and partly contrasting: Manu ranks pleasantness higher than the Kural does. Included as the closest classic Hindu statement on the same two criteria.
+- Kural 213 / greek_mythology - 50% (primary): Next-best: shows the sacredness of aid, but does not claim it is the highest good of all.
+- Kural 224 / greek_mythology - 50% (primary): Paraphrase; a negative example that illustrates the Kural by contrast rather than by agreement.
+- Kural 229 / greek_mythology - 50% (primary): Paraphrase; a loose parallel on the misery of greed, not specifically about refusing to share food.
+- Kural 230 / christianity - 50% (primary): Loose structural parallel; Paul’s preference for death is about union with Christ, not the inability to give.
+- Kural 239 / jainism - 50% (primary): Verified verbatim on archive.sacred-texts.com (the '&c.' is Jacobi's). This is an inverse, narrative parallel only; Jain karma theory does not hold that a bad person's presence blights the land.
+- Kural 243 / sikhism - 50% (primary): Next-best only: both promise protection from a realm of suffering, but Gurbani credits the Name rather than compassion as the shelter.
+- Kural 243 / real_life_example - 50% (secondary/secondary): Next-best only: she did literally enter a place of great suffering, so the fit depends on reading the kural's dark world as inner darkness, and her inner state is interpretation rather than documented fact.
+- Kural 247 / philosophy - 50% (primary): Matches only the ‘this world needs wealth’ half; there is no counterpart for compassion and the hereafter.
+- Kural 253 / islam - 50% (primary): Partial overlap: same concern for the knife-holder’s disposition, opposite practical conclusion.
+- Kural 253 / greek_mythology - 50% (primary): Ritual guilt over slaughter; the Athenians still ate the ox.
+- Kural 254 / islam - 50% (primary): Establishes animals’ moral standing; Islam nevertheless permits lawful slaughter.
+- Kural 256 / sikhism - 50% (primary): Next-best only: Gurbani has no equivalent of the Kural's economic argument that demand creates the killing; this verse only makes violence accountable.
+- Kural 257 / judaism - 50% (primary): Shares the life-in-the-flesh insight; draws a restriction rather than abstention.
+- Kural 258 / islam - 50% (primary): Temporary ritual restriction on hunting, not a permanent renunciation of meat.
+- Kural 260 / islam - 50% (primary): Parallel on reward for kindness to animals; not about abstaining from meat or creatures’ reverence.
+- Kural 260 / greek_mythology - 50% (primary): The creatures are drawn by music, not by his non-violence; the Orphic abstention link is from later tradition.
+- Kural 260 / real_life_example - 50% (secondary/web): Next-best only: Francis is honoured for gentleness toward creatures, but he is not documented as refusing meat, and the kural's image of animals worshipping is hyperbole no event can match.
+- Kural 270 / greek_mythology - 50% (primary): Historical/civic rather than mythological or spiritual; next-best.
+- Kural 271 / greek_mythology - 50% (primary): Next-best match: shares ‘elemental witness + laughter at hidden misconduct’, but the offence is adultery, not religious hypocrisy.
+- Kural 276 / greek_mythology - 50% (primary): Next-best mythic parallel: sacred form masking savagery; the sacred role is host, not ascetic.
+- Kural 278 / greek_mythology - 50% (primary): Next-best: ritual form used for deception; the deceiver is a trickster-god, and the hidden thing is worthless rather than impure.
+- Kural 280 / greek_mythology - 50% (primary): Next-best: appearance vs. virtue; not about ascetic grooming.
+- Kural 286 / greek_mythology - 50% (secondary): Moderate: boundless appetite after an act of sacrilegious taking; the myth concerns impiety more than fraud.
+- Kural 287 / greek_mythology - 50% (primary): Moderate and complicated: Hermes’ trickery is celebrated rather than condemned, and he is never truly punished.
+- Kural 290 / real_life_example - 50% (secondary/secondary): Next-best only: his death came soon after his conviction, but the sources do not show that his fraud caused it, and the kural's second half about the honest is not illustrated.
+- Kural 297 / christianity - 50% (primary): ‘Truth’ in John means divine revelation in Christ rather than truthful speech; the parallel is in truth’s sufficiency.
+- Kural 297 / judaism - 50% (primary): Stresses the seriousness of avoiding falsehood; says nothing about truth being sufficient on its own.
+- Kural 326 / philosophy - 50% (primary): General parallel on the righteous being beyond death’s harm; not specific to non-killing.
+- Kural 327 / sikhism - 50% (primary): Next-best only: Sikh teaching does not forbid all killing absolutely; the later Gurus permitted armed defence as a last resort, so the Kural's rule is stricter than Sikh doctrine.
+- Kural 327 / greek_mythology - 50% (primary): Paraphrase; partial parallel, as the tragedy turns more on unknowing parricide than on self-sacrifice.
+- Kural 330 / greek_mythology - 50% (primary): Paraphrase; Homer describes the punishment but not the crime, which comes from later sources (Pindar even rejects the cannibal story).
+- Kural 333 / greek_mythology - 50% (primary): Paraphrase and weak match: a hospitality story with no explicit teaching on the impermanence of wealth. A Roman retelling of Greek myth, used as the best available fit.
+- Kural 339 / buddhism - 50% (primary): Weak match: samsara is compared to a long night, but the verse does not equate death with sleep or birth with waking. Used as the best available Dhammapada parallel.
+- Kural 339 / jainism - 50% (primary): Next-best match only: paraphrased from general knowledge of Tattvārtha Sūtra ch. 2, not verified live, and the sleep–waking analogy is the Kural's own, not found in the Jain source.
+- Kural 339 / sikhism - 50% (primary): Next-best only: both make death less fearsome, but Gurbani does not use the sleep-and-waking image here, and 'truly dying' means dying to ego, not the natural cycle the Kural describes.
+- Kural 346 / greek_mythology - 50% (primary): Paraphrase; moderate match on renouncing ambition, but it ends in rebirth rather than liberation.
+- Kural 348 / greek_mythology - 50% (primary): Paraphrase; net imagery and desire match, but the story is comic and about adultery rather than renunciation.
+- Kural 358 / real_life_example - 50% (secondary/secondary): The link is partly verbal: Pasteur dispelled an error about the origin of life, while the kural speaks of liberation from the cycle of rebirth through knowledge of the Supreme.
+- Kural 359 / greek_mythology - 50% (primary): Paraphrase; a moderate allegorical fit. Odysseus still desires the song; he is restrained, not detached.
+- Kural 361 / real_life_example - 50% (secondary/secondary): The event shows craving multiplying itself in one lifetime, but the kural's claim about desire as the seed of repeated rebirth cannot be illustrated historically.
+- Kural 363 / greek_mythology - 50% (primary): Illustrative narrative of contented poverty; the ‘greatest wealth’ claim is implied rather than stated.
+- Kural 371 / buddhism - 50% (primary): Contrastive entry: Buddhism rejects strict determinism (the view of Makkhali Gosala and others).
+- Kural 377 / buddhism - 50% (primary): Moderate: blames craving rather than fate for the lack of enjoyment.
+- Kural 378 / hinduism - 50% (primary): Moderate: shares ‘the unavoidable must be undergone’; not about poverty or renunciation.
+- Kural 381 / islam - 50% (primary): Covers only the military/defence elements; no single Islamic text lists all six.
+- Kural 384 / jainism - 50% (primary): Checked word for word on sacred-texts.com. The subject (a king's duty to put down wrong) is the same, but the Jain passage questions royal punishment rather than endorsing it, so this is a next-best contrast.
+- Kural 388 / buddhism - 50% (primary): Honest partial match: same justice-based legitimacy, opposite view on divinity.
+- Kural 388 / jainism - 50% (primary): Checked word for word on sacred-texts.com. Jainism is non-theistic and has no 'king as god' idea, so this is a next-best parallel on a king who is revered above gods because of virtue.
+- Kural 392 / christianity - 50% (primary): Metaphorical match only. It shares the sight and illumination image but refers to scripture, not numeracy and literacy.
+- Kural 404 / hinduism - 50% (primary): Paraphrase. Indirect: the Gita affirms learning from the realized rather than explicitly rejecting the insights of the unlearned.
+- Kural 404 / islam - 50% (primary): Partial: the Qur’an’s unreliable source is morally untrustworthy (fasiq), not unlearned, and it counsels verification rather than rejection.
+- Kural 404 / buddhism - 50% (primary): Indirect: the verse is about the fool’s failure to understand, which grounds (but does not state) the Kural’s point about the wise not accepting his insight.
+- Kural 408 / real_life_example - 50% (web/secondary): Next-best only: this is national financial mismanagement involving advisers and fraud rather than an unlearned individual, and the kural's comparison with the poverty of the good is not illustrated.
+- Kural 410 / greek_mythology - 50% (primary): Paraphrase. Allegorical reading (moly as knowledge/reason is an ancient interpretation, not Homer’s explicit claim).
+- Kural 410 / real_life_example - 50% (primary/secondary/web): Next-best only: it shows the high value placed on learning, but Sejong's compassionate project sought to lift the unlettered rather than to rank them below others as the kural's harsh comparison does.
+- Kural 413 / greek_mythology - 50% (primary): Weak-to-moderate: gods delight in hearing, but no claim that human listeners equal gods.
+- Kural 433 / greek_mythology - 50% (primary): Matches the role of shame as a guardian against wrong; there is no small-versus-large fault imagery.
+- Kural 434 / greek_mythology - 50% (primary): Paraphrase. Agamemnon partly shifts blame onto Atē, which is almost the opposite of the Kural’s call for self-responsibility.
+- Kural 437 / real_life_example - 50% (secondary/secondary): Next-best only: the treasure was indeed lost without benefit, but the sources do not document Muhammad Shah as a miser, so the kural's moral cause is not shown.
+- Kural 438 / greek_mythology - 50% (primary): Illustrates insatiable greed and sacrilege rather than stinginess as such; weak but best available myth.
+- Kural 440 / jainism - 50% (primary): Next-best match, checked word for word on sacred-texts.com (Jacobi's summary of the repeated verse sets). Jainism does not endorse the Kural's strategy of enjoying desires while concealing them; it shares only the insight that a craving is a vulnerability others can exploit.
+- Kural 470 / sikhism - 50% (primary): Next-best only: Gurbani judges conduct by truth before God, elsewhere tells the devotee to disregard public opinion (Ang 1412), and rejects duty fixed by social station.
+- Kural 473 / sikhism - 50% (primary): Partial: it describes exhausted strength, not misjudged strength, and the salok's remedy is reliance on God rather than measuring oneself beforehand.
+- Kural 476 / christianity - 50% (primary): Loose parallel. The height image and refusal to overreach fit, but the point is about presumption toward God, not the limits of one’s strength.
+- Kural 478 / sikhism - 50% (primary): Partial: it models modest consumption, but it is a devotee's prayer for sustenance, not a teaching on matching outflow to income.
+- Kural 479 / sikhism - 50% (primary): Next-best only: the image of seeming then vanishing fits, but the salok is about the transience of the whole world, not the spendthrift's ruin.
+- Kural 481 / sikhism - 50% (primary): Next-best only: the reversal of strength is shared, but Gurbani credits it to divine command, not to choosing the right time.
+- Kural 483 / jainism - 50% (primary): Paraphrase of a very well-known sutra, not quoted. The parallel is structural only: the kural concerns a king's resources and timing, while the sutra concerns spiritual means.
+- Kural 484 / christianity - 50% (primary): Only the pairing of time and place matches. Paul speaks of divine ordering, not human strategy.
+- Kural 485 / jainism - 50% (primary): Checked word for word against Jacobi on sacred-texts.com. The shared element is calm, unshaken waiting; the object waited for is entirely different, so this is a next-best match.
+- Kural 487 / christianity - 50% (primary): Only the restraint matches. The Kural’s strategic holding of anger for later has no parallel in James.
+- Kural 488 / buddhism - 50% (primary): Only the structure matches. The Buddhist ethic rejects the Kural’s strategic hostility.
+- Kural 490 / jainism - 50% (primary): Checked word for word against Jacobi on sacred-texts.com. Same image but opposite judgment; Jain ahimsa cannot praise the heron's strike, so this is a contrast, not a match.
+- Kural 492 / christianity - 50% (primary): Only an image-level parallel; the verse is ecclesiological and not about tactics.
+- Kural 495 / christianity - 50% (primary): Shares the idea that strength depends on the right element, but has no contrast of loss outside it.
+- Kural 496 / jainism - 50% (primary): Paraphrase of a well-known sutra; wording not quoted from any translation. The structural parallel is real, but the subject is cosmology, not choosing the right field of action.
+- Kural 496 / sikhism - 50% (primary): Next-best only: the shared point is a vehicle unfit for its element, but Guru Nanak's verse is a spiritual warning and does not speak of each thing having its proper field.
+- Kural 498 / christianity - 50% (primary): The outcome matches, but Hebrews credits faith rather than position.
+- Kural 498 / jainism - 50% (primary): Checked word for word against Jacobi on sacred-texts.com. Only the idea of the few or the one outweighing the many is shared; the kural's point about favourable terrain is absent.
+- Kural 499 / hinduism - 50% (primary): Only a general parallel; Kautilya has no line stating this kural’s point directly.
+- Kural 499 / christianity - 50% (primary): Apt image, but the next verse shows the stronger one prevailing, and the context is spiritual conflict.
+- Kural 504 / christianity - 50% (primary): A partial parallel on virtue outweighing fault; Peter is urging love, not a method of assessment.
+- Kural 508 / jainism - 50% (secondary): Checked word for word on jainworld.com (first sentence of the verse only). It is a general karmic analogy, and Jain doctrine holds karma to be individual, so the kural's sorrow passing to descendants has no counterpart.
+- Kural 510 / christianity - 50% (primary): Only partly parallel: it concerns faith in the risen Christ, not trust in a tested person.
+- Kural 516 / islam - 50% (primary): Weak, next-best match: about deliberation in general, not assessing agent and timing.
+- Kural 516 / greek_mythology - 50% (primary): Covers timing only.
+- Kural 518 / greek_mythology - 50% (primary): Loose analogy: matching endowment to function, not appointing workers.
+- Kural 519 / jainism - 50% (primary): Checked word for word against Jacobi on sacred-texts.com. The error is the same (misreading devotion as malice), but the roles are reversed and the kural's consequence, loss of fortune, is absent.
+- Kural 520 / greek_mythology - 50% (primary): Loose analogy: divine surveillance of justice, not a ruler supervising staff.
+- Kural 522 / sikhism - 50% (primary): Next-best only: the image of unfailing kinship is shared, but Gurbani transfers it to God and says nothing about kin as a source of prosperity.
+- Kural 522 / greek_mythology - 50% (primary): Loose parallel: the reward is divine favour, not worldly prosperity.
+- Kural 523 / jainism - 50% (primary): Checked word for word against Jacobi on sacred-texts.com. The verse is about a monk's conduct toward friends, not kin, and has nothing of the Kural's tank image; next-best match.
+- Kural 528 / islam - 50% (primary): Only an indirect parallel: it describes divine distribution of rank, not a ruler’s policy of regard.
+- Kural 530 / jainism - 50% (web): Paraphrase of standard doctrine; I did not verify the wording or the exact sutra numbering in this session. It concerns monks, not kin or kings; next-best match.
+- Kural 545 / real_life_example - 50% (secondary/secondary): No ruler can bring rain, so this is a next-best example of lawful rule bound up with agriculture rather than a demonstration of the kural's claim that just rule brings good seasons.
+- Kural 556 / jainism - 50% (primary): Checked word for word against Jacobi on sacred-texts.com. Enduring royal renown is only implied, and the verse praises giving up kingship rather than ruling justly, so this is a next-best match.
+- Kural 557 / sikhism - 50% (primary): Next-best only: the rain-and-life image matches, but Guru Nanak makes no comparison with a ruler's kindness.
+- Kural 559 / philosophy - 50% (primary): Verified verbatim at the MIT Internet Classics Archive (Jowett). Next-best match: the dialogue breaks off before the punishment, and there is no mention of rain or seasons; the shared idea is only that unjust rule brings divine ruin on the land.
+- Kural 559 / real_life_example - 50% (secondary/secondary): Next-best: a real case of misgovernment upsetting water and seasons, but it was central planning rather than deliberate cruelty, and the kural's classical sense of failing rain is cosmic.
+- Kural 567 / jainism - 50% (primary): Paraphrase of the sutra and the Sarvarthasiddhi gloss on wisdomlib. It concerns monastic self-correction, not royal punishment, and does not say excess weakens the ruler.
+- Kural 569 / greek_mythology - 50% (primary): Loose parallel on unpreparedness; Troy’s fall owed nothing to tyranny over its own people.
+- Kural 570 / jainism - 50% (primary): Checked word for word against Jacobi on sacred-texts.com. It is a personal rule for a monk; the Kural's idea of the earth bearing a tyrant as a burden is absent.
+- Kural 570 / greek_mythology - 50% (primary): Matches the burden image only; the Cypria blames humanity in general, not tyrants and their agents.
+- Kural 573 / hinduism - 50% (web): Parallels only the musical half of the simile; no moral teaching about eyes or kindness.
+- Kural 573 / greek_mythology - 50% (primary): Links music and pity loosely; it is a positive example, not the Kural’s negative comparison.
+- Kural 574 / hinduism - 50% (primary): Shares the ‘eyes that do not truly see’ idea; the higher sight is spiritual vision, not kindness.
+- Kural 574 / greek_mythology - 50% (primary): An illustrative contrast rather than a teaching; the myth does not moralise about kindness.
+- Kural 576 / buddhism - 50% (primary): Shares the ‘mere physical existence’ comparison; the missing quality is wisdom, not kindness.
+- Kural 577 / buddhism - 50% (primary): Shares the distinction of physical and true eyes; the highest eye is wisdom, not kindness.
+- Kural 578 / sikhism - 50% (primary): Next-best only: kindness held together with self-mastery is a fair parallel, but the verse does not address the Kural's specific limit, that favour must not corrupt a ruler's justice.
+- Kural 582 / christianity - 50% (primary): Shares the constant-vigilance theme only; it is eschatological, not political intelligence.
+- Kural 582 / sikhism - 50% (primary): Partial: knowing all the deeds of all people matches, but Gurbani borrows Chitr and Gupt as a figure of divine accountability, not as a model for a ruler's intelligence service.
+- Kural 584 / sikhism - 50% (primary): Partial: the no-exceptions scrutiny matches, but the setting is divine judgment rather than espionage.
+- Kural 584 / philosophy - 50% (primary): Same practice, opposite judgment; included as an honest counterpoint.
+- Kural 585 / philosophy - 50% (primary): Shares the appearance-versus-reality theme; Machiavelli applies it to princes, not spies.
+- Kural 586 / buddhism - 50% (primary): Contrast parallel on false ascetic appearance; the Buddha condemns it, while Valluvar uses it.
+- Kural 587 / jainism - 50% (primary): Checked word for word against Jacobi on sacred-texts.com (quotation truncated). Only the 'no doubt' half of the Kural is matched, and the Jain point concerns faith in doctrine, not certainty about gathered intelligence.
+- Kural 587 / sikhism - 50% (primary): Partial: certainty about hidden matters is shared, but Gurbani speaks of divine omniscience, not a human agent's skill.
+- Kural 590 / greek_mythology - 50% (primary): Shares the leaked-secret theme; the leak is by a servant, not by honouring an agent.
+- Kural 596 / sikhism - 50% (primary): Partial: both prize an uncompromising aim regardless of outcome, but Guru Nanak speaks of devotion and self-surrender, not worldly aspiration.
+- Kural 604 / islam - 50% (primary): Laziness here is a symptom of hypocrisy rather than its cause, so the parallel is partial.
+- Kural 607 / buddhism - 50% (primary): An exhortation rather than a description of the idler’s disgrace; best available Buddhist match for this narrow point.
+- Kural 608 / buddhism - 50% (primary): Paraphrased; the ‘enemy’ is death and craving, not political rivals, so the match is loose.
+- Kural 610 / jainism - 50% (primary): Paraphrase. The story's existence and its location (Triṣaṣṭi VI.8, Johnson IV pp. 99-102) were confirmed through wisdomlib.org's index and glossary, but I did not read Johnson's full text; the parallel is to the Kural's Vamana allusion, not its point about a king's effort, and Jainism rejects Vishnu as a world-striding god.
+- Kural 610 / sikhism - 50% (primary): Partial: both promise the world to the one who masters himself, but the Kural's reward is a king's dominion, framed by a Vaishnava allusion Sikhism does not share, while Guru Nanak's is inner victory.
+- Kural 610 / greek_mythology - 50% (primary): Loose thematic parallel; Heracles’ reward is divinity, and his labours were imposed rather than chosen.
+- Kural 648 / jainism - 50% (primary): Checked word for word against Jacobi on sacred-texts.com. Next-best match only: it covers pleasant speech but has nothing on orderly arrangement or on speech winning the world's swift compliance.
+- Kural 652 / jainism - 50% (primary): Checked word for word against Jacobi on sacred-texts.com (footnote marker removed). Next-best match only: Jainism treats fame as a by-product, never a test of action, and elsewhere (Sūtrakṛtāṅga I.14.19) tells the monk not to indulge his desire for fame, so the kural's fame-and-good test has no direct Jain parallel.
+- Kural 652 / greek_mythology - 50% (primary): Broad thematic parallel on choosing the worthy path; Hesiod does not give the double fame-and-good test.
+- Kural 655 / greek_mythology - 50% (primary): Dramatises the regret the Kural warns of, but Ajax acted under divine madness and the play ends in suicide rather than amendment.
+- Kural 659 / philosophy - 50% (primary): Loose match; Boethius is about the instability of all fortune, not just ill-gotten gain.
+- Kural 678 / christianity - 50% (primary): Paraphrased; the thematic link (using one piece of business to secure another) is loose and the parable's moral is debated.
+- Kural 680 / buddhism - 50% (primary): General preference for peace; it does not speak of the weaker side yielding to the stronger.
+- Kural 680 / jainism - 50% (web): Next-best match from Jain narrative, checked only against a Wikipedia summary (not the Johnson translation); the Jain resolution is renunciation, not political submission.
+- Kural 680 / greek_mythology - 50% (primary): Paraphrased; an emotional act of humility more than political submission.
+- Kural 683 / greek_mythology - 50% (primary): Right archetype (the divine herald), but the hymn is about his cunning, not diplomatic learning.
+- Kural 684 / christianity - 50% (primary): Same combination of wisdom and stature, but not about envoys or missions.
+- Kural 689 / buddhism - 50% (primary): General discipline of speech; the envoy setting and fear are not present.
+- Kural 693 / sikhism - 50% (primary): Next-best only: shares the advice to avoid faults with foresight, but has nothing on the irreversibility of a ruler's suspicion.
+- Kural 694 / greek_mythology - 50% (primary): Illustrates the danger of whispering about a ruler. It is not about behaviour in the ruler’s presence.
+- Kural 695 / greek_mythology - 50% (primary): Actaeon’s intrusion was accidental rather than curious prying. Ovid himself says the fault was chance, not crime.
+- Kural 705 / hinduism - 50% (primary): Loose parallel: about seeing the divine, not reading people.
+- Kural 710 / real_life_example - 50% (secondary/secondary): A next-best fit only: the kural concerns reading people's minds through the eye, while Berenson used his eye to judge paintings.
+- Kural 724 / philosophy - 50% (primary): The method matches but the outcome does not: Socrates rarely found anyone who actually knew more.
+- Kural 729 / jainism - 50% (primary): Checked word for word on sacred-texts.com. Next-best only: it condemns giving way before people's insults, but it says nothing about learning and makes no comparison with the unlearned.
+- Kural 732 / philosophy - 50% (primary): An indirect match. Plato explains why rich lands are coveted, while the Kural simply treats being coveted as a sign of wealth.
+- Kural 734 / jainism - 50% (web): Checked word for word on jainheritagecentres.com, a secondary web source; the event is traditional and partly legendary. It covers famine only (not disease or enemies) and is a narrative, not a teaching about what makes a good land.
+- Kural 736 / buddhism - 50% (primary): Shares the idea of the foremost city exposed to ruin, but says nothing about keeping its wealth after harm.
+- Kural 737 / jainism - 50% (primary): Checked word for word on sacred-texts.com (verse 20 quoted only to its first clause). It matches the fortress only; the waters and hills of the Kural have no counterpart, and the Jain move is to spiritualise rather than endorse fortification.
+- Kural 737 / sikhism - 50% (primary): Next-best only: both texts list natural features of the land, but Japji Sahib speaks of the cosmos as a field for righteous action and says nothing of hills, rivers or fortresses as the strength of a kingdom.
+- Kural 738 / greek_mythology - 50% (primary): Parallel in listing the goods that adorn a society, but the Horai are moral and civic qualities, not material ones.
+- Kural 744 / buddhism - 50% (primary): A general image of vigilant guarding, used as a simile for self-discipline.
+- Kural 745 / christianity - 50% (primary): A parable about counting the cost of discipleship; the link is to planning resources, not to storing food for a siege.
+- Kural 745 / islam - 50% (primary): Provisioning against famine, not siege; the parallel is limited to storing food.
+- Kural 746 / jainism - 50% (primary): Both sentences verified verbatim on wisdomlib.org; the guardians are celestial door-keepers of a peaceful preaching hall rather than soldiers of a garrison, so this is an imagistic next-best match.
+- Kural 747 / christianity - 50% (primary): Spiritual parable; it shows the danger without the Kural’s three methods of capture.
+- Kural 749 / hinduism - 50% (primary): Speaks of the warrior’s duty in general; forts are not mentioned.
+- Kural 751 / islam - 50% (primary): Partial match: the verse is about divine favour and sufficiency, not social esteem conferred by money.
+- Kural 751 / jainism - 50% (primary): Verified verbatim on sacred-texts.com (diacritics normalised); it shares the Kural's theme of what makes a person count but credits penance rather than wealth, so it is a contrasting next-best match.
+- Kural 751 / sikhism - 50% (primary): A counterpoint rather than a parallel: Gurbani recognises the same social fact but rejects wealth as the measure of worth, so the match is thematic contrast only.
+- Kural 756 / jainism - 50% (primary): Verified verbatim on sacred-texts.com; it addresses the royal treasury but names no revenue sources (escheat, tolls, tribute), and the Jain text rejects the ideal, so this is a next-best match.
+- Kural 759 / buddhism - 50% (primary): Loose match: Buddhism does not praise wealth as a weapon, so this is the nearest related teaching.
+- Kural 760 / greek_mythology - 50% (primary): Contrast story; the version in which Midas turns his daughter to gold is a later retelling (Hawthorne), not Ovid.
+- Kural 767 / christianity - 50% (primary): Paraphrased and metaphorical; weak on the military-formation sense.
+- Kural 771 / sikhism - 50% (primary): Shares the battle-cry tone only; Kabir's battle is spiritual, and nothing here matches the Kural's warning to the enemy or its hero-stones.
+- Kural 772 / sikhism - 50% (primary): Matches the idea of choosing the worthiest adversary, but says nothing about honourable failure, which is the Kural's real point; a next-best match.
+- Kural 774 / philosophy - 50% (primary): Philosophical frame for composure under pain, not a martial text.
+- Kural 775 / christianity - 50% (primary): Shares the image of a steady gaze under suffering; the context is faith, not combat.
+- Kural 776 / philosophy - 50% (primary): Modern parallel on hardship as growth; Nietzsche is not speaking of battle wounds.
+- Kural 777 / buddhism - 50% (primary): Contrasting answers to the question of lasting glory.
+- Kural 778 / christianity - 50% (primary): Parallel on ardour surviving official prohibition; the apostles disobey, the Kural’s warriors stay loyal.
+- Kural 778 / islam - 50% (primary): Thematic link through restraint of fighters; the emphasis differs.
+- Kural 778 / jainism - 50% (primary): Checked word for word against Jacobi on sacred-texts.com. This is a next-best match: obedience together with zeal is shared, but there is no rebuke or restraint by the superior, and no war.
+- Kural 785 / hinduism - 50% (primary): Indirect parallel: it shows familiarity without full understanding rather than understanding without familiarity.
+- Kural 785 / judaism - 50% (primary): Partial match on affinity of character; it says nothing about meeting or familiarity being unnecessary.
+- Kural 788 / sikhism - 50% (primary): Shares only the unasked help; it is about God's generosity, not a friend's instant reflex, so this is a next-best match.
+- Kural 788 / philosophy - 50% (primary): Partial match on friends as protectors; Aristotle has nothing of the Kural’s instant, reflex-like help.
+- Kural 790 / judaism - 50% (primary): General ethical parallel on deeds over words; not specifically about friendship.
+- Kural 791 / greek_mythology - 50% (primary): Partial match: Hesiod is about prudence in dealings, not about choosing friends; also didactic poetry rather than myth.
+- Kural 802 / christianity - 50% (primary): Shares the idea that intimacy defines friendship, but says nothing about welcoming a friend’s liberties.
+- Kural 802 / islam - 50% (primary): Illustrates rights between bonded companions; paraphrased from memory without a verified hadith number.
+- Kural 802 / buddhism - 50% (primary): Broadly parallel on the duties of friendship; nothing specific about liberties of intimacy.
+- Kural 803 / islam - 50% (primary): Loyalty to an old companion; paraphrased from memory without a verified hadith number.
+- Kural 803 / buddhism - 50% (primary): Related through trust and intimacy, not through accepting a friend’s acts.
+- Kural 803 / sikhism - 50% (primary): Next-best match: the attitude of accepting a beloved's acts as sweet is close, but Guru Arjan addresses God and the Guru, not a human friend, and nothing here speaks of long acquaintance.
+- Kural 803 / philosophy - 50% (primary): Values familiarity in general but does not speak to owning a friend’s acts.
+- Kural 806 / greek_mythology - 50% (primary): Loyalty of servant to master rather than between equal friends.
+- Kural 807 / hinduism - 50% (primary): Partial fit: the friendship survives, but only after a stern rebuke, and it is a new alliance rather than an old friendship.
+- Kural 808 / buddhism - 50% (primary): Addresses the speaker rather than the listener; related but not identical.
+- Kural 808 / greek_mythology - 50% (web): A Greek legend about Pythagoreans rather than myth proper; the friend in the story never does err.
+- Kural 809 / islam - 50% (primary): Related by honour for enduring love; paraphrased without a re-verified hadith number.
+- Kural 809 / judaism - 50% (primary): Emphasises the value of companionship, not the world’s esteem for loyalty.
+- Kural 809 / buddhism - 50% (primary): Parallel in praising constancy; the angle of public reputation is weaker.
+- Kural 810 / sikhism - 50% (primary): Next-best match: it shares the ethic of unbroken goodwill under provocation, but says nothing about old friends or about enemies coming to love such a person.
+- Kural 817 / islam - 50% (primary): Next-best match: it sets the standard of sincerity but does not compare friends and enemies.
+- Kural 818 / sikhism - 50% (primary): Next-best match: it describes the person who spoils a task, but the Kural's target feigns inability rather than lacks it, and the Kural's tactful counsel to let the friendship fade unannounced has no parallel here.
+- Kural 826 / greek_mythology - 50% (primary): Captures quick detection of deceptive words, but Hermes is a playful trickster, not a false friend; summarised.
+- Kural 827 / jainism - 50% (primary): Verified verbatim on wisdomlib.org (diacritic in 'nâgâ' as printed). A Tamil Jain text and only a next-best match: it shares the idea of pleasant appearances hiding danger, but has nothing like the Kural's bow image or its focus on deferential speech, and the first sentence of the old translation is somewhat obscure.
+- Kural 830 / christianity - 50% (primary): Matches outward peaceableness only; Paul does not counsel inner withdrawal, and his ethic leans toward reconciliation.
+- Kural 832 / islam - 50% (primary): Partial match: about arrogance and overreach rather than desire for unfitting deeds.
+- Kural 837 / greek_mythology - 50% (primary): Strong image match, but the cause is the owner’s absence, not his folly.
+- Kural 839 / islam - 50% (primary): Partial: shows such friendships are hollow, not that their loss is painless.
+- Kural 839 / real_life_example - 50% (secondary/secondary/secondary): Next-best only: Lee was an experienced but erratic officer rather than a fool and a colleague rather than a friend of Washington, so only the painless parting matches the kural.
+- Kural 840 / islam - 50% (primary): A ritual rule, not a teaching on fools; the link is the shared image of unwashed feet.
+- Kural 842 / christianity - 50% (primary): Loose analogical match (providential gift through an unknowing agent); verified against bible-api KJV.
+- Kural 842 / judaism - 50% (primary): Interpretive analogy; Esther does not state this moral explicitly.
+- Kural 842 / jainism - 50% (primary): Paraphrase of a well-known sutra whose numbering I confirmed only through a search snippet this session, not the full page. It matches the idea that the recipient shapes the gift but has none of the Kural's irony about the fool, so it is a next-best match.
+- Kural 842 / greek_mythology - 50% (primary): Loose fit: shares the theme of undiscerning giving, but credits chance rather than merit.
+- Kural 846 / greek_mythology - 50% (primary): Loose fit: about appearance versus reality of justice, not about clothing.
+- Kural 862 / buddhism - 50% (primary): Shared value on companions, but the Buddhist context is spiritual practice, not conflict.
+- Kural 863 / greek_mythology - 50% (primary): Illustrates fear only; Paris is otherwise not ignorant or stingy.
+- Kural 863 / philosophy - 50% (primary): Conceptual overlap on vices; Aristotle is not discussing vulnerability to enemies.
+- Kural 865 / islam - 50% (primary): Thematic match on wilful heedlessness; no link to enemies.
+- Kural 865 / buddhism - 50% (primary): Partial match on knowing without doing.
+- Kural 865 / sikhism - 50% (primary): Next-best: both describe rule without right conduct, but Guru Nanak is diagnosing the moral state of his age, and does not speak of enemies profiting from it.
+- Kural 867 / greek_mythology - 50% (primary): Imagistic match on the enemy within; the horse is an enemy ruse, not a false ally.
+- Kural 870 / christianity - 50% (primary): Matches the small-before-great logic; context is stewardship, not conflict.
+- Kural 870 / islam - 50% (primary): Matches reluctance to act; the verse’s stakes are religious, not worldly fame.
+- Kural 873 / jainism - 50% (primary): Checked word for word against Jacobi on wisdomlib.org, including the note 'Veri = vairin'. Lacks the Kural's key images of standing alone and of folly worse than madness, so it is a next-best match.
+- Kural 875 / sikhism - 50% (secondary): Next-best: the strategy fits, but it is the Mughal emperor's calculation, not a Sikh teaching, and Britannica presents the motive as only apparent.
+- Kural 875 / greek_mythology - 50% (primary): Loose fit: the Hundred-Handers were not Zeus’s own enemies.
+- Kural 876 / greek_mythology - 50% (primary): Roman telling of a Greek myth; illustrates distrust, not the middle course of neither joining nor breaking.
+- Kural 877 / christianity - 50% (primary): Adjacent principle of discretion; paraphrased and not about personal weakness.
+- Kural 877 / buddhism - 50% (primary): About untimely speech generally rather than revealing sorrow or weakness.
+- Kural 878 / buddhism - 50% (primary): Metaphorical and spiritual; paraphrased.
+- Kural 879 / islam - 50% (primary): Indirect: about gradual temptation rather than enmity growing.
+- Kural 880 / islam - 50% (primary): Permission for self-defence rather than a statement that failing to resist is a living death.
+- Kural 880 / sikhism - 50% (primary): Next-best: the structure (mere existence is not life; honour matters) matches, but Gurbani grounds true life in the Naam, not in defeating enemies' pride.
+- Kural 889 / sikhism - 50% (primary): Next-best only: it shares the idea that latent harm within stays dangerous, but it is about a fixed bad nature, not the small size of a grudge.
+- Kural 890 / islam - 50% (primary): Shares the image and the call to vigilance but does not address living with hostile companions; a next-best match.
+- Kural 891 / islam - 50% (primary): Related idea of regard for authority; the Kural’s specific point, not underrating others’ power, is only implicit.
+- Kural 895 / greek_mythology - 50% (primary): Shares the futile-flight motif; Orestes’ guilt and eventual acquittal differ from the Kural’s case.
+- Kural 896 / christianity - 50% (primary): Shares the sense of a fate worse than physical harm; the object is God, not great persons.
+- Kural 897 / christianity - 50% (primary): Matches the futility-of-wealth question; the cause of loss differs.
+- Kural 898 / christianity - 50% (primary): Rock imagery and the crushing of opponents match; the family dimension is absent.
+- Kural 899 / islam - 50% (primary): Related on the fragility of kingship; says nothing of offending the righteous.
+- Kural 900 / islam - 50% (primary): Shares the futility of supports; the setting is judgment, not offending the great.
+- Kural 900 / judaism - 50% (primary): Shares the distrust of worldly supports; no reference to offending great persons.
+- Kural 901 / philosophy - 50% (primary): General philosophical parallel about pleasure overriding judgment; not specific to marriage.
+- Kural 902 / islam - 50% (primary): Verified wording; it describes natural desires as temporary goods rather than as sources of shame.
+- Kural 902 / sikhism - 50% (primary): Next-best: shares the warning against being ruled by desire, but the verse concerns lust in general, not married love, and does not frame the problem as yielding to a wife.
+- Kural 903 / islam - 50% (primary): Verified; the verse is gender-neutral ('spouses') and pairs caution with forgiveness, which the Kural lacks.
+- Kural 905 / judaism - 50% (primary): Contrasting exemplar; rabbinic tradition also reads Job's wife sympathetically as speaking from grief.
+- Kural 906 / hinduism - 50% (primary): Parallel on dependence rather than fear; Urvashi is not presented as domineering.
+- Kural 906 / islam - 50% (primary): Partial parallel based on the narrative; the Qur'an does not explicitly describe the governor as fearing his wife.
+- Kural 906 / greek_mythology - 50% (primary): Parallel on loss of dignity through passion; adultery rather than marital fear.
+- Kural 906 / philosophy - 50% (primary): Shares the premodern household ideal; section reference given from standard Moralia numbering and should be checked.
+- Kural 906 / real_life_example - 50% (secondary/secondary): Next-best only: Pompadour was the king's mistress, not his wife, and the sources do not tie his unpopularity to her specifically.
+- Kural 908 / buddhism - 50% (primary): Good parallel on balanced duties; notably it asks the husband to honour his wife and hand over household authority to her.
+- Kural 908 / philosophy - 50% (primary): Matches the neglected duty of friendship, not its cause.
+- Kural 909 / greek_mythology - 50% (primary): Allegorical parallel; both figures are personifications, so it does not concern real wives.
+- Kural 913 / christianity - 50% (primary): Links desire and death, but as moral consequence rather than a picture of loveless contact.
+- Kural 913 / islam - 50% (primary): Shared image of an empty promise; the Qur’anic context is about unbelief.
+- Kural 913 / philosophy - 50% (primary): Paraphrased, not re-checked live this session; a reasonable but loose thematic parallel.
+- Kural 915 / islam - 50% (primary): Broad theme of attractive worldly desire versus a higher good; not specific to hired favors.
+- Kural 916 / hinduism - 50% (primary): General self-respect principle; does not mention reputation or this temptation.
+- Kural 922 / greek_mythology - 50% (primary): Paraphrased from memory and not re-verified this session; Greek wisdom tradition rather than myth.
+- Kural 923 / hinduism - 50% (primary): Paraphrased, not verified verbatim this session; it fits the gravity of the vice but has no mother image.
+- Kural 923 / jainism - 50% (primary): Verified verbatim; it shares the Kural's contrast between the drinker and the wise, but it has nothing of the mother's grief or the argument from lesser to greater, so this is a next-best match.
+- Kural 923 / greek_mythology - 50% (primary): Plot summary from memory; Heracles' drinking comes from ignorance rather than vice, so the parallel is loose.
+- Kural 924 / hinduism - 50% (primary): Paraphrased without a verse number; it matches 'great fault' but not the personified Modesty.
+- Kural 924 / jainism - 50% (secondary): Both points are on Sangave's page, but the link between shame and drink is my own juxtaposition; no Jain text found this session personifies modesty fleeing the drinker.
+- Kural 925 / hinduism - 50% (primary): Verified verbatim, but the Gita is speaking about anger, not drink.
+- Kural 925 / greek_mythology - 50% (primary): Story summary; the potion is a drug, and the men do not pay for it.
+- Kural 926 / islam - 50% (primary): Verified; the harm it names is spiritual, with no poison or sleep image.
+- Kural 928 / buddhism - 50% (primary): Verified; about hiding faults in general, not about drink.
+- Kural 929 / hinduism - 50% (primary): Summary from memory, not verified this session; the emphasis on drink varies between retellings.
+- Kural 934 / islam - 50% (primary): Verified verbatim (the parenthetical is the translator's); a strong condemnation, but it says nothing about poverty.
+- Kural 935 / islam - 50% (primary): Verified verbatim; it addresses the appetite for gambling, not the resulting poverty.
+- Kural 936 / greek_mythology - 50% (primary): Summarised from the well-known passage but not re-checked verbatim this session; the causal direction is reversed from the Kural's.
+- Kural 937 / greek_mythology - 50% (primary): Paraphrased, not re-checked verbatim this session; the wealth wasted belongs to Odysseus, not to the players.
+- Kural 937 / philosophy - 50% (primary): Verified verbatim; it speaks to the use of time but not to the loss of wealth or character.
+- Kural 939 / jainism - 50% (primary): Verified verbatim; the list of worldly goods is a mirror image of the Kural's list, but it describes rebirth as a reward for renunciation, not goods lost through gambling, so the match is indirect.
+- Kural 941 / judaism - 50% (primary): Verified verbatim on Sefaria; a fitting chapter-opening parallel, but it lacks the Kural's specific theory of three humours in excess or deficiency.
+- Kural 941 / buddhism - 50% (primary): Paraphrased from memory of a well-known sutta, not checked live; strong structural parallel, but about meditative effort, not physical health.
+- Kural 941 / greek_mythology - 50% (primary): Paraphrase of a well-known episode, not verified live; the excess-and-defect structure is a good fit, but the subject is flight, not the body.
+- Kural 942 / jainism - 50% (primary): Verified verbatim on sacred-texts.com; the food-as-medicine idea is shared, but the Jain aim is spiritual purity rather than bodily health.
+- Kural 943 / greek_mythology - 50% (primary): Paraphrase, not checked live; a general maxim of moderation with no specific reference to food or long life.
+- Kural 944 / christianity - 50% (primary): Paraphrase, not verified live; shares the idea of eating at the right time, but is a political rather than medical remark.
+- Kural 945 / buddhism - 50% (primary): Paraphrase, not verified live; shares restraint in eating but is aimed at non-attachment, not health.
+- Kural 947 / sikhism - 50% (primary): Next-best only: greed is the root of the glutton's excess, but Kabir speaks of greed in general and of spiritual death, not overeating and bodily disease.
+- Kural 949 / buddhism - 50% (primary): Paraphrase, not verified live; recognises variation among patients, but its main point is a simile for receptivity to the Dhamma.
+- Kural 957 / buddhism - 50% (primary): Paraphrased, not re-verified this session; shares the moon image but makes a different point.
+- Kural 958 / real_life_example - 50% (secondary/secondary): Next-best: the event shows the kural's ideal in reverse (compassion confirming nobility) rather than a lack of love causing doubt about someone's family.
+- Kural 964 / jainism - 50% (primary): Paraphrased; similar image of rejection, but about a pupil's discipline rather than a person of rank.
+- Kural 966 / buddhism - 50% (primary): Next-best: about choosing companions, not about servility toward scorners.
+- Kural 990 / jainism - 50% (primary): Verified verbatim on sacred-texts.com; next-best match only, since it speaks of saving others spiritually rather than of the earth bearing its burden, and Jain cosmology does not make the world's physical stability depend on the virtuous.
+- Kural 992 / sikhism - 50% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); a next-best match given candidly, because Sikh teaching explicitly rejects the Kural's appeal to noble family birth and shares only its emphasis on love toward all.
+- Kural 992 / philosophy - 50% (primary): Paraphrase, not re-verified this session; a partial match on the role of birth, without Aristotle's mention of love.
+- Kural 995 / greek_mythology - 50% (primary): Paraphrase from memory, not re-verified this session; an illustrative episode rather than a teaching on courtesy.
+- Kural 1004 / greek_mythology - 50% (primary): Paraphrase; next-best only: shares the idea of a lasting name over wealth, but in a warrior context unrelated to miserliness.
+- Kural 1013 / jainism - 50% (primary): Verified verbatim on sacred-texts.com; a next-best match on the dwelling image only, with no Jain text found that equates shame with the seat of virtue.
+- Kural 1013 / greek_mythology - 50% (primary): Paraphrase from memory, not verified against a live text; the genealogy is well attested, but the link to excellence is interpretive.
+- Kural 1015 / sikhism - 50% (primary): Next-best match: it gives the sense of oneness that underlies the Kural's idea, but says nothing about shame or disgrace.
+- Kural 1020 / buddhism - 50% (primary): Verified verbatim; a next-best match on the image only, since the verse concerns impermanence, not shame.
+- Kural 1024 / jainism - 50% (primary): Verified verbatim on sacred-texts.com; it shares the stress on action over deliberation, but the context is monastic practice, so it is a next-best match.
+- Kural 1031 / buddhism - 50% (primary): Verified verbatim; farming is listed first, but the sutta values diligence in any trade rather than ranking agriculture above the others.
+- Kural 1031 / jainism - 50% (primary): Paraphrase only: the Kalpa Sutra page could not be fetched this session and the asi-masi-krishi triad is from later tradition; Jain ethics also counts ploughing as harmful to earth-bodies, so the fit is partial.
+- Kural 1032 / jainism - 50% (primary): Paraphrase, not verified against a live text this session; the simile is about harmless alms-taking, and Jainism does not praise farmers as such.
+- Kural 1034 / islam - 50% (primary): Verified verbatim via api.alquran.cloud; it links farmland to a kingdom's prosperity but says nothing about extending rule over others, and the story ends in Sheba's ingratitude.
+- Kural 1034 / sikhism - 50% (primary): Next-best only: the link is a farmer whose wealth surpasses kings', but Dhanna's wealth is spiritual and the Kural's point about agrarian prosperity and royal power has no real Sikh counterpart.
+- Kural 1037 / christianity - 50% (primary): Verified verbatim; it shares the good-soil-equals-abundance idea, but the parable is spiritual and says nothing about how to prepare soil.
+- Kural 1037 / philosophy - 50% (primary): Verified verbatim on Perseus; it shares the 'fitting ground' idea, but the passage is an analogy for teaching, not farming advice.
+- Kural 1038 / judaism - 50% (primary): Verified verbatim on Sefaria; it does picture crop protection, but in a love song usually read allegorically.
+- Kural 1039 / hinduism - 50% (primary): Verified verbatim; it shares the image of the land as a woman to be attended to, but not the warning about the owner's neglect.
+- Kural 1040 / jainism - 50% (primary): Verified verbatim; it shares the theme of rejecting negligence, but is aimed at a monk's spiritual vigilance, not at livelihood or farming.
+- Kural 1042 / islam - 50% (primary): Verified verbatim on alquran.cloud; a contrasting next-best match rather than a parallel.
+- Kural 1042 / philosophy - 50% (primary): Verified verbatim on classics.mit.edu; a counterpoint rather than a parallel.
+- Kural 1043 / buddhism - 50% (primary): Verified verbatim on accesstoinsight.org; a contrast centred on craving, with nothing on lineage or fame.
+- Kural 1043 / sikhism - 50% (primary): Next-best only: the shared word is craving, but Guru Angad means spiritual desire that afflicts rich and poor alike, and says nothing about loss of lineage or reputation.
+- Kural 1045 / jainism - 50% (primary): Verified on sacred-texts.com (diacritics simplified); next-best match, sharing only the idea of manifold suffering from one root.
+- Kural 1047 / buddhism - 50% (primary): Verified verbatim on accesstoinsight.org; a loose fit on the link between character and kinship.
+- Kural 1048 / hinduism - 50% (primary): Verified verbatim on vedabase.io; a counsel answering the Kural’s mood, not a parallel description of poverty.
+- Kural 1048 / buddhism - 50% (primary): Verified verbatim on accesstoinsight.org; a contrast between chosen and imposed poverty.
+- Kural 1049 / hinduism - 50% (primary): Verified verbatim on vedabase.io; an ideal set against the Kural’s observation, not a parallel to it.
+- Kural 1049 / greek_mythology - 50% (primary): Paraphrased from general knowledge of Odyssey 11, not verified against a live text in this session; a mythic image of unrelieved want rather than of sleeplessness.
+- Kural 1050 / philosophy - 50% (primary): Verified verbatim on classics.mit.edu; a general counsel of simplicity rather than a call to renunciation or a warning about burdening others.
+- Kural 1050 / real_life_example - 50% (secondary/secondary): Next-best: Gandhi was not destitute and his act was a chosen simplicity, so it echoes the kural's call to renunciation only loosely.
+- Kural 1058 / sikhism - 50% (secondary): Next-best only: the story values giving to the needy above profit, but the Kural's specific claim that askers give human activity its meaning is not made; Janamsakhi material is hagiographic, and the Macauliffe page was not re-checked in this session.
+- Kural 1062 / islam - 50% (primary): Verified verbatim via the quran.com API; included as a next-best match, because Islamic theology does not permit the Kural's imprecation against the creator.
+- Kural 1062 / real_life_example - 50% (secondary/secondary): Next-best: the kural is an imprecation against a world that makes people beg; the act is a practical reform in that spirit, not a dramatisation of the curse.
+- Kural 1064 / greek_mythology - 50% (primary): Verified verbatim on sacred-texts.com; a next-best match, since Hesiod praises work rather than the refusal to beg in destitution.
+- Kural 1068 / sikhism - 50% (primary): Next-best match built on a shared boat image; the Sikh verse is about spiritual crossing, not about begging or refusal.
+- Kural 1072 / real_life_example - 50% (secondary/web): The facts are solid, but Ponzi's untroubled confidence is only lightly documented, so the link to the kural's point about a worry-free heart is partial.
+- Kural 1074 / real_life_example - 50% (secondary/primary/secondary): It shows the base strutting with pride, but the kural's specific point, feeling superior by comparison with those who are even worse, is not directly shown.
+- Kural 1083 / sikhism - 50% (primary): Next-best match: both pair love with a kind of death, but Kabir means the death of ego in spiritual love, not romantic love, and lacks the Kural's playful hyperbole.
+- Kural 1085 / buddhism - 50% (primary): Paraphrase not checked against a live text; a next-best match on a threefold allure, with no doe or eye imagery.
+- Kural 1085 / real_life_example - 50% (secondary/secondary): Shows a single look holding several natures at once, but it does not show the kural's specific mix of danger, beauty and doe-like shyness.
+- Kural 1086 / hinduism - 50% (primary): Paraphrase not checked against a live text; a next-best match on restraining sight, with no eyebrow image.
+- Kural 1087 / hinduism - 50% (primary): Paraphrase, not checked this session; a next-best match on covering as restraint.
+- Kural 1087 / greek_mythology - 50% (primary): Paraphrase, not checked against a live text this session; the garment-and-power link is real, but the purpose is reversed.
+- Kural 1089 / greek_mythology - 50% (primary): Paraphrase not checked against a live text; a contrast rather than a parallel.
+- Kural 1092 / islam - 50% (primary): Verified verbatim on sunnah.com; it shares the focus on the brief glance but takes the opposite ethical stance.
+- Kural 1095 / islam - 50% (primary): Verified via the quran.com API; only the restrained gaze matches, not the playful sidelong smile.
+- Kural 1095 / real_life_example - 50% (secondary/secondary): Captures a quiet private smile, but the painting is not a scene of courtship, and this artwork also appears in chapter 109.
+- Kural 1097 / jainism - 50% (primary): Verified verbatim on sacred-texts.com (diacritics simplified); a partial parallel in a contrasting setting.
+- Kural 1098 / sikhism - 50% (primary): Next-best match: the humble pleading lover is shared, but the Gurbani verse is the soul's spiritual prayer to God and does not describe the beloved's answering smile.
+- Kural 1099 / islam - 50% (primary): Verified via the quran.com API; the shared idea is reading a hidden state behind restraint, not love.
+- Kural 1099 / real_life_example - 50% (secondary/secondary/secondary): Shows a close bond kept outwardly distant, but the relationship was not a romantic love affair, which is what the kural describes.
+- Kural 1100 / jainism - 50% (primary): Paraphrase checked against the Jacobi text on sacred-texts.com; a genuine Jain love story, but the parallel to eyes replacing words is loose.
+- Kural 1104 / buddhism - 50% (primary): Verified verbatim on accesstoinsight.org; the fire image is shared, but the remedy is the opposite of the Kural’s.
+- Kural 1104 / real_life_example - 50% (secondary/web): Love pictured as fire matches the kural's image, but the song describes falling into the flames rather than a fire that cools when the lovers are together.
+- Kural 1110 / islam - 50% (primary): Verified via the quran.com API; shares the idea of the inexhaustible, applied to God’s words rather than to love.
+- Kural 1112 / jainism - 50% (primary): Verified verbatim on sacred-texts.com (transliteration of 'Hatha' simplified); it shares the image of a heart driven by what it sees but condemns it, unlike the Kural.
+- Kural 1112 / sikhism - 50% (primary): Next-best only: the incomparability of the beloved is shared, but the Gurbani verse is devotion to God and has nothing of the Kural's flower-and-eyes comparison.
+- Kural 1117 / islam - 50% (primary): Verified via the quran.com API; the moon’s phases are shared, but the Qur’an draws a theological lesson, not a comparison of beauty.
+- Kural 1117 / jainism - 50% (primary): Verified verbatim on wisdomlib.org; a Tamil Jain text sharing the moon’s mark, used for a lesson on good company rather than beauty.
+- Kural 1117 / sikhism - 50% (primary): Next-best match: the stainless beloved is shared, but Gurbani speaks of moral and spiritual purity (God as Niranjan, untouched by Maya), not physical flawlessness, and there is no moon in the verse.
+- Kural 1117 / real_life_example - 50% (secondary/secondary): The event confirms the moon's blemishes that the kural contrasts with the beloved's face, but it illustrates only the moon half of the comparison.
+- Kural 1118 / buddhism - 50% (primary): Verified verbatim on accesstoinsight.org; shares the 'brighter than the moon' figure, applied to the Buddha rather than a beloved.
+- Kural 1118 / jainism - 50% (primary): Verified verbatim on sacred-texts.com (diacritics simplified); a partial match on radiant beauty, in a story that ends in renunciation.
+- Kural 1119 / jainism - 50% (primary): Verified verbatim on wisdomlib.org; a Tamil Jain text that shares the ideal of reserve, framed as moral caution rather than a lover’s wish.
+- Kural 1121 / real_life_example - 50% (secondary/secondary): The kiss is the kural's subject, but a sculpture cannot show its sweetness, and the kural's milk-and-honey image is not echoed in the work.
+- Kural 1123 / greek_mythology - 50% (primary): Paraphrase of a well-known episode; the image-in-the-eye theme matches, with self-love as the instructive contrast.
+- Kural 1124 / christianity - 50% (primary): Verified verbatim via bible-api.com (KJV); the 'my life is the beloved' structure matches, but the love is devotional and the view of death opposite.
+- Kural 1125 / judaism - 50% (primary): Paraphrase, not verified word for word this session; a good fit on unforgetting love, but for Zion, not a beloved woman.
+- Kural 1127 / hinduism - 50% (primary): Paraphrase, not checked word for word this session; the forgoing of adornment for love matches, but the motive is separation-grief rather than the Kural's conceit.
+- Kural 1128 / buddhism - 50% (primary): Verified verbatim on Access to Insight; matches protective tenderness, but directed to all beings rather than one beloved.
+- Kural 1128 / sikhism - 50% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); a next-best match only: it shares restraint in food for an inward reason, but has nothing of the Kural's playful conceit of a lover burnt by hot food in the heart.
+- Kural 1131 / buddhism - 50% (primary): Verified verbatim on Access to Insight; same diagnosis of love-pain, opposite remedy.
+- Kural 1131 / greek_mythology - 50% (primary): Paraphrase of a well-known episode; shares the theme of hopeless love, but Echo withdraws in shame where the Kural's lover goes public.
+- Kural 1131 / philosophy - 50% (primary): Famous line given as paraphrase because the translation was not checked this session; a general thematic fit only.
+- Kural 1134 / judaism - 50% (primary): Paraphrase not verified on Sefaria this session; describes the growing power of desire, but the Talmud's subject is temptation in general, not love.
+- Kural 1135 / greek_mythology - 50% (primary): Paraphrase of a well-known episode; the love-wound fits, but Daphne's refusal and flight go well beyond the Kural.
+- Kural 1135 / philosophy - 50% (primary): Paraphrase from memory, not checked this session; a general psychological parallel.
+- Kural 1137 / islam - 50% (primary): Paraphrase; endurance with dignity matches, but the grief is a father's, not a lover's.
+- Kural 1139 / real_life_example - 50% (secondary/secondary): Next-best: the joy and public display fit, but the painting celebrates happy love rather than the bewildered, unhappy love of the kural; already used once elsewhere in the book (chapter 111), and sources differ on whether his birthday was 6 or 7 July.
+- Kural 1140 / buddhism - 50% (primary): Paraphrase, not checked word for word this session; a next-best match on unjust mockery.
+- Kural 1141 / judaism - 50% (primary): Verified verbatim on Sefaria; a genuine biblical concern with rumour about a courtship, but used here mostly as a contrast.
+- Kural 1143 / hinduism - 50% (primary): Paraphrase of the poem’s overall situation; it shares the joy of imagined union, but the source of it is the lover’s fancy, not public rumour.
+- Kural 1143 / judaism - 50% (primary): Paraphrase of a famous verse, not rechecked this session; it shares the sense of a not-yet-possessed love felt as near, with no element of rumour.
+- Kural 1144 / hinduism - 50% (primary): Paraphrase of a famous verse, not rechecked word for word this session; it shares the mechanism of desire growing by attention, but the Gita condemns it.
+- Kural 1144 / jainism - 50% (primary): Verified verbatim on sacred-texts.com; shares the idea of desire that grows without limit, but concerns greed rather than love or rumour.
+- Kural 1145 / greek_mythology - 50% (primary): Paraphrase of a famous episode; a fair image of self-feeding sweetness, without any connection to love.
+- Kural 1146 / jainism - 50% (primary): Verified verbatim on sacred-texts.com (diacritics kept); a genuine Jain picture of one act becoming a city’s uproar, though the event is renunciation, not love.
+- Kural 1146 / philosophy - 50% (primary): Paraphrase of the essay’s opening theme, not rechecked this session; a general fit on how rumour spreads.
+- Kural 1149 / real_life_example - 50% (secondary/secondary): The abandonment before many people fits, but Regine's own words about the gossip are not recorded in the sources, and the kural's hero later returns while Kierkegaard did not; already used once elsewhere in the book (chapter 121).
+- Kural 1150 / islam - 50% (secondary): Paraphrase of a well-known account, not rechecked this session; it shares the woman’s initiative and the man’s ready consent, but there is no rumour or elopement.
+- Kural 1152 / greek_mythology - 50% (primary): Paraphrase of a well-known episode; shares the theme of a loving look shadowed by fear of loss, but the circumstances are mythic rather than domestic.
+- Kural 1153 / judaism - 50% (primary): Paraphrase of a well-known mishnah (numbered 5:16 or 5:19 in different editions), not checked this session; it speaks to how lasting love is rather than to physical separation.
+- Kural 1154 / islam - 50% (primary): Verified verbatim via the quran.com API; a contrast of a divine reassurance kept against a human one in doubt, not a direct parallel.
+- Kural 1155 / jainism - 50% (primary): Verified verbatim on sacred-texts.com; a vivid image of those left behind by a departure, though Nami’s leaving is presented as admirable renunciation.
+- Kural 1156 / christianity - 50% (primary): Verified verbatim via bolls.life KJV; matches the pain of hearing the departure spoken, but Jesus promises to return, so the despair of the Kural is absent.
+- Kural 1156 / buddhism - 50% (primary): Verified verbatim on accesstoinsight.org; it names the source of her pain, but as general doctrine with nothing specific to a departing lover.
+- Kural 1157 / jainism - 50% (primary): Verified verbatim on sacred-texts.com; a visible sign following a beloved’s departure, but chosen deliberately as renunciation rather than suffered as wasting.
+- Kural 1158 / philosophy - 50% (primary): Paraphrase of the dialogue’s general argument, not checked against a translation this session; it supports the first half of the Kural only.
+- Kural 1159 / jainism - 50% (primary): Verified verbatim on sacred-texts.com; a deliberate contrast on fire and attachment rather than a parallel.
+- Kural 1160 / philosophy - 50% (primary): Paraphrase of the letter’s argument, not checked against a translation this session; it concerns death rather than a journey, so the fit is partial.
+- Kural 1161 / real_life_example - 50% (secondary/secondary): The documents show hidden, overflowing emotion, but their recipient and even whether they record a real love are disputed, so the fit is next-best.
+- Kural 1163 / christianity - 50% (primary): Verified verbatim via bolls.life KJV; the body failing under grief matches, but the psalm ties it to iniquity rather than to love and shame.
+- Kural 1164 / hinduism - 50% (primary): Paraphrase of a well-known verse, not checked against the As It Is wording this session; the sea-and-boat image matches closely, but the ocean is sin, not love.
+- Kural 1164 / philosophy - 50% (primary): Paraphrase of a well-known passage, not checked word for word this session; it states the helplessness under passion but not the sea image or the absent beloved.
+- Kural 1166 / sikhism - 50% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match only: it shares the ocean-of-sorrow image, but Gurbani treats the attachment behind this sorrow (moh, one of the five thieves) as a fault to overcome, whereas the Kural treats love itself as a worthy sea of joy.
+- Kural 1167 / islam - 50% (primary): Verified verbatim via the quran.com API (Sahih International); the image of a dark, shoreless sea matches strongly, but the verse describes unbelief, not love.
+- Kural 1168 / hinduism - 50% (primary): Paraphrase of the Sundara Kanda search, not checked against a translation this session; details of timing are simplified, and only the situation of a lone wakeful grieving wife matches.
+- Kural 1168 / real_life_example - 50% (secondary/secondary): The poem shares the kural's setting of a lonely lover keeping the night company, but it is a literary event, and its lost love is an ended affair rather than a temporary separation.
+- Kural 1169 / judaism - 50% (primary): Verified verbatim via bolls.life KJV (a JPS rendering was not checked this session); it captures time dragging in distress, but the cause is fear under a curse, not love.
+- Kural 1176 / buddhism - 50% (primary): Verified verbatim on accesstoinsight.org; the self-as-enemy and bitter-fruit ideas match, though the verse speaks of evil deeds and lacks the Kural’s ironic delight.
+- Kural 1177 / hinduism - 50% (primary): Paraphrase of a well-known episode, not checked against a translation this session; strong on a wife’s weeping in separation, though Sita does not curse her eyes.
+- Kural 1177 / christianity - 50% (primary): Verified verbatim via bolls.life KJV; it shares the eyes-as-fountain image, but reverses the wish and concerns national mourning.
+- Kural 1177 / islam - 50% (primary): Verified verbatim on sunnah.com; the tearful eyes of separation-grief match, but the Prophet’s tears are accepted as mercy, with no curse on the eyes.
+- Kural 1177 / jainism - 50% (primary): Verified verbatim on sacred-texts.com; the misery of missing what the eye desired fits, though the Jain verse argues against desire rather than voicing a lover’s grief.
+- Kural 1178 / philosophy - 50% (primary): Paraphrase of a well-known passage, not checked word for word this session; it explains the husband’s shallow love, but not the eyes’ longing.
+- Kural 1179 / islam - 50% (secondary): Paraphrase of the romance’s general situation, not checked against a translation this session, with no specific passage cited; Islamicate love poetry rather than scripture.
+- Kural 1179 / sikhism - 50% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match by contrast only: the Kural's point is that union itself is spoiled by dread of parting, which Gurbani does not share for union with the Lord.
+- Kural 1180 / christianity - 50% (primary): Verified verbatim via bolls.life KJV; the hidden-made-known principle fits, but Jesus speaks of the gospel and judgment, not lovesickness.
+- Kural 1182 / philosophy - 50% (primary): Paraphrase of a well-known passage, not checked word for word this session; it matches love’s bodily cost but not the heroine’s pride in it.
+- Kural 1183 / judaism - 50% (primary): Verified verbatim on Sefaria; the full-to-empty exchange matches in shape, but Naomi grieves bereavement, not a lover’s absence.
+- Kural 1184 / buddhism - 50% (primary): Verified verbatim on accesstoinsight.org; it explains rather than shares her puzzle, and its context is monastic training of thought.
+- Kural 1187 / jainism - 50% (primary): Verified verbatim on sacred-texts.com; it explains why the joy is fragile but, as a call to renunciation, does not share the Kural’s tender view of married love.
+- Kural 1188 / islam - 50% (primary): Verified verbatim via the quran.com API; a rebuke of unjust gossip about a woman, though its occasion was a slander, not a husband’s absence.
+- Kural 1188 / sikhism - 50% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match and partly a contrast: both are about who gets blamed for suffering, but the Kural protests unfair blame while Guru Nanak counsels self-examination instead of blaming another.
+- Kural 1188 / philosophy - 50% (primary): Paraphrase of a well-known passage, not checked word for word this session; it supplies the principle behind her complaint, not a parallel scene.
+- Kural 1188 / real_life_example - 50% (secondary/secondary): Partial: blame falling on the abandoned wife fits, but Catherine's story is about a deliberate annulment, not a husband's absence, and the event has been used once elsewhere in the book in a related form.
+- Kural 1189 / judaism - 50% (primary): Paraphrase of well-known passages, not checked against the JPS text this session; self-giving love fits, though it is friendship rather than married love.
+- Kural 1189 / buddhism - 50% (primary): Paraphrase of a very well-known sutta, not checked against a translation this session; metta is universal and non-attached, unlike the heroine’s particular love.
+- Kural 1190 / jainism - 50% (primary): Paraphrase from general knowledge, not checked against a translation this session; the epic contains Jain elements and its author is traditionally said to be a Jain monk, but that attribution is debated, so this is a Tamil-Jain-adjacent source rather than canonical scripture.
+- Kural 1192 / buddhism - 50% (primary): Paraphrase; the rain-and-wife pairing is genuine, but the sutta’s point runs against the Kural’s dependence on love.
+- Kural 1193 / jainism - 50% (primary): Paraphrase of a popular Jain narrative; a partial match, since the story’s confidence rests on religious faith as much as on mutual love.
+- Kural 1193 / philosophy - 50% (primary): Paraphrase; a partial fit, since Aristotle goes on to praise loving over being loved.
+- Kural 1197 / buddhism - 50% (primary): Paraphrase; the personified desire matches, but Buddhism treats it as an enemy rather than a god to be reproached.
+- Kural 1198 / jainism - 50% (primary): Paraphrase of a well-known Jain narrative not checked live in this session; partial fit on enduring abandonment.
+- Kural 1199 / philosophy - 50% (primary): Paraphrase of a famous maxim; a partial fit on love’s indifference to reasons, though Pascal’s context is faith.
+- Kural 1200 / jainism - 50% (primary): Paraphrase cited by lecture only, not checked live in this session; a partial fit on the unfillable, applied to greed rather than love.
+- Kural 1203 / buddhism - 50% (primary): Paraphrase of a Vinaya episode from memory; a direct engagement with sneeze-belief, but sceptical rather than parallel.
+- Kural 1203 / sikhism - 50% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match offered as an honest contrast: Sikhism rejects omen-reading of the kind the Kural's folk belief about sneezing assumes, though both link signs to whether the beloved is remembered.
+- Kural 1206 / jainism - 50% (primary): Paraphrase from memory of the Jain narrative, chapter not checked live; distinct from the Hindu Valmiki version but close in theme.
+- Kural 1207 / christianity - 50% (primary): Verified verbatim via bolls.life KJV; partial fit on painful yet cherished memory of parting.
+- Kural 1207 / jainism - 50% (primary): Paraphrase of a well-known lecture, not re-checked live; it sees memory as burning, as the Kural does, but prescribes letting it go.
+- Kural 1208 / hinduism - 50% (primary): Paraphrase of a well-known verse; partial fit on a beloved who welcomes constant remembrance, in a theological register.
+- Kural 1208 / jainism - 50% (primary): Paraphrase from memory of a well-known Digambara hymn, not checked live; structural parallel, with the Jina’s detachment unlike a lover’s indulgence.
+- Kural 1208 / real_life_example - 50% (web/secondary): Next-best: the sources document Brahms's love and the lasting friendship, but Clara's response to his thoughts of her is inferred, and this was not a married couple.
+- Kural 1210 / judaism - 50% (primary): Paraphrase of a well-known passage; an imaginative structural parallel, not a romantic one.
+- Kural 1210 / buddhism - 50% (primary): Verified verbatim on accesstoinsight.org; names the same pain but prescribes the opposite response.
+- Kural 1210 / jainism - 50% (primary): Paraphrase of a well-known Jain narrative, not re-checked live; shares the night-time longing but not the address to the moon.
+- Kural 1210 / real_life_example - 50% (secondary/secondary): Next-best: the moon-and-absent-loved-one image matches closely, but the loved one is a brother, not a husband.
+- Kural 1211 / real_life_example - 50% (secondary/secondary): Next-best: the gratitude to a message-bearing dream matches, but the message concerns kingship rather than an absent lover, and the dream story itself may be royal propaganda (the stela's existence is certain).
+- Kural 1212 / islam - 50% (primary): Verified verbatim via quran.com API; shares the urge to voice the grief of separation, but the addressee is God, not the beloved.
+- Kural 1213 / islam - 50% (primary): Verified verbatim on sunnah.com; parallel on dream-sight of a beloved figure as genuine, but the love is devotional, not marital.
+- Kural 1213 / philosophy - 50% (primary): Paraphrase; an explanatory rather than emotional parallel to the Kural’s dream-sustained love.
+- Kural 1214 / buddhism - 50% (primary): Paraphrase from the standard translation, not verified line by line; explanatory rather than emotional parallel.
+- Kural 1215 / judaism - 50% (primary): Verified verbatim on Sefaria; partial fit, since the psalm compares a real event to a dream rather than a dream to a real event.
+- Kural 1215 / buddhism - 50% (web): Paraphrase of a famous verse; good conceptual fit on the equal transience of waking and dream, with opposite conclusions drawn.
+- Kural 1215 / jainism - 50% (primary): Verified verbatim on sacred-texts.com; parallel on cherishing a dream’s sweetness, though Trisala’s dreams are religious omens, not visions of a lover.
+- Kural 1216 / hinduism - 50% (primary): Paraphrase of a well-known passage; good fit on the dream as a complete world, though the Upanishad’s aim is metaphysical, not romantic.
+- Kural 1218 / islam - 50% (primary): Verified verbatim via quran.com API; parallel on unseen inner nearness, applied to God rather than a spouse.
+- Kural 1218 / jainism - 50% (primary): Paraphrase of a well-known Jain narrative; partial fit on the absent beloved held in the heart, redirected to ascetic ends.
+- Kural 1219 / philosophy - 50% (primary): Paraphrase of Smith’s opening argument; an explanatory parallel on the limits of judging an experience one has not had.
+- Kural 1220 / judaism - 50% (primary): Verified verbatim on Sefaria; partial match on outsiders scorning a dreamer, without the theme of an absent lover.
+- Kural 1222 / christianity - 50% (primary): Verified verbatim via bolls.life KJV; only a partial fit on shared sorrow, with nothing about lovers or the evening.
+- Kural 1222 / real_life_example - 50% (secondary/secondary): The charge of a partner's hard-heartedness matches, but the kural's tender image of commiserating with the dim evening has no counterpart.
+- Kural 1224 / buddhism - 50% (primary): Paraphrase, not checked against the text in this session; the deadly approach fits, but the verse is about death and attachment in general.
+- Kural 1224 / philosophy - 50% (primary): Paraphrase of a well-known passage; fits the fear of darkness, but treats it as irrational rather than as love’s grief.
+- Kural 1225 / greek_mythology - 50% (primary): Paraphrase of a well-known framing; matches the friend-and-foe structure, but Poseidon’s anger has a known cause and nothing to do with love.
+- Kural 1229 / christianity - 50% (primary): Verified verbatim via bolls.life KJV; shares a woman’s grief filling a town, but the cause is the death of children.
+- Kural 1233 / real_life_example - 50% (secondary/secondary): The outward signs of grief announcing a separation to all match, but the separation is a death and the grieving partner is the husband, not the wife.
+- Kural 1234 / christianity - 50% (primary): Verified verbatim via bible-api.com (KJV); shares bride, ornaments and forgetting, but the forgetter is the people and the forgotten is God, the reverse of the Kural.
+- Kural 1236 / islam - 50% (primary): Paraphrase from general knowledge (sunnah.com did not return the page this session); a real teaching on charitable judgment of a spouse, but addressed to husbands.
+- Kural 1236 / greek_mythology - 50% (primary): Paraphrase; good on a wife’s loyalty to an absent husband, but there is no scene of others blaming Odysseus.
+- Kural 1238 / buddhism - 50% (primary): Verified verbatim on accesstoinsight.org; explains the feeling, but as something to be outgrown rather than cherished.
+- Kural 1239 / islam - 50% (primary): Verified verbatim via api.alquran.cloud (en.sahih); about marital closeness in general, not distress at a slight separation.
+- Kural 1239 / real_life_example - 50% (secondary/secondary): A distant husband's concern for his wife fits, but the kural's tender memory of an embrace interrupted by a breeze has no parallel.
+- Kural 1240 / jainism - 50% (primary): Paraphrase of a well-known sutra; good on mutual sympathy, though it speaks of souls, not parts of one body.
+- Kural 1242 / christianity - 50% (primary): Verified verbatim via bible-api.com (KJV); a general instruction to guard the heart, with no reference to unreturned love.
+- Kural 1243 / islam - 50% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a contrastive rather than direct parallel about what the remembering heart should dwell on.
+- Kural 1246 / jainism - 50% (primary): Verified verbatim on sacred-texts.com (Jacobi, Lecture 32); an analytical rather than narrative match, and Jainism would treat both love and anger as bondage.
+- Kural 1246 / real_life_example - 50% (secondary/web): Shows anger dissolving into reunion, but this was a full divorce rather than a lovers' sulk, and the second marriage soon failed.
+- Kural 1247 / islam - 50% (primary): Paraphrase from knowledge of a well-known hadith, not verified live this session; it explains the weight of modesty but not its conflict with love.
+- Kural 1247 / buddhism - 50% (primary): Paraphrase of a standard teaching, not verified live; it explains the value of shame but not the heroine’s painful conflict.
+- Kural 1247 / real_life_example - 50% (secondary/secondary): The conflict between love and social propriety fits, but the restraint was obedience to a father rather than a woman's modesty toward her lover.
+- Kural 1249 / greek_mythology - 50% (primary): Paraphrase of a well-attested myth, not verified live; the beloved kept close fits, but Laodamia’s image is outward, not within the heart.
+- Kural 1251 / real_life_example - 50% (secondary/secondary): Next-best: the overpowering of a reserved, respected man by love fits the image, but the love is spiritual friendship rather than the separated wife's romantic longing the kural describes.
+- Kural 1252 / jainism - 50% (primary): Verified verbatim on sacred-texts.com; a real image of a mind driven by desire, but it is a rebuke to a fickle monk rather than a faithful wife’s complaint, and it has no night-time element.
+- Kural 1253 / jainism - 50% (primary): Paraphrase of verses read on sacred-texts.com; the sudden uncontainable outburst fits, but the Jain text treats it as a moral lapse, unlike the Kural’s sympathetic heroine.
+- Kural 1257 / buddhism - 50% (primary): Paraphrase of a real sutta; it shares the ideal of mutual married love, but says nothing about shyness or its loss.
+- Kural 1257 / greek_mythology - 50% (primary): Paraphrase of a famous fragment; it shares love’s power to sweep aside propriety, but Helen leaves her husband, which is the opposite of the Kural’s setting.
+- Kural 1258 / buddhism - 50% (primary): Paraphrase of a real sutta; the motif of words as a weapon against resolve fits, but the outcome is the reverse of the Kural’s.
+- Kural 1259 / islam - 50% (primary): Verified verbatim via api.alquran.cloud (en.sahih); shares the theme of spousal affection, but says nothing of a quarrel giving way.
+- Kural 1262 / real_life_example - 50% (secondary/secondary): Next-best: a choice to keep remembering fits, but this is mourning after death by a husband, not a living wife's refusal to forget an absent husband.
+- Kural 1263 / buddhism - 50% (primary): Paraphrase of a Jataka story; it shares wifely devotion through hardship, but it is about caring for a sick husband, not waiting for an absent one.
+- Kural 1267 / judaism - 50% (primary): Verified verbatim on mechon-mamre.org (JPS 1917); next-best match: resentment giving way to embrace at reunion, but between brothers, not lovers.
+- Kural 1267 / sikhism - 50% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) on 2026-10-10; next-best match only: it pairs anger and love in a relationship with the Master, but here the anger is the Lord's, not the lover's playful sulk, and the Kural's comic indecision has no parallel.
+- Kural 1269 / sikhism - 50% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) on 2026-10-10; next-best match: it shares the mind fixed on the beloved through all time, but not the Kural's key point that waiting makes one day feel like seven; the love is spiritual.
+- Kural 1270 / christianity - 50% (primary): Verified verbatim via bible-api.com (KJV); shares the rhetorical ‘what profit’ structure, but its subject is the soul, not a spouse.
+- Kural 1270 / buddhism - 50% (primary): Verified verbatim on accesstoinsight.org; it names the same pain of separation but prescribes the opposite remedy.
+- Kural 1270 / philosophy - 50% (primary): Paraphrase of a famous letter; next-best match on the urgency of time, though Seneca is not speaking of love.
+- Kural 1275 / real_life_example - 50% (secondary/secondary): Next-best: a covert sign easing sorrow matches, but it passed between fellow prisoners, not between lovers.
+- Kural 1276 / islam - 50% (primary): Verified verbatim via api.alquran.cloud (en.sahih); matches a wife’s fear of her husband’s distancing, but it is legal guidance and has no love poetry.
+- Kural 1276 / jainism - 50% (primary): Narrative summary checked against sacred-texts.com (Rajimati’s line is verbatim at 22.29); a partial match on a beloved departing at the moment of closeness, framed by Jainism as a spiritual victory.
+- Kural 1278 / real_life_example - 50% (secondary/secondary): Next-best: love's immediate physical signs are the common ground, but Sappho's poem arises from watching the beloved, not from a parting.
+- Kural 1282 / greek_mythology - 50% (primary): Paraphrase of a well-known myth (told by the Roman poet Ovid); a loose match on unbroken marital harmony, with no mention of sulking or reunion.
+- Kural 1285 / sikhism - 50% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) on 2026-10-10; next-best match only: love overlooking faults is shared, but here it is the Lord who covers the devotee's faults, the reverse of the Kural, and the kohl-brush simile has no parallel.
+- Kural 1286 / judaism - 50% (primary): Paraphrase of a well-known mishnah; a partial match on how we judge others, offered as an ideal rather than as an observation about love.
+- Kural 1287 / christianity - 50% (primary): Verified verbatim via bible-api.com (KJV); shares the flood imagery and love’s overwhelming strength, though the roles of flood and love are reversed.
+- Kural 1287 / jainism - 50% (primary): Verified verbatim on sacred-texts.com; a partial match on plunging into water to one’s undoing, as a warning against passion.
+- Kural 1289 / christianity - 50% (primary): Verified verbatim via bible-api.com (KJV); a partial match on flower imagery and rarity, but the Song compares the beloved, not love itself, to a flower.
+- Kural 1290 / christianity - 50% (primary): Verified verbatim via bible-api.com (KJV); a partial match on eager embrace at reunion, between father and son rather than spouses.
+- Kural 1296 / islam - 50% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a partial match on solitary grief for an absent loved one, but Yaqub turns to God, not to his own heart.
+- Kural 1298 / buddhism - 50% (primary): Paraphrase of a well-known verse; a partial match on not fixing on another’s faults, with a different, self-searching purpose.
+- Kural 1298 / jainism - 50% (primary): Paraphrase of a well-known sutra, not verified word for word this session; only a partial match, since Jain pramoda is a spiritual discipline, not marital love.
+- Kural 1298 / greek_mythology - 50% (primary): Paraphrase of a well-known episode; a partial match on loving thoughts of an absent husband, but Alcyone has no grievance to set aside.
+- Kural 1298 / philosophy - 50% (primary): Paraphrase; a partial match on not meeting ill-treatment with contempt, reached by Stoic reasoning rather than love.
+- Kural 1299 / islam - 50% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a partial match on the heart as the seat of steadiness, but the Qur’an locates its peace in God.
+- Kural 1301 / judaism - 50% (primary): Paraphrase of a famous narrative; the structure of withheld embrace and testing matches, but the context is family reconciliation, not love.
+- Kural 1302 / sikhism - 50% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) this session; next-best: matches the spirit of keeping a quarrel from turning sour, but has nothing of the Kural's salt-in-measure image.
+- Kural 1303 / buddhism - 50% (primary): Paraphrase of a well-known episode; the principle of not abandoning the suffering matches, but the setting is monastic care, not love.
+- Kural 1304 / buddhism - 50% (primary): Paraphrase of a well-known episode and verse; a fair match on healing estrangement, though monastic rather than marital.
+- Kural 1305 / christianity - 50% (primary): Verified verbatim via bible-api.com (KJV); a loose match on a husband’s honour toward his wife, with nothing on pique as an ornament.
+- Kural 1314 / islam - 50% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a partial match on comparing love, though the verse regulates plural marriage.
+- Kural 1314 / buddhism - 50% (primary): Verified verbatim on accesstoinsight.org; only a partial match, since the verse condemns real fault-finding and the Kural’s is play.
+- Kural 1318 / hinduism - 50% (primary): Paraphrase of a well-known chapter; a partial match on suspicion of a hidden rival, set in devotional rather than domestic love.
+- Kural 1318 / buddhism - 50% (primary): Verified verbatim on accesstoinsight.org; a partial match on suspicion of hiding, as the verse is about self-examination.
+- Kural 1318 / jainism - 50% (primary): Paraphrase of a well-attested verse (wording varies across translations, so not quoted); a partial match on concealment harming love, though the Kural’s ‘deceit’ is imaginary.
+- Kural 1319 / greek_mythology - 50% (primary): Paraphrase of a famous tale; a partial match on suspicion that resists soothing, though Juno’s suspicion is justified.
+- Kural 1320 / hinduism - 50% (primary): Paraphrase of a well-known chapter; a partial match on a wife misreading loving attention, though Krishna’s words were deliberately teasing.
+- Kural 1320 / islam - 50% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a general match on marital affection, not on jealousy or gazing.
+- Kural 1320 / greek_mythology - 50% (primary): Paraphrase of a famous lyric; a partial match on gaze and jealousy, though Sappho is a lyric poet rather than a myth and her poem’s situation differs.
+- Kural 1321 / christianity - 50% (primary): Verified verbatim via bible-api.com (KJV); it links love and jealous fire, but lacks the Kural’s point that a faultless partner is sulked at to draw out tenderness.
+- Kural 1322 / christianity - 50% (primary): Verified verbatim via bible-api.com (KJV); it shares the idea of brief, contained anger, but does not say that anger renews love.
+- Kural 1322 / greek_mythology - 50% (primary): Verified verbatim on classics.mit.edu; the quarrel and reconciliation fit, though Hera’s tale is a ruse and the quarrel is not playful.
+- Kural 1326 / sikhism - 50% (primary): Verified verbatim via the BaniDB API (Sant Singh Khalsa translation) this session; next-best: Gurbani has no parallel to the Kural's claim that the quarrel beats the union or to its digestion image; this is spiritual, not romantic, love.
+- Kural 1327 / islam - 50% (primary): Paraphrase of a well-known hadith, not re-read in this session; a fair parallel on playful competition between spouses, not on yielding in a quarrel.
+- Kural 1327 / judaism - 50% (primary): Paraphrase of a well-known saying; shares the virtue of yielding to one’s spouse, though not set in a lovers’ quarrel.
+- Kural 1328 / hinduism - 50% (primary): Paraphrase of the poem’s closing movement; a fair match on longing to relive past joy, though the separation is a curse, not a sulk.
+- Kural 1328 / greek_mythology - 50% (primary): Verified verbatim on classics.mit.edu; a fair match on remembered first love returning, though in a scene of divine trickery.
+- Kural 1330 / christianity - 50% (primary): Verified verbatim via bible-api.com (KJV; quotation stops before the verse ends); shares the separation-then-reunion pattern, though for prayer rather than play.
+- Kural 1330 / islam - 50% (secondary): General paraphrase of the treatise’s chapters on reproach and union, not checked against a live text; a cultural rather than scriptural Islamic source.
+- Kural 1330 / greek_mythology - 50% (primary): Paraphrase of a well-known tale (Latin, on a Greek mythic theme); its estrangement is serious rather than playful.
+- Kural 6 / real_life_example - 52% (secondary/secondary): Illustrates steadfastness on a disciplined religious path; the link between sense-mastery and long life is interpretive.
+- Kural 12 / greek_mythology - 52% (primary): A real parallel on food as gift rather than achievement, but Greek myth assigns that role to grain and the goddess, not to rain.
+- Kural 13 / sikhism - 52% (primary): Verified verbatim, but next-best only: Japji speaks of spiritual craving, whereas the Kural is about literal famine from failed rain.
+- Kural 18 / islam - 52% (primary): Honest partial match: the rain-and-worship pairing is genuine, but the causal arrow runs opposite to the Kural's, which is the whole point of Valluvar's verse.
+- Kural 22 / philosophy - 52% (primary): Honestly a stretch: the shared idea is the limit of what can be stated or measured, but Wittgenstein is doing logic, not praising renunciants, and the resemblance is formal rather than substantive.
+- Kural 44 / real_life_example - 52% (secondary/web): Partial fit: blameless earning and lasting continuity are shown, but the kural's second condition, sharing one's food before eating, is not, and a business line is not the same as a family lineage.
+- Kural 47 / buddhism - 52% (primary): Honest weak match, given as a paraphrase: Buddhism dignifies lay life but explicitly does not place the householder at the head of all who strive.
+- Kural 59 / jainism - 52% (secondary): Next-best match. The underlying assumption is shared, but here the wife is blameless, which reverses the Kural's case. Confirmed only from secondary summaries.
+- Kural 60 / greek_mythology - 52% (primary): Honest low score: the marriage-as-blessing-on-the-house theme is a real match, but Baucis and Philemon are childless, so the kural's second half has no counterpart.
+- Kural 64 / sikhism - 52% (primary): Next-best only: it shares the theme of a parent's fond tolerance of a child's mess and mistakes, but it lacks the Kural's image of food and taste and is really a metaphor for God's grace.
+- Kural 68 / sikhism - 52% (primary): Next-best only: it shares the idea that wisdom is a public good, but it says nothing of children surpassing their parents, which is the heart of Kural 68.
+- Kural 104 / jainism - 52% (primary): Next-best match from a Tamil Jain text: it shares the palmyra image and links lasting friendship to remembering the past, but it lacks the millet-to-palm magnification of a small kindness.
+- Kural 104 / sikhism - 52% (primary): Next-best: shares only the small-versus-immense image; the verse concerns the power of the Name, not the grateful person's magnifying of a small favour.
+- Kural 105 / sikhism - 52% (web): Next-best: a hagiographic tradition about devotion to the Guru rather than a teaching on gratitude's measure; Wikipedia used as last resort because the Britannica article checked does not narrate the service, and the details (years, water-fetching) are traditional.
+- Kural 143 / sikhism - 52% (web): Next-best: used because no SGGS line on betraying a trusting friend's household was found; the Charitropakhyan's authorship is contested within Sikhism, and the passage lacks the Kural's stress on betrayed trust.
+- Kural 167 / jainism - 52% (primary): Paraphrase checked against the wisdomlib.org text; Jainism has no goddesses of fortune and misfortune who judge people (results follow from karma), so this is a next-best narrative echo of the image, and it reuses the Saṅgamaka story from kural 165.
+- Kural 188 / sikhism - 52% (primary): Next-best only: it condemns habitual slander, but lacks the Kural's a fortiori argument from slandering close friends to slandering strangers.
+- Kural 192 / sikhism - 52% (primary): Next-best only: the line condemns babbling but has nothing of the Kural's startling ranking of idle public talk below unkindness to friends.
+- Kural 197 / islam - 52% (primary): Supports ‘substance over pleasantness’ only by implication; no explicit ranking.
+- Kural 205 / sikhism - 52% (primary): Next-best only: the verse condemns sinfully gathered wealth but is about the rich in a time of invasion, not the poor person tempted by need; the Sikh ideal of kirat karni (honest work) is the underlying parallel.
+- Kural 217 / sikhism - 52% (secondary): Next-best only: Britannica itself hedges the healing story (apparently, possibly), and a single act of help does not match the Kural's image of a benefactor who is reliable and useful in every part.
+- Kural 238 / jainism - 52% (primary): Verified verbatim on archive.sacred-texts.com. Both texts ask what remains of a life, but the Jain answer (karma, which the doer carries on) is different from social renown left behind; this is a next-best match.
+- Kural 255 / real_life_example - 52% (web/web): Next-best only: it fits the commentators' social reading of the first line but says nothing about the kural's warning of inescapable consequence, and deer and boar were not covered by the original decree.
+- Kural 260 / sikhism - 52% (primary): Next-best: mercy to all beings matches the Kural's condition, but the verse is addressed to Muslims, says nothing of meat, and has no image of all creatures worshipping.
+- Kural 269 / real_life_example - 52% (secondary/secondary/web): Next-best only: a vivid case of endurance overcoming death, but it is physical survival, not the spiritual power of tapas or liberation from death that the kural intends.
+- Kural 271 / jainism - 52% (primary): Verified verbatim on sacred-texts.com; next-best only, since Jainism has no image of the five elements as inner witnesses and this verse is about self-responsibility rather than hypocrisy.
+- Kural 324 / judaism - 52% (primary): Path-as-peace imagery matches; the verse does not specifically speak of killing or of animals.
+- Kural 344 / sikhism - 52% (primary): Next-best and largely a contrast: Sikhism rejects the Kural's ideal of total possessionlessness and affirms the householder path, while sharing its concern that attachment, not the object, is what binds.
+- Kural 378 / sikhism - 52% (primary): Next-best only: Japji shares the idea of allotted suffering, but nothing in it matches the Kural's point about the poor and renunciation, and Sikhism rejects renunciation in favour of the householder life.
+- Kural 402 / sikhism - 52% (primary): Next-best only: the shared theme is speech without substance, but Guru Nanak contrasts words with conduct rather than with learning, and the Kural's harsh simile has no Gurbani counterpart.
+- Kural 486 / sikhism - 52% (primary): The image of drawing in before striking matches, but Guru Nanak uses it to expose false humility, while the Kural commends the tactic.
+- Kural 488 / sikhism - 52% (primary): The outward conduct matches, but the motive is opposite: Farid gives up revenge, while the Kural defers it until the enemy can be struck down.
+- Kural 499 / sikhism - 52% (secondary): Next-best: the source describes survival under siege and later rule, but does not itself credit home ground as the reason, so the link to the Kural is partly interpretive.
+- Kural 510 / sikhism - 52% (primary): Partial: both tie lasting trouble to misplaced doubt, but the verse concerns faith in the Guru, not a ruler's trust in a tested servant, and does not address trusting the untested.
+- Kural 513 / sikhism - 52% (secondary): Next-best: the employment is historical, but the emphasis on his honesty comes from hagiographic janamsakhi tradition, and the source does not detail the Kural's four qualities.
+- Kural 530 / sikhism - 52% (primary): Next-best only: Guru Angad is describing self-interested love for God, not a king's caution toward a returning kinsman.
+- Kural 533 / sikhism - 52% (primary): Next-best only: the fate of the forgetful is shared, but Gurbani speaks of standing before God, not fame, and does not appeal to the agreement of all treatises.
+- Kural 550 / sikhism - 52% (primary): Next-best only: the weeding image is shared, but the uprooting is God's doing, and Gurbani nowhere endorses a king putting criminals to death.
+- Kural 560 / sikhism - 52% (primary): Next-best: the pairing of cows and Brahmins under bad rule is striking, but Sikhism rejects the Brahmin's ritual privilege that the Kural's ‘six duties’ presuppose, and the verse mocks ritual rather than lamenting forgotten texts.
+- Kural 565 / sikhism - 52% (secondary): Next-best: the open, equal access fits, but the langar rule is about equality rather than a ruler's pleasant face, and Britannica reports the Akbar episode only as something that ‘was said’.
+- Kural 577 / jainism - 52% (primary): Checked word for word against Jacobi on sacred-texts.com (Jacobi's footnote markers omitted). Jain right vision is faith in the true categories of reality, not kindness, so the parallel is structural.
+- Kural 594 / jainism - 52% (primary): Checked word for word against Jacobi on sacred-texts.com. The 'prosperity comes to the striver' pattern matches loosely; the mechanism is karmic merit across births, and Jainism treats such prosperity as secondary to liberation.
+- Kural 595 / jainism - 52% (primary): Checked word for word against Jacobi on sacred-texts.com (diacritics simplified). Both use a natural image of growth proportional to what sustains it, but the Jain simile is about purity leading to nirvana, not the proportion between energy and worldly eminence.
+- Kural 600 / jainism - 52% (primary): Checked word for word against Jacobi on sacred-texts.com; 10.9 abbreviates the refrain as '&c.', supplied here from 10.1. A striking parallel, but for Jainism trees are genuine living beings owed non-harm, not a figure for worthlessness, while the Kural's line is a metaphor.
+- Kural 601 / sikhism - 52% (primary): Partial: sloth as the road to ruin matches, but the lamp image and the concern for the family line are absent.
+- Kural 631 / sikhism - 52% (secondary): Next-best: Sikh scripture has no doctrine of the minister; this text concerns the ethics of resorting to force rather than a counsellor's skill, and it is preserved in the Dasam Granth, whose compilation is debated among Sikhs; it is used because nothing in the Guru Granth Sahib fits.
+- Kural 635 / jainism - 52% (primary): Checked word for word on sacred-texts.com (quoted with omissions marked). Next-best only: it describes a sage's restrained speech, not an adviser's skill in counsel or knowledge of method.
+- Kural 637 / sikhism - 52% (primary): Next-best: both say book learning is not enough, but the Kural adds knowledge of worldly affairs, whereas Guru Nanak points beyond the world to the one thing that counts, God's Name.
+- Kural 641 / jainism - 52% (primary): Checked word for word against Jacobi on sacred-texts.com. Only a partial fit: the verse praises expounding the Law, but it does not rank eloquence as a possession separate from all other goods, which is the kural's actual claim.
+- Kural 674 / sikhism - 52% (primary): Next-best only: it shares the lesson that neglected danger destroys the negligent, but lacks the Kural's specific image of unfinished tasks and enemies regrowing like embers, and its main point is remembering God.
+- Kural 684 / jainism - 52% (primary): Checked word for word on sacred-texts.com. Next-best match only: it links learning with visible lustre but says nothing of innate intelligence or of an envoy's appearance.
+- Kural 687 / sikhism - 52% (primary): Next-best only: covers weighing one's words but not the Kural's attention to protocol, the receptive moment or the right place.
+- Kural 691 / sikhism - 52% (primary): Partial and partly contrasting: both see royal power as dangerous, but Guru Nanak condemns it rather than teaching courtiers how to live safely near it.
+- Kural 703 / jainism - 52% (primary): Checked word for word against Jacobi on sacred-texts.com. This is a partial match: it praises the perceptive disciple's worth, but says nothing about paying any price to secure such helpers.
+- Kural 703 / sikhism - 52% (primary): Next-best: both speak of paying any price to gain one who knows the heart, but the Kural means recruiting perceptive advisers, while Anand Sahib means spiritual surrender.
+- Kural 707 / sikhism - 52% (primary): Next-best: Gurbani's bright and blackened faces are partly idioms for honour and disgrace, and it does not speak of pleasure or anger registering on the face first.
+- Kural 709 / jainism - 52% (primary): Paraphrased from the episode as summarised on wisdomlib.org; not quoted. The eye's power to show hostility or goodwill is present, but the story is about overcoming anger, not about a reader of glances judging friend and foe.
+- Kural 725 / sikhism - 52% (primary): Next-best: both want disciplined, applied learning, but Gurbani's goal is benefiting others, not winning debates through logic.
+- Kural 735 / jainism - 52% (primary): Checked word for word on sacred-texts.com. Next-best only: it names the threat of robbers and the duty of public safety, but the Jain voice is sceptical of the state's remedy and says nothing about factions.
+- Kural 768 / jainism - 52% (primary): Checked word for word against Jacobi on sacred-texts.com (Jacobi supplies '(has no equal)'). This is a loose match: the display belongs to one hero, not an army's array, and Jainism places little value on outward show.
+- Kural 769 / jainism - 52% (primary): Checked word for word against Jacobi on sacred-texts.com. It is a partial match on discontent only; Jainism takes up poverty voluntarily, the reverse of the Kural's concern with ill-supplied troops.
+- Kural 770 / jainism - 52% (primary): Checked against Jacobi on sacred-texts.com (Jacobi's *G*ina rendered as Gina). The parallel on leadership is loose, and Jacobi himself regards this verse as a later addition.
+- Kural 780 / jainism - 52% (primary): Checked word for word against Jacobi on sacred-texts.com. This is a next-best match: both treat a worthy death as something to seek, but Jainism does not glorify death in war or measure it by a king's grief.
+- Kural 781 / jainism - 52% (primary): Both verses checked word for word against Jacobi on sacred-texts.com. The passage is about friendship and protection, but it moves the source of protection from friends to the self, so it is closer to a contrast than a parallel.
+- Kural 828 / jainism - 52% (primary): Verified on wisdomlib.org (the online text's typo 'thongh' is corrected to 'though'). A Tamil Jain text and a next-best match: it shares the theme of friendship without unity of mind turning violent, but not the Kural's specific images of worshipping hands and false tears. A Jain story about a royal assassin disguised as a monk could not be verified this session and was not used.
+- Kural 842 / sikhism - 52% (primary): Next-best: both look past the giver for the cause of a gift, but the Kural credits the receiver's past merit (karma) while Gurbani credits God's grace.
+- Kural 865 / jainism - 52% (primary): Checked word for word against Jacobi on wisdomlib.org. It matches the Kural's 'not looking to the right path' but has nothing on disgrace or on enemies taking advantage, so it is a partial match.
+- Kural 880 / jainism - 52% (primary): Checked word for word against Jacobi on wisdomlib.org. The Jain text turns the Kural's outer enemies into inner passions, so the match is real only through that reinterpretation.
+- Kural 901 / sikhism - 52% (primary): Next-best: Gurbani warns against moh in general and does not single out a husband's devotion to his wife; Sikhism honours marriage and does not share the chapter's view of women.
+- Kural 905 / sikhism - 52% (primary): Next-best: it matches the duty of giving from one's own earnings, but nothing in it concerns domestic fear or blames the wife.
+- Kural 921 / jainism - 52% (primary): The verse names liquor-drinking among the sinner's habits and is verified verbatim, but it says the drinker becomes 'a subduer of foes' before his fall, which inverts the Kural's point about enemies no longer fearing him, so this is a partial, contrasting match.
+- Kural 933 / jainism - 52% (primary): Verified verbatim; it shares the idea of wealth passing to others, but the cause in the sūtra is harmful action in general, not gambling, and the 'others' are relatives, not enemies.
+- Kural 936 / judaism - 52% (primary): Verified verbatim; the dissatisfaction here is about desire, not literal hunger or gambling.
+- Kural 939 / islam - 52% (primary): Verified verbatim; the link to the five goods is indirect.
+- Kural 945 / jainism - 52% (primary): Verified verbatim on sacred-texts.com; partial fit, since the Jain aim is ascetic purification rather than freedom from illness.
+- Kural 949 / jainism - 52% (primary): Verified verbatim on sacred-texts.com; a structural parallel in Jain categories, but it governs ascetic diet, not medical treatment.
+- Kural 955 / judaism - 52% (primary): Paraphrased, not re-verified this session; the angle is reversed, since here others preserve the fallen family's dignity rather than the family continuing to give.
+- Kural 957 / greek_mythology - 52% (primary): Paraphrased; a real myth of a high-born fault, but it is a grave crime, not a small spot made visible.
+- Kural 964 / sikhism - 52% (primary): Next-best only: both use a vivid image of debasement after a fall, but Gurbani blames ego and pride in power, while the Kural blames sinking below one's own dignity.
+- Kural 993 / greek_mythology - 52% (primary): Paraphrase from memory, not re-verified this session; an inverse illustration rather than a direct parallel.
+- Kural 996 / jainism - 52% (primary): Verified verbatim on sacred-texts.com; a next-best match, as it concerns spiritual rescue rather than the survival of the social world.
+- Kural 1004 / sikhism - 52% (primary): Next-best match: Kabir speaks of hoarding and death but not of being unloved by others, which is the Kural's central point.
+- Kural 1004 / philosophy - 52% (primary): Paraphrase; next-best: shares the theme of what wealth leaves at death, but does not address being unloved.
+- Kural 1006 / real_life_example - 52% (web/secondary): Next-best only: Getty did enjoy his wealth (notably in collecting art) and founded a major museum, and he gave a practical reason for the pay phone, so the episode fits the public image more than the facts of his character.
+- Kural 1007 / greek_mythology - 52% (primary): Paraphrase; next-best: the wasted-beauty image matches, but the myth is about self-love, not wealth.
+- Kural 1020 / hinduism - 52% (primary): Verified verbatim on vedabase.io; a next-best match that shares only the mechanical-puppet image, not the moral point.
+- Kural 1025 / greek_mythology - 52% (primary): Narrative paraphrase; a loose match, since Theseus unifies a city by policy and not because of his blamelessness.
+- Kural 1027 / jainism - 52% (primary): Verified verbatim on sacred-texts.com; only the burden-bearer image is shared, so this is a next-best match.
+- Kural 1039 / sikhism - 52% (primary): Next-best only: the shared idea is that an untended field fails, but the verse is a spiritual allegory and lacks the Kural's image of the land as a sulking wife.
+- Kural 1040 / philosophy - 52% (primary): Verified verbatim on Perseus; it shares the theme of sloth in farm management but not the image of poverty-pleading or laughter.
+- Kural 1042 / greek_mythology - 52% (primary): Paraphrased from general knowledge of the play, not verified against a live text in this session; matches the personification only, not the loss of both worlds.
+- Kural 1058 / islam - 52% (primary): Verified verbatim via the quran.com API (excerpt); next-best only, since the verse does not speak of a world without askers.
+- Kural 1059 / sikhism - 52% (primary): Next-best only: the verse links greatness with endless giving, but does not say, as the Kural does, that a giver's fame depends on the existence of askers.
+- Kural 1065 / jainism - 52% (primary): Paraphrase not verified on a live page this session; Jain monks live on alms, so this fits the plainness of food but not the Kural's praise of earning it.
+- Kural 1066 / buddhism - 52% (primary): Paraphrase not verified on a live page this session; the Buddha lives on alms, so this is a partial parallel about improper gain rather than begging.
+- Kural 1068 / buddhism - 52% (primary): Paraphrase not verified on a live page this session; it concerns the miser's downfall, not the asker's.
+- Kural 1069 / buddhism - 52% (primary): Verified verbatim on accesstoinsight.org; a next-best match that addresses the miser but not the melting heart.
+- Kural 1069 / greek_mythology - 52% (primary): Paraphrase not verified on a live page this session; a next-best match on pitiless greed and self-destruction.
+- Kural 1077 / sikhism - 52% (secondary): Next-best match given as a contrast to the miser's grudging hand; it is an institution, not a teaching about base people, and Britannica notes that its early origins are not fully documented.
+- Kural 1081 / sikhism - 52% (primary): Next-best match: it shares the overwhelmed wonder, but the wonder is spiritual awe at God's creation, not romantic love.
+- Kural 1085 / judaism - 52% (primary): Paraphrase, not checked word for word this session; shares only the doe image.
+- Kural 1085 / sikhism - 52% (primary): Next-best match on bafflement at a look or form that holds several natures at once; this is spiritual wonder at the formless God, not romantic love.
+- Kural 1086 / islam - 52% (primary): Verified via the quran.com API (quoted to 'his Lord'); a next-best match on a protecting barrier.
+- Kural 1086 / sikhism - 52% (primary): Next-best match on the idea of a screen between lovers; the love is spiritual, not romantic, and Gurbani wants the barrier removed while the Kural's lover wants a protective screen.
+- Kural 1088 / islam - 52% (primary): Verified via the quran.com API (excerpt); a contrast rather than a parallel.
+- Kural 1090 / islam - 52% (primary): Verified via the quran.com API (quoted to 'mercy'); a next-best match on love's joy, with no comparison to drink.
+- Kural 1095 / christianity - 52% (primary): Verified verbatim (bolls.life KJV); it speaks of love’s hidden signs in general, not of a sidelong glance.
+- Kural 1095 / jainism - 52% (primary): Verified verbatim on sacred-texts.com; close in subject, opposite in valuation.
+- Kural 1095 / sikhism - 52% (primary): Next-best match: the idea that what is inside cannot be hidden fits, but the Guru means the Truth of God in a devotee, not a girl's concealed love.
+- Kural 1096 / jainism - 52% (primary): Verified verbatim on sacred-texts.com; a partial fit, using a genuine Jain story of Rajimati in a renunciant setting.
+- Kural 1097 / christianity - 52% (primary): Verified verbatim (bolls.life KJV); only the idea of loving severity connects.
+- Kural 1097 / islam - 52% (primary): Verified via the quran.com API; it concerns exposing hidden hostility in hypocrites, the reverse of hidden love, so the match is on method only.
+- Kural 1106 / hinduism - 52% (primary): Paraphrase, not checked verbatim this session; it explains the amrita image, but the setting is ritual, not love.
+- Kural 1111 / judaism - 52% (primary): Verified on Sefaria; shares the flower imagery but has no claim that the beloved surpasses the flower in softness.
+- Kural 1111 / sikhism - 52% (primary): Next-best match: both say the beloved goes beyond any comparison, but Guru Nanak is speaking of the inadequacy of praising God, with no flower or physical softness involved.
+- Kural 1111 / real_life_example - 52% (secondary/secondary): Comparing the beloved with a perfect flower fits, but Burns makes the two alike, while the kural's point is that she surpasses even the most delicate flower.
+- Kural 1116 / christianity - 52% (primary): Verified verbatim via bolls.life KJV; shares the effect of her beauty on onlookers, without the moon-and-stars image.
+- Kural 1118 / islam - 52% (primary): Verified verbatim on sunnah.com; the face-as-moon image is shared, in a devotional description rather than a love poem.
+- Kural 1123 / christianity - 52% (primary): Verified verbatim via bible-api.com (KJV); the Hebrew idiom ('little man of the eye') is the same pupil image, but the context is prayer, not love.
+- Kural 1124 / judaism - 52% (primary): Verified verbatim on Sefaria; it matches the life-or-death weight given to companionship, but concerns friendship and community, not a lover.
+- Kural 1128 / islam - 52% (primary): Verified verbatim via api.alquran.cloud; matches the intimacy of presence inside the body, in a theological rather than romantic sense.
+- Kural 1131 / jainism - 52% (primary): Verified verbatim on sacred-texts.com (Jacobi's diacritics simplified); a genuine Jain story of love-grief, though its resolution runs opposite to the madal.
+- Kural 1139 / greek_mythology - 52% (primary): Paraphrase of well-known passages; wandering love fits, though Orpheus grieves a death rather than unrevealed love.
+- Kural 1140 / christianity - 52% (primary): Verified verbatim via bolls.life KJV; the pattern of mockery from the uncomprehending fits, but the experience is spiritual, not romantic.
+- Kural 1142 / greek_mythology - 52% (primary): Paraphrase of a famous scene; a good picture of a town talking about a rare beauty, with the reverse twist that the talkers recognise her worth.
+- Kural 1144 / islam - 52% (secondary): Paraphrase of chapter themes, not rechecked this session; Ibn Hazm treats talk as an affliction more than as a nourishment.
+- Kural 1144 / sikhism - 52% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: it shares the image of growing love, but Gurbani does not make love depend on rumour, and the love is spiritual, for God.
+- Kural 1149 / judaism - 52% (primary): Paraphrase of a well-known verse, not rechecked this session; strong on abandonment and public shame, though the speaker is a personified city.
+- Kural 1149 / philosophy - 52% (primary): Paraphrase of a well-known saying, not rechecked this session; same refusal to be shamed by talk, different motive.
+- Kural 1150 / philosophy - 52% (primary): Paraphrase of a well-known passage, not rechecked this session; a general fit on returned love, without rumour or elopement.
+- Kural 1154 / jainism - 52% (primary): Paraphrase of a narrative read on sacred-texts.com this session; strong situational overlap, but Jainism honours the groom’s leaving, which reverses the Kural’s judgement.
+- Kural 1155 / islam - 52% (primary): Verified verbatim on sunnah.com; a moving image of grief at separation from a beloved presence, though it is a miracle narrative, not a story of lovers.
+- Kural 1156 / sikhism - 52% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match by contrast: the Kural doubts the departing lover's grace, while the Guru affirms the Lord's, and it says nothing about a hard-hearted announcement of parting.
+- Kural 1156 / philosophy - 52% (primary): Paraphrase of definitions, not checked word for word this session; an analytic account of her state rather than a parallel story.
+- Kural 1157 / judaism - 52% (primary): Paraphrase of a brief narrative, not checked against JPS this session; a visible grief of separation, though the roles of the sexes are reversed.
+- Kural 1157 / greek_mythology - 52% (primary): Paraphrase of a well-known play; shares the theme of wasting that reveals love, but Phaedra’s love is forbidden, not the grief of a wife left behind.
+- Kural 1158 / christianity - 52% (primary): Verified verbatim via bolls.life KJV; captures the pain of separation from loved ones but not the comparison with living among strangers.
+- Kural 1162 / islam - 52% (primary): Verified verbatim via the quran.com API (Sahih International); it matches a grief that cannot be hidden yet is not spoken to others, but the restraint is devotion, not modesty.
+- Kural 1167 / jainism - 52% (primary): Verified verbatim on archive.sacred-texts.com; the flood without firm ground matches, but the flood here is mortality and the island is the Jain Law.
+- Kural 1173 / buddhism - 52% (primary): Verified verbatim on accesstoinsight.org; the sweet-then-grief pattern fits, though the verse speaks of evil deeds while the Kural’s look was innocent love.
+- Kural 1174 / philosophy - 52% (primary): Paraphrase of a well-known passage, not checked word for word this session; it matches the incurable-sickness image but speaks of love in a disparaging Epicurean tone.
+- Kural 1175 / judaism - 52% (primary): Verified verbatim on Sefaria (JPS 1917); it matches the unceasing affliction of the eyes, though it speaks of tears rather than sleeplessness and of national grief.
+- Kural 1176 / islam - 52% (primary): Verified verbatim via the quran.com API; the laugh-then-weep recompense matches closely, though the verse concerns hypocrites, not a lover’s eyes.
+- Kural 1176 / sikhism - 52% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: both value the pain of longing, but the Kural's 'sweetness' is ironic satisfaction at the eyes' punishment, which has no counterpart in Gurbani.
+- Kural 1177 / buddhism - 52% (primary): Verified verbatim on accesstoinsight.org; reaping with tears matches the Kural’s image, though the verse is about regretted wrongdoing, which love is not.
+- Kural 1178 / islam - 52% (primary): Verified verbatim via the quran.com API; the link rests on the Arabic idiom of the eye being cooled by seeing a loved one, which the English rendering hides, and the love is maternal.
+- Kural 1179 / buddhism - 52% (primary): Verified verbatim on accesstoinsight.org; the sleepless night is a direct image match, but the verse uses it as a metaphor for samsara, not love.
+- Kural 1180 / islam - 52% (primary): Verified verbatim via the quran.com API; the eyes revealing the heart match, though the tears here are of recognition of truth, not love.
+- Kural 1181 / philosophy - 52% (primary): Paraphrase of a well-known passage, not checked word for word this session; it states the general principle her situation denies her.
+- Kural 1182 / judaism - 52% (primary): Verified verbatim on Sefaria; the love-as-bodily-seal image is a partial match, since the Song’s seal is chosen while the Kural’s pallor is suffered.
+- Kural 1184 / greek_mythology - 52% (primary): Paraphrase of a well-known episode, not checked against a translation this session; the faithful, preoccupied wife matches, but Alcyone’s tragedy is a death, not a temporary absence.
+- Kural 1186 / christianity - 52% (primary): Verified verbatim via bolls.life KJV; the waiting-darkness image matches closely, but the context is spiritual light, not married love.
+- Kural 1188 / buddhism - 52% (primary): Verified verbatim on accesstoinsight.org; it fits the theme of unfair public blame, though not the specific imbalance between wife and husband.
+- Kural 1189 / islam - 52% (primary): Verified verbatim via the quran.com API (excerpt); self-preference for another matches, but the verse concerns the Ansar and the emigrants, not spouses.
+- Kural 1193 / buddhism - 52% (primary): Paraphrase; cited without a sutta number because Anguttara numbering varies by edition; partial fit, as the sutta catalogues wives’ conduct rather than mutual love.
+- Kural 1196 / christianity - 52% (primary): Verified verbatim via bolls.life KJV (excerpt); a striking image parallel, but Paul’s imbalance is of faith, not of love.
+- Kural 1197 / judaism - 52% (primary): Verified verbatim on Mechon-Mamre (JPS 1917); love as an independent power fits partly, but there is no one-sidedness or love-god.
+- Kural 1198 / buddhism - 52% (primary): Paraphrase; a partial fit on enduring unreturned devotion, though Isidasi’s resolution is renunciation.
+- Kural 1206 / christianity - 52% (primary): Verified verbatim via bolls.life KJV; partial fit on sustaining remembrance, without the Kural’s life-or-death intensity.
+- Kural 1207 / buddhism - 52% (primary): Paraphrase of a famous sutta; shared fire imagery, but the Buddhist remedy is letting go, the very forgetting the heroine fears.
+- Kural 1214 / islam - 52% (primary): Verified verbatim via quran.com API; a dream that leads to reunion, but over years and in waking life, not nightly.
+- Kural 1217 / judaism - 52% (primary): Close paraphrase of a passage read on Sefaria (the scripture citations are verbatim); a partial fit on ambivalence toward dreams.
+- Kural 1218 / buddhism - 52% (primary): Paraphrase of a well-known teaching; an explanatory parallel, since the sutta aims to redirect such habits toward renunciation.
+- Kural 1219 / islam - 52% (primary): Verified verbatim via quran.com API; good fit on outsiders reproaching a lover’s longing, though they blame the one who longs, not the absent one.
+- Kural 1223 / jainism - 52% (primary): Verified verbatim on sacred-texts.com; a doctrinal reading of the growing distress rather than a direct parallel.
+- Kural 1228 / philosophy - 52% (primary): Paraphrase of a well-known passage; matches music’s emotional power, but Plato is legislating, not describing love-grief.
+- Kural 1230 / hinduism - 52% (primary): Paraphrase of a famous passage; matches wealth as a lesser good, but its higher good is spiritual knowledge, not married love.
+- Kural 1233 / philosophy - 52% (primary): Paraphrase; matches love’s wearing effect on the body, but Lucretius is critical of passion, the Kural tender toward it.
+- Kural 1234 / judaism - 52% (primary): Verified verbatim on mechon-mamre.org; the lost-splendour image fits, but the woman is a personified city and the loss is exile, not a husband’s absence.
+- Kural 1235 / christianity - 52% (primary): Verified verbatim via bible-api.com (KJV); good on a woman’s changed appearance caused by others’ harshness, though the blamed parties are her brothers, not her lover.
+- Kural 1237 / buddhism - 52% (primary): Paraphrase; a real parallel to apostrophising one’s own heart, but Talaputa urges his mind toward renunciation, not toward a lover.
+- Kural 1238 / islam - 52% (primary): Verified verbatim via api.alquran.cloud (en.sahih); captures marital closeness, but nothing of distress at a moment’s separation.
+- Kural 1242 / buddhism - 52% (primary): Verified verbatim on accesstoinsight.org; connects on self-recognised folly, but the verse is about spiritual ignorance, not love.
+- Kural 1247 / sikhism - 52% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: it addresses a divided heart, but Kabir's 'duality' is love split between God and the world, not the Kural's specific clash of desire and modesty, and the love meant is spiritual, not romantic.
+- Kural 1250 / islam - 52% (primary): Verified verbatim via api.alquran.cloud (en.sahih), first sentence only; a general counsel against grief over loss, not about love specifically.
+- Kural 1250 / sikhism - 52% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: it shares the image of a bride's beauty and ornaments ruined in separation, but Guru Nanak's point is that outward adornment cannot win the Lord, and the love meant is spiritual, not romantic.
+- Kural 1253 / buddhism - 52% (primary): Paraphrase from the general outline of the Jataka, not checked against Cowell’s text this session; the theme of love that cannot be hidden fits, but the story’s moral turns on the king mastering an improper desire.
+- Kural 1254 / greek_mythology - 52% (primary): Paraphrase of a well-known episode; it matches the image of love exposed in public, but the affair is adulterous and the tone comic, so the fit is partial.
+- Kural 1255 / buddhism - 52% (primary): Verified verbatim on accesstoinsight.org; it diagnoses the same bondage, but offers detachment as a cure, which the Kural’s heroine does not seek.
+- Kural 1273 / islam - 52% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a real case of inner disposition visible outwardly, but it concerns worship, not love.
+- Kural 1278 / judaism - 52% (primary): Verified verbatim on mechon-mamre.org (JPS 1917); matches distress showing in the body, but the psalm is a prayer in affliction, not love-longing.
+- Kural 1278 / philosophy - 52% (primary): Paraphrase of a famous argument; a partial match on subjective time, though Augustine’s inquiry is metaphysical, not emotional.
+- Kural 1283 / judaism - 52% (primary): Verified verbatim on mechon-mamre.org (JPS 1917); a structural match on a resolution overpowered by inner fire, but the subject is prophecy, not love.
+- Kural 1284 / greek_mythology - 52% (primary): Paraphrase of a well-known myth (Ovid’s Roman telling); a partial match on reconciliation, though the quarrel is serious and the reunion not instantaneous.
+- Kural 1286 / greek_mythology - 52% (primary): Paraphrase of a famous fragment; a partial match on love’s alternating sweetness and bitterness, without the theme of faults.
+- Kural 1288 / judaism - 52% (primary): Verified verbatim on mechon-mamre.org (JPS 1917); a partial match on love enduring hurt, though Hosea’s situation is prophetic allegory of a far graver betrayal.
+- Kural 1288 / philosophy - 52% (primary): Paraphrase of a famous anecdote; a partial match on compulsive attraction against one’s judgment, in a non-romantic context.
+- Kural 1292 / buddhism - 52% (primary): Verified verbatim on accesstoinsight.org; a partial match on a mind that runs after its desires, framed as a call to discipline, not as love.
+- Kural 1292 / jainism - 52% (primary): Verified verbatim on sacred-texts.com; a fair image of attraction overriding judgement, but the Jain text condemns attachment, where the Kural only gently scolds it.
+- Kural 1295 / christianity - 52% (primary): Verified verbatim via bible-api.com (KJV); a contrasting parallel that names fear as love’s torment, though John speaks of love for God.
+- Kural 1297 / christianity - 52% (primary): Verified verbatim via bible-api.com (KJV); a partial match on love setting aside social shame, but the love here is penitent devotion, not marital longing.
+- Kural 1309 / greek_mythology - 52% (primary): Paraphrase of a famous poem; a partial match on complaint welcomed within love, though the relationship is goddess and devotee.
+- Kural 1313 / sikhism - 52% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) this session; next-best: both turn on who an adornment is meant for, but the Kural's jealousy theme is absent. This is spiritual love for God, not romantic love.
+- Kural 1317 / judaism - 52% (primary): Verified verbatim on Sefaria (Kulp); a contrastive match on judging favourably, with no love setting.
+- Kural 1317 / buddhism - 52% (primary): Verified verbatim on accesstoinsight.org; a partial match on the mind shaping events, from a moral rather than romantic context.
+- Kural 1322 / islam - 52% (primary): Verified verbatim via api.alquran.cloud (en.sahih; quotation stops before the verse ends); it addresses real marital strain, not playful sulking.
+- Kural 1326 / islam - 52% (primary): Paraphrase of the famous Song of the Reed; a good match on separation deepening love, though Rumi’s longing is mystical.
+- Kural 1329 / buddhism - 52% (primary): Paraphrase of a canonical Jataka; a fair match on persistent wooing of an estranged wife, though her estrangement is real rather than playful.
+- Kural 730 / sikhism - 54% (primary): Next-best: the 'alive only in name' rhetoric is shared, but Gurbani's test of being alive is the Name, not sharing learning.
+- Kural 923 / sikhism - 54% (primary): Only the first line was verified verbatim via BaniDB this session, so the rest is paraphrased; it captures the strict judgment of the wise, but there is nothing on a mother’s view.
+- Kural 1015 / buddhism - 54% (primary): Verified verbatim; a next-best match that warns against an unequal treatment of faults rather than commending shared shame.
+- Kural 1019 / greek_mythology - 54% (primary): Paraphrase not verified live; it fits family ruin, but the Greek curse works through inherited guilt rather than a lack of shame.
+- Kural 1020 / judaism - 54% (primary): Paraphrase, not verified live; it shares the lifeless-figure image, but its target is idolatry rather than shamelessness.
+- Kural 1020 / greek_mythology - 54% (primary): Paraphrase not verified live; it matches the image of lifelike automata, but Homer passes no moral judgment.
+- Kural 1165 / sikhism - 54% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match by contrast: the Kural blames the beloved, while Gurbani teaches the soul-bride to blame her own faults, never the Lord.
+- Kural 1240 / sikhism - 54% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: it shares sorrowing eyes as the seat of separation's pain, but nothing of the Kural's conceit of one feature grieving at another, and the love is spiritual, not romantic.
+- Kural 1273 / christianity - 54% (primary): Verified verbatim via bible-api.com (KJV); shares the principle that the inner shows through the outer, but in speech and moral terms rather than a lover’s look.
+- Kural 1282 / islam - 54% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a general match on marital affection, without the Kural’s specific point about sulking.
+- Kural 1288 / jainism - 54% (primary): Verified verbatim on sacred-texts.com; a partial match on irresistible attraction despite harm, presented as a warning.
+- Kural 1308 / buddhism - 54% (primary): Paraphrase of a well-known sutta on grief, not verified verbatim this session; a partial match on the futility of grief, with a different conclusion.
+- Kural 2 / philosophy - 55% (primary): Thematically aligned (humility as the mark of true wisdom), but Socratic humility is about intellectual limits, not reverence for a divine being specifically.
+- Kural 3 / buddhism - 55% (primary): Precise match on the mechanism (reverence leads to longevity/flourishing) but a different, non-theistic object of reverence.
+- Kural 3 / greek_mythology - 55% (primary): Good thematic match on 'devotion rewarded with long life,' though the reward here is hospitality-specific and the source is Ovid's Roman retelling of Greek material.
+- Kural 3 / real_life_example - 55% (secondary/secondary): Shows devotion yielding durable flourishing in a monument rather than in individual lives, so the fit is partial.
+- Kural 4 / real_life_example - 55% (secondary/secondary): Captures the freedom from craving and aversion, but Stoic reason is not the same as refuge in a divine being.
+- Kural 5 / judaism - 55% (primary): Good match on 'the record is wiped,' but tied specifically to repentance from sin, not a broader teaching about escaping the merit/demerit system.
+- Kural 9 / buddhism - 55% (secondary): Good narrative match on 'ability undone by refusal to defer,' though the story concerns a specific rivalry rather than a general teaching about bowing to God.
+- Kural 9 / philosophy - 55% (primary): Solid conceptual match (refusing the universal order blocks the good life), though 'God's Law' here is the rational order of the cosmos, not a personal deity to be bowed to.
+- Kural 12 / buddhism - 55% (primary): Genuine on universal dependence on food, but the Pali canon is silent here about rain, so the rain half of the Kural is missing.
+- Kural 14 / jainism - 55% (primary): Verified verbatim; next-best match, since the shared ground is the farmer's dependence on a return, not the failure of rain that stops the plough.
+- Kural 18 / buddhism - 55% (primary): Real and structural link between rain and ritual life, but the vassa is organised by rain's presence, not disrupted by its absence.
+- Kural 18 / philosophy - 55% (primary): Paraphrased because English renderings of the passage differ; the parallel is about worship being grounded in material benefit, not about drought halting ritual.
+- Kural 27 / greek_mythology - 55% (primary): A fair thematic echo — knowledge of sensory danger as protection — but Homer supplies a magic herb rather than analytic discernment, and there is no enumeration of five senses.
+- Kural 27 / real_life_example - 55% (secondary/web): A vivid case of understanding the senses opening up the world, though the kural concerns an ascetic's discernment rather than learning language.
+- Kural 29 / buddhism - 55% (primary): Honestly a weak match, and interestingly so: Buddhism has no equivalent of the destructive sage's curse, so the closest canonical verse is one that contradicts the Kural's premise rather than supporting it.
+- Kural 43 / jainism - 55% (secondary): Next-best match. The duties differ: 'God' here means the Jina, who receives nothing from offerings, and Jainism makes no offerings to ancestors (tenpulattār). Sangave does not name the verse's author.
+- Kural 43 / real_life_example - 55% (primary/secondary): Partial fit: it shows several of the kural's five claims (ancestors, the divine, kin) honoured together, but guests and care of oneself are not prominent, and it is a recurring custom rather than a single act.
+- Kural 51 / greek_mythology - 55% (primary): A real and apt figure, but Arete's authority is royal and political rather than the domestic thrift Valluvar specifies.
+- Kural 52 / sikhism - 55% (primary): Next-best only: the logic (outward splendour is empty without inner worth) matches, but the verse is about the soul-bride and God, a spiritual rather than domestic relationship, and the roles are reversed.
+- Kural 55 / sikhism - 55% (primary): Next-best and partly a contrast: Sikhism honours a wife's faithfulness and early-morning devotion but would not have her worship her husband in place of God, and it has no teaching that such a wife can command the rain.
+- Kural 58 / philosophy - 55% (primary): Genuine on the 'shared discipline yields shared heavenly reward' axis, but Plato's pairs are philosophical lovers, not spouses, and the context is pederastic erōs.
+- Kural 60 / sikhism - 55% (primary): Next-best only: it shares the sense of marriage as auspicious and dharmic, but does not single out the wife's excellence or call good children its ornament.
+- Kural 64 / judaism - 55% (primary): Verified verbatim, but the link is structural (a meal organised around children) rather than the Kural's specific image of food touched by small hands.
+- Kural 64 / real_life_example - 55% (secondary/secondary): Captures the delight in small children's ordinary acts, but concerns grandchildren and poetry rather than the specific image of a shared meal.
+- Kural 66 / hinduism - 55% (primary): A genuine and pleasing image-level resonance, but the tradition never stages the comparison as a contest the way Valluvar does; scored low for that reason.
+- Kural 79 / real_life_example - 55% (primary/secondary/secondary): Next-best only: the experiment shows the primacy of love-like comfort over bodily provision, but the kural is about a person lacking love, not an infant deprived of it, and the research is now viewed as ethically troubling.
+- Kural 85 / real_life_example - 55% (secondary/secondary): Next-best only: a documented act of giving to others first from scarcity, but it was distant relief rather than feeding guests at home, and the kural's promise of an unsown harvest is not shown.
+- Kural 87 / sikhism - 55% (primary): Next-best only, partly a contrast: the Kural grades the fruit of hospitality by the guest's merit, while Sikh teaching refuses to rank recipients and sees the same Light in all.
+- Kural 93 / greek_mythology - 55% (primary): Accurate summary, but Greek myth personifies social charm without making the Kural's moral identification of it with virtue.
+- Kural 99 / real_life_example - 55% (primary/web): Next-best only: a documented ancient text making a parallel argument from shared experience against anger, but it concerns resentment generally rather than harsh speech, and its authorship is debated.
+- Kural 101 / greek_mythology - 55% (primary): Primarily a xenia (hospitality) scene; gratitude and repayment are present but the Kural's claim about the incalculable size of the debt is only implied.
+- Kural 105 / christianity - 55% (primary): Shares the 'return exceeds the gift' image, but it is a promise about divine and social reciprocity, not about the recipient's character setting the measure.
+- Kural 109 / christianity - 55% (primary): Moderate: the restoration rests on love and grace rather than explicitly on remembering Peter's past service.
+- Kural 109 / buddhism - 55% (primary): Shares the aim of dissolving resentment, but offers non-hatred rather than the memory of a past benefit as the means.
+- Kural 109 / philosophy - 55% (primary): Shares the goal of overcoming injury without retaliation; lacks the specific mechanism of recalling the injurer's earlier benefit.
+- Kural 112 / sikhism - 55% (primary): Next-best: shares the image of wealth that never decays, but concerns the Naam, not the material prosperity of the just, and says nothing of descendants.
+- Kural 115 / greek_mythology - 55% (primary): Paraphrase, not a quotation. Weak-to-moderate: endurance rather than impartiality.
+- Kural 119 / hinduism - 55% (primary): Moderate. The Gita describes good speech but does not make it depend on inner impartiality.
+- Kural 120 / buddhism - 55% (primary): Shares the empathy principle. It is about non-violence, not commerce.
+- Kural 128 / hinduism - 55% (primary): Weaker match: condemns harsh speech but lacks the ‘one word spoils all good’ asymmetry. Best available Hindu parallel found.
+- Kural 129 / philosophy - 55% (primary): Analytical rather than moral parallel; explains the wound but doesn’t compare it to fire or claim it never heals. Best available philosophical match found.
+- Kural 135 / philosophy - 55% (primary): Paraphrase. A theoretical explanation of envy's self-harm rather than a direct parallel to the conduct/eminence claim.
+- Kural 139 / greek_mythology - 55% (primary): Illustrates the danger of wrong speech rather than the ideal of never uttering it.
+- Kural 140 / real_life_example - 55% (secondary/secondary/secondary): Next-best only: it illustrates learning that failed to fit with the world, but much of the blame lay with his colleagues' resistance rather than with Semmelweis, and he was far from ignorant.
+- Kural 141 / philosophy - 55% (primary): Thematic parallel on knowledge versus conduct; Aristotle does not mention adultery in this passage.
+- Kural 143 / buddhism - 55% (primary): Thematic parallel on self-destruction; the verse does not mention adultery or trust.
+- Kural 143 / jainism - 55% (primary): Checked word for word on wisdomlib.org, which labels the page 'Lecture 4: Knowledge of Women, Chapter 2' even though its contents are Jacobi's first chapter. This is a next-best match: it is about hypocrisy, not about betraying a trusting friend, and is addressed to monks.
+- Kural 146 / islam - 55% (primary): Covers only the 'sin' element strongly; the other three are not addressed. Quote is the opening clause of a longer hadith (punctuation as in the Sunnah.com translation).
+- Kural 150 / greek_mythology - 55% (primary): Weak-to-moderate parallel on treating another's wife as the non-negotiable wrong; best available Greek narrative match.
+- Kural 160 / christianity - 55% (primary): Matches blessedness for bearing insult. The ranking against fasting is only implicit in the wider Sermon on the Mount.
+- Kural 164 / greek_mythology - 55% (primary): Paraphrase framing a short verbatim phrase. Hesiod's bad Strife is broader than envy.
+- Kural 167 / islam - 55% (primary): The Qur'anic text names arrogance; classical exegesis also reads Iblis's refusal as envy (hasad) of Adam. Partial match.
+- Kural 167 / philosophy - 55% (primary): Verified on MIT Internet Classics Archive. Thematic link (the divine excludes envy); not about fortune leaving an individual.
+- Kural 175 / islam - 55% (primary): Verified verbatim. Best available match on ‘knowledge without right conduct is useless’; the original context is failure to follow revelation, not covetousness.
+- Kural 175 / greek_mythology - 55% (secondary): Paraphrase. Good on greed producing senseless self-destruction; the myth does not stress the loss of learning or intellect specifically.
+- Kural 178 / real_life_example - 55% (secondary/secondary): Next-best only: the scheme was a trade venture as much as a grab for others' land, so the fit to coveting is partial.
+- Kural 179 / greek_mythology - 55% (primary): Paraphrase. Good on fortune coming unbidden to the virtuous poor; the story centres on hospitality rather than non-covetousness.
+- Kural 183 / christianity - 55% (primary): Topical match (backbiters, death) but the logic differs: Paul pronounces judgment; Valluvar says an honest death is preferable to such a life.
+- Kural 185 / hinduism - 55% (primary): Shares the outward-vs-inward theme; the Gita’s pretender is about sense-control, not speech.
+- Kural 185 / greek_mythology - 55% (primary): Thematic link on revealing hidden character; paraphrased, not verbatim. Ironically, Momus is himself the archetypal fault-finder.
+- Kural 186 / hinduism - 55% (primary): General karmic reciprocity; the Kural’s specific social mechanism (faults exposed in turn) is not in the text.
+- Kural 187 / greek_mythology - 55% (primary): Mythic genealogy linking false speech and discord; not specific to breaking friendships.
+- Kural 189 / christianity - 55% (primary): Shares the ‘undeserved sustenance of the wicked’ idea; lacks the Kural’s irony toward slanderers.
+- Kural 189 / philosophy - 55% (primary): Shares the patient-earth image; Marcus is grateful rather than ironic, and slander is not the subject.
+- Kural 192 / greek_mythology - 55% (primary): Paraphrase. Other versions blame a deed (serving Pelops), and his fault is indiscreet speech, not merely idle speech.
+- Kural 192 / real_life_example - 55% (primary/secondary): It shows the outsized public cost of careless talk before an assembly, but the kural's specific comparison with wronging friends has no direct counterpart here.
+- Kural 195 / jainism - 55% (primary): Verified verbatim on sacred-texts.com; a partial, next-best match, since the verse is about quarrelling and abusive language rather than empty talk, though it shares the idea that even the virtuous fall through speech.
+- Kural 196 / hinduism - 55% (primary): Paraphrase; strong on the ‘not truly human’ rhetoric but not specific to empty speech.
+- Kural 199 / jainism - 55% (primary): Verified verbatim on sacred-texts.com; a next-best match, since it links perfect wisdom with flawless conduct and right teaching but says nothing specific about meaningless or careless speech.
+- Kural 203 / greek_mythology - 55% (primary): Weak-moderate; replaces private vengeance with law rather than teaching personal forbearance.
+- Kural 205 / hinduism - 55% (primary): Next-best: unjust acquisition leads to ruin; motive is greed rather than need.
+- Kural 211 / greek_mythology - 55% (primary): Next-best match: a divine gift of sustenance to all, but Greek religion did expect sacrifices to the gods in return, unlike the Kural's cloud.
+- Kural 214 / islam - 55% (primary): Partial: shares the social test of true being, but lacks the ‘living dead’ image.
+- Kural 217 / jainism - 55% (primary): Verified verbatim on wisdomlib.org; a next-best match only. I found no verified Jain text with the medicinal-tree image, and this is a general definition of charity.
+- Kural 217 / greek_mythology - 55% (primary): Next-best: healing and self-giving, but not about wealth used for the community.
+- Kural 218 / sikhism - 55% (secondary): Next-best: the story is hagiography from the Janamsakhi tradition, and it is about giving at personal cost rather than continuing to give after one's wealth has shrunk.
+- Kural 221 / jainism - 55% (primary): Verified verbatim on wisdomlib.org. Both texts make the recipient the measure of a gift, but the Jain criterion (fitness for liberation) is not the Kural's (destitution), and the idea of a gift as a disguised exchange is absent.
+- Kural 224 / hinduism - 55% (primary): Indirect match: the Gita condemns grudging gifts but does not describe the giver sharing the recipient’s joy.
+- Kural 227 / buddhism - 55% (primary): Verbal parallel on ‘hunger as disease’; the ethical point (sharing prevents hunger) is not in this verse.
+- Kural 227 / greek_mythology - 55% (secondary): Paraphrase; a contrast myth. Erysichthon’s crime is sacrilege and arrogance rather than failure to share food.
+- Kural 227 / philosophy - 55% (primary): Paraphrase; Kant’s point is logical consistency of the maxim, not a practical promise that givers will not go hungry.
+- Kural 228 / hinduism - 55% (primary): Paraphrase; parallel on the futility of possessiveness, but not specifically about the joy of giving.
+- Kural 228 / real_life_example - 55% (secondary/secondary): Next-best: it shows hoarded wealth being kept and then lost, but the sources do not document the Persian kings as misers or record anything about the joy of giving.
+- Kural 230 / buddhism - 55% (secondary): Paraphrase; parallel on putting giving above self-preservation, not on preferring death to an inability to give.
+- Kural 233 / christianity - 55% (primary): Shares the contrast of perishable and lasting goods; differs on what lasts (heavenly treasure, not fame).
+- Kural 234 / real_life_example - 55% (secondary/secondary): Next-best: it shows renown reaching the ends of the earth, but the kural's claim that heaven honours such a person over its own sages has no historical counterpart.
+- Kural 236 / islam - 55% (primary): Next-best parallel; eschatological regret rather than an ethical maxim about renown.
+- Kural 243 / greek_mythology - 55% (primary): Same afterlife logic; the deciding virtue is justice and piety, not compassion specifically.
+- Kural 245 / greek_mythology - 55% (primary): Earth-as-witness imagery matches; the governing virtue is justice, not compassion.
+- Kural 247 / greek_mythology - 55% (primary): Consequence of mercilessness is parallel; there is no afterlife dimension and no wealth parallel.
+- Kural 247 / real_life_example - 55% (secondary/secondary): Next-best: the contrast between worldly wealth and the hereafter is clear, but Enrico's motive of atonement is a scholarly interpretation, not a documented fact, and the chapel was an act of piety rather than compassion.
+- Kural 251 / christianity - 55% (primary): Partial match: Proverbs condemns excess, not meat-eating as such; the compassion argument is absent.
+- Kural 251 / islam - 55% (primary): Shares the concern about appetite for flesh; Islam permits meat, so this is a warning about excess, not a call to renounce it.
+- Kural 252 / islam - 55% (primary): Parallel on mercy as a reciprocal possession; Islam does not link it to abstaining from meat.
+- Kural 252 / greek_mythology - 55% (primary): Mythic, not ethical-analytical; conveys the lost-innocence idea rather than the wealth analogy.
+- Kural 253 / hinduism - 55% (primary): Shared food-mind link; the Upanishad does not name meat or weapons.
+- Kural 253 / christianity - 55% (primary): Interpretive link; Genesis permits meat and does not describe the eater’s mind as corrupted.
+- Kural 253 / judaism - 55% (primary): Prophetic critique of hypocritical sacrifice rather than of meat-eating per se.
+- Kural 255 / islam - 55% (primary): Close on hell for cruelty to animals; not about eating meat.
+- Kural 255 / judaism - 55% (primary): The sin is ingratitude and craving, not meat-eating as such.
+- Kural 255 / greek_mythology - 55% (primary): The offence is sacrilege against a god’s herd, not meat-eating generally.
+- Kural 257 / greek_mythology - 55% (primary): Mythic comparison drawn by a philosopher-character; the Cyclops story itself is about cannibalism.
+- Kural 261 / greek_mythology - 55% (primary): Endurance matches; the restraint is tactical, not ahiṃsā.
+- Kural 264 / buddhism - 55% (primary): Power-from-discipline matches; destructive application is rejected.
+- Kural 264 / greek_mythology - 55% (primary): Priestly, not ascetic; power is the god’s.
+- Kural 265 / real_life_example - 55% (secondary/secondary): Next-best only: it shows endurance yielding the desired result, but it is secular perseverance rather than penance, and Goodyear gained the discovery without the wider rewards.
+- Kural 268 / greek_mythology - 55% (primary): Outcome matches; the inner egolessness does not.
+- Kural 274 / greek_mythology - 55% (primary): Next-best: concealment inside a sacred-seeming object; a war stratagem rather than personal religious hypocrisy.
+- Kural 281 / greek_mythology - 55% (secondary): Moderate: the theme of small corrupt gain bringing lasting disgrace fits, but the myth is about bribery and betrayal more than guarding one’s own heart.
+- Kural 285 / greek_mythology - 55% (primary): Moderate: a clear fraud in apportioning, but Prometheus acts out of sympathy for humans, which complicates the ‘no compassion’ point; Hesiod says Zeus saw through the trick.
+- Kural 286 / hinduism - 55% (primary): Matches the ideal of measured conduct; does not mention fraud or theft.
+- Kural 288 / greek_mythology - 55% (primary): Illustrates deceit as settled character; Homer is admiring rather than condemning, which is the opposite of Valluvar’s tone.
+- Kural 289 / greek_mythology - 55% (primary): Moderate: an image of crafty deceit ending in futility; the punishment is eternal rather than immediate, and his deceits are not mainly commercial.
+- Kural 292 / christianity - 55% (primary): Christian interpreters differ: many (e.g., Augustine) praise Rahab’s faith and kindness but not the lie itself. The verse does not explicitly endorse falsehood.
+- Kural 294 / christianity - 55% (primary): Praise for inner guilelessness, but no claim about dwelling in the hearts of all people.
+- Kural 296 / christianity - 55% (primary): Truth is foundational here, but the passage does not speak of fame or of truth generating all virtues.
+- Kural 296 / islam - 55% (primary): Truthfulness is honoured, but listed alongside other virtues rather than as their source. (Bukhari 6094, under Kural 297, captures the generative claim.)
+- Kural 296 / greek_mythology - 55% (primary): Truth tied to reputation; the ‘all virtues’ claim is absent.
+- Kural 296 / real_life_example - 55% (web/secondary): Next-best only: the film is a real, documented event, but the truthful figure it celebrates is legendary, and some historians debate its claim to be the very first Indian feature.
+- Kural 297 / philosophy - 55% (primary): Illustrates truth held as the single guiding commitment; not a doctrine that other virtues are optional.
+- Kural 298 / islam - 55% (primary): Inner purity is emphasised, but the verse contrasts it with wealth and offspring, not water or truth specifically. (Islam values both: wudu for the body, sincerity for the heart.)
+- Kural 299 / islam - 55% (primary): Shared lamp imagery for inner guidance; the Qur’an’s lamp is divine light, not the human virtue of truthfulness.
+- Kural 299 / buddhism - 55% (primary): Shared inner-light image; the Buddhist light is wisdom/Dhamma broadly, not truthfulness specifically.
+- Kural 300 / christianity - 55% (primary): Truth is supreme, but here it is a divine person, not the human virtue of truthful speech.
+- Kural 302 / jainism - 55% (primary): Checked word for word on sacred-texts.com. This is a partial match only: Jainism condemns anger as such and does not use the Kural's distinction between anger toward the strong and toward the weak.
+- Kural 307 / sikhism - 55% (primary): Next-best: both reject using anger as a means. Farid gives no image of self-injury and does not argue that anger rebounds on the angry person.
+- Kural 310 / real_life_example - 55% (secondary/primary): Next-best only: Tolstoy taught the renunciation of anger, but Britannica notes he did not succeed in living fully by his own teachings, and the kural's first line about the excessively angry being like the dead is not shown.
+- Kural 324 / islam - 55% (primary): Verified on quran.com; supports the moral standing of all creatures but is not itself a prohibition on killing.
+- Kural 325 / judaism - 55% (primary): Parallel in ranking ethics above ritual/renunciation; not specifically about killing.
+- Kural 326 / islam - 55% (primary): Verified on sunnah.com; parallel logic of reciprocal mercy, but no mention of death or long life.
+- Kural 328 / real_life_example - 55% (primary/secondary): Next-best only: it renounces gain from killing, but the stated reasons were largely conservation and scientific uncertainty rather than a judgment that such gain is base.
+- Kural 329 / greek_mythology - 55% (primary): Paraphrase; the detail that no one would purify him comes from later mythographers (e.g. Diodorus 4.69).
+- Kural 331 / greek_mythology - 55% (primary): Illustrative rather than doctrinal: the myth dramatises a failure to reckon with impermanence but is not a teaching about it.
+- Kural 335 / greek_mythology - 55% (primary): Partial match: it stresses the value of life before death, not the doing of good deeds; used as the best Greek mythic parallel.
+- Kural 343 / greek_mythology - 55% (primary): Moderate match; Odysseus still wants to hear the song, so it is restraint without inner renunciation.
+- Kural 343 / philosophy - 55% (primary): Paraphrase; Plato's goal is ordered love of beauty rather than renunciation of all sense-objects.
+- Kural 344 / islam - 55% (primary): Partial match: Islam treats wealth as a test to be handled rightly, not something to be abandoned (cf. Quran 57:27 on monasticism being a human innovation).
+- Kural 345 / judaism - 55% (primary): Shares the 'preparatory world' frame; Judaism does not regard the body as excess.
+- Kural 345 / greek_mythology - 55% (primary): Paraphrase; the Orphic view is transmitted second-hand and debated by scholars.
+- Kural 345 / real_life_example - 55% (secondary/secondary): Next-best: Anthony's minimal life fits the call to add no further ties, but the kural's distinctive point, that even the body is excess, is a philosophical claim no historical event fully dramatises.
+- Kural 346 / islam - 55% (primary): Cautionary example rather than direct teaching; no close positive parallel on ego-renunciation leading to a higher world was found in the Quranic text.
+- Kural 346 / judaism - 55% (primary): Matches on humility; the ground is mortality rather than a promise of a higher realm.
+- Kural 347 / islam - 55% (primary): Matches on the relentless hold of worldly striving; the Quran emphasises distraction from God rather than sorrow.
+- Kural 347 / philosophy - 55% (primary): Paraphrase; Spinoza's remedy is adequate understanding rather than renunciation.
+- Kural 348 / judaism - 55% (primary): Net imagery matches, but the cause is fate/timing, not failure to renounce.
+- Kural 348 / philosophy - 55% (primary): Paraphrase; the cave concerns ignorance more than attachment, though Plato links the two.
+- Kural 349 / christianity - 55% (primary): Matches on impermanence vs. the eternal; no rebirth doctrine in Christianity.
+- Kural 349 / islam - 55% (primary): Matches the impermanence strand only; Islam has no rebirth cycle to be cut.
+- Kural 349 / real_life_example - 55% (primary/secondary): Next-best: AA dramatises the breaking of a cycle when craving ends, but the kural's cycle is that of birth and death, which no historical event can show directly.
+- Kural 353 / philosophy - 55% (primary): Paraphrase. Good match on doubt → clarity; the ‘nearness of heaven’ element is only implicit in Boethius’s later books.
+- Kural 361 / islam - 55% (primary): Partial: identifies inner inclination (nafs/hawa) as the root of evil, but has no concept of rebirth.
+- Kural 361 / judaism - 55% (primary): Thematic match on desire as destructive root; the mechanism (rebirth) is absent.
+- Kural 361 / sikhism - 55% (primary): Next-best only: Gurbani links moh and trishna to death and rebirth elsewhere, but no verified verse found calls desire the seed of birth, and this line speaks only of perishing.
+- Kural 364 / real_life_example - 55% (secondary/secondary): The renunciation of wealth is documented, but the sources do not tie it directly to a longing for truth, and his teaching years were troubled.
+- Kural 365 / islam - 55% (primary): Partial: inner detachment is implied, but the inner-versus-outer contrast is not stated.
+- Kural 365 / judaism - 55% (primary): Structural parallel (redefining a title by inner mastery); speaks of subduing, not eliminating, desire.
+- Kural 368 / islam - 55% (primary): Partial: desire for the world → suffering, but eschatological rather than the Kural’s immediate psychology.
+- Kural 372 / philosophy - 55% (primary): Paraphrase. Links folly with a ruinous lot; Plato makes the chooser responsible.
+- Kural 373 / christianity - 55% (primary): Shares the ‘allotted wisdom’ idea; says nothing about book-learning failing to override it.
+- Kural 373 / islam - 55% (primary): Moderate: divine allotment of knowledge; no contrast with book-learning.
+- Kural 373 / philosophy - 55% (primary): Paraphrase and gloss; Heraclitus makes character the fate, whereas Valluvar makes fate shape character.
+- Kural 376 / hinduism - 55% (primary): Moderate: shares non-ownership of outcomes, but not the image of wealth leaving or returning.
+- Kural 376 / buddhism - 55% (primary): Moderate: shares the critique of possessiveness; the Buddhist basis is non-self, not fate.
+- Kural 378 / judaism - 55% (primary): Moderate: shares the idea of unavoidable, imposed experience.
+- Kural 380 / judaism - 55% (primary): Partial and contrastive: affirms that all is foreseen and also that choice is free.
+- Kural 381 / christianity - 55% (primary): Partial match — covers the ‘people’ element only, not the full six-part model.
+- Kural 381 / greek_mythology - 55% (primary): Mythic illustration of the army and alliance limbs only.
+- Kural 382 / judaism - 55% (primary): Matches only the first quality (fearlessness).
+- Kural 383 / islam - 55% (primary): General teaching for all believers, not specific to rulers; translations vary so paraphrased.
+- Kural 385 / sikhism - 55% (primary): Next-best only: the earn-and-share ethic parallels producing and distributing wealth, but it is personal ethics, not public finance, and says nothing about collecting or safeguarding revenue.
+- Kural 388 / islam - 55% (primary): Exaltation of the just ruler, but explicitly not deification.
+- Kural 389 / sikhism - 55% (primary): Next-best only: Gurbani here speaks the bitter word to power rather than praising a ruler who accepts it, so it illustrates the Kural's point only from the critic's side.
+- Kural 392 / hinduism - 55% (primary): Partial match. Both passages speak of two kinds of knowledge, but the Upanishad's pair is lower versus higher, not numbers versus letters. Paraphrased.
+- Kural 393 / judaism - 55% (primary): Verified on Sefaria. Thematically related (ignorance as a defect) but without the eye imagery.
+- Kural 394 / hinduism - 55% (secondary): Paraphrase. It praises the company of the wise, but does not describe joy at meeting or longing at parting.
+- Kural 396 / sikhism - 55% (primary): Next-best only: seeking that bears fruit is the shared idea, but Gurbani gives no matching image of growth in proportion to depth, and its search is for God, not for learning.
+- Kural 398 / real_life_example - 55% (secondary/secondary): Next-best only: the kural speaks of learning protecting its owner across future births, while this shows learning benefiting later generations, which matches only the secular reading.
+- Kural 399 / christianity - 55% (primary): Standard KJV text. A partial match on sharing one's light; the self-reinforcing love of learning is missing.
+- Kural 400 / greek_mythology - 55% (primary): Weak to moderate match. It is a cautionary tale about the emptiness of material wealth, with no counterpart about learning.
+- Kural 401 / hinduism - 55% (primary): Paraphrase. Shares the idea that lack of scriptural grounding leaves one without footing, but the Gita’s focus is spiritual doubt, not public speaking in an assembly.
+- Kural 401 / sikhism - 55% (primary): Next-best only: both reject empty debating, but the Kural prizes mastery of texts, while in the same salok (as Sant Singh Khalsa renders it) Gurbani says wisdom does not come from reading textbooks.
+- Kural 402 / greek_mythology - 55% (primary): Paraphrase. Parallel of craving recognition without mastery; context is music and divine rivalry, not speech.
+- Kural 406 / judaism - 55% (primary): Striking verbal parallel (salt land), but Jeremiah’s subject is the one who trusts in man rather than God, not the unlearned.
+- Kural 406 / real_life_example - 55% (primary/secondary): A policy rather than a dramatic event; it reflects the kural's high valuation of learning but does not itself show unlearned lives as barren.
+- Kural 407 / christianity - 55% (primary): Shares the outer-beauty/inner-emptiness structure; Jesus’s target is moral hypocrisy, not lack of intellect.
+- Kural 407 / buddhism - 55% (primary): Paraphrase. Shared image of a painted figure; the Buddhist point is impermanence of the body, not lack of learning.
+- Kural 408 / hinduism - 55% (primary): Paraphrase; verse numbering varies. Indirect: states the ideal sequence rather than the harm of wealth without learning.
+- Kural 412 / greek_mythology - 55% (primary): Pairs hearing with food, but Homer treats them as complementary pleasures rather than ranking hearing first.
+- Kural 413 / buddhism - 55% (primary): Honours hearing highly but does not equate hearers with gods; best available Buddhist parallel.
+- Kural 413 / philosophy - 55% (primary): Historical parallel on institutionalised listening; the ‘equal to gods’ element is only indirect.
+- Kural 416 / greek_mythology - 55% (primary): Inverse illustration — about what not to hear rather than the value of a little good hearing.
+- Kural 417 / islam - 55% (primary): Paraphrase; concerns guarding speech but not the role of accumulated hearing.
+- Kural 417 / sikhism - 55% (primary): Next-best only: it shares the idea of depth gained through listening, but says nothing about guarding against foolish speech after a mistake.
+- Kural 417 / greek_mythology - 55% (primary): Moderate; Nestor exemplifies wise speech from long experience, though his advice here is ignored.
+- Kural 419 / greek_mythology - 55% (primary): Moderate illustration; not a direct statement of the principle.
+- Kural 424 / hinduism - 55% (primary): Partial match. It addresses the ethics of pleasing, beneficial speech but not clarity of explanation, and it omits the listening half entirely.
+- Kural 424 / sikhism - 55% (primary): Next-best only: both judge speech, but Guru Nanak's standard is honour and truth, not clarity, and the Kural's second half on subtle listening is missing.
+- Kural 424 / greek_mythology - 55% (primary): Illustrates persuasive, audience-fit speech but not subtle listening. Nestor's advice is also sometimes ignored.
+- Kural 426 / jainism - 55% (primary): Next-best match. The list item on following approved social customs was confirmed only from a search summary of a jainworld.com page that would not load, so it is paraphrased and no verse number is given. Canonical scripture has no clear maxim on conforming to the world, and monastic texts stress renouncing it.
+- Kural 426 / greek_mythology - 55% (primary): Adaptability matches. Odysseus's flexibility is often strategic deception, which is more cunning than the Kural's harmonious conduct.
+- Kural 427 / hinduism - 55% (primary): Captures foresight of consequences indirectly. The Gita is classifying kinds of happiness, not directly defining wisdom as foresight.
+- Kural 431 / islam - 55% (primary): Matches only the anger element (plus generosity, which anticipates Kurals 432 and 437); arrogance and lust are not named here.
+- Kural 431 / greek_mythology - 55% (primary): Illustrates only the arrogance element, by counter-example; anger and lust are not in view.
+- Kural 434 / philosophy - 55% (primary): Implicit parallel only; Socrates states the corollary (outside harm is powerless) rather than naming fault as the enemy.
+- Kural 446 / buddhism - 55% (primary): Weak: protection is from fear, not from external enemies’ actions.
+- Kural 448 / sikhism - 55% (primary): Next-best only: the line shares the idea of refusing correction, but it does not state the Kural's point that such a person is ruined without any external enemy.
+- Kural 449 / islam - 55% (primary): Weak: the support is God’s covenant and communal unity rather than wise advisers.
+- Kural 449 / greek_mythology - 55% (primary): Weak-to-moderate: the support is a divine mother, not a wise counselor.
+- Kural 449 / real_life_example - 55% (secondary/web): Next-best only: it vividly shows a ruler falling without support, but the kural speaks of the support of the worthy, and the French intervention was not that.
+- Kural 450 / christianity - 55% (primary): Weak: concerns bad company rather than the comparative harm of abandoning good friends.
+- Kural 451 / greek_mythology - 55% (primary): The Sirens are a lethal temptation, not petty companions; only the idea of fearful avoidance carries over.
+- Kural 453 / buddhism - 55% (primary): Paraphrase; about the consequences of bad company, with the reputation angle only implied.
+- Kural 453 / greek_mythology - 55% (primary): Illustrates judgement by association; harsher and more punitive than the Kural’s point about reputation.
+- Kural 455 / greek_mythology - 55% (primary): The drug, not the people, is the direct agent; a loose parallel.
+- Kural 456 / greek_mythology - 55% (primary): Legacy theme matches; the company dimension is absent.
+- Kural 457 / greek_mythology - 55% (primary): Illustrative; Patroclus’s fame also rests on his own deeds.
+- Kural 457 / philosophy - 55% (primary): About moral betterment, not renown; partial match.
+- Kural 459 / greek_mythology - 55% (primary): Paraphrase; association here is by marriage rather than goodness.
+- Kural 462 / sikhism - 55% (primary): Partial: the verse praises the chosen ones but does not speak of taking counsel with them; the link to collective deliberation comes from later Sikh practice, not this text.
+- Kural 464 / hinduism - 55% (primary): Weak match: Krishna uses fear of disgrace to push Arjuna into acting, whereas the Kural uses it as a reason not to begin unclear ventures. Best available Hindu parallel on disgrace as a practical cost. Paraphrase.
+- Kural 465 / sikhism - 55% (secondary): A historical example rather than a teaching; it fits the call for preparation, but the Kural's specific point (a rash attack strengthens the enemy) has no direct Sikh counterpart.
+- Kural 468 / greek_mythology - 55% (primary): Mainly an image of futile labour as punishment, not of wrong method; kept for the leak image. Weak match.
+- Kural 470 / greek_mythology - 55% (primary): Weak match: the myth concerns hubris toward the gods, not public disapproval of unbecoming conduct. Best available Greek parallel.
+- Kural 472 / judaism - 55% (primary): Weaker match. The text reassures that the Torah is within reach but has no teaching on self-assessment.
+- Kural 475 / hinduism - 55% (primary): Shares the principle of measure against excess. It does not have the Kural’s specific point about small loads accumulating.
+- Kural 475 / christianity - 55% (primary): The image of breaking under excess load is shared. Jesus’ point is about new teaching and old forms, not measuring strength.
+- Kural 475 / jainism - 55% (primary): Checked word for word against Jacobi on sacred-texts.com (the refrain is abbreviated '&c.' in the original, as printed here). This is only a next-best match: it lacks the Kural's central point that many light things, piled up, become fatal.
+- Kural 477 / greek_mythology - 55% (primary): Illustrative only. The myth celebrates hospitality and piety and does not explicitly teach measured giving.
+- Kural 478 / christianity - 55% (primary): Partial. It shares the idea that little is enough but has no income-and-outflow reasoning.
+- Kural 481 / islam - 55% (primary): Islamic tradition credits the outcome to divine aid, not to human timing. The parallel is only in how conditions reversed relative strength.
+- Kural 483 / christianity - 55% (primary): Covers the timing half only. Nothing here corresponds to the Kural’s karuvi (means).
+- Kural 484 / jainism - 55% (primary): Paraphrased narrative; wording and chapter divisions not checked against Johnson's text in this session. Jainism sees conquest as binding karma, so the fit is to the event, not to the value placed on it.
+- Kural 485 / buddhism - 55% (primary): Matches the calm but not the strategic waiting for a moment.
+- Kural 486 / christianity - 55% (primary): The withdrawal-before-the-hour pattern fits. There is no ‘charge’ in the military sense.
+- Kural 486 / buddhism - 55% (primary): Shares the idea of restraint as wise self-withdrawal. It lacks the Kural’s following charge.
+- Kural 486 / jainism - 55% (primary): Well-known Jain narrative, paraphrased; exact wording and chapter not verified against Johnson in this session. The parallel of a held-back blow is close, but the Jain point is renouncing combat, not timing it.
+- Kural 487 / buddhism - 55% (primary): Matches the restraint only. The Buddhist goal of letting go of anger diverges from the Kural’s strategic intent.
+- Kural 490 / christianity - 55% (primary): Verified. It shares watchful readiness but has no idea of a strike.
+- Kural 490 / islam - 55% (primary): Indirect. The lesson is drawn from a Muslim setback, not from a teaching about herons or timing as such.
+- Kural 493 / christianity - 55% (primary): Real parallel in choosing where to act for safety, but there is no idea of defeating an enemy here.
+- Kural 493 / jainism - 55% (primary): Checked word for word against Jacobi on sacred-texts.com. It matches the idea of guarding oneself; the kural's aim of destroying the enemy has no Jain counterpart.
+- Kural 494 / buddhism - 55% (primary): Only a metaphorical parallel; the ‘enemy’ is inner defilement.
+- Kural 495 / jainism - 55% (primary): Paraphrase; the sutra's teaching is standard, but the fish illustration is commentarial and its exact wording was not verified this session. A metaphysical parallel, not an ethical teaching about strategy.
+- Kural 496 / buddhism - 55% (primary): The image matches; the Buddha’s lesson concerns non-attachment, not strategy.
+- Kural 496 / philosophy - 55% (primary): Terrain-specific tactics fit the kural’s logic, but the chosen line is narrow.
+- Kural 497 / hinduism - 55% (primary): Shares the priority on fearlessness; the Gita’s context is spiritual qualities rather than tactics.
+- Kural 499 / jainism - 55% (primary): Checked word for word against Jacobi on sacred-texts.com. Matches being hard to overcome without fortifications; the kural's specific point about home territory is not present.
+- Kural 500 / sikhism - 55% (primary): Partial: both show a powerful elephant made helpless by being caught in the wrong place, but Kabir's point is about desire as a trap, not battlefield terrain.
+- Kural 504 / greek_mythology - 55% (primary): The weighing image matches; what is weighed is fate, not virtue and fault.
+- Kural 506 / judaism - 55% (primary): About kinship with the nation rather than personal family ties; it gives no shame-based reason.
+- Kural 506 / real_life_example - 55% (secondary/secondary): Next-best: the Guard was cut loose from any loyalty and unashamed, but the kural's reason (lack of kin) does not literally apply, and ancient accounts of an 'auction' may be exaggerated.
+- Kural 507 / christianity - 55% (primary): Warns against partiality generally (James’ example is favouring the rich) rather than appointing the incompetent out of affection.
+- Kural 510 / jainism - 55% (secondary): Checked word for word on jainworld.com (first sentence of the verse). The parallel is structural; the Jain verse concerns doubt about religious truth, not distrust of a vetted person, and it does not address the first error (trusting without examination).
+- Kural 512 / greek_mythology - 55% (primary): Loose match: faithful stewardship rather than expanding revenue sources.
+- Kural 513 / greek_mythology - 55% (primary): Illustrative only; Homer does not list Mentor’s qualities the way the Kural does.
+- Kural 514 / islam - 55% (primary): Next-best match: about spiritual backsliding rather than failing at an assigned task.
+- Kural 514 / greek_mythology - 55% (primary): Parallel on trust betrayed; nothing about testing for a task.
+- Kural 516 / judaism - 55% (primary): Covers only the timing element.
+- Kural 518 / jainism - 55% (primary): Checked word for word against Jacobi on sacred-texts.com. Shows a transfer of authority, but the Kalpa Sutra says nothing of first testing the sons' fitness, and the context is renunciation.
+- Kural 519 / christianity - 55% (primary): The inverse of the Kural (reward rather than the penalty for suspicion); no direct warning against distrust.
+- Kural 522 / jainism - 55% (primary): Paraphrase from general knowledge of the text; I did not verify the exact verse wording or number in this session. The Kural's promise of growing prosperity from kin has no direct Jain counterpart.
+- Kural 523 / sikhism - 55% (primary): Partial: both value close fellowship, but Gurbani's is universal rather than kin-centred and says nothing about wealth draining away without it.
+- Kural 527 / greek_mythology - 55% (primary): Right practice of inviting others to share, but it favours neighbours over kin; paraphrased.
+- Kural 528 / buddhism - 55% (primary): Partial fit: ‘impartiality’ (samānattatā) seems to pull the other way, although ‘as the case demands’ supports fitting treatment.
+- Kural 528 / sikhism - 55% (secondary): Partial: recognising merit fits, but Sikhism also insists on equal treatment (as in the langar line) and rejects rank by caste, so the Kural's graded regard is only partly shared.
+- Kural 529 / christianity - 55% (primary): The return of estranged kin matches, but here the fault lay with the son, not with the one who was left.
+- Kural 530 / greek_mythology - 55% (primary): Illustrates testing before acceptance, but Odysseus did not leave without cause.
+- Kural 545 / jainism - 55% (primary): Checked word for word against Jacobi on sacred-texts.com (quoted up to a semicolon in mid-sentence). The prosperity comes from the merit of the Jina-to-be, not from just government, and the text does not mention rain, so this is a partial next-best match.
+- Kural 548 / sikhism - 55% (primary): Partial: both condemn rulers who deny justice, but Guru Nanak describes the condition rather than predicting the unjust king's self-destruction or speaking of accessibility.
+- Kural 551 / sikhism - 55% (primary): Next-best: the verse condemns tyranny and its acceptance, but it does not compare the tyrant with a murderer or speak specifically of a king's treatment of his subjects.
+- Kural 552 / greek_mythology - 55% (primary): The highway robber image is shared, but the myth praises the king who kills robbers rather than comparing a king to one.
+- Kural 557 / jainism - 55% (primary): Checked word for word against Jacobi on sacred-texts.com; a stray page-break character ‘I’ before ‘buying’ in the online text is omitted. This illustrates the Kural's point by showing its opposite, and the clemency is a festival measure, not a standing policy, so the match is partial.
+- Kural 561 / sikhism - 55% (primary): Next-best: the verse speaks of divine justice, not of a human ruler's procedure of inquiry and proportionate punishment.
+- Kural 566 / jainism - 55% (primary): Checked word for word against Jacobi on sacred-texts.com. The setting is pupil and teacher, and the loss of wealth is absent.
+- Kural 566 / greek_mythology - 55% (secondary): The loss is a divine punishment for impiety, not the political result of harsh rule; a loose analogy.
+- Kural 566 / real_life_example - 55% (secondary/secondary): Next-best only: it shows a ruler's lack of regard for those around him producing sudden ruin, but the sources document harsh measures rather than harsh words, and the Janissaries' own grievances were also at work.
+- Kural 567 / christianity - 55% (primary): Domestic, not political, authority; a next-best match on the harm of excessive severity.
+- Kural 572 / sikhism - 55% (primary): Next-best: the ‘burden on the earth’ image is identical, but Farid's test is remembrance of the Name, not kindly regard for others.
+- Kural 573 / islam - 55% (primary): Shares the idea of form emptied by lack of kindness; no musical or eye imagery.
+- Kural 573 / jainism - 55% (web): Paraphrased from a secondary blog rendering because no primary translation was checked in this session; the Kural's music image (melody without song) has no Jain counterpart.
+- Kural 573 / philosophy - 55% (primary): Shares the ‘fitting’ principle for music; says nothing about eyes or benignity.
+- Kural 573 / real_life_example - 55% (secondary/secondary): Next-best: the kural uses music only as a simile for an eye without kindness, and this event matches music with compassion rather than illustrating the eye directly.
+- Kural 575 / sikhism - 55% (primary): Next-best: the image of a virtue as the eye's ornament matches closely, but the virtue named is reverence for God rather than kindness, and the bride image is spiritual devotion, not romance.
+- Kural 575 / greek_mythology - 55% (primary): Imagistically striking but a narrative contrast, not a moral statement about kindness.
+- Kural 576 / hinduism - 55% (primary): Matches the condemnation of harshness; the tree simile and eye imagery are absent.
+- Kural 576 / philosophy - 55% (primary): Tree imagery and social point align, though Marcus’s branch is severed rather than rooted.
+- Kural 581 / christianity - 55% (primary): Thematic match on word and sight together; the passage is theological, not about statecraft.
+- Kural 581 / buddhism - 55% (primary): Shares the two-support structure, but the inquiry is moral consultation, not espionage.
+- Kural 582 / islam - 55% (primary): Divine omniscience is a model, not a method; the verse is about God, not rulers.
+- Kural 584 / christianity - 55% (primary): Shares the insight about danger within the household; it is about division over faith, not surveillance.
+- Kural 584 / buddhism - 55% (primary): Similar discernment about intimates; it is personal ethics, not royal intelligence.
+- Kural 585 / jainism - 55% (primary): Checked word for word against Jacobi's translation on wisdomlib.org. The parallel is in composure and control of speech; the Jain ideal is spiritual endurance, not keeping intelligence secrets, so the fit is partial.
+- Kural 586 / jainism - 55% (web): Paraphrased from a secondary Jain biography of Mahavira as cited on wisdomlib.org; I did not locate the primary passage (traditionally in the Āvaśyaka commentaries and Hemacandra's Mahāvīracaritra) in this session. Thematically vivid but inverted: Jainism forbids monks to act as spies.
+- Kural 587 / christianity - 55% (primary): Matches the idea that hidden speech comes out; it is a moral warning, not spycraft.
+- Kural 587 / philosophy - 55% (primary): Matches the certainty half only; Descartes is concerned with philosophical knowledge, not intelligence.
+- Kural 590 / islam - 55% (primary): Parallel on concealed giving; the reason is spiritual sincerity, not secrecy.
+- Kural 592 / sikhism - 55% (primary): Partial: the transience of wealth is common ground, but Gurbani's lasting good is the Name, not the Kural's energy of mind.
+- Kural 592 / greek_mythology - 55% (primary): Shows the hollowness of wealth but offers no positive counterpart like ookkam.
+- Kural 593 / sikhism - 55% (primary): Partial: refusing to grieve over loss matches, but Gurbani grounds it in equanimity, the Kural in the energy that will regain prosperity.
+- Kural 595 / christianity - 55% (primary): Popular reading fits well, but in context the verse describes a stingy host’s hidden thoughts, so the match is looser than it appears.
+- Kural 595 / greek_mythology - 55% (primary): Greek lyric rather than myth, and the maxim’s meaning is debated; offered as the best available analogue.
+- Kural 598 / jainism - 55% (primary): Checked word for word against Jacobi's translation on wisdomlib.org. Shows great generosity flowing from inner resolve, but the Jain text does not explicitly tie giving to energy, and the gift is a prelude to renunciation rather than a source of pride, which Jainism counts as a passion.
+- Kural 598 / greek_mythology - 55% (primary): Shows generosity arising from spirit, not wealth, which partly cuts against the Kural’s link between energy, wealth and giving.
+- Kural 599 / jainism - 55% (primary): Checked word for word against Jacobi on sacred-texts.com. Shared animal imagery, but the Jain text praises both elephant and lion and does not set them against each other; the Kural's moral that spirit beats bulk is only implied.
+- Kural 601 / greek_mythology - 55% (primary): Telemachus is young and unsure rather than lazy, so this is an analogy of situation, not of vice.
+- Kural 603 / christianity - 55% (primary): Shares the condemnation of chosen idleness, but has nothing like the Kural’s claim that the family dies before the idler.
+- Kural 603 / greek_mythology - 55% (primary): A Greek fable rather than myth; it shows ruin through sloth but has no family or lineage theme.
+- Kural 604 / sikhism - 55% (primary): Partial: laziness keeping company with other faults matches, but Kabir does not make sloth the cause of the others or speak of the family's fall.
+- Kural 606 / jainism - 55% (primary): Checked word for word on sacred-texts.com, but this is only a next-best match: the parallel is wasted good fortune, while the Kural speaks literally of inherited royal wealth.
+- Kural 607 / islam - 55% (primary): A rebuke of chosen inaction, but tied to a specific military and religious duty.
+- Kural 608 / jainism - 55% (primary): Checked word for word on sacred-texts.com. Only a next-best match: it turns the Kural's political enemies into inner ones and does not mention sloth or noble birth.
+- Kural 612 / sikhism - 55% (primary): Next-best match: the verse values patient, sustained work, but it describes the forging of spiritual character, not finishing a worldly undertaking, and says nothing of the world abandoning those who give up.
+- Kural 613 / jainism - 55% (primary): Checked word for word on sacred-texts.com. Only a next-best match: it ties service to personal effort but does not say, as the Kural does, that diligence is the foundation of generosity.
+- Kural 613 / greek_mythology - 55% (primary): Loose parallel; Heracles’ labours were imposed as penance, not undertaken to fund generosity.
+- Kural 614 / philosophy - 55% (primary): General intention-versus-action parallel; not about generosity specifically.
+- Kural 615 / sikhism - 55% (primary): Next-best: the shared idea is self-forgetting work, but the verse concerns service of the Guru and union with God, not supporting one's family, which is the Kural's image of the pillar.
+- Kural 624 / islam - 55% (primary): Captures relentless toil toward an end, but says nothing of trouble being defeated; a next-best match.
+- Kural 632 / sikhism - 55% (secondary): Next-best: it illustrates courage and protecting the people, two of the Kural's qualities, but a Guru giving his life is not a minister serving a king, and learning and sustained effort are not covered; the dialogue comes from an 18th-century Gurbilas text quoted by the encyclopedia.
+- Kural 634 / sikhism - 55% (primary): Next-best: it praises discernment in general but names none of the Kural's three specific abilities, and the wisdom it means is directed to serving God rather than to counsel in affairs of state.
+- Kural 643 / jainism - 55% (primary): Checked word for word on sacred-texts.com ('*S*abaras' simplified to 'Sabaras'). This comes from a later commentator quoted in Jacobi's footnote, not from the canonical verse itself, and it concerns the Jina's supernatural speech rather than a human skill.
+- Kural 643 / sikhism - 55% (primary): Next-best only: Japji praises the power of hearing God's Name, not human eloquence, so the parallel lies only in the compelling force of a word on its listeners.
+- Kural 644 / judaism - 55% (primary): Next-best match: a principle of interpretation, not direct advice on oratory.
+- Kural 651 / judaism - 55% (primary): Shares the primacy of the deed, but Avot contrasts deeds with study rather than with allies.
+- Kural 653 / jainism - 55% (primary): Checked word for word against Jacobi on sacred-texts.com. The light image and the link between conduct and rising match, but the verse states the positive case only and has no explicit warning against deeds that dim one's name.
+- Kural 656 / jainism - 55% (primary): Checked word for word against Jacobi on sacred-texts.com (footnote marker removed). Partial fit: the verse is about the limits of family help in karmic retribution and does not itself pose the dilemma of a hungry mother.
+- Kural 657 / buddhism - 55% (primary): Only a partial match: it revalues wealth but does not address wealth gained through blame.
+- Kural 660 / hinduism - 55% (primary): Shared prohibition on grasping at others’ wealth; the Upanishad has no image of such wealth dissolving.
+- Kural 663 / jainism - 55% (primary): Partial match only: the Jain motive is truthfulness and restraint of speech (the parenthetical gloss is Jacobi's), not strategic secrecy to keep a project from being undone.
+- Kural 663 / sikhism - 55% (secondary): Next-best only: the tent episode, as Sikh tradition tells it, shows a plan revealed at completion, but its point is sacrifice and commitment, not the political secrecy the Kural advises.
+- Kural 664 / hinduism - 55% (primary): Captures the gap between teaching and practice, but frames it as mastering the mind rather than keeping one’s word.
+- Kural 665 / hinduism - 55% (primary): Shares the public influence of great men’s actions; lacks the Kural’s link to royal recognition.
+- Kural 668 / greek_mythology - 55% (primary): Legend rather than myth; Plutarch also reports a less dramatic version (pulling out the pole-pin), so the match is partial.
+- Kural 673 / sikhism - 55% (web): Next-best only: nothing in the Guru Granth Sahib fits this strategic maxim, so this uses the Dasam Granth (whose authorship is contested within Sikhism) via Wikipedia as a last resort, and its order of means is the reverse of Parimelazhagar's reading.
+- Kural 674 / islam - 55% (web): Paraphrased from a secondary source; covers thorough completion but not the enemy half or the danger of remnants.
+- Kural 675 / buddhism - 55% (primary): Paraphrased; covers the time factor only, and in a spiritual rather than practical context.
+- Kural 676 / real_life_example - 55% (secondary/secondary): Next-best only: the gain was indeed great, but the work took about ten years instead of the six planned and relied at first on forced labour, so the appraisal was far from perfect.
+- Kural 678 / philosophy - 55% (primary): Paraphrased; a broad philosophical echo rather than a direct parallel.
+- Kural 679 / jainism - 55% (secondary): Partial match: both value turning non-friends into friends, but the kural's motive is political advantage while the Jain verse is universal non-enmity.
+- Kural 681 / christianity - 55% (primary): Shares the idea of choosing representatives for proven character, but the task is administrative, not a diplomatic mission.
+- Kural 681 / philosophy - 55% (primary): Paraphrase from memory of Bacon’s essay; the general idea fits, but lineage and royal manners are absent.
+- Kural 683 / sikhism - 55% (primary): Next-best only: shares the point that applied learning beats mere learning, but has nothing on diplomacy or on speaking before hostile kings.
+- Kural 684 / buddhism - 55% (primary): Illustrates bearing plus wisdom winning a hearer; Assaji was not on a formal mission.
+- Kural 684 / philosophy - 55% (primary): Matches the pairing of nature and education; appearance and embassy are not discussed.
+- Kural 692 / judaism - 55% (primary): Partial match. Shemaiah advises keeping away from rulers entirely, while the Kural assumes you serve them and simply do not covet what is theirs.
+- Kural 692 / philosophy - 55% (primary): Shares the idea of not desiring what the powerful enjoy. The motive is different: Stoic independence, not service.
+- Kural 695 / christianity - 55% (primary): Shares the principle of not pressing a sovereign for reserved knowledge. The setting is theological, not political.
+- Kural 697 / christianity - 55% (primary): Shares the condemnation of useless speech. It is not about counsel to a ruler.
+- Kural 697 / sikhism - 55% (primary): Partial: shares the refusal to trade truth for what pleases, but Guru Nanak speaks as a prophet about rulers, not as a courtier advising one.
+- Kural 698 / islam - 55% (primary): Supports respect for office generally. It does not address youth or kinship.
+- Kural 699 / philosophy - 55% (primary): Offers the theory behind the Kural’s warning. It is abstract and does not describe the favourite’s self-deception.
+- Kural 700 / christianity - 55% (primary): Shows how familiarity breeds disrespect, but from the side of the one disrespected, and with no ruin befalling the familiar.
+- Kural 701 / real_life_example - 55% (secondary/web): The kural concerns reading a ruler's intentions, so applying it to a scientist reading animals is a next-best, partial fit, though the wordless understanding and worldwide honour are apt.
+- Kural 704 / christianity - 55% (primary): Shares the idea of a hidden difference in discernment, but is about moral maturity, not reading people.
+- Kural 707 / judaism - 55% (primary): Shares the idea that anger reveals character, but says nothing specific about the face.
+- Kural 710 / christianity - 55% (primary): Shares the primacy of the eye, but Jesus speaks of moral vision, not of reading other people.
+- Kural 710 / judaism - 55% (primary): Idiomatic rather than literal: ‘good eye’ means generosity, not a readable glance.
+- Kural 710 / buddhism - 55% (primary): Metaphorical eye of wisdom, not the literal eye reading faces.
+- Kural 713 / sikhism - 55% (primary): Next-best: a general warning against idle talk, not specifically against speaking without knowing one's audience.
+- Kural 714 / jainism - 55% (primary): Checked word for word against Jacobi on sacred-texts.com (an excerpt from the list in 11.10–13). Partial match: the Jain text praises humility about learning in general and has no counterpart to the Kural's tactic of shining among the learned and staying quiet among the dull.
+- Kural 716 / jainism - 55% (primary): Checked word for word against Jacobi on sacred-texts.com. Next-best match: it stresses care and accuracy in speech, but not the Kural's particular danger of erring before an expert audience.
+- Kural 716 / philosophy - 55% (primary): A related theme of exposure before the wise. Plato’s point is about ignorance of one’s ignorance, not court speech.
+- Kural 718 / sikhism - 55% (primary): Next-best: the garden-and-watering image is shared, but in Gurbani the watering is love for God within the hearer, not a speaker addressing a receptive audience.
+- Kural 718 / greek_mythology - 55% (primary): An illustrative narrative match only. Homer uses no agricultural image.
+- Kural 719 / real_life_example - 55% (secondary/secondary): A next-best fit: Casals's boycott was a political protest against governments rather than a judgement on the quality of particular audiences.
+- Kural 727 / islam - 55% (primary): It covers only the battlefield image and says nothing about learning.
+- Kural 731 / christianity - 55% (primary): Matches only one of the Kural’s three elements (the right kind of wealthy person). Paul says nothing about harvests or the definition of a country.
+- Kural 732 / buddhism - 55% (primary): The prosperity is described in detail, but the sutta’s aim is to show that it does not last, which is the reverse of the Kural’s aim.
+- Kural 733 / greek_mythology - 55% (primary): Interesting parallel of a people sharing the cost of a stranger, but it concerns one guest, not a mass of newcomers.
+- Kural 736 / hinduism - 55% (web): Matches the theme of fruitfulness restored after disaster, but credits a king rather than the land’s own resilience.
+- Kural 736 / christianity - 55% (primary): Shares the image of withstanding disaster, but it is a parable about personal faith, not about a country.
+- Kural 736 / judaism - 55% (primary): Captures abundance in a time of ruin, but the blessing belongs to one man, not to a whole country.
+- Kural 736 / jainism - 55% (primary): Checked word for word on wisdomlib.org. The parallel is cosmological, not political: these regions are stable because of the structure of time, not because of resilience to harm by enemies.
+- Kural 736 / greek_mythology - 55% (primary): Good image of recovery. In the myth the earth is barren for a time, whereas the Kural’s best land does not lose its richness at all.
+- Kural 739 / christianity - 55% (primary): Nice verbal echo; the parable is about the growth of God’s kingdom, not about the richness of a land.
+- Kural 741 / christianity - 55% (primary): Jesus is using a parable about spiritual power, not teaching statecraft; the parallel is to the image only.
+- Kural 742 / islam - 55% (primary): The verse is about divine provision generally, not fortification; the overlap is in the natural features named.
+- Kural 742 / sikhism - 55% (primary): Next-best only: Kabir shares the image of water as a fortress's defence but uses it to teach impermanence and the need for the Name, the opposite of the Kural's practical praise of natural defences.
+- Kural 742 / greek_mythology - 55% (primary): Paraphrase; only the water and narrow-approach features correspond to the Kural’s list.
+- Kural 743 / christianity - 55% (primary): A symbolic vision, not a building specification; matches height, size and guarded access.
+- Kural 743 / greek_mythology - 55% (primary): Paraphrase; it supports the need for high walls in general, not the four specific qualities.
+- Kural 744 / hinduism - 55% (primary): Matches the spacious interior; says nothing about breaking the enemy’s morale.
+- Kural 744 / sikhism - 55% (primary): Partial and allegorical: the demoralising fortress is the self's bondage to maya, and the hymn goes on to show it taken by divine love, so the sympathy runs opposite to the Kural's; nothing corresponds to the Kural's narrow perimeter and spacious interior.
+- Kural 747 / jainism - 55% (primary): Verified verbatim on sacred-texts.com; the warning against trusting others touches the Kural's concern with treachery, but the verse is about spiritual vigilance and does not address military siege.
+- Kural 749 / christianity - 55% (primary): General praise of faithful warriors; no fort is involved.
+- Kural 749 / jainism - 55% (primary): Verified verbatim on sacred-texts.com; it shares the Kural's language of victory in battle but deliberately relativises martial glory, which Jain ahimsa does not celebrate, so it is a partial, contrasting match.
+- Kural 750 / christianity - 55% (primary): Same structure (the fort alone is not enough), but a different answer to what makes it work.
+- Kural 750 / judaism - 55% (primary): Paraphrase. The rabbinic point concerns spiritual merit rather than military competence.
+- Kural 752 / islam - 55% (primary): Partial match: it speaks of wealth as worldly adornment, not directly of how people treat rich and poor.
+- Kural 753 / greek_mythology - 55% (primary): The myth itself is about divine union; reading it as the power of gold is a later Roman moral gloss.
+- Kural 756 / judaism - 55% (primary): Paraphrase; Samuel’s tone is critical of royal taxation, while the Kural treats it as legitimate.
+- Kural 756 / greek_mythology - 55% (primary): Matches only the spoils category, and Homer’s interest is honour and conflict, not public finance.
+- Kural 761 / buddhism - 55% (primary): Partial match; the verse uses army animals as a foil for self-discipline.
+- Kural 763 / christianity - 55% (primary): Paraphrased, not verified verbatim; the victory is divine rather than due to the valour of a small army.
+- Kural 766 / sikhism - 55% (primary): Covers only honour and trusted service among the four qualities, and the master meant is God, not a king; a next-best match.
+- Kural 768 / buddhism - 55% (primary): Partial match; the point is self-discipline, with the war-elephant as illustration.
+- Kural 769 / sikhism - 55% (primary): Shares the insight that want destroys morale, but concerns a devotee's needs rather than an army's pay and supply; a next-best match.
+- Kural 771 / islam - 55% (primary): Shares the morale-raising confidence, but grounds it in faith rather than in a leader’s past victories.
+- Kural 771 / jainism - 55% (primary): Checked word for word against Jacobi on sacred-texts.com. It addresses the same theme of conquest but deliberately reverses the Kural's martial pride, so it is a contrast rather than a parallel.
+- Kural 771 / philosophy - 55% (primary): Useful frame for boasting and courage; Aristotle is cautionary where the Kural is celebratory.
+- Kural 772 / hinduism - 55% (primary): Shares the idea of the worthiest fight; the Gita does not use the hare/elephant contrast.
+- Kural 774 / hinduism - 55% (primary): Conceptual match on enduring pain; the Gita is philosophical where the Kural is a vivid battle image.
+- Kural 774 / judaism - 55% (primary): General call to courage; lacks the Kural’s image of wounded resilience.
+- Kural 774 / sikhism - 55% (primary): Shares the joyful fearlessness, but Kabir means spiritual death of the ego and union with God, not delight in fighting on; a next-best match.
+- Kural 778 / hinduism - 55% (primary): Shares the idea of an irrepressible warrior nature; the Gita’s restraint is self-imposed, not the king’s.
+- Kural 778 / buddhism - 55% (primary): Shared image of disciplined strength under a king.
+- Kural 781 / sikhism - 55% (primary): Captures the rarity of the true friend, but the friend is the Guru and the gift is spiritual; nothing here addresses friendship as a defence against enemies.
+- Kural 782 / greek_mythology - 55% (primary): Illustrates a friendship that grew, though their later adventures were reckless rather than wise.
+- Kural 783 / greek_mythology - 55% (primary): Shows the enjoyment of good company but makes no explicit claim about it growing.
+- Kural 789 / hinduism - 55% (primary): Matches the constancy of friendship; the verse is about forbearance rather than active support.
+- Kural 789 / sikhism - 55% (primary): A contrast more than a parallel: it shows the absence of the steady friend the Kural describes and finds that support only in God.
+- Kural 793 / christianity - 55% (primary): The context is false prophets, not friendship; the parallel is in method of judging.
+- Kural 794 / hinduism - 55% (secondary): Matches the idea that lineage shows in conduct; does not urge paying to win such a friend.
+- Kural 794 / sikhism - 55% (primary): Shares the idea that a morally upright friend is rare and precious, but the Kural's first criterion, being born into a good family, conflicts with the Sikh rejection of caste and lineage, and Guru Arjan speaks of spiritual company rather than paying a price.
+- Kural 794 / real_life_example - 55% (secondary/secondary): Close on paying to win a worthy friend, but Diderot was not of noble birth and Catherine's motives were partly about prestige, so the fit is partial.
+- Kural 798 / islam - 55% (primary): Theological setting; the parallel lies in the desertion, not in friendship advice.
+- Kural 799 / sikhism - 55% (primary): Captures the anguish of being left by companions at life's end, but Farid's 'those whom I knew' (jaani) are more naturally loved ones who have died or gone than friends who betrayed him, so the Kural's specific sting of desertion is only partly present.
+- Kural 802 / judaism - 55% (primary): Partial match: the duty to keep a companion and judge favourably, not a direct statement about intimate liberties.
+- Kural 802 / sikhism - 55% (secondary): According to the Janamsakhi tradition, which is hagiography; it shows affectionate tolerance of a friend's lapses, but the episode's own point is that possessions are a burden, not the ethics of intimate liberty.
+- Kural 803 / christianity - 55% (primary): Good illustration of a request made on the strength of friendship; Paul asks rather than acting first.
+- Kural 803 / judaism - 55% (primary): Shows friends’ interests fully merged; the Kural’s case of accepting a friend’s act afterwards is not directly addressed.
+- Kural 804 / sikhism - 55% (secondary): Shows trust in a lifelong companion's decisions, but the decision was invited rather than taken unasked, and the relationship is also that of disciple and Guru; the account derives from the Janamsakhi tradition.
+- Kural 805 / islam - 55% (primary): Matches the charitable reading of others; paraphrased without a re-verified hadith number.
+- Kural 805 / sikhism - 55% (primary): Supports the forgiving disposition the Kural asks for, but is a general teaching on forgiveness and does not offer the Kural's two specific explanations (ignorance or intimacy) for a friend's offence.
+- Kural 805 / philosophy - 55% (primary): Close on attributing offence to the other’s ignorance; it does not include the ‘great intimacy’ explanation.
+- Kural 807 / philosophy - 55% (primary): Partial: Aristotle sets conditions on continued love that the Kural does not.
+- Kural 808 / islam - 55% (primary): Shares the caution about tale-bearers; the Kural goes further, refusing to listen at all.
+- Kural 809 / christianity - 55% (primary): Close on constancy; the theme of public esteem is absent.
+- Kural 809 / philosophy - 55% (primary): Matches the value of long duration; it says nothing about public esteem.
+- Kural 810 / judaism - 55% (primary): Matches the outcome; paraphrased without live verification.
+- Kural 810 / buddhism - 55% (primary): Matches the overcoming of enmity; it is not specifically about old friendship.
+- Kural 814 / philosophy - 55% (primary): Next-best match; Seneca worries about moral contagion, not desertion in crisis; paraphrased.
+- Kural 815 / islam - 55% (primary): Shares the ‘better never to have befriended’ verdict, but the harm is spiritual misguidance, not failure to protect.
+- Kural 820 / sikhism - 55% (primary): Matches the double-faced character in general, but Kabir's contrast is outer show versus inner corruption rather than private friendliness versus public slander, and it gives no instruction to keep away.
+- Kural 820 / greek_mythology - 55% (primary): Next-best match: the myth has several versions of Tantalus’s crime, and his offence is indiscretion rather than slander.
+- Kural 822 / greek_mythology - 55% (primary): Captures the changeable loyalty, but it is a fable of self-preservation rather than a story about false friendship; Aesop is Greek fable, not myth proper.
+- Kural 823 / greek_mythology - 55% (primary): Illustrates skill without goodness, but is not about friendship; summarised.
+- Kural 829 / christianity - 55% (primary): Partial match on wary gentleness; Jesus does not endorse feigned friendship.
+- Kural 829 / jainism - 55% (primary): Verified verbatim on wisdomlib.org. A Tamil Jain text giving a partial parallel only: Jain ethics, which makes straightforwardness (ārjava) the remedy for deceit, does not endorse the Kural's tactic of outward show over inner withdrawal.
+- Kural 830 / jainism - 55% (primary): Verified verbatim on wisdomlib.org. Canonical for both sects; the inner detachment toward the ill-behaved partly matches the Kural's withdrawal of inner friendship, but Jain maitrī toward all beings rules out the strategic pretence the Kural allows, so the fit is partial.
+- Kural 830 / greek_mythology - 55% (primary): Matches outward friendship between foes, but the exchange is honourable rather than guarded; summarised.
+- Kural 833 / greek_mythology - 55% (primary): Thematic link on shame only; concerns a whole age, not an individual fool.
+- Kural 833 / philosophy - 55% (primary): Paraphrased; parallels the shamelessness trait only.
+- Kural 835 / judaism - 55% (primary): Shares the theme of self-made ruin, without the many-births idea.
+- Kural 836 / philosophy - 55% (primary): Shares overreach beyond competence; no ruined task or self-binding.
+- Kural 838 / jainism - 55% (primary): Verified verbatim on sacred-texts.com. A next-best match: it links wealth with loss of judgment, but its image is darkness rather than double intoxication, and it concerns spiritual carelessness, not the fool's behaviour with sudden riches.
+- Kural 840 / philosophy - 55% (primary): Shares the pure/impure image; Plato’s context is the soul and knowledge, not social gatherings.
+- Kural 842 / hinduism - 55% (primary): Shares the idea of ignorant giving but not the kural’s point about the receiver’s merit; verified on vedabase.io.
+- Kural 842 / islam - 55% (primary): Theological parallel on allotted provision; does not mention fools. Verified via alquran.cloud.
+- Kural 842 / philosophy - 55% (primary): Shares the link between wisdom and right giving but not the receiver’s-merit claim.
+- Kural 842 / real_life_example - 55% (secondary/secondary): Next-best only: it was a sale for needed cash rather than a glad gift, and Frazee's folly is a popular judgement rather than a documented fact.
+- Kural 845 / jainism - 55% (primary): Paraphrase; the Prakrit line was confirmed only through a search snippet and I could not pin the verse number or an English translation online, so it is not quoted. It shares the theme of not claiming unearned knowledge but leaves out the Kural's point that genuine knowledge then loses credit.
+- Kural 845 / greek_mythology - 55% (primary): Matches rash undertaking, not the credibility point.
+- Kural 846 / real_life_example - 55% (web/secondary): Next-best only: it illustrates outward respectability masking uncorrected faults, but the kural's image of clothing is only loosely matched.
+- Kural 850 / greek_mythology - 55% (primary): Thematic parallel on denial and destruction; the kural’s outcome is social exclusion, not death.
+- Kural 850 / real_life_example - 55% (web/secondary): Next-best only: the denial is a clear match, but Hampden's being shunned is a matter of reputation rather than a documented act of exclusion.
+- Kural 856 / sikhism - 55% (primary): Next-best: it forbids the quarrelsome habit the Kural condemns, but does not state the Kural's point that delight in hostility brings ruin near.
+- Kural 857 / judaism - 55% (primary): Illustrative only; the verse shows hatred’s effect on speech, not explicitly on understanding.
+- Kural 861 / islam - 55% (primary): Partial match: Islamic sources frame the treaty as divine wisdom and patience, not simply as a strength calculation.
+- Kural 863 / hinduism - 55% (primary): Matches the fear and confusion elements; the Gita’s concern is duty, not vulnerability to enemies.
+- Kural 863 / christianity - 55% (primary): Interesting inverse match on fear, love and sound judgement; not about enemies.
+- Kural 863 / jainism - 55% (primary): Checked word for word against Jacobi's translation on wisdomlib.org. It matches only the first of the Kural's four faults (fear) and is about inner hardships, not human enemies; ignorance, lack of accord and stinginess are not covered.
+- Kural 864 / greek_mythology - 55% (primary): Strong on anger’s self-destruction; the gods’ role in his madness complicates the parallel.
+- Kural 866 / christianity - 55% (primary): Matches the self-destructive power of desire; does not address anger or enemies.
+- Kural 866 / islam - 55% (primary): Thematic match on being ruled by desire; no reference to anger or enemies.
+- Kural 866 / greek_mythology - 55% (primary): Good illustration of desire’s cost; the abduction is background to, not narrated in, the Iliad.
+- Kural 867 / christianity - 55% (primary): Clear case of harm from a close associate, but no idea of preferring open enmity.
+- Kural 868 / christianity - 55% (primary): General match on loss of cohesion; does not link it to personal faults.
+- Kural 869 / buddhism - 55% (primary): Matches the image of the fearful fighter; the sutta’s meaning is spiritual.
+- Kural 870 / greek_mythology - 55% (primary): Matches fame through battle; the Kural’s point about easy, small victories is absent.
+- Kural 871 / philosophy - 55% (primary): Adjacent theme (hurtful jesting) rather than enmity itself; paraphrased.
+- Kural 872 / buddhism - 55% (primary): Related idea of verbal retaliation; does not compare warriors and wordsmiths.
+- Kural 873 / islam - 55% (primary): Paraphrased; about disunity within a community rather than one person against many.
+- Kural 873 / greek_mythology - 55% (primary): Greek fable rather than myth; addresses unity, not the folly of many enemies.
+- Kural 873 / philosophy - 55% (primary): Related argument about self-defeating hostility; framed around justice rather than strategy.
+- Kural 875 / philosophy - 55% (primary): Related strategic logic; Machiavelli discusses siding in others’ wars, not befriending an enemy.
+- Kural 876 / hinduism - 55% (primary): Illustrates neutrality in crisis; Balarama’s motive was affection for both, not caution about trust.
+- Kural 876 / buddhism - 55% (primary): Related teaching on testing friends; does not prescribe neutrality.
+- Kural 876 / philosophy - 55% (primary): Supports caution about untested trust; Aristotle does not discuss crisis neutrality.
+- Kural 877 / jainism - 55% (primary): Checked word for word against Jacobi on wisdomlib.org. The 'attackers' here are hardships rather than human enemies, and the Kural's point about whom one confides in is not addressed, so the match is partial.
+- Kural 877 / philosophy - 55% (primary): Matches the first half (reserve about one’s troubles); nothing on hiding weakness from enemies.
+- Kural 878 / greek_mythology - 55% (primary): Illustrates preparation; the Gorgon’s ‘pride’ is not the issue in the myth.
+- Kural 884 / philosophy - 55% (primary): Moderate match; the Stoic focus is on self-discipline rather than the damage of hidden enmity.
+- Kural 887 / hinduism - 55% (primary): The brothers were genuinely united before the rivalry, so this matches the fragility of union more than concealed enmity.
+- Kural 888 / jainism - 55% (secondary): Checked word for word on jainworld.com. Next-best match only: it shares the idea of a lingering inner force that slowly erodes, but it concerns the individual soul, not a family, and has no image of a file.
+- Kural 888 / sikhism - 55% (primary): Next-best: it shares the image of a home ruined from within, but the plunder is by inner vices and is sudden, not the slow wearing-down of a family by feuding.
+- Kural 889 / islam - 55% (primary): Paraphrased; matches the danger of internal dissension but not the specific point about its smallness.
+- Kural 891 / christianity - 55% (primary): Shares the theme of esteeming capable workers, but the Kural’s motive is prudent self-protection rather than love.
+- Kural 892 / christianity - 55% (primary): Shared idea of consequences for defying authority; Paul grounds it in divine order, the Kural in practical prudence.
+- Kural 892 / buddhism - 55% (primary): Same value expressed positively; no mention of the consequences that the Kural stresses.
+- Kural 892 / philosophy - 55% (primary): Thematic parallel; Socrates speaks of moral and civic self-harm rather than the great one’s retaliation.
+- Kural 893 / islam - 55% (primary): Parallel on not listening leading to ruin; eschatological rather than political setting.
+- Kural 894 / christianity - 55% (primary): Shares the weak-versus-strong calculation; Jesus uses it as a parable about discipleship.
+- Kural 895 / judaism - 55% (primary): Fits the futility of flight; Jonah disobeyed rather than offended, and is spared.
+- Kural 899 / christianity - 55% (primary): Shares the overthrow of rulers; the agent is God, not principled people.
+- Kural 899 / philosophy - 55% (primary): Reasonable parallel; Aristotle’s analysis is about revenge for insult generally, not specifically the virtuous.
+- Kural 900 / philosophy - 55% (primary): Historical anecdote from a commentary; fits the theme though the enemy were generals rather than sages.
+- Kural 901 / hinduism - 55% (primary): Verified verse on attachment in general; it does not speak of wives or domestic life specifically.
+- Kural 901 / islam - 55% (primary): Verified wording; the verse names wealth and children, not spouses, so the match is to the general principle of distraction.
+- Kural 902 / hinduism - 55% (primary): Well-known parallel; the narrative also stresses truth to one's word and the role of the maid Manthara, so it is not purely about uxoriousness.
+- Kural 902 / buddhism - 55% (primary): Verified; parallels self-made entrapment by desire but not public shame.
+- Kural 903 / hinduism - 55% (primary): Strong match for a ruler's indulgence; it concerns sensual excess rather than fear of a wife, and the poem gives the queen a dignified final role.
+- Kural 903 / philosophy - 55% (primary): Real parallel in a political treatise; Aristotle's claims about Sparta are contested by historians.
+- Kural 904 / hinduism - 55% (primary): Real narrative parallel; the condition came from Satyavati's father, not from fear of a wife.
+- Kural 905 / real_life_example - 55% (secondary/secondary): Next-best only: the sources do not show that Gaozong acted from fear of Wu, and modern historians see Wu as a highly capable ruler, so the fit is partial.
+- Kural 906 / buddhism - 55% (primary): Parallel on longing rather than fear; the woman is his betrothed, not his wife.
+- Kural 907 / sikhism - 55% (web): Partial: it supports a woman's honour outshining men who lost their nerve, but the Kural's target is a man ruled by his wife, not deserters; Wikipedia was used as a last resort, and some details of her life are traditional.
+- Kural 907 / real_life_example - 55% (secondary/secondary): Next-best only: it shows a woman's worth exceeding a wavering man's, but Justinian was not running errands for his wife; the suppression of the riot was also very bloody, so details are kept brief.
+- Kural 908 / islam - 55% (primary): Paraphrased; matches the principle of ranking attachments, not friendship specifically.
+- Kural 908 / judaism - 55% (primary): Verified; the latter clause is widely discussed today as reflecting rabbinic-era gender attitudes.
+- Kural 909 / hinduism - 55% (primary): Good structural parallel on the three aims; Kautilya's precautions concern security more than marital submission.
+- Kural 909 / christianity - 55% (primary): Close thematic match; its interpretation as blaming women is widely contested in modern theology.
+- Kural 909 / sikhism - 55% (primary): Partial: it shares the framework of life's aims, which matches the Kural's aram, porul and inbam, but it gives the positive source of those aims rather than warning about domestic subservience.
+- Kural 910 / christianity - 55% (primary): Parallel on firmness; the temptation is adultery rather than marital subservience.
+- Kural 910 / buddhism - 55% (primary): Verified; parallel on mental discipline, with a monastic goal.
+- Kural 911 / greek_mythology - 55% (primary): Thematic match on adorned deceit; Hesiod blames womankind as a whole, which Valluvar does not, so the parallel is partial.
+- Kural 912 / hinduism - 55% (secondary): The plot is summarized from the standard Tawney translation but could not be re-checked live this session, so it is scored cautiously.
+- Kural 913 / buddhism - 55% (primary): Both use bodily, corpse-like images to break infatuation; the Buddhist point is impermanence, not insincerity.
+- Kural 914 / judaism - 55% (primary): Shares the redefinition of wealth; contentment is not the same as arul (compassion).
+- Kural 915 / buddhism - 55% (primary): General teaching on lust; does not stress intelligence or the ‘common’ quality the Kural names.
+- Kural 915 / real_life_example - 55% (primary/secondary): Next-best only: the young woman was a captive, not someone offering her favours for money, and the episode rests on Polybius's ancient account; later versions such as Livy's add a fiancé.
+- Kural 918 / islam - 55% (primary): Shares the concept of delusive pleasure; general rather than specific.
+- Kural 919 / buddhism - 55% (primary): Shared ‘sticky trap’ imagery; the Dhammapada speaks of craving in general.
+- Kural 921 / islam - 55% (primary): Verified verbatim (including the source's spelling 'alters'); the link is general prosperity rather than the specific loss of awe.
+- Kural 922 / judaism - 55% (primary): Limited to priests on duty in the sanctuary; a partial parallel only.
+- Kural 925 / judaism - 55% (primary): Verified; it shares the self-wasting idea but not the buying image.
+- Kural 927 / hinduism - 55% (primary): Paraphrase without a verified verse number; a harsh legal parallel to social ridicule.
+- Kural 927 / christianity - 55% (primary): Verified; public exposure is present, but secrecy and mockery are not.
+- Kural 927 / islam - 55% (secondary): Paraphrased from memory without a verified hadith number; it adds a counterpoint of mercy.
+- Kural 929 / christianity - 55% (primary): Verified; explains why reasoning fails, without the image.
+- Kural 929 / sikhism - 55% (primary): Verified verbatim via BaniDB/SikhiToTheMax; it shares the idea that reasoning is futile, but it concerns fools in general and has none of the Kural’s vivid simile, so this is a next-best match.
+- Kural 929 / real_life_example - 55% (secondary/secondary): The sources document the family's distress and attempts at control rather than specific reasoned appeals, so the fit to futile reasoning is partial.
+- Kural 930 / jainism - 55% (primary): Verified verbatim; the rhetorical appeal to self-recognition by comparison is parallel, but the comparison is with virtuous people rather than with another drunkard, and liquor is not mentioned.
+- Kural 932 / philosophy - 55% (primary): Verified verbatim; a moral judgment rather than an account of net loss.
+- Kural 933 / christianity - 55% (primary): Verified verbatim; about general dissipation, not gambling specifically.
+- Kural 933 / philosophy - 55% (primary): Verified verbatim; about diversion in general, with no direct claim about loss of wealth.
+- Kural 934 / jainism - 55% (primary): Verified verbatim; it captures wealth squandered through indulgence and the resulting grief, but it does not name gambling or loss of renown, so it is a next-best match.
+- Kural 935 / philosophy - 55% (primary): Verified verbatim; it covers the craft but not the ending in destitution.
+- Kural 937 / judaism - 55% (primary): Verified verbatim; a general maxim that does not mention gaming or character.
+- Kural 939 / judaism - 55% (primary): Verified verbatim, including Steinsaltz's gloss; the five goods are implied rather than named.
+- Kural 940 / christianity - 55% (primary): Verified verbatim; it captures the compulsion but not gambling or the soul-and-body comparison.
+- Kural 941 / sikhism - 55% (primary): Partial: the verse shares the idea of a body made of elements headed by air, but its point is the body's impermanence and the mind's fickleness, not a medical theory of excess and deficiency.
+- Kural 941 / real_life_example - 55% (secondary/secondary): Next-best: the event illustrates the excess-or-deficiency idea of disease, but it concerns a vitamin, not the three humours of Ayurvedic and Siddha theory.
+- Kural 943 / sikhism - 55% (primary): Partial: the verse supports the commentators' gloss on the precious human body, but it says nothing about measured eating or long life, and its aim is meeting God rather than physical health.
+- Kural 946 / jainism - 55% (primary): Verified verbatim on sacred-texts.com; parallel structure of overeating inviting harm, but the harm is passion, not illness.
+- Kural 948 / christianity - 55% (primary): Verified verbatim on sacred-texts.com; honours medical skill and timing, but has no disease-cause-remedy sequence.
+- Kural 949 / christianity - 55% (primary): Verified verbatim on sacred-texts.com; shares individualisation, but is addressed to the self, not to a physician.
+- Kural 949 / islam - 55% (primary): Paraphrase, not verified live; supports the learned physician but not the weighing of patient, disease and season.
+- Kural 950 / sikhism - 55% (web): Partial: the story matches only the attendant and the remedy, not the Kural's full fourfold scheme; it comes from Sikh tradition, and Wikipedia is used here as a last resort for a paraphrase.
+- Kural 951 / sikhism - 55% (primary): Partial and partly a counterpoint: Sikhism rejects birth and caste as the source of virtue, so it shares the Kural's values while disagreeing with the literal claim that they belong to good lineage.
+- Kural 959 / jainism - 55% (primary): Paraphrased, not re-verified this session; a next-best match, since the Jain text stresses deeds over words and rejects birth-based class.
+- Kural 961 / greek_mythology - 55% (primary): Partial fit: loyalty and household honour rather than refusing an indispensable act.
+- Kural 963 / judaism - 55% (primary): Covers only the prosperity half; paraphrased.
+- Kural 963 / greek_mythology - 55% (primary): Illustrates the prosperity half by counterexample; legend recorded by a historian rather than myth proper.
+- Kural 964 / islam - 55% (primary): Shares the idea of fall from high estate; theological framing and no image of contempt.
+- Kural 964 / greek_mythology - 55% (primary): Fits the fall-from-esteem image; Homer gives no reason for his fall, which later tradition attributes to pride.
+- Kural 966 / christianity - 55% (primary): Partial fit on refusing to live as a people-pleaser; does not address being scorned.
+- Kural 967 / greek_mythology - 55% (primary): Fits the death-over-submission choice; her motive is sacred duty to the dead rather than self-respect.
+- Kural 969 / christianity - 55% (primary): Fits only the value-above-life element; Christianity honours enduring martyrdom, not choosing death, and does not permit self-killing.
+- Kural 969 / judaism - 55% (primary): Shares 'value above life' but limits it to three sins; Judaism does not permit self-killing over dishonour.
+- Kural 970 / christianity - 55% (primary): Matches lasting witness after death; the cause is faith, not honour.
+- Kural 970 / jainism - 55% (secondary): Matches the image of reverence; the object is dharma and self-control, not worldly honour. Paraphrased.
+- Kural 975 / christianity - 55% (primary): Verified verbatim; next-best match, since the strength is God-given and the context is contentment rather than achieving rare deeds.
+- Kural 984 / greek_mythology - 55% (primary): Paraphrased; next-best match, since it is a Latin poet's portrait of a Greek philosopher and addresses only the first clause.
+- Kural 986 / hinduism - 55% (primary): Verified verbatim on vedabase.io; next-best match, since the Gita's equanimity concerns battle and duty, not yielding gracefully to an inferior.
+- Kural 989 / greek_mythology - 55% (primary): Paraphrased; next-best match, since Odysseus' endurance is strategic self-control rather than unchanging moral perfection.
+- Kural 992 / hinduism - 55% (primary): Verified verbatim on vedabase.io; it values good birth as a fruit of merit, but says nothing about loving kindness or courtesy as such.
+- Kural 992 / greek_mythology - 55% (primary): Paraphrase from memory, not re-verified this session; it matches the good-birth element but not the element of love.
+- Kural 996 / hinduism - 55% (primary): Verified verbatim on vedabase.io; it shares the 'world would collapse' structure, but the sustaining agent is Krishna's dutiful action, not courteous humans.
+- Kural 999 / real_life_example - 55% (secondary/secondary): Next-best only: the event illustrates the kural by contrast rather than directly, and the truce also appears elsewhere in the book.
+- Kural 1000 / christianity - 55% (primary): Verified verbatim; a close image but a different application, so only a partial match.
+- Kural 1012 / jainism - 55% (primary): Verified verbatim on sacred-texts.com; a partial fit, since it speaks of self-control and the Law rather than of shame.
+- Kural 1020 / sikhism - 55% (primary): Next-best match: the puppet image is close, but Ravidas applies it to every mortal caught in Maya, not specifically to people without shame, and the Kural's pun on naan (shame and string) has no parallel.
+- Kural 1022 / jainism - 55% (primary): Paraphrase of a very well-known sutra, not checked verbatim this session; the structural parallel is real but the aims differ, so it is a next-best match.
+- Kural 1023 / buddhism - 55% (primary): Verified verbatim; it matches the stress on personal resolve but rejects the divine-help half of the couplet.
+- Kural 1030 / sikhism - 55% (primary): Next-best match: it states the converse of the Kural, and the protector is God rather than a capable member of the family.
+- Kural 1032 / buddhism - 55% (primary): Paraphrased from the verified opening of the sutta; the Buddha goes on to reject the claim that the farmer is superior, so this is only a partial fit.
+- Kural 1032 / greek_mythology - 55% (primary): Verified verbatim; Hesiod condemns the idle, while the Kural only notes that the farmer supports non-farmers, so the fit is partial.
+- Kural 1034 / judaism - 55% (primary): Verified verbatim on Sefaria; it pairs agricultural plenty with a strong kingdom but lacks the idea of drawing in other realms.
+- Kural 1036 / real_life_example - 55% (secondary/secondary): Next-best fit: it shows rulers' dependence on farmers, but the kural's point about ascetics depending on farmers' labour is not illustrated.
+- Kural 1039 / islam - 55% (primary): Verified verbatim on sunnah.com; it encourages working one's own land, but its main context is renting land for a share of the crop, not neglect.
+- Kural 1041 / jainism - 55% (primary): Verified verbatim on sacred-texts.com; a contrast rather than a parallel, since it concerns voluntary ascetic hunger, not involuntary destitution.
+- Kural 1041 / sikhism - 55% (primary): Next-best: Kabir shares the Kural's sense that poverty is the gravest want, but he reframes it spiritually, which the Kural does not; only the opening half-line is quoted verbatim, the rest is paraphrase.
+- Kural 1041 / greek_mythology - 55% (primary): Verified verbatim on sacred-texts.com; it shows how dreaded poverty was, but does not explicitly rank it above all other sorrows.
+- Kural 1041 / philosophy - 55% (primary): Verified verbatim on classics.mit.edu; a deliberate counterpoint, not an endorsement of the Kural’s claim.
+- Kural 1041 / real_life_example - 55% (secondary/secondary): Next-best: the book treats poverty as the supreme ill of a nation, but the kural's point is a reflective comparison of personal sorrows rather than an economic argument.
+- Kural 1043 / hinduism - 55% (primary): Verified verbatim on vedabase.io; it concerns desire in general, not poverty or family honour.
+- Kural 1043 / christianity - 55% (primary): Verified verbatim; it addresses craving for riches rather than the craving born of poverty, and says nothing of lineage.
+- Kural 1043 / judaism - 55% (primary): Verified verbatim on Sefaria; it addresses craving, not the loss of family honour.
+- Kural 1043 / philosophy - 55% (primary): Verified verbatim on classics.mit.edu; a counterpoint on loss of standing, not specifically about poverty.
+- Kural 1045 / christianity - 55% (primary): Verified verbatim; the ‘afflicted’ (Hebrew ʿani, also ‘poor’) supports the link, but the verse is general.
+- Kural 1045 / sikhism - 55% (primary): Next-best: shares the picture of hunger bundled with many other sufferings, but Guru Nanak's point is surrender to hukam, a different emphasis from the Kural's lament.
+- Kural 1047 / greek_mythology - 55% (primary): Paraphrased from general knowledge of Metamorphoses 8, not verified against a live text in this session; concerns strangers, not one’s own mother.
+- Kural 1048 / christianity - 55% (primary): Verified verbatim; a response to the Kural’s fear rather than a parallel to it.
+- Kural 1048 / islam - 55% (primary): Verified verbatim on alquran.cloud; a consoling counterpoint rather than a description of poverty.
+- Kural 1049 / sikhism - 55% (primary): Next-best: the shared image is affliction as fire, but Farid speaks of universal suffering, not specifically of poverty or sleeplessness.
+- Kural 1049 / real_life_example - 55% (secondary/web/web): Next-best: the book documents the restless nights of the destitute, but the sources consulted do not single out sleeplessness, which is the kural's precise image.
+- Kural 1050 / buddhism - 55% (primary): Verified verbatim on accesstoinsight.org; a general counsel of contentment, not a call to renounce.
+- Kural 1054 / philosophy - 55% (primary): Verified verbatim on Wikisource (inner quotation marks normalised); next-best only, since the point is the giver's motive, not the dignity of asking.
+- Kural 1056 / jainism - 55% (secondary): Next-best only: the fourfold dana is standard Jain teaching but was not verified verbatim this session, and the Kural's focus on the giver's mere sight is missing.
+- Kural 1056 / philosophy - 55% (primary): Next-best paraphrase; not verified verbatim this session; it addresses promptness rather than the relief brought by the giver's presence.
+- Kural 1058 / real_life_example - 55% (secondary/secondary): Next-best: a scholarly work that parallels the kural's idea about giving and receiving rather than a dramatic event.
+- Kural 1060 / judaism - 55% (primary): Next-best paraphrase, not re-verified verbatim this session; it concerns contentment and self-mastery generally, not refusal.
+- Kural 1060 / real_life_example - 55% (secondary/secondary): Next-best: the sources document the refusal and his later return, but not his feelings about being refused.
+- Kural 1066 / hinduism - 55% (primary): Paraphrase; the moral that 'begging makes even Vishnu a dwarf' is traditional interpretation rather than the Purana's own statement.
+- Kural 1066 / real_life_example - 55% (primary/secondary): Next-best: Washington describes the difficulty of asking for a good cause but presents it as duty rather than as degrading.
+- Kural 1068 / hinduism - 55% (primary): Paraphrase not re-verified this session; it concerns the refuser's fate rather than the wrecking of the asker's hope.
+- Kural 1069 / hinduism - 55% (primary): Paraphrase not re-verified this session; the verse is about sacrificial sharing, a partial fit for refusal to the needy.
+- Kural 1069 / sikhism - 55% (primary): Next-best match: it shares the link between greed and destruction but not the Kural's focus on the feelings of the person who has to ask.
+- Kural 1070 / sikhism - 55% (primary): Partial fit on the emptiness of the hoarder's position; the verse sits in Guru Nanak's hymns on Babur's invasion and is not about refusing beggars.
+- Kural 1070 / philosophy - 55% (primary): Paraphrased from Book IV on classics.mit.edu without exact quotation; a next-best match without the Kural's moral outrage.
+- Kural 1070 / real_life_example - 55% (primary/secondary): Next-best: the colonists were petitioners rather than beggars, and the link between the refusal and Britain's later loss is interpretive.
+- Kural 1072 / sikhism - 55% (primary): Partial fit: it explains why the careless seem untroubled, but it speaks of the whole worldly-minded world, not of base people in particular, and lacks the Kural's sarcasm.
+- Kural 1074 / greek_mythology - 55% (primary): General paraphrase, not verified this session; Greek literature rather than myth, and only a next-best match.
+- Kural 1076 / hinduism - 55% (primary): Verified verbatim on sacred-texts.com; only a next-best match, since it praises secrecy in statecraft rather than condemning a gossip, and Manu's list of likely betrayers (7.149-150) reflects the prejudices of its era.
+- Kural 1084 / greek_mythology - 55% (primary): Paraphrase not checked against a live text; the deadly gaze matches, but Medusa is monstrous and the Kural's girl is not.
+- Kural 1084 / philosophy - 55% (primary): Paraphrase not checked against a live text; the gentle-and-fierce paradox matches only loosely.
+- Kural 1084 / real_life_example - 55% (secondary/secondary): Captures the contrast between a gentle figure and a powerful gaze, but it is a painting rather than a lived love story.
+- Kural 1085 / christianity - 55% (primary): Verified verbatim (bolls.life KJV); only the deer image matches, with no three-fold look.
+- Kural 1085 / islam - 55% (primary): Verified verbatim via the quran.com API; the gazelle comparison belongs to the commentaries, not the verse, so the match is partial.
+- Kural 1086 / buddhism - 55% (primary): Paraphrase of a well-known story, not checked against a live text; it fits guarding the eyes, though from the opposite side.
+- Kural 1087 / christianity - 55% (primary): Verified verbatim (bolls.life KJV); shares modest covering, not the elephant image.
+- Kural 1087 / judaism - 55% (primary): Paraphrase, not checked word for word this session; it shares the protective covering at a first meeting.
+- Kural 1090 / greek_mythology - 55% (primary): Paraphrase not checked against a live text; the 'sight alone' element matches, but the myth is a cautionary tale about self-love.
+- Kural 1091 / sikhism - 55% (primary): Next-best match: it shares the paradox of a pain that is also a cure, but Guru Nanak is speaking of spiritual longing for God, not a lover's glance, and the two looks of the Kural have no direct equivalent.
+- Kural 1092 / judaism - 55% (primary): Verified on Sefaria; it values the courtship glance but goes on to tell the young man to look past beauty, and it is not a stolen glance.
+- Kural 1093 / greek_mythology - 55% (primary): Verified verbatim on theoi.com; it matches love growing through glances but lacks the bowed head.
+- Kural 1096 / sikhism - 55% (primary): Partial match: both say the inner meaning is known apart from the words, but in Gurbani it is God who knows the heart, not one lover reading another.
+- Kural 1097 / philosophy - 55% (primary): Paraphrase of the essay’s argument, not verified verbatim; it concerns friendship rather than love.
+- Kural 1098 / islam - 55% (primary): Verified via the quran.com API; a thematic fit on tender affection, not on the smile itself.
+- Kural 1099 / sikhism - 55% (primary): Partial match on the idea of a private experience that only insiders understand; Gurbani speaks of the spiritual taste of Naam, not of lovers' looks, and its love is spiritual rather than romantic.
+- Kural 1100 / christianity - 55% (primary): Verified verbatim (bolls.life KJV); it shares the ‘beyond words’ idea, but speaks of deeds rather than looks.
+- Kural 1101 / islam - 55% (primary): Verified verbatim on sunnah.com; it affirms delight in a wife and in scent but does not gather all five senses in her, so the match is partial.
+- Kural 1101 / jainism - 55% (primary): Verified verbatim on sacred-texts.com; the sense-by-sense scheme matches the Kural closely, but the Jain judgment is renunciation.
+- Kural 1102 / judaism - 55% (primary): Verified verbatim on Sefaria; the structural parallel is clear but the subject is divine sovereignty, not love.
+- Kural 1103 / islam - 55% (primary): Verified via the quran.com API; matches rest in the spouse but rejects the comparison with the next world.
+- Kural 1104 / christianity - 55% (primary): Verified verbatim (bolls.life KJV); shares the burning-and-relief idea, but Paul speaks pastorally and without the Kural’s delight.
+- Kural 1105 / hinduism - 55% (primary): Paraphrase, not checked verbatim this session; the ‘whatever is wished, when wished’ pattern matches, but the source is the Self, not a beloved.
+- Kural 1105 / judaism - 55% (primary): Paraphrase of a well-known aggadah, not checked verbatim this session; a good structural parallel in a non-romantic setting.
+- Kural 1106 / islam - 55% (primary): Paraphrase of a very well-known hadith, not re-checked verbatim this session; the reviving comfort of a spouse matches, without the romantic emphasis.
+- Kural 1106 / greek_mythology - 55% (primary): Paraphrase, not checked verbatim this session; the sprouting image is apt, but in context Hera is beguiling Zeus.
+- Kural 1107 / jainism - 55% (primary): Paraphrase of a well-established vow, not checked verbatim this session, and the exact sutra number is left out because it differs between editions; it matches the simile’s sharing, not its love theme.
+- Kural 1108 / greek_mythology - 55% (primary): Paraphrase, not checked verbatim this session; it matches inseparability, not the physical closeness of the image.
+- Kural 1109 / christianity - 55% (primary): Verified verbatim (bolls.life KJV); the quarrel-then-resolve idea fits, but the verse is general, not about lovers.
+- Kural 1110 / hinduism - 55% (primary): Paraphrase, not checked verbatim this session; matches the knowing-and-not-knowing half of the simile, not the love half.
+- Kural 1110 / buddhism - 55% (primary): Verified verbatim on accesstoinsight.org; matches the awareness of ignorance, not the love theme.
+- Kural 1111 / greek_mythology - 55% (primary): Verified verbatim on the MIT Internet Classics Archive; a general superlative of beauty with no flower or softness image.
+- Kural 1112 / philosophy - 55% (primary): Paraphrase of Hume’s well-known claim, not verified against the text this session; it explains the lover’s private standard rather than matching an image.
+- Kural 1114 / hinduism - 55% (primary): Verified verbatim on the Project Gutenberg text of Ryder’s translation; water-flower comparison shared, but Kalidasa makes her the lotus rather than shaming it.
+- Kural 1114 / islam - 55% (primary): Verified via the quran.com API (inner quotation marks changed to single quotes); the 'beyond comparison' idea fits, though the Qur’anic context is a test of virtue.
+- Kural 1118 / hinduism - 55% (primary): Verified verbatim on the Project Gutenberg text of Ryder’s translation; shares the beloved-as-moon gaze, without the Kural’s address to the moon.
+- Kural 1119 / philosophy - 55% (primary): Paraphrase, not verified word for word this session; Spinoza treats the exclusive wish critically, while the Kural treats it playfully.
+- Kural 1119 / real_life_example - 55% (secondary/secondary): The idea of love kept for one person's eyes fits, though the kural concerns the beloved's face being seen, not poems being shared.
+- Kural 1120 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; shares the praise of the feet but not the image of extreme tenderness.
+- Kural 1122 / real_life_example - 55% (secondary/secondary): The image of two beings joined as one fits the kural's body-and-life bond, but it is a royal statue whose exact purpose and queen's identity are not fully known.
+- Kural 1123 / real_life_example - 55% (secondary/secondary/web): The eye as the home of love links them, but the prince sent his own eye to her rather than clearing his eye to hold only her image.
+- Kural 1124 / jainism - 55% (primary): Paraphrase, not checked word for word and sutra numbering approximate; a precise doctrinal match to the experience, with the opposite evaluation.
+- Kural 1125 / hinduism - 55% (primary): Paraphrase of the play's plot; same theme of remembering and forgetting the beloved, approached through its opposite.
+- Kural 1126 / judaism - 55% (primary): Verified verbatim on Sefaria; same habit of keeping the beloved one always in view, directed to God.
+- Kural 1126 / real_life_example - 55% (primary/secondary): A wife keeping her absent husband always present fits, but she does it through his writings rather than an inner image held in her eyes.
+- Kural 1128 / real_life_example - 55% (secondary/secondary): Keeping the beloved, quite literally, at one's heart fits, but the kural is a living lover's tender joke, while this is a widow's memorial.
+- Kural 1129 / philosophy - 55% (primary): Paraphrase of a famous line, not verified against a published translation this session; a good fit on outsiders misreading love.
+- Kural 1130 / islam - 55% (primary): Verified verbatim via api.alquran.cloud; a good fit on condemning suspicious gossip.
+- Kural 1131 / judaism - 55% (primary): Verified verbatim on Sefaria; captures the overwhelming force of love but not the specific desperation of a rejected suitor.
+- Kural 1132 / christianity - 55% (primary): Paraphrase of the episode; the abandonment of decorum fits, but the love is penitent devotion, not romantic longing.
+- Kural 1132 / islam - 55% (primary): Paraphrase, wording not verified this session; Rumi's love is mystical, but the image of love stripping away one's covering matches the couplet.
+- Kural 1132 / philosophy - 55% (primary): Paraphrase of a famous passage, not checked word for word this session; a general philosophical fit.
+- Kural 1132 / real_life_example - 55% (secondary/secondary): Shows persistence after refusal, but nothing like a public act of shame is documented, so the fit to 'setting shame aside' is partial.
+- Kural 1133 / islam - 55% (secondary): Paraphrase of a hagiographic tradition not checked this session; the love is spiritual friendship, not romance.
+- Kural 1134 / real_life_example - 55% (secondary/secondary): Historians agree that Xuanzong withdrew from government under his consorts' influence, but traditional accounts that blame Yang Guifei for the rebellion are partly moralising, and the tragic ending goes beyond the kural; already used once elsewhere in the book (chapter 91).
+- Kural 1135 / islam - 55% (primary): Verified verbatim on quran.com; beauty causing pain is a fair match, but the Qur'anic scene is about Joseph's virtue, not shared love.
+- Kural 1135 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: it pairs ornaments with the pain of separation, but the sufferer is the adorned bride-soul longing for God rather than a man tormented by a jewelled girl, and the evening is not named.
+- Kural 1135 / real_life_example - 55% (secondary/secondary): Captures a lifelong love that one woman caused, but the 'evening sorrow' is an interpretation, since the sources do not describe Turgenev's feelings in detail; already used once elsewhere in the book (chapter 120).
+- Kural 1136 / buddhism - 55% (primary): Verified verbatim on Access to Insight; shares the sleepless night image but uses it as a metaphor for samsara.
+- Kural 1137 / buddhism - 55% (secondary): Paraphrase of commentarial tradition rather than early canonical text; matches the theme of dignified endurance.
+- Kural 1139 / philosophy - 55% (primary): Paraphrase from memory, not verified this session; a reasonable analytic parallel.
+- Kural 1141 / islam - 55% (primary): Verified verbatim via the quran.com API; a direct example of town gossip about love, but without the Kural’s twist that the gossip keeps the lover alive.
+- Kural 1142 / judaism - 55% (primary): Paraphrase of a well-known verse, not rechecked this session; it shares the theme of a rare woman’s worth, though it praises a wife rather than a beloved.
+- Kural 1147 / philosophy - 55% (primary): Paraphrase of Hume’s discussion of what increases the passions, not rechecked against the text this session; the general point fits well.
+- Kural 1147 / real_life_example - 55% (secondary/secondary): A parent's angry opposition fits well, but it was the bride's father rather than her mother, and the sources do not say that the opposition increased their love; this event is also used for kural 1133.
+- Kural 1149 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; strong on a promise of faithfulness broken in public, but the relationship is not romantic.
+- Kural 1149 / buddhism - 55% (primary): Verified verbatim on Access to Insight; same result (indifference to blame) from a very different cause.
+- Kural 1150 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: it shares the confident expectation that the beloved will grant the request, but lacks the Kural's scheming about rumour and elopement, and the trust is in God.
+- Kural 1151 / jainism - 55% (primary): Verified verbatim on sacred-texts.com (Jacobi’s diacritics simplified); a genuine Jain story of a woman forsaken by a departing groom, though its resolution is religious rather than romantic.
+- Kural 1152 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; shows an embrace shaped by fear of losing the beloved, though the Song’s mood here is triumphant rather than sorrowful.
+- Kural 1152 / philosophy - 55% (primary): Paraphrase of a well-known passage, not checked word for word this session; the same situation, approached with the opposite attitude.
+- Kural 1153 / jainism - 55% (primary): Verified verbatim on sacred-texts.com; the impermanence of joys fits well, though the verse speaks of pleasures in general, not of a beloved.
+- Kural 1154 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match by contrast only: the Kural is about a human husband breaking his reassurance, while Guru Arjan speaks of a Lord who cannot leave.
+- Kural 1155 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; the plea to stay matches, though the setting is hospitality, not a lover’s departure.
+- Kural 1155 / buddhism - 55% (primary): Verified verbatim on accesstoinsight.org; same diagnosis of the pain of parting, opposite remedy.
+- Kural 1157 / philosophy - 55% (primary): Paraphrase of the general content of the section, not checked word for word this session; a good thematic fit on bodily signs of love-sorrow.
+- Kural 1157 / real_life_example - 55% (secondary/secondary): The outward sign that broadcasts private grief to the public is a good parallel, but Albert's separation was by death, not a journey, and mourning dress was chosen rather than an involuntary bodily sign.
+- Kural 1158 / jainism - 55% (primary): Verified verbatim on sacred-texts.com; a genuine lament over separation from a beloved companion, though between brothers across rebirths.
+- Kural 1159 / real_life_example - 55% (secondary/secondary): The documented event is the writing of a famous poem, not a real separation, so it illustrates the kural's image through literature rather than through lived history.
+- Kural 1160 / real_life_example - 55% (secondary/secondary): A documented example of enduring an extremely long separation, fitting the literal reading; the kural's likely ironic tone (the heroine cannot bear it) is not reflected, and the marriage later ended after Mandela's release.
+- Kural 1161 / jainism - 55% (primary): Verified verbatim on archive.sacred-texts.com; a real image of an inward attachment that grows unseen, but the Jain text treats it as something to destroy, not to conceal.
+- Kural 1162 / buddhism - 55% (primary): Paraphrase of the story’s outline, not checked against Cowell’s translation this session; the hidden, shameful love-sickness matches, though the king’s love is for another man’s wife and he ends by mastering it.
+- Kural 1162 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match by contrast: the Kural honours the heroine's modesty (naan) as a virtue, while Guru Arjan tells the devotee not to be shy before the Lord.
+- Kural 1162 / philosophy - 55% (primary): Paraphrase of Stendhal’s general argument, not checked against a translation this session; it addresses modesty restraining love but not the specific double bind of the couplet.
+- Kural 1163 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: it shares the image of a body loaded with longing, but has nothing of the Kural's carrying-pole or its balance of love against shame.
+- Kural 1164 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; the image of sinking without support matches, though Peter is rescued and the sea is literal.
+- Kural 1164 / greek_mythology - 55% (primary): Paraphrase of a famous episode, not checked against a translation this session; the lost raft and the sea between spouses match, though the sea is literal.
+- Kural 1165 / hinduism - 55% (primary): Paraphrase of a well-known scene, not checked against a translation this session; the beloved as wounder matches, but Dushyanta’s rejection is far harsher than an absence.
+- Kural 1165 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; the wound from a friend matches, but the psalm describes betrayal, which is more than the husband’s absence.
+- Kural 1166 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; joy ending in heaviness matches, but the proverb is general wisdom, not about love.
+- Kural 1166 / islam - 55% (secondary): Paraphrase of the romance’s overall arc, not checked against a translation this session; a strong thematic match, though the work is Persian literature in an Islamic culture rather than scripture.
+- Kural 1166 / judaism - 55% (primary): Verified verbatim on Sefaria (JPS 1917); it matches love measured against waters and floods, but celebrates love’s strength rather than weighing its sorrow against its joy.
+- Kural 1167 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; the endless waves of longing match, but the longing is for God and there is no image of night or of searching for a shore.
+- Kural 1167 / philosophy - 55% (primary): Paraphrase of the section’s general content, not checked word for word this session; it matches the sleepless night, but is a clinical catalogue rather than a lover’s voice.
+- Kural 1169 / philosophy - 55% (primary): Paraphrase of Augustine’s analysis of time, not checked against a translation this session; it explains why waiting lengthens time but carries none of the Kural’s emotion.
+- Kural 1170 / jainism - 55% (primary): Paraphrase of the lecture’s narrative, not re-read this session; the woman who follows her departed beloved matches, but her journey is religious and the story does not dwell on tears.
+- Kural 1170 / greek_mythology - 55% (primary): Paraphrase of a famous opening line, not checked against a translation this session; the longing for real presence over distance matches, but there is no image of the mind travelling or of tears.
+- Kural 1170 / philosophy - 55% (primary): Paraphrase of the letter’s opening, not checked against Gummere’s translation this session; it shares the idea of the mind reaching an absent person, but finds it consoling where the Kural finds it painful.
+- Kural 1171 / islam - 55% (primary): Verified verbatim on sunnah.com (excerpted); the eyes-first chain of desire matches, though the hadith concerns illicit looking while the Kural’s love is for her own husband.
+- Kural 1171 / jainism - 55% (primary): Verified verbatim on sacred-texts.com; it shares the Kural’s placing of blame on one’s own sense faculty, though the Jain aim is dispassion while the Kural’s speaker still longs for her husband.
+- Kural 1172 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; a strong pattern of unconsidered looking followed by sorrow, though Eden concerns disobedience, not love.
+- Kural 1172 / judaism - 55% (primary): Verified verbatim on Sefaria (JPS 1917); the warning against following one’s eyes matches, though the verse is about covenant faithfulness, not marital love.
+- Kural 1172 / buddhism - 55% (primary): Verified verbatim on accesstoinsight.org (two separate lines joined); a vivid scene of infatuation through the eyes, though here the gazer is a would-be seducer, not a devoted wife.
+- Kural 1173 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; it captures the mixture of laughter and grief, though not the self-mockery directed at one’s own eyes.
+- Kural 1173 / jainism - 55% (primary): Verified verbatim on sacred-texts.com (Jacobi’s diacritics retained); a good image of delight turning to pain, though the Jain text condemns pleasure outright where the Kural only teases.
+- Kural 1173 / sikhism - 55% (primary): Verified verbatim via BaniDB (kabitt 670, first line; the translation names the bird a ruddy sheldrake); next-best match: the eager-then, deprived-now contrast fits, but there is no mockery of the eyes, which is the point of the Kural.
+- Kural 1173 / greek_mythology - 55% (primary): Paraphrase of a well-known episode, not checked against a translation this session; a close pattern of eager looking followed by tears, though Psyche’s look breaks a prohibition.
+- Kural 1174 / buddhism - 55% (primary): Verified verbatim on accesstoinsight.org; it names the root of her grief, but its counsel to be free of endearment runs against the Kural’s celebration of love.
+- Kural 1175 / hinduism - 55% (primary): Paraphrase of a well-known episode, not checked against a translation this session; strong on sleepless separation, though no sarga number is given and the lover is the husband.
+- Kural 1176 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; the sowing-and-reaping principle matches the Kural’s logic, though Paul speaks of moral judgment, not a lover’s wry satisfaction.
+- Kural 1179 / greek_mythology - 55% (primary): Paraphrase of well-known passages, not checked against a translation this session; the absence half is strong, but the reunion night is joyful rather than anxious.
+- Kural 1179 / real_life_example - 55% (secondary/secondary): The pattern of unrest both apart and together fits the kural, but the sources document the broken engagements and letters, not literal sleeplessness, and it is the man's unrest rather than the woman's.
+- Kural 1180 / judaism - 55% (primary): Verified verbatim on Sefaria (JPS 1917); it matches the heart showing in the face, though it lacks the Kural’s theme of an exposed secret.
+- Kural 1180 / greek_mythology - 55% (primary): Paraphrase of a well-known scene, not checked against a translation this session; strong on a hidden love betrayed by outward signs, though Phaedra’s love is illicit and tragic.
+- Kural 1181 / jainism - 55% (primary): Verified verbatim on sacred-texts.com; the grief of a forsaken bride fits, but Rajimati did not consent to the parting and her story leads to renunciation, not reunion.
+- Kural 1181 / greek_mythology - 55% (primary): Paraphrase of a well-known passage, not checked against a translation this session; consent and lonely grief match, though Homer does not dwell on pallor.
+- Kural 1182 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; the proud bodily mark of a beloved matches structurally, but Paul’s marks are of apostolic suffering, not love-sickness.
+- Kural 1184 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; remembrance followed by distress matches, though the psalmist’s longing is for God, not a spouse.
+- Kural 1185 / islam - 55% (primary): Paraphrase of famous opening lines, not checked against Nicholson’s text this session; separation as the origin of grief fits, though Rumi’s beloved is ultimately divine.
+- Kural 1185 / jainism - 55% (primary): Paraphrase checked against Jacobi’s text on sacred-texts.com; the departure scene fits, but Jainism presents it as a model of renunciation, not a cause for lament.
+- Kural 1186 / hinduism - 55% (primary): Paraphrase of well-known similes, not checked against a translation this session; sarga numbers are approximate and differ between editions.
+- Kural 1186 / greek_mythology - 55% (primary): Paraphrase of a well-known legend, not checked against a translation this session; the lamp-darkness-lovers link is striking, though the outcome is death, not pallor.
+- Kural 1187 / buddhism - 55% (primary): Verified verbatim on accesstoinsight.org; the pain of not seeing the dear one matches, though the Buddhist lesson is non-attachment.
+- Kural 1187 / greek_mythology - 55% (primary): Paraphrase of a well-known tale, not checked against a translation this session; a Latin novel retelling a Greek myth; the instant loss matches, but Psyche’s act is a broken prohibition.
+- Kural 1187 / real_life_example - 55% (secondary/secondary): Reasonable but partial: the refusal of even a brief separation fits, but the setting is a disaster and death rather than the ordinary absences the kural describes.
+- Kural 1188 / hinduism - 55% (primary): Paraphrase of a well-known scene, not checked against a translation this session; the misdirected blame fits, though Shakuntala’s case involves a curse, not pallor.
+- Kural 1190 / buddhism - 55% (primary): Verified verbatim on accesstoinsight.org; not finding fault with another matches, though the Dhammapada turns attention to oneself rather than to protecting a loved one.
+- Kural 1190 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: it shares the refusal to call another bad and the willingness to bear blame oneself, but it is a general teaching on humility and freedom from ego (haumai), not a wife protecting her husband's name.
+- Kural 1192 / islam - 55% (primary): Paraphrase of two nearby verses; the pairing is suggestive but the Qur’an does not itself make the comparison.
+- Kural 1192 / judaism - 55% (primary): Paraphrase of a well-known dictum; it matches love as life-giving, but lacks the rain image and is framed from the husband’s side.
+- Kural 1192 / philosophy - 55% (primary): Paraphrase; a cosmic rather than personal love, so only a partial fit.
+- Kural 1193 / hinduism - 55% (primary): Paraphrase of a well-known episode; it shows confidence born of mutual love, though Savitri’s trial is death rather than ordinary separation.
+- Kural 1193 / christianity - 55% (primary): Verified verbatim via bolls.life KJV (excerpt); love’s endurance fits, though the verse does not single out love that is returned.
+- Kural 1193 / judaism - 55% (primary): Verified verbatim on Mechon-Mamre (JPS 1917, excerpt); love’s strength fits, but the verse is not about separation or mutuality as such.
+- Kural 1193 / greek_mythology - 55% (primary): Paraphrase; mutual love sustaining a separated wife fits, though Homer does not phrase it as a ‘boast’.
+- Kural 1195 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa), two consecutive lines of one salok; next-best match and partly a contrast: both weigh love against what it returns, but the Kural voices a hurt lover's complaint while Guru Angad condemns love that keeps accounts.
+- Kural 1195 / real_life_example - 55% (secondary/secondary): Next-best fit: Turgenev's devotion is well documented, but how far Viardot returned his feelings is debated, so this is not a clear case of wholly unreturned love.
+- Kural 1196 / hinduism - 55% (primary): Paraphrase; matches the ideal of balanced, shared feeling, though the hymn concerns an assembly, not a couple.
+- Kural 1197 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; love-sickness fits, but there is no love-god and the love is not one-sided.
+- Kural 1197 / islam - 55% (primary): Paraphrase; the one-sided seizure of love fits, but the context is illicit desire, not a wife’s longing for her husband.
+- Kural 1197 / philosophy - 55% (primary): Paraphrase; the love-god’s wound matches, but Lucretius’ remedy runs against the Kural’s longing.
+- Kural 1199 / buddhism - 55% (primary): Paraphrase; good fit on the lingering sweetness of the beloved’s words, though the roles are reversed and the sutta’s aim is detachment.
+- Kural 1200 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; the urge to tell one’s love-pain fits, but the Song does not judge it futile.
+- Kural 1200 / islam - 55% (primary): Paraphrase of a famous passage; a partial fit, since Rumi’s longing is mystical and his listeners are not indifferent lovers.
+- Kural 1201 / real_life_example - 55% (secondary/web): Next-best fit: the letters show joy in remembering, but they also show the ache of separation, and the kural's comparison with wine is not reflected in the event.
+- Kural 1203 / philosophy - 55% (primary): Paraphrase of a specific proposition; it explains the Kural’s psychology rather than sharing its feeling.
+- Kural 1204 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; partial fit on holding the absent in one’s heart, without the romantic uncertainty.
+- Kural 1204 / buddhism - 55% (primary): Paraphrase of a canonical episode; the inner question is implied by later tradition rather than stated in the Vinaya.
+- Kural 1205 / islam - 55% (secondary): General paraphrase of the treatise’s themes, chapter numbers not checked live; thematically apt but not a specific matching passage.
+- Kural 1205 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: it shares the beloved's constant presence in the mind, but lacks the Kural's playful accusation that he barred her from his heart, which has no Gurbani counterpart.
+- Kural 1206 / judaism - 55% (primary): Verified verbatim on Sefaria (JPS 1917); parallel use of memory in distress, but addressed to God, not a spouse.
+- Kural 1208 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; partial fit on love’s freedom from anger, without the Kural’s playful point about remembrance.
+- Kural 1208 / islam - 55% (primary): Paraphrase of a well-known hadith, wording not checked live; good fit on remembrance welcomed by the beloved, in a theological frame.
+- Kural 1209 / jainism - 55% (primary): Paraphrase of a well-known Jain narrative, not re-checked live; the abandonment parallels the Kural, but Jainism honours the renunciation she mourns.
+- Kural 1210 / philosophy - 55% (primary): Paraphrase of a specific letter; parallel on mediated presence of the absent, though about letters and friendship.
+- Kural 1212 / hinduism - 55% (primary): Paraphrase of a well-known episode; good fit on telling the absent husband of one’s survival, though Sita speaks through a living messenger, not in a dream.
+- Kural 1212 / judaism - 55% (primary): Verified verbatim on Sefaria; strong match on sleeplessness blocking speech, though the psalm’s grief is religious, not romantic.
+- Kural 1213 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; reading the scene as a dream is an interpretive tradition, not explicit in the text.
+- Kural 1216 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; the ‘do not awaken’ refrain is commonly read as about love’s timing, so the match on waking is partly verbal.
+- Kural 1219 / hinduism - 55% (primary): Paraphrase of a well-known episode; good fit on outsiders who cannot understand a love they have not experienced, though Uddhava does not blame Krishna.
+- Kural 1221 / islam - 55% (primary): Verified verbatim via the quran.com API; the shared idea is nightfall as a dangerous hour, but the verse has nothing to do with lovers’ separation.
+- Kural 1222 / buddhism - 55% (primary): Verified verbatim on accesstoinsight.org; matches the pain of absence, but does not touch the Kural’s device of pitying nature as a fellow sufferer.
+- Kural 1223 / islam - 55% (primary): Verified verbatim via the quran.com API; matches prolonged grief of separation, but has no evening imagery and the relationship is parental.
+- Kural 1224 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; the pairing of evening shadows and enemy attack fits the image, but the context is a siege, not love.
+- Kural 1224 / islam - 55% (primary): Verified verbatim on sunnah.com; shares the image of evening as a time when harm advances, but concerns children and devils, not a lonely wife.
+- Kural 1224 / judaism - 55% (primary): Verified verbatim on Sefaria; matches night as an advancing destroyer, but the Psalm is about protection, not longing.
+- Kural 1224 / greek_mythology - 55% (primary): Paraphrase of a well-known genealogy; matches night as deadly, but has no connection to love or separation.
+- Kural 1226 / islam - 55% (primary): Verified verbatim via the quran.com API; a real parallel of the heart emptied by separation, but the bond is mother and child and there is no evening motif.
+- Kural 1226 / real_life_example - 55% (secondary/secondary): The contrast between life with and without the husband fits, but the separation is death rather than absence and the evening theme is missing.
+- Kural 1227 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: it shares the overwhelming power of separation's pain, but has nothing of the Kural's bud-to-bloom image, and Farid praises this longing for God as precious, a spiritual not romantic love.
+- Kural 1229 / jainism - 55% (primary): Verified verbatim on sacred-texts.com; matches suffering as universal, but its point is diagnosis of desire, not shared grief at dusk.
+- Kural 1229 / philosophy - 55% (primary): Paraphrase of a well-known argument; matches shared feeling through imagination, but Smith analyses sympathy rather than a lover’s projection.
+- Kural 1229 / real_life_example - 55% (secondary/secondary/web): Fits the picture of a whole town sharing grief at nightfall, but the grief is national mourning rather than a lover's longing.
+- Kural 1230 / christianity - 55% (primary): Verified verbatim via bolls.life KJV; matches wealth-seeking as a source of sorrow, though Paul speaks of the seeker’s own sorrows and the Kural does not condemn the husband.
+- Kural 1230 / islam - 55% (primary): Verified verbatim via the quran.com API; matches wealth as a distraction from what matters, though the Qur’an’s concern is the hereafter.
+- Kural 1230 / judaism - 55% (primary): Verified verbatim on Sefaria (quoted in part); matches wealth bringing worry, but Hillel means the owner’s own anxiety.
+- Kural 1230 / buddhism - 55% (primary): Verified verbatim on accesstoinsight.org (quoted in part); matches wealth and spouse as binding attachments, but recommends renouncing both.
+- Kural 1231 / real_life_example - 55% (secondary/primary): The pairing of a woman's fading beauty with flowers matches closely, but the poem does not say that the cause is an absent lover.
+- Kural 1232 / buddhism - 55% (primary): Paraphrase of a well-known sutta; good on tears of separation, though the Buddhist point is to end attachment, not to reproach a lover.
+- Kural 1234 / islam - 55% (secondary): Paraphrase of the story’s outline; good on wasting from separation, but it is Persian literature from a Muslim milieu, not Islamic scripture.
+- Kural 1235 / islam - 55% (primary): Verified verbatim via api.alquran.cloud (en.sahih); addresses a husband’s neglect, but as law and counsel rather than as a wife’s lament.
+- Kural 1235 / philosophy - 55% (primary): Paraphrase from the Jowett tradition; illuminates inconstant love, but reverses the Kural’s order, since there the bloom fades because the lover left.
+- Kural 1237 / islam - 55% (primary): Verified verbatim via api.alquran.cloud (en.sahih); parallel in directing a complaint to the one who can answer it, though Jacob’s recipient is God, not a lover.
+- Kural 1237 / judaism - 55% (primary): Verified verbatim on mechon-mamre.org (142:2 in Christian numbering); good on declaring one’s trouble to the one who can help, but addressed to God.
+- Kural 1238 / hinduism - 55% (primary): Paraphrase from general knowledge of the play, not verified this session; good on a husband’s tender recollection, but there is no detail of her paling when he loosens his hold.
+- Kural 1241 / islam - 55% (primary): Verified verbatim via api.alquran.cloud (en.sahih); shares the question of who can cure an affliction, but the verse concerns illness in general, not love-sickness.
+- Kural 1242 / jainism - 55% (primary): Verified on sacred-texts.com (Jacobi, Lecture 22; diacritics normalised); the episode shows the folly of unreturned longing, but from the side of the one who refuses, in a monastic setting.
+- Kural 1242 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: it shares the bride's lament over a distant Husband but deliberately contrasts with the Kural, since Gurbani never says the Lord lacks love, and the love meant is spiritual, not romantic.
+- Kural 1243 / hinduism - 55% (primary): Verified verbatim on asitis.com (first sentence of 2.11); the reproach of needless grieving fits, but Krishna’s reason (the soul’s immortality) is unrelated to love.
+- Kural 1243 / philosophy - 55% (primary): Paraphrase of the opening of the Enchiridion, not verified live; it offers a Stoic remedy for the situation rather than a parallel to the heroine’s feeling.
+- Kural 1245 / islam - 55% (primary): Verified verbatim via api.alquran.cloud (en.sahih), quoting only the verse’s latter part; the unreturned, unshakable love matches, but the Qur’an frames her passion as wrongful, unlike the Kural’s faithful wife.
+- Kural 1245 / buddhism - 55% (primary): Verified verbatim on accesstoinsight.org; it explains why she cannot let go, but recommends the very detachment she rejects.
+- Kural 1245 / real_life_example - 55% (secondary/secondary): Constancy toward a beloved who kept her at a distance fits, though Hugo did not turn away from her the way the kural's husband seems to.
+- Kural 1248 / greek_mythology - 55% (primary): Paraphrase of a famous myth, not verified live; Eurydice is dead rather than unwilling, so the fit is on following, not on indifference.
+- Kural 1250 / hinduism - 55% (primary): Verified verbatim on asitis.com; fits the harm of dwelling on the beloved in thought, though the Gita’s chain runs to anger and delusion rather than loss of beauty.
+- Kural 1250 / judaism - 55% (primary): Verified verbatim on Sefaria (JPS 1917); matches love-sickness, but in the Song the beloved is near, not one who has left.
+- Kural 1251 / islam - 55% (primary): Verified verbatim via api.alquran.cloud (en.sahih); shares the theme of passion overriding modesty, but the context is an illicit pursuit that Joseph refuses, so the moral frame differs sharply.
+- Kural 1251 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: it shares the image of a defence broken by a greater force, but what Kabir's storm destroys is doubt and Maya, not modesty, and the power is spiritual wisdom rather than love-longing.
+- Kural 1255 / jainism - 55% (primary): Verified verbatim on sacred-texts.com; an illustration by contrast, since Rajimati keeps the dignity the Kural’s heroine has lost.
+- Kural 1257 / real_life_example - 55% (secondary/primary): Next-best: the journal shows reserve giving way to openness in returned love, but it is a private diary, not a scene of shyness forgotten in the beloved's presence.
+- Kural 1259 / real_life_example - 55% (secondary/secondary): Next-best: separation followed by reunion fits the shape, but this was a broken engagement lasting over a year, not a brief lovers' sulk.
+- Kural 1261 / buddhism - 55% (primary): Verified verbatim on accesstoinsight.org; it names the same pain, but its counsel (avoid such attachment) runs against the Kural’s celebration of devoted longing.
+- Kural 1261 / jainism - 55% (primary): Verified verbatim on sacred-texts.com; a genuine Jain picture of a woman’s grief at separation, but Arishtanemi will not return, and the story goes on to praise Rajimati’s own renunciation.
+- Kural 1261 / real_life_example - 55% (secondary/secondary): Next-best: the long daily watch for a return is a vivid match, but it is a dog's loyalty, not a wife's longing, and there is no marking of days.
+- Kural 1262 / christianity - 55% (primary): Verified verbatim via bible-api.com (KJV); shares the refusal to forget, but the speaker is God and the bond is parental, not marital.
+- Kural 1263 / christianity - 55% (primary): Verified verbatim via bible-api.com (KJV); fits the structure of sustaining hope, but Paul speaks of cosmic redemption, not a spouse’s return.
+- Kural 1263 / jainism - 55% (primary): The existence and form of the poem were verified in Jacobi’s note on sacred-texts.com, but its text was not consulted; a later poem, not canonical scripture, and the beloved here never returns.
+- Kural 1265 / buddhism - 55% (primary): Paraphrase of commentarial narrative, not canonical sutta; partial fit, since the Buddha returns as a renunciant and the reunion leads to her own ordination later.
+- Kural 1265 / greek_mythology - 55% (primary): Paraphrase of a well-known scene; partial fit, since the separation was death rather than a journey and the roles of husband and wife are reversed.
+- Kural 1266 / real_life_example - 55% (secondary/secondary/secondary): Next-best: return ending long grief fits, but the sources describe the flights rather than family reunions, and the kural is about a single wife and husband.
+- Kural 1268 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) on 2026-10-10; partial: it shares the joyful homecoming and celebration, but the Kural's speaker is the husband eager to return from war, whereas in Gurbani the bride (the soul) welcomes the Lord; the love is spiritual.
+- Kural 1270 / jainism - 55% (primary): Verified verbatim on sacred-texts.com; a genuine picture of a forsaken woman’s despair, but the story resolves in renunciation rather than reunion.
+- Kural 1272 / jainism - 55% (primary): Verified verbatim on sacred-texts.com; a real Jain portrait of a virtuous, beautiful bride, though it is a brief description rather than praise of modesty above beauty.
+- Kural 1273 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) on 2026-10-10; next-best match: the thread image is shared, but Guru Arjan uses it for God's presence in creation, not for a lover's hidden intent showing through beauty.
+- Kural 1275 / islam - 55% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a fitting image of a token that heals grief, though the love is between father and son.
+- Kural 1275 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) on 2026-10-10; next-best match: the shared idea is a gift that heals sorrow, but the Naam is openly given spiritual medicine, not a lover's secret sign.
+- Kural 1275 / greek_mythology - 55% (primary): Paraphrase of a famous passage; matches the idea of a grief-curing medicine, but Helen’s is a literal drug, not a lover’s sign.
+- Kural 1276 / judaism - 55% (primary): Verified verbatim on mechon-mamre.org (JPS 1917); matches the sense of love outwardly shown but inwardly withheld, though Delilah’s motive is betrayal.
+- Kural 1276 / buddhism - 55% (primary): Verified verbatim on accesstoinsight.org; names the very fear the Kural shows, though the Buddhist answer is to give up attachment, not to read signs.
+- Kural 1277 / christianity - 55% (primary): Verified verbatim via bible-api.com (KJV); matches awareness of the beloved below conscious thought, but it senses his arrival, not his parting.
+- Kural 1278 / jainism - 55% (primary): Verified verbatim on sacred-texts.com; a fair match on immediate visible grief at a beloved’s departure, though Rajimati soon turns to renunciation herself.
+- Kural 1279 / jainism - 55% (primary): Paraphrase checked against the sacred-texts.com text; a fair match on following the beloved’s path, but reframed as renunciation.
+- Kural 1282 / jainism - 55% (primary): Paraphrase of a well-known verse not checked against a live translation in this session; a partial match, since the Jain text treats anger as a passion to be destroyed, not a lovers’ quarrel.
+- Kural 1282 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) on 2026-10-10; next-best match: both advise giving up anger for the sake of love, but the Kural's playful lovers' sulk (ūṭal) is not the moral anger (krodh) that Guru Nanak warns against.
+- Kural 1282 / philosophy - 55% (primary): General paraphrase of the treatise’s advice rather than a single precept; a partial match, more practical than passionate.
+- Kural 1282 / real_life_example - 55% (secondary/secondary): Shows love overriding everything else, but the kural is about not sulking with a partner, which this event does not involve; already used once elsewhere in the book (chapter 125).
+- Kural 1284 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) on 2026-10-10; next-best match: both show a heart irresistibly drawn to the beloved, but the Kural's comic forgetting of a planned sulk is absent; the love is spiritual.
+- Kural 1284 / real_life_example - 55% (secondary/secondary): Eagerness for reunion fits, but the sources do not record any intention to sulk that her heart overruled; already used once elsewhere in the book (chapter 125), and the Adamses also appear in kural 1286.
+- Kural 1285 / islam - 55% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a partial match on blame dissolving at meeting, but it is a brother’s forgiveness, not a lover’s blindness.
+- Kural 1287 / hinduism - 55% (primary): Verified verbatim on vedabase.io; a partial match on being swept away on water by the pull of the senses, though the Gita warns against it rather than accepting it.
+- Kural 1288 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) on 2026-10-10; next-best match: both accept pain for the sake of the beloved, but the Kural's craving like a drinker for wine (and its playful 'thief') has no parallel, and Gurbani elsewhere condemns intoxicants.
+- Kural 1289 / hinduism - 55% (primary): Paraphrase of a well-known episode and iconography; a partial match on love and flowers, but without the Kural’s point that few grasp love’s delicacy.
+- Kural 1289 / greek_mythology - 55% (primary): Paraphrase of a famous fragment; a partial match on ripeness and rarity, though Sappho’s image is a fruit, not a flower.
+- Kural 1290 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) on 2026-10-10; next-best match: the loving embrace is shared, but the Kural's sulk-then-surrender is absent, and in Gurbani it is the Lord who embraces the devotee; the love is spiritual, not romantic.
+- Kural 1290 / real_life_example - 55% (secondary/secondary): Reunion and eagerness fit, but the kural's playful displeasure has no counterpart here and the sources do not describe the meeting itself; already used once elsewhere in the book (chapter 127).
+- Kural 1293 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) this session; next-best: shares the idea that companions fail one in need, but Gurbani's point is detachment and reliance on God, not a lover's complaint against her own heart.
+- Kural 1304 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) this session; next-best: shares the call to answer hurt with gentleness, but lacks the Kural's marital setting and creeper image.
+- Kural 1305 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) this session; next-best: both speak of what truly adorns a loving relationship, but Farid's adornments are humility and forgiveness rather than pique, so the content differs. This is spiritual love for God, not romantic love.
+- Kural 1309 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) this session; next-best: shares the shade image for secure love, but has nothing of sulking. This is spiritual love for God, not romantic love.
+- Kural 1313 / buddhism - 55% (primary): Verified verbatim on accesstoinsight.org; a partial match explaining jealous fear, though the Buddha counsels letting go of attachment rather than enjoying love’s quarrels.
+- Kural 1314 / hinduism - 55% (primary): Paraphrase of a well-known chapter; an indirect match on comparison in love, and its divine setting differs from a single human marriage.
+- Kural 1314 / christianity - 55% (primary): Verified verbatim via bible-api.com (KJV); a contrast rather than a parallel, since Paul describes love that does not take offence.
+- Kural 1315 / christianity - 55% (primary): Verified verbatim via bible-api.com (KJV); a contrastive parallel on whether marriage outlasts this life, from a very different theology.
+- Kural 1315 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) this session; next-best: both assume rebirth and stress this present life, but the Kural is about a misread promise, while Gurbani urges spiritual effort now.
+- Kural 1316 / judaism - 55% (primary): Verified verbatim on mechon-mamre.org; a partial match on a delayed embrace, though the Song’s delay is not a word game about memory.
+- Kural 1319 / islam - 55% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a fair match on reconciling spouses, though the verse addresses real estrangement.
+- Kural 1319 / judaism - 55% (primary): Verified verbatim on mechon-mamre.org; a contrastive match, since the Kural shows the usual rule failing in the game of love.
+- Kural 1320 / jainism - 55% (primary): Verified verbatim on sacred-texts.com (Jacobi); a partial match on annoyance arising in the mind, from a teaching on detachment rather than love.
+- Kural 1320 / sikhism - 55% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) this session; next-best: both centre on whom one's gaze holds, but the Kural's humour of suspicion has no Sikh counterpart. This is spiritual love for God, not romantic love.
+- Kural 1324 / philosophy - 55% (primary): Paraphrase of a famous line (numbering from the Brunschvicg/Trotter order); a reasonable fit on the heart overriding resolve, though Pascal mainly means knowledge of God.
+- Kural 1326 / hinduism - 55% (primary): Paraphrase of the standard twofold division of śṛṅgāra; a solid theoretical parallel, though the Natyashastra does not rank one above the other.
+- Kural 1326 / greek_mythology - 55% (primary): Paraphrase of a famous fragment; a good match on bittersweet love, though Sappho does not compare quarrel and union.
+- Kural 1327 / jainism - 55% (primary): Paraphrase of a widely told Jain story (versions differ in detail); a good structural match, though the setting is spiritual, not romantic.
+- Kural 1330 / philosophy - 55% (primary): Paraphrase of Stendhal’s well-known theory; a reasonable fit on doubt resolved into deeper love, though his doubt is not a playful sulk.
+- Kural 66 / islam - 56% (primary): Verified verbatim, but this is an articulate miracle, essentially the opposite of the endearing unintelligibility that the Tamil word maḻalai denotes.
+- Kural 66 / real_life_example - 56% (secondary/primary): Shows a father deeply absorbed in his infant's early sounds and expressions, but the record is scientific rather than a comparison with music.
+- Kural 85 / philosophy - 56% (primary): A candidly weak match: Seneca's whole point is that one should *not* expect a return, whereas the Kural promises a spectacular one, so the traditions genuinely diverge here.
+- Kural 156 / sikhism - 56% (secondary): Next-best: endurance winning lasting renown fits, but the event concerns refusing to alter scripture rather than declining personal revenge, and the Kural's pleasure-of-revenge contrast is absent.
+- Kural 168 / sikhism - 56% (primary): Next-best: the fire image matches, but the verse does not mention envy destroying wealth, and Punjabi commentators (e.g. Sahib Singh) gloss the burning as worldly craving, while Sant Singh Khalsa's translation renders it as envy.
+- Kural 176 / sikhism - 56% (primary): Next-best: the verse attacks hypocrites who were never sincere, whereas the Kural describes a genuinely virtuous person falling; in Asa di Vaar Guru Nanak criticizes the hypocrisy of Hindu officials as well, so it is not aimed at Muslims alone.
+- Kural 194 / real_life_example - 56% (secondary/secondary): Lysenko's words were worse than merely useless, so the event goes beyond the kural, and his own moral decline is not something the sources describe in those terms.
+- Kural 210 / sikhism - 56% (primary): Next-best: both use the image of a path kept safe, but Guru Nanak's assurance rests on faith in the Name, not on avoiding evil deeds as such.
+- Kural 297 / sikhism - 56% (primary): Next-best: both make truthfulness the single sufficient aim. Japji reaches it through obedience to Hukam rather than unfailing truthful speech, and it dismisses ritual rather than virtuous deeds.
+- Kural 304 / sikhism - 56% (primary): Next-best: the verse matches anger as the inner enemy but not the Kural's specific image of anger killing laughter and joy, and it groups anger with other passions.
+- Kural 329 / sikhism - 56% (primary): Next-best: 'sucking blood' is a metaphor for exploitation (Sikh commentators read it as bribery and oppression), not literally the trade of killing animals that the Kural condemns.
+- Kural 394 / jainism - 56% (primary): Checked word for word on jainworld.com (verse 263). This is a next-best fit: it prescribes honour for the learned, but it is a monastic etiquette rule, not a description of the delight and longing their company creates.
+- Kural 397 / jainism - 56% (primary): Checked word for word on sacred-texts.com. This is a partial, next-best fit. The 'any village or town' idea matches, but the verse is about the monk's conduct and preaching, not about learning making every place one's own.
+- Kural 483 / sikhism - 56% (primary): Partial: the sense that nothing is impossible with means in hand fits, but the salok credits God's grace and says nothing about timing; its authorship is traditionally discussed.
+- Kural 538 / sikhism - 56% (primary): Partial: the warning against neglect is shared, but Kabir's essential duty is naam simran, not the royal duties of statecraft Parimelazhagar has in mind.
+- Kural 540 / sikhism - 56% (primary): Partial: sustained attention is shared, but the Kural's object is any chosen aim while Gurbani's is God and the fruit is inner peace.
+- Kural 556 / sikhism - 56% (primary): Next-best: Gurbani's ‘true kings’ are those who trade in the true Name, a spiritual sovereignty rather than the literal ruler whose fame the Kural discusses.
+- Kural 564 / sikhism - 56% (primary): Reasonable but partial: the people's ill verdict on the oppressor is shared, but the verse addresses any grasping person rather than a king, and does not predict a shortened reign.
+- Kural 688 / jainism - 56% (primary): Checked word for word on sacred-texts.com. Covers truthfulness and integrity only; purity from greed, supporters and boldness are not addressed, so scored below 60.
+- Kural 728 / jainism - 56% (primary): Checked word for word on sacred-texts.com. Next-best only: the verse shares the idea that learning should serve others but does not call learning useless when it is not communicated.
+- Kural 728 / sikhism - 56% (primary): Next-best: both call vast learning useless without something more, but Gurbani's missing element is the Name, not skill in public speech.
+- Kural 776 / jainism - 56% (primary): Checked word for word against Jacobi on sacred-texts.com. It shares the idea of reckoning days and counting idle ones as lost, but the measure is study of the Law, not wounds taken in battle.
+- Kural 790 / jainism - 56% (primary): Checked word for word against wisdomlib.org. The shared idea, that a friendship should not be weighed up, is only partial: the Kural objects to publicly boasting of closeness, while the stanza objects to privately judging a friend's qualities. Next-best match; Tamil Jain text.
+- Kural 826 / jainism - 56% (primary): Verified verbatim on wisdomlib.org. A Tamil Jain text and a next-best match: it is about testing friends' dispositions over time, not about how quickly a foe's fine words reveal themselves.
+- Kural 869 / jainism - 56% (primary): Checked word for word against Jacobi on wisdomlib.org. The battle image fits the foolish, fearful enemy well, but the text uses it only as a parable for monastic hardship and does not endorse the victor's joy that the Kural describes.
+- Kural 898 / real_life_example - 56% (secondary/secondary): Next-best only: it shows a seemingly permanent dynasty falling, but the revolution was a broad movement rather than the anger of particular great persons the kural describes.
+- Kural 908 / jainism - 56% (primary): Verified verbatim, but it is generic: it does not name a wife and does not mention friends. Next-best match only.
+- Kural 923 / real_life_example - 56% (secondary/secondary): Captures the pain drink causes to mothers and families, but the kural's argument from a mother's forbearance to the stricter judgement of the wise is not directly illustrated.
+- Kural 956 / hinduism - 56% (primary): Paraphrased; shares the value placed on family tradition, but it is Arjuna's argument that the Gita then answers, so it is a next-best match.
+- Kural 974 / real_life_example - 56% (secondary/secondary): Illustrates self-kept discipline as the source of greatness, but the kural's comparison is to chastity and moral self-guarding, which a sporting record only approximates.
+- Kural 1016 / hinduism - 56% (primary): Paraphrase, not verified live; it fits the refusal of the world, but what Nachiketas chooses is knowledge, not shame.
+- Kural 1016 / judaism - 56% (primary): Verified verbatim (opening clause omitted); it matches the protective-fence image but does not name shame among the fences.
+- Kural 1016 / greek_mythology - 56% (primary): Paraphrase not verified live; it fits a self-guarding honour preferred over worldly gain, but Homer frames it as fidelity rather than shame.
+- Kural 1017 / buddhism - 56% (primary): Paraphrase not verified live; it fits the life-below-integrity theme, but what is preserved is goodwill, not shame.
+- Kural 1023 / jainism - 56% (primary): Verified verbatim on sacred-texts.com; it shares the stress on one's own agency but denies the outside divine help the couplet pictures, so it is a next-best match.
+- Kural 1063 / buddhism - 56% (primary): Paraphrase not verified on a live page this session; it concerns idleness, not begging as such.
+- Kural 1065 / greek_mythology - 56% (primary): Paraphrase not verified on a live page this session; the story praises hospitality more than self-earned food.
+- Kural 1067 / hinduism - 56% (primary): Paraphrase not verified on a live page this session; it addresses the giver, not advice to the asker.
+- Kural 1068 / jainism - 56% (primary): Verified verbatim on wisdomlib.org; a Tamil Jain text that fits the hard-hearted patron but lacks the Kural's image of shipwreck.
+- Kural 1069 / philosophy - 56% (primary): Paraphrase not verified on a live page this session; it matches the first half of the Kural only.
+- Kural 1145 / sikhism - 56% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); partial fit on the intoxication image, with an honest conflict: Sikh teaching rejects alcohol outright, so it uses the Kural's toddy simile only to replace it with the 'wine' of the Name.
+- Kural 1147 / sikhism - 56% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); the allegorical structure (crop, water, field) closely matches, but what grows is the Name rather than love-sickness, and the inputs are virtues rather than gossip and scolding.
+- Kural 1148 / sikhism - 56% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa), quoted as a half-line; the fire-and-fuel image is close to the Kural's fire-and-ghee, but Gurbani applies it to the slanderer's insatiable envy rather than to love fed by gossip.
+- Kural 1161 / sikhism - 56% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: the principle fits, but Guru Nanak is speaking of a person's inner character (in context, greed and falsehood) coming to light, not of love that will not stay hidden.
+- Kural 1177 / sikhism - 56% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: it shares the tear-filled eyes of longing, but the Kural's mock-curse on the eyes has no parallel, and the love is spiritual.
+- Kural 1224 / sikhism - 56% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: both use a place of death in the setting of separation, but Farid's cremation ground is the loveless body, the reverse of the Kural's grieving wife, and his love is spiritual.
+- Kural 1231 / buddhism - 56% (primary): Paraphrase of a commentarial frame story, not verified against a live text this session; the renounced flowers fit, but Yasodhara’s austerity is a chosen discipline rather than involuntary wasting.
+- Kural 1237 / jainism - 56% (primary): Paraphrase; precise on the mental state of longing in separation, but Jainism treats it as something to overcome rather than to voice.
+- Kural 1242 / islam - 56% (primary): Verified verbatim via api.alquran.cloud (en.sahih), quoting the verse’s second half; the verse’s context is fighting, so the application to love is thematic only.
+- Kural 1245 / jainism - 56% (primary): Paraphrase of a well-attested Jain narrative, not verified live this session; the constancy matches, but the story’s point is the monk’s chastity and Kośā’s conversion.
+- Kural 1254 / buddhism - 56% (primary): Verified verbatim on accesstoinsight.org; the exposure-and-shame pattern fits, but Nanda’s motive is a promised reward, not love for a spouse, and the shame leads him to liberation.
+- Kural 1254 / philosophy - 56% (primary): Paraphrase of a famous argument; it fits the failure of self-command but not the public exposure the Kural stresses.
+- Kural 1256 / greek_mythology - 56% (primary): Paraphrase of a famous line; it fits being driven against one’s own judgement, but Medea is drawn toward a new love, not after one who has spurned her.
+- Kural 1257 / islam - 56% (primary): Verified verbatim via api.alquran.cloud (en.sahih); shares the idea of spousal intimacy without barrier, but the verse is a ruling about the nights of Ramadan, not about shyness.
+- Kural 1260 / judaism - 56% (primary): Verified verbatim on mechon-mamre.org (JPS 1917); good fit on a heart that melts at the sight of a loved one, though it is a brother’s love and he does regain control.
+- Kural 1273 / judaism - 56% (primary): Verified verbatim on mechon-mamre.org (JPS 1917); matches the idea of inner quality shining outward, though wisdom rather than love is meant.
+- Kural 1276 / greek_mythology - 56% (primary): Paraphrase of a well-known myth; matches abandonment after union, but Theseus’s desertion is a betrayal while the Kural’s husband leaves for duty.
+- Kural 1277 / buddhism - 56% (primary): Verified verbatim on accesstoinsight.org; matches the motif of ornaments and body signalling departure, but the departure is a deva’s death, not a lover’s leaving.
+- Kural 1280 / islam - 56% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a good structural match on dignified, wordless asking, though the context is poverty, not love.
+- Kural 1280 / judaism - 56% (primary): Verified verbatim on mechon-mamre.org (JPS 1917); matches a silent, effective entreaty, though Esther pleads for her people, not out of love-sickness.
+- Kural 1281 / islam - 56% (primary): Verified verbatim on sacred-texts.com (Whinfield’s abridged translation); a fair thematic match on love as intoxicating madness, though Rumi’s love is mystical and Sufi poetry is not scripture.
+- Kural 1288 / greek_mythology - 56% (primary): Paraphrase of a well-known scene; a partial match on reproach yielding to attraction, though Helen acts under divine compulsion.
+- Kural 1293 / jainism - 56% (primary): Paraphrase of the well-known Rajimati–Neminatha story; she follows him into renunciation rather than into married love, so the match is only partial.
+- Kural 1295 / greek_mythology - 56% (primary): Paraphrase of a short fragment; a partial match on love’s mixed sweetness and pain, without the Kural’s two-sided fear.
+- Kural 1296 / hinduism - 56% (primary): Verified verbatim on asitis.com; a fair match on a mind that agitates its owner, though Arjuna speaks of meditation, not grief in love.
+- Kural 1300 / christianity - 56% (primary): Verified verbatim via bible-api.com (KJV); a partial match on inner division, without the Kural’s comparison between one’s heart and strangers.
+- Kural 1303 / jainism - 56% (primary): Paraphrase of a standard sutra; a fair match on compassion for the afflicted, though Jainism frames it as a spiritual discipline, not marital tenderness.
+- Kural 1304 / islam - 56% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a general match on mercy sustaining marriage, without the Kural’s specific image of neglect.
+- Kural 1305 / islam - 56% (primary): Paraphrase of a well-known hadith, not verified verbatim this session; a fair match on a man’s worth shown in his home, without the Kural’s focus on pique.
+- Kural 1305 / judaism - 56% (primary): Verified verbatim on Sefaria (JPS 1917); a partial match on the beloved’s eyes ruling the lover’s heart, without the theme of pique.
+- Kural 1305 / greek_mythology - 56% (primary): Paraphrase of a famous scene; a fair match on a wife’s loving reproach honouring her husband, though her fear is for his life, not a lovers’ pout.
+- Kural 1307 / hinduism - 56% (primary): Paraphrase of the poem’s frame story; a fair match on anxiety for lost time together, though the separation is a curse, not a sulk.
+- Kural 1307 / jainism - 56% (primary): Paraphrase of the chapter’s teaching on attachment, not verified verbatim this session; a fair match on anxiety in love, with Jainism urging its removal.
+- Kural 1325 / christianity - 56% (primary): Verified verbatim via bible-api.com (KJV); a good match on the innocent lover kept waiting, though the Song does not call the delay pleasant.
+- Kural 233 / jainism - 57% (primary): Verified verbatim on sacred-texts.com; the shared structure (only one thing endures) is close, but Jain renunciant ethics does not value worldly renown, so the enduring thing is different.
+- Kural 1016 / sikhism - 57% (primary): Next-best match: the structure (refusing the world for something higher) is shared, but Guru Nanak's higher good is remembrance of the Name, not shame.
+- Kural 1026 / philosophy - 57% (primary): Verified verbatim on the MIT Internet Classics Archive (Jowett, Politics Book I, Part XIII). Next-best match: Aristotle analyses household rule rather than calling it the proof of manliness, and his account rests on hierarchies (over women and slaves) that the Kural does not share.
+- Kural 5 / islam - 58% (primary): Close in imagery (deeds transformed), though again tied to repentance from sin specifically, not a general teaching of transcending karma.
+- Kural 13 / hinduism - 58% (primary): A genuine drought-and-famine narrative, but the emphasis falls on the ritual remedy rather than on hunger itself as the Kural has it.
+- Kural 13 / buddhism - 58% (secondary): The famine-from-drought link is explicit, but it comes from commentary rather than canonical text, and the focus is on the protective chant.
+- Kural 14 / sikhism - 58% (primary): Verified verbatim; it shares the farmer, plough and water imagery and Sikh respect for agricultural labour (kirat karni), but it is a metaphor and does not make the Kural's point that ploughing stops in drought.
+- Kural 17 / jainism - 58% (primary): Verified verbatim on wisdomlib; next-best match, since the sutra concerns souls aiding one another, while the Kural's sea and cloud are not souls in that sense, and no Jain text found treats evaporation and rain this way.
+- Kural 19 / buddhism - 58% (primary): Genuine pairing of rain imagery with generosity, but rain here is a simile for how merit travels, not the condition that makes giving possible.
+- Kural 19 / sikhism - 58% (primary): Verified verbatim; it names the same two virtues and makes them conditional on something more basic, but that foundation is the Name, not rain, and Sikhism downplays austerity, which the Kural values.
+- Kural 22 / greek_mythology - 58% (primary): The match is with the Kural's simile rather than its point: Homer gives a vivid picture of the uncountable dead, but says nothing about ascetics.
+- Kural 25 / greek_mythology - 58% (primary): Fair rather than strong: the divine-certification structure is genuine, but Heracles endures labours imposed on him rather than quenching desire, and he is anything but continent.
+- Kural 35 / greek_mythology - 58% (primary): Powerful on envy alone; it does not address greed, anger or harsh speech, and offers no definition of virtue, so it is a partial match.
+- Kural 38 / christianity - 58% (primary): Honest partial match: good on daily non-wastage, but the entire second half of the Kural, about obstructing the path of further births, has no Christian counterpart.
+- Kural 50 / real_life_example - 58% (secondary/secondary): Next-best: a real person was literally counted among the gods, but little is known of how Imhotep lived, so the kural's link between right living and this honour cannot be shown.
+- Kural 54 / sikhism - 58% (primary): Next-best only: it shares the value of steadfast fidelity as an inner quality, but it addresses men and does not call a faithful wife a treasure, which is the Kural's actual claim.
+- Kural 55 / christianity - 58% (primary): The rain-at-a-word motif matches exactly, but Christianity has no analogue to the husband-as-sole-object-of-worship premise; scored low for that reason.
+- Kural 57 / sikhism - 58% (primary): Next-best only: the verse states the general principle (coerced goodness is worthless) but says nothing about women, seclusion or guarding; Sikh tradition's opposition to purdah fits the theme but could not be verified verbatim here.
+- Kural 59 / philosophy - 58% (primary): A real and interesting parallel on bearing-as-index-of-honour, but Aristotle never connects it to a spouse; the link is interpretive.
+- Kural 65 / sikhism - 58% (primary): Next-best only: it shares the bodily closeness of parent and child, but it does not speak of hearing the child, and the image serves as a metaphor for God's care rather than a statement about parental joy.
+- Kural 67 / sikhism - 58% (secondary): Next-best only: it shares the priority of educating the young, but it is a Guru's work for a whole community rather than a father's duty to his own son, and Britannica treats the schools as tradition rather than documented history.
+- Kural 69 / hinduism - 58% (primary): Paraphrase of a theme running through the epic rather than a single citable verse; thematically apt but diffuse, hence the modest score.
+- Kural 76 / buddhism - 58% (secondary): Honest low rating: Buddhism's mainstream commitment is to ahiṃsā, and this is a contested Mahāyāna edge case rather than a central teaching — the best available match, not a strong one.
+- Kural 77 / sikhism - 58% (primary): Next-best match only: the verse shares the idea that love is indispensable, but lacks the Kural's vivid image of righteousness scorching the loveless like the sun scorching a boneless worm.
+- Kural 90 / real_life_example - 58% (primary/secondary/secondary): Next-best only: a famous documented case of a guest turned away, but Anderson did not wither; she triumphed elsewhere, which partly cuts against the kural's image.
+- Kural 93 / sikhism - 58% (primary): Next-best: the verse praises God's sweet speech rather than defining human virtue, and it omits the Kural's welcoming face and kindly look.
+- Kural 94 / jainism - 58% (secondary): Verified verbatim on jainworld.com. It matches the universal scope (yaarmaattum), but it concerns forgiveness and friendship rather than speech, and has no counterpart to the Kural's promise of freedom from want. Next-best only.
+- Kural 96 / jainism - 58% (secondary): Verified verbatim on jainworld.com. It agrees on putting the hearer's benefit first but partly diverges on pleasantness, and says nothing of evil waning and virtue growing, so it is next-best.
+- Kural 97 / greek_mythology - 58% (primary): Accurate summary, but the passage concerns poetic authority rather than the ethics of everyday speech, so the connection is thematic only.
+- Kural 98 / jainism - 58% (primary): Verified verbatim on sacred-texts.com. The 'this world and the next' promise in 1.15 concerns self-mastery generally, not speech, so the link is a next-best combination.
+- Kural 114 / sikhism - 58% (primary): Next-best: shares the idea that a life's worth appears in its effect on descendants, but the saving is spiritual and the verse does not speak of justice or of revealing it.
+- Kural 117 / sikhism - 58% (primary): Next-best: affirms dignity in poverty but does not tie it to the poor person's fairness, and speaks of God's regard rather than the world's.
+- Kural 133 / greek_mythology - 58% (primary): Illustrative narrative rather than an explicit doctrine; the contrast is implicit.
+- Kural 134 / greek_mythology - 58% (primary): Illustrative parallel; Achilles recovers his standing by returning the body, so the ‘ruin’ is not permanent.
+- Kural 135 / jainism - 58% (primary): Verified verbatim on sacred-texts.com; only a partial match: it covers prosperity lost through misconduct and passion but says nothing specifically about envy (azhukkaaru).
+- Kural 135 / real_life_example - 58% (secondary/secondary): Next-best only: it illustrates that rank cannot be gained without right conduct, but it does not touch the kural's analogy with envy.
+- Kural 139 / sikhism - 58% (primary): Next-best: a command about truthful speech, not the Kural's point that habituated conduct makes evil speech impossible even in an unguarded moment.
+- Kural 139 / real_life_example - 58% (secondary/secondary): Next-best only: the book teaches the discipline of speech the kural praises, but it is a work of instruction rather than an event showing that discipline under test.
+- Kural 146 / hinduism - 58% (primary): Shares the enumerated-dangers form and lust as the root; the specific four consequences are not named.
+- Kural 148 / real_life_example - 58% (secondary/secondary): Next-best only: Charlotte was engaged rather than married, and Goethe had already pursued her for months before he withdrew, so the restraint was late and partial.
+- Kural 149 / buddhism - 58% (primary): Positive counterpart (cherishing one's own wife) rather than direct mention of avoiding another's.
+- Kural 152 / sikhism - 58% (primary): Next-best: shares the call to forgiveness, but lacks the Kural's two-step from bearing a wrong to forgetting it entirely.
+- Kural 160 / real_life_example - 58% (primary/web): Next-best only: it shows patient endurance of hostility, but the documented episode is about opposition rather than cruel words, and the kural's comparison with fasting has no counterpart in it.
+- Kural 167 / real_life_example - 58% (secondary/secondary/secondary): Next-best only: Li Si's rivalry with Han Fei is documented, but his own downfall came from a later power struggle, not directly from that envy.
+- Kural 187 / sikhism - 58% (primary): Next-best: the verse condemns harsh speech and praises sweet speech, but does not describe the Kural's specific harm of splitting friends and kin.
+- Kural 189 / real_life_example - 58% (secondary/secondary): Next-best only: Aretino's satire was largely open and signed rather than backbiting, though his comfortable life fits the kural's ironic wonder.
+- Kural 194 / sikhism - 58% (primary): Next-best: the verse contrasts talk with practice rather than saying empty talk actively removes one from goodness, and it is addressed to religious hypocrisy, not idle chatter.
+- Kural 195 / buddhism - 58% (primary): Kokālika’s fault is slander, not merely idle talk; the ‘self-cutting tongue’ image is the main shared element.
+- Kural 199 / real_life_example - 58% (secondary/web): The practice shows restraint of speech, but the kural describes an inner purity that needs no rule, which no outward habit can fully demonstrate.
+- Kural 202 / jainism - 58% (primary): Verified verbatim on wisdomlib.org; this is a Tamil Jain text, not canonical scripture. It is only a partial fit: the stanza is about bad company, and fire is a simile, not a measure of how much evil should be feared.
+- Kural 203 / real_life_example - 58% (secondary/secondary): The hostility here was between governments rather than a personal enemy who had harmed the giver, so the fit with non-retaliation is partial.
+- Kural 208 / real_life_example - 58% (secondary/primary): Ruin did follow the wrongdoers, but the shadow image of lifelong, inseparable consequence is only partly shown by a single fraud and its punishment.
+- Kural 209 / greek_mythology - 58% (primary): Paraphrase; about choosing a life-path, not avoiding small evils.
+- Kural 214 / real_life_example - 58% (secondary/secondary): Her life is a fine example of living for the world's good, but the kural's sharp contrast with those who are 'counted among the dead' has no direct counterpart in the event.
+- Kural 222 / jainism - 58% (primary): Verified verbatim on wisdomlib.org; this Tamil Jain text covers only the 'receiving is bad' half, not 'giving is good even without heaven'. It also sits uneasily with Jain monastic practice, where monks live on alms by rule.
+- Kural 223 / sikhism - 58% (primary): Partial: the verse describes God's limitless generosity, not a human giver's refusal to plead poverty, so the parallel works only as a model of ungrudging giving.
+- Kural 231 / sikhism - 58% (primary): Partial: Gurbani prizes service and righteous deeds but treats worldly praise with suspicion; attribution follows the usual ascription of Asa di Vaar's pauris to Guru Nanak, although BaniDB's line metadata tags these lines Mahala 2.
+- Kural 232 / sikhism - 58% (primary): Partial: both tie praise to giving, but Sikh teaching assigns ultimate praise to God as the only Giver rather than to human benefactors.
+- Kural 233 / sikhism - 58% (primary): Partial and partly contrasting: both start from the impermanence of the world, but Sikh teaching does not treat renown as the one thing that survives.
+- Kural 234 / christianity - 58% (primary): Shared idea of heaven honouring earthly deeds of giving; no notion of fame or of heaven preferring humans over its own.
+- Kural 234 / buddhism - 58% (primary): Shared idea of earthly deeds honoured beyond this world; the welcomer is one’s karma, not the gods, and fame is absent.
+- Kural 238 / sikhism - 58% (primary): Partial: both speak of a disgraced life, but the missing thing in Gurbani is the Name, not renown or a remembered legacy.
+- Kural 247 / jainism - 58% (primary): Verified verbatim on sacred-texts.com; next-best match. It shares the two-worlds structure, but the verse concerns a lax monk rather than compassion as such, and has no wealth/compassion parallel.
+- Kural 257 / sikhism - 58% (primary): Partial: both describe the killing in plain terms to expose it, but Kabir's 'only the clay' points to the soul surviving and to the uselessness of sacrifice, not to the creature's suffering as the Kural's 'wound' does.
+- Kural 265 / jainism - 58% (primary): Verified verbatim on sacred-texts.com; partial fit, since Jainism explicitly rejects performing penance for desired worldly results (nidāna), so only the 'tapas is effective' idea carries over.
+- Kural 274 / real_life_example - 58% (secondary/web): Next-best only: Demara hid behind trusted roles, including religious ones, but the documented harm to those he deceived is limited and the kural's predatory image is only partly matched.
+- Kural 279 / greek_mythology - 58% (primary): Illustrates appearance misleading and deeds revealing; no moral hypocrisy involved.
+- Kural 287 / sikhism - 58% (primary): Next-best: both reject calculating cleverness. Japji opposes it to God's Hukam rather than to the virtue of measure or restraint, and it does not speak of fraud.
+- Kural 294 / sikhism - 58% (primary): Next-best: the verse matches the Kural's demand for truth in the heart but not its promise of being cherished by everyone.
+- Kural 296 / buddhism - 58% (primary): Truthfulness confers honour; it is one mark among many rather than the source of all virtue.
+- Kural 300 / greek_mythology - 58% (primary): Truth’s supreme strength is dramatised; Teiresias speaks of prophetic truth, not truthfulness as a virtue.
+- Kural 306 / sikhism - 58% (primary): Next-best: the fire metaphor matches, but Gurbani's point is inner impurity, and the Kural's image of a raft of kinsmen is absent. The caste language is used ironically to reject outward notions of impurity.
+- Kural 313 / sikhism - 58% (primary): Next-best match: the verse describes freedom from enmity in general and does not speak of unprovoked hatred or of the grief that retaliation brings, which are the Kural's specific points.
+- Kural 313 / real_life_example - 58% (secondary/secondary): Next-best only: Becket's opposition was a matter of principle rather than unprovoked hatred, and Henry's responsibility for the killing is disputed.
+- Kural 321 / greek_mythology - 58% (primary): Paraphrase; thematic parallel on the cascading consequences of bloodshed, though Greek myth focuses on kin-killing rather than all killing.
+- Kural 323 / islam - 58% (primary): Verified on quran.com; supports the high ranking of non-killing but does not pair it with truthfulness.
+- Kural 323 / real_life_example - 58% (secondary/secondary/secondary): Next-best only: it shows the protection of life outranking full openness, but the kural's ranking is a principle and Gies's concealment was from persecutors, which most ethics would not count as lying.
+- Kural 325 / christianity - 58% (primary): Structural parallel (renunciation ranked below an ethical virtue); the virtue named is love, not non-killing.
+- Kural 325 / islam - 58% (primary): Verified on sunnah.com; supports fear of killing as paramount, but does not compare it with renunciation.
+- Kural 326 / christianity - 58% (primary): Thematic parallel (peaceable conduct and long life); not specific to non-killing.
+- Kural 329 / christianity - 58% (primary): Parallel judgement on the killer’s standing; concerns murder of humans, not killing as a trade.
+- Kural 329 / islam - 58% (primary): Verified on quran.com; scope is intentional killing of a believer, not killing as an occupation.
+- Kural 329 / real_life_example - 58% (web/secondary/secondary): Next-best only: it condemns killing as a trade, but historians debate whether the motive was moral, and the gladiators themselves were often forced into it rather than choosing it.
+- Kural 330 / christianity - 58% (primary): Parallel on retribution for violence; no doctrine of rebirth, and John 9:3 cautions against reading illness as punishment.
+- Kural 330 / islam - 58% (primary): Verified on quran.com; general moral causation, not specific to killing or former births.
+- Kural 341 / real_life_example - 58% (secondary/secondary): Next-best: it illustrates step-by-step relinquishment, but the sources describe Gandhi's motive as solidarity with the poor rather than release from personal suffering, which is the kural's precise claim.
+- Kural 351 / real_life_example - 58% (web/secondary): A clear case of the false being taken for the real and breeding further error, but the kural's subject is spiritual delusion and rebirth, which a scientific hoax can only mirror.
+- Kural 357 / greek_mythology - 58% (primary): Paraphrase. A philosophical myth rather than traditional mythology; wisdom reduces forgetfulness but does not end rebirth in the Er story.
+- Kural 362 / real_life_example - 58% (secondary/web): The flight is well documented, but Tolstoy's precise motives were complex and are partly a matter of interpretation, including family strains.
+- Kural 363 / real_life_example - 58% (secondary/secondary): A documented renunciation of supreme power, but the sources do not establish that Diocletian acted from inner freedom from desire rather than age, illness or policy.
+- Kural 373 / jainism - 58% (primary): Checked word for word on sacred-texts.com. This is an interpretive bridge, so it is scored below 60. The kural credits one's native understanding to fate, while the Jain text describes the soul's innate omniscience being uncovered by dispassion. The resemblance is real but not one-to-one.
+- Kural 375 / sikhism - 58% (primary): Next-best: the reversal of good and bad is shared, but Guru Nanak speaks of spiritual benefit, whereas the Kural concerns success and failure in gaining wealth.
+- Kural 379 / real_life_example - 58% (secondary/secondary): Shackleton's composure in disaster is well documented in outline, but the sources record his actions more than his inner equanimity, so the fit is partly inferred.
+- Kural 381 / real_life_example - 58% (secondary/secondary): Next-best: the event recovers a text that sets out the same theory of the state's limbs, but it is a scholarly discovery rather than a ruler who actually possessed all six and stood like a lion among kings.
+- Kural 383 / sikhism - 58% (primary): Next-best: the vigilance meant is spiritual watchfulness against vice and maya, not a ruler's promptness, and learning and resolve, the Kural's other two qualities, are not covered.
+- Kural 386 / jainism - 58% (primary): Checked word for word on wisdomlib.org (Jacobi). It matches only the 'not harsh in speech' half of the kural. The ease of approaching the king has no direct Jain parallel here.
+- Kural 403 / sikhism - 58% (primary): Partial: Gurbani values restraint in speech, but this line addresses everyone and is not about the unlearned keeping silent before scholars.
+- Kural 405 / jainism - 58% (web): Paraphrased from a Jain educational retelling, not primary scripture. Indrabhuti was a great scholar, not an unlearned man, so the story matches only the 'pride melts before the truly learned' part of the kural.
+- Kural 413 / real_life_example - 58% (secondary/secondary): Captures the kural's linking of hearing with sacrifice and sanctity, but it is the recognition of a tradition rather than an event showing hearers raised to the status of the gods.
+- Kural 415 / sikhism - 58% (primary): Next-best only: the walking-stick image matches, but Namdev's support is God's Name, not the counsel of virtuous people.
+- Kural 426 / sikhism - 58% (primary): Partial: both endorse engaged life in the world, but the Kural speaks of conforming to the worthy, while Guru Nanak speaks of service and honour before God.
+- Kural 429 / sikhism - 58% (primary): Partial: the result (calamity cannot touch one) matches, but the protection comes from God's refuge, not from the person's own foresight.
+- Kural 430 / real_life_example - 58% (secondary/primary): Next-best only: it concerns a state's pursuit of knowledge rather than personal wisdom, and the Meiji reforms also had military and political aims.
+- Kural 440 / real_life_example - 58% (secondary/primary): Next-best only: it shows the strategic value of concealing one's aims, but the kural is about hiding a ruler's personal desires and appetites, which this does not involve.
+- Kural 446 / islam - 58% (primary): Weak-to-moderate: protection is attributed to God rather than to the company of the worthy itself.
+- Kural 446 / philosophy - 58% (primary): Paraphrase (translations vary); psychological security rather than practical invulnerability.
+- Kural 449 / christianity - 58% (primary): Weak-to-moderate: the foundation is divine teaching, not wise companions.
+- Kural 468 / sikhism - 58% (primary): Shares the idea that effort off the right path is wasted; Gurbani's right way is hukam, not practical method, and the Kural's image of many supporters is absent.
+- Kural 469 / real_life_example - 58% (secondary/primary): Next-best only: the gifts did fail through misreading the recipient, but the embassy was a trade mission rather than an act of pure benevolence.
+- Kural 476 / buddhism - 58% (primary): Moderate parallel of ambition overreaching a high position. Devadatta’s fault is mainly malice, not misjudged strength.
+- Kural 477 / hinduism - 58% (primary): Depends on interpretation: śriyā deyam is also rendered ‘give in plenty’ or ‘give with grace’. Paraphrased.
+- Kural 478 / greek_mythology - 58% (primary): Didactic poetry rather than myth. It shares household moderation but not the explicit income-outflow ratio. Paraphrased.
+- Kural 480 / christianity - 58% (primary): Partial. It limits generosity by household duty but is not directly about giving beyond means. There is a real tension with Mark 12.
+- Kural 493 / sikhism - 58% (primary): Partial: both show the weak made strong by where they stand, but the Kural means a tactical position and Gurbani means spiritual shelter.
+- Kural 512 / jainism - 58% (primary): Checked word for word against Jacobi on sacred-texts.com. Thematically related (creating livelihoods for the people), but it concerns a founding king's teaching, not a revenue officer's skills, and Jainism ultimately values his renunciation over the reign.
+- Kural 512 / sikhism - 58% (secondary): A reasonable parallel on building revenue channels, but dasvandh is religious giving for community welfare, not state revenue, and the Kural's third duty of removing obstacles is not covered.
+- Kural 517 / jainism - 58% (primary): Checked word for word against Jacobi on sacred-texts.com. Shows the assigning of work, but the kural's point, leaving the task with the chosen man after deliberate matching, is only partly reflected.
+- Kural 524 / sikhism - 58% (secondary): Reasonable: wealth used to draw people together is common to both, but the langar is open to all and is a community institution rather than one man's kin around him.
+- Kural 525 / jainism - 58% (primary): Checked word for word against Jacobi on sacred-texts.com. It states the negative of the Kural's two virtues and has no reference to kin gathering round, so the match is partial.
+- Kural 525 / sikhism - 58% (primary): Partial: sweetness of manner matches the Kural's kind speech, but the line does not mention giving or tie these virtues to keeping kin.
+- Kural 532 / jainism - 58% (primary): Checked word for word against Jacobi on sacred-texts.com. The verse is about discipline, not fame, and has no comparison with poverty.
+- Kural 532 / sikhism - 58% (primary): Reasonable: the link between remembering and honour is shared, but the honour is in God's court rather than worldly fame, and the poverty simile is absent.
+- Kural 546 / sikhism - 58% (primary): Partial: both set righteousness above force, but Guru Nanak speaks of spiritual sovereignty and does not discuss military victory.
+- Kural 547 / greek_mythology - 58% (primary): Weaker match: Justice as a divine guardian, but with no stated promise to protect a just king.
+- Kural 553 / jainism - 58% (primary): Checked word for word against Jacobi on sacred-texts.com. The emphasis on daily loss is close, but the verse concerns an individual's spiritual life, not a ruler's daily duty of justice.
+- Kural 553 / sikhism - 58% (primary): Next-best: the verse attacks corrupt judges, not a king's neglect, and says nothing of the country's gradual decline.
+- Kural 554 / sikhism - 58% (primary): Next-best: the sudden loss of everything matches, but Guru Nanak traces it to heedlessness of God rather than specifically to the bending of justice.
+- Kural 558 / jainism - 58% (web): Wikipedia used as a last resort, only for this paraphrase. The underlying Jain prabandha texts were not checked this session. The reform answers the Kural's complaint directly but is a later historical tradition, not scripture.
+- Kural 567 / sikhism - 58% (primary): Next-best: the self-erosion caused by harsh words matches, but the verse is about the inner life, not about punishment or a ruler's power over enemies.
+- Kural 573 / sikhism - 58% (primary): Next-best: both judge a musical mode by its fitness to its inner content, but Gurbani's concern is love for God, not kindly regard for others.
+- Kural 577 / philosophy - 58% (primary): Verified verbatim at the MIT Internet Classics Archive (Long); the ellipsis omits one clause. Next-best match: the shared image is blindness in one who cuts himself off from others, but Marcus's emphasis is on social reason, not on graciousness or compassion.
+- Kural 583 / jainism - 58% (primary): Checked word for word against Jacobi on sacred-texts.com. The logic of 'no knowledge, no success' is shared, but the Jain victory is liberation, not conquest, and the knowledge in view is doctrinal, not intelligence.
+- Kural 583 / sikhism - 58% (primary): Reasonable but partial: both prize interpretation over mere reception, though Guru Nanak means moral and spiritual understanding, not intelligence reports.
+- Kural 584 / jainism - 58% (primary): Checked word for word against Jacobi on sacred-texts.com (diacritics simplified). The 'trust nobody, stay alert' attitude fits, but the verse concerns a monk's vigilance against carelessness, not surveillance of others.
+- Kural 590 / jainism - 58% (secondary): Verified verbatim on the wisdomlib.org glossary entry quoting Williams' Jaina Yoga. The concern with secrets leaked through visible signs is a genuine match, but in Jainism the fault lies in exposing another's secret, not in a ruler carelessly revealing his own.
+- Kural 591 / sikhism - 58% (primary): Reasonable but partial: both make effort (udam, ookkam) the ground of true possession, but the Kural speaks of worldly capacity and Gurbani of spiritual wealth.
+- Kural 593 / jainism - 58% (primary): Checked word for word against Jacobi on sacred-texts.com (diacritics simplified). The 'no grief at loss' outcome matches; the ground differs, Jain detachment rather than energetic self-reliance.
+- Kural 602 / sikhism - 58% (primary): Reasonable but partial: both condemn sloth and call for disciplined practice, but the Kural's aim is the family's honour and Guru Amar Das's is remembrance of the Name.
+- Kural 603 / real_life_example - 58% (secondary/secondary): Next-best only: the dynasty's death before its last ruler matches the kural closely, but the sources document his prolonged absence and political weakness, not laziness as such, and larger political forces drove the change.
+- Kural 617 / sikhism - 58% (primary): Next-best: the link between sloth and loss matches, but the Kural's image of goddesses of misfortune and fortune has no place in Sikh teaching, and the loss Trilochan means is spiritual.
+- Kural 619 / sikhism - 58% (primary): Next-best: the image of labour earning its wage matches, but the verse says nothing about effort paying off even against fate, and the wage is received as the Lord's gift rather than as a right won by effort.
+- Kural 620 / sikhism - 58% (primary): Next-best: it matches the unflagging persistence, but says nothing about defeating fate; in Sikh teaching the inscribed destiny gives way to God's grace and hukam, not to human effort alone, so the Kural's boldest claim has no exact Sikh parallel.
+- Kural 626 / real_life_example - 58% (web/secondary): Next-best only: Feeney shows the detachment the kural praises, but he gave his wealth away rather than losing it, so the couplet's scene of misfortune is not directly shown.
+- Kural 631 / greek_mythology - 58% (web): Covers only the timing element; a personification rather than a teaching about ministers.
+- Kural 635 / sikhism - 58% (primary): Next-best: it matches only the measured-speech element; knowing what is right and knowing how things are done are not addressed, and the honour meant is honour before God.
+- Kural 636 / sikhism - 58% (primary): Next-best: both join learning to inner understanding, but Guru Nanak's goal is benefiting others, not outwitting stratagems, and he does not speak of natural acuteness as such.
+- Kural 640 / jainism - 58% (primary): Checked word for word on sacred-texts.com. Next-best: it concerns failing to finish from lack of zeal, but nothing about prior planning or ministers.
+- Kural 640 / sikhism - 58% (primary): Next-best: both contrast good intentions with failed execution, but Guru Nanak speaks of moral conduct and inner impurity, not of a lack of executive skill in carrying out planned work.
+- Kural 665 / sikhism - 58% (primary): Next-best only: service earning recognition from the highest authority matches loosely, but this is spiritual succession, not a minister's renown at a royal court.
+- Kural 671 / real_life_example - 58% (secondary/secondary): Next-best only: the cost of delay is clear, but the sources do not document that Gray had decided to file and then procrastinated, and the priority dispute itself was later litigated.
+- Kural 673 / islam - 58% (primary): Captures the first half (act where possible); it does not address switching to another method.
+- Kural 678 / islam - 58% (primary): Paraphrased; a fair narrative parallel, not a stated principle.
+- Kural 679 / sikhism - 58% (primary): Partial: shares the move from enmity to concord, but the Kural's advice is strategic alliance-building, while Guru Arjan describes an inner spiritual state.
+- Kural 681 / real_life_example - 58% (secondary/secondary): Illustrates the family-standing and esteemed-conduct qualities well, but the sources do not document the kural's first quality, a loving nature, so the fit is partial.
+- Kural 682 / sikhism - 58% (secondary): Partial: the three qualities line up, but Guru Angad was a disciple and successor, not an envoy, and Britannica itself notes that some institutions credited to him rest on tradition rather than documents.
+- Kural 684 / sikhism - 58% (primary): Partial: matches the first quality and the honour it brings, but Gurbani gives no weight to impressive appearance, and the service meant is to God.
+- Kural 687 / jainism - 58% (primary): Checked word for word on sacred-texts.com. Partial match on timing only; it concerns a monk's daily round, not choosing the moment and place to speak to a foreign king.
+- Kural 694 / jainism - 58% (primary): Checked word for word on sacred-texts.com. Same spirit of decorum before superiors, but it does not name whispering or exchanged smiles, so scored below 60.
+- Kural 705 / jainism - 58% (primary): Checked word for word against Jacobi on sacred-texts.com. Partial match: it praises perceiving from a visible sign, but does not make the Kural's rhetorical point about the eye being useless otherwise.
+- Kural 709 / sikhism - 58% (primary): Partial: the Sajjan story is Janamsakhi hagiography, and the verse warns that outward shine can deceive rather than trusting the eye to reveal enmity as the Kural does.
+- Kural 739 / real_life_example - 58% (web/web): Next-best fit: the wealth was a natural endowment, but it still had to be sought through years of exploration and drilling, which the kural contrasts with true natural plenty.
+- Kural 743 / jainism - 58% (secondary): Verified verbatim on the jainworld.com page; this is a secondary scholar's summary of the traditional simile, and it uses the town wall as a metaphor without listing its qualities, so the match is partial.
+- Kural 750 / jainism - 58% (primary): Verified verbatim on sacred-texts.com; the shared point that protection fails without exertion is real, but the Jain verse concerns spiritual carelessness and death, not defending a fort.
+- Kural 756 / sikhism - 58% (secondary): Next-best: both concern legitimate revenue, but dasvandh is a voluntary religious offering for communal sharing, not a king's escheats, customs and war tribute, which the Kural lists; the 1698 reform is from the Gobind Singh entry.
+- Kural 763 / buddhism - 58% (primary): Paraphrased; the ‘army’ is a metaphor for mental defilements.
+- Kural 764 / christianity - 58% (primary): Thematic match on undivided loyalty; spiritual metaphor, and the hereditary element is absent.
+- Kural 766 / jainism - 58% (primary): Checked word for word against Jacobi on sacred-texts.com. It matches only one of the Kural's four qualities (the predecessors' path), and the heroism it means is spiritual.
+- Kural 769 / islam - 58% (primary): Partial match on morale and strength; it does not address pay or grievance.
+- Kural 769 / buddhism - 58% (primary): Paraphrased; a monastic community rather than an army.
+- Kural 784 / real_life_example - 58% (secondary/secondary): Partial fit: the rebuke concerned literary excess rather than moral wrongdoing, which is the kural's main concern.
+- Kural 792 / jainism - 58% (web): Paraphrased from a search check against the jainworld.com retelling and general reference accounts, not from a translation of the Bhagavatī itself. Thematically apt, but the Jain text does not draw the Kural's lesson about examining a friend beforehand. Next-best match.
+- Kural 800 / real_life_example - 58% (secondary/secondary): Partial fit: the parting was forced by political pressure rather than chosen on principle, though it shows the cost of an unsuitable friendship.
+- Kural 818 / real_life_example - 58% (secondary/secondary/secondary): Next-best only: Bernadotte's absence is certain, but whether he deliberately held back is disputed, and Napoleon's response was more anger withheld than a planned quiet withdrawal of friendship.
+- Kural 833 / sikhism - 58% (primary): Next-best: both are lists of a fool's lacks, but the items differ; Gurbani does not name shamelessness or lack of affection here.
+- Kural 837 / jainism - 58% (primary): Verified verbatim on wisdomlib.org. A Tamil Jain text giving only a partial parallel: it shares the point that those nearby gain nothing, but lacks the Kural's contrast with strangers who feast.
+- Kural 839 / jainism - 58% (primary): Verified verbatim on sacred-texts.com. It shares the Kural's verdict on fools' company but has none of its irony about painless parting, so it is a partial match.
+- Kural 855 / greek_mythology - 58% (primary): Greek fable rather than myth, and about persuasion more than invincibility.
+- Kural 858 / islam - 58% (primary): Composite summary; no single text states the gain/ruin contrast.
+- Kural 859 / christianity - 58% (primary): Shares the escalation-to-ruin link; lacks the Kural’s point about fortune.
+- Kural 859 / buddhism - 58% (primary): General law of mind and consequence; hostility not named.
+- Kural 859 / jainism - 58% (primary): Checked word for word against Jacobi on sacred-texts.com. It shares the link between hatred and lost prosperity, but its focus is on wrongly acquired wealth, and it does not contain the Kural's idea that hostility is a symptom of fortune already turning.
+- Kural 862 / sikhism - 58% (secondary): Next-best: the Khalsa embodies loyalty, fellowship and strength, but it was founded as a spiritual and moral order, not as the Kural's political calculation for defeating an enemy.
+- Kural 867 / jainism - 58% (primary): Checked word for word against Jacobi on wisdomlib.org. Garga separates from his pupils without turning them into enemies, and the Kural's 'even at a price' is only implied by his loss of a following, so this is a partial match.
+- Kural 890 / sikhism - 58% (primary): Partial: the advice to avoid harmful company fits, but Kabir's saakat is someone spiritually faithless rather than a housemate secretly at odds with you, and the snake image is absent.
+- Kural 891 / sikhism - 58% (primary): Next-best: shares the warning against belittling, but Farid's point is humility and mortality rather than prudence toward the powerful; only the opening clause is quoted because the published translation of the rest has a typographical error.
+- Kural 896 / real_life_example - 58% (secondary/web): Next-best only: it shows the consequence of displeasing a great power, but Galileo is remembered as in the right, which runs against the kural's moral frame of offending the worthy.
+- Kural 913 / jainism - 58% (secondary): Wording checked on Sangave's page. It only shares the device of a repellent bodily image, because the Kural's simile is about the falseness of the embrace while asuchi is about the body itself. Next-best match.
+- Kural 915 / sikhism - 58% (primary): Verified verbatim via BaniDB/SikhiToTheMax; concerns other men’s wives rather than women whose favours are for sale, so this is a next-best thematic match.
+- Kural 929 / jainism - 58% (primary): Verified verbatim; it shares the idea that teaching fails while the craving remains, but it is about pleasure in general, not drunkenness, and has no counterpart to the Kural's vivid image.
+- Kural 936 / jainism - 58% (primary): Verified verbatim; the gambler overpowered by Kali suits the image of being swallowed by misfortune, but Jainism has no goddess of misfortune like the Kural's Mugaḍi, and the verse is about the fool's death, not gambling as such.
+- Kural 939 / sikhism - 58% (primary): Verified verbatim via BaniDB/SikhiToTheMax; a positive contrast rather than a parallel, since it never mentions gambling, but it is the core Sikh answer to unearned gain.
+- Kural 940 / judaism - 58% (primary): Verified verbatim; insatiable desire matches, though the verse concerns wealth, not loss at play.
+- Kural 942 / real_life_example - 58% (secondary/secondary): Next-best: the event shows that digestion takes time and can be observed, but it does not demonstrate the kural's claim that waiting for digestion makes medicine unnecessary.
+- Kural 944 / jainism - 58% (primary): Verified verbatim on sacred-texts.com; partial fit, since 'allowed' means ritually and ethically permitted, not medically suited.
+- Kural 947 / buddhism - 58% (primary): Verified verbatim on SuttaCentral; vivid on overeating's dullness, but the consequence is rebirth, not illness.
+- Kural 952 / islam - 58% (primary): Verified verbatim; covers truthfulness only, so it is a next-best match.
+- Kural 952 / greek_mythology - 58% (primary): Paraphrased, not re-verified this session; covers truthfulness only, and Achilles is far from a model of conduct in the same scene.
+- Kural 952 / real_life_example - 58% (secondary/secondary): Next-best: the event shows lifelong steadiness in someone from a distinguished family, but it does not directly show truthfulness or shame as the kural names them.
+- Kural 956 / islam - 58% (primary): Verified verbatim; addresses deceit only, without the lineage motive, so a next-best match.
+- Kural 962 / sikhism - 58% (primary): Next-best: both refuse to treat fame as the highest good, but Guru Nanak measures it against divine grace, not against nobility of conduct, and does not speak of unworthy deeds.
+- Kural 966 / sikhism - 58% (primary): Next-best: the fearless, unservile person is the opposite of the Kural's fawner, but the verse does not mention scorn, fame or heaven, which the Kural's argument rests on.
+- Kural 983 / greek_mythology - 58% (primary): Paraphrased; next-best match only, since the shared feature is a numbered list of virtues while the virtues themselves differ.
+- Kural 985 / jainism - 58% (primary): Verified verbatim on sacred-texts.com; next-best match, since it praises humility as a conquest of the self but does not show humility winning over an enemy.
+- Kural 986 / greek_mythology - 58% (primary): Paraphrased; next-best match, since the Gorgias concerns suffering injustice rather than gracefully accepting defeat from inferiors.
+- Kural 991 / greek_mythology - 58% (primary): Paraphrase of a well-known myth; it illustrates hospitality to strangers rather than the general social approachability the Kural describes.
+- Kural 994 / hinduism - 58% (primary): Verified verbatim on vedabase.io; a partial match, since it speaks of being followed rather than of praise for justice and beneficence.
+- Kural 994 / greek_mythology - 58% (primary): Paraphrase from memory, not re-verified this session; it shares the justice-brings-renown motif but in a royal setting.
+- Kural 996 / islam - 58% (primary): Verified verbatim; it shares the 'earth would be ruined' motif, but the context is the restraint of evil, not courtesy.
+- Kural 997 / sikhism - 58% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); a next-best match, since the shared idea of a human sunk below the human is clear, but the Kural's contrast with a file-sharp intellect has no counterpart here.
+- Kural 997 / greek_mythology - 58% (primary): Paraphrase from memory, not re-verified this session; a reasonable illustration, though Polyphemus is not portrayed as especially sharp-witted.
+- Kural 1000 / greek_mythology - 58% (primary): Paraphrase from memory, not re-verified this session; it shares the theme of wealth spoiled by its holder, though Midas' flaw is greed rather than discourtesy.
+- Kural 1003 / buddhism - 58% (primary): Paraphrase; next-best match on miser versus giver, lacking the specific contrast of hoarding with fame.
+- Kural 1004 / buddhism - 58% (primary): Paraphrase; next-best match on the emptiness of possessions, without the theme of being unloved.
+- Kural 1010 / sikhism - 58% (primary): Next-best match: the idea that giving does not exhaust the giver is shared, but Guru Arjan's treasure is spiritual (the Naam), not the material wealth of the Kural's generous rich man.
+- Kural 1010 / greek_mythology - 58% (primary): Paraphrase; next-best on generous poverty replenished, though Baucis and Philemon were never rich.
+- Kural 1012 / christianity - 58% (primary): Verified verbatim; a real link to shame as a distinctively human trait, but the context is guilt after disobedience rather than praise of shame.
+- Kural 1016 / islam - 58% (primary): Verified verbatim; the worldly-cost context comes from the commentators, so the fit with the Kural's ‘world versus hedge’ is partly interpretive.
+- Kural 1018 / jainism - 58% (primary): Verified verbatim on sacred-texts.com (footnote marker removed); an inverse, partial fit, since it praises self-reproach rather than picturing virtue leaving the shameless.
+- Kural 1018 / philosophy - 58% (primary): Paraphrase from memory, not verified live; it fits the type of the shameless man, but it is satire rather than ethical theory.
+- Kural 1021 / jainism - 58% (primary): Verified verbatim on sacred-texts.com; the call never to slacken matches, but Jain scripture directs that effort toward renunciation rather than household duty, so this is a next-best match.
+- Kural 1022 / sikhism - 58% (primary): Next-best match: covers the knowledge half of the couplet and the honour it brings, but not effort or the growth of a family line.
+- Kural 1024 / philosophy - 58% (primary): Paraphrase; an explanatory parallel on habit rather than a direct statement about effortless success.
+- Kural 1030 / philosophy - 58% (primary): Verified verbatim on the MIT Internet Classics Archive (Ross, Book VIII ch. 1). Next-best match: the idea of needing a supporter in misfortune is shared, but Aristotle speaks of friends and an individual's prosperity, not of a good man holding up a family, and he has no tree image.
+- Kural 1031 / islam - 58% (primary): Verified verbatim via api.alquran.cloud; it shares the dependence-on-agriculture theme but its point is God's agency, not the farmer's primacy.
+- Kural 1035 / philosophy - 58% (primary): Verified verbatim (ellipsis marks omitted words); it praises the generosity that farming makes possible, but credits the earth rather than the farmer's character.
+- Kural 1036 / philosophy - 58% (primary): Verified verbatim; it makes the general dependence point but does not mention ascetics or renunciants.
+- Kural 1037 / islam - 58% (primary): Verified verbatim via api.alquran.cloud; it shares the soil-quality theme but has no ploughing or drying technique, and its main point is a parable about hearts.
+- Kural 1038 / christianity - 58% (primary): Verified verbatim; it illustrates the danger of an unguarded field, though the parable is about the end of the age, not farm practice.
+- Kural 1040 / islam - 58% (primary): Verified verbatim via api.alquran.cloud; it implies an earth ready to provide for those who exert themselves, but does not rebuke idleness directly.
+- Kural 1040 / judaism - 58% (primary): Verified on Sefaria (bold-face markup removed; the bracketed gloss 'the crucial agricultural periods' is Steinsaltz's); a reasonable match on working the land rather than idling, without the mocking Earth.
+- Kural 1040 / sikhism - 58% (primary): Next-best: shares the moral that the idle lose what the diligent receive, but Farid speaks of spiritual wakefulness, not farm labour, and has no image of the Earth laughing.
+- Kural 1042 / real_life_example - 58% (secondary/web): Partial fit: it matches the temporal reading of the kural (present and future both lost) rather than the traditional reading in which poverty prevents the giving that earns merit in the next world.
+- Kural 1045 / islam - 58% (primary): Verified verbatim on alquran.cloud; it groups trials together but presents them as tests answered by patience.
+- Kural 1045 / greek_mythology - 58% (primary): Paraphrased from general knowledge of the Odyssey, not verified against a live text in this session.
+- Kural 1047 / real_life_example - 58% (secondary/secondary): Partial fit: the estrangement was from a foster father rather than a mother, and Allan's own stinginess helped create the want that led to the gambling.
+- Kural 1048 / sikhism - 58% (primary): Next-best: the verse speaks to the same anxiety about livelihood but answers it rather than portraying it, so the parallel is one of response rather than shared sentiment.
+- Kural 1052 / philosophy - 58% (primary): Verified verbatim on Wikisource (inner quotation marks normalised); it shows the opposite case only, so the match is indirect.
+- Kural 1056 / greek_mythology - 58% (primary): Verified verbatim on classics.mit.edu; next-best only, since the suitors are not models of generosity and the Kural's point about the giver's sight is absent.
+- Kural 1058 / hinduism - 58% (primary): Verified verbatim on sacred-texts.com; next-best only, since the hymn condemns the non-sharer rather than saying that askers give the world meaning.
+- Kural 1058 / jainism - 58% (primary): Next-best paraphrase, not verified verbatim this session; it concerns mendicant monks, not the poor in general.
+- Kural 1061 / real_life_example - 58% (secondary/secondary): Partial fit: the Pioneers embody self-reliance, but the sources do not record them refusing any particular offer of help.
+- Kural 1062 / greek_mythology - 58% (primary): Verified verbatim on sacred-texts.com; Hesiod explains rather than condemns the gods' decree, so the match is partial.
+- Kural 1062 / philosophy - 58% (primary): Paraphrased, not verified on a live page this session; the dilemma is general rather than about begging.
+- Kural 1063 / hinduism - 58% (primary): Paraphrase not re-verified this session; the Gita speaks of duty-bound action rather than begging specifically.
+- Kural 1064 / buddhism - 58% (primary): Verified verbatim on accesstoinsight.org; Buddhist monks live on alms, so the parallel is contentment and purity of livelihood, not refusal to beg.
+- Kural 1066 / greek_mythology - 58% (primary): Paraphrase; a narrative parallel to begging for a good end, not a direct statement about the tongue.
+- Kural 1067 / sikhism - 58% (primary): Next-best match: it contrasts God's endless giving with human concealment but gives no advice about whom to ask among people.
+- Kural 1073 / sikhism - 58% (primary): Next-best match given as a contrast: Sikh teaching condemns acting by self-will (manmukh) but has no parallel to the Kural's ironic comparison with the gods.
+- Kural 1075 / sikhism - 58% (primary): Next-best match given as a contrast: it sets fearless goodness against fear-driven conduct but does not address greed, the Kural's second motive.
+- Kural 1080 / buddhism - 58% (primary): Verified verbatim on accesstoinsight.org; a next-best contrast on steadiness in adversity.
+- Kural 1081 / judaism - 58% (primary): Paraphrase from general knowledge of the passage, not checked against a live text this session; thematic only, with no goddess-or-human doubt.
+- Kural 1082 / islam - 58% (primary): Verified verbatim via the quran.com API; only a partial fit, since it contains no image of a returned glance.
+- Kural 1083 / islam - 58% (primary): Verified verbatim via the quran.com API; a next-best match on beauty's dangerous power, without the Death image.
+- Kural 1083 / philosophy - 58% (primary): Paraphrase of MacKenna's wording, not checked against a live text; it fits beauty's shock but has no Death image.
+- Kural 1083 / real_life_example - 58% (secondary/secondary/secondary): Love and death are joined in Keats's story, but the kural's image of the beloved's eyes as Death itself is a figure of speech, so the fit is partial.
+- Kural 1085 / greek_mythology - 58% (primary): Paraphrase not checked against a live text; it shares sight, deer and death, but the myth is a punishment tale.
+- Kural 1087 / sikhism - 58% (primary): Next-best match built on a shared image of keeping a dangerous elephant in check; the Sikh verse is about spiritual discipline of the mind, not romantic love.
+- Kural 1087 / philosophy - 58% (primary): Verified verbatim on classics.mit.edu; it shares restraint before beauty, not the elephant-cloth image.
+- Kural 1088 / sikhism - 58% (primary): Partial fit: both have pride yielding to love, but Gurbani speaks of spiritual, not romantic, love and calls for giving up ego willingly, while the Kural's warrior is overcome.
+- Kural 1090 / judaism - 58% (primary): Paraphrase, not checked word for word this session; it shares love's joy through presence, not the wine comparison.
+- Kural 1091 / jainism - 58% (primary): Verified verbatim on sacred-texts.com; the disease-and-medicine image is shared, but the Jain cure is renunciation, the opposite of the Kural’s.
+- Kural 1091 / real_life_example - 58% (secondary/secondary): The beloved as both healer and cause of pain fits well, but the kural speaks of two looks at one moment, and here the healing and the hurt came months apart.
+- Kural 1092 / sikhism - 58% (primary): Partial match: both stress the power of a single look, but the Kural's point is the furtive glance from the beloved, while Gurbani's longing is spiritual (the soul seeing God), not romantic.
+- Kural 1093 / christianity - 58% (primary): Verified verbatim (bolls.life KJV); it shares the shyness theme but not the look-then-bow gesture.
+- Kural 1094 / philosophy - 58% (primary): Paraphrase, not verified verbatim this session; it explains the lowered gaze but not the smile.
+- Kural 1095 / judaism - 58% (primary): Verified on Sefaria; a reasonable image match, with no smile.
+- Kural 1098 / hinduism - 58% (primary): Verified verbatim on Project Gutenberg; it shows her softening but not the smile.
+- Kural 1098 / christianity - 58% (primary): Verified verbatim (bolls.life KJV); reasonable on favour in the eyes, without the smile.
+- Kural 1100 / judaism - 58% (primary): Verified on Sefaria; strong on instant union of hearts, but it is friendship and does not mention the eyes.
+- Kural 1101 / greek_mythology - 58% (primary): Paraphrase, since the online text loaded only partly; the idea of all charms in one place fits, though the girdle is used for a trick on Zeus.
+- Kural 1102 / real_life_example - 58% (secondary/web): The cause-and-cure idea fits well, but the marriage did not stay happy, so the cure did not last as the kural implies.
+- Kural 1103 / buddhism - 58% (primary): Paraphrase of a well-known sutta, not re-checked verbatim this session; the love-versus-heaven comparison is direct, but the verdict is opposite.
+- Kural 1105 / islam - 58% (primary): Verified via the quran.com API; matches ‘whatever is desired’, but describes Paradise rather than a beloved.
+- Kural 1105 / sikhism - 58% (primary): Partial match: the wish-granting tree image is shared, but it is applied to the Guru, not to a lover's embrace, and the Kural itself only implies the tree through its commentators.
+- Kural 1106 / christianity - 58% (primary): Verified verbatim (bolls.life KJV); the refreshing sweetness matches, but there is no revival of a withered life.
+- Kural 1107 / hinduism - 58% (primary): Verified verbatim on vedabase.io; it matches the share-before-eating ideal, not the comparison with love.
+- Kural 1107 / real_life_example - 58% (secondary/secondary): The home made and shared by a loving couple fits the kural's simile, but the kural's subject is the beloved's embrace, which the book shows only indirectly through family life.
+- Kural 1114 / christianity - 58% (primary): Verified verbatim via bolls.life KJV; shares the 'better than the best' comparison but has no eyes or flowers.
+- Kural 1118 / philosophy - 58% (primary): Paraphrase of a well-known definition, not verified against a translation this session; a partial conceptual match.
+- Kural 1120 / hinduism - 58% (primary): Verified verbatim on the Project Gutenberg text of Ryder’s translation; the tender-foot motif matches, but the scene is a pretext rather than praise.
+- Kural 1120 / greek_mythology - 58% (primary): Paraphrase, not re-verified this session; a good partial match on the special tenderness of a beautiful one’s feet.
+- Kural 1126 / christianity - 58% (primary): Verified verbatim via bible-api.com (KJV); shares the will to hold the beloved fast, though physically rather than in the eyes.
+- Kural 1128 / christianity - 58% (primary): Verified verbatim via bible-api.com (KJV); a good fit on the beloved dwelling in the heart, without the protective conceit.
+- Kural 1129 / judaism - 58% (primary): Verified verbatim on Sefaria; closely matches the eyelid image, though the vow is about devotion to God.
+- Kural 1130 / christianity - 58% (primary): Verified verbatim via bible-api.com (KJV); a good fit on misjudging by appearances, without the love theme.
+- Kural 1130 / judaism - 58% (primary): Paraphrase, not verified word for word this session; a good fit on judging by appearance versus the heart.
+- Kural 1132 / judaism - 58% (primary): The story's later part was read on Sefaria this session; this opening summary is paraphrased, and her choice is quiet resolve rather than public display.
+- Kural 1132 / jainism - 58% (primary): Verified verbatim on sacred-texts.com (diacritics simplified); describes restraint giving way to desire, which the Jain text then corrects.
+- Kural 1133 / judaism - 58% (primary): Paraphrase of the biblical narrative; a clear case of manliness lost to love, though the Bible frames it as betrayal rather than longing.
+- Kural 1137 / philosophy - 58% (primary): Paraphrase of a standard passage; a conceptual parallel without a romantic setting.
+- Kural 1141 / philosophy - 58% (primary): Paraphrase of Stendhal’s well-known account of hope in love, not rechecked word for word this session; a good psychological fit.
+- Kural 1143 / islam - 58% (secondary): Paraphrase of a chapter theme in Ibn Hazm, not rechecked this session; a good psychological fit, though rumour is not named among the lover’s consolations.
+- Kural 1144 / greek_mythology - 58% (primary): Paraphrase of a late-antique myth, not rechecked this session; strong on ‘love shrinks without nourishment’, though the nourishment is returned love, not gossip.
+- Kural 1144 / philosophy - 58% (primary): Paraphrase of the proposition, not rechecked word for word this session; a good mechanism for the Kural’s claim, though Spinoza speaks of shared feeling rather than gossip.
+- Kural 1145 / islam - 58% (secondary): Paraphrase of a famous opening, not rechecked against a translation this session; same image of love as wine, though the love is mystical.
+- Kural 1145 / judaism - 58% (primary): Paraphrase of a well-known verse, not rechecked this session; same pairing of love and wine, without the element of public talk.
+- Kural 1148 / buddhism - 58% (primary): Paraphrase of a famous sutta, not rechecked this session; same fire image, opposite valuation.
+- Kural 1149 / islam - 58% (secondary): Paraphrase of a well-known Sufi doctrine, not rechecked against Nicholson this session; it shares indifference to blame, though chosen rather than forced on her.
+- Kural 1150 / judaism - 58% (primary): Paraphrase of a famous passage, not rechecked this session; a good fit for consent to leave with a bridegroom, though not an elopement.
+- Kural 1150 / greek_mythology - 58% (primary): Paraphrase of a famous episode; a genuine elopement parallel, though driven by danger rather than rumour.
+- Kural 1151 / christianity - 58% (primary): Verified verbatim via bolls.life KJV; captures grief at a spoken farewell, but the bond is pastoral rather than marital and Paul does not promise to return.
+- Kural 1151 / philosophy - 58% (primary): Paraphrase of a well-known passage, not checked word for word this session; it states the value of presence but not the threat of a parting.
+- Kural 1152 / hinduism - 58% (primary): Paraphrase of a well-known passage, not checked against a translation this session; it matches the joy of seeing and the pain of absence, but not the dread that poisons an embrace while he is still present.
+- Kural 1152 / islam - 58% (primary): Verified verbatim via the quran.com API; a good match for grief that comes before the parting, though between father and son rather than lovers.
+- Kural 1154 / christianity - 58% (primary): Verified verbatim via bolls.life KJV; a ‘do not be afraid’ spoken on the eve of departure, though offered as a trustworthy promise rather than one in doubt.
+- Kural 1158 / judaism - 58% (primary): Verified verbatim on Sefaria (JPS 1917); exile and separation from the beloved place, but national and religious rather than romantic.
+- Kural 1159 / greek_mythology - 58% (primary): Paraphrase of a famous poem, not checked against a translation this session; love as fire fits, but Sappho’s fire is kindled by presence, not absence.
+- Kural 1160 / jainism - 58% (primary): Paraphrase of a narrative read on sacred-texts.com this session; a fit for the literal reading of endurance, though its resolution is renunciation.
+- Kural 1163 / judaism - 58% (primary): Verified verbatim on Sefaria (JPS 1917); it captures love-sickness weakening the body, though there is no counterweight of shame and the lovers are not separated.
+- Kural 1163 / greek_mythology - 58% (primary): Paraphrase of a very well-known poem, not checked against a translation this session; a strong parallel for love’s physical toll, though it lacks the counterweight of shame.
+- Kural 1165 / greek_mythology - 58% (primary): Paraphrase of the poem’s situation, not checked against a translation this session; the wound from the beloved matches, though Theseus’s desertion is final and the Kural’s husband will return.
+- Kural 1171 / christianity - 58% (primary): Verified verbatim via bolls.life KJV; the eye-as-offender motif matches, but the context is moral temptation rather than love for a spouse.
+- Kural 1172 / hinduism - 58% (primary): Paraphrase of a well-known passage, not re-checked word for word this session; the chain from looking to suffering matches, though the Gita addresses spiritual discipline rather than married love.
+- Kural 1172 / sikhism - 58% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); reasonable but partial: it shares a moment of sight followed by tears, but has none of the Kural's reproach of the eyes for looking rashly.
+- Kural 1172 / greek_mythology - 58% (primary): Paraphrase of a well-known episode, not checked against a translation this session; strong on undiscerning sight, though Narcissus loves an illusion while the heroine loves a real husband.
+- Kural 1181 / hinduism - 58% (primary): Paraphrase of a well-known scene, not checked against a translation this session; consent to parting and silent grief match, though Shakuntala’s pallor is not the focus.
+- Kural 1181 / buddhism - 58% (primary): Verified verbatim on accesstoinsight.org; the pain of distance from the beloved matches, though the Buddhist remedy is non-attachment rather than reunion.
+- Kural 1182 / buddhism - 58% (primary): Verified verbatim on accesstoinsight.org; both trace grief to the beloved, but the Buddha counsels release while the heroine treasures the gift.
+- Kural 1183 / hinduism - 58% (primary): Paraphrase of the general content of these cantos, not checked against a translation this session; viraha (separation) imagery matches, though the canto references are approximate.
+- Kural 1183 / greek_mythology - 58% (primary): Paraphrase of a well-known passage, not checked against a translation this session; beauty wasted by love matches, though Echo’s love was never returned.
+- Kural 1186 / sikhism - 58% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: the lamp-and-darkness image is shared and the logic matches (darkness fills any gap in the light), but Gurbani applies it to ignorance and the Guru's wisdom, not to a lover's embrace.
+- Kural 1186 / philosophy - 58% (primary): Paraphrase of a famous maxim, not checked against a translation this session; the flame-and-absence image is close, though the logic differs.
+- Kural 1188 / jainism - 58% (primary): Paraphrase of a well-attested Jain story (also in Vimalasuri’s Paumacariya), not checked against Johnson’s translation this session; strong on misdirected blame, though the details differ from simple pallor.
+- Kural 1189 / christianity - 58% (primary): Verified verbatim via bolls.life KJV; patient, self-forgetting love matches the spirit, though the verse is general, not about separation.
+- Kural 1189 / philosophy - 58% (primary): Paraphrase of a well-known passage, not checked word for word this session; it states the principle but its example is maternal, not marital.
+- Kural 1195 / philosophy - 58% (primary): Paraphrase; a partial fit, giving the psychological reason behind the Kural’s complaint.
+- Kural 1198 / christianity - 58% (primary): Verified verbatim via bolls.life KJV; a good general fit on the strain of waiting, without the specific love context.
+- Kural 1198 / islam - 58% (primary): Verified verbatim on quran.com (excerpt); a good fit on enduring separation without word, though the love is a father’s, and Islam praises the patience the Kural half-reproaches.
+- Kural 1198 / philosophy - 58% (primary): Paraphrase; a reasonable fit on the need for words between those who love, though Aristotle speaks of friends in general.
+- Kural 1199 / islam - 58% (secondary): Paraphrase of a widely cited verse of uncertain authorship; good fit on cherishing traces of an absent beloved, from Arabic love poetry rather than scripture.
+- Kural 1200 / buddhism - 58% (primary): Paraphrase; a good fit on the futility of lament, though the sutta concerns bereavement and offers detachment as the cure.
+- Kural 1202 / islam - 58% (primary): Verified verbatim via quran.com API; a parallel on the soothing power of remembrance, but the remembered one is God, not a human lover.
+- Kural 1202 / buddhism - 58% (primary): Paraphrase of a well-known sutta; parallel mechanism of comforting recollection in solitude, different object.
+- Kural 1204 / philosophy - 58% (primary): Paraphrase of a famous essay; it supplies the answer the heroine longs for, about friendship rather than marriage.
+- Kural 1205 / judaism - 58% (primary): Verified verbatim on Sefaria (JPS 1917); partial fit on unanswered longing, without the reproach of shamelessness.
+- Kural 1211 / hinduism - 58% (primary): Paraphrase of a well-known episode; the messenger motif fits, but the swan is a real bird, not a dream, and Damayanti does not ‘feast’ it.
+- Kural 1211 / philosophy - 58% (primary): Paraphrase; good fit on the dream as messenger, but its message concerns Socrates’ death, not love.
+- Kural 1212 / christianity - 58% (primary): Verified verbatim via bolls.life KJV; close on night-time longing on one’s bed, though without the wish to sleep in order to speak.
+- Kural 1215 / sikhism - 58% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: it shares the Kural's levelling of waking and dreaming as equally brief, but Guru Nanak's point is detachment from a passing world, not the sweetness of love.
+- Kural 1215 / philosophy - 58% (primary): Paraphrase; good conceptual fit on the parity of dream and waking ‘at the time’, framed epistemically rather than emotionally.
+- Kural 1217 / buddhism - 58% (primary): Paraphrase of a well-known simile; good fit on dream-pleasure that does not last, though Buddhism concludes one should renounce such pleasures.
+- Kural 1217 / greek_mythology - 58% (primary): Paraphrase of a famous passage; good fit on dreams that tease with unfulfilled promise, told by a wife longing for her husband.
+- Kural 1218 / christianity - 58% (primary): Verified verbatim via bolls.life KJV; matches the restful embrace but lacks the Kural’s turn to the heart on waking.
+- Kural 1218 / greek_mythology - 58% (primary): Paraphrase of a mythic passage; good fit on the beloved held within during absence, set in a philosophical allegory.
+- Kural 1219 / greek_mythology - 58% (primary): Close paraphrase of a passage read on classics.mit.edu; good fit on outsiders pronouncing the absent husband lost.
+- Kural 1220 / christianity - 58% (primary): Verified verbatim via bolls.life KJV; good fit on onlookers questioning a lover’s faith in the absent beloved.
+- Kural 1222 / jainism - 58% (primary): Paraphrase of a well-attested Jain narrative, not checked against the text in this session; the abandoned-bride situation fits, but Jainism praises the departure the Kural’s wife resents.
+- Kural 1223 / sikhism - 58% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: both tie cold, dewy weather to the lot of the separated bride, but the Guru states it from the side of union, and his love is spiritual, not romantic.
+- Kural 1224 / jainism - 58% (primary): Verified verbatim on sacred-texts.com; shares the image of love as an attacking enemy, though the Jain verse addresses monks, not a wife.
+- Kural 1225 / christianity - 58% (primary): Verified verbatim via bolls.life KJV; matches the morning as a time of relief, but the evening-as-enemy half has no counterpart.
+- Kural 1225 / buddhism - 58% (primary): Paraphrase of famous verses; a doctrinal answer to the Kural’s question rather than a parallel to its feeling.
+- Kural 1226 / sikhism - 58% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: it shares the idea that the beloved's presence keeps every sorrow away, but it has no before-and-after discovery of the evening's pain, and the love is spiritual, not romantic.
+- Kural 1227 / greek_mythology - 58% (primary): Paraphrase of a famous fragment; matches love as an overpowering sickness, but not its daily growth or separation.
+- Kural 1229 / islam - 58% (primary): Verified verbatim on sunnah.com; good match on one person’s suffering shared by all, though the hadith describes an ideal of compassion, not a lover’s projection.
+- Kural 1230 / jainism - 58% (primary): Verified verbatim on sacred-texts.com; matches property as the root of misery, though the Jain verse is a general doctrine, not a wife’s complaint.
+- Kural 1232 / christianity - 58% (primary): Verified verbatim via bible-api.com (KJV); good on eyes consumed by grief, but there is no beloved whose unkindness is being revealed.
+- Kural 1232 / judaism - 58% (primary): Verified verbatim on mechon-mamre.org; matches tear-worn eyes, but the grief is national catastrophe, not a lover’s neglect.
+- Kural 1233 / christianity - 58% (primary): Verified verbatim via bible-api.com (KJV); strong on bodily wasting from grief, but without a lover or the ‘then and now’ contrast.
+- Kural 1235 / hinduism - 58% (primary): Paraphrase of the canto’s substance; good on a heroine accusing her lover, though Krishna’s offence is infidelity, not distance.
+- Kural 1238 / christianity - 58% (primary): Verified verbatim via bible-api.com (KJV); same embrace image, though the Song celebrates it rather than its loosening.
+- Kural 1242 / hinduism - 58% (primary): Verified verbatim on asitis.com; fits the chapter’s self-address to the mind, but the Gita speaks of yogic self-mastery, not unrequited love.
+- Kural 1243 / judaism - 58% (primary): Verified verbatim on Sefaria (JPS 1917); same form of self-address, but the psalmist’s reason for calm is God’s kindness, not the beloved’s indifference.
+- Kural 1245 / philosophy - 58% (primary): Paraphrase from knowledge of the chapter, not verified live; a reasoned parallel about not breaking bonds, though Aristotle discusses friendship, not marital love.
+- Kural 1248 / buddhism - 58% (primary): Verified verbatim on accesstoinsight.org; matches the runaway heart, though the Buddha’s concern is taming the mind, not love.
+- Kural 1249 / buddhism - 58% (primary): Verified verbatim on accesstoinsight.org; a vivid image of a mind that lives within but roams outside, though the aim is to subdue it, not to rest in a beloved.
+- Kural 1250 / buddhism - 58% (primary): Verified verbatim on accesstoinsight.org; it diagnoses her condition, though it proposes a detachment she does not choose.
+- Kural 1255 / christianity - 58% (primary): Verified verbatim via bible-api.com (KJV); the loss of dignity out of love fits, but it is a father’s love and the son is returning, not spurning.
+- Kural 1255 / islam - 58% (primary): Verified verbatim via api.alquran.cloud (en.sahih); fits the pursuit of one who refuses, but the Qur’an presents it as wrongdoing, so the moral frame is opposite.
+- Kural 1259 / judaism - 58% (primary): Verified verbatim on mechon-mamre.org (JPS 1917); a vivid match on resentment dissolving into embrace, though it is a reconciliation of brothers.
+- Kural 1259 / sikhism - 58% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa); next-best match: it shares the image of melting into the embrace, but has no planned sulk that gives way, and the love meant is spiritual, not romantic.
+- Kural 1260 / philosophy - 58% (primary): Paraphrase of a well-known proposition; it explains why the heroine’s resolve fails, though Spinoza is not speaking of love specifically.
+- Kural 1268 / hinduism - 58% (primary): Paraphrase of a well-known episode; partial fit, since Rama must first fight to reach Sita, whereas the Kural’s husband waits for the king’s war to end.
+- Kural 1271 / christianity - 58% (primary): Verified verbatim via bible-api.com (KJV); shares the idea that concealment fails, but Luke speaks of hypocrisy exposed, not love betrayed by the eyes.
+- Kural 1272 / hinduism - 58% (primary): Paraphrase of a famous scene; matches the pairing of beauty with modest, wordless feeling, but Kalidasa praises a goddess, not a wife’s character above her looks.
+- Kural 1274 / hinduism - 58% (primary): Paraphrase of a well-known stanza; the flower-and-bud imagery of young love matches, but Kalidasa describes her body rather than a hidden meaning in her smile.
+- Kural 1276 / hinduism - 58% (primary): Paraphrase of a famous episode; matches union followed by sudden separation, though Krishna’s disappearance has a devotional purpose the Kural does not share.
+- Kural 1276 / philosophy - 58% (primary): Paraphrase of a well-known passage; matches fear of love that will depart, though Plato’s concern is the quality of love, not a reading of signs.
+- Kural 1279 / sikhism - 58% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) on 2026-10-10; next-best match: both involve a go-between who conveys the lover's inner state, but the Kural's wordless signs (looking at bangles, shoulders, feet) have no parallel, and here the state is told in words.
+- Kural 1281 / hinduism - 58% (primary): Paraphrase of a well-known episode; shares the idea of love overpowering at a mere sign, but it is devotional love for God and lacks the Kural’s explicit contrast with wine.
+- Kural 1284 / judaism - 58% (primary): Verified verbatim on mechon-mamre.org (JPS 1917); a good structural match on grievance melting at sight, but between brothers rather than spouses.
+- Kural 1286 / hinduism - 58% (primary): Paraphrase of a well-known hymn; a partial match on reproach in absence, though the gopis’ song is mostly praise mixed with complaint.
+- Kural 1286 / philosophy - 58% (primary): Paraphrase of a well-known proposition; a partial match on contrary emotions toward one person, in an abstract philosophical register.
+- Kural 1290 / buddhism - 58% (secondary): Paraphrase of a well-known episode in the commentarial tradition; a partial match on reserve giving way to welcome, in a context of renunciation.
+- Kural 1292 / christianity - 58% (primary): Verified verbatim via bible-api.com (KJV); a fair match on love that keeps hoping, though Paul praises this, while the Kural’s speaker scolds it.
+- Kural 1293 / buddhism - 58% (primary): Verified verbatim on accesstoinsight.org; a fair match on the mind wandering off alone, though the verse calls for subduing it, not loving.
+- Kural 1294 / greek_mythology - 58% (primary): Paraphrase of a famous scene; a partial match on reserve before reunion, though Penelope’s motive is caution, not a lover’s sulk.
+- Kural 1296 / judaism - 58% (primary): Verified verbatim on mechon-mamre.org (JPS 1917); a fair match on a restless heart in solitude, though the Song’s tone is expectant rather than tormented.
+- Kural 1296 / philosophy - 58% (primary): Paraphrase of a famous opening scene; a partial match on solitary brooding that deepens pain, in a context of misfortune rather than love.
+- Kural 1298 / sikhism - 58% (primary): Verified verbatim via BaniDB (Sant Singh Khalsa translation) this session; next-best: shares the act of dwelling on the beloved's good qualities, but Japji's line is general praise, without the Kural's struggle against reproach.
+- Kural 1300 / greek_mythology - 58% (primary): Paraphrase of famous lines; a partial match on a heart that turns against its owner, in a far darker situation than the Kural’s.
+- Kural 1301 / christianity - 58% (primary): Verified verbatim via bible-api.com (KJV); a partial match, since the bride’s delay is not a planned test and the pain falls on her rather than on him.
+- Kural 1307 / islam - 58% (primary): Paraphrase of the famous opening; a fair match on the pain of separation, though Rumi’s beloved is ultimately divine.
+- Kural 1307 / greek_mythology - 58% (primary): Paraphrase of a famous myth; a fair match on fear of losing union, though far more tragic than a lovers’ sulk.
+- Kural 1308 / christianity - 58% (primary): Verified verbatim via bible-api.com (KJV); a reasonable match on shared sorrow, though addressed to a community, not to lovers.
+- Kural 1308 / jainism - 58% (primary): Paraphrase of the Rathanemi chapter’s narrative, not verified verbatim this session; a fair match on grief without a responding lover, with a Jain resolution.
+- Kural 1309 / judaism - 58% (primary): Verified verbatim on Sefaria (JPS 1917); a partial match on displeasure as a sign of love, framed as divine discipline.
+- Kural 1309 / buddhism - 58% (primary): Verified verbatim on accesstoinsight.org; a fair match on reproach valued by its source, though the Dhammapada speaks of wise teachers, not lovers.
+- Kural 1309 / philosophy - 58% (primary): Paraphrase of the essay’s main argument; a fair match on sharpness valued within goodwill, though about friendship, not love.
+- Kural 1310 / christianity - 58% (primary): Verified verbatim via bible-api.com (KJV); a fair match on love that persists despite neglect, though Paul praises it while the Kural half-rebukes it as mere desire.
+- Kural 1311 / islam - 58% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a real teaching on the wandering gaze, but it is a moral command, not a wife’s mock jealousy.
+- Kural 1311 / greek_mythology - 58% (primary): Paraphrase of a famous scene; a fair match on exclusive devotion, but it shows the husband’s faithfulness rather than a wife’s teasing jealousy.
+- Kural 1312 / hinduism - 58% (primary): Paraphrase of the canto’s refrain; a reasonable match on breaking a lover’s sulk, though there is no sneeze or blessing.
+- Kural 1312 / greek_mythology - 58% (primary): Paraphrase of a well-known scene; a good match on the sneeze as a meaningful sign, though it is an omen, not a lover’s trick.
+- Kural 1314 / philosophy - 58% (primary): Paraphrase of a famous maxim; a good fit on interpretation causing upset, though Epictetus has no love setting.
+- Kural 1315 / judaism - 58% (primary): Verified verbatim on Sefaria (Koren-Steinsaltz English); a fair match on tears over separation, though the Talmud speaks of divorce, not rebirth.
+- Kural 1315 / jainism - 58% (primary): Verified verbatim on sacred-texts.com (Jacobi); a partial match on grief at separation, though Jain tradition turns it toward renunciation, not continued married love.
+- Kural 1317 / islam - 58% (primary): Verified verbatim via api.alquran.cloud (en.sahih); a contrastive match on groundless suspicion, from a moral command rather than a love poem.
+- Kural 1320 / philosophy - 58% (primary): Paraphrase of a well-known passage; a fair match on the lover’s rapt gaze, though Plato’s purpose is philosophical.
+- Kural 1322 / philosophy - 58% (primary): Paraphrase of a well-known passage; a good philosophical match on pain giving way to pleasure, though not about love.
+- Kural 1323 / christianity - 58% (primary): Verified verbatim via bible-api.com (KJV); a strong match on union, but the comparison with heaven and the sulking are absent.
+- Kural 1323 / islam - 58% (primary): Verified verbatim via api.alquran.cloud (en.sahih; one sentence excerpted from a longer verse); a good image of intimate union, without the Kural’s comparison to heaven.
+- Kural 1323 / philosophy - 58% (primary): Paraphrase; a strong match on two lovers made one, but the sulking and the comparison with heaven are absent.
+- Kural 1325 / islam - 58% (primary): Verified verbatim on sunnah.com (ellipsis marks omitted narrative); a real, affectionate domestic quarrel, though here it is the husband who withdraws.
+- Kural 1325 / greek_mythology - 58% (primary): Verified verbatim on classics.mit.edu; a good match on a blameless husband kept at a distance, though Odysseus is frustrated rather than pleased.
+- Kural 1327 / hinduism - 58% (primary): Paraphrase of a celebrated verse; a good match on loving surrender that wins union, though it follows penance rather than a sulk.
+- Kural 1327 / christianity - 58% (primary): Verified verbatim via bible-api.com (KJV); a strong structural match on the humble being raised, though about pride in general.
+- Kural 1327 / buddhism - 58% (primary): Verified verbatim on accesstoinsight.org; a good match on giving up the win-lose contest, though the Buddhist peace is wider than lovers’ reunion.
+- Kural 1328 / philosophy - 58% (primary): Paraphrase of the book’s central question; a good philosophical match on whether joy can be repeated, though Kierkegaard’s answer is complex.
+- Kural 1329 / sikhism - 58% (primary): Verified verbatim via the BaniDB API (Sant Singh Khalsa translation) this session; next-best: both prize the night for seeking the beloved, but Farid speaks of prayerful wakefulness for God, not a lover's pleading.

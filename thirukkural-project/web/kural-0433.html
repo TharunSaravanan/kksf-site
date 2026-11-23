@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 433 — Error Correction | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 433</h1>
+<p class="adhikaram"><a href="adhikaram-044.html">Error Correction</a> &middot; Kutrankaditthal &middot; <span class="tamil">குற்றங்கடிதல்</span></p>
+
+<div class="tamil-text">தினைத்துணையாங் குற்றம் வரினும் பனைத்துணையாக்
+கொள்வர் பழிநாணு வார்.</div>
+<div class="translit">Thinaiththunaiyaang kutram varinum panaiththunaiyaak
+Kolvar pazhinaanu vaar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who are afraid of being blamed treat even a fault as small as a millet seed as if it were as big as a palmyra palm (a very tall tree).</p>
+
+<h2 class="section">Elementary</h2>
+<p>A millet seed is tiny, and a palm tree is huge. People who really care about doing right treat even a tiny mistake as if it were a giant one, so they fix it straight away instead of letting it grow.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet turns on a vivid scale contrast between தினை (foxtail millet, among the smallest grains) and பனை (the palmyra palm, among the tallest trees). பழிநாணுவார், ‘those who are ashamed before blame’, are defined not by having no faults but by how they perceive them: they magnify their own errors in their own eyes. This is a moral psychology of vigilance. Shame (நாண்) works here as a protective faculty, the Tamil counterpart of Greek aidōs, that makes a small lapse feel intolerable before it can grow. The commentators divide on whether the sense is ‘they grieve over it as if it were huge’ (Puliyur Kesikan) or ‘they guard against it as if it were huge’ (Varadarasan, Karunanidhi); both readings share the principle of disproportionate self-scrutiny.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;People will always speak of your infamy, and for a respectable person, dishonor is worse than death.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 2.34</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna reminds Arjuna that, for someone of honour, a disgraced name is harder to bear than death.</div>
+  <div class="tieback">The Kural’s ‘those who dread disgrace’ are exactly the people for whom, as the Gita says, dishonour weighs more than death, which is why they treat even small faults as huge.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;He that is faithful in that which is least is faithful also in much: and he that is unjust in the least is unjust also in much.&rdquo;</div>
+  <div class="cite">&mdash; Luke 16:10 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus teaches that how someone handles very small things reveals how they will handle big ones.</div>
+  <div class="tieback">Both texts refuse to treat small faults as trivial; the millet-sized fault matters because character is built on the least things.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;A believer sees his sins as if he were sitting under a mountain which, he is afraid, may fall on him; whereas the wicked person considers his sins as flies passing over his nose and he just drives them away like this.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6308" target="_blank" rel="noopener">Sahih al-Bukhari 6308 (saying of ‘Abdullah ibn Mas‘ud)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Ibn Mas‘ud contrasts the believer, who feels even his sins as a mountain about to fall, with the wicked person, who brushes them off like flies.</div>
+  <div class="tieback">Almost the same image as the Kural: the conscientious person sees a small fault as a mountain (palmyra) rather than as something tiny (millet, a fly).</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;And be careful with a light commandment as with a grave one, for you did know not the reward for the fulfillment of the commandments.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 2:1</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbi Judah the Prince teaches that small duties deserve as much care as big ones, since we cannot know their true weight.</div>
+  <div class="tieback">The Kural’s ‘treat the small as great’ is the Mishnah’s ‘be as careful with the light as with the grave’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Think not lightly of evil, saying, &#x27;It will not come to me.&#x27; Drop by drop is the water pot filled. Likewise, the fool, gathering it little by little, fills himself with evil.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 121 (tr. Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha warns that small wrongdoings, repeated, fill a person with evil just as drops of water fill a pot.</div>
+  <div class="tieback">Both say that no fault is small enough to ignore; the wise person, like the Kural’s shame-sensitive person, treats the drop as seriously as the flood.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;One should not be complacent with a small debt, slight wound, spark of fire and slight passion, because what is small (today) may become bigger (later).&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.com/" target="_blank" rel="noopener">Saman Suttam 134 (English tr., jainworld.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jain teaching treats even a slight stirring of passion (kashāya) as dangerous, comparing it to a small debt, wound or spark that grows if neglected.</div>
+  <div class="tieback">Those who dread disgrace, says Valluvar, treat a millet-sized fault as if it were as large as a palmyra; the Jain verse gives the same reason for refusing to belittle a small fault: what is small today grows large tomorrow.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Kabeer, I am the worst of all. Everyone else is good.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1364, Salok Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Bhagat Kabir models a humility that looks hard at one&#x27;s own failings and refuses to rank oneself above anyone else.</div>
+  <div class="tieback">The Kural praises those who see a millet-sized fault in themselves as large as a palmyra; Kabir&#x27;s self-judgement magnifies his own faults in the same spirit.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Hesiod describes how, in the degenerate Iron Age, Aidōs (Shame) and Nemesis (Righteous Indignation) will abandon humankind and depart to the gods, leaving no defence against evil.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 197-201</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Greek myth, Shame is a goddess, and when she leaves the human world, people lose what kept them from wrongdoing.</div>
+  <div class="tieback">The Kural’s பழிநாணுவார் are those in whom Aidōs still lives: their sense of shame is the faculty that makes even small faults feel large.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Shame should not be described as a virtue; for it is more like a feeling than a state of character. It is defined, at any rate, as a kind of fear of dishonour...&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics IV.9 (tr. W. D. Ross)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle analyses shame as a fear of disgrace that restrains people, especially the young, from doing wrong.</div>
+  <div class="tieback">The Kural’s ‘those who dread disgrace’ are defined by exactly this fear of dishonour, which drives them to magnify their own faults.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Hugh Dalton resigns over a budget leak</div>
+  <div class="rle-meta">12-13 November 1947 &middot; Palace of Westminster, London, United Kingdom</div>
+  <div class="quote is-paraphrase">On his way into the House of Commons to deliver his budget, Chancellor of the Exchequer Hugh Dalton stopped to talk with a lobby journalist and mentioned some of his tax plans. The journalist&#x27;s evening paper printed them shortly before Dalton reached that part of his speech. Although the slip was brief and had little practical effect, Dalton apologised to the House and offered his resignation, which Prime Minister Clement Attlee accepted the next day.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Dalton treated a small indiscretion as a grave breach of his duty to Parliament and gave up one of the highest offices in government because of it.</div>
+  <div class="tieback">The kural says those who dread disgrace treat a fault as small as a millet seed as if it were as tall as a palmyra palm, and Dalton resigned over a few leaked lines.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.thirukkural.net/ta/kural/adhigaram-044.html" target="_blank" rel="noopener">Thirukkural, Adhigaram 44 (Kurals 431-440) with commentaries of Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah and Mu. Karunanidhi</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html" target="_blank" rel="noopener">Tirukkural of Tiruvalluvar (Tamil script, Unicode e-text)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:6308" target="_blank" rel="noopener">Sahih al-Bukhari 6308, Book of Invocations</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://jainworld.com/" target="_blank" rel="noopener">Saman Suttam (anthology of Jain scripture, compiled 1974)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, tr. W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.parliament.uk/about/living-heritage/evolutionofparliament/parliamentwork/communicating/overview/lobbyjournalism/" target="_blank" rel="noopener">Lobby journalism</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://discovery.nationalarchives.gov.uk/details/r/C200705" target="_blank" rel="noopener">Resignation of Mr. Hugh Dalton as Chancellor of the Exchequer on his disclosure of information on the Budget to a newspaper Lobby correspondent (PREM 8/435)</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0432.html">&larr; Kural 432</a>
+  <a href="kural-0434.html">Kural 434 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-044.html">Error Correction</a>
+  <a class="skip-btn" href="kural-0441.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

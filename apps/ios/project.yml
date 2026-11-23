@@ -1,0 +1,28 @@
+# XcodeGen spec — generates Thirukkural.xcodeproj.
+#   brew install xcodegen
+#   cd apps/ios && xcodegen
+#   open Thirukkural.xcodeproj
+name: Thirukkural
+options:
+  bundleIdPrefix: com.adhigopal
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  Thirukkural:
+    type: application
+    platform: iOS
+    sources:
+      - path: Thirukkural
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.adhigopal.thirukkural
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Thirukkural
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon

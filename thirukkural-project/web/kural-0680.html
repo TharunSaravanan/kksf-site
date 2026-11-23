@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 680 — The Method of Execution | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 680</h1>
+<p class="adhikaram"><a href="adhikaram-068.html">The Method of Execution</a> &middot; Vinai Seyalvakai &middot; <span class="tamil">வினை செயல்வகை</span></p>
+
+<div class="tamil-text">உறைசிறியார் உள்நடுங்கல் அஞ்சிக் குறைபெறின்
+கொள்வர் பெரியார்ப் பணிந்து.</div>
+<div class="translit">Uraisiriyaar ulnadungal anjik kuraiperin
+Kolvar periyaarp panindhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Leaders of a small country, afraid that their own people are scared, will give in to a stronger power and accept peace if they are offered a chance.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a small team facing a much bigger, stronger team and all your players are scared. A wise captain might agree to a fair deal instead of a hopeless match, to protect the team. Sometimes the brave choice is to make peace.</p>
+
+<h2 class="section">University</h2>
+<p>Uraisiriyaar, &#x27;those whose dwelling (realm) is small&#x27;, is read by Parimelazhagar as the ministers of weak states; ulnadungal anji means &#x27;fearing the inner trembling&#x27; of their own subjects; kurai perin, &#x27;if they obtain an opening&#x27; for reconciliation; periyaarp panindhu kolvar, &#x27;they will submit to and embrace the great&#x27;. The Drew-Lazarus rendering on ytamizh follows this reading, while Mu. Varadarasanar and Solomon Pappaiah read it more generally about the weak yielding to the strong for the sake of their people. The older sandhi text reads உண்ணடுங்க லஞ்சிக் குறைபெறிற். Placed at the end of the chapter, the kural completes the method of execution by admitting that sometimes the wise act is timely submission rather than conflict, a principle also central to the Arthashastra&#x27;s teaching on the weak king and to Luke 14:31-32.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Kautilya teaches that a king who is weaker than his rival should make peace with him, and that a weak king attacked by a strong one should submit, bending like a reed, and wait for better times.</div>
+  <div class="cite">&mdash; <a href="https://archive.org/details/Arthasastra_English_Translation" target="_blank" rel="noopener">Kautilya, Arthashastra 7.1 and 12.1 (trans. R. Shamasastry)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Arthashastra treats timely submission (samdhi) by the weaker side as sound policy, not cowardice.</div>
+  <div class="tieback">This is the Kural&#x27;s advice to the rulers of small realms: accept terms with the stronger party to protect one&#x27;s people.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Or what king, going to make war against another king, sitteth not down first, and consulteth whether he be able with ten thousand to meet him that cometh against him with twenty thousand? Or else, while the other is yet a great way off, he sendeth an ambassage, and desireth conditions of peace.&rdquo;</div>
+  <div class="cite">&mdash; Luke 14:31-32 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus describes a weaker king who, seeing he is outnumbered, sends envoys early to ask for terms.</div>
+  <div class="tieback">This is almost exactly the Kural&#x27;s scene: a smaller ruler seeking terms from a greater one.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">At al-Hudaybiyyah the Prophet accepts a truce with Quraysh on terms many of his companions found humiliating, including turning back from Mecca that year; the Quran later calls the outcome a clear victory.</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:2731" target="_blank" rel="noopener">Sahih al-Bukhari 2731-2732; Quran 48:1</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Accepting restrictive terms from a stronger party in the moment protected the community and opened the way to later success.</div>
+  <div class="tieback">Like the Kural&#x27;s rulers, the Prophet chose a negotiated settlement over a clash, for his people&#x27;s sake.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Bring your necks under the yoke of the king of Babylon, and serve him and his people, and live.&rdquo;</div>
+  <div class="cite">&mdash; Jeremiah 27:12 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jeremiah urges King Zedekiah to submit to Babylon&#x27;s greater power rather than rebel and bring ruin on Jerusalem.</div>
+  <div class="tieback">The prophet gives the Kural&#x27;s counsel to a small kingdom: bow to the greater power for the survival of the people.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Victory begets enmity; the defeated dwell in pain. Happily the peaceful live, discarding both victory and defeat.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 201 (trans. Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Traditionally linked to the war between King Pasenadi and King Ajatasattu, the verse says conflict harms winner and loser alike.</div>
+  <div class="tieback">It gives an ethical reason to prefer peace to fighting on, which supports the Kural&#x27;s settlement-seeking rulers.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">When Bharata, eldest son of Rishabha, set out to bring every realm under his rule as chakravartin, his ninety-eight younger brothers, each holding a smaller kingdom, were called on to submit. Jain tradition relates that rather than fight or bow, they became monks and gave up their kingdoms, leaving Bahubali alone to resist.</div>
+  <div class="cite">&mdash; <a href="https://en.wikipedia.org/wiki/Bharata_chakravarti" target="_blank" rel="noopener">Hemacandra, Triṣaṣṭiśalākāpuruṣacaritra, Book I (life of Ṛṣabha and Bharata&#x27;s conquest), as summarised in Wikipedia, &#x27;Bharata chakravarti&#x27;</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">In the Jain universal history the weaker rulers neither wage a hopeless war nor merely submit, but renounce kingship altogether.</div>
+  <div class="tieback">The kural observes that small rulers, fearing for their people, will yield to a mightier power when an opening is offered; the Jain story shows lesser kings in the same position choosing renunciation instead.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;When something is placed on the balancing scale and weighed, the side which descends is heavier.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 470, Raag Aasaa, Asa ki Vaar (salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In Asa ki Vaar Guru Nanak uses the scale to show that the one who bows is the one of real weight, so humility is strength, not loss.</div>
+  <div class="tieback">The Kural says the rulers of a small realm, fearing for their people, will bow to a greater power when peace is offered; Guru Nanak&#x27;s scale gives a moral reason why such bowing need not be shameful.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Old King Priam goes by night to the tent of Achilles, who has killed his son, kneels and kisses his hands, and wins back Hector&#x27;s body so that Troy can mourn.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad 24.468-620</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The weaker king humbles himself before the stronger warrior to obtain what his people need.</div>
+  <div class="tieback">Priam, like the rulers in the Kural, bows to the greater power when an opening appears, for the sake of his people.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In the Melian Dialogue the Athenian envoys urge the small island of Melos to yield, arguing that the strong do what they can and the weak suffer what they must; Melos refuses and is destroyed.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/7142" target="_blank" rel="noopener">Thucydides, History of the Peloponnesian War 5.84-116 (trans. Richard Crawley)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Thucydides presents the negative case: a small state that refuses terms from a far stronger power is wiped out.</div>
+  <div class="tieback">The fate of Melos shows, in reverse, the prudence the Kural credits to small states that bow when terms are offered.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Siam accepts France&#x27;s terms in the crisis of 1893</div>
+  <div class="rle-meta">1893 &middot; Bangkok, Siam (Thailand)</div>
+  <div class="quote is-paraphrase">In 1893, after clashes with French forces in the Mekong valley, French gunboats forced their way up the Chao Phraya River and blockaded Bangkok, and France gave Siam an ultimatum. King Chulalongkorn&#x27;s government accepted the French demands, agreeing to pay an indemnity and withdrawing from the east bank of the Mekong, which France took as part of its protectorate in Laos. The concession was part of a broader policy of yielding territory to Western powers in the hope that Siam could keep its overall independence, and Siam stayed independent while its neighbours fell under colonial rule.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Facing a far stronger power, Siam chose painful concessions over a war it could not win, and in doing so preserved the kingdom itself.</div>
+  <div class="tieback">The kural says the rulers of a small realm, fearing for their own people, will bow to a mightier power and accept terms when an opening for peace is offered, which is what Chulalongkorn&#x27;s government did under French guns in 1893.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-68/" target="_blank" rel="noopener">Thirukkural Chapter 68: வினைசெயல்வகை / Modes of Action (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A068.html" target="_blank" rel="noopener">68. வினைசெயல்வகை (Thirukkural text, amaichiyal section)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://archive.org/details/Arthasastra_English_Translation" target="_blank" rel="noopener">Kautilya&#x27;s Arthaśāstra, translated by R. Shamasastry (1915), Book II Chapter 24, &#x27;The Superintendent of Agriculture&#x27;</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:2731" target="_blank" rel="noopener">Sahih al-Bukhari 2731-2732 (Treaty of al-Hudaybiyyah)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://en.wikipedia.org/wiki/Bharata_chakravarti" target="_blank" rel="noopener">Bharata chakravarti</a> <span class="tier">[web source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad, Book 21, translated by A. T. Murray (Loeb Classical Library, 1924)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.gutenberg.org/ebooks/7142" target="_blank" rel="noopener">Thucydides, History of the Peloponnesian War, translated by Richard Crawley (1874)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/topic/history-of-Thailand" target="_blank" rel="noopener">History of Thailand</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/place/Laos/Under-foreign-rule" target="_blank" rel="noopener">Laos: Under foreign rule</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://history.state.gov/historicaldocuments/frus1893/d538" target="_blank" rel="noopener">Foreign Relations of the United States, 1893, Document 538</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0679.html">&larr; Kural 679</a>
+  <a href="kural-0681.html">Kural 681 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-068.html">The Method of Execution</a>
+  <a class="skip-btn" href="kural-0681.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

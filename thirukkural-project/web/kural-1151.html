@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1151 — Unendurable Separation | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1151</h1>
+<p class="adhikaram"><a href="adhikaram-116.html">Unendurable Separation</a> &middot; Pirivaatraamai &middot; <span class="tamil">பிரிவாற்றாமை</span></p>
+
+<div class="tamil-text">செல்லாமை உண்டேல் எனக்குரை மற்றுநின்
+வல்வரவு வாழ்வார்க் குரை.</div>
+<div class="translit">Sellaamai undael enakkurai matrunin
+valvaravu vaazhvaark kurai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If you are not leaving, tell me so. But if your news is that you will go and hurry back, tell it to whoever is still alive when you return.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine your best friend says, ‘I’m moving away, but don’t worry, I’ll visit soon!’ You might answer, ‘Only tell me the part where you’re staying. The coming-back-soon part is too far away for me to hold on to.’ The wife in this couplet feels the same: a promise to return quickly is no comfort if her heart cannot last that long.</p>
+
+<h2 class="section">University</h2>
+<p>Chapter 116 opens the karpiyal (the section on married love) with the heroine’s distress when her husband announces a journey, conventionally to earn wealth or serve the king; commentators assign the couplets to the heroine herself or to her confidante (tōḻi) speaking for her. Cellāmai (செல்லாமை) is ‘not going’, and valvaravu (வல்வரவு) is ‘swift return’; the sting is in vāḻvārkku urai, ‘tell it to those who will live’, implying that she will not survive the interval. Mu. Varadarasanar glosses ‘tell it to those able to stay alive until then’, while Kalaignar turns it into ‘say your farewells now to whoever will still be alive when you come back’. Pope renders: ‘If you will say, “I leave thee not,” then tell me so; / Of quick return tell those that can survive this woe.’ The text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">When Rama tells Sita he must go into forest exile and that she should stay behind in Ayodhya, she refuses, insisting that a wife’s place is at her husband’s side and that the forest with him is better than a palace without him.</div>
+  <div class="cite">&mdash; <a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Valmiki Ramayana, Ayodhya Kanda, Sita’s plea to accompany Rama (sargas c. 27-30) (paraphrase)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">In the Ayodhya Kanda, Sita answers Rama’s farewell by declaring she will go with him, since separation from him would be worse than any hardship of the forest.</div>
+  <div class="tieback">Like the Kural’s heroine, Sita will not accept a parting softened by assurances; for her there are only two options, staying together or not surviving the absence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And they all wept sore, and fell on Paul’s neck, and kissed him, Sorrowing most of all for the words which he spake, that they should see his face no more.&rdquo;</div>
+  <div class="cite">&mdash; Acts 20:37-38 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">When Paul announces his departure from Miletus, the elders of Ephesus are grieved above all by his words that they will not see him again.</div>
+  <div class="tieback">As in the Kural, it is the announcement of the parting, the words themselves, that wounds most deeply.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O Abraham! Where are you going, leaving us in this valley where there is no person whose company we may enjoy, nor is there anything (to enjoy)?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:3364" target="_blank" rel="noopener">Sahih al-Bukhari 3364 (Book of the Prophets)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Hagar follows Abraham as he leaves her and the infant Ishmael in the empty valley of Mecca, repeating her question until she learns that God has commanded it.</div>
+  <div class="tieback">Hagar, like the Kural’s heroine, confronts a departing husband with the question of how she is to survive his absence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Entreat me not to leave thee, and to return from following after thee; for whither thou goest, I will go; and where thou lodgest, I will lodge.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/" target="_blank" rel="noopener">Ruth 1:16 (JPS 1917, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Ruth refuses Naomi’s urging to turn back, binding herself to go wherever Naomi goes until death parts them.</div>
+  <div class="tieback">Ruth voices the Kural’s refusal of separation as a vow: the only acceptable answer to a parting is not to part.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Lord, as I was leaving home, a Sakyan girl — the envy of the countryside — glanced up at me, with her hair half-combed, and said, ‘Hurry back, master.’&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.dhammatalks.org/suttas/KN/Ud/ud3_2.html" target="_blank" rel="noopener">Udana 3.2, Nanda Sutta (tr. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Nanda, the Buddha’s half-brother, confesses that the parting words of his bride keep pulling him back from the monastic life.</div>
+  <div class="tieback">The bride’s ‘Hurry back’ is the very plea for a swift return that the Kural’s heroine says she cannot live on.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Râgîmatî thought: ‘Shame upon my life, that I have been forsaken by him! it is better I should turn nun.’&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 22.29 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">When her betrothed, Arishtanemi, leaves on the wedding day to become a monk, Princess Rajimati feels her life as she knew it has ended and resolves to renounce the world herself.</div>
+  <div class="tieback">Rajimati, like the Kural’s heroine, treats her beloved’s departure as the end of the life she had; the Jain story turns that ending into renunciation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Without my Beloved, I cannot survive even for an instant; without meeting Him, I cannot sleep.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1274, Raag Malaar, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak speaks as the soul-bride who cannot live, or even rest, for a moment apart from her Beloved Lord.</div>
+  <div class="tieback">The Kural&#x27;s heroine tells her husband to give news of a swift return only to those who will still be alive, because she will not survive the gap; Guru Nanak&#x27;s bride likewise says she cannot survive even an instant without the Beloved.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Ovid’s Heroides, Laodamia writes to her husband Protesilaus, who sailed for Troy almost at once after their wedding, that she fainted as his ship left and begs him to come home to her quickly and safely.</div>
+  <div class="cite">&mdash; Ovid, Heroides 13 (Laodamia to Protesilaus) (paraphrase) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Laodamia’s letter is a whole poem of a newly married wife unable to bear her husband’s departure.</div>
+  <div class="tieback">She, too, receives a hasty departure and a hoped-for return, and finds the gap between them almost unendurable.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle observes that just as lovers find the sight of the beloved the most delightful thing, so friends find nothing more desirable than living together.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics 9.12 (paraphrase)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Aristotle, shared presence is not an extra but the very activity in which love and friendship consist.</div>
+  <div class="tieback">The Kural’s heroine says the same: the only news she wants is that he will stay.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Mumtaz Mahal dies at Burhanpur while on campaign with Shah Jahan</div>
+  <div class="rle-meta">17 June 1631 &middot; Burhanpur, Deccan, India</div>
+  <div class="quote is-paraphrase">Mumtaz Mahal, married to the future Mughal emperor Shah Jahan in 1612, regularly travelled with his entourage on military campaigns rather than staying behind. In 1631, though pregnant, she went with him on his campaign in the Deccan. She died at Burhanpur that June shortly after giving birth, and her body was later carried to Agra, where Shah Jahan raised the Taj Mahal over her tomb.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Rather than wait at home for news of a safe return, Mumtaz chose to go wherever her husband went, and the separation she dreaded came instead through her own death on the journey.</div>
+  <div class="tieback">The kural&#x27;s heroine says that news of a quick return should be told to whoever will still be alive by then; Mumtaz refused to be left behind, and her story shows how a long absence can outlast a life.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-116/" target="_blank" rel="noopener">Thirukkural Chapter 116: பிரிவாற்றாமை / Separation unendurable (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-116.html" target="_blank" rel="noopener">பிரிவாற்றாமை - அதிகாரம் 116 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Vālmīki Rāmāyaṇa (Bāla Kāṇḍa: the putrakāmeṣṭi of Daśaratha; Ayodhyā Kāṇḍa: Kausalyā and Rāma)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:3364" target="_blank" rel="noopener">Sahih al-Bukhari 3364 (Book of the Prophets: Hagar and Ishmael at Mecca)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.dhammatalks.org/suttas/KN/Ud/ud3_2.html" target="_blank" rel="noopener">Udana 3.2, Nanda Sutta, tr. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Ovid, Heroides <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Mumtaz-Mahal" target="_blank" rel="noopener">Mumtaz Mahal</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://tajmahal.gov.in/about-mumtaz-mahal.aspx" target="_blank" rel="noopener">Emperess Mumtaz Mahal</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1150.html">&larr; Kural 1150</a>
+  <a href="kural-1152.html">Kural 1152 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-116.html">Unendurable Separation</a>
+  <a class="skip-btn" href="kural-1161.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

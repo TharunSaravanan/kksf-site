@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 690 — The Envoy | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 690</h1>
+<p class="adhikaram"><a href="adhikaram-069.html">The Envoy</a> &middot; Thoodhu &middot; <span class="tamil">தூது</span></p>
+
+<div class="tamil-text">இறுதி பயப்பினும் எஞ்சாது இறைவற்கு
+உறுதி பயப்பதாம் தூது.</div>
+<div class="translit">Irudhi payappinum enjaadhu iraivarku
+Urudhi payappadhaam thoodhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A true envoy delivers the king&#x27;s whole message and works for the king&#x27;s good, holding nothing back, even if it costs the envoy their life.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Think of a lifeguard who swims out to someone in trouble even though the waves are scary. A true messenger is like that. Even when delivering the message is frightening or dangerous, they carry it all the way for the people who trusted them.</p>
+
+<h2 class="section">University</h2>
+<p>Iṟuti is ‘end’, meaning death. Eñcātu is ‘without leaving any of it out’. Uṟuti is ‘firm good’ or advantage. Parimelazhagar: even if the words will end the envoy’s life, he does not hold back out of fear, and he speaks his king’s position to foreign kings exactly as told. He adds that by naming death, the worst outcome, Valluvar leaves lesser dangers without need of mention. With 688-690 the chapter completes its account of the envoy who repeats a given message (kūṟiyatu kūṟuvāṉ). The couplet ends the chapter on its highest demand, loyalty to the death, and prepares for chapter 70 on conduct in the king’s presence. All modern commentators (Varadarasanar, Pappaiah, Kalaignar) read iṟuti as the envoy’s own death. On the text: the sandhi-joined text reads பயப்பினு மெஞ்சா திறைவற் / குறுதி, the same wording as the split form.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Sent by Rama to Ravana with a final ultimatum, Angada delivers it in full in the demon king’s own court. When Ravana orders him seized, Angada leaps onto the palace roof carrying his captors and breaks its peak before returning.</div>
+  <div class="cite">&mdash; <a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Valmiki Ramayana, Yuddha Kanda, sarga 41</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Angada carries his master’s ultimatum into the enemy’s hall and gives all of it, knowing he may be killed.</div>
+  <div class="tieback">He fits the Kural’s envoy who holds nothing back even when the embassy may cost his life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But none of these things move me, neither count I my life dear unto myself, so that I might finish my course with joy, and the ministry, which I have received of the Lord Jesus, to testify the gospel of the grace of God.&rdquo;</div>
+  <div class="cite">&mdash; Acts 20:24 (KJV) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Warned that chains await him, Paul says his life matters less than finishing the commission he was given.</div>
+  <div class="tieback">This is the Kural’s iṟuti payappiṉum eñcātu: carrying out the commission even at the cost of one’s life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">The Prophet’s envoy al-Harith ibn ‘Umayr al-Azdi, carrying a letter to the ruler of Busra, was seized and killed by the Ghassanid chief Shurahbil ibn ‘Amr. The killing of this envoy led to the expedition of Mu’ta.</div>
+  <div class="cite">&mdash; <a href="https://www.routledge.com/The-Life-of-Muhammad-Al-Waqidis-Kitab-al-Maghazi/Faizer/p/book/9780415864855" target="_blank" rel="noopener">al-Waqidi, Kitab al-Maghazi; Ibn Sa‘d, Tabaqat (account of Mu’ta)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The sira remembers an envoy who died carrying his master’s letter, and treats killing him as a grave violation.</div>
+  <div class="tieback">It makes real the Kural’s case in which the embassy ‘yields death’ (iṟuti payappiṉum).</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Go, gather together all the Jews that are present in Shushan, and fast ye for me … and so will I go in unto the king, which is not according to the law: and if I perish, I perish.&rdquo;</div>
+  <div class="cite">&mdash; Esther 4:16 (KJV) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Esther goes before the Persian king uninvited to plead for her people, knowing it could mean death.</div>
+  <div class="tieback">‘If I perish, I perish’ is the spirit of the Kural’s envoy, who does not hold back though death may follow.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">Before going to teach among the fierce people of Sunāparanta, the monk Puṇṇa tells the Buddha how he will meet each threat, including being killed, without resentment. The Buddha then sends him, and he wins many followers there.</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/mn145/en/sujato" target="_blank" rel="noopener">Majjhima Nikāya 145, Puṇṇovāda Sutta</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Puṇṇa accepts that his mission may end in his death and goes anyway.</div>
+  <div class="tieback">He shows the Kural’s envoy who does not turn back even when the mission may end his life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Suvega proceeded, even though knowing these signs unfavorable. Good servants of a master do not falter anywhere, like an arrow.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Trishashti-shalaka-purusha-charitra 1.5, Part 1, &#x27;Negotiations with Bahubali&#x27; (Hemachandra, tr. Helen M. Johnson, GOS 1931)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">On the road to Takshashila the envoy meets a string of evil omens yet goes on, and the narrator praises the servant who does not falter in his master&#x27;s business.</div>
+  <div class="tieback">The Kural&#x27;s true envoy delivers his king&#x27;s message even if it costs him his life; Suvega presses on despite the omens and then speaks his message in a court ready to kill him.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;If you desire to play this game of love with Me, then step onto My Path with your head in hand.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1412, Salok Vaaraan Thay Vadheek, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Guru Nanak makes readiness to give one&#x27;s life the condition for entering the path of devotion, a line later embodied in the Sikh martyr tradition.</div>
+  <div class="tieback">The Kural&#x27;s true envoy delivers his king&#x27;s message in full even if it costs him his life; Guru Nanak asks the same readiness to lay down one&#x27;s head for one&#x27;s Master.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">After Sparta killed Persian heralds, two Spartan nobles, Sperthias and Boulis, volunteered to go to Xerxes and give their lives in atonement. Xerxes refused to kill them.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Hdt.%206.86" target="_blank" rel="noopener">Herodotus, Histories 7.133-137</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Greek tradition held heralds sacred under Hermes, and these envoys went knowingly to their deaths for their city.</div>
+  <div class="tieback">Like the Kural’s envoy, they carried out their mission for their state knowing it would probably kill them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Cicero tells how Marcus Atilius Regulus, a captive of Carthage, was sent to Rome on oath to negotiate a prisoner exchange. He advised the Senate against it because it harmed Rome, then kept his oath and went back to Carthage to be tortured to death.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2007.01.0048" target="_blank" rel="noopener">Cicero, De Officiis 3.99-115</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Cicero holds Regulus up as the model of an envoy who puts his country’s good and his given word above his life.</div>
+  <div class="tieback">This is the Kural’s envoy almost exactly: he secures his country’s good (uṟuti) though his own death (iṟuti) follows.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Zhang Qian completes his mission to the Yuezhi after years of captivity</div>
+  <div class="rle-meta">c. 138 to 126 BCE &middot; Central Asia and Chang&#x27;an, China</div>
+  <div class="quote is-paraphrase">The Han emperor Wudi sent Zhang Qian to seek an alliance with the Yuezhi against the Xiongnu. Zhang was captured by the Xiongnu and held for about ten years, but escaped and continued westward until he reached the Yuezhi in the region of Bactria, then was captured again on his return journey. He finally got back to the court after an absence of about thirteen years and gave the emperor a detailed report on the lands he had seen.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a> <a class="idx" href="#cite-15">[15]</a></div>
+  <div class="explain">Although the alliance he sought was refused, Zhang Qian carried his mission through at great personal risk and his full report opened Han China&#x27;s contacts with Central Asia.</div>
+  <div class="tieback">The kural praises the envoy who fulfils his king&#x27;s charge to the end even at the risk of his life, and Zhang Qian persisted through two captivities to complete and report on his mission.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-69/" target="_blank" rel="noopener">Thirukkural Chapter 69: தூது / The Envoy (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-069.html" target="_blank" rel="noopener">தூது - அதிகாரம் 69 (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah and Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="http://thirukkural-thamizh.org/html/A069.html" target="_blank" rel="noopener">69. தூது (Thirukkural, sandhi-joined text)</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="http://thirukkuralvilakkam.blogspot.com/2013/05/thoodhu.html" target="_blank" rel="noopener">திருக்குறள் விளக்கம்: தூது (with Manakkudavar and Parimelazhagar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-5"><a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Vālmīki Rāmāyaṇa (Bāla Kāṇḍa: the putrakāmeṣṭi of Daśaratha; Ayodhyā Kāṇḍa: Kausalyā and Rāma)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.routledge.com/The-Life-of-Muhammad-Al-Waqidis-Kitab-al-Maghazi/Faizer/p/book/9780415864855" target="_blank" rel="noopener">al-Waqidi, Kitab al-Maghazi (trans. R. Faizer, The Life of Muhammad, Routledge, 2011), account of Mu’ta</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-8"><a href="https://suttacentral.net/mn145/en/sujato" target="_blank" rel="noopener">Majjhima Nikāya 145, Puṇṇovāda Sutta: Advice to Puṇṇa</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Hdt.%206.86" target="_blank" rel="noopener">Herodotus, Histories 6.86 — the story of Glaucus of Sparta and the Delphic oracle</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2007.01.0048" target="_blank" rel="noopener">Cicero, De Officiis (On Duties), Book I, trans. Walter Miller (Loeb Classical Library, 1913)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/biography/Zhang-Qian" target="_blank" rel="noopener">Zhang Qian (Britannica Editors)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="http://www.chinaknowledge.de/History/Han/personszhangqian.html" target="_blank" rel="noopener">Zhang Qian (Ulrich Theobald)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-15"><a href="https://depts.washington.edu/silkroad/exhibit/han/essay.html" target="_blank" rel="noopener">The Han Empire (Silk Road Seattle)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0689.html">&larr; Kural 689</a>
+  <a href="kural-0691.html">Kural 691 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-069.html">The Envoy</a>
+  <a class="skip-btn" href="kural-0691.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

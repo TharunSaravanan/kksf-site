@@ -1,0 +1,29 @@
+# Thirukkural loop runbook — REVISION PHASE (Oct 2026)
+
+PROJECT = /Users/adhigopal/Documents/Thirukkural
+(In the shell sandbox this folder appears under a mounted path ending in /mnt/Documents/Thirukkural — run commands from there. File tools such as Read/Write use the /Users/adhigopal/Documents/Thirukkural path.)
+
+All 1330 kurals / 133 chapters are complete. Adhi's revision decisions (Oct 2026):
+- HARD REQUIREMENT (Adhi, Oct 2026, permanent): one tradition that was previously considered has been removed everywhere (website, book, iOS and Android apps, data, sources, memory, prompts). It must never appear again in any content, source title, URL text, code comment, prompt, report or message to Adhi. Never name it, even to say it was removed. Every build must end with `python3 removed_check.py` reporting 0 hits across the repo, web, book and app data; any hit means fix before finishing. Subagent prompts must include: 'Do not mention or draw on the removed tradition or its texts anywhere.'
+- SIKHISM is added as a tradition, placed after Jainism. Order: hinduism, christianity, islam, judaism, buddhism, jainism, sikhism, greek_mythology, philosophy. Same live-web verification standard as every other tradition.
+- A new "Real Life Example" section is added to every kural: one well-documented, undisputed event from world history (textbook-level, confirmed by 2+ independent non-Wikipedia sources), best-fit with honest scoring when no strong fit exists.
+- The philosophy/university cleanup is finished and baked into the chapter data.
+- Sikhism and Real Life Example stay hidden on the site/book until all 1330 kurals have them (build_data2.py enforces this).
+- The previous chapter-building runbook is archived at _backup_pre_sikh/LOOP_RUNBOOK_v1_chapters.md.
+
+## One iteration
+1. `cd PROJECT && python3 backfill_status.py 6` — shows remaining work: sikh_next / history_next (chapter numbers), philosophy_fix_next (kural numbers) and university_fix_remaining.
+   - If sikh_remaining_chapters, history_remaining_chapters and philosophy_fix_remaining are all 0 (and university_fix_remaining is empty), go to step 6 (final wrap-up).
+2. Dispatch at most 4 research subagents (Agent tool, model opus), all in ONE message so they run in parallel:
+   - If philosophy_fix_remaining > 0: ONE agent for the next up to 15 kurals. Prompt: `Read the file /Users/adhigopal/Documents/Thirukkural/overrides/PHILOSOPHY_FIX_PROMPT.md and follow it exactly. Placeholders: {kurals} = <list>; {uni_kurals} = <any university_fix_remaining kurals, or none>; {batch} = <next unused two-digit number, check existing overrides/phil_fix_NN.json>. Today's date for access_date: <date>.`
+   - Split the remaining slots between Sikh and history (alternate if odd), each agent taking the next 3 chapters:
+     - Sikh: `Read the file /Users/adhigopal/Documents/Thirukkural/sikh/SIKH_AGENT_PROMPT.md and follow it exactly. Your assignment: Chapters A, B and C (Kurals X-Y). Write sikh_chapter_AA.json, sikh_chapter_BB.json and sikh_chapter_CC.json. Use web search/fetch to verify every quote you mark is_quote=true. Today's date for access_date: <date>.`
+     - History: `Read the file /Users/adhigopal/Documents/Thirukkural/history/HISTORY_AGENT_PROMPT.md and follow it exactly. Your assignment: Chapters A, B and C (Kurals X-Y). Write history_chapter_AA.json ... Verify every fact against at least two independent reputable non-Wikipedia sources using web search/fetch. Today's date for access_date: <date>.`
+     - If two history agents run in the same batch, give the second one non-adjacent chapters and add: "Another agent is working on chapters <list> right now; avoid well-known events that would obviously fit those chapters' themes."
+3. Rate limits (HTTP 429): don't retry in a loop. Re-run backfill_status.py to see what was actually written, integrate whatever is valid, and stop; the next run continues.
+4. `python3 backfill_check.py` — must report 0 problems. If a file has problems, either dispatch a fix agent for just those entries in the next run, or move that file into _rejected/ (create it) so it is redone. Never hand-edit facts yourself without verification.
+5. Integrate: `python3 build_data2.py && python3 build_web.py && node build_book.js && python3 validate_html.py && python3 apps/build_app_data.py && python3 removed_check.py` (0 HTML issues required). The last command refreshes the offline data bundled in the iOS and Android apps (apps/ios, apps/android); never edit the app source code from the loop.
+6. Final wrap-up (everything 0): full rebuild (`python3 build_data2.py && python3 build_web.py && node build_book.js && python3 validate_html.py && python3 apps/build_app_data.py && python3 removed_check.py`); confirm build_data2.py prints "Sikhism coverage: 1330/1330" and "Real Life Example coverage: 1330/1330", and that build_app_data.py reports 9 traditions including Sikhism and "real life example: True"; spot-render one Aram, one Porul and one Inbam kural page with weasyprint to check the Sikhism and Real Life Example sections look right; export the book to PDF too if LibreOffice is available (`soffice --headless --convert-to pdf --outdir thirukkural-project/book thirukkural-project/book/thirukkural_book.docx`); then report to Adhi with the Sikhism and Real Life Example accuracy lines from build_data2.py, and say the iOS/Android apps in apps/ now carry the final content (see apps/README.md to build them). After that, runs only confirm everything is still 0.
+
+## Preview
+`PREVIEW_DIR=<some folder>/thirukkural-project python3 build_data2.py` writes a data folder containing only kurals that already have Sikh + Real Life entries, with both switched on; copy build_web.py plus sikh/ and jain/ historical_entry.json beside it and run build_web.py there to preview pages before everything is complete.

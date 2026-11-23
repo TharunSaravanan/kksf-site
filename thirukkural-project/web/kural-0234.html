@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 234 — Renown | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 234</h1>
+<p class="adhikaram"><a href="adhikaram-024.html">Renown</a> &middot; Pukazh &middot; <span class="tamil">புகழ்</span></p>
+
+<div class="tamil-text">நிலவரை நீள்புகழ் ஆற்றின் புலவரைப்
+போற்றாது புத்தேள் உலகு.</div>
+<div class="translit">Nilavarai neelpukazh aatrin pulavaraip
+Potraadhu puththel ulagu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If someone earns a good name that spreads across the earth and lasts, the world of the gods will honor that person even more than its own wise beings.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a class in the sky where the angels usually cheer for their own star students. But if someone down on earth does something so good that the whole world talks about it for ages, even the sky-class stops and cheers for that person instead.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet is deliberately audacious: earthly renown outranks celestial status. Its key term is contested. புலவர் ordinarily means ‘learned ones’ or ‘poets’, but Parimelazhagan glosses it here as the devas, so that the heavenly world (புத்தேள் உலகு) ‘does not praise’ its own gods but the person whose fame fills the earth (நிலவரை, ‘to the bounds of the land’); Mu. Varadarasan follows this, and Pope renders it as heaven ceasing to laud the sage. Solomon Pappaiah and Karunanidhi read புலவர் as scholars or learned men. On any reading, Valluvar inverts the usual hierarchy in which heaven confers worth on earth: here the earth’s verdict, expressed as lasting renown, is what heaven itself acknowledges. A striking parallel is the Mahabharata story of King Indradyumna, who fell from heaven when his earthly reputation faded and regained it once living memory of his generosity was found.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;The report of virtuous deeds spreadeth over the earth and ascendeth to heaven. As long as that report lasts, so long is the doer said to be in heaven.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/m03/m03198.htm" target="_blank" rel="noopener">Mahabharata, Vana Parva, Section 198 (trans. K.M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">King Indradyumna falls from heaven because no one remembers him; when an ancient tortoise recalls his lavish gifts, a celestial car returns him to heaven with these verses.</div>
+  <div class="tieback">Almost exactly the Kural’s claim: a person’s standing in heaven depends on the endurance of their renown on earth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Come, ye blessed of my Father, inherit the kingdom prepared for you from the foundation of the world: For I was an hungred, and ye gave me meat.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 25:34-35 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In the judgment scene, the King welcomes into the kingdom those who fed the hungry and cared for strangers.</div>
+  <div class="tieback">Heaven honours people for what they did on earth for others, echoing the Kural’s heaven that honours the earthly giver.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;All the inhabitants of the Heaven would love him, and then he is granted the pleasure of the people on the earth.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:3209" target="_blank" rel="noopener">Sahih al-Bukhari 3209</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">When God loves a servant, Gabriel announces it in heaven, all heaven’s inhabitants love that person, and then acceptance is placed for him among people on earth.</div>
+  <div class="tieback">Both texts link heavenly esteem and earthly esteem for a person; the direction is reversed (heaven first in the hadith, earth first in the Kural).</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;There are three crowns: the crown of Torah, the crown of priesthood, and the crown of royalty, but the crown of a good name supersedes them all.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot.4.13" target="_blank" rel="noopener">Pirkei Avot 4:13 (trans. Joshua Kulp; numbered 4:17 in some editions)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbi Shimon ranks a good name above the most sacred and powerful distinctions in Jewish life.</div>
+  <div class="tieback">Just as the Kural places earthly renown above even celestial sages, the Mishnah places a good name above priesthood and Torah learning.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;As kinsmen welcome a dear one on arrival, even so his own good deeds will welcome the doer of good who has gone from this world to the next.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 220 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada says a doer of good is greeted in the next world by his own good deeds, like a traveller welcomed home by relatives.</div>
+  <div class="tieback">In both, what a person did on earth determines the welcome they receive in the higher world.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;…because he stands fast in midst of dangers and fears, patiently bears hardships and calamities, adheres to the chosen rules of penance, is wise, indifferent to pleasure and pain, rich in control, and gifted with fortitude, the name Venerable Ascetic Mahâvîra has been given him by the gods.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Kalpa Sūtra, Life of Mahāvīra §108 (tr. Hermann Jacobi, SBE 22, 1884; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Kalpa Sūtra says the gods themselves gave Vardhamāna the name &#x27;Mahāvīra&#x27; because of his human virtues. In Jain cosmology the gods honour and serve the Tīrthaṅkaras, and liberation can only be reached from a human birth.</div>
+  <div class="tieback">Valluvar imagines the celestial world honouring a renowned human above its own sages. Jain tradition holds something similar, with gods naming, praising and serving a human Jina whose achievement exceeds their own.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;with a good name and reputation, with praise and fame throughout the world- still, if the Lord does not bless you with His Glance of Grace, then who cares? What is the use?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 2, Japji Sahib, Pauri 7, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In the seventh pauri of Japji Guru Nanak imagines a person famed across the world and asks what such fame is worth without God&#x27;s grace.</div>
+  <div class="tieback">The Kural claims that worldwide, lasting renown wins honour even above the celestials; Guru Nanak takes up the same picture of world-wide fame and subordinates it to the divine glance.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;After him I saw mighty Hercules, but it was his phantom only, for he is feasting ever with the immortal gods, and has lovely Hebe to wife.&rdquo;</div>
+  <div class="cite">&mdash; Homer, Odyssey 11 (trans. Samuel Butler) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Odysseus sees only Heracles’ shade in Hades, because the hero himself, after his earthly labours, was taken up to live among the gods.</div>
+  <div class="tieback">Heracles’ renowned deeds on earth won him a seat of honour among the immortals, much as Valluvar’s earthly renown wins heaven’s praise.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;What would not a man give if he might converse with Orpheus and Musaeus and Hesiod and Homer?&rdquo;</div>
+  <div class="cite">&mdash; Plato, Apology 41a (trans. Benjamin Jowett) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Facing death, Socrates imagines an afterlife where he could meet the renowned figures of the past, and counts that prospect a great good.</div>
+  <div class="tieback">Socrates pictures the next world as a place where the famous of the earth are sought out and honoured, loosely echoing the Kural’s heaven that honours the earthly renowned.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Yuri Gagarin&#x27;s world tour after the first human spaceflight</div>
+  <div class="rle-meta">1961 &middot; Moscow, Soviet Union, and cities around the world</div>
+  <div class="quote is-paraphrase">On 12 April 1961 Yuri Gagarin became the first human to travel into space, orbiting the Earth once in Vostok 1. Two days later he appeared beside Premier Khrushchev in Moscow, and he then made a worldwide tour, greeted by cheering crowds; in July 1961 he visited London and Manchester at the invitation of a trade union, meeting dignitaries and royalty, and he also met India&#x27;s Prime Minister Jawaharlal Nehru.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">At the height of the Cold War, a single achievement made one man&#x27;s name celebrated across rival blocs and continents.</div>
+  <div class="tieback">The kural speaks of renown that reaches the ends of the earth and is honoured even above the celestials, and Gagarin, who had himself gone beyond the sky, was acclaimed across the whole globe.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-24/" target="_blank" rel="noopener">Thirukkural Chapter 24: புகழ் / Renown (Tamil text, commentaries of Mu. Varadarasan, Solomon Pappaiah, Karunanidhi; Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-024.html" target="_blank" rel="noopener">புகழ் - அதிகாரம் 24 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/m03/m03198.htm" target="_blank" rel="noopener">The Mahabharata, Book 3: Vana Parva, Section 198 (Indradyumna), trans. Kisari Mohan Ganguli</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:3209" target="_blank" rel="noopener">Sahih al-Bukhari 3209 (Beginning of Creation: the reference to angels)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot.4.13" target="_blank" rel="noopener">Pirkei Avot 4:13, trans. Dr. Joshua Kulp (Mishnah Yomit)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Kalpa Sūtra (Kalpa Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11">Apology (Plato (recording Socrates)) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.esa.int/About_Us/ESA_history/50_years_of_humans_in_space/Yuri_Gagarin" target="_blank" rel="noopener">Yuri Gagarin</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://blog.sciencemuseum.org.uk/first-man-in-space/" target="_blank" rel="noopener">First Man in Space</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0233.html">&larr; Kural 233</a>
+  <a href="kural-0235.html">Kural 235 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-024.html">Renown</a>
+  <a class="skip-btn" href="kural-0241.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

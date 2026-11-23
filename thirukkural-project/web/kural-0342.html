@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 342 — Renunciation | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 342</h1>
+<p class="adhikaram"><a href="adhikaram-035.html">Renunciation</a> &middot; Thuravu &middot; <span class="tamil">துறவு</span></p>
+
+<div class="tamil-text">வேண்டின்உண் டாகத் துறக்க துறந்தபின்
+ஈண்டுஇயற் பால பல.</div>
+<div class="translit">Vendin undaagath thurakka thurandhapin
+Eendu iyarpaala pala.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If you want lasting good, give things up while you still have them. Once you have given them up, many joys come to you even in this life.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Taking a heavy backpack off before a long hike isn&#x27;t losing anything — it&#x27;s how you get to enjoy the walk. This kural says give things up while you still have them, and you&#x27;ll find lots of happiness right away.</p>
+
+<h2 class="section">University</h2>
+<p>The phrase undaaga (“while [they] exist”) is read by Parimelazhagar and Mu. Varadarasan as a timing instruction: renounce while wealth, strength and opportunity are still in hand, not after they have already slipped away — giving up what one no longer has is not renunciation at all. The second line&#x27;s eendu (“here”, in this world) is striking: Valluvar promises not only a post-mortem reward but many present goods (iyarpaala pala), countering the caricature of renunciation as pure deprivation. This anticipates the famous Upanishadic paradox that one enjoys by relinquishing. Placed after the Kural&#x27;s earlier praise of the householder (ch. 5, Ilvaazhkai), the couplet presents thuravu as a voluntary, later-chosen stage rather than a universal command.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;All this, whatsoever moves on earth, is to be hidden in the Lord (the Self). When thou hast surrendered all this, then thou mayest enjoy. Do not covet the wealth of any man!&rdquo;</div>
+  <div class="cite">&mdash; Isha (Vajasaneyi-samhita) Upanishad 1 (tr. F. Max Müller, SBE vol. 1) <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The opening verse of the Isha Upanishad teaches that the world belongs to the Lord, and that true enjoyment comes only after surrendering one&#x27;s claim to it.</div>
+  <div class="tieback">Same paradox as the Kural: renounce first, and then the joys follow — even in this life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;There is no man that hath left house, or brethren, or sisters, or father, or mother, or wife, or children, or lands, for my sake, and the gospel’s, But he shall receive an hundredfold now in this time, houses, and brethren, and sisters, and mothers, and children, and lands, with persecutions; and in the world to come eternal life.&rdquo;</div>
+  <div class="cite">&mdash; Mark 10:29-30 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus promises those who leave everything for him a hundredfold return &#x27;now in this time&#x27;, as well as eternal life hereafter.</div>
+  <div class="tieback">Like the Kural&#x27;s eendu (here), Jesus insists the rewards of renunciation begin in this life, not only after death.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Be indifferent towards this world, and Allah will love you. Be indifferent to what is in people’s hands, and they will love you.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/ibnmajah:4102" target="_blank" rel="noopener">Sunan Ibn Majah 4102 (Book of Zuhd)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Asked for a deed that would win the love of God and people, the Prophet recommends zuhd — detachment from worldly goods.</div>
+  <div class="tieback">Zuhd brings concrete goods in return — divine and human love — echoing the Kural&#x27;s promise of many joys after renouncing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Who is rich? He who rejoices in his lot, as it is said: ‘You shall enjoy the fruit of your labors, you shall be happy and you shall prosper’ (Psalms 128:2) ‘You shall be happy’ in this world, ‘and you shall prosper’ in the world to come.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 4:1 (tr. Joshua Kulp, Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Ben Zoma redefines wealth as contentment, and reads the psalm as promising happiness in this world and prosperity in the next.</div>
+  <div class="tieback">Contentment rather than accumulation is the path to joy &#x27;in this world&#x27; — close to the Kural&#x27;s promise of joys &#x27;here&#x27;.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;If by renouncing a lesser happiness one may realize a greater happiness, let the wise man renounce the lesser, having regard for the greater.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 290 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha frames renunciation as a rational exchange: give up a smaller pleasure to gain a larger one.</div>
+  <div class="tieback">Exactly the Kural&#x27;s bargain — if you want the many joys, renounce.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;You are now a king of great power and prosperity, enjoying the reward of your good actions; put from you the transitory pleasures, and enter the order for the sake of the highest good!&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 13.20 (tr. Hermann Jacobi, SBE 45, 1895, p. 59)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The monk Citra urges his former brother, now the universal monarch Brahmadatta, to renounce while he is still at the height of his wealth and power. The king cannot let go, and the lecture records the bad end that follows.</div>
+  <div class="tieback">The Kural says to renounce while there is still something to renounce. Citra gives exactly that advice to a man who holds everything.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Kabeer, that which you have to do tomorrow - do it today instead; and that which you have to do now - do it immediately!&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1371, Salok Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In his saloks Bhagat Kabir urges that the turn to God must not be postponed, because the time to act is now.</div>
+  <div class="tieback">The Kural asks for renunciation while one still has things to renounce, not after they have slipped away; Kabir likewise insists that the spiritual turn be made today, not tomorrow.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Crates of Thebes, born wealthy, is said to have turned his property into money and distributed it among his fellow citizens, then lived as a cheerful Cynic beggar-philosopher.</div>
+  <div class="cite">&mdash; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diogenes_Laertius/Lives_of_the_Eminent_Philosophers/6/Diogenes*.html" target="_blank" rel="noopener">Diogenes Laertius, Lives of Eminent Philosophers 6.87 (tr. R. D. Hicks)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">According to Diogenes Laertius, Crates gave away a large inheritance and embraced the Cynic life, becoming known for his good humour.</div>
+  <div class="tieback">Crates renounced while he still had much to give up, and found joy in the renounced life — the Kural&#x27;s timing and promise in one biography.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;It is not the man who has too little, but the man who craves more, that is poor.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_1" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius 2 (tr. R. M. Gummere)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Seneca argues that wealth is measured by the limit of one&#x27;s wants, not by the size of one&#x27;s possessions.</div>
+  <div class="tieback">Letting go of craving is what makes one rich — a Stoic version of the Kural&#x27;s claim that renunciation brings many goods.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Julius Nyerere steps down as president of Tanzania</div>
+  <div class="rle-meta">1985 &middot; Dar es Salaam and Butiama, Tanzania</div>
+  <div class="quote is-paraphrase">Julius Nyerere, who had led Tanganyika and then Tanzania since independence, voluntarily stepped down as president in 1985 and was succeeded by Ali Hassan Mwinyi. He was one of very few African leaders of his era to give up the presidency without being forced out. He retired to his home village of Butiama, where he farmed, while remaining active in diplomacy, including as a mediator in Burundi&#x27;s peace talks in the 1990s.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Nyerere let go of supreme power while he still held it firmly, rather than waiting until it was taken from him. His retirement set an example of peaceful handover that earned him lasting respect.</div>
+  <div class="tieback">Valluvar says to renounce while one still has things to renounce and promises many goods even in this life, and Nyerere gave up office at the height of his authority and lived on in useful retirement.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-35/" target="_blank" rel="noopener">Thirukkural Chapter 35: துறவு / Renunciation (with Mu. Varadarasan, Solomon Pappaiah, Karunanidhi, Sivayogi Sivakumar commentaries and G. U. Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-035.html" target="_blank" rel="noopener">துறவு - அதிகாரம் 35 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah, Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3">Isha Upanishad, verse 7 <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/ibnmajah:4102" target="_blank" rel="noopener">Sunan Ibn Majah 4102, Book of Zuhd (Chapter: Indifference towards this world)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diogenes_Laertius/Lives_of_the_Eminent_Philosophers/6/Diogenes*.html" target="_blank" rel="noopener">Diogenes Laertius, Lives of Eminent Philosophers, Book VI (Diogenes), tr. R. D. Hicks (Loeb, 1925)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_1" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius, Letter 1 (On Saving Time), trans. Richard Mott Gummere (Loeb, 1917-1925)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://sahistory.org.za/people/julius-nyerere" target="_blank" rel="noopener">Julius Nyerere</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.cbsnews.com/news/nyerere-africas-teacher-dies" target="_blank" rel="noopener">Nyerere, Africa&#x27;s Teacher, Dies</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0341.html">&larr; Kural 341</a>
+  <a href="kural-0343.html">Kural 343 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-035.html">Renunciation</a>
+  <a class="skip-btn" href="kural-0351.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

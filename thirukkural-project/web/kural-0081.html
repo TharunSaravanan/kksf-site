@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 81 — Cherishing Guests | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 81</h1>
+<p class="adhikaram"><a href="adhikaram-009.html">Cherishing Guests</a> &middot; Virundhombal &middot; <span class="tamil">விருந்தோம்பல்</span></p>
+
+<div class="tamil-text">இருந்தோம்பி இல்வாழ்வ தெல்லாம் விருந்தோம்பி
+வேளாண்மை செய்தற் பொருட்டு.</div>
+<div class="translit">Irundhombi ilvaazhva thellaam virundhombi,
+Velaanmai seydhar poruttu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People live a family life and save what they have for one main reason: to welcome guests and help others.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Why does a family have a house, a kitchen and food in the cupboard? This kural says it isn&#x27;t just so the family can eat. It&#x27;s so that when someone knocks on the door — a traveller, a neighbour, someone hungry — there is something ready to share. The house is like a well: it holds water so that whoever is thirsty can drink.</p>
+
+<h2 class="section">University</h2>
+<p>Valluvar opens the chapter on hospitality with a startling inversion of economic logic: the entire apparatus of the household — இருத்தல் (settling/dwelling), ஓம்புதல் (guarding, tending, husbanding resources) — is declared instrumental to விருந்தோம்பல், the cherishing of guests. The key term வேளாண்மை (vēḷāṇmai) is untranslatable in one word: it carries the sense of &#x27;husbandry&#x27; and of unrepayable benevolence rendered without expectation, and Valluvar reuses it at Kural 212 for the purpose of earned wealth generally. Parimelalagar&#x27;s classical commentary sharpens the point by contrasting the householder with the forest renunciant: one stays in the house precisely in order to have something to give, so that if no benevolence is done, the toil of acquisition has no fruit at all. This makes hospitality not a courtesy appended to domestic life but its justifying cause — a claim structurally parallel to the Sanskrit doctrine that the household exists to sustain the other three āśramas, yet arrived at here without any appeal to caste, ritual, or scripture.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;अतिथिदेवो भव” — “Be one to whom a guest is a god.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Taittiriya_Upanishad" target="_blank" rel="noopener">Taittiriya Upanishad 1.11.2 (Shikshavalli)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In the Taittiriya Upanishad&#x27;s convocation address, a graduating student is charged with a series of reverences — mother, father, teacher, and guest — each named as divine.</div>
+  <div class="tieback">Exactly as in the Kural, the arriving guest is not an interruption of household life but the sacred point of it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Be not forgetful to entertain strangers: for thereby some have entertained angels unawares.&rdquo;</div>
+  <div class="cite">&mdash; Hebrews 13:2 (King James Version) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The letter to the Hebrews closes with practical instructions to a Christian household, and makes hospitality to unknown travellers a standing obligation, alluding to Abraham&#x27;s visitors in Genesis 18.</div>
+  <div class="tieback">Both texts treat the ordinary household as the site where hospitality must be permanently ready, not occasionally offered.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Whoever believes in Allah and the Last Day, should serve his guest generously. The guest&#x27;s reward is: To provide him with a superior type of food for a night and a day and a guest is to be entertained with food for three days, and whatever is offered beyond that, is regarded as something given in charity.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6135" target="_blank" rel="noopener">Sahih al-Bukhari 6135, Book of Good Manners (Al-Adab)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Prophet makes hospitality a test of faith itself and then legislates its minimum content, fixing a concrete household obligation rather than leaving it to sentiment.</div>
+  <div class="tieback">Like the Kural, it treats the householder&#x27;s provisions as existing partly in trust for whoever arrives.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Yose ben Yochanan of Jerusalem taught that one should let one&#x27;s house be wide open and let the poor be members of the household — the rabbinic charter for hachnasat orchim, the mitzvah of welcoming guests.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot.3.17" target="_blank" rel="noopener">Pirkei Avot (Mishnah, Tractate Avot) 1:5</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The saying, preserved among the earliest teachings in Pirkei Avot, defines the ideal Jewish home architecturally: doors open on every side, with the needy counted as household members rather than outsiders.</div>
+  <div class="tieback">Both traditions define the good house by its openness to those outside it, making guests constitutive of the household rather than incidental.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Ādiya Sutta the Buddha tells the householder Anāthapiṇḍika the five proper uses of wealth rightly earned: to make oneself happy, to make family and workers happy, to make friends happy, to guard against calamity, and to make the customary offerings — among them the offering to guests.</div>
+  <div class="cite">&mdash; <a href="https://www.dhammatalks.org/suttas/AN/AN5_41.html" target="_blank" rel="noopener">Aṅguttara Nikāya 5.41, Ādiya Sutta (Benefits to be Obtained from Wealth)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The discourse answers the question of what accumulated wealth is actually for, and answers it by listing obligations rather than pleasures.</div>
+  <div class="tieback">This is the same move the Kural makes — property is justified by what it lets you give, and guests are named explicitly among the claimants.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Charity and worship are the primary doties [sic] in religion of a house-holder; without them, one cannot be sravaka (house-holder). Meditation and study of scriptures are the primary duties of a virtuous monk; there can be no monk without them.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.com/" target="_blank" rel="noopener">Saman Suttam v. 297 (English tr. as published on jainworld.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Jainism splits religious life between the renouncing monk and the lay householder. Here giving (dāna) is not an extra for the householder but part of what makes him a lay follower at all.</div>
+  <div class="tieback">Valluvar says the whole household exists in order to cherish guests, and the Jain verse likewise says that without giving one is not a true householder.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">Every gurdwara keeps a langar, a communal kitchen where all who come are fed sitting together in a line, a practice that grew up as a protest against caste; the Gurus also praised the life of the ordinary householder over withdrawal from the world.</div>
+  <div class="cite">&mdash; <a href="https://www.britannica.com/topic/langar" target="_blank" rel="noopener">Encyclopaedia Britannica, articles on langar and Sikh practice, and on Guru Amar Das (paraphrase)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Sikhism rejects renunciation and locates the religious life in the household, and its central institution of hospitality, the langar, turns every congregation into a host that feeds anyone who arrives.</div>
+  <div class="tieback">As Valluvar says the whole point of keeping a home is to cherish guests, the Sikh householder and the gurdwara exist in large part to feed the stranger.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;for from Zeus are all strangers and beggars, and a gift, though small, is welcome from such as we.&rdquo;</div>
+  <div class="cite">&mdash; Homer, Odyssey 14.57–58 (trans. A. T. Murray, Loeb) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Eumaeus the swineherd, the poorest host in the Odyssey, says this while feeding a ragged stranger who is in fact his disguised master; Zeus Xenios was the god who personally guaranteed the guest-bond.</div>
+  <div class="tieback">Both passages make hospitality a non-negotiable duty of the household rather than a function of the host&#x27;s means.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In the Third Definitive Article of Toward Perpetual Peace, Kant argues that cosmopolitan right must be limited to the conditions of universal hospitality — meaning the right of a stranger not to be treated with hostility simply for having arrived on someone else&#x27;s ground.</div>
+  <div class="cite">&mdash; <a href="https://web.viu.ca/johnstoi/kant/peace.htm" target="_blank" rel="noopener">Immanuel Kant, Toward Perpetual Peace (1795), Third Definitive Article</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Kant is careful to say he is speaking of right and not of philanthropy: hospitality here is a minimal legal entitlement of the visitor, owed by every polity.</div>
+  <div class="tieback">It converts the Kural&#x27;s household ethic into a political one — the settled community, like the settled house, owes the arriving stranger a claim.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Rule of Saint Benedict orders that guests be received as Christ</div>
+  <div class="rle-meta">c. 530 &middot; Italy</div>
+  <div class="quote is-paraphrase">Benedict of Nursia wrote his Rule for monks around 530, and it became the foundational rule of Western monasticism. Its chapter 53 directs that all guests who arrive be received as Christ himself, citing the gospel words about welcoming the stranger. It sets out how the abbot and community are to meet guests, wash their hands and feet, give special care to the poor and pilgrims, and keep a separate guest house and kitchen so that visitors can always be served.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Benedict built hospitality into the very structure of the monastic household, making the reception of guests one of the purposes the community existed to serve.</div>
+  <div class="tieback">The kural says the whole business of keeping a home exists in order to cherish guests, and the Rule organised an entire household, with its own guest house and kitchen, around that duty.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html" target="_blank" rel="noopener">Tirukkural of Tiruvalluvar — complete Tamil text (Unicode e-text, prepared by Dr. K. Kalyanasundaram)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://thirukkural.io/9/virundhombal/" target="_blank" rel="noopener">Thirukkural, Adhikaram 9: Virundhombal — Kurals 81–90, with commentaries of Parimelalagar, Manakkudavar, Mu. Varadarajan, G. U. Pope and Shuddhananda Bharati</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://thirukural-world.blogspot.com/2014/12/81-90.html" target="_blank" rel="noopener">குறள் 81-90 விருந்தோம்பல் (Kurals 81–90, Cherishing Guests) with Tamil and English meanings</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://en.wikisource.org/wiki/Taittiriya_Upanishad" target="_blank" rel="noopener">Taittiriya Upanishad (Ananda Valli, the graded calculus of bliss, 2.8-2.9)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/bukhari:6135" target="_blank" rel="noopener">Sahih al-Bukhari 6135 — on serving one&#x27;s guest generously and the three days of hospitality</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Pirkei_Avot.3.17" target="_blank" rel="noopener">Pirkei Avot 3:17 (Mishnah Yomit translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.dhammatalks.org/suttas/AN/AN5_41.html" target="_blank" rel="noopener">Aṅguttara Nikāya 5.41, Ādiya Sutta — the five proper uses of wealth, including offerings to guests</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://jainworld.com/" target="_blank" rel="noopener">Saman Suttam (anthology of Jain scripture, compiled 1974)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://www.britannica.com/topic/langar" target="_blank" rel="noopener">langar (with linked coverage: &#x27;Sikhism: The worship service&#x27; and &#x27;Sikhism: The rejection of caste&#x27;)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-11">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://web.viu.ca/johnstoi/kant/peace.htm" target="_blank" rel="noopener">Immanuel Kant, Toward Perpetual Peace: A Philosophical Sketch (1795) — Third Definitive Article, on cosmopolitan right and universal hospitality</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://ccel.org/ccel/benedict/rule/rule.lv.html" target="_blank" rel="noopener">Holy Rule of St. Benedict, Chapter 53: Of the Reception of Guests (Benedict of Nursia)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-14"><a href="https://www.csbsju.edu/benedictine-institute/benedictine-raven-resources/benedictine-values/hospitality/" target="_blank" rel="noopener">Hospitality - Benedictine Values</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0080.html">&larr; Kural 80</a>
+  <a href="kural-0082.html">Kural 82 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-009.html">Cherishing Guests</a>
+  <a class="skip-btn" href="kural-0091.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 793 — Investigation in Forming Friendships | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 793</h1>
+<p class="adhikaram"><a href="adhikaram-080.html">Investigation in Forming Friendships</a> &middot; Natpaaraaythal &middot; <span class="tamil">நட்பாராய்தல்</span></p>
+
+<div class="tamil-text">குணமும் குடிமையும் குற்றமும் குன்றா
+இனனும் அறிந்தியாக்க நட்பு.</div>
+<div class="translit">Gunamum kudimaiyum kutramum kundraa
+inanum arindhiyaakka natpu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Make someone your friend only after you know their character, their family, their faults, and the people they spend time with.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Before you join a new team, you watch how the players behave, who their coach is, what mistakes they make, and who they hang out with. Valluvar says to do the same four checks before you choose a close friend.</p>
+
+<h2 class="section">University</h2>
+<p>This couplet supplies the checklist for the chapter’s ‘investigation’: gunam (குணம், disposition or character), kudimai (குடிமை, lineage, the family in which one is raised), kutram (குற்றம், faults), and kundraa inam (குன்றா இனம், one’s abiding associates or kin). Parimelazhagar takes inam as the circle of relatives and companions who stand by a person, on the principle, developed in chapter 46 (Sitrinam Seraamai), that a person takes on the quality of the company he keeps; Puliyur Kesigan accordingly glosses it as ‘the companions who stay with him’. Arindhu yaakka (அறிந்து யாக்க) means ‘form it having known’. The ytamizh and thirukkural.net texts read குணமும், while the sandhi-joined edition reads குணனுங் குடிமையுங், an older spelling with the same meaning.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">When Ravana’s brother Vibhishana comes to Rama asking for refuge and friendship, Rama asks his counsellors for their views; Sugriva and others suspect a spy because of his lineage, while Hanuman argues from Vibhishana’s conduct and speech that he is sincere, and only after weighing these views does Rama accept him.</div>
+  <div class="cite">&mdash; <a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Valmiki Ramayana, Yuddha Kanda 17-18</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The episode in the Yuddha Kanda is a formal inquiry into a would-be ally’s family, character and motives before a bond is formed.</div>
+  <div class="tieback">Rama’s council examines exactly what the Kural lists: nature, lineage, possible faults and associations.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Ye shall know them by their fruits. Do men gather grapes of thorns, or figs of thistles?&rdquo;</div>
+  <div class="cite">&mdash; Matthew 7:16 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Jesus teaches that a person’s true nature shows in what he produces, as a tree is known by its fruit.</div>
+  <div class="tieback">Both texts say a person’s character must be read from evidence before you trust him.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;A man follows the religion of his friend; so each one should consider whom he makes his friend.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/abudawud:4833" target="_blank" rel="noopener">Sunan Abi Dawud 4833 (graded hasan by al-Albani)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Prophet warns that a person takes on the ways of his close friend, so the choice of friend must be weighed carefully.</div>
+  <div class="tieback">This hadith gives the reason for Valluvar’s checklist: you become like the people you befriend.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Rabbi Joshua said, a good companion; Rabbi Yose said, a good neighbor … Rabbi Joshua said, an evil companion; Rabbi Yose said, an evil neighbor&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 2:9 (trans. Joshua Kulp, Sefaria)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Asked which path a person should cleave to and which he should shun, Rabban Yohanan’s disciples name the good or evil companion and neighbour among the deciding factors.</div>
+  <div class="tieback">Like the Kural, the Mishnah treats the people around a person as something to examine and choose with care.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;These four, young householder, should be understood as foes in the guise of friends: (1) he who appropriates a friend’s possessions, (2) he who renders lip-service, (3) he who flatters, (4) he who brings ruin.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta, Digha Nikaya 31 (trans. Narada Thera)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha gives Sigala a list of signs that reveal a false friend, each broken down into four observable behaviours.</div>
+  <div class="tieback">Like the Kural, the sutta turns friendship into something to be checked against specific marks of character.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;A Sramana engaged in austerities, who longs for righteousness, should eat the proper quantity of allowed food, should select a companion of right understanding, and should live in a place suited to seclusion.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 32.4 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Mahāvīra&#x27;s teaching on the path to liberation tells the monk to choose his companion deliberately, for that companion&#x27;s sound understanding.</div>
+  <div class="tieback">The Kural tells us to make friends only after weighing a person&#x27;s character, family, faults and associates, and the Jain canon likewise makes the careful choice of a companion part of the disciplined life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Kabir! The mind has become a bird; it soars and flies in the ten directions. According to the company it keeps, so are the fruits it eats.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1369, Salok Bhagat Kabir 86 (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Kabir says the restless mind settles wherever its company is, and what it becomes depends on that company, so the people around a person are a true index of what that person will become.</div>
+  <div class="tieback">The Kural tells us to check a would-be friend&#x27;s character, faults and the circle he keeps close; Kabir explains why the circle matters, since a person takes the fruit of the company he keeps.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">On the battlefield before Troy, Diomedes asks the Lycian Glaucus who he is; Glaucus recites his lineage back to Bellerophon, and Diomedes realises their grandfathers were guest-friends, so instead of fighting they clasp hands, renew the friendship and exchange armour.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad 6.119-236</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">In Iliad 6 an enemy becomes a friend only after his family and ancestral ties are laid out.</div>
+  <div class="tieback">The episode shows the Kural’s concern with kudimai and inam: lineage and associations are checked before friendship is sealed.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Now the qualities we ought to look out for in making our selection are firmness, stability, constancy. There is a plentiful lack of men so endowed, and it is difficult to form a judgment without testing.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/2808" target="_blank" rel="noopener">Cicero, Laelius de Amicitia §17 (trans. E. S. Shuckburgh)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Cicero’s Laelius complains that people count their sheep carefully but choose friends with no criteria, and he names the qualities to look for.</div>
+  <div class="tieback">Cicero, like Valluvar, gives a checklist of character traits to verify before friendship.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Britain introduces positive vetting after the Burgess and Maclean defections</div>
+  <div class="rle-meta">1952 &middot; London, United Kingdom</div>
+  <div class="quote is-paraphrase">In 1951 the British diplomats Guy Burgess and Donald Maclean, who had been recruited by Soviet intelligence before the Second World War, defected to the Soviet Union. In response, the British government in 1952 introduced positive vetting, a procedure intended to establish the integrity of civil servants doing exceptionally secret work. Earlier screening had focused on Communist or Fascist sympathies and associations, but positive vetting widened the inquiry to a person&#x27;s character, and in 1956 the government declared publicly that character defects could affect a civil servant&#x27;s posting or promotion.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">The reform reflected a hard lesson: trusted men had been given access to vital secrets without anyone examining closely their character and associations.</div>
+  <div class="tieback">The kural advises learning a person&#x27;s character, background, faults and associates before admitting him to close friendship, and positive vetting applied that same examination before admitting a person to the state&#x27;s secrets.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-80/" target="_blank" rel="noopener">Thirukkural Chapter 80: நட்பாராய்தல் / Investigation in forming Friendships (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-080.html" target="_blank" rel="noopener">நட்பாராய்தல் - அதிகாரம் 80 - திருக்குறள் (with Puliyur Kesigan, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="http://thirukkural-thamizh.org/html/A080.html" target="_blank" rel="noopener">80. நட்பாராய்தல் (ஆராய்ந்து நட்பு கொள்ளும் முறை) — Thirukkural, sandhi-joined text</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Vālmīki Rāmāyaṇa (Bāla Kāṇḍa: the putrakāmeṣṭi of Daśaratha; Ayodhyā Kāṇḍa: Kausalyā and Rāma)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/abudawud:4833" target="_blank" rel="noopener">Sunan Abi Dawud 4833 (A man follows the religion of his friend)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit, tr. Dr. Joshua Kulp), 2:5, 3:2, 4:1, 4:15, 4:21, 5:13</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta: The Discourse to Sigala (Digha Nikaya 31), tr. Narada Thera</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad, Book 21, translated by A. T. Murray (Loeb Classical Library, 1924)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.gutenberg.org/ebooks/2808" target="_blank" rel="noopener">Cicero, Laelius de Amicitia (On Friendship), trans. E. S. Shuckburgh, in Treatises on Friendship and Old Age</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://api.parliament.uk/historic-hansard/commons/1981/mar/26/security" target="_blank" rel="noopener">Security (HC Deb 26 March 1981 vol 1 cc1079-85) (Margaret Thatcher (statement to the House of Commons))</a> <span class="tier">[primary source]</span></li>
+<li id="cite-14"><a href="https://www.cia.gov/resources/csi/static/8-Review-HistoryofUKSecurityVetting-June-2026.pdf" target="_blank" rel="noopener">Review of The Secret History of UK Security Vetting from 1909 to the Present (Daniel W. B. Lomas) (Katherina Gonzales)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0792.html">&larr; Kural 792</a>
+  <a href="kural-0794.html">Kural 794 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-080.html">Investigation in Forming Friendships</a>
+  <a class="skip-btn" href="kural-0801.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

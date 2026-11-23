@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 251 — Flesh Renunciation | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 251</h1>
+<p class="adhikaram"><a href="adhikaram-026.html">Flesh Renunciation</a> &middot; Pulaan Maruthal &middot; <span class="tamil">புலான் மறுத்தல்</span></p>
+
+<div class="tamil-text">தன்னூன் பெருக்கற்குத் தான்பிறிது ஊனுண்பான்
+எங்ஙனம் ஆளும் அருள்.</div>
+<div class="translit">Thannoon perukkarkuth thaanpirithu oonunpaan,
+Enganam aalum arul.</div>
+
+<h2 class="section">Meaning</h2>
+<p>How can someone who eats another creature&#x27;s flesh just to grow their own body ever be truly kind?</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine someone who says they love animals, but eats one just to grow bigger themselves. That doesn’t fit together, does it? This kural asks exactly that: how can you be truly kind if you make your own body grow by using up another living body?</p>
+
+<h2 class="section">University</h2>
+<p>The chapter opens with a rhetorical question built on a stark bodily symmetry: ஊன் (flesh) appears on both sides of the transaction — தன்னூன் (one’s own flesh) is enlarged by பிறிது ஊன் (another’s flesh). The verb ஆளும் (“rule, govern”) is telling: Valluvar does not ask whether the meat-eater can feel pity occasionally, but whether அருள் (universal compassion, the virtue of the preceding chapter 25) can be the governing principle of his life. Placed in the துறவறவியல் (the section on renunciation), the argument is addressed first to those aspiring to the ascetic ideal, though commentators from Parimelazhagar onward read it as binding on all who claim arul. The logic of feeding self at the cost of other anticipates the Mahabharata’s Anushasana Parva and Ovid’s Pythagoras almost word for word, making this one of the most cross-culturally echoed couplets in the Kural.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;That man who seeks to increase his own flesh by (eating) the flesh of others, has to live in this world in great anxiety and after death has to take birth in indifferent races and families.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Anusasana Parva, Section CXV (trans. K. M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">In Bhishma’s discourse on abstaining from meat, the Mahabharata condemns exactly the person who grows his own body by consuming other bodies, and says he pays for it in this life and the next.</div>
+  <div class="tieback">Nearly identical wording to the Kural’s “தன்னூன் பெருக்கற்கு… பிறிது ஊனுண்பான்” — the same flesh-for-flesh image, with the same moral verdict.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Be not among winebibbers; among riotous eaters of flesh: For the drunkard and the glutton shall come to poverty: and drowsiness shall clothe a man with rags.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 23:20-21 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Proverbs warns against people who stuff themselves with meat and wine, saying such self-indulgence ruins a person.</div>
+  <div class="tieback">Both texts see meat-eating for bodily gratification as morally corrosive, though Proverbs targets gluttony rather than the killing itself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Beware of meat. It has addictiveness like the addictiveness of wine.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/urn/516890" target="_blank" rel="noopener">Muwatta Malik, Book 49, Hadith 36 (USC-MSA numbering)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Caliph Umar warned people that meat can become a craving as hard to control as alcohol.</div>
+  <div class="tieback">Like the Kural, Umar treats meat as something that enslaves the eater’s appetite, though he counsels moderation rather than abstention.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">The Talmud tells how a calf being led to slaughter hid its head in Rabbi Yehuda HaNasi’s garment and wept; he said, “Go, for this you were created.” Because he showed no compassion, heaven decreed years of suffering on him, which ended only when he later showed mercy to small animals.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Bava_Metzia.85a" target="_blank" rel="noopener">Babylonian Talmud, Bava Metzia 85a</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Even the greatest sage was held accountable for brushing off the fear of an animal about to be killed for food.</div>
+  <div class="tieback">Echoes the Kural’s claim that one cannot be governed by compassion while treating another creature’s life as simply food for oneself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;All tremble at violence; all fear death. Putting oneself in the place of another, one should not kill nor cause another to kill.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 129 (trans. Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha asks us to imagine ourselves in the other creature’s place — since all fear death, we should neither kill nor make others kill.</div>
+  <div class="tieback">The Kural’s question presupposes this same act of empathy: the eater’s flesh and the eaten one’s flesh are alike.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;He eats crisp goats’ meat, his belly grows, and his veins swell with blood--but he gains nothing but life in hell, just as the ram is only fed to be killed for the sake of a guest.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 7.7 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In the parable of the ram, the meat-eater who fattens his body on other creatures&#x27; flesh is compared to a ram fattened for slaughter: all his feeding only readies him for hell.</div>
+  <div class="tieback">Valluvar asks how one who eats another&#x27;s flesh to fatten his own can be ruled by compassion; the Uttaradhyayana uses the same image of a body swelling on another creature&#x27;s meat and calls it ripening for hell.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Kabeer, the dinner of beans and rice is excellent, if it is flavored with salt. Who would cut his throat, to have meat with his bread?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1374, Salok Bhagat Kabir 188 (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In his saloks preserved in the Guru Granth Sahib, Bhagat Kabir says a plain meal of khichri and salt is good food, and asks who would slit a throat just to have meat with his bread.</div>
+  <div class="tieback">The Kural condemns taking another creature&#x27;s flesh to fatten one&#x27;s own body; Kabir sets the same choice before the eater, simple food against a life taken for the sake of the palate.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">King Erysichthon cut down Ceres’ sacred oak and was cursed with a hunger that no food could fill; after devouring all his wealth he finally began to tear and eat his own limbs.</div>
+  <div class="cite">&mdash; <a href="https://www.poetryintranslation.com/PITBR/Latin/Metamorph15.php" target="_blank" rel="noopener">Ovid, Metamorphoses VIII (Erysichthon)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The myth shows appetite without restraint turning on the eater himself.</div>
+  <div class="tieback">A mythic picture of the Kural’s “feeding one’s own flesh” gone to its end-point: a body fattened by consuming leads to self-destruction.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Oh, how wrong it is for flesh to be made from flesh; for a greedy body to fatten, by swallowing another body; for one creature to live by the death of another creature!&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.poetryintranslation.com/PITBR/Latin/Metamorph15.php" target="_blank" rel="noopener">Ovid, Metamorphoses XV (Pythagoras’ teaching; trans. A. S. Kline)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Ovid puts into Pythagoras’ mouth the core Pythagorean argument for vegetarianism: it is wrong to build one body out of another’s death.</div>
+  <div class="tieback">This is almost exactly the Kural’s image — one’s own flesh enlarged by another’s flesh — and the same moral outrage.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Tolstoy writes The First Step on giving up meat</div>
+  <div class="rle-meta">1891-1892 &middot; Yasnaya Polyana and Tula, Russia</div>
+  <div class="quote is-paraphrase">Leo Tolstoy wrote the essay The First Step as the preface to the Russian edition of Howard Williams&#x27;s book The Ethics of Diet. In it he argued that a good life must begin with self-control, and that the first thing to give up is eating meat, because it requires killing animals against our moral feeling. He closed the essay with a first-person account of his visits to the slaughterhouse at Tula, which he had long put off because he felt ashamed to watch suffering he could not prevent.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">One of the world&#x27;s most admired moral writers argued publicly that a compassionate life and the killing of animals for the table cannot sit together.</div>
+  <div class="tieback">The kural asks how compassion can rule a person who fattens his own flesh on another&#x27;s, and Tolstoy&#x27;s essay made the same argument that real kindness has to begin by refusing that flesh.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-26/" target="_blank" rel="noopener">Thirukkural Chapter 26: புலான்மறுத்தல் / Abstinence from Flesh (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar and Sivayogi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-026.html" target="_blank" rel="noopener">புலால் மறுத்தல் - அதிகாரம் 26 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/urn/516890" target="_blank" rel="noopener">Muwatta Malik, Book 49 (The Description of the Prophet), Hadith 36: Umar on meat</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Bava_Metzia.85a" target="_blank" rel="noopener">Babylonian Talmud, Bava Metzia 85a (William Davidson Edition)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.poetryintranslation.com/PITBR/Latin/Metamorph15.php" target="_blank" rel="noopener">Ovid, Metamorphoses (trans. A. S. Kline), incl. Book XV: Pythagoras’ Teachings</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.laphamsquarterly.org/animals/leo-tolstoy-not-ostrich" target="_blank" rel="noopener">Leo Tolstoy Is Not an Ostrich (Leo Tolstoy (excerpt))</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.marxists.org/archive/tolstoy/1891/the-first-step.html" target="_blank" rel="noopener">The First Step, by Leo Tolstoy (Leo Tolstoy)</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0250.html">&larr; Kural 250</a>
+  <a href="kural-0252.html">Kural 252 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-026.html">Flesh Renunciation</a>
+  <a class="skip-btn" href="kural-0261.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

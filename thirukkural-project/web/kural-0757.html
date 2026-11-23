@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 757 — Wealth Accumulation | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 757</h1>
+<p class="adhikaram"><a href="adhikaram-076.html">Wealth Accumulation</a> &middot; Porul Seyalvakai &middot; <span class="tamil">பொருள் செயல்வகை</span></p>
+
+<div class="tamil-text">அருளென்னும் அன்பீன் குழவி பொருளென்னும்
+செல்வச் செவிலியால் உண்டு.</div>
+<div class="translit">Arulennum anbeen kuzhavi porulennum
+selvach cheviliyaal undu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Kindness is the child born to love, and it is brought up by a rich nanny called money.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Picture a baby born to a loving mother, cared for by a kind nanny who has plenty of food and warm blankets. Valluvar says kindness is like that baby: love gives birth to it, and money helps it grow, because it is easier to help others when you have something to give.</p>
+
+<h2 class="section">University</h2>
+<p>This is one of the Kural’s finest extended metaphors. Arul (compassion for all beings) is the kuzhavi, the infant, born of anbu (love for one’s own; anbeen is anbu plus eenra, ‘borne by love’), and porul is the selvach cheviliyal, the rich wet-nurse or foster-mother (cevili) who raises it. The genealogy reverses the usual worry that wealth corrupts: love begets compassion, but compassion cannot grow into practical kindness without means. It links back to chapter 8, Anbudaimai, which says love begets affection and friendship, and it answers 755 by showing the right relation of wealth to arul and anbu. The sandhi-joined text reads அருளென்னு மன்பீன் குழவி பொருளென்னுஞ், which divides into the same words.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The Taittiriya Upanishad’s parting counsel to graduating students tells them to give with faith, to give in plenty, to give with modesty, with awe, and with sympathy.</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Taittiriya_Upanishad" target="_blank" rel="noopener">Taittiriya Upanishad 1.11.3</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The teacher links generous giving to an attitude of reverence and fellow-feeling.</div>
+  <div class="tieback">Giving ‘in plenty’ joined to sympathy echoes the Kural’s picture of wealth nursing compassion.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But whoso hath this world’s good, and seeth his brother have need, and shutteth up his bowels of compassion from him, how dwelleth the love of God in him?&rdquo;</div>
+  <div class="cite">&mdash; 1 John 3:17 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">John says that love is real only when a person who has means opens both heart and purse to someone in need.</div>
+  <div class="tieback">John links love, compassion and ‘this world’s good’ in the same chain as the Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;[True] righteousness is [in] one who believes in Allah... and gives wealth, in spite of love for it, to relatives, orphans, the needy, the traveler, those who ask [for help], and for freeing slaves.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 2:177 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an defines true righteousness as faith shown in the giving of wealth to those in need, even though one loves that wealth.</div>
+  <div class="tieback">In both texts, compassion takes practical form through wealth given away.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Where there is no bread, there is no Torah; where there is no Torah, there is no bread.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 3:17 (trans. Joshua Kulp, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbi Elazar ben Azariah teaches that spiritual life and material sustenance depend on each other.</div>
+  <div class="tieback">As the Kural’s compassion needs a well-provided nurse, Torah needs bread in order to flourish.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;And they’d hold on to friends by dividing their wealth in four.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/dn31/en/sujato" target="_blank" rel="noopener">Digha Nikaya 31, Sigalovada Sutta (trans. Bhikkhu Sujato)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha tells the young householder Sigalaka that a wise person keeps friendships alive by managing wealth well and sharing it.</div>
+  <div class="tieback">Here too, well-kept wealth nourishes bonds of love and care.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Yathavat atithau sadhau dine cha pratipatti-krt : Diligent in succoring the ascetics, the righteous and the needy.” … “Sadaya : Compassionate.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.jainworld.com/jainbooks/antiquity/ethcjain.htm" target="_blank" rel="noopener">Hemacandra, Yogaśāstra, thirty-five qualities of an ideal śrāvaka, nos. 19 and 31, as rendered in Vilas A. Sangave, ‘Ethics of Jainism: Prescription of Ethical Code’ (jainworld.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Hemacandra&#x27;s ideal householder, who first earns wealth honestly, is to be compassionate and to use his means in supporting ascetics, good people and the poor.</div>
+  <div class="tieback">The Kural pictures compassion as a child born of love and nursed by wealth, and the Jain layman&#x27;s code likewise expects the compassionate householder to sustain the needy and the holy from his resources.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">When Guru Nanak left his post as storekeeper to the Nawab of Sultanpur, complaints were made of his extravagance; but on investigation the storehouse was found full and his accounts correct, and money was even found due to him from the State, which the Guru refused, asking the Nawab to spend it in relieving the wants of the poor.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">Max Arthur Macauliffe, The Sikh Religion, vol. 1 (1909), Life of Guru Nanak, pp. 42-43</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Macauliffe, following the Janamsakhi tradition, tells how Nanak&#x27;s honestly kept wealth, far from being lost, became a means of care for the poor.</div>
+  <div class="tieback">The Kural pictures compassion as a child nursed by the rich foster-mother called wealth; in this story honestly earned wealth is turned at once into the nourishment of compassion.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Athens set up Kephisodotos’ statue of Eirene (Peace) holding the infant Ploutos (Wealth) in her arms, and Pausanias describes a similar statue at Thebes of Tyche carrying the child Ploutos.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/Pausanias1B.html" target="_blank" rel="noopener">Pausanias, Description of Greece 1.8.2 and 9.16.2</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Greek art pictured wealth as a baby nursed and carried by a goddess.</div>
+  <div class="tieback">The Greek image uses the same nurse-and-infant figure as the Kural, but reversed: in Athens Peace nurses Wealth, while in the Kural Wealth nurses Compassion.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In the Nicomachean Ethics, Aristotle defines liberality as the virtue of giving to the right people, in the right amounts, at the right time, and notes that the liberal person must also take from the right sources so as to have something to give.</div>
+  <div class="cite">&mdash; <a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, Book IV, Chapter 1</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Aristotle, generosity is a real virtue, but it needs property to work with.</div>
+  <div class="tieback">Aristotle, like Valluvar, sees kindness in action as needing wealth to grow.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Zubaydah funds wells and rest stations on the pilgrim road to Mecca</div>
+  <div class="rle-meta">late 8th - early 9th century &middot; Darb Zubaydah, from Kufa (Iraq) to Mecca (Saudi Arabia)</div>
+  <div class="quote is-paraphrase">Zubaydah bint Jafar, wife of the Abbasid caliph Harun al-Rashid, supported charitable works along the pilgrimage road linking Kufa and Baghdad with Mecca. As growing numbers of pilgrims strained the water and food of the Arabian desert, she personally paid for many new intermediate rest stops for pilgrims travelling on foot, along with wells and reservoirs. The road became known as the Darb Zubaydah, and its Iraqi and Saudi sections are on UNESCO&#x27;s World Heritage tentative list.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A royal fortune was turned into water and shelter for ordinary travellers, and the whole route came to bear her name.</div>
+  <div class="tieback">The kural calls compassion the child of love, raised by the wealthy foster-mother called wealth, and Zubaydah&#x27;s riches gave her care for pilgrims the means to save lives across the desert.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-76/" target="_blank" rel="noopener">Thirukkural Chapter 76: பொருள்செயல்வகை / Way of Accumulating Wealth (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A076.html" target="_blank" rel="noopener">76. பொருள்செயல்வகை (பொருள் தேடும் முறை) — Thirukkural, sandhi-joined text</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://en.wikisource.org/wiki/Taittiriya_Upanishad" target="_blank" rel="noopener">Taittiriya Upanishad (Ananda Valli, the graded calculus of bliss, 2.8-2.9)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit, tr. Dr. Joshua Kulp), 2:5, 3:2, 4:1, 4:15, 4:21, 5:13</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://suttacentral.net/dn31/en/sujato" target="_blank" rel="noopener">Digha Nikaya 31, Sigalovada Sutta (Advice to Sigalaka), trans. Bhikkhu Sujato</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://jainworld.jainworld.com/jainbooks/antiquity/ethcjain.htm" target="_blank" rel="noopener">Jaina ethics (English renderings of Jain householder texts, incl. Hemacandra&#x27;s Yogaśāstra) (Vilas A. Sangave)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">The Sikh Religion: Its Gurus, Sacred Writings and Authors (6 vols.) (Max Arthur Macauliffe)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/Pausanias1B.html" target="_blank" rel="noopener">Pausanias, Description of Greece, Book 1: Attica (trans. W. H. S. Jones)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, translated by W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://whc.unesco.org/en/tentativelists/6577/" target="_blank" rel="noopener">The Hajj Pilgrimage Routes: The Darb Zubaydah (Saudi Arabia)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://eamena.org/article/surveying-darb-zubaydah-iraq" target="_blank" rel="noopener">Surveying the Darb Zubaydah in Iraq</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0756.html">&larr; Kural 756</a>
+  <a href="kural-0758.html">Kural 758 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-076.html">Wealth Accumulation</a>
+  <a class="skip-btn" href="kural-0761.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

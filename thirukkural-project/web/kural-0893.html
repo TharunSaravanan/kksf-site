@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 893 — Not Offending the Great | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 893</h1>
+<p class="adhikaram"><a href="adhikaram-090.html">Not Offending the Great</a> &middot; Periyaaraip Pizhaiyaamai &middot; <span class="tamil">பெரியாரைப் பிழையாமை</span></p>
+
+<div class="tamil-text">கெடல்வேண்டின் கேளாது செய்க அடல்வேண்டின்
+ஆற்று பவர்கண் இழுக்கு.</div>
+<div class="translit">Ketalventin kelaadhu seyka atalventin
+aatru pavarkan izhukku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If you want to ruin yourself, act without listening to advice. If you want to be destroyed, do wrong to people who have great power.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you poke a sleeping bear with a stick and ignore everyone shouting stop, you are asking for trouble. Valluvar says, with a wink: if you want to get hurt, go ahead and annoy the strongest one around.</p>
+
+<h2 class="section">University</h2>
+<p>This couplet uses irony: keDal veNDin (கெடல் வேண்டின், if you desire ruin), keLaadhu seyga (கேளாது செய்க, do it without listening), izhukku (இழுக்கு, offence, fault) toward aatrupavar (ஆற்றுபவர், those able) aDal veNDin (அடல் வேண்டின், when they wish to slay). The phrase keLaadhu is read differently: Pope’s explanation, following the traditional commentary, takes it as not listening to the righteous dictates of law or the nīti texts, and Solomon Pappaiah likewise speaks of ignoring what the moral treatises say; Kalaignar reads it as not listening to anyone’s advice; Sivayogi Sivakumar reads the first half more freely as a separate clause. The pairing keDal/aDal is a typical Valluvar sound-echo. The text is identical in both sources, which print ஆற்று பவர்கண் with the metrical split.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Yuddha Kanda, Ravana rejects the repeated counsel of his brother Vibhishana to return Sita to Rama, insults him, and drives him away, then goes on to his destruction.</div>
+  <div class="cite">&mdash; <a href="https://www.valmiki.iitk.ac.in/" target="_blank" rel="noopener">Valmiki Ramayana, Yuddha Kanda (Vibhishana’s counsel)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Ravana refused to listen to wise advice and persisted in offending a far mightier opponent until his kingdom fell.</div>
+  <div class="tieback">This is the Kural’s formula for ruin exactly: do not listen, and wrong the one who can destroy you.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;He, that being often reproved hardeneth his neck, shall suddenly be destroyed, and that without remedy.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 29:1 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The proverb warns that one who keeps refusing correction will meet sudden and irreparable ruin.</div>
+  <div class="tieback">The Kural’s keLaadhu, refusing to listen, is the same road to ruin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And they will say, ‘If only we had been listening or reasoning, we would not be among the companions of the Blaze.’&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 67:10 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The people of the Fire lament too late that they refused to listen and reason when warned.</div>
+  <div class="tieback">Like the Kural, it traces ruin to the refusal to heed.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">King Rehoboam rejects the counsel of the elders who served his father Solomon, follows the harsh advice of his young companions, and ten tribes break away from his kingdom.</div>
+  <div class="cite">&mdash; 1 Kings 12:1-20 <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">By refusing to heed experienced counsellors and provoking the people, Rehoboam lost most of his realm.</div>
+  <div class="tieback">The Kural’s path to self-ruin, acting without listening, is exactly Rehoboam’s choice.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Whoever, on account of perverted views, scorns the Teaching of the Perfected Ones, the Noble and Righteous Ones — that fool, like the bamboo, produces fruits only for self destruction.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 164 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha compares one who scorns the noble ones to a bamboo whose own fruiting kills it.</div>
+  <div class="tieback">As in the Kural, scorning the great is described as a self-chosen path to ruin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Like a poisonous snake is a great sage of severe austerities, of tremendous piety and power; like a swarm of moths you will rush into a fire, if you beat a monk on his begging tour.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 12.27 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">When brahmin youths beat the outcaste-born monk Harikeśa, Bhadrā warns them that assaulting such a sage is like moths rushing into a flame, a ruin they bring on themselves.</div>
+  <div class="tieback">The Kural says that whoever wants to be ruined need only offend those able to destroy, and Bhadrā&#x27;s image of moths flying into the fire is that same self-chosen destruction.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;He himself must eat what he has planted.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 280, Raag Gauree (Sukhmani), Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In the same passage on slandering the Saint, Guru Arjan says the slanderer reaps exactly the harvest he has sown.</div>
+  <div class="tieback">The Kural ironically says that whoever wants ruin need only offend the able, and Gurbani agrees that such a person brings ruin on himself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Euripides’ Bacchae, King Pentheus ignores the warnings of the seer Tiresias and of his grandfather Cadmus, persecutes the god Dionysus, and is destroyed.</div>
+  <div class="cite">&mdash; <a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0092" target="_blank" rel="noopener">Euripides, Bacchae</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Pentheus refused all counsel and made war on a power far greater than his own.</div>
+  <div class="tieback">He follows the Kural’s ironic recipe for ruin to the letter.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In the Republic, Plato describes a ship whose quarrelling sailors ignore and mock the true navigator, so that the voyage is ruined.</div>
+  <div class="cite">&mdash; Plato, Republic VI, 488a-489a (Ship of State) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">A community that will not listen to those with real skill steers itself toward disaster.</div>
+  <div class="tieback">The Kural similarly links ruin to refusing to heed and disrespecting the capable.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Iraq ignores the UN deadline to leave Kuwait</div>
+  <div class="rle-meta">2 August 1990 - 28 February 1991 &middot; Kuwait and Iraq</div>
+  <div class="quote is-paraphrase">Iraqi forces invaded Kuwait on 2 August 1990, and the UN Security Council at once demanded their immediate and unconditional withdrawal, then imposed sanctions. In November 1990 Resolution 678 authorized member states to use all necessary means unless Iraq withdrew by 15 January 1991. Iraq did not withdraw, and a coalition of forces from more than 30 nations began air attacks on 16-17 January and a ground offensive on 24 February that liberated Kuwait within about four days.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Iraq&#x27;s leadership defied repeated warnings from a coalition with overwhelming power and saw its army driven out of Kuwait in days.</div>
+  <div class="tieback">The kural says that one who wants ruin need only offend, without heeding anyone, those able to destroy whenever they wish, which Iraq did by ignoring every warning.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-90/" target="_blank" rel="noopener">Thirukkural Chapter 90: பெரியாரைப் பிழையாமை / Not Offending the Great (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-090.html" target="_blank" rel="noopener">பெரியாரைப் பிழையாமை - அதிகாரம் 90 - திருக்குறள் (Not Offending the Great)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.valmiki.iitk.ac.in/" target="_blank" rel="noopener">Valmiki Ramayana, Yuddha Kanda (Vibhishana’s counsel to Ravana)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0092" target="_blank" rel="noopener">Euripides, The Bacchae</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Republic, Book X (the Myth of Er) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://peacekeeping.un.org/sites/default/files/past/unikom/background.html" target="_blank" rel="noopener">UNIKOM: United Nations Iraq-Kuwait Observation Mission - Background</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.history.com/articles/persian-gulf-war" target="_blank" rel="noopener">Persian Gulf War (History.com Editors)</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0892.html">&larr; Kural 892</a>
+  <a href="kural-0894.html">Kural 894 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-090.html">Not Offending the Great</a>
+  <a class="skip-btn" href="kural-0901.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

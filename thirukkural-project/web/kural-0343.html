@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 343 — Renunciation | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 343</h1>
+<p class="adhikaram"><a href="adhikaram-035.html">Renunciation</a> &middot; Thuravu &middot; <span class="tamil">துறவு</span></p>
+
+<div class="tamil-text">அடல்வேண்டும் ஐந்தன் புலத்தை விடல்வேண்டும்
+வேண்டிய வெல்லாம் ஒருங்கு.</div>
+<div class="translit">Adalvendum aindhan pulaththai vidalvendum
+Vendiya vellaam orungu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>You must conquer your five senses and, at the same time, give up everything you desire.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine five puppies each pulling you toward a different treat. You need to hold all five leashes AND put all the treats away. This kural says control all five senses and let go of everything they want, all at once.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet is built on two parallel imperatives (adalvendum … vidalvendum, “must conquer … must abandon”): conquest of the five sense-fields (aindhan pulam — sight, hearing, smell, taste, touch) and the simultaneous relinquishing of all that they desire. The final word orungu (“together, all at once”) is decisive; Parimelazhagar stresses that a partial abandonment leaves a foothold from which desire regrows. Pairing inner control with outer relinquishment mirrors the Indic scheme of indriya-nigraha and tyaga, and recalls Kural 6&#x27;s praise of the one who has quenched the five sense-gates. Across traditions the senses appear as the doorways through which the world lays claim to the self — the Gita&#x27;s tortoise, Plato&#x27;s unruly horse, Odysseus&#x27;s wax-stopped crew.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;One who is able to withdraw his senses from sense objects, as the tortoise draws his limbs within the shell, is to be understood as truly situated in knowledge.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 2.58 (Prabhupada, As It Is)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna compares the steady sage to a tortoise that can pull all its limbs inside its shell at will.</div>
+  <div class="tieback">The tortoise withdraws all its limbs together — the Kural&#x27;s &#x27;conquer the five senses&#x27; and &#x27;orungu&#x27; (all at once) in a single image.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For all that is in the world, the lust of the flesh, and the lust of the eyes, and the pride of life, is not of the Father, but is of the world. And the world passeth away, and the lust thereof: but he that doeth the will of God abideth for ever.&rdquo;</div>
+  <div class="cite">&mdash; 1 John 2:16-17 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">John names the cravings of the body and the eyes as belonging to a passing world, and contrasts them with doing God&#x27;s will.</div>
+  <div class="tieback">Both texts see sense-desire as the channel that binds us to the world, and call for turning away from it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;But as for he who feared the position of his Lord and prevented the soul from [unlawful] inclination, Then indeed, Paradise will be [his] refuge.&rdquo;</div>
+  <div class="cite">&mdash; Quran 79:40-41 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Quran promises Paradise to the one who restrains the self (nafs) from its unlawful desires out of reverence for God.</div>
+  <div class="tieback">Restraint of the desiring self is the gateway to the highest state — parallel to the Kural&#x27;s call to conquer the senses.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Who is mighty? He who subdues his [evil] inclination, as it is said: ‘He that is slow to anger is better than the mighty; and he that rules his spirit than he that takes a city’ (Proverbs 16:32).&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 4:1 (tr. Joshua Kulp, Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Ben Zoma redefines strength as the conquest of one&#x27;s own impulses rather than of other people.</div>
+  <div class="tieback">The Kural&#x27;s &#x27;adal&#x27; (conquest) is turned inward in exactly the same way: the real victory is over one&#x27;s own desires.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Good is restraint over the eye; good is restraint over the ear; good is restraint over the nose; good is restraint over the tongue. Good is restraint in the body; good is restraint in speech; good is restraint in thought. Restraint everywhere is good. The monk restrained in every way is freed from all suffering.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 360-361 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha lists restraint over each sense in turn and concludes that total restraint frees the monk from suffering.</div>
+  <div class="tieback">A sense-by-sense version of the Kural&#x27;s command to conquer all five senses together.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;He should not desire (pleasant) sounds and colours, but conquer his longing for all kinds of pleasures. A monk should avoid every attachment and bear every pain, be full (of wisdom), not greedy, wander about homeless, give assurance of safety (to all beings), and be free from passions.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga I.7.27-28 (tr. Hermann Jacobi, SBE 45, 1895, p. 296)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Sūtrakṛtāṅga tells the monk to master the pull of the sense-objects and, at the same time, to give up every attachment, living homeless and free of passion.</div>
+  <div class="tieback">Valluvar pairs conquering the five senses with giving up &#x27;together&#x27; everything they crave. These verses join the same two duties: overcome the longing for sounds and colours, and avoid every attachment.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;They conquer the five thieves, and enshrine the True Lord in the heart.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 223, Raag Gauree, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak describes the way of life that leads to God as overcoming the five thieves (kaam, krodh, lobh, moh, ahankar) and keeping the True One in the heart.</div>
+  <div class="tieback">The Kural asks that the five senses be subdued and everything they crave be given up together; Guru Nanak asks for the five inner thieves to be conquered and the heart given to God instead.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Sailing past the Sirens, Odysseus stops his crew&#x27;s ears with wax and has himself bound to the mast so their song cannot draw him to ruin.</div>
+  <div class="cite">&mdash; Homer, Odyssey 12 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Warned by Circe, Odysseus uses physical restraint to overcome a sensory lure that has destroyed every sailor before him.</div>
+  <div class="tieback">The Sirens personify the pull of sense-objects; blocking the senses entirely is how Odysseus survives — a mythic image of the Kural&#x27;s command.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In the Phaedrus, Socrates pictures the soul as a charioteer driving two horses, one noble and one unruly, and describes the struggle to rein in the unruly horse of appetite.</div>
+  <div class="cite">&mdash; Plato, Phaedrus 246a-254e <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Plato&#x27;s allegory makes self-mastery a matter of reason forcibly controlling the appetites that pull toward sensual objects.</div>
+  <div class="tieback">Like the Kural, it treats the appetites as forces that must be conquered, not negotiated with.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Simeon Stylites lives atop a pillar in Syria</div>
+  <div class="rle-meta">5th century CE (died 459) &middot; Telanissa, near Aleppo, Syria</div>
+  <div class="quote is-paraphrase">The Christian ascetic Simeon Stylites climbed onto a pillar near Telanissa in northern Syria and spent the rest of his life, more than thirty-five years, on its top, exposed to the weather, with only a railing and a ladder by which visitors could approach. Pilgrims came for counsel and help, and his influence reached even the emperor. After his death in 459 a great church complex, now known as Qal&#x27;at Sim&#x27;an, was built around the base of his column.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Simeon became the founder of the stylite tradition, an extreme example of withdrawing from every comfort the senses seek. The ruins built around his pillar are now part of a UNESCO World Heritage property.</div>
+  <div class="tieback">The kural calls for mastering all five senses and giving up together everything they crave, and Simeon&#x27;s life on the pillar was a total renunciation of comfort, food, shelter and ease.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-35/" target="_blank" rel="noopener">Thirukkural Chapter 35: துறவு / Renunciation (with Mu. Varadarasan, Solomon Pappaiah, Karunanidhi, Sivayogi Sivakumar commentaries and G. U. Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-035.html" target="_blank" rel="noopener">துறவு - அதிகாரம் 35 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah, Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga (Sutrakritanga)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11">Phaedrus (the charioteer allegory) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/print/article/545077" target="_blank" rel="noopener">St. Simeon Stylites (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.newadvent.org/cathen/13795a.htm" target="_blank" rel="noopener">St. Simeon Stylites the Elder (Herbert Thurston)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://whc.unesco.org/en/news/1499" target="_blank" rel="noopener">Director-General of UNESCO deplores severe damage at Church of Saint Simeon, in northern Syria</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0342.html">&larr; Kural 342</a>
+  <a href="kural-0344.html">Kural 344 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-035.html">Renunciation</a>
+  <a class="skip-btn" href="kural-0351.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

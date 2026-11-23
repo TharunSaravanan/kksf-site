@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1170 — Complaint | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1170</h1>
+<p class="adhikaram"><a href="adhikaram-117.html">Complaint</a> &middot; Padar Melindhirankal &middot; <span class="tamil">படர் மெலிந்திரங்கல்</span></p>
+
+<div class="tamil-text">உள்ளம்போன்று உள்வழிச் செல்கிற்பின் வெள்ளநீர்
+நீந்தல மன்னோஎன் கண்.</div>
+<div class="translit">Ullampoandru ulvazhich chelkirpin vellaneer
+neendhala mannoaen kan.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If my eyes could travel to where he is, the way my heart does, they would not have to swim in this flood of tears.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Your thoughts can fly anywhere: you can imagine being with your grandma far away in a second. But your eyes cannot go there to see her. The wife says her heart is already with her husband, but her eyes are stuck at home, so they just cry and cry.</p>
+
+<h2 class="section">University</h2>
+<p>The closing couplet contrasts uḷḷam (உள்ளம், heart or mind), which goes freely to uḷvaḻi (உள்வழி, ‘the place where he is’), with kaṇ (கண், the eyes), which cannot follow and so must ‘swim’ (nīntu, நீந்து) in veḷḷa nīr (வெள்ளநீர், a flood of water), that is, tears. Celkiṟpiṉ (செல்கிற்பின்) is ‘if they were able to go’, and maṉṉō (மன்னோ) adds regretful emphasis. Puliyur Kesikan extends the wish to her whole body going where her heart is, while the other glossators keep to the eyes. The flood of this couplet answers the floods of 1164 and 1167: the sea of love has become the water of her own tears, and the next chapter (118, kaṇ vitumpu aḻital) turns entirely to the eyes. Pope: ‘When eye of mine would as my soul go forth to him, / It knows not how through floods of its own tears to swim.’ The text is identical on both base sources.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">When Uddhava brings Krishna’s message from Mathura, the gopis of Vraja tell him that their minds are always with Krishna, even though they themselves must remain behind, weeping, in the village.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Bhagavata Purana 10.47 (the gopis and Uddhava) (paraphrase)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The gopis’ hearts have gone where Krishna is, but their bodies and eyes are left in Vraja.</div>
+  <div class="tieback">This is the Kural’s contrast exactly: the heart travels to the beloved, while the eyes stay behind in tears.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;I am weary with my groaning; all the night make I my bed to swim; I water my couch with my tears.&rdquo;</div>
+  <div class="cite">&mdash; Psalms 6:6 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The psalmist, in great distress, weeps so much that he says his bed swims in tears.</div>
+  <div class="tieback">The Kural’s heroine uses the same hyperbole: her eyes swim in a flood of tears.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Ever since they tore me from my osier bed, My plaintive notes have moved men and women to tears. I burst my breast, striving to give vent to sighs, And to express the pangs of my yearning for my home.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/isl/masnavi/msn01.htm" target="_blank" rel="noopener">Rumi, Masnavi, Book 1, Prologue (tr. E.H. Whinfield)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Rumi’s reed-flute, cut from its reed bed, cries out with longing to return to where it belongs.</div>
+  <div class="tieback">The reed’s heart is with its home and its body cannot go there, which is the heroine’s situation, and its lament moves others to tears as hers floods her eyes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;For these things I weep; Mine eye, mine eye runneth down with water; Because the comforter is far from me, Even he that should refresh my soul.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/" target="_blank" rel="noopener">Lamentations 1:16 (JPS 1917, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The voice of Lamentations weeps endlessly because the one who should bring comfort is far away.</div>
+  <div class="tieback">The heroine’s eyes are flooded for the same reason: the one who would comfort her is far off and cannot be reached.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Which is greater, the tears you have shed while transmigrating &amp; wandering this long, long time — crying &amp; weeping from being joined with what is displeasing, being separated from what is pleasing — or the water in the four great oceans?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/sn/sn15/sn15.003.than.html" target="_blank" rel="noopener">Samyutta Nikaya 15.3, Assu Sutta (tr. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha asks his monks to compare all the tears they have shed over separation with the oceans, and they answer that the tears are greater.</div>
+  <div class="tieback">The Kural’s ‘flood of tears’ shed in separation becomes, in the Buddha’s reckoning, a flood greater than the seas.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">When her betrothed Arishtanemi leaves on their wedding day to become a monk, Princess Rajimati does not stay behind in grief but herself renounces the world and follows him to Mount Raivataka, where he practises austerities.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 22 (Rathanemi) (paraphrase)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In the Jain story, Rajimati turns her longing into action and goes where her heart has already gone.</div>
+  <div class="tieback">The Kural’s heroine wishes she could go where her heart is; Rajimati actually does, though by way of renunciation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Ascending to His Mansion, I gaze upon His path, and my eyes are filled with tears.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 624, Raag Sorath, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Arjan pictures the waiting bride climbing to the roof to watch the road for her Husband, her eyes filling with tears.</div>
+  <div class="tieback">The Kural&#x27;s heroine wishes her eyes could go to her husband as her heart does, instead of swimming in a flood of tears; Guru Arjan&#x27;s bride can only watch the road with tear-filled eyes while her heart goes out to the Beloved.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Ovid’s Penelope opens her letter to the long-absent Odysseus by begging him not to write back but to come himself.</div>
+  <div class="cite">&mdash; Ovid, Heroides 1 (Penelope to Ulysses) (paraphrase) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Penelope wants not messages but presence; words and thoughts cannot cross the distance for her.</div>
+  <div class="tieback">The Kural’s heroine also knows that thoughts can travel but she cannot, and longs for real presence instead.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Seneca tells Lucilius that he never receives a letter from him without at once feeling in his company, because the mind can be with an absent friend even when the body cannot.</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_2" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius, Letter 40 (paraphrase)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Seneca treats the mind as able to cross distance and make an absent friend present.</div>
+  <div class="tieback">The Kural agrees that the heart travels freely, but laments that the eyes cannot follow, which is why they fill with tears.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Kalidasa composes the Meghaduta, the Cloud Messenger</div>
+  <div class="rle-meta">c. 5th century CE &middot; India</div>
+  <div class="quote is-paraphrase">The Sanskrit poet Kalidasa composed the Meghaduta, a lyric love poem of about 115 verses. In it an exiled yaksha, a nature spirit, pines for his beloved while alone on a mountain peak. At the start of the monsoon he asks a passing cloud to carry a message to her in the Himalayan city of Alaka, and much of the poem describes the cities and landscapes the cloud will pass on its way.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The poem became one of the masterpieces of Sanskrit literature and the model for a whole genre of messenger poems in India.</div>
+  <div class="tieback">The kural wishes that the eyes could travel to the beloved as freely as the heart does, and Kalidasa&#x27;s exile, unable to go himself, sends his heart&#x27;s message on a cloud instead.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-117/" target="_blank" rel="noopener">Thirukkural Chapter 117: படர்மெலிந்திரங்கல் / Complainings (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-117.html" target="_blank" rel="noopener">படர்மெலிந்திரங்கல் - அதிகாரம் 117 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Srimad Bhagavatam (Bhagavata Purana), Canto 8, chapters 5-8: the curse of Durvasa and the churning of the ocean of milk</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sacred-texts.com/isl/masnavi/msn01.htm" target="_blank" rel="noopener">Jalal al-Din Rumi, Masnavi i Ma&#x27;navi, abridged translation by E.H. Whinfield (1898)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/sn/sn15/sn15.003.than.html" target="_blank" rel="noopener">Samyutta Nikaya 15.3, Assu Sutta, tr. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Ovid, Heroides <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_2" target="_blank" rel="noopener">Seneca, Moral Letters to Lucilius — Letter 2 (on contented poverty, quoting Epicurus) and Letter 19 (on with whom one dines)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/topic/Meghaduta" target="_blank" rel="noopener">Meghaduta</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://eap.bl.uk/archive-file/EAP921-2-1-12" target="_blank" rel="noopener">Meghaduta (EAP921/2/1/12)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1169.html">&larr; Kural 1169</a>
+  <a href="kural-1171.html">Kural 1171 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-117.html">Complaint</a>
+  <a class="skip-btn" href="kural-1171.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

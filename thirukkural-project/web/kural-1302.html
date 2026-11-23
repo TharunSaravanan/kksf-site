@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1302 — Pouting | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1302</h1>
+<p class="adhikaram"><a href="adhikaram-131.html">Pouting</a> &middot; Pulavi &middot; <span class="tamil">புலவி</span></p>
+
+<div class="tamil-text">உப்பமைந் தற்றால் புலவி அதுசிறிது
+மிக்கற்றால் நீள விடல்.</div>
+<div class="translit">Uppamain thatraal pulavi adhusiridhu
+mikkatraal neela vidal.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A little sulking is like the right amount of salt in food. Letting it go on too long is like putting in too much salt.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A pinch of salt makes soup taste wonderful, but too much salt spoils it. A small, short sulk between people who love each other is like that pinch; a long one ruins everything.</p>
+
+<h2 class="section">University</h2>
+<p>The famous image here is culinary: pulavi is uppu amaintaṟṟu (‘like salt properly set’ in food), but to let it lengthen (nīḷa viṭal) is like salt that has become a little excessive (atu ciṟitu mikkaṟṟu). Mu. Varadarasanar and Puliyur Kesikan read ciṟitu with mikku (‘even slightly too much’), stressing how quickly the right measure is lost, while Kalaignar reads the measure as the interval between quarrel (ūṭal) and reunion (kūṭal), and Solomon Pappaiah relates it to the joy of union it is meant to season. The couplet is generally taken as the confidante’s counsel to the wife, balancing the previous verse’s encouragement. Pope renders ‘A cool reserve is like the salt that seasons well the mess, / Too long maintained, ’tis like the salt’s excess.’ ytamizh.com and thirukkural.net agree on the text.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Gita Govinda, Radha’s friend urges her not to keep up her proud anger (mana) against Krishna, who has come to her humbly, warning her that by being harsh to one so gentle she only hurts herself.</div>
+  <div class="cite">&mdash; Jayadeva, Gita Govinda, Sarga 9 (paraphrase; cf. tr. Barbara Stoler Miller) <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The sakhi plays exactly the Kural confidante’s role, telling the heroine that her pique has gone on long enough.</div>
+  <div class="tieback">This is the salt warning in Sanskrit lyric form: a little pique adds savour, but prolonged pride spoils the love it was meant to season.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Be ye angry, and sin not: let not the sun go down upon your wrath:&rdquo;</div>
+  <div class="cite">&mdash; Ephesians 4:26 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul allows that anger may arise but insists it must not be carried past the end of the day.</div>
+  <div class="tieback">The Kural accepts a little sulking but, like Paul, sets a firm limit on how long it may last.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;It is not lawful for a man to desert his brother Muslim for more than three nights. (It is unlawful for them that) when they meet, one of them turns his face away from the other, and the other turns his face from the former, and the better of the two will be the one who greets the other first.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6077" target="_blank" rel="noopener">Sahih al-Bukhari 6077</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet sets a strict time limit on estrangement and praises whoever ends it first.</div>
+  <div class="tieback">The Kural’s salt image makes the same point: a short coolness is tolerable, a prolonged one corrupts the relationship.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;For His anger is but for a moment, His favour is for a life-time; weeping may tarry for the night, but joy cometh in the morning.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/" target="_blank" rel="noopener">Psalms 30:6 (JPS 1917, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The psalmist describes divine anger as brief and divine favour as lasting.</div>
+  <div class="tieback">The Kural wants love’s anger in the same proportion: a moment of sulk inside a lifetime of affection.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">When the monk Sona strains too hard in his practice, the Buddha reminds him that a lute is neither in tune nor playable when its strings are too tight or too slack, but only when they are evenly tuned.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an06/an06.055.than.html" target="_blank" rel="noopener">Anguttara Nikaya 6.55, Sona Sutta (paraphrase)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha teaches balance: too much or too little effort both spoil the practice.</div>
+  <div class="tieback">The lute string and the Kural’s salt teach the same lesson of right measure, applied here to a lovers’ sulk.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">The Dasavaikalika Sutra teaches that anger destroys affection, pride destroys humility, deceit destroys friendship and greed destroys everything.</div>
+  <div class="cite">&mdash; Dasavaikalika Sutra 8.38 (some editions 8.37; paraphrase) <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jain teaching names anger (krodha) and pride (mana) as passions that eat away at relationships.</div>
+  <div class="tieback">The Kural warns that a sulk kept up too long, like over-salting, destroys the affection it was meant to spice.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Sweetness and humility, O Nanak, are the essence of virtue and goodness.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 470, Asa di Vaar, Raag Aasaa, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak names gentle sweetness and humility as the heart of good conduct.</div>
+  <div class="tieback">The Kural says a lovers&#x27; sulk is good only in small measure, like salt; Gurbani points to the same balance, keeping sweetness rather than letting pride or sourness take over.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Angered over the loss of Briseis, Achilles withdraws to his tent and refuses even the generous amends Agamemnon’s envoys bring, prolonging his wrath until it costs the life of his dearest friend Patroclus.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad 9 and 16 (paraphrase)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Achilles’ wrath, held too long, turns from a just grievance into a disaster.</div>
+  <div class="tieback">This is the Kural’s too-much-salt in epic form: a grievance nursed beyond its measure ruins what it was meant to defend.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle places good temper at the mean in anger and describes ‘sulky’ people as hard to appease, holding their anger a long time.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics IV.5 (paraphrase; cf. tr. W.D. Ross)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Aristotle the virtuous person feels anger at the right things, toward the right people, and for the right length of time.</div>
+  <div class="tieback">The Kural’s salt is Aristotle’s mean in the kitchen: the right amount of sulk at the right moment, and not a moment longer.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Chopin and George Sand’s rift is never mended</div>
+  <div class="rle-meta">1847–1848 &middot; Nohant and Paris, France</div>
+  <div class="quote is-paraphrase">The composer Frédéric Chopin and the novelist George Sand were together for nearly a decade, spending their summers at her country house at Nohant. A family dispute arising from the marriage of Sand’s daughter, Solange, strained their relationship, and in 1847 it ended bitterly. By 1848 the rift was complete, and, as Britannica puts it, pride prevented either of them from making the reconciliation both actually wanted; Chopin, already in poor health, died in 1849.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A quarrel that might have passed was allowed to harden until it could no longer be undone, ending one of the best-known partnerships of the Romantic era.</div>
+  <div class="tieback">The kural says a lovers’ sulk is like salt, good in the right measure but ruinous when it runs on too long, and Chopin and Sand let their quarrel run on until it spoiled everything.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-131/" target="_blank" rel="noopener">Thirukkural Chapter 131: புலவி / Pouting (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-131.html" target="_blank" rel="noopener">புலவி - அதிகாரம் 131 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3">Jayadeva, Gita Govinda <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:6077" target="_blank" rel="noopener">Sahih al-Bukhari 6077 (Book of Good Manners, chapter Al-Hijra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/an/an06/an06.055.than.html" target="_blank" rel="noopener">Anguttara Nikaya 6.55, Sona Sutta</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">Daśavaikālika Sūtra (Dasavaikalika Sutra) <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad, Book 21, translated by A. T. Murray (Loeb Classical Library, 1924)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Frederic-Chopin" target="_blank" rel="noopener">Frédéric Chopin</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.classical-music.com/features/composers/chopin-george-sand" target="_blank" rel="noopener">Chopin and George Sand: passion, creativity, heartbreak</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1301.html">&larr; Kural 1301</a>
+  <a href="kural-1303.html">Kural 1303 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-131.html">Pouting</a>
+  <a class="skip-btn" href="kural-1311.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

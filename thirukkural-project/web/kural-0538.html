@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 538 — Unforgetfulness | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 538</h1>
+<p class="adhikaram"><a href="adhikaram-054.html">Unforgetfulness</a> &middot; Pocchaavaamai &middot; <span class="tamil">பொச்சாவாமை</span></p>
+
+<div class="tamil-text">புகழ்ந்தவை போற்றிச் செயல்வேண்டும் செய்யாது
+இகழ்ந்தார்க்கு எழுமையும் இல்.</div>
+<div class="translit">Pukazhndhavai potrich cheyalventum seyyaadhu
+Ikazhndhaarkku ezhumaiyum il.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Do carefully the things that wise people have praised. Those who ignore them and leave them undone will find no good in any of their seven births (the many lives a person is believed to live).</p>
+
+<h2 class="section">Elementary</h2>
+<p>Your teachers and parents tell you some things are really worth doing, like being kind, doing homework, and telling the truth. Knowing that isn&#x27;t enough; you have to actually do them. People who shrug those things off miss out on good things again and again.</p>
+
+<h2 class="section">University</h2>
+<p>புகழ்ந்தவை means ‘the things praised’. Parimelazhagar identifies them as the duties that works on polity single out as proper to kings: the three powers, the four expedients (upāya), the five kinds of action, the six policies, and so on. இகழ்ந்தார் here does not mean ‘those who scorned’; all the commentators take it as ‘those who neglected or forgot’, and Parimelazhagar glosses it as மறந்தவர். He reads எழுமையும் இல் as ‘no good in all seven births’, on the ground that those who fall away from their proper duty reap only suffering in hell, and he treats எழுமை (‘sevenfoldness’) as a metonymy. Pavanar rejects Parimelazhagar&#x27;s appeal to caste duty (சாதி தருமம்) as foreign to the text, lists instead celebrated deeds of the ancient Tamil kings as examples of ‘praised acts’, and reads எழுமை as a conventional number. Parimelazhagar says this couplet sets out what must be done without forgetting.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Perform your prescribed duty, for doing so is better than not working. One cannot even maintain one’s physical body without work.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 3.8 (Bhagavad-gita As It Is, A. C. Bhaktivedanta Swami Prabhupada)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Krishna urges Arjuna to carry out his prescribed duty (niyataṃ karma) instead of neglecting it.</div>
+  <div class="tieback">The Kural too insists that recommended duties be actually performed and warns of what follows from neglecting them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But be ye doers of the word, and not hearers only, deceiving your own selves. For if any be a hearer of the word, and not a doer, he is like unto a man beholding his natural face in a glass: For he beholdeth himself, and goeth his way, and straightway forgetteth what manner of man he was.&rdquo;</div>
+  <div class="cite">&mdash; James 1:22-24 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">James says that hearing what is good without doing it is a kind of forgetting, like glancing in a mirror and walking away.</div>
+  <div class="tieback">This matches the Kural closely: the praised deeds must be done, and failing to do them is described as forgetting.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;There are two blessings that many people are deceived into losing: health and free time.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6412" target="_blank" rel="noopener">Sahih al-Bukhari 6412</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Prophet warns that many people squander health and leisure, the very means for doing good, and lose them without noticing.</div>
+  <div class="tieback">The Kural too warns that neglecting to do the praised deeds, while one still can, leaves a person with nothing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Study is not the most important thing, but actions; whoever indulges in too many words brings about sin.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot.1.17" target="_blank" rel="noopener">Mishnah, Pirkei Avot 1:17, trans. Joshua Kulp</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Shimon ben Gamliel teaches that the point of learning is doing: knowledge of the good means nothing unless it is carried out.</div>
+  <div class="tieback">The Kural says the same: what the wise praise must be done, not merely admired.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Like a beautiful flower full of color but without fragrance, even so, fruitless are the fair words of one who does not practice them.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 51, trans. Acharya Buddharakkhita <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Dhammapada says that praising the good without practising it is like a showy flower with no scent.</div>
+  <div class="tieback">Like the Kural, it insists that praised deeds bear fruit only when they are actually done.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;He who in this life has done no good actions and has not practised the Law, repents of it in the next world when he has become a prey to Death.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 13.21 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The monk Kitra warns King Brahmadatta that failing to do what the Law commends brings regret beyond this life.</div>
+  <div class="tieback">Valluvar says those who neglect the deeds the wise have praised find no good in any of their births; Kitra likewise warns that neglecting the Law brings suffering in the next existence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Meditate in remembrance on the Lord, or else you will regret it in the end, O mind.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1106, Raag Maaroo, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Kabir warns that neglecting remembrance now will bring regret when it is too late.</div>
+  <div class="tieback">The Kural says those who neglect the deeds the wise have praised will find no good in all their births; Kabir likewise warns that what is neglected now is lamented at the end.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">King Oeneus of Calydon offers harvest first-fruits to all the gods but, whether he forgot or failed to notice, leaves out Artemis. In anger she sends the great Calydonian boar, and the ravaging of his land and the strife that follows destroy his house.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, Iliad 9.533-549</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Phoenix tells this story to Achilles as a warning that neglecting what is due, even through simple forgetfulness, brings ruin.</div>
+  <div class="tieback">Oeneus is the Kural&#x27;s man who ‘failed to perform the praised things’ and found no good afterwards.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;But most people do not do these, but take refuge in theory and think they are being philosophers and will become good in this way, behaving somewhat like patients who listen attentively to their doctors, but do none of the things they are ordered to do.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics 2.4 (trans. W. D. Ross)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Aristotle insists that virtue comes only from actually performing virtuous acts, and that those who merely admire the prescriptions are like patients who ignore their doctors.</div>
+  <div class="tieback">This is the Kural&#x27;s demand that praised deeds be done, not merely known.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Takaki Kanehiro&#x27;s navy diet defeats beriberi</div>
+  <div class="rle-meta">1884 &middot; Japan</div>
+  <div class="quote is-paraphrase">Beriberi was a major disease among Japanese sailors, and on one long voyage of the training ship Ryujo 169 of its 376 crew fell ill and 25 died. Naval surgeon Takaki Kanehiro, who believed the white-rice diet was to blame, had the ship Tsukuba sail a similar route in 1884 with a more varied diet, and only about 14 of its crew developed beriberi and none died, after which the navy changed its rations, adding barley, and beriberi in the navy fell sharply. The army, whose medical leaders doubted the dietary explanation, kept its white-rice ration, and in the Russo-Japanese War of 1904-05 more than 27,000 army soldiers died of beriberi.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">The navy acted on a well-tested remedy and was spared, while the army&#x27;s neglect of the same lesson cost tens of thousands of lives.</div>
+  <div class="tieback">The kural warns that there is no good for those who neglect and leave undone what the wise have shown to be right, and the contrast between Japan&#x27;s navy and army is a stark example.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-54/" target="_blank" rel="noopener">பொச்சாவாமை / Unforgetfulness, Chapter 54 (Kurals 531-540), with Varadarasan, Solomon Pappaiah, Karunanidhi and Sivayogi Sivakumar commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-054.html" target="_blank" rel="noopener">பொச்சாவாமை - அதிகாரம் 54 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://kural.page/tamil/adhigaram-pochchaavaamai" target="_blank" rel="noopener">பொச்சாவாமை (Pochchaavaamai), with per-kural commentaries of Parimelazhagar, Manakkudavar, Devaneya Pavanar and others</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/bukhari:6412" target="_blank" rel="noopener">Sahih al-Bukhari 6412 (Book of Ar-Riqaq, Chapter: Health and leisure)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Pirkei_Avot.1.17" target="_blank" rel="noopener">Pirkei Avot 1:17, trans. Joshua Kulp (Mishnah Yomit)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, The Iliad, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, translated by W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.jstage.jst.go.jp/article/jaem/28/7/28_7_873/_article" target="_blank" rel="noopener">Kanehiro Takaki: The Great Naval Surgeon Nicknamed the Barley Baron</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7058449/" target="_blank" rel="noopener">Short History of Epidemiology for Noninfectious Diseases in Japan. Part 1: Selected Diseases and Related Episodes from 1880 through 1944</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0537.html">&larr; Kural 537</a>
+  <a href="kural-0539.html">Kural 539 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-054.html">Unforgetfulness</a>
+  <a class="skip-btn" href="kural-0541.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

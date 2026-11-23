@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1026 — Family Maintenance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1026</h1>
+<p class="adhikaram"><a href="adhikaram-103.html">Family Maintenance</a> &middot; Kudiseyalvakai &middot; <span class="tamil">குடிசெயல்வகை</span></p>
+
+<div class="tamil-text">நல்லாண்மை என்பது ஒருவற்குத் தான்பிறந்த
+இல்லாண்மை ஆக்கிக் கொளல்.</div>
+<div class="translit">Nallaanmai enbadhu oruvarkuth thaanpirandha
+illaanmai aakkik kolal.</div>
+
+<h2 class="section">Meaning</h2>
+<p>True manliness means taking charge of and caring for the family you were born into.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Some people think being strong means winning fights. Valluvar says real strength is when you grow up and become the person your family can lean on, the one who takes care of things at home.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet redefines nallaanmai (நல்லாண்மை, ‘good manliness, true valour’) by rhyming it with illaanmai (இல்லாண்மை, ‘mastery of the household’): real valour is aakkik kolal (ஆக்கிக் கொளல், ‘making one&#x27;s own’) the governance of the home one was born in (thaan pirandha, தான் பிறந்த). Varadarasanar and Kesikan read it as taking on the ruling of one&#x27;s birth-family; Pappaiah again extends it to house and country; Karunanidhi reverses the emphasis, saying the able ruler brings glory to the family of his birth. Pope gives ‘To him who gives his powers, the house from which he sprang to raise.’ The text is identical on both sources.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;It is far better to discharge one’s prescribed duties, even though faultily, than another’s duties perfectly.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 3.35 (Bhagavad-gītā As It Is, A.C. Bhaktivedanta Swami Prabhupāda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna teaches that a person&#x27;s own duty, the one that falls to him by his station, is the one he must take up.</div>
+  <div class="tieback">The Kural similarly asks a person to take up the duty of the house he was born into.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But if any provide not for his own, and specially for those of his own house, he hath denied the faith, and is worse than an infidel.&rdquo;</div>
+  <div class="cite">&mdash; 1 Timothy 5:8 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul makes providing for one&#x27;s own household a basic duty of faith.</div>
+  <div class="tieback">Like the Kural, it treats taking charge of one&#x27;s own family as the measure of a person.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;All of you are guardians and responsible for your wards and the things under your care. The Imam (i.e. ruler) is the guardian of his subjects and is responsible for them and a man is the guardian of his family and is responsible for them.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:893" target="_blank" rel="noopener">Sahih al-Bukhari 893 (sunnah.com)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet teaches that every person is a shepherd responsible for those in his care, and a man for his family.</div>
+  <div class="tieback">The Kural&#x27;s ideal of ruling and caring for one&#x27;s household is the same guardianship.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">After their father&#x27;s death, Joseph reassures his frightened brothers that he will sustain them and their little ones, and he comforts them.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Genesis 50:21 (Tanakh, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Joseph, now powerful, uses his position to provide for the whole family he was born into.</div>
+  <div class="tieback">He embodies the Kural&#x27;s ideal of making oneself the head and support of one&#x27;s birth-family.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Having supported me I shall support them, I shall do their duties, I shall keep the family tradition, I shall make myself worthy of my inheritance&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Digha Nikaya 31, Sigalovada Sutta (tr. Narada Thera, Access to Insight)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha lists the duties a grown child takes on toward parents and the family line.</div>
+  <div class="tieback">This is the Kural&#x27;s ideal of taking charge of the household one was born into.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">The Kalpa Sutra tells that Mahavira, out of regard for his parents, resolved not to renounce the world while they lived, and became a monk only after their death.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Kalpa Sutra, Life of Mahavira (tr. Hermann Jacobi, SBE 22)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Even the future Tirthankara honoured his duty to the family he was born into before leaving it.</div>
+  <div class="tieback">It shows Jainism recognising the claim of one&#x27;s birth-family that the Kural celebrates, though only as a stage before renunciation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;He alone is a householder, who restrains his passions&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 952, Raag Ramkali, Ramkali ki Vaar (salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Ramkali ki Vaar, Guru Nanak defines the true grihasti (householder) not by property or family but by self-mastery. Sikhism prefers the householder path to renunciation.</div>
+  <div class="tieback">The Kural redefines true manliness as the mastery of one&#x27;s own household; Guru Nanak redefines the true householder as one who first masters himself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Odysseus returns to Ithaca after twenty years, drives out the suitors who are wasting his estate, and takes his place again as head of his father&#x27;s house.</div>
+  <div class="cite">&mdash; Homer, Odyssey, Books 21-24 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The hero&#x27;s last and greatest labour is restoring order in his own household.</div>
+  <div class="tieback">It dramatises the Kural&#x27;s claim that true valour is mastery of one&#x27;s own home.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Thus it is clear that household management attends more to men than to the acquisition of inanimate things, and to human excellence more than to the excellence of property which we call wealth, and to the virtue of freemen more than to the virtue of slaves.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/politics.1.one.html" target="_blank" rel="noopener">Aristotle, Politics I.12-13, 1259b (tr. Benjamin Jowett)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">After describing the head of the household as ruling his children like a king, by love and seniority (I.12), Aristotle concludes that running a household is chiefly about the excellence of its people, not about wealth.</div>
+  <div class="tieback">Like the Kural, Aristotle treats leading and caring for one&#x27;s household as a test of a man&#x27;s character.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Young Andrew Carnegie works to keep his family afloat</div>
+  <div class="rle-meta">1848-1855 &middot; Allegheny, Pennsylvania, United States</div>
+  <div class="quote is-paraphrase">In 1848 the Carnegie family emigrated from Dunfermline, Scotland, to Allegheny, Pennsylvania, after mechanised looms ruined his father&#x27;s handloom weaving. Young Andrew went straight to work as a bobbin boy in a cotton mill for $1.20 a week, then moved through better-paid jobs to the telegraph office; when his father died in 1855 he was the family&#x27;s only breadwinner.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Carnegie took charge of the household he was born into while still a boy, the start of a career that later made him one of the world&#x27;s richest men.</div>
+  <div class="tieback">The kural calls true manliness making oneself the leader and support of the family one was born into, which is what young Carnegie did.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-103/" target="_blank" rel="noopener">Thirukkural Chapter 103: குடிசெயல்வகை / The Way of Maintaining the Family (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-103.html" target="_blank" rel="noopener">குடிசெயல்வகை - அதிகாரம் 103 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:893" target="_blank" rel="noopener">Sahih al-Bukhari 893 — &#x27;All of you are guardians and responsible for your wards&#x27; (Book of Friday Prayer)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Tanakh (Hebrew text, Miqra according to the Masorah, with JPS translations)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta: The Discourse to Sigala (DN 31), tr. Narada Thera</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Kalpa Sūtra (Kalpa Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Aristotle/politics.1.one.html" target="_blank" rel="noopener">Politics, Book I (Aristotle)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.pbs.org/wgbh/americanexperience/features/carnegie-timeline-rags-to-riches/" target="_blank" rel="noopener">Timeline: Rags to Riches (The Richest Man in the World: Andrew Carnegie)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/money/Andrew-Carnegie" target="_blank" rel="noopener">Andrew Carnegie (Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1025.html">&larr; Kural 1025</a>
+  <a href="kural-1027.html">Kural 1027 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-103.html">Family Maintenance</a>
+  <a class="skip-btn" href="kural-1031.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

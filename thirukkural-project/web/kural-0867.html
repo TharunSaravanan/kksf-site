@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 867 — The Might of Hatred | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 867</h1>
+<p class="adhikaram"><a href="adhikaram-087.html">The Might of Hatred</a> &middot; Pakai Maatchi &middot; <span class="tamil">பகை மாட்சி</span></p>
+
+<div class="tamil-text">கொடுத்தும் கொளல்வேண்டும் மன்ற அடுத்திருந்து
+மாணாத செய்வான் பகை.</div>
+<div class="translit">Koduththum kolalvendum mandra aduththirundhu
+maanaadha seyvaan pakai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If someone stays close to you but does bad things, you should certainly make them your enemy, even if it costs you something.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Suppose someone on your own team keeps quietly messing up every play. It would honestly be better if he went over to the other team, even if you had to give up something to make that happen. A clear opponent is safer than a teammate who harms you from inside.</p>
+
+<h2 class="section">University</h2>
+<p>The commentators divide on aduththirundhu (அடுத்திருந்து). Varadarasanar and Kalaignar read it as ‘staying close by’: one who remains near you as an associate yet does unworthy things (maanaadha, மாணாத) should be turned into an open enemy, even at the cost of wealth. The older line represented by Parimelazhagar, followed by Pappaiah and Puliyur Kesigan and by the classic English version (‘having begun a work, does what is not conducive’), reads it as ‘having undertaken’ an action: the enmity of a foe who mismanages his own undertakings is so advantageous that it is worth buying. Mandra (மன்ற) means ‘certainly’. Either way the paradox is that some enmity is a gain worth paying for. Text identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Mahabharata war, Shalya agrees to serve as Karna’s charioteer but undermines him throughout with discouraging and belittling speech, weakening him from within his own chariot.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Karna Parva (tr. K. M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">An ally placed at Karna’s side becomes a source of harm rather than help.</div>
+  <div class="tieback">Shalya is the close companion who does unworthy things, of whom the Kural says an open enemy would be better.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">Judas, one of the twelve, leads the arresting party to Gethsemane and identifies Jesus with a kiss; Jesus asks whether he betrays the Son of man with a kiss.</div>
+  <div class="cite">&mdash; Luke 22:47-48 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The betrayal comes from inside the closest circle, under the sign of friendship.</div>
+  <div class="tieback">Judas is the archetype of the one who stays close yet does harm.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Had they gone forth with you, they would not have increased you except in confusion, and they would have been active among you, seeking [to cause] you fitnah [i.e., chaos and dissension]. And among you are avid listeners to them.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 9:47 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an says it was better that the hypocrites stayed behind, since inside the army they would only have spread disorder.</div>
+  <div class="tieback">Like the Kural, it judges a harmful insider to be worse than his absence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;For it was not an enemy that reproached me; then I could have borne it: neither was it he that hated me that did magnify himself against me; then I would have hid myself from him: But it was thou, a man mine equal, my guide, and mine acquaintance.&rdquo;</div>
+  <div class="cite">&mdash; Psalms 55:12-13 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The psalmist says an open enemy can be endured or avoided, but harm from a close companion cannot.</div>
+  <div class="tieback">This is the heart of the Kural’s logic: an open foe is easier to deal with than a harmful intimate.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">Devadatta, the Buddha’s cousin and a monk within the Sangha, plotted against the Buddha and caused a schism by leading away a group of monks.</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/pli-tv-kd17/en/brahmali" target="_blank" rel="noopener">Vinaya Pitaka, Cullavagga VII</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The most dangerous opposition to the Buddha arose from inside his own community.</div>
+  <div class="tieback">Devadatta is the insider whose ‘unworthy deeds’ did more harm than any outside foe.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Now this driver (viz. Garga), who had to deal with bad bullocks, thought: &#x27;What have I to do with bad pupils? I am disheartened. As are bad pupils, so are bad bullocks; I shall leave these lazy donkeys, and shall practise severe austerities.&#x27;&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 27.15–16 (tr. Hermann Jacobi, SBE 45, 1895; wisdomlib.org)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The elder Garga, worn out by disciples who stayed close to him yet behaved unworthily, breaks with them completely and goes on alone, accepting the loss of his following.</div>
+  <div class="tieback">The Kural says one should break even at a cost with someone who stays close yet acts unworthily, and Garga does this by giving up his whole following rather than keep company with bad pupils.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Farid, there are dozens who say they are friends; I search, but I cannot find even one.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1382, Salok Sheikh Farid (salok 87), Bhagat Farid (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Farid laments that many claim friendship, but a true friend is hard to find.</div>
+  <div class="tieback">The Kural warns against one who stays close as a friend yet does unworthy things; Farid likewise exposes the gap between those who call themselves friends and real friendship.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">The Trojans bring the great wooden horse inside their walls as a gift, and the Greek warriors hidden within open the gates by night, so Troy falls.</div>
+  <div class="cite">&mdash; Homer, Odyssey 8.492-520 <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">What the Trojans welcomed into their city destroyed them from within.</div>
+  <div class="tieback">The horse is the danger the Kural warns of: harm lodged close by is worse than an enemy outside the walls.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Machiavelli warns that auxiliary troops borrowed from another power are useless and dangerous, because if they lose you are ruined and if they win you are their captive.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/1232" target="_blank" rel="noopener">Machiavelli, The Prince, ch. 13 (tr. W. K. Marriott)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Forces that stand beside you without real loyalty are more dangerous than open enemies.</div>
+  <div class="tieback">Valluvar likewise prefers a clear enemy to a companion whose conduct harms you.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Truman relieves General MacArthur of his commands</div>
+  <div class="rle-meta">11 April 1951 &middot; Washington, D.C., United States</div>
+  <div class="quote is-paraphrase">During the Korean War, General Douglas MacArthur publicly called for a wider war, despite a December 1950 directive requiring that statements on military and foreign policy be cleared first. After a letter of his criticising the administration&#x27;s limited-war policy was read in Congress in April 1951, President Harry Truman relieved him of his commands, stating that MacArthur could not give wholehearted support to the policies of the United States and the United Nations. The public and congressional reaction against Truman was overwhelming, with some calling for his impeachment.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Truman chose open conflict with a celebrated subordinate who kept acting against policy, accepting a heavy political price to restore civilian control.</div>
+  <div class="tieback">The kural says the enmity of one who stays close to you yet acts unworthily should be taken on even at a cost, and Truman paid in popularity to make that break.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-87/" target="_blank" rel="noopener">Thirukkural Chapter 87: பகைமாட்சி / The Might of Hatred, kurals 861-870 (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-087.html" target="_blank" rel="noopener">பகைமாட்சி - அதிகாரம் 87 - திருக்குறள் (with Puliyur Kesigan, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://suttacentral.net/pli-tv-kd17/en/brahmali" target="_blank" rel="noopener">Vinaya Pitaka, Cullavagga VII (Devadatta and Ajatasattu)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.gutenberg.org/ebooks/1232" target="_blank" rel="noopener">Niccolò Machiavelli, The Prince, trans. W. K. Marriott</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.trumanlibrary.gov/library/public-papers/77/statement-and-order-president-relieving-general-macarthur-his-commands" target="_blank" rel="noopener">Statement and Order by the President on Relieving General MacArthur of His Commands (Harry S. Truman)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.trumanlibrary.gov/education/presidential-inquiries/firing-macarthur" target="_blank" rel="noopener">The Firing of MacArthur</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://prologue.blogs.archives.gov/2011/04/08/when-truman-fired-the-general/" target="_blank" rel="noopener">You&#x27;re Fired! - Pieces of History</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0866.html">&larr; Kural 866</a>
+  <a href="kural-0868.html">Kural 868 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-087.html">The Might of Hatred</a>
+  <a class="skip-btn" href="kural-0871.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

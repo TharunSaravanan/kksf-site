@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1189 — The Pallid Hue | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1189</h1>
+<p class="adhikaram"><a href="adhikaram-119.html">The Pallid Hue</a> &middot; Pasapparu Paruvaral &middot; <span class="tamil">பசப்பறு பருவரல்</span></p>
+
+<div class="tamil-text">பசக்கமன் பட்டாங்கென் மேனி நயப்பித்தார்
+நன்னிலையர் ஆவர் எனின்.</div>
+<div class="translit">pasakkaman pattaangen maeni nayappiththaar
+nannilaiyar aavar enin</div>
+
+<h2 class="section">Meaning</h2>
+<p>If the man who sweetly talked me into letting him go is doing well, then let my body turn as pale as it wants.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine your big brother goes away to camp and you miss him so much you feel sad. But then you think, ‘As long as he’s having fun and is safe, I don’t mind being a bit sad.’ That is what the wife says: if her husband is doing well, she doesn’t mind the pale colour.</p>
+
+<h2 class="section">University</h2>
+<p>Here the heroine turns from complaint to self-sacrifice: pasakka maṉ (பசக்க மன், ‘let it grow pale indeed’), paṭṭāṅku (பட்டாங்கு, ‘as it actually is, to its full measure’) eṉ mēṉi, if nayappittār (நயப்பித்தார், ‘he who made me consent by sweet persuasion’, from nayam, pleasantness) is nannilaiyar (நன்னிலையர், ‘of good standing’). Commentators divide on nannilaiyar: Mu. Varadarasanar and Solomon Pappaiah read it as ‘good, blameless’, so the verse is half ironic, while Kalaignar reads ‘is well, prospers’, making it a wish for his welfare; the Pope translation (‘in good estate remain’) supports the latter, and the alternative rendering on ytamizh, ‘if he is clear of guilt’, supports the former. Text identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The Narada Bhakti Sutra, taking the gopis of Vraja as its model, describes the highest love as finding one’s happiness in the beloved’s happiness, and says that a love lacking this is not true love.</div>
+  <div class="cite">&mdash; Narada Bhakti Sutra 21-24 (paraphrase) <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The bhakti tradition treats tat-sukha-sukhitvam, being happy in the beloved’s happiness, as the mark of pure love.</div>
+  <div class="tieback">The Kural’s heroine shows exactly this: if he is well, her own suffering does not matter.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Charity suffereth long, and is kind; charity envieth not; charity vaunteth not itself, is not puffed up …&rdquo;</div>
+  <div class="cite">&mdash; 1 Corinthians 13:4 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul defines love as patient endurance that does not put itself first.</div>
+  <div class="tieback">The heroine’s willingness to suffer the pallor so long as her husband prospers is love that ‘suffereth long’.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;… but give [them] preference over themselves, even though they are in privation. And whoever is protected from the stinginess of his soul — it is those who will be the successful.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 59:9 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an praises those who put others’ good before their own even when they themselves are in need.</div>
+  <div class="tieback">The heroine likewise prefers her husband’s well-being to her own, accepting her pallor as the price.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Jonathan, heir to Saul’s throne, loves David as his own soul; he strengthens David in hiding and tells him that David will be king over Israel and he himself will be second to him, gladly giving up his own claim for his friend’s good.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/" target="_blank" rel="noopener">1 Samuel 18:1 and 23:16-17 (JPS 1917, via Sefaria) (paraphrase)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Bible’s great story of devoted friendship shows a love that wishes the beloved well at one’s own cost.</div>
+  <div class="tieback">The Kural’s heroine shows the same spirit: let her suffer, provided the one she loves fares well.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Karaniya Metta Sutta teaches wishing that all beings be happy and at ease, and cherishing them with a boundless heart, as a mother would protect her only child with her own life.</div>
+  <div class="cite">&mdash; Karaniya Metta Sutta, Sutta Nipata 1.8 (paraphrase) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Buddhist loving-kindness wishes others’ welfare without condition, even at the cost of oneself.</div>
+  <div class="tieback">The heroine’s wish that her husband fare well, whatever it costs her own body, is a personal form of that goodwill.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Shame upon my life, that I have been forsaken by him! it is better I should turn nun.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 22.29 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Rather than resent Arishtanemi for leaving, Rajimati resolves to follow the same path of renunciation he has chosen, and later attains perfection.</div>
+  <div class="tieback">Like the Kural’s heroine, she does not curse the one who left; she accepts her own loss and honours his choice.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;If You will bless me with happiness, then I will worship and adore You. Even in pain, I will meditate on You.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 757, Raag Soohee, Guru Ram Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Ram Das says the devotee&#x27;s love does not depend on comfort: in happiness and in pain alike the mind stays on the Lord.</div>
+  <div class="tieback">The Kural&#x27;s wife says her body may grow as pale as it likes so long as her husband is well; Gurbani likewise accepts pain without letting it lessen love for the Beloved.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When Admetus is fated to die unless someone takes his place, his wife Alcestis alone agrees to die in his stead so that he may live.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0155" target="_blank" rel="noopener">Euripides, Alcestis (paraphrase)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Euripides’ play Alcestis is the model of a wife who accepts her own suffering for her husband’s welfare.</div>
+  <div class="tieback">The Kural’s heroine shows the same spirit on a smaller scale: let her body suffer so long as he fares well.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle notes that friendship consists more in loving than in being loved, and points to mothers who delight in loving their children and wish them well even when they receive no love in return.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics 8.8 (1159a27-33) (paraphrase)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Aristotle, the deepest affection wishes the other’s good for its own sake, regardless of return.</div>
+  <div class="tieback">The heroine’s wish that her husband prosper, whatever it costs her, is love of exactly this kind.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">George Washington writes to Martha on taking command of the army</div>
+  <div class="rle-meta">18 June 1775 &middot; Philadelphia, Pennsylvania, United States</div>
+  <div class="quote is-paraphrase">On 18 June 1775 George Washington wrote to his wife Martha from Philadelphia that Congress had placed the army under his command and that he must go to Boston. He told her he had tried to avoid the post, partly because he did not want to leave his family, that his chief unhappiness would be knowing she was uneasy at being left alone, and he asked her to summon her fortitude and spend the time as agreeably as she could. In the months that followed Martha remained at home amid fears for her safety, and later joined him at his winter camps.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The letter shows a husband persuading his wife to accept a separation for the sake of his duty and standing.</div>
+  <div class="tieback">The kural&#x27;s wife says that if the man who sweetly persuaded her to let him go is well and in good standing, her own pallor does not matter, and Washington&#x27;s letter is exactly such a gentle persuasion to bear his absence for the sake of his public duty.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-119/" target="_blank" rel="noopener">Thirukkural Chapter 119: பசப்புறுபருவரல் / The Pallid Hue (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-119.html" target="_blank" rel="noopener">பசப்புறு பருவரல் - அதிகாரம் 119 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3">Narada Bhakti Sutra <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">Karaniya Metta Sutta (Sutta Nipata 1.8) <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0155" target="_blank" rel="noopener">Euripides, Alcestis (438 BCE), translated by David Kovacs, Loeb Classical Library</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://founders.archives.gov/documents/Washington/03-01-02-0003" target="_blank" rel="noopener">George Washington to Martha Washington, 18 June 1775 (George Washington)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/martha-washington-and-the-american-revolution/" target="_blank" rel="noopener">Martha Washington and the American Revolution (Digital Encyclopedia)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1188.html">&larr; Kural 1188</a>
+  <a href="kural-1190.html">Kural 1190 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-119.html">The Pallid Hue</a>
+  <a class="skip-btn" href="kural-1191.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

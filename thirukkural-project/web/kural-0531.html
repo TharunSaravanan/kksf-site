@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 531 — Unforgetfulness | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 531</h1>
+<p class="adhikaram"><a href="adhikaram-054.html">Unforgetfulness</a> &middot; Pocchaavaamai &middot; <span class="tamil">பொச்சாவாமை</span></p>
+
+<div class="tamil-text">இறந்த வெகுளியின் தீதே சிறந்த
+உவகை மகிழ்ச்சியிற் சோர்வு.</div>
+<div class="translit">Irandha vekuliyin theedhe sirandha
+Uvakai makizhchchiyir sorvu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Becoming careless because you are carried away by great joy does more harm than even anger that has gone out of control.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a team that is winning a game by a lot. The players start celebrating early, stop paying attention, and the other team sneaks back and wins. Getting too excited and careless can hurt you even more than losing your temper, because you don&#x27;t even notice the danger coming.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter title பொச்சாவாமை is the negative verbal noun of பொச்சா- (‘to forget, to be negligent’; compare பொச்சாப்பு, ‘forgetfulness, heedlessness’). So it names a positive discipline of not forgetting, and because it sits in the Arasiyal (royal conduct) section, Parimelazhagar reads the whole chapter as advice to a king. In this couplet சோர்வு is the lapse or slackening born of சிறந்த உவகை மகிழ்ச்சி, ‘the delight of surpassing joy’, and இறந்த வெகுளி is anger that has gone past all bounds. Parimelazhagar says that such joy comes from great wealth, great pleasure and great pride. He explains the comparison this way: measured anger is needed to crush enemies and punish the wicked, and even excessive anger may sometimes kill a foe, but forgetfulness born of joy kills only the person who has it, so it is the worse evil. Manakkudavar agrees on the sense but records another way to read the phrase, as the joy one directs towards those one must favour. Pavanar follows Parimelazhagar. The emphatic ஏ in தீதே underlines the surprising verdict that the pleasant fault is worse than the violent one.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;He whom neither anger nor joy, nor pride, nor false modesty, nor stupefaction, nor vanity, can draw away from the high ends of life, is considered as wise.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m05/m05033.htm" target="_blank" rel="noopener">Mahabharata, Udyoga Parva, Section 33 (Vidura Niti), trans. K. M. Ganguli</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The anxious king Dhritarashtra cannot sleep, and Vidura counsels him through the night. Vidura says a wise man is someone who is pulled away from his true aims neither by the heat of anger nor by the glow of joy.</div>
+  <div class="tieback">The Kural pairs the same two forces, anger and joy, and warns that joy is the more treacherous distraction.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And take heed to yourselves, lest at any time your hearts be overcharged with surfeiting, and drunkenness, and cares of this life, and so that day come upon you unawares.&rdquo;</div>
+  <div class="cite">&mdash; Luke 21:34 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Jesus warns that indulgence and worldly absorption dull the heart, so that the decisive moment arrives while one is unprepared.</div>
+  <div class="tieback">Like the Kural, it treats being overfull with pleasure as the thing that makes a person careless.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And Allah had certainly fulfilled His promise to you when you were killing the enemy by His permission until [the time] when you lost courage and fell to disputing about the order [given by the Prophet] and disobeyed after He had shown you that which you love.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 3:152 (Saheeh International), with the Uhud narrative in the sira literature <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">At Uhud the Muslim archers had been told never to leave their hill. When victory and its spoils seemed certain they left their post, and the enemy cavalry turned the battle against them.</div>
+  <div class="tieback">This is the Kural&#x27;s danger exactly: slackness born of the joy of apparent success, which turns victory into defeat.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;lest when thou hast eaten and art satisfied, and hast built goodly houses, and dwelt therein; and when thy herds and thy flocks multiply, and thy silver and thy gold is multiplied, and all that thou hast is multiplied; then thy heart be lifted up, and thou forget the LORD thy God&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">Deuteronomy 8:12-14 (JPS 1917)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Moses warns Israel that prosperity in the promised land will be the moment of greatest danger, because abundance swells the heart and breeds forgetting.</div>
+  <div class="tieback">The Torah and the Kural both name forgetfulness born of prosperity and joy as the special peril of the successful.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Do not give way to heedlessness. Do not indulge in sensual pleasures. Only the heedful and meditative attain great happiness.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 27, trans. Acharya Buddharakkhita <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha links heedlessness (pamāda) directly to indulgence in pleasure and sets heedfulness against both.</div>
+  <div class="tieback">The Kural too finds the root of carelessness in pleasure and delight.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Though one believe in the Law, he will rarely practise it; for people are engrossed by pleasures; Gautama, &amp;c.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 10.20 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Mahavira warns Gautama that even those who hold the true teaching fail to act on it because pleasure absorbs them, and the refrain he repeats is &#x27;be careful all the while&#x27;.</div>
+  <div class="tieback">The Kural says carelessness born of great joy does more harm than anger; Mahavira likewise names absorption in pleasure as what makes people neglect what they know.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Forgetting his Lord and Master, the mortal enjoys sensual pleasures; then, disease rises up in his body.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1256, Raag Malaar, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Raag Malaar Guru Nanak traces suffering back to pleasure pursued in forgetfulness of God.</div>
+  <div class="tieback">The Kural says the lapse that comes from excessive delight does more harm than unbounded anger; Guru Nanak shows the same sequence, indulgence breeding forgetfulness and forgetfulness breeding harm.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Theseus kills the Minotaur and sails home from Crete. He and his pilot are so overjoyed at their success that they forget to raise the white sail that was meant to signal his safety. His father Aegeus sees the black sail from the cliffs, believes his son is dead, and throws himself to his death.</div>
+  <div class="cite">&mdash; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Theseus*.html" target="_blank" rel="noopener">Plutarch, Life of Theseus 22; also Catullus 64</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The triumph was complete, but a single lapse caused by the joy of victory turned it into tragedy.</div>
+  <div class="tieback">This is the Kural&#x27;s forgetfulness born of great joy, and its cost was worse than any enemy&#x27;s anger.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;the offences which are committed through desire are more blameable than those which are committed through anger&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Antoninus/meditations.html" target="_blank" rel="noopener">Marcus Aurelius, Meditations 2.10 (trans. George Long), reporting Theophrastus</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Marcus Aurelius approves Theophrastus&#x27;s view that a fault committed under pleasure is worse than one committed in anger, because anger at least turns from reason with pain, while pleasure carries a person along willingly.</div>
+  <div class="tieback">The Kural makes the same counter-intuitive ranking, placing the pleasant failing above the violent one.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Wall Street boom ends in the Crash of 1929</div>
+  <div class="rle-meta">October 1929 &middot; New York City, United States</div>
+  <div class="quote is-paraphrase">During the prosperous 1920s, share prices on the New York Stock Exchange rose to unprecedented heights, with the Dow Jones Industrial Average increasing about six-fold between 1921 and September 1929, and millions of ordinary people bought stocks, many with borrowed money while putting down only about a tenth of the price. In mid-October 1929 the prominent economist Irving Fisher said that stock prices appeared to have reached a permanently high plateau. Days later the market fell nearly 13 percent on 28 October and nearly 12 percent on 29 October, and by mid-November the Dow had lost almost half its value, a collapse that contributed to the Great Depression.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">The long boom bred an optimism so complete that borrowing replaced caution and warnings were brushed aside, and the fall was all the harder for it.</div>
+  <div class="tieback">The kural warns that the carelessness born of great joy does more harm than even boundless anger, and the euphoria of the late 1920s led millions to drop their guard just before the crash.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-54/" target="_blank" rel="noopener">பொச்சாவாமை / Unforgetfulness, Chapter 54 (Kurals 531-540), with Varadarasan, Solomon Pappaiah, Karunanidhi and Sivayogi Sivakumar commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-054.html" target="_blank" rel="noopener">பொச்சாவாமை - அதிகாரம் 54 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://kural.page/tamil/adhigaram-pochchaavaamai" target="_blank" rel="noopener">பொச்சாவாமை (Pochchaavaamai), with per-kural commentaries of Parimelazhagar, Manakkudavar, Devaneya Pavanar and others</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.sacred-texts.com/hin/m05/m05033.htm" target="_blank" rel="noopener">The Mahabharata, Book 5: Udyoga Parva, Section XXXIII (Vidura Niti; trans. Kisari Mohan Ganguli)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Theseus*.html" target="_blank" rel="noopener">Plutarch, Life of Theseus (Parallel Lives)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://classics.mit.edu/Antoninus/meditations.html" target="_blank" rel="noopener">Marcus Aurelius, The Meditations (trans. George Long)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.federalreservehistory.org/essays/stock-market-crash-of-1929" target="_blank" rel="noopener">Stock Market Crash of 1929 (Gary Richardson, Alejandro Komai, Michael Gou and Daniel Park)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.britannica.com/question/What-caused-the-Wall-Street-crash-of-1929" target="_blank" rel="noopener">What caused the Wall Street crash of 1929? (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0530.html">&larr; Kural 530</a>
+  <a href="kural-0532.html">Kural 532 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-054.html">Unforgetfulness</a>
+  <a class="skip-btn" href="kural-0541.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

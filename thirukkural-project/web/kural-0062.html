@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 62 — The Wealth of Children | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 62</h1>
+<p class="adhikaram"><a href="adhikaram-007.html">The Wealth of Children</a> &middot; Pudhalvaraip Perudhal &middot; <span class="tamil">புதல்வரைப் பெறுதல்</span></p>
+
+<div class="tamil-text">எழுபிறப்பும் தீயவை தீண்டா பழிபிறங்காப்
+பண்புடை மக்கட் பெறின்.</div>
+<div class="translit">Ezhupirappum Theeyavai Theendaa Pazhipirangaap,
+Panbudai Makkat Perin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If you have children of good character whom no one can blame, no harm will come near you in all seven births (all your lives to come).</p>
+
+<h2 class="section">Elementary</h2>
+<p>Think of a family like a long relay race, with each generation passing the baton on. This kural says that if you raise children who do good and never give anyone a reason to blame them, the whole race stays clean — trouble never catches up with your family, not for a very, very long time.</p>
+
+<h2 class="section">University</h2>
+<p>The phrase எழுபிறப்பு (ezhu-piṟappu, &quot;seven births&quot;) invokes the classical Indian reckoning of the sevenfold cycle of embodied existence, and Parimēlaḻakar&#x27;s gloss here is explicitly transmigrational: the parent&#x27;s accumulated evil karma is worn away by the meritorious acts a virtuous child performs on their behalf. The key qualifier is பழிபிறங்காப் பண்புடை — character (paṇpu) so ordered that பழி (paḻi, public blame or reproach) never rises around it. Valluvar thus binds an other-worldly promise to an entirely this-worldly test: the proof of the child&#x27;s virtue is that no one can speak ill of them. Whether &quot;seven births&quot; is read literally as rebirths (the Jain and Hindu reading) or idiomatically as &quot;seven generations&quot; — which is how the modern commentator M. Karunanidhi renders it — the structural claim is the same: a child&#x27;s good conduct is retroactively protective of those who produced them. That inversion of the usual direction of moral influence, from child upward to parent, is what makes the couplet distinctive.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Because a son delivers (trāyate) his father from the hell called Put, he was therefore called put-tra (a deliverer from Put) by the Self-existent (Svayambhū) himself.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">Manusmṛti 9.138 (trans. Georg Bühler, Sacred Books of the East, 1886)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Manu offers a folk etymology in which the very Sanskrit word for son, putra, encodes the son&#x27;s function: to pull his father out of a particular hell after death.</div>
+  <div class="tieback">This is the same claim as the Kural — that a child&#x27;s existence and virtue shield the parent from evil across the cycle of births.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;The just man walketh in his integrity: his children are blessed after him.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 20:7 (King James Version) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The proverb promises that a righteous person&#x27;s integrity spills forward onto the generation that follows them.</div>
+  <div class="tieback">It shares the Kural&#x27;s intuition that moral standing flows along a family line, but it runs in the opposite direction — parent blessing child, rather than child protecting parent.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;When a man dies, his acts come to an end, but three, recurring charity, or knowledge (by which people) benefit, or a pious child, who prays for him (for the deceased).&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/muslim:1631" target="_blank" rel="noopener">Sahih Muslim 1631, Book of Wills (narrated by Abū Hurayrah)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The hadith names three things that keep generating reward for a person after death, and one of them is a righteous child whose prayers continue to reach the parent.</div>
+  <div class="tieback">Exactly the Kural&#x27;s mechanism: the parent&#x27;s post-mortem condition is improved by the child&#x27;s goodness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">The Talmud states the principle that a son can confer merit on his father, but a father cannot confer merit on his son — illustrated by the wicked king Amon, who is held to have retained a share in the World to Come on account of his righteous son Josiah.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Sanhedrin.104a" target="_blank" rel="noopener">Babylonian Talmud, Sanhedrin 104a</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Merit in this rabbinic discussion flows upward only: a child&#x27;s righteousness can rescue a parent&#x27;s standing, but not the reverse.</div>
+  <div class="tieback">This is the Kural&#x27;s exact claim — that a blameless child&#x27;s character reaches backward to shield the one who bore them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;He will maintain his heritage, / And practice according to wealth, / Also he will make offerings / To relatives who pass away.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://ancient-buddhist-texts.net/English-Texts/Buddhist-Wisdom-Verses/26-Children.htm" target="_blank" rel="noopener">Aṅguttara Nikāya 5.39, Puttasutta, v. 507 (trans. Ānandajoti Bhikkhu, Buddhist Wisdom Verses)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Among the reasons the Buddha says wise householders want children is that a child will make merit-offerings on behalf of dead relatives — a transfer of benefit to those who can no longer act for themselves.</div>
+  <div class="tieback">Like the Kural, it makes the child an active agent of relief for the parent beyond this life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The study of the Vêdas will not save you; the feeding of Brâhmanas will lead you from darkness to darkness, and the birth of sons will not save you. Who will assent to what you said?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 14.8 and 14.12 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">When their Brahmin father argues that there is no better world for men without sons, the two sons of Bhrigu reply that sons cannot save anyone; only one&#x27;s own conduct under the Law frees the soul.</div>
+  <div class="tieback">Jainism agrees with Valluvar that the seven births matter, but it rejects the idea that a child&#x27;s goodness can shield a parent&#x27;s soul: in Jain doctrine each soul bears its own karma, which is the opposite of what this kural claims.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Those, within whose minds the Lord abides, are robed with honor in the Court of the Lord. They are carried across, along with all their family, and the whole world is saved along with them.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 310, Raag Gauri, Gauri ki Vaar, Salok Mahala 4, Guru Ram Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Guru Ram Das teaches that one person in whom God dwells brings blessing beyond themselves, carrying their whole family across the world-ocean with them.</div>
+  <div class="tieback">Like Valluvar&#x27;s virtuous child whose good character keeps evil away from the family through seven births, the God-filled person here becomes the means of the family&#x27;s release.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">When the oxen were not ready, the brothers Cleobis and Biton yoked themselves to the cart and drew their mother, priestess of Hera, all the way to the temple; the watching Argives praised her for such sons, and she prayed the goddess grant them the best thing a human can receive — whereupon they fell asleep in the temple and never woke.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Hdt.%206.86" target="_blank" rel="noopener">Herodotus, Histories 1.31</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Herodotus tells the story as Solon&#x27;s example of true human happiness: sons whose conduct honours their mother so visibly that the community credits her for them, and the goddess seals it.</div>
+  <div class="tieback">As in the Kural, blameless children are what keeps evil from reaching the parent — here the mother&#x27;s happiness is made secure precisely by her sons&#x27; virtue.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Plato argues in the Laws that the human race is by its nature a partner of all time, and that a person attains to immortality not by outliving death but by leaving children, and children&#x27;s children, so that the line never breaks.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0166" target="_blank" rel="noopener">Plato, Laws IV.721b–c</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Marriage law in Plato&#x27;s ideal city is grounded on this: procreation is how a mortal being participates in something that does not end.</div>
+  <div class="tieback">Both texts make offspring the mechanism by which a person&#x27;s fate extends safely across spans of time they will not personally live through.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Suor Maria Celeste takes on her father Galileo&#x27;s penance</div>
+  <div class="rle-meta">1633 &middot; Arcetri, near Florence, Italy</div>
+  <div class="quote is-paraphrase">In June 1633 the Roman Inquisition condemned Galileo Galilei over his Dialogue on the two chief world systems and imposed a penance that included the repeated recitation of the penitential psalms. His eldest daughter, Suor Maria Celeste, a Poor Clare nun at the convent of San Matteo in Arcetri, took on that part of his penance herself. Throughout his trial she wrote to him constantly and looked after his household affairs while he was away in Rome.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-14">[14]</a> <a class="idx" href="#cite-15">[15]</a></div>
+  <div class="explain">A daughter of good character stood in for her father and shouldered the burden laid on him, one of the best-documented acts of filial devotion in the history of science.</div>
+  <div class="tieback">Parimelalagar reads this kural as saying that a virtuous child&#x27;s good acts lift the burden from the parent, and Maria Celeste literally performed her father&#x27;s penance in his place.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.tamillexicon.com/thirukkural/araththuppaal/illaraviyal/pudhalvaraip-perudhal" target="_blank" rel="noopener">மக்கட்பேறு / The Wealth of Children / Pudhalvaraip Perudhal — Thirukkural Chapter 7, with Tamil paraphrase, Pope couplet, explanation and transliteration</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-007.html" target="_blank" rel="noopener">The Wealth of Children — Adhigaram 7, Thirukkural (Tamil text, transliteration, Brahmi script and multilingual translations)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.thirukkural.com/2009/01/blog-post_14.html" target="_blank" rel="noopener">மக்கட்பேறு — Thirukkural Chapter 7 with the classical commentaries of Parimelalagar, Manakkudavar, Mu. Varadarajan, Salamon Pappaiah and Kalaignar</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.ytamizh.com/thirukural/chapter-7/" target="_blank" rel="noopener">மக்கட்பேறு / புதல்வரைப் பெறுதல் — Thirukkural Chapter 7, Kurals 61–70 with Tamil commentaries and English translation</a> <span class="tier">[web source]</span></li>
+<li id="cite-5"><a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">The Laws of Manu (Manusmṛti), translated by Georg Bühler, Sacred Books of the East vol. 25 (Oxford, 1886)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sunnah.com/muslim:1631" target="_blank" rel="noopener">Sahih Muslim 1631, Book of Wills — &#x27;When a man dies, his acts come to an end, but three&#x27;</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.sefaria.org/Sanhedrin.104a" target="_blank" rel="noopener">Babylonian Talmud, Tractate Sanhedrin 104a — a son confers merit on his father</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://ancient-buddhist-texts.net/English-Texts/Buddhist-Wisdom-Verses/26-Children.htm" target="_blank" rel="noopener">Aṅguttara Nikāya 5.39, Puttasutta — the five reasons the wise wish for a child (trans. Ānandajoti Bhikkhu, Buddhist Wisdom Verses, ch. 26)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Hdt.%206.86" target="_blank" rel="noopener">Herodotus, Histories 6.86 — the story of Glaucus of Sparta and the Delphic oracle</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0166" target="_blank" rel="noopener">Plato, Laws — Book IV, 721b–c (marriage and the immortality of the line)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-14"><a href="https://www.lindahall.org/about/news/scientist-of-the-day/suor-maria-celeste/" target="_blank" rel="noopener">Scientist of the Day - Suor Maria Celeste (Dava Sobel)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-15"><a href="https://www.ebsco.com/research-starters/history/maria-celeste/" target="_blank" rel="noopener">Maria Celeste (Research Starter) (EBSCO)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0061.html">&larr; Kural 61</a>
+  <a href="kural-0063.html">Kural 63 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-007.html">The Wealth of Children</a>
+  <a class="skip-btn" href="kural-0071.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

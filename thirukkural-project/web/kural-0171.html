@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 171 — Anti-covet Action | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 171</h1>
+<p class="adhikaram"><a href="adhikaram-018.html">Anti-covet Action</a> &middot; Vehkaamai &middot; <span class="tamil">வெஃகாமை</span></p>
+
+<div class="tamil-text">நடுவின்றி நன்பொருள் வெஃகின் குடிபொன்றிக்
+குற்றமும் ஆங்கே தரும்.</div>
+<div class="translit">Naduvindri nanporul vehkin kudiponrik
+Kutramum aange tharum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If you stop being fair and long to take someone else&#x27;s good things, that greed will ruin your family and bring blame on you, right away.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine wanting your classmate’s new bike so badly that you stop caring what is fair. This kural says that kind of wanting is like a crack in your own house: it doesn’t just get you in trouble, it hurts your whole family too.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter opens with its thesis in its strongest form: covetousness (வெஃகுதல், vehkuthal) is condemned not only as an act of seizure but as a desire born of abandoning நடு (nadu), the equity or impartiality Valluvar had already exalted in chapter 12 (நடுவு நிலைமை). The consequences are twofold and immediate: the family line (குடி, kudi) is destroyed and guilt (குற்றம்) accrues, and the word ஆங்கே (aange, “right there, at that moment”) insists that the damage is not deferred to a future birth but arrives simultaneously with the desire. Parimelazhagar reads the kural as addressed to the householder, which explains why the penalty falls on the kudi: the covetous man betrays the very household he is supposed to sustain. The idea that injustice in acquisition corrodes the acquirer’s own house recurs across traditions, from the Hebrew story of Achan to Aristotle’s analysis of pleonexia as a vice of unfairness (anisotes).</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Duryodhana, consumed by desire for the kingdom and wealth that rightfully belonged to his Pandava cousins, refused even a compromise of five villages. The war that followed at Kurukshetra annihilated his entire line of brothers, sons, and allies.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Udyoga Parva and Stri Parva (narrative)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Duryodhana coveted what was not his, ignored every appeal to fairness, and in the end his whole family was wiped out in the war he started to keep it.</div>
+  <div class="tieback">The Kural says unfair coveting destroys one’s own kudi (family line); the Mahabharata is the epic-scale illustration of exactly that.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But they that will be rich fall into temptation and a snare, and into many foolish and hurtful lusts, which drown men in destruction and perdition.&rdquo;</div>
+  <div class="cite">&mdash; 1 Timothy 6:9 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul warns Timothy that the very desire to get rich is a trap that leads people into ruin.</div>
+  <div class="tieback">Like the Kural, it locates the danger in the desire itself and says it ends in destruction.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O you who have believed, do not consume one another’s wealth unjustly but only [in lawful] business by mutual consent.” … “And whoever does that in aggression and injustice - then We will drive him into a Fire.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 4:29-30 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an forbids taking other people’s wealth unfairly and warns of punishment for doing it out of injustice.</div>
+  <div class="tieback">“Unjustly” is the Qur’anic equivalent of the Kural’s naduvindri (without fairness), and both attach guilt to it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;When I saw among the spoils a goodly Babylonish garment, and two hundred shekels of silver, and a wedge of gold of fifty shekels weight, then I coveted them, and took them.&rdquo;</div>
+  <div class="cite">&mdash; Joshua 7:21, 24-25 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Achan confesses that he saw forbidden treasure, coveted it, and hid it in his tent. The narrative then records that he was executed together with his sons, daughters, livestock, and tent (Joshua 7:24-25).</div>
+  <div class="tieback">Almost a narrative enactment of the Kural: covet what is not yours, and your whole household is destroyed along with you.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Riches ruin only the foolish, not those in quest of the Beyond. By craving for riches the witless man ruins himself as well as others.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 355 (tr. Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha says that craving for wealth destroys not only the person who craves but also the people around him.</div>
+  <div class="tieback">Same double damage as the Kural: the coveter harms himself and those connected to him.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Taking anything that is not given is stealing (steya).” Pūjyapāda adds: “It follows that activity actuated by impure dispositions is stealing (steya), whether external objects are taken or not.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/tattvartha-sutra-with-commentary" target="_blank" rel="noopener">Tattvārtha Sūtra 7.15, with Pūjyapāda&#x27;s Sarvārthasiddhi (tr. Vijay K. Jain, 2018)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The third Jain vow, asteya, forbids taking what is not given, and the standard commentary extends the fault inward: a passion-driven reaching for another&#x27;s property is already theft, even before anything is seized.</div>
+  <div class="tieback">Valluvar says merely setting one&#x27;s heart on another&#x27;s property brings ruin and guilt at once, and the Jain commentary agrees that the covetous disposition itself counts as stealing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;To take what rightfully belongs to another, is like a Muslim eating pork, or a Hindu eating beef.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 141, Raag Maajh (Vaar Maajh, salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Guru Nanak tells both communities of his day that taking what belongs to someone else is as forbidden as their strongest dietary taboo.</div>
+  <div class="tieback">The Kural says that giving up fairness and setting one&#x27;s heart on another&#x27;s property brings ruin and guilt at once; Guru Nanak makes another person&#x27;s rightful due the most forbidden thing of all.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Eriphyle, bribed with the golden necklace of Harmonia, sent her husband Amphiaraus to his death in the expedition against Thebes; her son Alcmaeon later killed her in revenge. Homer names her among the shades in the underworld as the woman who took gold as the price of her own husband.</div>
+  <div class="cite">&mdash; Homer, Odyssey 11 (Eriphyle among the shades); fuller story in later mythographers <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">One woman’s desire for a precious necklace that was not hers set off a chain of death and revenge that destroyed her own family.</div>
+  <div class="tieback">Covetousness for a “good thing” (nanporul) led directly to the ruin of the household, just as the Kural warns.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle defines the unjust man in the particular sense as “grasping” (pleonektes) and “unfair” (anisos): one who takes more than his share of goods at the expense of others.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics V.1-2</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">For Aristotle, the vice of wanting more than your fair share is precisely what injustice is, and it is a defect of character, not just a bad act.</div>
+  <div class="tieback">Aristotle’s link between grasping and unfairness mirrors the Kural’s link between coveting and loss of nadu (equity).</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The fall and Siberian exile of Prince Menshikov</div>
+  <div class="rle-meta">September 1727 &middot; St Petersburg and Berezov (Beryozovo), Siberia, Russia</div>
+  <div class="quote is-paraphrase">Aleksandr Menshikov, Peter the Great&#x27;s closest associate, had been under almost continuous investigation for corrupt practices while helping to run the state, and after the death of Catherine I he was accused of abuses and embezzlement of state property. In September 1727 a decree of the young Emperor Peter II stripped him of all his offices, honours, titles and property, and he was exiled with his family to Berezov in Siberia. His wife died on the journey, a daughter died in exile in 1728, and Menshikov himself died there in 1729.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">The most powerful man in Russia lost everything at a stroke, and his household shared his ruin.</div>
+  <div class="tieback">The kural warns that coveting what belongs to others brings ruin on one&#x27;s family and guilt on oneself, and Menshikov&#x27;s grasping at state wealth ended with his whole family in exile.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-18/" target="_blank" rel="noopener">Not Coveting, வெஃகாமை, Chapter 18 (Thirukkural with commentaries of Sivayogi Sivakumar, Mu. Varadarasan, Solomon Pappaiah, and M. Karunanidhi)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-018.html" target="_blank" rel="noopener">வெஃகாமை - அதிகாரம் 18 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.wisdomlib.org/jainism/book/tattvartha-sutra-with-commentary" target="_blank" rel="noopener">Ācārya Umāsvāmī&#x27;s Tattvārthasūtra, with commentary</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/biography/Aleksandr-Danilovich-Menshikov" target="_blank" rel="noopener">Aleksandr Danilovich Menshikov</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.prlib.ru/en/history/619551" target="_blank" rel="noopener">Prince A. D. Menshikov is deprived of powers of authority</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0170.html">&larr; Kural 170</a>
+  <a href="kural-0172.html">Kural 172 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-018.html">Anti-covet Action</a>
+  <a class="skip-btn" href="kural-0181.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

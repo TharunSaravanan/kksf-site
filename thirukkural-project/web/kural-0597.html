@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 597 — Energetics | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 597</h1>
+<p class="adhikaram"><a href="adhikaram-060.html">Energetics</a> &middot; Ookkamudaimai &middot; <span class="tamil">ஊக்கமுடைமை</span></p>
+
+<div class="tamil-text">சிதைவிடத்து ஒல்கார் உரவோர் புதையம்பிற்
+பட்டுப்பா டூன்றுங் களிறு.</div>
+<div class="translit">Sidhaividaththu olkaar uravor pudhaiyambir
+Pattuppaadu oondrum kaliru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Strong-minded people do not give up even when they are ruined, just as a war elephant stands firm with pride even when arrows are stuck deep in its body.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Think of a brave firefighter who keeps going even when they are tired and hurt. The Kural compares strong-hearted people to a huge elephant that stays standing even when arrows hit it. Tough times don’t make them quit.</p>
+
+<h2 class="section">University</h2>
+<p>‘Sidhaividaththu’ means at the place or time of ruin (sidhaivu), and ‘olkaar’ means they do not bend or droop; ‘uravor’ are those with uram, firmness of mind. The simile is from war: ‘pudhai ambu’ are arrows buried in the flesh, and ‘pattup paadu oondrum kaliru’ is the bull elephant that, though struck, plants itself (oondrum) and upholds its paadu, glossed by Parimelazhagar and Mu. Varadarasanar as its perumai (greatness, dignity). The image comes from Sangam battle poetry, where the wounded tusker holding its ground is a stock emblem of valour. Sivayogi Sivakumar reads ‘pudhai’ as arrows that cover the body. The spelling ‘kaliru’ (களிறு) is the standard word for a male elephant; the texts in ytamizh.com and thirukkural.net agree.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Bhishma, pierced by so many of Arjuna’s arrows that when he falls from his chariot his body does not touch the ground, lies on a bed of arrows for many days, calm and lucid, and teaches the Pandavas until his chosen time of death.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/m06/index.htm" target="_blank" rel="noopener">Mahabharata, Bhishma Parva (fall of Bhishma), tr. K. M. Ganguli</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The great warrior, riddled with arrows, keeps his composure and his dignity and continues to act as a teacher.</div>
+  <div class="tieback">He is the human counterpart of the Kural’s elephant that stands firm though pierced by arrows.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;We are troubled on every side, yet not distressed; we are perplexed, but not in despair; Persecuted, but not forsaken; cast down, but not destroyed;&rdquo;</div>
+  <div class="cite">&mdash; 2 Corinthians 4:8-9 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul describes suffering attacks from every side without being crushed in spirit.</div>
+  <div class="tieback">Like the Kural’s strong-minded, he is struck but does not falter.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;So do not weaken and do not grieve, and you will be superior if you are [true] believers.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 3:139 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">After the setback at Uhud, the Qur’an tells the wounded believers not to lose heart.</div>
+  <div class="tieback">The Kural too says the strong do not droop even in the hour of ruin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Be strong and of good courage; be not affrighted, neither be thou dismayed: for the LORD thy God is with thee whithersoever thou goest.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">Joshua 1:9 (JPS 1917)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">God tells Joshua, facing hard battles, to stay strong and not be shaken.</div>
+  <div class="tieback">This is the same firmness in danger the Kural praises.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;As an elephant in the battlefield withstands arrows shot from bows all around, even so shall I endure abuse.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 320 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha compares his patient endurance of insults to a war elephant standing firm under a hail of arrows.</div>
+  <div class="tieback">Both texts use the identical image of the arrow-struck war elephant that does not give way.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As an elephant at the head of the battle, so was Mahâvîra there victorious. … As a hero at the head of the battle is surrounded on all sides, so was there Mahâvîra. Bearing all hardships, the Venerable One, undisturbed, proceeded (on the road to Nirvâna).&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Ācārāṅga Sūtra 1.8.3.8 and 1.8.3.13 (tr. Hermann Jacobi, SBE 22, 1884; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Describing Mahavira&#x27;s harsh wanderings in Lāḍha, where he was beaten, cut and set upon by dogs, the Acaranga compares him to a war elephant at the front of battle who stays unshaken.</div>
+  <div class="tieback">This is almost the Kural&#x27;s own image: the strong-minded do not falter in ruin, just as a war elephant pierced by arrows stands firm.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;He alone is known as a spiritual hero, who fights in defense of religion. He may be cut apart, piece by piece, but he never leaves the field of battle.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1105, Raag Maaroo, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Bhagat Kabir, whose hymns the Gurus included in the Guru Granth Sahib, defines the true hero (soora) as one who fights for what is right and holds his ground even as he is cut down.</div>
+  <div class="tieback">The Kural&#x27;s war elephant, pierced deep with arrows, still stands firm; Kabir&#x27;s hero, cut piece by piece yet never leaving the field, gives the same picture of steadfastness in ruin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">As the Trojans storm the Greek ships, Ajax is battered by missiles until his shoulder aches under his shield and he can barely breathe, yet he keeps his position and does not give ground.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad 16.102-111</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The great Greek defender stays at his post even while being hammered from all sides.</div>
+  <div class="tieback">Ajax holding firm under the barrage mirrors the elephant standing fast though pierced by arrows.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Marcus Aurelius tells himself to be like the headland against which the waves keep breaking, which stands firm while the water calms around it.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Antoninus/meditations.5.five.html" target="_blank" rel="noopener">Marcus Aurelius, Meditations 4.49</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The emperor-philosopher pictures the steady mind as a rock that stays put while trouble crashes against it.</div>
+  <div class="tieback">His headland and the Kural’s elephant are both images of the strong mind that does not yield in disaster.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Rana Pratap fights on after the defeat at Haldighati</div>
+  <div class="rle-meta">1576-1597 &middot; Mewar, Rajasthan, India</div>
+  <div class="quote is-paraphrase">In June 1576 Rana Pratap Singh of Mewar was defeated by a Mughal army of the emperor Akbar at the Battle of Haldighati near Gogunda. Instead of submitting, he withdrew to the hills and continued resistance from mountain strongholds, later making Chavand his capital. He kept raiding until his death in 1597, and Mewar did not formally acknowledge Mughal overlordship until 1614.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Defeat in open battle did not break Pratap&#x27;s resolve, and he spent the rest of his life standing his ground in the hills.</div>
+  <div class="tieback">The kural says the strong-minded do not falter even in ruin, like a war elephant that stands firm though pierced by arrows, and Pratap held firm for two decades after Haldighati.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-60/" target="_blank" rel="noopener">ஊக்கமுடைமை / Energy, Chapter 60 (Kurals 591-600) with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-060.html" target="_blank" rel="noopener">ஊக்கமுடைமை - அதிகாரம் 60 - திருக்குறள் (Magnanimity)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/m06/index.htm" target="_blank" rel="noopener">The Mahabharata, Bhishma Parva (fall of Bhishma), trans. Kisari Mohan Ganguli</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Ākārāṅga Sūtra (Acaranga Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad, Book 21, translated by A. T. Murray (Loeb Classical Library, 1924)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Antoninus/meditations.5.five.html" target="_blank" rel="noopener">Marcus Aurelius, Meditations, Book 5, translated by George Long</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Rana-Pratap" target="_blank" rel="noopener">Rana Pratap</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/event/Battle-of-Gogunda" target="_blank" rel="noopener">Battle of Gogunda</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://hte.rajasthan.gov.in/college/gcsarada/history" target="_blank" rel="noopener">Government College Sarada (Salumber): History</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0596.html">&larr; Kural 596</a>
+  <a href="kural-0598.html">Kural 598 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-060.html">Energetics</a>
+  <a class="skip-btn" href="kural-0601.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

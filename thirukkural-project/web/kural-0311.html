@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 311 — Not Doing Evil | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 311</h1>
+<p class="adhikaram"><a href="adhikaram-032.html">Not Doing Evil</a> &middot; Innaa Seyyaamai &middot; <span class="tamil">இன்னா செய்யாமை</span></p>
+
+<div class="tamil-text">சிறப்பீனும் செல்வம் பெறினும் பிறர்க்குஇன்னா
+செய்யாமை மாசற்றார் கோள்.</div>
+<div class="translit">Sirappeenum selvam perinum pirarkku innaa
+Seyyaamai maasatraar kol.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Even if hurting someone would bring them great riches and fame, people with pure minds keep firmly to their rule of never causing pain to others.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine someone offers you a huge treasure chest, but only if you push another kid down to get it. A truly good person says “no thanks” every time. Valluvar says the pure-hearted never hurt anyone, not even for the biggest prize in the world.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter opens by testing the principle of non-harm against its strongest temptation: sirappu eenum selvam, wealth that “gives birth to” distinction and social standing. The word kol (settled principle, fixed resolve) matters: non-harm is presented not as a mood or a calculation but as a standing commitment of the maasatraar, “those without stain,” whose minds are clear of the anger and greed that make harm seem attractive. Placed in the turavaraviyal (the section on the renunciant’s virtues), the couplet implies that the refusal to profit from another’s suffering is a defining mark of spiritual maturity, not merely of good manners. The same structure appears in Cicero’s Stoic claim that profiting by a neighbour’s loss is more contrary to nature than death or poverty, and in Plato’s thought-experiment of the Ring of Gyges, which asks whether anyone would stay just if injustice were profitable and safe. Valluvar’s answer is that the stainless would.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Let him avoid (the acquisition of) wealth and (the gratification of his) desires, if they are opposed to the sacred law, and even lawful acts which may cause pain in the future or are offensive to men.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">Manusmriti 4.176 (trans. G. Bühler)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Manu tells the householder to give up wealth and pleasures whenever getting them would go against dharma, and even to avoid legal acts that would cause pain or offend others.</div>
+  <div class="tieback">Like the Kural, Manu ranks not-causing-pain above getting rich: wealth gained against righteousness or at others’ cost is to be refused.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For what shall it profit a man, if he shall gain the whole world, and lose his own soul?&rdquo;</div>
+  <div class="cite">&mdash; Mark 8:36 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus warns that no amount of worldly gain is worth the loss of one’s inner life.</div>
+  <div class="tieback">Both texts set the greatest possible riches against moral integrity and find the riches not worth it. Valluvar names harming others as the price the pure refuse to pay.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O believers! Do not devour one another’s wealth illegally, but rather trade by mutual consent.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://quran.com/" target="_blank" rel="noopener">Qur’an 4:29 (trans. Mustafa Khattab, The Clear Quran)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an forbids enriching yourself at another person’s expense by unjust means; wealth must change hands only by fair, willing exchange.</div>
+  <div class="tieback">Both forbid seeking wealth through another’s loss or pain. The Kural adds that the pure refuse such gain even when it would bring prestige.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Better is a little with righteousness than great revenues without right.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 16:8 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Proverbs teaches that a small, honest income is worth more than a fortune gained unjustly.</div>
+  <div class="tieback">Same weighing as the Kural: great revenue on one side, righteousness on the other, and righteousness wins.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;He is indeed virtuous, wise, and righteous who neither for his own sake nor for the sake of another (does any wrong), who does not crave for sons, wealth, or kingdom, and does not desire success by unjust means.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 84 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha describes the truly wise person as one who will do no wrong for any reason, and who does not seek wealth or success by unjust means.</div>
+  <div class="tieback">Nearly the Kural’s own claim: the pure person will not do wrong even when wealth or success is the reward.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Men who adhering to wrong principles acquire wealth by evil deeds, will lose it, falling into the snares (of their passions) and being held captive by their hatred.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 4.2 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Uttarādhyayana warns that wealth gained by harmful deeds does not last and leaves its owner bound by his own passions and hatred.</div>
+  <div class="tieback">Valluvar&#x27;s stainless people refuse to cause pain even for wealth that would bring them distinction. The Jain verse explains why: wealth gained by evil deeds is lost, and the hatred behind it remains.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">Macauliffe records that at Saiyidpur (Eminabad) Guru Nanak lodged with Lalo, a low-caste carpenter, and declined the great feast of Malik Bhago, the local steward. When Malik Bhago demanded why, the Guru took Lalo&#x27;s coarse bread in one hand and Bhago&#x27;s rich bread in the other and squeezed them: it is said milk came from Lalo&#x27;s bread and blood from Bhago&#x27;s, because Bhago&#x27;s wealth had been gained by bribery and oppression.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">Max Arthur Macauliffe, The Sikh Religion (1909), Vol. 1, Life of Guru Nanak, Chapter IV, pp. 43-44 (paraphrase)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The story, from the Janamsakhi tradition as Macauliffe retells it, sets honest poverty above lavish wealth that was squeezed out of other people&#x27;s suffering. Guru Nanak refuses the rich man&#x27;s hospitality outright.</div>
+  <div class="tieback">The Kural says the stainless will not cause pain even for wealth that brings great prestige; Guru Nanak turned away from just such prestigious wealth because it had been gained by hurting others.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Plato’s retelling of the myth, the shepherd Gyges finds a gold ring that makes him invisible. Freed from all consequences, he seduces the queen, kills the king, and takes the throne. Glaucon uses the tale to ask whether anyone would stay just if injustice were profitable and could never be discovered.</div>
+  <div class="cite">&mdash; Plato, Republic II, 359c–360d (the Ring of Gyges) <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The Ring of Gyges tests whether people avoid harming others only because they fear getting caught.</div>
+  <div class="tieback">The Kural gives the answer Socrates goes on to defend: the truly pure refuse to harm others for gain even when the gain is huge and the harm would go unpunished.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Well then, for a man to take something from his neighbour and to profit by his neighbour&#x27;s loss is more contrary to Nature than is death or poverty or pain or anything else that can affect either our person or our property.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cicero/de_Officiis/3A*.html" target="_blank" rel="noopener">Cicero, De Officiis III.21 (trans. Walter Miller, Loeb 1913)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Cicero argues that gaining at another’s expense is worse, and more against human nature, than suffering any personal loss.</div>
+  <div class="tieback">Cicero and Valluvar both say the good person would rather stay poor than get rich by hurting someone else.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">John Woolman refuses to write wills that bequeath enslaved people</div>
+  <div class="rle-meta">1740s &middot; Colonial New Jersey (British North America)</div>
+  <div class="quote is-paraphrase">As a young clerk in the early 1740s, the Quaker John Woolman was asked to write a bill of sale for an enslaved woman; he did so against his conscience but told his employer he believed slavery was inconsistent with Christianity. Afterwards, working as a tailor and scrivener who depended on the goodwill of his customers, he refused to draw up wills in which enslaved people would be passed on to heirs, telling one respected neighbour that he could not write his will without breaking his own peace. He went on to spend much of his life persuading Quakers to free those they held in slavery, and his Journal was published in 1775.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Woolman chose to lose business and risk offending respected customers rather than earn fees from documents that would keep human beings in bondage.</div>
+  <div class="tieback">The kural says the stainless hold firmly to the rule of never causing pain, even when harming others would bring wealth and standing, and Woolman turned away paid work rather than lend his pen to slavery.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-32/" target="_blank" rel="noopener">Thirukkural Chapter 32: இன்னாசெய்யாமை / Not doing Evil (Kurals 311-320), with Sivayogi Sivakumar, Mu. Varadarasan, Solomon Pappaiah and Kalaignar commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-032.html" target="_blank" rel="noopener">இன்னா செய்யாமை - அதிகாரம் 32 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah, Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.wisdomlib.org/hinduism/book/manusmriti-with-the-commentary-of-medhatithi/d/doc199855.html" target="_blank" rel="noopener">The Laws of Manu (Manusmṛti), translated by Georg Bühler, Sacred Books of the East vol. 25 (Oxford, 1886)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://quran.com/" target="_blank" rel="noopener">The Clear Quran, trans. Dr. Mustafa Khattab (verses 3:104, 6:132, 16:97, 64:16, 91:9-10)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">The Sikh Religion: Its Gurus, Sacred Writings and Authors (6 vols.) (Max Arthur Macauliffe)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-9">Republic, Book X (the Myth of Er) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cicero/de_Officiis/3A*.html" target="_blank" rel="noopener">Cicero, De Officiis, Book III.1-34, translated by Walter Miller (Loeb Classical Library, 1913)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://sourcebooks.web.fordham.edu/mod/1772woolman.asp" target="_blank" rel="noopener">Modern History Sourcebook: The Journal of John Woolman (John Woolman)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://christianhistoryinstitute.org/magazine/article/unforgettable-witness-for-freedom" target="_blank" rel="noopener">Unforgettable witness for freedom (Stephen W. Angell)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0310.html">&larr; Kural 310</a>
+  <a href="kural-0312.html">Kural 312 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-032.html">Not Doing Evil</a>
+  <a class="skip-btn" href="kural-0321.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 495 — Knowledge of Location | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 495</h1>
+<p class="adhikaram"><a href="adhikaram-050.html">Knowledge of Location</a> &middot; Idanarithal &middot; <span class="tamil">இடனறிதல்</span></p>
+
+<div class="tamil-text">நெடும்புனலுள் வெல்லும் முதலை அடும்புனலின்
+நீங்கின் அதனைப் பிற.</div>
+<div class="translit">Nedumpunalul vellum muthalai adumpunalin
+Neengin athanaip pira.</div>
+
+<h2 class="section">Meaning</h2>
+<p>In deep water a crocodile can beat other animals. But once it leaves the water, those same animals can beat it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A fish is the best swimmer in the pond, but put it on the grass and it can hardly move. The crocodile is the same: a champion in the river, in trouble on dry land.</p>
+
+<h2 class="section">University</h2>
+<p>This is the chapter’s best-known image. ‘Nedumpunal’ is deep or wide water; ‘adum’ (kills, overcomes) is placed in the middle so that it can be read with either half. Parimelazhagar’s construction is: in deep water the crocodile defeats others; if it leaves the water, others (pira) kill it. The verse leaves out the verb of the second clause and borrows it from ‘adum’, typical Kural compression. The Sanskrit nīti tradition has the same image in a Pañcatantra verse (nakraḥ svasthānam āsādya gajendram api karṣati), where the crocodile in its own place drags even a lordly elephant but out of it is beaten by a dog. That suggests a shared South Asian stock of proverbs rather than direct borrowing.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;nakraḥ svasthānam āsādya gajendram api karṣati | sa eva pracyutaḥ sthānāc chunāpi paribhūyate&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/definition/nakra" target="_blank" rel="noopener">Pañcatantra III (Kākolūkīya), v. 43/46 depending on edition; cited in Apte and Böhtlingk–Roth s.v. nakra (wisdomlib.org)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">In its own place, the crocodile drags even a king of elephants; the same crocodile, fallen from its place, is overpowered even by a dog.</div>
+  <div class="tieback">This Sanskrit maxim is almost a twin of Kural 495, crocodile included.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And he shall be like a tree planted by the rivers of water, that bringeth forth his fruit in his season; his leaf also shall not wither.&rdquo;</div>
+  <div class="cite">&mdash; Psalm 1:3 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The psalm says the righteous person does well like a tree planted in its proper place beside water.</div>
+  <div class="tieback">It gives the positive side of the crocodile image: in its right element, a living thing is at full strength.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;At Uhud the Prophet told his fifty archers, “Stick to your place, and don’t leave it even if you see birds snatching us, till I send for you.” When most of them left the hill to collect booty, the Quraysh cavalry circled round, and the Muslims were routed.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:3039" target="_blank" rel="noopener">Sahih al-Bukhari 3039</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The archers were decisive on their hill and became helpless once they left it.</div>
+  <div class="tieback">Like the crocodile leaving the water, a force that abandons its own place gives its strength away.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;If we are afraid in the water, our natural habitat which gives us life, then in a habitat that causes our death, all the more so.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Berakhot.61b.7" target="_blank" rel="noopener">Babylonian Talmud, Berakhot 61b (William Davidson/Koren translation, Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbi Akiva tells of a fox inviting frightened fish onto dry land, and the fish refuse because leaving their element would kill them for certain. He applies the parable to Israel and Torah.</div>
+  <div class="tieback">The same creature-out-of-its-element logic as the crocodile verse.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;As a fish when pulled out of water and cast on land throbs and quivers, even so is this mind agitated.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 34 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada compares the untrained mind to a fish thrown onto land, helpless and thrashing.</div>
+  <div class="tieback">The water creature that loses its power on land is the Kural’s central image.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">Jain metaphysics holds that souls and matter can move only where dharmastikaya, the medium of motion, is present, and come to rest by means of adharmastikaya, the medium of rest. Commentators illustrate this with the fish, which moves freely only in water, the water being the medium of its movement.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/tattvartha-sutra-with-commentary" target="_blank" rel="noopener">Tattvartha Sutra 5.17 of Umasvati (paraphrase), with the traditional fish-in-water illustration from the commentaries</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In Jain cosmology the power to move depends on being in the right medium; outside that medium, motion is impossible however strong the being is.</div>
+  <div class="tieback">Valluvar&#x27;s crocodile is mighty in deep water and helpless out of it; the Jain doctrine of the medium of motion, with its fish-in-water illustration, likewise makes a being&#x27;s power depend on the element it is in.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;O mind, love the Lord, as the fish loves the water.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 60, Siree Raag, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak uses the fish, which thrives in water and cannot live outside it even for a moment, as an image of the soul&#x27;s dependence on God.</div>
+  <div class="tieback">The Kural&#x27;s crocodile is mighty in deep water and helpless on land; Gurbani&#x27;s fish likewise has its whole life and strength in its own element.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">The giant Antaeus, son of Earth, could not be beaten while he touched the ground, which kept renewing his strength. Heracles defeated him by lifting him off the earth and crushing him in the air.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/Apollodorus1.html" target="_blank" rel="noopener">Apollodorus, Library 2.5.11 (tr. J. G. Frazer)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Antaeus’s strength belonged to his element; taken out of it, he was easily beaten.</div>
+  <div class="tieback">He is the Greek crocodile, invincible in his own place and powerless once removed from it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;I well deserve my fate, for what business had I on the land, when by my nature and habits I am only adapted for the sea?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://fablesofaesop.com/the-crab-and-the-fox.html" target="_blank" rel="noopener">Aesop, The Crab and the Fox, Perry 116 (tr. G. F. Townsend)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">A crab that leaves the shore to feed in a meadow is eaten by a fox and blames itself as it dies.</div>
+  <div class="tieback">Almost the crocodile kural in fable form: a sea creature is lost on land.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Tran Hung Dao destroys the Mongol fleet at the Bach Dang River</div>
+  <div class="rle-meta">1288 &middot; Bach Dang River, near Haiphong, Vietnam</div>
+  <div class="quote is-paraphrase">During the third Mongol invasion of Dai Viet, the Vietnamese commander Tran Hung Dao avoided pitched battles on land and then chose to fight the withdrawing Yuan fleet on the Bach Dang River. His men drove stakes into the riverbed below the waterline, a tactic used at the same river in 938, and lured the Mongol ships onto them. The fleet was wrecked and destroyed, and the invasion ended in defeat.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The Mongols, nearly unbeatable on the open plains, were defeated on a tidal river whose conditions their enemy understood far better.</div>
+  <div class="tieback">The kural&#x27;s crocodile is master only in its own element, and the Mongols, masters of land warfare, were overcome once they fought on Vietnamese waters.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.thirukkural.net/ta/kural/adhigaram-050.html" target="_blank" rel="noopener">இடன் அறிதல், Adhigaram 50, Thirukkural (Kurals 491–500), with commentaries by Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah and Mu. Karunanidhi</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A050.html" target="_blank" rel="noopener">50. இடனறிதல் (Thirukkural with old continuous text, word-by-word gloss and commentary)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.wisdomlib.org/definition/nakra" target="_blank" rel="noopener">Pañcatantra III (Kākolūkīya) v. 43/46, ‘nakraḥ svasthānam āsādya gajendram api karṣati…’, as cited in Apte’s Practical Sanskrit-English Dictionary and Böhtlingk–Roth, s.v. nakra</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:3039" target="_blank" rel="noopener">Sahih al-Bukhari 3039, Book of Jihad: the archers at Uhud</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Berakhot.61b.7" target="_blank" rel="noopener">Babylonian Talmud, Berakhot 61b (Rabbi Akiva’s parable of the fox and the fish), William Davidson Edition (Koren Noé, Steinsaltz)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/tattvartha-sutra-with-commentary" target="_blank" rel="noopener">Tattvārtha Sūtra of Umāsvāti (sutra content paraphrased; no specific translation quoted)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/Apollodorus1.html" target="_blank" rel="noopener">Apollodorus, The Library and Epitome, tr. Sir James George Frazer (Loeb, 1921)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://fablesofaesop.com/the-crab-and-the-fox.html" target="_blank" rel="noopener">The Crab and the Fox (Perry 116), Townsend version</a> <span class="tier">[web source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Tran-Hung-Dao" target="_blank" rel="noopener">Tran Hung Dao</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://e.vnexpress.net/news/news/weaponized-stakes-recall-famous-bach-dang-victory-4029853.html" target="_blank" rel="noopener">Weaponized stakes recall famous Bach Dang victory</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0494.html">&larr; Kural 494</a>
+  <a href="kural-0496.html">Kural 496 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-050.html">Knowledge of Location</a>
+  <a class="skip-btn" href="kural-0501.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

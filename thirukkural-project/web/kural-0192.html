@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 192 — Not Speaking Profitless Words | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 192</h1>
+<p class="adhikaram"><a href="adhikaram-020.html">Not Speaking Profitless Words</a> &middot; Payanila Sollaamai &middot; <span class="tamil">பயனில சொல்லாமை</span></p>
+
+<div class="tamil-text">பயனில பல்லார்முன் சொல்லல் நயனில
+நட்டார்கண் செய்தலிற் றீது.</div>
+<div class="translit">Payanila pallaarmun sollal nayanila,
+Nattaarkan seydhalir reedhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Talking about pointless things in front of many people is worse than being unkind to your own friends.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you are rude to one friend, that hurts one person. But if you stand up in front of the whole school and waste everyone’s time with silly talk, you hurt everyone’s time at once. This kural says doing that in front of many people is even worse than being unkind to a friend.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet works through a startling comparison. Doing நயனில (nayanila, “what is devoid of goodness/propriety”) to நட்டார் (nattaar, “friends”), which is a real ethical fault, is ranked below speaking பயனில (payanila, “what is devoid of benefit”) before பல்லார் (“the many”). The two phrases rhyme (nayanila / payanila), and the parallel sound makes the ranking stick in the ear. The argument depends on scale and publicity: an unkind act toward a friend stays in a private relationship that can be repaired, while empty talk before an assembly wastes the attention of many people at once and fixes one’s public character. Modern commentators (Mu. Varadarasan, Solomon Pappaiah, Kalaignar) all keep this ‘worse than’ reading, which shows how seriously Valluvar takes the public squandering of speech.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Bhartrihari’s Nītiśataka calls silence the ornament that the unlearned can wear in an assembly of the wise, a covering for their lack of knowledge.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/" target="_blank" rel="noopener">Bhartrihari, Nītiśataka (verse on silence as the ornament of the unlearned; numbering varies by edition)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The gnomic poet advises that in a learned gathering the unqualified are better off saying nothing than exposing themselves.</div>
+  <div class="tieback">Both texts see the assembly as the place where empty talk does the most damage, and both advise silence there.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But I say unto you, That every idle word that men shall speak, they shall give account thereof in the day of judgment.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 12:36 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus teaches that even ‘idle’ (argos, workless) words are weighed at the final judgment.</div>
+  <div class="tieback">Both texts insist that careless words weigh more than people assume. The Kural ranks them above unkind deeds, and Jesus makes them answerable before God.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And [they are] those who do not testify to falsehood, and when they pass near ill speech, they pass by with dignity.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 25:72 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an describes God’s true servants as refusing to join in laghw (vain, idle speech) when they come across it.</div>
+  <div class="tieback">Both texts link dignity with keeping out of vain talk when others are present.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;If two sit together and there are no words of Torah [spoken] between them, then this is a session of scorners.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Mishnah, Pirkei Avot 3:2 (trans. Joshua Kulp, Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbi Hananiah ben Teradion says that a gathering filled only with empty talk turns into a ‘seat of the scornful’.</div>
+  <div class="tieback">Both texts judge talk by its social setting: empty words in company harm the whole gathering.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;It isn’t right, monks, that sons of good families, on having gone forth out of faith from home to the homeless life, should get engaged in such topics of conversation.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an10/an10.069.than.html" target="_blank" rel="noopener">Anguttara Nikaya 10.69, Kathavatthu Sutta (trans. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha finds monks gathered in the assembly hall chatting about kings, food, gossip and so on, and tells them to discuss ten wholesome topics instead.</div>
+  <div class="tieback">Here idle talk in an assembly is corrected at once, which reflects the Kural’s concern about pointless words before many.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;A monk should not tell stories, nor ask idle questions, nor gossip. But, knowing the highest Law, he should perform his religious duties, and regard nothing his own.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga I.2.2.28 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Sūtrakṛtāṅga tells the monk to give up story-telling, idle questions and gossip and to spend himself on his religious duties instead.</div>
+  <div class="tieback">Valluvar ranks pointless talk before many people as worse than unkindness to friends, and the Jain rule likewise treats idle talk and gossip as a real fault to be given up, not a harmless habit.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;To speak too much and babble is useless.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 661, Raag Dhanaasree, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In a hymn in Raag Dhanaasree, Guru Nanak dismisses endless talk and babbling as worthless.</div>
+  <div class="tieback">The Kural ranks pointless talk before many people as worse than wronging one&#x27;s friends; Guru Nanak shares the low estimate of babble, though he makes no such comparison.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Tantalus, the mortal favoured with a seat at the gods’ table, falls by an ‘unbridled tongue’ in Euripides’ telling: he betrays the confidences of his divine hosts by talking.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0116" target="_blank" rel="noopener">Euripides, Orestes 4-10 (the ‘unbridled tongue’ of Tantalus); cf. Pindar, Olympian 1</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Several versions put Tantalus’s crime in his mouth (leaking the gods’ secrets) rather than in a deed, and he suffers eternal punishment.</div>
+  <div class="tieback">The Tantalus tradition, like the Kural, rates reckless speech as worse than a wrong done by hand to one’s friends.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Theophrastus’s sketch of ‘The Garrulous Man’ shows a man who sits beside strangers and pours out his dreams, dinners and trivial opinions to anyone within earshot.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/search/?query=theophrastus+characters" target="_blank" rel="noopener">Theophrastus, Characters, ‘The Garrulous Man’ (Adoleschia)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle’s successor catalogues the chatterer as a recognisable social type whose talk burdens every company he enters.</div>
+  <div class="tieback">Theophrastus shows how public idle talk imposes on many people at once, which is why the Kural judges it so harshly.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Khrushchev&#x27;s intemperate speech at the farewell reception for Gomulka</div>
+  <div class="rle-meta">November 1956 (reported by TIME on 26 November 1956) &middot; Moscow, Soviet Union (now Russia)</div>
+  <div class="quote is-paraphrase">At a Kremlin-attended farewell reception in Moscow for the visiting Polish leader Wladyslaw Gomulka, Soviet leader Nikita Khrushchev turned to the Western diplomats present and delivered a long, boastful, off-the-cuff harangue about the capitalist countries, Hungary and the Suez crisis. TIME reported that by the time he finished, the Western diplomats had left the room. One line from the speech, rendered in English as a declaration that the Soviets would bury the West, became one of the most widely remembered remarks of the Cold War.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Unplanned words spoken before a large gathering of foreign envoys did lasting damage to the speaker&#x27;s image abroad, far beyond the occasion itself.</div>
+  <div class="tieback">The kural warns that pointless talk before many people does more harm than an unkind act among friends, and Khrushchev&#x27;s rambling remarks before the diplomatic corps were repeated around the world for decades.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-20/" target="_blank" rel="noopener">Thirukkural Chapter 20: பயனில சொல்லாமை / Against Vain Speaking (Kurals 191-200), with Mu. Varadarasan, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-020.html" target="_blank" rel="noopener">பயனில சொல்லாமை - அதிகாரம் 20 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah, Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.wisdomlib.org/" target="_blank" rel="noopener">Bhartṛhari, Nītiśataka (stanza on the three courses of wealth: dāna, bhoga, nāśa)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit English translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/an/an10/an10.069.than.html" target="_blank" rel="noopener">Anguttara Nikaya 10.69, Kathavatthu Sutta: Topics of Conversation, trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga (Sutrakritanga)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0116" target="_blank" rel="noopener">Euripides, Orestes</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/search/?query=theophrastus+characters" target="_blank" rel="noopener">Theophrastus, Characters (tr. R.C. Jebb)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://time.com/archive/6804927/foreign-news-we-will-bury-you/" target="_blank" rel="noopener">Foreign News: We Will Bury You! (TIME)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/biography/Nikita-Sergeyevich-Khrushchev/Leadership-of-the-Soviet-Union" target="_blank" rel="noopener">Nikita Khrushchev - Leadership of the Soviet Union</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0191.html">&larr; Kural 191</a>
+  <a href="kural-0193.html">Kural 193 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-020.html">Not Speaking Profitless Words</a>
+  <a class="skip-btn" href="kural-0201.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

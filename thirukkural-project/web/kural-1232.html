@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1232 — Wasting Away | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1232</h1>
+<p class="adhikaram"><a href="adhikaram-124.html">Wasting Away</a> &middot; Uruppu Nalanazhithal &middot; <span class="tamil">உறுப்புநலனழிதல்</span></p>
+
+<div class="tamil-text">நயந்தவர் நல்காமை சொல்லுவ போலும்
+பசந்து பனிவாரும் கண்.</div>
+<div class="translit">Nayandhavar nalkaamai solluva poalum
+pasandhu panivaarum kan.</div>
+
+<h2 class="section">Meaning</h2>
+<p>My eyes have turned pale and keep filling with tears. They seem to tell everyone that the one I love is no longer kind to me.</p>
+
+<h2 class="section">Elementary</h2>
+<p>When you are sad, you might try to hide it, but your red, teary eyes give you away, and people can guess something is wrong. The girl in this verse feels her pale, wet eyes are telling the whole town that the person she loves is far away and not caring for her right now.</p>
+
+<h2 class="section">University</h2>
+<p>The heroine imagines her eyes as informers: pasantu (‘having turned sallow’, from pacappu/pacalai, the greenish-yellow pallor of love-sickness that Chapter 119 treats at length) and paṉi vārum (‘streaming with dew’, i.e. tears) they ‘seem to speak’ (colluva pōlum) of nayantavar nalkāmai, the ‘unkindness’ or ‘failure to bestow grace’ of the one she desired. Nalkāmai is the negative of nalku, ‘to show favour, to be gracious’, a word used of kings and gods as well as lovers. Mu. Varadarasanar and Puliyur Kesikan add that the eyes tell this ‘to others’ (piṟarkku), which makes the poem about exposure as much as grief: the body betrays what modesty (nāṇ) would conceal. Pope renders: ‘The eye, with sorrow wan, all wet with dew of tears, / As witness of the lover’s lack of love appears.’ The text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In Jayadeva’s Gita Govinda, Radha’s friend goes to Krishna and describes Radha’s state in his absence: she finds sandal paste and moonlight painful, she is wasted and tearful, and her whole condition testifies to his neglect.</div>
+  <div class="cite">&mdash; Jayadeva, Gita Govinda, Canto 4 (paraphrase; cf. tr. Barbara Stoler Miller) <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The friend’s report makes Radha’s suffering body the evidence of Krishna’s absence.</div>
+  <div class="tieback">In the Kural the heroine’s pale, tearful eyes play the friend’s part, announcing the lover’s unkindness to everyone.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Have mercy upon me, O LORD, for I am in trouble: mine eye is consumed with grief, yea, my soul and my belly.&rdquo;</div>
+  <div class="cite">&mdash; Psalms 31:9 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The psalmist points to his worn-out eye as visible proof of his distress.</div>
+  <div class="tieback">The Kural’s eyes likewise display inner grief openly, as if testifying to it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">In The Ring of the Dove, Ibn Hazm lists the outward signs by which love betrays itself, such as the lover’s fixed gaze, sleeplessness, sighing, and, when the beloved is absent or unkind, wasting and pallor that others can read.</div>
+  <div class="cite">&mdash; Ibn Hazm, The Ring of the Dove (Tawq al-Hamama), chapter on the signs of love (paraphrase; cf. tr. A.J. Arberry) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Andalusian scholar treats the lover’s body as a text that onlookers can read even when the lover keeps silent.</div>
+  <div class="tieback">The Kural’s heroine fears exactly this: her pale, wet eyes are telling others what she would not say.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Mine eyes do fail with tears, mine inwards burn, my liver is poured upon the earth, for the breach of the daughter of my people.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">Lamentations 2:11 (JPS 1917, via Mechon-Mamre)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The poet of Lamentations describes eyes exhausted by tears as the outward face of a heartbreak.</div>
+  <div class="tieback">The Kural’s tear-streaming eyes are likewise the visible sign of an inner wound.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Buddha asks which is greater, the water of the four oceans or the tears his monks have shed over the long round of births while weeping at union with what is displeasing and separation from what is pleasing; the tears, he says, are greater.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/sn/sn15/sn15.003.than.html" target="_blank" rel="noopener">Samyutta Nikaya 15.3, Assu Sutta (paraphrase; cf. tr. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The sutta makes separation from the dear the source of an ocean of tears.</div>
+  <div class="tieback">The heroine’s streaming eyes are one small instance of the tears the Buddha says separation always brings.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">The Uttaradhyayana’s lecture on carelessness teaches that the eye’s attachment to pleasing colour and form leads to suffering: one who is passionately fond of colours comes to grief and is never satisfied.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra, Lecture 32, verses on the eye and colour (paraphrase; cf. tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jain teaching traces the misery of the senses to raga, attachment, beginning with the eye.</div>
+  <div class="tieback">In the Kural the eye that once delighted in the beloved is now the very organ that suffers and shows the loss, which Jain doctrine would read as the fruit of attachment.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The eyes of the soul-bride are filled with tears; I dwell upon Your Glorious Virtues. How can I meet my Beloved Lord God?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1111, Raag Tukhari, Barah Maha, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In his Barah Maha in Raag Tukhari, Guru Nanak&#x27;s soul-bride weeps as she remembers her Lord&#x27;s virtues and asks how she can meet Him.</div>
+  <div class="tieback">The Kural&#x27;s wife says her pale, streaming eyes tell everyone that her beloved has stopped being kind to her; Guru Nanak&#x27;s bride also shows her separation through eyes filled with tears.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">As Penelope listens to the disguised Odysseus tell of her husband, her tears flow down her cheeks like snow melting on the mountain-tops, so that her fair cheeks seem to dissolve as she weeps for the man who is sitting beside her.</div>
+  <div class="cite">&mdash; Homer, Odyssey 19.204-209 (paraphrase; cf. tr. Samuel Butler) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Homer pictures a faithful wife’s face visibly wasting with tears for a long-absent husband.</div>
+  <div class="tieback">Penelope’s melting cheeks, like the Kural’s streaming eyes, publish her grief for an absent husband before others.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Plutarch tells how the physician Erasistratus discovered that Prince Antiochus was wasting away from a hidden love for his stepmother Stratonice: whenever she entered, the prince showed Sappho’s symptoms, faltering speech, burning flushes, pallor and sudden faintness.</div>
+  <div class="cite">&mdash; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Demetrius*.html" target="_blank" rel="noopener">Plutarch, Life of Demetrius 38 (paraphrase; cf. tr. Bernadotte Perrin)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">A Greek physician reads a secret love straight off a patient’s body.</div>
+  <div class="tieback">The Kural’s heroine fears the same thing: her pallid, wet eyes tell onlookers what she has not said.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Sappho describes the symptoms of longing in fragment 31</div>
+  <div class="rle-meta">6th century BCE &middot; Lesbos, Greece</div>
+  <div class="quote is-paraphrase">In the poem now known as fragment 31, the Greek poet Sappho describes watching the person she loves talking with a man and lists what longing does to her body: her tongue breaks, a thin fire runs under her skin, sweat pours down, trembling seizes her and she is greener than grass. The ancient critic Longinus quoted the poem in his treatise On the Sublime as a model description of the symptoms of passion.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">It is the most famous ancient description of love&#x27;s effect on the body, and it survives because a later critic thought it a perfect example.</div>
+  <div class="tieback">The kural&#x27;s eyes, gone sallow and tearful, tell everyone what the heart would hide, and Sappho&#x27;s poem shows the same thing: a body whose pallor and trembling announce the speaker&#x27;s longing.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-124/" target="_blank" rel="noopener">Thirukkural Chapter 124: உறுப்புநலனழிதல் / Wasting Away (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-124.html" target="_blank" rel="noopener">உறுப்புநலன் அழிதல் - அதிகாரம் 124 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3">Jayadeva, Gita Govinda <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">Ibn Hazm, The Ring of the Dove (Tawq al-Hamama), tr. A.J. Arberry <span class="tier">[secondary source]</span></li>
+<li id="cite-6"><a href="https://mechon-mamre.org/p/pt/pt0.htm" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917), Hebrew-English Bible</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/sn/sn15/sn15.003.than.html" target="_blank" rel="noopener">Samyutta Nikaya 15.3, Assu Sutta, tr. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Demetrius*.html" target="_blank" rel="noopener">Life of Demetrius (Parallel Lives) (Plutarch)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.poetryfoundation.org/poets/sappho" target="_blank" rel="noopener">Sappho</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.new.ox.ac.uk/sites/default/files/2025-12/24NCN1%20%282025%29%20Finglass%20on%20Sappho.pdf" target="_blank" rel="noopener">Getting Sweaty with Sappho (P. J. Finglass)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1231.html">&larr; Kural 1231</a>
+  <a href="kural-1233.html">Kural 1233 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-124.html">Wasting Away</a>
+  <a class="skip-btn" href="kural-1241.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

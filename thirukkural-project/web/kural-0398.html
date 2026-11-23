@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 398 — Learning | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 398</h1>
+<p class="adhikaram"><a href="adhikaram-040.html">Learning</a> &middot; Kalvi &middot; <span class="tamil">கல்வி</span></p>
+
+<div class="tamil-text">ஒருமைக்கண் தான்கற்ற கல்வி ஒருவற்கு
+எழுமையும் ஏமாப் புடைத்து.</div>
+<div class="translit">Orumaikkan thaankatra kalvi oruvarku
+Ezhumaiyum emaap pudaiththu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The learning a person gains in one life can protect and help them for seven lives to come.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Planting a tree helps you, your children and your grandchildren long after you have gone. Valluvar says learning is even bigger than that: what you learn now keeps helping you far into the future, even into future lives.</p>
+
+<h2 class="section">University</h2>
+<p>This kural draws on the Indian framework of rebirth. ஒருமை (orumai, &#x27;one birth&#x27;) is set against எழுமை (ezhumai, &#x27;seven births&#x27;), a conventional expression for a long chain of future lives. The key word ஏமாப்பு (emaappu) means protection, security or support, so learning is pictured as a lasting safeguard that goes with the soul. Mu. Varadarasan and Solomon Pappaiah follow the traditional rebirth reading. Kalaignar reinterprets it more secularly as learning that protects seven generations of a family. The kural fits the chapter&#x27;s larger claim that learning, unlike other goods, is not used up or lost. Similar ideas appear in the Gita&#x27;s teaching that a yogi&#x27;s progress carries over into the next life and in Plato&#x27;s theory that learning is recollection from earlier existence.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;On taking such a birth, he revives the divine consciousness of his previous life, and he again tries to make further progress in order to achieve complete success, O son of Kuru.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 6.43 (Bhaktivedanta, As It Is)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna assures Arjuna that spiritual progress and understanding are never lost at death. They carry into the next birth and continue from there.</div>
+  <div class="tieback">A near-exact match to the Kural: what is gained in one life protects and advances a person in later lives.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And they that be wise shall shine as the brightness of the firmament; and they that turn many to righteousness as the stars for ever and ever.&rdquo;</div>
+  <div class="cite">&mdash; Daniel 12:3 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Daniel&#x27;s vision promises that the wise will shine for ever, so that their wisdom has an eternal result beyond this life.</div>
+  <div class="tieback">Like the Kural, it says the benefit of wisdom reaches past one lifetime. The framework is resurrection and eternity rather than rebirth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;When a man dies, his acts come to an end, but three, recurring charity, or knowledge (by which people) benefit, or a pious child, who prays for him (for the deceased).&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/muslim:1631" target="_blank" rel="noopener">Sahih Muslim 1631</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet teaches that beneficial knowledge is one of only three things that keep earning reward for a person after death.</div>
+  <div class="tieback">Like the Kural, it treats learning as one of the few goods whose benefit outlasts a single lifetime.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;For when a man passes away there accompany him neither gold nor silver, nor precious stones nor pearls, but Torah and good deeds alone.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 6:9 (Kulp translation, Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbi Yose ben Kisma refuses a fortune to live away from a place of learning, explaining that only Torah and good deeds go with a person beyond death.</div>
+  <div class="tieback">A very close match: learning is the possession that goes with a person past the end of this life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Buddhavamsa, the ascetic Sumedha resolves at the feet of the Buddha Dipankara to become a Buddha, then spends countless lives perfecting the paramis, including the perfection of wisdom (pañña). What he builds in each life carries forward to the next.</div>
+  <div class="cite">&mdash; <a href="https://en.wikipedia.org/wiki/Buddhavamsa" target="_blank" rel="noopener">Buddhavamsa 2 (story of Sumedha and Dipankara)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Buddhism teaches that cultivated wisdom and virtue are carried from life to life until they reach full Buddhahood.</div>
+  <div class="tieback">A strong conceptual match: learning and wisdom gained in one birth protect and lift a person through many later births.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;By possession of knowledge he acquires an understanding of words and their meaning; thereby he will not perish in the forest of the fourfold Saṃsâra; as a needle with its thread will not be lost, thus the soul possessing the sacred lore will not be lost in the Saṃsâra.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 29.59 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Mahavira&#x27;s teaching plays on sutta, meaning both &#x27;thread&#x27; and &#x27;scripture&#x27;. A needle with a thread is not lost, and a soul that holds sacred knowledge is not lost in the cycle of rebirths.</div>
+  <div class="tieback">Valluvar says learning gained in one birth protects a person through seven births to come. The Jain image of the threaded needle makes the same promise: knowledge keeps the soul safe across the round of rebirth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Where there is no mother, father, children, friends or siblings - O my mind, there, only the Naam, the Name of the Lord, shall be with you as your help and support.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 264, Raag Gauree, Sukhmani Sahib (Ashtpadi 2), Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Sukhmani Guru Arjan says that where no family or friend can follow, beyond this life, only the Name goes with a person as their support.</div>
+  <div class="tieback">The Kural says learning gained in one life protects a person through seven lives to come; Guru Arjan names the Naam as the one possession that goes with the soul beyond this life and keeps protecting it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In the Myth of Er, souls choose their next lives. Plato&#x27;s Socrates says the soul that has practised philosophy chooses wisely, while unphilosophical souls pick disastrous lives out of ignorance.</div>
+  <div class="cite">&mdash; Plato, Republic X, 614b–621d (Myth of Er) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Wisdom gained in one life shapes the quality of the next life a soul chooses.</div>
+  <div class="tieback">Like the Kural, learning in one life gives protection across future lives.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In the Meno, Socrates argues that the soul is immortal and has been born many times, so that what we call &#x27;learning&#x27; is really recollection (anamnesis) of knowledge gained before.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0178%3Atext%3DMeno" target="_blank" rel="noopener">Plato, Meno 81b–86b</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Plato, knowledge is carried across lives. The soul brings it into each new birth, and inquiry draws it out again.</div>
+  <div class="tieback">A close conceptual parallel: learning is not confined to one lifetime but runs through many.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Avicenna&#x27;s Canon of Medicine teaches doctors for six centuries</div>
+  <div class="rle-meta">early 11th century to c. 1650 &middot; Persia (now Iran), and universities across Europe</div>
+  <div class="quote is-paraphrase">The Persian physician and philosopher Ibn Sina, known in Europe as Avicenna, compiled al-Qanun fi al-tibb, the Canon of Medicine, in the early 11th century. Translated into Latin in the 12th century, it became a standard medical textbook in European universities and was still used at Montpellier, France, as late as about 1650. It also remained central to medicine in the Islamic world.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The learning gathered in one lifetime went on guiding and protecting physicians and patients for many generations after its author&#x27;s death.</div>
+  <div class="tieback">The kural says the learning of one life protects through seven more, and Ibn Sina&#x27;s Canon kept serving long after him, much as Kalaignar reads it of later generations.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-40/" target="_blank" rel="noopener">Thirukkural Chapter 40: கல்வி / Learning (with commentaries by Mu. Varadarasan, Solomon Pappaiah, Kalaignar, Sivayogi Sivakumar)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-040.html" target="_blank" rel="noopener">Learning: Adhigaram 40, Thirukkural</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/muslim:1631" target="_blank" rel="noopener">Sahih Muslim 1631, Book of Wills — &#x27;When a man dies, his acts come to an end, but three&#x27;</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://en.wikipedia.org/wiki/Buddhavamsa" target="_blank" rel="noopener">Buddhavamsa (Chronicle of Buddhas): the story of Sumedha and Dipankara</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Republic, Book X (the Myth of Er) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0178%3Atext%3DMeno" target="_blank" rel="noopener">Plato, Meno 82b–85b (the demonstration with the slave boy)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/topic/The-Canon-of-Medicine" target="_blank" rel="noopener">The Canon of Medicine</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://unesdoc.unesco.org/ark:/48223/pf0000043007" target="_blank" rel="noopener">How Ibn Sina became Avicenna: transmitted to Europe, his writings sparked off an intellectual revival</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0397.html">&larr; Kural 397</a>
+  <a href="kural-0399.html">Kural 399 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-040.html">Learning</a>
+  <a class="skip-btn" href="kural-0401.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

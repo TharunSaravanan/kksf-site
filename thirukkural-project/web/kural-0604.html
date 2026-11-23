@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 604 — Unsluggishness | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 604</h1>
+<p class="adhikaram"><a href="adhikaram-061.html">Unsluggishness</a> &middot; Madiyinmai &middot; <span class="tamil">மடியின்மை</span></p>
+
+<div class="tamil-text">குடிமடிந்து குற்றம் பெருகும் மடிமடிந்து
+மாண்ட உஞற்றி லவர்க்கு.</div>
+<div class="translit">Kudimadindhu kutram perugum madimadindhu
+Maanda unjatri lavarkku.</div>
+
+<h2 class="section">Meaning</h2>
+<p>When people fall into laziness and make no real effort, their family&#x27;s good name falls apart and their faults keep growing.</p>
+
+<h2 class="section">Elementary</h2>
+<p>When you stop doing your homework, it’s not just one problem. Soon you’re behind, you start making excuses, and you get into more trouble. Laziness is like a door that lets many other problems in, and the whole family feels it.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet names two consequences: குடி மடிந்து, ‘the family perishing’, and குற்றம் பெருகும், ‘faults multiplying’. It gives one cause: மடி மடிந்து, ‘having fallen into sloth’. Here மடிந்து is used in the sense of ‘sinking’ or ‘being caught’, which Varadarasanar and Pappaiah both gloss as சோம்பலில் அகப்பட்டு / வீழ்வதால். The rare word உஞற்று (effort, exertion) together with மாண்ட (excellent, worthy) specifies what is missing: not activity of any kind but dignified, purposeful effort (Pope’s ‘noble objects’). Parimelazhagar notes that idleness is productive, of vice, which fits a line of Indian moral thought in which inactivity invites other faults. The same second-line phrase recurs in 607 (மாண்ட உஞற்றிலவர்), which ties the two couplets together. Both sources agree; the older text has the sandhi forms பெருகு மடிமடிந்து and மாண்ட வுஞற்றி.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;You should thus perform your prescribed Vedic duties, since action is superior to inaction. By ceasing activity, even your bodily maintenance will not be possible.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita 3.8 (trans. Swami Mukundananda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna argues that action is better than inaction: even keeping the body alive requires work, so giving up activity leads to decline.</div>
+  <div class="tieback">If idleness cannot sustain even one body, it certainly cannot sustain a family, which is the Kural’s குடி மடிந்து.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And withal they learn to be idle, wandering about from house to house; and not only idle, but tattlers also and busybodies, speaking things which they ought not.&rdquo;</div>
+  <div class="cite">&mdash; 1 Timothy 5:13 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul observes that idleness does not stay alone: it soon turns into gossip, meddling and improper speech.</div>
+  <div class="tieback">‘Not only idle, but tattlers also and busybodies’ is a precise illustration of குற்றம் பெருகும், faults multiplying from sloth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Indeed, the hypocrites [think to] deceive Allah, but He is deceiving them. And when they stand for prayer, they stand lazily, showing [themselves to] the people and not remembering Allah except a little,&rdquo;</div>
+  <div class="cite">&mdash; Quran 4:142 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Quran links laziness in worship with a cluster of further faults: hypocrisy, showing off, and neglect of the remembrance of God.</div>
+  <div class="tieback">Laziness appearing alongside several other vices mirrors the Kural’s claim that faults multiply around sloth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Rabbi Eliezer says: Even if she brought him a hundred maidservants, he can compel her to make thread from wool, since idleness leads to licentiousness. … Rabban Shimon ben Gamliel says: … since idleness leads to idiocy.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Mishnah_Ketubot.5.5" target="_blank" rel="noopener">Mishnah Ketubot 5:5 (William Davidson Edition, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">In a ruling about household duties, two sages state a general principle: idleness breeds immorality and dulls the mind, so no one in a household should be entirely without work.</div>
+  <div class="tieback">‘Idleness leads to’ further faults is the rabbinic form of the Kural’s குற்றம் பெருகும், and it is also set in the context of the household.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;The man who is fond of sleep and company, inactive and lazy, and manifesting anger —this is the cause of his downfall.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/kn/snp/snp.1.06.piya.html" target="_blank" rel="noopener">Sutta Nipāta 1.6, Parābhava Sutta (trans. Piyadassi Thera)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">In the Discourse on Downfall, the Buddha lists sleepiness, idleness and laziness, together with anger, as the third cause of a person’s ruin.</div>
+  <div class="tieback">Laziness appearing next to other faults and leading to downfall parallels both halves of the Kural: faults multiply, and the house declines.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;There are five causes which render wholesome discipline impossible: egoism, delusion, carelessness, illness, and idleness.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 11.3 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Uttaradhyayana counts carelessness and idleness among the causes that make right discipline impossible, so faults multiply where they take hold.</div>
+  <div class="tieback">Valluvar says that for those sunk in sloth faults keep multiplying; the Jain text names idleness as one of the roots that block all wholesome discipline.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The lustful, the angry, the clever, the deceitful and the lazy waste their lives in slander, and never remember their Lord in meditation.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1105, Raag Maaroo, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Kabir places the lazy beside the lustful, the angry and the deceitful, as people whose lives drain away into faults.</div>
+  <div class="tieback">The Kural says that for those sunk in laziness who make no worthy effort, faults keep multiplying; Kabir likewise counts laziness among the vices that gather together and waste a life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Both gods and men are angry with a man who lives idle, for in nature he is like the stingless drones who waste the labour of the bees, eating without working&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 302-306 (trans. H. G. Evelyn-White)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hesiod calls the idle man a drone who eats what others have worked for, and says he earns the anger of gods and men alike.</div>
+  <div class="tieback">The drone’s idleness brings both waste and disgrace, which is the Kural’s double outcome of a ruined family and growing fault.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In his essay ‘Of Idleness’, Montaigne compares an idle mind to fallow land that, left alone, grows a mass of wild and useless weeds, and says it produces fantastic ‘chimeras’ unless kept busy with a fixed purpose.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/3600" target="_blank" rel="noopener">Michel de Montaigne, Essays I.8, ‘Of Idleness’ (trans. C. Cotton)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Montaigne observes from his own retirement that an unoccupied mind does not rest but runs wild and breeds disorder.</div>
+  <div class="tieback">Montaigne’s weed-choked field of the mind is a vivid picture of the Kural’s faults multiplying in the absence of worthy effort.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Shogun Ashikaga Yoshimasa withdraws into the arts as the Onin War begins</div>
+  <div class="rle-meta">1449-1490 &middot; Kyoto, Japan</div>
+  <div class="quote is-paraphrase">Ashikaga Yoshimasa became shogun in 1449 but proved an ineffective ruler, and the great lords increasingly ignored his orders. A succession dispute between his brother Yoshimi and his son Yoshihisa helped set off the Onin War of 1467-1477, which devastated Kyoto and left shogunal authority badly weakened. Yoshimasa devoted himself to the tea ceremony, painting and patronage of the arts, and in retirement built his villa at Higashiyama, later the temple Ginkakuji.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Yoshimasa&#x27;s patronage shaped Japanese culture, but his neglect of government coincided with the collapse of his house&#x27;s real power and the start of a century of civil war.</div>
+  <div class="tieback">The kural says that for those who sink into sloth and make no worthy effort the family collapses and faults multiply, and under Yoshimasa the Ashikaga shogunate declined while disorder spread across Japan.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-61/" target="_blank" rel="noopener">Thirukkural Chapter 61: மடியின்மை / Unsluggishness (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A061.html" target="_blank" rel="noopener">61. மடியின்மை (சோம்பல் இன்மை) — Thirukkural text</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.holy-bhagavad-gita.org/" target="_blank" rel="noopener">Bhagavad Gita, The Song of God (Swami Mukundananda)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Mishnah_Ketubot.5.5" target="_blank" rel="noopener">Mishnah Ketubot 5:5 (William Davidson Edition, Koren-Steinsaltz English)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/kn/snp/snp.1.06.piya.html" target="_blank" rel="noopener">Parabhava Sutta: Discourse on Downfall (Sn 1.6), trans. Piyadassi Thera</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/3600" target="_blank" rel="noopener">Michel de Montaigne, Essays, Book I, ch. 8, ‘Of Idleness’, trans. Charles Cotton</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Ashikaga-Yoshimasa" target="_blank" rel="noopener">Ashikaga Yoshimasa</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.worldhistory.org/Ginkakuji/" target="_blank" rel="noopener">Ginkakuji (Mark Cartwright)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0603.html">&larr; Kural 603</a>
+  <a href="kural-0605.html">Kural 605 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-061.html">Unsluggishness</a>
+  <a class="skip-btn" href="kural-0611.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

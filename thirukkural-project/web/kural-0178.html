@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 178 — Anti-covet Action | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 178</h1>
+<p class="adhikaram"><a href="adhikaram-018.html">Anti-covet Action</a> &middot; Vehkaamai &middot; <span class="tamil">வெஃகாமை</span></p>
+
+<div class="tamil-text">அஃகாமை செல்வத்திற்கு யாதெனின் வெஃகாமை
+வேண்டும் பிறன்கைப் பொருள்.</div>
+<div class="translit">Ahkaamai selvaththirku yaadhenin vehkaamai
+Vendum pirankaip porul.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If you ask what keeps your riches from shrinking, the answer is this: do not want the things that are in someone else&#x27;s hands.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you want to keep your own toys safe, the best rule is never to grab other people’s toys. Then no one has a reason to take yours, and you stay happy with what you have. This kural says not wanting other people’s things is the secret to keeping your own.</p>
+
+<h2 class="section">University</h2>
+<p>The kural is built on a pun that is lost in translation: அஃகாமை (ahkaamai, ‘non-diminishing’) and வெஃகாமை (vehkaamai, ‘non-coveting’) differ by a single consonant, so the grammar of the line enacts its claim that the one secures the other. It is framed as a riddle with its own answer (‘yaadhenin…’, ‘if one asks what…’), a didactic device Valluvar uses often. பிறன் கைப் பொருள் (piran kaip porul, ‘property in another’s hand’) pointedly includes even possessions casually within reach. The ethical logic is both moral and practical: a society in which people do not covet is one in which everyone’s wealth is secure, and a mind that does not covet does not feel its own wealth as insufficient. The kural thus unites the tenth commandment’s social function with the Upanishadic ‘do not covet’ as a spiritual discipline.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;ALL this, whatsoever moves on earth, is to be hidden in the Lord (the Self). When thou hast surrendered all this, then thou mayest enjoy. Do not covet the wealth of any man!&rdquo;</div>
+  <div class="cite">&mdash; Isha Upanishad 1 (tr. Max Müller) <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Isha Upanishad’s first verse says everything belongs to the Lord; enjoy what is given in that spirit, and do not covet anyone’s wealth.</div>
+  <div class="tieback">‘Do not covet the wealth of any man’ is the Kural’s vehkaamai in the Upanishad’s own words, presented as the basis of rightful enjoyment.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Let your conversation be without covetousness; and be content with such things as ye have: for he hath said, I will never leave thee, nor forsake thee.&rdquo;</div>
+  <div class="cite">&mdash; Hebrews 13:5 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Hebrews tells believers to live free of covetousness and be content, because God will never abandon them.</div>
+  <div class="tieback">Like the Kural, it ties freedom from coveting to the security of what one has.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And do not wish for that by which Allah has made some of you exceed others. For men is a share of what they have earned, and for women is a share of what they have earned. And ask Allah of his bounty.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 4:32 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an says not to long for what others have been given, but to keep to your own earned share and ask God for more.</div>
+  <div class="tieback">Same prescription as the Kural: don’t desire what is in another’s hand; your own share is secure.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Thou shalt not covet thy neighbour’s house, thou shalt not covet thy neighbour’s wife, nor his manservant, nor his maidservant, nor his ox, nor his ass, nor any thing that is thy neighbour’s.&rdquo;</div>
+  <div class="cite">&mdash; Exodus 20:17 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The tenth commandment (lo tachmod) forbids even the inner desire for anything that belongs to one’s neighbour.</div>
+  <div class="tieback">‘Any thing that is thy neighbour’s’ is the Kural’s piran kaip porul, the property in another’s hand.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Ever grows the glory of him who is energetic, mindful and pure in conduct, discerning and self-controlled, righteous and heedful.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 24 (tr. Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha says the fortune of a person of pure, self-controlled, righteous conduct keeps increasing.</div>
+  <div class="tieback">Like the Kural, it links pure, restrained conduct to prosperity that does not decline.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Anger destroys love, pride destroys modesty, deceit destroys friendship; greed is destructive of everything.” And: “One ought to put an end to anger through calmness, pride by modesty, deceit by straight-forwardness and greed by contentment.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.com/" target="_blank" rel="noopener">Saman Suttam, verses 135–136 (Samyamasutra; English tr. T.K. Tukol and K.K. Dixit; jainworld.com); cf. Daśavaikālika Sūtra 8.38</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">This Saman Suttam couplet (a rendering of Daśavaikālika 8.38) ranks greed as the passion that ruins everything, and prescribes contentment (santoṣa) as its cure.</div>
+  <div class="tieback">Valluvar says the way to keep one&#x27;s wealth from dwindling is not to covet another&#x27;s, and the Jain verses agree that greed destroys everything while contentment overcomes it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;One who works for what he eats, and gives some of what he has - O Nanak, he knows the Path.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1245, Raag Saarang (Saarang ki Vaar, salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Guru Nanak names kirat karni (honest work) and vand chhakna (sharing) as the true path, in place of living off what belongs to others.</div>
+  <div class="tieback">The Kural says one&#x27;s wealth is kept from dwindling by not coveting what is in another&#x27;s hands; Guru Nanak&#x27;s answer is to live on one&#x27;s own honest labour and share it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In his elegy to the Muses, Solon prays for wealth but refuses to acquire it unjustly: wealth the gods give stays with a man secure from bottom to top, while wealth men chase through outrage (hubris) comes unwillingly and is soon mixed with ruin.</div>
+  <div class="cite">&mdash; <a href="https://www.loebclassics.com/view/LCL258/1999/volume.xml" target="_blank" rel="noopener">Solon, fragment 13 (West), ‘Elegy to the Muses’</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Solon says that justly gained wealth lasts, while wealth gained by overreaching brings destruction.</div>
+  <div class="tieback">Same claim as the Kural: not grasping at what is not yours is what keeps your wealth from dwindling.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Is anything brought around to you? Put out your hand and take your share with moderation. Does it pass by you? Don’t stop it. Is it not yet come? Don’t stretch your desire towards it, but wait till it reaches you. Do this with regard to children, to a wife, to public posts, to riches…&rdquo;</div>
+  <div class="cite">&mdash; Epictetus, Enchiridion 15 (tr. Elizabeth Carter) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Epictetus compares life to a dinner party: take your own portion politely and don’t reach for dishes that belong to others or haven’t come to you yet.</div>
+  <div class="tieback">The Kural’s rule in Stoic form: do not reach for what is in another’s hand.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The failure of the Darien scheme</div>
+  <div class="rle-meta">1698-1700 &middot; Darien, Isthmus of Panama, and Scotland</div>
+  <div class="quote is-paraphrase">Between 1698 and 1700 the Company of Scotland sent expeditions to found a Scottish colony and trading centre at Darien on the Isthmus of Panama, a region claimed by Spain. The venture collapsed amid disease, Spanish resistance and lack of English support, costing about 2,000 lives. National Museums Scotland estimates that Scotland lost a quarter of its liquid capital, and the National Library of Scotland notes that the loss is thought to have hastened the Union with England in 1707.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">A nation staked a large share of its wealth on seizing a foothold in land others claimed, and the loss shook its economy and independence.</div>
+  <div class="tieback">The kural says the way to keep one&#x27;s wealth from dwindling is not to covet what is in another&#x27;s hands, and Scotland&#x27;s grab for Spanish-claimed land drained its wealth instead.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-18/" target="_blank" rel="noopener">Not Coveting, வெஃகாமை, Chapter 18 (Thirukkural with commentaries of Sivayogi Sivakumar, Mu. Varadarasan, Solomon Pappaiah, and M. Karunanidhi)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-018.html" target="_blank" rel="noopener">வெஃகாமை - அதிகாரம் 18 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3">Isha Upanishad, verse 7 <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://jainworld.com/" target="_blank" rel="noopener">Saman Suttam (anthology of Jain scripture, compiled 1974)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.loebclassics.com/view/LCL258/1999/volume.xml" target="_blank" rel="noopener">Solon, fragment 13 West (‘Elegy to the Muses’), in Greek Elegiac Poetry</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10">Enchiridion, Chapter 5 (Epictetus) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.nms.ac.uk/discover-catalogue/the-darien-scheme" target="_blank" rel="noopener">The Darien Scheme: Scotland&#x27;s failed venture to colonise part of Panama</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://digital.nls.uk/scotlandspages/timeline/1700.html" target="_blank" rel="noopener">1700 - Darien and the Union</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0177.html">&larr; Kural 177</a>
+  <a href="kural-0179.html">Kural 179 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-018.html">Anti-covet Action</a>
+  <a class="skip-btn" href="kural-0181.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

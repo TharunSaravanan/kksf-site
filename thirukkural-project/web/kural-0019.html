@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 19 — The Excellence of Rain | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 19</h1>
+<p class="adhikaram"><a href="adhikaram-002.html">The Excellence of Rain</a> &middot; Vaan Sirappu &middot; <span class="tamil">வான் சிறப்பு</span></p>
+
+<div class="tamil-text">தானம் தவம்இரண்டும் தங்கா வியன்உலகம்
+வானம் வழங்கா தெனின்.</div>
+<div class="translit">Thaanam thavam irandum thangaa viyan ulagam,
+Vaanam vazhangaadhenin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If the sky stops giving rain, then neither giving to others nor tapas (strict self-discipline) will last anywhere in this wide world.</p>
+
+<h2 class="section">Elementary</h2>
+<p>You cannot share your lunch with a friend if you have no lunch, and it is not brave to skip a meal if there was never any food to skip. This kural says that giving to others and going without on purpose both need there to be something in the world first — and rain is what puts it there.</p>
+
+<h2 class="section">University</h2>
+<p>The two nouns are the twin pillars of Valluvar&#x27;s ethical architecture: தானம் (thaanam, Sanskrit dāna) is the householder&#x27;s virtue of giving, treated at length in chapter 23 ஈகை, while தவம் (thavam, Sanskrit tapas) is the renunciant&#x27;s discipline, treated in chapter 27. By yoking them in a single line and making both contingent on rainfall, Valluvar establishes the material precondition of the entire இல்லறவியல் and துறவறவியல் sections before he has begun to expound either. The verb தங்கா (&quot;will not abide, will not stay&quot;) is carefully chosen — it is not that such acts become wrong, but that they can no longer hold their place in the world. The move is characteristic: ethics in the Kural is never floated free of the economy that supports it.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Upanishad, gods, humans and demons each come to Prajapati for instruction and each receives the single syllable &quot;Da,&quot; from the voice of the thunder. Each hears it differently: the gods hear damyata, restrain yourselves; humans hear datta, give; demons hear dayadhvam, be compassionate.</div>
+  <div class="cite">&mdash; <a href="https://www.swami-krishnananda.org/brdup/brhad_V-01.html" target="_blank" rel="noopener">Bṛhadāraṇyaka Upaniṣad 5.2.1–3 (the teaching of the thunder, &#x27;Da Da Da&#x27;)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The thunder of the rain-cloud is made the teacher of the three great disciplines, with self-restraint and giving at the head of the list.</div>
+  <div class="tieback">The Upanishad has the rain-cloud itself pronouncing the very two virtues — giving and self-restraint — that this Kural makes depend on rain.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Now he that ministereth seed to the sower both minister bread for your food, and multiply your seed sown, and increase the fruits of your righteousness;&rdquo;</div>
+  <div class="cite">&mdash; 2 Corinthians 9:10 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Paul, urging the Corinthians to a collection for the poor, argues that God&#x27;s supply of seed and bread is what makes generous giving possible and fruitful.</div>
+  <div class="tieback">It makes the same link the Kural makes — material provision from above is the precondition of charitable giving.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And the example of those who spend their wealth seeking means to the approval of Allah and assuring [reward for] themselves is like a garden on high ground which is hit by a downpour - so it yields its fruits in double.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 2:265, Al-Baqarah (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Qur&#x27;an likens sincere charitable spending to a well-sited garden struck by heavy rain, which returns twice the harvest.</div>
+  <div class="tieback">Charity is figured precisely as a rain-fed yield, matching the Kural&#x27;s claim that giving depends on what the sky supplies.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Where there is no bread, there is no Torah; where there is no Torah, there is no bread.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot.3.17" target="_blank" rel="noopener">Pirkei Avot 3:17 (Mishnah Yomit, Dr. Joshua Kulp translation)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Rabbi Elazar ben Azariah states the mutual dependence of material sustenance and religious life — study and observance cannot be sustained by a starving community.</div>
+  <div class="tieback">It is the Kural&#x27;s proposition in rabbinic form: spiritual practice cannot abide in the world without the food that underwrites it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;As water raining on a hill / flows down to the valley, / even so does what is given here / benefit the dead.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://accesstoinsight.org/tipitaka/kn/khp/khp.1-9.than.html" target="_blank" rel="noopener">Tirokuḍḍa Kaṇḍa, Khuddakapāṭha 7 (Thanissaro Bhikkhu translation)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">This verse on offerings made for departed relatives uses rainwater running downhill as the image of how a gift made here reaches those who can no longer provide for themselves.</div>
+  <div class="tieback">Both texts join rain and dāna directly, treating giving as something that flows from an upstream supply.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;At that moment the gods caused a rain of perfumed water and flowers, and showered down heavenly treasures; they struck the drums, and in the air they praised the gift.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 12.35–36 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">When the outcaste-born monk Harikesha, after fasting a whole month, finally receives alms, the gods rain down perfumed water and treasure to honour both the gift and the austerity.</div>
+  <div class="tieback">The story joins exactly the Kural&#x27;s pair, dana (the gift) and tapas (the month-long fast), and marks their meeting with a rain from the sky.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Pilgrimages, austere discipline, compassion and charity - these, by themselves, bring only an iota of merit.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 4, Japji Sahib, Pauri 21, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Japji names the same pair the Kural does, austerity (tap) and charity (daan), and says that alone they earn only a speck of merit. What matters is cleansing oneself with the Name.</div>
+  <div class="tieback">The Kural says both charity and austerity collapse without rain. Japji puts them in a different order: both are real goods, but both depend on something deeper, the Name.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Zeus and Hermes travel in Phrygia disguised as poor strangers and are turned away from a thousand homes; only the elderly Baucis and Philemon share their meagre supper. The gods then flood the whole ungenerous district, spare the old couple&#x27;s cottage, and transform it into a temple.</div>
+  <div class="cite">&mdash; Ovid, Metamorphoses 8.611–724 (Baucis and Philemon) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Ovid&#x27;s tale ties together hospitality, divine water sent in judgement, and the founding of a place of worship.</div>
+  <div class="tieback">It brings giving, rain and piety into one story, though it does not make giving depend on rainfall as the Kural does.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;it is impossible, or not easy, to do noble acts without the proper equipment&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics 1099a31 (Ross translation)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Aristotle argues that virtuous activity requires external goods — friends, wealth, political power — as its instruments, so material circumstance conditions how far a life can be excellent.</div>
+  <div class="tieback">It is the general philosophical form of the Kural&#x27;s specific claim that charity and austerity cannot abide without the rain that supplies them.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Ancestral Pueblo people leave Mesa Verde during the Great Drought</div>
+  <div class="rle-meta">1276-1300 &middot; Mesa Verde, Colorado, United States</div>
+  <div class="quote is-paraphrase">The last tree-ring date for new construction in the Mesa Verde region is 1281. A drought lasted from 1276 through 1299, probably causing food shortages for a large population, and by about 1300 the Ancestral Pueblo people had left Mesa Verde and the Four Corners region, moving south into present-day New Mexico and Arizona. The National Park Service notes that drought combined with other stresses, such as depleted land and resources.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">A long-settled society with rich communal and ceremonial life could not continue in its homeland once the rain failed for a generation.</div>
+  <div class="tieback">The kural says that without rain neither giving to others nor disciplined religious life can remain in the world, and Mesa Verde&#x27;s whole community life left with the rains.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-2/" target="_blank" rel="noopener">வான்சிறப்பு / The Blessing of Rain — Thirukkural Chapter 2 (Kurals 11–20), Tamil text with transliteration, English couplets and four Tamil commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-002.html" target="_blank" rel="noopener">The Excellence of Rain — Adhigaram 2, Thirukkural</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://dailyprojectthirukkural.blogspot.com/2017/11/Athikaaram002.html" target="_blank" rel="noopener">002 வான்சிறப்பு — chapter index with the full Tamil text of Kurals 11–20</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.swami-krishnananda.org/brdup/brhad_V-01.html" target="_blank" rel="noopener">Bṛhadāraṇyaka Upaniṣad, Chapter 5 (the teaching of the thunder, &#x27;Da Da Da&#x27;)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Pirkei_Avot.3.17" target="_blank" rel="noopener">Pirkei Avot 3:17 (Mishnah Yomit translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://accesstoinsight.org/tipitaka/kn/khp/khp.1-9.than.html" target="_blank" rel="noopener">The Khuddakapāṭha (Khp 1–9), translated from the Pali by Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Metamorphoses, Book VIII (Baucis and Philemon) (Ovid) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, translated by W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.nps.gov/meve/learn/education/tree-rings.htm" target="_blank" rel="noopener">Artifact Gallery - Tree Rings</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://crowcanyon.org/EducationProducts/pueblo_history_kids/pueblo_III_why_did_they_leave.php" target="_blank" rel="noopener">Why did the Pueblo people leave the Mesa Verde region?</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0018.html">&larr; Kural 18</a>
+  <a href="kural-0020.html">Kural 20 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-002.html">The Excellence of Rain</a>
+  <a class="skip-btn" href="kural-0021.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

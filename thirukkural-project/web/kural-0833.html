@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 833 — Folly | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 833</h1>
+<p class="adhikaram"><a href="adhikaram-084.html">Folly</a> &middot; Pedhaimai &middot; <span class="tamil">பேதைமை</span></p>
+
+<div class="tamil-text">நாணாமை நாடாமை நாரின்மை யாதொன்றும்
+பேணாமை பேதை தொழில்.</div>
+<div class="translit">Naanaamai naadaamai naarinmai yaadhondrum
+penaamai pedhai thozhil.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Feeling no shame, not looking for what is worth having, having no love, and caring about nothing: these are the habits of a fool.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Think of a kid who breaks a window and doesn’t feel sorry, never tries to learn anything, isn’t kind to friends, and leaves their toys out in the rain. Each of those things on its own is a warning sign; together they are what the poet calls a fool.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet is a fourfold catalogue built on negative nouns ending in -aamai/-inmai: naanaamai (நாணாமை, shamelessness at what deserves shame), naadaamai (நாடாமை, not seeking out what deserves seeking), naarinmai (நாரின்மை, lack of naar, ‘fibre’, a metaphor for the affection that binds people), and penaamai (பேணாமை, not cherishing or protecting anything). Parimelazhagar and Mu. Varadarasanar gloss naar as anbu (love), and the commentators agree the list describes a whole disposition rather than isolated faults; Pope renders it ‘Ashamed of nothing, searching nothing out, of loveless heart, / Nought cherishing’. Sivayogi Sivakumar reads naarinmai as lacking sweetness of manner, a minor variation. The text is identical in both base sources.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Those who are demoniac do not know what is to be done and what is not to be done. Neither cleanliness nor proper behavior nor truth is found in them.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 16.7 (As It Is)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Gita’s portrait of the demoniac nature is a list of absences: no sense of right action, no purity, no truth.</div>
+  <div class="tieback">Valluvar likewise defines the fool by what is missing in him: shame, seeking, love and care.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Whose end is destruction, whose God is their belly, and whose glory is in their shame, who mind earthly things.&rdquo;</div>
+  <div class="cite">&mdash; Philippians 3:19 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul describes people who boast of what ought to embarrass them and care only for appetite.</div>
+  <div class="tieback">It matches the Kural’s first mark of the fool, shamelessness at what deserves shame.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;One of the sayings of the early Prophets which the people have got is: If you don&#x27;t feel ashamed … do whatever you like.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:6120" target="_blank" rel="noopener">Sahih al-Bukhari 6120 (sunnah.com; translator’s parenthetical gloss elided)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The hadith treats haya’ (a sense of shame) as the brake on bad conduct: once it is gone, anything goes.</div>
+  <div class="tieback">Valluvar puts naanaamai, absence of shame, first among the fool’s traits for the same reason.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Were they ashamed when they had committed abomination? nay, they were not at all ashamed, neither could they blush: therefore they shall fall among them that fall.&rdquo;</div>
+  <div class="cite">&mdash; Jeremiah 6:15 (Tanakh, KJV translation) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jeremiah condemns a people who have lost the ability to blush at their own wrongdoing.</div>
+  <div class="tieback">Both texts see the loss of shame as a sign of ruin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Those who are ashamed of what they should not be ashamed of, and are not ashamed of what they should be ashamed of — upholding false views, they go to states of woe.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 316 (tr. Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Dhammapada says misplaced shame, especially no shame where it is due, leads to suffering.</div>
+  <div class="tieback">Valluvar’s naanaamai is exactly shamelessness at what should shame us.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;If he is frequently angry; if he perseveres in his wrath; if he spurns friendly advice; if he is proud of his learning; if he finds fault with others; if he is angry even with friends; if he speaks evil even of a good friend behind his back; if he is positive in his assertions; if he is malicious, egoistical, greedy, without self-discipline; if he does not share with others; if he is always unkind: then he is called ill-behaved.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 11.7-9 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Uttarādhyayana lists the marks of an &#x27;ill-behaved&#x27; monk, a whole disposition of anger, ingratitude, greed and unkindness that keeps him from Nirvāṇa.</div>
+  <div class="tieback">Valluvar sketches the fool through a catalogue of lacks (no shame, no seeking, no affection, no care); the Uttarādhyayana similarly defines the ill-behaved by a list of traits, including lacking kindness and not sharing with others.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Those who are totally blind in their minds, do not have the integrity to keep their word. … Some do not know the Sound-current of the Naad, spiritual wisdom or the joy of song. They do not even understand good and bad.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1411, Saloks Vaaran Te Vadheek (salok 15), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Guru Nanak lists the marks of the inwardly blind: no integrity in keeping their word, no taste for wisdom or song, and no grasp of good and bad.</div>
+  <div class="tieback">The Kural catalogues the habits of the fool, shamelessness, not seeking, lacking affection and cherishing nothing; Guru Nanak gives a similar list of inner lacks.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Hesiod foresees a degenerate age in which Aidos (Shame) and Nemesis (Righteous Indignation) wrap themselves in white robes and leave the earth, abandoning humankind to grief.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 197-201</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Greek myth shame is a goddess, and her departure marks the moral collapse of a whole generation.</div>
+  <div class="tieback">The Kural likewise treats the absence of shame as the root mark of the fool.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle says shame (aidos) befits the young, who live by feeling and make mistakes, because it holds them back; and he calls the person who would feel no shame at disgraceful acts base.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics IV.9</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Aristotle treats a sense of shame as a safeguard for those not yet fully virtuous.</div>
+  <div class="tieback">Valluvar’s fool lacks exactly this safeguard.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The six-month reign of Tsar Peter III</div>
+  <div class="rle-meta">January - July 1762 &middot; St. Petersburg, Russia</div>
+  <div class="quote is-paraphrase">Peter III became emperor of Russia in January 1762, while Russia was fighting Prussia in the Seven Years&#x27; War, and in May he made peace with Frederick II of Prussia and withdrew Russia from the war, giving up its gains. He planned a war against Denmark on behalf of his German duchy of Holstein, offended the Orthodox Church by pressing changes in its practices, and alienated the imperial guards by threatening to disband them. In July 1762, about six months after his accession, his wife Catherine and the guards overthrew him, and she took the throne as Catherine II.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Peter III showed little regard for his subjects&#x27; feelings or his country&#x27;s interests, and in a few months he lost the support of every group that mattered.</div>
+  <div class="tieback">The kural lists the fool&#x27;s habits as shamelessness, not seeking what is worth seeking, lack of affection and caring for nothing, and Peter III&#x27;s brief reign showed indifference to the Russia he had been given to rule.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-84/" target="_blank" rel="noopener">Thirukkural Chapter 84: பேதைமை / Folly (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-084.html" target="_blank" rel="noopener">பேதைமை - அதிகாரம் 84 - திருக்குறள் (with Puliyur Kesigan, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:6120" target="_blank" rel="noopener">Sahih al-Bukhari 6120 (Book of Good Manners, Chapter: If you do not feel ashamed, then do whatever you like)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/biography/Peter-III-emperor-of-Russia" target="_blank" rel="noopener">Peter III, emperor of Russia</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.rbth.com/history/335323-all-that-was-wrong-with-peter-3" target="_blank" rel="noopener">All that was wrong with Russian Emperor Peter III</a> <span class="tier">[web source]</span></li>
+<li id="cite-13"><a href="https://www.hermitagemuseum.org/explore/history/Empress+Catherine+IIs+accession+to+the+Throne?lng=en" target="_blank" rel="noopener">The Early Reign of Catherine II</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0832.html">&larr; Kural 832</a>
+  <a href="kural-0834.html">Kural 834 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-084.html">Folly</a>
+  <a class="skip-btn" href="kural-0841.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

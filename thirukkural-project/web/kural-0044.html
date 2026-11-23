@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 44 — Domestic Life | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 44</h1>
+<p class="adhikaram"><a href="adhikaram-005.html">Domestic Life</a> &middot; Ilvaazhkkai &middot; <span class="tamil">இல்வாழ்க்கை</span></p>
+
+<div class="tamil-text">பழியஞ்சிப் பாத்தூண் உடைத்தாயின் வாழ்க்கை
+வழியெஞ்சல் எஞ்ஞான்றும் இல்.</div>
+<div class="translit">Pazhiyanjip paaththoon utaiththaayin vaazhkkai,
+Vazhiyenjal egngnaandrum il.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If a family fears doing anything shameful and shares its food with others, its family line will never die out.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Suppose a family grows apples honestly and always gives some away to neighbours. Everyone keeps trading with them, everyone helps them in a bad year, and the orchard keeps going for generations. A family that steals its apples and eats them alone soon has neither friends nor orchard.</p>
+
+<h2 class="section">University</h2>
+<p>Two conditions are compressed into one line: பழியஞ்சி (pazhi-anji, “fearing blame/reproach”) governs *acquisition*, and பாத்தூண் (paath-ūṇ, from பகுத்து உண்ணல், “eating after apportioning”) governs *consumption*. The reward is stated negatively and absolutely: வழி எஞ்சல் … இல் — “there is never a failing of the line.” வழி (vazhi) means both “way” and “lineage,” so the promise is simultaneously that the household&#x27;s path and its descendants will not run out. Note that Valluvar&#x27;s ethical lever here is பழி (pazhi, public blame) rather than sin — an honour-and-reproach vocabulary rooted in Tamil Sangam social ethics rather than in a theology of divine punishment, which is part of why the Kural reads as secular to modern audiences.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;The devotees of the Lord are released from all kinds of sins because they eat food which is offered first for sacrifice. Others, who prepare food for personal sense enjoyment, verily eat only sin.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 3.13</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Krishna contrasts food that has first been offered and shared with food cooked purely for one&#x27;s own gratification, calling the latter itself a form of wrongdoing.</div>
+  <div class="tieback">This is precisely the Kural&#x27;s பாத்தூண் principle: eating only what has first been apportioned to others is what keeps the household clean.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;He hath dispersed abroad; he hath given to the poor: his righteousness remaineth for ever. Now he that ministereth seed to the sower both minister bread for your food, and multiply your seed sown, and increase the fruits of your righteousness.&rdquo;</div>
+  <div class="cite">&mdash; 2 Corinthians 9:9-10 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Paul uses an agricultural image: giving away is sowing, and the giver&#x27;s store is replenished and multiplied rather than depleted.</div>
+  <div class="tieback">Both texts promise that the household which shares its food does not diminish but endures and multiplies.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And they give food in spite of love for it to the needy, the orphan, and the captive,&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 76:8, Al-Insan (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Surah al-Insan praises the righteous specifically for giving away food they themselves want, and promises them lasting reward.</div>
+  <div class="tieback">It matches the Kural&#x27;s second condition exactly — the household&#x27;s virtue lies in apportioning its own meal outward.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;I have been young, and now am old; yet have I not seen the righteous forsaken, nor his seed begging bread. He is ever merciful, and lendeth; and his seed is blessed.&rdquo;</div>
+  <div class="cite">&mdash; Psalm 37:25-26 (KJV, Tanakh) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The psalmist&#x27;s lifelong observation is that generosity and descendants&#x27; security go together — the open-handed man&#x27;s children do not end up beggars.</div>
+  <div class="tieback">This is the Kural&#x27;s exact promise: the household that shares its bread finds its line never fails.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Truly, misers fare not to heavenly realms; nor, indeed, do fools praise generosity. But the wise man rejoices in giving, and by that alone does he become happy hereafter.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 177, Lokavagga, trans. Acharya Buddharakkhita <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada makes generosity the decisive factor in a layperson&#x27;s future welfare, and hoarding the decisive obstacle.</div>
+  <div class="tieback">Both texts tie the household&#x27;s long-term fortune directly to whether it shares what it has.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Nyayasampannavibhavah : Possessed of honestly earned wealth.” … “Papabhiru : Apprehensive of sin.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://jainworld.jainworld.com/jainbooks/antiquity/ethcjain.htm" target="_blank" rel="noopener">Hemacandra, Yogaśāstra 1.47–56 (the thirty-five householder qualities, nos. 1 and 3), English as given in V. A. Sangave, Ethics of Jainism</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Hemacandra&#x27;s list of the ideal layman&#x27;s qualities opens with wealth earned by just means and soon adds fear of wrongdoing, putting ethical acquisition first among the householder&#x27;s virtues.</div>
+  <div class="tieback">Valluvar&#x27;s &#x27;fearing blame&#x27; in earning is matched almost word for word by Hemacandra&#x27;s first and third qualities, honest wealth and fear of sin, and the Jain duty of giving supplies the Kural&#x27;s &#x27;sharing what one eats&#x27;.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">At Saiyidpur Guru Nanak stayed with Lalo, a poor carpenter, and declined the feast of Malik Bhago, a steward grown rich by bribery and oppression. Holding Lalo&#x27;s coarse bread in one hand and Bhago&#x27;s rich bread in the other, he squeezed them; milk came from Lalo&#x27;s and blood from Bhago&#x27;s.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">Max Arthur Macauliffe, The Sikh Religion (1909), Vol. 1, Life of Guru Nanak, Chapter IV, pp. 43-44</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Macauliffe tells this well-known Janamsakhi story to show the Sikh principle that food earned by honest labour is pure, while food gained by exploiting others is tainted, however lavishly it is shared.</div>
+  <div class="tieback">It is the Sikh image of Valluvar&#x27;s two conditions: earning without blame and sharing what one eats; Bhago shares but fails the first test, and so his bread is refused.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Wealth should not be seized: god-given wealth is much better; for it a man take great wealth violently and perforce, or if he steal it through his tongue … the gods soon blot him out and make that man&#x27;s house low, and wealth attends him only for a little time.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 320-341 (Evelyn-White)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hesiod warns his brother Perses that dishonestly gotten wealth is punished by Zeus not just personally but at the level of the household, which is brought low.</div>
+  <div class="tieback">This is the Kural&#x27;s first condition stated as its negative: the household that does not fear blame in acquiring will see its line fail.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle analyses liberality (eleutheriotes) as a mean concerning wealth: the liberal person gives the right amounts to the right people at the right time, gives from his own resources rather than by taking wrongly, and cares more about giving well than about getting.</div>
+  <div class="cite">&mdash; <a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics IV.1</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Aristotle the virtue is not generosity alone but the pairing of clean acquisition with well-judged distribution — the two are aspects of a single disposition.</div>
+  <div class="tieback">The Kural makes exactly that pairing: blameless earning and apportioned eating are two halves of one household virtue.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Mitsui Takatoshi opens the Echigoya shop</div>
+  <div class="rle-meta">1673 &middot; Edo (Tokyo), Japan</div>
+  <div class="quote is-paraphrase">Mitsui Takatoshi, a merchant from Matsusaka who had earlier returned home to care for his mother, opened a textile shop called Echigoya in Edo in 1673. The shop became known for selling for cash at fixed prices with no mark-ups, as its signboards announced, and it grew into the largest textile store of the Edo period. Echigoya became the forerunner of the Mitsukoshi department store, and the family&#x27;s money-exchange business led eventually to the modern Mitsui group.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Mitsui&#x27;s plain, fair pricing helped build one of the longest-lasting family enterprises in the world.</div>
+  <div class="tieback">The kural promises that a household that earns without blame will never see its line fail, and the Mitsui name, founded on openly fair dealing, has continued for more than three centuries.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-5/" target="_blank" rel="noopener">திருக்குறள் — அதிகாரம் 5: இல்வாழ்க்கை (Chapter 5: Domestic Life), with Tamil commentaries by Mu. Varadarajan, Salomon Pappaiah, Mu. Karunanidhi and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-005.html" target="_blank" rel="noopener">Thirukkural, Adhigaram 5 — Domestic Life / Married Life (Tamil text, transliteration, multi-language translations and classical commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://thirukural-world.blogspot.com/2014/12/41-50.html" target="_blank" rel="noopener">குறள் 41-50 இல்வாழ்க்கை (Kurals 41-50, Domestic Life) — Tamil text with Tamil and English meanings and Pope/Drew translations</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://jainworld.jainworld.com/jainbooks/antiquity/ethcjain.htm" target="_blank" rel="noopener">Jaina ethics (English renderings of Jain householder texts, incl. Hemacandra&#x27;s Yogaśāstra) (Vilas A. Sangave)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/skh/index.htm" target="_blank" rel="noopener">The Sikh Religion: Its Gurus, Sacred Writings and Authors (6 vols.) (Max Arthur Macauliffe)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://historyofeconomicthought.mcmaster.ca/aristotle/Ethics.pdf" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, translated by W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britishmuseum.org/collection/object/A_1906-1220-0-549" target="_blank" rel="noopener">Edo Suruga-cho Mitsui mise ryakuzu (Rough Impression of the Mitsui Shop in Suruga-cho, Edo), print by Katsushika Hokusai</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.mitsui.com/jp/en/roots/1209869_7253.html" target="_blank" rel="noopener">Visiting the birthplace of the Mitsui family</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0043.html">&larr; Kural 43</a>
+  <a href="kural-0045.html">Kural 45 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-005.html">Domestic Life</a>
+  <a class="skip-btn" href="kural-0051.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

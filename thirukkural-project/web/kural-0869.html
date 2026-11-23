@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 869 — The Might of Hatred | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 869</h1>
+<p class="adhikaram"><a href="adhikaram-087.html">The Might of Hatred</a> &middot; Pakai Maatchi &middot; <span class="tamil">பகை மாட்சி</span></p>
+
+<div class="tamil-text">செறுவார்க்குச் சேணிகவா இன்பம் அறிவிலா
+அஞ்சும் பகைவர்ப் பெறின்.</div>
+<div class="translit">Seruvaarkkuch chenikavaa inbam arivilaa
+anjum pakaivarp perin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who fight will never be far from joy if their enemies are both foolish and scared.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you are playing a game and your opponent doesn’t understand the rules and is scared to make any move, winning becomes easy and fun. Valluvar says a foolish, frightened enemy is really a stroke of luck for the other side.</p>
+
+<h2 class="section">University</h2>
+<p>Seruvaar (செறுவார்) are those who attack or contend; sen ikavaa inbam (சேண் இகவா இன்பம்) is joy that does not go far away, i.e. abiding delight. Varadarasanar keeps this sense (pleasures will not depart), while Puliyur Kesigan reads it as ‘all lofty pleasures remain with them’. The enemy’s two qualities, arivilaa (அறிவிலா, without understanding, which Pappaiah specifies as without knowledge of what is just) and anjum (அஞ்சும், fearing), recapitulate the first two faults of 863. Kalaignar renders the joy specifically as the joy of victory. The verse is the offensive counterpart to the chapter’s earlier defensive lists. Text identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Virata Parva, Prince Uttara boasts that he will defeat the Kaurava army alone, but on seeing it he panics and tries to flee, until Arjuna, disguised as Brihannala, takes the reins and wins the battle.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/m04/index.htm" target="_blank" rel="noopener">Mahabharata, Virata Parva (Go-harana) (tr. K. M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The episode contrasts the boastful, frightened prince with the skilled warrior who routs the host.</div>
+  <div class="tieback">Uttara is the ignorant, fearful kind of opponent whom the Kural says is a joy to face.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">Jesus says of the blind guides of his day: if the blind lead the blind, both shall fall into the ditch.</div>
+  <div class="cite">&mdash; Matthew 15:14 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Ignorance in those who lead brings ruin on them and their followers.</div>
+  <div class="tieback">A foe led by such blindness is, as the Kural says, easy to overcome.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O Prophet, urge the believers to battle. If there are among you twenty [who are] steadfast, they will overcome two hundred. And if there are among you one hundred [who are steadfast], they will overcome a thousand of those who have disbelieved because they are a people who do not understand.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 8:65 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an promises that steadfast fighters will overcome much larger forces who lack understanding.</div>
+  <div class="tieback">As in the Kural, an enemy without understanding becomes easy to defeat.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">In the covenant curses of Leviticus, God warns that a disobedient people will be so faint-hearted in the lands of their enemies that the sound of a driven leaf will put them to flight.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">Leviticus 26:36 (Tanakh)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Fear can so paralyse a people that they flee when no one is pursuing.</div>
+  <div class="tieback">Such a fearful foe is exactly what the Kural calls a joy to the attacker.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Buddha describes five kinds of warriors, including one who loses heart at the mere sight of the cloud of dust raised by the enemy and cannot go into battle.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an05/an05.075.than.html" target="_blank" rel="noopener">Yodhajiva Sutta, Anguttara Nikaya 5.75</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The sutta uses these timid warriors as an image for monks who give up their practice at the first sign of temptation.</div>
+  <div class="tieback">The warrior who falters at the dust cloud is the fearful foe of the Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;A man believes himself a hero as long as he does not behold the foe, as did Śiśupāla (before he beheld) the valorously-fighting, great warrior. They go forward to the head of the battle; but when the fight has begun the mother will not recognise her son, and he will be mangled by his foe.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga I.3.1.1–2 (tr. Hermann Jacobi, SBE 45, 1895; wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Sūtrakṛtāṅga uses the image of a boastful but untried fighter who collapses once he faces a real opponent, as a warning to novice monks who overrate their own strength.</div>
+  <div class="tieback">The Kural says those who fight are glad to meet foes who are foolish and fearful, and the Jain image of the vain warrior who is crushed in his first real encounter shows exactly that kind of foe.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Farid, in the midst of this beautiful earth, there is a garden of thorns. Those humble beings who are blessed by their spiritual teacher, do not suffer even a scratch.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1382, Salok Sheikh Farid (salok 82, Mahalla 5), Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In a salok added to Farid&#x27;s by Guru Arjan, the world is full of thorns, but those blessed by their spiritual teacher pass through unharmed.</div>
+  <div class="tieback">The Kural says those who fight will not lack joy if their enemies are foolish and fearful; Gurbani instead places the safety of the righteous in the Guru&#x27;s blessing, not in the weakness of their foes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Odysseus outwits the brutish Cyclops Polyphemus by telling him his name is ‘Nobody’, getting him drunk and blinding him, so that when Polyphemus cries for help his neighbours hear that ‘Nobody’ is hurting him.</div>
+  <div class="cite">&mdash; Homer, Odyssey, Book 9 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">A powerful but witless enemy is overcome by cunning.</div>
+  <div class="tieback">Polyphemus is the arivilaa, the foe without understanding whose defeat is a delight.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Sun Tzu teaches that if you know the enemy and know yourself, you need not fear the result of a hundred battles.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/132" target="_blank" rel="noopener">Sun Tzu, The Art of War III.18 (tr. Lionel Giles)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Victory follows from knowledge, and an enemy without it is at a decisive disadvantage.</div>
+  <div class="tieback">Valluvar’s ignorant foe is the one who knows neither, and so delivers victory to his opponent.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Frederick the Great routs a divided army at Rossbach</div>
+  <div class="rle-meta">5 November 1757 &middot; Rossbach, Saxony, Germany</div>
+  <div class="quote is-paraphrase">During the Seven Years&#x27; War, Frederick II of Prussia, with about 21,000 men, faced a combined French and Imperial army of at least 41,000 whose commanders, Soubise and Saxe-Hildburghausen, were at odds with each other. As the allied army marched in columns to outflank him, Prussian cavalry under Friedrich Wilhelm von Seydlitz struck from behind cover and the allied force broke. In less than two hours the allies suffered thousands of casualties and many prisoners, while Prussian losses were around 550.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A much smaller but well-led army won one of the most lopsided victories of the century against a larger force hampered by divided and poorly judged command.</div>
+  <div class="tieback">The kural says those who fight will never lack joy if their enemies lack understanding, and Rossbach shows how an opponent&#x27;s poor judgment hands victory to the attacker.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-87/" target="_blank" rel="noopener">Thirukkural Chapter 87: பகைமாட்சி / The Might of Hatred, kurals 861-870 (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-087.html" target="_blank" rel="noopener">பகைமாட்சி - அதிகாரம் 87 - திருக்குறள் (with Puliyur Kesigan, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/m04/index.htm" target="_blank" rel="noopener">The Mahabharata, Book 4: Virata Parva (Go-harana Parva), trans. Kisari Mohan Ganguli</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/an/an05/an05.075.than.html" target="_blank" rel="noopener">Yodhajiva Sutta: The Warrior (1) (AN 5.75), trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga (Sutrakritanga)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/132" target="_blank" rel="noopener">Sun Tzu, The Art of War (tr. Lionel Giles, 1910)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/topic/Battle-of-Rossbach" target="_blank" rel="noopener">Battle of Rossbach</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://germanhistorydocs.org/en/the-holy-roman-empire-1648-1815/commemorative-plan-of-the-battle-of-rossbach-saxony-on-november-5-1757-c-1760" target="_blank" rel="noopener">Commemorative Plan of the Battle of Rossbach (Saxony) on November 5, 1757 (c. 1760)</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0868.html">&larr; Kural 868</a>
+  <a href="kural-0870.html">Kural 870 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-087.html">The Might of Hatred</a>
+  <a class="skip-btn" href="kural-0871.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

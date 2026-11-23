@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1047 — Poverty | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1047</h1>
+<p class="adhikaram"><a href="adhikaram-105.html">Poverty</a> &middot; Nalkuravu &middot; <span class="tamil">நல்குரவு</span></p>
+
+<div class="tamil-text">அறஞ்சாரா நல்குரவு ஈன்றதா யானும்
+பிறன்போல நோக்கப் படும்.</div>
+<div class="translit">ARanjaaraa nalkuravu eendradhaa yaanum
+piRanpoala noakkap padum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A person in poverty that has no goodness about it is looked at like a stranger, even by the mother who gave birth to them.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A mother’s love is the strongest love there is. Valluvar warns that if someone becomes poor because of bad choices and also turns away from doing right, people may turn away from him, and even his own family may feel hurt and distant.</p>
+
+<h2 class="section">University</h2>
+<p>The decisive qualifier is aRanjaaraa (அறஞ்சாரா, ‘not joined to aram, virtue’). Mu. Varadarasanar and Puliyur Kesikan read it as ‘poverty not in keeping with virtue’, i.e. destitution that is unrighteous in cause or accompaniment; Solomon Pappaiah glosses it as poverty without just reasons; Kalaignar makes it moral, the person who abandons virtue because of poverty. Eendra thaai (ஈன்ற தாய், ‘the mother who bore him’) is the strongest possible bond, and piRan poala (‘like another, a stranger’) marks its collapse. Read with the qualifier, the couplet does not say that every poor person is rejected, only that want combined with the loss of aram estranges even the closest kin. The ytamizh.com English explanation (‘reduced to absolute poverty’) passes over aRanjaaraa, a reminder that translations differ on how much moral weight to give it. The Tamil text matches on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;He that has wealth has friends. He that has wealth has kinsmen.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Santi Parva, Section VIII (tr. K.M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Arjuna says that friendship and kinship follow wealth.</div>
+  <div class="tieback">The converse is the Kural’s picture: when wealth goes, even kin may look on a man as a stranger.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And when he had spent all, there arose a mighty famine in that land; and he began to be in want... and no man gave unto him.&rdquo;</div>
+  <div class="cite">&mdash; Luke 15:14-16 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The prodigal son, having squandered his inheritance, is left starving with no one to help, yet his father later runs to embrace him.</div>
+  <div class="tieback">The parable matches the Kural’s self-caused, unvirtuous poverty and its isolation, but reverses its ending: the parent does not treat the son as a stranger.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;On the Day a man will flee from his brother And his mother and his father&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 80:34-35 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an depicts the Day of Judgement as a time when even the closest kin flee from one another, each absorbed in his own fate.</div>
+  <div class="tieback">It shares the Kural’s image of a mother’s bond giving way, though in an eschatological, not economic, setting.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;The poor are despised even by their peers, But the rich have many friends.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Ecclesiastes.9.16" target="_blank" rel="noopener">Proverbs 14:20 (THE JPS TANAKH: Gender-Sensitive Edition, 2023)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Proverbs observes that poverty brings contempt even from one’s own circle.</div>
+  <div class="tieback">Being despised by one’s own peers is the Kural’s being looked upon as a stranger by one’s own.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;A trustworthy person is the best kinsman.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 204 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada locates true kinship in trustworthiness rather than in blood or wealth.</div>
+  <div class="tieback">The Kural’s qualifier, poverty without virtue, finds an echo here: it is character, not birth, that makes and keeps kin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Mother, father, daughter-in-law, brother, wife, and sons will not be able to help me, when I suffer for my own deeds.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 6.3 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The monk reflects that no relative can share or lift the consequences of his own karma.</div>
+  <div class="tieback">Like the Kural, it sees family ties failing the person who has fallen through his own conduct, but draws from this a call to detachment.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;When the poor man goes to the rich man, and sits right in front of him, the rich man turns his back on him.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1159, Raag Bhairao, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In the same hymn, Kabir pictures the poor man sitting face to face with a wealthy acquaintance who simply turns away, treating him as a stranger.</div>
+  <div class="tieback">The Kural says one sunk in poverty is looked upon as a stranger even by his own mother; Kabir shows the same estrangement, as the rich man turns his back on the poor man in front of him.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Jupiter and Mercury, disguised as poor travellers, were turned away from a thousand homes in Phrygia before the aged Baucis and Philemon took them in.</div>
+  <div class="cite">&mdash; Ovid, Metamorphoses 8 (Baucis and Philemon) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Ovid’s tale shows how readily people treat the poor wayfarer as an unwelcome stranger.</div>
+  <div class="tieback">The thousand closed doors illustrate the Kural’s observation that the destitute are looked upon as strangers.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;...though he is destitute and begging for a bite, no one will help him with a meal, no one offer him board or shelter.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.tertullian.org/fathers/juvenal_satires_03.htm" target="_blank" rel="noopener">Juvenal, Satire 3 (tr. G.G. Ramsay, 1918)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Juvenal describes the poor scholar Codrus, whose few belongings burn and whom nobody will help.</div>
+  <div class="tieback">Codrus, abandoned by all, embodies the Kural’s destitute man looked upon as a stranger.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Edgar Allan Poe&#x27;s gambling debts estrange him from his foster father</div>
+  <div class="rle-meta">1826-1827 &middot; Charlottesville and Richmond, Virginia, United States</div>
+  <div class="quote is-paraphrase">Edgar Allan Poe, raised in Richmond as the foster son of the merchant John Allan, was sent to the University of Virginia in 1826 with too little money to cover his expenses. When Allan ignored his requests for help, Poe turned to gambling, ran up debts of about 2,000 dollars that Allan refused to pay, and left the university in December 1826. Estranged from Allan and facing his creditors, he left Richmond for Boston in 1827.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The quarrel over debts incurred through gambling began a lasting breach between Poe and the man who had brought him up.</div>
+  <div class="tieback">The kural says that want unconnected with virtue makes a person a stranger even to the one who raised him, and Poe&#x27;s gambling debts turned his foster father against him.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-105/" target="_blank" rel="noopener">Thirukkural Chapter 105: நல்குரவு / Poverty (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-105.html" target="_blank" rel="noopener">நல்குரவு - அதிகாரம் 105 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Ecclesiastes.9.16" target="_blank" rel="noopener">THE JPS TANAKH: Gender-Sensitive Edition (Revised JPS, 2023)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Metamorphoses, Book VIII (Baucis and Philemon) (Ovid) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.tertullian.org/fathers/juvenal_satires_03.htm" target="_blank" rel="noopener">Juvenal, Satire 3, tr. G.G. Ramsay (Loeb, 1918)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://poemuseum.org/in-the-footsteps-of-poe-the-university-of-virginia/" target="_blank" rel="noopener">In the Footsteps of Poe: The University of Virginia</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://papersofabrahamlincoln.org/persons/PO39303" target="_blank" rel="noopener">Poe, Edgar Allan</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1046.html">&larr; Kural 1046</a>
+  <a href="kural-1048.html">Kural 1048 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-105.html">Poverty</a>
+  <a class="skip-btn" href="kural-1051.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

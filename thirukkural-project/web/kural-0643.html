@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 643 — Oratory | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 643</h1>
+<p class="adhikaram"><a href="adhikaram-065.html">Oratory</a> &middot; Solvanmai &middot; <span class="tamil">சொல்வன்மை</span></p>
+
+<div class="tamil-text">கேட்டார்ப் பிணிக்கும் தகையவாய்க் கேளாரும்
+வேட்ப மொழிவதாம் சொல்.</div>
+<div class="translit">Kettaarp pinikkum thakaiyavaaik kelaarum
+Vetpa mozhivadhaam sol.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Good speech holds listeners tightly, and it is spoken so well that even people who have not heard it want to hear it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Think of a storyteller so good that the children listening can’t look away, and children walking past stop and want to join in. That is what this kural calls real speaking skill.</p>
+
+<h2 class="section">University</h2>
+<p>The key verb piṇittal means to bind or tie (as with a rope), so the listener is pictured as captured by the speech, and vēṭpa means “so as to make them desire”. The contrast kēṭṭār / kēḷār, “those who have heard / those who have not heard”, is read two ways. Parimelazhagar takes kēṭṭār as allies or friends (those already listening) and kēḷār as enemies or those who refuse to listen; this is why Pope’s gloss speaks of binding friends and making even enemies desire. Solomon Pappaiah follows this reading but also records the plainer sense of those who heard before and those who have not yet heard. The couplet is effectively the chapter’s definition of sol-vanmai, ending emphatically with -ām col, “that is speech”.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">When Hanuman first meets Rama and Lakshmana in the Kishkindha Kanda, Rama praises his speech as faultless, well-ordered and pleasing, saying that such words could win over even an enemy with his sword raised.</div>
+  <div class="cite">&mdash; <a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Valmiki Ramayana, Kishkindha Kanda 3</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Rama sees Hanuman’s grammar, tone and order as signs of a learned envoy whose words would charm any listener.</div>
+  <div class="tieback">An enemy won over by speech is the Kural’s picture of even unwilling hearers longing to listen.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And all bare him witness, and wondered at the gracious words which proceeded out of his mouth.&rdquo;</div>
+  <div class="cite">&mdash; Luke 4:22 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In the synagogue at Nazareth the whole audience is held by the grace of Jesus’ words, even those who were sceptical of him.</div>
+  <div class="tieback">Listeners held in wonder are what the Kural means by speech that binds those who hear it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Some eloquent speech has the influence of magic.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:5146" target="_blank" rel="noopener">Sahih al-Bukhari 5146</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">After two men from the east gave speeches, the Prophet remarked on how eloquence can move people like a spell, even changing the minds of those who had refused.</div>
+  <div class="tieback">The hadith’s magic-like hold on listeners is the Kural’s power to bind hearers.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Ecclesiastes says the Preacher sought out pleasing words and wrote truth rightly, and that the words of the wise are like goads and firmly fixed nails.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">Ecclesiastes 12:10-11 (JPS 1917)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Kohelet joins pleasing form with true content, speech that both attracts and holds fast in the mind.</div>
+  <div class="tieback">Words that please and stick like nails match speech that draws people in and holds them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Brahmāyu Sutta describes the Buddha’s voice as having eight qualities, among them being clear, intelligible, sweet, audible and resonant, so that it reaches the whole assembly and no further.</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/mn91" target="_blank" rel="noopener">Majjhima Nikaya 91 (Brahmāyu Sutta)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Buddhist texts treat the Buddha’s speech as naturally absorbing to every listener in the assembly.</div>
+  <div class="tieback">A voice made to reach and hold every listener fits the Kural’s ideal of speech that binds its hearers.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The gods, men, Sabaras, and animals took the language of the Lord for their own.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Verse quoted by Devendra&#x27;s commentary, in Hermann Jacobi&#x27;s footnote to Uttarādhyayana Sūtra, Lecture 2 (SBE 45, 1895, footnote on p. 8; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jain tradition holds that when Mahavira preached, every listener, human or animal, understood him as if he spoke in their own tongue. Jacobi records this from the commentator Devendra in a note on the Uttaradhyayana.</div>
+  <div class="tieback">The kural defines true eloquence as speech that binds those who hear it and draws even those who have not heard it; the Jain image of the Jina&#x27;s sermon captivating every kind of being is an idealised form of that power.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Listening-pain and sin are erased.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 2, Jap (Japji Sahib, Pauri 8), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In the Suniai (Listening) stanzas of Japji, Guru Nanak praises the transforming power of hearing the divine Word, which holds and changes those who attend to it.</div>
+  <div class="tieback">The Kural praises speech that binds its hearers and makes others long to hear it; Japji&#x27;s refrain shows the Sikh sense of a Word so powerful that hearing it alone transforms the listener.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Orpheus sings before Hades and Persephone, and his song so enthrals the underworld that the shades weep and the rulers of the dead, who never yield, grant his request.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses 10.1-63</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Even the powers most unwilling to listen are captured by Orpheus’ art.</div>
+  <div class="tieback">Orpheus moving the unmoved matches the Kural’s speech that makes even those who would not listen long to hear.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In De Oratore, Crassus says nothing seems finer than the power to hold assemblies by speech, win their minds, and move their wills wherever the speaker wishes.</div>
+  <div class="cite">&mdash; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cicero/de_Oratore/1*.html" target="_blank" rel="noopener">Cicero, De Oratore 1.30</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Cicero places the orator’s power to capture an audience at the centre of civic life.</div>
+  <div class="tieback">Holding an assembly and winning its mind is exactly the binding power the Kural describes.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Swami Vivekananda addresses the World&#x27;s Parliament of Religions</div>
+  <div class="rle-meta">11 September 1893 &middot; Chicago, Illinois, United States</div>
+  <div class="quote is-paraphrase">On the opening day of the World&#x27;s Parliament of Religions, held during the Chicago World&#x27;s Fair, the Hindu monk Swami Vivekananda began his address by greeting the audience as sisters and brothers of America. The crowd of thousands rose and gave him a long ovation, and his short speech on tolerance and the rejection of fanaticism made him one of the stars of the Parliament. Afterwards he lectured widely across the United States on Hindu philosophy and founded the Vedanta Society in New York.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">An unknown delegate from India won over a large foreign audience in a few minutes, and the demand to hear him again carried him on lecture tours for years.</div>
+  <div class="tieback">The kural describes true eloquence as speech that binds those who hear it and makes even those who have not heard it long to hear it, which is what Vivekananda&#x27;s Chicago address did.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-65/" target="_blank" rel="noopener">Thirukkural Chapter 65: சொல்வன்மை / Power of Speech (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A065.html" target="_blank" rel="noopener">65. சொல்வன்மை (Thirukkural, sandhi-joined text)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Vālmīki Rāmāyaṇa (Bāla Kāṇḍa: the putrakāmeṣṭi of Daśaratha; Ayodhyā Kāṇḍa: Kausalyā and Rāma)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:5146" target="_blank" rel="noopener">Sahih al-Bukhari 5146, Book of Wedlock (Chapter: Al-Khutba)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://suttacentral.net/mn91" target="_blank" rel="noopener">Brahmāyu Sutta (Majjhima Nikaya 91)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0028%3Abook%3D1" target="_blank" rel="noopener">Ovid, Metamorphoses, Book 1 (the flood of Deucalion and Pyrrha, 1.253–415)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cicero/de_Oratore/1*.html" target="_blank" rel="noopener">Cicero, De Oratore, Book 1</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.pbs.org/wgbh/pages/frontline/godinamerica/people/swami-vivekananda.html" target="_blank" rel="noopener">God in America: People: Swami Vivekananda</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.wttw.com/playlist/2024/05/10/worlds-parliament-religions-1893" target="_blank" rel="noopener">The Extraordinary Chicago Interfaith Gathering That Introduced Asian Religions to America (Daniel Hautzinger)</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0642.html">&larr; Kural 642</a>
+  <a href="kural-0644.html">Kural 644 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-065.html">Oratory</a>
+  <a class="skip-btn" href="kural-0651.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

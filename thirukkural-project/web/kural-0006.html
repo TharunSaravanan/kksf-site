@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 6 — The Praise of God | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 6</h1>
+<p class="adhikaram"><a href="adhikaram-001.html">The Praise of God</a> &middot; Kadavul Vaazhthu &middot; <span class="tamil">கடவுள் வாழ்த்து</span></p>
+
+<div class="tamil-text">பொறிவாயில் யைந்தவித்தான் பொய்தீர் ஒழுக்க
+நெறிநின்றார் நீடுவாழ் வார்.</div>
+<div class="translit">Pori-vaayil aindhu avithaan poi-theer ozhukka,
+neri ninRaar needu vaazhvaar.</div>
+
+<h2 class="section">Meaning</h2>
+<p>People who stay firmly on the pure and true path of God, who has controlled the desires of the five senses, will live long and well.</p>
+
+<h2 class="section">Elementary</h2>
+<p>We have five senses — seeing, hearing, smelling, tasting, touching — and they can pull us all over the place wanting things. This kural says if you master your five senses instead of letting them boss you around, your life goes really well.</p>
+
+<h2 class="section">University</h2>
+<p>“Pori” refers to the five sense-faculties (indriyas); the divine is depicted as the paradigm of complete indriya-nigraha (sense-mastery), a central discipline across nearly all Indian contemplative systems. The verse makes mastery of the senses, rather than mere rule-following, the actual mechanism of a flourishing life — free from the erratic disturbance the unchecked senses cause.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Know the Self as the rider in a chariot, the body as the chariot; the intellect as the charioteer, and the mind as the reins.&rdquo;</div>
+  <div class="cite">&mdash; Katha Upanishad 1.3.3 <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Upanishad pictures the self as a passenger, the intellect as the driver, and the mind as the reins holding back the senses (the horses) — if the driver is careless, the horses run wild.</div>
+  <div class="tieback">Same core image as the Kural: a well-run life depends on the senses being reined in, not left to run free.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But I keep under my body, and bring it into subjection.&rdquo;</div>
+  <div class="cite">&mdash; 1 Corinthians 9:27 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul compares himself to an athlete in training, disciplining his own body so it doesn’t undermine everything else he’s working toward.</div>
+  <div class="tieback">Same self-mastery logic as the Kural, applied to bodily discipline specifically.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;As for him who feared to stand before his Lord and restrained himself from [his] desire, then indeed, Paradise will be his refuge.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 79:40-41, An-Nazi&#x27;at <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The verse names two things that earn Paradise: taking God’s judgment seriously, and actively holding oneself back from base desires.</div>
+  <div class="tieback">Nearly identical logic to the Kural — restraining desire is the direct path to the best possible outcome.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;He that is slow to anger is better than the mighty; and he that ruleth his spirit than he that taketh a city.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 16:32 (Tanakh, Ketuvim / KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The proverb ranks self-control above military conquest — ruling your own reactions is harder, and more valuable, than ruling a city.</div>
+  <div class="tieback">A vivid version of the Kural’s claim that mastering yourself, not external achievement, is what actually matters.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Restraint in the eye is good, good is restraint in the ear... restraint everywhere is good. A bhikkhu restrained in every way is freed from all suffering.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada, verses 360–361 <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha lists each sense one by one and calls restraint over each of them good, then says total restraint frees a person from suffering entirely.</div>
+  <div class="tieback">Matches the Kural’s claim almost exactly: mastery of the senses is the direct cause of a settled, suffering-free life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The five senses, anger, pride, delusion, and greed—difficult to conquer is one&#x27;s self; but when that is conquered, everything is conquered.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 9.36 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">King Nami, renouncing his throne, tells Indra that the real victory is over the five senses and the passions; the very word Jina means &#x27;conqueror&#x27; in this sense.</div>
+  <div class="tieback">The Kural praises the one who &#x27;quenched the five senses&#x27;, and Jainism names its perfected teachers Jinas precisely for this conquest, holding up their path as the one to stand firm in.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;In the one village of the body, live the five thieves; they have been warned, but they still go out stealing. One who keeps his assets safe from the three modes and the ten passions, O Nanak! Attains liberation and emancipation.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 503, Raag Gujri, Ashtpadi, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Sikh teaching names five thieves living in the body: lust, anger, greed, attachment and ego. Whoever guards against them and against the restless passions reaches liberation.</div>
+  <div class="tieback">The Kural ties a flourishing life to mastering the five senses. Guru Nanak ties liberation to holding the body&#x27;s five inner thieves in check.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Knowing the Sirens’ song is fatally tempting, Odysseus has his crew’s ears sealed and has himself tied to the mast — engineering restraint in advance rather than trusting willpower in the moment.</div>
+  <div class="cite">&mdash; Homer, Odyssey, Book 12 <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Odysseus doesn’t try to resist the temptation directly; he removes his own ability to give in to it.</div>
+  <div class="tieback">A vivid mythic dramatization of the Kural’s point: real self-mastery over the senses is what gets you through safely.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Plato pictures the soul as a charioteer driving two horses — one noble, one unruly and appetite-driven — who only rises rather than crashes if the charioteer masters both.</div>
+  <div class="cite">&mdash; Plato, Phaedrus <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The charioteer (reason) has to actively control the wilder horse (appetite) or the whole chariot (the soul) is dragged down.</div>
+  <div class="tieback">Essentially the same chariot image as the Hinduism entry above, arrived at independently in Greek philosophy — reinforcing the Kural&#x27;s claim from a separate tradition.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Xuanzang&#x27;s pilgrimage to India</div>
+  <div class="rle-meta">629-645 &middot; Chang&#x27;an, China, to Nalanda, India, and back</div>
+  <div class="quote is-paraphrase">The Chinese Buddhist monk Xuanzang left Chang&#x27;an in 629 without a travel permit and travelled across Central Asia to India to study Buddhism at its source. After years of study at the Nalanda monastery he returned to China in 645 to a hero&#x27;s welcome, bringing hundreds of Buddhist texts. He spent the rest of his life translating them, and died in 664.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">A monk&#x27;s long fidelity to a disciplined path through deserts and mountains became one of the most productive scholarly lives in Asian history.</div>
+  <div class="tieback">The kural promises long, flourishing life to those who hold firm to the pure path of the One who mastered the senses, and Xuanzang&#x27;s steadfast monastic path carried him through a sixteen-year journey to a lifetime of fruitful work.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-1/" target="_blank" rel="noopener">கடவுள் வாழ்த்து (The Praise of God) — Chapter 1, with commentary by Mu. Varadarajan, Solomon Pappaiah, M. Karunanidhi, and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-001.html" target="_blank" rel="noopener">The Praise of God — Adhigaram 1 (Tamil text, transliteration, English translation, song setting by Pu. A. Muthukrishnan)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3">Katha Upanishad 1.3.3 (the chariot allegory) <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, composite of standard English translations <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-10">Phaedrus (the charioteer allegory) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/summary/Xuanzang" target="_blank" rel="noopener">Xuanzang summary</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://asiasociety.org/xuanzang-monk-who-brought-buddhism-east" target="_blank" rel="noopener">Xuanzang: The Monk who Brought Buddhism East</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0005.html">&larr; Kural 5</a>
+  <a href="kural-0007.html">Kural 7 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-001.html">The Praise of God</a>
+  <a class="skip-btn" href="kural-0011.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

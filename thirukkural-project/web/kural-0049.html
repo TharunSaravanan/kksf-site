@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 49 — Domestic Life | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 49</h1>
+<p class="adhikaram"><a href="adhikaram-005.html">Domestic Life</a> &middot; Ilvaazhkkai &middot; <span class="tamil">இல்வாழ்க்கை</span></p>
+
+<div class="tamil-text">அறனெனப் பட்டதே இல்வாழ்க்கை அஃதும்
+பிறன்பழிப்ப தில்லாயின் நன்று.</div>
+<div class="translit">Aran enap pattadhe ilvaazhkkai aqdhum,
+Piranpazhippa thillaayin nandru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Family life is what is truly called the good life. The other life, of giving up the world, is also good, as long as no one can find fault with it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine someone asks, &quot;What does &#x27;being good&#x27; actually mean?&quot; This kural answers: it means running a home well. And it adds, politely, that the other way — going off to be a monk — is fine too, as long as nobody can point at it and say something is wrong.</p>
+
+<h2 class="section">University</h2>
+<p>The emphatic particle in அறனெனப் பட்டதே (aran-enap-pattadhē, “the very thing that has been called virtue”) is a definitional claim: domestic life is not *a* form of aram, it is what the word names. The second half is one of the Kural&#x27;s most gracious sentences — அஃதும் (“that too”) concedes the ascetic path, but hedges it with a condition (பிறன் பழிப்பது இல்லாயின், “if there is nothing for another to reproach”) that Valluvar never attaches to the householder. Commentators differ over whether அஃதும் refers to the renunciant life or to a second grade of domestic life; the majority reading, followed by Mu. Varadarajan and Salomon Pappaiah, takes it as the ascetic path. Note the recurrence of பழி (pazhi, blame) from kural 44 — reproachability is Valluvar&#x27;s working test for ethical failure throughout this chapter.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;As all rivers, both great and small, find a resting-place in the ocean, even so men of all orders find protection with householders.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/manu/manu08.htm" target="_blank" rel="noopener">Manusmriti 6.90 (Bühler, Sacred Books of the East XXV)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Manu&#x27;s closing image of the ashrama system makes the householder the ocean into which every other way of life eventually drains for support.</div>
+  <div class="tieback">Both texts make domestic life the substantive centre of dharma, with the other paths defined in relation to it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Marriage is honourable in all, and the bed undefiled: but whoremongers and adulterers God will judge.&rdquo;</div>
+  <div class="cite">&mdash; Hebrews 13:4 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Hebrews affirms the moral standing of marriage without qualification, while attaching the reproach to its abuse rather than to the institution.</div>
+  <div class="tieback">Like the Kural, it declares married domestic life honourable in itself and locates blame only where conduct is actually faulty.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;…And We placed in the hearts of those who followed him compassion and mercy and monasticism, which they innovated; We did not prescribe it for them except [that they did so] seeking the approval of Allah. But they did not observe it with due observance.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 57:27, Al-Hadid (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Qur&#x27;an treats Christian monasticism as a human innovation God never commanded, and notes that those who adopted it largely failed to keep it properly.</div>
+  <div class="tieback">This is an almost eerie match for the Kural&#x27;s second clause: the other path is conceded as possibly good, but only if it is actually kept without reproach.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;And the LORD God said, It is not good that the man should be alone; I will make him an help meet for him.&rdquo;</div>
+  <div class="cite">&mdash; Genesis 2:18 (KJV, Tanakh) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The first thing declared &#x27;not good&#x27; in the Hebrew Bible is solitude, and the remedy is a partner — establishing companionate household life as the created norm.</div>
+  <div class="tieback">The Kural&#x27;s definition of virtue as domestic life has its scriptural counterpart here, where paired household existence is what God calls good.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;There are these four kinds of bliss that can be attained … by a householder … The bliss of having, the bliss of [making use of] wealth, the bliss of debtlessness, the bliss of blamelessness. … these are not worth one sixteenth-sixteenth of the bliss of blamelessness.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an04/an04.062.than.html" target="_blank" rel="noopener">Anguttara Nikaya 4.62, Anana Sutta, trans. Thanissaro Bhikkhu</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha tells Anathapindika that of everything a householder can enjoy, the incomparably greatest is anavajja-sukha, the happiness of being beyond reproach.</div>
+  <div class="tieback">Blamelessness is exactly the test the Kural applies — the standard by which a way of life is judged good.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The householder, whose interior is illumined with Right Faith, follows the ‘path;’ but the ascetic involved in wrong beliefs is nowhere near it; for this reason the ‘enlightened’ householder is considered superior to an ascetic devoid of true faith.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://archive.org/details/TheRatnaKarandaSravakachara" target="_blank" rel="noopener">Samantabhadra, Ratnakaraṇḍa Śrāvakācāra v. 33 (gṛhastho mokṣamārgastho…), tr. Champat Rai Jain, 1917, pp. 18–19</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Samantabhadra holds that inner right faith, not the outward state of life, decides who is on the path to liberation, so an enlightened householder outranks a deluded ascetic.</div>
+  <div class="tieback">Valluvar calls household life virtue itself and accepts renunciation only where it is beyond reproach, and Samantabhadra likewise makes the ascetic&#x27;s worth depend on his being sound within.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Says Nanak, one who meets the Perfect Guru, is celebrated as a householder as well as a renunciate.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 496, Raag Gujri, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Arjan does not set household life and renunciation against each other; one who lives by the Guru&#x27;s teaching is both at once, a householder outwardly and inwardly detached.</div>
+  <div class="tieback">Valluvar calls domestic life virtue itself and grants that the other path is also good if blameless; the Guru keeps the renunciant&#x27;s virtue but places it inside the householder.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Iliad VI, Hector leaves the battlefield to find Andromache and their infant son Astyanax at the Scaean Gate; he removes his terrifying helmet so the baby will not cry, prays for the child&#x27;s future, and tells his weeping wife that he fights precisely so that this household may stand.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad VI (Hector and Andromache)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Homer&#x27;s most tender domestic scene sits deliberately inside a war poem, presenting the household as the good that all the heroism is ultimately for.</div>
+  <div class="tieback">It implicitly makes the Kural&#x27;s claim — that domestic life is the substantive good — though by dramatisation rather than definition.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;the family is the association established by nature for the supply of men&#x27;s everyday wants&rdquo;</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/politics.1.one.html" target="_blank" rel="noopener">Aristotle, Politics 1252b (trans. Benjamin Jowett)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle begins the Politics by deriving every larger association from the household, which he treats as natural and prior rather than as a compromise or a lower stage.</div>
+  <div class="tieback">Both texts make the household the primary and defining human association rather than a preliminary to something higher.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Father Damien serves the Hansen&#x27;s disease settlement on Molokai</div>
+  <div class="rle-meta">1873-1889 &middot; Kalawao, Kalaupapa Peninsula, Molokai, Kingdom of Hawaii (now Hawaii, United States)</div>
+  <div class="quote is-paraphrase">In 1873 Father Damien, a Belgian Catholic priest, went to the isolated settlement at Kalawao on Molokai, where the Hawaiian government sent people with Hansen&#x27;s disease (leprosy). He helped build about 300 of the settlement&#x27;s 325 buildings, including homes and churches, constructed water lines and roads, administered medicine, improved food supplies and founded two orphanages. After twelve years he contracted the disease himself, and he died there on 15 April 1889 after sixteen years of voluntary service.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Damien&#x27;s life of celibate service among people shunned by society won worldwide admiration even in his own lifetime, and he was later declared a saint.</div>
+  <div class="tieback">The kural concedes that the renunciant path is also good if no one has cause to reproach it, and Damien&#x27;s selfless life among the outcast is a renunciant life that drew praise rather than reproach.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-5/" target="_blank" rel="noopener">திருக்குறள் — அதிகாரம் 5: இல்வாழ்க்கை (Chapter 5: Domestic Life), with Tamil commentaries by Mu. Varadarajan, Salomon Pappaiah, Mu. Karunanidhi and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-005.html" target="_blank" rel="noopener">Thirukkural, Adhigaram 5 — Domestic Life / Married Life (Tamil text, transliteration, multi-language translations and classical commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://thirukural-world.blogspot.com/2014/12/41-50.html" target="_blank" rel="noopener">குறள் 41-50 இல்வாழ்க்கை (Kurals 41-50, Domestic Life) — Tamil text with Tamil and English meanings and Pope/Drew translations</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://sacred-texts.com/hin/manu/manu08.htm" target="_blank" rel="noopener">The Laws of Manu (Manusmriti), Chapter VIII</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/an/an04/an04.062.than.html" target="_blank" rel="noopener">Anguttara Nikaya 4.62, Anana Sutta: Debtless — the four kinds of bliss available to a householder, trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://archive.org/details/TheRatnaKarandaSravakachara" target="_blank" rel="noopener">Ratnakaraṇḍa Śrāvakācāra of Samantabhadra (The Householder&#x27;s Dharma)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad, Book 21, translated by A. T. Murray (Loeb Classical Library, 1924)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/politics.1.one.html" target="_blank" rel="noopener">Aristotle, Politics, Book I, trans. Benjamin Jowett</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.nps.gov/articles/kalaupapa.htm" target="_blank" rel="noopener">Moloka&#x27;i Island: Kalaupapa National Historical Park</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.nps.gov/places/damienmonument.htm" target="_blank" rel="noopener">Father Damien&#x27;s Monument</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.britannica.com/question/How-did-St-Damien-of-Molokai-improve-conditions-at-the-colony-in-Hawaii-for-people-with-leprosy" target="_blank" rel="noopener">How did St. Damien of Molokai improve conditions at the colony in Hawaii for people with leprosy? (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0048.html">&larr; Kural 48</a>
+  <a href="kural-0050.html">Kural 50 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-005.html">Domestic Life</a>
+  <a class="skip-btn" href="kural-0051.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

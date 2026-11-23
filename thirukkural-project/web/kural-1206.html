@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1206 — Sad Memories | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1206</h1>
+<p class="adhikaram"><a href="adhikaram-121.html">Sad Memories</a> &middot; Ninaindhavar Pulampal &middot; <span class="tamil">நினைந்தவர் புலம்பல்</span></p>
+
+<div class="tamil-text">மற்றியான் என்னுளேன் மன்னோ அவரொடியான்
+உற்றநாள் உள்ள உளேன்.</div>
+<div class="translit">Matriyaan ennulen manno avarodiyaan
+utranaal ulla ulen.</div>
+
+<h2 class="section">Meaning</h2>
+<p>What else keeps me alive? I live only by remembering the happy days I spent with him.</p>
+
+<h2 class="section">Elementary</h2>
+<p>When someone you love is far away, you might look at photos of happy times together to feel better. The lady in this poem says remembering their happy days is what keeps her going, like food that keeps her strong.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet makes memory the very means of survival. Avaroṭu yāṉ uṟṟa nāḷ are ‘the days when I was joined with him’; uḷḷa, ‘by recalling’, I live (uḷēṉ). The first line’s maṟṟu yāṉ eṉṉ uḷēṉ, ‘otherwise, by what do I live?’, carries the particles maṉ and ō, which the commentators treat as expletives adding pathos. Mu. Varadarasanar, Solomon Pappaiah and Kalaignar all gloss: ‘It is by thinking of the days I was with him that I am alive; by what else?’ Pope renders: ‘How live I yet? I live to ponder o’er / The days of bliss with him that are no more.’ The couplet is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Held captive in Lanka, Sita endures her grief by fixing her mind on Rama, and when Hanuman finds her, she says she will keep her life only a little longer in the hope of seeing him again.</div>
+  <div class="cite">&mdash; <a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Valmiki Ramayana, Sundara Kanda (Sita’s laments and her words to Hanuman) (paraphrase)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Sita’s life in captivity is sustained by remembrance of and hope for her husband.</div>
+  <div class="tieback">Sita is the classic Indian image of the Kural’s wife who lives only by thinking of her absent husband.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;I thank my God upon every remembrance of you.&rdquo;</div>
+  <div class="cite">&mdash; Philippians 1:3 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul tells his far-off friends that each time he remembers them he gives thanks.</div>
+  <div class="tieback">Remembrance of loved ones sustains Paul in prison as it sustains the Kural’s wife in separation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">Verses attributed to Majnun say that he passes by the dwellings of Layla and kisses this wall and that wall, not because he loves the houses, but for love of the one who once lived in them.</div>
+  <div class="cite">&mdash; <a href="https://en.wikipedia.org/wiki/Layla_and_Majnun" target="_blank" rel="noopener">Attributed to Qays ibn al-Mulawwah (Majnun Layla), Diwan (paraphrase)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Majnun keeps his love alive by clinging to every trace of the absent Layla.</div>
+  <div class="tieback">Like the Kural’s wife living on memories of days together, Majnun lives on the traces of his beloved’s past presence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;I remember the days of old; I meditate on all Thy doing; I muse on the work of Thy hands.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/" target="_blank" rel="noopener">Psalm 143:5 (JPS 1917, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">In distress, the psalmist sustains himself by recalling earlier days of God’s nearness.</div>
+  <div class="tieback">Like the Kural’s wife, the psalmist survives a time of absence by remembering days of closeness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">A man whose only son has died goes daily to the cemetery crying ‘Where are you, my only child?’, and the Buddha tells him that sorrow, lamentation and despair are born from those who are dear.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/mn/mn.087.than.html" target="_blank" rel="noopener">Majjhima Nikaya 87, Piyajatika Sutta (paraphrase)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Piyajatika Sutta shows memory of a lost loved one becoming the man’s whole life, and diagnoses it as the source of grief.</div>
+  <div class="tieback">The Kural’s wife lives on memories; the Buddha warns that such dependence on the dear is what makes grief.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">In the Jain Ramayana, Sita, carried off to Lanka, refuses Ravana and resolves not to take food until she receives news of Rama, holding fast to him in thought.</div>
+  <div class="cite">&mdash; <a href="https://archive.org/" target="_blank" rel="noopener">Vimalasuri, Paumacariya (Jain Ramayana), Sita in Lanka (paraphrase)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Jain retelling keeps Sita’s steadfast inner attachment to her husband as the strength that sustains her in captivity.</div>
+  <div class="tieback">Sita lives only by her bond with the absent Rama, as the Kural’s wife lives only by memory of their days together.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;She weeps, thinking of her Husband Lord, and she cherishes His virtues; her Husband Lord does not die, and does not leave.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 583, Raag Vadhans, Alaahanee, Guru Amar Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In the Alaahanee (songs of mourning) in Raag Vadhans, Guru Amar Das describes the soul-bride who keeps her Husband Lord alive in her heart by remembering His virtues.</div>
+  <div class="tieback">The Kural&#x27;s wife says she stays alive only by remembering the days she spent with him; the soul-bride in Gurbani likewise lives by remembering her Beloved&#x27;s virtues, with tears.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Penelope, hearing the bard sing of the Greeks’ return from Troy, asks him to stop, because she always remembers with longing so dear a head, her husband, whose fame is spread throughout Greece.</div>
+  <div class="cite">&mdash; Homer, Odyssey 1.337-344 (paraphrase; cf. tr. Samuel Butler) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Penelope’s twenty years of waiting are sustained by constant remembrance of Odysseus.</div>
+  <div class="tieback">Penelope lives, as the Kural’s wife does, by never ceasing to remember the husband who is away.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Laelius, mourning his friend Scipio, says that Scipio still lives for him, that the memory of their friendship and shared life sustains him, and that of all fortune’s gifts nothing compares with that friendship.</div>
+  <div class="cite">&mdash; Cicero, On Friendship (Laelius de Amicitia) 27.102-104 (paraphrase) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Cicero’s Laelius finds in remembered companionship the strength to go on.</div>
+  <div class="tieback">Laelius lives on memories of days with Scipio as the Kural’s wife lives on memories of days with her husband.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Li Qingzhao&#x27;s Afterword remembers her life with Zhao Mingcheng</div>
+  <div class="rle-meta">c. 1132–1134 &middot; Song dynasty China</div>
+  <div class="quote is-paraphrase">The poet Li Qingzhao married Zhao Mingcheng in 1101, and together they built a great collection of inscriptions, books and art, living for about ten years in Qingzhou. Zhao fell ill on the way to a new post and died in 1129. Li completed his Record of Metal and Stone and wrote an afterword recalling their life, including their game of guessing where a passage appeared in a book, when she laughed so hard that her tea spilled.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Widowed, uprooted by war and having lost much of the collection, Li held on to her married life through memory and set it down in one of China&#x27;s most moving prose pieces.</div>
+  <div class="tieback">The kural&#x27;s speaker says she lives only by remembering the days she spent with her husband, and Li Qingzhao&#x27;s Afterword is that remembering put into writing.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-121/" target="_blank" rel="noopener">Thirukkural Chapter 121: நினைந்தவர்புலம்பல் / Sad Memories (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-121.html" target="_blank" rel="noopener">நினைந்தவர் புலம்பல் - அதிகாரம் 121 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Vālmīki Rāmāyaṇa (Bāla Kāṇḍa: the putrakāmeṣṭi of Daśaratha; Ayodhyā Kāṇḍa: Kausalyā and Rāma)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://en.wikipedia.org/wiki/Layla_and_Majnun" target="_blank" rel="noopener">Diwan attributed to Qays ibn al-Mulawwah (Majnun Layla), classical Arabic love poetry</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/mn/mn.087.than.html" target="_blank" rel="noopener">Piyajatika Sutta: From One Who Is Dear (MN 87)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://archive.org/" target="_blank" rel="noopener">Vimalasuri, Paumacariya (Prakrit Jain Ramayana)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11">Cicero, Laelius de Amicitia (On Friendship) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://warwick.ac.uk/fac/arts/modernlanguages/news/events/fallingskies/human/li_qingzhao_afterword_and_poems.pdf" target="_blank" rel="noopener">Li Qingzhao: Afterword and poems (translation)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.encyclopedia.com/people/literature-and-arts/asian-literature-biographies/li-qingzhao" target="_blank" rel="noopener">Li Qingzhao</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1205.html">&larr; Kural 1205</a>
+  <a href="kural-1207.html">Kural 1207 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-121.html">Sad Memories</a>
+  <a class="skip-btn" href="kural-1211.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

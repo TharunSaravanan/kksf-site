@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 990 — Perfectness | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 990</h1>
+<p class="adhikaram"><a href="adhikaram-099.html">Perfectness</a> &middot; Saandraanmai &middot; <span class="tamil">சான்றாண்மை</span></p>
+
+<div class="tamil-text">சான்றவர் சான்றாண்மை குன்றின் இருநிலந்தான்
+தாங்காது மன்னோ பொறை.</div>
+<div class="translit">Saandravar saandraanmai kundrin irunilandhaan
+thaangaadhu manno porai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If good people ever lost their goodness, even this great earth could not carry its own weight.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a big table held up by a few strong legs. If those legs get weak, everything on the table comes crashing down. Valluvar says good people are like those legs for the whole world: if they stop being good, the world cannot hold itself up.</p>
+
+<h2 class="section">University</h2>
+<p>The closing couplet extends saandraanmai from personal virtue to cosmic support. If the saandravar (சான்றவர், &#x27;the perfected&#x27;) should decline (kundrin, குன்றின்) in their saandraanmai, the &#x27;great earth&#x27; (irunilam, இருநிலம்) itself could not bear (thaangaadhu, தாங்காது) its porai (பொறை, &#x27;burden&#x27;); manno (மன்னோ) is an emphatic particle. Varadarasanar, Pappaiah and Kesikan read porai as the earth&#x27;s burden, so that the noble become, with the five pillars of Kural 983, the hidden supports of the world; Karunanidhi instead takes porai as &#x27;patience&#x27;, reading that the world would not patiently tolerate such a decline. Sivayogi Sivakumar&#x27;s reading of irunilam as the &#x27;two states&#x27; of inner and outer life is idiosyncratic. Pope: &#x27;The mighty earth its burthen to sustain must cease, / If perfect virtue of the perfect men decrease.&#x27; The idea that the righteous sustain the world appears in many traditions, and here completes the chapter&#x27;s arc from personal duty (981) to the stability of the world. The Tamil text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;If I did not perform prescribed duties, all these worlds would be put to ruination. I would be the cause of creating unwanted population, and I would thereby destroy the peace of all living beings.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 3.24 (Bhagavad-gītā As It Is, A.C. Bhaktivedanta Swami Prabhupāda)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Krishna says that if he, the exemplar, ceased doing his duty, the worlds would fall into ruin, since others follow the example of the great.</div>
+  <div class="tieback">Like the Kural, it ties the stability of the world to the continued right conduct of its noblest figures.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Ye are the salt of the earth: but if the salt have lost his savour, wherewith shall it be salted? it is thenceforth good for nothing, but to be cast out, and to be trodden under foot of men.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 5:13 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus calls his disciples the salt that preserves the earth and warns of what happens if they lose their quality.</div>
+  <div class="tieback">Like the Kural, it makes the good the preservers of the world and warns of the consequences if their goodness fails.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And your Lord would not have destroyed the cities unjustly while their people were reformers.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 11:117 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an says that God does not destroy communities while they contain people who work for good.</div>
+  <div class="tieback">Like the Kural, it suggests that the presence of the righteous keeps the world from ruin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;And he said, “Let not my Sovereign be angry if I speak but this last time: What if ten should be found there?” “I will not destroy, for the sake of the ten,” came the reply.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Genesis 18:32 (The JPS Tanakh: Gender-Sensitive Edition, 2023, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Abraham bargains with God over Sodom, and God agrees to spare the city for the sake of just ten righteous people.</div>
+  <div class="tieback">Like the Kural, it shows the fate of a whole community resting on a few righteous people.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Monks, these two bright qualities guard the world. Which two? Conscience &amp; concern. If these two bright qualities did not guard the world, there would be no recognition of &#x27;mother&#x27; here, no recognition of &#x27;mother&#x27;s sister,&#x27; &#x27;uncle&#x27;s wife,&#x27; &#x27;teacher&#x27;s wife,&#x27; or &#x27;wife of those who deserve respect.&#x27; ...&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an02/an02.009.than.html" target="_blank" rel="noopener">Anguttara Nikaya 2.9, Lokapala Sutta (trans. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha teaches that conscience and concern (hiri and ottappa) are the guardians of the world, without which social order would collapse.</div>
+  <div class="tieback">Like the Kural, it says the moral qualities of people are what hold the world together.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The most excellent twice-born men who possess these good qualities, are able to save themselves and others.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 25.35 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">At the end of his account of the true Brahmana, the monk Jayaghosha says that only those with real virtues can save both themselves and others.</div>
+  <div class="tieback">Like the Kural, it makes the welfare of others depend on the virtue of the perfected few.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The mythical bull is Dharma, the son of compassion; this is what patiently holds the earth in its place. One who understands this becomes truthful. What a great load there is on the bull!&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 3, Japji Sahib, Pauri 16, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak takes the old Indian image of a bull holding up the earth and reinterprets it: what really bears the world is dharma, born of compassion. The weight of creation rests on righteousness, not on a literal animal.</div>
+  <div class="tieback">The Kural says the earth could not bear its burden if the noble fell short, and Japji likewise makes moral righteousness the support that keeps the earth in place.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Works and Days, Hesiod contrasts the city of the just, where peace, plenty and healthy children flourish under Zeus&#x27; favour, with the city of the unjust, on which Zeus sends famine, plague and ruin, so that even one wicked man can bring suffering on a whole city.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 225-247 (trans. Hugh G. Evelyn-White)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hesiod teaches that the prosperity or ruin of a community follows the justice of its people.</div>
+  <div class="tieback">Like the Kural, it ties the well-being of the world to the virtue of those in it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In the Republic, Socrates argues that until philosophers rule, or rulers become genuine lovers of wisdom, cities and the human race will have no rest from their evils.</div>
+  <div class="cite">&mdash; Plato, Republic V, 473c-e (trans. Benjamin Jowett) <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Plato holds that the well-being of human society depends on the wise and good being at its centre.</div>
+  <div class="tieback">Like the Kural, it makes the fate of the world hinge on the presence of perfected people.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Stanislav Petrov judges a missile alert to be a false alarm</div>
+  <div class="rle-meta">26 September 1983 &middot; Early-warning command centre near Moscow, Soviet Union</div>
+  <div class="quote is-paraphrase">In the early hours of 26 September 1983, Lieutenant Colonel Stanislav Petrov was on duty at a Soviet early-warning centre when the satellite system signalled that the United States had launched intercontinental ballistic missiles. Doubting the alert, partly because only a few missiles were shown, he judged it a false alarm rather than reporting an attack, and no missiles arrived. Later investigation found that sunlight reflecting off clouds had fooled the satellites; the incident stayed secret for years.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The steadiness of one officer at a single moment may have prevented a catastrophe for the whole world.</div>
+  <div class="tieback">The kural says the great earth could not bear its burden if the noble fell short, and Petrov&#x27;s sound judgement helped keep the world from a disaster it could not have borne.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-99/" target="_blank" rel="noopener">Thirukkural Chapter 99: சான்றாண்மை / Perfectness (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-099.html" target="_blank" rel="noopener">சான்றாண்மை - அதிகாரம் 99 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The JPS Tanakh: Gender-Sensitive Edition (Revised JPS, 2023)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/an/an02/an02.009.than.html" target="_blank" rel="noopener">Anguttara Nikaya 2.9, Lokapala Sutta: Guardians of the World (tr. Thanissaro Bhikkhu)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Republic, Book X (the Myth of Er) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.npr.org/sections/thetwo-way/2017/09/18/551792129/stanislav-petrov-the-man-who-saved-the-world-dies-at-77" target="_blank" rel="noopener">Stanislav Petrov, &#x27;The Man Who Saved The World,&#x27; Dies At 77 (Greg Myre)</a> <span class="tier">[web source]</span></li>
+<li id="cite-13"><a href="https://www.voanews.com/a/stanislav-petrov-who-averted-nuclear-war-dies-at-77/4035266.html" target="_blank" rel="noopener">Stanislav Petrov, Who Averted Nuclear War, Dies at 77</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0989.html">&larr; Kural 989</a>
+  <a href="kural-0991.html">Kural 991 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-099.html">Perfectness</a>
+  <a class="skip-btn" href="kural-0991.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

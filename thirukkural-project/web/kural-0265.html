@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 265 — Penance | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 265</h1>
+<p class="adhikaram"><a href="adhikaram-027.html">Penance</a> &middot; Thavam &middot; <span class="tamil">தவம்</span></p>
+
+<div class="tamil-text">வேண்டிய வேண்டியாங் கெய்தலால் செய்தவம்
+ஈண்டு முயலப் படும்.</div>
+<div class="translit">Vendiya vendiyaangu eydhalaal seydhavam
+Eendu muyalap padum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Strict self-control lets a person get whatever they want, just as they want it. So it should be worked at with effort, here and now.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you practise the piano every day, one day you can play any song you want, just the way you want. Valluvar says tapas is like that for your whole life — so start practising now, not later.</p>
+
+<h2 class="section">University</h2>
+<p>The verse gives the motivational logic of tapas: it is effective, delivering desired ends ‘as desired’ (வேண்டியாங்கு). ஈண்டு (‘here’) is read by Parimelazhagar as ‘in this birth’, urging urgency, while Mu. Varadarasan reads it as ‘even in the householder’s state’, democratizing tapas beyond the forest. The claim sits in tension with the Gita’s ideal of desireless action and with Valluvar’s own later chapter on the destruction of desire (அவா அறுத்தல்); commentators resolve this by noting that for the truly austere the highest ‘desire’ is liberation itself. The couplet thus captures tapas at its most instrumental while quietly pointing beyond instrumentality.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The child Dhruva, rejected by his father, performs severe tapas in the forest of Madhuvana; Vishnu appears and grants him a kingdom and ultimately the eternal pole-star position.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Bhagavata Purana 4.8-9</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Bhagavata Purana’s Dhruva story is the paradigm of tapas yielding exactly what the practitioner sought, and more.</div>
+  <div class="tieback">Embodies ‘obtaining what one desires, as one desires’ through tapas.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But thou, when thou fastest, anoint thine head, and wash thy face; That thou appear not unto men to fast, but unto thy Father which is in secret: and thy Father, which seeth in secret, shall reward thee openly.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 6:17-18 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus assures that sincere, hidden fasting will be rewarded by God.</div>
+  <div class="tieback">Both texts affirm that real austerity produces real results; Jesus stresses secrecy.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Allah said, ‘All the deeds of Adam’s sons (people) are for them, except fasting which is for Me, and I will give the reward for it.’&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:1904" target="_blank" rel="noopener">Sahih al-Bukhari 1904 (Hadith Qudsi)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Fasting is singled out as the act whose reward God personally bestows, beyond ordinary measure.</div>
+  <div class="tieback">Affirms the unique efficacy of ascetic discipline that motivates the Kural’s call to pursue it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Then said he unto me, Fear not, Daniel: for from the first day that thou didst set thine heart to understand, and to chasten thyself before thy God, thy words were heard, and I am come for thy words.&rdquo;</div>
+  <div class="cite">&mdash; Daniel 10:12 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">After three weeks of fasting and mourning, Daniel is told his self-affliction secured an answer from heaven.</div>
+  <div class="tieback">Self-chastening directly obtains what was sought — the logic of this Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In his first sermon the Buddha rejects both indulgence in sense pleasures and devotion to self-mortification as extremes, teaching the Middle Way after his own years of extreme austerity failed to bring awakening.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/sn/sn56/sn56.011.than.html" target="_blank" rel="noopener">Dhammacakkappavattana Sutta (SN 56.11)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Buddhism explicitly denies that harsh bodily austerity reliably delivers the highest goal.</div>
+  <div class="tieback">An instructive contrast: Buddhism shares the goal-orientation but disputes that severe tapas is the means.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As a large tank, when its supply of water has been stopped, gradually dries up by the consumption of the water and by evaporation, so the Karman of a monk, which he acquired in millions of births, is annihilated by austerities, if there is no influx of bad Karman.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 30.5-6 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Jain doctrine holds that tapas, once new karmic inflow is stopped, burns away accumulated karma (nirjarā), and so is the decisive means to liberation.</div>
+  <div class="tieback">Valluvar urges penance now because it obtains what one desires; the Jain text also presents tapas as supremely effective, but its goal is the shedding of karma rather than the fulfilment of wishes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;In the remembrance of God, hopes are fulfilled.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 263, Raag Gauree, Sukhmani Sahib, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In the Sukhmani Guru Arjan lists the fruits of simran, meditative remembrance of God, and among them says that a person&#x27;s hopes are fulfilled.</div>
+  <div class="tieback">Valluvar urges penance now because it gives whatever one desires; Guru Arjan makes the same promise for remembering God.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;But between us and Goodness the gods have placed the sweat of our brows; long and steep is the path that leads to her, and it is rough at the first.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 289-291 (trans. H. G. Evelyn-White)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Hesiod teaches that excellence and prosperity are gained only through hard toil, which becomes easy once the summit is reached.</div>
+  <div class="tieback">Shares the Kural’s conviction that strenuous discipline is the reliable road to what one seeks.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;For of all things good and fair, the gods give nothing to man without toil and effort.&rdquo;</div>
+  <div class="cite">&mdash; Xenophon, Memorabilia 2.1.28 (trans. E. C. Marchant) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Prodicus’ fable of Heracles at the crossroads, Virtue tells the young hero that every good thing is earned by labour.</div>
+  <div class="tieback">Same principle as the Kural: disciplined effort is the price and the guarantee of every desired good.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Charles Goodyear discovers vulcanization after years of hardship</div>
+  <div class="rle-meta">1839 (patent 1844) &middot; United States</div>
+  <div class="quote is-paraphrase">Charles Goodyear spent years experimenting to make rubber stable in heat and cold, during which his family lived in poverty and he was jailed for debt. In 1839 he found that rubber mixed with sulfur and heated became strong and stable, the process later called vulcanization, and he patented it in 1844. Others made fortunes from the process, and Goodyear himself died in debt.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Goodyear&#x27;s discovery transformed industry, and his story is often told as an example of single-minded persistence through hardship.</div>
+  <div class="tieback">The kural urges people to take up disciplined effort now because it delivers what one seeks, and Goodyear&#x27;s years of privation did deliver the exact result he had been pursuing.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-27/" target="_blank" rel="noopener">Thirukkural Chapter 27: தவம் / Penance (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-027.html" target="_blank" rel="noopener">தவம் - அதிகாரம் 27 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Srimad Bhagavatam (Bhagavata Purana), Canto 8, chapters 5-8: the curse of Durvasa and the churning of the ocean of milk</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:1904" target="_blank" rel="noopener">Sahih al-Bukhari 1904, Book of Fasting</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.accesstoinsight.org/tipitaka/sn/sn56/sn56.011.than.html" target="_blank" rel="noopener">Dhammacakkappavattana Sutta (SN 56.11), trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">The Choice of Hercules (Prodicus), as recorded in Xenophon, Memorabilia 2.1.21-33 <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/biography/Charles-Goodyear" target="_blank" rel="noopener">Charles Goodyear (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://lemelson.mit.edu/resources/charles-goodyear" target="_blank" rel="noopener">Charles Goodyear</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0264.html">&larr; Kural 264</a>
+  <a href="kural-0266.html">Kural 266 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-027.html">Penance</a>
+  <a class="skip-btn" href="kural-0271.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

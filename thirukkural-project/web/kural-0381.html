@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 381 — The Greatness of a King | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 381</h1>
+<p class="adhikaram"><a href="adhikaram-039.html">The Greatness of a King</a> &middot; Iraimaatchi &middot; <span class="tamil">இறைமாட்சி</span></p>
+
+<div class="tamil-text">படைகுடி கூழ்அமைச்சு நட்பரண் ஆறும்
+உடையான் அரசருள் ஏறு.</div>
+<div class="translit">Padai kudi koozh amaichu natparan aarum
+Udaiyaan arasarul eru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A ruler who has all six parts of a strong country (an army, loyal people, plenty of food and money, ministers, friendly allies and strong forts) is like a lion among kings.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Think of a strong table that needs all its legs to stand. A kingdom needs six “legs”: soldiers, happy people, food and money, good helpers, friends, and strong walls. A king who has all six is like the lion — the strongest of all the kings.</p>
+
+<h2 class="section">University</h2>
+<p>Valluvar opens the Book of Polity not with the king’s personality but with a structural inventory of the state: padai (army), kudi (citizenry), koozh (food/revenue), amaichu (ministry), natpu (alliances), and aran (fortification). This six-limbed model closely parallels the saptanga (“seven-limbed”) theory of the state found in Kautilya’s Arthashastra, minus the king himself — who in the Kural is the one who ‘possesses’ the six, making him the integrating seventh element. The image of the ‘eru’ (a male lion or bull, the pre-eminent male of its kind) frames kingship as excellence in a competitive field of rulers rather than divine right. The chapter structure of the Porutpaal then follows this list, with later chapters devoted to each limb (army, fortress, friendship, ministers), so this kural functions as a table of contents for the whole book of statecraft.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Kautilya lists the constituent elements of sovereignty as the king, the minister, the country, the fort, the treasury, the army, and the ally (Arthashastra 6.1, the saptanga theory).</div>
+  <div class="cite">&mdash; <a href="https://archive.org/details/Arthasastra_English_Translation" target="_blank" rel="noopener">Kautilya, Arthashastra 6.1 (tr. R. Shamasastry)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Kautilya’s classic Indian theory says a state is made of seven parts that must all be healthy for the kingdom to survive.</div>
+  <div class="tieback">The Kural’s six possessions of a great king are almost exactly Kautilya’s list once the king himself is set aside.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;In the multitude of people is the king’s honour: but in the want of people is the destruction of the prince.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 14:28 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Proverbs says a king’s glory depends on having many people under him; without them his rule collapses.</div>
+  <div class="tieback">Matches the Kural’s ‘kudi’ (the people) as a core limb of royal greatness, though it names only one of the six elements.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">The Qur’an instructs the community to prepare whatever strength and war-horses it can muster so that enemies are deterred (Qur’an 8:60).</div>
+  <div class="cite">&mdash; Qur’an 8:60 (Sahih International, paraphrased) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Muslims are told to be ready with military strength so that enemies think twice about attacking.</div>
+  <div class="tieback">Parallels the ‘padai’ (army) and ‘aran’ (defence) limbs of the Kural’s strong state.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Solomon’s reign is described with an organised cabinet of officials (1 Kings 4:1-7), district officers supplying provisions (4:7, 4:22-23), vast stables of horses and chariots (4:26), and a treaty of friendship with Hiram of Tyre (5:12).</div>
+  <div class="cite">&mdash; 1 Kings 4-5 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Bible pictures Solomon’s kingdom as great because it had ministers, food supplies, an army, and allies all at once.</div>
+  <div class="tieback">Solomon’s kingdom is a narrative illustration of nearly every limb the Kural names: ministers, provisions, army, and alliance.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The wheel-turning monarch (cakkavatti) is said to possess seven ‘treasures’, including the elephant and horse treasures (military might), the householder treasure (wealth), and the counsellor treasure (wise minister) (e.g. Mahasudassana Sutta, DN 17).</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/dn" target="_blank" rel="noopener">Digha Nikaya 17 (Mahasudassana Sutta)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Buddhist texts imagine the ideal world-ruler as owning seven special treasures that make his rule complete.</div>
+  <div class="tieback">Like the Kural, it defines the supreme king by a checklist of possessions — army, wealth, and counsel among them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As a universal monarch with his fourfold army and great power, the possessor of the fourteen attributes of a king, (has no equal), neither has a very learned monk.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 11.22 (cf. 11.20) (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Uttaradhyayana uses the cakravartin (universal monarch), with his fourfold army and fourteen royal treasures, as a byword for unmatched sovereign strength. A few verses earlier (11.20) it uses the other image found in this kural: the proud lion that is &#x27;superior to all animals&#x27;.</div>
+  <div class="tieback">Valluvar&#x27;s king with all six limbs of state stands among rulers like a lion among beasts. The Jain text draws on the same picture of the fully equipped monarch who has no equal, though it uses it to praise the learned monk.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">After the martyrdom of his father Guru Arjan, Guru Hargobind took up two swords at his succession, standing for temporal (miri) and spiritual (piri) authority. He trained in arms, built up a Sikh army, fortified his towns, built the Lohgarh fort near Amritsar, and in 1609 founded the Akal Takht as a seat where both the spiritual and the temporal affairs of the community could be settled.</div>
+  <div class="cite">&mdash; <a href="https://www.britannica.com/biography/Guru-Hargobind" target="_blank" rel="noopener">Encyclopaedia Britannica, &#x27;Guru Hargobind&#x27; (paraphrase)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Guru Hargobind gave the Sikh community the means of a self-governing body, with an army, fortifications and a seat of authority, alongside its spiritual life.</div>
+  <div class="tieback">The Kural lists army, people, resources, counsel, allies and fortification as the parts of a strong state; Guru Hargobind&#x27;s miri-piri reforms gave the young Panth several of these same limbs.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Hesiod’s account, Zeus wins and keeps his kingship over the gods only by gathering allies — the Cyclopes who forge his thunderbolt and the Hundred-Handed ones who fight beside him against the Titans.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Hesiod, Theogony 139-141, 501-506, 617-735</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Even Zeus needed weapons, fighters, and friends to become and stay king of the gods.</div>
+  <div class="tieback">Illustrates the Kural’s point that a ruler’s supremacy rests on army and allies, not on personal power alone.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;First, there must be food; secondly, arts, for life requires many instruments; thirdly, there must be arms … fourthly, there must be a certain amount of revenue, both for internal needs, and for the purposes of war; fifthly, or rather first, there must be a care of religion … sixthly, and most necessary of all …&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/politics.7.seven.html" target="_blank" rel="noopener">Aristotle, Politics, Book VII, ch. 8 (1328b) (tr. Benjamin Jowett)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Setting out what a state cannot exist without, Aristotle lists six requisites, among them food, arms, revenue and, last and most necessary, a power of deciding what is just and expedient among citizens.</div>
+  <div class="tieback">Like Valluvar’s six limbs of the state, Aristotle’s list gives six things a polity must have, including the army and the treasury, though the two lists differ item by item.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">R. Shamasastry rediscovers Kautilya&#x27;s Arthashastra</div>
+  <div class="rle-meta">1905 &middot; Mysore (Mysuru), Karnataka, India</div>
+  <div class="quote is-paraphrase">In 1905 the Sanskrit scholar Rudrapatna Shamasastry, working as a librarian at the Oriental Library in Mysore, identified a manuscript of the Arthashastra, the ancient Indian treatise on statecraft attributed to Kautilya, which had been known only through later references and was thought to be lost. He published the Sanskrit text in 1909 and an English translation in 1915. The publication brought the treatise to the attention of scholars around the world.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">The rediscovery gave historians a detailed ancient Indian account of how a state should be built and run, including its army, revenue, ministers, alliances and fortifications. It transformed the study of early Indian political thought.</div>
+  <div class="tieback">The kural lists the parts a ruler must possess, army, people, resources, ministers, allies and forts, and the rediscovered Arthashastra is the classic Indian treatise that analyses the state through closely similar elements.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-39/" target="_blank" rel="noopener">Thirukural Chapter 39: இறைமாட்சி / The Greatness of a King</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-039.html" target="_blank" rel="noopener">இறைமாட்சி - அதிகாரம் 39 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://archive.org/details/Arthasastra_English_Translation" target="_blank" rel="noopener">Kautilya&#x27;s Arthaśāstra, translated by R. Shamasastry (1915), Book II Chapter 24, &#x27;The Superintendent of Agriculture&#x27;</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://suttacentral.net/dn" target="_blank" rel="noopener">Digha Nikaya (Long Discourses): DN 5, DN 17, DN 26, DN 27</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.britannica.com/biography/Guru-Hargobind" target="_blank" rel="noopener">Guru Hargobind</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-9"><a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Theogony (Hesiod)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Aristotle/politics.7.seven.html" target="_blank" rel="noopener">Politics, Book VII (Aristotle)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/biography/Chanakya" target="_blank" rel="noopener">Chanakya (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.worldhistory.org/Arthashastra/" target="_blank" rel="noopener">Arthashastra (Joshua J. Mark)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0380.html">&larr; Kural 380</a>
+  <a href="kural-0382.html">Kural 382 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-039.html">The Greatness of a King</a>
+  <a class="skip-btn" href="kural-0391.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

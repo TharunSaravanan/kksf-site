@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 412 — Hearing | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 412</h1>
+<p class="adhikaram"><a href="adhikaram-042.html">Hearing</a> &middot; Kelvi &middot; <span class="tamil">கேள்வி</span></p>
+
+<div class="tamil-text">செவிக்குணவு இல்லாத போழ்து சிறிது
+வயிற்றுக்கும் ஈயப் படும்.</div>
+<div class="translit">Sevikkunavu illaadha pozhdhu siridhu
+Vayitrrukkum eeyap padum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Only when there is nothing to feed the ears, no good teaching to listen to, should you give a little food to the stomach as well.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine you are hungry but a wise teacher is speaking. Valluvar says: keep listening first! Feed your ears with good words, and only when there is nothing more to hear, give your tummy a little food.</p>
+
+<h2 class="section">University</h2>
+<p>The kural introduces the governing metaphor of the chapter — hearing as food (செவிக்கு உணவு) — and inverts the ordinary priority of bodily needs. The ‘உம்’ in வயிற்றுக்கும் (‘to the stomach too’) and the qualifier சிறிது (‘a little’) make the stomach a secondary and moderate claimant. Commentators read this not as a call to starve but as a hierarchy: instruction, once lost, may not recur, whereas food can be taken any time. The metaphor links this chapter to the Indian notion of the body as sustained by food and the mind by speech, and anticipates 413 (hearers as those who eat ‘ear-food’) and 420 (those who know only the mouth’s taste).</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">King Parikshit, cursed to die in seven days, sits by the Ganga and listens to the sage Shuka recite the Bhagavata Purana, taking neither food nor water for the entire seven days.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Bhagavata Purana 1.19; 10.1.13</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Bhagavata frames its entire narration as a listening-fast: the king forgoes food to hear the teaching, and later says the nectar of these narrations removed his hunger and thirst.</div>
+  <div class="tieback">A dramatic enactment of the Kural: food for the ear first, the stomach only afterward, if at all.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;It is written, Man shall not live by bread alone, but by every word that proceedeth out of the mouth of God.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 4:4 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Fasting in the wilderness, Jesus rejects the tempter’s suggestion to turn stones into bread, placing the word of God above physical food.</div>
+  <div class="tieback">Both texts rank ‘the word’ as nourishment superior to bread — the Kural’s ear-food over stomach-food.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">During the Friday sermon, a trade caravan arrived and many listeners rushed out to it, leaving the Prophet standing; the Qur’an rebukes them: what is with God is better than diversion and trade, and God is the best of providers.</div>
+  <div class="cite">&mdash; Qur’an 62:11 (Sahih International), with tafsir <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Commentators report the caravan carried food during a time of scarcity; the verse censures those who left the sermon for provisions.</div>
+  <div class="tieback">The Qur’an criticises exactly the reverse of the Kural’s order — abandoning ear-food for stomach-food.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Behold, the days come, saith the Lord GOD, that I will send a famine in the land, not a famine of bread, nor a thirst for water, but of hearing the words of the LORD:&rdquo;</div>
+  <div class="cite">&mdash; Amos 8:11 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The prophet Amos threatens a deprivation worse than hunger: the absence of divine words to hear.</div>
+  <div class="tieback">Amos treats hearing as a form of food whose lack is a true famine — the Kural’s ‘food for the ear’ in prophetic form.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;The gift of Dhamma excels all gifts; the taste of Dhamma excels all tastes; the delight in Dhamma excels all delights.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 354 (tr. Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The verse ranks the flavour of the teaching above every other taste, including that of food.</div>
+  <div class="tieback">Like the Kural, it relocates ‘taste’ from the tongue to the teaching received — ear-food over stomach-food.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;In the first Paurushî he should study, in the second he should meditate, in the third he should go on his begging-tour, and in the fourth he should study again.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 26.12 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Jain monk&#x27;s daily routine puts study first. Looking for food comes only in the third quarter of the day, after study and meditation, and the fourth quarter is again for study.</div>
+  <div class="tieback">The Kural tells us to give the stomach a little only when there is no food for the ear. The Jain monk&#x27;s day, in which the alms round waits until study and meditation are done, puts the same order into practice.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Upon this Plate, three things have been placed: Truth, Contentment and Contemplation. The Ambrosial Nectar of the Naam, the Name of our Lord and Master, has been placed upon it as well; it is the Support of all.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1429, Mundavani, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In the Mundavani at the close of the Granth, Guru Arjan describes the scripture as a plate of spiritual food: truth, contentment, contemplation and the Name.</div>
+  <div class="tieback">The Kural ranks food for the ear above food for the stomach; Guru Arjan also offers truth, contemplation and the Name as the food that truly sustains.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">At the Phaeacian feast, Odysseus tells King Alcinous that there is nothing more gracious than a banquet where the whole company sits listening to a bard while tables stand full of bread and meat.</div>
+  <div class="cite">&mdash; Homer, Odyssey 9.2–11; 11.333–334 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The Homeric ideal feast couples listening with eating — and in the Phaeacian episode the guests stay spellbound by stories deep into the night.</div>
+  <div class="tieback">Homer places ear-food beside stomach-food at the feast; the Kural goes further and ranks it above.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Socrates warns young Hippocrates that teachings are food for the soul, and unlike food bought at market they cannot be carried home in a separate vessel and inspected first — one must take them straight into the soul by listening.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0178%3Atext%3DProt.%3Apage%3D325" target="_blank" rel="noopener">Plato, Protagoras 313c–314b</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Plato explicitly calls instruction the nourishment of the soul (psychē trephetai mathēmasi) and compares teachers to food merchants.</div>
+  <div class="tieback">Plato and Valluvar share the metaphor of heard instruction as food, and both treat it as more consequential than bodily food.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Marie Sklodowska studies in Paris on a meagre diet</div>
+  <div class="rle-meta">1891-1894 &middot; Paris, France</div>
+  <div class="quote is-paraphrase">In the autumn of 1891 the young Polish student Maria Sklodowska, later Marie Curie, enrolled at the Sorbonne, and after a few months moved to a cold garret in the Latin Quarter to be close to the university. She had enough money for tuition, her room and the cheapest food, and by her own later account her meals were often reduced to bread with chocolate, eggs or fruit while she attended lectures and studied far into the night. Though she arrived less well prepared than her classmates, she finished first in the physics degree examinations in 1893 and second in mathematics in 1894.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Her student years are remembered as an example of someone who put instruction ahead of comfort and even of a proper diet.</div>
+  <div class="tieback">The kural says the stomach should be given only a little, when there is no food for the ear, and the young Sklodowska fed her mind on lectures and study while giving her body as little as she could manage.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-42/" target="_blank" rel="noopener">Thirukkural Chapter 42 — Hearing (கேள்வி)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/kural-0411.html" target="_blank" rel="noopener">Thirukkural 411–420 — Listening (per-kural pages, e.g. kural-0411, kural-0420)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://ta.wikisource.org/wiki/திருக்குறள்,_மூலம்/கேள்வி" target="_blank" rel="noopener">திருக்குறள், மூலம்/கேள்வி</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/sb/8/5/" target="_blank" rel="noopener">Srimad Bhagavatam (Bhagavata Purana), Canto 8, chapters 5-8: the curse of Durvasa and the churning of the ocean of milk</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0178%3Atext%3DProt.%3Apage%3D325" target="_blank" rel="noopener">Plato, Protagoras 325c–d (trans. W. R. M. Lamb, Loeb Classical Library)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://history.aip.org/exhibits/curie/stud1_text.htm" target="_blank" rel="noopener">Marie Curie - A Student in Paris (1891-1897)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://explore.britannica.com/explore/100women/profiles/marie-curie" target="_blank" rel="noopener">Marie Curie - Britannica Presents 100 Women Trailblazers</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0411.html">&larr; Kural 411</a>
+  <a href="kural-0413.html">Kural 413 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-042.html">Hearing</a>
+  <a class="skip-btn" href="kural-0421.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

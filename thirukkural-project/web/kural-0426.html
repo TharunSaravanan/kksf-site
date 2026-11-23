@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 426 — Knowledge Possession | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 426</h1>
+<p class="adhikaram"><a href="adhikaram-043.html">Knowledge Possession</a> &middot; Arivudaimai &middot; <span class="tamil">அறிவுடைமை</span></p>
+
+<div class="tamil-text">எவ்வ துறைவது உலகம் உலகத்தோடு
+அவ்வ துறைவ தறிவு.</div>
+<div class="translit">Evva thuraivathu ulagam ulagaththodu
+Avva thuraiva tharivu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Wisdom is living in step with the world, behaving the way the best people in the world behave.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Every place has its own ways of doing things. A wise person notices how good people around them behave and fits in with them, instead of being odd or rude just to stand out.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet turns on the parallel எவ்வது / அவ்வது (&#x27;in whatever way / in that way&#x27;) and on the verb உறைதல் (to dwell or abide). Wisdom is to abide with the world in the way the world abides. As in 425, Parimelazhagan takes ulagam to mean the uyarndhor, the worthy or great of the world, not the crowd. The Kural is therefore not a call to conformity with the majority but to conduct in step with the accepted norms of the good. It still carries a real social insight: discernment includes reading context and custom and not acting eccentrically. This complements 423. There, wisdom judges claims independently; here, wisdom adapts one&#x27;s conduct to the settled ways of good society. Parallels range from the Talmudic &#x27;never deviate from local custom&#x27; to Paul&#x27;s &#x27;all things to all men&#x27; and Descartes&#x27;s provisional maxim of following his country&#x27;s customs.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;So as not to disrupt the minds of ignorant men attached to the fruitive results of prescribed duties, a learned person should not induce them to stop work. Rather, by working in the spirit of devotion, he should engage them in all sorts of activities.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 3.26</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Krishna advises the wise not to set themselves apart and unsettle ordinary people. They should act alongside them in the accepted way (compare 3.21: whatever the great do, others follow).</div>
+  <div class="tieback">Both texts see wisdom as moving in step with the world instead of standing apart from it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;I am made all things to all men, that I might by all means save some.&rdquo;</div>
+  <div class="cite">&mdash; 1 Corinthians 9:22 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Paul describes adapting his conduct to Jews, Gentiles, and the weak alike: living as they live, so as to reach them.</div>
+  <div class="tieback">Both texts treat adapting to the ways of those around you as wise and effective.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">Ali ibn Abi Talib said: speak to people according to what they understand. Do you want Allah and His Messenger to be denied?</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:127" target="_blank" rel="noopener">Sahih al-Bukhari, Book of Knowledge, no. 127 (saying of Ali)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Bukhari records Ali&#x27;s teaching in the Book of Knowledge: the wise adapt what they say to the capacity and ways of their audience.</div>
+  <div class="tieback">Both texts see wisdom as fitting oneself to the people among whom one lives and speaks.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">The Talmud teaches that a person should never deviate from local custom. When Moses ascended on high he did not eat bread, and when the angels descended to visit Abraham they appeared to eat.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Bava_Metzia.58b" target="_blank" rel="noopener">Babylonian Talmud, Bava Metzia 86b</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Even Moses and the angels adjusted their behaviour to the realm they were in, and the Talmud draws a general rule of wise conduct from this.</div>
+  <div class="tieback">This is nearly the Kural&#x27;s point: live as the world you are in lives.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Buddha says: &#x27;I do not dispute with the world; the world disputes with me.&#x27; What the wise in the world agree does not exist, he too says does not exist; what they agree exists, he too says exists.</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/sn22.94" target="_blank" rel="noopener">Puppha Sutta, Samyutta Nikaya 22.94</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha presents himself as not contrary for its own sake. He aligns his statements with what the wise of the world accept.</div>
+  <div class="tieback">This matches the Kural and Parimelazhagan&#x27;s reading that one should abide as the wise of the world abide.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">Hemacandra&#x27;s Yogaśāstra opens its account of lay conduct with the qualities of the mārgānusārī, the householder who is &#x27;following the path&#x27; even before taking the vows. Among them are earning wealth honestly and conforming to the proper, approved customs of one&#x27;s society and country.</div>
+  <div class="cite">&mdash; Hemacandra, Yogaśāstra, ch. 1 (the mārgānusārī qualities of the householder); paraphrased <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">For Jain teachers, a layperson&#x27;s spiritual path begins with being a decent and well-adjusted member of society, living by the accepted good customs around them, before any higher discipline is taken up.</div>
+  <div class="tieback">Valluvar&#x27;s wisdom of &#x27;living as the (worthy) world lives&#x27; corresponds to the Jain picture of the householder whose first virtues include fitting in with the sound customs of his land.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;In the midst of this world, do seva, and you shall be given a place of honor in the Court of the Lord.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 26, Siree Raag, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Siree Raag Guru Nanak teaches that the spiritual life is lived in the world through service, not by leaving it.</div>
+  <div class="tieback">The Kural defines wisdom as living in harmony with the world as the worthy do; Guru Nanak likewise places the right life within the world, through seva.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Odysseus is introduced as polytropos, &#x27;the man of many turns&#x27;, who &#x27;saw the cities of many men and learned their mind&#x27;. He survives by adapting his manner to each people and court he encounters.</div>
+  <div class="cite">&mdash; Homer, Odyssey 1.1-5 <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">His defining trait is adaptability: reading each new society and conducting himself accordingly.</div>
+  <div class="tieback">He illustrates the Kural&#x27;s wisdom of moving with the world as the world moves.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">The first maxim of Descartes&#x27;s provisional moral code is to obey the laws and customs of his country, and to govern himself by the most moderate opinions of the most sensible people he would live among.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/59" target="_blank" rel="noopener">René Descartes, Discourse on the Method, Part 3</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">While doubting everything in theory, Descartes decides that in practice a wise person lives by the settled customs of sensible people around him.</div>
+  <div class="tieback">This closely matches the Kural, including its implicit restriction to the sensible or worthy, as Parimelazhagan reads it.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Matteo Ricci adopts the ways of Chinese scholars</div>
+  <div class="rle-meta">1583-1610 &middot; Southern China and Beijing, Ming China</div>
+  <div class="quote is-paraphrase">The Italian Jesuit Matteo Ricci entered China in 1583, when the interior was closed to most foreigners. He learned Chinese, studied the Chinese classics, and in the mid-1590s exchanged the robes of a Buddhist monk for the dress of a Chinese scholar, winning a hearing among officials and literati through his learning in mathematics, astronomy and geography. In January 1601 he was allowed to settle in Beijing, where he lived and taught until his death in 1610.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">By living as the respected scholars of China lived, Ricci became one of the first Europeans accepted into Chinese intellectual life, opening a long exchange of knowledge between Europe and China.</div>
+  <div class="tieback">The kural defines wisdom as conducting oneself as the worthy of the world conduct themselves, and Ricci succeeded by shaping his dress, speech and learning to the ways of China&#x27;s scholar-officials.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-43/" target="_blank" rel="noopener">The Possession of Knowledge, அறிவுடைமை, Chapter 43 — Thirukural</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/kural-0421.html" target="_blank" rel="noopener">Thirukkural — Chapter 43: The Possession of Knowledge (Kurals 421-430)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://dailyprojectthirukkural.blogspot.com/2016/07/kural426.html" target="_blank" rel="noopener">எவ்வ துறைவது உலகம் — Kural 426</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/bukhari:127" target="_blank" rel="noopener">Sahih al-Bukhari, Book of Knowledge, Hadith 127</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Bava_Metzia.58b" target="_blank" rel="noopener">Babylonian Talmud, Bava Metzia 58b (William Davidson Edition, Koren-Steinsaltz English)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://suttacentral.net/sn22.94" target="_blank" rel="noopener">Puppha Sutta: Flowers (SN 22.94)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9">Yogaśāstra of Hemacandra <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.gutenberg.org/ebooks/59" target="_blank" rel="noopener">Discourse on the Method (Part 3) (René Descartes)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.loc.gov/exhibits/vatican/romechin.html" target="_blank" rel="noopener">How Rome Went to China - Rome Reborn: The Vatican Library and Renaissance Culture</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.britannica.com/summary/Matteo-Ricci" target="_blank" rel="noopener">Matteo Ricci summary</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0425.html">&larr; Kural 425</a>
+  <a href="kural-0427.html">Kural 427 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-043.html">Knowledge Possession</a>
+  <a class="skip-btn" href="kural-0431.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

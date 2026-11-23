@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1075 — Baseness | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1075</h1>
+<p class="adhikaram"><a href="adhikaram-108.html">Baseness</a> &middot; Kayamai &middot; <span class="tamil">கயமை</span></p>
+
+<div class="tamil-text">அச்சமே கீழ்களது ஆசாரம் எச்சம்
+அவாவுண்டேல் உண்டாம் சிறிது.</div>
+<div class="translit">Achchame keezhgaladhu aasaaram echcham
+avaavundel undaam siridhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Fear is the only thing that makes mean people behave well. Beyond that, they behave a little better only when they want something.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Some children only behave when the teacher is watching, or when they hope to get a sweet. When nobody is looking and there is no prize, they misbehave. The Kural says base people are like that: they are good only out of fear or for a reward.</p>
+
+<h2 class="section">University</h2>
+<p>Aasaaram (ஆசாரம், from Sanskrit ācāra, &#x27;right conduct, propriety&#x27;) in the base has two sources only: achcham (அச்சம், &#x27;fear&#x27;) and, as echcham (எச்சம், &#x27;remainder&#x27;), avaa (அவா, &#x27;desire, greed&#x27;). Parimelazhagar specifies the fear as fear of the king&#x27;s punishment, and Puliyur Kesikan follows (&#x27;அரசரால் துன்பம் வரும் என்னும் அச்சம்&#x27;); Solomon Pappaiah likewise reads it as fear of the government. The second line says that if desire for some gain is present, a little more good conduct appears. The couplet thus defines the base by motive: they have no inner love of virtue. Pope: &#x27;Fear is the base man&#x27;s virtue; if that fail, / Intense desire some little may avail.&#x27; The text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;The whole world is kept in order by punishment, for a guiltless man is hard to find; through fear of punishment the whole world yields the enjoyments (which it owes).&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/manu/manu07.htm" target="_blank" rel="noopener">Laws of Manu 7.22 (tr. G. Bühler, SBE 25)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Manu teaches that fear of the king&#x27;s rod (danda) is what keeps most people in line.</div>
+  <div class="tieback">This is the Kural&#x27;s claim about the base: fear of punishment, not virtue, produces their good behaviour.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For rulers are not a terror to good works, but to the evil. Wilt thou then not be afraid of the power? do that which is good, and thou shalt have praise of the same:&rdquo;</div>
+  <div class="cite">&mdash; Romans 13:3 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul says the authorities are something to fear only for wrongdoers, and that doing good earns praise.</div>
+  <div class="tieback">The verse names the two motives the Kural assigns to the base, fear of rulers and hope of reward.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;You [believers] are more fearful within their breasts than Allāh. That is because they are a people who do not understand.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 59:13 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an says the hypocrites fear people more than God, so their conduct is governed by fear of others, not by faith.</div>
+  <div class="tieback">Like the Kural&#x27;s base, their behaviour comes from fear of an outside power rather than inner conviction.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;pray for the welfare of the government, for were it not for the fear it inspires, every man would swallow his neighbor alive.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 3:2 (Mishnah Yomit, tr. Joshua Kulp, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbi Hanina teaches that fear of the ruling power is what keeps people from devouring one another.</div>
+  <div class="tieback">This is the Kural&#x27;s first line: fear of authority is what keeps the base in order.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;In four ways, young householder, should one who appropriates be understood as a foe in the guise of a friend: (i) he appropriates his friend&#x27;s wealth, (ii) he gives little and asks much, (iii) he does his duty out of fear, (iv) he associates for his own advantage.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta, Digha Nikaya 31 (tr. Narada Thera)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha describes a false friend who does what he should only out of fear and for his own gain.</div>
+  <div class="tieback">These are exactly the two motives the Kural gives the base: fear first, and a little more good conduct when there is something to gain.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Better it is that I should subdue my Self by self-control and penance, than be subdued by others with fetters and corporal punishment.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 1.16 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Mahavira&#x27;s teaching sets self-restraint chosen from within against restraint forced from outside by chains and punishment.</div>
+  <div class="tieback">The Kural&#x27;s base man is the one who must be &#x27;subdued by others&#x27; through fear, because he will not restrain himself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;One who does not frighten anyone, and who is not afraid of anyone else&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1427, Saloks of Guru Tegh Bahadur (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In his saloks, Guru Tegh Bahadur describes the truly wise person as one who neither frightens others nor is ruled by fear of them.</div>
+  <div class="tieback">The Kural says the base behave well mainly out of fear of punishment; Guru Tegh Bahadur&#x27;s ideal person acts rightly without being driven by fear at all.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Plato&#x27;s Republic, Glaucon tells the story of Gyges, a shepherd who found a ring that made him invisible and then used it to seduce the queen, kill the king and seize the throne, arguing that anyone would act unjustly if he could do so without fear of being caught.</div>
+  <div class="cite">&mdash; Plato, Republic 2.359c-360d (tr. Benjamin Jowett) <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The story suggests that for many people, justice is only fear of consequences.</div>
+  <div class="tieback">Glaucon&#x27;s Gyges is the Kural&#x27;s base man: remove the fear and his good conduct disappears.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;For these do not by nature obey the sense of shame, but only fear, and do not abstain from bad acts because of their baseness but through fear of punishment&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/nicomachaen.10.x.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics 10.9 (1179b) (tr. W. D. Ross)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle says that most people are kept from wrongdoing not by shame or love of the noble but by fear of punishment, which is why laws are needed.</div>
+  <div class="tieback">Aristotle states the Kural&#x27;s point almost word for word, even naming &#x27;baseness&#x27;.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Shang Yang&#x27;s laws of rewards and punishments in Qin</div>
+  <div class="rle-meta">4th century BCE (died 338 BCE) &middot; State of Qin, China</div>
+  <div class="quote is-paraphrase">The statesman Shang Yang reorganised the state of Qin with strict, uniform laws, harsh penalties even for minor offences, and a system in which neighbours and relatives were held responsible for each other&#x27;s crimes. He also created ranks of merit as rewards. He taught that people like rank and rewards and dislike punishments, so a ruler can steer them with both; Sima Qian credited him with making Qin&#x27;s people law-abiding.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">His Legalist approach helped Qin become the state that later unified China, and it remains the classic case of government built on fear of punishment and hope of gain.</div>
+  <div class="tieback">The kural says fear is the main reason the base behave, with a little good conduct when they want something; Shang Yang built a whole state on exactly those two motives.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-108/" target="_blank" rel="noopener">Thirukkural Chapter 108: கயமை / Baseness (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-108.html" target="_blank" rel="noopener">கயமை - அதிகாரம் 108 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/manu/manu07.htm" target="_blank" rel="noopener">The Laws of Manu, Chapter VII, trans. G. Bühler (Sacred Books of the East, vol. 25, 1886)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit, tr. Dr. Joshua Kulp), 2:5, 3:2, 4:1, 4:15, 4:21, 5:13</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta: The Discourse to Sigala (Digha Nikaya 31), tr. Narada Thera</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Republic, Book X (the Myth of Er) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Aristotle/nicomachaen.10.x.html" target="_blank" rel="noopener">Nicomachean Ethics, Book X (Aristotle)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Shang-Yang" target="_blank" rel="noopener">Shang Yang</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://plato.stanford.edu/entries/chinese-legalism/" target="_blank" rel="noopener">Legalism in Chinese Philosophy (Yuri Pines)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1074.html">&larr; Kural 1074</a>
+  <a href="kural-1076.html">Kural 1076 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-108.html">Baseness</a>
+  <a class="skip-btn" href="kural-1081.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

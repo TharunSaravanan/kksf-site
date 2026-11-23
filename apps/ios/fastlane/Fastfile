@@ -1,0 +1,20 @@
+default_platform(:ios)
+platform :ios do
+  lane :beta do
+    key = app_store_connect_api_key(
+      key_id: ENV["APP_STORE_CONNECT_KEY_ID"],
+      issuer_id: ENV["APP_STORE_CONNECT_ISSUER_ID"],
+      key_content: ENV["APP_STORE_CONNECT_KEY"]
+    )
+    setup_ci
+    File.write("/tmp/dist.p12", Base64.decode64(ENV["CERT_P12_BASE64"]))
+    import_certificate(certificate_path: "/tmp/dist.p12", certificate_password: ENV["CERT_PASSWORD"], keychain_name: "fastlane_tmp_keychain", keychain_password: "")
+    File.write("/tmp/app.mobileprovision", Base64.decode64(ENV["PROFILE_BASE64"]))
+    install_provisioning_profile(path: "/tmp/app.mobileprovision")
+    build_app(
+      project: "Thirukkural.xcodeproj", scheme: "Thirukkural", export_method: "app-store",
+      xcargs: "DEVELOPMENT_TEAM=#{ENV['APPLE_TEAM_ID']} CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY='Apple Distribution'"
+    )
+    upload_to_testflight(api_key: key, skip_waiting_for_build_processing: true)
+  end
+end

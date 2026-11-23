@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 752 — Wealth Accumulation | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 752</h1>
+<p class="adhikaram"><a href="adhikaram-076.html">Wealth Accumulation</a> &middot; Porul Seyalvakai &middot; <span class="tamil">பொருள் செயல்வகை</span></p>
+
+<div class="tamil-text">இல்லாரை எல்லாரும் எள்ளுவர் செல்வரை
+எல்லாரும் செய்வர் சிறப்பு.</div>
+<div class="translit">Illaarai ellaarum elluvar selvarai
+ellaarum seyvar sirappu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Everyone looks down on people who have nothing, and everyone praises people who are rich.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Two children come to a party. One wears a torn shirt and the other a shiny new outfit. Some people smile at the second child and ignore the first, even though nothing else is different. Valluvar is telling us this happens, so that we notice it and do not treat people unfairly.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet is built on a tight parallelism: illaarai (the have-nots) against selvarai (the wealthy), and ellaarum elluvar (all scorn) against ellaarum seyvar sirappu (all do honour). Mu. Varadarasanar adds in parentheses that the poor are scorned even if they have other virtues and the rich honoured even if they have none, which makes the verse a comment on injustice as well as a fact of life. Parimelazhagar reads it, like 751, as a reason for the ruler to gather wealth: a king without a treasury would suffer the same contempt. Kalaignar’s gloss calls this simply the way of the world (உலக நடப்பு). The sandhi-joined text reads இல்லாரை யெல்லாரு மெள்ளுவர், which divides into the same words.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;It is seen that a poor man, even when he stands near, is accused falsely. Poverty is a state of sinfulness. It behoveth thee not to applaud poverty, therefore.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/m12/m12a008.htm" target="_blank" rel="noopener">Mahabharata, Shanti Parva, Section VIII (trans. K. M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Arjuna argues that society treats the poor with suspicion and contempt, so poverty should not be praised.</div>
+  <div class="tieback">Arjuna sees the same contempt for the poor that Valluvar describes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;For if there come unto your assembly a man with a gold ring, in goodly apparel, and there come in also a poor man in vile raiment; And ye have respect to him that weareth the gay clothing, and say unto him, Sit thou here in a good place; and say to the poor, Stand thou there, or sit here under my footstool.&rdquo;</div>
+  <div class="cite">&mdash; James 2:2-3 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">James rebukes a congregation that gives the best seat to a rich visitor and pushes a poor one to the floor.</div>
+  <div class="tieback">James shows the very scene the Kural describes, honour for the rich and scorn for the poor, and calls it sinful partiality.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Wealth and children are [but] adornment of the worldly life. But the enduring good deeds are better to your Lord for reward and better for [one’s] hope.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 18:46 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an grants that wealth adorns worldly life but says lasting good deeds count for more with God.</div>
+  <div class="tieback">The verse agrees that wealth brings worldly honour, as the Kural says, while pointing to a truer measure of worth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;So I observed: Wisdom is better than valor; but The wisdom of the poor is scorned, And their words are not heeded.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Ecclesiastes 9:16 (JPS Tanakh, Revised JPS 2023, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Kohelet tells of a poor wise man who saved a city yet was forgotten, and concludes that the poor person’s wisdom is despised.</div>
+  <div class="tieback">Kohelet sees the same scorn for the poor as the Kural, even when the poor have real merit.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Dhammapada calls contentment the greatest wealth, measuring worth by inner qualities rather than possessions.</div>
+  <div class="cite">&mdash; Dhammapada 204 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Buddhist teaching places real value in contentment and virtue, not in what a person owns.</div>
+  <div class="tieback">This is a counterweight to the Kural’s observation: the world honours the rich, but the Dhamma honours the content.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;When (the priests) saw him coming up, emaciated by austerities, in a miserable condition, and with the poorest outfit, they laughed at him, the ruffians.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 12.4 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Brahmin priests at a sacrifice mock and then try to drive off the monk Harikesa because he looks destitute, until his spiritual power is revealed and they beg his forgiveness.</div>
+  <div class="tieback">The episode dramatises exactly what the Kural observes, that everyone scorns the person who appears to have nothing, though the Jain text condemns that scorn rather than treating it as a reason to get rich.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;No one respects the poor man. He may make thousands of efforts, but no one pays any attention to him. When the poor man goes to the rich man, and sits right in front of him, the rich man turns his back on him. But when the rich man goes to the poor man, the poor man welcomes him with respect.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1159, Raag Bhairao, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Bhagat Kabir describes how the world slights the poor and honours the rich, then concludes that the two are brothers and that the truly poor one is he who lacks the Name in his heart.</div>
+  <div class="tieback">The Kural says everyone scorns those who have nothing and honours the rich; Kabir paints the very same scene, almost line for line.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;An evil shame is the needy man’s companion, shame which both greatly harms and prospers men: shame is with poverty, but confidence with wealth.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days (trans. H. G. Evelyn-White)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hesiod says that poverty brings shame with it and wealth brings confidence and standing.</div>
+  <div class="tieback">Hesiod’s shame of poverty and confidence of wealth mirror the Kural’s scorn and honour.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Juvenal’s third satire complains that the hardest thing about unhappy poverty is that it makes people ridiculous, and it describes the poor man in Rome mocked for his torn cloak and patched shoes.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:2007.01.0091" target="_blank" rel="noopener">Juvenal, Satire III, lines 152-153</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The Roman satirist protests that in Rome the poor are laughed at and shut out while the rich are courted.</div>
+  <div class="tieback">Juvenal gives the angry version of the Kural’s calm observation that all scorn the poor.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Twelve-year-old Charles Dickens works in a blacking factory while his father is in debtors&#x27; prison</div>
+  <div class="rle-meta">1824 &middot; London, England, United Kingdom</div>
+  <div class="quote is-paraphrase">In February 1824 John Dickens was imprisoned for debt in the Marshalsea prison in Southwark, and most of his family joined him there. His twelve-year-old son Charles was sent to work at Warren&#x27;s Blacking warehouse near Hungerford Stairs, pasting labels on pots of boot blacking. The family was released some months later after an inheritance allowed the debt to be paid, and Dickens later drew on the debtors&#x27; prison in novels such as Little Dorrit.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The episode shows how quickly debt stripped a respectable family of its standing in Victorian society, and Dickens spent much of his writing life exposing how the poor were treated.</div>
+  <div class="tieback">The kural observes that everyone looks down on those who have nothing, and the Dickens family&#x27;s fall into the Marshalsea and a child&#x27;s labour in a rat-infested warehouse show that contempt in action.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-76/" target="_blank" rel="noopener">Thirukkural Chapter 76: பொருள்செயல்வகை / Way of Accumulating Wealth (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A076.html" target="_blank" rel="noopener">76. பொருள்செயல்வகை (பொருள் தேடும் முறை) — Thirukkural, sandhi-joined text</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/m12/m12a008.htm" target="_blank" rel="noopener">The Mahabharata, Book 12: Santi Parva, Section VIII (Arjuna on wealth), trans. Kisari Mohan Ganguli</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The JPS Tanakh: Gender-Sensitive Edition (Revised JPS, 2023)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:2007.01.0091" target="_blank" rel="noopener">Juvenal, Satires, Satire III</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://dickensmuseum.com/blogs/charles-dickens-museum/64552835-the-marshalsea-prison-grille" target="_blank" rel="noopener">The Marshalsea Prison Grille</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://victorianweb.org/authors/dickens/debtorsprisons.html" target="_blank" rel="noopener">Dickens and Debtors&#x27; Prisons</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0751.html">&larr; Kural 751</a>
+  <a href="kural-0753.html">Kural 753 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-076.html">Wealth Accumulation</a>
+  <a class="skip-btn" href="kural-0761.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

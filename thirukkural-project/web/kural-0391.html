@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 391 — Learning | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 391</h1>
+<p class="adhikaram"><a href="adhikaram-040.html">Learning</a> &middot; Kalvi &middot; <span class="tamil">கல்வி</span></p>
+
+<div class="tamil-text">கற்க கசடறக் கற்பவை கற்றபின்
+நிற்க அதற்குத் தக.</div>
+<div class="translit">Karka kasadarak karpavai katrapin
+Nirka adharkuth thaga.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Learn what is worth learning, and learn it fully, without gaps. Then live in a way that matches what you have learned.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine learning all the rules of football perfectly but then cheating in the game. That would make the learning pointless. This kural says two things: learn good things properly, then actually live by them.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter on Kalvi opens with a two-step command. The first is கற்க கசடற: learn so that no flaw (kasadu) is left, which traditional commentators such as Parimelazhagar read as choosing the right texts and also removing one&#x27;s own mental faults through study. The second is நிற்க அதற்குத் தக: stand, or remain, in conduct fitting to that learning. The verb நிற்க (to stand) is significant, because it pictures learning as a place one lives in and not only a set of facts one holds. Because the chapter sits in the Porul section, just after the chapter on kingship, this is also advice to rulers: a king&#x27;s learning is shown in how he governs, not in how much he can recite. The same link between knowing and doing appears across many traditions, from the Epistle of James to the Stoic Epictetus.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the teacher&#x27;s farewell address to graduating students in the Taittiriya Upanishad, the student is told to speak the truth, practise dharma, and never neglect study (svadhyaya).</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Taittiriya_Upanishad" target="_blank" rel="noopener">Taittiriya Upanishad 1.11.1 (Shiksha Valli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">This is a traditional convocation charge. When formal study ends, the teacher says learning must now become right conduct and must also continue as lifelong self-study.</div>
+  <div class="tieback">Like the Kural, it treats finishing one&#x27;s studies as the start of living by them. Both parts are there: study faithfully, then act accordingly.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But be ye doers of the word, and not hearers only, deceiving your own selves.&rdquo;</div>
+  <div class="cite">&mdash; James 1:22 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">James warns believers that hearing or knowing God&#x27;s teaching is not enough. Anyone who does not act on it is fooling themselves.</div>
+  <div class="tieback">This matches the second half of the Kural: once you have learned, stand by it in action.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O you who have believed, why do you say what you do not do? Greatly hateful in the sight of Allāh is that you say what you do not do.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 61:2–3 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an condemns a gap between what people profess and what they practise. Knowing and saying the right thing without doing it is called hateful to God.</div>
+  <div class="tieback">It gives the negative side of the Kural&#x27;s command. Once you know what is right, your conduct has to match it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Anyone whose deeds exceed his wisdom, his wisdom is enduring, but anyone whose wisdom exceeds his deeds, his wisdom is not enduring.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 3:9 (Kulp translation, Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Rabbi Hanina ben Dosa teaches that learning lasts only when it is rooted in and outweighed by action. Wisdom without deeds withers away.</div>
+  <div class="tieback">This is almost a Jewish twin of the Kural: learning is real only when conduct stands in line with it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Much though he recites the sacred texts, but acts not accordingly, that heedless man is like a cowherd who only counts the cows of others — he does not partake of the blessings of the holy life.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 19 (trans. Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha compares someone who knows many texts but does not practise them to a hired cowherd. He counts cattle that are not his own and never gets their milk.</div>
+  <div class="tieback">Same point as the Kural: learning that is not lived gives nothing to the learner.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;One does not attain liberation (merely) by the (study of) scripture, if he has no faith with regard to the nature of reality; or one who has faith cannot attain Nirvana if he is devoid of moral discipline.&rdquo;</div>
+  <div class="cite">&mdash; Pravacanasara III.237 (Kundakunda, tr. A.N. Upadhye; jainworld.com) <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Kundakunda insists that scriptural learning is necessary but not enough. Knowledge has to be joined with right faith and lived out as right conduct, the three jewels of the Jain path.</div>
+  <div class="tieback">Valluvar tells us to learn flawlessly and then to stand firm in conduct worthy of what we have learned. Kundakunda says the same: learning without matching conduct does not reach the goal.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Truth is higher than everything; but higher still is truthful living.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 62, Siree Raag, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Nanak teaches that knowing the Truth is supreme, but living it out in one&#x27;s conduct ranks higher still.</div>
+  <div class="tieback">The Kural asks us to learn flawlessly and then to stand by what we have learned; Guru Nanak places conduct that matches the truth above knowledge of it, which is the second half of the couplet.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Athena is at once the goddess of wisdom (metis) and the patron of practical crafts such as weaving, shipbuilding and strategy. In Greek myth her wisdom always shows itself in skilled action.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">General Greek mythology (Homeric Hymn 28 to Athena; Hesiod, Theogony 886–900 on Metis)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Athena&#x27;s wisdom is never idle. It appears in finished work, sound counsel and well-fought battles.</div>
+  <div class="tieback">Loosely parallel: Greek myth pictures true wisdom as knowledge expressed in deeds, as the Kural asks.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Never call yourself a philosopher, nor talk a great deal among the unlearned about theorems, but act conformably to them.&rdquo;</div>
+  <div class="cite">&mdash; Epictetus, Enchiridion 46 <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Epictetus tells his students that philosophy is proven by behaviour, not by talk. At a dinner party, do not lecture on how people should eat. Simply eat as one should.</div>
+  <div class="tieback">This echoes the Kural&#x27;s second line, where learning must be shown by standing in conduct that fits it.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Gandhi reads Unto This Last and founds the Phoenix Settlement</div>
+  <div class="rle-meta">1904 &middot; Johannesburg to Durban, and Phoenix, Natal, South Africa</div>
+  <div class="quote is-paraphrase">In 1904 Mohandas Gandhi&#x27;s friend Henry Polak gave him John Ruskin&#x27;s Unto This Last to read on the overnight train from Johannesburg to Durban. Gandhi later wrote that he could not put the book down, could not sleep that night, and resolved to change his life according to its ideals. Within weeks he moved the press of his newspaper Indian Opinion to a farm near Durban, the Phoenix Settlement, where he and co-workers such as Albert West lived and worked together as equals.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Gandhi did not treat the book as information to be admired; he reorganised his work and daily life around it almost at once, and later translated it into Gujarati as Sarvodaya.</div>
+  <div class="tieback">The kural asks that one learn what is worth learning thoroughly and then stand in conduct that fits it, which is exactly what Gandhi did after one night&#x27;s reading.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-40/" target="_blank" rel="noopener">Thirukkural Chapter 40: கல்வி / Learning (with commentaries by Mu. Varadarasan, Solomon Pappaiah, Kalaignar, Sivayogi Sivakumar)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-040.html" target="_blank" rel="noopener">Learning: Adhigaram 40, Thirukkural</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://en.wikisource.org/wiki/Taittiriya_Upanishad" target="_blank" rel="noopener">Taittiriya Upanishad (Ananda Valli, the graded calculus of bliss, 2.8-2.9)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8">Pravacanasāra of Ācārya Kundakunda <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Theogony (Hesiod)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Enchiridion, Chapter 5 (Epictetus) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://franpritchett.com/00litlinks/gandhi/part4/418chapter.html" target="_blank" rel="noopener">The Magic Spell of a Book (An Autobiography, Part IV, Chapter 18) (M. K. Gandhi, trans. Mahadev Desai; ed. Frances Pritchett)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://leaf.bucknell.edu/group/living-gandhi-archive/albert-west-0" target="_blank" rel="noopener">Albert West</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0390.html">&larr; Kural 390</a>
+  <a href="kural-0392.html">Kural 392 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-040.html">Learning</a>
+  <a class="skip-btn" href="kural-0401.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

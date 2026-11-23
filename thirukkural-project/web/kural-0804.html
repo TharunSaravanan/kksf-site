@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 804 — Familiarity | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 804</h1>
+<p class="adhikaram"><a href="adhikaram-081.html">Familiarity</a> &middot; Pazhaimai &middot; <span class="tamil">பழைமை</span></p>
+
+<div class="tamil-text">விழைதகையான் வேண்டி இருப்பர் கெழுதகையாற்
+கேளாது நட்டார் செயின்.</div>
+<div class="translit">Vizhaidhakaiyaan vendi iruppar kezhudhakaiyaar
+kelaadhu nattaar seyin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>When close friends do something for you without asking, wise people are happy about it, because it came from someone they love.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Your friend sees your bike tyre is flat and pumps it up while you are at lunch, without asking. You don’t say, ‘Who gave you permission?’ You say, ‘Thanks!’ That is how old friends treat each other.</p>
+
+<h2 class="section">University</h2>
+<p>The key phrase is kelaadhu (கேளாது, ‘without asking’): the friend acts for us kezhudhakaiyaal, ‘by the right of intimacy’. The wise respond vizhaidhakaiyaan (விழைதகையான், ‘because of its desirability’), and vendi iruppar, ‘remain as those who wanted it’. Mu. Varadarasanar emphasises honouring the right itself, while Solomon Pappaiah says the wise accept the act even when they already knew of it, because it was done willingly by a friend. Kalaignar and Puliyur Kesigan make the same point more plainly: a good friend accepts what was done unasked. The couplet assumes a household culture in which a close friend may lawfully use or dispose of what is ours. Both base texts agree.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Sudama leaves Krishna’s palace without having asked for anything. When he gets home, he finds that Krishna has already, without a word, turned his hut into a mansion and ended his poverty, and Sudama accepts the gift with humility and gratitude.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/sb/10/80/" target="_blank" rel="noopener">Bhagavata Purana 10.81 (story of Sudama)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">In the Bhagavata Purana, Krishna acts for his old friend without being asked, and the friend receives it as an act of love, not an intrusion.</div>
+  <div class="tieback">This is the Kural’s situation: a friend acts unasked out of intimacy, and the other welcomes it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">In a parable, Jesus describes a man who goes to his friend at midnight and asks to borrow three loaves for an unexpected guest, sure that friendship gives him the right to ask even at that hour.</div>
+  <div class="cite">&mdash; Luke 11:5-8 <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The parable assumes that a friend may make demands that would be unthinkable from a stranger.</div>
+  <div class="tieback">It reflects the same culture of intimate claims the Kural assumes, though here the friend asks and is grudgingly answered.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;or [from houses] whose keys you possess or [from the house] of your friend. There is no blame upon you whether you eat together or separately.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 24:61 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an lists a friend’s house among the places where a believer may eat without blame, alongside the homes of close relatives.</div>
+  <div class="tieback">This makes into law the liberty the Kural describes: a close friend may take from what is ours without a formal request.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Years after Jonathan’s death, King David asks whether anyone of Saul’s house is left to whom he can show kindness for Jonathan’s sake. He brings Jonathan’s lame son Mephibosheth to his table for life and restores Saul’s lands to him, though no one had asked him to.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">2 Samuel 9:1-13</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">David acts unprompted on the strength of an old friendship.</div>
+  <div class="tieback">This is friendship acting without being asked; Mephibosheth’s humble acceptance mirrors the welcome the Kural expects.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The monastic code allows a monk to take an item ‘on trust’ (vissāsa) from a friend when five conditions are met: they are acquainted, intimate, the friend has spoken of it, the friend is alive, and the monk knows the friend will be pleased when the item is taken.</div>
+  <div class="cite">&mdash; <a href="https://suttacentral.net/pli-tv-kd8" target="_blank" rel="noopener">Vinaya Pitaka, Mahavagga VIII (rule on taking on trust)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Buddhist monastic law recognises that among intimates, taking without asking is not theft if the friend would be pleased.</div>
+  <div class="tieback">It is almost the Kural’s exact situation: an act done unasked by right of intimacy, and accepted because the friend wanted it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;In a thing done by strangers, though in itself exceeding bad, what is there fitted to give pain? Considered rightly, it is the acts of those who are affectionately attached; which, O lord of the land where the waterfalls murmur! will be esteemed excellent, abiding in the mind.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">Naladiyar, ch. 23 &#x27;The bearing with the faults of others&#x27;, stanza 8 (English tr. in The Indian Antiquary; wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The poet holds that the acts of those bound to us by affection are, rightly considered, treasured in the mind as excellent, unlike the acts of strangers.</div>
+  <div class="tieback">The Kural says the wise welcome what a close friend does unasked as something they wanted, and the Naladiyar similarly says a loving friend&#x27;s acts are prized for the love behind them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">When Mardana lay dying at Kartarpur in 1534, Guru Nanak asked how he wished his body to be disposed of; Mardana replied that by the Guru&#x27;s teaching he had overcome pride in the body, and whatever remained should be disposed of as the Guru wished. He declined a tomb, and the Guru consigned his body to the River Ravi.</div>
+  <div class="cite">&mdash; <a href="https://eos.learnpunjabi.org/MARDANA%20BHAI%20(1459-1534).html" target="_blank" rel="noopener">The Encyclopaedia of Sikhism, ed. Harbans Singh (Punjabi University, Patiala), entry &#x27;Mardana, Bhai (1459-1534)&#x27; by Satbir Singh (paraphrase)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Mardana left the most personal decision of all to his old companion without asking for anything, trusting that whatever Guru Nanak chose would be right.</div>
+  <div class="tieback">The Kural says the wise welcome what a close friend does for them unasked, as though they had wanted it; Mardana&#x27;s leaving his own last rites to Guru Nanak shows that complete trust in an old friend&#x27;s choices.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Pirithous raids Theseus’ cattle to test his famous strength. When the two men meet, each is so taken with the other that Pirithous offers to pay whatever penalty Theseus names, and Theseus instead forgives the raid and offers friendship.</div>
+  <div class="cite">&mdash; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Theseus*.html" target="_blank" rel="noopener">Plutarch, Life of Theseus 30</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">As Plutarch tells it, a liberty taken without leave becomes the start of a lifelong friendship rather than a quarrel.</div>
+  <div class="tieback">Theseus welcomes an unasked act instead of resenting it, as the Kural advises, though here the friendship begins rather than having aged.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;it is fitting to go unasked and readily to the aid of those in adversity (for it is characteristic of a friend to render services, and especially to those who are in need and have not demanded them; such action is nobler and pleasanter for both persons)&rdquo;</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics IX.11 (trans. W. D. Ross)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle praises the friend who helps without being asked, and says such help is more pleasant for both sides.</div>
+  <div class="tieback">He shares Valluvar’s view that friendship works best through unasked acts that both sides welcome.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Emerson&#x27;s friends rebuild his house and send him abroad after a fire</div>
+  <div class="rle-meta">1872-1873 &middot; Concord, Massachusetts, United States</div>
+  <div class="quote is-paraphrase">On 24 July 1872 a fire badly damaged Ralph Waldo Emerson&#x27;s house in Concord, destroying the roof and much of the second floor. Without being asked, Emerson&#x27;s friends raised money to restore the house; his Harvard classmate Francis Cabot Lowell personally delivered a gift of 5,000 dollars from himself and other friends, and Judge Ebenezer Hoar presented a further sum collected to pay for a journey to Europe and Egypt. Emerson accepted, travelled with his daughter Ellen, and returned on 27 May 1873 to find the house restored and the town waiting to welcome him.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The episode shows a community of old friends acting on its own initiative to rescue a dispirited friend, and Emerson&#x27;s grateful acceptance of what they had arranged.</div>
+  <div class="tieback">The kural says the wise welcome what close friends do for them unasked, as if they had wanted it themselves, and Emerson accepted both the rebuilding and the journey his friends had planned without consulting him.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-81/" target="_blank" rel="noopener">Thirukkural Chapter 81: பழைமை / Familiarity (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-081.html" target="_blank" rel="noopener">பழைமை - அதிகாரம் 81 - திருக்குறள் (with Puliyur Kesigan, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/sb/10/80/" target="_blank" rel="noopener">Srimad Bhagavatam (Bhagavata Purana) 10.80-81: the story of Sudama (the brahmana friend of Krishna)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Tanakh: Books of Samuel (Hebrew text with English translations)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://suttacentral.net/pli-tv-kd8" target="_blank" rel="noopener">Vinaya Pitaka, Mahavagga VIII (Civarakkhandhaka), rule on taking on trust (vissasa)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">The Nāladiyār (English translation serialised in The Indian Antiquary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://eos.learnpunjabi.org/MARDANA%20BHAI%20(1459-1534).html" target="_blank" rel="noopener">Mardana, Bhai (1459-1534) (entry in The Encyclopaedia of Sikhism) (Satbir Singh, in The Encyclopaedia of Sikhism, ed. Harbans Singh)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Theseus*.html" target="_blank" rel="noopener">Plutarch, Life of Theseus (Parallel Lives)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://concordlibrary.org/special-collections/emerson-celebration/Em_Con_76_77" target="_blank" rel="noopener">Fire at Bush (1872) and Concord&#x27;s Response: A Public Reception of Mr. R.W. Emerson on His Return Home from Europe (Robert C. W. Hall, Jr.)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.nps.gov/places/ralph-waldo-emerson-house.htm" target="_blank" rel="noopener">Ralph Waldo Emerson House (National Park Service)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0803.html">&larr; Kural 803</a>
+  <a href="kural-0805.html">Kural 805 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-081.html">Familiarity</a>
+  <a class="skip-btn" href="kural-0811.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 500 — Knowledge of Location | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 500</h1>
+<p class="adhikaram"><a href="adhikaram-050.html">Knowledge of Location</a> &middot; Idanarithal &middot; <span class="tamil">இடனறிதல்</span></p>
+
+<div class="tamil-text">காலாழ் களரில் நரியடும் கண்ணஞ்சா
+வேலாள் முகத்த களிறு.</div>
+<div class="translit">Kaalaazh kalaril nariyadum kannanjaa
+Velaal mukaththa kaliru.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A brave war elephant that can pierce spear-carrying soldiers with its tusks can be killed even by jackals when it gets stuck in deep mud.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A huge elephant is the strongest animal in the forest, but if it gets stuck in deep mud, even small animals can bother it and it can’t fight back. Being big and strong doesn’t help if you’re stuck in the wrong place.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter closes with its strongest contrast. ‘Kaal aazh kalar’ is mire or saline swamp where legs sink; ‘kann anjaa’ is ‘unflinching of eye’, never afraid; ‘velaal mukaththa kaliru’ is the tusker that carries spear-bearing warriors (velaal) impaled on its tusks (mukam, the front), which Parimelazhagar explains as an elephant that has gored armed soldiers. The ‘nari’ is the jackal, the most contemptible of predators, so the verse sets the mightiest animal against the meanest. The old continuous text (thirukkural-thamizh.org) shows the sandhi ‘காலாழ் களரி னரியடுங் கண்ணஞ்சா வேலாண் முகத்த களிறு’, where ‘வேலாண்’ is ‘வேலாள்’ joined to ‘முகத்த’. The kural returns to 491’s warning: the greatest strength, put on the wrong ground, falls to the weakest enemy.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Karna Parva, the left wheel of Karna’s chariot sinks into the earth in the middle of his duel with Arjuna. While Karna struggles to lift it free, the peerless warrior is struck down.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahābhārata, Karṇa Parva, Sections 90–91 (tr. K. M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Mahabharata’s great tragic hero is not beaten by lack of skill or courage but by ground that gives way under him.</div>
+  <div class="tieback">This is the fearless war elephant stuck in the mire, told of a human champion.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;He brought me up also out of an horrible pit, out of the miry clay, and set my feet upon a rock, and established my goings.&rdquo;</div>
+  <div class="cite">&mdash; Psalm 40:2 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The psalmist thanks God for lifting him out of sinking mud and putting his feet on firm ground.</div>
+  <div class="tieback">The contrast between miry clay and a rock underfoot is the Kural’s contrast between the swamp and firm footing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;[Remember] when He… sent down upon you from the sky, rain by which to purify you… and to make steadfast your hearts and plant firmly thereby your feet.&rdquo;</div>
+  <div class="cite">&mdash; Quran 8:11 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Before Badr, rain firmed up the sandy ground under the Muslim position. Commentators add that the same rain made the Quraysh side heavy and slippery.</div>
+  <div class="tieback">Firm footing for one side and bad ground for the other is exactly the kural’s lesson.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Sisera, commander of nine hundred iron chariots, the elite weapon of his day, lost the battle by the river Kishon when the ground turned against his chariots. He fled on foot and was killed by Jael, a tent-dwelling woman.</div>
+  <div class="cite">&mdash; Judges 4:13–21; 5:21 <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The most feared force in Canaan was destroyed by bad ground and finished off by an unlikely hand.</div>
+  <div class="tieback">This is the mighty tusker in the mire, killed by the weakest of foes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Delight in heedfulness! Guard well your thoughts! Draw yourself out of this bog of evil, even as an elephant draws himself out of the mud.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 327 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Dhammapada uses the familiar image of an elephant stuck in a bog to urge vigilance.</div>
+  <div class="tieback">Same image as the kural, the mighty elephant helpless in mud, turned into advice to get out of it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As an elephant, sinking down in a quagmire, sees the raised ground but does not get to the shore, so do we who long for sensual pleasures, not follow the path of monks.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 13.30 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">King Brahmadatta confesses that his attachment to pleasure leaves him like an elephant stuck in a bog, able to see firm ground but unable to reach it.</div>
+  <div class="tieback">The kural&#x27;s mighty elephant becomes helpless once its feet sink in mud; the Jain text uses the same image of a powerful elephant stuck in a quagmire, here as a picture of the soul trapped by its desires.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Attracted by the lure of sexual desire, the elephant is captured, O crazy mind, and now the halter is placed around its neck.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 335, Raag Gauree, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Kabir recalls how the mighty elephant is drawn onto ground where it can be trapped, and once caught it must bear the goad and halter.</div>
+  <div class="tieback">The Kural&#x27;s fearless war elephant is brought down even by jackals once it is stuck in the mire; Kabir&#x27;s elephant likewise loses all its power once it is lured onto the wrong ground.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Iliad 21, Achilles, unmatched on the plain, fights the river-god Scamander in his own element. The flood breaks down on him, the ground washes away beneath his feet, and the greatest warrior of Troy nearly drowns until the gods step in.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad 21.233–271 (tr. Samuel Butler)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Even Achilles is almost undone once he fights in the river’s domain rather than on firm ground.</div>
+  <div class="tieback">Like the tusker in the mire, the mightiest fighter becomes helpless where his footing gives way.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;In crossing salt-marshes, your sole concern should be to get over them quickly, without any delay.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/132" target="_blank" rel="noopener">Sun Tzu, The Art of War IX.7 (tr. Lionel Giles)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Sun Tzu treats marshland as dangerous ground where an army must not linger or give battle if it can avoid it.</div>
+  <div class="tieback">His warning rests on the Kural’s point that boggy ground can destroy even a mighty force.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Flemish townsmen defeat the French knights at the Battle of the Golden Spurs</div>
+  <div class="rle-meta">11 July 1302 &middot; Courtrai (Kortrijk), Flanders, Belgium</div>
+  <div class="quote is-paraphrase">When the towns of Flanders rose against French rule, a French army of professional mounted knights was sent against them. The Flemish army, made up largely of townspeople and craft guildsmen fighting on foot, took a stand on ground bounded by streams and ditches, where marshy soil hampered the horsemen. The French cavalry charge broke down on this ground and the knights were defeated by the foot soldiers, who afterwards collected the fallen knights&#x27; spurs as trophies.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">The battle showed that the most prestigious troops of the age could be beaten by ordinary infantry once they were caught on ground that suited the defender.</div>
+  <div class="tieback">The kural says the fearless war elephant can be killed even by jackals once it is stuck in mud, and the proud French knights were brought down by humble townsmen in the marshes of Courtrai.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.thirukkural.net/ta/kural/adhigaram-050.html" target="_blank" rel="noopener">இடன் அறிதல், Adhigaram 50, Thirukkural (Kurals 491–500), with commentaries by Puliyur Kesikan, Mu. Varadarasan, Solomon Pappaiah and Mu. Karunanidhi</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A050.html" target="_blank" rel="noopener">50. இடனறிதல் (Thirukkural with old continuous text, word-by-word gloss and commentary)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0134%3Abook%3D21" target="_blank" rel="noopener">Homer, Iliad, Book 21, translated by A. T. Murray (Loeb Classical Library, 1924)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.gutenberg.org/ebooks/132" target="_blank" rel="noopener">Sun Tzu, The Art of War (tr. Lionel Giles, 1910)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/event/Battle-of-the-Golden-Spurs" target="_blank" rel="noopener">Battle of the Golden Spurs</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.historytoday.com/archive/battle-golden-spurs" target="_blank" rel="noopener">The Battle of the Golden Spurs</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0499.html">&larr; Kural 499</a>
+  <a href="kural-0501.html">Kural 501 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-050.html">Knowledge of Location</a>
+  <a class="skip-btn" href="kural-0501.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

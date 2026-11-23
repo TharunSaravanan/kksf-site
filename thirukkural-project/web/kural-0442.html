@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 442 — Seeking the Aid of Great Men | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 442</h1>
+<p class="adhikaram"><a href="adhikaram-045.html">Seeking the Aid of Great Men</a> &middot; Periyaaraith Thunaikkodal &middot; <span class="tamil">பெரியாரைத் துணைக்கோடல்</span></p>
+
+<div class="tamil-text">உற்றநோய் நீக்கி உறாஅமை முற்காக்கும்
+பெற்றியார்ப் பேணிக் கொளல்.</div>
+<div class="translit">Utranoi neekki uraaamai murkaakkum
+Petriyaarp penik kolal.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Care for and keep close the people who can remove troubles that have already come and protect you from troubles still to come.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Some wise people can help you fix a problem you already have, and can also warn you about problems before they happen. This kural says: treat people like that with great care and keep them close.</p>
+
+<h2 class="section">University</h2>
+<p>‘Noi’ literally means disease, but here it stands for any affliction — political, financial, or personal. The couplet distinguishes two functions of the wise counselor: the remedial (utra noi neekki, removing the affliction already suffered) and the preventive (uraamai murkaakkum, guarding beforehand against what has not yet arrived). The latter is the rarer gift, since it requires foresight. ‘Petriyaar’ denotes those who possess this capacity as a settled quality, and ‘penik kolal’ (cherishing and holding) implies that such people must be honored and maintained, not merely consulted when convenient.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Mahabharata (Adi Parva), Vidura foresees Duryodhana’s plot to burn the Pandavas in the house of lac at Varanavata; he warns Yudhishthira in a coded message and secretly sends a miner to dig an escape tunnel.</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Adi Parva (Jatugriha episode), tr. K. M. Ganguli</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Vidura both anticipates a danger before it strikes and provides the means of escape when it arrives, so the Pandavas survive the fire.</div>
+  <div class="tieback">Vidura is exactly the Kural’s ‘petriyaar’: one who guards against harm before it comes and removes it when it does.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Sirs, ye should have hearkened unto me, and not have loosed from Crete, and to have gained this harm and loss.&rdquo;</div>
+  <div class="cite">&mdash; Acts 27:21 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Paul had warned the ship’s crew not to sail; ignored, they are caught in a storm. Paul then gives the counsel that saves everyone aboard.</div>
+  <div class="tieback">Paul functions first as a preventive counselor (ignored) and then as a remedial one (heeded) — the two roles the Kural names.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">Before the Battle of the Trench (5 AH), the Prophet accepted the counsel of Salman al-Farsi to dig a defensive trench around Medina, a Persian tactic unknown to the Arabs; the besieging confederates could not break through.</div>
+  <div class="cite">&mdash; <a href="https://archive.org/details/TheLifeOfMohammedGuillaume" target="_blank" rel="noopener">Ibn Ishaq, Sirat Rasul Allah (tr. A. Guillaume)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">By heeding a knowledgeable companion, the Prophet protected the city from a danger before it arrived.</div>
+  <div class="tieback">Illustrates the Kural’s ‘guarding in advance’ through valuing the counsel of a capable adviser.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Joseph interprets Pharaoh’s dreams and counsels him to store grain during seven years of plenty; Pharaoh appoints him over Egypt, and the land survives seven years of famine.</div>
+  <div class="cite">&mdash; Genesis 41 <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Joseph’s foresight lets Egypt prepare for a disaster before it arrives, and his administration carries it through when it does.</div>
+  <div class="tieback">Pharaoh ‘cherishes and holds’ the one who wards off disaster in advance — the exact wisdom of the Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Buddha tells Sigala that a good-hearted friend who gives good counsel restrains one from doing evil, encourages one to do good, informs one of what one does not know, and points out the path to heaven.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta, DN 31 (tr. Narada Thera)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The true friend-counselor is defined by protecting you from wrong before it happens and guiding you toward good.</div>
+  <div class="tieback">Parallels the Kural’s protective, forward-looking adviser who must be valued.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;As to one who has lost his way in the wood, others who have not, (show it, thus some) teach the path which is salutary to men. Therefore (he should think): this is for my good that those who know put me right.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sutrakritanga 1.14.10 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Sutrakritanga compares the person who has strayed to a traveller lost in a forest, and the wise to those who know the road and lead him back to safety.</div>
+  <div class="tieback">The kural praises counsellors who remove troubles that have already come and guard against those still to come. The Jain image shows the knowing guide rescuing a person already lost and setting him on a road that keeps him safe from then on.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;In the Company of the Holy, the five passions are brought to rest.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 271, Raag Gauree (Sukhmani), Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In the Sukhmani Guru Arjan lists the benefits of the Saadh Sangat, including bringing the five vices under control.</div>
+  <div class="tieback">The Kural values those who remove troubles that have come and guard against troubles to come; Guru Arjan presents holy company as the force that subdues the inner afflictions behind them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Odyssey 10, Hermes meets Odysseus on the way to Circe’s house, warns him of her drugs, and gives him the herb moly; Odysseus is protected from transformation and forces Circe to restore his men who had been turned into swine.</div>
+  <div class="cite">&mdash; Homer, Odyssey 10 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The divine helper both forestalls the danger to Odysseus and enables the rescue of the men already afflicted.</div>
+  <div class="tieback">An exact dramatization of the Kural’s two functions: removing trouble that has come, preventing trouble yet to come.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle writes that friendship helps the young to keep from error, and aids older people by ministering to their needs and supplementing the activities that are failing from weakness.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics VIII.1 (tr. W. D. Ross)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">For Aristotle, friends both prevent mistakes and make up for losses already suffered.</div>
+  <div class="tieback">Mirrors the Kural’s protective and remedial roles of the worthy companion.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Koprulu Mehmed Pasha becomes Ottoman grand vizier</div>
+  <div class="rle-meta">15 September 1656 &middot; Constantinople (now Istanbul), Ottoman Empire (now Turkey)</div>
+  <div class="quote is-paraphrase">In 1656, after the Venetians defeated the Ottoman fleet at the Dardanelles and occupied nearby islands, the court of the young sultan Mehmed IV appointed the elderly provincial governor Koprulu Mehmed Pasha as grand vizier, on his condition that he be allowed to govern without interference. He suppressed rebellious governors and rivals, reorganised the army and rebuilt the fleet, which recovered islands lost to Venice in 1657. Members of his family held the office for much of the following half century, and historians credit the first two Koprulu viziers with a temporary revival of Ottoman power.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Entrusting the state to an able minister both ended an immediate crisis and laid foundations that protected the empire for decades.</div>
+  <div class="tieback">The kural urges a ruler to cherish those who can remove troubles that have come and guard against those still to come, and Koprulu did both for the Ottoman throne.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-45/" target="_blank" rel="noopener">Thirukural Chapter 45: பெரியாரைத் துணைக்கோடல் (Seeking the Aid of Great Men)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/kural-0441.html" target="_blank" rel="noopener">Thirukkural Adhigaram 45 – Seeking the Aid of Great Men</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://ta.wikisource.org/wiki/திருக்குறள்_பரிமேலழகர்_உரை/பொருட்பால்/45.பெரியாரைத்துணைக்கோடல்" target="_blank" rel="noopener">திருக்குறள் பரிமேலழகர் உரை / பொருட்பால் / 45. பெரியாரைத்துணைக்கோடல்</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-4"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://archive.org/details/TheLifeOfMohammedGuillaume" target="_blank" rel="noopener">The Life of Muhammad: A Translation of Ibn Ishaq’s Sirat Rasul Allah</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta: The Discourse to Sigala (DN 31), tr. Narada Thera</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga (Sutrakritanga)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, tr. W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/topic/Koprulu-family" target="_blank" rel="noopener">Koprulu family</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.ebsco.com/research-starters/history/ottoman-empires-brief-recovery" target="_blank" rel="noopener">Ottoman Empire&#x27;s Brief Recovery (Gavin R. G. Hambly)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0441.html">&larr; Kural 441</a>
+  <a href="kural-0443.html">Kural 443 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-045.html">Seeking the Aid of Great Men</a>
+  <a class="skip-btn" href="kural-0451.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 535 — Unforgetfulness | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 535</h1>
+<p class="adhikaram"><a href="adhikaram-054.html">Unforgetfulness</a> &middot; Pocchaavaamai &middot; <span class="tamil">பொச்சாவாமை</span></p>
+
+<div class="tamil-text">முன்னுறக் காவாது இழுக்கியான் தன்பிழை
+பின்னூறு இரங்கி விடும்.</div>
+<div class="translit">Munnurak kaavaadhu izhukkiyaan thanpizhai
+Pinnooru irangi vitum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Someone who carelessly fails to guard against trouble before it comes will be sorry for their own mistake when the trouble hits.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If you know a test is coming and you don&#x27;t study, you&#x27;ll feel terrible when you see questions you can&#x27;t answer. Getting ready before trouble comes is much better than feeling sorry afterwards.</p>
+
+<h2 class="section">University</h2>
+<p>முன் உற (‘before it arrives’) and பின் ஊறு (‘when the blow has fallen’) frame the couplet in time, and இழுக்கியான் (‘one who slipped, was negligent’) is described by காவாது (‘without guarding’). Parimelazhagar says the troubles in view are those that can be guarded against, namely what enemies do when they spot a lapse. He treats ஊறு as standing for ஊற்றின்கண், with both the case-ending and the linking syllable dropped, and explains இரங்கிவிடும் as ‘will be left to grieve’, because once the trouble has come it can no longer be warded off. Pavanar widens the preventable troubles to include famine and flood, and takes விடும் in the sense of ‘perishing’. Manakkudavar&#x27;s gloss is almost word for word the same as Parimelazhagar&#x27;s. This couplet closes Parimelazhagar&#x27;s group of three (533-535) on the harm that comes to the heedless.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">In the Panchatantra three fish live in a pond: Anāgatavidhātā (‘Forethought’), Pratyutpannamati (‘Ready-wit’) and Yadbhaviṣya (‘Whatever-will-be’). When fishermen are overheard planning to net the pond, Forethought leaves at once and Ready-wit escapes by playing dead, but Whatever-will-be does nothing and is caught.</div>
+  <div class="cite">&mdash; <a href="https://en.wikipedia.org/wiki/Panchatantra" target="_blank" rel="noopener">Panchatantra, Book I (Mitrabheda), the fable of the three fish</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">This nīti fable, told to princes, contrasts the one who guards in advance with the one who waits and is lost.</div>
+  <div class="tieback">Yadbhaviṣya is exactly the Kural&#x27;s heedless man, whose failure to act beforehand leaves no remedy afterwards.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And while they went to buy, the bridegroom came; and they that were ready went in with him to the marriage: and the door was shut. Afterward came also the other virgins, saying, Lord, Lord, open to us. But he answered and said, Verily I say unto you, I know you not. Watch therefore, for ye know neither the day nor the hour wherein the Son of man cometh.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 25:10-13 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The foolish virgins brought no spare oil. By the time they had gone to fetch it, the door was shut, and their pleading came too late.</div>
+  <div class="tieback">This is the Kural&#x27;s picture of someone who did not provide beforehand and can only lament afterwards.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And spend [in the way of Allah] from what We have provided you before death approaches one of you and he says, &quot;My Lord, if only You would delay me for a brief term so I would give charity and be among the righteous.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 63:10 (Saheeh International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Qur&#x27;an pictures the person who put off good deeds, begging too late for a little more time.</div>
+  <div class="tieback">This is the Kural&#x27;s pattern: neglect beforehand, then useless lament once the moment has passed.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;one should repent today lest he die tomorrow; and by following this advice one will spend his entire life in a state of repentance.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Shabbat.153a" target="_blank" rel="noopener">Babylonian Talmud, Shabbat 153a (William Davidson Edition)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Rabbi Eliezer&#x27;s advice is to ‘repent one day before your death’. Rabban Yochanan ben Zakkai adds a parable of a king who invites his servants to a feast without fixing the hour: the wise dress and wait at the door, while the foolish go off to work and are caught unprepared when the call comes.</div>
+  <div class="tieback">Like the Kural, the Talmud teaches that you should be ready before the day of reckoning, because afterwards there is only regret.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Just as a border city is closely guarded both within and without, even so, guard yourself. Do not let slip this opportunity (for spiritual growth). For those who let slip this opportunity grieve indeed when consigned to hell.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 315, trans. Acharya Buddharakkhita <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha compares the self to a frontier town that has to be guarded before attack, and warns that those who let the moment slip will grieve afterwards.</div>
+  <div class="tieback">It has the same structure as the Kural: guard in advance, or grieve when the harm arrives.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;&#x27;If he does not get (victory over his will) early, he will get it afterwards;&#x27; such reasoning presupposes the eternity of human life. But such a man despairs when his life draws to its close, and the dissolution of his body approaches.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 4.9 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The monk who puts off the work of self-mastery, assuming there is time, ends in despair when the end arrives.</div>
+  <div class="tieback">The Kural says the man who fails to guard against trouble in advance grieves over his mistake when it strikes; Mahavira describes the same belated despair of the procrastinator.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;If someone focuses on the Lord beforehand, then why should he be punished?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 417, Raag Aasaa, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In the Babarvani hymns on Babur&#x27;s invasion, Guru Nanak says the suffering might have been avoided had people kept God in mind before the calamity struck.</div>
+  <div class="tieback">The Kural says one who fails to guard against trouble before it comes is left grieving afterwards; Guru Nanak asks why anyone would suffer if he had paid heed beforehand.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Prometheus (‘Forethought’) warned his brother Epimetheus (‘Afterthought’) never to accept a gift from Zeus. Epimetheus forgot the warning and took Pandora, and he understood the evil only once it was already his.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/348" target="_blank" rel="noopener">Hesiod, Works and Days 83-89</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The two brothers&#x27; names are themselves a lesson: one sees ahead, the other only understands after the damage is done.</div>
+  <div class="tieback">Epimetheus is the Kural&#x27;s man who did not guard beforehand and could only realize his error afterwards.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Explaining why the Italian princes lost their states, Machiavelli says that in quiet times they never thought things could change, which he calls a common human fault of not reckoning on the storm during fair weather. When adversity came, they thought of flight instead of defence.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/1232" target="_blank" rel="noopener">Niccolò Machiavelli, The Prince, ch. 24 (trans. W. K. Marriott)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">For Machiavelli, rulers fall less through bad luck than through failing to prepare while they still could.</div>
+  <div class="tieback">This is the Kural&#x27;s heedless ruler, who did not guard in advance and is left lamenting.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Vajont dam landslide</div>
+  <div class="rle-meta">9 October 1963 &middot; Vajont valley and Longarone, Italy</div>
+  <div class="quote is-paraphrase">The Vajont dam was built in a gorge known to be geologically unstable, and several geologists and engineers warned of the risk of a single great landslide if the reservoir were filled. When filling began in 1960 the slope of Monte Toc started to move, and in November 1960 a slide of about 700,000 cubic metres fell into the lake, but the reservoir continued to be operated and raised again. On the night of 9 October 1963 a vast landslide fell into the reservoir, sending a wave over the dam that destroyed the town of Longarone below and killed about 2,000 people, although the dam itself survived; several people involved were later convicted in the courts.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">The warning signs were seen and measured for three years, but the danger was not guarded against while there was still time, and once the mountain moved nothing could be done.</div>
+  <div class="tieback">The kural says one who fails to guard against trouble before it comes will be left grieving over his own mistake once it strikes, and Vajont is remembered as a disaster foreseen but not prevented.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-54/" target="_blank" rel="noopener">பொச்சாவாமை / Unforgetfulness, Chapter 54 (Kurals 531-540), with Varadarasan, Solomon Pappaiah, Karunanidhi and Sivayogi Sivakumar commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-054.html" target="_blank" rel="noopener">பொச்சாவாமை - அதிகாரம் 54 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://kural.page/tamil/adhigaram-pochchaavaamai" target="_blank" rel="noopener">பொச்சாவாமை (Pochchaavaamai), with per-kural commentaries of Parimelazhagar, Manakkudavar, Devaneya Pavanar and others</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://en.wikipedia.org/wiki/Panchatantra" target="_blank" rel="noopener">Panchatantra, Book I (Mitrabheda): the fable of the three fish (Anāgatavidhātā, Pratyutpannamati, Yadbhaviṣya)</a> <span class="tier">[web source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Shabbat.153a" target="_blank" rel="noopener">Babylonian Talmud, Shabbat 153a, William Davidson Edition (Koren Noé, Steinsaltz)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/348" target="_blank" rel="noopener">Hesiod, Works and Days (tr. Hugh G. Evelyn-White)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.gutenberg.org/ebooks/1232" target="_blank" rel="noopener">Niccolò Machiavelli, The Prince, trans. W. K. Marriott</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/topic/Vaiont-Dam" target="_blank" rel="noopener">Vaiont Dam</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://blogs.agu.org/landslideblog/2008/12/11/the-vaiont-vajont-landslide-of-1963/" target="_blank" rel="noopener">The Vaiont (Vajont) landslide of 1963 (Dave Petley)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0534.html">&larr; Kural 534</a>
+  <a href="kural-0536.html">Kural 536 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-054.html">Unforgetfulness</a>
+  <a class="skip-btn" href="kural-0541.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

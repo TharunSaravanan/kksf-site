@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1012 — Shame | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1012</h1>
+<p class="adhikaram"><a href="adhikaram-102.html">Shame</a> &middot; Naanudaimai &middot; <span class="tamil">நாணுடைமை</span></p>
+
+<div class="tamil-text">ஊணுடை எச்சம் உயிர்க்கெல்லாம் வேறல்ல
+நாணுடைமை மாந்தர் சிறப்பு.</div>
+<div class="translit">Oonudai echcham uyirkkellaam veralla
+naanudaimai maandhar sirappu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Food, clothing and the other needs of life are the same for every living being. What makes humans special is a sense of shame.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A puppy eats, a bird sleeps, and you eat and sleep too. So what makes a person special? Valluvar says it is the little voice that says “that would be wrong, I&#x27;d be ashamed to do it.” Animals don&#x27;t have that voice. People do.</p>
+
+<h2 class="section">University</h2>
+<p>Oon (ஊண், &#x27;food&#x27;), udai (உடை, &#x27;clothing&#x27;) and echcham (எச்சம், &#x27;the remainder&#x27;, i.e. the other bodily needs) are veralla (வேறல்ல, &#x27;not different&#x27;) for all uyir (உயிர், &#x27;living beings&#x27;). By contrast naanudaimai (நாணுடைமை, &#x27;the possession of shame&#x27;) is maandhar sirappu (மாந்தர் சிறப்பு, &#x27;the distinction of humans&#x27;). Kesikan and Varadarasanar take the first line to cover all beings and sets of people. Pappaiah narrows the contrast: food and clothing are common to all people, while shame distinguishes the good. Kalaignar explains naanudaimai as avoiding what others condemn. The kural thus makes shame the defining mark of the human, an idea that echoes widely in Indian (Hitopadesha) and Greek (Protagoras) ethics. The Tamil text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The Hitopadesha says that eating, sleeping, fear and mating are common to humans and animals. Dharma is the one extra thing that marks out humans, and without it a person is the same as a beast.</div>
+  <div class="cite">&mdash; Hitopadesha, Introduction (Prastāvikā), verse beginning āhāra-nidrā-bhaya-maithunaṃ ca (verse numbering varies by edition) <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">This well-known Sanskrit maxim sets the bodily needs shared by all creatures against the moral sense that only humans have.</div>
+  <div class="tieback">Its structure matches the Kural&#x27;s exactly: common bodily needs in the first line, and in the second the one quality that makes a person truly human, here dharma and in the Kural shame.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And the eyes of them both were opened, and they knew that they were naked; and they sewed fig leaves together, and made themselves aprons.&rdquo;</div>
+  <div class="cite">&mdash; Genesis 3:7 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In Genesis the first humans, once their eyes are opened, feel a shame no animal feels and cover themselves.</div>
+  <div class="tieback">The verse treats shame as a uniquely human awareness, as the Kural does, though in Genesis it comes with the Fall.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Every religion has its distinct characteristic, and the distinct characteristic of Islam is modesty.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/ibnmajah:4181" target="_blank" rel="noopener">Sunan Ibn Majah 4181 (sunnah.com)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The hadith names haya&#x27;, modesty or shame, as the distinguishing character of Islam.</div>
+  <div class="tieback">Like the Kural, it makes shame the hallmark that sets a people apart.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;There are three distinguishing marks of this nation, the Jewish people. They are merciful, they are shamefaced, and they perform acts of kindness.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Yevamot.79a" target="_blank" rel="noopener">Babylonian Talmud, Yevamot 79a (William Davidson Edition, Koren-Steinsaltz English, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Talmud attributes to David the teaching that being shamefaced is one of the three marks that identify the people of Israel.</div>
+  <div class="tieback">As in the Kural, a sense of shame is the distinctive quality of the people who have it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Monks, these two bright qualities guard the world. Which two? Conscience &amp; concern. If these two bright qualities did not guard the world, there would be no recognition of ‘mother’ here... The world would be immersed in promiscuity, like rams with goats, roosters with pigs, or dogs with jackals.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an02/an02.009.than.html" target="_blank" rel="noopener">Anguttara Nikaya 2.9, Lokapala Sutta (tr. Thanissaro Bhikkhu, Access to Insight)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha teaches that conscience (hiri) and concern (ottappa) are what separate human society from the indiscriminate life of animals.</div>
+  <div class="tieback">This is the Kural&#x27;s point almost exactly: without shame, humans would be no different from other creatures.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Four things of paramount value are difficult to obtain here by a living being: human birth, instruction in the Law, belief in it, and energy in self-control.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 3.1 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Mahavira&#x27;s teaching holds that a human birth is valuable not for what it shares with other births but for the chance it gives for restraint and the Law.</div>
+  <div class="tieback">Like the Kural, it finds what is special about being human in moral restraint rather than in bodily life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Make virtue your bread, good conduct the ghee, and modesty the meat to eat.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 553, Raag Bihaagra, Bihaagra ki Vaar (salok headed Mardana 1) (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In a salok of Bihaagra ki Vaar headed Mardana 1 (traditionally Guru Nanak addressing his companion Bhai Mardana), the ordinary staples of life are turned into virtues, with modesty as the meat of the meal.</div>
+  <div class="tieback">The Kural says food and clothing are common to all beings and that shame is what sets good people apart; the salok makes modesty itself the true food of a human life.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In the Prometheus myth told in Plato&#x27;s Protagoras, humans have fire and crafts but keep destroying one another, so Zeus sends Hermes to give every person aidos (shame) and dike (justice). Anyone who cannot share in them is to be put to death as a plague on the city.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0178%3Atext%3DProt.%3Apage%3D325" target="_blank" rel="noopener">Plato, Protagoras 320c-322d (the ‘Great Speech’ of Protagoras)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In the myth, shame is the gift that turns clever animals into people who can live together.</div>
+  <div class="tieback">Like the Kural, it makes shame, not the means of bodily survival, the defining human excellence.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Life seems to be common even to plants, but we are seeking what is peculiar to man. Let us exclude, therefore, the life of nutrition and growth. Next there would be a life of perception, but it also seems to be common even to the horse, the ox, and every animal.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/nicomachaen.1.i.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics I.7, 1097b-1098a (tr. W. D. Ross)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">In his function argument, Aristotle sets aside the life of nourishment and of sensation, which humans share with plants and animals. He looks for what is proper to man alone and finds it in rational, virtuous activity.</div>
+  <div class="tieback">The argument has the Kural&#x27;s shape, setting aside the needs shared by all living things to find what marks out the good human. Valluvar finds that mark in shame where Aristotle finds it in reason.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Darwin calls blushing the most human of all expressions</div>
+  <div class="rle-meta">1872 &middot; London, England</div>
+  <div class="quote is-paraphrase">In The Expression of the Emotions in Man and Animals, published by John Murray in 1872, Charles Darwin gave a whole chapter to self-attention, shame, shyness, modesty and blushing. He opened it with the sentence &quot;Blushing is the most peculiar and the most human of all expressions,&quot; and argued that no animal could be shown to blush.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">A founder of modern biology concluded that the outward sign of shame is the one expression that sets humans apart from other animals.</div>
+  <div class="tieback">The kural says food and clothing are common to all living beings and that shame is what distinguishes humans; Darwin reached a strikingly similar conclusion from the study of expression.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-102/" target="_blank" rel="noopener">Thirukkural Chapter 102: நாணுடைமை / Shame (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-102.html" target="_blank" rel="noopener">நாணுடைமை - அதிகாரம் 102 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3">Hitopadeśa of Nārāyaṇa, Introduction (prastāvikā) <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/ibnmajah:4181" target="_blank" rel="noopener">Sunan Ibn Majah 4181 (Book of Zuhd, Chapter: Modesty, shyness); graded Da&#x27;if by Darussalam</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Yevamot.79a" target="_blank" rel="noopener">Babylonian Talmud, Yevamot 79a</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/an/an02/an02.009.than.html" target="_blank" rel="noopener">Anguttara Nikaya 2.9, Lokapala Sutta: Guardians of the World (tr. Thanissaro Bhikkhu)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0178%3Atext%3DProt.%3Apage%3D325" target="_blank" rel="noopener">Plato, Protagoras 325c–d (trans. W. R. M. Lamb, Loeb Classical Library)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Aristotle/nicomachaen.1.i.html" target="_blank" rel="noopener">Nicomachean Ethics, Book I (Aristotle)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://brocku.ca/MeadProject/Darwin/Darwin_1872_13.html" target="_blank" rel="noopener">The Expression of the Emotions in Man and Animals, Chapter XIII: Self-Attention, Shame, Shyness, Modesty; Blushing (Charles Darwin)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://darwin-online.org.uk/converted/Ancillary/reviews/1873_Wallace_A271.html" target="_blank" rel="noopener">[Review of] The Expression of the Emotions in Man and Animals (Quarterly Journal of Science, 1873) (Alfred Russel Wallace)</a> <span class="tier">[primary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1011.html">&larr; Kural 1011</a>
+  <a href="kural-1013.html">Kural 1013 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-102.html">Shame</a>
+  <a class="skip-btn" href="kural-1021.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 30 — The Greatness of Ascetics | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 30</h1>
+<p class="adhikaram"><a href="adhikaram-003.html">The Greatness of Ascetics</a> &middot; Neethaar Perumai &middot; <span class="tamil">நீத்தார் பெருமை</span></p>
+
+<div class="tamil-text">அந்தணர் என்போர் அறவோர்மற் றெவ்வுயிர்க்கும்
+செந்தண்மை பூண்டொழுக லான்.</div>
+<div class="translit">Andhanar enbor aravormatru evvuyirkkum,
+Sendhanmai poondozhuga laan.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The people called anthanar (holy, wise people) are the truly good ones, because they treat every living thing with a kindness that never stops.</p>
+
+<h2 class="section">Elementary</h2>
+<p>People sometimes think you are important because of the family you were born into. This kural says no: the title of the highest kind of person belongs to whoever treats every living creature — people, animals, everything — with real kindness, all the time.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter&#x27;s last couplet is also its most socially radical. “Anthanar,” the honorific ordinarily applied to Brahmins, is here redefined by conduct alone: anthanar are “aravor,” the virtuous, and the reason given is grammatical rather than incidental — the whole second line is a causal clause ending in “ozhuga-laan,” because they conduct themselves so. Traditional Tamil etymology reads anthanar as am (beautiful, gracious) + thanmai (coolness), and Valluvar exploits this by giving them “sen-thanmai,” upright or true coolness, a quality of unheated, unfailing graciousness extended to “ev-uyirkkum,” every living thing without exception — a phrase that takes the claim past human society and into the treatment of animals. Nothing about birth, ritual, thread or learning appears. The verse anchors the ahimsa ethic that Valluvar develops at length in the later chapters on compassion (Arul-udaimai) and abstaining from meat (Pulaal maruththal), and it has been a central text in modern Tamil arguments against caste, including in the work of the twentieth-century reform movements.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;The humble sages, by virtue of true knowledge, see with equal vision a learned and gentle brāhmaṇa, a cow, an elephant, a dog and a dog-eater [outcaste].&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 5.18 (Bhagavad-gītā As It Is, A.C. Bhaktivedanta Swami Prabhupāda)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Krishna&#x27;s list is constructed to cross every boundary at once — caste, species, and ritual purity — and to say that real knowledge dissolves the distinction between them.</div>
+  <div class="tieback">Both verses redefine the brahmin by a levelling regard for all living beings rather than by birth or rank.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">Francis of Assisi, having given away his property, is remembered in the early lives for preaching to a flock of birds by the roadside, addressing them as his sisters and urging them to praise their creator, and for treating wolf, lamb and leper alike as creatures owed courtesy.</div>
+  <div class="cite">&mdash; <a href="https://sourcebooks.fordham.edu/basis/bonaventura-lifefrancis.asp" target="_blank" rel="noopener">Bonaventure, Legenda Major XII.3 (the sermon to the birds); cf. the Canticle of the Creatures</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Franciscan tradition made the extension of charity beyond humanity to animals and the whole created order the signature of sanctity rather than an eccentric footnote to it.</div>
+  <div class="tieback">It gives the Christian form of the Kural&#x27;s test: the mark of the genuinely holy is a gracious bearing toward every creature, not a status.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;So, he went down the well again and filled his shoe with water and watered it. Allah thanked him for that deed and forgave him. The people said, ‘O Allah&#x27;s Messenger! Is there a reward for us in serving the animals?’ He replied: ‘Yes, there is a reward for serving any animate (living being).’&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:2466" target="_blank" rel="noopener">Sahih al-Bukhari 2466 (Book of Oppressions)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">A man&#x27;s sins are forgiven for the single act of climbing back into a well to bring water to a thirsty dog, and the Prophet generalises the principle to every creature with a moist liver.</div>
+  <div class="tieback">The same moral test as the Kural: standing before God turns on gracious conduct toward every living thing, including the least regarded.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;A righteous man regardeth the life of his beast: but the tender mercies of the wicked are cruel.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 12:10 (Tanakh, KJV) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Proverbs uses treatment of animals as the diagnostic for righteousness, a verse the rabbis took as a scriptural anchor for the principle of tza&#x27;ar ba&#x27;alei chayim, the prohibition on causing animals distress.</div>
+  <div class="tieback">Like the Kural, it identifies the truly virtuous person by an attentiveness that reaches past human beings to other living creatures.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Not by matted hair, nor by lineage, nor by birth does one become a holy man. But he in whom truth and righteousness exist — he is pure, he is a holy man.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 393, Brahmanavagga (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Dhammapada&#x27;s closing chapter systematically strips the word brahmana of every inherited and ritual meaning and reassigns it on the basis of conduct alone.</div>
+  <div class="tieback">This is the Kural&#x27;s operation performed on the same word: anthanar / brahmana belongs to whoever lives rightly, not to whoever was born right.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;He who thoroughly knows living beings, whether they move or not, and does not injure them in any of the three ways, him we call a Brahmana.” … “By one&#x27;s actions one becomes a Brahmana, or a Kshattriya, or a Vaisya, or a Sudra.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 25.19-33, esp. 25.23 and 25.33 (tr. Hermann Jacobi, SBE 45, 1895)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The monk Jayaghosha tells a sacrificing priest that a true Brahmin is defined not by birth or ritual but by conduct, above all by not harming any living being, moving or unmoving, in thought, word or deed.</div>
+  <div class="tieback">This mirrors the Kural&#x27;s redefinition of &#x27;anthanar&#x27; by unbroken kindness toward every living thing. The Jain text is even more explicit that the title belongs to non-injury, which reaches to beings that do not move, rather than to birth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Make compassion the cotton, contentment the thread, modesty the knot and truth the twist. This is the sacred thread of the soul; if you have it, then go ahead and put it on me.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 471, Raag Asa, Asa di Vaar, Salok Mahala 1, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">According to the Janamsakhi tradition, the boy Nanak refused the Brahmin&#x27;s sacred thread (janeu). He asked instead for a thread spun from compassion and truth, which cannot break, get dirty or burn.</div>
+  <div class="tieback">Like the Kural&#x27;s redefinition of anthanar, Guru Nanak redefines the mark of the twice-born as compassion lived out, not birth or ritual.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In the last book of the Metamorphoses, Ovid gives Pythagoras a long speech urging humanity to stop slaughtering animals for food, arguing that souls pass between all bodies and that the ox which has worked the fields should not be repaid with the knife.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0028" target="_blank" rel="noopener">Ovid, Metamorphoses XV.60-478 (the speech of Pythagoras)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The speech makes kinship with all animate life the ground of a specific ethical discipline, and presents it as the teaching of a sage set apart from ordinary appetite.</div>
+  <div class="tieback">It is the nearest Greek-mythological articulation of the Kural&#x27;s standard — the truly holy are known by a compassion that covers every living thing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">In On Abstinence from Animal Food, Porphyry argues against the Stoic position that justice applies only between rational beings, holding instead that animals perceive, suffer and reason after their fashion, and that the philosopher&#x27;s justice must therefore extend to every ensouled creature.</div>
+  <div class="cite">&mdash; <a href="https://www.tertullian.org/fathers/porphyry_abstinence_03_book3.htm" target="_blank" rel="noopener">Porphyry, De Abstinentia III.18-26</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Porphyry makes the scope of a person&#x27;s justice the measure of their philosophical attainment, so that abstaining from harm to animals is not sentimentality but the completion of the ascetic life.</div>
+  <div class="tieback">Same conclusion as the Kural: the person who deserves the highest title is the one whose gracious conduct excludes no living thing.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Albert Schweitzer and Reverence for Life</div>
+  <div class="rle-meta">1915 (idea); 1952 (Nobel Peace Prize) &middot; Ogooue River and Lambarene, Gabon</div>
+  <div class="quote is-paraphrase">Albert Schweitzer, a theologian, musician and doctor, went in 1913 to Lambarene on the Ogooue River in what is now Gabon, where he and his wife Helene built a hospital. In 1915, while travelling on the river, the phrase Reverence for Life came to him, and it became the centre of his ethics, extending moral concern to every living thing. He was awarded the Nobel Peace Prize for 1952, cited for his altruism, reverence for life and tireless humanitarian work.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Schweitzer turned a principle of compassion toward all life into decades of practical service, and the world honoured him for it.</div>
+  <div class="tieback">The kural says the truly virtuous are those who wear unbroken compassion toward every living being, and Schweitzer&#x27;s Reverence for Life is almost a restatement of that standard in modern form.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-3/" target="_blank" rel="noopener">நீத்தார் பெருமை / The Greatness of Ascetics — Thirukkural Chapter 3 (Kurals 21-30), with commentaries by Mu. Varadarajan, Salomon Pappaiah, Mu. Karunanidhi and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/adhigaram-003.html" target="_blank" rel="noopener">The Greatness of Ascetics — Adhigaram 3, Thirukkural (Tamil text, transliteration and multilingual translations)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="http://thirukkural-thamizh.org/html/A003.html" target="_blank" rel="noopener">3. நீத்தார் பெருமை — திருக்குறள், பாயிரவியல் (Tamil text with sollurai, porulurai and vilakkavurai for Kurals 21-30)</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sourcebooks.fordham.edu/basis/bonaventura-lifefrancis.asp" target="_blank" rel="noopener">Bonaventure, Legenda Major (The Major Life of St Francis), ch. XII: the sermon to the birds</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/bukhari:2466" target="_blank" rel="noopener">Sahih al-Bukhari 2466 — Book of Oppressions (the man who watered the thirsty dog)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-8">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0028" target="_blank" rel="noopener">Ovid, Metamorphoses Book XV — the speech of Pythagoras on abstaining from flesh</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.tertullian.org/fathers/porphyry_abstinence_03_book3.htm" target="_blank" rel="noopener">Porphyry, De Abstinentia (On Abstinence from Animal Food), Book III</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.nobelprize.org/prizes/peace/1952/schweitzer/speedread/" target="_blank" rel="noopener">Albert Schweitzer - Speed read</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.history.com/this-day-in-history/january-14/albert-schweitzer-born" target="_blank" rel="noopener">Albert Schweitzer born</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0029.html">&larr; Kural 29</a>
+  <a href="kural-0031.html">Kural 31 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-003.html">The Greatness of Ascetics</a>
+  <a class="skip-btn" href="kural-0031.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1032 — Agriculture | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1032</h1>
+<p class="adhikaram"><a href="adhikaram-104.html">Agriculture</a> &middot; Uzhavu &middot; <span class="tamil">உழவு</span></p>
+
+<div class="tamil-text">உழுவார் உலகத்தார்க்கு ஆணிஅஃ தாற்றாது
+எழுவாரை எல்லாம் பொறுத்து.</div>
+<div class="translit">Uzhuvaar ulagaththaarkku aaNi-aq thaatraadhu
+ezhuvaarai ellaam poRuththu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Farmers are like the pin that holds a wheel in place for the world, because they feed all the people who do not farm and do other work instead.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A wagon wheel has a small pin that holds it on the axle. Without that pin the wheel falls off and the whole cart stops. Valluvar says farmers are that pin: they feed everyone else, so the whole world keeps rolling because of them.</p>
+
+<h2 class="section">University</h2>
+<p>The image is the aaNi (ஆணி), the linchpin or axle-pin that keeps a cart&#x27;s wheel in place; the ploughmen are the aaNi of ulagaththaar (உலகத்தார், &#x27;the people of the world&#x27;). The second line gives the reason: aqthu aatraadhu ezhuvaarai ellaam poRuththu (அஃது ஆற்றாது எழுவாரை எல்லாம் பொறுத்து), &#x27;bearing all who, unable to do that (ploughing), go off to other work&#x27;. Puliyur Kesikan, in the line of Parimelazhagar, glosses ezhuvaar as those who leave farming for other trades and are still fed by the farmers&#x27; grain; Mu. Varadarasanar and Solomon Pappaiah read it the same way, and Pope gives &#x27;linch-pin of the world&#x27;. The Tamil text matches on ytamizh.com and thirukkural.net; ytamizh hyphenates the transliteration aaNi-aq.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;The ploughshare ploughing makes the food that feeds us, and with its feet cuts through the path it follows.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/rigveda/rv05083.htm" target="_blank" rel="noopener">Rig Veda 10.117.7 (tr. Ralph T.H. Griffith, 1896, sacred-texts.com)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">In a hymn on liberality, the Vedic poet names the plough as the maker of the food everyone eats.</div>
+  <div class="tieback">The Rig Veda and the Kural both say that the plough feeds us all.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Moreover the profit of the earth is for all: the king himself is served by the field.&rdquo;</div>
+  <div class="cite">&mdash; Ecclesiastes 5:9 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">The Preacher observes that the yield of the land supports everyone, the king included.</div>
+  <div class="tieback">Like the Kural&#x27;s linchpin, the field carries everyone, from commoner to king.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;There is none amongst the Muslims who plants a tree or sows seeds, and then a bird, or a person or an animal eats from it, but is regarded as a charitable gift for him.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:2320" target="_blank" rel="noopener">Sahih al-Bukhari 2320 (sunnah.com)</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet counts every mouthful taken from a crop, even by birds and animals, as the sower&#x27;s charity.</div>
+  <div class="tieback">The farmer feeds all who do not sow, which is the Kural&#x27;s picture of the ploughman bearing the world.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;You make the grass grow for the cattle, and herbage for humans’ labor that they may get food out of the earth— … and bread that sustains human life.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Psalms 104:14-15 (JPS Tanakh, Gender-Sensitive Edition 2023, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The psalmist praises the order in which human labour on the earth yields the bread that keeps people alive.</div>
+  <div class="tieback">Bread from tilled earth sustains human life, which is the support the Kural credits to farmers.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">At sowing time the brahman Kasi Bharadvaja had about 500 ploughs yoked and was running a food distribution when the Buddha arrived for alms; he told the Buddha that he ploughed and sowed before he ate, and that a contemplative should do the same.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/kn/snp/snp.1.04.than.html" target="_blank" rel="noopener">Kasi Bharadvaja Sutta, Sn 1.4 (tr. Thanissaro Bhikkhu, accesstoinsight.org)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The scene shows a farming household whose harvest feeds many people, including wandering monks who come for alms.</div>
+  <div class="tieback">The farmer&#x27;s food distribution feeding the non-ploughing alms-seeker is the Kural&#x27;s ploughman carrying &#x27;all who cannot till.&#x27;</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">The Dasavaikalika Sutra opens by comparing the true monk to a bee that drinks a little from many flowers without harming them, gathering alms from householders&#x27; kitchens without burdening any one of them.</div>
+  <div class="cite">&mdash; Daśavaikālika Sūtra, Lecture 1 (the bee simile) <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Jain mendicants do not cook or farm. They live on small portions of food that householders have prepared for themselves.</div>
+  <div class="tieback">This is a Jain picture of the non-producing world being carried by householders&#x27; food, the dependence the Kural describes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The farmers love to work their farms; they plow and work the fields, so that their sons and daughters may eat.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 166, Raag Gauri, Guru Ram Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Ram Das describes the farmer who ploughs with full effort so that his children may be fed, and uses this ordinary devotion as a simile for the devotee&#x27;s love of the Lord&#x27;s Name.</div>
+  <div class="tieback">The Kural calls ploughmen the linchpin that carries everyone who does not till; Guru Ram Das pictures the farmer&#x27;s toil as what keeps a whole household fed.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Both gods and men are angry with a man who lives idle, for in nature he is like the stingless drones who waste the labour of the bees, eating without working&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days 303-306 (tr. H.G. Evelyn-White, 1914, sacred-texts.com)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hesiod compares people who eat without working to drones living on the bees&#x27; labour.</div>
+  <div class="tieback">This is the Kural&#x27;s linchpin seen from the other side: workers carry those who do not till.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Cultivators of the earth are the most valuable citizens. They are the most vigorous, the most independant, the most virtuous, and they are tied to their country and wedded to it’s liberty and interests by the most lasting bands.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://founders.archives.gov/documents/Jefferson/01-08-02-0333" target="_blank" rel="noopener">Thomas Jefferson to John Jay, 23 August 1785 (Founders Online, National Archives)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Jefferson ranks farmers above every other class as the foundation of the republic.</div>
+  <div class="tieback">Jefferson&#x27;s &#x27;most valuable citizens&#x27; are the Kural&#x27;s linchpin of the world, put in civic terms.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Quesnay&#x27;s Tableau economique names farmers the only productive class</div>
+  <div class="rle-meta">1758 &middot; Versailles, France</div>
+  <div class="quote is-paraphrase">In 1758 Francois Quesnay, physician at the court of Louis XV, drew up the Tableau economique, a diagram of how wealth circulates through a nation. It divided society into landowners, a productive class of farmers and farm labourers, and a sterile class of artisans and merchants, holding that agriculture alone produced the net surplus on which all the others lived.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">The Tableau founded the Physiocratic school and is regarded as one of the first models of a whole economy.</div>
+  <div class="tieback">The kural calls ploughmen the linchpin of the world because they bear everyone who does other work, and Quesnay&#x27;s model made exactly that claim in economic form.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-104/" target="_blank" rel="noopener">Thirukkural Chapter 104: உழவு / Farming (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-104.html" target="_blank" rel="noopener">உழவு - அதிகாரம் 104 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/rigveda/rv05083.htm" target="_blank" rel="noopener">The Rig Veda, translated by Ralph T. H. Griffith (1896)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:2320" target="_blank" rel="noopener">Sahih al-Bukhari 2320 (Book of Agriculture, Chapter: Sowing seeds and planting trees)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The JPS Tanakh: Gender-Sensitive Edition (Revised JPS, 2023)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.accesstoinsight.org/tipitaka/kn/snp/snp.1.04.than.html" target="_blank" rel="noopener">Kasi Bharadvaja Sutta: To the Plowing Bharadvaja, Sn 1.4, tr. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">Daśavaikālika Sūtra (Dasavaikalika Sutra) <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.theoi.com/Text/HesiodWorksDays.html" target="_blank" rel="noopener">Hesiod, Works and Days, translated by Hugh G. Evelyn-White (Loeb Classical Library, 1914)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://founders.archives.gov/documents/Jefferson/01-08-02-0333" target="_blank" rel="noopener">Thomas Jefferson to John Jay, 23 August 1785</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/topic/Tableau-economique" target="_blank" rel="noopener">Tableau economique</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.econlib.org/library/Enc/bios/Quesnay.html" target="_blank" rel="noopener">Francois Quesnay</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1031.html">&larr; Kural 1031</a>
+  <a href="kural-1033.html">Kural 1033 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-104.html">Agriculture</a>
+  <a class="skip-btn" href="kural-1041.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

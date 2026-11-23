@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 614 — Manly Effort | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 614</h1>
+<p class="adhikaram"><a href="adhikaram-062.html">Manly Effort</a> &middot; Aalvinaiyudaimai &middot; <span class="tamil">ஆள்வினையுடைமை</span></p>
+
+<div class="tamil-text">தாளாண்மை இல்லாதான் வேளாண்மை பேடிகை
+வாளாண்மை போலக் கெடும்.</div>
+<div class="translit">Thaalaanmai illaadhaan velaanmai pedikai
+Vaalaanmai polak kedum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A person who will not work but wants to give generously will fail, like a sword waved around by a coward who is afraid to fight.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Holding a toy sword doesn’t make you a knight; you need the courage to use it. In the same way, saying ‘I’ll help everyone!’ doesn’t help anyone unless you are willing to do the work that makes helping possible.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet sharpens kural 613 by negation: வேளாண்மை (beneficence) without தாளாண்மை (effort) is like the வாளாண்மை (sword-mastery) of a பேடி. Parimelazhagar and the older commentators take பேடி as a person of indeterminate sex, conventionally assumed in the ancient world to lack a warrior’s daring; Solomon Pappaiah softens this to ‘one who trembles at the sight of an army’, and the image is best read today as ‘a sword in the hand of one who dare not use it’, since the underlying gender assumption reflects its period rather than Valluvar’s point. The logic is that good intentions without the means produced by labour are as useless as a weapon one cannot wield; Mu. Varadarasanar says such generosity ‘will not come to fulfilment’. Both editions consulted agree on the wording; the sandhi form தாளாண்மை யில்லாதான் is purely orthographic.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Prince Uttara boasts to the palace women that he would rout the Kuru army if only he had a charioteer, but when he sees their host he leaps from the chariot and runs; it is his ‘eunuch’ dance-teacher Brihannala, really Arjuna in disguise, who takes up the bow.</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/m04/index.htm" target="_blank" rel="noopener">Mahabharata, Virata Parva (Go-harana), Sections XXXVI-XL (trans. K. M. Ganguli)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Virata Parva episode contrasts loud promises of valour with the nerve and skill actually needed to act.</div>
+  <div class="tieback">Uttara’s brave words without the grit behind them are the Kural’s empty sword-flourish; the tale’s irony, that the disguised ‘eunuch’ is the true hero, also undercuts the stereotype in the Kural’s image.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;If a brother or sister be naked, and destitute of daily food, And one of you say unto them, Depart in peace, be ye warmed and filled; notwithstanding ye give them not those things which are needful to the body; what doth it profit?&rdquo;</div>
+  <div class="cite">&mdash; James 2:15-16 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">James mocks benevolent words that provide nothing real to the needy.</div>
+  <div class="tieback">Good wishes without the means to help are the Kural’s generosity that ‘perishes’ for want of effort.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">The Qur’an asks believers why they say what they do not do, and declares it most hateful to God that people should say what they do not do.</div>
+  <div class="cite">&mdash; Qur’an 61:2-3 <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Surat as-Saff condemns a gap between professed intentions and actual deeds.</div>
+  <div class="tieback">Both texts expose promises of good that are never backed by the work to fulfil them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Shimon ben Gamaliel teaches that it is not study but doing that is the essential thing, and that whoever multiplies words brings on sin.</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot.1.17" target="_blank" rel="noopener">Mishnah, Pirkei Avot 1:17</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Mishnah places deeds above words or learning that never issue in action.</div>
+  <div class="tieback">The Kural likewise judges good intentions worthless unless effort turns them into real help.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Dhammapada compares fine words that are not put into practice to a beautiful flower that has colour but no scent: they bear no fruit.</div>
+  <div class="cite">&mdash; Dhammapada 51-52 <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Verses 51-52 contrast words that are merely spoken with words that are lived.</div>
+  <div class="tieback">Kindly intent without effort is the Kural’s version of the scentless flower: attractive but fruitless.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;A man believes himself a hero as long as he does not behold the foe … So a novice, who as yet has not suffered pains and is not yet used to a mendicant&#x27;s life, believes himself a hero till he practises austerities.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sutrakritanga I.3.1.1 and I.3.1.3; cf. I.3.1.7 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Sutrakritanga mocks those who think themselves heroes until real hardship comes; the weak then &#x27;become disheartened like cowards in the battle&#x27; (I.3.1.7).</div>
+  <div class="tieback">Valluvar&#x27;s would-be benefactor who will not work is like a coward holding a sword; the Jain novice who boasts until real effort is needed is the same empty heroism.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The thief robs a house, and offers the stolen goods to his ancestors. In the world hereafter, this is recognized, and his ancestors are considered thieves as well.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 472, Raag Aasaa (Asa di Vaar, salok), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In Asa di Vaar, Guru Nanak mocks charity given out of wealth one did not honestly earn: the gift is recognised for what it is and brings shame instead of merit.</div>
+  <div class="tieback">The Kural says generosity without one&#x27;s own effort fails like a sword in timid hands; Guru Nanak says giving that does not come from one&#x27;s own honest earning is worthless.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Paris strides out in gleaming armour to challenge the best of the Achaeans, but when Menelaus steps forward he shrinks back into the ranks, and Hector rebukes him as handsome to look at but lacking strength and courage.</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, Iliad 3.15-57 (trans. Samuel Butler)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Iliad 3 the splendid warrior-costume of Paris is exposed as show without substance.</div>
+  <div class="tieback">Paris is the Kural’s sword in an unwilling hand: the outward form of prowess with none of the effort behind it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle observes that most people, instead of doing good acts, take refuge in theory and think they are being philosophers, like patients who listen carefully to their doctors but do none of the things prescribed.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics II.4 (1105b)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Aristotle holds that virtue is formed by doing, and that talking about goodness does not make anyone good.</div>
+  <div class="tieback">The Kural similarly treats a will to do good without the effort behind it as ineffective.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Robert Owen&#x27;s cooperative community at New Harmony fails</div>
+  <div class="rle-meta">1825-1827 &middot; New Harmony, Indiana, United States</div>
+  <div class="quote is-paraphrase">In 1825 the British reformer Robert Owen bought the town of Harmony, Indiana, and invited people to join a cooperative community based on shared property and equality. The community attracted many intellectuals and many people with large families or few useful skills, and only a minority of its residents worked in productive trades such as farming, while plans for organising labour remained vague. By 1827 the experiment had failed, and Owen had lost most of his fortune.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Owen&#x27;s generous vision of a community that would provide for all could not survive without enough organised, productive work to sustain it.</div>
+  <div class="tieback">The kural says generosity without the support of hard work fails like a sword in the hand of one who cannot use it, and New Harmony&#x27;s noble aims collapsed for lack of the labour needed to pay for them.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-62/" target="_blank" rel="noopener">Thirukkural Chapter 62: ஆள்வினையுடைமை / Manly Effort (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="http://thirukkural-thamizh.org/html/A062.html" target="_blank" rel="noopener">62. ஆள்வினையுடைமை (இடைவிடாத முயற்சியுடைமை) — Thirukkural text</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/m04/index.htm" target="_blank" rel="noopener">The Mahabharata, Book 4: Virata Parva (Go-harana Parva), trans. Kisari Mohan Ganguli</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Pirkei_Avot.1.17" target="_blank" rel="noopener">Pirkei Avot 1:17, trans. Joshua Kulp (Mishnah Yomit)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Sūtrakṛtāṅga (Sutrakritanga)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://classics.mit.edu/Homer/iliad.3.iii.html" target="_blank" rel="noopener">Homer, The Iliad, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Robert-Owen" target="_blank" rel="noopener">Robert Owen (Douglas F. Dowd)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.usi.edu/hnh/about/newsletters/in-harmony-newsletter/history-lesson" target="_blank" rel="noopener">History Lesson (In Harmony newsletter)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.ebsco.com/research-starters/history/new-harmony/" target="_blank" rel="noopener">New Harmony</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0613.html">&larr; Kural 613</a>
+  <a href="kural-0615.html">Kural 615 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-062.html">Manly Effort</a>
+  <a class="skip-btn" href="kural-0621.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

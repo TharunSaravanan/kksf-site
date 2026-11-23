@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 321 — Not Killing | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 321</h1>
+<p class="adhikaram"><a href="adhikaram-033.html">Not Killing</a> &middot; Kollaamai &middot; <span class="tamil">கொல்லாமை</span></p>
+
+<div class="tamil-text">அறவினை யாதெனின் கொல்லாமை கோறல்
+பிறவினை எல்லாந் தரும்.</div>
+<div class="translit">Aravinai yaadhenin kollaamai koral
+Piravinai ellaam tharum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>If you ask what doing good means, it is not killing any living thing. Killing brings every other kind of evil deed along with it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a row of dominoes. If you knock over the first one, all the others fall too. Valluvar says killing is that first domino: once someone is willing to take a life, every other bad act becomes easy. Not killing keeps the whole row standing.</p>
+
+<h2 class="section">University</h2>
+<p>Valluvar answers the question “what is aram (virtue)?” with a single negative act — kollaamai, abstention from killing — and then gives its mirror image: kōṟal (killing) “yields all other deeds” (piṟavinai), which the classical commentators, including Mu. Varadarasan, read as all non-virtuous deeds. The couplet therefore makes non-killing not merely one virtue among many but the generative root of the moral life, with killing as the root of vice. This places the Kural squarely within the broad śramaṇic and Brahmanical consensus of early-first-millennium India that ahiṃsā is the highest dharma, a position shared by Jain, Buddhist and epic Hindu sources. The structure of the verse — definition followed by its contrary — is typical of Valluvar’s aphoristic logic, compressing an entire ethical theory into seven words.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Abstention from injury is the highest religion.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">Mahabharata, Anushasana Parva, Section CXV (K. M. Ganguli trans.)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">In the Mahabharata’s Anushasana Parva, Bhishma teaches Yudhishthira that ahimsa (non-injury) is the supreme dharma — the famous formula ahimsa paramo dharmah.</div>
+  <div class="tieback">Exactly the Kural’s answer to “what is virtue?”: non-killing is virtue in its highest form.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Thou shalt not kill.&rdquo;</div>
+  <div class="cite">&mdash; Exodus 20:13 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The sixth commandment in the Decalogue given at Sinai forbids the unlawful taking of human life.</div>
+  <div class="tieback">Like the Kural, it places the prohibition on killing at the foundation of the moral law.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;whoever kills a soul unless for a soul or for corruption [done] in the land - it is as if he had slain mankind entirely. And whoever saves one - it is as if he had saved mankind entirely.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 5:32 (Saheeh International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">After the story of Adam’s two sons, the Qur’an declares that unjustly killing one person is morally equivalent to killing all humanity.</div>
+  <div class="tieback">Both texts treat killing as the gravest of wrongs, one that contains the seed of every other evil.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;if any man has caused a single life to perish from Israel, he is deemed by Scripture as if he had caused a whole world to perish; and anyone who saves a single soul from Israel, he is deemed by Scripture as if he had saved a whole world.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Mishnah_Sanhedrin.4.5" target="_blank" rel="noopener">Mishnah Sanhedrin 4:5 (trans. Joshua Kulp, Sefaria)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Mishnah explains why God created a single human first: to teach that each life is an entire world.</div>
+  <div class="tieback">Shares the Kural’s conviction that taking a life is not one wrong among many but a total, world-destroying wrong.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;All tremble at violence; all fear death. Putting oneself in the place of another, one should not kill nor cause another to kill.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 129 (Buddharakkhita trans.) <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha grounds the precept against killing in empathy: every creature fears death just as we do.</div>
+  <div class="tieback">Same core teaching as the Kural — non-killing is the basic ethical act from which the rest of goodness flows.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The Arhats and Bhagavats of the past, present, and future, all say thus, speak thus, declare thus, explain thus: all breathing, existing, living, sentient creatures should not be slain, nor treated with violence, nor abused, nor tormented, nor driven away. This is the pure, unchangeable, eternal law…&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Ācārāṅga Sūtra I.4.1.1–2 (tr. Hermann Jacobi, SBE 22, 1884)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The lecture of the Ācārāṅga called &#x27;Righteousness&#x27; defines the eternal law of all the Jinas as non-injury to every living being.</div>
+  <div class="tieback">Asked what aram is, Valluvar answers &#x27;not killing&#x27;; the Ācārāṅga likewise makes non-killing the very definition of the eternal dharma.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;You kill living beings, and call it a righteous action. Tell me, brother, what would you call an unrighteous action?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1103, Raag Maaroo, Bhagat Kabir (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Kabir confronts those who kill animals in sacrifice and call it dharma, turning the question back on them: if killing is righteousness, what is left to call sin?</div>
+  <div class="tieback">The Kural answers &#x27;what is virtue?&#x27; with &#x27;not killing&#x27;; Kabir reaches the same point from the other side, insisting that killing cannot be called righteousness.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Orestes, having killed his mother Clytemnestra, is hounded across Greece by the Furies (Erinyes), who pursue bloodguilt relentlessly until he is tried at Athens.</div>
+  <div class="cite">&mdash; Aeschylus, Eumenides <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">In Aeschylus’ Eumenides the spilling of kindred blood unleashes a chain of pursuit, madness and pollution that no one can escape by ordinary means.</div>
+  <div class="tieback">Echoes the Kural’s second line: one killing sets in motion a whole train of further evils.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Porphyry’s treatise On Abstinence from Animal Food argues that justice extends to all sentient creatures and that the philosopher who seeks purity must refrain from killing them.</div>
+  <div class="cite">&mdash; <a href="https://www.tertullian.org/fathers/porphyry_abstinence_03_book3.htm" target="_blank" rel="noopener">Porphyry, On Abstinence from Animal Food, Books 1–3</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">The Neoplatonist Porphyry (3rd c. CE) built a sustained philosophical case that harming living beings is incompatible with the virtuous, god-like life.</div>
+  <div class="tieback">Like Valluvar, he makes non-killing a defining mark of virtue rather than an optional scruple.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Tuscany becomes the first European state to abolish the death penalty</div>
+  <div class="rle-meta">30 November 1786 &middot; Grand Duchy of Tuscany (now Italy)</div>
+  <div class="quote is-paraphrase">Grand Duke Peter Leopold of Tuscany, later Holy Roman Emperor Leopold II, promulgated a new penal code that abolished the death penalty, the first such code in Europe. The reform followed the debate opened by Cesare Beccaria&#x27;s 1764 book On Crimes and Punishments. Capital punishment was later reintroduced in Tuscany, but 30 November is now marked each year as Cities for Life Day in memory of the 1786 abolition.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a> <a class="idx" href="#cite-15">[15]</a></div>
+  <div class="explain">For the first time a European state wrote into its law that the state itself would not kill, and the date is still commemorated by campaigners worldwide.</div>
+  <div class="tieback">The kural answers the question of what virtue is with one act, not killing, and Tuscany made that refusal the foundation of its criminal law.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-33/" target="_blank" rel="noopener">கொல்லாமை / Not killing, Chapter 33 — Thirukural (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukural.ai/paal/aram/adhigaram-33" target="_blank" rel="noopener">திருக்குறள் - அறத்துப்பால் அதிகாரம் 33 | கொல்லாமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.gunathamizh.com/2020/09/33.html" target="_blank" rel="noopener">திருக்குறள் - அதிகாரம் - 33. கொல்லாமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://www.sacred-texts.com/hin/m18/m18005.htm" target="_blank" rel="noopener">The Mahabharata of Krishna-Dwaipayana Vyasa, Book 18: Svargarohanika Parva</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Mishnah_Sanhedrin.4.5" target="_blank" rel="noopener">Mishnah Sanhedrin 4:5 (Mishnah Yomit, trans. Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe22/index.htm" target="_blank" rel="noopener">Ākārāṅga Sūtra (Acaranga Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11">Eumenides (Aeschylus) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.tertullian.org/fathers/porphyry_abstinence_03_book3.htm" target="_blank" rel="noopener">Porphyry, De Abstinentia (On Abstinence from Animal Food), Book III</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/biography/Leopold-II-king-of-Belgium" target="_blank" rel="noopener">Leopold II, king of Belgium (Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://www.amnesty.org/en/wp-content/uploads/2021/06/act500071995en.pdf" target="_blank" rel="noopener">Abolition of the death penalty (ACT 50/07/95) (Amnesty International)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-15"><a href="https://www.santegidio.org/pageID/30284/langID/en/itemID/55589/Cities-for-Life-Cities-against-the-Death-Penalty-events-demonstrations-and-debates-for-a-more-humane-world-in-many-places-all-over-the-world.html" target="_blank" rel="noopener">Cities for Life, Cities against the Death Penalty</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0320.html">&larr; Kural 320</a>
+  <a href="kural-0322.html">Kural 322 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-033.html">Not Killing</a>
+  <a class="skip-btn" href="kural-0331.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

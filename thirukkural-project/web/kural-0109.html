@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 109 — Gratitude Recognition | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 109</h1>
+<p class="adhikaram"><a href="adhikaram-011.html">Gratitude Recognition</a> &middot; Seynnanri Arithal &middot; <span class="tamil">செய்ந்நன்றி அறிதல்</span></p>
+
+<div class="tamil-text">கொன்றன்ன இன்னா செயினும் அவர்செய்த
+ஒன்றுநன்று உள்ளக் கெடும்.</div>
+<div class="translit">Kondranna innaa seyinum avarseydha
+Ondrunandru ullak kedum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Even if someone who once helped you later hurts you terribly, like a killing blow, the pain goes away when you remember the one good thing they did.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Suppose a friend who once caught you when you were falling later does something that really hurts you. If you remember the time they caught you, the hurt shrinks. One good memory can melt a big hurt.</p>
+
+<h2 class="section">University</h2>
+<p>கொன்றன்ன இன்னா, &#x27;an injury like killing&#x27;, is the strongest possible provocation, and the verb கெடும் (&#x27;will perish&#x27;) leaves its subject implicit: commentators take it to be the injury, or the pain and resentment it causes, that is destroyed merely by recalling (உள்ள) one (ஒன்று) earlier good (நன்று). The kural thus makes gratitude an active remedy rather than merely a debt: memory of a past benefit is prescribed as the means of dissolving present grievance. Valmiki&#x27;s portrait of Rama in Ayodhya Kanda 2.1.11, gladdened by a single good deed and forgetting a hundred wrongs, is close enough to suggest a shared South Asian ethical ideal. A concrete legal-historical parallel is the Prophet Muhammad&#x27;s pardon of Hatib ibn Abi Balta&#x27;a, whose betrayal was weighed against his earlier service at Badr.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;That Rama, because of his good bent of mind, feels glad even by whatever way a good thing is done to him. He does not remember any number of bad things done to him.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Valmiki Ramayana, Ayodhya Kanda 2.1.11 (K. M. K. Murthy trans.)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Valmiki describes Rama as someone who is made happy by even one good thing done for him and simply does not keep count of the wrongs done to him.</div>
+  <div class="tieback">One remembered good cancelling many injuries is the very mechanism of this Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">After Peter had three times denied knowing Jesus on the night of his arrest, the risen Jesus meets him by the Sea of Galilee, asks him three times whether he loves him, and restores him with the charge to feed his sheep.</div>
+  <div class="cite">&mdash; John 21:15-17 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Instead of punishing Peter for his betrayal, Jesus remembers Peter&#x27;s love and loyalty and gives him back his place.</div>
+  <div class="tieback">A painful betrayal is overcome by recalling the good bond that came before it, close to the Kural&#x27;s remedy.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">When Hatib ibn Abi Balta&#x27;a was caught sending a secret letter warning the Meccans of the Prophet&#x27;s plans, Umar asked permission to execute him as a traitor; the Prophet refused, saying that Hatib had fought at Badr and that God may have looked upon the people of Badr and forgiven them.</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:3007" target="_blank" rel="noopener">Sahih al-Bukhari 3007</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">A companion committed a serious betrayal that could have cost lives, but the Prophet pardoned him because of the great service he had once given at the Battle of Badr.</div>
+  <div class="tieback">One remembered good (Badr) outweighed an injury as grave as treason, exactly the Kural&#x27;s teaching.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Thou shalt not abhor an Edomite; for he is thy brother: thou shalt not abhor an Egyptian; because thou wast a stranger in his land.&rdquo;</div>
+  <div class="cite">&mdash; Deuteronomy 23:7 (KJV; 23:8 in Hebrew numbering) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Even though Egypt later enslaved and oppressed the Israelites, the Torah forbids hating Egyptians, because Egypt once gave Jacob&#x27;s family refuge in a famine.</div>
+  <div class="tieback">The earlier good (shelter) outweighs even the later near-deadly harm (slavery), precisely the Kural&#x27;s teaching.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Hatred is never appeased by hatred in this world. By non-hatred alone is hatred appeased. This is a law eternal.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 5 (Acharya Buddharakkhita trans.) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha teaches that you can never end hatred by hating back; only letting go of hatred ends it.</div>
+  <div class="tieback">Like the Kural, it seeks to dissolve the pain of injury inwardly rather than answer it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Even though they do what is disagreeable, one should preserve as gold those who ought not to be forsaken. Daily do men seek for fire and keep it in their house, though it has consumed both their good house and gold.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">Nālaḍiyār ch. 23 &#x27;The bearing with the faults of others&#x27;, st. 5 (= st. 225), English translation in The Indian Antiquary (wisdomlib.org)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">In its chapter on bearing with the faults of others, the Nālaḍiyār teaches that those bound to us by past good are kept, like the household fire, even after they have done us grave harm.</div>
+  <div class="tieback">Valluvar says even a near-mortal injury from a former benefactor fades when one recalls their one good deed, and the Nālaḍiyār likewise lets past worth outweigh present harm.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;He obtains ten things, and puts them behind him; for the sake of one thing withheld, he forfeits his faith. But what if that one thing were not given, and the ten were taken away? Then, what could the fool say or do?&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 268, Raag Gauree, Sukhmani Sahib, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Guru Arjan describes the ungrateful person who forgets ten gifts because of one thing he did not receive.</div>
+  <div class="tieback">This is the Kural&#x27;s moral calculus turned inside out: where the grateful let one remembered kindness erase a deadly injury, the ingrate lets one grievance erase ten kindnesses.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">During the slaughter of the suitors, Telemachus begs Odysseus to spare the herald Medon, who had served in the suitors&#x27; company but had cared for Telemachus when he was a child; Odysseus spares him, along with the bard Phemius.</div>
+  <div class="cite">&mdash; Homer, Odyssey 22.354-380 <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In the middle of his revenge, Odysseus lets one of the suitors&#x27; servants live because that man had once looked after his son.</div>
+  <div class="tieback">An old kindness saves a man even when he stands on the side of those who did deadly harm, echoing the Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Spinoza argues that a person who lives by the guidance of reason tries, as far as possible, to repay another&#x27;s hatred, anger, or contempt with love or nobleness, because hatred answered with hatred only increases.</div>
+  <div class="cite">&mdash; Spinoza, Ethics, Part 4, Proposition 46 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">The philosopher says a reasonable person answers hurt with kindness instead of revenge, since revenge just makes hatred grow.</div>
+  <div class="tieback">Both texts aim to neutralise injury rather than retaliate, though the Kural&#x27;s method is remembering a past kindness.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Akbar pardons his former regent Bairam Khan</div>
+  <div class="rle-meta">1560 - 1561 &middot; Mughal Empire, northern India</div>
+  <div class="quote is-paraphrase">Bairam Khan, a general and friend of Emperor Humayun, guided the young Akbar as regent after he inherited the throne at the age of 13 in 1556. In 1560 Akbar took the government into his own hands, and Bairam rebelled for a time before submitting; Akbar forgave him and offered him the choice of a high place in the army or an escort for a pilgrimage to Mecca, and Bairam chose the pilgrimage. Bairam was killed by Afghans on the way in 1561, and Akbar took his four-year-old son Abd ur-Rahim into his household; the boy grew up to reach the highest rank in the Mughal hierarchy.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Akbar treated a rebel who had once secured his throne with mercy and later raised the rebel&#x27;s orphaned son, rather than letting the rebellion cancel the earlier service.</div>
+  <div class="tieback">The kural says even a grievous injury from a former benefactor fades when one remembers the good he once did; Akbar&#x27;s pardon of Bairam Khan shows past service outweighing present offence.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-11/" target="_blank" rel="noopener">Thirukkural Chapter 11: செய்ந்நன்றி அறிதல் / Gratitude (with Mu. Varadarasan, Solomon Pappaiah, Kalaignar commentaries, Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://thirukkural.net/ta/kural/adhigaram-011.html" target="_blank" rel="noopener">செய்ந்நன்றி அறிதல் - அதிகாரம் 11 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.valmikiramayan.net/" target="_blank" rel="noopener">Valmiki Ramayana, Sanskrit text with word-for-word English translation (K. M. K. Murthy, Desiraju Hanumanta Rao et al.)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:3007" target="_blank" rel="noopener">Sahih al-Bukhari 3007, Chapter: The spy (Hatib ibn Abi Balta&#x27;a)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">The Nāladiyār (English translation serialised in The Indian Antiquary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-10">Ethics, Part IV-V (Baruch Spinoza) <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://api.vam.ac.uk/v2/object/O9288" target="_blank" rel="noopener">Painting, Akbarnama, Bairam Khan&#x27;s widow and child escorted to Ahmedabad (IS.2:6-1896) (Victoria and Albert Museum)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Akbar,_Jellaladin_Mahommed" target="_blank" rel="noopener">Akbar, Jellaladin Mahommed (Encyclopaedia Britannica, 11th edition, 1911) (Encyclopaedia Britannica (1911), transcribed on Wikisource)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0108.html">&larr; Kural 108</a>
+  <a href="kural-0110.html">Kural 110 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-011.html">Gratitude Recognition</a>
+  <a class="skip-btn" href="kural-0111.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

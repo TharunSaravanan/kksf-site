@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 227 — Philanthropy | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 227</h1>
+<p class="adhikaram"><a href="adhikaram-023.html">Philanthropy</a> &middot; Eekai &middot; <span class="tamil">ஈகை</span></p>
+
+<div class="tamil-text">பாத்தூண் மரீஇ யவனைப் பசியென்னும்
+தீப்பிணி தீண்டல் அரிது.</div>
+<div class="translit">Paaththoon mareeiyavanaip pasiyennum
+Theeppini theendal aridhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The burning sickness called hunger will hardly ever touch someone who makes a habit of sharing their food.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a kid who always shares their snacks at school. When that kid forgets their lunch one day, everyone is happy to share with them. People who share food are rarely left hungry.</p>
+
+<h2 class="section">University</h2>
+<p>பாத்தூண் (pāththūṇ) means ‘divided food’, food portioned out and shared, and மரீஇ indicates something practised until it is second nature. Hunger is called தீப்பிணி, a ‘fiery disease’ or ‘evil illness’, strengthening the medical image in which sharing works as a kind of immunity. The claim can be read at three levels: morally, as merit protecting the giver; socially, as a web of reciprocity in which those who share are shared with; and economically, as the observation that shared resources are used more efficiently. The Dhammapada’s ‘Hunger is the worst disease’ and the hadith that ‘food for two is sufficient for three’ show how widespread both the disease image and the sufficiency claim are.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;THE Gods have not ordained hunger to be our death: even to the well-fed man comes death in varied shape. The riches of the liberal never waste away, while he who will not give finds none to comfort him.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/rigveda/rv05083.htm" target="_blank" rel="noopener">Rig Veda 10.117.1 (tr. Ralph T. H. Griffith)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Rig Vedic hymn to Liberality says the generous never run out, while the stingy are left without help.</div>
+  <div class="tieback">Same promise as the Kural: those who share will not be abandoned to want.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Give, and it shall be given unto you; good measure, pressed down, and shaken together, and running over, shall men give into your bosom.&rdquo;</div>
+  <div class="cite">&mdash; Luke 6:38 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus promises that those who give will receive generously in return.</div>
+  <div class="tieback">Like the Kural, generosity is said to protect the giver from want.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;The food for two persons is sufficient for three, and the food of three persons is sufficient for four persons.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:5392" target="_blank" rel="noopener">Sahih al-Bukhari 5392</a> <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Prophet taught that food, when shared, stretches to feed more people.</div>
+  <div class="tieback">Supports the Kural’s claim that sharing food, far from leaving one hungry, provides enough for all.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;A person will never become impoverished from giving charity. No harm nor damage will ever be caused because of charity.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.chabad.org/library/article_cdo/aid/986711/jewish/Matanot-Aniyim-Chapter-10.htm" target="_blank" rel="noopener">Maimonides, Mishneh Torah, Matanot Aniyim 10:2 (tr. Eliyahu Touger)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Maimonides states as a principle that giving charity never makes anyone poor.</div>
+  <div class="tieback">The same assurance as the Kural: the habitual giver is protected from want.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Hunger is the worst disease, conditioned things the worst suffering. Knowing this as it really is, the wise realize Nibbana, the highest bliss.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 203 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Dhammapada calls hunger the worst of diseases.</div>
+  <div class="tieback">Shares the Kural’s striking image of hunger as a disease (தீப்பிணி), though it uses it to point to spiritual release rather than sharing.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Give what you are able, even though you have not the thousandth part of a measure of rice in the house, and then eat your meal; the wise call those in this birth wandering beggars whose chimneys smoke not in this earth, surrounded by the deep sea, who gave not alms in a former birth.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">Nālaṭiyār, ch. 10 (&#x27;Liberality&#x27;), st. 4 (English translation in The Indian Antiquary, via wisdomlib.org)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Nālaṭiyār says to share some food before eating, however little one has. It explains present-day hunger and beggary as the karmic result of not giving in a former birth.</div>
+  <div class="tieback">Valluvar says hunger will hardly touch one who habitually shares food; the Nālaṭiyār makes the same link from the other side, since those who never shared become those whose cooking fires go out.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;The Siblings of Destiny meet together, and eat and spend, but these resources do not diminish; they continue to increase.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 186, Raag Gauree, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Guru Arjan describes a treasure inherited from the Father that grows rather than shrinks as the community shares and spends it together.</div>
+  <div class="tieback">The Kural promises that the habit of sharing food keeps the fiery disease of hunger away; Guru Arjan likewise teaches that what is shared in common is never exhausted.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Ovid, King Erysichthon cuts down a sacred oak of Ceres and scorns the gods. Ceres sends Famine (Fames) to breathe insatiable hunger into him; he eats away his whole fortune, sells his daughter, and finally devours his own body.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0028:book=8" target="_blank" rel="noopener">Ovid, Metamorphoses 8.738-878</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Hunger is portrayed as a personified curse that consumes a greedy, impious man.</div>
+  <div class="tieback">The mirror image of the Kural: the man who respects nothing and shares nothing is the one the ‘fiery disease’ of hunger devours.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Kant’s fourth example in the Groundwork imagines a prosperous man who refuses to help others in hardship. Kant argues that he cannot will this as a universal law, because many situations may arise in which he himself would need the love and sympathy of others and would then have robbed himself of all hope of help.</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/5682" target="_blank" rel="noopener">Immanuel Kant, Groundwork of the Metaphysics of Morals, Section II (Ak. 4:423)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Kant shows that a world without mutual help is one nobody could rationally choose, because everyone may one day be in need.</div>
+  <div class="tieback">Offers a rational basis for the Kural’s claim: those who share are part of a practice of mutual aid that protects them too.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Raiffeisen&#x27;s bread association in the hunger winter</div>
+  <div class="rle-meta">1846-1847 &middot; Weyerbusch, Westerwald, Prussia (now Germany)</div>
+  <div class="quote is-paraphrase">During the hunger winter of 1846-47, when crop failures drove up food prices in the Westerwald, Friedrich Wilhelm Raiffeisen, the local mayor of Weyerbusch, founded an association to obtain bread and grain for the community. It bought flour, partly with private donations, baked bread in its own bakery and gave it to needy people on credit. The association is regarded as a forerunner of the cooperative movement that Raiffeisen later developed.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Pooling and sharing resources carried a poor rural district through famine and grew into a worldwide model of mutual self-help.</div>
+  <div class="tieback">The kural says hunger rarely touches those who make sharing food a habit, and Raiffeisen&#x27;s community kept hunger at bay by sharing its bread.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-23/" target="_blank" rel="noopener">Thirukural Chapter 23: ஈகை / Giving (Tamil text, commentaries by Mu. Varadarasan, Solomon Pappaiah, Kalaignar; Pope couplet translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://murugaa.com/thirukkural/chapters/23" target="_blank" rel="noopener">திருக்குறள் 23. ஈகை — Thirukkural Chapter 23 with Meaning</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/rigveda/rv05083.htm" target="_blank" rel="noopener">The Rig Veda, translated by Ralph T. H. Griffith (1896)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5"><a href="https://sunnah.com/bukhari:5392" target="_blank" rel="noopener">Sahih al-Bukhari 5392 — &#x27;The food for two persons is sufficient for three&#x27;</a> <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.chabad.org/library/article_cdo/aid/986711/jewish/Matanot-Aniyim-Chapter-10.htm" target="_blank" rel="noopener">Mishneh Torah, Matnot Aniyim (Gifts to the Poor), Chapter 10, translated by Eliyahu Touger</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">The Nāladiyār (English translation serialised in The Indian Antiquary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0028:book=8" target="_blank" rel="noopener">Ovid, Metamorphoses Book 8, Erysichthon and Mestra (paraphrased; no translation quoted)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/5682" target="_blank" rel="noopener">Immanuel Kant, Groundwork of the Metaphysic of Morals (Fundamental Principles of the Metaphysic of Morals), Section I, trans. Thomas Kingsmill Abbott</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.raiffeisen.de/der-drv/drv-historie" target="_blank" rel="noopener">DRV Historie</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://ica.coop/en/friedrich-wilhelm-raiffeisen" target="_blank" rel="noopener">Friedrich Wilhelm Raiffeisen</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0226.html">&larr; Kural 226</a>
+  <a href="kural-0228.html">Kural 228 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-023.html">Philanthropy</a>
+  <a class="skip-btn" href="kural-0231.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

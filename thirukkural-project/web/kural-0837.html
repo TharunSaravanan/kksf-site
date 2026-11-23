@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 837 — Folly | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 837</h1>
+<p class="adhikaram"><a href="adhikaram-084.html">Folly</a> &middot; Pedhaimai &middot; <span class="tamil">பேதைமை</span></p>
+
+<div class="tamil-text">ஏதிலார் ஆரத் தமர்பசிப்பர் பேதை
+பெருஞ்செல்வம் உற்றக் கடை.</div>
+<div class="translit">Edhilaar aarath thamarpasippar pedhai
+perunjelvam utrak kadai.</div>
+
+<h2 class="section">Meaning</h2>
+<p>When a fool becomes very rich, strangers eat their fill while the fool&#x27;s own family goes hungry.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a boy who wins a huge bag of candy and hands it all out to kids he barely knows, while his little sister at home gets none. Having lots of something doesn’t help your family if you don’t know how to share it wisely.</p>
+
+<h2 class="section">University</h2>
+<p>The couplet contrasts edhilaar (ஏதிலார், strangers, those with no tie) who aara (ஆர, eat their fill) with thamar (தமர், one’s own kin) who pasippar (பசிப்பர், go hungry). Puliyur Kesigan follows the traditional explanation that the fool’s wealth comes from past merit (munvinai), while the lack of judgment in spending it is his own; Parimelazhagar’s tradition reads the strangers as flatterers and parasites who gather round new wealth. Kalaignar’s gloss stresses that outsiders ‘roll up’ the money while affectionate kin go without. Pope renders edhilaar as ‘foes’, a stronger word than the Tamil requires; Drew’s ‘neighbours’ is closer. The text is the same in both base sources.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;And charity performed at an impure place, at an improper time, to unworthy persons, or without proper attention and respect is said to be in the mode of ignorance.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 17.22 (As It Is)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Gita classes giving to the wrong people, at the wrong time and place, as charity in ignorance.</div>
+  <div class="tieback">Valluvar’s fool likewise lavishes his wealth on the wrong people while his own go short.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;But if any provide not for his own, and specially for those of his own house, he hath denied the faith, and is worse than an infidel.&rdquo;</div>
+  <div class="cite">&mdash; 1 Timothy 5:8 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul says that neglecting one’s own household is a basic moral failure.</div>
+  <div class="tieback">The Kural’s fool commits exactly this failure, feeding strangers and starving kin.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;And give the relative his right, and [also] the poor and the traveler, and do not spend wastefully.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 17:26 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an puts relatives first among those with a claim on one’s wealth and forbids squandering it.</div>
+  <div class="tieback">Valluvar’s fool reverses this order, wasting wealth on outsiders while kin go hungry.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;A man to whom God hath given riches, wealth, and honour, so that he wanteth nothing for his soul of all that he desireth, yet God giveth him not power to eat thereof, but a stranger eateth it: this is vanity, and it is an evil disease.&rdquo;</div>
+  <div class="cite">&mdash; Ecclesiastes 6:2 (Tanakh, KJV translation) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Ecclesiastes laments the man whose great wealth ends up feeding a stranger rather than himself.</div>
+  <div class="tieback">Both texts picture abundant wealth consumed by strangers instead of those it should serve.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">In the Sigalovada Sutta, the Buddha warns young Sigala of the channels through which wealth is squandered, such as drink, gambling and bad companions, and teaches that one should support friends and relatives with gifts and kindly care.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta (Digha Nikaya 31)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The sutta pairs wise use of wealth with duties to one’s own circle.</div>
+  <div class="tieback">Valluvar’s fool fails at both: his wealth leaks to outsiders and his kin go hungry.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The bat will not go to the rough-stemmed wood-apple tree, though near and fruitful. So the riches of those who, though they be very near to one, have no greatness of soul, have not the excellence of being considered as profitable.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">Nālaṭiyār, ch. 27 (&#x27;Riches without goodness&#x27;), st. 1 (English translation in The Indian Antiquary, via wisdomlib.org)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Nālaṭiyār says the wealth of small-souled people is of no use even to those closest to them, like a fruitful tree that the bat will not visit.</div>
+  <div class="tieback">Valluvar says that when a fool gets great wealth his own people go hungry; the Nālaṭiyār similarly observes that riches in the hands of those without greatness of soul do nothing for those near them.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Your wealth shall not go with you; why do you cling to it, you fool? Children, friends, family and spouse - who of these shall accompany you? … The fool does not acknowledge the One who gave this; forgetting the Naam, O Nanak! He will repent in the end.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 288, Raag Gauri, Sukhmani Sahib (ashtapadi 19, stanza 5), Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In Sukhmani Sahib Guru Arjan asks the fool why he clings to wealth that will not stay with him and forgets the One who gave it.</div>
+  <div class="tieback">The Kural says that when a fool gains great wealth, strangers enjoy it while his own go hungry; Guru Arjan also shows the fool&#x27;s wealth slipping away from him and his family.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">In Odysseus’s absence, the suitors occupy his house and feast day after day on his herds and wine, while Penelope and Telemachus look on helplessly.</div>
+  <div class="cite">&mdash; Homer, Odyssey 1-2 <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Homer makes the wasting of a household’s wealth by outsiders a central wrong of the Odyssey.</div>
+  <div class="tieback">It mirrors the Kural’s picture of strangers feasting while the family suffers.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Aristotle says the prodigal gives to the wrong people, enriching flatterers and others who deserve nothing, while failing to give to those who should receive.</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics IV.1</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">For Aristotle, prodigality is a failure to give to the right people in the right amounts.</div>
+  <div class="tieback">Valluvar’s fool shows exactly this vice: outsiders grow fat while kin go hungry.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Khedive Ismail&#x27;s debts bring Egypt under European financial control</div>
+  <div class="rle-meta">1863-1879 &middot; Egypt</div>
+  <div class="quote is-paraphrase">Khedive Ismail of Egypt financed costly modernisation projects and other ambitions largely with loans from European financiers, and the national debt rose many times over during his reign. In 1875 he sold Egypt&#x27;s Suez Canal shares to Britain, and in 1876, unable to meet payments, Egypt&#x27;s finances were placed under the supervision of a European debt commission and British and French controllers. In June 1879 the Ottoman sultan, pressed by Britain and France, deposed Ismail in favour of his son Tawfiq.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Ismail&#x27;s borrowing enriched foreign bondholders while the burden of repayment fell on Egypt, and it ended in the loss of control over the country&#x27;s own finances.</div>
+  <div class="tieback">The kural says that when a fool comes into great wealth, strangers feast while his own people go hungry, and Egypt&#x27;s wealth under Ismail flowed to foreign creditors while Egyptians bore the cost.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-84/" target="_blank" rel="noopener">Thirukkural Chapter 84: பேதைமை / Folly (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-084.html" target="_blank" rel="noopener">பேதைமை - அதிகாரம் 84 - திருக்குறள் (with Puliyur Kesigan, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html" target="_blank" rel="noopener">Sigalovada Sutta: The Discourse to Sigala (Digha Nikaya 31), tr. Narada Thera</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.wisdomlib.org/jainism/book/the-naladiyar" target="_blank" rel="noopener">The Nāladiyār (English translation serialised in The Indian Antiquary)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/biography/Ismail-Pasha" target="_blank" rel="noopener">Ismail Pasha</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.cambridge.org/core/journals/international-journal-of-middle-east-studies/article/abs/turcoegytian-army-in-sudan-on-the-eve-of-the-mahdiyya-187780/65A775E1EDE19366D3E59D86A822D869" target="_blank" rel="noopener">The Turco-Egyptian Army in Sudan on the Eve of the Mahdiyya, 1877-80</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.cambridge.org/core/journals/british-journal-for-the-history-of-science/article/impossible-to-provide-an-accurate-estimate-the-interested-calculation-of-the-ottoman-public-debt-18751881/9FCA5C2D392B2CB590DFF48DECA8847F" target="_blank" rel="noopener">&#x27;Impossible to provide an accurate estimate&#x27;: the interested calculation of the Ottoman public debt, 1875-1881</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0836.html">&larr; Kural 836</a>
+  <a href="kural-0838.html">Kural 838 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-084.html">Folly</a>
+  <a class="skip-btn" href="kural-0841.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

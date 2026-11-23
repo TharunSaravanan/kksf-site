@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 501 — Selection and Confidence | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 501</h1>
+<p class="adhikaram"><a href="adhikaram-051.html">Selection and Confidence</a> &middot; Therindhu Thelithal &middot; <span class="tamil">தெரிந்து தெளிதல்</span></p>
+
+<div class="tamil-text">அறம்பொருள் இன்பம் உயிரச்சம் நான்கின்
+திறந்தெரிந்து தேறப் படும்.</div>
+<div class="translit">Aramporul inbam uyirachcham naankin
+Thirandherindhu thaerap padum.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Give a person an important job only after testing them in four ways: with doing right, with money, with pleasure, and with fear for their own life.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Before a coach makes someone team captain, she quietly watches: Do they play fair even when cheating would win? Do they share the snacks? Do they get distracted by fun and forget practice? Do they stay brave when things get scary? Only a kid who passes all four gets the armband.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter title pairs தெரிதல் (examining, discerning) with தெளிதல் (arriving at clear confidence), and this opening couplet names the method: testing by the four ‘ways’ (திறம்) of அறம், பொருள், இன்பம் and உயிரச்சம். Parimelazhagar reads these as deliberate trials of the candidate’s mind, a reading made vivid by Solomon Pappaiah, who describes staged provocations on grounds of righteousness, money and a woman’s supposed affection, plus a feigned threat to life. This matches almost point for point Kautilya’s four upadhās (religious, monetary, love and fear allurements) in Arthaśāstra 1.10, and commentators have long noted the correspondence. Kalaignar instead turns the tests into positive qualities (firm in dharma, honest in money, not infatuated by pleasure, unafraid for one’s life). Both web sources give the couplet identically; the final verb தேறப்படும் (‘is to be trusted’) sets the key root தேறு that recurs through the chapter.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Teachers have decided that, in accordance with ascertained purity, the king shall employ in corresponding works those ministers whose character has been tested under the three pursuits of life, religion, wealth and love, and under fear.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/kautilya-arthashastra/d/doc365588.html" target="_blank" rel="noopener">Kautilya, Arthaśāstra 1.10 (trans. R. Shamasastry)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Kautilya describes secret tests in which agents tempt each minister with a religious pretext, money, a love intrigue, and fear; only those who refuse are counted pure.</div>
+  <div class="tieback">This names the same four tests as the Kural: dharma, wealth, pleasure and fear.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And let these also first be proved; then let them use the office of a deacon, being found blameless.&rdquo;</div>
+  <div class="cite">&mdash; 1 Timothy 3:10 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul tells Timothy that church officers must be tested first and appointed only if found blameless.</div>
+  <div class="tieback">Like the Kural, the order is fixed: prove first, then entrust.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;One of the women said, ‘O my father, hire him. Indeed, the best one you can hire is the strong and the trustworthy.’&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 28:26 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The daughter of the old man of Midian recommends hiring Moses after seeing his strength and honest conduct firsthand at the well.</div>
+  <div class="tieback">Trustworthiness observed in action is the basis for hiring, as the Kural requires.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Moreover thou shalt provide out of all the people able men, such as fear God, men of truth, hating unjust gain; and place such over them, to be rulers of thousands, rulers of hundreds, rulers of fifties, and rulers of tens.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">Exodus 18:21 (JPS 1917)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Jethro advises Moses to choose officials by character: capable, God-fearing, truthful and resistant to bribes.</div>
+  <div class="tieback">Fear of God and hatred of unjust gain match the Kural’s tests of dharma and of wealth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;It’s through living together that a person’s virtue may be known, and then only after a long period, not a short period; by one who is attentive, not by one who is inattentive; by one who is discerning, not by one who is not discerning.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.dhammatalks.org/suttas/KN/Ud/ud3_2.html" target="_blank" rel="noopener">Udāna 6.2, Paṭisalla Sutta (trans. Thanissaro Bhikkhu)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha tells King Pasenadi that virtue, purity, endurance and discernment are each revealed by a different test (living together, trading, adversity, discussion) and only over time.</div>
+  <div class="tieback">A four-part examination of character, each in its own arena, closely matches the Kural’s method.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;He who does not speak untruth from anger or for fun, from greed or from fear, him we call a Brâhmana.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 25.24 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In the sermon of the monk Jayaghosha, the true Brahmana is the one whose truthfulness holds under every pressure: anger, amusement, greed and fear.</div>
+  <div class="tieback">Valluvar tests a candidate through virtue, wealth, pleasure and fear of death; the Jain verse likewise defines worth as integrity that does not give way to greed, pleasure-seeking or fear.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">On Baisakhi 1699 at Anandpur, according to Sikh tradition, Guru Gobind Singh came out of his tent and asked for five Sikhs willing to offer their heads. The crowd fell silent in fear, but five came forward one after another. They were then revealed alive, and these five, the Panj Pyare, became the first members of the Khalsa.</div>
+  <div class="cite">&mdash; <a href="https://pluralism.org/the-khalsa" target="_blank" rel="noopener">The Pluralism Project, Harvard University, &#x27;The Khalsa&#x27; (paraphrase of Sikh tradition)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The Harvard Pluralism Project recounts the tradition of the Guru testing his followers by the fear of death before founding a new order on those who passed.</div>
+  <div class="tieback">The Kural says a person should be trusted with office only after being tested in four ways, the last being fear for one&#x27;s life; the founding of the Khalsa rests on exactly such a test.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Returning to Ithaca disguised as a beggar, Odysseus tests the swineherd Eumaeus, the maids, the suitors and even Penelope, watching how each behaves toward a powerless stranger before revealing himself.</div>
+  <div class="cite">&mdash; Homer, Odyssey books 14-21 <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Odysseus deliberately hides his identity so that everyone’s true loyalty and greed come out.</div>
+  <div class="tieback">This is a staged test of character before trust is given, as the Kural asks.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote is-paraphrase">Socrates proposes that future guardians be watched from youth and put through labours, pains and conflicts, then through fears and then enchantments of pleasure, like gold tried in the fire, and only those who come out pure are made rulers.</div>
+  <div class="cite">&mdash; Plato, Republic 3.412c-414a <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Plato’s scheme deliberately exposes candidates to fear and to pleasure to see whether their convictions hold.</div>
+  <div class="tieback">Testing by fear and by pleasure before giving authority is the core of the Kural’s fourfold trial.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">China selects its officials by imperial examination</div>
+  <div class="rle-meta">Sui dynasty (late 6th-7th century CE) to 1905 &middot; China</div>
+  <div class="quote is-paraphrase">From the Sui and Tang dynasties onward, Chinese governments increasingly filled official posts through competitive written examinations on the classical Chinese texts rather than by birth or recommendation alone. Under the Ming and Qing the examinations ran in three levels, at county, provincial and capital level, and the highest degree, the jinshi, made a candidate eligible for high office. The system lasted until it was abolished in 1905.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">For well over a thousand years one of the world&#x27;s largest states refused to hand out office until candidates had been examined, and the examinations were meant to test character as well as learning.</div>
+  <div class="tieback">The kural insists that a person be tested before being trusted with office, and imperial China built that principle into a permanent state institution.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-51/" target="_blank" rel="noopener">தெரிந்துதெளிதல் / Selection and Confidence, Chapter 51 (Kurals 501-510) with commentaries</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-051.html" target="_blank" rel="noopener">தெரிந்து தெளிதல் - அதிகாரம் 51 - திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.wisdomlib.org/hinduism/book/kautilya-arthashastra/d/doc365588.html" target="_blank" rel="noopener">Kautilya’s Arthashastra, trans. R. Shamasastry, Book 1, Chapter 10: The Character of Ministers (Ascertaining by Temptations Purity or Impurity)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Deuteronomy.25.13-16?ven=The_Holy_Scriptures:_A_New_Translation_(JPS_1917)" target="_blank" rel="noopener">The Holy Scriptures: A New Translation (JPS 1917)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.dhammatalks.org/suttas/KN/Ud/ud3_2.html" target="_blank" rel="noopener">Udana 3.2, Nanda Sutta, tr. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://pluralism.org/the-khalsa" target="_blank" rel="noopener">The Khalsa (The Pluralism Project)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-11">Republic, Book X (the Myth of Er) (Plato) <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/topic/jinshi-Chinese-title" target="_blank" rel="noopener">Jinshi (The Editors of Encyclopaedia Britannica)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://afe.easia.columbia.edu/cosmos/bgov/19th.htm" target="_blank" rel="noopener">Living in the Chinese Cosmos: Government and the examination system (Asia for Educators)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0500.html">&larr; Kural 500</a>
+  <a href="kural-0502.html">Kural 502 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-051.html">Selection and Confidence</a>
+  <a class="skip-btn" href="kural-0511.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

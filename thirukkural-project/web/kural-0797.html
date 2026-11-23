@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 797 — Investigation in Forming Friendships | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 797</h1>
+<p class="adhikaram"><a href="adhikaram-080.html">Investigation in Forming Friendships</a> &middot; Natpaaraaythal &middot; <span class="tamil">நட்பாராய்தல்</span></p>
+
+<div class="tamil-text">ஊதியம் என்பது ஒருவற்குப் பேதையார்
+கேண்மை ஒரீஇ விடல்.</div>
+<div class="translit">Oodhiyam enbadhu oruvarkup pedhaiyaar
+kenmai oreei vidal.</div>
+
+<h2 class="section">Meaning</h2>
+<p>The real gain for a person is to give up friendship with fools completely.</p>
+
+<h2 class="section">Elementary</h2>
+<p>If your kite is tied to a heavy rock, it can never fly. Cutting the string to the rock is not a loss; it is how the kite goes up. Letting go of a friend who keeps pulling you into silly trouble is the same kind of win.</p>
+
+<h2 class="section">University</h2>
+<p>Oodhiyam (ஊதியம்) is ‘profit’ or ‘gain’, a deliberately commercial word in a chapter of the Porutpal. Pedhaiyaar (பேதையார்) are fools in the specific Kural sense defined in chapter 84 (Pedhaimai): people who take up what harms them and drop what helps them. Oreei (ஒரீஇ) is an alapedai (sound-lengthened) form of oruvi, ‘having abandoned’, and with vidal (விடல், ‘letting go’) it makes ‘to abandon and let go entirely’. Parimelazhagar and Puliyur Kesigan read the couplet as applying to a friendship already formed with a fool unknowingly: leaving it as soon as the folly is recognised is itself a gain. The sandhi-joined text reads ஊதிய மென்ப தொருவற்குப் … யொரீஇ, the same words.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Do not keep company with a fool for as we can see he is a two-legged beast. Like an unseen thorn he pierces the heart with his sharp words.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://worldhinduorganization.org/Content/ChanakyaNiti.pdf" target="_blank" rel="noopener">Chanakya Niti 3.7 (Sri Chanakya Niti-sastra, English translation)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Chanakya warns that a fool’s company wounds you in ways you do not see coming.</div>
+  <div class="tieback">Both texts say that staying away from fools is to your benefit.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;He that walketh with wise men shall be wise: but a companion of fools shall be destroyed.&rdquo;</div>
+  <div class="cite">&mdash; Proverbs 13:20 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The proverb contrasts the gain of walking with the wise with the loss suffered by the friend of fools.</div>
+  <div class="tieback">Both texts frame leaving fools’ company as profit and keeping it as loss.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;The example of a good companion (who sits with you) in comparison with a bad one, is like that of the musk seller and the blacksmith’s bellows (or furnace); from the first you would either buy musk or enjoy its good smell while the bellows would either burn your clothes or your house, or you get a bad nasty smell thereof.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sunnah.com/bukhari:2101" target="_blank" rel="noopener">Sahih al-Bukhari 2101</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Prophet compares a good companion to a perfume seller whose fragrance you share, and a bad one to a blacksmith whose sparks burn you.</div>
+  <div class="tieback">Both texts weigh companions in terms of gain and loss.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Keep your distance from a dull man, For you will not learn wise speech.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Proverbs 14:7 (JPS Tanakh, Gender-Sensitive Edition, 2023, Sefaria)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The proverb advises walking away from a fool, since nothing wise can be gained from him.</div>
+  <div class="tieback">Both say that leaving the fool is the sensible, profitable choice.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Should a seeker not find a companion who is better or equal, let him resolutely pursue a solitary course; there is no fellowship with the fool.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 61 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Buddha says it is better to walk alone than to keep company with a fool.</div>
+  <div class="tieback">Like the Kural, the verse treats leaving the fool, even for solitude, as the better bargain.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;This is the road to it: to serve the Gurus and the old (teachers), to avoid throughout foolish people, to apply oneself earnestly to study, and to ponder zealously on the meaning of the Sûtras.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 32.3 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">Mahāvīra lists keeping away from foolish people as one of the essential steps on the road to final deliverance.</div>
+  <div class="tieback">The Kural calls giving up friendship with fools a person&#x27;s true gain, and the Jain canon likewise puts avoiding fools among the requirements of the path to liberation.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Kabir! Do not associate with the faithless cynics; run far away from them. If you touch a vessel stained with soot, some of the soot will stick to you.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1371, Salok Bhagat Kabir 131 (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Kabir uses the image of a soot-blackened pot: however careful you are, contact leaves a mark, so the only safe course with a bad companion is to get well away.</div>
+  <div class="tieback">The Kural says a person&#x27;s real gain is to give up completely the friendship of fools; Kabir likewise counsels a clean break, since even slight contact with the wrong company leaves its stain.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;The Farmer laughed aloud and said, ‘It may be all as you say, I only know this: I have taken you with these robbers, the Cranes, and you must die in their company.’&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/21" target="_blank" rel="noopener">Aesop, The Farmer and the Stork (trans. G. F. Townsend)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">A stork caught in a net with crop-stealing cranes pleads its good character, but the farmer judges it by the company it was keeping.</div>
+  <div class="tieback">The fable shows the cost of not leaving bad company in time, the loss the Kural tells us to avoid.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;But wicked men have no steadfastness (for they do not remain even like to themselves), but become friends for a short time because they delight in each other’s wickedness.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics VIII.8 (trans. W. D. Ross)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Aristotle says friendships among bad people are short and unstable because they rest on shared vice.</div>
+  <div class="tieback">Aristotle explains why such a friendship is worth nothing and losing it is no loss.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Gandhi breaks with his boyhood companion Sheikh Mehtab</div>
+  <div class="rle-meta">1890s &middot; Durban, Natal (now South Africa)</div>
+  <div class="quote is-paraphrase">As a schoolboy in Rajkot, Mohandas Gandhi formed a close friendship with Sheikh Mehtab, entering it, as he later wrote, in the spirit of a reformer, and he described it in his autobiography in two chapters titled A Tragedy. Mehtab later lived in Gandhi&#x27;s household in Durban, where Gandhi discovered serious misconduct by him and learned that he had turned Gandhi against an honest clerk with false suspicions. Gandhi told him he would have nothing more to do with him and made him leave the house, later writing that in trying to reform the man he had nearly ruined himself and that the break let him begin a more detached and disciplined life.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a></div>
+  <div class="explain">Gandhi came to see the end of this friendship not as a loss but as a rescue that freed him for his later work.</div>
+  <div class="tieback">The kural says the real gain for a person is to give up completely the friendship of fools, and Gandhi himself described his break with Mehtab as a deliverance.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-80/" target="_blank" rel="noopener">Thirukkural Chapter 80: நட்பாராய்தல் / Investigation in forming Friendships (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-080.html" target="_blank" rel="noopener">நட்பாராய்தல் - அதிகாரம் 80 - திருக்குறள் (with Puliyur Kesigan, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="http://thirukkural-thamizh.org/html/A080.html" target="_blank" rel="noopener">80. நட்பாராய்தல் (ஆராய்ந்து நட்பு கொள்ளும் முறை) — Thirukkural, sandhi-joined text</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://worldhinduorganization.org/Content/ChanakyaNiti.pdf" target="_blank" rel="noopener">Chanakya Niti — Sri Chanakya Niti-sastra: The Political Ethics of Chanakya (English translation)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://sunnah.com/bukhari:2101" target="_blank" rel="noopener">Sahih al-Bukhari 2101 (Book of Sales and Trade)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The JPS Tanakh: Gender-Sensitive Edition (Revised JPS, 2023)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.gutenberg.org/ebooks/21" target="_blank" rel="noopener">Aesop&#x27;s Fables (George Fyler Townsend trans.)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://classics.mit.edu/Aristotle/nicomachaen.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics, tr. W. D. Ross</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://franpritchett.com/00litlinks/gandhi/part2/223chapter.html" target="_blank" rel="noopener">An Autobiography, or The Story of My Experiments with Truth, Part II, Chapter 23: As a Householder (M. K. Gandhi (trans. Mahadev Desai))</a> <span class="tier">[primary source]</span></li>
+<li id="cite-14"><a href="https://www.thebookreviewindia.org/documenting-a-movement/" target="_blank" rel="noopener">Documenting A Movement (Tridip Suhrud)</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0796.html">&larr; Kural 796</a>
+  <a href="kural-0798.html">Kural 798 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-080.html">Investigation in Forming Friendships</a>
+  <a class="skip-btn" href="kural-0801.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

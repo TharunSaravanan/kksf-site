@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 957 — Lineage | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 957</h1>
+<p class="adhikaram"><a href="adhikaram-096.html">Lineage</a> &middot; Kudimai &middot; <span class="tamil">குடிமை</span></p>
+
+<div class="tamil-text">குடிப்பிறந்தார் கண்விளங்கும் குற்றம் விசும்பின்
+மதிக்கண் மறுப்போல் உயர்ந்து.</div>
+<div class="translit">Kudippirandhaar kan vilangum kutram visumbin
+madhikkan maruppol uyarndhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>A fault in someone from a good family stands out for everyone to see, like the dark spot on the moon high in the sky.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A tiny ink spot on a dirty shirt is hard to see, but the same spot on a bright white shirt is easy to notice. Valluvar says that a small mistake by someone from a respected family shows up just like that spot.</p>
+
+<h2 class="section">University</h2>
+<p>The simile is visumbin madhikkan maru (விசும்பின் மதிக்கண் மறு), &#x27;the blemish on the moon in the sky&#x27;; maru (மறு) is a spot or stain, which Mu. Varadarasanar glosses as kalangam (களங்கம்). Uyarndhu (உயர்ந்து, &#x27;being high, raised up&#x27;) does double work: the moon is high in the sky, and the well-born are high in society, so their flaws are exposed to everyone. Puliyur Kesikan adds that the fault may be small in size yet known to the whole world, and Kalaignar notes that it shows &#x27;without any concealment&#x27;. Sivayogi Sivakumar&#x27;s gloss reads the image as the full moon itself, but the standard commentators understand the dark mark on its face. The Tamil text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">Krishna says that whatever a great person does, ordinary people follow, and whatever standard he sets, the world pursues.</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 3.21</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The Gita warns that the conduct of the eminent is watched and copied by everyone.</div>
+  <div class="tieback">Because the great are watched, as the Kural says, their faults cannot hide.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Ye are the light of the world. A city that is set on an hill cannot be hid.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 5:14 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus tells his disciples that, set on high, their lives will be seen by all.</div>
+  <div class="tieback">Like the moon in the Kural, a city on a hill cannot conceal what is on it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;O wives of the Prophet, whoever of you should commit a clear immorality - for her the punishment would be doubled two fold, and ever is that, for Allah, easy.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 33:30 (Saheeh International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an holds those in the Prophet&#x27;s household to a higher standard, so a fault in them weighs double.</div>
+  <div class="tieback">Like the Kural, it says that high station magnifies a fault.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;Woe to so-and-so who studied Torah, woe to his father who taught him Torah, woe to his teacher who taught him Torah.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Yoma.86a" target="_blank" rel="noopener">Babylonian Talmud, Yoma 86a (William Davidson Edition, Koren-Steinsaltz English)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Talmud says that when a learned person is dishonest in business or rude to others, people blame not only him but his father and teacher, and so God&#x27;s name is desecrated.</div>
+  <div class="tieback">As in the Kural, the fault of someone from an honoured line is seen by all and shames the line itself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Dhammapada says that one who covers the evil he has done with good deeds lights up the world like the moon freed from clouds.</div>
+  <div class="cite">&mdash; Dhammapada 173 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The verse uses the moon as an image of a life made bright again after wrongdoing.</div>
+  <div class="tieback">Both texts use the moon to show how clearly a person&#x27;s conduct is seen, though the Dhammapada looks to redemption rather than exposure.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">After defeating his brother Bharata, the prince Bahubali renounces the world and stands motionless in meditation for a year, but omniscience will not come because of one small fault, his pride at not wanting to bow to his younger brothers who became monks before him; his sisters Brahmi and Sundari tell him to come down from the elephant of pride, and when he lets it go he becomes omniscient.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Hemacandra, Trishashtishalakapurushacaritra, Book 1 (Bharata and Bahubali), tr. Helen M. Johnson</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In Jain narrative even a tiny flaw in so great a soul stands out and holds him back.</div>
+  <div class="tieback">Like the moon&#x27;s spot in the Kural, Bahubali&#x27;s one small fault is conspicuous precisely because everything else about him is so great.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">When Aurangzeb questioned Ram Rai, the elder son of Guru Har Rai, about a line of the Adi Granth he thought disparaging to Muslims, Ram Rai tried to appease the emperor by suggesting the line had been wrongly written. Guru Har Rai excommunicated him for this and later named his younger son, Har Krishan, as successor instead.</div>
+  <div class="cite">&mdash; <a href="https://www.britannica.com/biography/Guru-Har-Rai" target="_blank" rel="noopener">Encyclopaedia Britannica, &#x27;Guru Har Rai&#x27; (paraphrase)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">A single compromise by the Guru&#x27;s own son, made at the imperial court, became a defining event, and he was passed over for the succession.</div>
+  <div class="tieback">The Kural says a fault in someone of high birth shows like the spot on the moon; Ram Rai&#x27;s lapse, made in the most public place by the son of the Guru, could not be hidden or overlooked.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Tantalus, a son of Zeus who dined with the gods, abuses that honour by stealing their nectar and ambrosia, and his crime is punished forever and brings a curse on his descendants, the house of Atreus.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0162:book=O.:poem=1" target="_blank" rel="noopener">Pindar, Olympian Ode 1</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Pindar says Tantalus could not digest his great good fortune, and his fall is all the more famous because of how high he stood.</div>
+  <div class="tieback">Like the Kural&#x27;s well-born, Tantalus&#x27;s fault is magnified by his high birth and stains his whole line.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Then the nobility of your own parents begins to rise up in judgment against you, and to hold a glaring torch over your misdeeds. The greater the sinner&#x27;s name, the more signal the guiltiness of the sin.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.tertullian.org/fathers/juvenal_satires_08.htm" target="_blank" rel="noopener">Juvenal, Satire 8 (tr. G. G. Ramsay, 1918)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Juvenal tells a young aristocrat that his famous ancestry does not excuse his vices but lights them up for all to see.</div>
+  <div class="tieback">This is the Kural&#x27;s moon-spot in Roman form: noble birth shines a light on every fault.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Prince Bernhard of the Netherlands and the Lockheed affair</div>
+  <div class="rle-meta">1976 &middot; The Netherlands</div>
+  <div class="quote is-paraphrase">In 1976 a senior Lockheed executive told a United States Senate committee that the company had paid money to a very senior Dutch official, and suspicion fell on Prince Bernhard, husband of Queen Juliana. A Dutch government commission reported in August 1976 that there was no firm proof he had taken a bribe, but found that he had been open to dishonourable requests and offers. The prince had to give up his military posts and stop appearing in uniform, and he resigned most of his public roles, though parliament decided against prosecution.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">Because of his position at the centre of the royal family, the affair drew attention around the world and damaged the reputation of a once-popular war hero.</div>
+  <div class="tieback">The kural says a fault in someone of high birth is seen by everyone, like the spot on the moon, and the prince&#x27;s lapse became international news because of who he was.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-96/" target="_blank" rel="noopener">Thirukkural Chapter 96: குடிமை / Nobility (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://thirukkural.net/ta/kural/adhigaram-096.html" target="_blank" rel="noopener">குடிமை - அதிகாரம் 96 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Yoma.86a" target="_blank" rel="noopener">Babylonian Talmud, Tractate Yoma 86a (on kiddush ha-Shem and speaking pleasantly with people)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.britannica.com/biography/Guru-Har-Rai" target="_blank" rel="noopener">Guru Har Rai</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0162:book=O.:poem=1" target="_blank" rel="noopener">Pindar, Olympian 1 (Tantalus), ed. and tr. Diane Arnson Svarlien</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.tertullian.org/fathers/juvenal_satires_08.htm" target="_blank" rel="noopener">Juvenal, Satire 8 (Stemmata quid faciunt?), tr. G. G. Ramsay, 1918</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.ebsco.com/research-starters/law/lockheed-implicated-bribing-foreign-officials" target="_blank" rel="noopener">Lockheed Implicated in Bribing Foreign Officials</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://nos.nl/artikel/152436-lockheed-commisie-vroeg-bernhard-naar-kind-in-californie" target="_blank" rel="noopener">Lockheed-commissie vroeg Bernhard naar kind in Californie</a> <span class="tier">[web source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0956.html">&larr; Kural 956</a>
+  <a href="kural-0958.html">Kural 958 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-096.html">Lineage</a>
+  <a class="skip-btn" href="kural-0961.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

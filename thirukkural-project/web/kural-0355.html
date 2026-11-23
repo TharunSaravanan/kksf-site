@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 355 — Knowledge of the True | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 355</h1>
+<p class="adhikaram"><a href="adhikaram-036.html">Knowledge of the True</a> &middot; Meyyunarthal &middot; <span class="tamil">மெய்யுணர்தல்</span></p>
+
+<div class="tamil-text">எப்பொருள் எத்தன்மைத் தாயினும் அப்பொருள்
+மெய்ப்பொருள் காண்பது அறிவு.</div>
+<div class="translit">Epporul eththanmaith thaayinum apporul
+Meypporul kaanpadhu arivu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Whatever a thing is, and however it looks, wisdom is seeing the real truth inside it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Two chocolates can look exactly the same, but one might have caramel inside and the other a nut. You only know by looking inside. This kural says a wise person doesn’t stop at how things look on the outside but finds out what they really are.</p>
+
+<h2 class="section">University</h2>
+<p>This is the chapter’s most quoted couplet, and it works as a definition: arivu (wisdom) is meypporul kaanpadhu, ‘seeing the true thing’ in every porul, whatever its apparent nature (eththanmaith thaayinum). The chain of repetitions (epporul, apporul, meypporul) performs the act it describes, peeling ‘thing’ back to ‘true thing’. Mu. Varadarasanar’s gloss makes the point explicit: one must not be dazzled by how a thing appears but know its real nature. Modern readers often extend it to critical thinking in general, meaning not being taken in by surface, reputation, or rhetoric. The ideal is close to the Buddhist yathabhuta-ñanadassana (‘knowing and seeing things as they really are’) and to the Greek project, from Heraclitus to Plato, of distinguishing a thing’s real nature (phusis) from how it seems (doxa).</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;The door of the True is covered with a golden disk. Open that, O Pûshan, that we may see the nature of the True.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/sbe01/sbe01243.htm" target="_blank" rel="noopener">Isha Upanishad 15 (trans. Max Müller)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">The seeker prays that the dazzling golden covering over reality be removed so that the truth behind it can be seen.</div>
+  <div class="tieback">The Kural’s demand to look past a thing’s appearance to its ‘meypporul’ matches the prayer to remove the golden lid and see the True.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Judge not according to the appearance, but judge righteous judgment.&rdquo;</div>
+  <div class="cite">&mdash; John 7:24 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Jesus tells his critics not to judge by surface impressions but by what is truly right.</div>
+  <div class="tieback">Same principle as the Kural: see through appearance to reality.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;But perhaps you hate a thing and it is good for you; and perhaps you love a thing and it is bad for you. And Allāh knows, while you know not.&rdquo;</div>
+  <div class="cite">&mdash; Qur’an 2:216 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur’an reminds believers that how something seems to them can be the opposite of what it really is; only God knows its true nature.</div>
+  <div class="tieback">Both texts insist that a thing’s appearance can mislead and its true nature must be sought.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;For the LORD seeth not as man seeth; for man looketh on the outward appearance, but the LORD looketh on the heart.&rdquo;</div>
+  <div class="cite">&mdash; 1 Samuel 16:7 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">When Samuel is about to anoint the impressive-looking Eliab, God tells him that outward appearance is not the measure: God sees the inner reality.</div>
+  <div class="tieback">The Kural asks human wisdom to see as God sees here, past the outward form to the true substance.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;‘All conditioned things are impermanent’ — when one sees this with wisdom, one turns away from suffering. This is the path to purification.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 277 (trans. Buddharakkhita) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha teaches that wisdom means seeing the real characteristics of things (impermanent, unsatisfactory, not-self) behind their seeming permanence. The tradition calls this yathabhuta, seeing things as they really are.</div>
+  <div class="tieback">The Kural’s ‘meypporul kaanpadhu arivu’ is essentially the Buddhist definition of wisdom as seeing things as they truly are.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;He who understands the true nature of all substances by means of all proofs (pramâṇa) and nayas, believes by a complete course of study.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 28.24 (tr. Hermann Jacobi, SBE 45, 1895, p. 155)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">Jain epistemology examines every object through valid means of knowledge (pramāṇa) and partial standpoints (naya). No single appearance or angle is taken for the whole truth of a thing.</div>
+  <div class="tieback">Valluvar defines wisdom as seeing the true reality in each thing, however it appears. The Jain method of pramāṇa and naya, the basis of anekāntavāda, is a disciplined way of getting past appearances to a thing&#x27;s true nature.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;Wherever I look, there I see the Lord pervading.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 193, Raag Gauree, Guru Arjan (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Guru Arjan describes the vision of one who has been taught by the Guru: God is seen pervading everything.</div>
+  <div class="tieback">The Kural defines wisdom as seeing the true reality within each thing, whatever it appears to be; Guru Arjan describes seeing the Lord within whatever he looks at.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">To learn the truth, Menelaus must seize the shape-shifting sea-god Proteus and hold on while he turns into a lion, a serpent, a leopard, a boar, running water and a tree. Only when Proteus returns to his own form does he speak truly.</div>
+  <div class="cite">&mdash; Homer, Odyssey 4.351–570 <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The truth is available only to the one who refuses to be fooled by changing appearances and holds on until the real form shows itself.</div>
+  <div class="tieback">A perfect myth of the Kural’s teaching: whatever form a thing takes, wisdom grasps its true nature.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;For, though all things come to pass in accordance with this Word, men seem as if they had no experience of them, when they make trial of words and deeds such as I set forth, dividing each thing according to its kind and showing how it truly is.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://en.wikisource.org/wiki/Fragments_of_Heraclitus" target="_blank" rel="noopener">Heraclitus, Fragment 1 (DK B1; trans. John Burnet)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Heraclitus describes his philosophical task as showing ‘how each thing truly is’, something most people miss even though it is all around them. (He also says, in Fragment 123, that ‘Nature loves to hide.’)</div>
+  <div class="tieback">Heraclitus’s aim of showing ‘how it truly is’ is the Kural’s ‘meypporul kaanpadhu’ almost word for word.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Oskar Pfungst discovers the secret of Clever Hans</div>
+  <div class="rle-meta">1904-1907 &middot; Berlin, German Empire (now Germany)</div>
+  <div class="quote is-paraphrase">Clever Hans, a horse owned by the Berlin schoolteacher Wilhelm von Osten, appeared to answer arithmetic and other questions by tapping his hoof, and in 1904 a group of experts who examined him found no deliberate trickery. The psychology student Oskar Pfungst then ran careful experiments and showed that the horse answered correctly only when the questioner knew the answer and was visible to him. In his 1907 report Pfungst concluded that Hans was reacting to tiny, unintentional movements of the questioner rather than doing sums.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Pfungst succeeded where expert observers had failed because he tested what was really happening instead of trusting how the performance looked; the Clever Hans effect is still taught as a warning in science.</div>
+  <div class="tieback">The kural defines wisdom as seeing the true reality within a thing, whatever it appears to be, and Pfungst looked past the appearance of a counting horse to the real cause of its answers.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-36/" target="_blank" rel="noopener">Thirukkural Chapter 36: மெய்யுணர்தல் / Truth-Consciousness (Kurals 351–360), with commentaries of Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-036.html" target="_blank" rel="noopener">மெய்யுணர்தல் – அதிகாரம் 36 – திருக்குறள்</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://sacred-texts.com/hin/sbe01/sbe01243.htm" target="_blank" rel="noopener">The Upanishads, Part 1 (Sacred Books of the East, vol. 1): Vâgasaneyi-Samhitâ-Upanishad (Isa), tr. F. Max Müller</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9">Odyssey, Book 12 (the Sirens episode) (Homer) <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://en.wikisource.org/wiki/Fragments_of_Heraclitus" target="_blank" rel="noopener">Fragments of Heraclitus, trans. John Burnet, Early Greek Philosophy (1920)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.britannica.com/topic/Clever-Hans" target="_blank" rel="noopener">Clever Hans</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3448072/" target="_blank" rel="noopener">Did You Ever Hear the One About the Horse that Could Count?</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0354.html">&larr; Kural 354</a>
+  <a href="kural-0356.html">Kural 356 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-036.html">Knowledge of the True</a>
+  <a class="skip-btn" href="kural-0361.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

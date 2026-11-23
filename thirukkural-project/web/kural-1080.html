@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 1080 — Baseness | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 1080</h1>
+<p class="adhikaram"><a href="adhikaram-108.html">Baseness</a> &middot; Kayamai &middot; <span class="tamil">கயமை</span></p>
+
+<div class="tamil-text">எற்றிற் குரியர் கயவரொன்று உற்றக்கால்
+விற்றற்கு உரியர் விரைந்து.</div>
+<div class="translit">Etrir kuriyar kayavarondru utrakkaal
+vitrarku uriyar viraindhu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>What are mean people good for? When trouble comes, they rush to sell themselves, and that is all they are fit for.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine a team captain who, the moment the game gets hard, switches to the other team because they promise him a prize. He cannot be trusted. The Kural says base people are like that: at the first sign of trouble, they will sell out anyone, even themselves.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter, and the whole Porutpal, ends with a rhetorical question: etrirku uriyar (எற்றிற்கு உரியர், &#x27;for what are they fit?&#x27;). The answer: ondru utrakkaal (ஒன்று உற்றக்கால், &#x27;when some calamity comes&#x27;) they are fit vitrarku (விற்றற்கு, &#x27;for selling&#x27;, i.e. selling themselves) viraindhu (விரைந்து, &#x27;quickly&#x27;). Parimelazhagar and Mu. Varadarasanar read it as the base hastening to sell themselves to others to escape a misfortune; Puliyur Kesikan adds that they are fit for no other work; Solomon Pappaiah extends it to profit or loss, saying they make themselves others&#x27; slaves. The final sarcasm returns to the first couplet: the base have the human form but none of the steadfastness that gives a person worth. Pope: &#x27;For what is base man fit, if griefs assail? / Himself to offer, there and then, for sale!&#x27; The text is identical on ytamizh.com and thirukkural.net.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">King Harishchandra, to keep his promised word to the sage Vishvamitra, sold his wife, his son and finally himself into servitude, enduring every hardship rather than break faith.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/hinduism/book/the-markandeya-purana" target="_blank" rel="noopener">Markandeya Purana, Harishchandra episode (tr. F. E. Pargiter)</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Harishchandra&#x27;s self-sale is the noble opposite of the Kural&#x27;s: he sells himself to keep his truth, not to escape trouble.</div>
+  <div class="tieback">The contrast sharpens the Kural&#x27;s point: the base sell themselves to save their skins, while the noble suffer anything to keep faith.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;And said unto them, What will ye give me, and I will deliver him unto you? And they covenanted with him for thirty pieces of silver.&rdquo;</div>
+  <div class="cite">&mdash; Matthew 26:15 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Judas goes to the chief priests and offers to betray Jesus for money.</div>
+  <div class="tieback">Judas is the Kural&#x27;s base man, ready to sell himself and his loyalty for a price.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Indeed, those who exchange the covenant of Allāh and their [own] oaths for a small price will have no share in the Hereafter&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 3:77 (Sahih International) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">The Qur&#x27;an condemns those who sell their solemn word for a little worldly gain.</div>
+  <div class="tieback">Like the Kural&#x27;s base, they are quick to sell what should never be for sale.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;And Esau said: ‘Behold, I am at the point to die; and what profit shall the birthright do to me?’ And Jacob said: ‘Swear to me first’; and he swore unto him; and he sold his birthright unto Jacob.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Proverbs.31.10" target="_blank" rel="noopener">Genesis 25:32-33 (JPS 1917, via Sefaria)</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">Faint with hunger, Esau sells his birthright on the spot for a bowl of lentils.</div>
+  <div class="tieback">Esau is the Kural&#x27;s base man exactly: at the first hardship he hastens to sell what is most precious.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;The good renounce (attachment for) everything. The virtuous do not prattle with a yearning for pleasures. The wise show no elation or depression when touched by happiness or sorrow.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 83 (tr. Acharya Buddharakkhita) <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Buddha says the wise stay steady whether fortune or misfortune comes.</div>
+  <div class="tieback">The Kural&#x27;s base man is the opposite: the first trouble knocks him off balance and he sells himself.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;If any misfortune happens and he suffers pain, he should cheerfully steady his mind, and bear the ills that attack him.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 2.32 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">In the lecture on the twenty-two hardships (parishaha), Mahavira teaches the monk to meet misfortune with a steady mind and not be defeated by it.</div>
+  <div class="tieback">This is the opposite of the Kural&#x27;s base man, who gives himself away the moment trouble comes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;If you desire to play this game of love with Me, then step onto My Path with your head in hand.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 1412, Salok Vaaran te Vadheek, Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In a salok, Guru Nanak says the path of love for God is open only to someone ready to give his life. Sikhs read this as the root of the Gurus&#x27; readiness for martyrdom.</div>
+  <div class="tieback">The Kural says the base are good only for selling themselves the moment trouble comes; Guru Nanak&#x27;s ideal is the opposite, a person who comes with head in hand and will not sell out at any price.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">At Thermopylae, the Malian Ephialtes went to Xerxes hoping for a large reward and showed the Persians the mountain path around the pass, betraying the Greeks who held it.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126" target="_blank" rel="noopener">Herodotus, Histories 7.213 (tr. A. D. Godley)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Ephialtes sold out his own side for gain at the decisive moment, and his name became a byword for traitor.</div>
+  <div class="tieback">Ephialtes is the Kural&#x27;s base man, ready to sell himself and others when the crisis comes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;it is you who know yourself, how much you are worth to yourself, and at what price you sell yourself; for men sell themselves at various prices.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Epictetus/discourses.1.one.html" target="_blank" rel="noopener">Epictetus, Discourses 1.2 (tr. George Long)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Epictetus says each person decides how cheaply he will sell his integrity, and the Stoic refuses to sell it at all.</div>
+  <div class="tieback">The Kural&#x27;s base man is the one whose price is lowest: he sells himself at the first trouble.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Alcibiades flees to Sparta</div>
+  <div class="rle-meta">415 BCE &middot; Athens and Sparta, Greece</div>
+  <div class="quote is-paraphrase">The Athenian general Alcibiades, a commander of the expedition against Syracuse, was recalled to face charges of sacrilege that carried the death penalty. Instead of returning, he escaped and went over to Athens&#x27; enemy Sparta. There he advised the Spartans to send help to Syracuse and to fortify Decelea in Athenian territory, which did serious harm to Athens.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-12">[12]</a> <a class="idx" href="#cite-13">[13]</a></div>
+  <div class="explain">His switch of sides became one of the most famous betrayals in ancient history and contributed to Athens&#x27; defeat in the Peloponnesian War.</div>
+  <div class="tieback">The kural says that when trouble comes, the base hurry to sell themselves; facing a death sentence, Alcibiades quickly offered his skills to his city&#x27;s enemy.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-108/" target="_blank" rel="noopener">Thirukkural Chapter 108: கயமை / Baseness (with Sivayogi Sivakumar, Mu. Varadarasanar, Solomon Pappaiah and Kalaignar commentaries, and Pope translation)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-108.html" target="_blank" rel="noopener">கயமை - அதிகாரம் 108 - திருக்குறள் (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah, Mu. Karunanidhi glosses)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://www.wisdomlib.org/hinduism/book/the-markandeya-purana" target="_blank" rel="noopener">Markandeya Purana, Harishchandra episode (tr. F. E. Pargiter)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.sefaria.org/Proverbs.31.10" target="_blank" rel="noopener">The Holy Scriptures According to the Masoretic Text (Jewish Publication Society, 1917) — Proverbs 31:10, &#x27;Eshet Chayil&#x27;</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126" target="_blank" rel="noopener">Herodotus, The Histories, trans. A. D. Godley (1920)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Epictetus/discourses.1.one.html" target="_blank" rel="noopener">Epictetus, Discourses, Book I, ch. 2, trans. George Long</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="https://www.britannica.com/biography/Alcibiades-Athenian-politician-and-general" target="_blank" rel="noopener">Alcibiades</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-13"><a href="https://www.worldhistory.org/Alcibiades/" target="_blank" rel="noopener">Alcibiades</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-1079.html">&larr; Kural 1079</a>
+  <a href="kural-1081.html">Kural 1081 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-108.html">Baseness</a>
+  <a class="skip-btn" href="kural-1081.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

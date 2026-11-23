@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 661 — Power in Execution | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 661</h1>
+<p class="adhikaram"><a href="adhikaram-067.html">Power in Execution</a> &middot; Vinaithitpam &middot; <span class="tamil">வினைத்திட்பம்</span></p>
+
+<div class="tamil-text">வினைத்திட்பம் என்பது ஒருவன் மனத்திட்பம்
+மற்றைய எல்லாம் பிற.</div>
+<div class="translit">Vinaiththitpam enpadhu oruvan manaththitpam
+Matraiya ellaam piRa.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Being firm in action really means being firm in mind. Every other kind of strength is something different.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Imagine two kids building a tall block tower. Both have the same blocks, but one gives up when it wobbles and the other keeps going. The blocks are not what made the difference. The strong part was inside the kid who kept going. That inside strength is what gets things done.</p>
+
+<h2 class="section">University</h2>
+<p>The chapter title vinai-t-tiṭpam pairs vinai (undertaking, action) with tiṭpam (solidity, firmness), and the opening couplet at once relocates that firmness from the deed to the doer: vinai-t-tiṭpam is maṉa-t-tiṭpam, firmness of mind. Parimelazhagar glosses maṟṟaiya ellām (all the others) as the external supports a minister or king might count on, such as army, fortifications, wealth and allies, and says these are piṟa, other things, not what is meant by the word. The chapter follows directly on vinai-t-tūymai (ch. 66, purity of means), so the Amaichiyal sequence runs: choose clean means, then carry them through with an unshaken mind. Mu. Varadarasanar and Solomon Pappaiah follow this reading closely (Pappaiah: the resolve not to abandon a task midway), while Kalaignar turns it conditionally: whatever else one has, without firmness of mind there is no firmness in action. The text is identical in ytamizh.com, thirukkural.net and the sandhi-joined edition at thirukkural-thamizh.org.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote">&ldquo;Those who are on this path are resolute in purpose, and their aim is one. O beloved child of the Kurus, the intelligence of those who are irresolute is many-branched.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad Gita 2.41 (Prabhupada, Bhagavad-gita As It Is)</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Krishna contrasts the single-pointed, resolute intellect (vyavasāyātmikā buddhi) with the scattered mind of the irresolute.</div>
+  <div class="tieback">Both texts locate the power to act in a firmly resolved mind rather than in outward means.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;A double minded man is unstable in all his ways.&rdquo;</div>
+  <div class="cite">&mdash; James 1:8 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">James warns that a divided, wavering mind makes a person unreliable in everything he does.</div>
+  <div class="tieback">The negative form of the Kural’s claim: an unsteady mind produces unsteady action.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Indeed, those who have said, &quot;Our Lord is Allah&quot; and then remained on a right course - the angels will descend upon them, [saying], &quot;Do not fear and do not grieve...&rdquo;</div>
+  <div class="cite">&mdash; Quran 41:30 (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The verse praises istiqāma, standing firm on a course once it has been professed, and promises divine support to those who do.</div>
+  <div class="tieback">Steadfastness after the decision, not the decision alone, is what counts, as in the Kural.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;They are not afraid of evil tidings; their heart is firm, they trust in GOD.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">Psalms 112:7 (JPS Tanakh, Gender-Sensitive Edition, via Sefaria)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The psalm describes the righteous person whose firm heart keeps him unshaken by bad news.</div>
+  <div class="tieback">‘Their heart is firm’ is almost a translation of maṉa-t-tiṭpam, the firmness of mind the Kural makes central.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote">&ldquo;Mind precedes all mental states. Mind is their chief; they are all mind-wrought.&rdquo;</div>
+  <div class="cite">&mdash; Dhammapada 1-2 (trans. Acharya Buddharakkhita) <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Dhammapada opens by teaching that every deed and its result flows from the state of the mind behind it.</div>
+  <div class="tieback">Like the Kural, it makes the mind, not outward factors, the true source of what an action becomes.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;The mind is that unruly, dreadful, bad horse; I govern it by the discipline of the Law&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra 23.58 (tr. Hermann Jacobi, SBE 45, 1895; sacred-texts.com)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">In the dialogue of Kesi and Gautama, Gautama explains that the horse which never runs off with him is his own mind, held in check by the discipline of the Law.</div>
+  <div class="tieback">Like the kural, Jainism locates real strength in the steadied mind rather than in any outward power, since everything else follows from whether the mind is mastered.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;See the brotherhood of all mankind as the highest order of Yogis; conquer your own mind, and conquer the world.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 6, Jap (Japji Sahib, Pauri 28), Guru Nanak (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Japji Guru Nanak makes mastery of one&#x27;s own mind the true victory, from which mastery of the world follows.</div>
+  <div class="tieback">The Kural says firmness in action is really firmness of mind, and all other strength is something else; Guru Nanak likewise places the decisive strength in the conquered mind.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote">&ldquo;Heart, be still, you had worse than this to bear on the day when the terrible Cyclops ate your brave companions...&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, Odyssey 20 (trans. Samuel Butler)</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">Disguised in his own house, Odysseus holds his anger in check by speaking to his heart, so that his plan against the suitors is not wrecked by impulse.</div>
+  <div class="tieback">Odysseus’s success comes from mastering his own mind, the firmness the Kural calls the real power in action.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Some things are in our control and others not. Things in our control are opinion, pursuit, desire, aversion, and, in a word, whatever are our own actions.&rdquo;</div>
+  <div class="cite">&mdash; Epictetus, Enchiridion 1 (trans. Elizabeth Carter) <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Epictetus divides the world into what belongs to our own mind and will, and externals such as body, property and office, which ‘belong to others’.</div>
+  <div class="tieback">His split mirrors the Kural’s: the mind’s firmness is one’s own, and ‘all the others are other’.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Churchill tells the Commons that Britain will fight on after Dunkirk</div>
+  <div class="rle-meta">4 June 1940 &middot; House of Commons, London, United Kingdom</div>
+  <div class="quote is-paraphrase">After the evacuation of more than 338,000 Allied troops from Dunkirk, which had left much of the British Army&#x27;s equipment behind in France, Prime Minister Winston Churchill reported on the war situation to the House of Commons on 4 June 1940. He warned that wars are not won by evacuations and prepared the country for a possible invasion. He declared that Britain would fight on the beaches, the landing grounds, the fields, the streets and the hills, and that it would never surrender.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a> <a class="idx" href="#cite-15">[15]</a></div>
+  <div class="explain">At a moment when Britain&#x27;s material strength was at its lowest, the speech made national resolve itself the country&#x27;s main asset and helped carry Britain through the summer of 1940.</div>
+  <div class="tieback">The kural says that real firmness in action is firmness of mind and that every other kind of strength is something else, and Churchill rallied a nation that had just lost its army&#x27;s equipment by appealing to its resolve rather than its resources.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-67/" target="_blank" rel="noopener">Thirukkural Chapter 67: வினைத்திட்பம் / Power in Action (with Mu. Varadarasanar, Solomon Pappaiah, Kalaignar and Sivayogi Sivakumar commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/ta/kural/adhigaram-067.html" target="_blank" rel="noopener">வினைத்திட்பம் - அதிகாரம் 67 (with Puliyur Kesikan, Mu. Varadarasanar, Solomon Pappaiah and Mu. Karunanidhi commentaries)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="http://thirukkural-thamizh.org/html/A067.html" target="_blank" rel="noopener">67. வினைத்திட்பம் (Thirukkural, sandhi-joined text)</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://vedabase.io/en/library/bg/" target="_blank" rel="noopener">Bhagavad-gita As It Is (A.C. Bhaktivedanta Swami Prabhupada)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/texts/Tanakh" target="_blank" rel="noopener">The JPS Tanakh: Gender-Sensitive Edition (Psalms 112:7, 126:5; Proverbs 22:3, 22:29, 24:16; Nehemiah 2:12, 2:16; 1 Samuel 16:7)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8">The Dhammapada <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://classics.mit.edu/Homer/odyssey.6.vi.html" target="_blank" rel="noopener">Homer, The Odyssey, tr. Samuel Butler</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12">Enchiridion, Chapter 5 (Epictetus) <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://hansard.parliament.uk/commons/1940-06-04/debates/60ee1caa-abcf-48e5-8c55-c4e587b94de7/WarSituation" target="_blank" rel="noopener">War Situation, HC Deb 04 June 1940 vol 361 cc787-98</a> <span class="tier">[primary source]</span></li>
+<li id="cite-14"><a href="https://winstonchurchill.org/resources/speeches/1940-the-finest-hour/we-shall-fight-on-the-beaches/" target="_blank" rel="noopener">We Shall Fight on the Beaches</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-15"><a href="https://www.iwm.org.uk/history/what-makes-a-churchill-speech" target="_blank" rel="noopener">Winston Churchill&#x27;s speeches</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0660.html">&larr; Kural 660</a>
+  <a href="kural-0662.html">Kural 662 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-067.html">Power in Execution</a>
+  <a class="skip-btn" href="kural-0671.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

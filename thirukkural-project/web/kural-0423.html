@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 423 — Knowledge Possession | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 423</h1>
+<p class="adhikaram"><a href="adhikaram-043.html">Knowledge Possession</a> &middot; Arivudaimai &middot; <span class="tamil">அறிவுடைமை</span></p>
+
+<div class="tamil-text">எப்பொருள் யார்யார்வாய்க் கேட்பினும் அப்பொருள்
+மெய்ப்பொருள் காண்ப தறிவு.</div>
+<div class="translit">Epporul yaaryaarvaaik ketpinum apporul
+Meipporul kaanpa tharivu.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Whatever you hear, and whoever you hear it from, wisdom is finding the real truth of it.</p>
+
+<h2 class="section">Elementary</h2>
+<p>Sometimes people believe something just because a famous or important person said it. Sometimes they ignore something true because someone they don&#x27;t like said it. Valluvar says a wise person looks at what was said and asks, &#x27;Is this actually true?&#x27;, no matter who said it.</p>
+
+<h2 class="section">University</h2>
+<p>This is among the most frequently quoted Kurals, often cited as an early statement of critical thinking. The repetition யார்யார் (&#x27;whoever, whoever&#x27;) stresses that the speaker&#x27;s status, reputation, or hostility is irrelevant. The contrast between பொருள் (porul, the thing said or its surface content) and மெய்ப்பொருள் (meipporul, its true substance) separates what is asserted from what is real. Two errors are ruled out. One is deference to authority, accepting a claim because of who said it. The other is the ad hominem, rejecting it for the same reason. The Kural is less radical than modern empiricism, because it assumes the truth can be discerned through judgment. Still, its location of arivu in the evaluation of claims, not in the collecting of them, anticipates the Buddhist Kalama Sutta and Aristotle&#x27;s &#x27;truth above friends&#x27;. For a king in Porutpal, this is also advice about handling the reports of ministers, spies, and flatterers.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">The Rig Veda prays, &#x27;Let noble thoughts come to us from every side&#x27; (ā no bhadrāḥ kratavo yantu viśvataḥ).</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/hin/rigveda/rv01089.htm" target="_blank" rel="noopener">Rig Veda 1.89.1</a> <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">This Vedic invocation is widely cited in India as a charter for openness: good insight is welcome whatever its source.</div>
+  <div class="tieback">The Kural shares the Vedic openness to wisdom from any quarter, and adds the requirement that it be tested for real truth.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote">&ldquo;Prove all things; hold fast that which is good.&rdquo;</div>
+  <div class="cite">&mdash; 1 Thessalonians 5:21 (KJV) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Paul tells the Thessalonians not to reject teachings outright or accept them uncritically, but to test everything and keep what holds true.</div>
+  <div class="tieback">This is the same method as the Kural: examine whatever you hear and hold onto its true substance.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote">&ldquo;Who listen to speech and follow the best of it. Those are the ones Allah has guided, and those are people of understanding.&rdquo;</div>
+  <div class="cite">&mdash; Qur&#x27;an 39:18 (Sahih International) <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Qur&#x27;an praises those who hear what is said, weigh it, and follow the best of it, and calls them ulu al-albab, &#x27;people of understanding&#x27;.</div>
+  <div class="tieback">Both texts define understanding as sifting what one hears to find what is truly best.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote is-paraphrase">Ben Zoma asks, &#x27;Who is wise?&#x27; and answers, &#x27;One who learns from every person.&#x27;</div>
+  <div class="cite">&mdash; <a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot 4:1</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Mishnah defines the wise person as someone willing to receive truth from anyone, whatever their standing.</div>
+  <div class="tieback">This is almost a direct echo of the Kural&#x27;s &#x27;from whomever you hear it&#x27;.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">The Buddha tells the Kalamas not to accept teachings merely because of report, tradition, scripture, logic, or the speaker&#x27;s seeming competence, or because &#x27;this contemplative is our teacher&#x27;. They should accept a teaching only when they know for themselves that it is skillful and leads to welfare.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/an/an03/an03.065.than.html" target="_blank" rel="noopener">Kalama Sutta, Anguttara Nikaya 3.65</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">The Kalama Sutta is the classic Buddhist charter for evaluating claims on their merits rather than on the authority of the speaker.</div>
+  <div class="tieback">It makes the same point as the Kural: a claim&#x27;s truth is not settled by who says it; wisdom sees its real substance.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote">&ldquo;Wisdom recognises the truth of the Law and the ascertainment of true things.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttaradhyayana Sutra 23.25 (tr. Hermann Jacobi, SBE 45)</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The followers of Parshva and of Mahavira were troubled because the two teachers&#x27; rules differed (four vows against five, clothing against none). Gautama&#x27;s answer is that wisdom looks past the outward differences to what is actually true, and Kesi, satisfied, accepts it.</div>
+  <div class="tieback">The Kural asks the wise to find the real substance (meipporul) of whatever is said by whoever says it; Gautama likewise tells the disputing disciples to judge by the truth of the matter, not by which master&#x27;s label a rule carries.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote">&ldquo;From the True Guru, I have obtained a discriminating intellect; the Guru has revealed the spiritual wisdom of God.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.srigranth.org/" target="_blank" rel="noopener">Guru Granth Sahib, Ang 711, Raag Todee, Guru Ram Das (tr. Sant Singh Khalsa)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">In Raag Todee Guru Ram Das calls the discriminating intellect (bibek budh), the power to tell true from false and good from bad, a gift of the Guru.</div>
+  <div class="tieback">The Kural defines wisdom as seeing the truth of whatever is said, whoever says it; Guru Ram Das prizes the same discernment as bibek budh.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Cassandra, cursed by Apollo so that no one would believe her, foretells the fall of Troy and Agamemnon&#x27;s murder. Her hearers dismiss her true words because of who she is.</div>
+  <div class="cite">&mdash; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0004" target="_blank" rel="noopener">Aeschylus, Agamemnon 1072-1330</a> <a class="idx" href="#cite-11">[11]</a></div>
+  <div class="explain">The Trojans and the Argive chorus judge the prophecies by the speaker (a &#x27;mad&#x27; captive) and not by their content, and ruin follows.</div>
+  <div class="tieback">This is the failure the Kural warns against: failing to see the truth of a claim because of the person saying it.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;For, while both are dear, piety requires us to honour truth above our friends.&rdquo;</div>
+  <div class="cite">&mdash; <a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics 1.6, 1096a (tr. W. D. Ross)</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">Aristotle criticises the Platonic Form of the Good even though Plato was his teacher and friend. He insists that truth outranks loyalty to any person.</div>
+  <div class="tieback">Both texts put the truth of a claim above the identity or status of the person who holds it.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">Ibn al-Haytham tests the authorities on light and vision</div>
+  <div class="rle-meta">early 11th century &middot; Cairo, Fatimid Egypt</div>
+  <div class="quote is-paraphrase">Working in Cairo in the early eleventh century, the scholar Ibn al-Haytham wrote the Book of Optics, which used experiment and mathematics to show that vision results from light entering the eye, rejecting the view of Euclid and Ptolemy that the eye sends out rays. He also wrote Doubts Concerning Ptolemy, a critique of inconsistencies in the astronomy and optics of the most respected scientific authority of his age. Translated into Latin, his Optics influenced European scholars for centuries, and UNESCO marked its thousandth anniversary during the International Year of Light in 2015.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-13">[13]</a> <a class="idx" href="#cite-14">[14]</a> <a class="idx" href="#cite-15">[15]</a></div>
+  <div class="explain">Ibn al-Haytham is celebrated as a pioneer of experimental method because he insisted on testing claims against evidence, whatever the fame of their author.</div>
+  <div class="tieback">The kural says wisdom is seeing the true substance of whatever is heard, whoever says it, and Ibn al-Haytham refused to accept even Ptolemy&#x27;s teaching without checking whether it was true.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.ytamizh.com/thirukural/chapter-43/" target="_blank" rel="noopener">The Possession of Knowledge, அறிவுடைமை, Chapter 43 — Thirukural</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.thirukkural.net/en/kural/kural-0421.html" target="_blank" rel="noopener">Thirukkural — Chapter 43: The Possession of Knowledge (Kurals 421-430)</a> <span class="tier">[web source]</span></li>
+<li id="cite-3"><a href="https://l-www.dinamalar.com/thirukural/43/430" target="_blank" rel="noopener">திருக்குறள் — அதிகாரம் 43: அறிவுடைமை</a> <span class="tier">[web source]</span></li>
+<li id="cite-4"><a href="https://sacred-texts.com/hin/rigveda/rv01089.htm" target="_blank" rel="noopener">Rig Veda, Mandala 1, Hymn 89 (tr. Ralph T. H. Griffith)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-6">The Qur&#x27;an, Sahih International translation <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.sefaria.org/Pirkei_Avot" target="_blank" rel="noopener">Pirkei Avot (Mishnah Yomit translation by Dr. Joshua Kulp)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.accesstoinsight.org/tipitaka/an/an03/an03.065.than.html" target="_blank" rel="noopener">Kalama Sutta: To the Kalamas (AN 3.65), trans. Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-9"><a href="https://sacred-texts.com/jai/sbe45/index.htm" target="_blank" rel="noopener">Uttarādhyayana Sūtra (Uttaradhyayana Sutra)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.srigranth.org/" target="_blank" rel="noopener">Sri Guru Granth Sahib</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0004" target="_blank" rel="noopener">Aeschylus, Agamemnon (Oresteia)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-12"><a href="http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html" target="_blank" rel="noopener">Aristotle, Nicomachean Ethics (tr. W. D. Ross)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-13"><a href="https://www.britannica.com/biography/Ibn-al-Haytham" target="_blank" rel="noopener">Ibn al-Haytham</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-14"><a href="https://mathshistory.st-andrews.ac.uk/Biographies/Al-Haytham/" target="_blank" rel="noopener">Ibn al-Haytham (965-1039) - Biography (J. J. O&#x27;Connor and E. F. Robertson)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-15"><a href="https://www.unesco.org/en/articles/international-year-light-ibn-al-haytham-pioneer-modern-optics-celebrated-unesco" target="_blank" rel="noopener">International Year of Light: Ibn al Haytham, pioneer of modern optics celebrated at UNESCO</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0422.html">&larr; Kural 422</a>
+  <a href="kural-0424.html">Kural 424 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-043.html">Knowledge Possession</a>
+  <a class="skip-btn" href="kural-0431.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>

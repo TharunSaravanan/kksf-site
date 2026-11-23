@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kural 484 — Knowledge of Apt Timing | The Thirukkural</title>
+<style>
+.rle-meta{color:var(--muted);font-size:.9rem;font-style:italic;margin:-.2rem 0 .4rem;}
+:root{--ink:#1f1f1f;--muted:#6b6b6b;--accent:#8a4b00;--paper:#fffdf8;--line:#e8e0d2;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Regular.woff2") format("woff2");font-weight:400;}
+@font-face{font-family:"Noto Sans Tamil";src:url("fonts/NotoSansTamil-Bold.woff2") format("woff2");font-weight:700;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;max-width:820px;margin:0 auto;padding:0 1.5rem 5rem;line-height:1.6;}
+.tamil{font-family:"Noto Sans Tamil","Latha",sans-serif;}
+header.site{padding-top:1.5rem;margin-bottom:2rem;}
+header.site .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;}
+header.site .brand{font-weight:bold;}
+nav.tabs{display:flex;gap:1.75rem;border-bottom:2px solid var(--line);padding-bottom:.6rem;}
+nav.tabs a{color:var(--muted);text-decoration:none;font-size:.95rem;letter-spacing:.02em;}
+nav.tabs a.active{color:var(--accent);font-weight:bold;border-bottom:2px solid var(--accent);padding-bottom:.65rem;margin-bottom:-.67rem;}
+nav.tabs a:hover{color:var(--accent);}
+h1.page-title{color:var(--accent);font-size:1.8rem;margin-bottom:.2rem;}
+h1.kural-num{color:var(--accent);font-size:2rem;margin-bottom:.1rem;}
+.adhikaram{color:var(--muted);font-style:italic;margin-top:0;margin-bottom:2rem;}
+.tamil-text{font-family:"Noto Sans Tamil","Latha",sans-serif;font-size:1.7rem;font-weight:700;text-align:center;margin:1.5rem 0 .5rem;white-space:pre-line;}
+.translit{text-align:center;font-style:italic;color:#444;white-space:pre-line;margin-bottom:2rem;}
+h2.section{color:var(--accent);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin-top:2.2rem;}
+.crossref{margin:1.4rem 0;padding-bottom:.2rem;}
+.crossref .trad{font-weight:bold;color:var(--accent);font-size:1.05rem;}
+.crossref .quote{font-style:italic;}
+.crossref .quote.is-paraphrase{font-style:normal;color:#333;}
+.crossref .cite{color:var(--muted);font-size:.9rem;margin-bottom:.4rem;}
+.crossref .cite a{color:var(--muted);text-decoration:underline dotted;}
+.crossref .cite a:hover{color:var(--accent);}
+.crossref .cite .idx{color:var(--accent);text-decoration:none;font-weight:bold;margin-left:.15rem;}
+.crossref .explain{margin:.4rem 0;}
+.crossref .tieback{font-style:italic;color:#444;}
+.crossref .suggest{background:#f4ede1;border:1px dashed var(--line);border-radius:6px;padding:.8rem 1rem;font-size:.92rem;color:var(--muted);}
+.crossref .suggest a{color:var(--accent);}
+nav.pager{display:flex;justify-content:space-between;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+nav.pager a{color:var(--accent);text-decoration:none;}
+footer.sources{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);}
+footer.sources ol{padding-left:1.4rem;}
+footer.sources li{margin-bottom:.4rem;padding-left:.2rem;}
+footer.sources a{color:var(--accent);}
+footer.sources .tier{color:#999;font-size:.8rem;}
+.toc-list{list-style:none;padding:0;}
+.toc-list li{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;gap:1rem;align-items:baseline;}
+.toc-list .n{color:var(--accent);font-weight:bold;width:2.2rem;flex-shrink:0;}
+.toc-list a{color:var(--ink);text-decoration:none;}
+.toc-list a:hover{color:var(--accent);text-decoration:underline;}
+.toc-list .tamil-kural{font-family:"Noto Sans Tamil",sans-serif;font-size:1.15rem;line-height:1.5;}
+.prose p{margin:0 0 1.1rem;}
+.prose h3{color:var(--accent);font-size:1.05rem;margin-top:1.8rem;margin-bottom:.4rem;}
+.callout{background:#f4ede1;border-left:3px solid var(--accent);padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem;}
+.home-cards{display:flex;flex-direction:column;gap:.9rem;margin:1.5rem 0;}
+.home-card{border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;}
+.home-card a{color:var(--accent);text-decoration:none;font-weight:bold;}
+.home-card p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem;}
+sup.src-ref a{color:var(--accent);text-decoration:none;}
+.text-entry{border-top:2px solid var(--line);padding-top:1.6rem;margin-top:2.2rem;}
+.text-entry:first-of-type{margin-top:1rem;}
+.text-entry h2{color:var(--accent);font-size:1.4rem;margin:0 0 .2rem;}
+.text-entry .meta{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:1rem;}
+.text-entry h4{color:#8a4b00;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin:1.1rem 0 .3rem;}
+.text-entry p{margin:0 0 .8rem;}
+.text-entry .learn-more{font-size:.85rem;color:var(--muted);margin-top:.6rem;}
+.text-entry .learn-more a{color:var(--accent);}
+
+.search-wrap{margin:1.2rem 0 1.6rem;}
+.search-wrap input{width:100%;font-family:inherit;font-size:1rem;padding:.65rem .9rem;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);}
+.search-wrap input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-count{font-size:.82rem;color:var(--muted);margin-top:.4rem;}
+.paal-group{margin-top:2.2rem;}
+.paal-group h2{color:var(--accent);font-size:1.15rem;border-bottom:2px solid var(--line);padding-bottom:.4rem;margin-bottom:.2rem;}
+.paal-group .paal-sub{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:1rem;}
+details.chapter{border-bottom:1px solid var(--line);}
+details.chapter summary{display:flex;align-items:baseline;gap:.8rem;padding:.7rem 0;cursor:pointer;list-style:none;}
+details.chapter summary::-webkit-details-marker{display:none;}
+details.chapter summary .arrow{color:var(--muted);font-size:.75rem;transition:transform .15s;flex-shrink:0;width:.9rem;}
+details.chapter[open] summary .arrow{transform:rotate(90deg);}
+details.chapter summary .cn{color:var(--accent);font-weight:bold;width:2.4rem;flex-shrink:0;}
+details.chapter summary .cnames{flex:1;}
+details.chapter summary .cnames a{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link{color:var(--ink);text-decoration:none;font-weight:bold;}
+details.chapter summary a.cname-link:hover{color:var(--accent);text-decoration:underline;}
+details.chapter summary .cname-plain{font-weight:bold;color:var(--ink);}
+details.chapter summary .tamil-name{font-family:"Noto Sans Tamil",sans-serif;color:var(--muted);font-size:.92rem;margin-left:.5rem;}
+details.chapter summary .soon-badge{font-size:.72rem;color:var(--muted);background:#f4ede1;border-radius:4px;padding:.1rem .4rem;margin-left:.5rem;flex-shrink:0;}
+.chapter-kurals{padding:.2rem 0 1rem 3.2rem;}
+.chapter-kurals .k-row{padding:.3rem 0;font-size:.95rem;}
+.chapter-kurals .k-row a{color:var(--ink);text-decoration:none;}
+.chapter-kurals .k-row a:hover{color:var(--accent);text-decoration:underline;}
+.chapter-kurals .k-row .kn{color:var(--accent);font-weight:bold;margin-right:.5rem;}
+.chapter-kurals .k-row.pending{color:var(--muted);font-style:italic;}
+.chapter-nav{display:flex;justify-content:space-between;margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;}
+.chapter-nav a{color:var(--accent);text-decoration:none;}
+.chapter-nav .disabled{color:#bbb;font-style:italic;}
+.skip-btn{display:inline-block;font-size:.85rem;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:.35rem .8rem;text-decoration:none;}
+.skip-btn:hover{background:var(--accent);color:#fff;}
+.skip-btn.disabled{color:#bbb;border-color:var(--line);pointer-events:none;}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="top"><span class="brand">The Thirukkural</span><span style="color:var(--muted);font-size:.9rem;">A Cross-Traditional Study Edition</span></div>
+  <nav class="tabs"><a href="index.html" class="">Home</a>
+<a href="kurals.html" class="active">The Kurals</a>
+<a href="history.html" class="">Learn More</a>
+<a href="historical-texts.html" class="">Historical Texts</a></nav>
+</header>
+<h1 class="kural-num">Kural 484</h1>
+<p class="adhikaram"><a href="adhikaram-049.html">Knowledge of Apt Timing</a> &middot; Kaalamarithal &middot; <span class="tamil">காலமறிதல்</span></p>
+
+<div class="tamil-text">ஞாலம் கருதினுங் கைகூடுங் காலம்
+கருதி இடத்தாற் செயின்.</div>
+<div class="translit">Gnaalam Karudhinung Kaikootung Kaalam
+Karudhi Itaththaar Seyin.</div>
+
+<h2 class="section">Meaning</h2>
+<p>Even if you aim to win the whole world, you can get it, as long as you choose the right time and the right place to act.</p>
+
+<h2 class="section">Elementary</h2>
+<p>A surfer can ride a huge wave, but only by paddling out at the right moment and at the right spot. Pick the right time and place, and even very big goals become reachable.</p>
+
+<h2 class="section">University</h2>
+<p>Gnaalam karudhinum means ‘even if one sets one’s mind on the earth’, that is, universal dominion, and kaikoodum means ‘it will come into one’s hand’. The condition joins kaalam karudhi (considering the time) with idaththaal seyin (acting by means of the place). This anticipates the next chapter, Idanarithal (Knowing the Place, Kurals 491–500). Parimelazhagar explains that idam here means a place of action favourable to oneself and difficult for the enemy. Time and place are treated as the two coordinates of successful action, as in the kāla and deśa of Sanskrit statecraft. Both sources give identical text; ‘karudhinung’ carries the nasal sandhi of karudhinum before k-.</p>
+
+<h2 class="section">Through the Lens of</h2>
+<div class="crossref">
+  <div class="trad">Hinduism</div>
+  <div class="quote is-paraphrase">A widely quoted verse of Chāṇakya Nīti tells a person to think again and again about what the time is, who are friends, what the place is, what income and expenditure are, who one is, and what one’s strength is.</div>
+  <div class="cite">&mdash; <a href="https://subhashitani-en.blogspot.com/2012/07/blog-post_17.html" target="_blank" rel="noopener">Chāṇakya Nīti 4.18</a> <a class="idx" href="#cite-3">[3]</a></div>
+  <div class="explain">Chanakya’s checklist puts time and place first among the questions to settle before acting.</div>
+  <div class="tieback">The same two coordinates, kaalam and idam, are what the Kural says make even world-conquest possible.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Christianity</div>
+  <div class="quote is-paraphrase">Speaking at the Areopagus in Athens, Paul says that God made all nations from one blood and fixed both their appointed times and the boundaries of where they live.</div>
+  <div class="cite">&mdash; Acts 17:26 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Paul presents history as ordered by the right times and the right places, under divine providence.</div>
+  <div class="tieback">The Kural gives the same two coordinates, time and place, as the conditions for great achievement.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Islam</div>
+  <div class="quote is-paraphrase">After the Quraysh allies broke the Treaty of Hudaybiyyah, the Prophet marched on Mecca in 630 CE. He had gathered a large force secretly and approached from several directions at once. The city surrendered with almost no fighting.</div>
+  <div class="cite">&mdash; Qur’an 48 and 110; sira accounts of the Conquest of Mecca (Fath Makka) <a class="idx" href="#cite-5">[5]</a></div>
+  <div class="explain">Years of patience were followed by a move at a well-chosen moment and by well-chosen routes, which won the Prophet’s central goal with little bloodshed.</div>
+  <div class="tieback">Choosing the moment (the broken treaty) and the approach (several routes into Mecca) brought the greatest aim within reach, as the Kural promises.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Judaism</div>
+  <div class="quote">&ldquo;…and who knoweth whether thou art come to the kingdom for such a time as this?&rdquo;</div>
+  <div class="cite">&mdash; Esther 4:14 (KJV) <a class="idx" href="#cite-4">[4]</a></div>
+  <div class="explain">Mordecai urges Esther to act. She is now queen, in the one place (the Persian court) where she can save her people, at the one moment when it matters.</div>
+  <div class="tieback">Being in the right place at the right time turns an apparently impossible rescue into a real one.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Buddhism</div>
+  <div class="quote is-paraphrase">After his awakening, the Buddha at first hesitated to teach. When Brahmā Sahampati asked him, he surveyed the world and saw beings like lotuses at different stages of emergence from the water. Judging the time right, he went to the Deer Park at Isipatana to give his first sermon to the five ascetics, who were ready to understand.</div>
+  <div class="cite">&mdash; <a href="https://www.accesstoinsight.org/tipitaka/sn/sn06/sn06.001.than.html" target="_blank" rel="noopener">Saṃyutta Nikāya 6.1 (Āyācana Sutta) and the Vinaya Mahāvagga narrative</a> <a class="idx" href="#cite-6">[6]</a></div>
+  <div class="explain">The Buddha chose both the moment and the place and audience for the teaching that would spread across Asia.</div>
+  <div class="tieback">A world-changing aim was achieved by judging kaalam and idam precisely.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Jainism</div>
+  <div class="quote is-paraphrase">In Hemacandra&#x27;s account of the first universal monarch, Bharata, son of Rishabhanatha, sets out on his conquest of the six divisions of Bharatavarsha only after the discus-jewel (cakra-ratna) appears in his armoury, and by a long, staged campaign brings the whole land under his rule. Jain tradition then shows him renouncing it all and attaining omniscience.</div>
+  <div class="cite">&mdash; <a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Trishashtishalakapurushacharitra of Hemacandra, Book 1, Bharata&#x27;s conquest (tr. Helen M. Johnson, GOS; paraphrase)</a> <a class="idx" href="#cite-7">[7]</a></div>
+  <div class="explain">The Jain Puranic tradition does contain a world-conquest that succeeds when the sign of the right moment has appeared, but it treats such dominion as worldly and ultimately to be given up.</div>
+  <div class="tieback">The kural promises that even the whole world comes within reach if time and place are rightly chosen; Bharata&#x27;s digvijaya is the Jain example of exactly such a conquest, though Jainism values his later renunciation more highly.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Sikhism</div>
+  <div class="quote is-paraphrase">Ranjit Singh rose to pre-eminence among the clans of the Sikh confederacy, captured Lahore in 1799 and went on to extend his rule across the Punjab, founding the Sikh kingdom over which he ruled as maharaja.</div>
+  <div class="cite">&mdash; <a href="https://www.britannica.com/biography/Ranjit-Singh-Sikh-maharaja" target="_blank" rel="noopener">Encyclopaedia Britannica, &quot;Ranjit Singh&quot; by Khushwant Singh (paraphrase)</a> <a class="idx" href="#cite-8">[8]</a></div>
+  <div class="explain">Starting as one chief among many, Ranjit Singh built a kingdom out of a divided Punjab by moving at the right moment and from the right base.</div>
+  <div class="tieback">The Kural says even the whole world can be won by one who picks the right time and place; Ranjit Singh&#x27;s rise from Lahore to rule of the Punjab is a Sikh historical case of such a gain.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Greek Mythology</div>
+  <div class="quote is-paraphrase">Zeus did not challenge Cronus while still a child hidden on Crete. He grew up in secret and freed his swallowed siblings. He then released the Cyclopes and Hundred-Handers from beneath the earth, gaining thunderbolts and allies, before fighting the Titans. He won rule of the cosmos.</div>
+  <div class="cite">&mdash; <a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Hesiod, Theogony, lines 468–506 and 617–735</a> <a class="idx" href="#cite-9">[9]</a></div>
+  <div class="explain">The eventual lord of the world waited for the time of his strength and chose his ground and allies before fighting.</div>
+  <div class="tieback">Dominion over the world came through timing and position, as Valluvar says.</div>
+</div>
+<div class="crossref">
+  <div class="trad">Philosophy</div>
+  <div class="quote">&ldquo;Without that opportunity their powers of mind would have been extinguished, and without those powers the opportunity would have come in vain.&rdquo;</div>
+  <div class="cite">&mdash; <a href="https://www.gutenberg.org/ebooks/1232" target="_blank" rel="noopener">Niccolò Machiavelli, The Prince, ch. VI (tr. W. K. Marriott)</a> <a class="idx" href="#cite-10">[10]</a></div>
+  <div class="explain">Machiavelli says Moses, Cyrus, Romulus and Theseus owed nothing to fortune but opportunity: Cyrus, for example, had to find the Persians discontented with the Medes and the Medes softened by long peace before he could found his empire.</div>
+  <div class="tieback">As in the Kural, the winning of great kingdoms depends on acting when time and circumstance are right.</div>
+</div>
+<h2 class="section">Real Life Example</h2>
+<div class="crossref real-life">
+  <div class="trad">The Greek fleet defeats the Persians in the straits of Salamis</div>
+  <div class="rle-meta">September 480 BCE &middot; Strait of Salamis, Greece</div>
+  <div class="quote is-paraphrase">The Greek allied fleet, smaller than the Persian navy of Xerxes, took position in the narrow strait between the island of Salamis and the Attic coast. The Persian ships moved into position during the night and entered the strait in the early morning, where the confined waters hampered the larger fleet, and the Greek triremes rammed and boarded many of them. The defeat forced Xerxes to postpone his land campaign, giving the Greek city-states time to unite against him.</div>
+  <div class="cite">&mdash; Sources: <a class="idx" href="#cite-11">[11]</a> <a class="idx" href="#cite-12">[12]</a></div>
+  <div class="explain">By fighting where their smaller numbers counted for most and the enemy&#x27;s for least, the Greeks turned back the largest empire of their age.</div>
+  <div class="tieback">The kural says even the world can be won by one who chooses the right time and acts in the right place, and Salamis was won by forcing the battle into a place of the Greeks&#x27; choosing.</div>
+</div>
+
+<footer class="sources">
+  <strong>Sources for this page</strong>
+  <ol>
+    <li id="cite-1"><a href="https://www.thirukkural.net/en/kural/adhigaram-049.html" target="_blank" rel="noopener">The recognition of opportunity: Adhigaram 49, Thirukkural (Kurals 481–490)</a> <span class="tier">[web source]</span></li>
+<li id="cite-2"><a href="https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html" target="_blank" rel="noopener">Tirukkural of Tiruvalluvar (Tamil script, Unicode e-text)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-3"><a href="https://subhashitani-en.blogspot.com/2012/07/blog-post_17.html" target="_blank" rel="noopener">Chāṇakya Nīti (Chāṇakya Nītiśāstra), with the subhāṣita also collected in the Subhāṣita Ratna Bhāṇḍāgāra</a> <span class="tier">[primary source]</span></li>
+<li id="cite-4">The Holy Bible, King James Version <span class="tier">[primary source]</span></li>
+<li id="cite-5">The Qur&#x27;an, composite of standard English translations <span class="tier">[primary source]</span></li>
+<li id="cite-6"><a href="https://www.accesstoinsight.org/tipitaka/sn/sn06/sn06.001.than.html" target="_blank" rel="noopener">Āyācana Sutta: The Request (Saṃyutta Nikāya 6.1), translated by Thanissaro Bhikkhu</a> <span class="tier">[primary source]</span></li>
+<li id="cite-7"><a href="https://www.wisdomlib.org/jainism/book/trishashti-shalaka-purusha-caritra" target="_blank" rel="noopener">Triṣaṣṭiśalākāpuruṣacaritra of Hemacandra (Lives of Sixty-Three Illustrious Persons)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-8"><a href="https://www.britannica.com/biography/Ranjit-Singh-Sikh-maharaja" target="_blank" rel="noopener">Ranjit Singh (Khushwant Singh)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-9"><a href="https://www.theoi.com/Text/HesiodTheogony.html" target="_blank" rel="noopener">Theogony (Hesiod)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-10"><a href="https://www.gutenberg.org/ebooks/1232" target="_blank" rel="noopener">The Prince (Niccolò Machiavelli)</a> <span class="tier">[primary source]</span></li>
+<li id="cite-11"><a href="https://www.livius.org/articles/battle/salamis-480-bce/" target="_blank" rel="noopener">Salamis (480 BCE) (Jona Lendering)</a> <span class="tier">[secondary source]</span></li>
+<li id="cite-12"><a href="https://www.worldhistory.org/Battle_of_Salamis/" target="_blank" rel="noopener">Battle of Salamis</a> <span class="tier">[secondary source]</span></li>
+  </ol>
+</footer>
+
+<nav class="pager">
+  <a href="kural-0483.html">&larr; Kural 483</a>
+  <a href="kural-0485.html">Kural 485 &rarr;</a>
+</nav>
+<nav class="chapter-nav">
+  <a href="adhikaram-049.html">Knowledge of Apt Timing</a>
+  <a class="skip-btn" href="kural-0491.html">Skip to Next Chapter &rarr;</a>
+</nav>
+</body>
+</html>
